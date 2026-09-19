@@ -9,12 +9,13 @@ interface FilmstripPreviewProps {
 }
 
 export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
-  const [centerIndex, setCenterIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const scrollProgressRef = useRef(0);
-  const videoRefs = useRef<Record<number, HTMLVideoElement>>({});
-  const animationFrameRef = useRef<number | undefined>(undefined);
+  const observerRef = useRef<IntersectionObserver | null>(null);
+  const videoRefs = useRef(new Map<string, HTMLVideoElement>());
+  const stepIntervalRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -29,84 +30,99 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
   }, []);
 
   const latest3 = tutorials.slice(0, 3);
-  const CARD_HEIGHT = 280;
-  const GAP = 16;
-  const SINGLE_CARD_HEIGHT = CARD_HEIGHT + GAP;
-  const SET_HEIGHT = SINGLE_CARD_HEIGHT * latest3.length;
+  const displayTutorials = [...latest3, ...latest3];
 
   useEffect(() => {
-    if (reducedMotion || latest3.length === 0) {
-      setCenterIndex(0);
-      return;
+    if (reducedMotion) {
+      const interval = setInterval(() => {
+        setActiveIndex((prev) => (prev + 1) % latest3.length);
+      }, 4000);
+      stepIntervalRef.current = interval;
+      return () => clearInterval(interval);
     }
+  }, [reducedMotion, latest3.length]);
 
-    const SCROLL_SPEED = 0.8;
-    const VIEWPORT_CENTER = 300;
+  useEffect(() => {
+    if (reducedMotion) return;
 
-    const animate = () => {
-      scrollProgressRef.current += SCROLL_SPEED;
+    const options: IntersectionObserverInit = {
+      root: containerRef.current?.parentElement || null,
+      rootMargin: "-40% 0px -40% 0px",
+      threshold: [0, 0.25, 0.5, 0.75, 1.0],
+    };
 
-      if (scrollProgressRef.current >= SET_HEIGHT) {
-        scrollProgressRef.current -= SET_HEIGHT;
-      }
+    observerRef.current = new IntersectionObserver((entries) => {
+      let maxRatio = 0;
+      let centerIndex = 0;
 
-      if (containerRef.current) {
-        containerRef.current.style.transform = `translateY(-${scrollProgressRef.current}px)`;
-      }
-
-      const cardPositions = [];
-      for (let i = 0; i < latest3.length * 2; i++) {
-        const basePosition = i * SINGLE_CARD_HEIGHT - scrollProgressRef.current;
-        cardPositions.push({
-          index: i,
-          position: basePosition,
-          center: basePosition + CARD_HEIGHT / 2,
-        });
-      }
-
-      let closestIndex = 0;
-      let minDistance = Infinity;
-
-      cardPositions.forEach((card) => {
-        const distance = Math.abs(card.center - VIEWPORT_CENTER);
-        if (distance < minDistance) {
-          minDistance = distance;
-          closestIndex = card.index;
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > maxRatio) {
+          maxRatio = entry.intersectionRatio;
+          const index = parseInt(
+            entry.target.getAttribute("data-index") || "0",
+            10
+          );
+          centerIndex = index % latest3.length;
         }
       });
 
-      if (closestIndex !== centerIndex) {
-        setCenterIndex(closestIndex);
+      if (maxRatio > 0.3) {
+        setActiveIndex(centerIndex);
       }
+    }, options);
 
-      animationFrameRef.current = requestAnimationFrame(animate);
-    };
-
-    animationFrameRef.current = requestAnimationFrame(animate);
+    const cards = containerRef.current?.querySelectorAll("[data-card]");
+    cards?.forEach((card) => observerRef.current?.observe(card));
 
     return () => {
-      if (animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current);
-      }
+      observerRef.current?.disconnect();
     };
-  }, [reducedMotion, latest3.length, centerIndex]);
+  }, [reducedMotion, latest3.length]);
 
   useEffect(() => {
-    Object.entries(videoRefs.current).forEach(([indexStr, video]) => {
-      const index = parseInt(indexStr, 10);
-      if (index === centerIndex) {
+    videoRefs.current.forEach((video, key) => {
+      const index = parseInt(key.split("-")[0], 10) % latest3.length;
+      if (index === activeIndex) {
         video.play().catch(() => {});
       } else {
         video.pause();
         video.currentTime = 0;
       }
     });
-  }, [centerIndex]);
-
-  const displayTutorials = [...latest3, ...latest3];
+  }, [activeIndex, latest3.length]);
 
   return (
     <div className="relative h-[600px] overflow-hidden">
+      <style jsx>{`
+        @keyframes filmstrip-scroll {
+          from {
+            transform: translateY(0);
+          }
+          to {
+            transform: translateY(-50%);
+          }
+        }
+
+        .filmstrip-track {
+          animation: filmstrip-scroll 18s linear infinite;
+        }
+
+        .filmstrip-track.paused {
+          animation-play-state: paused;
+        }
+
+        .filmstrip-track.reduced-motion {
+          animation: none;
+          transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .filmstrip-track:not(.reduced-motion) {
+            animation: none;
+          }
+        }
+      `}</style>
+
       <div
         className="absolute inset-0 flex items-center justify-center"
         style={{
@@ -123,20 +139,36 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
           />
 
           <div className="relative h-full overflow-hidden">
-            <div ref={containerRef} className="flex flex-col gap-4">
+            <div
+              ref={containerRef}
+              className={`filmstrip-track flex flex-col gap-4 ${
+                isPaused ? "paused" : ""
+              } ${reducedMotion ? "reduced-motion" : ""}`}
+              style={
+                reducedMotion
+                  ? {
+                      transform: `translateY(-${activeIndex * 296}px)`,
+                    }
+                  : undefined
+              }
+              onMouseEnter={() => !reducedMotion && setIsPaused(true)}
+              onMouseLeave={() => !reducedMotion && setIsPaused(false)}
+            >
               {displayTutorials.map((tutorial, idx) => {
                 const originalIndex = idx % latest3.length;
-                const isCentered = idx === centerIndex;
+                const isActive = originalIndex === activeIndex;
 
                 return (
                   <Link
                     key={`${tutorial.id}-${idx}`}
                     href={`/tutorials/${tutorial.id}`}
                     className="block"
+                    data-card
+                    data-index={idx}
                   >
                     <div
                       className={`relative w-full h-[280px] rounded-2xl overflow-hidden border transition-all duration-500 ${
-                        isCentered
+                        isActive
                           ? "border-[var(--accent)]/40 shadow-[0_0_40px_rgba(94,234,212,0.15)] scale-105 opacity-100"
                           : "border-[var(--line)] opacity-50 scale-95"
                       }`}
@@ -148,10 +180,11 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
                       <div className="absolute inset-0">
                         <video
                           ref={(el) => {
+                            const key = `${idx}-${tutorial.id}`;
                             if (el) {
-                              videoRefs.current[idx] = el;
+                              videoRefs.current.set(key, el);
                             } else {
-                              delete videoRefs.current[idx];
+                              videoRefs.current.delete(key);
                             }
                           }}
                           className="w-full h-full object-cover"
@@ -165,7 +198,7 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
                         </video>
                       </div>
 
-                      {!isCentered && (
+                      {!isActive && (
                         <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
                       )}
 
@@ -178,7 +211,7 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
                         </p>
                       </div>
 
-                      {isCentered && (
+                      {isActive && (
                         <>
                           <div className="absolute inset-0 ring-2 ring-[var(--accent)]/20 ring-inset rounded-2xl pointer-events-none" />
                           <div className="absolute top-3 right-3">
@@ -207,7 +240,7 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
           <div
             key={idx}
             className={`h-1 rounded-full transition-all duration-300 ${
-              idx === centerIndex % latest3.length
+              idx === activeIndex
                 ? "w-8 bg-[var(--accent)]"
                 : "w-1 bg-[var(--accent)]/30"
             }`}
