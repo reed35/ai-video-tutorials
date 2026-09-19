@@ -199,7 +199,13 @@ export default async function TutorialPage({
           步骤三 · 完整视频提示词
         </h2>
         <p className="text-[var(--muted)] text-sm mb-4">
-          直接全选复制到 Seedance。@Image 1–5 必须对应上面 REF 01–05。
+          直接全选复制到 Seedance。@Image{" "}
+          {tutorial.references === 3
+            ? "1–3 必须对应上面 REF 01–03"
+            : tutorial.references === 5
+            ? "1–5 必须对应上面 REF 01–05"
+            : `1–${tutorial.references} 必须对应上面 REF 编号`}
+          。
         </p>
         <div className="bg-[var(--panel)] border border-[var(--line)] rounded-[20px] p-4">
           <div className="flex gap-3 items-start mb-3">
