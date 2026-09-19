@@ -2,6 +2,90 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "seoul-aurora-mango-billboard",
+    title: "首尔黄金时刻广告牌递瓶",
+    subtitle: "Seoul golden hour · Seedance 2.5",
+    description:
+      "本案例拆解一条10秒的成片:先用人物/产品参考图统一造型,再用首尔街头黄金时刻建立真实空间;通过轻微手持、慢推镜头和广告牌景深,让模特从平面广告里递出同款芒果汁,最后用真实前景手完成屏幕内外的匹配交接。",
+    video: "/tutorials/seoul-aurora-mango-billboard/demo-web.mp4",
+    poster: "/tutorials/seoul-aurora-mango-billboard/poster.jpg",
+    duration: "10 秒",
+    shots: 5,
+    references: 1,
+    model: "Seedance 2.5",
+    style: "真人摄影 · 街头广告",
+    tags: [
+      "10 秒 · 5 节拍 · 连贯",
+      "1 张参考图",
+      "Seedance 2.5",
+      "真人摄影 · 街头广告",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "看懂参考图锁定人物与瓶",
+        description:
+          "参考图统一造型:金发模特的发型、服装、体态,以及 AURORA MANGO 芒果汁瓶的外观和标签。无单独出图词。",
+      },
+      {
+        number: 2,
+        title: "打开 Seedance 2.5",
+        description:
+          "设置:16:9 · 10 秒 · 打开声音。挂上参考图(人物与产品)。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整视频提示词",
+        description:
+          "注意跨屏递瓶动作和最后3秒前景真手交接;保持标签朝向镜头;声音自然城市氛围。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref1",
+        number: "REF 01",
+        title: "人物与产品 · 参考图",
+        subtitle: "参考图(无单独出图词) · @Image1 · 视觉参考",
+        image: "/tutorials/seoul-aurora-mango-billboard/refs/REF01.jpg",
+        prompt: "",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:02 建立场景:首尔傍晚街头,行人和黄橙色出租车穿过前景,巨幅广告牌占据画面。教练提示:先把城市真实感立住:黄金时刻、轻微手持、广告牌和前景交通形成明显层次。",
+      },
+      {
+        number: 2,
+        description:
+          "00:02–00:04 广告人物起身:广告牌中的金发模特从侧躺姿势流畅坐起,面向镜头微笑。教练提示:动作保持简单连贯,让参考图中的发型、服装和体态在运动中持续一致。",
+      },
+      {
+        number: 3,
+        description:
+          "00:04–00:06 拿起产品:模特向下伸手,拿起琥珀色 AURORA MANGO 芒果汁瓶。教练提示:把产品作为动作锚点;让瓶身、标签和手部关系清楚,避免产品形变。",
+      },
+      {
+        number: 4,
+        description:
+          "00:06–00:07 跨屏递出:模特将瓶子朝观众方向抛/递出,镜头继续缓慢推进。教练提示:用前后景尺度变化制造「瓶子穿出广告牌」的错觉,保持标签朝向镜头。",
+      },
+      {
+        number: 5,
+        description:
+          "00:07–00:10 真实手完成交接:最后三秒,真实前景手拿着同一瓶子进入画面;广告牌退到略微失焦的背景。教练提示:匹配瓶子位置、角度和标签方向,完成屏幕内外的视觉接力;声音保持自然城市氛围。",
+      },
+    ],
+    constraints:
+      "10秒连贯;轻微手持慢推;瓶标签朝向镜头;最后3秒真手前景交接;AURORA MANGO 虚构品牌。来源:Picsart 公开分享/Seedance 2.5。",
+    video_prompt: {
+      title: "Seoul Aurora Mango Billboard · ~10s · 1 Shot / 5 Beats",
+      subtitle: "Seedance 2.5 · 16:9 · handheld push · diegetic sound",
+      content: `Photorealistic street video, Seoul, South Korea, late afternoon golden hour. Busy urban sidewalk in front of a tall modern building with a massive photorealistic billboard. Yellow and orange taxis and pedestrians pass in the foreground. Camera is slightly handheld, slow push-in. On the giant billboard: a glamorous woman <image1> with long wavy blonde hair, tanned skin, wearing a cream sleeveless top with denim collar and gold buttons, short denim mini skirt, and black strappy sandals. She sits on a clean white platform against a soft cloudy sky. She starts reclining on her side, then fluidly sits up, smiles at camera, reaches down, picks up a stylish amber glass bottle of mango juice, and throws amber glass bottle of mango juice toward the viewer as if handing the bottle off the billboard. In the last 3 seconds a real hand enters the foreground holding the exact same physical bottle (label facing camera), perfectly matching the billboard pose. Billboard remains visible and slightly out of focus in the background. Natural city sound, cinematic color grade, high detail, 4K, 10 seconds. Fictional brand on bottle and billboard: AURORA MANGO Tagline style: "Cold-Pressed No.5" Key notes on label: Ripe Alphonso Mango · Passionfruit · Vanilla`,
+    },
+  },
+  {
     id: "hr-replasty-anamorphic-billboard",
     title: "变形广告牌递霜",
     subtitle: "HR Replasty · Anamorphic Billboard",
