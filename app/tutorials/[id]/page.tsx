@@ -185,11 +185,12 @@ export default async function TutorialPage({
               </li>
             ))}
           </ol>
-          <div className="mt-3 p-3 px-3.5 rounded-xl bg-[rgba(251,113,133,0.08)] border border-[rgba(251,113,133,0.25)] text-[#fecdd3] text-[13px]">
-            <b>关键约束:</b>
-            画的隧道始终在画面右侧;角色始终从左向右冲;不要加 BGM;Shot 8
-            禁止中途切镜。
-          </div>
+          {tutorial.constraints && (
+            <div className="mt-3 p-3 px-3.5 rounded-xl bg-[rgba(251,113,133,0.08)] border border-[rgba(251,113,133,0.25)] text-[#fecdd3] text-[13px]">
+              <b>关键约束:</b>
+              {tutorial.constraints}
+            </div>
+          )}
         </div>
       </section>
 
@@ -198,7 +199,13 @@ export default async function TutorialPage({
           步骤三 · 完整视频提示词
         </h2>
         <p className="text-[var(--muted)] text-sm mb-4">
-          直接全选复制到 Seedance。@Image 1–5 必须对应上面 REF 01–05。
+          直接全选复制到 Seedance。@Image{" "}
+          {tutorial.references === 3
+            ? "1–3 必须对应上面 REF 01–03"
+            : tutorial.references === 5
+            ? "1–5 必须对应上面 REF 01–05"
+            : `1–${tutorial.references} 必须对应上面 REF 编号`}
+          。
         </p>
         <div className="bg-[var(--panel)] border border-[var(--line)] rounded-[20px] p-4">
           <div className="flex gap-3 items-start mb-3">
