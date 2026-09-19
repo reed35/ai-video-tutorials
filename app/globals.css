@@ -54,3 +54,32 @@ details[open] summary span {
     text-wrap: balance;
   }
 }
+
+/* Filmstrip scroll animation */
+@keyframes filmstrip-scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-filmstrip {
+  animation: filmstrip-scroll 15s linear infinite;
+}
+
+.animate-filmstrip.paused {
+  animation-play-state: paused;
+}
+
+.animate-filmstrip-step {
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-filmstrip:not(.force-step) {
+    animation: none;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
