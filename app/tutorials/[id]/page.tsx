@@ -8,6 +8,28 @@ export function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const tutorial = getTutorialById(id);
+
+  if (!tutorial) {
+    return {};
+  }
+
+  return {
+    title: `${tutorial.title} - AI 视频教程`,
+    description: tutorial.description,
+    other: {
+      "link-preload-video": tutorial.video,
+      "link-preload-poster": tutorial.poster,
+    },
+  };
+}
+
 export default async function TutorialPage({
   params,
 }: {
@@ -60,11 +82,13 @@ export default async function TutorialPage({
           </div>
         </div>
         <div className="mx-[18px] mb-[18px] rounded-2xl overflow-hidden bg-black border border-[var(--line)] aspect-video">
+          <link rel="preload" as="video" href={tutorial.video} type="video/mp4" />
+          <link rel="preload" as="image" href={tutorial.poster} />
           <video
             className="w-full h-full object-cover"
             controls
             playsInline
-            preload="metadata"
+            preload="auto"
             poster={tutorial.poster}
           >
             <source src={tutorial.video} type="video/mp4" />

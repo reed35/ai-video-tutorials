@@ -35,7 +35,7 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
             className="w-full h-full object-cover"
             poster={tutorial.poster}
             playsInline
-            preload="metadata"
+            preload="none"
             muted
             onMouseEnter={(e) => e.currentTarget.play()}
             onMouseLeave={(e) => {
