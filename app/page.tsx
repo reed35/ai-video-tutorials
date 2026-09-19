@@ -49,8 +49,8 @@ export default function Home() {
         </div>
       </section>
 
-      <div id="tutorials" className="max-w-[980px] mx-auto px-[18px] pb-20">
-        <div className="grid grid-cols-1 gap-6">
+      <div id="tutorials" className="max-w-[1200px] mx-auto px-[18px] pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {tutorials.map((tutorial) => (
             <TutorialCard key={tutorial.id} tutorial={tutorial} />
           ))}
