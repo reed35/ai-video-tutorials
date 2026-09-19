@@ -17,7 +17,10 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
   const videoRefs = useRef(new Map<string, HTMLVideoElement>());
   const stepIntervalRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
-  const latest3 = tutorials.slice(0, 3);
+  const landscape169 = tutorials.filter(
+    (t) => t.aspectRatio === "16/9" || !t.aspectRatio
+  );
+  const latest3 = landscape169.slice(0, 3);
   const displayTutorials = [...latest3, ...latest3];
 
   useEffect(() => {

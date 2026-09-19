@@ -16,6 +16,7 @@ export interface Tutorial {
   storyboard: Shot[];
   constraints?: string;
   video_prompt: VideoPrompt;
+  aspectRatio?: string;
 }
 
 export interface Step {

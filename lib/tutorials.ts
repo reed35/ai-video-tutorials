@@ -2,6 +2,281 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "watch-her-reset-73",
+    title: "两次失误后的复位",
+    subtitle: "Pollo · Seedance 2.5 · 30秒",
+    description:
+      "黄金时段麦田里,女性射手连续两次失误后通过闭眼、呼吸和静止重新集中,第三发击碎瓶子,再以克制的满足感收尾。把挫败、呼吸、静止和命中剪成清晰情绪弧。",
+    video: "/tutorials/watch-her-reset-73/demo-web.mp4",
+    poster: "/tutorials/watch-her-reset-73/poster.jpg",
+    duration: "30 秒",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "电影感 · 黄金时段",
+    aspectRatio: "16/9",
+    tags: [
+      "30 秒 · 7 节拍 · 情绪弧",
+      "无参考图",
+      "Seedance 2.5",
+      "电影感 · 黄金时段",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂情绪弧",
+        description:
+          "两次失误→复位呼吸→重新锁定→最终命中→余韵。核心是把挫败、静止和满足通过克制表演和镜头语言剪成清晰弧线。",
+      },
+      {
+        number: 2,
+        title: "打开 Seedance 2.5",
+        description:
+          "设置:16:9 · 30 秒 · 打开声音(只保留环境声、枪声和玻璃碎裂,不加背景音乐)。无需参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整视频提示词",
+        description:
+          "保持黄金时段暖光、麦田、风吹贯穿所有镜头;慢动作只给最后一发;克制表演不夸张;负面提示避免字幕/BGM/血腥/跳切。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:03 建立场景:广角展示黄金时段的开阔麦田、风中的麦穗、远处木栅栏上的五个空玻璃瓶;女性举枪瞄准。教练提示:暖色始终统一,先用空间关系交代射手和目标。",
+      },
+      {
+        number: 2,
+        description:
+          "00:03–00:06 第一次失误:肩后中景开枪,第一瓶保持完整,瓶后扬起尘土;她短促呼气并微调站姿。教练提示:反应克制,用下颌收紧和呼气表达挫败。",
+      },
+      {
+        number: 3,
+        description:
+          "00:06–00:09 第二次失误:快速切段呈现第二发再次落空;握枪更紧、轻微摇头,但不破坏姿势。教练提示:保持连续的风、麦田与发丝运动,情绪只小幅上升。",
+      },
+      {
+        number: 4,
+        description:
+          "00:09–00:11 复位呼吸:她略微放低步枪,闭眼一拍,缓慢而有意识地呼吸;风变明显,姿态完全静止。教练提示:把停顿留足,复位是全片情绪转折。",
+      },
+      {
+        number: 5,
+        description:
+          "00:11–00:13 重新锁定:眼睛睁开,锐利而专注;切到手指落在扳机上的近景,呼吸变慢且均匀。教练提示:宽景到眼睛、再到扳机,收窄信息范围。",
+      },
+      {
+        number: 6,
+        description:
+          "00:13–00:16 最终命中:慢动作开最后一枪,短暂跟踪弹道后切到瓶子在金色光线中碎裂。教练提示:慢动作只给最后一发,玻璃碎片要抓住逆光。",
+      },
+      {
+        number: 7,
+        description:
+          "00:16–00:19 余韵:广角中她放下步枪,轻轻呼气,镜头慢慢拉远;她独自站在夕阳麦田中。教练提示:不要庆祝式夸张表演,以安静满足结束。",
+      },
+    ],
+    constraints:
+      "黄金时段暖光贯穿;慢动作只给最后一发;克制表演不夸张;只保留环境声/枪声/玻璃碎裂,不加字幕或BGM;来源:Pollo/azed_ai。",
+    video_prompt: {
+      title: "Watch Her Reset · Golden Hour Wheat Field · 30s · 7 Beats",
+      subtitle: "Seedance 2.5 · 16:9 · Emotional arc · No BGM",
+      content: `Environment: Late afternoon, golden hour, in a vast open wheat field. Tall golden wheat stalks sway gently in the wind. Five empty glass bottles are lined up on a weathered wooden fence post about 15 meters away. Dust and loose wheat husks drift through the air, backlit by the low sun
+
+Visual style: Cinematic, realistic, warm golden-hour color grade, shallow depth of field, natural film grain, lens flare when facing the sun
+
+Camera language: Mix of wide establishing shots and tight handheld close-ups. Slow, deliberate camera movement no fast whip pans. Slow motion only on the final shot.
+
+Subject styling: 24-year-old woman, athletic build, tan skin with visible sun-warmed texture, hair pulled back in a low ponytail with loose strands blowing in the wind, wearing a fitted olive-green tank top and dark tactical pants, ear protection around her neck, calm but focused expression, holding a rifle in a proper shooting stance.
+
+Core performance: The emotional arc mounting frustration after each miss, then a visible reset into total stillness and focus, then quiet relief/satisfaction after the hit. Nothing exaggerated; restrained, natural reactions.
+
+Negative prompts: No subtitles, no background music, no on-screen text, no gore or blood, no exaggerated muzzle flash, no extra fingers, no face distortion, no jump cuts.
+
+[00-03] Wide shot: the woman stands in the wheat field, rifle raised, aiming down the sight at the bottles on the fence in the distance. Wind moves the wheat around her. She's steady, breathing controlled.
+
+[03-06] Medium shot from behind her shoulder: she fires  first bottle stays intact, a puff of dirt kicks up behind it. She exhales sharply, jaw tightens slightly, but resets her stance.
+
+[06-09] Quick cut sequence: second shot, one more miss. Her frustration builds subtly a tighter grip on the rifle, a small shake of the head  but she doesn't break form.
+
+[09-11] She lowers the rifle slightly, closes her eyes for a beat, takes one slow, deliberate breath. The wind picks up around her, wheat swaying. Complete stillness in her posture.
+
+[11-13] Close-up on her eyes opening  sharp, determined, completely focused. Cut to a close-up of her finger settling on the trigger, breathing now slow and even.
+
+[13-16] Slow motion: she fires the final shot. Track the shot's path briefly, then cut to the bottle shattering into glass fragments catching the golden light.
+
+[16-19] Wide shot: she lowers the rifle, a small, quiet exhale of relief not a big celebration, just calm satisfaction. Camera slowly pulls back, she stands alone in the glowing wheat field as the sun continues to set.
+
+Reinforce throughout: golden-hour warm lighting never shifts to cool tones, wheat field environment stays consistent in all shots, wind-blown wheat and hair motion present in every frame, no subtitles or BGM at any point only natural ambient
+
+sound: wind through wheat, distant birds, the rifle shot itself, and glass shattering
+on the final hit.`,
+    },
+  },
+  {
+    id: "pov-stadium-rap-137",
+    title: "体育场说唱 POV",
+    subtitle: "Pollo · Seedance 2.5 · 30秒 · 3:4",
+    description:
+      "观众区 iPhone 以单一连续镜头记录体育场说唱:先用数字变焦锁定表演者,再按歌词和鼓点推进动作,四名舞者在第三段加入。提示词引用 @Image1 但页面无参考图可下;原文在 bro 处截断,不补写。",
+    video: "/tutorials/pov-stadium-rap-137/demo-web.mp4",
+    poster: "/tutorials/pov-stadium-rap-137/poster.jpg",
+    duration: "30 秒",
+    shots: 5,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "iPhone POV · 现场感",
+    aspectRatio: "3/4",
+    tags: [
+      "30 秒 · 3:4 竖屏 · 5 节拍",
+      "提示词含 @Image1 · 页面无参考图",
+      "Seedance 2.5",
+      "iPhone POV · 现场感",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂现场感构成",
+        description:
+          "锁定→动作→舞者加入→停拍蓄力→最终重击。核心是用手持抖动、呼吸、不完美重构图和压缩音质模拟观众区 iPhone POV。提示词引用 @Image1,但页面无参考图可下。",
+      },
+      {
+        number: 2,
+        title: "打开 Seedance 2.5",
+        description:
+          "设置:3:4 竖屏 · 30 秒 · 打开声音。有表演者参考图可自备挂 @Image1;无参考图也可直接生成。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整视频提示词",
+        description:
+          "保持手持抖动、呼吸和不完美对焦;动作落点对齐 kick/snare;歌词只用源站四行;注意:原提示词在 bro 处截断(作者原文),不补全。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:05 锁定表演者:首帧即见说唱者站在舞台跑道末端右侧,四名舞者在后方;iPhone 从 1× 快速捏到摇晃的 5× 数字变焦并锁定全身。教练提示:保留脚部和完整动作范围;手持抖动、呼吸感、自动对焦和不完美重构图共同制造观众区现场感。",
+      },
+      {
+        number: 2,
+        description:
+          "00:05–00:12 第一、二句动作:第一句对应双肩撞击、胸部弹动和前臂锁定;第二句进入 heel-toe 脚步、交叉和侧滑,摄影机向下修正以抓全运动鞋。教练提示:动作要跟 kick/snare 对齐,镜头追人但不要剪切。",
+      },
+      {
+        number: 3,
+        description:
+          "00:12–00:20 舞者加入:第三句四名舞者同步加入;说唱者带领跺步、肘击、躯干后弹和双手上举。教练提示:保持舞台地面连续、人物比例稳定,动作落点清楚。",
+      },
+      {
+        number: 4,
+        description:
+          "00:20–00:23 停拍蓄力:伴奏停一拍,说唱者保持深宽站姿,望向上层看台,胸口完成一次可见呼吸。教练提示:让停顿成为节奏转折,避免夸张表情。",
+      },
+      {
+        number: 5,
+        description:
+          "00:23–00:30 最终重击(源文截断):最后一句进入快速三步、受控 180° 转身和向下大幅挥臂;「GROUND」处跺脚,低音重回,源站文本至「the LED floor sends a bro」截断。教练提示:只执行源站可见的动作信息,不为截断部分补写内容。",
+      },
+    ],
+    constraints:
+      "3:4 竖屏;单一连续镜头不剪切;手持抖动和呼吸感;动作对齐节拍;歌词只用源站四行;提示词原文在 bro 处截断(作者原文,不补写);来源:Pollo/EHuanglu。提示词含 @Image1,但页面无参考图可下 · 不编造。",
+    video_prompt: {
+      title: "POV Stadium Rap · 30s · 3:4 Vertical · 5 Beats",
+      subtitle:
+        "Seedance 2.5 · iPhone handheld POV · @Image1 mentioned but no ref available",
+      content: `@Image1 is the absolute reference for THE RAPPER and completely replaces every previous performer reference. Preserve his exact identity: middle-aged man with a high receding hairline, short salt-and-pepper hair, thick dark eyebrows, dark eyes and a full beard with strongly defined white-gray sections. Preserve his stocky build, black-white-dark-green horizontally striped T-shirt with black chest pocket, sand-colored knee-length chino shorts and chunky off-white sneakers. No changes to his face, body, hair, beard, clothes or proportions.
+
+A 30-second single continuous live stadium rap performance captured horizontally on an iPhone from the front audience section. Authentic handheld fan footage: physical hand tremor, operator breathing, imperfect reframing, rolling shutter, digital-zoom softness, momentary autofocus hunting and compressed phone-microphone sound. No cuts.
+
+The first frame already shows THE RAPPER full-body on the right third at the end of a stage runway. A huge sold-out stadium surrounds him. Exactly four adult backup dancers wait several meters behind him. Emerald, white and black LED graphics echo the stripes of his shirt. The stage floor remains solid, flat and continuous.
+
+A heavy original grime beat begins: deep sub-bass, dry kick, snapping snare and minimal low synth. The iPhone rapidly pinches from 1× to a shaky 5× digital zoom, briefly overshoots, then locks onto THE RAPPER in a full-body composition. Focus stays wide enough to preserve his feet and choreography.
+
+He begins rapping with a low-mid, forceful cadence and exact lip synchronization:
+
+THE RAPPER:
+"Walk in steady, put the weight on the beat,
+Every bar lands, every move stays clean.
+Hands up high when the bass comes down,
+I don't chase the wave—I shake the whole ground!"
+
+Only these words are spoken. Each line is delivered in one controlled breath.
+
+On the first bar he performs two violent shoulder hits, a chest pop and a sharp forearm lock. His shirt and beard react naturally to momentum.
+
+On the second bar he executes fast heel-toe pivots, crosses one foot behind the other and glides sideways while keeping his heavy body convincingly grounded. The camera operator struggles to keep his sneakers in frame, corrects downward and catches the complete footwork.
+
+On the third bar the four dancers join in perfect synchronization. THE RAPPER leads a hard sequence: right stomp, left stomp, elbows strike outward, torso snaps backward, hands shoot overhead. Every movement lands precisely on a kick or snare.
+
+The instrumental cuts for one beat. He holds a deep wide stance, eyes fixed on the upper tiers. His chest rises with one visible breath.
+
+He shouts the final line while performing a rapid three-step, a controlled 180° pivot and one enormous downward arm strike. On "GROUND," he stomps once. The bass returns with a massive impact; the LED floor sends a bro`,
+    },
+  },
+  {
+    id: "seedance-six-rooms-89",
+    title: "一镜到底穿越六个房间",
+    subtitle: "Pollo · Seedance 2.5 · 30秒",
+    description:
+      "跟随一个穿黑色大衣的人从左向右穿过六个相连房间。画面强调一镜到底、平稳跟随和不同色调氛围。提示词引用「图像1」但页面无参考图可下;原文在「参考」处截断,不补写。",
+    video: "/tutorials/seedance-six-rooms-89/demo-web.mp4",
+    poster: "/tutorials/seedance-six-rooms-89/poster.jpg",
+    duration: "30 秒",
+    shots: 1,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "一镜到底 · 空间变换",
+    aspectRatio: "16/9",
+    tags: [
+      "30 秒 · 一镜到底 · 6 房间",
+      "提示词含图像1 · 页面无参考图",
+      "Seedance 2.5",
+      "一镜到底 · 空间变换",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂空间连续性",
+        description:
+          "一镜到底横向跟拍穿过六个房间。每个房间保持白墙、人字拼浅色木地板、法式双开落地窗、白纱帘的共同结构,同时切换色调和氛围。提示词引用「图像1」,但页面无参考图可下。",
+      },
+      {
+        number: 2,
+        title: "打开 Seedance 2.5",
+        description:
+          "设置:16:9 · 30 秒。有人物参考图可自备挂图像1;无参考图也可直接生成。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整视频提示词",
+        description:
+          "保持一镜到底和稳定跟拍;锁定人物横向运动,用门框和房间连接完成空间过渡;六个房间的共同结构要连续可辨。注意:原提示词在「参考」处截断(作者原文),不补全。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:30 连续横向跟拍:黑色大衣人物从左向右穿过六个相连房间;每个房间保持白墙、人字拼浅色木地板、法式双开落地窗、白纱帘的共同结构,同时切换色调和氛围。教练提示:不要切镜;先锁定人物横向运动,再用门框和房间连接关系完成空间过渡。",
+      },
+    ],
+    constraints:
+      "一镜到底不切镜;平稳跟拍;六个房间共同结构连续可辨;变化集中在色调与氛围;提示词原文在「参考」处截断(作者原文,不补写);来源:Pollo/johnAGI168。提示词含图像1,但页面无参考图可下 · 不编造。",
+    video_prompt: {
+      title: "Six Rooms One Take · 30s · Continuous Follow",
+      subtitle:
+        "Seedance 2.5 · 16:9 · 图像1 mentioned but no ref available",
+      content: `一镜到底,镜头平稳跟随一个穿黑色大衣的人(参考 图像1)从左向右穿过六个相连的不同色调、不同氛围的房间。每个房间结构相同:白墙、人字拼浅色木地板、法式双开落地 窗、白纱帘,参考`,
+    },
+  },
+  {
     id: "burger-monster-battle-185",
     title: "麦当劳员工对战汉堡怪兽",
     subtitle: "Pollo · Seedance 2.5 · 30秒 · 1:1",
@@ -14,6 +289,7 @@ export const tutorials: Tutorial[] = [
     references: 0,
     model: "Seedance 2.5",
     style: "iPhone 纪录片 · 荒诞魔幻",
+    aspectRatio: "1/1",
     tags: [
       "30 秒 · 1:1 方形 · 7 节拍",
       "提示词含 Image1 · 页面无参考图",
@@ -168,6 +444,7 @@ The employee`,
     references: 0,
     model: "Seedance 2.5",
     style: "IMAX 史诗 · 灾难动作",
+    aspectRatio: "16/9",
     tags: [
       "15 秒 · 3 段式 · 切黑收尾",
       "无参考图 · 纯文生视频",
@@ -233,6 +510,7 @@ The employee`,
     references: 1,
     model: "Seedance 2.5",
     style: "真人摄影 · 街头广告",
+    aspectRatio: "16/9",
     tags: [
       "10 秒 · 5 节拍 · 连贯",
       "1 张参考图",
@@ -317,6 +595,7 @@ The employee`,
     references: 3,
     model: "Seedance 2.5 · 连续一镜",
     style: "真人摄影 · 户外变形广告",
+    aspectRatio: "16/9",
     tags: [
       "30 秒 · 6 节拍 · 一镜到底",
       "3 张参考图",
@@ -452,6 +731,7 @@ REPEAT: NO background music at any point — diegetic sound only. Camera and bil
     references: 3,
     model: "Seedance 2.5 · 连续一镜",
     style: "真人摄影 · 动作追逐",
+    aspectRatio: "16/9",
     tags: [
       "28 秒 · 7 节拍 · 一镜到底",
       "3 张参考图",
@@ -757,6 +1037,7 @@ Shot 1: ONE continuous POV shot, about 28 seconds, chase camera just behind the 
     references: 5,
     model: "Seedance 2.5 · 16:9",
     style: "真人摄影质感",
+    aspectRatio: "16/9",
     tags: ["30 秒 · 13 镜头", "5 张参考图", "Seedance 2.5 · 16:9", "真人摄影质感"],
     steps: [
       {
