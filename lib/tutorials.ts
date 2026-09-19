@@ -2,6 +2,71 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "epic-desert-scene-38",
+    title: "史诗沙漠风暴:装甲车逃亡",
+    subtitle: "Pollo · Seedance 2.5 · 15秒",
+    description:
+      "用超大尺度沙尘暴建立压迫感,再切入驾驶舱手持视角制造临场恐慌,最后以装甲车飞跃沙丘、闪电与尘暴剪出高潮并切黑。无参考图 · 纯文生视频可跟做。",
+    video: "/tutorials/epic-desert-scene-38/demo-web.mp4",
+    poster: "/tutorials/epic-desert-scene-38/poster.jpg",
+    duration: "15 秒",
+    shots: 3,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "IMAX 史诗 · 灾难动作",
+    tags: [
+      "15 秒 · 3 段式 · 切黑收尾",
+      "无参考图 · 纯文生视频",
+      "Seedance 2.5",
+      "IMAX 史诗 · 灾难动作",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂三段式结构",
+        description:
+          "00-05s 极端远景建立尺度;05-10s 切入驾驶舱恐慌视角;10-15s 跃起高潮慢动作+切黑。无参考图,纯文生视频。",
+      },
+      {
+        number: 2,
+        title: "打开 Seedance 2.5",
+        description:
+          "设置:16:9 · 15 秒 · 打开声音。不需要挂参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整视频提示词",
+        description:
+          "保持远景→车内→跃起的视角切换;IMAX 70mm 低饱和风格;三段时间码必须对齐;切黑收尾。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:05 尺度建立:超广角沙漠全景;数英里高的沙尘暴吞没地平线,微小装甲车队向前逃离。教练提示:先用极端远景做大小对比:人和车越小,灾难越不可控;低饱和、厚重云墙和持续紧张配乐锁定基调。",
+      },
+      {
+        number: 2,
+        description:
+          "00:05–00:10 驾驶舱恐慌:切进头车驾驶舱,驾驶员喊「GO! GO!」并出现「MAX POWER!」字幕;车窗被沙尘冲刷,镜头剧烈抖动。教练提示:通过视角切换把宏观灾难变成身体体验;保留挡风玻璃遮挡、曝光波动和手持抖动,动作与声音同步。",
+      },
+      {
+        number: 3,
+        description:
+          "00:10–00:15 跃起高潮:装甲车冲上巨型沙丘慢动作腾空,黑色风暴为剪影背景,尘云内闪电、碎片掠过镜头,落地冲击时切黑。教练提示:把动作顶点放在最后五秒;用逆光剪影和闪电做轮廓分离,冲击点切黑收尾,避免解释性镜头拖慢节奏。",
+      },
+    ],
+    constraints:
+      "IMAX 70mm 低饱和;三段时间码(00-05s/05-10s/10-15s);切黑收尾;来源:Pollo/Seedance 2.5/johnAGI168。无参考图 · 纯文生视频可跟做。",
+    video_prompt: {
+      title: "Epic Desert Scene · ~15s · 3 Beats",
+      subtitle: "Seedance 2.5 · IMAX 70mm · Villeneuve Style · No References",
+      content: `Style: IMAX 70mm Film, Denis Villeneuve Style, Gritty Realism, Epic Scale, Desaturated.Duration: 15s.[00-05s] Extreme Wide Shot (The Scale). A colossal sandstorm, miles high, swallows a vast desert landscape. A tiny convoy of armored military vehicles races away from it. The scale of nature vs man is terrifying. Hans Zimmer style tension.[05-10s] Cockpit Cam (The Panic). Inside the lead rover. The pilot screams "GO! GO!" (Subtitle: MAX POWER!). Camera shakes violently. Sand blasts the windshield. The sun is blocked out by the approaching wall of dust.[10-15s] The Jump (The Climax). The rover hits a massive dune and launches into the air (Slow Motion). Silhouette against the dark storm. Lightning strikes within the dust cloud. Debris flies past the lens. Cut to black on impact.`,
+    },
+  },
+  {
     id: "seoul-aurora-mango-billboard",
     title: "首尔黄金时刻广告牌递瓶",
     subtitle: "Seoul golden hour · Seedance 2.5",
