@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getTutorialById, tutorials } from "@/lib/tutorials";
 import { notFound } from "next/navigation";
+import { PromptBlock } from "@/components/prompt-block";
 
 export function generateStaticParams() {
   return tutorials.map((tutorial) => ({
@@ -156,9 +157,11 @@ export default async function TutorialPage({
                 <span className="inline-block mr-1">▸</span>
                 查看完整出图提示词(点击复制区)
               </summary>
-              <pre className="mt-2.5 whitespace-pre-wrap break-words bg-[#0a0c0f] border border-[var(--line)] rounded-xl px-3.5 py-3 text-[11.5px] leading-relaxed text-[#e7e5e4] font-mono max-h-[280px] overflow-auto">
-                {ref.prompt}
-              </pre>
+              <PromptBlock text={ref.prompt}>
+                <pre className="mt-2.5 whitespace-pre-wrap break-words bg-[#0a0c0f] border border-[var(--line)] rounded-xl px-3.5 py-3 text-[11.5px] leading-relaxed text-[#e7e5e4] font-mono max-h-[280px] overflow-auto">
+                  {ref.prompt}
+                </pre>
+              </PromptBlock>
             </details>
           </article>
         ))}
@@ -211,9 +214,11 @@ export default async function TutorialPage({
               </p>
             </div>
           </div>
-          <pre className="whitespace-pre-wrap break-words bg-[#0a0c0f] border border-[var(--line)] rounded-xl px-3.5 py-3 text-[11.5px] leading-relaxed text-[#e7e5e4] font-mono max-h-[420px] overflow-auto">
-            {tutorial.video_prompt.content}
-          </pre>
+          <PromptBlock text={tutorial.video_prompt.content}>
+            <pre className="whitespace-pre-wrap break-words bg-[#0a0c0f] border border-[var(--line)] rounded-xl px-3.5 py-3 text-[11.5px] leading-relaxed text-[#e7e5e4] font-mono max-h-[420px] overflow-auto">
+              {tutorial.video_prompt.content}
+            </pre>
+          </PromptBlock>
         </div>
       </section>
 
