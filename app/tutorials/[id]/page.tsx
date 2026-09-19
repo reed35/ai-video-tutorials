@@ -21,7 +21,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${tutorial.title} - AI 视频教程`,
+    title: `${tutorial.title} - 成片拆解`,
     description: tutorial.description,
     other: {
       "link-preload-video": tutorial.video,
@@ -44,17 +44,14 @@ export default async function TutorialPage({
 
   return (
     <div className="max-w-[980px] mx-auto px-[18px] py-7 pb-20">
-      <header className="flex items-center justify-between gap-3 mb-6">
+      <header className="flex items-center gap-3 mb-8 py-4">
         <Link
           href="/"
           className="flex items-center gap-2.5 font-bold text-[15px] tracking-wide hover:opacity-80 transition-opacity"
         >
           <div className="w-7 h-7 rounded-[9px] bg-gradient-to-br from-[var(--accent)] via-[#2dd4bf] to-[var(--accent2)]" />
-          职业助手 · 教程
+          成片拆解
         </Link>
-        <div className="text-xs text-[var(--muted)] border border-[var(--line)] px-3 py-1.5 rounded-full bg-[rgba(255,255,255,0.03)]">
-          小白向 · 看视频 → 跟步骤复刻
-        </div>
       </header>
 
       <section className="bg-gradient-to-b from-[var(--panel2)] to-[var(--panel)] border border-[var(--line)] rounded-3xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
@@ -230,7 +227,7 @@ export default async function TutorialPage({
       </section>
 
       <footer className="mt-10 text-[var(--muted)] text-xs text-center">
-        职业助手教程 · 素材来自 Filmera 公开模板,仅供演示
+        成片拆解 · 素材来自 Filmera 公开模板,仅供演示
       </footer>
     </div>
   );
