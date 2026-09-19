@@ -2,6 +2,160 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "burger-monster-battle-185",
+    title: "麦当劳员工对战汉堡怪兽",
+    subtitle: "Pollo · Seedance 2.5 · 30秒 · 1:1",
+    description:
+      "用「日常纪录片质感 + 荒诞超能力反转」做出 30 秒方形短片。先用疲惫员工在停车场吃快餐建立真实感,再用地裂、巨型汉堡怪兽和魔法薯条推到荒诞高潮,最后用孩子捡薯条收束。提示词含 Image1,但页面无参考图可下 · 不编造。",
+    video: "/tutorials/burger-monster-battle-185/demo-web.mp4",
+    poster: "/tutorials/burger-monster-battle-185/poster.jpg",
+    duration: "30 秒",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "iPhone 纪录片 · 荒诞魔幻",
+    tags: [
+      "30 秒 · 1:1 方形 · 7 节拍",
+      "提示词含 Image1 · 页面无参考图",
+      "Seedance 2.5",
+      "iPhone 纪录片 · 荒诞魔幻",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂五段式结构",
+        description:
+          "日常→地裂→怪兽→冷静反转→安静收尾。核心是用写实手持摄影、群体恐慌和主角的冷静反差形成记忆点。提示词提到 Image1 作为角色参考,但页面无参考图可下载。",
+      },
+      {
+        number: 2,
+        title: "打开 Seedance 2.5",
+        description:
+          "设置:1:1 方形 · 30 秒 · 打开声音。有角色参考图可自备挂 Image1;无参考图也可直接生成。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整视频提示词",
+        description:
+          "保持 iPhone 纪录片手持质感;practical VFX 不要太完美;主角极静 vs 群众恐慌的反差是核心。注意:原提示词在 The employee 处截断(作者原文),不补全。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:05 建立日常与真实感:麦当劳员工端着 Big Mac 和薯条走进午餐时段的停车场;车辆、顾客、员工和远处店内声音构成忙碌背景。教练提示:先把镜头当成路人手机:单次手持、轻微呼吸和自动对焦漂移,不要一上来就拍得像广告;用平静动作给后面的灾难留反差。",
+      },
+      {
+        number: 2,
+        description:
+          "00:05–00:10 异常预兆到地裂:地面开始震动,汽车警报响起,人群停步;沥青突然裂开。教练提示:把声音和群众反应当作升级刻度,先让观众听见/看见不安,再展示裂缝;镜头保持不完美的重新取景。",
+      },
+      {
+        number: 3,
+        description:
+          "00:10–00:15 怪兽登场与失控:巨型油腻汉堡怪兽从地下升起,奶酪拉丝;人群奔逃、车辆倒车相撞,怪兽击毁 SUV 并拔起路灯。教练提示:用前景碎片、摇晃和飞散垃圾做尺度参照;破坏要连续但克制,保持 practical VFX 的纪录片可信度。",
+      },
+      {
+        number: 4,
+        description:
+          "00:15–00:19 反差主角回看镜头:镜头从混乱回到员工;所有人都在跑,员工几乎不动,先看怪兽,再看薯条。教练提示:这是整片的记忆点:让环境极吵、主角极静;用一个停顿和眼神把叙事重心从怪兽切回人物。",
+      },
+      {
+        number: 5,
+        description:
+          "00:19–00:24 微小物件变成超能力:员工拿起一根薯条,薯条发出金色光;数百到数千根发光薯条在身边同步旋转,风吹动衣服、垃圾和餐巾。教练提示:先拍单根薯条的近距离魔法信号,再扩展到环绕群体;让金色反光落到汽车上,给 VFX 一个真实的光照依据。",
+      },
+      {
+        number: 6,
+        description:
+          "00:24–00:28 一拍手完成反转:员工挑眉、打响指;薯条像制导导弹般射出,天空充满金色轨迹,汉堡怪兽被从各方向击中并解体成食物爆炸。教练提示:动作链要清楚:挑眉→响指→齐射→撞击→解体;用连续反应而非随机闪烁,确保观众读得懂因果。",
+      },
+      {
+        number: 7,
+        description:
+          "00:28–00:30 安静的喜剧收尾:现场归于寂静,顾客小心出来;孩子捡起落下的薯条,员工淡定收尾。教练提示:高潮后必须留白;把音量和运动一起降下来,用一个小孩捡薯条的生活化动作把荒诞重新落回日常。",
+      },
+    ],
+    constraints:
+      "iPhone 纪录片手持;practical VFX 不完美;主角极静 vs 群众恐慌;提示词原文在 The employee 处截断(作者原文,不补写);来源:Pollo/egeberkina。提示词含 Image1,但页面无参考图可下 · 不编造。",
+    video_prompt: {
+      title: "Burger Monster Battle · 30s · 1:1 Square · 7 Beats",
+      subtitle:
+        "Seedance 2.5 · iPhone doc handheld · Image1 mentioned but no ref available",
+      content: `100% real-life filmed texture, iPhone documentary look, handheld single take, natural lighting, subtle breathing camera movement, random autofocus hunting, slight rolling shutter, realistic motion blur, lens dirt on edges, grounded physics, practical VFX only, authentic crowd reactions.
+
+Environment
+
+A busy McDonald's parking lot during lunch hour. Cars constantly pulling in. Families walking out carrying trays. Employees moving between parked cars. The sound of traffic, birds, distant conversations and fryers from inside. Everything feels like a real viral phone video.
+
+Main Character
+
+Use Image1 as the exact character reference.
+
+A tired McDonald's employee steps outside for a short break holding a tray with a Big Mac and fries. They look exhausted after a long shift.
+
+30-Second Continuous Sequence
+
+The employee slowly walks through the parking lot looking for somewhere to sit. They sigh, adjusting their hat while balancing the tray. Customers pass by without noticing them.
+
+Suddenly the entire ground begins vibrating. Car alarms start going off. People stop walking. A deep rumbling grows louder beneath the asphalt.
+
+The pavement violently cracks apart.
+
+A gigantic greasy burger monster erupts from underground, built from enormous beef patties, dripping cheese, lettuce, onions and sesame buns. Melted cheese stretches everywhere as it rises several stories high.
+
+The parking lot instantly erupts into panic. Cars reverse into each other. People drop their food and sprint away. Shopping bags fly through the air.
+
+The burger monster roars and crushes a parked SUV with one massive bun-covered fist before ripping a light pole from the ground.
+
+The handheld camera desperately follows the destruction, shaking as debris lands nearby.
+
+The camera finally lands back on the employee.
+
+Everyone else is running.
+
+The employee barely reacts.
+
+They calmly look at the monster...
+
+...then at the fries.
+
+With complete confidence, they pick up a single french fry.
+
+The fry begins emitting a faint golden glow.
+
+The glow intensifies.
+
+Hundreds... then thousands... of glowing fries materialize around the employee, orbiting like a perfectly synchronized swarm, spinning faster and faster while casting warm reflections across nearby cars.
+
+Wind generated by the spinning fries blows clothing, trash and napkins across the parking lot.
+
+The employee slowly raises one eyebrow...
+
+...and snaps their fingers.
+
+Every fry instantly launches forward like precision-guided missiles.
+
+The sky fills with streaks of golden fries.
+
+They slam into the burger monster from every direction in a spectacular chain reaction.
+
+Explosions of sesame seeds, lettuce, pickles, onions and cheese erupt into the air.
+
+The monster completely disintegrates into a massive food explosion raining harmless ingredients across the parking lot.
+
+Silence.
+
+Customers cautiously emerge from hiding.
+
+One child quietly picks up a falling fry.
+
+The employee`,
+    },
+  },
+  {
     id: "epic-desert-scene-38",
     title: "史诗沙漠风暴:装甲车逃亡",
     subtitle: "Pollo · Seedance 2.5 · 15秒",
