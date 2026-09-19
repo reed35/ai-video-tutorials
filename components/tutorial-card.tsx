@@ -27,9 +27,12 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
             ))}
           </div>
         </div>
-        <div className="mx-4 mb-4 rounded-2xl overflow-hidden bg-black border border-[var(--line)] aspect-video">
+        <div
+          className="mx-4 mb-4 rounded-2xl overflow-hidden bg-black border border-[var(--line)]"
+          style={{ aspectRatio: tutorial.aspectRatio ?? "16/9" }}
+        >
           <video
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             poster={tutorial.poster}
             playsInline
             preload="none"

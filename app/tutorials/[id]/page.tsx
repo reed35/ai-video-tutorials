@@ -79,11 +79,14 @@ export default async function TutorialPage({
             ))}
           </div>
         </div>
-        <div className="mx-[18px] mb-[18px] rounded-2xl overflow-hidden bg-black border border-[var(--line)] aspect-video">
+        <div
+          className="mx-[18px] mb-[18px] rounded-2xl overflow-hidden bg-black border border-[var(--line)]"
+          style={{ aspectRatio: tutorial.aspectRatio ?? "16/9" }}
+        >
           <link rel="preload" as="video" href={tutorial.video} type="video/mp4" />
           <link rel="preload" as="image" href={tutorial.poster} />
           <video
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             controls
             playsInline
             preload="auto"
