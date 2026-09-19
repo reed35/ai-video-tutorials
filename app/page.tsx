@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { tutorials } from "@/lib/tutorials";
 import { TutorialCard } from "@/components/tutorial-card";
-import { HeroPreview } from "@/components/hero-preview";
+import { FilmstripPreview } from "@/components/filmstrip-preview";
 
 export default function Home() {
   return (
@@ -43,14 +43,14 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <HeroPreview tutorial={tutorials[0]} />
+              <FilmstripPreview tutorials={tutorials} />
             </div>
           </div>
         </div>
       </section>
 
-      <div id="tutorials" className="max-w-[1200px] mx-auto px-[18px] pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div id="tutorials" className="max-w-[980px] mx-auto px-[18px] pb-20">
+        <div className="grid grid-cols-1 gap-6">
           {tutorials.map((tutorial) => (
             <TutorialCard key={tutorial.id} tutorial={tutorial} />
           ))}
