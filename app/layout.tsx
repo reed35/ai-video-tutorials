@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI 视频教程 - 职业助手",
-  description: "小白向 AI 视频制作教程，看视频学步骤复刻",
+  title: "成片拆解 · AI 视频教程",
+  description: "看 30 秒成片，照着步骤复刻。每一个大师，都从小白开始",
 };
 
 export default function RootLayout({
