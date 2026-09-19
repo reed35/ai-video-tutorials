@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/demo-web.mp4',
+        source: '/:path*.mp4',
         headers: [
           {
             key: 'Cache-Control',

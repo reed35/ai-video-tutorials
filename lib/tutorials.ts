@@ -2,6 +2,309 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "ride-or-paws",
+    title: "金门大桥摩托猫",
+    subtitle: "Ride or paws",
+    description:
+      "先看上面这段成品:一只面无表情的姜色小猫坐在摩托尾座上,在金门大桥上一路扫射追兵。下面按「先出参考图 → 再喂给视频模型」的顺序,把每一步提示词都摊开。不会剪辑也能照着做——整段约 28 秒、一镜到底。",
+    video: "/tutorials/ride-or-paws/demo-web.mp4",
+    poster: "/tutorials/ride-or-paws/poster.jpg",
+    duration: "28 秒",
+    shots: 7,
+    references: 3,
+    model: "Seedance 2.5 · 连续一镜",
+    style: "真人摄影 · 动作追逐",
+    tags: [
+      "28 秒 · 7 节拍 · 一镜到底",
+      "3 张参考图",
+      "Seedance 2.5",
+      "真人摄影 · 动作追逐",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "生成 3 张参考图",
+        description:
+          "哑光黑运动摩托、姜色小猫 Tango(Baby Ginger)、金门大桥空镜。顺序固定,后面当 @Image1–3。",
+      },
+      {
+        number: 2,
+        title: "打开 Seedance 2.5",
+        description:
+          "设置:480p 或更高 · 约 28 秒 · 打开声音。把 3 张图按顺序挂上(摩托 → 猫 → 金门大桥)。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整视频提示词",
+        description:
+          "一次生成整段追逐。必须一镜到底、无剪辑;猫始终面无、坐在尾座面向镜头。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref1",
+        number: "REF 01",
+        title: "Sport Bike · 哑光黑运动摩托",
+        subtitle: "载具设定板 · @Image1 · GPT Image · 3:2",
+        image: "/tutorials/ride-or-paws/refs/REF01_SPORT_BIKE.jpg",
+        prompt: `Create a clean, professional **vehicle character reference / turnaround sheet** for a modern high-performance **matte-black sport motorcycle**, presented like an industrial design bible, automotive concept sheet, and premium product photography board.
+
+**Vehicle:** aggressive modern middleweight supersport motorcycle with sleek aerodynamic full fairings, sharply sculpted front nose, narrow LED headlights, tinted smoked windscreen, angular mirrors, muscular fuel tank, stepped black sport seat, exposed aluminum rearsets, compact upswept tail section, single side exhaust, chain drive, black alloy wheels, large ventilated disc brakes, inverted front forks, wide performance tires and realistic mechanical components.
+
+Primary finish is **deep matte black**, with subtle gunmetal mechanical parts and brushed-metal accents. No logos or branding.
+
+Maintain **exactly the same motorcycle design, geometry, body panels, wheel design, headlights, exhaust placement, engine, frame, mirrors, windscreen and proportions in every view.**
+
+### OVERALL LAYOUT
+
+Wide horizontal **3:2 vehicle reference sheet**, warm ivory / off-white seamless background, minimal editorial layout, thin light-gray dividing lines, clean technical typography in dark charcoal, generous negative space.
+
+The design should feel like a professional **automotive concept-development sheet / production design reference board / VFX continuity sheet**.
+
+Top-left title:
+
+**SPORT BIKE**
+
+Below:
+
+**CHARACTER REFERENCE SHEET**
+
+### MAIN TURNAROUND VIEWS
+
+Present five large photorealistic views of the **exact same motorcycle**.
+
+**LEFT SIDE VIEW**  
+Large exact 90-degree left profile. Entire motorcycle visible from front tire to rear tire. Wheels perfectly parallel to camera. Show aerodynamic fairing, fuel tank, engine casing, swingarm, chain system, foot controls and tail section. Motorcycle standing naturally upright with no rider.
+
+**FRONT VIEW**  
+Perfectly centered straight-on view. Front tire aligned vertically with the center axis. Aggressive narrow dual LED headlights, smoked windscreen, symmetrical mirrors, front forks, brake hardware and sculpted front fairing clearly visible.
+
+**RIGHT SIDE VIEW**  
+Exact 90-degree opposite profile facing right. Show the same motorcycle with identical body proportions. Single exhaust is clearly visible on this side, along with rear brake, engine components, rearset and fairing structure.
+
+**3/4 REAR VIEW**  
+Three-quarter rear-left perspective from slightly above wheel height. Show rear tire width, chain and sprocket, tail bodywork, rear LED light, seat, license-plate bracket, mirrors and tank silhouette.
+
+**REAR VIEW**  
+Perfectly centered direct rear view. Wide rear tire centered in frame, symmetrical mirrors, narrow tail section, glowing red rear LED light, exhaust visible on the right side, chain hardware and compact plate mount.
+
+All turnaround images should use **identical scale relationships, focal length, studio lighting, proportions and surface materials**.
+
+### SPECIFICATIONS PANEL
+
+Create a clean technical information panel titled:
+
+**SPECIFICATIONS**
+
+Use a simple two-column table:
+
+**TYPE:** Sport Bike  
+**ENGINE:** 4-Stroke, Inline 4  
+**DISPLACEMENT:** 600 cc  
+**POWER:** ~115 HP  
+**DRIVE:** Chain  
+**WEIGHT:** ~190 kg  
+**FUEL CAPACITY:** 17 L  
+**SEAT HEIGHT:** 830 mm
+
+Typography should be small, clean, technical and highly legible.
+
+### COLOR PALETTE
+
+Adjacent panel titled:
+
+**COLOR PALETTE**
+
+Display three large rectangular material swatches vertically:
+
+**MATTE BLACK**  
+#1A1A1A
+
+**GUNMETAL**  
+#4D4D4D
+
+**BRUSHED METAL**  
+#B3B3B3
+
+Show subtle differences in material finish rather than flat color alone: matte body paint, dark metallic mechanical finish, and lightly reflective brushed aluminum.
+
+### LOWER DETAILS SECTION
+
+Bottom section titled:
+
+**DETAILS**
+
+Display six equally sized rectangular close-up panels showing the same motorcycle.
+
+**FRONT FAIRING & HEADLIGHTS**  
+Three-quarter close-up of the front nose, narrow LED headlights, tinted windscreen, mirrors, handlebars and angular matte-black fairings.
+
+**FUEL TANK & SEAT**  
+Close-up of the muscular sculpted matte-black fuel tank transitioning into the black rider seat and raised passenger seat.
+
+**ENGINE & FRAME**  
+Detailed close-up of the black inline-four engine casing, frame structure, bolts, footpeg, rearset, exhaust headers and surrounding mechanical components.
+
+**REAR SWINGARM & CHAIN**  
+Close-up of rear wheel assembly, chain, rear sprocket, swingarm, axle hardware and tire texture.
+
+**EXHAUST & TAIL LIGHT**  
+Close-up from the rear quarter showing the cylindrical black-and-metal exhaust outlet, compact tail section, glowing red LED tail light and license-plate bracket.
+
+**FRONT BRAKE & WHEEL**  
+Detailed close-up of the black alloy front wheel, sport tire, large drilled brake rotors, brake caliper, axle and inverted fork.
+
+### VISUAL STYLE
+
+Ultra-photorealistic **high-end motorcycle product photography**, realistic industrial design presentation, physically accurate materials and engineering.
+
+Matte-black painted fairings with soft controlled reflections, realistic black plastic, powder-coated metal, brushed aluminum hardware, rubber tires, steel brake discs, chain grease, bolts, cables and mechanical detail.
+
+Soft diffused studio illumination from large overhead softboxes, subtle contact shadows beneath tires, no harsh highlights, no dramatic rim lighting, no cinematic color grading.
+
+Neutral warm-white seamless background.
+
+Camera should use a **long product-photography focal length with minimal perspective distortion**, allowing the side and front orthographic-like reference views to remain accurate.
+
+Extremely sharp bodywork and mechanical detail, realistic tire tread, brake perforations, chain links, engine components, fasteners and surface transitions.
+
+### CRITICAL CONSISTENCY
+
+Every image must show the **exact same individual motorcycle**.
+
+Keep identical:
+- front fairing geometry
+- headlight shape
+- tinted windscreen
+- mirror design
+- fuel tank shape
+- fairing vents
+- engine configuration
+- frame
+- wheel spoke pattern
+- brake discs
+- fork design
+- swingarm
+- chain and sprocket
+- exhaust shape and location
+- seat
+- rear light
+- plate holder
+- tire size
+- proportions
+- matte-black finish
+
+**Avoid:** different motorcycle models between views, changing exhaust location, inconsistent wheel designs, duplicated brake discs, warped wheels, incorrect mechanical geometry, floating parts, bent forks, missing chain, asymmetric headlights, inaccurate reflections, glossy black body paint, racing decals, logos, manufacturer branding, rider, helmet, kickstand dominating the composition, outdoor environments, dramatic shadows, motion blur, extreme perspective, fisheye distortion, cartoon rendering, concept-sketch appearance, cluttered layout or illegible text.`,
+      },
+      {
+        id: "ref2",
+        number: "REF 02",
+        title: "Baby Ginger · 姜色小猫 Tango",
+        subtitle: "角色设定板 · @Image2 · GPT Image · 3:2",
+        image: "/tutorials/ride-or-paws/refs/REF02_BABY_GINGER.jpg",
+        prompt: `Create a clean professional **character reference / turnaround sheet** for an adorable baby orange tabby kitten named **"BABY GINGER"**, presented like a premium animation character design board.
+
+**Character:** extremely cute British Shorthair kitten, red/orange tabby coat, very round chubby body, short legs, tiny paws, fluffy dense realistic fur, oversized round head, small triangular ears, subtle darker orange forehead stripes, cream-colored muzzle/chest/belly, huge glossy blue-gray eyes, tiny pink nose. The kitten is standing upright on its hind legs with its front paws held softly in front of its chest. It wears a **baby-blue pacifier** with a translucent silicone ring and a tiny beige paw-print illustration in the center. Sweet, innocent, playful baby expression.
+
+**Overall layout:** large horizontal **3:2 character reference sheet**, warm ivory/off-white background, subtle beige border, sophisticated editorial layout, clean spacing, rounded rectangular information panels, thin light-tan outlines, dark warm-brown typography. High-end animation studio / character bible aesthetic.
+
+Top left:
+large bold hand-drawn rounded title **"BABY GINGER"** with a small paw-print icon beside it. Underneath, smaller text: **"CHARACTER REFERENCE SHEET"** with thin decorative horizontal lines.
+
+Left information panel:
+- **NAME:** Baby Ginger
+- **SPECIES:** Cat
+- **BREED:** British Shorthair (Red Tabby)
+- **GENDER:** Unknown
+- **AGE:** Kitten
+- **PERSONALITY:** Curious, Sweet, Playful
+- **ACCESSORY:** Blue Pacifier
+
+Across the upper center and right, show **four full-body turnaround views of exactly the same kitten**, perfectly consistent character design and proportions:
+1. **FRONT VIEW** — looking directly toward camera, standing upright, paws together, blue pacifier visible.
+2. **SIDE VIEW** — exact 90-degree profile facing left, upright pose, tail visible behind.
+3. **BACK VIEW** — exact rear view showing fluffy orange fur, striped back and tail.
+4. **3/4 VIEW** — three-quarter frontal angle, cute symmetrical pose, pacifier visible.
+
+Lower-left panel titled **"DETAILS"**, containing four close-up reference images arranged in a 2×2 grid:
+- close-up frontal face with blue pacifier
+- close-up of front paws/chest fur
+- side-profile head showing ear, eye, whiskers and pacifier
+- close-up rear body/tail and tabby fur pattern
+
+Lower-middle panel titled **"COLOR PALETTE"**, showing six clean circular swatches:
+deep burnt orange, warm golden tan, pale cream, dusty peach pink, dark charcoal gray, soft baby blue.
+
+Below it, separate panel titled **"ACCESSORY"**, displaying a large isolated product-style view of the **baby-blue pacifier**, centered on white, translucent ring, pale center button with a small paw-print symbol.
+
+Lower-right wide panel titled **"EXPRESSIONS"**, showing three consistent head-and-shoulders portraits of Baby Ginger:
+- **CURIOUS:** wide attentive eyes
+- **HAPPY:** eyes gently closed, visibly cheerful expression
+- **SURPRISED:** very wide round eyes
+
+Maintain **perfect identity consistency** across every image: identical face, eye color, fur markings, body proportions, ears, paws, pacifier shape and blue color.
+
+Visual style: **photorealistic but irresistibly cute**, premium commercial pet photography blended with polished 3D character-reference presentation, highly detailed individual fur strands, soft fluffy texture, realistic whiskers, subtle subsurface softness in ears and nose, gentle studio lighting, soft natural shadows beneath feet, warm neutral tones, extremely clean background, centered compositions, sharp subject details, no dramatic lighting, no cinematic environment.
+
+Typography and graphic design should feel professionally art-directed, minimal, charming and readable, with strong visual hierarchy and lots of negative space.
+
+**Avoid:** inconsistent kitten designs, different fur patterns between views, distorted paws, extra limbs, duplicated tails, mismatched pacifiers, overly cartoonish anatomy, cluttered background, harsh shadows, saturated colors, dramatic perspective, random props, malformed text, cropped bodies.`,
+      },
+      {
+        id: "ref3",
+        number: "REF 03",
+        title: "金门大桥空镜",
+        subtitle: "场景空镜板 · @Image3 · 设定匹配",
+        image: "/tutorials/ride-or-paws/refs/REF03_GOLDEN_GATE.jpg",
+        prompt: `Empty scene plate, no people, no vehicles: a wide low chase-camera view down the roadway deck of a very large red-orange steel suspension bridge matching the real famous San Francisco Golden Gate Bridge — the tall red towers and sweeping main cables overhead, thin vertical suspender ropes, painted lane lines rushing along the asphalt, brown-green headland hills and blue bay beyond, bright sunny sky. Warm cinematic daylight, realistic colours, mild motion blur on the road, photoreal, no text.`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "接近 · ~3s:摩托冲过桥面,风吹平猫毛;黑衣追兵从右后追上并排挤靠",
+      },
+      {
+        number: 2,
+        description:
+          "第一枪 · ~3s:Tango 冷静举步枪瞄准追兵开火,枪口火光,表情始终面无",
+      },
+      {
+        number: 3,
+        description:
+          "炸飞 · ~3s:追兵摩托爆炸翻滚坠下;Tango 收枪扫视,又有追兵逼近",
+      },
+      {
+        number: 4,
+        description:
+          "机枪扫射 · ~5s:拽起重机枪、弹链晃动,对整队追兵持续扫射,弹壳飞溅",
+      },
+      {
+        number: 5,
+        description:
+          "混战 · ~5s:追兵接连起火、侧滑翻车,烟雾碎片淹没身后路面;猫冷静甩枪追踪",
+      },
+      {
+        number: 6,
+        description:
+          "胜利巡航 · ~4s:身后清空冒烟,驶向桥远端红塔与褐色山岬;收枪坐起,喘息一拍",
+      },
+      {
+        number: 7,
+        description:
+          "冲出火球 · ~5s:身后巨爆吞没画面,英雄摩托破烟冲出;Tango 面无表情回看镜头。定格一拍,结束",
+      },
+    ],
+    video_prompt: {
+      title: "Ride or paws · Golden Gate · ~28s · 1 Shot / 7 Beats",
+      subtitle: "Seedance 2.5 · continuous POV · sound on",
+      content: `[GLOBAL] A continuous action-movie chase in ONE generation, about 28 seconds, ONE unbroken POV shot with no cuts. Photoreal, warm cinematic daylight, realistic colours, high energy — a shaky CHASE/TAIL CAMERA locked just behind a speeding motorcycle, framing the cat perched on the bike's tail, heavy motion blur and speed, the frame rocking and juddering with the ride, never smooth-stabilized. SETTING: racing across the roadway deck of the real famous San Francisco Golden Gate Bridge (match @Image3 ) — red towers and cables overhead, lane lines ripping past, blue bay and brown hills beyond, bright sun. THE HERO BIKE (match @Image1 : a matte-black sports motorcycle driven by an anonymous rider in full black leathers and a black full-face helmet; TANGO the ginger cat (match @Image2 ) sits on the flat tail seat FACING BACKWARD toward the camera and toward the pursuers, calm and deadpan the entire time. THE PURSUERS: anonymous riders in black leathers and black helmets on black sportbikes, chasing from behind. TANGO'S LIFE: never still — fur streaming in the wind, ears flicking, head turning to track threats, tail lashing, blinking; his face stays flatly serious no matter the chaos (that deadpan IS the comedy — never cartoonish, never mugging). PHYSICS: real weight to the bikes, real recoil, real fire and debris. Diegetic sound + score: an epic driving action score under the whole thing, roaring engines, wind, gunfire, metal impacts and explosions; no dialogue. No on-screen text. No cuts.
+
+Shot 1: ONE continuous POV shot, about 28 seconds, chase camera just behind the black hero bike — Tango the ginger cat perched on the tail seat facing back at us, the black rider ahead of him, the red bridge and road tearing past. (1) THE APPROACH, ~3s: the bike rockets across the bridge; wind flattening Tango's fur; a black-clad pursuer on a black sportbike surges up from the right rear and pulls alongside, leaning in aggressively. (2) FIRST KILL, ~3s: Tango calmly raises a rifle to his shoulder, sights down it at the pursuer, and FIRES — a hard muzzle flash — the deadpan face never changing. (3) BLOWN AWAY, ~3s: the pursuer's bike ERUPTS in a ball of fire and tumbles end over end off the road behind; Tango lowers the rifle, sits back, tail flicking, head turning to scan — and another pursuer is already closing in. (4) THE MACHINE GUN, ~5s: Tango hauls up a heavy belt-fed machine gun, a brass ammo belt swinging, braces it against his little body and UNLOADS on a whole pack of pursuing bikers — sustained muzzle flashes strobing, spent casings flying, the deadpan face lit by the flashes. (5) MAYHEM, ~5s: pursuing bikes are hit one after another — bursting into flame, high-siding, cartwheeling, smoke and debris flooding the road behind; Tango swings the barrel to track them, relentless and calm. (6) VICTORY CRUISE, ~4s: the road behind falls empty and smoking as the bike reaches the far end of the bridge (the far red tower and brown headlands ahead); Tango lowers the weapon, sits up on the tail, fur ruffling, tail swaying, scanning the clear road — a beat of calm. (7) OUT OF THE FIREBALL, ~5s: behind them a HUGE fireball erupts across the bridge, flame and smoke swallowing the frame — the hero bike punches straight out through the fire and smoke, embers streaking past, wreckage burning on the bridge behind; Tango turns his head and looks flatly back into the lens as they ride away. Hold one beat. End.`,
+    },
+  },
+  {
     id: "painted-tunnel",
     title: "猫鼠画隧道",
     subtitle: "Tom and Jerry Live Action · Painted Tunnel",
