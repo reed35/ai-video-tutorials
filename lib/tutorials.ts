@@ -98,6 +98,8 @@ export const tutorials: Tutorial[] = [
           "定格 · ~5s:前景手略放低罐子、金字反光;屏上 Elena 站直、双手大吹吻,笑声里出租车与人群继续流动。定格,结束",
       },
     ],
+    constraints:
+      "一镜到底广角手持不推近;屏内人物始终小于屏幕;不要加 BGM(仅环境声);尺度锁定;开场仅穿背心内裤赤脚、牛仔裤在地上。",
     video_prompt: {
       title: "HR Replasty · Anamorphic Billboard · ~30s · 1 Shot / 6 Beats",
       subtitle: "Seedance 2.5 · continuous wide handheld · diegetic sound only",
@@ -429,6 +431,8 @@ Typography and graphic design should feel professionally art-directed, minimal, 
           "冲出火球 · ~5s:身后巨爆吞没画面,英雄摩托破烟冲出;Tango 面无表情回看镜头。定格一拍,结束",
       },
     ],
+    constraints:
+      "一镜到底连续追逐;猫坐尾座始终面向镜头;猫表情始终面无(deadpan);不要平滑稳定器;真实物理重量感。",
     video_prompt: {
       title: "Ride or paws · Golden Gate · ~28s · 1 Shot / 7 Beats",
       subtitle: "Seedance 2.5 · continuous POV · sound on",
@@ -528,6 +532,8 @@ Shot 1: ONE continuous POV shot, about 28 seconds, chase camera just behind the 
       { number: 12, description: "广角:扑向隧道,脸撞墙贴扁" },
       { number: 13, description: "同构图:滑下瘫倒,晕眩结束" },
     ],
+    constraints:
+      "画的隧道始终在画面右侧;角色始终从左向右冲;不要加 BGM;Shot 8 禁止中途切镜。",
     video_prompt: {
       title: "Painted Tunnel · 30s · 13 Shots",
       subtitle: "Seedance 2.5 · 16:9 · sound on",

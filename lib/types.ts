@@ -14,6 +14,7 @@ export interface Tutorial {
   steps: Step[];
   references_detail: Reference[];
   storyboard: Shot[];
+  constraints?: string;
   video_prompt: VideoPrompt;
 }
 

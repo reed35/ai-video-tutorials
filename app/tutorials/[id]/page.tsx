@@ -185,11 +185,12 @@ export default async function TutorialPage({
               </li>
             ))}
           </ol>
-          <div className="mt-3 p-3 px-3.5 rounded-xl bg-[rgba(251,113,133,0.08)] border border-[rgba(251,113,133,0.25)] text-[#fecdd3] text-[13px]">
-            <b>关键约束:</b>
-            画的隧道始终在画面右侧;角色始终从左向右冲;不要加 BGM;Shot 8
-            禁止中途切镜。
-          </div>
+          {tutorial.constraints && (
+            <div className="mt-3 p-3 px-3.5 rounded-xl bg-[rgba(251,113,133,0.08)] border border-[rgba(251,113,133,0.25)] text-[#fecdd3] text-[13px]">
+              <b>关键约束:</b>
+              {tutorial.constraints}
+            </div>
+          )}
         </div>
       </section>
 
