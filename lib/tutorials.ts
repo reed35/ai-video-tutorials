@@ -620,7 +620,196 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
     video_prompt: {
       title: "老上海葱油饼 · Shanghai Scallion Pancake · 30s · 16:9",
       subtitle: "Seedance 2.5 · 日式动漫美食电影风格",
-      content: `(简化的prompt内容已省略)`,
+      content: `Seedance 2.5 中文提示词｜老上海葱油饼
+
+创作一支 30 秒、节奏明快、具有电影感的日式动漫美食视频，内容是在老上海街边小吃铺制作传统葱油饼，并且完全根据以下文字描述生成。
+
+主角是一张厚实、小巧、圆形的上海葱油饼：
+表面金黄，带有深浅自然的焦斑，
+外壳酥脆，内部柔软，具有清晰的面皮层次与葱花。
+采用先煎后烘的制作过程。
+通过自然的时间跳切，表现实际需要更长时间的揉面、煎制与烘烤。
+
+重要要求：
+不要展示、重现、描摹、参考或模仿任何分镜图、草图、参考图、画格、标注或源素材。
+只生成原创的日系动漫风格动画。
+场景、食物、器具与生活细节体现老上海传统小吃铺的氛围。
+
+风格（STYLE）
+
+高质量日本动画电影风格，
+具有电影感的清晨暖光，
+食物材质超细节表现，
+真实的面团形变与烹饪物理效果，
+可见的轻微热气与锅边油烟，
+浅景深，
+微距特写镜头，
+顺滑而克制的镜头运动。
+
+场景是一间位于上海老弄堂口的传统葱油饼小铺。
+深色木质操作台、旧铁煎锅、嵌在灶台中的小烘炉，
+背景隐约可见石库门门框、灰砖墙与木窗。
+环境整洁，器具带有长期使用形成的自然痕迹。
+
+晨光从铺面一侧斜照进来，
+照亮面粉颗粒、面团上的薄油光和升起的热气。
+色彩以暖金色、木褐色、灰砖色与鲜葱绿色为主。
+环境作为柔和背景，镜头始终以食物和制作动作作为主体。
+
+只出现同一位摊主的双手与前臂，
+穿着素色棉布袖口，不展示人物面部。
+
+整体剪辑快速而富有韵律。
+通过动作方向、圆形轮廓、食材质感与相近构图进行自然匹配剪辑（match cuts）。
+每个镜头只有一个清晰的主要动作。
+关键的擀压、翻面、出炉与掰开动作保持连贯。
+
+时间轴（TIMELINE）
+
+0–2 秒 —— 老弄堂里的清晨
+近景镜头从小铺木窗边缓缓向内移动。
+清晨阳光斜落在木质案板上。
+摊主将一块已经醒好的柔软面团放在案板中央。
+面团落下时轻轻变形，表面细腻，带有柔和光泽。
+背景中的石库门与灰砖墙保持虚化。
+
+2–4.5 秒 —— 揉压面团
+切换至案板上方的斜俯拍特写。
+掌根向前推压面团，再将其折回。
+面团随着手掌自然伸展、折叠，呈现柔软而有韧性的质感。
+案板上的少量面粉被推开，留下清晰的揉压痕迹。
+
+4.5–6.5 秒 —— 切葱
+微距侧拍：洗净并沥干的青葱整齐放在案板上。
+刀刃有节奏地落下，切出细小均匀的葱花。
+葱白与翠绿葱叶交错散开。
+切口湿润，新鲜葱段随着刀刃轻轻跳动。
+镜头沿刀刃前进的方向短距离跟随。
+
+6.5–9 秒 —— 擀开与抹油
+通过手部向前移动的动作匹配，切换到擀面镜头。
+一份面剂被擀成较薄的长形面片。
+用小勺背将少量半凝固的猪油均匀抹开，
+在面片上形成一层薄薄的润泽油膜。
+随后撒上少量盐和切好的葱花。
+葱花自然散落在面片上，不堆成厚厚一团。
+
+9–12 秒 —— 卷起与盘圆
+保持同一个斜俯拍镜头。
+双手从面片长边开始，将其卷成细长面卷。
+随后把面卷从一端盘成紧凑的螺旋形，
+将末端轻轻压在底部。
+面团随着手指弯曲，葱花被包入层层面皮之间。
+动作清楚、连续，面团不突然改变形状。
+
+12–14 秒 —— 压成圆饼
+切换到贴近案板的低角度特写。
+手掌缓缓压下螺旋面团，形成厚实的小圆饼。
+饼身逐渐展开，边缘自然变圆，
+表面仍保留淡淡的盘卷纹理，
+局部能看到薄面皮下透出的绿色葱花。
+
+14–17 秒 —— 入锅煎制
+利用圆饼的轮廓进行匹配剪辑，切到旧铁煎锅的斜俯拍。
+摊主将圆饼平稳放入带有薄层热油的锅中。
+接触锅面的瞬间，饼边出现细密气泡。
+热油沿圆饼边缘轻轻流动。
+通过一次自然的时间跳切，
+表现饼边逐渐定型，并染上浅金黄色。
+
+17–19.5 秒 —— 翻面
+低机位微距特写。
+金属锅铲从饼底完整托起，将葱油饼翻面一次。
+翻转时露出已经煎成金黄色的一面，
+表面分布着深浅不一的焦斑与细小鼓泡。
+圆饼落回锅中，响起清脆的滋啦声。
+饼身保持完整，厚度与大小不变。
+
+19.5–22 秒 —— 入炉烘香
+侧面近景。
+摊主用长柄铲将煎至两面金黄的葱油饼送入小烘炉，
+平放在炉内烤架上。
+暖橙色炉光映亮饼面。
+以时间跳切切至炉口特写：
+葱油饼表面变得更干爽酥脆，
+边缘的薄面层略微翘起，焦斑颜色加深。
+轻微热气从炉口缓缓逸出。
+
+22–24 秒 —— 出炉
+镜头跟随长柄铲向外移动。
+烘好的葱油饼被轻轻放到木台上的金属沥油网上。
+落下时发出轻微而干脆的触碰声。
+晨光掠过起伏的饼面，
+细致表现酥壳、焦斑与少量露出的葱花。
+表面只保留薄薄油光，不滴油。
+
+24–27 秒 —— 掰开特写
+极近距离拍摄。
+双手隔着一张无文字的牛皮纸，轻轻掰开葱油饼。
+外层酥壳先出现裂纹，随后自然断开，
+少量金黄色碎屑落在纸上。
+内部柔软的面层随动作短暂牵连，再缓缓分开。
+断面露出层层面皮与翠绿、深绿交错的熟葱花，
+细薄热气从中心升起。
+重点表现外脆内软的质感。
+
+27–30 秒 —— 最终展示（Hero Reveal）
+两半葱油饼放在铺有无文字牛皮纸的竹编小盘中，
+其中一半略微倾斜，清楚展示内部层次。
+金黄酥壳、深色焦斑、柔软面层与葱花同时可见。
+
+镜头从断面微距缓慢后拉，
+逐渐带出木质窗台和虚化的老上海弄堂。
+清晨暖光照亮薄薄升起的热气，
+远处隐约传来一声自行车铃。
+以温暖、朴素而精致的动漫美食电影感结尾。
+
+音频（AUDIO）
+
+轻快、温暖、带有老上海清晨气息的爵士器乐，
+速度为 105–115 BPM，
+使用柔和钢琴、拨弦低音提琴与轻巧的刷奏鼓，
+加入少量温润的单簧管旋律。
+无歌词、无人声旁白。
+音乐保持轻盈，不盖过制作声音。
+
+同步加入真实、细腻的 ASMR 烹饪音效：
+面团落在案板上的轻响、
+掌根揉压面团的声音、
+有节奏的切葱声、
+擀面杖滚动声、
+撒落葱花的细微声响、
+圆饼入锅后的滋啦声、
+锅铲接触铁锅的声音、
+出炉后轻放在金属网上的声音、
+牛皮纸轻轻摩擦的声音、
+以及掰开酥壳时清晰的碎裂声。
+
+掰开葱油饼时，适当降低背景音乐，
+突出外壳断裂的酥脆声音。
+结尾用一声远处轻巧的自行车铃自然收尾。
+
+负面约束（NEGATIVE）
+
+不要出现任何：
+分镜图、参考图、草图、画格、边框、数字、箭头、标注、
+字幕、说明文字、UI、Logo、水印或文字叠加。
+
+不要出现其他菜品。
+不要加入鸡蛋、芝士、火腿、辣酱或无关配料。
+不要把葱油饼制作成薄脆煎饼、手抓饼、披萨或带大块馅料的馅饼。
+不要出现芝士式拉丝、夸张爆汁或不合理的食物膨胀。
+不要出现浓烟、火焰包围食物或过量飞溅的热油。
+不要出现现代塑料包装、霓虹灯或日式店铺装饰。
+
+避免多余手指、手部穿透食物、厨具变形，
+以及面团、葱花或成品突然增多、消失、变换形状。
+
+确保整支视频中的：
+同一张葱油饼的大小与厚度、
+摊主的双手与衣袖、
+厨具、操作台、光线方向与小铺环境
+都保持视觉一致性。`,
     },
   },
   {
@@ -730,7 +919,61 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
     video_prompt: {
       title: "日式猪排饭 Katsudon · 30s · 16:9",
       subtitle: "Seedance 2.5 · 日式动漫美食电影风格",
-      content: `(简化的prompt内容已省略)`,
+      content: `Create a 30-second fast-paced cinematic Japanese anime cooking video showing the preparation of authentic katsudon, entirely from the text description below.
+
+IMPORTANT: Do not display, recreate, trace, reference, or imitate any storyboard, sketch, reference image, panel, annotation, or source material. Generate only original anime-style animation.
+
+STYLE
+
+High-quality Japanese anime film style, cinematic summer lighting, ultra-detailed food textures, realistic cooking physics, visible steam and moisture, shallow depth of field, macro close-ups, smooth camera movement, warm Japanese kitchen atmosphere. Fast rhythmic editing with natural match cuts based on movement, shape, texture, and composition.
+
+TIMELINE
+
+0–2.5s — Prepare Pork
+Close-up of hands pounding a thick pork loin with a wooden mallet on a cutting board. The meat gradually flattens and its fibers loosen. Sprinkle salt and pepper evenly. Crisp rhythmic impacts.
+
+2.5–5s — Bread the Pork
+Quick match cuts: press the pork into flour, dip into beaten egg, then firmly coat with coarse panko breadcrumbs. Show realistic egg dripping and breadcrumbs adhering to the surface.
+
+5–7.5s — Fry
+Lower the breaded pork into hot golden oil. Intense bubbling surrounds the cutlet as the crust turns golden brown and crispy. Warm cinematic lighting and detailed oil movement.
+
+7.5–9.5s — Slice
+Place the fried tonkatsu on a wooden board. A sharp knife cuts it into even strips. The crispy crust cracks naturally, revealing juicy white pork with gentle steam escaping.
+
+9.5–12s — Simmer Dashi & Onion
+Thinly sliced onions gently simmer in amber dashi inside a shallow pan. Small bubbles rise while the onions become translucent. Chopsticks gently move them through the broth.
+
+12–14s — Add Tonkatsu
+Place the sliced tonkatsu carefully over the simmering onions using chopsticks. The broth begins soaking into the crispy edges while steam rises.
+
+14–16.5s — Pour Egg
+Slowly pour beaten golden egg over the tonkatsu and onions. The egg spreads naturally through the gaps and begins setting around the hot edges.
+
+16.5–19s — Set the Egg
+Close-up of the egg gently coagulating over low heat. Edges become soft and golden while the center remains glossy, slightly runny, and trembling. No stirring.
+
+19–21s — Prepare Rice
+A white ceramic donburi bowl receives a generous mound of steaming Japanese short-grain rice. The rice looks fluffy and slightly glossy.
+
+21–24s — Assemble
+Carefully slide the egg-and-tonkatsu mixture from the pan onto the rice. The egg settles naturally in a soft wave while dashi lightly absorbs into the rice.
+
+24–26s — Final Close-Up
+The finished katsudon rests on the counter. Glossy egg slowly settles over the tonkatsu and rice, gently trembling. Slow cinematic push-in.
+
+26–30s — Hero Reveal
+Present the finished katsudon in a traditional blue-and-white ceramic bowl on a wooden surface. Golden egg covers crispy tonkatsu over glossy rice, topped with fresh mitsuba. Steam rises as the camera slowly arcs around the bowl for a beautiful anime-food-film ending.
+
+AUDIO
+
+Bright 1980s-inspired Japanese city-pop instrumental, 110–120 BPM, with subtle koto and light chime percussion. Synchronize realistic ASMR cooking sounds: mallet impacts, knife slicing, frying sizzle, bubbling dashi, chopsticks, egg pouring, steam, and a soft ceramic clink.
+
+End with one delicate wind-chime tone during the final reveal.
+
+NEGATIVE
+
+No storyboard, reference image, sketch, panels, borders, numbers, arrows, annotations, subtitles, captions, UI, logos, or text overlays. No unrelated ingredients or dishes. Katsudon only. Keep the food, hands, utensils, lighting, and environment visually consistent throughout.`,
     },
   },
   {
