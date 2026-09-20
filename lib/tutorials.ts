@@ -2,6 +2,67 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "techiebysa-logo-embroidery-sew",
+    title: "刺绣缝 Logo · 线自己爬上织物",
+    subtitle: "X · @TechieBySA · 约10秒 · 16:9",
+    description:
+      "极限微距镜头记录刺绣线自主编织 Logo 的魔法时刻：彩色丝线从棉布表面升起，逐排铺设紧密缎纹针迹，勾勒标志轮廓，拉紧成立体纹理直至完整。由 Gemini Omni Flash 1.1 在 Pika 平台生成。需上传你的 Logo 参考图。",
+    video: "/tutorials/techiebysa-logo-embroidery-sew/demo-web.mp4",
+    poster: "/tutorials/techiebysa-logo-embroidery-sew/poster.jpg",
+    duration: "约10秒",
+    shots: 1,
+    references: 0,
+    model: "Gemini Omni Flash 1.1",
+    style: "刺绣微距 · Logo 缝线成型",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/TechieBySA/status/2093388159602041067",
+    sourceAuthor: "@TechieBySA",
+    sourcePlatform: "X",
+    sourceImpressions: 224974,
+    tags: [
+      "约10秒",
+      "16:9 横屏",
+      "Gemini Omni Flash 1.1",
+      "Pika",
+      "需上传 Logo 参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备 Logo 参考图",
+        description:
+          "上传你的 Logo 图片。可以是公司标志、品牌 Logo、个人标志或任何你想要刺绣效果的图形。建议使用清晰、轮廓分明的设计。",
+      },
+      {
+        number: 2,
+        title: "在 Pika 平台设置 Gemini Omni Flash 1.1",
+        description:
+          "打开 Pika，选择 Gemini Omni Flash 1.1 模型。上传你的 Logo 参考图作为引导图像。这将确保刺绣线编织出你想要的图案。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词生成",
+        description:
+          "使用下方完整提示词，确保包含所有细节：极限微距拍摄、编织棉布、彩色刺绣线自主编织、紧密缎纹针迹、慢镜头延时节奏、柔和侧光、浅景深、可见织物纤维和真实丝线光泽。提示词来自 @TechieBySA 自回复（https://x.com/TechieBySA/status/2093388166036382197），创意由 @StevenWommack 提供。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "整段一镜：起始时编织棉布空白。彩色刺绣线从表面升起，自主编织就位，逐排铺设紧密缎纹针迹，勾勒 Logo 轮廓。缝线区域稳步扩展，丝线拉紧成立体刺绣纹理，直至完整 Logo 完成。镜头保持稳定，慢镜头延时节奏，令人满足。柔和自然侧光，浅景深，可见织物纤维和真实丝线光泽。无人手，丝线自主运动。一镜到底无场景切换。",
+      },
+    ],
+    constraints:
+      "需上传你的 Logo 参考图；极限微距固定机位；丝线自主编织无人手；一镜到底无场景切换；柔和侧光浅景深；16:9 横屏；约10秒；来源 @TechieBySA / X / 224974 曝光；提示词来自 https://x.com/TechieBySA/status/2093388166036382197 自回复；创意 @StevenWommack。",
+    video_prompt: {
+      title: "Logo 刺绣编织微距 · 约10秒 · 16:9",
+      subtitle: "Gemini Omni Flash 1.1 · Pika · 需上传 Logo 参考图",
+      content: `Extreme macro shot of woven cotton shirt fabric, empty at first. Colored embroidery threads rise from the surface and weave themselves into place, laying down tight satin stitches row by row, tracing out the logo. The stitched area grows steadily across the frame, thread pulling taut and raising into dimensional embroidered texture, until the full logo is complete. Camera holds steady, slow satisfying timelapse pace. Soft natural side light, shallow depth of field, visible fabric fibers and realistic thread sheen. No hands, thread moves on its own. One shot no scene change.`,
+    },
+  },
+  {
     id: "aiwithkhan-rope-name-smiling",
     title: "红绳拼字 Smiling · 定格小人工坊",
     subtitle: "X · @AIwithkhan · 约10秒 · 16:9",
