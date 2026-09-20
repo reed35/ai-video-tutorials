@@ -2,6 +2,691 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "zephyra-macbook-pro-unbox",
+    title: "MacBook Pro 开箱 · 创作者向评测",
+    subtitle: "X · @ZephyraLeigh · Seedance 2.5 · 约15秒 · 16:9",
+    description:
+      "Zephyra Leigh 带来的 MacBook Pro 专业开箱评测视频。从开箱到首次上手,展示高分辨率显示屏、强大处理器与快速存储等创作者关注的核心特性。包含实际视频编辑工作流测试,自然流畅的产品展示风格。",
+    video: "/tutorials/zephyra-macbook-pro-unbox/demo-web.mp4",
+    poster: "/tutorials/zephyra-macbook-pro-unbox/poster.jpg",
+    duration: "约15秒",
+    shots: 5,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "YouTube 科技评测 · 创作者向",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ZephyraLeigh/status/2099759853103194265",
+    sourceAuthor: "@ZephyraLeigh",
+    sourcePlatform: "X",
+    sourceImpressions: 3737,
+    tags: [
+      "约15秒 · 专业开箱",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "YouTube 评测风格",
+      "创作者工作流",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "设定 YouTube 科技评测工作室",
+        description:
+          "干净的桌面、专业摄像机、桌面麦克风、显示器和精致的创作者设备背景。Zephyra 穿着全新的高级创作者服装:黑色无袖高领上衣、炭灰色高腰阔腿裤、银色手表和耳环。",
+      },
+      {
+        number: 2,
+        title: "强烈视觉钩子 + 开箱",
+        description:
+          "从 MacBook 盒子的特写开始,拉开密封条、打开盒盖、取出笔记本。展示铝合金机身、键盘、触控板和端口的细节微距镜头。",
+      },
+      {
+        number: 3,
+        title: "创作者功能 + 实测",
+        description:
+          "连接外置 SSD,打开大型视频项目,在编辑软件和多个浏览器窗口间流畅切换。展示高分辨率显示屏、强大性能和长续航对创作者的实际价值。",
+      },
+      {
+        number: 4,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整 YouTube Shorts 笔记本开箱提示词。专业摄影、自然产品互动、真实的创作者评测语言。Zephyra 只在开场介绍时说全名,之后保持自然对话。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–4s 强烈视觉钩子:特写 MacBook 盒子滑向镜头,拉开密封条(咔哒声)。切回 Zephyra 脸部:'嘿大家好,我是 Zephyra Leigh——今天我们开箱 MacBook Pro。'",
+      },
+      {
+        number: 2,
+        description:
+          "4–9s 开箱:俯拍角度,掀开盒盖,取出笔记本,打开显示屏,手指滑过键盘。'哇...这真的很简洁。'展示薄铝机身、键盘、触控板、端口。",
+      },
+      {
+        number: 3,
+        description:
+          "9–14s 盒内物品:整齐摆放内容物。'里面有 MacBook、USB-C 电源适配器、充电线和说明书。'连接充电线并打开笔记本。",
+      },
+      {
+        number: 4,
+        description:
+          "14–21s 功能 + 益处:显示屏和键盘特写,浏览桌面,打开视频编辑时间线并流畅擦洗高分辨率片段。'对编辑来说,好处很简单——处理高要求视频项目的同时保持快速便携。'",
+      },
+      {
+        number: 5,
+        description:
+          "21–26s 快速创作者测试:连接外置 SSD,打开大型视频项目,在编辑软件和多个浏览器窗口间切换。'目前多任务处理感觉非常流畅。'首次评价:'第一印象?高级构建、漂亮显示屏、充足动力。现在想看它如何处理完整编辑工作负载。'自然自信微笑。",
+      },
+    ],
+    video_prompt: {
+      title: "MacBook Pro Unboxing · Creator Review · ~15s",
+      subtitle: "Seedance 2.5 · 16:9 · YouTube Shorts Tech Review",
+      content: `Seedance 2.5 Video PROMPT:
+
+Create an ultra-realistic professional YouTube Shorts laptop unboxing featuring Zephyra Leigh, the same female technology creator. Preserve her exact face, hairstyle, body proportions, voice, personality, and recognizable creator identity.
+
+OUTFIT: Give Zephyra a completely new premium creator outfit: a fitted black sleeveless mock-neck top, high-waisted charcoal wide-leg trousers, elegant silver watch, small silver earrings, and a thin bracelet. Polished soft waves hairstyle, natural professional makeup. Keep the outfit identical throughout the entire video.
+
+She is filming in a sophisticated professional tech-review studio with a clean desk, professional camera, desk microphone, monitor, and subtle creator equipment in the background.
+
+0–4s — STRONG VISUAL HOOK
+
+Start with an extreme close-up of Zephyra sliding the sealed MacBook box directly toward the camera.
+
+She quickly peels the pull-tab.
+
+CLICK.
+
+The lid begins to rise.
+
+Cut immediately to her face as she reacts naturally:
+
+"Hey everyone, I'm Zephyra Leigh — today we're unboxing a MacBook Pro. Let's see if this is actually creator-worthy."
+
+4–9s — THE UNBOXING
+
+Overhead shot.
+
+She lifts the lid, revealing the laptop perfectly positioned inside.
+
+She removes the MacBook, lifts off the protective paper, opens the display, and runs her fingers across the keyboard.
+
+"Wow… this is seriously clean."
+
+Show the thin aluminum body, keyboard, trackpad, display, ports, and charging connector through detailed macro shots.
+
+9–14s — WHAT'S IN THE BOX
+
+She places the contents neatly beside the laptop.
+
+"Inside, you've got the MacBook, the USB-C power adapter, charging cable, and documentation."
+
+She connects the charging cable and opens the laptop.
+
+14–21s — FEATURES & BENEFITS
+
+Close-up of the display and keyboard while she navigates the desktop.
+
+She says:
+
+"The big reasons creators look at this are the high-resolution display, powerful processor, fast storage, and long battery life."
+
+She opens a video-editing timeline and smoothly scrubs through a high-resolution clip.
+
+"For editing, the benefit is simple — you can work with demanding video projects while keeping everything fast and portable."
+
+21–26s — QUICK CREATOR TEST
+
+Show her connecting an external SSD, opening a large video project, and switching between editing software and multiple browser windows.
+
+She says:
+
+"Multitasking feels really smooth so far."
+
+26–30s — FIRST VERDICT
+
+She closes the laptop halfway, looks directly into the camera, and says:
+
+"First impression? Premium build, beautiful display, and plenty of power. Now I want to see how it handles a full editing workload."
+
+Natural confident smile.
+
+CAMERA: professional YouTube tech-review cinematography, cinematic talking-head shot, overhead unboxing camera, extreme macro product details, smooth slider movement, realistic autofocus and focus breathing.
+
+AUDIO: crystal-clear professional female creator voice, realistic cardboard sounds, pull-tab peel, lid opening, protective-paper movement, keyboard clicks, charging connection sound, subtle studio ambience.
+
+PERFORMANCE: Zephyra behaves like an experienced technology and creator-focused reviewer. She speaks naturally, explains what each feature is, how it works, and the practical benefit for creators, without sounding like a commercial.
+
+VISUAL QUALITY: ultra-photorealistic, premium YouTube production, realistic skin texture, accurate hands and fingers, physically accurate laptop, realistic metal and glass reflections, natural facial expressions, believable product handling.
+
+IMPORTANT: Say "Zephyra Leigh" only during the opening introduction. After that, use only "Zephyra" if referring to her. Keep her new outfit consistent. No sci-fi elements, no holograms, no exaggerated reactions, no cartoon, no anime, no distorted hands, no extra fingers, no glitches, no fake-looking product interaction.`,
+    },
+  },,
+  {
+    id: "zephyra-india-1907-well",
+    title: "1907 印度村落打水 · 仿古默片",
+    subtitle: "X · @ZephyraLeigh · 推测早期电影模型 · 约15秒 · 16:9",
+    description:
+      "1907 年印度北部村庄的真实生活场景:三位村妇前往石井打水,装满陶罐,互相帮扶返回家中。黑白加淡褐色调、厚重颗粒、闪烁曝光、划痕尘点、不均匀帧率、柔焦与暗角,完美还原早期手摇电影摄影机的质感。带默片字幕卡。",
+    video: "/tutorials/zephyra-india-1907-well/demo-web.mp4",
+    poster: "/tutorials/zephyra-india-1907-well/poster.jpg",
+    duration: "约15秒",
+    shots: 5,
+    references: 0,
+    model: "未在原帖标明（仿古默片系列）",
+    style: "1907 早期电影 · 村落纪实",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ZephyraLeigh/status/2099016930506260750",
+    sourceAuthor: "@ZephyraLeigh",
+    sourcePlatform: "X",
+    sourceImpressions: 2739,
+    tags: [
+      "约15秒 · 历史还原",
+      "16:9 横屏",
+      "1907 仿古默片",
+      "手摇电影质感",
+      "南亚村落纪实",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "设定 1907 年印度村庄场景",
+        description:
+          "石井、土砖房、土路、陶罐、编织篮、树木,远处几辆牛车。三位成年村妇穿 1900 年代初真实南亚服饰:长棉纱丽、朴素披肩、传统首饰、整齐包发。服装历史准确且实用。",
+      },
+      {
+        number: 2,
+        title: "还原早期手摇电影视觉风格",
+        description:
+          "黑白加淡褐色调、厚重颗粒、尘点、划痕、闪烁曝光、柔焦、不均匀帧率、轻微暗角、不稳定画面对齐。无现代物品、科技或当代服装。",
+      },
+      {
+        number: 3,
+        title: "静态三脚架机位 + 手摇抖动",
+        description:
+          "早期电影摄影机放在井边三脚架上,主要静态取景,村妇穿过画面时缓慢平移。手摇胶片的轻微抖动、过曝阳光、轻微画面跳动、偶尔的损坏胶片闪烁。",
+      },
+      {
+        number: 4,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整 1907 村落打水提示词。尊重历史、朴实日常劳作、实用服装、安静协作、真实的早期电影缺陷。默片呈现,仅视觉字幕卡。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–3s:胶片打开一条安静村路,三位村妇提陶罐走向井边,远处一辆牛车缓慢移动。字幕卡出现:'A Morning in the Village — 1907'。",
+      },
+      {
+        number: 2,
+        description:
+          "3–6s:村妇们小心放下绳索和水桶入井。一位村妇稳住绳索,另一位观察水位,第三位调整头巾并朝镜头短暂微笑。",
+      },
+      {
+        number: 3,
+        description:
+          "6–9s:装满陶罐并在井边排列好。一个罐子轻微倾斜,少量水洒出。村妇们交换了一个会心的眼神,温和地把它扶正。",
+      },
+      {
+        number: 4,
+        description:
+          "9–12s:村妇们沿土路搬运装满的陶罐。一位停下帮另一位更舒适地平衡罐子。字幕卡:'The journey home was never hurried'。",
+      },
+      {
+        number: 5,
+        description:
+          "12–15s:她们到达房屋附近的阴凉处放下陶罐。一位村妇朝镜头看并轻轻挥手。胶片闪烁,画面跳动,划痕铺满画面后淡出黑场。",
+      },
+    ],
+    video_prompt: {
+      title: "A Morning in the Village — 1907 · India",
+      subtitle: "推测早期电影模型 · 16:9 · Hand-Cranked Silent Film",
+      content: `Main Subject(s): Three adult women from the same village, wearing authentic early-1900s South Asian clothing: long cotton saris, simple shawls, traditional jewelry, and neatly covered hair. Keep the clothing historically accurate and practical.
+
+Location: An ordinary village in northern India, around 1907. A stone well, mud-brick homes, dusty paths, clay water pots, woven baskets, trees, and a few bullock carts in the background.
+
+Visual Style: Ultra-realistic early-1900s hand-cranked motion-picture footage. Black-and-white with a subtle sepia tint, heavy film grain, dust, scratches, flickering exposure, soft focus, uneven frame rate, slight vignetting, and unstable frame alignment. No modern objects, technology, or contemporary clothing.
+
+Camera Style: Early motion-picture camera positioned on a tripod beside the village well. Mostly static framing with a slow pan as the women move through the scene. Jerky hand-cranked movement, overexposed sunlight, slight film jitter, and occasional damaged-film flickers.
+
+Timeline
+
+00:00–00:03
+The film opens on a quiet village path as the three women walk toward the well carrying clay pots. A bullock cart moves slowly in the distant background. An intertitle appears: "A Morning in the Village — 1907."
+
+00:03–00:06
+The women carefully lower a rope and bucket into the well. One woman steadies the rope while another watches the water level. The third adjusts the cloth covering her head and smiles briefly toward the camera.
+
+00:06–00:09
+They fill the clay pots and arrange them beside the well. One pot tilts slightly, causing a small amount of water to spill. The women exchange amused looks and gently correct it.
+
+00:09–00:12
+The women carry the filled pots along the dusty path. One pauses to help another balance her pot more comfortably. An intertitle appears: "The journey home was never hurried."
+
+00:12–00:15
+They reach a shaded area near the houses and set the pots down. One woman looks toward the camera and gives a small, friendly wave. The film flickers, the frame jumps, and scratches spread across the image before it fades to black.
+
+Audio: No synchronized sound or recorded dialogue. Silent-film presentation only, with visual intertitles. Optional faint projector ambience may accompany the footage.
+
+Goal: Create a respectful, historically grounded 1907 village memory–ordinary daily work, practical clothing, quiet cooperation, and authentic early-motion-picture imperfections.`,
+    },
+  },,
+  {
+    id: "zephyra-paris-1906-market",
+    title: "1906 巴黎早市 · 仿古默片",
+    subtitle: "X · @ZephyraLeigh · MiniMax H3 Max · 约15秒 · 16:9",
+    description:
+      "1906 年巴黎早晨市集的温馨家庭片段:三位年轻女性(姐妹和表姐妹)逛市场、买菜、意外掉落苹果引发小欢笑,最后在长椅分享面包。黑白加淡褐色调、厚重颗粒、闪烁、划痕、不均帧率、柔焦暗角,完美还原 1900 年代初手摇电影质感。",
+    video: "/tutorials/zephyra-paris-1906-market/demo-web.mp4",
+    poster: "/tutorials/zephyra-paris-1906-market/poster.jpg",
+    duration: "约15秒",
+    shots: 5,
+    references: 0,
+    model: "MiniMax H3 Max",
+    style: "1906 早期电影 · 家庭生活",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ZephyraLeigh/status/2097919526432370965",
+    sourceAuthor: "@ZephyraLeigh",
+    sourcePlatform: "X",
+    sourceImpressions: 5917,
+    tags: [
+      "约15秒 · 历史还原",
+      "16:9 横屏",
+      "MiniMax H3 Max",
+      "1906 仿古默片",
+      "巴黎市集日常",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "设定 1906 年巴黎市集场景",
+        description:
+          "鹅卵石街道、木制市场摊位、蔬菜花卉面包篮、马车、早期汽车、穿着时代服装的行人。三位年轻成年女性穿 1900 年代初真实服饰:及踝长裙、高领衬衫、合身夹克、宽檐帽、手套、简单皮鞋。",
+      },
+      {
+        number: 2,
+        title: "还原早期手摇电影视觉风格",
+        description:
+          "黑白加淡褐色调、厚重颗粒、闪烁曝光、划痕、尘点、不均匀帧率、柔焦、轻微暗角、不稳定画面亮度。静态或缓慢repositioned三脚架摄影机。无现代物品、汽车、标识或科技。",
+      },
+      {
+        number: 3,
+        title: "温馨日常 + 小意外",
+        description:
+          "三位女性走向市场摊位购物,其中一位意外掉落苹果滚过鹅卵石。其他人无声大笑并赶紧捡回。在长椅短暂休息分享面包,其中一位朝镜头挥手致意。",
+      },
+      {
+        number: 4,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整 1906 巴黎早市提示词。时代服装、普通市场差事、小幽默意外、完美还原现代电影诞生前的家庭影像质感。默片呈现,仅视觉字幕卡。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–3s:胶片打开一条繁忙的鹅卵石街道,一辆马车缓慢经过镜头前,行人穿过画面。短字幕卡:'A Morning in Paris — 1906'。",
+      },
+      {
+        number: 2,
+        description:
+          "3–6s:三位女性提小编织篮走向市场摊位。一位停下调整帽子,另一位指向面包展示。她们的动作轻微抖动自然,匹配早期胶片格式。",
+      },
+      {
+        number: 3,
+        description:
+          "6–9s:她们在木摊位检查蔬菜和花卉。一位女性意外掉落一个苹果,它滚过鹅卵石。其他人无声大笑并赶紧捡回,镜头保持固定。",
+      },
+      {
+        number: 4,
+        description:
+          "9–12s:女性们在市集附近的长椅短暂坐下,分享一条面包并翻看小纸质购物清单。一位朝镜头转身并礼貌挥手。第二张字幕卡:'The shopping was not a complete success'。",
+      },
+      {
+        number: 5,
+        description:
+          "12–15s:她们提篮离开市场,一辆早期汽车缓慢从背后经过。一位女性回头看镜头并做了一个顽皮的鞠躬。胶片闪烁,短暂冻结,划痕铺满画面后结束。",
+      },
+    ],
+    video_prompt: {
+      title: "A Morning in Paris — 1906 · Market Day",
+      subtitle: "MiniMax H3 Max · 16:9 · Hand-Cranked Silent Film",
+      content: `Main Subject(s): Three young adult women, sisters and cousins, wearing authentic early-1900s clothing: long ankle-length skirts, high-neck blouses, fitted jackets, wide-brimmed hats, gloves, and simple leather shoes.
+
+Location: An ordinary morning market in Paris, France, around 1906. Wooden market stalls, baskets of vegetables, flowers, bread, horse-drawn carts, early automobiles, cobblestone streets, and pedestrians in period clothing.
+
+Visual Style: Ultra-realistic early-1900s hand-cranked motion-picture footage. Black-and-white with a subtle sepia tint, heavy film grain, flickering exposure, scratches, dust particles, uneven frame rate, soft focus, slight vignetting, and unstable image brightness. Silent-film intertitles appear between scenes. No modern objects, cars, signage, or technology.
+
+Camera Style: Static or slowly repositioned early motion-picture camera on a tripod. Slightly jerky movement from hand-cranked film, imperfect framing, occasional overexposure, film jitter, and brief damaged-film flickers. The footage should feel like a rare personal film discovered in an old archive.
+
+Timeline
+
+00:00–00:03
+The film opens on a busy cobblestone street. A horse-drawn cart passes slowly in front of the camera while pedestrians move through the frame. A brief intertitle appears: "A Morning in Paris — 1906."
+
+00:03–00:06
+The three women walk toward a market stall carrying small woven baskets. One woman pauses to adjust her hat while another points toward a bread display. Their movements are slightly jerky and natural, matching the early film format.
+
+00:06–00:09
+They examine vegetables and flowers at a wooden stall. One woman accidentally drops an apple, and it rolls across the cobblestones. The others laugh silently and hurry to retrieve it as the camera remains fixed.
+
+00:09–00:12
+The women sit briefly on a bench near the market, sharing a loaf of bread and looking through a small paper shopping list. One woman turns toward the camera and waves politely. A second intertitle appears: "The shopping was not a complete success."
+
+00:12–00:15
+They leave the market carrying their baskets as an early automobile slowly passes behind them. One woman looks back at the camera and gives a playful bow. The film flickers, briefly freezes, and ends with scratches across the frame.
+
+Audio: No recorded dialogue or synchronized sound. Silent-film presentation only, with visual intertitles. Optional subtle projector ambience may be added outside the footage, but the scene itself remains silent.
+
+Goal: Create the feeling of a rare, authentic 1906 family film–period clothing, ordinary market errands, small humorous accidents, and imperfect early cinema captured before modern filmmaking existed.`,
+    },
+  },,
+  {
+    id: "zephyra-sony-headphones-unbox",
+    title: "Sony 旗舰耳机开箱 · YouTube Shorts",
+    subtitle: "X · @ZephyraLeigh · Wan 3.0 · 约25秒 · 16:9",
+    description:
+      "Zephyra Leigh 的专业 Sony 旗舰降噪耳机开箱评测。从强烈视觉钩子开场,展示完整拆箱流程、配件清单、主动降噪与环境音模式切换、App 调音,到首次佩戴体验。自然的创作者语言,实用的功能讲解,真实的产品互动。",
+    video: "/tutorials/zephyra-sony-headphones-unbox/demo-web.mp4",
+    poster: "/tutorials/zephyra-sony-headphones-unbox/poster.jpg",
+    duration: "约25秒",
+    shots: 5,
+    references: 0,
+    model: "Wan 3.0",
+    style: "YouTube Shorts · 科技开箱",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ZephyraLeigh/status/2097876054295843315",
+    sourceAuthor: "@ZephyraLeigh",
+    sourcePlatform: "X",
+    sourceImpressions: 4569,
+    tags: [
+      "约25秒 · 开箱评测",
+      "16:9 横屏",
+      "Wan 3.0",
+      "YouTube Shorts 风格",
+      "音频产品评测",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "设定专业创作者工作室",
+        description:
+          "高端创作者工作室桌面,摄像机正在录制、专业麦克风、笔记本、柔和工作室灯光、品味音频设备背景。Zephyra 保持相同的脸部、发型、身材、声音、个性和视觉身份。",
+      },
+      {
+        number: 2,
+        title: "强烈视觉钩子 + 快速开箱",
+        description:
+          "从 Sony 耳机盒特写开始,手指撕开密封条(令人满意的声音)。Zephyra 直视镜头介绍:'嘿大家好,我是 Zephyra Leigh——这些是 Sony 旗舰降噪耳机。看看里面有什么。'",
+      },
+      {
+        number: 3,
+        title: "配件展示 + 功能讲解",
+        description:
+          "俯拍展示耳机、保护套、充电线、音频线和说明书。Zephyra 戴上耳机,轻拍耳罩在降噪与透明模式间切换,打开配套 App 调整音质。",
+      },
+      {
+        number: 4,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整 Sony 耳机开箱提示词。专业 YouTube 创作者拍摄、电影级中景对谈镜头、俯拍开箱角度、微距耳机特写、流畅控制的相机运动、真实自动对焦。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–4s 强烈视觉钩子 + 介绍:密封 Sony 耳机盒特写已在 Zephyra 手中,她快速将盒子推向镜头直到盒子几乎填满画面。切到微距:拇指撕开密封条(胶带剥离声)。回到脸部,直视镜头,微抬眉:'嘿大家好,我是 Zephyra Leigh——这些是 Sony 旗舰降噪耳机。看看里面有什么。'立即将盒子放在桌上。",
+      },
+      {
+        number: 2,
+        description:
+          "4–8s 开箱:干净的俯拍产品镜头。她撕掉密封条,打开盒子,小心取出耳机。她说:'好的,这些看起来真的很高级。'展示耳机、保护套、充电线、音频线和说明书。",
+      },
+      {
+        number: 3,
+        description:
+          "8–13s 盒内物品:她整齐摆放内容物。她说:'你会得到耳机、保护套、充电线、音频线和常规说明书。'她拿起耳机并自然折叠。",
+      },
+      {
+        number: 4,
+        description:
+          "13–19s 功能 + 益处:耳机微距特写。Zephyra 戴上耳机,轻拍耳罩,在降噪与透明模式间切换。她说:'重点是主动降噪、环境音模式和长续航。这意味着你可以在嘈杂地方专注,需要时听到周围环境,听几小时不用经常充电。'她短暂打开配套 App 调整声音设置。",
+      },
+      {
+        number: 5,
+        description:
+          "19–25s 首次印象:她摘下耳机并直视镜头。'首次印象?舒适度和降噪感觉非常有前途。接下来,我们测试音质。'自然自信微笑。",
+      },
+    ],
+    video_prompt: {
+      title: "Sony Flagship Headphones Unboxing · YouTube Shorts",
+      subtitle: "Wan 3.0 · 16:9 · Professional Tech Review",
+      content: `Create an ultra-realistic professional YouTube Shorts tech unboxing featuring the same female technology creator Zephyra Leigh. Preserve her exact face, hairstyle, body proportions, voice, personality, and visual identity throughout the entire video.
+
+She sits at a premium professional creator studio desk with a camera recording her, professional microphone, laptop, soft studio lighting, and tasteful audio equipment in the background.
+
+0–4s — STRONG VISUAL HOOK + INTRO
+
+Start with an extreme close-up of the sealed Sony headphone box already in Zephyra's hands. She quickly brings it toward the camera until the box nearly fills the frame.
+
+Cut to a macro shot of her thumb breaking the security seal. The adhesive peels with a satisfying sound.
+
+Cut back to her face. She looks directly into the camera, slightly raises her eyebrows, and says:
+
+"Hey everyone, I'm Zephyra Leigh — and these are Sony's flagship noise-canceling headphones. Let's see what's inside."
+
+She immediately places the box on the desk.
+
+4–8s — UNBOXING
+
+Cut to a clean overhead product shot.
+
+She removes the seal, opens the box, and carefully lifts out the headphones.
+
+She says:
+
+"Okay, these look seriously premium."
+
+Show the headphones, protective case, charging cable, audio cable, and documentation.
+
+8–13s — WHAT'S IN THE BOX
+
+She neatly lays out the contents.
+
+She says:
+
+"You get the headphones, a protective case, charging cable, audio cable, and the usual documentation."
+
+She picks up the headphones and folds them naturally.
+
+13–19s — FEATURES & BENEFITS
+
+Macro close-up of the headphones.
+
+Zephyra puts them on, taps the earcup, and switches between noise cancellation and transparency mode.
+
+She says:
+
+"The big highlights are active noise cancellation, ambient sound mode, and long battery life. That means you can focus in noisy places, hear your surroundings when you need to, and listen for hours without constantly charging."
+
+She briefly opens the companion app and adjusts the sound settings.
+
+19–25s — FIRST IMPRESSION
+
+She removes the headphones and looks directly into the camera.
+
+"First impression? The comfort and noise cancellation feel really promising. Next, we're testing the sound quality."
+
+Natural confident smile.
+
+CAMERA: professional YouTube creator setup, cinematic medium talking-head shot, overhead unboxing angle, macro headphone close-ups, smooth controlled camera movement, realistic autofocus, natural focus breathing.
+
+SETTING: premium creator studio, clean desk, professional microphone, laptop, audio equipment subtly visible, sophisticated but realistic environment.
+
+LIGHTING: professional soft key light, natural fill, subtle background practical lighting, controlled product lighting with realistic reflections.
+
+AUDIO: crystal-clear natural female voice, professional microphone recording, realistic packaging sounds, headphone folding clicks, earcup touch sounds, subtle room ambience.
+
+PERFORMANCE: Zephyra behaves like an experienced technology and audio reviewer — confident, knowledgeable, concise, and genuinely excited. She explains features in terms of real-world benefits, not marketing language.
+
+VISUAL QUALITY: ultra-photorealistic, premium YouTube production, realistic skin texture, accurate hands and fingers, physically accurate headphones and accessories, realistic reflections, natural facial expressions.
+
+IMPORTANT: Say "Zephyra Leigh" only in the opening introduction. After that, never introduce her again by her full name. Use natural creator dialogue. No sci-fi elements, no holograms, no exaggerated reactions, no cartoon, no anime, no distorted hands, no extra fingers, no glitches, no fake-looking product interaction.`,
+    },
+  },,
+  {
+    id: "zephyra-ten-poses-fashion",
+    title: "十姿态时尚闪拍 · 角色一致性",
+    subtitle: "X · @ZephyraLeigh · Seedance 2.5 · 约15秒 · 16:9",
+    description:
+      "15 秒高时尚编辑短片,展示角色参考图中的成年女性角色通过 10 个不同的时尚姿势和极端摄影机角度。极简奢华工作室、反光地板、大胆方向照明、节奏性摄影闪光。快速自信全程着装表演,通过鞭打摇镜、运动匹配剪辑、快速缩放、闪光和镜头遮挡连接。需要角色参考图。",
+    video: "/tutorials/zephyra-ten-poses-fashion/demo-web.mp4",
+    poster: "/tutorials/zephyra-ten-poses-fashion/poster.jpg",
+    duration: "约15秒",
+    shots: 10,
+    references: 1,
+    model: "Seedance 2.5",
+    style: "高时尚编辑 · 摄影闪拍",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ZephyraLeigh/status/2096574835543757089",
+    sourceAuthor: "@ZephyraLeigh",
+    sourcePlatform: "X",
+    sourceImpressions: 15143,
+    tags: [
+      "约15秒 · 10 个姿势",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "需要角色参考图",
+      "时尚摄影节奏剪辑",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备角色参考图",
+        description:
+          "使用 @[char ref] 上传角色参考图。保持她的确切脸部、发型、身材比例、肤色、服装、配饰和视觉风格。参考图是唯一角色参考。整部影片以其美学呈现,真实皮肤、自然解剖结构、物理准确的头发和面料。无动漫、无卡通、无服装更换。",
+      },
+      {
+        number: 2,
+        title: "设定极简奢华工作室",
+        description:
+          "反光地板、大胆方向照明、节奏性摄影闪光、真实摄影电影摄影。每个姿势持续一瞬间但保持清晰可读。通过鞭打摇镜、运动匹配剪辑、快速缩放、闪光和镜头遮挡连接角度。",
+      },
+      {
+        number: 3,
+        title: "10 个不同时尚姿势",
+        description:
+          "1) 地面视角自信站姿 2) 手放脸旁极端侧面特写 3) 非对称坐姿俯拍旋转 4) 一腿伸向镜头前景主导 5) 快速流畅交叉腿低对角 6) 指尖捕捉现有袖口紧密细节 7) 后四分之三转身决定性回望 8) 向前倾身手掌短暂遮住镜头 9) 拉长向上伸展锐利倾斜宽镜 10) 指挥性全身英雄姿势俯视镜头快速拉回。",
+      },
+      {
+        number: 4,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整 Seedance 2.5 提示词。保持表演快速、自信、节奏紧密。无重复姿势或额外姿势变化。在姿势间加速并在每次保持时急刹。朝第十姿势建立动量后骤停清晰最终保持。同时从示例中提取 ref-char-from-demo.jpg(约 2s 清晰脸部帧)。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "char-ref",
+        number: "@[参考图]",
+        title: "角色一致性参考图",
+        subtitle: "从你自己的示例视频中提取 · 必需",
+        image: "/tutorials/zephyra-ten-poses-fashion/ref-char-from-demo.jpg",
+        prompt:
+          "从示例视频约 2 秒处提取清晰的脸部特写帧,作为 @[char ref] 参考图上传。保持她的确切脸部、发型、身材、肤色、服装和配饰在整个 10 姿势序列中一致。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "姿势 1 (0–1.5s):自信站姿,从地面视角拍摄,戏剧性广角透视。全身照明,反光地板,音乐重拍落下。",
+      },
+      {
+        number: 2,
+        description:
+          "姿势 2 (1.5–3s):一只手在脸旁,极端侧面特写捕捉。鞭打摇镜从站姿过渡,闪光标记切换。",
+      },
+      {
+        number: 3,
+        description:
+          "姿势 3 (3–4.5s):非对称坐姿,直接俯拍镜头旋转。大胆侧光,从地板反射向脸扫过。",
+      },
+      {
+        number: 4,
+        description:
+          "姿势 4 (4.5–6s):一腿伸向镜头,参考鞋通过戏剧性前缩主导前景。快速缩放从俯拍俯冲到低角度。",
+      },
+      {
+        number: 5,
+        description:
+          "姿势 5 (6–7.5s):快速流畅交叉腿,从低对角捕捉。运动匹配剪辑,闪光强调腿部动作。",
+      },
+      {
+        number: 6,
+        description:
+          "姿势 6 (7.5–9s):指尖捕捉现有袖边或领口边缘,紧密细节镜头框住。侧光照亮手和面料细节。",
+      },
+      {
+        number: 7,
+        description:
+          "姿势 7 (9–10.5s):后四分之三转身决定性回望镜头。镜头围绕她的转身轨道,闪光冻结瞬间。",
+      },
+      {
+        number: 8,
+        description:
+          "姿势 8 (10.5–12s):向前倾身朝镜头,手掌短暂遮住它作为过渡。镜头遮挡创造快速黑场切换。",
+      },
+      {
+        number: 9,
+        description:
+          "姿势 9 (12–13.5s):拉长向上伸展,在锐利倾斜宽镜中显露,强侧光。从低处猛冲到俯拍到地板视角。",
+      },
+      {
+        number: 10,
+        description:
+          "姿势 10 (13.5–15s):指挥性全身英雄姿势,俯视镜头快速拉回。音乐建立顶峰,尖锐最终重拍,清晰保持。",
+      },
+    ],
+    video_prompt: {
+      title: "10-Pose Fashion Flash · Character Consistency",
+      subtitle: "Seedance 2.5 · 16:9 · Requires Character Reference",
+      content: `Seedance 2.5 Video PROMPT:
+
+Create a 15-second high-fashion editorial film starring the adult female character in @[char ref]. Preserve her exact face, hairstyle, body proportions, skin tone, outfit, accessories, and visual style. Use the reference as the ONLY character reference. Render the entire film in its aesthetic, with realistic skin, natural anatomy, and physically accurate hair and fabric. No anime, no cartoon, no outfit changes.
+
+Minimal luxury studio, reflective floor, bold directional lighting, rhythmic photographic flashes, photorealistic fashion cinematography. Exactly 10 distinct fashion poses, each with a different silhouette and camera angle:
+
+1. Confident standing pose, filmed from floor level with dramatic wide-angle perspective.
+2. One hand beside her face, captured in an extreme side-profile close-up.
+3. Asymmetric seated pose, seen directly overhead as the camera rotates.
+4. One leg extended toward the lens, her reference footwear dominating the foreground through dramatic foreshortening.
+5. Quick, fluid leg cross, captured from a low diagonal angle.
+6. Fingertips catching the edge of an existing sleeve or collar, framed in a tight detail shot.
+7. Rear three-quarter turn with a deliberate glance back into the camera.
+8. Forward lean toward the lens, ending with her palm briefly covering it.
+9. Elongated upward stretch, revealed in a sharply tilted wide shot with strong side lighting.
+10. Commanding full-body hero pose, looking down into the lens as the camera rapidly pulls back.
+
+Keep the performance fast, confident, and rhythmically tight. Each pose lasts only a fraction of a second while remaining clearly readable. No repeated poses or additional pose changes. Connect the angles through whip pans, movement-matched cuts, snap zooms, flashes, and lens occlusions. Orbit against her turn, sweep from her floor reflection toward her face, and plunge from overhead to floor level. Alternate intimate details with dramatic wide compositions. Accelerate between poses and brake sharply on each hold.
+
+Keep all gestures quick, confident, and fully clothed. Hair and fabric react naturally to movement. No slow motion, lingering shots, or gradual camera drift. Build momentum toward the tenth pose, then stop sharply for a crisp final hold.
+
+Stable identity, anatomy, and outfit throughout. No added accessories, no text, no logos, no AI artifacts. Sound: driving 140 BPM fashion beat, rhythmic shutter clicks, subtle fabric movement, and a sharp final beat.
+
+Also extract ref-char-from-demo.jpg from a clear face frame (~2s).`,
+    },
+  },,
+  {
     id: "lufzzliz-dunhuang-group-dance-white-mesh",
     title: "敦煌群舞白膜成片 · MiniMax Design 全流程",
     subtitle: "X · @LufzzLiz · 约20秒成片 · 16:9",
@@ -229,7 +914,7 @@ NO sculpture, statues, clay, ceramics, porcelain, wax, doll, mannequin, CGI, 3D 
 先生成前10秒并核对五人映射；后10秒继续原舞蹈，保持身份、服装、光线与镜头衔接。若支持，可增加前段真实生成末帧作为后段连续性辅助，但五人身份仍以原五图为准。只生成这一版所需的2条，不自行批量生成候选。如果全能参考不能同时接收一个参考视频和这5张图，先报告实际限制，不能擅自降级成纯文生视频或单张首帧动画。
 生成后保存两个原始H3视频、完整实际提示词、实际模型/模式/输入/参数和可见消耗，未知费用写unknown。用本机已有ffmpeg按原时间轴合成20秒，回填08的原音乐；完成解码与五人对应关系抽帧核验。把两段和完整成片加入画布，并报告真实绝对路径和任务ID。实际完成生成和交付，不停在方案。`,
     },
-  },
+  },,
   {
     id: "flova-mona-lisa-neighbors",
     title: "蒙娜丽莎搬进街坊 · Flova 分屏教程",
@@ -326,7 +1011,7 @@ Without cutting, protagonist continues walking forward; the Parisian boulevard n
 SEAMLESS TRANSITION 03 [Seconds 25-30]
 Without cutting, protagonist pulls hand back and turns head; a fast smooth physical whip-pan swings the camera left and slightly forward through continuous park-to-street space; the urban park transitions physically into a lively modern French pedestrian street. A contemporary hot-dog stand with a red-and-yellow awning is visible. Behind the counter stands a fully three-dimensional photorealistic real woman, referencing the soft brown eyes with characteristic over-the-shoulder glance, the wrapped blue and gold headscarf tied at the top, the dangling single large pearl earring, and the warm skin tone of image_5 — she is entirely real with realistic skin, hair escaping the scarf edges, fabric texture, natural French street lighting. She smiles warmly, holds out a hot dog toward the camera, and says cheerfully: "Try our hot dogs, handsome!" Protagonist's POV freezes. Camera slowly pans in a wide deliberate look around — left, right, ahead — revealing all the impossible painting-inspired characters simply living ordinary modern French lives in this sunlit Parisian street. Deadpan stillness. No music. No dialogue after her line.`,
     },
-  },
+  },,
   {
     id: "just-sharon7-venice-sphere",
     title: "威尼斯折叠成球 · 粉发女孩送信",
@@ -459,7 +1144,7 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
 24–27s: She holds out the yellow envelope. The old woman turns, sets down the watering can, and takes it. Both smile warmly at each other. Rose petals drift upward past them, falling toward the inverted sky.
 27–30s: Camera pulls back and rises fast. The whole city folds and rotates until it becomes a top-down aerial of Venice's canals and streets curling into a sphere. The two tiny figures remain on the terrace. Slow fade to warm light.`,
     },
-  },
+  },,
   {
     id: "techiebysa-logo-embroidery-sew",
     title: "刺绣缝 Logo · 线自己爬上织物",
@@ -520,7 +1205,7 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
       subtitle: "Gemini Omni Flash 1.1 · Pika · 需上传 Logo 参考图",
       content: `Extreme macro shot of woven cotton shirt fabric, empty at first. Colored embroidery threads rise from the surface and weave themselves into place, laying down tight satin stitches row by row, tracing out the logo. The stitched area grows steadily across the frame, thread pulling taut and raising into dimensional embroidered texture, until the full logo is complete. Camera holds steady, slow satisfying timelapse pace. Soft natural side light, shallow depth of field, visible fabric fibers and realistic thread sheen. No hands, thread moves on its own. One shot no scene change.`,
     },
-  },
+  },,
   {
     id: "aiwithkhan-rope-name-smiling",
     title: "红绳拼字 Smiling · 定格小人工坊",
@@ -591,7 +1276,7 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
       subtitle: "Seedance 2.5 · 16:9 横屏 · 完整可复制提示词",
       content: `Using the reference image as the exact final frame, create a 10-second stop-motion-inspired fluid CGI animation of a single thick red braided rope forming the word "Smiling" on a pure white seamless background. At the beginning, the rope is loose and unformed, scattered in soft loops across the frame, with 4–5 tiny clay-like miniature characters wearing simple rope-green overalls and no distinct facial features standing around it. They quickly grab the rope and work together, pulling, stretching, coiling, twisting, and tying it into shape. The rope progressively transforms into the cursive letters "S-m-i-l-i-n-g", moving smoothly from left to right. Each letter must be created entirely from the same continuous rope, with realistic braided fibers, intricate knots, overlapping loops, natural crossings, and clean negative spaces matching the reference image. The characters playfully climb over and around the rope while shaping each letter, coordinating their movements as the word becomes recognizable. The camera remains completely static and top-down, with consistent soft studio lighting, subtle shadows beneath the rope, and no background elements. In the final 1–2 seconds, the characters finish the last knot on the "g," step back and hop away, leaving the completed "Smiling" rope artwork clearly visible and matching the reference image. No cuts, no camera movement, no independently generated text, no extra objects. Smooth continuous motion, tactile rope physics, realistic fibers, playful miniature stop-motion aesthetic blended with polished CGI.`,
     },
-  },
+  },,
   {
     id: "techhalla-french-polynesia-adventure",
     title: "法属波利尼西亚冒险 · 碎切度假记忆",
@@ -704,7 +1389,7 @@ Every 0.5–1.0s = hard cut to a completely new framing or micro-moment. Pack th
 [REALISM / TONE LOCK]
 French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1 second, found-footage phone/action-cam only, energetic but gentle, just real salt, rain, lagoon, boats, food, night air, and breathless joy.`,
     },
-  },
+  },,
   {
     id: "techhalla-room214-stop-motion",
     title: "ROOM 214 · H3 定格收拾行李",
@@ -844,7 +1529,7 @@ French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1
   ]
 }`,
     },
-  },
+  },,
   {
     id: "pixelaigc-dunhuang-desktop-fail",
     title: "敦煌飞天桌面壁纸翻车 · H3",
@@ -905,7 +1590,7 @@ French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1
       subtitle: "MiniMax Hailuo H3 · 图生视频模式 · 完整可复制提示词",
       content: `飞天在跳舞，当她的脚踩下时，扯动了屏幕背景的幕布，幕布抖动，把左边的图标全都震落在地上，飞天吓得双手捂嘴，连忙停下舞蹈，跑到左边，把地上的图标一个个重新按回原来的位置，但由于太匆忙，有两个图标按歪了，她马上返回原来的右边位置，重新摆好开始的POSE，表情勉强微笑，轻风吹来，她的衣服和披帛飘动，固定机位，背景音乐从开始的传统敦煌音乐到后面的诙谐风趣曲风`,
     },
-  },
+  },,
   {
     id: "umesh-again-nature-ad",
     title: "AGAIN · 单图自然广告",
@@ -1147,7 +1832,7 @@ Move from microscopic water detail to broad aerial ambience, back to intimate ha
 
 Let the final water texture and continuous rain lead back into the opening droplet. Replay feels like entering the same world again through a wide-to-macro cut, not a forced seamless morph. No fade to black, music sting or obvious stop.`,
     },
-  },
+  },,
   {
     id: "abxxai-riviera-fashion-campaign",
     title: "里维埃拉时尚大片 · 1960s",
@@ -1425,7 +2110,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
 === OUTPUT ===
 24 seconds, 1080p, six shots, straight cuts, warm faded 1960s Kodachrome fashion film, one locked character, original instrumental score, no dialogue.`,
     },
-  },
+  },,
   {
     id: "shanghai-scallion-pancake",
     title: "老上海葱油饼",
@@ -1720,7 +2405,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
 厨具、操作台、光线方向与小铺环境
 都保持视觉一致性。`,
     },
-  },
+  },,
   {
     id: "anime-katsudon",
     title: "日式猪排饭 Katsudon",
@@ -1885,7 +2570,7 @@ NEGATIVE
 
 No storyboard, reference image, sketch, panels, borders, numbers, arrows, annotations, subtitles, captions, UI, logos, or text overlays. No unrelated ingredients or dishes. Katsudon only. Keep the food, hands, utensils, lighting, and environment visually consistent throughout.`,
     },
-  },
+  },,
   {
     id: "husky-kisaragi-precision-brand",
     title: "精密部品品牌片 · 看不见的精度",
@@ -2101,7 +2786,7 @@ CNC工作機械、測定室、設計用PC、金属部品、図面、工具。
 【禁止事項】
 大量の火花、汚れた危険な工場、誤った保護具、SF的なロボット工場、過剰な青色加工、合成感の強い人物、破綻した測定器、余分なコピー、透かし、指定外のロゴを入れない。`,
     },
-  },
+  },,
   {
     id: "minimax-h3-mv-typography",
     title: "H3 文字包装 MV",
@@ -2163,7 +2848,7 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
 
 视觉风格：dark-pop、cyber-grunge、rap 音乐视频，写实高时装质感，90年代末至00年代初独立杂志、地下音乐海报、复印纸、胶片扫描与 zine 拼贴美学。高反差黑白与低饱和暗红、银灰点缀。肤色真实，阴影厚重但保留服装细节。`,
     },
-  },
+  },,
   {
     id: "seedance-dance-mocap-migration",
     title: "Seedance 舞蹈动捕迁移",
@@ -2272,7 +2957,7 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
 无对白。
 无音乐。`,
     },
-  },
+  },,
   {
     id: "creative-fan-outfit-swap",
     title: "创意风扇换装",
@@ -2409,7 +3094,7 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
 每次换装必须让新造型完整可见再表演。遮挡只替换服装，不让人物脸、地板或整个画面先灰一下；不使用白闪、黑场、烟雾、粒子、交叉溶解或失焦掩饰变化。
 不生成参考图排版、白底、图片编号、文字贴纸、字幕或片尾Logo。没有对白，不擅自唱歌或说话，保留自然呼吸和表情。`,
     },
-  },
+  },,
   {
     id: "fridge-freshness-perfected",
     title: "冰箱广告：新鲜尽在掌握",
@@ -2526,7 +3211,7 @@ STYLE: Photorealistic, ultra-detailed, cinematic lighting, realistic materials, 
 NEGATIVE PROMPT:
 No people, no hands, no warped refrigerator, no changing product design, no extra doors, no duplicate appliance, no floating objects, no distorted food, no fake branding, no misspelled text, no watermark, no cartoon look, no CGI-looking plastic, no flickering, no unstable geometry.`,
     },
-  },
+  },,
   {
     id: "chiropractic-clinic-social",
     title: "整脊诊所社媒短片",
@@ -2631,7 +3316,7 @@ From 26 to 30 seconds, finish with the client sitting upright, rolling his shoul
 
 Audio should feel captured on location with soft room ambience, distant clinic movement, clothing rustle, table creaks, natural breathing, quiet conversation without clearly audible words, and crisp but not exaggerated adjustment sounds. Add a low volume modern instrumental track with warm piano, soft bass, light percussion, and a gentle rise at each release, ending on a clean resolved note.`,
     },
-  },
+  },,
   {
     id: "steppe-warrior-queen",
     title: "草原女王：骑射破阵",
@@ -2773,7 +3458,7 @@ Maintain exact continuity for the queen's face, braids, ornaments, helmet, armor
 
 Keep violence fierce but readable rather than gore-focused. Prioritize cavalry speed, arrow impacts, weapon clashes, riders falling away from the queen's path, dust, sparks, torn banners, collapsing formations, and the terrifying physical scale of mounted warfare. No duplicated riders, floating weapons, impossible horse movement, teleportation, changing armor, endless arrows, exaggerated blood spray, modern objects, firearms, subtitles, or comedic behavior.`,
     },
-  },
+  },,
   {
     id: "late-night-ramen",
     title: "深夜泡面：耳机里的小确幸",
@@ -2896,7 +3581,7 @@ Visual: Extreme close-up of wooden chopsticks lifting a massive, mouth-watering 
 00:23 - 00:28
 Visual: Close-up of the woman taking a big bite, slurping the noodles happily, and closing her eyes in pure comfort as elegant Chinese text fades onto the screen.`,
     },
-  },
+  },,
   {
     id: "invisible-fitting-room",
     title: "隐形试衣间:假人四套造型",
@@ -2986,7 +3671,7 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
         "Gemini Omni · Seedance 2.0 · Prompt says 9:16 but video is 16:9",
       content: `Create a 10-second ultra-photorealistic premium fashion video "INVISIBLE FITTING ROOM", 9:16. One locked frontal camera, black seamless studio. Same tall muscular matte-white faceless male mannequin centered full-body, initially wearing only fitted black shorts. Female hands in long matte-black gloves remotely dress him without touching. No magic, glow, portals, particles or morphing; realistic cloth physics, gravity and inertia. 0–2s: espresso oversized shirt + caramel wide trousers + brown loafers fly in and physically dress him; mannequin strikes an editorial pose, then one sharp hand swipe pulls the outfit off and it falls to the floor. 2–4s: cognac leather jacket + cream knit + dark-chocolate trousers + boots fly in; mannequin takes a strong pose, then both hands pull the outfit away and garments fall beside the first look. 4–6s: cream turtleneck + coffee trousers + long mocha coat assemble onto him; coat rotates naturally around his body, he poses, then a wide swipe removes everything onto the growing clothing pile. 6–8.5s: final luxury outfit assembles layer by layer: ivory silk shirt, espresso tailored trousers, burnt-orange waistcoat, long dark-chocolate jacket, cognac shoes, tie and gold brooch. Precise hand gestures remotely tailor waist, shoulders, lapels and cuffs with realistic fabric tension. 8.5–9.2s: mannequin holds a powerful final fashion pose surrounded by discarded clothes. 9.2–10s: female hand reaches forward; mannequin physically takes her hand and walks confidently toward the fixed camera until his jacket naturally covers the lens → black. Premium coffee palette, burnt-orange accent, cinematic rim lighting, realistic silk, leather, cashmere and wool, seamless continuity.`,
     },
-  },
+  },,
   {
     id: "krevix-luxury-sofa-carousel",
     title: "奢侈沙发轮播选型 · 黑手套 POV",
@@ -3085,7 +3770,7 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
       subtitle: "Gemini Omni · Storyboard uploaded first, then prompt",
       content: `Create a 10-second ultra-photorealistic 16:9 luxury furniture commercial, one continuous first-person male POV, 26–28mm lens, black studio, matte-black leather gloves, realistic physics only. 0–0.8s: white-cream cloud sofa floats centered; hand swipes left. 0.8–1.6s: sofa rapidly orbits left as a warm ivory modular sofa arrives from right and stops center. 1.6–2.4s: another swipe replaces it with a curved latte boucle sofa. 2.4–3.2s: swipe brings in a warm caramel leather sofa. 3.2–4.2s: final taupe/mocha hero sofa arrives slowly, rotates frontal and stops with heavy inertia. 4.2–5.0s: open-palm STOP gesture freezes the carousel; other sofas disappear into distance. 5.0–5.8s: hand presses and slides across hero sofa armrest, realistic fabric compression. 5.8–6.6s: sofa lands; walnut floor slides beneath it and taupe rug unrolls. 6.6–8.5s: KEEP THE EXACT SAME HERO SOFA stationary while the luxury room physically assembles around it—walnut and travertine walls slide in, coffee table and latte chairs enter, shelving locks into place, pendant descends, curtains and decor move into position. 8.5–10s: panoramic window opens, warm daylight floods the completed quiet-luxury interior; slow dolly backward reveals the full room. Hero sofa remains 100% identical throughout. Real mass, inertia, friction and mechanical stops; no magic, morphing, teleportation, particles, smoke, UI, text, logos, people, cuts or camera-angle changes.`,
     },
-  },
+  },,
   {
     id: "watch-her-reset-73",
     title: "两次失误后的复位",
@@ -3201,7 +3886,7 @@ Reinforce throughout: golden-hour warm lighting never shifts to cool tones, whea
 sound: wind through wheat, distant birds, the rifle shot itself, and glass shattering
 on the final hit.`,
     },
-  },
+  },,
   {
     id: "pov-stadium-rap-137",
     title: "体育场说唱 POV",
@@ -3305,7 +3990,7 @@ The instrumental cuts for one beat. He holds a deep wide stance, eyes fixed on t
 
 He shouts the final line while performing a rapid three-step, a controlled 180° pivot and one enormous downward arm strike. On "GROUND," he stomps once. The bass returns with a massive impact; the LED floor sends a bro`,
     },
-  },
+  },,
   {
     id: "seedance-six-rooms-89",
     title: "一镜到底穿越六个房间",
@@ -3363,7 +4048,7 @@ He shouts the final line while performing a rapid three-step, a controlled 180°
         "Seedance 2.5 · 16:9 · 图像1 mentioned but no ref available",
       content: `一镜到底,镜头平稳跟随一个穿黑色大衣的人(参考 图像1)从左向右穿过六个相连的不同色调、不同氛围的房间。每个房间结构相同:白墙、人字拼浅色木地板、法式双开落地 窗、白纱帘,参考`,
     },
-  },
+  },,
   {
     id: "burger-monster-battle-185",
     title: "麦当劳员工对战汉堡怪兽",
@@ -3519,7 +4204,7 @@ One child quietly picks up a falling fry.
 
 The employee`,
     },
-  },
+  },,
   {
     id: "epic-desert-scene-38",
     title: "史诗沙漠风暴:装甲车逃亡",
@@ -3586,7 +4271,7 @@ The employee`,
       subtitle: "Seedance 2.5 · IMAX 70mm · Villeneuve Style · No References",
       content: `Style: IMAX 70mm Film, Denis Villeneuve Style, Gritty Realism, Epic Scale, Desaturated.Duration: 15s.[00-05s] Extreme Wide Shot (The Scale). A colossal sandstorm, miles high, swallows a vast desert landscape. A tiny convoy of armored military vehicles races away from it. The scale of nature vs man is terrifying. Hans Zimmer style tension.[05-10s] Cockpit Cam (The Panic). Inside the lead rover. The pilot screams "GO! GO!" (Subtitle: MAX POWER!). Camera shakes violently. Sand blasts the windshield. The sun is blocked out by the approaching wall of dust.[10-15s] The Jump (The Climax). The rover hits a massive dune and launches into the air (Slow Motion). Silhouette against the dark storm. Lightning strikes within the dust cloud. Debris flies past the lens. Cut to black on impact.`,
     },
-  },
+  },,
   {
     id: "seoul-aurora-mango-billboard",
     title: "首尔黄金时刻广告牌递瓶",
@@ -3671,7 +4356,7 @@ The employee`,
       subtitle: "Seedance 2.5 · 16:9 · handheld push · diegetic sound",
       content: `Photorealistic street video, Seoul, South Korea, late afternoon golden hour. Busy urban sidewalk in front of a tall modern building with a massive photorealistic billboard. Yellow and orange taxis and pedestrians pass in the foreground. Camera is slightly handheld, slow push-in. On the giant billboard: a glamorous woman <image1> with long wavy blonde hair, tanned skin, wearing a cream sleeveless top with denim collar and gold buttons, short denim mini skirt, and black strappy sandals. She sits on a clean white platform against a soft cloudy sky. She starts reclining on her side, then fluidly sits up, smiles at camera, reaches down, picks up a stylish amber glass bottle of mango juice, and throws amber glass bottle of mango juice toward the viewer as if handing the bottle off the billboard. In the last 3 seconds a real hand enters the foreground holding the exact same physical bottle (label facing camera), perfectly matching the billboard pose. Billboard remains visible and slightly out of focus in the background. Natural city sound, cinematic color grade, high detail, 4K, 10 seconds. Fictional brand on bottle and billboard: AURORA MANGO Tagline style: "Cold-Pressed No.5" Key notes on label: Ripe Alphonso Mango · Passionfruit · Vanilla`,
     },
-  },
+  },,
   {
     id: "hr-replasty-anamorphic-billboard",
     title: "变形广告牌递霜",
@@ -3807,7 +4492,7 @@ Shot 1: ONE continuous wide shot from a low-angle street-level position at the c
 
 REPEAT: NO background music at any point — diegetic sound only. Camera and billboard stay wide and uncut.`,
     },
-  },
+  },,
   {
     id: "ride-or-paws",
     title: "金门大桥摩托猫",
@@ -4113,7 +4798,7 @@ Typography and graphic design should feel professionally art-directed, minimal, 
 
 Shot 1: ONE continuous POV shot, about 28 seconds, chase camera just behind the black hero bike — Tango the ginger cat perched on the tail seat facing back at us, the black rider ahead of him, the red bridge and road tearing past. (1) THE APPROACH, ~3s: the bike rockets across the bridge; wind flattening Tango's fur; a black-clad pursuer on a black sportbike surges up from the right rear and pulls alongside, leaning in aggressively. (2) FIRST KILL, ~3s: Tango calmly raises a rifle to his shoulder, sights down it at the pursuer, and FIRES — a hard muzzle flash — the deadpan face never changing. (3) BLOWN AWAY, ~3s: the pursuer's bike ERUPTS in a ball of fire and tumbles end over end off the road behind; Tango lowers the rifle, sits back, tail flicking, head turning to scan — and another pursuer is already closing in. (4) THE MACHINE GUN, ~5s: Tango hauls up a heavy belt-fed machine gun, a brass ammo belt swinging, braces it against his little body and UNLOADS on a whole pack of pursuing bikers — sustained muzzle flashes strobing, spent casings flying, the deadpan face lit by the flashes. (5) MAYHEM, ~5s: pursuing bikes are hit one after another — bursting into flame, high-siding, cartwheeling, smoke and debris flooding the road behind; Tango swings the barrel to track them, relentless and calm. (6) VICTORY CRUISE, ~4s: the road behind falls empty and smoking as the bike reaches the far end of the bridge (the far red tower and brown headlands ahead); Tango lowers the weapon, sits up on the tail, fur ruffling, tail swaying, scanning the clear road — a beat of calm. (7) OUT OF THE FIREBALL, ~5s: behind them a HUGE fireball erupts across the bridge, flame and smoke swallowing the frame — the hero bike punches straight out through the fire and smoke, embers streaking past, wreckage burning on the bridge behind; Tango turns his head and looks flatly back into the lens as they ride away. Hold one beat. End.`,
     },
-  },
+  },,
   {
     id: "painted-tunnel",
     title: "猫鼠画隧道",
@@ -4242,7 +4927,3 @@ Shot 13 — Same framing: he peels off the rock and slides slowly down the paint
     },
   },
 ];
-
-export function getTutorialById(id: string): Tutorial | undefined {
-  return tutorials.find((t) => t.id === id);
-}
