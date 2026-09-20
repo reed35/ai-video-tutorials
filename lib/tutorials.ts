@@ -79,7 +79,7 @@ export const tutorials: Tutorial[] = [
     sourceUrl: "https://x.com/umesh_ai/status/2100823564505248175",
     sourceAuthor: "@umesh_ai",
     sourcePlatform: "X",
-    sourceImpressions: 26896,
+    sourceImpressions: 26912,
     tags: [
       "30秒 · 15 镜头",
       "16:9 横屏 · 进胶片条",
