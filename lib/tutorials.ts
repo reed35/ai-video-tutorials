@@ -2,6 +2,68 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "minimax-h3-mv-typography",
+    title: "H3 文字包装 MV",
+    subtitle: "X · @liandeli2 · 约15秒 · 16:9",
+    description:
+      "15s K-pop 女团 MV：三人组合在地下音乐杂志风格场景中演绎 dark-pop、cyber-grunge 美学。MiniMax H3 找到了与 Seedance 不同的切入点——主攻包装特效与 AE 合成方向。",
+    video: "/tutorials/minimax-h3-mv-typography/demo-web.mp4",
+    poster: "/tutorials/minimax-h3-mv-typography/poster.jpg",
+    duration: "约15秒",
+    shots: 0,
+    references: 0,
+    model: "MiniMax Hailuo H3 / Design",
+    style: "MV 文字包装特效",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/liandeli2/status/2083070647660609837",
+    sourceAuthor: "@liandeli2",
+    sourcePlatform: "X",
+    sourceImpressions: 15802,
+    tags: [
+      "15秒 · K-pop 女团 MV",
+      "16:9 横屏",
+      "MiniMax H3 / Design",
+      "dark-pop · cyber-grunge",
+      "地下杂志美学",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "设定三人 K-pop 女团形象",
+        description:
+          "SOL（黑色长直发、冷静强势）、LUNA（银灰短狼尾、冷感疏离）、CORONA（深红棕长卷发带细辫、叛逆锋利）。每位成员的服装、发型、气质需与角色设定保持一致。",
+      },
+      {
+        number: 2,
+        title: "构建地下音乐杂志拍摄场景",
+        description:
+          "将白色无缝影棚重新处理：过曝白墙、灰黑阴影、复印纸贴片、撕裂纸边、半色调网点、胶带痕迹、扫描错位和局部黑色喷漆纹理。部分镜头背景硬切为纯黑、过曝白或高反差灰。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词生成",
+        description:
+          "使用下方完整 K-pop 女团 MV 提示词。风格定位 dark-pop、cyber-grunge、90年代末至00年代初独立杂志与 zine 拼贴美学。高反差黑白+低饱和暗红银灰点缀。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [],
+    constraints:
+      "三人女团形象与角色设定一致；地下音乐杂志风格而非干净商业棚拍；高反差黑白+低饱和暗红银灰；肤色真实、阴影厚重但保留服装细节；来源 @liandeli2 / X / 15802 曝光。",
+    video_prompt: {
+      title: "15s K-pop 女团 MV 提示词",
+      subtitle: "MiniMax Hailuo H3 / Design · 完整可复制提示词",
+      content: `主体：三人 K-pop 女团，人物形象与当前角色设定一致。
+SOL：黑色长直发，冷静强势，黑色结构短西装、低腰百褶短裙、黑色长靴。
+LUNA：银灰色短狼尾，冷感疏离，银灰短款机能夹克、黑色连体内搭、不对称裙裤、厚底靴。
+CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克、低腰裙裤、绑带长靴。
+
+场景：白色无缝影棚被重新处理成地下音乐杂志拍摄现场。背景不是干净商业棚拍，而是带有过曝白墙、灰黑阴影、复印纸贴片、撕裂纸边、半色调网点、胶带痕迹、扫描错位和局部黑色喷漆纹理。部分镜头中背景瞬间切换为纯黑、过曝白或高反差灰色，只通过硬切完成。
+
+视觉风格：dark-pop、cyber-grunge、rap 音乐视频，写实高时装质感，90年代末至00年代初独立杂志、地下音乐海报、复印纸、胶片扫描与 zine 拼贴美学。高反差黑白与低饱和暗红、银灰点缀。肤色真实，阴影厚重但保留服装细节。`,
+    },
+  },
+  {
     id: "seedance-dance-mocap-migration",
     title: "Seedance 舞蹈动捕迁移",
     subtitle: "X · 369Serena · 约8秒 · 9:16",
