@@ -224,8 +224,8 @@ Audio should feel captured on location with soft room ambience, distant clinic m
     subtitle: "X · azed_ai · 约30秒 · 16:9",
     description:
       "暮色大草原上，游牧女王策马观察敌军冲锋，驰射破阵、帕提亚回马射、诱敌入伏、近战突围，最后站上山脊收束战场。强调真实骑术与箭矢消耗连续性，无超能力。",
-    video: "/tutorials/steppe-warrior-queen/demo-web.mp4",
-    poster: "/tutorials/steppe-warrior-queen/poster.jpg",
+    video: "/tutorials/steppe-warrior-queen/demo-web-v2.mp4",
+    poster: "/tutorials/steppe-warrior-queen/poster-v2.jpg",
     duration: "约30秒",
     shots: 7,
     references: 0,
