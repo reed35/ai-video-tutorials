@@ -2,6 +2,67 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "pixelaigc-dunhuang-desktop-fail",
+    title: "敦煌飞天桌面壁纸翻车 · H3",
+    subtitle: "X · @PixelAigc · 约10秒 · 16:9",
+    description:
+      "桌面壁纸动画翻车喜剧：敦煌飞天在苹果桌面跳舞，舞步踩动幕布震落图标，慌忙收拾却按歪两个，强颜欢笑摆回原位。GPT Image 2.5 生成桌面静帧 → H3 图生视频。注意「图标震落又摆歪」的喜剧节拍。",
+    video: "/tutorials/pixelaigc-dunhuang-desktop-fail/demo-web.mp4",
+    poster: "/tutorials/pixelaigc-dunhuang-desktop-fail/poster.jpg",
+    duration: "约10秒",
+    shots: 1,
+    references: 0,
+    model: "MiniMax Hailuo H3 (图生视频) + GPT Image 2.5 (生图)",
+    style: "图生视频 · 喜剧叙事 · 桌面动画",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/PixelAigc/status/2100051139547054118",
+    sourceAuthor: "@PixelAigc",
+    sourcePlatform: "X",
+    sourceImpressions: 418704,
+    tags: [
+      "约10秒 · 桌面动画喜剧",
+      "16:9 横屏",
+      "H3 图生视频",
+      "GPT Image 2.5 生图",
+      "敦煌飞天 · 翻车叙事",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "GPT Image 2.5 生成桌面壁纸静帧",
+        description:
+          "用 GPT Image 2.5 生成苹果电脑桌面图：左侧两列常用 APP 图标，右侧敦煌飞天舞女全身图，背景为苹果经典渐变简洁背景，16:9 比例。提示词：「生成一张苹果电脑的桌面图，左边是两列常用APP的图标，右边是一个敦煌飞天舞女全身图，背景是苹果电脑经典的渐变简洁背景，16：9」。",
+      },
+      {
+        number: 2,
+        title: "H3 图生视频 + 贴视频提示词",
+        description:
+          "将上一步生成的桌面图上传至 MiniMax H3，选择图生视频模式，粘贴下方完整视频提示词。重点描述飞天舞蹈动作、幕布抖动、图标震落、慌忙收拾、按歪图标、返回原位强颜欢笑的完整叙事节拍，配合背景音乐从传统敦煌音乐到诙谐风趣曲风的转变。",
+      },
+      {
+        number: 3,
+        title: "注意「图标震落又摆歪」喜剧节拍",
+        description:
+          "这个片子的核心是喜剧叙事节奏：飞天舞步踩动幕布 → 图标震落 → 双手捂嘴惊吓 → 停舞跑去收拾 → 匆忙按回但两个按歪 → 返回原位勉强微笑。提示词必须完整描述这一连串动作，才能让 H3 理解喜剧时间线与情绪转折。背景音乐风格变化也是关键辅助。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "飞天在桌面右侧跳舞，舞步踩动时扯动屏幕幕布，幕布抖动震落左侧图标全部掉落地上，飞天双手捂嘴惊吓表情，立即停止舞蹈，跑到左侧逐个捡起图标按回原位，但因太匆忙有两个图标按歪了，她马上返回右侧原位重新摆好开始姿势，表情勉强微笑，轻风吹来衣服和披帛飘动，固定机位，背景音乐从开始的传统敦煌音乐到后面的诙谐风趣曲风。",
+      },
+    ],
+    constraints:
+      "完整叙事节拍：舞步踩动 → 幕布抖动震落图标 → 惊吓捂嘴 → 停舞收拾 → 匆忙按回但两个按歪 → 返回原位勉强微笑；音乐风格从传统敦煌到诙谐转变；固定机位；来源 @PixelAigc / X / 418704 曝光。",
+    video_prompt: {
+      title: "完整 H3 图生视频提示词",
+      subtitle: "MiniMax Hailuo H3 · 图生视频模式 · 完整可复制提示词",
+      content: `飞天在跳舞，当她的脚踩下时，扯动了屏幕背景的幕布，幕布抖动，把左边的图标全都震落在地上，飞天吓得双手捂嘴，连忙停下舞蹈，跑到左边，把地上的图标一个个重新按回原来的位置，但由于太匆忙，有两个图标按歪了，她马上返回原来的右边位置，重新摆好开始的POSE，表情勉强微笑，轻风吹来，她的衣服和披帛飘动，固定机位，背景音乐从开始的传统敦煌音乐到后面的诙谐风趣曲风`,
+    },
+  },
+  {
     id: "umesh-again-nature-ad",
     title: "AGAIN · 单图自然广告",
     subtitle: "X · @umesh_ai · 约30秒 · 16:9",
