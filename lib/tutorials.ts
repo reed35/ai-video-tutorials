@@ -2,6 +2,103 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "flova-mona-lisa-neighbors",
+    title: "蒙娜丽莎搬进街坊 · Flova 分屏教程",
+    subtitle: "X · @Flovaai（@AIwithkhan 转引）· 约30秒提示 / 成片约60秒 · 16:9",
+    description:
+      "Flova.ai + Seedance 2.5；巴黎 POV 撞车后遇到蒙娜丽莎等名画邻居。提示词从成片右侧面板 OCR 拼出（约6400字）。成片为分屏教程片（左生成片、右参考+提示词）。",
+    video: "/tutorials/flova-mona-lisa-neighbors/demo-web.mp4",
+    poster: "/tutorials/flova-mona-lisa-neighbors/poster.jpg",
+    duration: "约30秒提示 / 成片约60秒",
+    shots: 0,
+    references: 5,
+    model: "Seedance 2.5",
+    style: "巴黎 POV · 名画邻居 · 黑色幽默",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Flovaai/status/2095863022531260717",
+    sourceAuthor: "@Flovaai",
+    sourcePlatform: "X",
+    sourceImpressions: 325575,
+    tags: [
+      "约30秒提示 / 成片约60秒",
+      "16:9 横屏",
+      "Seedance 2.5 + Flova.ai",
+      "巴黎 POV · 名画邻居",
+      "黑色幽默 · 超现实",
+      "分屏教程片",
+      "OCR 提示词",
+    ],
+    steps: [],
+    references_detail: [
+      {
+        id: "image_1",
+        number: "1",
+        title: "蒙娜丽莎",
+        subtitle: "达芬奇 · Mona Lisa",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-01.jpg",
+        prompt: "参考 image_1 的面部特征、神秘微笑、中分长发、端庄姿态",
+      },
+      {
+        id: "image_2",
+        number: "2",
+        title: "呐喊",
+        subtitle: "爱德华·蒙克 · The Scream",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-02.jpg",
+        prompt: "参考 image_2 的拉长头骨、空洞恐惧眼睛、张开尖叫嘴型、憔悴特征",
+      },
+      {
+        id: "image_3",
+        number: "3",
+        title: "睡莲",
+        subtitle: "克劳德·莫奈 · Water Lilies",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-03.jpg",
+        prompt: "参考 image_3 的色彩调色板、浮动睡莲、粉黄色水莲花、深蓝绿倒影水面",
+      },
+      {
+        id: "image_4",
+        number: "4",
+        title: "抱貂的女子",
+        subtitle: "达芬奇 · Lady with an Ermine",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-04.jpg",
+        prompt: "参考 image_4 的精致面部、光滑苍白肤色、带头巾的整洁帽子、黑色珠项链、红蓝文艺复兴风格服装、准确的四分之三身体姿态",
+      },
+      {
+        id: "image_5",
+        number: "5",
+        title: "戴珍珠耳环的少女",
+        subtitle: "约翰内斯·维米尔 · Girl with a Pearl Earring",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-05.jpg",
+        prompt: "参考 image_5 的柔和棕色眼睛、标志性回眸注视、顶部打结的蓝金色包头巾、单颗大珍珠耳环、温暖肤色",
+      },
+    ],
+    storyboard: [],
+    constraints:
+      "提示词通过 OCR 从 Khan 转引视频（@AIwithkhan/status/2095931990839357639）右侧 Flova 面板提取，覆盖 intro + BEAT 1–3 + TRANSITION 01–03（约30秒 9:16 提示词）；成片为约60秒 16:9 分屏教程片，额外时长无对应提示词文本；参考五幅经典画作（Mona Lisa、Scream、Water Lilies、Ermine、Pearl）作为 image_1…image_5；来源 @Flovaai / X / 325575 曝光。",
+    video_prompt: {
+      title: "巴黎 POV 名画邻居 · 完整提示词",
+      subtitle: "Seedance 2.5 · 30秒 9:16 提示词（成片60秒 16:9 分屏）",
+      content: `Photorealistic live-action first-person POV continuous single take, no cuts, no fades, no dissolves, no teleportation, no morphing — all transitions are physical first-person head movement through real continuous space. Vertical 9:16, 1080p, 30 seconds. Fast pacing, smooth physical camera movement, premium European cinema look, cinematic surreal deadpan comedy, grounded surrealism, realistic modern French street atmosphere, natural daylight, realistic environmental lighting and shadows throughout. No subtitles, no watermark, no music.
+
+BEAT 1 [Seconds 0-7]
+First-person POV from inside a modern car, driver seat. Hands on steering wheel, modern French city street visible through windshield, midday daylight, realistic Parisian boulevard with Haussmann buildings, parked cars, traffic lights. Car is stopped at a red traffic light. Suddenly — BANG — violent rear impact jolt; camera lurches sharply forward; the protagonist's forehead strikes the steering wheel — impact blur, disorientation. Camera recovers. No dialogue. No music.
+
+BEAT 2 [Seconds 7-14]
+First-person POV: protagonist opens car door, steps out onto the French street, walks in controlled angry strides toward the car behind. Camera is at head height, looking forward as a real person would walk. Protagonist knocks on the driver window. Window rolls down smoothly. Inside the car sits a fully three-dimensional, photorealistic real woman physically present in the vehicle, referencing the face, serene expression, long dark hair center-parted, subtle enigmatic smile, and folded-hands poise of image_1 — she is a living human being with realistic skin texture, pores, hair strands, natural subsurface scattering, fabric folds, contact shadows, and receives the full natural French street daylight exactly as the real environment does. She looks mildly embarrassed, glances down, then up at camera, and says clearly: "Sorry, I just got my driver's license." Protagonist's POV freezes in a long deadpan stare of total disbelief. No music.
+
+BEAT 3 [Seconds 14-18]
+Without cutting, footsteps approach from behind protagonist; a French police officer walks into frame from behind the protagonist's left shoulder — fully photorealistic volumetric 3D human, wearing a realistic modern French police uniform (dark navy jacket, kepi cap, badge, radio), referencing the elongated skull-like face, wide terrified hollow eyes, dramatically open screaming mouth, and gaunt features of image_2 — but he behaves with complete professional calm, entirely deadpan, as a normal officer responding to a fender-bender. He surveys the crashed cars methodically, glances at the Mona Lisa woman, then turns and looks directly into the camera with grave seriousness. His face fully receives French street ambient daylight, realistic shadows under the kepi brim, specular highlights on the uniform buttons. No dialogue. No music.
+
+SEAMLESS TRANSITION 01 [Seconds 18-21]
+Without any cut, protagonist turns head sharply to the right; camera executes a fast smooth physical 360-degree whip-pan following the head rotation through real continuous street space; the police officer exits frame naturally at the left edge; the spinning motion reveals the Parisian sidewalk along the boulevard. As the whip-pan completes and the camera stabilizes, several people are standing on the sidewalk going about ordinary contemporary life — each is a fully photorealistic volumetric 3D human whose face unmistakably references the elongated skull, wide hollow terrified eyes, and iconic open-mouth expression of image_2 — one wears a business suit carrying a briefcase, one in streetwear scrolling a phone, one in a beige trench coat, one in cycling lycra with a helmet, one in casual clothes eating a baguette — all completely calm and normal in behavior, all receiving identical French street natural daylight, all casting real contact shadows on the pavement. Camera keeps moving forward, no cut. No dialogue. No music.
+
+SEAMLESS TRANSITION 02 [Seconds 21-25]
+Without cutting, protagonist continues walking forward; the Parisian boulevard naturally opens at its side into a modern urban public park adjacent to a large urban lake. The lake's surface is a photorealistic physical real-world recreation inspired by the color palette, floating lily pads, pink and yellow water lily blooms, and deep blue-green reflective water of image_3 — actual water with natural ripple physics, real flower petals, natural cloud reflections, integrated seamlessly under the same French daylight. On a modern wooden park bench beside the lake sits a fully three-dimensional photorealistic real woman, referencing the refined facial features, smooth pale complexion, neat cap with headband, dark bead necklace, red and blue Renaissance-style clothing, and precise three-quarter body posture of image_4 — she holds a small living white ermine in her lap, the animal physically present with real fur texture, small claws, alert eyes. She receives full natural park daylight, realistic fabric folds, contact shadows on the bench. Protagonist's POV hand reaches slowly toward the ermine. She immediately and sharply taps the back of his hand away and says firmly: "Don't touch it." Protagonist recoils. No music.
+
+SEAMLESS TRANSITION 03 [Seconds 25-30]
+Without cutting, protagonist pulls hand back and turns head; a fast smooth physical whip-pan swings the camera left and slightly forward through continuous park-to-street space; the urban park transitions physically into a lively modern French pedestrian street. A contemporary hot-dog stand with a red-and-yellow awning is visible. Behind the counter stands a fully three-dimensional photorealistic real woman, referencing the soft brown eyes with characteristic over-the-shoulder glance, the wrapped blue and gold headscarf tied at the top, the dangling single large pearl earring, and the warm skin tone of image_5 — she is entirely real with realistic skin, hair escaping the scarf edges, fabric texture, natural French street lighting. She smiles warmly, holds out a hot dog toward the camera, and says cheerfully: "Try our hot dogs, handsome!" Protagonist's POV freezes. Camera slowly pans in a wide deliberate look around — left, right, ahead — revealing all the impossible painting-inspired characters simply living ordinary modern French lives in this sunlit Parisian street. Deadpan stillness. No music. No dialogue after her line.`,
+    },
+  },
+  {
     id: "minimax-h3-mv-typography",
     title: "H3 文字包装 MV",
     subtitle: "X · @liandeli2 · 约15秒 · 16:9",
