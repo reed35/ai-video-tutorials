@@ -9,7 +9,13 @@ export default function Home() {
       <section className="min-h-[85vh] flex items-center py-12 px-[18px]">
         <div className="max-w-[1200px] mx-auto w-full">
           <div className="flex items-center gap-2.5 font-bold text-[15px] tracking-wide mb-12">
-            <div className="w-7 h-7 rounded-[9px] bg-gradient-to-br from-[var(--accent)] via-[#2dd4bf] to-[var(--accent2)]" />
+            <img
+              src="/brand/mark.png"
+              alt=""
+              width={28}
+              height={28}
+              className="w-7 h-7 rounded-[9px] object-cover"
+            />
             成片拆解
           </div>
 
