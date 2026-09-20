@@ -2,6 +2,221 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "shanghai-scallion-pancake",
+    title: "老上海葱油饼",
+    subtitle: "X · 369Serena · 30秒 · 16:9",
+    description:
+      "清晨老上海弄堂口的传统葱油饼小铺，展现完整制作过程：揉面、切葱、擀开抹猪油、卷起盘圆、煎制、入炉烘香、掰开展示层层酥脆。日式动漫美食电影风格，节奏明快，细节丰富。作者槽点：忘了放猪油。",
+    video: "/tutorials/shanghai-scallion-pancake/demo-web.mp4",
+    poster: "/tutorials/shanghai-scallion-pancake/poster.jpg",
+    duration: "30秒",
+    shots: 10,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "日式动漫美食 · 老上海街边",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/369Serena/status/2100887564274348245",
+    sourceAuthor: "@369Serena",
+    sourcePlatform: "X",
+    tags: [
+      "30秒 · 10 制作节拍",
+      "无参考图 · 纯文生可跟做",
+      "Seedance 2.5",
+      "日式动漫美食电影风格",
+      "外脆内软层次感",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂美食制作节奏",
+        description:
+          "清晨开场→揉面→切葱→擀开抹油→卷起盘圆→压饼→煎制→翻面→入炉烘香→掰开展示。核心是真实制作物理（面团形变、葱花散落、油光）+ 层次感展示（外脆内软）+ 老上海氛围（石库门、木窗、晨光）。",
+      },
+      {
+        number: 2,
+        title: "选择模型与设置",
+        description:
+          "Seedance 2.5。16:9 · 30s · 打开声音（轻快爵士器乐 + ASMR 烹饪音效：揉面、切葱、擀面、滋啦声、酥壳断裂）。无需参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持清晨暖光；面团柔软形变；葱花真实散落；煎制物理（气泡、焦斑）；烘炉暖橙色光；掰开展示层次与热气；负面提示：无文字/无超现实变形/保持视觉一致性。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–2s 清晨弄堂：近景从木窗向内移动，晨光斜照案板，摊主放下醒好的面团。面团轻轻变形，表面光泽。",
+      },
+      {
+        number: 2,
+        description:
+          "2–4.5s 揉压面团：斜俯拍特写，掌根推压折叠面团，面粉飞扬，留下揉压痕迹。",
+      },
+      {
+        number: 3,
+        description:
+          "4.5–6.5s 切葱：微距侧拍，刀刃有节奏地切出细小均匀葱花，葱白与翠绿交错，切口湿润。",
+      },
+      {
+        number: 4,
+        description:
+          "6.5–9s 擀开抹油：擀成薄长面片，用小勺抹开半凝固猪油形成油膜，撒盐和葱花自然散落。",
+      },
+      {
+        number: 5,
+        description:
+          "9–12s 卷起盘圆：从长边卷成细长面卷，再从一端盘成螺旋形，末端压在底部。葱花包入层层面皮。",
+      },
+      {
+        number: 6,
+        description:
+          "12–14s 压成圆饼：低角度特写，手掌缓缓压下螺旋面团，形成厚实小圆饼，表面留有盘卷纹理。",
+      },
+      {
+        number: 7,
+        description:
+          "14–17s 入锅煎制：圆饼放入热油锅，接触瞬间出现气泡，通过时间跳切，饼边染上金黄色。",
+      },
+      {
+        number: 8,
+        description:
+          "17–19.5s 翻面：低机位微距，铲起翻面，露出金黄焦斑与鼓泡，落回锅中滋啦作响。",
+      },
+      {
+        number: 9,
+        description:
+          "19.5–22s 入炉烘香：送入小烘炉，暖橙色炉光映亮饼面，时间跳切至表面酥脆、焦斑加深，热气逸出。",
+      },
+      {
+        number: 10,
+        description:
+          "22–30s 掰开与展示：双手隔牛皮纸掰开，外层酥壳裂开，内部柔软层层面皮与翠绿葱花显现，热气升起。最终两半放在竹盘中，镜头后拉带出弄堂，自行车铃声收尾。",
+      },
+    ],
+    constraints:
+      "清晨暖光；真实面团物理；葱花自然散落；煎制气泡与焦斑；烘炉暖光；掰开层次感；保持视觉一致性；来源 369Serena/X；Seedance 2.5。",
+    video_prompt: {
+      title: "老上海葱油饼 · Shanghai Scallion Pancake · 30s · 16:9",
+      subtitle: "Seedance 2.5 · 日式动漫美食电影风格",
+      content: `(简化的prompt内容已省略)`,
+    },
+  },
+  {
+    id: "anime-katsudon",
+    title: "日式猪排饭 Katsudon",
+    subtitle: "X · Goodmanprotocol · 30秒 · 16:9",
+    description:
+      "完整展示日式炸猪排盖饭制作流程：敲打猪肉、裹面包糠、油炸、切片、煨煮洋葱与高汤、滑蛋、盖浇米饭。快节奏动漫美食电影风格，搭配80年代日式城市流行乐器乐与ASMR烹饪音效。",
+    video: "/tutorials/anime-katsudon/demo-web.mp4",
+    poster: "/tutorials/anime-katsudon/poster.jpg",
+    duration: "30秒",
+    shots: 11,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "日式动漫美食 · 快节奏",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Goodmanprotocol/status/2098845134326808734",
+    sourceAuthor: "@Goodmanprotocol",
+    sourcePlatform: "X",
+    tags: [
+      "30秒 · 11 制作节拍",
+      "无参考图 · 纯文生可跟做",
+      "Seedance 2.5",
+      "日式动漫美食电影风格",
+      "80年代城市流行乐",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂美食制作节奏",
+        description:
+          "敲打猪肉→裹粉→炸制→切片→煨煮高汤洋葱→加入炸猪排→淋蛋液→滑蛋凝固→准备米饭→盖浇成品→英雄展示。核心是真实烹饪物理（面糊附着、油泡、蛋液流动）+ 快速剪辑匹配 + 日式厨房氛围。",
+      },
+      {
+        number: 2,
+        title: "选择模型与设置",
+        description:
+          "Seedance 2.5。16:9 · 30s · 打开声音（80年代日式城市流行乐器乐 + ASMR 烹饪音效：敲打、油炸滋啦、刀切、气泡、蛋液倾倒）。无需参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持温暖日式厨房光；真实食材纹理；面糊附着物理；油炸气泡细节；蛋液半熟微颤；米饭光泽；负面提示：无文字叠加/无不相关食材/保持一致性。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–2.5s 准备猪肉：特写双手用木槌敲打厚猪里脊，肉逐渐变薄，纤维松弛，均匀撒盐和胡椒。清脆有节奏的敲打声。",
+      },
+      {
+        number: 2,
+        description:
+          "2.5–5s 裹面包糠：快速匹配剪辑——猪肉按入面粉、浸入打散的蛋液、牢固裹上粗面包糠。真实蛋液滴落与面包糠附着。",
+      },
+      {
+        number: 3,
+        description:
+          "5–7.5s 油炸：将裹好的猪排放入热油，猛烈气泡包围炸猪排，外壳变成金黄酥脆。温暖电影光与细腻油流动。",
+      },
+      {
+        number: 4,
+        description:
+          "7.5–9.5s 切片：炸好的猪排放在木板上，锋利的刀切成均匀条状，酥脆外壳自然裂开，露出多汁白色猪肉，轻微蒸汽逸出。",
+      },
+      {
+        number: 5,
+        description:
+          "9.5–12s 煨煮高汤与洋葱：切薄的洋葱在琥珀色高汤中的浅锅里轻轻煨煮，小气泡升起，洋葱变透明。筷子轻轻拨动。",
+      },
+      {
+        number: 6,
+        description:
+          "12–14s 加入猪排：用筷子将切好的炸猪排小心放在煨煮的洋葱上，汤汁开始浸入酥脆边缘，蒸汽升起。",
+      },
+      {
+        number: 7,
+        description:
+          "14–16.5s 淋蛋液：缓慢倾倒打散的金黄蛋液在猪排和洋葱上，蛋液自然流过缝隙，热边缘开始凝固。",
+      },
+      {
+        number: 8,
+        description:
+          "16.5–19s 滑蛋凝固：特写蛋液在小火上轻轻凝固，边缘变软金黄，中心保持光泽、微流动、微颤。无搅拌。",
+      },
+      {
+        number: 9,
+        description:
+          "19–21s 准备米饭：白色陶瓷丼碗盛满蒸腾的日本短粒米饭，米饭看起来蓬松且略带光泽。",
+      },
+      {
+        number: 10,
+        description:
+          "21–24s 盖浇：小心将锅中的蛋液猪排混合物滑入米饭上，蛋液自然落成柔和波浪，高汤轻微浸入米饭。",
+      },
+      {
+        number: 11,
+        description:
+          "24–30s 英雄展示：完成的猪排饭静置在台面上，光泽蛋液慢慢落在猪排和米饭上，轻轻颤动。慢速电影推进。最终呈现在传统蓝白陶瓷碗中的成品，金色蛋液覆盖酥脆猪排盖在光泽米饭上，顶部新鲜三叶草，蒸汽升起，镜头缓慢环绕碗身，以美丽的动漫美食电影感结尾。",
+      },
+    ],
+    constraints:
+      "温暖日式厨房光；真实食材纹理；面糊附着与油炸物理；蛋液半熟微颤；米饭光泽；保持一致性；来源 Goodmanprotocol/X；Seedance 2.5。",
+    video_prompt: {
+      title: "日式猪排饭 Katsudon · 30s · 16:9",
+      subtitle: "Seedance 2.5 · 日式动漫美食电影风格",
+      content: `(简化的prompt内容已省略)`,
+    },
+  },
+  {
     id: "minimax-h3-mv-typography",
     title: "H3 文字包装 MV",
     subtitle: "X · @liandeli2 · 约15秒 · 16:9",
