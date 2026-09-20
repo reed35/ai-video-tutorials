@@ -135,6 +135,199 @@ export const tutorials: Tutorial[] = [
     },
   },
   {
+    id: "techiebysa-logo-embroidery-sew",
+    title: "刺绣缝 Logo · 线自己爬上织物",
+    subtitle: "X · @TechieBySA · 约10秒 · 16:9",
+    description:
+      "极限微距镜头记录刺绣线自主编织 Logo 的魔法时刻：彩色丝线从棉布表面升起，逐排铺设紧密缎纹针迹，勾勒标志轮廓，拉紧成立体纹理直至完整。由 Gemini Omni Flash 1.1 在 Pika 平台生成。需上传你的 Logo 参考图。",
+    video: "/tutorials/techiebysa-logo-embroidery-sew/demo-web.mp4",
+    poster: "/tutorials/techiebysa-logo-embroidery-sew/poster.jpg",
+    duration: "约10秒",
+    shots: 1,
+    references: 0,
+    model: "Gemini Omni Flash 1.1",
+    style: "刺绣微距 · Logo 缝线成型",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/TechieBySA/status/2093388159602041067",
+    sourceAuthor: "@TechieBySA",
+    sourcePlatform: "X",
+    sourceImpressions: 224974,
+    tags: [
+      "约10秒",
+      "16:9 横屏",
+      "Gemini Omni Flash 1.1",
+      "Pika",
+      "需上传 Logo 参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title:
+          "原帖要求上传自己的 Image 1 脸部参考图，用于锁定主角面部特征。本教程提供的 ref-face-from-demo.jpg 仅为示例人脸参考（成片截帧），跟做时需替换为自己的人脸照片。",
+      },
+      {
+        number: 2,
+        title: "理解折叠建筑核心规则",
+        description:
+          "Inception 式折叠：威尼斯城市像盗梦空间一样翻折成球形，建筑悬挂在空中倒置。主角始终在正常重力下行动，而世界围绕她折叠。连续镜头运动，无硬切。",
+      },
+      {
+        number: 3,
+        title: "设置与平台",
+        description:
+          "16:9 横屏 · 约30秒 · Seedance 2.5 模型 · Fish Creative HQ 平台。1940s 威尼斯金色时刻，琥珀与青蓝电影调色，35mm 变形宽银幕胶片质感，浅景深，体积光，细颗粒感。",
+      },
+      {
+        number: 4,
+        title: "粘贴完整时间线提示词",
+        description:
+          "使用下方完整 30 秒分镜提示词。每个时间段都有明确的镜头运动、场景描述和折叠效果。保持连续摄影机运动，保持主角形象与 Image 1 一致。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "Image1",
+        number: "Image 1",
+        title: "示例人脸参考 · 成片截帧",
+        subtitle: "仅供参考 · 跟做需替换为自己的脸",
+        image: "/tutorials/just-sharon7-venice-sphere/ref-face-from-demo.jpg",
+        prompt: "原帖要求上传自己的 Image 1 脸部参考图。本图为成片截帧示例，展示人物应有的面部特征、发型和造型。跟做时需上传自己的人脸照片作为 Image 1。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–3s 运河边奔跑：横向跟踪拍摄，金色时刻大运河石堤。粉发女孩 @Image1 抓着黄色信封冲过镜头，头顶整座城市倒挂。戴礼帽的男人遛腊肠犬走在倒置街道上。红伞在两个世界间无重力漂浮。鸽子在琥珀光线中飞散。",
+      },
+      {
+        number: 2,
+        description:
+          "3–6s 小巷深处：镜头跟随她进入狭窄威尼斯小巷，枯叶在身后旋转。远端街道向天空剥离，建筑像窗户墙一样垂直堆叠。脚步声在石墙间回荡。",
+      },
+      {
+        number: 3,
+        description:
+          "6–9s 镜头旋转90度：小巷墙变成她脚下的地面，她继续奔跑毫不惊慌。镜头继续进入环绕轨道，她跑上悬浮在半空的螺旋石阶，威尼斯红陶屋顶碎片像万花筒一样在她周围旋转。",
+      },
+      {
+        number: 4,
+        description:
+          "9–12s 拱桥剪影：极广角。她跑过横跨宽阔运河的石拱桥顶，逆光对着落日。镜像城市同时悬挂在拱桥上方和下方。倒置平面上，孤独的行人朝相反方向走。慢镜头鸟群爆发穿过画面。",
+      },
+      {
+        number: 5,
+        description:
+          "12–15s 垂直跃起：低角度直视两栋高耸建筑墙之间，天空是一条明亮细缝。她跃过垂直峡谷，双臂展开，外套和头发飞扬，挎包摆动。镜头定住她对着天空。风声呼啸。",
+      },
+      {
+        number: 6,
+        description:
+          "15–18s 市场穿梭：手持推进穿过拥挤的1940s里亚托市场街——商贩堆苹果箱，晾衣绳在建筑间挂着。她在模糊的前景购物者间穿梭，背离镜头奔跑。苹果滚过鹅卵石。",
+      },
+      {
+        number: 7,
+        description:
+          "18–21s 钟楼远眺：镜头沿着宏伟砖砌钟楼向上仰拍——威尼斯钟楼——周围城市折叠环绕。女孩在塔楼边缘显得渺小，对着太阳停顿，然后朝屋顶迈步。钟声开始响起。",
+      },
+      {
+        number: 8,
+        description:
+          "21–24s 屋顶花园：玫瑰藤架框出的屋顶露台花园。灰色开衫的老妇人用铁罐浇灌鲜艳花床。身后威尼斯和圣马可大教堂圆顶在日落时分闪耀，倒置城市悬挂头顶。年轻女孩沿着石栏杆平衡行走，双臂伸展，然后跳下露台。",
+      },
+      {
+        number: 9,
+        description:
+          "24–27s 递送信封：她递出黄色信封。老妇人转身，放下浇水罐，接过信封。两人温暖微笑。玫瑰花瓣向上飘过她们，朝倒置的天空落去。",
+      },
+      {
+        number: 10,
+        description:
+          "27–30s 城市成球：镜头快速后拉上升。整座城市折叠旋转，变成威尼斯运河和街道卷曲成球的俯视图。两个小小的人影留在露台上。慢慢淡入温暖光线。",
+      },
+    ],
+    constraints:
+      "需人脸参考图 Image 1（成片包含示例截帧，跟做需上传自己的脸）；1940s 威尼斯金色时刻；琥珀与青蓝电影调色；35mm 变形宽银幕胶片质感；Inception 式折叠建筑；主角始终正常重力；连续镜头运动无硬切；16:9 横屏；来源 @Just_sharon7 / X / 50522 曝光。",
+    video_prompt: {
+      title: "威尼斯折叠成球 · 30s 时间线提示词",
+      subtitle: "Seedance 2.5 · 16:9 · Fish Creative HQ · 需 Image 1 人脸参考",
+      content: `[Image 1](image_1) is the face and identity reference. A young Korean woman in her early twenties with EXACTLY the face of @[Image 1](image_1) — same facial structure, same features, natural Korean skin, no glasses. Long pastel pink hair, wearing a 1940s teal-orange wool coat-dress with white collar, a brown leather satchel worn cross-body, grey knee socks, black leather shoes, holding a folded yellow envelope. Every shot of her matches @[Image 1](image_1).
+1940s Venice at golden hour. Amber and teal cinematic grade, anamorphic 35mm film look, shallow depth of field, volumetric god rays, fine film grain. Inception-style folding architecture — the Venetian city curls upward and hangs inverted overhead like a mirrored ceiling. The woman always stays under normal gravity while the world folds around her. Continuous camera motion, no hard cuts.
+[TIMELINE PROMPT]
+0–3s: Lateral tracking shot along a stone quay by the Grand Canal at sunset. The young woman @[Image 1](image_1) in a teal coat sprints past camera, clutching a yellow envelope. Above her the entire city hangs upside down, mirrored — a man in a bowler hat walks a dachshund across the inverted street. A red umbrella drifts weightlessly between the two worlds. Pigeons scatter through the amber light.
+3–6s: Camera follows behind her into a narrow Venetian alley, dry leaves swirling in her wake. At the far end the street peels upward into the sky, buildings stacking vertically like a wall of windows. Her footsteps echo between the stone walls.
+6–9s: The camera slowly rolls 90 degrees. The alley wall becomes the ground beneath her feet; she keeps running, unfazed. The roll continues into a wide orbit as she races up a floating spiral stone staircase suspended in mid-air, fragments of terracotta Venetian rooftops rotating around her like a kaleidoscope.
+9–12s: Extreme wide silhouette. She runs across the top of an arched stone bridge over a wide canal against the blazing setting sun. The mirrored city hangs both above and below the arch. On the inverted plane, a lone pedestrian walks the opposite direction. Birds burst across the frame in slow motion.
+12–15s: Low angle looking straight up between two towering building walls, the sky a thin bright strip. She leaps across the vertical chasm, arms spread wide, coat and hair flying, satchel swinging. Camera holds on her against the sky. Wind roars.
+15–18s: Handheld push-in through a crowded 1940s Rialto market street — vendors stacking crates of apples, laundry strung overhead between the buildings. She weaves between blurred foreground shoppers, running away from camera. An apple rolls loose across the cobblestones.
+18–21s: Camera tilts up a grand brick bell tower — a Venetian campanile — as the surrounding city folds and curls around it. The woman appears tiny on the tower ledge, pauses against the sun, then steps off toward the rooftops. Bells begin to ring.
+21–24s: Rooftop terrace garden framed by a rose-covered arbor. An elderly woman in a grey cardigan waters a bed of vivid flowers with a tin can. Behind her, Venice and the domes of St Mark's Basilica glow at sunset over the lagoon while the inverted city hangs overhead. The young woman balances along the stone balustrade, arms out, then jumps down onto the terrace.
+24–27s: She holds out the yellow envelope. The old woman turns, sets down the watering can, and takes it. Both smile warmly at each other. Rose petals drift upward past them, falling toward the inverted sky.
+27–30s: Camera pulls back and rises fast. The whole city folds and rotates until it becomes a top-down aerial of Venice's canals and streets curling into a sphere. The two tiny figures remain on the terrace. Slow fade to warm light.`,
+    },
+  },
+  {
+    id: "techiebysa-logo-embroidery-sew",
+    title: "刺绣缝 Logo · 线自己爬上织物",
+    subtitle: "X · @TechieBySA · 约10秒 · 16:9",
+    description:
+      "极限微距镜头记录刺绣线自主编织 Logo 的魔法时刻：彩色丝线从棉布表面升起，逐排铺设紧密缎纹针迹，勾勒标志轮廓，拉紧成立体纹理直至完整。由 Gemini Omni Flash 1.1 在 Pika 平台生成。需上传你的 Logo 参考图。",
+    video: "/tutorials/techiebysa-logo-embroidery-sew/demo-web.mp4",
+    poster: "/tutorials/techiebysa-logo-embroidery-sew/poster.jpg",
+    duration: "约10秒",
+    shots: 1,
+    references: 0,
+    model: "Gemini Omni Flash 1.1",
+    style: "刺绣微距 · Logo 缝线成型",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/TechieBySA/status/2093388159602041067",
+    sourceAuthor: "@TechieBySA",
+    sourcePlatform: "X",
+    sourceImpressions: 224974,
+    tags: [
+      "约10秒",
+      "16:9 横屏",
+      "Gemini Omni Flash 1.1",
+      "Pika",
+      "需上传 Logo 参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备 Logo 参考图",
+        description:
+          "上传你的 Logo 图片。可以是公司标志、品牌 Logo、个人标志或任何你想要刺绣效果的图形。建议使用清晰、轮廓分明的设计。",
+      },
+      {
+        number: 2,
+        title: "在 Pika 平台设置 Gemini Omni Flash 1.1",
+        description:
+          "打开 Pika，选择 Gemini Omni Flash 1.1 模型。上传你的 Logo 参考图作为引导图像。这将确保刺绣线编织出你想要的图案。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词生成",
+        description:
+          "使用下方完整提示词，确保包含所有细节：极限微距拍摄、编织棉布、彩色刺绣线自主编织、紧密缎纹针迹、慢镜头延时节奏、柔和侧光、浅景深、可见织物纤维和真实丝线光泽。提示词来自 @TechieBySA 自回复（https://x.com/TechieBySA/status/2093388166036382197），创意由 @StevenWommack 提供。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "整段一镜：起始时编织棉布空白。彩色刺绣线从表面升起，自主编织就位，逐排铺设紧密缎纹针迹，勾勒 Logo 轮廓。缝线区域稳步扩展，丝线拉紧成立体刺绣纹理，直至完整 Logo 完成。镜头保持稳定，慢镜头延时节奏，令人满足。柔和自然侧光，浅景深，可见织物纤维和真实丝线光泽。无人手，丝线自主运动。一镜到底无场景切换。",
+      },
+    ],
+    constraints:
+      "需上传你的 Logo 参考图；极限微距固定机位；丝线自主编织无人手；一镜到底无场景切换；柔和侧光浅景深；16:9 横屏；约10秒；来源 @TechieBySA / X / 224974 曝光；提示词来自 https://x.com/TechieBySA/status/2093388166036382197 自回复；创意 @StevenWommack。",
+    video_prompt: {
+      title: "Logo 刺绣编织微距 · 约10秒 · 16:9",
+      subtitle: "Gemini Omni Flash 1.1 · Pika · 需上传 Logo 参考图",
+      content: `Extreme macro shot of woven cotton shirt fabric, empty at first. Colored embroidery threads rise from the surface and weave themselves into place, laying down tight satin stitches row by row, tracing out the logo. The stitched area grows steadily across the frame, thread pulling taut and raising into dimensional embroidered texture, until the full logo is complete. Camera holds steady, slow satisfying timelapse pace. Soft natural side light, shallow depth of field, visible fabric fibers and realistic thread sheen. No hands, thread moves on its own. One shot no scene change.`,
+    },
+  },
+  {
     id: "aiwithkhan-rope-name-smiling",
     title: "红绳拼字 Smiling · 定格小人工坊",
     subtitle: "X · @AIwithkhan · 约10秒 · 16:9",
