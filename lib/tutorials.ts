@@ -2,6 +2,235 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "lufzzliz-dunhuang-group-dance-white-mesh",
+    title: "敦煌群舞白膜成片 · MiniMax Design 全流程",
+    subtitle: "X · @LufzzLiz · 约20秒成片 · 16:9",
+    description:
+      "岚叔公开白膜→五人角色图→H3全能参考群舞全流程。含5条生图提示词 + H3生视频提示词。工具链 MiniMax Design / GPT Image / H3。",
+    video: "/tutorials/lufzzliz-dunhuang-group-dance-white-mesh/demo-web.mp4",
+    poster: "/tutorials/lufzzliz-dunhuang-group-dance-white-mesh/poster.jpg",
+    duration: "约20秒",
+    shots: 0,
+    references: 5,
+    model: "MiniMax H3（全能参考）",
+    style: "敦煌群舞 · 白膜流程",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/LufzzLiz/status/2099466952309903560",
+    sourceAuthor: "@LufzzLiz",
+    sourcePlatform: "X",
+    sourceImpressions: 17360,
+    tags: [
+      "约20秒 · 敦煌群舞成片",
+      "16:9 横屏",
+      "白膜动作参考流程",
+      "五人角色生图 + H3视频",
+      "MiniMax Design / GPT Image",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解白膜（motion reference）",
+        description:
+          "白膜是纯白色人物模型动作参考视频，只负责舞蹈动作、姿态、人物前后关系、镜头顺序、相机运动和节奏。不保留白模外观，成片第一帧即是真人。提供原片白膜动作参考（前10秒 + 后10秒），理解完整时间轴和音乐节奏。参考：https://x.com/LufzzLiz/status/2099466975722500141",
+      },
+      {
+        number: 2,
+        title: "GPT Image 2.5 生成五人角色图",
+        description:
+          "使用 GPT Image 2.5 + 群舞参考图，生成五位成年女性真人摄影角色图。每人有独特脸型、五官、发型和服装色彩：01 中央领舞（朱砂珊瑚/杏金，清艳灵动）、02 后排左侧（石青/珊瑚，英气自信）、03 后排右侧（赭金/青绿，明丽温暖）、04 前排左侧跪坐（桃色/石绿，温婉舒展）、05 前排右侧跪坐（象牙白/碧罗，清冷秀美）。五条完整生图提示词见下方参考资料。参考：https://x.com/LufzzLiz/status/2099466958877995211 https://x.com/LufzzLiz/status/2099466966172151947 https://x.com/LufzzLiz/status/2099466972862025914",
+      },
+      {
+        number: 3,
+        title: "MiniMax Design / H3 全能参考双段生成",
+        description:
+          "将五张角色图 + 白膜动作参考上传到 MiniMax Design，使用 MiniMax H3 全能参考模式。单段最长15秒，生成 2×10秒@16:9 片段组成约20秒成片。每段绑定同一组5张单人图 + 对应动作参考视频（前10s / 后10s）。五人身份必须一一绑定并在遮挡、转身、绕镜和队形变化中保持稳定。左右仅指原片开场队形，不随屏幕左右变化交换身份。完整视频提示词见下方。参考：https://x.com/LufzzLiz/status/2099466975722500141",
+      },
+      {
+        number: 4,
+        title: "合成与超分",
+        description:
+          "用 ffmpeg 按原时间轴合成20秒完整视频，回填原音乐。进行 2K 超分（upscale）提升画质。核验五人对应关系和身份稳定性。MMD 也可用于配音。最终交付约20秒 16:9 敦煌群舞成片。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "image-01",
+        number: "01",
+        title: "中央领舞 · 生图提示词",
+        subtitle:
+          "GPT Image 2.5 · 朱砂珊瑚上衣/杏金裙裤/青绿披帛 · 清艳灵动",
+        image: "/tutorials/lufzzliz-dunhuang-group-dance-white-mesh/group_ref.jpg",
+        prompt: `生图提示词（也可以自己DIY）：
+ 01_中间主舞 
+Create ONE extraordinarily beautiful standalone LIVE-ACTION PHOTOGRAPH of EXACTLY ONE adult Chinese female Dunhuang dancer. This is portrait 01 in a series of five different women. The user specifically wants every woman to have her OWN distinctive, striking beauty. Prioritize breathtaking but believable real human facial beauty and clear individual difference over reproducing the low-detail faces in the reference.
+
+REFERENCE ROLE:
+
+The provided GROUP photo is ONLY a source for which dancer to select, her costume colors, coiffure, headdress and dance spirit. It is NOT a requirement to copy its similar-looking faces. Use the requested dancer's clothes and visual role, and cast a beautiful new DISTINCT adult face according to the precise face direction below. Render only this single woman. No other people anywhere, no other dancers, no background human figures or statues, no extra heads or faces, no collage, no grid.
+DANCER SELECTION AND COSTUME:
+
+Select ONLY the CENTRAL standing lead dancer (face approximately 52% across the image).  Her costume is the dusty coral / cinnabar bandeau with delicate gold-turquoise embroidery, champagne-apricot layered silk lower garment, narrow jeweled belt, pale celadon ribbons. Create a beautiful full-length SOLO dance portrait: a gentle S-curve through the waist, one arm gracefully curved overhead, the other extended diagonally to shoulder height with a soft classical dance wrist. Head turned slightly toward the camera, quiet living gaze. Silk and ribbons lift gently with her movement. She is standing gracefully, weight on one leg and the other foot lightly pointed. Keep the costume, hairstyle and identity from this particular woman; only adapt the pose into an elegant solo portrait.
+Use the reference for COSTUME and DANCE selection. Face direction below takes priority over any request to match the old face. Framing direction below takes priority over full-length / entire body wording above.
+INDIVIDUAL FACE — ESSENTIAL:
+
+Her beauty is strikingly refined and luminous: a softly sculpted oval face, elegant long almond eyes with subtly lifted outer corners, beautifully tapered arched brows, a delicate straight nose, naturally defined cupid's-bow lips and softly rounded cheeks. A small quiet self-assured smile and an alive direct three-quarter gaze. She has classical grace with an arresting presence. Face distinction: oval shape, long lifted almond eyes, delicate arched brows, defined cupid's bow. This is the clear, luminous central beauty.
+She is an unmistakably ADULT woman about 25–32. Exquisitely balanced real features, individual and memorable, naturally attractive rather than a standardized beauty-filter face. Real dark irises, beautifully detailed eyelashes, tiny eye catchlights, natural lip texture, fine skin pores with subtle warm tonal variation, a few soft hairline strands, realistic earlobes and subtle facial asymmetry. Refined understated classical dance makeup, muted warm rose lips, only a tiny traditional forehead decoration. A real living person with intelligent feeling in her eyes. No giant eyes, pointed V-shaped chin, exaggerated lips or airbrushed plastic skin. Beauty should be arresting and emotionally alive while entirely believable.
+PORTRAIT FRAMING — FACE IS THE FOCUS:
+
+ONE vertical 3:4 editorial portrait. Bring the camera closer than the group photo: use a head-to-hip / elegant three-quarter dance portrait, or head-to-knee for the kneeling dancer, with the full crown and both expressive hands comfortably inside the image. Her face is large, crisp, beautifully lit and immediately the visual focus, about 15–20 percent of the image height. Ensure her face is not obscured by an arm, crown, ribbon or excessive profile angle. Soft three-quarter face angle allows both eyes to read. Hands, flowing silk and the graceful curve of her body frame her beauty. It is fine to crop trailing fabric and lower legs to bring the face closer. Elegant, natural, warm living posture, subtly expressive wrists and anatomically correct fingers. Adapt the selected dance pose modestly so it serves the face and portrait.
+MATERIALS AND PHOTOGRAPHY:
+
+Photograph of a flesh-and-blood professional female dancer on a real set. Finely embroidered wearable silk, weightless translucent gauze, tasteful small real gold-toned metal ornaments, believable pearls / turquoise / coral details. Cloth has real weave and beautiful light transmission. Preserve each selected dancer's costume palette from the reference, with refined mineral teal, celadon, muted coral, warm ochre, peach and ivory.
+Quiet softly blurred warm sandstone / plaster arch far behind her with faint abstract traces of worn mineral pigments; no discernible human wall paintings. Very restrained background. Broad soft daylight from upper left, delicate catchlights and sculpting fill on the face, fine luminous edges along hair and gauze. Warm-neutral true skin color, sophisticated subtle contrast, no heavy orange filter.
+High-end medium-format portrait photography, 85mm lens feeling, optical detail on eyes, lips and skin, gentle shallow depth of field, subtle photographic grain. The most beautiful light, excellent casting, graceful choreography, real couture fabric. A compelling single-person fine-art dance portrait suitable for a premium fashion editorial.
+NO sculpture, statues, clay, ceramics, porcelain, wax, doll, mannequin, CGI, 3D render, illustration, airbrushed look, fantasy glow, glitter, fake skin. No text, labels, signatures, watermark, frames or panels. Exactly ONE adult woman, visually distinct from the other portraits.`,
+      },
+      {
+        id: "image-02",
+        number: "02",
+        title: "后排左侧 · 生图提示词",
+        subtitle: "GPT Image 2.5 · 石青服装/珊瑚披帛 · 英气自信",
+        image: "/tutorials/lufzzliz-dunhuang-group-dance-white-mesh/dancer_02.jpg",
+        prompt: `===== 02 后排左侧舞者 | 02_后排左侧_石青流光.png =====
+Create ONE extraordinarily beautiful standalone LIVE-ACTION PHOTOGRAPH of EXACTLY ONE adult Chinese female Dunhuang dancer. This is portrait 02 in a series of five different women. The user specifically wants every woman to have her OWN distinctive, striking beauty. Prioritize breathtaking but believable real human facial beauty and clear individual difference over reproducing the low-detail faces in the reference.
+
+REFERENCE ROLE:
+
+The provided GROUP photo is ONLY a source for which dancer to select, her costume colors, coiffure, headdress and dance spirit. It is NOT a requirement to copy its similar-looking faces. Use the requested dancer's clothes and visual role, and cast a beautiful new DISTINCT adult face according to the precise face direction below. Render only this single woman. No other people anywhere, no other dancers, no background human figures or statues, no extra heads or faces, no collage, no grid.
+DANCER SELECTION AND COSTUME:
+
+Select ONLY the STANDING dancer BEHIND THE LEFT KNEELING WOMAN (face approximately 37% across, 24% down). This is the woman with her outside arm reaching high toward the upper LEFT of the group image.  She wears a mineral teal silk lower garment, a muted teal / ochre embroidered bodice, coral shoulder drape and pale green airy ribbons. Create a full-length SOLO portrait preserving her signature pose: outside arm elegantly reaching upward toward the upper left corner, the other arm extending outward lower down with a graceful wrist, head turned and eyes looking toward the raised hand. Gently curved neck, poised shoulders and soft S-shaped torso. All hands, crown, flowing hems and feet inside the image. Fine ribbons describe one or two spacious curves beside her. Preserve her distinct beauty and her teal/coral outfit, and do not use the central woman's face or peach outfit.
+Use the reference for COSTUME and DANCE selection. Face direction below takes priority over any request to match the old face. Framing direction below takes priority over full-length / entire body wording above.
+INDIVIDUAL FACE — ESSENTIAL:
+
+Her beauty is striking, confident and slightly androgynous in its strength: a refined gently angular face, naturally defined cheekbones and a clean jaw line, long straight dark brows, deep clear narrow-almond eyes, a beautifully defined straight nose, fuller lower lip. A proud but gentle expression and direct, focused three-quarter gaze with parted relaxed lips. Elegant strong bone structure while unmistakably feminine and adult. Face distinction: angular jaw, straight brows, deeper eyes, more sculpted cheekbones. This is the charismatic, spirited beauty.
+She is an unmistakably ADULT woman about 25–32. Exquisitely balanced real features, individual and memorable, naturally attractive rather than a standardized beauty-filter face. Real dark irises, beautifully detailed eyelashes, tiny eye catchlights, natural lip texture, fine skin pores with subtle warm tonal variation, a few soft hairline strands, realistic earlobes and subtle facial asymmetry. Refined understated classical dance makeup, muted warm rose lips, only a tiny traditional forehead decoration. A real living person with intelligent feeling in her eyes. No giant eyes, pointed V-shaped chin, exaggerated lips or airbrushed plastic skin. Beauty should be arresting and emotionally alive while entirely believable.
+PORTRAIT FRAMING — FACE IS THE FOCUS:
+
+ONE vertical 3:4 editorial portrait. Bring the camera closer than the group photo: use a head-to-hip / elegant three-quarter dance portrait, or head-to-knee for the kneeling dancer, with the full crown and both expressive hands comfortably inside the image. Her face is large, crisp, beautifully lit and immediately the visual focus, about 15–20 percent of the image height. Ensure her face is not obscured by an arm, crown, ribbon or excessive profile angle. Soft three-quarter face angle allows both eyes to read. Hands, flowing silk and the graceful curve of her body frame her beauty. It is fine to crop trailing fabric and lower legs to bring the face closer. Elegant, natural, warm living posture, subtly expressive wrists and anatomically correct fingers. Adapt the selected dance pose modestly so it serves the face and portrait.
+MATERIALS AND PHOTOGRAPHY:
+
+Photograph of a flesh-and-blood professional female dancer on a real set. Finely embroidered wearable silk, weightless translucent gauze, tasteful small real gold-toned metal ornaments, believable pearls / turquoise / coral details. Cloth has real weave and beautiful light transmission. Preserve each selected dancer's costume palette from the reference, with refined mineral teal, celadon, muted coral, warm ochre, peach and ivory.
+Quiet softly blurred warm sandstone / plaster arch far behind her with faint abstract traces of worn mineral pigments; no discernible human wall paintings. Very restrained background. Broad soft daylight from upper left, delicate catchlights and sculpting fill on the face, fine luminous edges along hair and gauze. Warm-neutral true skin color, sophisticated subtle contrast, no heavy orange filter.
+High-end medium-format portrait photography, 85mm lens feeling, optical detail on eyes, lips and skin, gentle shallow depth of field, subtle photographic grain. The most beautiful light, excellent casting, graceful choreography, real couture fabric. A compelling single-person fine-art dance portrait suitable for a premium fashion editorial.
+NO sculpture, statues, clay, ceramics, porcelain, wax, doll, mannequin, CGI, 3D render, illustration, airbrushed look, fantasy glow, glitter, fake skin. No text, labels, signatures, watermark, frames or panels. Exactly ONE adult woman, visually distinct from the other portraits.`,
+      },
+      {
+        id: "image-03",
+        number: "03",
+        title: "后排右侧 · 生图提示词",
+        subtitle: "GPT Image 2.5 · 赭金服装/青绿装饰 · 明丽温暖",
+        image: "/tutorials/lufzzliz-dunhuang-group-dance-white-mesh/dancer_03.jpg",
+        prompt: `===== 03 后排右侧舞者 | 03_后排右侧_赭金映玉.png =====
+
+Create ONE extraordinarily beautiful standalone LIVE-ACTION PHOTOGRAPH of EXACTLY ONE adult Chinese female Dunhuang dancer. This is portrait 03 in a series of five different women. The user specifically wants every woman to have her OWN distinctive, striking beauty. Prioritize breathtaking but believable real human facial beauty and clear individual difference over reproducing the low-detail faces in the reference.
+REFERENCE ROLE:
+
+The provided GROUP photo is ONLY a source for which dancer to select, her costume colors, coiffure, headdress and dance spirit. It is NOT a requirement to copy its similar-looking faces. Use the requested dancer's clothes and visual role, and cast a beautiful new DISTINCT adult face according to the precise face direction below. Render only this single woman. No other people anywhere, no other dancers, no background human figures or statues, no extra heads or faces, no collage, no grid.
+
+DANCER SELECTION AND COSTUME:
+Select ONLY the STANDING dancer BEHIND THE RIGHT KNEELING WOMAN (face approximately 73% across, 25% down), with her outside arm extended high toward the upper RIGHT of the group image.  Her signature costume is mellow ochre-gold silk with refined mineral teal / gold embroidered trim, subtle muted coral sashes and celadon gauze. Create a full-length SOLO photograph of her real living dance pose: the outside arm reaches high toward the upper right, the inner arm extends outward and slightly downward with a relaxed expressive wrist, her body turns three-quarters and face tilts toward the raised hand. Elegant grounded stance with a lightly pointed foot. Preserve this woman's ochre outfit and distinctive face; do not replace her with the central dancer. Entire headdress, fingers, lower garment and feet comfortably visible, with natural breathing room.
+
+Use the reference for COSTUME and DANCE selection. Face direction below takes priority over any request to match the old face. Framing direction below takes priority over full-length / entire body wording above.
+INDIVIDUAL FACE — ESSENTIAL:
+Her beauty is radiant and expressive: a softly heart-shaped face, fuller upper cheeks, large bright rounded-almond eyes, delicately curved shorter brows, a refined softly rounded nose tip, naturally full rose-colored lips. A small spontaneous smile that reaches her eyes, open warm gaze turned back toward the camera. Warm energetic charm without exaggeration. Face distinction: heart-shaped face, rounder bright eyes, fuller cheeks, joyful soft mouth. This is the dazzling, radiant beauty.
+
+She is an unmistakably ADULT woman about 25–32. Exquisitely balanced real features, individual and memorable, naturally attractive rather than a standardized beauty-filter face. Real dark irises, beautifully detailed eyelashes, tiny eye catchlights, natural lip texture, fine skin pores with subtle warm tonal variation, a few soft hairline strands, realistic earlobes and subtle facial asymmetry. Refined understated classical dance makeup, muted warm rose lips, only a tiny traditional forehead decoration. A real living person with intelligent feeling in her eyes. No giant eyes, pointed V-shaped chin, exaggerated lips or airbrushed plastic skin. Beauty should be arresting and emotionally alive while entirely believable.
+PORTRAIT FRAMING — FACE IS THE FOCUS:
+ONE vertical 3:4 editorial portrait. Bring the camera closer than the group photo: use a head-to-hip / elegant three-quarter dance portrait, or head-to-knee for the kneeling dancer, with the full crown and both expressive hands comfortably inside the image. Her face is large, crisp, beautifully lit and immediately the visual focus, about 15–20 percent of the image height. Ensure her face is not obscured by an arm, crown, ribbon or excessive profile angle. Soft three-quarter face angle allows both eyes to read. Hands, flowing silk and the graceful curve of her body frame her beauty. It is fine to crop trailing fabric and lower legs to bring the face closer. Elegant, natural, warm living posture, subtly expressive wrists and anatomically correct fingers. Adapt the selected dance pose modestly so it serves the face and portrait.
+
+MATERIALS AND PHOTOGRAPHY:
+Photograph of a flesh-and-blood professional female dancer on a real set. Finely embroidered wearable silk, weightless translucent gauze, tasteful small real gold-toned metal ornaments, believable pearls / turquoise / coral details. Cloth has real weave and beautiful light transmission. Preserve each selected dancer's costume palette from the reference, with refined mineral teal, celadon, muted coral, warm ochre, peach and ivory.
+
+Quiet softly blurred warm sandstone / plaster arch far behind her with faint abstract traces of worn mineral pigments; no discernible human wall paintings. Very restrained background. Broad soft daylight from upper left, delicate catchlights and sculpting fill on the face, fine luminous edges along hair and gauze. Warm-neutral true skin color, sophisticated subtle contrast, no heavy orange filter.
+High-end medium-format portrait photography, 85mm lens feeling, optical detail on eyes, lips and skin, gentle shallow depth of field, subtle photographic grain. The most beautiful light, excellent casting, graceful choreography, real couture fabric. A compelling single-person fine-art dance portrait suitable for a premium fashion editorial.
+NO sculpture, statues, clay, ceramics, porcelain, wax, doll, mannequin, CGI, 3D render, illustration, airbrushed look, fantasy glow, glitter, fake skin. No text, labels, signatures, watermark, frames or panels. Exactly ONE adult woman, visually distinct from the other portraits.`,
+      },
+      {
+        id: "image-04",
+        number: "04",
+        title: "前排左侧跪坐 · 生图提示词",
+        subtitle: "GPT Image 2.5 · 桃色绢裙/石绿上衣 · 温婉舒展",
+        image: "/tutorials/lufzzliz-dunhuang-group-dance-white-mesh/dancer_04.jpg",
+        prompt: `===== 04 前排左侧舞者 | 04_前排左侧_桃绢含章.png =====
+Create ONE extraordinarily beautiful standalone LIVE-ACTION PHOTOGRAPH of EXACTLY ONE adult Chinese female Dunhuang dancer. This is portrait 04 in a series of five different women. The user specifically wants every woman to have her OWN distinctive, striking beauty. Prioritize breathtaking but believable real human facial beauty and clear individual difference over reproducing the low-detail faces in the reference.
+
+REFERENCE ROLE:
+
+The provided GROUP photo is ONLY a source for which dancer to select, her costume colors, coiffure, headdress and dance spirit. It is NOT a requirement to copy its similar-looking faces. Use the requested dancer's clothes and visual role, and cast a beautiful new DISTINCT adult face according to the precise face direction below. Render only this single woman. No other people anywhere, no other dancers, no background human figures or statues, no extra heads or faces, no collage, no grid.
+DANCER SELECTION AND COSTUME:
+
+Select ONLY the KNEELING woman at the FRONT LEFT of the group (face approximately 22% across, 45% down).  Her costume has a mineral teal and old-gold embroidered bodice, translucent champagne sleeves, a peach/apricot silk skirt with pale green accents, muted coral and celadon sashes. Create a single-person full-figure portrait of this SAME woman in her elegant low kneeling / seated dance pose: one knee lifted softly beneath the draped peach skirt, her hands held at distinct chest and waist levels making delicate authentic dance gestures, head turned slightly toward the left and downward with a serene, alive expression. Include the complete crown and the full beautiful spread of silk pooling on the stone floor. Visibly separate realistic fingers. Preserve her individual beauty and warm peach clothing, not the other kneeling woman's mostly ivory costume. The flowing fabric should create a beautiful asymmetrical fan around her, with airy silk rather than bulky rigid folds.
+Use the reference for COSTUME and DANCE selection. Face direction below takes priority over any request to match the old face. Framing direction below takes priority over full-length / entire body wording above.
+INDIVIDUAL FACE — ESSENTIAL:
+
+Her beauty is gentle and deeply affecting: a balanced soft oval face with a slightly rounder lower cheek contour, flowing willow-shaped eyebrows, soft crescent-almond eyes, a small elegantly proportioned nose, naturally small rosebud lips. A subtle tender smile and warm slightly lowered three-quarter gaze toward the camera, rather than closing her eyes or hiding her face. Mature graceful warmth. Face distinction: softer lower cheeks, long curved willow brows, crescent eyes, small rosebud lips. This is the serene, tender beauty.
+She is an unmistakably ADULT woman about 25–32. Exquisitely balanced real features, individual and memorable, naturally attractive rather than a standardized beauty-filter face. Real dark irises, beautifully detailed eyelashes, tiny eye catchlights, natural lip texture, fine skin pores with subtle warm tonal variation, a few soft hairline strands, realistic earlobes and subtle facial asymmetry. Refined understated classical dance makeup, muted warm rose lips, only a tiny traditional forehead decoration. A real living person with intelligent feeling in her eyes. No giant eyes, pointed V-shaped chin, exaggerated lips or airbrushed plastic skin. Beauty should be arresting and emotionally alive while entirely believable.
+PORTRAIT FRAMING — FACE IS THE FOCUS:
+
+ONE vertical 3:4 editorial portrait. Bring the camera closer than the group photo: use a head-to-hip / elegant three-quarter dance portrait, or head-to-knee for the kneeling dancer, with the full crown and both expressive hands comfortably inside the image. Her face is large, crisp, beautifully lit and immediately the visual focus, about 15–20 percent of the image height. Ensure her face is not obscured by an arm, crown, ribbon or excessive profile angle. Soft three-quarter face angle allows both eyes to read. Hands, flowing silk and the graceful curve of her body frame her beauty. It is fine to crop trailing fabric and lower legs to bring the face closer. Elegant, natural, warm living posture, subtly expressive wrists and anatomically correct fingers. Adapt the selected dance pose modestly so it serves the face and portrait.
+MATERIALS AND PHOTOGRAPHY:
+
+Photograph of a flesh-and-blood professional female dancer on a real set. Finely embroidered wearable silk, weightless translucent gauze, tasteful small real gold-toned metal ornaments, believable pearls / turquoise / coral details. Cloth has real weave and beautiful light transmission. Preserve each selected dancer's costume palette from the reference, with refined mineral teal, celadon, muted coral, warm ochre, peach and ivory.
+Quiet softly blurred warm sandstone / plaster arch far behind her with faint abstract traces of worn mineral pigments; no discernible human wall paintings. Very restrained background. Broad soft daylight from upper left, delicate catchlights and sculpting fill on the face, fine luminous edges along hair and gauze. Warm-neutral true skin color, sophisticated subtle contrast, no heavy orange filter.
+High-end medium-format portrait photography, 85mm lens feeling, optical detail on eyes, lips and skin, gentle shallow depth of field, subtle photographic grain. The most beautiful light, excellent casting, graceful choreography, real couture fabric. A compelling single-person fine-art dance portrait suitable for a premium fashion editorial.
+NO sculpture, statues, clay, ceramics, porcelain, wax, doll, mannequin, CGI, 3D render, illustration, airbrushed look, fantasy glow, glitter, fake skin. No text, labels, signatures, watermark, frames or panels. Exactly ONE adult woman, visually distinct from the other portraits.`,
+      },
+      {
+        id: "image-05",
+        number: "05",
+        title: "前排右侧跪坐 · 生图提示词",
+        subtitle: "GPT Image 2.5 · 象牙白裙/碧罗青绿装饰 · 清冷秀美",
+        image: "/tutorials/lufzzliz-dunhuang-group-dance-white-mesh/dancer_05.jpg",
+        prompt: `===== 05 前排右侧舞者 | 05_前排右侧_碧罗凝香.png =====
+
+Create ONE extraordinarily beautiful standalone LIVE-ACTION PHOTOGRAPH of EXACTLY ONE adult Chinese female Dunhuang dancer. This is portrait 05 in a series of five different women. The user specifically wants every woman to have her OWN distinctive, striking beauty. Prioritize breathtaking but believable real human facial beauty and clear individual difference over reproducing the low-detail faces in the reference.
+REFERENCE ROLE:
+
+The provided GROUP photo is ONLY a source for which dancer to select, her costume colors, coiffure, headdress and dance spirit. It is NOT a requirement to copy its similar-looking faces. Use the requested dancer's clothes and visual role, and cast a beautiful new DISTINCT adult face according to the precise face direction below. Render only this single woman. No other people anywhere, no other dancers, no background human figures or statues, no extra heads or faces, no collage, no grid.
+
+DANCER SELECTION AND COSTUME:
+Select ONLY the KNEELING woman at the FRONT RIGHT of the group (face approximately 86% across, 47% down).  Her costume is an embroidered teal-and-gold bodice with translucent ivory sleeves, mostly ivory flowing lower silk garments, muted celadon, dusty coral and teal sashes. Create a single-person full-figure portrait of this SAME woman in a gracefully composed kneeling dance pose: torso upright and softly turned, head tilted slightly down toward the right, hands held at chest and lower waist in the graceful separate classical finger gestures seen in the reference, a subtle affectionate quiet expression. Keep both hands fully readable and anatomically natural. Full crown and entire draped lower figure visible. Ivory silk pools in a broad soft arc with a contrasting teal/coral diagonal sash. Preserve this woman's identity and her ivory/teal palette instead of the left woman's warmer peach outfit.
+
+Use the reference for COSTUME and DANCE selection. Face direction below takes priority over any request to match the old face. Framing direction below takes priority over full-length / entire body wording above.
+INDIVIDUAL FACE — ESSENTIAL:
+Her beauty is cool, sophisticated and mesmerizing: an elegant slightly longer oval face, refined higher cheekbones, beautifully spaced elongated phoenix-like eyes, gently rising brows with a fine tail, a straight sculpted nose bridge, delicately shaped medium-full lips with a restrained neutral expression. A calm penetrating three-quarter gaze directly toward the camera, subtle strength and mystery in her eyes. Face distinction: longer face, higher cheekbones, elongated eyes, longer nose line, calm unsmiling mouth. This is the poised, cool beauty.
+
+She is an unmistakably ADULT woman about 25–32. Exquisitely balanced real features, individual and memorable, naturally attractive rather than a standardized beauty-filter face. Real dark irises, beautifully detailed eyelashes, tiny eye catchlights, natural lip texture, fine skin pores with subtle warm tonal variation, a few soft hairline strands, realistic earlobes and subtle facial asymmetry. Refined understated classical dance makeup, muted warm rose lips, only a tiny traditional forehead decoration. A real living person with intelligent feeling in her eyes. No giant eyes, pointed V-shaped chin, exaggerated lips or airbrushed plastic skin. Beauty should be arresting and emotionally alive while entirely believable.
+PORTRAIT FRAMING — FACE IS THE FOCUS:
+ONE vertical 3:4 editorial portrait. Bring the camera closer than the group photo: use a head-to-hip / elegant three-quarter dance portrait, or head-to-knee for the kneeling dancer, with the full crown and both expressive hands comfortably inside the image. Her face is large, crisp, beautifully lit and immediately the visual focus, about 15–20 percent of the image height. Ensure her face is not obscured by an arm, crown, ribbon or excessive profile angle. Soft three-quarter face angle allows both eyes to read. Hands, flowing silk and the graceful curve of her body frame her beauty. It is fine to crop trailing fabric and lower legs to bring the face closer. Elegant, natural, warm living posture, subtly expressive wrists and anatomically correct fingers. Adapt the selected dance pose modestly so it serves the face and portrait.
+
+MATERIALS AND PHOTOGRAPHY:
+Photograph of a flesh-and-blood professional female dancer on a real set. Finely embroidered wearable silk, weightless translucent gauze, tasteful small real gold-toned metal ornaments, believable pearls / turquoise / coral details. Cloth has real weave and beautiful light transmission. Preserve each selected dancer's costume palette from the reference, with refined mineral teal, celadon, muted coral, warm ochre, peach and ivory.
+
+Quiet softly blurred warm sandstone / plaster arch far behind her with faint abstract traces of worn mineral pigments; no discernible human wall paintings. Very restrained background. Broad soft daylight from upper left, delicate catchlights and sculpting fill on the face, fine luminous edges along hair and gauze. Warm-neutral true skin color, sophisticated subtle contrast, no heavy orange filter.
+High-end medium-format portrait photography, 85mm lens feeling, optical detail on eyes, lips and skin, gentle shallow depth of field, subtle photographic grain. The most beautiful light, excellent casting, graceful choreography, real couture fabric. A compelling single-person fine-art dance portrait suitable for a premium fashion editorial.
+NO sculpture, statues, clay, ceramics, porcelain, wax, doll, mannequin, CGI, 3D render, illustration, airbrushed look, fantasy glow, glitter, fake skin. No text, labels, signatures, watermark, frames or panels. Exactly ONE adult woman, visually distinct from the other portraits.`,
+      },
+    ],
+    storyboard: [],
+    constraints:
+      "白膜只负责动作/节奏，成片第一帧即是真人；五人身份必须稳定一一绑定；左右指原片开场队形不随屏幕变化；H3单段最长15秒需拆分2×10秒；优先1080P；来源 @LufzzLiz / X / 17360 曝光。",
+    video_prompt: {
+      title: "MiniMax H3 全能参考 · 生视频提示词",
+      subtitle: "MiniMax Design · H3 全能参考模式 · 2×10秒@16:9 · 完整可复制",
+      content: `生视频提示词：
+请用当前 MiniMax Design 的 MiniMax H3 全能参考模式，完成一版约20秒的真人敦煌群舞视频。
+附件按文件名前缀01-08识别，上传顺序可能倒序，不可按上传顺序分配身份。01-05为五位成年女性的真人摄影角色图；06是原片前10秒动作参考；07是后10秒动作参考；08是完整原片，用于理解总时间轴和取回原音乐。原视频的白色人物模型只负责舞蹈动作、姿态、人物前后关系、镜头顺序、相机运动和节奏；成片第一帧即是五位真人，不保留白模外观，不做从白模逐渐变人的过程。每个角色脸型、五官、发型和服装以自己的单人图为准。
+五个角色必须一一绑定，身份在遮挡、转身、绕镜和队形变化中保持稳定。左右仅指原片开场队形，不能随着屏幕左右变化交换身份：
+01 中央领舞：朱砂珊瑚上衣、杏金裙裤、青绿披帛，清艳灵动。
+02 后排左侧：石青服装、珊瑚披帛，轮廓英气、自信专注。
+03 后排右侧：赭金服装、青绿装饰，明丽温暖。
+04 前排左侧开场跪坐：桃色绢裙、石绿上衣，温婉舒展。
+05 前排右侧开场跪坐：象牙白裙、碧罗青绿装饰，清冷秀美。
+最重要的是自然灵动的眼神与各自独特的美：视线有合理落点，自然看向指尖、手势方向或转身落点，双眼协调对焦，轻柔扫视并有自然停顿；在转身或视线改变间隙短暂完整眨眼，五人不要同步。眉梢、眼睑、嘴角有细微协调变化，保持克制笑意和真实皮肤纹理，避免全程盯镜头、空洞玻璃眼、固定假笑、瞳孔乱动或面部漂移。五人不能都长成同一张脸。
+视觉：电影摄影般真实的敦煌石窟群舞，温暖自然光、矿物颜料壁画、精美金饰、轻盈丝绸披帛、真实衣料动态；保留原片五人的角色、舞蹈和关系。无新增人物、字幕、logo、对白。
+先实际看完五图及两个动作片段，加载应用当前的 H3 全能参考提示规范再执行。单段最长15秒，因此生成2条各10秒、16:9的片段组成这一版。每段都绑定同一组5张单人图，并使用对应06或07视频作动作参考。优先1080P；若当前模式只提供768P，使用768P并如实记录，不上采样冒称1080P。只用MiniMax H3，不改为Max、Turbo、Wan或其他模型。
+先生成前10秒并核对五人映射；后10秒继续原舞蹈，保持身份、服装、光线与镜头衔接。若支持，可增加前段真实生成末帧作为后段连续性辅助，但五人身份仍以原五图为准。只生成这一版所需的2条，不自行批量生成候选。如果全能参考不能同时接收一个参考视频和这5张图，先报告实际限制，不能擅自降级成纯文生视频或单张首帧动画。
+生成后保存两个原始H3视频、完整实际提示词、实际模型/模式/输入/参数和可见消耗，未知费用写unknown。用本机已有ffmpeg按原时间轴合成20秒，回填08的原音乐；完成解码与五人对应关系抽帧核验。把两段和完整成片加入画布，并报告真实绝对路径和任务ID。实际完成生成和交付，不停在方案。`,
+    },
+  },
+  {
     id: "flova-mona-lisa-neighbors",
     title: "蒙娜丽莎搬进街坊 · Flova 分屏教程",
     subtitle: "X · @Flovaai（@AIwithkhan 转引）· 约30秒提示 / 成片约60秒 · 16:9",
