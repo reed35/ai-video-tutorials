@@ -27,24 +27,35 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
             ))}
           </div>
         </div>
-        <div
-          className="mx-4 mb-4 rounded-2xl overflow-hidden bg-black border border-[var(--line)]"
-          style={{ aspectRatio: tutorial.aspectRatio ?? "16/9" }}
-        >
-          <video
-            className="w-full h-full object-contain"
-            poster={tutorial.poster}
-            playsInline
-            preload="none"
-            muted
-            onMouseEnter={(e) => e.currentTarget.play()}
-            onMouseLeave={(e) => {
-              e.currentTarget.pause();
-              e.currentTarget.currentTime = 0;
+        <div className="mx-4 mb-4 flex justify-center">
+          <div
+            className="rounded-2xl overflow-hidden bg-black border border-[var(--line)] max-w-full"
+            style={{
+              aspectRatio: tutorial.aspectRatio ?? "16/9",
+              maxHeight: "min(28vh, 240px)",
+              width: `min(100%, calc(min(28vh, 240px) * ${
+                (() => {
+                  const [aw, ah] = (tutorial.aspectRatio ?? "16/9").split("/").map(Number);
+                  return aw / ah;
+                })()
+              }))`,
             }}
           >
-            <source src={tutorial.video} type="video/mp4" />
-          </video>
+            <video
+              className="w-full h-full object-contain"
+              poster={tutorial.poster}
+              playsInline
+              preload="none"
+              muted
+              onMouseEnter={(e) => e.currentTarget.play()}
+              onMouseLeave={(e) => {
+                e.currentTarget.pause();
+                e.currentTarget.currentTime = 0;
+              }}
+            >
+              <source src={tutorial.video} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </article>
     </Link>

@@ -85,21 +85,32 @@ export default async function TutorialPage({
             ))}
           </div>
         </div>
-        <div
-          className="mx-[18px] mb-[18px] rounded-2xl overflow-hidden bg-black border border-[var(--line)]"
-          style={{ aspectRatio: tutorial.aspectRatio ?? "16/9" }}
-        >
-          <link rel="preload" as="video" href={tutorial.video} type="video/mp4" />
-          <link rel="preload" as="image" href={tutorial.poster} />
-          <video
-            className="w-full h-full object-contain"
-            controls
-            playsInline
-            preload="auto"
-            poster={tutorial.poster}
+        <div className="mx-[18px] mb-[18px] flex justify-center">
+          <div
+            className="rounded-2xl overflow-hidden bg-black border border-[var(--line)] max-w-full"
+            style={{
+              aspectRatio: tutorial.aspectRatio ?? "16/9",
+              maxHeight: "min(70vh, 780px)",
+              width: `min(100%, calc(min(70vh, 780px) * ${
+                (() => {
+                  const [aw, ah] = (tutorial.aspectRatio ?? "16/9").split("/").map(Number);
+                  return aw / ah;
+                })()
+              }))`,
+            }}
           >
-            <source src={tutorial.video} type="video/mp4" />
-          </video>
+            <link rel="preload" as="video" href={tutorial.video} type="video/mp4" />
+            <link rel="preload" as="image" href={tutorial.poster} />
+            <video
+              className="w-full h-full object-contain"
+              controls
+              playsInline
+              preload="auto"
+              poster={tutorial.poster}
+            >
+              <source src={tutorial.video} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </section>
 
