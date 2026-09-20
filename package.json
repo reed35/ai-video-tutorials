@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run check:tutorials && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:tutorials": "node scripts/check-tutorial-uniqueness.mjs"
   },
   "dependencies": {
     "react": "^19.0.0",
