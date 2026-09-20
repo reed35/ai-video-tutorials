@@ -48,14 +48,14 @@ export default async function TutorialPage({
       <header className="flex items-center gap-3 mb-8 py-4">
         <Link
           href="/"
-          className="flex items-center gap-2.5 font-bold text-[15px] tracking-wide hover:opacity-80 transition-opacity"
+          className="flex items-center gap-3 font-bold text-[22px] tracking-wide hover:opacity-80 transition-opacity"
         >
           <img
             src="/brand/mark.png"
             alt=""
-            width={28}
-            height={28}
-            className="w-7 h-7 rounded-[9px] object-cover"
+            width={48}
+            height={48}
+            className="w-12 h-12 rounded-xl object-cover"
           />
           成片拆解
         </Link>
