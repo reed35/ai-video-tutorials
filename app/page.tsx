@@ -8,13 +8,13 @@ export default function Home() {
     <div>
       <section className="min-h-[85vh] flex items-center py-12 px-[18px]">
         <div className="max-w-[1200px] mx-auto w-full">
-          <div className="flex items-center gap-2.5 font-bold text-[15px] tracking-wide mb-12">
+          <div className="flex items-center gap-3 font-bold text-[22px] tracking-wide mb-12">
             <img
               src="/brand/mark.png"
               alt=""
-              width={28}
-              height={28}
-              className="w-7 h-7 rounded-[9px] object-cover"
+              width={48}
+              height={48}
+              className="w-12 h-12 rounded-xl object-cover"
             />
             成片拆解
           </div>
