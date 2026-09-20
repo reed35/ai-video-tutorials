@@ -93,7 +93,8 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
       // Only load active and neighbor videos
       if (isActive || isNeighbor) {
         if (!video.src) {
-          const tutorial = displayTutorials[parseInt(key.split("-")[0], 10)];
+          // Resolve video URL from stable latest3 array
+          const tutorial = latest3[index];
           video.src = tutorial.video;
           video.load();
         }
@@ -113,7 +114,7 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
         }
       }
     });
-  }, [activeIndex, latest3.length, displayTutorials]);
+  }, [activeIndex, latest3]);
 
   return (
     <div className="relative h-[600px] overflow-hidden">

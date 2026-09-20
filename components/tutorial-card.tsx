@@ -17,8 +17,6 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !isInView) {
             setIsInView(true);
-            // Start loading the video once in viewport
-            video.load();
           }
         });
       },
@@ -33,6 +31,13 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
     return () => {
       observer.disconnect();
     };
+  }, [isInView]);
+
+  // Load video after source is mounted
+  useEffect(() => {
+    if (isInView && videoRef.current) {
+      videoRef.current.load();
+    }
   }, [isInView]);
 
   return (
