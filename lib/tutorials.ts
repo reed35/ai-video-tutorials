@@ -2,6 +2,92 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "invisible-fitting-room",
+    title: "隐形试衣间:假人四套造型",
+    subtitle: "X · KrevixAi · 10秒 · 16:9",
+    description:
+      "固定机位黑棚里,哑光白无脸男模被黑手套「遥控」换装四套造型,最后牵手走向镜头挡黑。成片强调真实布料物理、无魔法光效。提示词原文写 9:16,但公开成片为 16:9,跟做时以成片画幅为准或按渠道改写。",
+    video: "/tutorials/invisible-fitting-room/demo-web.mp4",
+    poster: "/tutorials/invisible-fitting-room/poster.jpg",
+    duration: "10 秒",
+    shots: 5,
+    references: 1,
+    model: "Gemini Omni · Seedance 2.0",
+    style: "时装展示 · 黑棚遥控",
+    aspectRatio: "16/9",
+    tags: [
+      "10 秒 · 5 节拍 · 固定机位",
+      "1 张分镜静帧",
+      "Gemini Omni · Seedance 2.0",
+      "时装展示 · 黑棚遥控",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂四套换装+卸堆+牵手挡镜",
+        description:
+          "四套咖啡色系时装依次飞入装配→pose→卸下堆地;终套奢华分层后,假人牵女手走向机位用外套挡镜切黑。核心是固定黑棚+无脸假人+黑手套遥控+禁魔法粒子。",
+      },
+      {
+        number: 2,
+        title: "打开 Seedance/Gemini",
+        description:
+          "设置:10 秒 · 16:9(原文写 9:16 可按竖屏渠道改)。不需要独立出图词,storyboard 仅配图参考。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整视频提示词",
+        description:
+          "锁定机位黑棚;无脸假人连续;黑手套遥控不接触;禁魔法粒子/变形;真实布料物理重力惯性;四套咖啡色板;终套分层修型;外套挡镜切黑。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "storyboard",
+        number: "分镜静帧",
+        title: "15格分镜参考",
+        subtitle: "分镜静帧(帖内配图,无单独出图词) · 视觉参考",
+        image: "/tutorials/invisible-fitting-room/refs/storyboard.jpg",
+        prompt: "",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:02 第一套上身再卸下:espresso 衬衫 + caramel 阔裤 + loafers 飞入穿上,pose 后一挥卸落地板。教练提示:锁定黑棚正面机位与无脸假人;服装用物理飞入而非溶解。",
+      },
+      {
+        number: 2,
+        description:
+          "00:02–00:04 第二套:皮夹克造型:cognac 皮夹克 + cream 针织 + 深巧克力裤靴;双手抽离堆到第一套旁。教练提示:保持假人身份连续;每套卸下后衣服堆积要可读。",
+      },
+      {
+        number: 3,
+        description:
+          "00:04–00:06 第三套:风衣旋转:cream 高领 + coffee 裤 + mocha 长外套绕身装配后宽幅卸下。教练提示:外套绕身是记忆点:用惯性旋转而不是瞬移。",
+      },
+      {
+        number: 4,
+        description:
+          "00:06–00:08.5 终套分层奢华:象牙丝绸衬衫、espresso 西裤、burnt-orange 马甲、深巧克力外套等逐层装配并遥控修型。教练提示:分层装配 + 手套微调腰肩驳头;咖啡色板 + burnt-orange 点缀。",
+      },
+      {
+        number: 5,
+        description:
+          "00:08.5–00:10 终姿牵手挡镜:终姿后女手伸出,假人牵手走向固定机位,外套盖住镜头切黑。教练提示:用身体遮镜收束,比硬切更高级;全程禁魔法粒子。",
+      },
+    ],
+    constraints:
+      "固定正面机位黑棚;无脸假人连续;黑手套遥控不接触;禁魔法粒子/变形;四套咖啡色板;外套挡镜切黑;提示词原文写 9:16,成片为 16:9,跟做以成片画幅为准或按渠道改写;来源:KrevixAi/Gemini Omni·Seedance 2.0。",
+    video_prompt: {
+      title: "INVISIBLE FITTING ROOM · 10s · 16:9 · 4 Looks",
+      subtitle:
+        "Gemini Omni · Seedance 2.0 · Prompt says 9:16 but video is 16:9",
+      content: `Create a 10-second ultra-photorealistic premium fashion video "INVISIBLE FITTING ROOM", 9:16. One locked frontal camera, black seamless studio. Same tall muscular matte-white faceless male mannequin centered full-body, initially wearing only fitted black shorts. Female hands in long matte-black gloves remotely dress him without touching. No magic, glow, portals, particles or morphing; realistic cloth physics, gravity and inertia. 0–2s: espresso oversized shirt + caramel wide trousers + brown loafers fly in and physically dress him; mannequin strikes an editorial pose, then one sharp hand swipe pulls the outfit off and it falls to the floor. 2–4s: cognac leather jacket + cream knit + dark-chocolate trousers + boots fly in; mannequin takes a strong pose, then both hands pull the outfit away and garments fall beside the first look. 4–6s: cream turtleneck + coffee trousers + long mocha coat assemble onto him; coat rotates naturally around his body, he poses, then a wide swipe removes everything onto the growing clothing pile. 6–8.5s: final luxury outfit assembles layer by layer: ivory silk shirt, espresso tailored trousers, burnt-orange waistcoat, long dark-chocolate jacket, cognac shoes, tie and gold brooch. Precise hand gestures remotely tailor waist, shoulders, lapels and cuffs with realistic fabric tension. 8.5–9.2s: mannequin holds a powerful final fashion pose surrounded by discarded clothes. 9.2–10s: female hand reaches forward; mannequin physically takes her hand and walks confidently toward the fixed camera until his jacket naturally covers the lens → black. Premium coffee palette, burnt-orange accent, cinematic rim lighting, realistic silk, leather, cashmere and wool, seamless continuity.`,
+    },
+  },
+  {
     id: "watch-her-reset-73",
     title: "两次失误后的复位",
     subtitle: "Pollo · Seedance 2.5 · 30秒",
