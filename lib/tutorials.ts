@@ -2,6 +2,223 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "fridge-freshness-perfected",
+    title: "冰箱广告：新鲜尽在掌握",
+    subtitle: "X · HeyRu0by · 10秒 · 9:16",
+    description:
+      "竖屏家电广告：参考图锁定冰箱造型，揭示→开门冷雾→食材宏观→冷气环流→关门英雄镜头。成片 9:16 竖屏，不进胶片条，只出现在列表与详情。",
+    video: "/tutorials/fridge-freshness-perfected/demo-web.mp4",
+    poster: "/tutorials/fridge-freshness-perfected/poster.jpg",
+    duration: "10秒",
+    shots: 5,
+    references: 1,
+    model: "推测家电广告模型",
+    style: "奢华产品广告 · 竖屏",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/HeyRu0by/status/2101186330025922663",
+    tags: [
+      "10秒 · 5 节拍",
+      "9:16 竖屏 · 不进胶片条",
+      "1 张产品参考图",
+      "奢华家电广告风格",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂产品广告节奏",
+        description:
+          "揭示（暗转亮推镜）→开门冷雾（慢镜雾气）→新鲜宏观（食材凝露）→冷气环流（可视化气流）→英雄收束（缓推高光）。核心是产品外形一致性（exact from REF01）+ 克制真实冷雾（勿粒子爆炸）+ 无人手。",
+      },
+      {
+        number: 2,
+        title: "准备参考图与设置",
+        description:
+          "上传 REF01 产品参考图锁定冰箱造型（形状、门把、颜色、标志、控制面板）。9:16 竖屏 · 10s · 打开声音（奢华环境音）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持 exact refrigerator design from reference；反光高级；雾气克制；食材细节真实；可带文案 FRESHNESS. PERFECTED.；负面提示：无人手/无产品变形/无重复冰箱/无卡通感。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "REF01",
+        number: "REF01",
+        title: "冰箱产品参考",
+        subtitle: "锁定造型 · 提示词要求 Exact design",
+        image: "/tutorials/fridge-freshness-perfected/refs/REF01.jpg",
+        prompt: "（无单独出图词；此参考图仅用于锁定产品造型，提示词中已要求 Use the exact refrigerator design from the uploaded reference image）",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:02 产品揭示：奢华厨房中冰箱由暗转亮，推镜贴近。教练提示：先锁产品外形一致；反光要高级。",
+      },
+      {
+        number: 2,
+        description:
+          "00:02–00:04 开门冷雾：双门慢镜打开，冷雾涌出。教练提示：雾气克制真实，别粒子爆炸。",
+      },
+      {
+        number: 3,
+        description:
+          "00:04–00:06 新鲜宏观：果蔬乳品饮料宏观，凝露与冷雾。教练提示：食欲细节；产品比例不变形。",
+      },
+      {
+        number: 4,
+        description:
+          "00:06–00:08 冷气环流：冷气在食材间均匀流动的可视化。教练提示：用细微气流粒子，勿喧宾夺主。",
+      },
+      {
+        number: 5,
+        description:
+          "00:08–00:10 英雄收束：门缓缓关合，缓推英雄镜头与高光。教练提示：可带文案 FRESHNESS. PERFECTED.；无人手。",
+      },
+    ],
+    constraints:
+      "exact fridge from REF01（形状/门把/颜色/标志一致）；克制真实冷雾（勿粒子爆炸）；无人手/无产品变形/无重复冰箱；9:16 竖屏不进胶片条；来源 HeyRu0by。",
+    video_prompt: {
+      title: "Fridge Commercial · FRESHNESS. PERFECTED. · 10s · 9:16",
+      subtitle: "推测家电广告模型 · 9:16 竖屏 · 产品参考图",
+      content: `Create a premium 10-second vertical 9:16 refrigerator commercial, photorealistic 8K, ultra-realistic product cinematography, luxury home-appliance advertising style. Use the exact refrigerator design from the uploaded reference image. Preserve the exact shape, proportions, doors, handles, color, finish, logo, control panel, and all visible details. No redesign, no extra logos, no distorted text, no duplicate refrigerator.
+
+CONCEPT: REVEAL → OPEN → COLD AIR → FRESH FOOD → HERO
+
+01 | 0–2s — PRODUCT REVEAL
+A sleek modern refrigerator stands in a luxurious contemporary kitchen. Dramatic dark-to-bright lighting slowly reveals the refrigerator, with elegant reflections across its premium surface. Camera makes a smooth cinematic push-in toward the product.
+
+02 | 2–4s — DOOR OPEN
+The refrigerator doors open smoothly in slow motion. A soft burst of cool mist escapes from inside, creating a fresh and refreshing visual effect. Camera moves closer toward the interior.
+
+03 | 4–6s — FRESHNESS MACRO
+Extreme macro shots of perfectly chilled fresh fruits, vegetables, milk bottles, and beverages arranged beautifully inside. Subtle cold mist, crisp textures, realistic condensation, bright premium lighting.
+
+04 | 6–8s — COOLING POWER
+Visualize powerful cold air circulating evenly throughout the refrigerator. Subtle flowing air particles move around the food while everything remains perfectly fresh and chilled. Smooth cinematic camera movement.
+
+05 | 8–10s — HERO SHOT
+Doors gently close. The refrigerator becomes the complete hero in the center of the luxury kitchen. Camera performs a slow elegant push-in while premium highlights glide across the surface.
+
+ON-SCREEN TEXT:
+"FRESHNESS. PERFECTED."
+
+FINAL FRAME:
+Clean premium refrigerator hero shot, centered composition, elegant lighting, subtle reflections, luxury commercial finish.
+
+STYLE: Photorealistic, ultra-detailed, cinematic lighting, realistic materials, premium appliance commercial, smooth camera motion, shallow depth of field, high-speed macro details, natural reflections, 8K quality, polished luxury advertising aesthetic.
+
+NEGATIVE PROMPT:
+No people, no hands, no warped refrigerator, no changing product design, no extra doors, no duplicate appliance, no floating objects, no distorted food, no fake branding, no misspelled text, no watermark, no cartoon look, no CGI-looking plastic, no flickering, no unstable geometry.`,
+    },
+  },
+  {
+    id: "chiropractic-clinic-social",
+    title: "整脊诊所社媒短片",
+    subtitle: "Evolink · bmx_ai13 · 约30秒 · 16:9",
+    description:
+      "明亮现代整脊诊所中的30秒写实观察式社媒片：环境建立→检查→颈部释放→腰部调整→胸椎按压→牵引峰值→起身见效。用稳定镜头语言、真实接触物理与自然微表情串成连续体验，无广告包装。",
+    video: "/tutorials/chiropractic-clinic-social/demo-web.mp4",
+    poster: "/tutorials/chiropractic-clinic-social/poster.jpg",
+    duration: "约30秒",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5（推测）",
+    style: "写实观察式 · 诊所社媒",
+    aspectRatio: "16/9",
+    sourceUrl: "https://evolink.ai/seedance-2-5-prompts",
+    tags: [
+      "约30秒 · 7 治疗节拍",
+      "无参考图 · 纯文生可跟做",
+      "Seedance 2.5（推测）",
+      "写实接触物理 · 自然微表情",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂诊所社媒片节奏",
+        description:
+          "环境建立（4s）→检查期待（4s）→三段治疗（颈/腰/胸+牵引，18s）→起身见效（4s）。核心是写实观察式（非广告包装）+ 真实接触物理（桌垫压缩、衣褶、手压）+ 克制自然微表情（无夸张）。",
+      },
+      {
+        number: 2,
+        title: "选择模型与设置",
+        description:
+          "推测 Seedance 2.5 或类似写实模型。16:9 · 30s · 打开声音（现场环境底噪、呼吸、衣料、桌面、调整声 + 低音量钢琴/低音/打击乐）。无需参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持暖色自然光 + 柔和顶灯；真实皮肤、布料褶皱、桌垫压缩；稳定面孔与自然微表情；每4–5秒换景别或治疗阶段；释放点轻微手持反应；负面提示：无文字/logo/水印/超现实动作。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–4s 建立空间：广角，手持缓慢推进，炭灰衫治疗师带白衫客户走向治疗台，远处工作人员轻微活动。教练提示：先建立明亮现代诊所氛围；推进稳定不过快。",
+      },
+      {
+        number: 2,
+        description:
+          "4–8s 检查与期待：中景坐姿，浅景深、轻微漂移，治疗师从后方检查肩线与颈部转动，保持克制眼神交流。教练提示：安静期待，无夸张表演；自然呼吸、衣料声。",
+      },
+      {
+        number: 3,
+        description:
+          "8–12s 颈部释放：侧面近景，头部安全摆位完成克制释放；客户短暂反应后微笑，镜头只做细小真实手持反馈。教练提示：动作克制且解剖学正确；呼吸与释放声不过分夸张。",
+      },
+      {
+        number: 4,
+        description:
+          "12–17s 腰部调整：侧面中广景，客户侧卧，治疗师支撑肩与骨盆，停顿后完成紧凑腰部调整；强调重量转移、桌垫压缩、衣褶与手压。教练提示：物理接触要可信；短暂惊笑真实。",
+      },
+      {
+        number: 5,
+        description:
+          "17–22s 胸椎按压：较低机位中近景/动作特写，客户俯卧，治疗师触诊上背、叠手完成受控胸椎压缩，从手部拉焦到放松表情。教练提示：拉焦柔和；桌面与衣料细节清晰。",
+      },
+      {
+        number: 6,
+        description:
+          "22–26s 牵引峰值：头侧/头端视角，客户仰卧，黑色牵引带置于枕骨下，缓慢建立张力后短促牵引；客户睁大眼、发笑并短暂遮脸。教练提示：张力建立要慢且安全；反应真实不过度。",
+      },
+      {
+        number: 7,
+        description:
+          "26–30s 结果与收束：中景到慢慢拉远，客户坐起，转肩转颈变得轻松；治疗师站旁，两人真诚共享微笑，拉远露出明亮诊所。教练提示：收束平静、满足、非促销式；温暖钢琴微升干净收束。",
+      },
+    ],
+    constraints:
+      "暖色自然光+柔和顶灯；真实皮肤、布料褶皱、桌垫压缩与手部接触；稳定面孔和自然微表情；无文字/logo/水印/超现实动作；来源 Evolink/bmx_ai13/Seedance 2.5。",
+    video_prompt: {
+      title: "Chiropractic Clinic Social Video · ~30s · 7 Beats",
+      subtitle: "Seedance 2.5（推测）· 16:9 · 写实观察式",
+      content: `Create a 30 second 16:9 cinematic social video set inside a modern chiropractic and mobility clinic during late morning. The room has pale warm walls, clean wood flooring, black padded treatment tables, gray visitor chairs, a few green plants, subtle wall art, and tall windows overlooking leafy trees. Use natural daylight mixed with soft ceiling light, realistic skin texture, true fabric behavior, accurate anatomy, physically believable contact, consistent faces, and natural micro expressions. No text, no logos, no watermarks, no surreal motion.
+
+From 0 to 4 seconds, open on a wide establishing shot with a slow handheld push through the clinic. A calm male practitioner in a charcoal shirt guides an adult male client in a white shirt toward a treatment table. Other staff move softly in the distant background. The mood feels professional, relaxed, and observational.
+
+From 4 to 8 seconds, cut to a medium seated shot. The client sits centered while the practitioner stands behind him, gently checking shoulder level and neck rotation. Use small natural camera drift, shallow depth of field, window light on one side of the face, and realistic eye contact. Show quiet anticipation without exaggerated acting.
+
+From 8 to 12 seconds, move into a close side angle as the practitioner carefully positions the head for a controlled neck release. Keep the motion restrained and anatomically correct. Capture a quick release, a subtle facial reaction, a sharp breath, and an immediate smile. Let the camera react with a tiny authentic handheld movement rather than a dramatic shake.
+
+From 12 to 17 seconds, cut to a medium wide side view of the client lying on his side on the table. The practitioner braces the shoulder and pelvis, pauses, then performs one compact lumbar adjustment. Show realistic weight transfer, table cushion compression, shirt folds, breathing, hand pressure, and a brief surprised laugh from the client.
+
+From 17 to 22 seconds, cut to the client lying face down. The practitioner palpates the upper back, stacks both hands, and applies one controlled thoracic compression. Use a slightly lower camera angle, soft reflections on the table, gentle background activity, and a brief focus pull from the hands to the client's relieved expression.
+
+From 22 to 26 seconds, transition to a head of table view. The client lies on his back while the practitioner places a black traction strap beneath the base of the skull. Build tension slowly and safely, then deliver one short controlled pull. The client reacts with wide eyes, then laughs and covers his face for a moment.
+
+From 26 to 30 seconds, finish with the client sitting upright, rolling his shoulders and turning his neck comfortably while the practitioner stands beside him. End on an honest shared smile and a slow pullback that reveals the bright clinic. Keep the final moment calm and satisfying, not promotional.
+
+Audio should feel captured on location with soft room ambience, distant clinic movement, clothing rustle, table creaks, natural breathing, quiet conversation without clearly audible words, and crisp but not exaggerated adjustment sounds. Add a low volume modern instrumental track with warm piano, soft bass, light percussion, and a gentle rise at each release, ending on a clean resolved note.`,
+    },
+  },
+  {
     id: "steppe-warrior-queen",
     title: "草原女王：骑射破阵",
     subtitle: "X · azed_ai · 约30秒 · 16:9",
