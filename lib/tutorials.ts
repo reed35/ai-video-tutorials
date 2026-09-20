@@ -2,6 +2,146 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "techhalla-room214-stop-motion",
+    title: "ROOM 214 · H3 定格收拾行李",
+    subtitle: "X · @techhalla · 约15秒 · 16:9",
+    description:
+      "ROOM 214 沙漠汽车旅馆房间内，衣物自己跳进行李箱。无人手、无平滑运动，纯正定格动画节奏：小件先跳、中件折叠、大件压顶、箱盖三段合上。MiniMax H3 通过 JSON 结构化提示词精准控制定格抖动质感。",
+    video: "/tutorials/techhalla-room214-stop-motion/demo-web.mp4",
+    poster: "/tutorials/techhalla-room214-stop-motion/poster.jpg",
+    duration: "约15秒",
+    shots: 1,
+    references: 0,
+    model: "MiniMax Hailuo H3",
+    style: "定格动画 · 逐帧抖动",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/techhalla/status/2094743725138178491",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 10727,
+    tags: [
+      "约15秒 · 定格动画",
+      "16:9 横屏",
+      "MiniMax H3",
+      "stop-motion 收拾行李",
+      "无人手 · 锁定机位",
+      "JSON 结构化提示词",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂定格节奏：小件→中件→大件→合盖",
+        description:
+          "真正的定格动画是物体在帧间「瞬移」几厘米，而非平滑滑动。收拾顺序：袜子、内裤、T恤、腰带先跳入箱中；衬衫、牛仔裤、毛衣分两三步折叠入箱；冲锋衣、帽子最后压顶；箱盖三段硬合。",
+      },
+      {
+        number: 2,
+        title: "粘贴完整 JSON 提示词到 MiniMax H3",
+        description:
+          "将下方 JSON 提示词完整复制到 MiniMax Hailuo H3 生成。JSON 结构包含 archetype、concept、camera、grade、audio、constraints 六大模块，精准定义定格抖动、节奏结构、禁用平滑运动。",
+      },
+      {
+        number: 3,
+        title: "注意三大约束：真定格抖动 · 无手 · 锁定机位",
+        description:
+          "constraints 明确要求：物体逐帧瞬移而非漂浮滑行；画面中不得出现人手、手臂或身体；相机完全锁定，禁止推拉摇移。可读文字仅限 ROOM 214、DESERT INN / FLAGSTAFF、CHECKOUT 11AM。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0-2s：锁定广角。ROOM 214 黄铜门牌。海军蓝硬壳行李箱敞开在床罩上。度假衣物散落床面、椅子、地板。窗帘条纹阳光。画面已有细微逐帧闪烁。",
+      },
+      {
+        number: 2,
+        description:
+          "2-6s：小件先跳。白色运动袜 pop-pop 跳入箱中；藏青内裤折一次跃入；乐队 T恤咔嚓折成方块掉落；棕色皮带盘卷落箱顶。每件都是瞬移硬切，带硬阴影。",
+      },
+      {
+        number: 3,
+        description:
+          "6-10s：中件分步折叠。浅蓝牛津衬衫自己扣纽两帧 pop 后折叠；深色牛仔裤三段硬切折好滑入；芥末黄毛衣压缩堆叠。书桌记事本翻页：空白→手写 CHECKOUT 11AM→定格。",
+      },
+      {
+        number: 4,
+        description:
+          "10-13s：大件最后。橄榄绿冲锋衣两口崩塌掉入；棒球帽翻转落堆顶；椅子上剩余袜子、背心从椅子跳过来。箱子明显满了。",
+      },
+      {
+        number: 5,
+        description:
+          "13-15s：箱盖三段硬合。盖子第一段 slam、第二段 slam、第三段完全合上。最终定格：合上的海军蓝箱、黄铜 ROOM 214、记事本冻结在 CHECKOUT 11AM。结束。",
+      },
+    ],
+    constraints:
+      "真正定格抖动：物体逐帧瞬移数厘米，禁止平滑漂浮；无人手、手臂或身体入镜；相机完全锁定，禁止推拉摇移；可读文字仅 ROOM 214 / DESERT INN / FLAGSTAFF / CHECKOUT 11AM；收拾顺序可见：袜子内衣 T恤腰带 → 衬衫牛仔裤毛衣 → 冲锋衣帽子；箱盖合前箱子需显示已满；来源 @techhalla / X / 10727 曝光。",
+    video_prompt: {
+      title: "ROOM 214 定格动画提示词",
+      subtitle: "MiniMax Hailuo H3 · JSON 结构化提示词",
+      content: `{
+  "archetype": "Stop-motion / frame-by-frame jitter of real objects moved between frames",
+  "concept": {
+    "title": "ROOM 214",
+    "world": "A roadside motel room in Flagstaff, Arizona, late afternoon. Brass ROOM 214 on the interior door. Desk notepad stamped DESERT INN / FLAGSTAFF. Navy hard-shell suitcase open on the bedspread. Sun stripes through vertical blinds. Vacation clothes already scattered: socks, underwear, t-shirt, oxford shirt, jeans, coiled belt, knit sweater, windbreaker, cap.",
+    "story": "Every garment packs itself in true stop-motion pops. No human hands. Small pieces jump first, then mid layers fold in two or three frame-steps, then bulk pieces stack. The suitcase fills until the lid slams in three hard bites. The DESERT INN notepad flips to CHECKOUT 11AM.",
+    "rhythm_structure": {
+      "0-2s": "Locked wide. ROOM 214. Open navy suitcase. Vacation clothes laid out on bed, chair, floor. Subtle frame flicker already on.",
+      "2-6s": "Smalls first, discrete jumps with hard shadows: white athletic socks pop-pop into the case; navy boxers fold once and hop in; faded band t-shirt snaps into a rectangle and drops; brown leather belt coils and lands on top.",
+      "6-10s": "Mids in jerky folds: light-blue oxford shirt buttons itself in two frame pops then folds; dark-wash jeans fold in three hard steps and slide in; mustard knit sweater compresses and stacks. Notepad pages flip: blank → CHECKOUT 11AM handwritten → hold.",
+      "10-13s": "Bulk last: olive windbreaker collapses in two bites and drops in; baseball cap flips onto the pile; leftover sock and undershirt jump from the chair. Case now visibly full.",
+      "13-15s": "Lid closes in three stop-frame slams. Final still: closed navy case, brass ROOM 214, notepad frozen on CHECKOUT 11AM. End."
+    }
+  },
+  "camera": {
+    "shot_type": "One 15s locked wide of the motel room, 16:9",
+    "lens_language": "Still-tripod 32mm, harsh blind stripes across bed and case",
+    "camera_journey": "Locked. Only objects change position between frames.",
+    "forbidden_moves": [
+      "No smooth continuous motion of objects",
+      "No hands, arms, or body in frame",
+      "No claymation characters",
+      "No camera push, pan, tilt, or handheld"
+    ]
+  },
+  "grade": {
+    "stock": "Sun-faded motel print, slight strobe between frames",
+    "palette": [
+      "Desert ochre walls",
+      "Brass 214",
+      "Navy suitcase",
+      "White notepad",
+      "Faded cotton, denim indigo, mustard knit, olive nylon"
+    ],
+    "texture": "Carpet nap, brass, paper, cotton knit, denim, leather belt, nylon shell"
+  },
+  "audio": {
+    "native": true,
+    "bed": "Highway hush, AC rattle",
+    "accents": [
+      "Hard per-frame fabric ticks",
+      "Denim fold thumps",
+      "Belt coil tap",
+      "Paper flip",
+      "Lid slam in three hits"
+    ],
+    "forbidden": [
+      "No cartoon boings",
+      "No music",
+      "No voices"
+    ]
+  },
+  "constraints": [
+    "Readable text only: ROOM 214, DESERT INN / FLAGSTAFF, CHECKOUT 11AM",
+    "True stop-motion jitter: objects teleport a few centimeters per frame, never float or slide",
+    "Packing order visible: socks + underwear + t-shirt + belt, then oxford + jeans + sweater, then windbreaker + cap",
+    "Suitcase must look full before the lid closes"
+  ]
+}`,
+    },
+  },
+  {
     id: "minimax-h3-mv-typography",
     title: "H3 文字包装 MV",
     subtitle: "X · @liandeli2 · 约15秒 · 16:9",
