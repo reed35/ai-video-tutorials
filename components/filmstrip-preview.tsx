@@ -85,14 +85,36 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
   useEffect(() => {
     videoRefs.current.forEach((video, key) => {
       const index = parseInt(key.split("-")[0], 10) % latest3.length;
-      if (index === activeIndex) {
-        video.play().catch(() => {});
+      const isActive = index === activeIndex;
+      const isNeighbor = Math.abs(index - activeIndex) === 1 || 
+                        (activeIndex === 0 && index === latest3.length - 1) ||
+                        (activeIndex === latest3.length - 1 && index === 0);
+      
+      // Only load active and neighbor videos
+      if (isActive || isNeighbor) {
+        if (!video.src) {
+          // Resolve video URL from stable latest3 array
+          const tutorial = latest3[index];
+          video.src = tutorial.video;
+          video.load();
+        }
+        
+        if (isActive) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+          video.currentTime = 0;
+        }
       } else {
-        video.pause();
-        video.currentTime = 0;
+        // Remove src for non-active, non-neighbor videos to free memory
+        if (video.src) {
+          video.pause();
+          video.removeAttribute("src");
+          video.load(); // Reset the video element
+        }
       }
     });
-  }, [activeIndex, latest3.length]);
+  }, [activeIndex, latest3]);
 
   return (
     <div className="relative h-[600px] overflow-hidden">
@@ -169,9 +191,9 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
                           playsInline
                           muted
                           loop
-                          preload="metadata"
+                          preload="none"
                         >
-                          <source src={tutorial.video} type="video/mp4" />
+                          {/* Source dynamically added via useEffect */}
                         </video>
                       </div>
 

@@ -1,9 +1,45 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import type { Tutorial } from "@/lib/types";
 
 export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !isInView) {
+            setIsInView(true);
+          }
+        });
+      },
+      {
+        rootMargin: "50px", // Start loading slightly before entering viewport
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(video);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [isInView]);
+
+  // Load video after source is mounted
+  useEffect(() => {
+    if (isInView && videoRef.current) {
+      videoRef.current.load();
+    }
+  }, [isInView]);
+
   return (
     <Link href={`/tutorials/${tutorial.id}`}>
       <article className="bg-gradient-to-b from-[var(--panel2)] to-[var(--panel)] border border-[var(--line)] rounded-3xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.35)] transition-all hover:shadow-[0_30px_100px_rgba(0,0,0,0.5)] hover:scale-[1.01]">
@@ -42,18 +78,23 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
             }}
           >
             <video
+              ref={videoRef}
               className="w-full h-full object-contain"
               poster={tutorial.poster}
               playsInline
-              preload="none"
+              preload={isInView ? "metadata" : "none"}
               muted
-              onMouseEnter={(e) => e.currentTarget.play()}
+              onMouseEnter={(e) => {
+                if (isInView) {
+                  e.currentTarget.play();
+                }
+              }}
               onMouseLeave={(e) => {
                 e.currentTarget.pause();
                 e.currentTarget.currentTime = 0;
               }}
             >
-              <source src={tutorial.video} type="video/mp4" />
+              {isInView && <source src={tutorial.video} type="video/mp4" />}
             </video>
           </div>
         </div>
