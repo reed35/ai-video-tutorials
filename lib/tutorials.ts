@@ -2,6 +2,77 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "aiwithkhan-rope-name-smiling",
+    title: "红绳拼字 Smiling · 定格小人工坊",
+    subtitle: "X · @AIwithkhan · 约10秒 · 16:9",
+    description:
+      "10秒红绳拼字定格动画：粗红编织绳 + 4-5个迷你粘土人物共同编织单词 Smiling。绳子从散乱松散循序变形为草书字母，小人物攀爬拉扯打结。需提供与成片最后一帧完全吻合的参考图。教练提示：把 Smiling 替换成你的名字，仍需匹配的最终帧参考图。",
+    video: "/tutorials/aiwithkhan-rope-name-smiling/demo-web.mp4",
+    poster: "/tutorials/aiwithkhan-rope-name-smiling/poster.jpg",
+    duration: "约10秒",
+    shots: 1,
+    references: 1,
+    model: "Seedance 2.5",
+    style: "定格动画 · 红绳编织 · 小人工坊",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/AIwithkhan/status/2100069812152197146",
+    sourceAuthor: "@AIwithkhan",
+    sourcePlatform: "X",
+    sourceImpressions: 12994,
+    tags: [
+      "约10秒 · 单镜头",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "定格动画美学",
+      "需参考图（最终帧）",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备最终帧参考图",
+        description:
+          "关键要求：必须提供与成片最后一帧完全吻合的参考图。图中应清晰展示红绳编织完成的单词样式、字母走向、绳子交叉与负空间。如果要把 Smiling 替换成自己的名字，也需要准备对应的最终成型参考图。",
+      },
+      {
+        number: 2,
+        title: "设定定格动画元素",
+        description:
+          "一根粗红编织绳 + 4-5个身穿简单绳绿色工作服的迷你粘土小人，面部无明显特征。纯白无缝背景，柔和影棚光，绳下有细微阴影。小人物需在编织过程中攀爬、拉扯、打结，具备玩味的定格动画动作感。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词生成",
+        description:
+          "使用下方完整英文提示词，并上传最终帧参考图。提示词强调：参考图作为精确最终帧（Using the reference image as the exact final frame）；绳子从散乱逐步变形成草书字母；小人物协作动作；镜头完全静止俯拍；无剪辑、无独立文字生成、无额外物体。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-final-frame",
+        number: "参考图 1",
+        title: "最终帧红绳成品参考",
+        subtitle: "必需 · 与成片最后一帧精确匹配",
+        image: "/tutorials/aiwithkhan-rope-name-smiling/ref-final-frame.jpg",
+        prompt:
+          "提供红绳编织完成后的最终成型样式，清晰展示单词 Smiling 的字母走向、绳子交叉、打结位置与负空间。这是整个生成的核心参考，必须与成片最后一帧完全吻合。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "开场：红绳散乱松散，以柔和环状铺散在画面中，4-5个迷你粘土人物站在绳子周围。随后小人物迅速抓住绳子，共同协作拉扯、盘绕、扭转、打结，绳子逐步变形成草书字母 S-m-i-l-i-n-g，从左到右依次成型。小人物在编织过程中攀爬绳子、围绕动作。最后1-2秒，小人物完成 g 字母的最后一个结，后退并跳走，留下完成的 Smiling 红绳作品，清晰可见并与参考图匹配。镜头完全静止俯拍，柔和影棚光，无剪辑、无摄像机运动、无独立生成文字、无额外物体。流畅连续运动，触感绳子物理，真实纤维，玩味迷你定格动画美学融合精致 CGI。",
+      },
+    ],
+    constraints:
+      "必须上传最终帧参考图；红绳编织字母需与参考图完全匹配；4-5个迷你粘土人物协作动作；纯白无缝背景；镜头完全静止俯拍；无剪辑、无独立文字、无额外物体；来源 @AIwithkhan / X / 12994 曝光。",
+    video_prompt: {
+      title: "红绳拼字定格动画提示词",
+      subtitle: "Seedance 2.5 · 16:9 横屏 · 完整可复制提示词",
+      content: `Using the reference image as the exact final frame, create a 10-second stop-motion-inspired fluid CGI animation of a single thick red braided rope forming the word "Smiling" on a pure white seamless background. At the beginning, the rope is loose and unformed, scattered in soft loops across the frame, with 4–5 tiny clay-like miniature characters wearing simple rope-green overalls and no distinct facial features standing around it. They quickly grab the rope and work together, pulling, stretching, coiling, twisting, and tying it into shape. The rope progressively transforms into the cursive letters "S-m-i-l-i-n-g", moving smoothly from left to right. Each letter must be created entirely from the same continuous rope, with realistic braided fibers, intricate knots, overlapping loops, natural crossings, and clean negative spaces matching the reference image. The characters playfully climb over and around the rope while shaping each letter, coordinating their movements as the word becomes recognizable. The camera remains completely static and top-down, with consistent soft studio lighting, subtle shadows beneath the rope, and no background elements. In the final 1–2 seconds, the characters finish the last knot on the "g," step back and hop away, leaving the completed "Smiling" rope artwork clearly visible and matching the reference image. No cuts, no camera movement, no independently generated text, no extra objects. Smooth continuous motion, tactile rope physics, realistic fibers, playful miniature stop-motion aesthetic blended with polished CGI.`,
+    },
+  },
+  {
     id: "techhalla-french-polynesia-adventure",
     title: "法属波利尼西亚冒险 · 碎切度假记忆",
     subtitle: "X · @techhalla · 约30秒 · 16:9",
