@@ -278,6 +278,9 @@ export const tutorials: Tutorial[] = [
     style: "电影级自然广告 · 雨雾氛围",
     aspectRatio: "16/9",
     sourceUrl: "https://x.com/umesh_ai/status/2100823564505248175",
+    sourceAuthor: "@umesh_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 26912,
     tags: [
       "30秒 · 15 镜头",
       "16:9 横屏 · 进胶片条",
@@ -797,6 +800,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
     sourceUrl: "https://x.com/369Serena/status/2100887564274348245",
     sourceAuthor: "@369Serena",
     sourcePlatform: "X",
+    sourceImpressions: 3659,
     tags: [
       "30秒 · 10 制作节拍",
       "无参考图 · 纯文生可跟做",
@@ -1091,6 +1095,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
     sourceUrl: "https://x.com/Goodmanprotocol/status/2098845134326808734",
     sourceAuthor: "@Goodmanprotocol",
     sourcePlatform: "X",
+    sourceImpressions: 10434418,
     tags: [
       "30秒 · 11 制作节拍",
       "无参考图 · 纯文生可跟做",
