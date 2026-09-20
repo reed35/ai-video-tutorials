@@ -2,6 +2,103 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "flova-mona-lisa-neighbors",
+    title: "蒙娜丽莎搬进街坊 · Flova 分屏教程",
+    subtitle: "X · @Flovaai（@AIwithkhan 转引）· 约30秒提示 / 成片约60秒 · 16:9",
+    description:
+      "Flova.ai + Seedance 2.5；巴黎 POV 撞车后遇到蒙娜丽莎等名画邻居。提示词从成片右侧面板 OCR 拼出（约6400字）。成片为分屏教程片（左生成片、右参考+提示词）。",
+    video: "/tutorials/flova-mona-lisa-neighbors/demo-web.mp4",
+    poster: "/tutorials/flova-mona-lisa-neighbors/poster.jpg",
+    duration: "约30秒提示 / 成片约60秒",
+    shots: 0,
+    references: 5,
+    model: "Seedance 2.5",
+    style: "巴黎 POV · 名画邻居 · 黑色幽默",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Flovaai/status/2095863022531260717",
+    sourceAuthor: "@Flovaai",
+    sourcePlatform: "X",
+    sourceImpressions: 325575,
+    tags: [
+      "约30秒提示 / 成片约60秒",
+      "16:9 横屏",
+      "Seedance 2.5 + Flova.ai",
+      "巴黎 POV · 名画邻居",
+      "黑色幽默 · 超现实",
+      "分屏教程片",
+      "OCR 提示词",
+    ],
+    steps: [],
+    references_detail: [
+      {
+        id: "image_1",
+        number: "1",
+        title: "蒙娜丽莎",
+        subtitle: "达芬奇 · Mona Lisa",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-01.jpg",
+        prompt: "参考 image_1 的面部特征、神秘微笑、中分长发、端庄姿态",
+      },
+      {
+        id: "image_2",
+        number: "2",
+        title: "呐喊",
+        subtitle: "爱德华·蒙克 · The Scream",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-02.jpg",
+        prompt: "参考 image_2 的拉长头骨、空洞恐惧眼睛、张开尖叫嘴型、憔悴特征",
+      },
+      {
+        id: "image_3",
+        number: "3",
+        title: "睡莲",
+        subtitle: "克劳德·莫奈 · Water Lilies",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-03.jpg",
+        prompt: "参考 image_3 的色彩调色板、浮动睡莲、粉黄色水莲花、深蓝绿倒影水面",
+      },
+      {
+        id: "image_4",
+        number: "4",
+        title: "抱貂的女子",
+        subtitle: "达芬奇 · Lady with an Ermine",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-04.jpg",
+        prompt: "参考 image_4 的精致面部、光滑苍白肤色、带头巾的整洁帽子、黑色珠项链、红蓝文艺复兴风格服装、准确的四分之三身体姿态",
+      },
+      {
+        id: "image_5",
+        number: "5",
+        title: "戴珍珠耳环的少女",
+        subtitle: "约翰内斯·维米尔 · Girl with a Pearl Earring",
+        image: "/tutorials/flova-mona-lisa-neighbors/ref-05.jpg",
+        prompt: "参考 image_5 的柔和棕色眼睛、标志性回眸注视、顶部打结的蓝金色包头巾、单颗大珍珠耳环、温暖肤色",
+      },
+    ],
+    storyboard: [],
+    constraints:
+      "提示词通过 OCR 从 Khan 转引视频（@AIwithkhan/status/2095931990839357639）右侧 Flova 面板提取，覆盖 intro + BEAT 1–3 + TRANSITION 01–03（约30秒 9:16 提示词）；成片为约60秒 16:9 分屏教程片，额外时长无对应提示词文本；参考五幅经典画作（Mona Lisa、Scream、Water Lilies、Ermine、Pearl）作为 image_1…image_5；来源 @Flovaai / X / 325575 曝光。",
+    video_prompt: {
+      title: "巴黎 POV 名画邻居 · 完整提示词",
+      subtitle: "Seedance 2.5 · 30秒 9:16 提示词（成片60秒 16:9 分屏）",
+      content: `Photorealistic live-action first-person POV continuous single take, no cuts, no fades, no dissolves, no teleportation, no morphing — all transitions are physical first-person head movement through real continuous space. Vertical 9:16, 1080p, 30 seconds. Fast pacing, smooth physical camera movement, premium European cinema look, cinematic surreal deadpan comedy, grounded surrealism, realistic modern French street atmosphere, natural daylight, realistic environmental lighting and shadows throughout. No subtitles, no watermark, no music.
+
+BEAT 1 [Seconds 0-7]
+First-person POV from inside a modern car, driver seat. Hands on steering wheel, modern French city street visible through windshield, midday daylight, realistic Parisian boulevard with Haussmann buildings, parked cars, traffic lights. Car is stopped at a red traffic light. Suddenly — BANG — violent rear impact jolt; camera lurches sharply forward; the protagonist's forehead strikes the steering wheel — impact blur, disorientation. Camera recovers. No dialogue. No music.
+
+BEAT 2 [Seconds 7-14]
+First-person POV: protagonist opens car door, steps out onto the French street, walks in controlled angry strides toward the car behind. Camera is at head height, looking forward as a real person would walk. Protagonist knocks on the driver window. Window rolls down smoothly. Inside the car sits a fully three-dimensional, photorealistic real woman physically present in the vehicle, referencing the face, serene expression, long dark hair center-parted, subtle enigmatic smile, and folded-hands poise of image_1 — she is a living human being with realistic skin texture, pores, hair strands, natural subsurface scattering, fabric folds, contact shadows, and receives the full natural French street daylight exactly as the real environment does. She looks mildly embarrassed, glances down, then up at camera, and says clearly: "Sorry, I just got my driver's license." Protagonist's POV freezes in a long deadpan stare of total disbelief. No music.
+
+BEAT 3 [Seconds 14-18]
+Without cutting, footsteps approach from behind protagonist; a French police officer walks into frame from behind the protagonist's left shoulder — fully photorealistic volumetric 3D human, wearing a realistic modern French police uniform (dark navy jacket, kepi cap, badge, radio), referencing the elongated skull-like face, wide terrified hollow eyes, dramatically open screaming mouth, and gaunt features of image_2 — but he behaves with complete professional calm, entirely deadpan, as a normal officer responding to a fender-bender. He surveys the crashed cars methodically, glances at the Mona Lisa woman, then turns and looks directly into the camera with grave seriousness. His face fully receives French street ambient daylight, realistic shadows under the kepi brim, specular highlights on the uniform buttons. No dialogue. No music.
+
+SEAMLESS TRANSITION 01 [Seconds 18-21]
+Without any cut, protagonist turns head sharply to the right; camera executes a fast smooth physical 360-degree whip-pan following the head rotation through real continuous street space; the police officer exits frame naturally at the left edge; the spinning motion reveals the Parisian sidewalk along the boulevard. As the whip-pan completes and the camera stabilizes, several people are standing on the sidewalk going about ordinary contemporary life — each is a fully photorealistic volumetric 3D human whose face unmistakably references the elongated skull, wide hollow terrified eyes, and iconic open-mouth expression of image_2 — one wears a business suit carrying a briefcase, one in streetwear scrolling a phone, one in a beige trench coat, one in cycling lycra with a helmet, one in casual clothes eating a baguette — all completely calm and normal in behavior, all receiving identical French street natural daylight, all casting real contact shadows on the pavement. Camera keeps moving forward, no cut. No dialogue. No music.
+
+SEAMLESS TRANSITION 02 [Seconds 21-25]
+Without cutting, protagonist continues walking forward; the Parisian boulevard naturally opens at its side into a modern urban public park adjacent to a large urban lake. The lake's surface is a photorealistic physical real-world recreation inspired by the color palette, floating lily pads, pink and yellow water lily blooms, and deep blue-green reflective water of image_3 — actual water with natural ripple physics, real flower petals, natural cloud reflections, integrated seamlessly under the same French daylight. On a modern wooden park bench beside the lake sits a fully three-dimensional photorealistic real woman, referencing the refined facial features, smooth pale complexion, neat cap with headband, dark bead necklace, red and blue Renaissance-style clothing, and precise three-quarter body posture of image_4 — she holds a small living white ermine in her lap, the animal physically present with real fur texture, small claws, alert eyes. She receives full natural park daylight, realistic fabric folds, contact shadows on the bench. Protagonist's POV hand reaches slowly toward the ermine. She immediately and sharply taps the back of his hand away and says firmly: "Don't touch it." Protagonist recoils. No music.
+
+SEAMLESS TRANSITION 03 [Seconds 25-30]
+Without cutting, protagonist pulls hand back and turns head; a fast smooth physical whip-pan swings the camera left and slightly forward through continuous park-to-street space; the urban park transitions physically into a lively modern French pedestrian street. A contemporary hot-dog stand with a red-and-yellow awning is visible. Behind the counter stands a fully three-dimensional photorealistic real woman, referencing the soft brown eyes with characteristic over-the-shoulder glance, the wrapped blue and gold headscarf tied at the top, the dangling single large pearl earring, and the warm skin tone of image_5 — she is entirely real with realistic skin, hair escaping the scarf edges, fabric texture, natural French street lighting. She smiles warmly, holds out a hot dog toward the camera, and says cheerfully: "Try our hot dogs, handsome!" Protagonist's POV freezes. Camera slowly pans in a wide deliberate look around — left, right, ahead — revealing all the impossible painting-inspired characters simply living ordinary modern French lives in this sunlit Parisian street. Deadpan stillness. No music. No dialogue after her line.`,
+    },
+  },
+  {
     id: "just-sharon7-venice-sphere",
     title: "威尼斯折叠成球 · 粉发女孩送信",
     subtitle: "X · @Just_sharon7 · 约30秒 · 16:9",
@@ -31,138 +128,6 @@ export const tutorials: Tutorial[] = [
         number: 1,
         title: "准备人脸参考图 Image 1",
         description:
-          "原帖要求上传自己的 Image 1 脸部参考图，用于锁定主角面部特征。本教程提供的 ref-face-from-demo.jpg 仅为示例人脸参考（成片截帧），跟做时需替换为自己的人脸照片。",
-      },
-      {
-        number: 2,
-        title: "理解折叠建筑核心规则",
-        description:
-          "Inception 式折叠：威尼斯城市像盗梦空间一样翻折成球形，建筑悬挂在空中倒置。主角始终在正常重力下行动，而世界围绕她折叠。连续镜头运动，无硬切。",
-      },
-      {
-        number: 3,
-        title: "设置与平台",
-        description:
-          "16:9 横屏 · 约30秒 · Seedance 2.5 模型 · Fish Creative HQ 平台。1940s 威尼斯金色时刻，琥珀与青蓝电影调色，35mm 变形宽银幕胶片质感，浅景深，体积光，细颗粒感。",
-      },
-      {
-        number: 4,
-        title: "粘贴完整时间线提示词",
-        description:
-          "使用下方完整 30 秒分镜提示词。每个时间段都有明确的镜头运动、场景描述和折叠效果。保持连续摄影机运动，保持主角形象与 Image 1 一致。",
-      },
-    ],
-    references_detail: [
-      {
-        id: "Image1",
-        number: "Image 1",
-        title: "示例人脸参考 · 成片截帧",
-        subtitle: "仅供参考 · 跟做需替换为自己的脸",
-        image: "/tutorials/just-sharon7-venice-sphere/ref-face-from-demo.jpg",
-        prompt: "原帖要求上传自己的 Image 1 脸部参考图。本图为成片截帧示例，展示人物应有的面部特征、发型和造型。跟做时需上传自己的人脸照片作为 Image 1。",
-      },
-    ],
-    storyboard: [
-      {
-        number: 1,
-        description:
-          "0–3s 运河边奔跑：横向跟踪拍摄，金色时刻大运河石堤。粉发女孩 @Image1 抓着黄色信封冲过镜头，头顶整座城市倒挂。戴礼帽的男人遛腊肠犬走在倒置街道上。红伞在两个世界间无重力漂浮。鸽子在琥珀光线中飞散。",
-      },
-      {
-        number: 2,
-        description:
-          "3–6s 小巷深处：镜头跟随她进入狭窄威尼斯小巷，枯叶在身后旋转。远端街道向天空剥离，建筑像窗户墙一样垂直堆叠。脚步声在石墙间回荡。",
-      },
-      {
-        number: 3,
-        description:
-          "6–9s 镜头旋转90度：小巷墙变成她脚下的地面，她继续奔跑毫不惊慌。镜头继续进入环绕轨道，她跑上悬浮在半空的螺旋石阶，威尼斯红陶屋顶碎片像万花筒一样在她周围旋转。",
-      },
-      {
-        number: 4,
-        description:
-          "9–12s 拱桥剪影：极广角。她跑过横跨宽阔运河的石拱桥顶，逆光对着落日。镜像城市同时悬挂在拱桥上方和下方。倒置平面上，孤独的行人朝相反方向走。慢镜头鸟群爆发穿过画面。",
-      },
-      {
-        number: 5,
-        description:
-          "12–15s 垂直跃起：低角度直视两栋高耸建筑墙之间，天空是一条明亮细缝。她跃过垂直峡谷，双臂展开，外套和头发飞扬，挎包摆动。镜头定住她对着天空。风声呼啸。",
-      },
-      {
-        number: 6,
-        description:
-          "15–18s 市场穿梭：手持推进穿过拥挤的1940s里亚托市场街——商贩堆苹果箱，晾衣绳在建筑间挂着。她在模糊的前景购物者间穿梭，背离镜头奔跑。苹果滚过鹅卵石。",
-      },
-      {
-        number: 7,
-        description:
-          "18–21s 钟楼远眺：镜头沿着宏伟砖砌钟楼向上仰拍——威尼斯钟楼——周围城市折叠环绕。女孩在塔楼边缘显得渺小，对着太阳停顿，然后朝屋顶迈步。钟声开始响起。",
-      },
-      {
-        number: 8,
-        description:
-          "21–24s 屋顶花园：玫瑰藤架框出的屋顶露台花园。灰色开衫的老妇人用铁罐浇灌鲜艳花床。身后威尼斯和圣马可大教堂圆顶在日落时分闪耀，倒置城市悬挂头顶。年轻女孩沿着石栏杆平衡行走，双臂伸展，然后跳下露台。",
-      },
-      {
-        number: 9,
-        description:
-          "24–27s 递送信封：她递出黄色信封。老妇人转身，放下浇水罐，接过信封。两人温暖微笑。玫瑰花瓣向上飘过她们，朝倒置的天空落去。",
-      },
-      {
-        number: 10,
-        description:
-          "27–30s 城市成球：镜头快速后拉上升。整座城市折叠旋转，变成威尼斯运河和街道卷曲成球的俯视图。两个小小的人影留在露台上。慢慢淡入温暖光线。",
-      },
-    ],
-    constraints:
-      "需人脸参考图 Image 1（成片包含示例截帧，跟做需上传自己的脸）；1940s 威尼斯金色时刻；琥珀与青蓝电影调色；35mm 变形宽银幕胶片质感；Inception 式折叠建筑；主角始终正常重力；连续镜头运动无硬切；16:9 横屏；来源 @Just_sharon7 / X / 50522 曝光。",
-    video_prompt: {
-      title: "威尼斯折叠成球 · 30s 时间线提示词",
-      subtitle: "Seedance 2.5 · 16:9 · Fish Creative HQ · 需 Image 1 人脸参考",
-      content: `[Image 1](image_1) is the face and identity reference. A young Korean woman in her early twenties with EXACTLY the face of @[Image 1](image_1) — same facial structure, same features, natural Korean skin, no glasses. Long pastel pink hair, wearing a 1940s teal-orange wool coat-dress with white collar, a brown leather satchel worn cross-body, grey knee socks, black leather shoes, holding a folded yellow envelope. Every shot of her matches @[Image 1](image_1).
-1940s Venice at golden hour. Amber and teal cinematic grade, anamorphic 35mm film look, shallow depth of field, volumetric god rays, fine film grain. Inception-style folding architecture — the Venetian city curls upward and hangs inverted overhead like a mirrored ceiling. The woman always stays under normal gravity while the world folds around her. Continuous camera motion, no hard cuts.
-[TIMELINE PROMPT]
-0–3s: Lateral tracking shot along a stone quay by the Grand Canal at sunset. The young woman @[Image 1](image_1) in a teal coat sprints past camera, clutching a yellow envelope. Above her the entire city hangs upside down, mirrored — a man in a bowler hat walks a dachshund across the inverted street. A red umbrella drifts weightlessly between the two worlds. Pigeons scatter through the amber light.
-3–6s: Camera follows behind her into a narrow Venetian alley, dry leaves swirling in her wake. At the far end the street peels upward into the sky, buildings stacking vertically like a wall of windows. Her footsteps echo between the stone walls.
-6–9s: The camera slowly rolls 90 degrees. The alley wall becomes the ground beneath her feet; she keeps running, unfazed. The roll continues into a wide orbit as she races up a floating spiral stone staircase suspended in mid-air, fragments of terracotta Venetian rooftops rotating around her like a kaleidoscope.
-9–12s: Extreme wide silhouette. She runs across the top of an arched stone bridge over a wide canal against the blazing setting sun. The mirrored city hangs both above and below the arch. On the inverted plane, a lone pedestrian walks the opposite direction. Birds burst across the frame in slow motion.
-12–15s: Low angle looking straight up between two towering building walls, the sky a thin bright strip. She leaps across the vertical chasm, arms spread wide, coat and hair flying, satchel swinging. Camera holds on her against the sky. Wind roars.
-15–18s: Handheld push-in through a crowded 1940s Rialto market street — vendors stacking crates of apples, laundry strung overhead between the buildings. She weaves between blurred foreground shoppers, running away from camera. An apple rolls loose across the cobblestones.
-18–21s: Camera tilts up a grand brick bell tower — a Venetian campanile — as the surrounding city folds and curls around it. The woman appears tiny on the tower ledge, pauses against the sun, then steps off toward the rooftops. Bells begin to ring.
-21–24s: Rooftop terrace garden framed by a rose-covered arbor. An elderly woman in a grey cardigan waters a bed of vivid flowers with a tin can. Behind her, Venice and the domes of St Mark's Basilica glow at sunset over the lagoon while the inverted city hangs overhead. The young woman balances along the stone balustrade, arms out, then jumps down onto the terrace.
-24–27s: She holds out the yellow envelope. The old woman turns, sets down the watering can, and takes it. Both smile warmly at each other. Rose petals drift upward past them, falling toward the inverted sky.
-27–30s: Camera pulls back and rises fast. The whole city folds and rotates until it becomes a top-down aerial of Venice's canals and streets curling into a sphere. The two tiny figures remain on the terrace. Slow fade to warm light.`,
-    },
-  },
-  {
-    id: "techiebysa-logo-embroidery-sew",
-    title: "刺绣缝 Logo · 线自己爬上织物",
-    subtitle: "X · @TechieBySA · 约10秒 · 16:9",
-    description:
-      "极限微距镜头记录刺绣线自主编织 Logo 的魔法时刻：彩色丝线从棉布表面升起，逐排铺设紧密缎纹针迹，勾勒标志轮廓，拉紧成立体纹理直至完整。由 Gemini Omni Flash 1.1 在 Pika 平台生成。需上传你的 Logo 参考图。",
-    video: "/tutorials/techiebysa-logo-embroidery-sew/demo-web.mp4",
-    poster: "/tutorials/techiebysa-logo-embroidery-sew/poster.jpg",
-    duration: "约10秒",
-    shots: 1,
-    references: 0,
-    model: "Gemini Omni Flash 1.1",
-    style: "刺绣微距 · Logo 缝线成型",
-    aspectRatio: "16/9",
-    sourceUrl: "https://x.com/TechieBySA/status/2093388159602041067",
-    sourceAuthor: "@TechieBySA",
-    sourcePlatform: "X",
-    sourceImpressions: 224974,
-    tags: [
-      "约10秒",
-      "16:9 横屏",
-      "Gemini Omni Flash 1.1",
-      "Pika",
-      "需上传 Logo 参考图",
-    ],
-    steps: [
-      {
-        number: 1,
-        title:
           "原帖要求上传自己的 Image 1 脸部参考图，用于锁定主角面部特征。本教程提供的 ref-face-from-demo.jpg 仅为示例人脸参考（成片截帧），跟做时需替换为自己的人脸照片。",
       },
       {
