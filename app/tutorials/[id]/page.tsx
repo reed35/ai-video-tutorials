@@ -64,7 +64,7 @@ export default async function TutorialPage({
       <section className="bg-gradient-to-b from-[var(--panel2)] to-[var(--panel)] border border-[var(--line)] rounded-3xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
         <div className="p-7 pb-2">
           <div className="inline-flex items-center gap-2 text-[var(--accent)] text-xs font-semibold tracking-widest uppercase mb-2.5">
-            DEMO TEMPLATE · FILMERA / SEEDANCE
+            {tutorial.sourcePlatform ? `来源 · ${tutorial.sourcePlatform}` : "成片拆解 · 跟做教程"}
           </div>
           <h1 className="text-[clamp(26px,4vw,36px)] leading-tight tracking-tight mb-2.5">
             {tutorial.title}
@@ -259,7 +259,28 @@ export default async function TutorialPage({
       </section>
 
       <footer className="mt-10 text-[var(--muted)] text-xs text-center">
-        成片拆解 · 素材来自 Filmera 公开模板,仅供演示
+        {tutorial.sourcePlatform || tutorial.sourceAuthor || tutorial.sourceUrl ? (
+          <>
+            来源
+            {tutorial.sourcePlatform && ` · ${tutorial.sourcePlatform}`}
+            {tutorial.sourceAuthor && ` · ${tutorial.sourceAuthor}`}
+            {tutorial.sourceUrl && (
+              <>
+                {" · "}
+                <a
+                  href={tutorial.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[var(--accent)] transition-colors"
+                >
+                  原帖
+                </a>
+              </>
+            )}
+          </>
+        ) : (
+          "成片拆解 · 来源未标注 / 内部整理"
+        )}
       </footer>
     </div>
   );
