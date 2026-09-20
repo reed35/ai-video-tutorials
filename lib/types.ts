@@ -17,6 +17,7 @@ export interface Tutorial {
   constraints?: string;
   video_prompt: VideoPrompt;
   aspectRatio?: string;
+  sourceUrl?: string;
 }
 
 export interface Step {
