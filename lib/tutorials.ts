@@ -2,6 +2,120 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "fridge-freshness-perfected",
+    title: "冰箱广告：新鲜尽在掌握",
+    subtitle: "X · HeyRu0by · 10秒 · 9:16",
+    description:
+      "竖屏家电广告：参考图锁定冰箱造型，揭示→开门冷雾→食材宏观→冷气环流→关门英雄镜头。成片 9:16 竖屏，不进胶片条，只出现在列表与详情。",
+    video: "/tutorials/fridge-freshness-perfected/demo-web.mp4",
+    poster: "/tutorials/fridge-freshness-perfected/poster.jpg",
+    duration: "10秒",
+    shots: 5,
+    references: 1,
+    model: "推测家电广告模型",
+    style: "奢华产品广告 · 竖屏",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/HeyRu0by/status/2101186330025922663",
+    tags: [
+      "10秒 · 5 节拍",
+      "9:16 竖屏 · 不进胶片条",
+      "1 张产品参考图",
+      "奢华家电广告风格",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂产品广告节奏",
+        description:
+          "揭示（暗转亮推镜）→开门冷雾（慢镜雾气）→新鲜宏观（食材凝露）→冷气环流（可视化气流）→英雄收束（缓推高光）。核心是产品外形一致性（exact from REF01）+ 克制真实冷雾（勿粒子爆炸）+ 无人手。",
+      },
+      {
+        number: 2,
+        title: "准备参考图与设置",
+        description:
+          "上传 REF01 产品参考图锁定冰箱造型（形状、门把、颜色、标志、控制面板）。9:16 竖屏 · 10s · 打开声音（奢华环境音）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持 exact refrigerator design from reference；反光高级；雾气克制；食材细节真实；可带文案 FRESHNESS. PERFECTED.；负面提示：无人手/无产品变形/无重复冰箱/无卡通感。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "REF01",
+        number: "REF01",
+        title: "冰箱产品参考",
+        subtitle: "锁定造型 · 提示词要求 Exact design",
+        image: "/tutorials/fridge-freshness-perfected/refs/REF01.jpg",
+        prompt: "（无单独出图词；此参考图仅用于锁定产品造型，提示词中已要求 Use the exact refrigerator design from the uploaded reference image）",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:02 产品揭示：奢华厨房中冰箱由暗转亮，推镜贴近。教练提示：先锁产品外形一致；反光要高级。",
+      },
+      {
+        number: 2,
+        description:
+          "00:02–00:04 开门冷雾：双门慢镜打开，冷雾涌出。教练提示：雾气克制真实，别粒子爆炸。",
+      },
+      {
+        number: 3,
+        description:
+          "00:04–00:06 新鲜宏观：果蔬乳品饮料宏观，凝露与冷雾。教练提示：食欲细节；产品比例不变形。",
+      },
+      {
+        number: 4,
+        description:
+          "00:06–00:08 冷气环流：冷气在食材间均匀流动的可视化。教练提示：用细微气流粒子，勿喧宾夺主。",
+      },
+      {
+        number: 5,
+        description:
+          "00:08–00:10 英雄收束：门缓缓关合，缓推英雄镜头与高光。教练提示：可带文案 FRESHNESS. PERFECTED.；无人手。",
+      },
+    ],
+    constraints:
+      "exact fridge from REF01（形状/门把/颜色/标志一致）；克制真实冷雾（勿粒子爆炸）；无人手/无产品变形/无重复冰箱；9:16 竖屏不进胶片条；来源 HeyRu0by。",
+    video_prompt: {
+      title: "Fridge Commercial · FRESHNESS. PERFECTED. · 10s · 9:16",
+      subtitle: "推测家电广告模型 · 9:16 竖屏 · 产品参考图",
+      content: `Create a premium 10-second vertical 9:16 refrigerator commercial, photorealistic 8K, ultra-realistic product cinematography, luxury home-appliance advertising style. Use the exact refrigerator design from the uploaded reference image. Preserve the exact shape, proportions, doors, handles, color, finish, logo, control panel, and all visible details. No redesign, no extra logos, no distorted text, no duplicate refrigerator.
+
+CONCEPT: REVEAL → OPEN → COLD AIR → FRESH FOOD → HERO
+
+01 | 0–2s — PRODUCT REVEAL
+A sleek modern refrigerator stands in a luxurious contemporary kitchen. Dramatic dark-to-bright lighting slowly reveals the refrigerator, with elegant reflections across its premium surface. Camera makes a smooth cinematic push-in toward the product.
+
+02 | 2–4s — DOOR OPEN
+The refrigerator doors open smoothly in slow motion. A soft burst of cool mist escapes from inside, creating a fresh and refreshing visual effect. Camera moves closer toward the interior.
+
+03 | 4–6s — FRESHNESS MACRO
+Extreme macro shots of perfectly chilled fresh fruits, vegetables, milk bottles, and beverages arranged beautifully inside. Subtle cold mist, crisp textures, realistic condensation, bright premium lighting.
+
+04 | 6–8s — COOLING POWER
+Visualize powerful cold air circulating evenly throughout the refrigerator. Subtle flowing air particles move around the food while everything remains perfectly fresh and chilled. Smooth cinematic camera movement.
+
+05 | 8–10s — HERO SHOT
+Doors gently close. The refrigerator becomes the complete hero in the center of the luxury kitchen. Camera performs a slow elegant push-in while premium highlights glide across the surface.
+
+ON-SCREEN TEXT:
+"FRESHNESS. PERFECTED."
+
+FINAL FRAME:
+Clean premium refrigerator hero shot, centered composition, elegant lighting, subtle reflections, luxury commercial finish.
+
+STYLE: Photorealistic, ultra-detailed, cinematic lighting, realistic materials, premium appliance commercial, smooth camera motion, shallow depth of field, high-speed macro details, natural reflections, 8K quality, polished luxury advertising aesthetic.
+
+NEGATIVE PROMPT:
+No people, no hands, no warped refrigerator, no changing product design, no extra doors, no duplicate appliance, no floating objects, no distorted food, no fake branding, no misspelled text, no watermark, no cartoon look, no CGI-looking plastic, no flickering, no unstable geometry.`,
+    },
+  },
+  {
     id: "steppe-warrior-queen",
     title: "草原女王：骑射破阵",
     subtitle: "X · azed_ai · 约30秒 · 16:9",
