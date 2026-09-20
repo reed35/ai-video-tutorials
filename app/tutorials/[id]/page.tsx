@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getTutorialById, tutorials } from "@/lib/tutorials";
 import { notFound } from "next/navigation";
 import { PromptBlock } from "@/components/prompt-block";
+import { VideoPreload } from "@/components/video-preload";
 
 export function generateStaticParams() {
   return tutorials.map((tutorial) => ({
@@ -24,10 +25,6 @@ export async function generateMetadata({
   return {
     title: `${tutorial.title} - 成片拆解`,
     description: tutorial.description,
-    other: {
-      "link-preload-video": tutorial.video,
-      "link-preload-poster": tutorial.poster,
-    },
   };
 }
 
@@ -45,6 +42,7 @@ export default async function TutorialPage({
 
   return (
     <div className="max-w-[980px] mx-auto px-[18px] py-7 pb-20">
+      <VideoPreload videoSrc={tutorial.video} posterSrc={tutorial.poster} />
       <header className="flex items-center gap-3 mb-8 py-4">
         <Link
           href="/"
@@ -99,8 +97,6 @@ export default async function TutorialPage({
               }))`,
             }}
           >
-            <link rel="preload" as="video" href={tutorial.video} type="video/mp4" />
-            <link rel="preload" as="image" href={tutorial.poster} />
             <video
               className="w-full h-full object-contain"
               controls
