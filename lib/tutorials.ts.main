@@ -2,278 +2,6 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
-    id: "aiwithkhan-rope-name-smiling",
-    title: "红绳拼字 Smiling · 定格小人工坊",
-    subtitle: "X · @AIwithkhan · 约10秒 · 16:9",
-    description:
-      "10秒红绳拼字定格动画：粗红编织绳 + 4-5个迷你粘土人物共同编织单词 Smiling。绳子从散乱松散循序变形为草书字母，小人物攀爬拉扯打结。需提供与成片最后一帧完全吻合的参考图。教练提示：把 Smiling 替换成你的名字，仍需匹配的最终帧参考图。",
-    video: "/tutorials/aiwithkhan-rope-name-smiling/demo-web.mp4",
-    poster: "/tutorials/aiwithkhan-rope-name-smiling/poster.jpg",
-    duration: "约10秒",
-    shots: 1,
-    references: 1,
-    model: "Seedance 2.5",
-    style: "定格动画 · 红绳编织 · 小人工坊",
-    aspectRatio: "16/9",
-    sourceUrl: "https://x.com/AIwithkhan/status/2100069812152197146",
-    sourceAuthor: "@AIwithkhan",
-    sourcePlatform: "X",
-    sourceImpressions: 12994,
-    tags: [
-      "约10秒 · 单镜头",
-      "16:9 横屏",
-      "Seedance 2.5",
-      "定格动画美学",
-      "需参考图（最终帧）",
-    ],
-    steps: [
-      {
-        number: 1,
-        title: "准备最终帧参考图",
-        description:
-          "关键要求：必须提供与成片最后一帧完全吻合的参考图。图中应清晰展示红绳编织完成的单词样式、字母走向、绳子交叉与负空间。如果要把 Smiling 替换成自己的名字，也需要准备对应的最终成型参考图。",
-      },
-      {
-        number: 2,
-        title: "设定定格动画元素",
-        description:
-          "一根粗红编织绳 + 4-5个身穿简单绳绿色工作服的迷你粘土小人，面部无明显特征。纯白无缝背景，柔和影棚光，绳下有细微阴影。小人物需在编织过程中攀爬、拉扯、打结，具备玩味的定格动画动作感。",
-      },
-      {
-        number: 3,
-        title: "粘贴完整提示词生成",
-        description:
-          "使用下方完整英文提示词，并上传最终帧参考图。提示词强调：参考图作为精确最终帧（Using the reference image as the exact final frame）；绳子从散乱逐步变形成草书字母；小人物协作动作；镜头完全静止俯拍；无剪辑、无独立文字生成、无额外物体。",
-      },
-    ],
-    references_detail: [
-      {
-        id: "ref-final-frame",
-        number: "参考图 1",
-        title: "最终帧红绳成品参考",
-        subtitle: "必需 · 与成片最后一帧精确匹配",
-        image: "/tutorials/aiwithkhan-rope-name-smiling/ref-final-frame.jpg",
-        prompt:
-          "提供红绳编织完成后的最终成型样式，清晰展示单词 Smiling 的字母走向、绳子交叉、打结位置与负空间。这是整个生成的核心参考，必须与成片最后一帧完全吻合。",
-      },
-    ],
-    storyboard: [
-      {
-        number: 1,
-        description:
-          "开场：红绳散乱松散，以柔和环状铺散在画面中，4-5个迷你粘土人物站在绳子周围。随后小人物迅速抓住绳子，共同协作拉扯、盘绕、扭转、打结，绳子逐步变形成草书字母 S-m-i-l-i-n-g，从左到右依次成型。小人物在编织过程中攀爬绳子、围绕动作。最后1-2秒，小人物完成 g 字母的最后一个结，后退并跳走，留下完成的 Smiling 红绳作品，清晰可见并与参考图匹配。镜头完全静止俯拍，柔和影棚光，无剪辑、无摄像机运动、无独立生成文字、无额外物体。流畅连续运动，触感绳子物理，真实纤维，玩味迷你定格动画美学融合精致 CGI。",
-      },
-    ],
-    constraints:
-      "必须上传最终帧参考图；红绳编织字母需与参考图完全匹配；4-5个迷你粘土人物协作动作；纯白无缝背景；镜头完全静止俯拍；无剪辑、无独立文字、无额外物体；来源 @AIwithkhan / X / 12994 曝光。",
-    video_prompt: {
-      title: "红绳拼字定格动画提示词",
-      subtitle: "Seedance 2.5 · 16:9 横屏 · 完整可复制提示词",
-      content: `Using the reference image as the exact final frame, create a 10-second stop-motion-inspired fluid CGI animation of a single thick red braided rope forming the word "Smiling" on a pure white seamless background. At the beginning, the rope is loose and unformed, scattered in soft loops across the frame, with 4–5 tiny clay-like miniature characters wearing simple rope-green overalls and no distinct facial features standing around it. They quickly grab the rope and work together, pulling, stretching, coiling, twisting, and tying it into shape. The rope progressively transforms into the cursive letters "S-m-i-l-i-n-g", moving smoothly from left to right. Each letter must be created entirely from the same continuous rope, with realistic braided fibers, intricate knots, overlapping loops, natural crossings, and clean negative spaces matching the reference image. The characters playfully climb over and around the rope while shaping each letter, coordinating their movements as the word becomes recognizable. The camera remains completely static and top-down, with consistent soft studio lighting, subtle shadows beneath the rope, and no background elements. In the final 1–2 seconds, the characters finish the last knot on the "g," step back and hop away, leaving the completed "Smiling" rope artwork clearly visible and matching the reference image. No cuts, no camera movement, no independently generated text, no extra objects. Smooth continuous motion, tactile rope physics, realistic fibers, playful miniature stop-motion aesthetic blended with polished CGI.`,
-    },
-  },
-  {
-    id: "techhalla-room214-stop-motion",
-    title: "ROOM 214 · H3 定格收拾行李",
-    subtitle: "X · @techhalla · 约15秒 · 16:9",
-    description:
-      "ROOM 214 沙漠汽车旅馆房间内，衣物自己跳进行李箱。无人手、无平滑运动，纯正定格动画节奏：小件先跳、中件折叠、大件压顶、箱盖三段合上。MiniMax H3 通过 JSON 结构化提示词精准控制定格抖动质感。",
-    video: "/tutorials/techhalla-room214-stop-motion/demo-web.mp4",
-    poster: "/tutorials/techhalla-room214-stop-motion/poster.jpg",
-    duration: "约15秒",
-    shots: 1,
-    references: 0,
-    model: "MiniMax Hailuo H3",
-    style: "定格动画 · 逐帧抖动",
-    aspectRatio: "16/9",
-    sourceUrl: "https://x.com/techhalla/status/2094743725138178491",
-    sourceAuthor: "@techhalla",
-    sourcePlatform: "X",
-    sourceImpressions: 10727,
-    tags: [
-      "约15秒 · 定格动画",
-      "16:9 横屏",
-      "MiniMax H3",
-      "stop-motion 收拾行李",
-      "无人手 · 锁定机位",
-      "JSON 结构化提示词",
-    ],
-    steps: [
-      {
-        number: 1,
-        title: "读懂定格节奏：小件→中件→大件→合盖",
-        description:
-          "真正的定格动画是物体在帧间「瞬移」几厘米，而非平滑滑动。收拾顺序：袜子、内裤、T恤、腰带先跳入箱中；衬衫、牛仔裤、毛衣分两三步折叠入箱；冲锋衣、帽子最后压顶；箱盖三段硬合。",
-      },
-      {
-        number: 2,
-        title: "粘贴完整 JSON 提示词到 MiniMax H3",
-        description:
-          "将下方 JSON 提示词完整复制到 MiniMax Hailuo H3 生成。JSON 结构包含 archetype、concept、camera、grade、audio、constraints 六大模块，精准定义定格抖动、节奏结构、禁用平滑运动。",
-      },
-      {
-        number: 3,
-        title: "注意三大约束：真定格抖动 · 无手 · 锁定机位",
-        description:
-          "constraints 明确要求：物体逐帧瞬移而非漂浮滑行；画面中不得出现人手、手臂或身体；相机完全锁定，禁止推拉摇移。可读文字仅限 ROOM 214、DESERT INN / FLAGSTAFF、CHECKOUT 11AM。",
-      },
-    ],
-    references_detail: [],
-    storyboard: [
-      {
-        number: 1,
-        description:
-          "0-2s：锁定广角。ROOM 214 黄铜门牌。海军蓝硬壳行李箱敞开在床罩上。度假衣物散落床面、椅子、地板。窗帘条纹阳光。画面已有细微逐帧闪烁。",
-      },
-      {
-        number: 2,
-        description:
-          "2-6s：小件先跳。白色运动袜 pop-pop 跳入箱中；藏青内裤折一次跃入；乐队 T恤咔嚓折成方块掉落；棕色皮带盘卷落箱顶。每件都是瞬移硬切，带硬阴影。",
-      },
-      {
-        number: 3,
-        description:
-          "6-10s：中件分步折叠。浅蓝牛津衬衫自己扣纽两帧 pop 后折叠；深色牛仔裤三段硬切折好滑入；芥末黄毛衣压缩堆叠。书桌记事本翻页：空白→手写 CHECKOUT 11AM→定格。",
-      },
-      {
-        number: 4,
-        description:
-          "10-13s：大件最后。橄榄绿冲锋衣两口崩塌掉入；棒球帽翻转落堆顶；椅子上剩余袜子、背心从椅子跳过来。箱子明显满了。",
-      },
-      {
-        number: 5,
-        description:
-          "13-15s：箱盖三段硬合。盖子第一段 slam、第二段 slam、第三段完全合上。最终定格：合上的海军蓝箱、黄铜 ROOM 214、记事本冻结在 CHECKOUT 11AM。结束。",
-      },
-    ],
-    constraints:
-      "真正定格抖动：物体逐帧瞬移数厘米，禁止平滑漂浮；无人手、手臂或身体入镜；相机完全锁定，禁止推拉摇移；可读文字仅 ROOM 214 / DESERT INN / FLAGSTAFF / CHECKOUT 11AM；收拾顺序可见：袜子内衣 T恤腰带 → 衬衫牛仔裤毛衣 → 冲锋衣帽子；箱盖合前箱子需显示已满；来源 @techhalla / X / 10727 曝光。",
-    video_prompt: {
-      title: "ROOM 214 定格动画提示词",
-      subtitle: "MiniMax Hailuo H3 · JSON 结构化提示词",
-      content: `{
-  "archetype": "Stop-motion / frame-by-frame jitter of real objects moved between frames",
-  "concept": {
-    "title": "ROOM 214",
-    "world": "A roadside motel room in Flagstaff, Arizona, late afternoon. Brass ROOM 214 on the interior door. Desk notepad stamped DESERT INN / FLAGSTAFF. Navy hard-shell suitcase open on the bedspread. Sun stripes through vertical blinds. Vacation clothes already scattered: socks, underwear, t-shirt, oxford shirt, jeans, coiled belt, knit sweater, windbreaker, cap.",
-    "story": "Every garment packs itself in true stop-motion pops. No human hands. Small pieces jump first, then mid layers fold in two or three frame-steps, then bulk pieces stack. The suitcase fills until the lid slams in three hard bites. The DESERT INN notepad flips to CHECKOUT 11AM.",
-    "rhythm_structure": {
-      "0-2s": "Locked wide. ROOM 214. Open navy suitcase. Vacation clothes laid out on bed, chair, floor. Subtle frame flicker already on.",
-      "2-6s": "Smalls first, discrete jumps with hard shadows: white athletic socks pop-pop into the case; navy boxers fold once and hop in; faded band t-shirt snaps into a rectangle and drops; brown leather belt coils and lands on top.",
-      "6-10s": "Mids in jerky folds: light-blue oxford shirt buttons itself in two frame pops then folds; dark-wash jeans fold in three hard steps and slide in; mustard knit sweater compresses and stacks. Notepad pages flip: blank → CHECKOUT 11AM handwritten → hold.",
-      "10-13s": "Bulk last: olive windbreaker collapses in two bites and drops in; baseball cap flips onto the pile; leftover sock and undershirt jump from the chair. Case now visibly full.",
-      "13-15s": "Lid closes in three stop-frame slams. Final still: closed navy case, brass ROOM 214, notepad frozen on CHECKOUT 11AM. End."
-    }
-  },
-  "camera": {
-    "shot_type": "One 15s locked wide of the motel room, 16:9",
-    "lens_language": "Still-tripod 32mm, harsh blind stripes across bed and case",
-    "camera_journey": "Locked. Only objects change position between frames.",
-    "forbidden_moves": [
-      "No smooth continuous motion of objects",
-      "No hands, arms, or body in frame",
-      "No claymation characters",
-      "No camera push, pan, tilt, or handheld"
-    ]
-  },
-  "grade": {
-    "stock": "Sun-faded motel print, slight strobe between frames",
-    "palette": [
-      "Desert ochre walls",
-      "Brass 214",
-      "Navy suitcase",
-      "White notepad",
-      "Faded cotton, denim indigo, mustard knit, olive nylon"
-    ],
-    "texture": "Carpet nap, brass, paper, cotton knit, denim, leather belt, nylon shell"
-  },
-  "audio": {
-    "native": true,
-    "bed": "Highway hush, AC rattle",
-    "accents": [
-      "Hard per-frame fabric ticks",
-      "Denim fold thumps",
-      "Belt coil tap",
-      "Paper flip",
-      "Lid slam in three hits"
-    ],
-    "forbidden": [
-      "No cartoon boings",
-      "No music",
-      "No voices"
-    ]
-  },
-  "constraints": [
-    "Readable text only: ROOM 214, DESERT INN / FLAGSTAFF, CHECKOUT 11AM",
-    "True stop-motion jitter: objects teleport a few centimeters per frame, never float or slide",
-    "Packing order visible: socks + underwear + t-shirt + belt, then oxford + jeans + sweater, then windbreaker + cap",
-    "Suitcase must look full before the lid closes"
-  ]
-}`,
-    },
-  },
-  {
-    id: "pixelaigc-dunhuang-desktop-fail",
-    title: "敦煌飞天桌面壁纸翻车 · H3",
-    subtitle: "X · @PixelAigc · 约10秒 · 16:9",
-    description:
-      "桌面壁纸动画翻车喜剧：敦煌飞天在苹果桌面跳舞，舞步踩动幕布震落图标，慌忙收拾却按歪两个，强颜欢笑摆回原位。GPT Image 2.5 生成桌面静帧 → H3 图生视频。注意「图标震落又摆歪」的喜剧节拍。",
-    video: "/tutorials/pixelaigc-dunhuang-desktop-fail/demo-web.mp4",
-    poster: "/tutorials/pixelaigc-dunhuang-desktop-fail/poster.jpg",
-    duration: "约10秒",
-    shots: 1,
-    references: 0,
-    model: "MiniMax Hailuo H3 (图生视频) + GPT Image 2.5 (生图)",
-    style: "图生视频 · 喜剧叙事 · 桌面动画",
-    aspectRatio: "16/9",
-    sourceUrl: "https://x.com/PixelAigc/status/2100051139547054118",
-    sourceAuthor: "@PixelAigc",
-    sourcePlatform: "X",
-    sourceImpressions: 418704,
-    tags: [
-      "约10秒 · 桌面动画喜剧",
-      "16:9 横屏",
-      "H3 图生视频",
-      "GPT Image 2.5 生图",
-      "敦煌飞天 · 翻车叙事",
-    ],
-    steps: [
-      {
-        number: 1,
-        title: "GPT Image 2.5 生成桌面壁纸静帧",
-        description:
-          "用 GPT Image 2.5 生成苹果电脑桌面图：左侧两列常用 APP 图标，右侧敦煌飞天舞女全身图，背景为苹果经典渐变简洁背景，16:9 比例。提示词：「生成一张苹果电脑的桌面图，左边是两列常用APP的图标，右边是一个敦煌飞天舞女全身图，背景是苹果电脑经典的渐变简洁背景，16：9」。",
-      },
-      {
-        number: 2,
-        title: "H3 图生视频 + 贴视频提示词",
-        description:
-          "将上一步生成的桌面图上传至 MiniMax H3，选择图生视频模式，粘贴下方完整视频提示词。重点描述飞天舞蹈动作、幕布抖动、图标震落、慌忙收拾、按歪图标、返回原位强颜欢笑的完整叙事节拍，配合背景音乐从传统敦煌音乐到诙谐风趣曲风的转变。",
-      },
-      {
-        number: 3,
-        title: "注意「图标震落又摆歪」喜剧节拍",
-        description:
-          "这个片子的核心是喜剧叙事节奏：飞天舞步踩动幕布 → 图标震落 → 双手捂嘴惊吓 → 停舞跑去收拾 → 匆忙按回但两个按歪 → 返回原位勉强微笑。提示词必须完整描述这一连串动作，才能让 H3 理解喜剧时间线与情绪转折。背景音乐风格变化也是关键辅助。",
-      },
-    ],
-    references_detail: [],
-    storyboard: [
-      {
-        number: 1,
-        description:
-          "飞天在桌面右侧跳舞，舞步踩动时扯动屏幕幕布，幕布抖动震落左侧图标全部掉落地上，飞天双手捂嘴惊吓表情，立即停止舞蹈，跑到左侧逐个捡起图标按回原位，但因太匆忙有两个图标按歪了，她马上返回右侧原位重新摆好开始姿势，表情勉强微笑，轻风吹来衣服和披帛飘动，固定机位，背景音乐从开始的传统敦煌音乐到后面的诙谐风趣曲风。",
-      },
-    ],
-    constraints:
-      "完整叙事节拍：舞步踩动 → 幕布抖动震落图标 → 惊吓捂嘴 → 停舞收拾 → 匆忙按回但两个按歪 → 返回原位勉强微笑；音乐风格从传统敦煌到诙谐转变；固定机位；来源 @PixelAigc / X / 418704 曝光。",
-    video_prompt: {
-      title: "完整 H3 图生视频提示词",
-      subtitle: "MiniMax Hailuo H3 · 图生视频模式 · 完整可复制提示词",
-      content: `飞天在跳舞，当她的脚踩下时，扯动了屏幕背景的幕布，幕布抖动，把左边的图标全都震落在地上，飞天吓得双手捂嘴，连忙停下舞蹈，跑到左边，把地上的图标一个个重新按回原来的位置，但由于太匆忙，有两个图标按歪了，她马上返回原来的右边位置，重新摆好开始的POSE，表情勉强微笑，轻风吹来，她的衣服和披帛飘动，固定机位，背景音乐从开始的传统敦煌音乐到后面的诙谐风趣曲风`,
-    },
-  },
-  {
     id: "pixelaigc-dunhuang-desktop-fail",
     title: "敦煌飞天桌面壁纸翻车 · H3",
     subtitle: "X · @PixelAigc · 约10秒 · 16:9",
@@ -1593,8 +1321,8 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
     subtitle: "X · 369Serena · 约8秒 · 9:16",
     description:
       "竖屏舞蹈动作迁移：灰白深度捕捉→Seedance 人物重建。步骤嵌入抖音原片与灰白捕捉片供参考。无需参考图（需自备人物素材）。两大陷阱：先灰白勿直接迁移；音轨后期另加。",
-    video: "/tutorials/seedance-dance-mocap-migration/demo-v2.mp4",
-    poster: "/tutorials/seedance-dance-mocap-migration/poster-v2.jpg",
+    video: "/tutorials/seedance-dance-mocap-migration/demo-web.mp4",
+    poster: "/tutorials/seedance-dance-mocap-migration/poster.jpg",
     duration: "约8秒",
     shots: 1,
     references: 0,
@@ -1617,8 +1345,8 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
         title: "准备抖音原片舞蹈素材",
         description:
           "寻找或自拍清晰舞蹈动作视频。动作要干净完整，画面稳定，人物主体清晰。这是整个流程的动作源。",
-        video: "/tutorials/seedance-dance-mocap-migration/douyin-v2.mp4",
-        poster: "/tutorials/seedance-dance-mocap-migration/douyin-poster-v2.jpg",
+        video: "/tutorials/seedance-dance-mocap-migration/douyin-web.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/douyin-poster.jpg",
         aspectRatio: "9/16",
       },
       {
@@ -1626,8 +1354,8 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
         title: "制作灰白深度捕捉片",
         description:
           "将原片转为灰白深度图/姿态捕捉版本（用深度估计或姿态提取工具）。这是关键：必须先做灰白捕捉，不要直接将彩色原片迁移到 Seedance，否则动作会失真。",
-        video: "/tutorials/seedance-dance-mocap-migration/gray-v2.mp4",
-        poster: "/tutorials/seedance-dance-mocap-migration/gray-poster-v2.jpg",
+        video: "/tutorials/seedance-dance-mocap-migration/gray-web.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/gray-poster.jpg",
         aspectRatio: "9/16",
       },
       {
