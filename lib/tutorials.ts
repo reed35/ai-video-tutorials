@@ -2,6 +2,126 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "late-night-ramen",
+    title: "深夜泡面：耳机里的小确幸",
+    subtitle: "X · Shorelyn_ · Seedance 2.5 · 约29秒 · 16:9",
+    description:
+      "暖光深夜生活片：短发女生戴耳机煮泡面，从撕料包、冲水、打蛋到盖盖焖面、揭盖夹面大口吃。宏观食物特写与碗内视角穿插，Lo-Fi 与 ASMR 食材声叠在一起。无独立参考图，纯提示词可跟做。",
+    video: "/tutorials/late-night-ramen/demo-web.mp4",
+    poster: "/tutorials/late-night-ramen/poster.jpg",
+    duration: "约29秒",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "暖光深夜 · Lo-Fi + ASMR",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Shorelyn_/status/2099013056013672761",
+    tags: [
+      "约29秒 · 7 节拍",
+      "无参考图 · 纯文生视频可跟做",
+      "Seedance 2.5",
+      "Lo-Fi R&B + ASMR 食材声",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂暖光深夜泡面节奏",
+        description:
+          "撕包→冲水→打蛋→盖盖→揭盖夹面。暖光房间+耳机角色；宏观食物特写与碗内视角穿插；蒸汽物理连续；碗内熄灯转场巧思。",
+      },
+      {
+        number: 2,
+        title: "Seedance 2.5 · 16:9 · ~30s · 打开声音",
+        description:
+          "无需参考图。Lo-Fi R&B 音乐 + ASMR 食材 foley（撕包、倒水、打蛋、吸面）叠在一起。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "可改人物/面味做成自己的。保持暖光 vs 夜窗外；宏观食物+碗内视角；Lo-Fi+ASMR foley；蒸汽真实。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:02 摇摆开场：中景：女生随音乐轻晃，桌上水壶、鸡蛋、碗，拿起红色调料包。教练提示：先立住暖光房间与耳机角色；桌面道具一次摆齐。",
+      },
+      {
+        number: 2,
+        description:
+          "00:03–00:06 撕包撒粉：手撕红包→调料粉落在干面饼的宏观。教练提示：食物宏观要浅景深；粉尘下落是记忆点。",
+      },
+      {
+        number: 3,
+        description:
+          "00:07–00:09 热水冲面：热水浇面与粉，汤色形成，蒸汽升腾。教练提示：蒸汽物理要连续，避免瞬变。",
+      },
+      {
+        number: 4,
+        description:
+          "00:10–00:12 打蛋入汤：持蛋中景切慢镜：生蛋落入汤心。教练提示：慢镜只给打蛋瞬间，别拖长。",
+      },
+      {
+        number: 5,
+        description:
+          "00:13–00:17 盖盖焖等：盖盖→碗内视角变黑；再切回闭眼微笑敲桌等待。教练提示：碗内熄灯是转场巧思；等待段落保持节奏敲击。",
+      },
+      {
+        number: 6,
+        description:
+          "00:18–00:22 揭盖夹面：碗沿低机位揭盖见溏心蛋；筷子夹起大束热面。教练提示：揭盖低机位制造食欲；面条拉丝要清晰。",
+      },
+      {
+        number: 7,
+        description:
+          "00:23–00:28 大口满足：特写大口吸面闭眼享受，中文优雅字幕淡入。教练提示：收尾情绪落在满足；字幕可按需删改。",
+      },
+    ],
+    constraints:
+      "暖光 vs 夜窗外；宏观食物+碗内视角；Lo-Fi+ASMR foley；蒸汽真实；来源 Shorelyn_/Seedance 2.5。",
+    video_prompt: {
+      title: "Late Night Ramen · Headphones · ~29s · 7 Beats",
+      subtitle: "Seedance 2.5 · 16:9 · Lo-Fi R&B + ASMR foley",
+      content: `Subject
+A young East Asian woman with short dark hair, wearing a loose cream-colored sweater and large beige over-ear headphones, preparing and eating a cozy late-night bowl of instant ramen.
+
+Style
+Cinematic late-night slice-of-life aesthetic. Warm, intimate, and comforting atmosphere with soft indoor lamp lighting contrasting with the dark nighttime window in the background.
+
+Camera & Framing
+Soft ambient indoor lighting with warm color grading. Framing features medium portrait shots of the woman, extreme macro close-ups of food preparation, and dynamic internal bowl perspectives with shallow depth of field.
+
+Audio
+Chill Lo-Fi R&B pop soundtrack with soft English vocals, layered with crisp ASMR food foley including tearing packets, pouring boiling water, cracking an egg, and noodle slurping.
+
+Realism
+Photorealistic 8K rendering with highly detailed food textures, realistic steam physics, natural skin tones, and authentic ambient lighting.
+
+Detailed Scene Breakdown
+00:00 - 00:02
+Visual: Medium shot of the woman swaying gently to the music in her headphones, sitting at a wooden table with an electric kettle, two eggs, and a bowl. She smiles and picks up a red seasoning packet.
+00:03 - 00:06
+Visual: Extreme close-up of her hands tearing open the red seasoning packet, followed by a macro shot of brown seasoning powder cascading onto the dry, wavy ramen noodle block.
+00:07 - 00:09
+Visual: Macro close-up of steaming hot water being poured directly over the noodles and seasoning powder, mixing into a rich broth with thick steam rising.
+00:10 - 00:12
+Visual: Medium shot of her holding an egg, cutting to a slow-motion macro close-up of a cracked raw egg dropping perfectly into the center of the hot broth and noodles.
+00:13 - 00:15
+Visual: Medium shot of her placing a lid over the steaming bowl, smoothly transitioning into a dark, cinematic perspective from inside the bowl as the lid closes and shuts out the light.
+00:16 - 00:17
+Visual: Medium shot of the woman sitting patiently, smiling with her eyes closed and tapping her fingers on the table to the beat of her music while the noodles cook.
+00:18 - 00:19
+Visual: Cinematic low-angle shot from the rim of the bowl as the lid is lifted, revealing a perfectly soft-cooked egg resting on top of the steaming hot ramen.
+00:20 - 00:22
+Visual: Extreme close-up of wooden chopsticks lifting a massive, mouth-watering bundle of steaming hot, curly noodles from the bowl.
+00:23 - 00:28
+Visual: Close-up of the woman taking a big bite, slurping the noodles happily, and closing her eyes in pure comfort as elegant Chinese text fades onto the screen.`,
+    },
+  },
+  {
     id: "invisible-fitting-room",
     title: "隐形试衣间:假人四套造型",
     subtitle: "X · KrevixAi · 10秒 · 16:9",
