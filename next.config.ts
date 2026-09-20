@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            // 7-day cache without immutable to allow recovery from 404s
+            value: 'public, max-age=604800',
           },
         ],
       },
@@ -18,7 +19,8 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            // 7-day cache without immutable to allow recovery from 404s
+            value: 'public, max-age=604800',
           },
         ],
       },
