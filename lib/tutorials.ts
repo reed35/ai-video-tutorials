@@ -73,6 +73,119 @@ export const tutorials: Tutorial[] = [
     },
   },
   {
+    id: "techhalla-french-polynesia-adventure",
+    title: "法属波利尼西亚冒险 · 碎切度假记忆",
+    subtitle: "X · @techhalla · 约30秒 · 16:9",
+    description:
+      "30s 度假记忆硬切剪辑：法属波利尼西亚（塔希提/莫雷阿/波拉波拉）found-footage 冒险风格。每 0.5-1 秒硬切至新场景，密集呈现礁湖、独木舟、市场、雨季、夜潜荧光等碎片化体验。Seedance 2.5 高强度剪辑规则 + 角色世界锁定。",
+    video: "/tutorials/techhalla-french-polynesia-adventure/demo-web.mp4",
+    poster: "/tutorials/techhalla-french-polynesia-adventure/poster.jpg",
+    duration: "约30秒",
+    shots: 60,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "found-footage 冒险 · 快切碎片化记忆",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/techhalla/status/2096599863639068764",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 14836,
+    tags: [
+      "约30秒 · 60+ 快切场景",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "found-footage 度假记忆",
+      "法属波利尼西亚冒险",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解快切剪辑规则",
+        description:
+          "核心机制：每 0.5-1 秒强制硬切到全新场景或微时刻。全程 30 秒约 60 个场景片段，节奏紧凑但不失温柔。无溶解、无慢动作、无文字贴纸、无调色特效，纯粹的记忆碎片堆叠。",
+      },
+      {
+        number: 2,
+        title: "锁定角色与世界设定",
+        description:
+          "角色：27 岁冒险型旅行者，晒伤雀斑肤、盐渍凌乱发、明亮好奇眼神，轻量泳装 + 防晒衣 + 礁鞋，贝壳项链，防水腰包。世界：法属波利尼西亚真实地理元素（莫雷阿山峰剪影、水上屋桩柱、黑珍珠店、香草种植园、motu 沙洲、va'a 独木舟、poisson cru 生鱼沙拉等）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词生成",
+        description:
+          "使用下方完整 60 分镜提示词（含时间轴）。提示词已包含完整 0.0-30.0 秒的分镜设计。注意：完整提示词分两段发布（Part 1 主规则 + Part 2 时间轴），本教程已整合为单文件。原始 Part 2 链接：https://x.com/techhalla/status/2096599868370260027（引用早期夏季记忆帖作为语境，不替换本视频）。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [],
+    constraints:
+      "每 0.5-1 秒硬切新场景；found-footage 手机/运动相机质感（盐渍镜头、水滴、曝光、镜头喘息）；法属波利尼西亚地理文化元素准确；27 岁冒险型角色稳定；约 30 秒 60 镜；来源 @techhalla / X / 14836 曝光。",
+    video_prompt: {
+      title: "法属波利尼西亚冒险快切记忆 · 完整提示词",
+      subtitle: "Seedance 2.5 · 16:9 横屏 · 0.5-1s 硬切规则",
+      content: `[STYLE + CAMERA + ATMOSPHERE]
+Real found-footage adventure vacation in French Polynesia (Tahiti / Moorea / Bora Bora waters and islands) — phone and compact action-cam. Looks like a real memory dump from someone living an active island trip: salt on the lens, water droplets, harsh noon blowouts, green jungle shadows, humid haze, wind roar in mic, outboard motor, reef hush, rain on tin roofs. RAPID-FIRE EDITING ONLY: hard cut every 0.5 to 1.0 seconds to a NEW shot/scene for the entire duration — staccato, restless, exciting but gentle; no dissolves, no whip-flash gimmicks, no slow-motion, no speed ramps, no text, no stickers, no color-grade tricks, no sparkles. Aesthetic = raw Instagram adventure dump, breathless, joyful, curious. Mood: adventurous, exploratory, calm adrenaline, wonder — never aggressive, never violent, never scary, never romantic-cliché resort brochure.
+
+[SUBJECT]
+Primary character slightly shifted from a soft beach-holiday girl into an athletic 27-year-old adventure traveler: sun-freckled skin, salt-crusted wavy hair often tied messy, bright curious eyes, light athletic build, practical swimwear and quick-dry shorts, rashguard sometimes on, thin shell necklace, waterproof pouch, barefoot or reef shoes. She moves with energy — climbing into boats, adjusting mask, pointing at lagoon colors, laughing at rain — always kind, never performing aggression. Occasional brief companions (local guide, friend) only as real background humans.
+
+[WORLD — FRENCH POLYNESIA ADVENTURE]
+Overwater bungalow stilts, black-pearl shop windows, ferry wake, volcanic green peaks (Moorea silhouette), turquoise lagoon over sandbars, coral heads, vanilla plantation edge, breadfruit trees, motu sand spits, outrigger canoe (va'a), scooter on coastal road, market poisson cru, warm night rain, phosphorescent shoreline hints, church bells far away, roosters, gecko chirps — specific, lived-in, wet, salty, real.
+
+[EDIT RULE — MANDATORY]
+Every 0.5–1.0s = hard cut to a completely new framing or micro-moment. Pack the full 30 seconds as a continuous barrage of tiny real clips. No shot should linger longer than one second.
+
+[RAPID-FIRE SHOT LIST — ~0.5–1s EACH, FULL 30s]
+0.0–0.7: dawn over lagoon from bungalow deck, pink water. Cut.
+0.7–1.4: her hand slides open wooden shutter, humid air hits lens. Cut.
+1.4–2.1: bare feet on wet wood planks, walking fast. Cut.
+2.1–2.8: coffee in metal cup, steam, ocean behind. Cut.
+2.8–3.5: scooter kickstart, coastal road blur of palms. Cut.
+3.5–4.2: helmet chin strap click, smile sideways. Cut.
+4.2–4.9: ferry gangway, rope, salt spray. Cut.
+4.9–5.6: outboard throttle, wake splitting turquoise. Cut.
+5.6–6.3: Moorea peaks framed through spray. Cut.
+6.3–7.0: she points at a sandbar, wind in hair. Cut.
+7.0–7.7: jumping from small boat into warm lagoon. Cut.
+7.7–8.4: underwater phone glimpse — blurry coral, bubbles, real murk. Cut.
+8.4–9.1: snorkel surface gasp, laugh, mask fog. Cut.
+9.1–9.8: reef shoes on sharp black rock, careful step. Cut.
+9.8–10.5: climbing into outrigger canoe, paddle drip. Cut.
+10.5–11.2: paddle dig, canoe surges, shoulder muscles. Cut.
+11.2–11.9: guide's hand pointing at distant motu. Cut.
+11.9–12.6: beach landing, canoe scrape on sand. Cut.
+12.6–13.3: running across empty motu spit, footprints. Cut.
+13.3–14.0: shade under palms, drinking coconut water. Cut.
+14.0–14.7: close coconut husk fibers, knife work nearby (safe, practical). Cut.
+14.7–15.4: market stall — poisson cru lime, hands pass plate. Cut.
+15.4–16.1: first bite, eyes close happy. Cut.
+16.1–16.8: vanilla vine leaves, fingers touch green pods. Cut.
+16.8–17.5: sudden warm rain starts, fat drops on lens. Cut.
+17.5–18.2: she runs laughing under tin eave, soaked shirt. Cut.
+18.2–18.9: rain curtain off roof edge, feet splashing puddle. Cut.
+18.9–19.6: sky clears fast, sun flare through wet hair. Cut.
+19.6–20.3: scooter again, wet road reflections. Cut.
+20.3–21.0: hillside lookout, lagoon rings of blue. Cut.
+21.0–21.7: binoculars / phone zoom fail, soft blur then pull back. Cut.
+21.7–22.4: hiking short muddy trail, holding vine for balance. Cut.
+22.4–23.1: waterfall trickle (gentle), hands under cold water. Cut.
+23.1–23.8: golden hour overwater path, long shadows. Cut.
+23.8–24.5: hanging wet towel, sunset bounce on stilts. Cut.
+24.5–25.2: dinner on plastic table, grilled fish, string lights start. Cut.
+25.2–25.9: gecko on wall, phone finds it, soft giggle. Cut.
+25.9–26.6: night lagoon edge, small waves, distant ukulele. Cut.
+26.6–27.3: she dips feet in black water, kicks once. Cut.
+27.3–28.0: bioluminescent sparkle when she swirls water with hand (subtle, real). Cut.
+28.0–28.7: walking back on dock, torch phone light bouncing. Cut.
+28.7–29.4: bungalow door, mosquito net, tired happy face. Cut.
+29.4–30.0: last clip — dark room, ceiling fan, sea hiss through window, recording ends mid-breath.
+
+[REALISM / TONE LOCK]
+French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1 second, found-footage phone/action-cam only, energetic but gentle, just real salt, rain, lagoon, boats, food, night air, and breathless joy.`,
+    },
+  },
+  {
     id: "techhalla-room214-stop-motion",
     title: "ROOM 214 · H3 定格收拾行李",
     subtitle: "X · @techhalla · 约15秒 · 16:9",
@@ -349,6 +462,9 @@ export const tutorials: Tutorial[] = [
     style: "电影级自然广告 · 雨雾氛围",
     aspectRatio: "16/9",
     sourceUrl: "https://x.com/umesh_ai/status/2100823564505248175",
+    sourceAuthor: "@umesh_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 26912,
     tags: [
       "30秒 · 15 镜头",
       "16:9 横屏 · 进胶片条",
@@ -868,6 +984,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
     sourceUrl: "https://x.com/369Serena/status/2100887564274348245",
     sourceAuthor: "@369Serena",
     sourcePlatform: "X",
+    sourceImpressions: 3659,
     tags: [
       "30秒 · 10 制作节拍",
       "无参考图 · 纯文生可跟做",
@@ -1162,6 +1279,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
     sourceUrl: "https://x.com/Goodmanprotocol/status/2098845134326808734",
     sourceAuthor: "@Goodmanprotocol",
     sourcePlatform: "X",
+    sourceImpressions: 10434418,
     tags: [
       "30秒 · 11 制作节拍",
       "无参考图 · 纯文生可跟做",
