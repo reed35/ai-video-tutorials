@@ -26,6 +26,9 @@ export interface Step {
   number: number;
   title: string;
   description: string;
+  video?: string;
+  poster?: string;
+  aspectRatio?: string;
 }
 
 export interface Reference {

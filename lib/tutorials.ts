@@ -2,6 +2,114 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "seedance-dance-mocap-migration",
+    title: "Seedance 舞蹈动捕迁移",
+    subtitle: "X · 369Serena · 约8秒 · 9:16",
+    description:
+      "竖屏舞蹈动作迁移：灰白深度捕捉→Seedance 人物重建。步骤嵌入抖音原片与灰白捕捉片供参考。无需参考图（需自备人物素材）。两大陷阱：先灰白勿直接迁移；音轨后期另加。",
+    video: "/tutorials/seedance-dance-mocap-migration/demo-web.mp4",
+    poster: "/tutorials/seedance-dance-mocap-migration/poster.jpg",
+    duration: "约8秒",
+    shots: 1,
+    references: 0,
+    model: "Seedance",
+    style: "舞蹈动作迁移 · 竖屏",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/369Serena/status/2100805668206731346",
+    sourceAuthor: "369Serena",
+    sourcePlatform: "X",
+    tags: [
+      "约8秒 · 舞蹈重建",
+      "9:16 竖屏 · 动作迁移",
+      "无需参考图（需自备）",
+      "灰白深度捕捉流程",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备抖音原片舞蹈素材",
+        description:
+          "寻找或自拍清晰舞蹈动作视频。动作要干净完整，画面稳定，人物主体清晰。这是整个流程的动作源。",
+        video: "/tutorials/seedance-dance-mocap-migration/douyin-web.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/douyin-poster.jpg",
+        aspectRatio: "9/16",
+      },
+      {
+        number: 2,
+        title: "制作灰白深度捕捉片",
+        description:
+          "将原片转为灰白深度图/姿态捕捉版本（用深度估计或姿态提取工具）。这是关键：必须先做灰白捕捉，不要直接将彩色原片迁移到 Seedance，否则动作会失真。",
+        video: "/tutorials/seedance-dance-mocap-migration/gray-web.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/gray-poster.jpg",
+        aspectRatio: "9/16",
+      },
+      {
+        number: 3,
+        title: "用 Seedance 重建人物",
+        description:
+          "在 Seedance 中上传灰白捕捉片与人物参考图（需自备），粘贴完整提示词。陷阱提醒：音轨需后期另加，Seedance 不会自动同步原片音乐；先用灰白捕捉而非彩色原片，动作还原度更高。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "整段舞蹈：从灰白深度捕捉中提取完整动作姿态，结合人物参考图在 Seedance 中重建角色，还原舞蹈动作。陷阱提醒：先灰白深度捕捉，勿直接迁移彩色原片；音轨后期单独添加。",
+      },
+    ],
+    constraints:
+      "先灰白深度捕捉勿直接迁移；音轨后期另加（Seedance 不同步原音乐）；需自备人物参考图（无 image_1）；9:16 竖屏；来源 369Serena。",
+    video_prompt: {
+      title: "Standalone Dance Video · Seedance Character Migration",
+      subtitle: "Seedance · 9:16 竖屏 · 灰白深度捕捉流程",
+      content: `Standalone_dance_video
+
+参考 image_1 <<<image_1>>> 中的人物身份与外观。
+
+(人物名字) 的脸部请严格参考 image_1 右侧的人像特写区域，保持同一个人物身份和面部特征：约 25 岁的年轻东亚女性，自然柔和的淡妆，脸颊带轻微红润感，嘴唇饱满自然，暖棕色眼睛，深棕色头发，扎成两侧低马尾，并佩戴一个小型紫色发夹。
+
+人物的身材比例、服装和整体造型参考 image_1 左侧正面全身图和中间背面全身图：
+
+穿浅薰衣草紫色拉链防风外套，袖子带白色条纹细节；内搭白色 T 恤；黑色百褶短裙；白色宽松及膝袜；黑色厚底乐福鞋。
+
+(人物名字)最初背着一个黑色托特包，包带上挂有一个小毛球挂件；脖子上佩戴黑色挂绳的 STAFF 工作证。
+
+以 video_1 <<<video_1>>> 作为纯动作参考视频。
+
+(人物名字) 完整复刻 video_1 中的整套舞蹈编排，尽可能高保真地还原所有动作，包括：
+
+完整的全身舞蹈动作、精确的手臂动作、手势、脚步、腿部动作、身体重心变化、舞蹈节奏、动作时机和动作衔接。
+
+动作节奏和时间点严格跟随 video_1，不随意删减、替换、简化或重新设计动作。
+
+整体表演状态保持 video_1 中那种充满活力、自由、洒脱、自信且具有情绪感染力的舞蹈表现。
+
+(人物名字) 的面部表情自然放松，随着舞蹈保持开心、兴奋、充满生命力的状态，表情与身体动作的能量一致，不做夸张或僵硬的表情。
+
+在原舞蹈中"扔工作牌"的那个准确节拍点，(人物名字)同时抓住自己的 STAFF 工作证和黑色托特包，用一个果断、畅快、有释放感的动作，将两样物品同时甩出去。
+
+工作证和托特包必须真实地从人物身上脱离，并一起飞出画面之外。
+
+完成扔出动作后，(人物名字) 不停顿，也不回头捡东西，立刻无缝继续完成 video_1 中剩余的舞蹈动作。
+
+此后 Serena 身上不再出现托特包和工作证，以更加自由、轻盈、放松的状态继续跳舞，并保持完整的舞蹈节奏和高能量表现直到结束。
+
+场景环境、拍摄机位、构图、镜头距离、光线条件以及背景氛围，均参考并匹配 video_1 中已经建立的环境。
+
+镜头始终确保 (人物名字) 的完整身体和关键舞蹈动作清晰可见，尤其需要完整表现手臂、双手、双腿、脚部和脚步动作，避免因为裁切导致舞蹈动作缺失。
+
+以全身舞蹈表演镜头为主，完整呈现整套舞蹈。
+
+保持 (人物名字) 的人物身份、脸部、发型、服装、身体比例在整段视频中稳定一致，不换脸、不换人、不改变服装，不出现额外人物。
+
+除指定的工作证和托特包飞出动作外，不新增、不删除、不凭空生成任何服装、饰品或道具。
+
+无对白。
+无音乐。`,
+    },
+  },
+  {
     id: "creative-fan-outfit-swap",
     title: "创意风扇换装",
     subtitle: "X · YangOnchain · 约28秒 · 9:16",
