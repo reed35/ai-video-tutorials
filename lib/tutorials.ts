@@ -2,6 +2,284 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "abxxai-riviera-fashion-campaign",
+    title: "里维埃拉时尚大片 · 1960s",
+    subtitle: "X · @abxxai · 约24秒 · 16:9",
+    description:
+      "24秒 1960s 意大利里维埃拉时尚大片：单人物单场景六镜头直切成片。工作流：人物表锁脸与衣柜 → 开场静帧锁光影 → 场景板锁地点 → Seedance 2.5 六镜分镜生成。墨镜状态按镜次变化，Kodachrome 胶片质感，手持摄影自然晃动。",
+    video: "/tutorials/abxxai-riviera-fashion-campaign/demo-web.mp4",
+    poster: "/tutorials/abxxai-riviera-fashion-campaign/poster.jpg",
+    duration: "约24秒",
+    shots: 6,
+    references: 3,
+    model: "Seedance 2.5",
+    style: "1960s 时尚大片 · 胶片质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/abxxai/status/2100600840373535136",
+    sourceAuthor: "@abxxai",
+    sourcePlatform: "X",
+    sourceImpressions: 51058,
+    tags: [
+      "约24秒 · 六镜头直切",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "1960s Kodachrome 胶片",
+      "意大利里维埃拉",
+      "时尚大片",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "人物表：锁定面部与衣柜",
+        description: `使用 GPT Image 2.5 制作人物角色表。上传清晰人脸照片，运行以下提示词生成人物表，锁定面部特征、发型、服装（奶油色红花头巾、猫眼墨镜、奶油色船领上衣、红色七分裤、平底鞋）。
+
+提示词：
+Create a photorealistic character reference sheet based on the woman in the image. Preserve her exact facial identity, structure, proportions and features.
+
+Identity & realism:
+Preserve her exact face shape, eyes, nose, lips, brows and hairline from the image
+Fair-to-tanned skin with visible pores, faint freckles across the nose and cheeks, a natural sheen on the forehead and cheekbones, slight redness, tiny natural imperfections, no over-smoothing
+Light brown hair with sun-bleached blonde tones, worn under the headscarf with loose strands escaping at the temples
+Real skin, real hair, no stylization, no CGI look, no illustration
+
+Pose & styling:
+Relaxed neutral standing pose, arms loose at her sides
+Fully dressed at all times: cream and red floral print silk headscarf tied under the chin with a long red tail hanging at the side; tortoiseshell cat-eye sunglasses; a fitted cream boat-neck short-sleeve top; high-waisted red cotton capri trousers; cream leather flat slingback shoes; small gold stud earrings; no other jewelry
+Expression calm and neutral, sunglasses ON in the full body panels, sunglasses LOWERED on the nose in the beauty close-up panel
+
+Look (same in every panel):
+Warm faded 1960s Kodachrome film photograph, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners
+
+Background: plain warm cream paper backdrop, flat and even, no environment, one soft directional shadow behind her
+
+Layout:
+Title at the top: "LENA RIVIERA — WARDROBE SHEET"
+Top row, evenly spaced: Full Body Front, Full Body Side, Full Body Back
+Bottom row, evenly spaced: Front Face Close-up, Three-Quarter Face Close-up, Left Profile Close-up, Beauty Close-up with sunglasses lowered, Headscarf Detail, Hand and Sleeve Detail
+
+Design details:
+Each frame enclosed in thin clean borders of consistent thickness
+Above each frame a centered readable serif label naming the view
+Labels never overlap the images
+
+Final quality: ultra-detailed real film photography, identical face, hair and outfit in every panel, consistent light and color across all panels, clean symmetrical professional layout, no distortion`,
+      },
+      {
+        number: 2,
+        title: "开场帧：锁定光影与构图",
+        description: `制作开场静帧作为后续视频生成的主参考。这一步是避免场景漂移的关键。使用 GPT Image 2.5 生成开场帧，锁定人物在场景中的初始姿态、光照方向、胶片质感。
+
+提示词：
+Photorealistic 1960s fashion editorial photograph of the woman in the reference image. Preserve her exact face, eyes, nose, lips, brows and hairline. Same wardrobe exactly: cream and red floral silk headscarf tied under the chin with the red tail hanging, tortoiseshell cat-eye sunglasses, fitted cream boat-neck short-sleeve top, high-waisted red capri trousers.
+
+Wide full-body shot from a low three-quarter angle, camera about 4 metres away at waist height. She sits on the door of the pastel mint 1960s open-top convertible, one leg extended, one hand resting on the door, head turned toward the lens, chin slightly down, unsmiling. The low stone wall, the Mediterranean sea, the green headland, terracotta villas and umbrella pines fill the background.
+
+Light: hard late-afternoon sun from camera left, warm and directional, crisp shadow edges on the car body and her legs, natural fill bouncing off the pale road and the mint paint, no artificial fill light.
+
+Skin is never smooth: visible pores, faint freckles, fine peach fuzz on the cheek edge, natural sheen on the forehead and cheekbone, tiny imperfections, individual brow hairs, no retouching, no beauty filter.
+
+Look: warm faded 1960s Kodachrome, slightly overexposed sky, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners, aged print border with edge wear.`,
+      },
+      {
+        number: 3,
+        title: "场景板：锁定地点与环境",
+        description: `使用 GPT Image 2.5 制作场景板，锁定里维埃拉悬崖公路、薄荷绿敞篷车、石墙、地中海海景、山坡别墅等环境元素。无人物，仅环境。
+
+提示词：
+Create a photorealistic environment reference sheet of the location in the image, with no people anywhere in any panel.
+
+Location: a narrow coastal cliff road on the Italian Riviera, a late summer afternoon in 1967. A pastel mint green 1960s open-top convertible parked at the edge, a low weathered stone wall, the glittering Mediterranean below, a green rocky headland, terracotta and ochre villas with a small domed church stacked up the hillside, umbrella pines and cypress trees, small white boats far out on the water.
+
+Lighting lock, identical in every panel: hard late-afternoon sun from the left, warm and directional, crisp shadow edges, a slightly overexposed pale sky, warm bounce light off the pale road surface.
+
+Panels:
+Top, full width: Wide Establishing. The road, the parked mint convertible seen in three-quarter, the stone wall, the sea and the villas on the hillside.
+Bottom left: The Car. The convertible close, showing the mint paintwork, chrome trim, the round side mirror, the thin black steering wheel, the cream-faced dashboard gauges and the empty cream leather seats.
+Bottom right: The Wall and View. The low weathered stone wall in the foreground with the sea, the boats and the headland beyond.
+
+Look, same in every panel: warm faded 1960s Kodachrome film photograph, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners.
+
+Layout: title at the top "RIVIERA CLIFF ROAD — LOCATION PLATE". Each panel in thin clean borders with a centered readable serif label above it. Labels never overlap the images.
+
+Final quality: ultra-detailed real film photography, the same place, same car and same light in every panel, no people, no distortion.`,
+      },
+      {
+        number: 4,
+        title: "Seedance 2.5 六镜头成片生成",
+        description: `将前三步生成的人物表、开场帧、场景板上传至 Seedance 2.5，粘贴下方完整六镜头提示词。24秒直切六镜头：广角全身 → 低角度英雄镜 → 侧面轮廓 → 手部细节 → 回望走姿 → 美妆特写。墨镜状态按镜次变化（戴上 → 推到头巾 → 手持 → 摘下）。
+
+完整提示词见下方"视频生成提示词"区域。`,
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-character-sheet",
+        number: "参考图 1",
+        title: "人物表：Lena Riviera",
+        subtitle: "GPT Image 2.5 · 角色锁定表",
+        image: "/tutorials/abxxai-riviera-fashion-campaign/ref-character-sheet.jpg",
+        prompt: `Create a photorealistic character reference sheet based on the woman in the image. Preserve her exact facial identity, structure, proportions and features.
+
+Identity & realism:
+Preserve her exact face shape, eyes, nose, lips, brows and hairline from the image
+Fair-to-tanned skin with visible pores, faint freckles across the nose and cheeks, a natural sheen on the forehead and cheekbones, slight redness, tiny natural imperfections, no over-smoothing
+Light brown hair with sun-bleached blonde tones, worn under the headscarf with loose strands escaping at the temples
+Real skin, real hair, no stylization, no CGI look, no illustration
+
+Pose & styling:
+Relaxed neutral standing pose, arms loose at her sides
+Fully dressed at all times: cream and red floral print silk headscarf tied under the chin with a long red tail hanging at the side; tortoiseshell cat-eye sunglasses; a fitted cream boat-neck short-sleeve top; high-waisted red cotton capri trousers; cream leather flat slingback shoes; small gold stud earrings; no other jewelry
+Expression calm and neutral, sunglasses ON in the full body panels, sunglasses LOWERED on the nose in the beauty close-up panel
+
+Look (same in every panel):
+Warm faded 1960s Kodachrome film photograph, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners
+
+Background: plain warm cream paper backdrop, flat and even, no environment, one soft directional shadow behind her
+
+Layout:
+Title at the top: "LENA RIVIERA — WARDROBE SHEET"
+Top row, evenly spaced: Full Body Front, Full Body Side, Full Body Back
+Bottom row, evenly spaced: Front Face Close-up, Three-Quarter Face Close-up, Left Profile Close-up, Beauty Close-up with sunglasses lowered, Headscarf Detail, Hand and Sleeve Detail
+
+Design details:
+Each frame enclosed in thin clean borders of consistent thickness
+Above each frame a centered readable serif label naming the view
+Labels never overlap the images
+
+Final quality: ultra-detailed real film photography, identical face, hair and outfit in every panel, consistent light and color across all panels, clean symmetrical professional layout, no distortion`,
+      },
+      {
+        id: "ref-start-frame",
+        number: "参考图 2",
+        title: "开场帧：悬崖边的瞬间",
+        subtitle: "GPT Image 2.5 · 光影与构图锁定",
+        image: "/tutorials/abxxai-riviera-fashion-campaign/ref-start-frame.jpg",
+        prompt: `Photorealistic 1960s fashion editorial photograph of the woman in the reference image. Preserve her exact face, eyes, nose, lips, brows and hairline. Same wardrobe exactly: cream and red floral silk headscarf tied under the chin with the red tail hanging, tortoiseshell cat-eye sunglasses, fitted cream boat-neck short-sleeve top, high-waisted red capri trousers.
+
+Wide full-body shot from a low three-quarter angle, camera about 4 metres away at waist height. She sits on the door of the pastel mint 1960s open-top convertible, one leg extended, one hand resting on the door, head turned toward the lens, chin slightly down, unsmiling. The low stone wall, the Mediterranean sea, the green headland, terracotta villas and umbrella pines fill the background.
+
+Light: hard late-afternoon sun from camera left, warm and directional, crisp shadow edges on the car body and her legs, natural fill bouncing off the pale road and the mint paint, no artificial fill light.
+
+Skin is never smooth: visible pores, faint freckles, fine peach fuzz on the cheek edge, natural sheen on the forehead and cheekbone, tiny imperfections, individual brow hairs, no retouching, no beauty filter.
+
+Look: warm faded 1960s Kodachrome, slightly overexposed sky, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners, aged print border with edge wear.`,
+      },
+      {
+        id: "ref-location-sheet",
+        number: "参考图 3",
+        title: "场景板：里维埃拉悬崖公路",
+        subtitle: "GPT Image 2.5 · 环境锁定表",
+        image: "/tutorials/abxxai-riviera-fashion-campaign/ref-location-sheet.jpg",
+        prompt: `Create a photorealistic environment reference sheet of the location in the image, with no people anywhere in any panel.
+
+Location: a narrow coastal cliff road on the Italian Riviera, a late summer afternoon in 1967. A pastel mint green 1960s open-top convertible parked at the edge, a low weathered stone wall, the glittering Mediterranean below, a green rocky headland, terracotta and ochre villas with a small domed church stacked up the hillside, umbrella pines and cypress trees, small white boats far out on the water.
+
+Lighting lock, identical in every panel: hard late-afternoon sun from the left, warm and directional, crisp shadow edges, a slightly overexposed pale sky, warm bounce light off the pale road surface.
+
+Panels:
+Top, full width: Wide Establishing. The road, the parked mint convertible seen in three-quarter, the stone wall, the sea and the villas on the hillside.
+Bottom left: The Car. The convertible close, showing the mint paintwork, chrome trim, the round side mirror, the thin black steering wheel, the cream-faced dashboard gauges and the empty cream leather seats.
+Bottom right: The Wall and View. The low weathered stone wall in the foreground with the sea, the boats and the headland beyond.
+
+Look, same in every panel: warm faded 1960s Kodachrome film photograph, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners.
+
+Layout: title at the top "RIVIERA CLIFF ROAD — LOCATION PLATE". Each panel in thin clean borders with a centered readable serif label above it. Labels never overlap the images.
+
+Final quality: ultra-detailed real film photography, the same place, same car and same light in every panel, no people, no distortion.`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description: "镜头 1 (0-4秒) — 广角全身建立镜头：低三分之二角度，距离4米腰部高度。她坐在车门上，手从墨镜移到车身，海风吹动红色围巾尾端。镜头慢推进。",
+      },
+      {
+        number: 2,
+        description: "镜头 2 (4-8秒) — 低角度英雄镜头：从地面近处低角度，距离约2米。她站在敞开的驾驶座旁，一手扶门框，重心移向一侧髋部，下巴缓缓抬起望向镜头外的大海。镜头缓慢上升至眼睛高度。",
+      },
+      {
+        number: 3,
+        description: "镜头 3 (8-12秒) — 侧面轮廓镜头：眼睛高度侧面轮廓，距离约2米。她站在石墙边望向大海，墨镜推到头巾里，露出双眼。海风吹起围巾尾端和鬓角发丝，她缓缓眨眼一次。镜头几乎静止。",
+      },
+      {
+        number: 4,
+        description: "镜头 4 (12-16秒) — 手部细节特写：距离约60厘米。她的手和前臂搭在方向盘上，手指放松，镀铬仪表板和奶油色仪表盘在旁，红色围巾尾端从画面顶部落下，海景在挡风玻璃外模糊。手指轻轻敲击方向盘一次。镜头缓慢沿镀铬装饰滑动。",
+      },
+      {
+        number: 5,
+        description: "镜头 5 (16-20秒) — 回望走姿镜头：四分之三后视角，眼睛高度，距离约3米。她沿着悬崖公路背对镜头走向停放的车，围巾和尾端清晰可见，墨镜拿在手中。约18.5秒时她转头越过左肩回望镜头，平静不笑。镜头跟随行走节奏。",
+      },
+      {
+        number: 6,
+        description: "镜头 6 (20-24秒) — 美妆特写镜头：头部和肩膀，眼睛高度，距离约80厘米。墨镜重新戴上。她用两指缓慢将墨镜沿鼻梁往下拉，直视镜头，越过墨镜上方看向镜头。一侧颧骨明亮侧光，另一侧柔和阴影。她保持凝视，影片在眼神定格中结束。镜头极慢推进至结束。",
+      },
+    ],
+    constraints:
+      "单角色单造型单地点 1960s 时尚大片工作流。人物表、开场帧、场景板需用 GPT Image 2.5 先行制作锁定面部、服装、光影、环境，再统一上传 Seedance 2.5 生成六镜头直切成片。墨镜状态按镜次变化：Shot 1-2 戴上，Shot 3 推到头巾，Shot 4 画面外，Shot 5 手持，Shot 6 戴上后摘下。来源 @abxxai / X / 51058 曝光。",
+    video_prompt: {
+      title: "Seedance 2.5 六镜头成片提示词",
+      subtitle: "完整可复制提示词 · 24秒六镜头直切",
+      content: `=== REFERENCE MAP ===
+[COVER FRAME] → the reference photograph: the woman in the cream and red floral headscarf and tortoiseshell cat-eye sunglasses, cream boat-neck top and red capri trousers, seated on the door of the pastel mint 1960s convertible, one hand lowering her sunglasses, the low stone wall, the glittering sea, the green headland, terracotta villas and umbrella pines behind. This is the master for her face, her wardrobe, the light and the film look of every shot in the film.
+@[lena] → wardrobe sheet. Her face, hair and the full outfit from every angle. Where the sheet and the cover frame differ on her face, the cover frame wins.
+@[road] → location plate. The cliff road, the mint convertible, the stone wall, the sea, the hillside villas. Every shot happens inside this one location.
+
+=== FILM FORMAT ===
+A 24 second 1960s fashion cover film, 1080p, shot on 35mm. SIX shots, each about 4 seconds, joined by clean straight cuts on the music. This is edited coverage of a single real photo shoot: one model, one look, one location, one afternoon.
+One character only. No second person, no crew, no photographer in frame, no camera or equipment visible anywhere.
+
+=== LOOK LOCK, IDENTICAL IN ALL SIX SHOTS ===
+Warm faded 1960s Kodachrome, low contrast with lifted blacks, a slightly overexposed pale sky, soft halation on highlights, fine even film grain, gentle softness at the frame corners, subtle gate weave.
+Light never changes: hard late-afternoon sun from camera left, warm and directional, crisp shadow edges, warm bounce off the pale road lifting the shadow side of her face. No lamps, no fill cards, no lighting changes, no grade shifts between shots.
+SKIN IS THE SUBJECT. In every shot: visible pores, faint freckles across the nose and cheeks, fine peach fuzz along the jaw and cheek edge, natural sheen on the forehead and cheekbones, tiny imperfections, individual lashes and brow hairs, flyaway hairs lit from behind. No smoothing, no beauty filter, no waxy or plastic skin, no retouching.
+WARDROBE LOCK, never changes: cream and red floral silk headscarf tied under the chin with the red tail hanging, tortoiseshell cat-eye sunglasses, fitted cream boat-neck top, high-waisted red capri trousers, cream flat slingbacks, small gold studs.
+CAMERA FEEL: every shot is handheld by a working stills photographer moving around his subject. Gentle continuous sway, small unhurried corrections, horizon 1 to 3 degrees off. Never jittery, never locked off, never gimbal-smooth. One single slow move per shot with a soft ease in and ease out, nothing more.
+
+=== SHOT 1, 0.0 to 4.0s, WIDE ESTABLISHING ===
+Frame 0.0 is [COVER FRAME]. Full body, low three-quarter angle from about 4 metres at waist height. She sits on the car door exactly as in the cover frame, then lowers her hand from the sunglasses to rest on the mint paintwork, settles her shoulders and turns her chin a fraction toward the lens. Sea wind moves the red scarf tail and loose strands at her temple.
+CAMERA: slow push in from 4 metres to about 3 metres, easing in and out.
+
+=== SHOT 2, 4.0 to 8.0s, LOW HERO ANGLE ===
+CUT. Low angle from near the road surface, about 2 metres away. She is now standing beside the open driver's door, one hand on the top of the door frame, weight settling onto one hip, chin lifting slowly as she looks off past the lens toward the sea. Pale sky and the tops of the umbrella pines fill the upper frame, sun flaring softly off the chrome trim below.
+CAMERA: slow rise from low to just under eye level as her chin lifts, the two moves finishing together.
+
+=== SHOT 3, 8.0 to 12.0s, PROFILE IN THE WIND ===
+CUT. Clean side profile at eye level, about 2 metres away. She stands at the low stone wall looking out to sea, spine straight, one hand on the wall. Her sunglasses are now pushed up into the scarf above her forehead and her eyes are bare. The wind lifts the scarf tail and the fine hairs at her temple sideways. She blinks once, slowly. The sun rakes across the bridge of her nose, her lashes and the edge of the scarf. The glittering sea and a distant white boat sit soft behind her.
+CAMERA: almost still, only the natural handheld sway and a very slight drift closer.
+
+=== SHOT 4, 12.0 to 16.0s, DETAIL, HAND AND CHROME ===
+CUT. Tight detail about 60 cm away. She is back at the car, her hand and forearm resting on the thin black steering wheel, fingers relaxed, short natural nails, the chrome dash trim and the round cream-faced gauges beside her hand, the red scarf tail falling through the top of the frame, the sea blurred far beyond the windscreen. Her fingers move once, tapping the wheel lightly. Her face is out of frame or only a soft edge at the top.
+CAMERA: slow drift along the chrome from the gauges to her hand, a bright specular streak travelling with it.
+
+=== SHOT 5, 16.0 to 20.0s, WALK AND LOOK BACK ===
+CUT. Three-quarter rear at eye level, about 3 metres away. She walks away from the lens along the cliff road toward the parked car, the tied scarf and the red tail reading clearly on her back, her sunglasses now held down at her side in one hand. At about 18.5s she turns her head back over her left shoulder into the lens, calm and unsmiling, and holds it. Her long shadow runs across the pale road, the sea and the villas ahead of her.
+CAMERA: slow follow at walking pace, drifting a little closer as she turns.
+
+=== SHOT 6, 20.0 to 24.0s, BEAUTY CLOSE-UP ===
+CUT. Head and shoulders at eye level, about 80 cm away, her face filling most of the frame. The sunglasses are back on. She slowly lowers them down the bridge of her nose with two fingertips, exactly the gesture from the cover frame, and looks directly over the top of them into the lens. One clean bright side light across one cheekbone, a soft warm shadow down the other side, a small catch-light in each eye. Every pore, freckle and fine hair readable. She holds it. The final frame is a still hold on her eyes as the film ends.
+CAMERA: extremely slow push in through the whole shot, coming to rest at the end.
+
+=== HARD RULES ===
+Exactly 24 seconds. Exactly six shots. Straight cuts only, on the beat, at 4.0, 8.0, 12.0, 16.0 and 20.0 seconds.
+NO dissolves, fades, wipes, whips, flash frames, speed ramps, slow motion, freeze frames, digital zoom, split screens, filters, light leaks, text, captions, logos or watermarks.
+The same woman, the same face and the same outfit in all six shots. No wardrobe change, no hair change, no makeup change.
+Her sunglasses state is exactly: on in shot 1 and 2, pushed up into the scarf in shot 3, out of frame in shot 4, in her hand in shot 5, on and then lowered in shot 6. Never any other state.
+One move per shot only. The camera never combines a push with a pan or a rise.
+The location matches @[road] in every shot. The camera never leaves this cliff road and the car is never moved or driven.
+Her poses are natural model poses with a visible beginning, middle and end. She settles into each one at human speed. Nothing snaps, jerks, teleports or holds unnaturally still. She is never frozen and never contorted.
+No dialogue. She never speaks and her mouth stays closed and relaxed.
+No other people, no crew, no photographer, no reflections of a camera in the chrome, the mirror or her sunglasses.
+The light and the grade in the last frame are identical to the first.
+
+=== AUDIO ===
+One continuous original instrumental for the whole 24 seconds: a soft, warm 1960s Riviera bossa nova. Nylon string guitar, brushed drums, a light upright bass and a distant vibraphone, unhurried and gentle, no vocals, no lyrics, no drop, no build. It starts at 0.0s and plays evenly to the end.
+Underneath it, quiet natural ambience: a light sea breeze, the sea far below, faint cicadas, the scarf fabric moving in the wind. No dialogue, no shutter sounds, no sound effects on any cut, no whooshes.
+
+=== OUTPUT ===
+24 seconds, 1080p, six shots, straight cuts, warm faded 1960s Kodachrome fashion film, one locked character, original instrumental score, no dialogue.`,
+    },
+  },
+  {
     id: "minimax-h3-mv-typography",
     title: "H3 文字包装 MV",
     subtitle: "X · @liandeli2 · 约15秒 · 16:9",
