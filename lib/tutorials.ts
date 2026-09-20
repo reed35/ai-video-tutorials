@@ -887,6 +887,105 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
     },
   },
   {
+    id: "krevix-luxury-sofa-carousel",
+    title: "奢侈沙发轮播选型 · 黑手套 POV",
+    subtitle: "X · KrevixAi · 10秒 · 16:9",
+    description:
+      "第一人称 POV 黑棚奢侈家具商业片:黑手套滑动轮播四款沙发,暂停选定 hero 沙发后按压测试面料,沙发落地,最后整个奢华客厅围绕同一件沙发物理拼装。强调真实物理惯性、同一 hero 件贯穿始终、房间滑入而非沙发变形。",
+    video: "/tutorials/krevix-luxury-sofa-carousel/demo-web.mp4",
+    poster: "/tutorials/krevix-luxury-sofa-carousel/poster.jpg",
+    duration: "10 秒",
+    shots: 6,
+    references: 1,
+    model: "Gemini Omni",
+    style: "家具商业 · POV 遥控",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/KrevixAi/status/2099935072010822040",
+    sourceAuthor: "@KrevixAi",
+    sourcePlatform: "X",
+    sourceImpressions: 11749,
+    tags: [
+      "10 秒 · 6 节拍 · 第一人称 POV",
+      "1 张分镜静帧",
+      "Gemini Omni",
+      "家具商业 · POV 遥控",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "上传分镜图到 Gemini Omni",
+        description:
+          "打开 Gemini Omni Create Video 功能,先上传分镜静帧图(storyboard.jpg)作为视觉参考。设置:10 秒 · 16:9。",
+      },
+      {
+        number: 2,
+        title: "粘贴完整视频提示词",
+        description:
+          "在提示词框粘贴下方完整英文提示词。核心:26–28mm 第一人称男性 POV;黑手套滑动轮播;真实物理惯性;hero 沙发保持 100% 同一件;房间物理拼装而非沙发变形。",
+      },
+      {
+        number: 3,
+        title: "强调 hero 沙发全程不变",
+        description:
+          "关键约束:第四款 taupe/mocha 沙发选定后,这件沙发必须保持 100% 相同外观直到片尾,房间是围绕它物理组装,而不是沙发本身变形或替换。真实重量、惯性、摩擦力和机械停止感,禁止魔法、变形、传送、粒子、烟雾。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "storyboard",
+        number: "分镜静帧",
+        title: "15 格分镜参考",
+        subtitle: "分镜静帧(作者帖内配图) · 视觉参考",
+        image: "/tutorials/krevix-luxury-sofa-carousel/refs/storyboard.jpg",
+        prompt: "",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:08 秒:white-cream cloud 沙发居中悬浮,黑手套滑动,沙发快速左旋同时 ivory modular 沙发从右飞入停中;再滑动换 curved latte boucle 沙发;再滑动换 warm caramel leather 沙发。教练提示:固定 26–28mm 第一人称男性 POV 黑棚;每次滑动触发真实轨道惯性,不是瞬移。",
+      },
+      {
+        number: 2,
+        description:
+          "00:32–00:42 秒:第四款 taupe/mocha hero 沙发缓慢飞入、旋转到正面并带重量感停止。教练提示:这是全片 hero 沙发,后续必须保持 100% 同款同外观,不能变形或替换。",
+      },
+      {
+        number: 3,
+        description:
+          "00:42–00:50 秒:张开手掌做 STOP 手势冻结轮播,其他候选沙发消失到远处。教练提示:手势触发机械停止,不是魔法光效。",
+      },
+      {
+        number: 4,
+        description:
+          "00:50–00:58 秒:手掌按压并滑过 hero 沙发扶手,面料真实压缩回弹。教练提示:布料物理响应,可见压痕和恢复。",
+      },
+      {
+        number: 5,
+        description:
+          "00:58–00:66 秒:沙发落地;walnut 地板从底部滑入对齐,taupe 地毯向前展开铺平。教练提示:地面是滑入沙发下方,不是沙发移动。",
+      },
+      {
+        number: 6,
+        description:
+          "00:66–00:85 秒:保持 hero 沙发 100% 静止不变,奢华客厅围绕它物理组装——walnut 和 travertine 墙面滑入,coffee table 和 latte 椅子进场,置物架锁定,吊灯降下,窗帘和装饰物归位。教练提示:房间组件物理滑入/降下/锁定,hero 沙发绝不变形、变色或替换。",
+      },
+      {
+        number: 7,
+        description:
+          "00:85–01:00 秒:全景窗打开,暖色日光涌入完整的 quiet-luxury 室内;镜头缓慢后拉展示全貌。教练提示:真实质量、惯性、摩擦力和机械停止;禁魔法、变形、传送、粒子、烟雾、UI、文字、logo、人物、剪辑或机位变化。",
+      },
+    ],
+    constraints:
+      "26–28mm 第一人称男性 POV;黑棚黑手套;真实物理惯性摩擦;hero 沙发全程 100% 同一件;房间物理拼装而非沙发变形;禁魔法/粒子/传送/变形/UI/剪辑/机位变化;来源:KrevixAi/Gemini Omni。",
+    video_prompt: {
+      title: "LUXURY SOFA CAROUSEL · 10s · 16:9 · First-person POV",
+      subtitle: "Gemini Omni · Storyboard uploaded first, then prompt",
+      content: `Create a 10-second ultra-photorealistic 16:9 luxury furniture commercial, one continuous first-person male POV, 26–28mm lens, black studio, matte-black leather gloves, realistic physics only. 0–0.8s: white-cream cloud sofa floats centered; hand swipes left. 0.8–1.6s: sofa rapidly orbits left as a warm ivory modular sofa arrives from right and stops center. 1.6–2.4s: another swipe replaces it with a curved latte boucle sofa. 2.4–3.2s: swipe brings in a warm caramel leather sofa. 3.2–4.2s: final taupe/mocha hero sofa arrives slowly, rotates frontal and stops with heavy inertia. 4.2–5.0s: open-palm STOP gesture freezes the carousel; other sofas disappear into distance. 5.0–5.8s: hand presses and slides across hero sofa armrest, realistic fabric compression. 5.8–6.6s: sofa lands; walnut floor slides beneath it and taupe rug unrolls. 6.6–8.5s: KEEP THE EXACT SAME HERO SOFA stationary while the luxury room physically assembles around it—walnut and travertine walls slide in, coffee table and latte chairs enter, shelving locks into place, pendant descends, curtains and decor move into position. 8.5–10s: panoramic window opens, warm daylight floods the completed quiet-luxury interior; slow dolly backward reveals the full room. Hero sofa remains 100% identical throughout. Real mass, inertia, friction and mechanical stops; no magic, morphing, teleportation, particles, smoke, UI, text, logos, people, cuts or camera-angle changes.`,
+    },
+  },
+  {
     id: "watch-her-reset-73",
     title: "两次失误后的复位",
     subtitle: "Pollo · Seedance 2.5 · 30秒",
