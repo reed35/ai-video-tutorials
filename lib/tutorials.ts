@@ -69,8 +69,8 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
     subtitle: "X · 369Serena · 约8秒 · 9:16",
     description:
       "竖屏舞蹈动作迁移：灰白深度捕捉→Seedance 人物重建。步骤嵌入抖音原片与灰白捕捉片供参考。无需参考图（需自备人物素材）。两大陷阱：先灰白勿直接迁移；音轨后期另加。",
-    video: "/tutorials/seedance-dance-mocap-migration/demo-web.mp4",
-    poster: "/tutorials/seedance-dance-mocap-migration/poster.jpg",
+    video: "/tutorials/seedance-dance-mocap-migration/demo-v2.mp4",
+    poster: "/tutorials/seedance-dance-mocap-migration/poster-v2.jpg",
     duration: "约8秒",
     shots: 1,
     references: 0,
@@ -93,8 +93,8 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
         title: "准备抖音原片舞蹈素材",
         description:
           "寻找或自拍清晰舞蹈动作视频。动作要干净完整，画面稳定，人物主体清晰。这是整个流程的动作源。",
-        video: "/tutorials/seedance-dance-mocap-migration/douyin-web.mp4",
-        poster: "/tutorials/seedance-dance-mocap-migration/douyin-poster.jpg",
+        video: "/tutorials/seedance-dance-mocap-migration/douyin-v2.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/douyin-poster-v2.jpg",
         aspectRatio: "9/16",
       },
       {
@@ -102,8 +102,8 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
         title: "制作灰白深度捕捉片",
         description:
           "将原片转为灰白深度图/姿态捕捉版本（用深度估计或姿态提取工具）。这是关键：必须先做灰白捕捉，不要直接将彩色原片迁移到 Seedance，否则动作会失真。",
-        video: "/tutorials/seedance-dance-mocap-migration/gray-web.mp4",
-        poster: "/tutorials/seedance-dance-mocap-migration/gray-poster.jpg",
+        video: "/tutorials/seedance-dance-mocap-migration/gray-v2.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/gray-poster-v2.jpg",
         aspectRatio: "9/16",
       },
       {
