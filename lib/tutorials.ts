@@ -6,7 +6,7 @@ export const tutorials: Tutorial[] = [
     title: "H3 文字包装 MV",
     subtitle: "X · @liandeli2 · 约15秒 · 16:9",
     description:
-      "MiniMax H3 文字包装融合 MV 实验：将动态文字特效嵌入音乐视频，探索 AI 在包装特效与 AE 合成方向的切入点。原帖未公开完整提示词，以成片为学习目标。",
+      "15s K-pop 女团 MV：三人组合在地下音乐杂志风格场景中演绎 dark-pop、cyber-grunge 美学。MiniMax H3 找到了与 Seedance 不同的切入点——主攻包装特效与 AE 合成方向。",
     video: "/tutorials/minimax-h3-mv-typography/demo-web.mp4",
     poster: "/tutorials/minimax-h3-mv-typography/poster.jpg",
     duration: "约15秒",
@@ -17,54 +17,47 @@ export const tutorials: Tutorial[] = [
     aspectRatio: "16/9",
     sourceUrl: "https://x.com/liandeli2/status/2083070647660609837",
     tags: [
-      "约15秒 · MV 包装",
+      "15秒 · K-pop 女团 MV",
       "16:9 横屏",
       "MiniMax H3 / Design",
-      "文字包装特效融合",
-      "无公开提示词",
+      "dark-pop · cyber-grunge",
+      "地下杂志美学",
     ],
     steps: [
       {
         number: 1,
-        title: "理解 H3 与 Seedance 的不同切入点",
+        title: "设定三人 K-pop 女团形象",
         description:
-          "MiniMax H3 主攻视频门类中的「包装特效 / AE 包装合成」方向，与 Seedance 的叙事长片路线不同。适合做片头、MV 文字包装，而非纯文生叙事视频。",
+          "SOL（黑色长直发、冷静强势）、LUNA（银灰短狼尾、冷感疏离）、CORONA（深红棕长卷发带细辫、叛逆锋利）。每位成员的服装、发型、气质需与角色设定保持一致。",
       },
       {
         number: 2,
-        title: "准备文案与视觉资产",
+        title: "构建地下音乐杂志拍摄场景",
         description:
-          "原帖未公开完整提示词。需自备文字内容、字体设计方向、MV 风格参考。注意 H3 Design 模式参考图数量上限（约 9 张）与一致性短板——适合取巧做包装特效，不适合大幅改动主体对象。",
+          "将白色无缝影棚重新处理：过曝白墙、灰黑阴影、复印纸贴片、撕裂纸边、半色调网点、胶带痕迹、扫描错位和局部黑色喷漆纹理。部分镜头背景硬切为纯黑、过曝白或高反差灰。",
       },
       {
         number: 3,
-        title: "在 H3 Design 中实验文字融合",
+        title: "粘贴完整提示词生成",
         description:
-          "使用 MiniMax Hailuo H3 / Design 模式，尝试将动态文字、图形包装与 MV 场景融合。核心是利用 H3 在包装特效合成上的优势，创造文字与画面的自然交互。参考成片学习节奏与融合效果。",
+          "使用下方完整 K-pop 女团 MV 提示词。风格定位 dark-pop、cyber-grunge、90年代末至00年代初独立杂志与 zine 拼贴美学。高反差黑白+低饱和暗红银灰点缀。",
       },
     ],
     references_detail: [],
     storyboard: [],
     constraints:
-      "原帖未附完整生成提示词；H3 Design 参考图上限约 9 张；适合包装特效取巧，不适合主体大改；来源 @liandeli2 / X / 15802 曝光。",
+      "三人女团形象与角色设定一致；地下音乐杂志风格而非干净商业棚拍；高反差黑白+低饱和暗红银灰；肤色真实、阴影厚重但保留服装细节；来源 @liandeli2 / X / 15802 曝光。",
     video_prompt: {
-      title: "MiniMax H3 MV 文字包装实验 · 约15秒 · 16:9",
-      subtitle: "MiniMax Hailuo H3 / Design · 原帖未附完整生成提示词，以下为作者说明",
-      content: `尝试了一下minimax h3，把文字包装融合进了mv之中，效果还是很不错的。
-这次minimax找到了和seedance不一样的切入点，要去解决视频门类里包装特效这一块的痛点。
-ai开始pk传统制作里ae的包装合成领域。期待！
+      title: "15s K-pop 女团 MV 提示词",
+      subtitle: "MiniMax Hailuo H3 / Design · 完整可复制提示词",
+      content: `主体：三人 K-pop 女团，人物形象与当前角色设定一致。
+SOL：黑色长直发，冷静强势，黑色结构短西装、低腰百褶短裙、黑色长靴。
+LUNA：银灰色短狼尾，冷感疏离，银灰短款机能夹克、黑色连体内搭、不对称裙裤、厚底靴。
+CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克、低腰裙裤、绑带长靴。
 
----
+场景：白色无缝影棚被重新处理成地下音乐杂志拍摄现场。背景不是干净商业棚拍，而是带有过曝白墙、灰黑阴影、复印纸贴片、撕裂纸边、半色调网点、胶带痕迹、扫描错位和局部黑色喷漆纹理。部分镜头中背景瞬间切换为纯黑、过曝白或高反差灰色，只通过硬切完成。
 
-【教练提示】
-原帖未公开可复制的完整生成提示词。以上为作者 @liandeli2 的说明文字。
-
-H3 切入点：偏视频门类中的「包装特效 / AE 包装合成」方向，与 Seedance 的叙事长片路线不同。
-
-跟做建议：
-1. 用 MiniMax Hailuo H3 / Design 做片头或 MV 文字包装合成，而不是纯文生叙事片。
-2. 注意 H3 Design 参考图数量上限（约 9 张）与一致性短板——适合取巧做包装特效，不适合大幅改动主体对象。
-3. 本教程包仅有成片，无参考图、无原始提示词；以成片为学习目标，自己准备文字内容与视觉资产进行实验。`,
+视觉风格：dark-pop、cyber-grunge、rap 音乐视频，写实高时装质感，90年代末至00年代初独立杂志、地下音乐海报、复印纸、胶片扫描与 zine 拼贴美学。高反差黑白与低饱和暗红、银灰点缀。肤色真实，阴影厚重但保留服装细节。`,
     },
   },
   {
