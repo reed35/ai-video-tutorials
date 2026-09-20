@@ -2,6 +2,145 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "steppe-warrior-queen",
+    title: "草原女王：骑射破阵",
+    subtitle: "X · azed_ai · 约30秒 · 16:9",
+    description:
+      "暮色大草原上，游牧女王策马观察敌军冲锋，驰射破阵、帕提亚回马射、诱敌入伏、近战突围，最后站上山脊收束战场。强调真实骑术与箭矢消耗连续性，无超能力。",
+    video: "/tutorials/steppe-warrior-queen/demo-web.mp4",
+    poster: "/tutorials/steppe-warrior-queen/poster.jpg",
+    duration: "约30秒",
+    shots: 7,
+    references: 0,
+    model: "Luma AI（推测）",
+    style: "史诗骑战 · 暮光草原",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/azed_ai/status/2101309410434044158",
+    tags: [
+      "约30秒 · 7 节拍战斗弧",
+      "无参考图 · 纯文生可跟做",
+      "真实骑术 · 帕提亚回马射",
+      "箭矢连续性 · 战场地理可读",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂战斗弧线",
+        description:
+          "观察→驰射→回马射→诱敌伏击→换刀近战→被围突围→反攻收束。核心是真实骑术（腿夹鞍、缰绳控制）+ 箭矢消耗连续性（射出即减少）+ 地理可读（弧线诱敌、两侧伏击）。",
+      },
+      {
+        number: 2,
+        title: "选择模型与设置",
+        description:
+          "推测 Luma AI 或类似高动态模型。16:9 · ~30s · 打开声音（战马嘶鸣、弓弦、箭破空、盔甲碰撞、战场环境）。无需参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持战场地理连续；同一脸/辫/甲/栗毛马；箭从箭袋拿出即减少；尘土与疲劳累积；慢镜只开场与满弦瞬间；暴力克制可读不过度血腥；负面提示：无瞬移/无限箭/重复骑手/漂浮武器。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:04 女王驰骋观察：慢镜侧跟栗毛战马踏过黄草与烟尘，旋向面部，敌军骑阵冲来，她抽第一支黑羽箭。教练提示：先立身份与战场地理；慢镜只开场，攻击后立刻回正常速度。",
+      },
+      {
+        number: 2,
+        description:
+          "00:04–00:08 第一波驰射：贴身控马拉弓连射，过肩/侧跟/蹄边低机位切换，斜穿敌阵而非正面硬撞。教练提示：骑射要贴马背节奏；斜穿是战术，不是乱冲。",
+      },
+      {
+        number: 3,
+        description:
+          "00:08–00:12 帕提亚回马射：擦过敌阵后上身回扭转弓满弦一瞬慢镜，再回实时，箭穿尘后继续抽箭。教练提示：回马射是记忆点——腿夹鞍平衡，满弦一瞬即可。",
+      },
+      {
+        number: 4,
+        description:
+          "00:12–00:16 诱敌与伏击：高机位显示弧线骑行诱开敌军，己方骑兵从烟尘两侧杀出；她折回战场穿行。教练提示：地理要可读——弧线=诱敌，两侧=伏击。",
+      },
+      {
+        number: 5,
+        description:
+          "00:16–00:20 破线近战：箭将尽，收弓抽弯刀冲过燃烧辎重与破碎盾墙。教练提示：箭矢消耗要连续；换武器有因果。",
+      },
+      {
+        number: 6,
+        description:
+          "00:20–00:24 被围突围：多名敌骑合围，急转扬尘，挡刀侧身，借马势挤出缝隙。教练提示：突围靠马势与缝隙，不靠瞬移。",
+      },
+      {
+        number: 7,
+        description:
+          "00:24–00:30 反攻与收束：末箭、己方骑兵涌过山脊、尘墙；尘散后她停在山脊俯瞰，旗帜升起，切黑。教练提示：收束用疲惫但坚定的表情+战场地理，勿狂欢结尾。",
+      },
+    ],
+    constraints:
+      "真实骑术（缰绳控制、腿夹鞍平衡、马势突围）；箭矢消耗连续性（射出即减少，不无限）；战场地理可读（弧线诱敌、两侧伏击清晰）；暴力克制不过血；来源 azed_ai/Luma AI。",
+    video_prompt: {
+      title: "Steppe Warrior Queen · Mounted Archery Battle · ~30s · 7 Beats",
+      subtitle: "推测 Luma AI · 16:9 · 真实骑术 + 箭矢连续性",
+      content: `Create a brutal, photorealistic historical-fantasy cavalry battle centered on a fierce nomadic warrior queen leading a mounted counterattack across an enormous steppe battlefield at dusk. The sequence must tell one continuous combat story, beginning with the queen observing an enemy cavalry charge, accelerating into mounted archery, breaking through the enemy formation, becoming surrounded, fighting her way free, and finally emerging from the dust after turning the battle.
+
+Warrior Queen: A fierce nomadic warrior queen with a lean athletic body, powerful rider's build, sun-browned skin, sharp fox-like eyes, high cheekbones, and long dark hair braided with beads and bone ornaments. She wears layered leather and lamellar armor trimmed with dark fur, weathered riding boots, reinforced bracers, and a horned helmet pushed back from her face. She carries a recurved bow, a quiver filled with black-feathered arrows, and a short curved blade.
+
+Horse: A swift muscular chestnut warhorse with dark mane, leather tack, practical saddle equipment, sweat-darkened coat, and realistic battlefield movement. Maintain the same horse throughout.
+
+Environment: An enormous windswept steppe battlefield at dusk, with tall yellow grass flattened beneath thousands of hooves, cavalry formations disappearing into dust, scattered infantry, flaming supply carts, broken spears, abandoned shields, torn tents, fallen banners, and red standards violently thrashing beneath a smoky orange sky.
+
+Visual Style: Photorealistic historical-fantasy warfare, grounded practical armor, realistic horse anatomy and riding mechanics, dusty golden-orange atmosphere, strong sunset backlighting, detailed fabric physics, realistic weapon handling, restrained battle injuries, sparks, smoke, flying dirt, atmospheric depth, enormous battlefield scale, and a mythic presence surrounding the queen without giving her supernatural powers.
+
+Camera Language: Begin with controlled cinematic observation before rapidly increasing camera energy once the queen attacks. Use circular tracking, extreme facial close-ups, side-mounted cavalry tracking, over-the-shoulder archery shots, arrow-following perspectives, low cameras beside galloping hooves, wide battlefield reveals, aggressive lateral tracking through formations, brief handheld ground-level perspectives, and controlled slow motion only for important combat beats.
+
+Audio: Thunderous galloping, horse breathing, leather saddle movement, armor rattling, bowstrings snapping, arrows cutting through air, distant battle cries, clashing steel, burning wood, wind, cavalry horns, soldiers shouting, horse vocalizations, and the queen's breathing. Use deep restrained war percussion beneath the battle without overwhelming physical sound.
+
+[00:00-00:04] THE QUEEN RIDES
+
+Begin with an elegant slow-motion side-tracking shot circling the queen as her chestnut horse gallops through drifting battlefield smoke, its hooves tearing through yellow grass while her braids, fur trim, quiver, and red cloth details violently whip behind her. The camera gradually rotates toward her face as she looks across the battlefield and sees an enemy cavalry formation charging toward her scattered soldiers, then perform a sudden crash push toward her narrowed eyes as she calmly reaches over her shoulder and draws the first black-feathered arrow.
+
+[00:04-00:08] FIRST VOLLEY
+
+Return immediately to full speed as she lowers herself against the horse's movement, draws the recurved bow while galloping, and releases the first arrow toward an approaching enemy rider before instantly drawing another. Cut between a tight over-the-shoulder view aligned with her bow, a sweeping side-tracking shot matching the horse's speed, and a low angle beside the pounding hooves as she fires several carefully timed shots while weaving diagonally across the approaching cavalry rather than charging directly into them.
+
+[00:08-00:12] THE PARTHIAN SHOT
+
+The queen suddenly guides her horse past the enemy formation and twists her entire upper body backward in the saddle while maintaining full forward momentum, using her thighs and riding technique to remain balanced as she draws another arrow behind herself. Hold one brief controlled slow-motion beat as the bow reaches full tension, then return violently to real speed when she releases, following the arrow briefly through swirling dust before cutting back to the queen already drawing another arrow as pursuing riders close behind her.
+
+[00:12-00:16] THE TRAP
+
+Pull upward into a wide moving composition revealing that her curved riding path has deliberately drawn part of the enemy cavalry away from their infantry formation, allowing her own riders to suddenly emerge through the dust from both sides and strike the exposed formation. The queen immediately turns her chestnut horse back toward the battlefield, races between colliding cavalry lines, ducks beneath a passing spear, fires at close range toward another mounted opponent, then narrowly passes between two horses as the camera whips around to remain beside her.
+
+[00:16-00:20] THROUGH THE BROKEN LINE
+
+Her quiver is nearly empty as she reaches a collapsing infantry formation near several burning carts, so she returns the bow across her body, draws the short curved blade, and drives her horse through a narrow opening between broken shields. Use fast alternating cuts between a frontal tracking shot retreating before the charging horse, a low side angle showing hooves exploding through dirt, and a tight shoulder-level composition as she deflects an incoming weapon and strikes past opponents while continuously moving rather than stopping for individual duels.
+
+[00:20-00:24] SURROUNDED
+
+The queen emerges beyond the infantry only to discover several enemy riders converging around her through the smoke, forcing her to pull hard on the reins and turn the horse sharply as dirt erupts beneath its hooves. One rider approaches from her left while another closes from behind, so she blocks the first attack with her curved blade, leans almost completely sideways from the saddle to avoid the second, then uses the horse's momentum to break through the narrow opening between them before they can completely surround her.
+
+[00:24-00:27] STRIKE AGAIN
+
+She races toward a low ridge while three riders pursue her, then suddenly turns the horse across their path and draws the final arrow from her quiver. The camera moves directly beside her as she releases while galloping, then swings behind her shoulder to reveal her own cavalry pouring across the ridge in the background. She raises her curved blade overhead, and dozens of riders thunder past her toward the remaining enemy formation as the battlefield disappears beneath an enormous wall of dust.
+
+[00:27-00:30] QUEEN OF THE STEPPE
+
+The dust gradually clears as the queen rides alone into the foreground and pulls her chestnut horse to a controlled stop on the ridge overlooking the battlefield, both breathing heavily after the charge. She lowers the bow beside her thigh while firelight from burning carts flickers across her scratched armor and wind moves her long braids across her face. Behind her, surviving enemy forces retreat into the distance while her red standards rise through the smoke. Slowly push toward her exhausted but unwavering expression as she looks across the battlefield beneath the dying orange sun, then cut to black.
+
+The queen must feel exceptionally skilled because of lifelong horsemanship, tactical awareness, timing, balance, and archery experience rather than supernatural abilities. Keep her physically connected to the saddle and horse throughout every maneuver, with realistic rein control, leg positioning, body rotation, bow tension, weapon weight, momentum, and recovery.
+
+Every cut must preserve clear battlefield geography and the same continuous attack. Her initial curved riding path intentionally draws enemy cavalry away from their formation, her allies exploit the opening, she turns back through the disrupted battlefield, switches weapons after exhausting most of her arrows, escapes an attempted encirclement, and finally signals the decisive cavalry counterattack.
+
+Maintain exact continuity for the queen's face, braids, ornaments, helmet, armor, cloak, weapons, remaining arrows, accumulated dirt, and chestnut horse. Arrows removed from the quiver must remain gone, damage and dirt acquired during battle must persist, and the horse must gradually show believable exertion through breathing, sweat, and movement.
+
+Keep violence fierce but readable rather than gore-focused. Prioritize cavalry speed, arrow impacts, weapon clashes, riders falling away from the queen's path, dust, sparks, torn banners, collapsing formations, and the terrifying physical scale of mounted warfare. No duplicated riders, floating weapons, impossible horse movement, teleportation, changing armor, endless arrows, exaggerated blood spray, modern objects, firearms, subtitles, or comedic behavior.`,
+    },
+  },
+  {
     id: "late-night-ramen",
     title: "深夜泡面：耳机里的小确幸",
     subtitle: "X · Shorelyn_ · Seedance 2.5 · 约29秒 · 16:9",
