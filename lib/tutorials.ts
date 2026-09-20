@@ -460,6 +460,248 @@ No storyboard, reference image, sketch, panels, borders, numbers, arrows, annota
     },
   },
   {
+    id: "seedance-dance-mocap-migration",
+    title: "Seedance 舞蹈动捕迁移",
+    subtitle: "X · 369Serena · 约8秒 · 9:16",
+    description:
+      "竖屏舞蹈动作迁移：灰白深度捕捉→Seedance 人物重建。步骤嵌入抖音原片与灰白捕捉片供参考。无需参考图（需自备人物素材）。两大陷阱：先灰白勿直接迁移；音轨后期另加。",
+    video: "/tutorials/seedance-dance-mocap-migration/demo-web.mp4",
+    poster: "/tutorials/seedance-dance-mocap-migration/poster.jpg",
+    duration: "约8秒",
+    shots: 1,
+    references: 0,
+    model: "Seedance",
+    style: "舞蹈动作迁移 · 竖屏",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/369Serena/status/2100805668206731346",
+    sourceAuthor: "369Serena",
+    sourcePlatform: "X",
+    tags: [
+      "约8秒 · 舞蹈重建",
+      "9:16 竖屏 · 动作迁移",
+      "无需参考图（需自备）",
+      "灰白深度捕捉流程",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备抖音原片舞蹈素材",
+        description:
+          "寻找或自拍清晰舞蹈动作视频。动作要干净完整，画面稳定，人物主体清晰。这是整个流程的动作源。",
+        video: "/tutorials/seedance-dance-mocap-migration/douyin-web.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/douyin-poster.jpg",
+        aspectRatio: "9/16",
+      },
+      {
+        number: 2,
+        title: "制作灰白深度捕捉片",
+        description:
+          "将原片转为灰白深度图/姿态捕捉版本（用深度估计或姿态提取工具）。这是关键：必须先做灰白捕捉，不要直接将彩色原片迁移到 Seedance，否则动作会失真。",
+        video: "/tutorials/seedance-dance-mocap-migration/gray-web.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/gray-poster.jpg",
+        aspectRatio: "9/16",
+      },
+      {
+        number: 3,
+        title: "用 Seedance 重建人物",
+        description:
+          "在 Seedance 中上传灰白捕捉片与人物参考图（需自备），粘贴完整提示词。陷阱提醒：音轨需后期另加，Seedance 不会自动同步原片音乐；先用灰白捕捉而非彩色原片，动作还原度更高。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "整段舞蹈：从灰白深度捕捉中提取完整动作姿态，结合人物参考图在 Seedance 中重建角色，还原舞蹈动作。陷阱提醒：先灰白深度捕捉，勿直接迁移彩色原片；音轨后期单独添加。",
+      },
+    ],
+    constraints:
+      "先灰白深度捕捉勿直接迁移；音轨后期另加（Seedance 不同步原音乐）；需自备人物参考图（无 image_1）；9:16 竖屏；来源 369Serena。",
+    video_prompt: {
+      title: "Standalone Dance Video · Seedance Character Migration",
+      subtitle: "Seedance · 9:16 竖屏 · 灰白深度捕捉流程",
+      content: `Standalone_dance_video
+
+参考 image_1 <<<image_1>>> 中的人物身份与外观。
+
+(人物名字) 的脸部请严格参考 image_1 右侧的人像特写区域，保持同一个人物身份和面部特征：约 25 岁的年轻东亚女性，自然柔和的淡妆，脸颊带轻微红润感，嘴唇饱满自然，暖棕色眼睛，深棕色头发，扎成两侧低马尾，并佩戴一个小型紫色发夹。
+
+人物的身材比例、服装和整体造型参考 image_1 左侧正面全身图和中间背面全身图：
+
+穿浅薰衣草紫色拉链防风外套，袖子带白色条纹细节；内搭白色 T 恤；黑色百褶短裙；白色宽松及膝袜；黑色厚底乐福鞋。
+
+(人物名字)最初背着一个黑色托特包，包带上挂有一个小毛球挂件；脖子上佩戴黑色挂绳的 STAFF 工作证。
+
+以 video_1 <<<video_1>>> 作为纯动作参考视频。
+
+(人物名字) 完整复刻 video_1 中的整套舞蹈编排，尽可能高保真地还原所有动作，包括：
+
+完整的全身舞蹈动作、精确的手臂动作、手势、脚步、腿部动作、身体重心变化、舞蹈节奏、动作时机和动作衔接。
+
+动作节奏和时间点严格跟随 video_1，不随意删减、替换、简化或重新设计动作。
+
+整体表演状态保持 video_1 中那种充满活力、自由、洒脱、自信且具有情绪感染力的舞蹈表现。
+
+(人物名字) 的面部表情自然放松，随着舞蹈保持开心、兴奋、充满生命力的状态，表情与身体动作的能量一致，不做夸张或僵硬的表情。
+
+在原舞蹈中"扔工作牌"的那个准确节拍点，(人物名字)同时抓住自己的 STAFF 工作证和黑色托特包，用一个果断、畅快、有释放感的动作，将两样物品同时甩出去。
+
+工作证和托特包必须真实地从人物身上脱离，并一起飞出画面之外。
+
+完成扔出动作后，(人物名字) 不停顿，也不回头捡东西，立刻无缝继续完成 video_1 中剩余的舞蹈动作。
+
+此后 Serena 身上不再出现托特包和工作证，以更加自由、轻盈、放松的状态继续跳舞，并保持完整的舞蹈节奏和高能量表现直到结束。
+
+场景环境、拍摄机位、构图、镜头距离、光线条件以及背景氛围，均参考并匹配 video_1 中已经建立的环境。
+
+镜头始终确保 (人物名字) 的完整身体和关键舞蹈动作清晰可见，尤其需要完整表现手臂、双手、双腿、脚部和脚步动作，避免因为裁切导致舞蹈动作缺失。
+
+以全身舞蹈表演镜头为主，完整呈现整套舞蹈。
+
+保持 (人物名字) 的人物身份、脸部、发型、服装、身体比例在整段视频中稳定一致，不换脸、不换人、不改变服装，不出现额外人物。
+
+除指定的工作证和托特包飞出动作外，不新增、不删除、不凭空生成任何服装、饰品或道具。
+
+无对白。
+无音乐。`,
+    },
+  },
+  {
+    id: "creative-fan-outfit-swap",
+    title: "创意风扇换装",
+    subtitle: "X · YangOnchain · 约28秒 · 9:16",
+    description:
+      "竖屏创意换装片：固定顶视机位拍摄仰躺人物，通过吊扇扇叶遮挡实现 5 次服装更新，配合音乐节拍与展示动作。核心是扇叶擦除规则（前缘旧装/后缘新装）+ 固定物件位置（遥控/手机/包）+ 自然连续姿态。成片 9:16 竖屏，不进胶片条。",
+    video: "/tutorials/creative-fan-outfit-swap/demo-web.mp4",
+    poster: "/tutorials/creative-fan-outfit-swap/poster.jpg",
+    duration: "约28秒",
+    shots: 7,
+    references: 0,
+    model: "未知（推测创意特效模型）",
+    style: "创意换装 · 竖屏 · 固定机位",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/YangOnchain/status/2100696904648786291",
+    tags: [
+      "约28秒 · 7 分镜",
+      "9:16 竖屏 · 不进胶片条",
+      "跟做需自备参考图",
+      "固定顶视 · 扇叶遮挡换装",
+      "音乐节拍对齐",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂扇叶换装规则",
+        description:
+          "固定顶视机位（0–30s 无推拉摇移旋转）+ 仰躺人物 + 吊扇在高处顺时针旋转。核心规则：扇叶前缘尚未到达的区域保持旧装，遮挡后刚露出的区域已经穿上新装。换装完成后全身统一成新装，才开始展示动作。",
+      },
+      {
+        number: 2,
+        title: "准备参考图与设置",
+        description:
+          "跟做需自备：Image1 人物脸部参考 + Image2–7 六套服装参考图。原作者提示词引用 @Image1–@Image7，成片包未附参考图。9:16 竖屏 · 约28s · 打开声音（轻快时尚电子音乐约120BPM + 按键声 + 扇叶掠风声 + 衣料声 + 快门声）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持固定顶视 · 柔和光线；人物深棕长发仰躺、头在上鞋在下、五官发型不变；遥控器和手机从开场就在左右两侧固定位置；扇叶高处顺时针、不穿过人体；每次换装完整露出新造型再表演；负面提示：无白闪/黑场/烟雾/失焦掩饰/不擅自唱歌说话。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–3s 开场按遥控启动吊扇：多多已穿第二套（@Image2）仰躺，静止扇叶在前景边缘。左手拿遥控器朝上按一下，放回原处。按键\'咔嗒\'后吊扇启动，音乐进入主节奏。教练提示：遥控器和手机从开场就同时存在各自位置。",
+      },
+      {
+        number: 2,
+        description:
+          "3–7s 第一次扇叶擦除 → 第二套 + 拨颈巾：扇叶扫过，穿搭从 @Image2 更新为 @Image3，身体头发原位不变。叶片退出，第二套完整露出，音乐重拍落下。多多用手指拨正颈巾末端，让它落到肩侧，重新看向镜头微笑。教练提示：扇叶前缘旧装/后缘新装；换装揭示落在音乐重拍。",
+      },
+      {
+        number: 3,
+        description:
+          "7–11s 第二次擦除 → 第三套 + 点鞋尖：下一次指定扫过揭示 @Image4（短裙、腿套、鞋和包）。多多先保持原姿态，待完整更新，再将一侧膝盖小幅屈起（脚跟仍贴地毯），鞋尖随音乐点两拍，随后放回。教练提示：始终仰躺面向上方，动作舒展俏皮，裙摆自然覆住身体。",
+      },
+      {
+        number: 4,
+        description:
+          "11–15s 第三次擦除 → 第四套 + 亮豹纹包：第三次扇叶扫过逐步露出 @Image5。多多右手拎住画面左侧豹纹包的带子，抬起少许在身体侧边亮一下（包顺重力下垂不遮脸），头朝包侧轻偏，肩部合拍动一下，再把包落回原位。教练提示：包碰到地毯时发出柔软轻响；之后的包随对应服装替换，旧包不累积。",
+      },
+      {
+        number: 5,
+        description:
+          "15–20s 第四次擦除 → 第五套 + 理领带装正经：扇叶扫过后完整显示 @Image6。多多两手理顺胸前长领带，随后放下手、收拢双腿，故意一本正经地看顶上镜头，稳住两拍，再忍不住扬起嘴角。教练提示：音乐在理领带时收一下密度，两拍后低音回到主节奏；服装仍清楚可见。",
+      },
+      {
+        number: 6,
+        description:
+          "20–25s 第五次擦除 → 第六套 + 停扇：最后一次换装，扇叶后缘揭示 @Image7（浅粉包替换原包）。多多抬起左前臂看袖口，右手顺一下针织袖边，放下手，朝镜头点头。左手再取遥控器、按停止键、放回。按键声后吊扇连续减速停在不遮脸的前景边缘。教练提示：减速期间所有经过都保持第六套；不能瞬间消失或跳位置。",
+      },
+      {
+        number: 7,
+        description:
+          "25–30s 举手机自拍 V 手势收束：多多左手从左胯外侧拿起手机，举到脸上方略偏画面右侧（屏幕朝多多，主镜头看见手机背面但仍能看清脸）。视线转向手机，收一点下巴，右手在脸旁比一个小V，露出调皮的笑。轻按快门，清楚快门声落在收尾重拍。教练提示：最后保留第六套、举手机的多多和完整空间，音乐短促收束；不切自拍照片。",
+      },
+    ],
+    constraints:
+      "跟做需自备 Image1 人物脸 + Image2–7 六套服装参考；成片包未附参考图。固定顶视 · 柔和光线；人物五官发型不变；遥控器和手机从开场就在左右固定位置；扇叶高处顺时针、不穿过人体；每次换装完整露出新造型再表演；无白闪/黑场/烟雾/失焦掩饰；9:16 竖屏不进胶片条；来源 YangOnchain。",
+    video_prompt: {
+      title: "创意风扇换装 · 约28秒 · 9:16",
+      subtitle: "未知模型 · 9:16 竖屏 · 需自备 7 张参考图",
+      content: `光线保持柔和而方向明确，人物肤色自然，针织、蕾丝、皮革和木纹各自可辨。背景低饱和，服装的色彩和质地突出。人物和衣服始终清晰，仅快速掠过的前景扇叶边缘带少量运动模糊。
+
+【主体定义】
+多多是@Image1中的同一位成年女性，深棕长发铺在头肩周围，五官、肤色和发型不随换装改变。多多仰躺，头在画面上方、鞋在下方，身体长度约占画面高度四分之三；背、肩和臀腿贴着地毯，衣料按卧姿形成压褶，不是把站立人物贴在地板上。
+
+摄影机位于吊扇上方，垂直朝地面拍，构图锁定。吊扇远高于多多，在摄影机与多多之间。轴心固定在画面左侧之外，宽木扇叶在近前景沿弧线扫过身体投影；从镜头看始终顺时针旋转，人物不能碰到扇叶。
+
+本片只采用一个幻想规则：在指定的五次扫过中，衣服沿扇叶后缘逐步更新。叶片前缘尚未到达的区域保持旧装，遮挡后刚露出的区域已经穿上新装；扫过完成后，全身和配饰统一成下一套。换装时身体位置接续，展示动作在新造型露出后才开始。其他扇叶经过只是遮挡，不触发额外换装。
+
+屏幕左右固定：画面右侧是多多的左手侧，一只遥控器放在左手旁，一部手机另放在左胯外侧；画面左侧是多多右手侧，包位于右肘至右胯旁。遥控器和手机从开场就同时存在，各自保持原位置。第一套不带包；之后的包随对应服装在遮挡中替换，旧包不累积。
+
+【时间线分镜与声音】
+镜头1：0—30秒始终固定顶视，不推拉、不摇移、不旋转、不切景。轻快时尚电子音乐贯穿，约120BPM，弹性低音与清脆拍手构成节奏；无对白、歌唱或旁白。以下声音随对应动作发生。
+
+0—3秒｜开场与启动
+首帧多多已经穿@Image2躺好，双腿自然伸展，看向上方镜头。静止扇叶只占前景边缘。多多左手拿起旁边的遥控器，朝上按一下，再放回原处。按键\'咔嗒\'后吊扇启动，音乐进入主节奏，低声运转声随之出现。直接进入动作，不补空镜或走进房间。
+
+3—7秒｜第一次擦除，第二套
+一片木扇叶扫过，多多的穿搭从@Image2沿遮挡边缘更新为@Image3；身体、头发和房间原位不变。叶片退出身体区域，第二套完整露出，音乐重拍落下。
+多多用手指拨正颈巾末端，让它落到肩侧，重新看向镜头，嘴角带笑；手随后放回身体旁，露出长裤与包。扇叶掠风声短而轻，衣料声不盖过音乐。
+
+7—11秒｜第二次擦除，第三套
+下一次指定扫过揭示@Image4。多多先保持原姿态，待短裙、腿套、鞋和包完整更新，再将一侧膝盖小幅屈起，脚跟仍贴地毯，鞋尖随音乐点两拍，随后放回。
+多多始终仰躺、面向上方，动作舒展俏皮，裙摆自然覆住身体，不把腿踢向镜头。换装揭示落在音乐重拍，点鞋尖对应两个短打击音。
+
+11—15秒｜第三次擦除，第四套
+第三次指定扇叶扫过，逐步露出@Image5。多多右手拎住画面左侧豹纹包的带子，抬起少许，在身体侧边亮一下；包顺重力下垂，不遮脸。
+多多头朝包侧轻偏，肩部合拍动一下，再把包落回原位。包碰到地毯时发出柔软轻响，动作收住，准备下一次遮挡。
+
+15—20秒｜第四次擦除，第五套
+扇叶扫过后完整显示@Image6。多多两手理顺胸前长领带，随后放下手、收拢双腿，故意一本正经地看顶上镜头，稳住两拍，再忍不住扬起嘴角。
+音乐在理领带时收一下密度，两拍后低音回到主节奏。服装仍清楚可见，不插入脸部特写，不让表情取代全身的节拍。
+
+20—25秒｜第五次擦除，第六套与停扇
+第五次也是最后一次换装，扇叶后缘揭示@Image7，浅粉包替换原包。多多抬起左前臂看袖口，右手顺一下针织袖边，放下手，朝镜头点头。
+多多左手再取原处遥控器、按停止键、放回。按键声后吊扇沿原方向连续减速，运转声逐渐减弱，停在不遮脸和主要服装的前景边缘；不能瞬间消失或跳到另一个位置。减速期间所有经过都保持第六套，音乐不断。
+
+25—30秒｜自拍
+多多左手从左胯外侧拿起那部手机，举到脸上方略偏画面右侧，屏幕朝多多，主镜头看见手机背面但仍能看清多多的脸。
+多多视线转向手机，收一点下巴，右手在脸旁比一个小V，露出调皮的笑。多多轻按快门，一声清楚的快门声落在收尾重拍。
+最后保留第六套、举手机的多多和完整空间，音乐短促收束；不切自拍照片或手机界面。
+
+【统一约束】
+只有同一位多多、一副三叶吊扇、一只遥控器、一部手机。衣服严格按@Image2到@Image7顺序变化，共六套、五次换装；最终保持第六套。扇叶遮挡前后四肢、发型与物件位置连续，衣服与包不融成一团。
+保持同一顶视机位、地毯、沙发边缘和窗光方向。多多全程仰躺，衣服和配饰服从重力；吊扇始终在高处，不穿过人体，不落到地板。
+每次换装必须让新造型完整可见再表演。遮挡只替换服装，不让人物脸、地板或整个画面先灰一下；不使用白闪、黑场、烟雾、粒子、交叉溶解或失焦掩饰变化。
+不生成参考图排版、白底、图片编号、文字贴纸、字幕或片尾Logo。没有对白，不擅自唱歌或说话，保留自然呼吸和表情。`,
+    },
+  },
+  {
     id: "fridge-freshness-perfected",
     title: "冰箱广告：新鲜尽在掌握",
     subtitle: "X · HeyRu0by · 10秒 · 9:16",
@@ -474,6 +716,8 @@ No storyboard, reference image, sketch, panels, borders, numbers, arrows, annota
     style: "奢华产品广告 · 竖屏",
     aspectRatio: "9/16",
     sourceUrl: "https://x.com/HeyRu0by/status/2101186330025922663",
+    sourceAuthor: "@HeyRu0by",
+    sourcePlatform: "X",
     tags: [
       "10秒 · 5 节拍",
       "9:16 竖屏 · 不进胶片条",
@@ -588,6 +832,8 @@ No people, no hands, no warped refrigerator, no changing product design, no extr
     style: "写实观察式 · 诊所社媒",
     aspectRatio: "16/9",
     sourceUrl: "https://evolink.ai/seedance-2-5-prompts",
+    sourceAuthor: "@bmx_ai13",
+    sourcePlatform: "Evolink",
     tags: [
       "约30秒 · 7 治疗节拍",
       "无参考图 · 纯文生可跟做",
@@ -682,8 +928,8 @@ Audio should feel captured on location with soft room ambience, distant clinic m
     subtitle: "X · azed_ai · 约30秒 · 16:9",
     description:
       "暮色大草原上，游牧女王策马观察敌军冲锋，驰射破阵、帕提亚回马射、诱敌入伏、近战突围，最后站上山脊收束战场。强调真实骑术与箭矢消耗连续性，无超能力。",
-    video: "/tutorials/steppe-warrior-queen/demo-web.mp4",
-    poster: "/tutorials/steppe-warrior-queen/poster.jpg",
+    video: "/tutorials/steppe-warrior-queen/demo-web-v2.mp4",
+    poster: "/tutorials/steppe-warrior-queen/poster-v2.jpg",
     duration: "约30秒",
     shots: 7,
     references: 0,
@@ -691,6 +937,8 @@ Audio should feel captured on location with soft room ambience, distant clinic m
     style: "史诗骑战 · 暮光草原",
     aspectRatio: "16/9",
     sourceUrl: "https://x.com/azed_ai/status/2101309410434044158",
+    sourceAuthor: "@azed_ai",
+    sourcePlatform: "X",
     tags: [
       "约30秒 · 7 节拍战斗弧",
       "无参考图 · 纯文生可跟做",
@@ -830,6 +1078,8 @@ Keep violence fierce but readable rather than gore-focused. Prioritize cavalry s
     style: "暖光深夜 · Lo-Fi + ASMR",
     aspectRatio: "16/9",
     sourceUrl: "https://x.com/Shorelyn_/status/2099013056013672761",
+    sourceAuthor: "@Shorelyn_",
+    sourcePlatform: "X",
     tags: [
       "约29秒 · 7 节拍",
       "无参考图 · 纯文生视频可跟做",
@@ -949,6 +1199,8 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
     model: "Gemini Omni · Seedance 2.0",
     style: "时装展示 · 黑棚遥控",
     aspectRatio: "16/9",
+    sourceAuthor: "@KrevixAi",
+    sourcePlatform: "X",
     tags: [
       "10 秒 · 5 节拍 · 固定机位",
       "1 张分镜静帧",
@@ -1035,6 +1287,7 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
     model: "Seedance 2.5",
     style: "电影感 · 黄金时段",
     aspectRatio: "16/9",
+    sourcePlatform: "Pollo",
     tags: [
       "30 秒 · 7 节拍 · 情绪弧",
       "无参考图",
@@ -1150,6 +1403,7 @@ on the final hit.`,
     model: "Seedance 2.5",
     style: "iPhone POV · 现场感",
     aspectRatio: "3/4",
+    sourcePlatform: "Pollo",
     tags: [
       "30 秒 · 3:4 竖屏 · 5 节拍",
       "提示词含 @Image1 · 页面无参考图",
@@ -1253,6 +1507,7 @@ He shouts the final line while performing a rapid three-step, a controlled 180°
     model: "Seedance 2.5",
     style: "一镜到底 · 空间变换",
     aspectRatio: "16/9",
+    sourcePlatform: "Pollo",
     tags: [
       "30 秒 · 一镜到底 · 6 房间",
       "提示词含图像1 · 页面无参考图",
@@ -1310,6 +1565,7 @@ He shouts the final line while performing a rapid three-step, a controlled 180°
     model: "Seedance 2.5",
     style: "iPhone 纪录片 · 荒诞魔幻",
     aspectRatio: "1/1",
+    sourcePlatform: "Pollo",
     tags: [
       "30 秒 · 1:1 方形 · 7 节拍",
       "提示词含 Image1 · 页面无参考图",
@@ -1465,6 +1721,7 @@ The employee`,
     model: "Seedance 2.5",
     style: "IMAX 史诗 · 灾难动作",
     aspectRatio: "16/9",
+    sourcePlatform: "Pollo",
     tags: [
       "15 秒 · 3 段式 · 切黑收尾",
       "无参考图 · 纯文生视频",
