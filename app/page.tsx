@@ -12,9 +12,9 @@ export default function Home() {
             <img
               src="/brand/mark.png"
               alt=""
-              width={48}
-              height={48}
-              className="w-12 h-12 rounded-xl object-cover"
+              width={64}
+              height={64}
+              className="w-[clamp(36px,6vw,64px)] h-[clamp(36px,6vw,64px)] rounded-xl object-cover"
             />
             成片拆解
           </div>
