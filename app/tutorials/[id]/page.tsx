@@ -50,7 +50,13 @@ export default async function TutorialPage({
           href="/"
           className="flex items-center gap-2.5 font-bold text-[15px] tracking-wide hover:opacity-80 transition-opacity"
         >
-          <div className="w-7 h-7 rounded-[9px] bg-gradient-to-br from-[var(--accent)] via-[#2dd4bf] to-[var(--accent2)]" />
+          <img
+            src="/brand/mark.png"
+            alt=""
+            width={28}
+            height={28}
+            className="w-7 h-7 rounded-[9px] object-cover"
+          />
           成片拆解
         </Link>
       </header>
