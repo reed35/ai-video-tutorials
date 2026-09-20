@@ -2,6 +2,464 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "shanghai-scallion-pancake",
+    title: "老上海葱油饼",
+    subtitle: "X · 369Serena · 30秒 · 16:9",
+    description:
+      "清晨老上海弄堂口的传统葱油饼小铺，展现完整制作过程：揉面、切葱、擀开抹猪油、卷起盘圆、煎制、入炉烘香、掰开展示层层酥脆。日式动漫美食电影风格，节奏明快，细节丰富。作者槽点：忘了放猪油。",
+    video: "/tutorials/shanghai-scallion-pancake/demo-web.mp4",
+    poster: "/tutorials/shanghai-scallion-pancake/poster.jpg",
+    duration: "30秒",
+    shots: 10,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "日式动漫美食 · 老上海街边",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/369Serena/status/2100887564274348245",
+    sourceAuthor: "@369Serena",
+    sourcePlatform: "X",
+    tags: [
+      "30秒 · 10 制作节拍",
+      "无参考图 · 纯文生可跟做",
+      "Seedance 2.5",
+      "日式动漫美食电影风格",
+      "外脆内软层次感",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂美食制作节奏",
+        description:
+          "清晨开场→揉面→切葱→擀开抹油→卷起盘圆→压饼→煎制→翻面→入炉烘香→掰开展示。核心是真实制作物理（面团形变、葱花散落、油光）+ 层次感展示（外脆内软）+ 老上海氛围（石库门、木窗、晨光）。",
+      },
+      {
+        number: 2,
+        title: "选择模型与设置",
+        description:
+          "Seedance 2.5。16:9 · 30s · 打开声音（轻快爵士器乐 + ASMR 烹饪音效：揉面、切葱、擀面、滋啦声、酥壳断裂）。无需参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持清晨暖光；面团柔软形变；葱花真实散落；煎制物理（气泡、焦斑）；烘炉暖橙色光；掰开展示层次与热气；负面提示：无文字/无超现实变形/保持视觉一致性。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–2s 清晨弄堂：近景从木窗向内移动，晨光斜照案板，摊主放下醒好的面团。面团轻轻变形，表面光泽。",
+      },
+      {
+        number: 2,
+        description:
+          "2–4.5s 揉压面团：斜俯拍特写，掌根推压折叠面团，面粉飞扬，留下揉压痕迹。",
+      },
+      {
+        number: 3,
+        description:
+          "4.5–6.5s 切葱：微距侧拍，刀刃有节奏地切出细小均匀葱花，葱白与翠绿交错，切口湿润。",
+      },
+      {
+        number: 4,
+        description:
+          "6.5–9s 擀开抹油：擀成薄长面片，用小勺抹开半凝固猪油形成油膜，撒盐和葱花自然散落。",
+      },
+      {
+        number: 5,
+        description:
+          "9–12s 卷起盘圆：从长边卷成细长面卷，再从一端盘成螺旋形，末端压在底部。葱花包入层层面皮。",
+      },
+      {
+        number: 6,
+        description:
+          "12–14s 压成圆饼：低角度特写，手掌缓缓压下螺旋面团，形成厚实小圆饼，表面留有盘卷纹理。",
+      },
+      {
+        number: 7,
+        description:
+          "14–17s 入锅煎制：圆饼放入热油锅，接触瞬间出现气泡，通过时间跳切，饼边染上金黄色。",
+      },
+      {
+        number: 8,
+        description:
+          "17–19.5s 翻面：低机位微距，铲起翻面，露出金黄焦斑与鼓泡，落回锅中滋啦作响。",
+      },
+      {
+        number: 9,
+        description:
+          "19.5–22s 入炉烘香：送入小烘炉，暖橙色炉光映亮饼面，时间跳切至表面酥脆、焦斑加深，热气逸出。",
+      },
+      {
+        number: 10,
+        description:
+          "22–30s 掰开与展示：双手隔牛皮纸掰开，外层酥壳裂开，内部柔软层层面皮与翠绿葱花显现，热气升起。最终两半放在竹盘中，镜头后拉带出弄堂，自行车铃声收尾。",
+      },
+    ],
+    constraints:
+      "清晨暖光；真实面团物理；葱花自然散落；煎制气泡与焦斑；烘炉暖光；掰开层次感；保持视觉一致性；来源 369Serena/X；Seedance 2.5。",
+    video_prompt: {
+      title: "老上海葱油饼 · Shanghai Scallion Pancake · 30s · 16:9",
+      subtitle: "Seedance 2.5 · 日式动漫美食电影风格",
+      content: `Seedance 2.5 中文提示词｜老上海葱油饼
+
+创作一支 30 秒、节奏明快、具有电影感的日式动漫美食视频，内容是在老上海街边小吃铺制作传统葱油饼，并且完全根据以下文字描述生成。
+
+主角是一张厚实、小巧、圆形的上海葱油饼：
+表面金黄，带有深浅自然的焦斑，
+外壳酥脆，内部柔软，具有清晰的面皮层次与葱花。
+采用先煎后烘的制作过程。
+通过自然的时间跳切，表现实际需要更长时间的揉面、煎制与烘烤。
+
+重要要求：
+不要展示、重现、描摹、参考或模仿任何分镜图、草图、参考图、画格、标注或源素材。
+只生成原创的日系动漫风格动画。
+场景、食物、器具与生活细节体现老上海传统小吃铺的氛围。
+
+风格（STYLE）
+
+高质量日本动画电影风格，
+具有电影感的清晨暖光，
+食物材质超细节表现，
+真实的面团形变与烹饪物理效果，
+可见的轻微热气与锅边油烟，
+浅景深，
+微距特写镜头，
+顺滑而克制的镜头运动。
+
+场景是一间位于上海老弄堂口的传统葱油饼小铺。
+深色木质操作台、旧铁煎锅、嵌在灶台中的小烘炉，
+背景隐约可见石库门门框、灰砖墙与木窗。
+环境整洁，器具带有长期使用形成的自然痕迹。
+
+晨光从铺面一侧斜照进来，
+照亮面粉颗粒、面团上的薄油光和升起的热气。
+色彩以暖金色、木褐色、灰砖色与鲜葱绿色为主。
+环境作为柔和背景，镜头始终以食物和制作动作作为主体。
+
+只出现同一位摊主的双手与前臂，
+穿着素色棉布袖口，不展示人物面部。
+
+整体剪辑快速而富有韵律。
+通过动作方向、圆形轮廓、食材质感与相近构图进行自然匹配剪辑（match cuts）。
+每个镜头只有一个清晰的主要动作。
+关键的擀压、翻面、出炉与掰开动作保持连贯。
+
+时间轴（TIMELINE）
+
+0–2 秒 —— 老弄堂里的清晨
+近景镜头从小铺木窗边缓缓向内移动。
+清晨阳光斜落在木质案板上。
+摊主将一块已经醒好的柔软面团放在案板中央。
+面团落下时轻轻变形，表面细腻，带有柔和光泽。
+背景中的石库门与灰砖墙保持虚化。
+
+2–4.5 秒 —— 揉压面团
+切换至案板上方的斜俯拍特写。
+掌根向前推压面团，再将其折回。
+面团随着手掌自然伸展、折叠，呈现柔软而有韧性的质感。
+案板上的少量面粉被推开，留下清晰的揉压痕迹。
+
+4.5–6.5 秒 —— 切葱
+微距侧拍：洗净并沥干的青葱整齐放在案板上。
+刀刃有节奏地落下，切出细小均匀的葱花。
+葱白与翠绿葱叶交错散开。
+切口湿润，新鲜葱段随着刀刃轻轻跳动。
+镜头沿刀刃前进的方向短距离跟随。
+
+6.5–9 秒 —— 擀开与抹油
+通过手部向前移动的动作匹配，切换到擀面镜头。
+一份面剂被擀成较薄的长形面片。
+用小勺背将少量半凝固的猪油均匀抹开，
+在面片上形成一层薄薄的润泽油膜。
+随后撒上少量盐和切好的葱花。
+葱花自然散落在面片上，不堆成厚厚一团。
+
+9–12 秒 —— 卷起与盘圆
+保持同一个斜俯拍镜头。
+双手从面片长边开始，将其卷成细长面卷。
+随后把面卷从一端盘成紧凑的螺旋形，
+将末端轻轻压在底部。
+面团随着手指弯曲，葱花被包入层层面皮之间。
+动作清楚、连续，面团不突然改变形状。
+
+12–14 秒 —— 压成圆饼
+切换到贴近案板的低角度特写。
+手掌缓缓压下螺旋面团，形成厚实的小圆饼。
+饼身逐渐展开，边缘自然变圆，
+表面仍保留淡淡的盘卷纹理，
+局部能看到薄面皮下透出的绿色葱花。
+
+14–17 秒 —— 入锅煎制
+利用圆饼的轮廓进行匹配剪辑，切到旧铁煎锅的斜俯拍。
+摊主将圆饼平稳放入带有薄层热油的锅中。
+接触锅面的瞬间，饼边出现细密气泡。
+热油沿圆饼边缘轻轻流动。
+通过一次自然的时间跳切，
+表现饼边逐渐定型，并染上浅金黄色。
+
+17–19.5 秒 —— 翻面
+低机位微距特写。
+金属锅铲从饼底完整托起，将葱油饼翻面一次。
+翻转时露出已经煎成金黄色的一面，
+表面分布着深浅不一的焦斑与细小鼓泡。
+圆饼落回锅中，响起清脆的滋啦声。
+饼身保持完整，厚度与大小不变。
+
+19.5–22 秒 —— 入炉烘香
+侧面近景。
+摊主用长柄铲将煎至两面金黄的葱油饼送入小烘炉，
+平放在炉内烤架上。
+暖橙色炉光映亮饼面。
+以时间跳切切至炉口特写：
+葱油饼表面变得更干爽酥脆，
+边缘的薄面层略微翘起，焦斑颜色加深。
+轻微热气从炉口缓缓逸出。
+
+22–24 秒 —— 出炉
+镜头跟随长柄铲向外移动。
+烘好的葱油饼被轻轻放到木台上的金属沥油网上。
+落下时发出轻微而干脆的触碰声。
+晨光掠过起伏的饼面，
+细致表现酥壳、焦斑与少量露出的葱花。
+表面只保留薄薄油光，不滴油。
+
+24–27 秒 —— 掰开特写
+极近距离拍摄。
+双手隔着一张无文字的牛皮纸，轻轻掰开葱油饼。
+外层酥壳先出现裂纹，随后自然断开，
+少量金黄色碎屑落在纸上。
+内部柔软的面层随动作短暂牵连，再缓缓分开。
+断面露出层层面皮与翠绿、深绿交错的熟葱花，
+细薄热气从中心升起。
+重点表现外脆内软的质感。
+
+27–30 秒 —— 最终展示（Hero Reveal）
+两半葱油饼放在铺有无文字牛皮纸的竹编小盘中，
+其中一半略微倾斜，清楚展示内部层次。
+金黄酥壳、深色焦斑、柔软面层与葱花同时可见。
+
+镜头从断面微距缓慢后拉，
+逐渐带出木质窗台和虚化的老上海弄堂。
+清晨暖光照亮薄薄升起的热气，
+远处隐约传来一声自行车铃。
+以温暖、朴素而精致的动漫美食电影感结尾。
+
+音频（AUDIO）
+
+轻快、温暖、带有老上海清晨气息的爵士器乐，
+速度为 105–115 BPM，
+使用柔和钢琴、拨弦低音提琴与轻巧的刷奏鼓，
+加入少量温润的单簧管旋律。
+无歌词、无人声旁白。
+音乐保持轻盈，不盖过制作声音。
+
+同步加入真实、细腻的 ASMR 烹饪音效：
+面团落在案板上的轻响、
+掌根揉压面团的声音、
+有节奏的切葱声、
+擀面杖滚动声、
+撒落葱花的细微声响、
+圆饼入锅后的滋啦声、
+锅铲接触铁锅的声音、
+出炉后轻放在金属网上的声音、
+牛皮纸轻轻摩擦的声音、
+以及掰开酥壳时清晰的碎裂声。
+
+掰开葱油饼时，适当降低背景音乐，
+突出外壳断裂的酥脆声音。
+结尾用一声远处轻巧的自行车铃自然收尾。
+
+负面约束（NEGATIVE）
+
+不要出现任何：
+分镜图、参考图、草图、画格、边框、数字、箭头、标注、
+字幕、说明文字、UI、Logo、水印或文字叠加。
+
+不要出现其他菜品。
+不要加入鸡蛋、芝士、火腿、辣酱或无关配料。
+不要把葱油饼制作成薄脆煎饼、手抓饼、披萨或带大块馅料的馅饼。
+不要出现芝士式拉丝、夸张爆汁或不合理的食物膨胀。
+不要出现浓烟、火焰包围食物或过量飞溅的热油。
+不要出现现代塑料包装、霓虹灯或日式店铺装饰。
+
+避免多余手指、手部穿透食物、厨具变形，
+以及面团、葱花或成品突然增多、消失、变换形状。
+
+确保整支视频中的：
+同一张葱油饼的大小与厚度、
+摊主的双手与衣袖、
+厨具、操作台、光线方向与小铺环境
+都保持视觉一致性。`,
+    },
+  },
+  {
+    id: "anime-katsudon",
+    title: "日式猪排饭 Katsudon",
+    subtitle: "X · Goodmanprotocol · 30秒 · 16:9",
+    description:
+      "完整展示日式炸猪排盖饭制作流程：敲打猪肉、裹面包糠、油炸、切片、煨煮洋葱与高汤、滑蛋、盖浇米饭。快节奏动漫美食电影风格，搭配80年代日式城市流行乐器乐与ASMR烹饪音效。",
+    video: "/tutorials/anime-katsudon/demo-web.mp4",
+    poster: "/tutorials/anime-katsudon/poster.jpg",
+    duration: "30秒",
+    shots: 11,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "日式动漫美食 · 快节奏",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Goodmanprotocol/status/2098845134326808734",
+    sourceAuthor: "@Goodmanprotocol",
+    sourcePlatform: "X",
+    tags: [
+      "30秒 · 11 制作节拍",
+      "无参考图 · 纯文生可跟做",
+      "Seedance 2.5",
+      "日式动漫美食电影风格",
+      "80年代城市流行乐",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂美食制作节奏",
+        description:
+          "敲打猪肉→裹粉→炸制→切片→煨煮高汤洋葱→加入炸猪排→淋蛋液→滑蛋凝固→准备米饭→盖浇成品→英雄展示。核心是真实烹饪物理（面糊附着、油泡、蛋液流动）+ 快速剪辑匹配 + 日式厨房氛围。",
+      },
+      {
+        number: 2,
+        title: "选择模型与设置",
+        description:
+          "Seedance 2.5。16:9 · 30s · 打开声音（80年代日式城市流行乐器乐 + ASMR 烹饪音效：敲打、油炸滋啦、刀切、气泡、蛋液倾倒）。无需参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持温暖日式厨房光；真实食材纹理；面糊附着物理；油炸气泡细节；蛋液半熟微颤；米饭光泽；负面提示：无文字叠加/无不相关食材/保持一致性。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–2.5s 准备猪肉：特写双手用木槌敲打厚猪里脊，肉逐渐变薄，纤维松弛，均匀撒盐和胡椒。清脆有节奏的敲打声。",
+      },
+      {
+        number: 2,
+        description:
+          "2.5–5s 裹面包糠：快速匹配剪辑——猪肉按入面粉、浸入打散的蛋液、牢固裹上粗面包糠。真实蛋液滴落与面包糠附着。",
+      },
+      {
+        number: 3,
+        description:
+          "5–7.5s 油炸：将裹好的猪排放入热油，猛烈气泡包围炸猪排，外壳变成金黄酥脆。温暖电影光与细腻油流动。",
+      },
+      {
+        number: 4,
+        description:
+          "7.5–9.5s 切片：炸好的猪排放在木板上，锋利的刀切成均匀条状，酥脆外壳自然裂开，露出多汁白色猪肉，轻微蒸汽逸出。",
+      },
+      {
+        number: 5,
+        description:
+          "9.5–12s 煨煮高汤与洋葱：切薄的洋葱在琥珀色高汤中的浅锅里轻轻煨煮，小气泡升起，洋葱变透明。筷子轻轻拨动。",
+      },
+      {
+        number: 6,
+        description:
+          "12–14s 加入猪排：用筷子将切好的炸猪排小心放在煨煮的洋葱上，汤汁开始浸入酥脆边缘，蒸汽升起。",
+      },
+      {
+        number: 7,
+        description:
+          "14–16.5s 淋蛋液：缓慢倾倒打散的金黄蛋液在猪排和洋葱上，蛋液自然流过缝隙，热边缘开始凝固。",
+      },
+      {
+        number: 8,
+        description:
+          "16.5–19s 滑蛋凝固：特写蛋液在小火上轻轻凝固，边缘变软金黄，中心保持光泽、微流动、微颤。无搅拌。",
+      },
+      {
+        number: 9,
+        description:
+          "19–21s 准备米饭：白色陶瓷丼碗盛满蒸腾的日本短粒米饭，米饭看起来蓬松且略带光泽。",
+      },
+      {
+        number: 10,
+        description:
+          "21–24s 盖浇：小心将锅中的蛋液猪排混合物滑入米饭上，蛋液自然落成柔和波浪，高汤轻微浸入米饭。",
+      },
+      {
+        number: 11,
+        description:
+          "24–30s 英雄展示：完成的猪排饭静置在台面上，光泽蛋液慢慢落在猪排和米饭上，轻轻颤动。慢速电影推进。最终呈现在传统蓝白陶瓷碗中的成品，金色蛋液覆盖酥脆猪排盖在光泽米饭上，顶部新鲜三叶草，蒸汽升起，镜头缓慢环绕碗身，以美丽的动漫美食电影感结尾。",
+      },
+    ],
+    constraints:
+      "温暖日式厨房光；真实食材纹理；面糊附着与油炸物理；蛋液半熟微颤；米饭光泽；保持一致性；来源 Goodmanprotocol/X；Seedance 2.5。",
+    video_prompt: {
+      title: "日式猪排饭 Katsudon · 30s · 16:9",
+      subtitle: "Seedance 2.5 · 日式动漫美食电影风格",
+      content: `Create a 30-second fast-paced cinematic Japanese anime cooking video showing the preparation of authentic katsudon, entirely from the text description below.
+
+IMPORTANT: Do not display, recreate, trace, reference, or imitate any storyboard, sketch, reference image, panel, annotation, or source material. Generate only original anime-style animation.
+
+STYLE
+
+High-quality Japanese anime film style, cinematic summer lighting, ultra-detailed food textures, realistic cooking physics, visible steam and moisture, shallow depth of field, macro close-ups, smooth camera movement, warm Japanese kitchen atmosphere. Fast rhythmic editing with natural match cuts based on movement, shape, texture, and composition.
+
+TIMELINE
+
+0–2.5s — Prepare Pork
+Close-up of hands pounding a thick pork loin with a wooden mallet on a cutting board. The meat gradually flattens and its fibers loosen. Sprinkle salt and pepper evenly. Crisp rhythmic impacts.
+
+2.5–5s — Bread the Pork
+Quick match cuts: press the pork into flour, dip into beaten egg, then firmly coat with coarse panko breadcrumbs. Show realistic egg dripping and breadcrumbs adhering to the surface.
+
+5–7.5s — Fry
+Lower the breaded pork into hot golden oil. Intense bubbling surrounds the cutlet as the crust turns golden brown and crispy. Warm cinematic lighting and detailed oil movement.
+
+7.5–9.5s — Slice
+Place the fried tonkatsu on a wooden board. A sharp knife cuts it into even strips. The crispy crust cracks naturally, revealing juicy white pork with gentle steam escaping.
+
+9.5–12s — Simmer Dashi & Onion
+Thinly sliced onions gently simmer in amber dashi inside a shallow pan. Small bubbles rise while the onions become translucent. Chopsticks gently move them through the broth.
+
+12–14s — Add Tonkatsu
+Place the sliced tonkatsu carefully over the simmering onions using chopsticks. The broth begins soaking into the crispy edges while steam rises.
+
+14–16.5s — Pour Egg
+Slowly pour beaten golden egg over the tonkatsu and onions. The egg spreads naturally through the gaps and begins setting around the hot edges.
+
+16.5–19s — Set the Egg
+Close-up of the egg gently coagulating over low heat. Edges become soft and golden while the center remains glossy, slightly runny, and trembling. No stirring.
+
+19–21s — Prepare Rice
+A white ceramic donburi bowl receives a generous mound of steaming Japanese short-grain rice. The rice looks fluffy and slightly glossy.
+
+21–24s — Assemble
+Carefully slide the egg-and-tonkatsu mixture from the pan onto the rice. The egg settles naturally in a soft wave while dashi lightly absorbs into the rice.
+
+24–26s — Final Close-Up
+The finished katsudon rests on the counter. Glossy egg slowly settles over the tonkatsu and rice, gently trembling. Slow cinematic push-in.
+
+26–30s — Hero Reveal
+Present the finished katsudon in a traditional blue-and-white ceramic bowl on a wooden surface. Golden egg covers crispy tonkatsu over glossy rice, topped with fresh mitsuba. Steam rises as the camera slowly arcs around the bowl for a beautiful anime-food-film ending.
+
+AUDIO
+
+Bright 1980s-inspired Japanese city-pop instrumental, 110–120 BPM, with subtle koto and light chime percussion. Synchronize realistic ASMR cooking sounds: mallet impacts, knife slicing, frying sizzle, bubbling dashi, chopsticks, egg pouring, steam, and a soft ceramic clink.
+
+End with one delicate wind-chime tone during the final reveal.
+
+NEGATIVE
+
+No storyboard, reference image, sketch, panels, borders, numbers, arrows, annotations, subtitles, captions, UI, logos, or text overlays. No unrelated ingredients or dishes. Katsudon only. Keep the food, hands, utensils, lighting, and environment visually consistent throughout.`,
+    },
+  },
+  {
     id: "fridge-freshness-perfected",
     title: "冰箱广告：新鲜尽在掌握",
     subtitle: "X · HeyRu0by · 10秒 · 9:16",
