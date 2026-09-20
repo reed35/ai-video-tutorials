@@ -2,6 +2,245 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "umesh-again-nature-ad",
+    title: "AGAIN · 单图自然广告",
+    subtitle: "X · @umesh_ai · 约30秒 · 16:9",
+    description:
+      "单张图片生成 30 秒自然广告：巨树雨雾景观的 15 个镜头，从水滴微距到航拍揭示，最后回归参考构图。成片 16:9 横屏，进入胶片条候选。",
+    video: "/tutorials/umesh-again-nature-ad/demo-web.mp4",
+    poster: "/tutorials/umesh-again-nature-ad/poster.jpg",
+    duration: "30秒",
+    shots: 15,
+    references: 1,
+    model: "图生视频 / 单图 master reference",
+    style: "电影级自然广告 · 雨雾氛围",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/umesh_ai/status/2100823564505248175",
+    tags: [
+      "30秒 · 15 镜头",
+      "16:9 横屏 · 进胶片条",
+      "1 张 master 参考图",
+      "单图生成 · 完整叙事",
+      "雨雾自然景观",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂单图 master 参考策略",
+        description:
+          "整片 30 秒从单张巨树雨雾景观图衍生。提示词锁定参考中的树形、地形、光线、雾层与人物方位，所有 15 个镜头在同一场景内连续展开：微距水滴→航拍揭示→地面接近→树干仰望→环绕树根→手触湿皮→冠层雨幕→人物侧影→最终回到参考构图 + 字幕 AGAIN / Come back.。关键是维持树木几何、光线位置与雾层连续性，不跳切到其他地点，不重新设计树的样子。",
+      },
+      {
+        number: 2,
+        title: "上传 REF01 作为 master visual reference",
+        description:
+          "将 REF01.jpg（巨树雨雾景观图）上传作为 master reference。提示词中要求 Preserve reference's enormous solitary tree, trunk branches, emerald meadow, white flowers, water, valley walls, atmospheric depth。必须遵守这张参考的树木比例、分支架构、地形、水面位置与悬崖形态。16:9 横屏 · 24fps · 30s · 打开声音（连续雨声 + 最后一个低沉音符）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 15-shot 提示词",
+        description:
+          "保持提示词完整，包括：参考连续性要求（树形、地形、光线）· 人物一致性（锈橙外套、从树前走到树根）· 15 个精确时间戳镜头（00:00–00:02 草尖水滴 → 00:28–00:30 回到参考构图 + 字幕）· 雨雾渐进规律（0–8s 细雨轻雾 → 17.5–23.5s 最密雨幕 → 25.5–30s 渐缓回光）· 声音设计（无旁白，连续雨声 + 滴水 + 呼吸 + 最后低音）· 字幕出现 00:28.2 AGAIN / Come back. 左下安全区，00:29.7 淡出。负面提示：无模型名瞎编/无跳切到其他地点/无重新设计树的外形/无戏剧摆姿/无金色时刻变换/无超自然 HDR 光晕。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "REF01",
+        number: "REF01",
+        title: "巨树雨雾景观 master 参考",
+        subtitle: "单图衍生全片 · 锁定树形地形光线",
+        image: "/tutorials/umesh-again-nature-ad/refs/REF01.jpg",
+        prompt:
+          "（无单独出图词；此参考图作为 master visual reference 上传，提示词中已要求 Preserve the reference's enormous solitary broad-canopied tree, distinctive trunk and branches, emerald meadow, white flowers, shallow foreground water, steep forest-covered valley walls and immense atmospheric depth. The closing landscape framing matches the reference, with the traveler now beside the tree's roots. Build every angle within this same landscape.）",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:02 草尖水滴：100mm 微距，雨滴挂在草尖上方，背景巨树柔焦，滴落瞬间银光边缘。教练提示：先建立最微小尺度，为后续航拍反差做铺垫。",
+      },
+      {
+        number: 2,
+        description:
+          "00:02–00:04 水面倒影：50mm 低角度水池，树冠倒影充满水面，水滴落入引发涟漪打碎倒影。教练提示：承接上一镜水滴落下，连续雨声保持。",
+      },
+      {
+        number: 3,
+        description:
+          "00:04–00:06.5 航拍揭示：24mm 广角高倾斜俯视，薄雾飘开，揭示巨树、湿草地、前景水面与陡峭森林谷壁。教练提示：从微观跳到宏观，声场打开成广阔雨空间，人物几乎看不见。",
+      },
+      {
+        number: 4,
+        description:
+          "00:06.5–00:08.5 远长焦接近：135mm 跨草地压缩人物、发光树干与后方雾层，人迈一小步左→右靠近树根。教练提示：保持树巨大、人渺小；细雨在暗林前可见。",
+      },
+      {
+        number: 5,
+        description:
+          "00:08.5–00:10 地面跟踪：24mm 贴草地高度横移跟靴子，雨水花草近前景视差，一只靴子踩草排水。教练提示：匹配行走方向，柔湿脚步声。",
+      },
+      {
+        number: 6,
+        description:
+          "00:10–00:12 纪念碑般低仰角：21mm 从树根旁，湿树干缓慢仰拍到首个大分叉节点（不尝试根到顶全景）。教练提示：强调树皮肌理、巨大重量与自然不对称，顶部银光叶颤。",
+      },
+      {
+        number: 7,
+        description:
+          "00:12–00:14 树根浅环绕：35mm 中广角腰高，绕树近侧 10–15° 浅弧，人迈最后一小步停在触手可及距离。教练提示：保持在已建立的动作侧，前景树根与远景峭壁视差；勿绕全圈重新设计树的背侧。",
+      },
+      {
+        number: 8,
+        description:
+          "00:14–00:16 过肩邀请：50mm 人物身后取肩边缘，湿树干直前方，缓推令树皮更临在，人开始抬手朝它。教练提示：树干外后方柔银雾口透出细雨，保持广阔自然光，非戏剧聚光。",
+      },
+      {
+        number: 9,
+        description:
+          "00:16–00:17.5 触觉树皮特写：100mm 近焦细节，手指轻触雨湿树皮（承接上一镜抬手），框取手的可信局部（非全掌扑向镜头），细溪流沿皮槽落在指旁。教练提示：缩窄声场到树皮水声、衣料与安静呼吸；解剖自然手指，无紧握。",
+      },
+      {
+        number: 10,
+        description:
+          "00:17.5–00:20 冠层内仰视：18mm 枝下陡仰望稍外倾，缓微仰显露交错枝与叶层，雨从间隙落下，大滴从叶尖释放。教练提示：冠外更重雨幕对峭壁，庇护感亲密但仍湿；叶轻动，非同步波浪模式。",
+      },
+      {
+        number: 11,
+        description:
+          "00:20–00:21.5 垂直俯视水坑细节：50mm 正俯同一外露树根旁，人将一只靴子挪几厘米入浅水坑定住姿势（未离开树），倒影树枝碎为柔波。教练提示：真实水深、小位移与底下泥；无大溅水/跺脚/新行走旅程。",
+      },
+      {
+        number: 12,
+        description:
+          "00:21.5–00:23.5 安静人物侧影：85mm 紧侧影含肩与局部阴影脸，人站树干旁静止，唯缓呼气与轻微肩放松。教练提示：细滴挂发与锈橙衣料，后方雨幕成柔高光；无眼泪/美妆摆拍/夸张表情；让环境而非面部表演承载情感。",
+      },
+      {
+        number: 13,
+        description:
+          "00:23.5–00:25.5 远侧景观：28mm 超广从草地侧，树、其近侧根与微小人仍地理一致，大致锁定构图。教练提示：一低阵风梳过近湿草，再轻搅外枝；一条雾带穿树干后不遮它；这是一次连贯自然事件，非暴风/气象重置/延时。",
+      },
+      {
+        number: 14,
+        description:
+          "00:25.5–00:28 广角起落退离：24mm 始已广阔，缓升缓退，显露更多前景水并通过视差分离树与雾峭壁。教练提示：勿从人特写发射到山航拍；人留在树根，几乎在景观中消失。雨开始减弱；漫银光轻强于树冠；引入单个温暖克制乐音。",
+      },
+      {
+        number: 15,
+        description:
+          "00:28–00:30 参考匹配英雄帧：落定参考景观构图——巨树居中偏右、暗林墙、发光草地与前景水，微小锈橙人现于左侧根旁。教练提示：雾飘冠后，细雨续；树感古老静默压倒。00:28.2 淡入小号常规体白字于清晰左下安全区：AGAIN / Come back.；勿盖人或树；无额外文案或编造标志；00:29.7 淡出，留景观干净到末帧。",
+      },
+    ],
+    constraints:
+      "必须单图 master reference（REF01）维持树形、分支架构、地形、水面与悬崖；雨雾光线连续性（0–8s 轻 → 17.5–23.5s 最密 → 25.5–30s 渐缓）；人物一致（锈橙外套从树前走到树根，无跳切他处）；15 个精确时间戳镜头；片尾字 00:28.2–00:29.7 AGAIN / Come back. 左下；无模型名瞎编/无跳地点/无重设计树/无金色时刻变换/无超自然光晕。来源 @umesh_ai · sourceImpressions 26896。",
+    video_prompt: {
+      title: "AGAIN · 30s · 16:9 · 15 shots",
+      subtitle: "图生视频 / 单图 master reference · 电影级自然广告",
+      content: `Prompt : Create a 30-second cinematic nature-retreat advertisement titled "AGAIN", using the uploaded image as the master visual reference. Exactly 15 shots, landscape 16:9, 24 fps, photorealistic imagery. The emotional journey: discovery, approach, touch, surrender, longing. Make the viewer feel physically present in cool, rain-soaked air. Nature is the hero; the traveler provides scale. Sell the feeling of being here.
+
+REFERENCE AND CONTINUITY
+
+Preserve the reference's enormous solitary broad-canopied tree, distinctive trunk and branches, emerald meadow, white flowers, shallow foreground water, steep forest-covered valley walls and immense atmospheric depth. The closing landscape framing matches the reference, with the traveler now beside the tree's roots.
+
+Build every angle within this same landscape. Infer unseen surfaces conservatively. Maintain tree proportions, branch architecture, terrain, water placement and cliff formations across all cuts.
+
+Use one adult traveler in the reference's muted rust-orange outer garment, dark trousers and plain dark boots. Keep clothing, proportions and appearance consistent. Mostly show them distant, from behind or in partial silhouette. No posing or theatrical gestures. They begin a few paces from the tree and gradually reach its near-side roots. No teleportation.
+
+LIGHT, WEATHER AND TEXTURE
+
+Cool, diffused storm daylight. A broad cloud opening above the valley's right ridge softly illuminates the tree against darker cliffs. Keep this light geographically consistent across angles. Deep emerald greens, blue-grey distance, charcoal wet bark, silver highlights and one muted rust-orange accent. Gentle contrast, rich shadows, subtle film grain, realistic depth of field. No golden-hour transformation, excessive HDR or supernatural glow.
+
+Rain exists from the first frame. Show occasional soft foreground streaks, fine midground drops revealed by backlight and distant rain dissolving into haze. Water beads on leaves, runs along bark, darkens fabric and creates overlapping puddle ripples. Gravity and wind affect droplets consistently. The canopy interrupts direct rain, but branches still drip heavily. It is shelter, not a magically dry umbrella.
+
+Use layered fog: almost transparent near the camera, thin drifting ribbons behind the tree, denser blue-grey mist concealing distant cliffs. Fog moves slowly through the valley rather than boiling or covering everything evenly. Preserve separation between trunk, canopy and background. The tree remains recognizable.
+
+Weather progression: 0–8 seconds, delicate rain and drifting mist; 8–17.5 seconds, increasingly audible steady rain; 17.5–23.5 seconds, the fullest rain curtain and most enclosing atmosphere; 23.5–25.5 seconds, one gentle wind pulse; 25.5–30 seconds, softer rainfall and a subtle return of silver light. No sudden storm, weather reset or time-lapse.
+
+CAMERA AND EDITING
+
+Use physically plausible camera moves, one action and one movement per shot. Favor patient observation. Start moves already in progress so short shots do not feel hurried. No whip pans, speed ramps, spinning transitions or impossible acceleration. Scale rhythm: intimate detail, immense landscape, human experience, intimate detail, immense landscape.
+
+Follow the exact cut points below. Use clean cuts, not morphs. During the approach, keep the traveler moving left to right toward the trunk. Carry rain and wind continuously across cuts.
+
+15-SHOT TIMELINE
+
+01 | 00:00.0–00:02.0 | EXTREME MACRO, GRASS AT THE WATER'S EDGE
+
+100 mm macro, side-on at grass height, nearly stationary. A clear droplet hangs from the tip of one rain-darkened grass blade above shallow water. The meadow and massive tree are soft, recognizable shapes far behind it. The blade bows slightly; the droplet elongates and releases near the end. Silver light catches its edge without a fake sparkle. Hear one intimate water sound against distant rain.
+
+02 | 00:02.0–00:04.0 | WATERLINE REFLECTION
+
+50 mm, lens just above the same pool, low grazing angle. Begin with the tree's inverted reflection filling the water. The falling drop lands immediately, continuing Shot 01, and concentric ripples gently fracture the reflected canopy. Make a tiny forward drift, keeping the actual tree mostly outside the frame. Fine secondary rain impacts appear naturally. Cut on an expanding ring; do not morph the water into the next image.
+
+03 | 00:04.0–00:06.5 | HIGH OBLIQUE AERIAL REVEAL
+
+24 mm wide, elevated oblique view looking down the valley. A thin veil of mist drifts aside as the camera descends only slightly, revealing the same monumental tree, wet meadow, foreground water and steep forest walls. The person is almost imperceptible near the tree. Maintain natural perspective and the established terrain. The atmosphere opens sonically into a vast, rain-filled space.
+
+04 | 00:06.5–00:08.5 | DISTANT TELEPHOTO APPROACH
+
+135 mm from across the meadow, near human eye level. Compress the traveler, luminous trunk and layered fog behind them. The traveler takes one unhurried step left to right, already close to the near-side roots. Fine rain becomes visible against the dark forest. Nearly locked camera with a subtle push. Keep the tree monumental and the person small; this is not a fashion shot.
+
+05 | 00:08.5–00:10.0 | GROUND-LEVEL TRACKING
+
+24 mm, camera just above the wet grass, moving slowly beside the traveler's lower legs. Rain-laden white flowers and individual blades pass close to the lens with gentle foreground parallax. One boot presses the grass down, displacing a little surface water. The lower trunk stays ahead in the upper frame. Match the previous walking direction and use a soft, wet footstep.
+
+06 | 00:10.0–00:12.0 | MONUMENTAL LOW ANGLE
+
+21 mm from beside the near-side roots. Start on the broad, soaked trunk and slowly tilt upward into its first great branching junction, never attempting a full root-to-sky reveal in two seconds. Emphasize bark texture, immense weight and natural asymmetry. Silver-lit leaves tremble overhead. A few nearer rain streaks cross the lens; no artificial wide-angle stretching.
+
+07 | 00:12.0–00:14.0 | SHALLOW ORBIT AT THE ROOTS
+
+35 mm medium-wide, approximately waist height. Move through a restrained 10–15-degree arc around the near side of the tree, staying on the established side of the action. The traveler takes the last small step and stops within arm's reach of the trunk. Foreground roots shift gently against distant cliffs through parallax. Never perform a full circle or redesign the tree's unseen side.
+
+08 | 00:14.0–00:16.0 | OVER-THE-SHOULDER INVITATION
+
+50 mm from just behind the traveler, framing their shoulder at the edge and the wet trunk directly ahead. A subtle push brings the bark into greater presence. The traveler begins raising one hand toward it. Beyond the trunk, a soft silver opening in the fog reveals fine falling rain. Keep the light broad and natural, not a theatrical spotlight or laser beam.
+
+09 | 00:16.0–00:17.5 | TACTILE BARK CLOSE-UP
+
+100 mm close-focus detail. Continue the same hand movement as fingertips gently meet rain-soaked bark. Frame a small, believable portion of the hand rather than a full palm spread toward camera. A thin rivulet follows a bark groove beside the fingers and falls away. Anatomically natural fingers, subtle skin pressure, no gripping. Narrow the sound perspective to water on bark, fabric and quiet breath.
+
+10 | 00:17.5–00:20.0 | UPWARD VIEW INSIDE THE CANOPY
+
+18 mm, camera beneath the branches looking steeply upward and slightly outward. A slow, minimal tilt reveals the interlocking limbs and leaf layers of the same tree. Rain falls through gaps while larger drops release from leaf tips. Beyond the canopy edge, heavier rain forms a translucent curtain against the cliffs. The shelter feels intimate but remains wet. Leaves move gently, never as synchronized waving patterns.
+
+11 | 00:20.0–00:21.5 | VERTICAL TOP-DOWN PUDDLE DETAIL
+
+50 mm looking straight down beside the same exposed root. The traveler shifts one boot a few centimeters into a shallow puddle, settling their stance without leaving the tree. A reflected branch breaks into soft ripples. Show realistic water depth, a small displacement and mud beneath the surface. No large splash, stomping or new walking journey.
+
+12 | 00:21.5–00:23.5 | QUIET HUMAN PROFILE
+
+85 mm, tight side profile including shoulder and a partially shadowed face. The traveler stands beside the trunk, motionless except for a slow exhale and a slight release of shoulder tension. Tiny drops cling to hair and rust-orange fabric. The rain curtain becomes soft highlights behind them. No tears, beauty posing or exaggerated expression. Let the environment, not facial performance, carry the emotion.
+
+13 | 00:23.5–00:25.5 | DISTANT LATERAL LANDSCAPE
+
+28 mm ultra-wide from the meadow's side, with the tree, its near-side roots and the tiny traveler still geographically consistent. Mostly locked composition. One low gust combs through the nearby wet grass, then lightly stirs the outer branches. A ribbon of fog passes behind the trunk without concealing it. This is one connected natural event, not a violent storm.
+
+14 | 00:25.5–00:28.0 | WIDE CRANE WITHDRAWAL
+
+24 mm, beginning already wide. Rise and retreat slowly, revealing slightly more foreground water and separating the tree from the misty cliffs through parallax. Do not launch from a human close-up into a mountain aerial. The traveler remains at the roots, almost lost in the landscape. Rain starts easing; diffuse silver light gently strengthens across the crown. Introduce a single warm, restrained musical tone.
+
+15 | 00:28.0–00:30.0 | REFERENCE-MATCHED HERO FRAME
+
+Settle into the reference's landscape composition: enormous tree right of center, dark forest walls, luminous meadow and foreground water. The tiny rust-orange traveler now stands by the left-side roots. Fog drifts behind the canopy. Fine rain continues. The tree feels ancient and quietly overwhelming.
+
+At 00:28.2, fade in small, regular-weight off-white typography in a clear lower-left safe area:
+
+AGAIN
+Come back.
+
+Never cover the traveler or tree. No additional copy or invented logos. Fade text out by 00:29.7, leaving the landscape clean through the last frame. If accurate lettering is unavailable, leave the area empty for editorial typography.
+
+SOUND AND REPLAY
+
+No voice-over or dialogue. Layer fine rain on grass, brighter rain on leaves overhead, heavy canopy drips, wet footsteps, cloth movement, valley wind and quiet breathing. Keep rain continuous across cuts, adjusting its apparent distance to camera position. No thunder hits, trailer impacts, whooshes or orchestral climax.
+
+Move from microscopic water detail to broad aerial ambience, back to intimate hand contact, then outward into the final landscape. Music stays absent until the last two shots: one low, warm sustained note beneath nature. Let this note disappear into the rainfall before the ending.
+
+Let the final water texture and continuous rain lead back into the opening droplet. Replay feels like entering the same world again through a wide-to-macro cut, not a forced seamless morph. No fade to black, music sting or obvious stop.`,
+    },
+  },
+  {
     id: "abxxai-riviera-fashion-campaign",
     title: "里维埃拉时尚大片 · 1960s",
     subtitle: "X · @abxxai · 约24秒 · 16:9",
