@@ -2,7 +2,6 @@ import Link from "next/link";
 import { getTutorialById, tutorials } from "@/lib/tutorials";
 import { notFound } from "next/navigation";
 import { PromptBlock } from "@/components/prompt-block";
-import { VideoPreload } from "@/components/video-preload";
 
 export function generateStaticParams() {
   return tutorials.map((tutorial) => ({
@@ -25,6 +24,10 @@ export async function generateMetadata({
   return {
     title: `${tutorial.title} - 成片拆解`,
     description: tutorial.description,
+    other: {
+      "link-preload-video": tutorial.video,
+      "link-preload-poster": tutorial.poster,
+    },
   };
 }
 
@@ -42,7 +45,6 @@ export default async function TutorialPage({
 
   return (
     <div className="max-w-[980px] mx-auto px-[18px] py-7 pb-20">
-      <VideoPreload videoSrc={tutorial.video} posterSrc={tutorial.poster} />
       <header className="flex items-center gap-3 mb-8 py-4">
         <Link
           href="/"
@@ -97,6 +99,8 @@ export default async function TutorialPage({
               }))`,
             }}
           >
+            <link rel="preload" as="video" href={tutorial.video} type="video/mp4" />
+            <link rel="preload" as="image" href={tutorial.poster} />
             <video
               className="w-full h-full object-contain"
               controls
@@ -126,23 +130,44 @@ export default async function TutorialPage({
                 {step.number}
               </div>
               <h3 className="text-[15px] font-bold mb-1.5">{step.title}</h3>
-              <p className="text-[var(--muted)] text-[13px]">
+              <p className="text-[var(--muted)] text-[13px] mb-3">
                 {step.description}
               </p>
+              {step.video && (
+                <div className="mt-3">
+                  <div
+                    className="rounded-xl overflow-hidden bg-black border border-[var(--line)]"
+                    style={{
+                      aspectRatio: step.aspectRatio ?? "16/9",
+                    }}
+                  >
+                    <video
+                      className="w-full h-full object-contain"
+                      controls
+                      playsInline
+                      preload="metadata"
+                      poster={step.poster}
+                    >
+                      <source src={step.video} type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
       </section>
 
-      <section className="mt-9">
-        <h2 className="text-xl font-bold mb-1.5 tracking-tight">
-          步骤一 · 做出这 {tutorial.references} 张参考图
-        </h2>
-        <p className="text-[var(--muted)] text-sm mb-4">
-          推荐用 GPT Image / 同等图模,比例 4:3。每张点开即可复制完整英文提示词。
-        </p>
+      {tutorial.references_detail.length > 0 && (
+        <section className="mt-9">
+          <h2 className="text-xl font-bold mb-1.5 tracking-tight">
+            步骤一 · 做出这 {tutorial.references} 张参考图
+          </h2>
+          <p className="text-[var(--muted)] text-sm mb-4">
+            推荐用 GPT Image / 同等图模,比例 4:3。每张点开即可复制完整英文提示词。
+          </p>
 
-        {tutorial.references_detail.map((ref, idx) => (
+          {tutorial.references_detail.map((ref, idx) => (
           <article
             key={ref.id}
             id={ref.id}
@@ -180,8 +205,9 @@ export default async function TutorialPage({
               </PromptBlock>
             </details>
           </article>
-        ))}
-      </section>
+          ))}
+        </section>
+      )}
 
       <section className="mt-9">
         <h2 className="text-xl font-bold mb-1.5 tracking-tight">
