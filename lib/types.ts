@@ -18,6 +18,8 @@ export interface Tutorial {
   video_prompt: VideoPrompt;
   aspectRatio?: string;
   sourceUrl?: string;
+  sourceAuthor?: string;
+  sourcePlatform?: string;
 }
 
 export interface Step {

@@ -45,7 +45,7 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
       <article className="bg-gradient-to-b from-[var(--panel2)] to-[var(--panel)] border border-[var(--line)] rounded-3xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.35)] transition-all hover:shadow-[0_30px_100px_rgba(0,0,0,0.5)] hover:scale-[1.01]">
         <div className="p-5 pb-2">
           <div className="inline-flex items-center gap-2 text-[var(--accent)] text-[11px] font-semibold tracking-widest uppercase mb-2">
-            DEMO TEMPLATE · FILMERA / SEEDANCE
+            {tutorial.sourcePlatform ? `来源 · ${tutorial.sourcePlatform}` : "成片拆解 · 跟做教程"}
           </div>
           <h2 className="text-xl font-bold leading-tight tracking-tight mb-3">
             {tutorial.title}

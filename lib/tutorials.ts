@@ -150,6 +150,8 @@ export const tutorials: Tutorial[] = [
     style: "奢华产品广告 · 竖屏",
     aspectRatio: "9/16",
     sourceUrl: "https://x.com/HeyRu0by/status/2101186330025922663",
+    sourceAuthor: "@HeyRu0by",
+    sourcePlatform: "X",
     tags: [
       "10秒 · 5 节拍",
       "9:16 竖屏 · 不进胶片条",
@@ -264,6 +266,8 @@ No people, no hands, no warped refrigerator, no changing product design, no extr
     style: "写实观察式 · 诊所社媒",
     aspectRatio: "16/9",
     sourceUrl: "https://evolink.ai/seedance-2-5-prompts",
+    sourceAuthor: "@bmx_ai13",
+    sourcePlatform: "Evolink",
     tags: [
       "约30秒 · 7 治疗节拍",
       "无参考图 · 纯文生可跟做",
@@ -367,6 +371,8 @@ Audio should feel captured on location with soft room ambience, distant clinic m
     style: "史诗骑战 · 暮光草原",
     aspectRatio: "16/9",
     sourceUrl: "https://x.com/azed_ai/status/2101309410434044158",
+    sourceAuthor: "@azed_ai",
+    sourcePlatform: "X",
     tags: [
       "约30秒 · 7 节拍战斗弧",
       "无参考图 · 纯文生可跟做",
@@ -506,6 +512,8 @@ Keep violence fierce but readable rather than gore-focused. Prioritize cavalry s
     style: "暖光深夜 · Lo-Fi + ASMR",
     aspectRatio: "16/9",
     sourceUrl: "https://x.com/Shorelyn_/status/2099013056013672761",
+    sourceAuthor: "@Shorelyn_",
+    sourcePlatform: "X",
     tags: [
       "约29秒 · 7 节拍",
       "无参考图 · 纯文生视频可跟做",
@@ -625,6 +633,8 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
     model: "Gemini Omni · Seedance 2.0",
     style: "时装展示 · 黑棚遥控",
     aspectRatio: "16/9",
+    sourceAuthor: "@KrevixAi",
+    sourcePlatform: "X",
     tags: [
       "10 秒 · 5 节拍 · 固定机位",
       "1 张分镜静帧",
@@ -711,6 +721,7 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
     model: "Seedance 2.5",
     style: "电影感 · 黄金时段",
     aspectRatio: "16/9",
+    sourcePlatform: "Pollo",
     tags: [
       "30 秒 · 7 节拍 · 情绪弧",
       "无参考图",
@@ -826,6 +837,7 @@ on the final hit.`,
     model: "Seedance 2.5",
     style: "iPhone POV · 现场感",
     aspectRatio: "3/4",
+    sourcePlatform: "Pollo",
     tags: [
       "30 秒 · 3:4 竖屏 · 5 节拍",
       "提示词含 @Image1 · 页面无参考图",
@@ -929,6 +941,7 @@ He shouts the final line while performing a rapid three-step, a controlled 180°
     model: "Seedance 2.5",
     style: "一镜到底 · 空间变换",
     aspectRatio: "16/9",
+    sourcePlatform: "Pollo",
     tags: [
       "30 秒 · 一镜到底 · 6 房间",
       "提示词含图像1 · 页面无参考图",
@@ -986,6 +999,7 @@ He shouts the final line while performing a rapid three-step, a controlled 180°
     model: "Seedance 2.5",
     style: "iPhone 纪录片 · 荒诞魔幻",
     aspectRatio: "1/1",
+    sourcePlatform: "Pollo",
     tags: [
       "30 秒 · 1:1 方形 · 7 节拍",
       "提示词含 Image1 · 页面无参考图",
@@ -1141,6 +1155,7 @@ The employee`,
     model: "Seedance 2.5",
     style: "IMAX 史诗 · 灾难动作",
     aspectRatio: "16/9",
+    sourcePlatform: "Pollo",
     tags: [
       "15 秒 · 3 段式 · 切黑收尾",
       "无参考图 · 纯文生视频",
