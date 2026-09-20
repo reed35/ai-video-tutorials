@@ -99,6 +99,1913 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
     },
   },
   {
+    id: "just-sharon7-venice-sphere",
+    title: "威尼斯折叠成球 · 粉发女孩送信",
+    subtitle: "X · @Just_sharon7 · 约30秒 · 16:9",
+    description:
+      "Seedance 2.5 威尼斯折叠建筑片；粉发女孩送信，城市像盗梦空间一样翻折成球。需人脸参考图 Image 1。平台 Fish Creative HQ。",
+    video: "/tutorials/just-sharon7-venice-sphere/demo-web.mp4",
+    poster: "/tutorials/just-sharon7-venice-sphere/poster.jpg",
+    duration: "约30秒",
+    shots: 10,
+    references: 1,
+    model: "Seedance 2.5",
+    style: "1940s 威尼斯 · 折叠建筑 · 胶片",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Just_sharon7/status/2100541954685895043",
+    sourceAuthor: "@Just_sharon7",
+    sourcePlatform: "X",
+    sourceImpressions: 50522,
+    tags: [
+      "约30秒 · 威尼斯场景",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "Fish Creative",
+      "需人脸参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备人脸参考图 Image 1",
+        description:
+          "原帖要求上传自己的 Image 1 脸部参考图，用于锁定主角面部特征。本教程提供的 ref-face-from-demo.jpg 仅为示例人脸参考（成片截帧），跟做时需替换为自己的人脸照片。",
+      },
+      {
+        number: 2,
+        title: "理解折叠建筑核心规则",
+        description:
+          "Inception 式折叠：威尼斯城市像盗梦空间一样翻折成球形，建筑悬挂在空中倒置。主角始终在正常重力下行动，而世界围绕她折叠。连续镜头运动，无硬切。",
+      },
+      {
+        number: 3,
+        title: "设置与平台",
+        description:
+          "16:9 横屏 · 约30秒 · Seedance 2.5 模型 · Fish Creative HQ 平台。1940s 威尼斯金色时刻，琥珀与青蓝电影调色，35mm 变形宽银幕胶片质感，浅景深，体积光，细颗粒感。",
+      },
+      {
+        number: 4,
+        title: "粘贴完整时间线提示词",
+        description:
+          "使用下方完整 30 秒分镜提示词。每个时间段都有明确的镜头运动、场景描述和折叠效果。保持连续摄影机运动，保持主角形象与 Image 1 一致。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "Image1",
+        number: "Image 1",
+        title: "示例人脸参考 · 成片截帧",
+        subtitle: "仅供参考 · 跟做需替换为自己的脸",
+        image: "/tutorials/just-sharon7-venice-sphere/ref-face-from-demo.jpg",
+        prompt: "原帖要求上传自己的 Image 1 脸部参考图。本图为成片截帧示例，展示人物应有的面部特征、发型和造型。跟做时需上传自己的人脸照片作为 Image 1。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–3s 运河边奔跑：横向跟踪拍摄，金色时刻大运河石堤。粉发女孩 @Image1 抓着黄色信封冲过镜头，头顶整座城市倒挂。戴礼帽的男人遛腊肠犬走在倒置街道上。红伞在两个世界间无重力漂浮。鸽子在琥珀光线中飞散。",
+      },
+      {
+        number: 2,
+        description:
+          "3–6s 小巷深处：镜头跟随她进入狭窄威尼斯小巷，枯叶在身后旋转。远端街道向天空剥离，建筑像窗户墙一样垂直堆叠。脚步声在石墙间回荡。",
+      },
+      {
+        number: 3,
+        description:
+          "6–9s 镜头旋转90度：小巷墙变成她脚下的地面，她继续奔跑毫不惊慌。镜头继续进入环绕轨道，她跑上悬浮在半空的螺旋石阶，威尼斯红陶屋顶碎片像万花筒一样在她周围旋转。",
+      },
+      {
+        number: 4,
+        description:
+          "9–12s 拱桥剪影：极广角。她跑过横跨宽阔运河的石拱桥顶，逆光对着落日。镜像城市同时悬挂在拱桥上方和下方。倒置平面上，孤独的行人朝相反方向走。慢镜头鸟群爆发穿过画面。",
+      },
+      {
+        number: 5,
+        description:
+          "12–15s 垂直跃起：低角度直视两栋高耸建筑墙之间，天空是一条明亮细缝。她跃过垂直峡谷，双臂展开，外套和头发飞扬，挎包摆动。镜头定住她对着天空。风声呼啸。",
+      },
+      {
+        number: 6,
+        description:
+          "15–18s 市场穿梭：手持推进穿过拥挤的1940s里亚托市场街——商贩堆苹果箱，晾衣绳在建筑间挂着。她在模糊的前景购物者间穿梭，背离镜头奔跑。苹果滚过鹅卵石。",
+      },
+      {
+        number: 7,
+        description:
+          "18–21s 钟楼远眺：镜头沿着宏伟砖砌钟楼向上仰拍——威尼斯钟楼——周围城市折叠环绕。女孩在塔楼边缘显得渺小，对着太阳停顿，然后朝屋顶迈步。钟声开始响起。",
+      },
+      {
+        number: 8,
+        description:
+          "21–24s 屋顶花园：玫瑰藤架框出的屋顶露台花园。灰色开衫的老妇人用铁罐浇灌鲜艳花床。身后威尼斯和圣马可大教堂圆顶在日落时分闪耀，倒置城市悬挂头顶。年轻女孩沿着石栏杆平衡行走，双臂伸展，然后跳下露台。",
+      },
+      {
+        number: 9,
+        description:
+          "24–27s 递送信封：她递出黄色信封。老妇人转身，放下浇水罐，接过信封。两人温暖微笑。玫瑰花瓣向上飘过她们，朝倒置的天空落去。",
+      },
+      {
+        number: 10,
+        description:
+          "27–30s 城市成球：镜头快速后拉上升。整座城市折叠旋转，变成威尼斯运河和街道卷曲成球的俯视图。两个小小的人影留在露台上。慢慢淡入温暖光线。",
+      },
+    ],
+    constraints:
+      "需人脸参考图 Image 1（成片包含示例截帧，跟做需上传自己的脸）；1940s 威尼斯金色时刻；琥珀与青蓝电影调色；35mm 变形宽银幕胶片质感；Inception 式折叠建筑；主角始终正常重力；连续镜头运动无硬切；16:9 横屏；来源 @Just_sharon7 / X / 50522 曝光。",
+    video_prompt: {
+      title: "威尼斯折叠成球 · 30s 时间线提示词",
+      subtitle: "Seedance 2.5 · 16:9 · Fish Creative HQ · 需 Image 1 人脸参考",
+      content: `[Image 1](image_1) is the face and identity reference. A young Korean woman in her early twenties with EXACTLY the face of @[Image 1](image_1) — same facial structure, same features, natural Korean skin, no glasses. Long pastel pink hair, wearing a 1940s teal-orange wool coat-dress with white collar, a brown leather satchel worn cross-body, grey knee socks, black leather shoes, holding a folded yellow envelope. Every shot of her matches @[Image 1](image_1).
+1940s Venice at golden hour. Amber and teal cinematic grade, anamorphic 35mm film look, shallow depth of field, volumetric god rays, fine film grain. Inception-style folding architecture — the Venetian city curls upward and hangs inverted overhead like a mirrored ceiling. The woman always stays under normal gravity while the world folds around her. Continuous camera motion, no hard cuts.
+[TIMELINE PROMPT]
+0–3s: Lateral tracking shot along a stone quay by the Grand Canal at sunset. The young woman @[Image 1](image_1) in a teal coat sprints past camera, clutching a yellow envelope. Above her the entire city hangs upside down, mirrored — a man in a bowler hat walks a dachshund across the inverted street. A red umbrella drifts weightlessly between the two worlds. Pigeons scatter through the amber light.
+3–6s: Camera follows behind her into a narrow Venetian alley, dry leaves swirling in her wake. At the far end the street peels upward into the sky, buildings stacking vertically like a wall of windows. Her footsteps echo between the stone walls.
+6–9s: The camera slowly rolls 90 degrees. The alley wall becomes the ground beneath her feet; she keeps running, unfazed. The roll continues into a wide orbit as she races up a floating spiral stone staircase suspended in mid-air, fragments of terracotta Venetian rooftops rotating around her like a kaleidoscope.
+9–12s: Extreme wide silhouette. She runs across the top of an arched stone bridge over a wide canal against the blazing setting sun. The mirrored city hangs both above and below the arch. On the inverted plane, a lone pedestrian walks the opposite direction. Birds burst across the frame in slow motion.
+12–15s: Low angle looking straight up between two towering building walls, the sky a thin bright strip. She leaps across the vertical chasm, arms spread wide, coat and hair flying, satchel swinging. Camera holds on her against the sky. Wind roars.
+15–18s: Handheld push-in through a crowded 1940s Rialto market street — vendors stacking crates of apples, laundry strung overhead between the buildings. She weaves between blurred foreground shoppers, running away from camera. An apple rolls loose across the cobblestones.
+18–21s: Camera tilts up a grand brick bell tower — a Venetian campanile — as the surrounding city folds and curls around it. The woman appears tiny on the tower ledge, pauses against the sun, then steps off toward the rooftops. Bells begin to ring.
+21–24s: Rooftop terrace garden framed by a rose-covered arbor. An elderly woman in a grey cardigan waters a bed of vivid flowers with a tin can. Behind her, Venice and the domes of St Mark's Basilica glow at sunset over the lagoon while the inverted city hangs overhead. The young woman balances along the stone balustrade, arms out, then jumps down onto the terrace.
+24–27s: She holds out the yellow envelope. The old woman turns, sets down the watering can, and takes it. Both smile warmly at each other. Rose petals drift upward past them, falling toward the inverted sky.
+27–30s: Camera pulls back and rises fast. The whole city folds and rotates until it becomes a top-down aerial of Venice's canals and streets curling into a sphere. The two tiny figures remain on the terrace. Slow fade to warm light.`,
+    },
+  },
+  {
+    id: "techiebysa-logo-embroidery-sew",
+    title: "刺绣缝 Logo · 线自己爬上织物",
+    subtitle: "X · @TechieBySA · 约10秒 · 16:9",
+    description:
+      "极限微距镜头记录刺绣线自主编织 Logo 的魔法时刻：彩色丝线从棉布表面升起，逐排铺设紧密缎纹针迹，勾勒标志轮廓，拉紧成立体纹理直至完整。由 Gemini Omni Flash 1.1 在 Pika 平台生成。需上传你的 Logo 参考图。",
+    video: "/tutorials/techiebysa-logo-embroidery-sew/demo-web.mp4",
+    poster: "/tutorials/techiebysa-logo-embroidery-sew/poster.jpg",
+    duration: "约10秒",
+    shots: 1,
+    references: 0,
+    model: "Gemini Omni Flash 1.1",
+    style: "刺绣微距 · Logo 缝线成型",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/TechieBySA/status/2093388159602041067",
+    sourceAuthor: "@TechieBySA",
+    sourcePlatform: "X",
+    sourceImpressions: 224974,
+    tags: [
+      "约10秒",
+      "16:9 横屏",
+      "Gemini Omni Flash 1.1",
+      "Pika",
+      "需上传 Logo 参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title:
+          "原帖要求上传自己的 Image 1 脸部参考图，用于锁定主角面部特征。本教程提供的 ref-face-from-demo.jpg 仅为示例人脸参考（成片截帧），跟做时需替换为自己的人脸照片。",
+      },
+      {
+        number: 2,
+        title: "理解折叠建筑核心规则",
+        description:
+          "Inception 式折叠：威尼斯城市像盗梦空间一样翻折成球形，建筑悬挂在空中倒置。主角始终在正常重力下行动，而世界围绕她折叠。连续镜头运动，无硬切。",
+      },
+      {
+        number: 3,
+        title: "设置与平台",
+        description:
+          "16:9 横屏 · 约30秒 · Seedance 2.5 模型 · Fish Creative HQ 平台。1940s 威尼斯金色时刻，琥珀与青蓝电影调色，35mm 变形宽银幕胶片质感，浅景深，体积光，细颗粒感。",
+      },
+      {
+        number: 4,
+        title: "粘贴完整时间线提示词",
+        description:
+          "使用下方完整 30 秒分镜提示词。每个时间段都有明确的镜头运动、场景描述和折叠效果。保持连续摄影机运动，保持主角形象与 Image 1 一致。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "Image1",
+        number: "Image 1",
+        title: "示例人脸参考 · 成片截帧",
+        subtitle: "仅供参考 · 跟做需替换为自己的脸",
+        image: "/tutorials/just-sharon7-venice-sphere/ref-face-from-demo.jpg",
+        prompt: "原帖要求上传自己的 Image 1 脸部参考图。本图为成片截帧示例，展示人物应有的面部特征、发型和造型。跟做时需上传自己的人脸照片作为 Image 1。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–3s 运河边奔跑：横向跟踪拍摄，金色时刻大运河石堤。粉发女孩 @Image1 抓着黄色信封冲过镜头，头顶整座城市倒挂。戴礼帽的男人遛腊肠犬走在倒置街道上。红伞在两个世界间无重力漂浮。鸽子在琥珀光线中飞散。",
+      },
+      {
+        number: 2,
+        description:
+          "3–6s 小巷深处：镜头跟随她进入狭窄威尼斯小巷，枯叶在身后旋转。远端街道向天空剥离，建筑像窗户墙一样垂直堆叠。脚步声在石墙间回荡。",
+      },
+      {
+        number: 3,
+        description:
+          "6–9s 镜头旋转90度：小巷墙变成她脚下的地面，她继续奔跑毫不惊慌。镜头继续进入环绕轨道，她跑上悬浮在半空的螺旋石阶，威尼斯红陶屋顶碎片像万花筒一样在她周围旋转。",
+      },
+      {
+        number: 4,
+        description:
+          "9–12s 拱桥剪影：极广角。她跑过横跨宽阔运河的石拱桥顶，逆光对着落日。镜像城市同时悬挂在拱桥上方和下方。倒置平面上，孤独的行人朝相反方向走。慢镜头鸟群爆发穿过画面。",
+      },
+      {
+        number: 5,
+        description:
+          "12–15s 垂直跃起：低角度直视两栋高耸建筑墙之间，天空是一条明亮细缝。她跃过垂直峡谷，双臂展开，外套和头发飞扬，挎包摆动。镜头定住她对着天空。风声呼啸。",
+      },
+      {
+        number: 6,
+        description:
+          "15–18s 市场穿梭：手持推进穿过拥挤的1940s里亚托市场街——商贩堆苹果箱，晾衣绳在建筑间挂着。她在模糊的前景购物者间穿梭，背离镜头奔跑。苹果滚过鹅卵石。",
+      },
+      {
+        number: 7,
+        description:
+          "18–21s 钟楼远眺：镜头沿着宏伟砖砌钟楼向上仰拍——威尼斯钟楼——周围城市折叠环绕。女孩在塔楼边缘显得渺小，对着太阳停顿，然后朝屋顶迈步。钟声开始响起。",
+      },
+      {
+        number: 8,
+        description:
+          "21–24s 屋顶花园：玫瑰藤架框出的屋顶露台花园。灰色开衫的老妇人用铁罐浇灌鲜艳花床。身后威尼斯和圣马可大教堂圆顶在日落时分闪耀，倒置城市悬挂头顶。年轻女孩沿着石栏杆平衡行走，双臂伸展，然后跳下露台。",
+      },
+      {
+        number: 9,
+        description:
+          "24–27s 递送信封：她递出黄色信封。老妇人转身，放下浇水罐，接过信封。两人温暖微笑。玫瑰花瓣向上飘过她们，朝倒置的天空落去。",
+      },
+      {
+        number: 10,
+        description:
+          "27–30s 城市成球：镜头快速后拉上升。整座城市折叠旋转，变成威尼斯运河和街道卷曲成球的俯视图。两个小小的人影留在露台上。慢慢淡入温暖光线。",
+      },
+    ],
+    constraints:
+      "需人脸参考图 Image 1（成片包含示例截帧，跟做需上传自己的脸）；1940s 威尼斯金色时刻；琥珀与青蓝电影调色；35mm 变形宽银幕胶片质感；Inception 式折叠建筑；主角始终正常重力；连续镜头运动无硬切；16:9 横屏；来源 @Just_sharon7 / X / 50522 曝光。",
+    video_prompt: {
+      title: "威尼斯折叠成球 · 30s 时间线提示词",
+      subtitle: "Seedance 2.5 · 16:9 · Fish Creative HQ · 需 Image 1 人脸参考",
+      content: `[Image 1](image_1) is the face and identity reference. A young Korean woman in her early twenties with EXACTLY the face of @[Image 1](image_1) — same facial structure, same features, natural Korean skin, no glasses. Long pastel pink hair, wearing a 1940s teal-orange wool coat-dress with white collar, a brown leather satchel worn cross-body, grey knee socks, black leather shoes, holding a folded yellow envelope. Every shot of her matches @[Image 1](image_1).
+1940s Venice at golden hour. Amber and teal cinematic grade, anamorphic 35mm film look, shallow depth of field, volumetric god rays, fine film grain. Inception-style folding architecture — the Venetian city curls upward and hangs inverted overhead like a mirrored ceiling. The woman always stays under normal gravity while the world folds around her. Continuous camera motion, no hard cuts.
+[TIMELINE PROMPT]
+0–3s: Lateral tracking shot along a stone quay by the Grand Canal at sunset. The young woman @[Image 1](image_1) in a teal coat sprints past camera, clutching a yellow envelope. Above her the entire city hangs upside down, mirrored — a man in a bowler hat walks a dachshund across the inverted street. A red umbrella drifts weightlessly between the two worlds. Pigeons scatter through the amber light.
+3–6s: Camera follows behind her into a narrow Venetian alley, dry leaves swirling in her wake. At the far end the street peels upward into the sky, buildings stacking vertically like a wall of windows. Her footsteps echo between the stone walls.
+6–9s: The camera slowly rolls 90 degrees. The alley wall becomes the ground beneath her feet; she keeps running, unfazed. The roll continues into a wide orbit as she races up a floating spiral stone staircase suspended in mid-air, fragments of terracotta Venetian rooftops rotating around her like a kaleidoscope.
+9–12s: Extreme wide silhouette. She runs across the top of an arched stone bridge over a wide canal against the blazing setting sun. The mirrored city hangs both above and below the arch. On the inverted plane, a lone pedestrian walks the opposite direction. Birds burst across the frame in slow motion.
+12–15s: Low angle looking straight up between two towering building walls, the sky a thin bright strip. She leaps across the vertical chasm, arms spread wide, coat and hair flying, satchel swinging. Camera holds on her against the sky. Wind roars.
+15–18s: Handheld push-in through a crowded 1940s Rialto market street — vendors stacking crates of apples, laundry strung overhead between the buildings. She weaves between blurred foreground shoppers, running away from camera. An apple rolls loose across the cobblestones.
+18–21s: Camera tilts up a grand brick bell tower — a Venetian campanile — as the surrounding city folds and curls around it. The woman appears tiny on the tower ledge, pauses against the sun, then steps off toward the rooftops. Bells begin to ring.
+21–24s: Rooftop terrace garden framed by a rose-covered arbor. An elderly woman in a grey cardigan waters a bed of vivid flowers with a tin can. Behind her, Venice and the domes of St Mark's Basilica glow at sunset over the lagoon while the inverted city hangs overhead. The young woman balances along the stone balustrade, arms out, then jumps down onto the terrace.
+24–27s: She holds out the yellow envelope. The old woman turns, sets down the watering can, and takes it. Both smile warmly at each other. Rose petals drift upward past them, falling toward the inverted sky.
+27–30s: Camera pulls back and rises fast. The whole city folds and rotates until it becomes a top-down aerial of Venice's canals and streets curling into a sphere. The two tiny figures remain on the terrace. Slow fade to warm light.`,
+    },
+  },
+  {
+    id: "techiebysa-logo-embroidery-sew",
+    title: "刺绣缝 Logo · 线自己爬上织物",
+    subtitle: "X · @TechieBySA · 约10秒 · 16:9",
+    description:
+      "极限微距镜头记录刺绣线自主编织 Logo 的魔法时刻：彩色丝线从棉布表面升起，逐排铺设紧密缎纹针迹，勾勒标志轮廓，拉紧成立体纹理直至完整。由 Gemini Omni Flash 1.1 在 Pika 平台生成。需上传你的 Logo 参考图。",
+    video: "/tutorials/techiebysa-logo-embroidery-sew/demo-web.mp4",
+    poster: "/tutorials/techiebysa-logo-embroidery-sew/poster.jpg",
+    duration: "约10秒",
+    shots: 1,
+    references: 0,
+    model: "Gemini Omni Flash 1.1",
+    style: "刺绣微距 · Logo 缝线成型",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/TechieBySA/status/2093388159602041067",
+    sourceAuthor: "@TechieBySA",
+    sourcePlatform: "X",
+    sourceImpressions: 224974,
+    tags: [
+      "约10秒",
+      "16:9 横屏",
+      "Gemini Omni Flash 1.1",
+      "Pika",
+      "需上传 Logo 参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备 Logo 参考图",
+        description:
+          "上传你的 Logo 图片。可以是公司标志、品牌 Logo、个人标志或任何你想要刺绣效果的图形。建议使用清晰、轮廓分明的设计。",
+      },
+      {
+        number: 2,
+        title: "在 Pika 平台设置 Gemini Omni Flash 1.1",
+        description:
+          "打开 Pika，选择 Gemini Omni Flash 1.1 模型。上传你的 Logo 参考图作为引导图像。这将确保刺绣线编织出你想要的图案。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词生成",
+        description:
+          "使用下方完整提示词，确保包含所有细节：极限微距拍摄、编织棉布、彩色刺绣线自主编织、紧密缎纹针迹、慢镜头延时节奏、柔和侧光、浅景深、可见织物纤维和真实丝线光泽。提示词来自 @TechieBySA 自回复（https://x.com/TechieBySA/status/2093388166036382197），创意由 @StevenWommack 提供。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "整段一镜：起始时编织棉布空白。彩色刺绣线从表面升起，自主编织就位，逐排铺设紧密缎纹针迹，勾勒 Logo 轮廓。缝线区域稳步扩展，丝线拉紧成立体刺绣纹理，直至完整 Logo 完成。镜头保持稳定，慢镜头延时节奏，令人满足。柔和自然侧光，浅景深，可见织物纤维和真实丝线光泽。无人手，丝线自主运动。一镜到底无场景切换。",
+      },
+    ],
+    constraints:
+      "需上传你的 Logo 参考图；极限微距固定机位；丝线自主编织无人手；一镜到底无场景切换；柔和侧光浅景深；16:9 横屏；约10秒；来源 @TechieBySA / X / 224974 曝光；提示词来自 https://x.com/TechieBySA/status/2093388166036382197 自回复；创意 @StevenWommack。",
+    video_prompt: {
+      title: "Logo 刺绣编织微距 · 约10秒 · 16:9",
+      subtitle: "Gemini Omni Flash 1.1 · Pika · 需上传 Logo 参考图",
+      content: `Extreme macro shot of woven cotton shirt fabric, empty at first. Colored embroidery threads rise from the surface and weave themselves into place, laying down tight satin stitches row by row, tracing out the logo. The stitched area grows steadily across the frame, thread pulling taut and raising into dimensional embroidered texture, until the full logo is complete. Camera holds steady, slow satisfying timelapse pace. Soft natural side light, shallow depth of field, visible fabric fibers and realistic thread sheen. No hands, thread moves on its own. One shot no scene change.`,
+    },
+  },
+  {
+    id: "aiwithkhan-rope-name-smiling",
+    title: "红绳拼字 Smiling · 定格小人工坊",
+    subtitle: "X · @AIwithkhan · 约10秒 · 16:9",
+    description:
+      "10秒红绳拼字定格动画：粗红编织绳 + 4-5个迷你粘土人物共同编织单词 Smiling。绳子从散乱松散循序变形为草书字母，小人物攀爬拉扯打结。需提供与成片最后一帧完全吻合的参考图。教练提示：把 Smiling 替换成你的名字，仍需匹配的最终帧参考图。",
+    video: "/tutorials/aiwithkhan-rope-name-smiling/demo-web.mp4",
+    poster: "/tutorials/aiwithkhan-rope-name-smiling/poster.jpg",
+    duration: "约10秒",
+    shots: 1,
+    references: 1,
+    model: "Seedance 2.5",
+    style: "定格动画 · 红绳编织 · 小人工坊",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/AIwithkhan/status/2100069812152197146",
+    sourceAuthor: "@AIwithkhan",
+    sourcePlatform: "X",
+    sourceImpressions: 12994,
+    tags: [
+      "约10秒 · 单镜头",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "定格动画美学",
+      "需参考图（最终帧）",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备最终帧参考图",
+        description:
+          "关键要求：必须提供与成片最后一帧完全吻合的参考图。图中应清晰展示红绳编织完成的单词样式、字母走向、绳子交叉与负空间。如果要把 Smiling 替换成自己的名字，也需要准备对应的最终成型参考图。",
+      },
+      {
+        number: 2,
+        title: "设定定格动画元素",
+        description:
+          "一根粗红编织绳 + 4-5个身穿简单绳绿色工作服的迷你粘土小人，面部无明显特征。纯白无缝背景，柔和影棚光，绳下有细微阴影。小人物需在编织过程中攀爬、拉扯、打结，具备玩味的定格动画动作感。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词生成",
+        description:
+          "使用下方完整英文提示词，并上传最终帧参考图。提示词强调：参考图作为精确最终帧（Using the reference image as the exact final frame）；绳子从散乱逐步变形成草书字母；小人物协作动作；镜头完全静止俯拍；无剪辑、无独立文字生成、无额外物体。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-final-frame",
+        number: "参考图 1",
+        title: "最终帧红绳成品参考",
+        subtitle: "必需 · 与成片最后一帧精确匹配",
+        image: "/tutorials/aiwithkhan-rope-name-smiling/ref-final-frame.jpg",
+        prompt:
+          "提供红绳编织完成后的最终成型样式，清晰展示单词 Smiling 的字母走向、绳子交叉、打结位置与负空间。这是整个生成的核心参考，必须与成片最后一帧完全吻合。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "开场：红绳散乱松散，以柔和环状铺散在画面中，4-5个迷你粘土人物站在绳子周围。随后小人物迅速抓住绳子，共同协作拉扯、盘绕、扭转、打结，绳子逐步变形成草书字母 S-m-i-l-i-n-g，从左到右依次成型。小人物在编织过程中攀爬绳子、围绕动作。最后1-2秒，小人物完成 g 字母的最后一个结，后退并跳走，留下完成的 Smiling 红绳作品，清晰可见并与参考图匹配。镜头完全静止俯拍，柔和影棚光，无剪辑、无摄像机运动、无独立生成文字、无额外物体。流畅连续运动，触感绳子物理，真实纤维，玩味迷你定格动画美学融合精致 CGI。",
+      },
+    ],
+    constraints:
+      "必须上传最终帧参考图；红绳编织字母需与参考图完全匹配；4-5个迷你粘土人物协作动作；纯白无缝背景；镜头完全静止俯拍；无剪辑、无独立文字、无额外物体；来源 @AIwithkhan / X / 12994 曝光。",
+    video_prompt: {
+      title: "红绳拼字定格动画提示词",
+      subtitle: "Seedance 2.5 · 16:9 横屏 · 完整可复制提示词",
+      content: `Using the reference image as the exact final frame, create a 10-second stop-motion-inspired fluid CGI animation of a single thick red braided rope forming the word "Smiling" on a pure white seamless background. At the beginning, the rope is loose and unformed, scattered in soft loops across the frame, with 4–5 tiny clay-like miniature characters wearing simple rope-green overalls and no distinct facial features standing around it. They quickly grab the rope and work together, pulling, stretching, coiling, twisting, and tying it into shape. The rope progressively transforms into the cursive letters "S-m-i-l-i-n-g", moving smoothly from left to right. Each letter must be created entirely from the same continuous rope, with realistic braided fibers, intricate knots, overlapping loops, natural crossings, and clean negative spaces matching the reference image. The characters playfully climb over and around the rope while shaping each letter, coordinating their movements as the word becomes recognizable. The camera remains completely static and top-down, with consistent soft studio lighting, subtle shadows beneath the rope, and no background elements. In the final 1–2 seconds, the characters finish the last knot on the "g," step back and hop away, leaving the completed "Smiling" rope artwork clearly visible and matching the reference image. No cuts, no camera movement, no independently generated text, no extra objects. Smooth continuous motion, tactile rope physics, realistic fibers, playful miniature stop-motion aesthetic blended with polished CGI.`,
+    },
+  },
+  {
+    id: "techhalla-french-polynesia-adventure",
+    title: "法属波利尼西亚冒险 · 碎切度假记忆",
+    subtitle: "X · @techhalla · 约30秒 · 16:9",
+    description:
+      "30s 度假记忆硬切剪辑：法属波利尼西亚（塔希提/莫雷阿/波拉波拉）found-footage 冒险风格。每 0.5-1 秒硬切至新场景，密集呈现礁湖、独木舟、市场、雨季、夜潜荧光等碎片化体验。Seedance 2.5 高强度剪辑规则 + 角色世界锁定。",
+    video: "/tutorials/techhalla-french-polynesia-adventure/demo-web.mp4",
+    poster: "/tutorials/techhalla-french-polynesia-adventure/poster.jpg",
+    duration: "约30秒",
+    shots: 60,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "found-footage 冒险 · 快切碎片化记忆",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/techhalla/status/2096599863639068764",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 14836,
+    tags: [
+      "约30秒 · 60+ 快切场景",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "found-footage 度假记忆",
+      "法属波利尼西亚冒险",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解快切剪辑规则",
+        description:
+          "核心机制：每 0.5-1 秒强制硬切到全新场景或微时刻。全程 30 秒约 60 个场景片段，节奏紧凑但不失温柔。无溶解、无慢动作、无文字贴纸、无调色特效，纯粹的记忆碎片堆叠。",
+      },
+      {
+        number: 2,
+        title: "锁定角色与世界设定",
+        description:
+          "角色：27 岁冒险型旅行者，晒伤雀斑肤、盐渍凌乱发、明亮好奇眼神，轻量泳装 + 防晒衣 + 礁鞋，贝壳项链，防水腰包。世界：法属波利尼西亚真实地理元素（莫雷阿山峰剪影、水上屋桩柱、黑珍珠店、香草种植园、motu 沙洲、va'a 独木舟、poisson cru 生鱼沙拉等）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词生成",
+        description:
+          "使用下方完整 60 分镜提示词（含时间轴）。提示词已包含完整 0.0-30.0 秒的分镜设计。注意：完整提示词分两段发布（Part 1 主规则 + Part 2 时间轴），本教程已整合为单文件。原始 Part 2 链接：https://x.com/techhalla/status/2096599868370260027（引用早期夏季记忆帖作为语境，不替换本视频）。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [],
+    constraints:
+      "每 0.5-1 秒硬切新场景；found-footage 手机/运动相机质感（盐渍镜头、水滴、曝光、镜头喘息）；法属波利尼西亚地理文化元素准确；27 岁冒险型角色稳定；约 30 秒 60 镜；来源 @techhalla / X / 14836 曝光。",
+    video_prompt: {
+      title: "法属波利尼西亚冒险快切记忆 · 完整提示词",
+      subtitle: "Seedance 2.5 · 16:9 横屏 · 0.5-1s 硬切规则",
+      content: `[STYLE + CAMERA + ATMOSPHERE]
+Real found-footage adventure vacation in French Polynesia (Tahiti / Moorea / Bora Bora waters and islands) — phone and compact action-cam. Looks like a real memory dump from someone living an active island trip: salt on the lens, water droplets, harsh noon blowouts, green jungle shadows, humid haze, wind roar in mic, outboard motor, reef hush, rain on tin roofs. RAPID-FIRE EDITING ONLY: hard cut every 0.5 to 1.0 seconds to a NEW shot/scene for the entire duration — staccato, restless, exciting but gentle; no dissolves, no whip-flash gimmicks, no slow-motion, no speed ramps, no text, no stickers, no color-grade tricks, no sparkles. Aesthetic = raw Instagram adventure dump, breathless, joyful, curious. Mood: adventurous, exploratory, calm adrenaline, wonder — never aggressive, never violent, never scary, never romantic-cliché resort brochure.
+
+[SUBJECT]
+Primary character slightly shifted from a soft beach-holiday girl into an athletic 27-year-old adventure traveler: sun-freckled skin, salt-crusted wavy hair often tied messy, bright curious eyes, light athletic build, practical swimwear and quick-dry shorts, rashguard sometimes on, thin shell necklace, waterproof pouch, barefoot or reef shoes. She moves with energy — climbing into boats, adjusting mask, pointing at lagoon colors, laughing at rain — always kind, never performing aggression. Occasional brief companions (local guide, friend) only as real background humans.
+
+[WORLD — FRENCH POLYNESIA ADVENTURE]
+Overwater bungalow stilts, black-pearl shop windows, ferry wake, volcanic green peaks (Moorea silhouette), turquoise lagoon over sandbars, coral heads, vanilla plantation edge, breadfruit trees, motu sand spits, outrigger canoe (va'a), scooter on coastal road, market poisson cru, warm night rain, phosphorescent shoreline hints, church bells far away, roosters, gecko chirps — specific, lived-in, wet, salty, real.
+
+[EDIT RULE — MANDATORY]
+Every 0.5–1.0s = hard cut to a completely new framing or micro-moment. Pack the full 30 seconds as a continuous barrage of tiny real clips. No shot should linger longer than one second.
+
+[RAPID-FIRE SHOT LIST — ~0.5–1s EACH, FULL 30s]
+0.0–0.7: dawn over lagoon from bungalow deck, pink water. Cut.
+0.7–1.4: her hand slides open wooden shutter, humid air hits lens. Cut.
+1.4–2.1: bare feet on wet wood planks, walking fast. Cut.
+2.1–2.8: coffee in metal cup, steam, ocean behind. Cut.
+2.8–3.5: scooter kickstart, coastal road blur of palms. Cut.
+3.5–4.2: helmet chin strap click, smile sideways. Cut.
+4.2–4.9: ferry gangway, rope, salt spray. Cut.
+4.9–5.6: outboard throttle, wake splitting turquoise. Cut.
+5.6–6.3: Moorea peaks framed through spray. Cut.
+6.3–7.0: she points at a sandbar, wind in hair. Cut.
+7.0–7.7: jumping from small boat into warm lagoon. Cut.
+7.7–8.4: underwater phone glimpse — blurry coral, bubbles, real murk. Cut.
+8.4–9.1: snorkel surface gasp, laugh, mask fog. Cut.
+9.1–9.8: reef shoes on sharp black rock, careful step. Cut.
+9.8–10.5: climbing into outrigger canoe, paddle drip. Cut.
+10.5–11.2: paddle dig, canoe surges, shoulder muscles. Cut.
+11.2–11.9: guide's hand pointing at distant motu. Cut.
+11.9–12.6: beach landing, canoe scrape on sand. Cut.
+12.6–13.3: running across empty motu spit, footprints. Cut.
+13.3–14.0: shade under palms, drinking coconut water. Cut.
+14.0–14.7: close coconut husk fibers, knife work nearby (safe, practical). Cut.
+14.7–15.4: market stall — poisson cru lime, hands pass plate. Cut.
+15.4–16.1: first bite, eyes close happy. Cut.
+16.1–16.8: vanilla vine leaves, fingers touch green pods. Cut.
+16.8–17.5: sudden warm rain starts, fat drops on lens. Cut.
+17.5–18.2: she runs laughing under tin eave, soaked shirt. Cut.
+18.2–18.9: rain curtain off roof edge, feet splashing puddle. Cut.
+18.9–19.6: sky clears fast, sun flare through wet hair. Cut.
+19.6–20.3: scooter again, wet road reflections. Cut.
+20.3–21.0: hillside lookout, lagoon rings of blue. Cut.
+21.0–21.7: binoculars / phone zoom fail, soft blur then pull back. Cut.
+21.7–22.4: hiking short muddy trail, holding vine for balance. Cut.
+22.4–23.1: waterfall trickle (gentle), hands under cold water. Cut.
+23.1–23.8: golden hour overwater path, long shadows. Cut.
+23.8–24.5: hanging wet towel, sunset bounce on stilts. Cut.
+24.5–25.2: dinner on plastic table, grilled fish, string lights start. Cut.
+25.2–25.9: gecko on wall, phone finds it, soft giggle. Cut.
+25.9–26.6: night lagoon edge, small waves, distant ukulele. Cut.
+26.6–27.3: she dips feet in black water, kicks once. Cut.
+27.3–28.0: bioluminescent sparkle when she swirls water with hand (subtle, real). Cut.
+28.0–28.7: walking back on dock, torch phone light bouncing. Cut.
+28.7–29.4: bungalow door, mosquito net, tired happy face. Cut.
+29.4–30.0: last clip — dark room, ceiling fan, sea hiss through window, recording ends mid-breath.
+
+[REALISM / TONE LOCK]
+French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1 second, found-footage phone/action-cam only, energetic but gentle, just real salt, rain, lagoon, boats, food, night air, and breathless joy.`,
+    },
+  },
+  {
+    id: "techhalla-room214-stop-motion",
+    title: "ROOM 214 · H3 定格收拾行李",
+    subtitle: "X · @techhalla · 约15秒 · 16:9",
+    description:
+      "ROOM 214 沙漠汽车旅馆房间内，衣物自己跳进行李箱。无人手、无平滑运动，纯正定格动画节奏：小件先跳、中件折叠、大件压顶、箱盖三段合上。MiniMax H3 通过 JSON 结构化提示词精准控制定格抖动质感。",
+    video: "/tutorials/techhalla-room214-stop-motion/demo-web.mp4",
+    poster: "/tutorials/techhalla-room214-stop-motion/poster.jpg",
+    duration: "约15秒",
+    shots: 1,
+    references: 0,
+    model: "MiniMax Hailuo H3",
+    style: "定格动画 · 逐帧抖动",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/techhalla/status/2094743725138178491",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 10727,
+    tags: [
+      "约15秒 · 定格动画",
+      "16:9 横屏",
+      "MiniMax H3",
+      "stop-motion 收拾行李",
+      "无人手 · 锁定机位",
+      "JSON 结构化提示词",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂定格节奏：小件→中件→大件→合盖",
+        description:
+          "真正的定格动画是物体在帧间「瞬移」几厘米，而非平滑滑动。收拾顺序：袜子、内裤、T恤、腰带先跳入箱中；衬衫、牛仔裤、毛衣分两三步折叠入箱；冲锋衣、帽子最后压顶；箱盖三段硬合。",
+      },
+      {
+        number: 2,
+        title: "粘贴完整 JSON 提示词到 MiniMax H3",
+        description:
+          "将下方 JSON 提示词完整复制到 MiniMax Hailuo H3 生成。JSON 结构包含 archetype、concept、camera、grade、audio、constraints 六大模块，精准定义定格抖动、节奏结构、禁用平滑运动。",
+      },
+      {
+        number: 3,
+        title: "注意三大约束：真定格抖动 · 无手 · 锁定机位",
+        description:
+          "constraints 明确要求：物体逐帧瞬移而非漂浮滑行；画面中不得出现人手、手臂或身体；相机完全锁定，禁止推拉摇移。可读文字仅限 ROOM 214、DESERT INN / FLAGSTAFF、CHECKOUT 11AM。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0-2s：锁定广角。ROOM 214 黄铜门牌。海军蓝硬壳行李箱敞开在床罩上。度假衣物散落床面、椅子、地板。窗帘条纹阳光。画面已有细微逐帧闪烁。",
+      },
+      {
+        number: 2,
+        description:
+          "2-6s：小件先跳。白色运动袜 pop-pop 跳入箱中；藏青内裤折一次跃入；乐队 T恤咔嚓折成方块掉落；棕色皮带盘卷落箱顶。每件都是瞬移硬切，带硬阴影。",
+      },
+      {
+        number: 3,
+        description:
+          "6-10s：中件分步折叠。浅蓝牛津衬衫自己扣纽两帧 pop 后折叠；深色牛仔裤三段硬切折好滑入；芥末黄毛衣压缩堆叠。书桌记事本翻页：空白→手写 CHECKOUT 11AM→定格。",
+      },
+      {
+        number: 4,
+        description:
+          "10-13s：大件最后。橄榄绿冲锋衣两口崩塌掉入；棒球帽翻转落堆顶；椅子上剩余袜子、背心从椅子跳过来。箱子明显满了。",
+      },
+      {
+        number: 5,
+        description:
+          "13-15s：箱盖三段硬合。盖子第一段 slam、第二段 slam、第三段完全合上。最终定格：合上的海军蓝箱、黄铜 ROOM 214、记事本冻结在 CHECKOUT 11AM。结束。",
+      },
+    ],
+    constraints:
+      "真正定格抖动：物体逐帧瞬移数厘米，禁止平滑漂浮；无人手、手臂或身体入镜；相机完全锁定，禁止推拉摇移；可读文字仅 ROOM 214 / DESERT INN / FLAGSTAFF / CHECKOUT 11AM；收拾顺序可见：袜子内衣 T恤腰带 → 衬衫牛仔裤毛衣 → 冲锋衣帽子；箱盖合前箱子需显示已满；来源 @techhalla / X / 10727 曝光。",
+    video_prompt: {
+      title: "ROOM 214 定格动画提示词",
+      subtitle: "MiniMax Hailuo H3 · JSON 结构化提示词",
+      content: `{
+  "archetype": "Stop-motion / frame-by-frame jitter of real objects moved between frames",
+  "concept": {
+    "title": "ROOM 214",
+    "world": "A roadside motel room in Flagstaff, Arizona, late afternoon. Brass ROOM 214 on the interior door. Desk notepad stamped DESERT INN / FLAGSTAFF. Navy hard-shell suitcase open on the bedspread. Sun stripes through vertical blinds. Vacation clothes already scattered: socks, underwear, t-shirt, oxford shirt, jeans, coiled belt, knit sweater, windbreaker, cap.",
+    "story": "Every garment packs itself in true stop-motion pops. No human hands. Small pieces jump first, then mid layers fold in two or three frame-steps, then bulk pieces stack. The suitcase fills until the lid slams in three hard bites. The DESERT INN notepad flips to CHECKOUT 11AM.",
+    "rhythm_structure": {
+      "0-2s": "Locked wide. ROOM 214. Open navy suitcase. Vacation clothes laid out on bed, chair, floor. Subtle frame flicker already on.",
+      "2-6s": "Smalls first, discrete jumps with hard shadows: white athletic socks pop-pop into the case; navy boxers fold once and hop in; faded band t-shirt snaps into a rectangle and drops; brown leather belt coils and lands on top.",
+      "6-10s": "Mids in jerky folds: light-blue oxford shirt buttons itself in two frame pops then folds; dark-wash jeans fold in three hard steps and slide in; mustard knit sweater compresses and stacks. Notepad pages flip: blank → CHECKOUT 11AM handwritten → hold.",
+      "10-13s": "Bulk last: olive windbreaker collapses in two bites and drops in; baseball cap flips onto the pile; leftover sock and undershirt jump from the chair. Case now visibly full.",
+      "13-15s": "Lid closes in three stop-frame slams. Final still: closed navy case, brass ROOM 214, notepad frozen on CHECKOUT 11AM. End."
+    }
+  },
+  "camera": {
+    "shot_type": "One 15s locked wide of the motel room, 16:9",
+    "lens_language": "Still-tripod 32mm, harsh blind stripes across bed and case",
+    "camera_journey": "Locked. Only objects change position between frames.",
+    "forbidden_moves": [
+      "No smooth continuous motion of objects",
+      "No hands, arms, or body in frame",
+      "No claymation characters",
+      "No camera push, pan, tilt, or handheld"
+    ]
+  },
+  "grade": {
+    "stock": "Sun-faded motel print, slight strobe between frames",
+    "palette": [
+      "Desert ochre walls",
+      "Brass 214",
+      "Navy suitcase",
+      "White notepad",
+      "Faded cotton, denim indigo, mustard knit, olive nylon"
+    ],
+    "texture": "Carpet nap, brass, paper, cotton knit, denim, leather belt, nylon shell"
+  },
+  "audio": {
+    "native": true,
+    "bed": "Highway hush, AC rattle",
+    "accents": [
+      "Hard per-frame fabric ticks",
+      "Denim fold thumps",
+      "Belt coil tap",
+      "Paper flip",
+      "Lid slam in three hits"
+    ],
+    "forbidden": [
+      "No cartoon boings",
+      "No music",
+      "No voices"
+    ]
+  },
+  "constraints": [
+    "Readable text only: ROOM 214, DESERT INN / FLAGSTAFF, CHECKOUT 11AM",
+    "True stop-motion jitter: objects teleport a few centimeters per frame, never float or slide",
+    "Packing order visible: socks + underwear + t-shirt + belt, then oxford + jeans + sweater, then windbreaker + cap",
+    "Suitcase must look full before the lid closes"
+  ]
+}`,
+    },
+  },
+  {
+    id: "pixelaigc-dunhuang-desktop-fail",
+    title: "敦煌飞天桌面壁纸翻车 · H3",
+    subtitle: "X · @PixelAigc · 约10秒 · 16:9",
+    description:
+      "桌面壁纸动画翻车喜剧：敦煌飞天在苹果桌面跳舞，舞步踩动幕布震落图标，慌忙收拾却按歪两个，强颜欢笑摆回原位。GPT Image 2.5 生成桌面静帧 → H3 图生视频。注意「图标震落又摆歪」的喜剧节拍。",
+    video: "/tutorials/pixelaigc-dunhuang-desktop-fail/demo-web.mp4",
+    poster: "/tutorials/pixelaigc-dunhuang-desktop-fail/poster.jpg",
+    duration: "约10秒",
+    shots: 1,
+    references: 0,
+    model: "MiniMax Hailuo H3 (图生视频) + GPT Image 2.5 (生图)",
+    style: "图生视频 · 喜剧叙事 · 桌面动画",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/PixelAigc/status/2100051139547054118",
+    sourceAuthor: "@PixelAigc",
+    sourcePlatform: "X",
+    sourceImpressions: 418704,
+    tags: [
+      "约10秒 · 桌面动画喜剧",
+      "16:9 横屏",
+      "H3 图生视频",
+      "GPT Image 2.5 生图",
+      "敦煌飞天 · 翻车叙事",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "GPT Image 2.5 生成桌面壁纸静帧",
+        description:
+          "用 GPT Image 2.5 生成苹果电脑桌面图：左侧两列常用 APP 图标，右侧敦煌飞天舞女全身图，背景为苹果经典渐变简洁背景，16:9 比例。提示词：「生成一张苹果电脑的桌面图，左边是两列常用APP的图标，右边是一个敦煌飞天舞女全身图，背景是苹果电脑经典的渐变简洁背景，16：9」。",
+      },
+      {
+        number: 2,
+        title: "H3 图生视频 + 贴视频提示词",
+        description:
+          "将上一步生成的桌面图上传至 MiniMax H3，选择图生视频模式，粘贴下方完整视频提示词。重点描述飞天舞蹈动作、幕布抖动、图标震落、慌忙收拾、按歪图标、返回原位强颜欢笑的完整叙事节拍，配合背景音乐从传统敦煌音乐到诙谐风趣曲风的转变。",
+      },
+      {
+        number: 3,
+        title: "注意「图标震落又摆歪」喜剧节拍",
+        description:
+          "这个片子的核心是喜剧叙事节奏：飞天舞步踩动幕布 → 图标震落 → 双手捂嘴惊吓 → 停舞跑去收拾 → 匆忙按回但两个按歪 → 返回原位勉强微笑。提示词必须完整描述这一连串动作，才能让 H3 理解喜剧时间线与情绪转折。背景音乐风格变化也是关键辅助。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "飞天在桌面右侧跳舞，舞步踩动时扯动屏幕幕布，幕布抖动震落左侧图标全部掉落地上，飞天双手捂嘴惊吓表情，立即停止舞蹈，跑到左侧逐个捡起图标按回原位，但因太匆忙有两个图标按歪了，她马上返回右侧原位重新摆好开始姿势，表情勉强微笑，轻风吹来衣服和披帛飘动，固定机位，背景音乐从开始的传统敦煌音乐到后面的诙谐风趣曲风。",
+      },
+    ],
+    constraints:
+      "完整叙事节拍：舞步踩动 → 幕布抖动震落图标 → 惊吓捂嘴 → 停舞收拾 → 匆忙按回但两个按歪 → 返回原位勉强微笑；音乐风格从传统敦煌到诙谐转变；固定机位；来源 @PixelAigc / X / 418704 曝光。",
+    video_prompt: {
+      title: "完整 H3 图生视频提示词",
+      subtitle: "MiniMax Hailuo H3 · 图生视频模式 · 完整可复制提示词",
+      content: `飞天在跳舞，当她的脚踩下时，扯动了屏幕背景的幕布，幕布抖动，把左边的图标全都震落在地上，飞天吓得双手捂嘴，连忙停下舞蹈，跑到左边，把地上的图标一个个重新按回原来的位置，但由于太匆忙，有两个图标按歪了，她马上返回原来的右边位置，重新摆好开始的POSE，表情勉强微笑，轻风吹来，她的衣服和披帛飘动，固定机位，背景音乐从开始的传统敦煌音乐到后面的诙谐风趣曲风`,
+    },
+  },
+  {
+    id: "umesh-again-nature-ad",
+    title: "AGAIN · 单图自然广告",
+    subtitle: "X · @umesh_ai · 约30秒 · 16:9",
+    description:
+      "单张图片生成 30 秒自然广告：巨树雨雾景观的 15 个镜头，从水滴微距到航拍揭示，最后回归参考构图。成片 16:9 横屏，进入胶片条候选。",
+    video: "/tutorials/umesh-again-nature-ad/demo-web.mp4",
+    poster: "/tutorials/umesh-again-nature-ad/poster.jpg",
+    duration: "30秒",
+    shots: 15,
+    references: 1,
+    model: "图生视频 / 单图 master reference",
+    style: "电影级自然广告 · 雨雾氛围",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/umesh_ai/status/2100823564505248175",
+    sourceAuthor: "@umesh_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 26912,
+    tags: [
+      "30秒 · 15 镜头",
+      "16:9 横屏 · 进胶片条",
+      "1 张 master 参考图",
+      "单图生成 · 完整叙事",
+      "雨雾自然景观",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂单图 master 参考策略",
+        description:
+          "整片 30 秒从单张巨树雨雾景观图衍生。提示词锁定参考中的树形、地形、光线、雾层与人物方位，所有 15 个镜头在同一场景内连续展开：微距水滴→航拍揭示→地面接近→树干仰望→环绕树根→手触湿皮→冠层雨幕→人物侧影→最终回到参考构图 + 字幕 AGAIN / Come back.。关键是维持树木几何、光线位置与雾层连续性，不跳切到其他地点，不重新设计树的样子。",
+      },
+      {
+        number: 2,
+        title: "上传 REF01 作为 master visual reference",
+        description:
+          "将 REF01.jpg（巨树雨雾景观图）上传作为 master reference。提示词中要求 Preserve reference's enormous solitary tree, trunk branches, emerald meadow, white flowers, water, valley walls, atmospheric depth。必须遵守这张参考的树木比例、分支架构、地形、水面位置与悬崖形态。16:9 横屏 · 24fps · 30s · 打开声音（连续雨声 + 最后一个低沉音符）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 15-shot 提示词",
+        description:
+          "保持提示词完整，包括：参考连续性要求（树形、地形、光线）· 人物一致性（锈橙外套、从树前走到树根）· 15 个精确时间戳镜头（00:00–00:02 草尖水滴 → 00:28–00:30 回到参考构图 + 字幕）· 雨雾渐进规律（0–8s 细雨轻雾 → 17.5–23.5s 最密雨幕 → 25.5–30s 渐缓回光）· 声音设计（无旁白，连续雨声 + 滴水 + 呼吸 + 最后低音）· 字幕出现 00:28.2 AGAIN / Come back. 左下安全区，00:29.7 淡出。负面提示：无模型名瞎编/无跳切到其他地点/无重新设计树的外形/无戏剧摆姿/无金色时刻变换/无超自然 HDR 光晕。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "REF01",
+        number: "REF01",
+        title: "巨树雨雾景观 master 参考",
+        subtitle: "单图衍生全片 · 锁定树形地形光线",
+        image: "/tutorials/umesh-again-nature-ad/refs/REF01.jpg",
+        prompt:
+          "（无单独出图词；此参考图作为 master visual reference 上传，提示词中已要求 Preserve the reference's enormous solitary broad-canopied tree, distinctive trunk and branches, emerald meadow, white flowers, shallow foreground water, steep forest-covered valley walls and immense atmospheric depth. The closing landscape framing matches the reference, with the traveler now beside the tree's roots. Build every angle within this same landscape.）",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:02 草尖水滴：100mm 微距，雨滴挂在草尖上方，背景巨树柔焦，滴落瞬间银光边缘。教练提示：先建立最微小尺度，为后续航拍反差做铺垫。",
+      },
+      {
+        number: 2,
+        description:
+          "00:02–00:04 水面倒影：50mm 低角度水池，树冠倒影充满水面，水滴落入引发涟漪打碎倒影。教练提示：承接上一镜水滴落下，连续雨声保持。",
+      },
+      {
+        number: 3,
+        description:
+          "00:04–00:06.5 航拍揭示：24mm 广角高倾斜俯视，薄雾飘开，揭示巨树、湿草地、前景水面与陡峭森林谷壁。教练提示：从微观跳到宏观，声场打开成广阔雨空间，人物几乎看不见。",
+      },
+      {
+        number: 4,
+        description:
+          "00:06.5–00:08.5 远长焦接近：135mm 跨草地压缩人物、发光树干与后方雾层，人迈一小步左→右靠近树根。教练提示：保持树巨大、人渺小；细雨在暗林前可见。",
+      },
+      {
+        number: 5,
+        description:
+          "00:08.5–00:10 地面跟踪：24mm 贴草地高度横移跟靴子，雨水花草近前景视差，一只靴子踩草排水。教练提示：匹配行走方向，柔湿脚步声。",
+      },
+      {
+        number: 6,
+        description:
+          "00:10–00:12 纪念碑般低仰角：21mm 从树根旁，湿树干缓慢仰拍到首个大分叉节点（不尝试根到顶全景）。教练提示：强调树皮肌理、巨大重量与自然不对称，顶部银光叶颤。",
+      },
+      {
+        number: 7,
+        description:
+          "00:12–00:14 树根浅环绕：35mm 中广角腰高，绕树近侧 10–15° 浅弧，人迈最后一小步停在触手可及距离。教练提示：保持在已建立的动作侧，前景树根与远景峭壁视差；勿绕全圈重新设计树的背侧。",
+      },
+      {
+        number: 8,
+        description:
+          "00:14–00:16 过肩邀请：50mm 人物身后取肩边缘，湿树干直前方，缓推令树皮更临在，人开始抬手朝它。教练提示：树干外后方柔银雾口透出细雨，保持广阔自然光，非戏剧聚光。",
+      },
+      {
+        number: 9,
+        description:
+          "00:16–00:17.5 触觉树皮特写：100mm 近焦细节，手指轻触雨湿树皮（承接上一镜抬手），框取手的可信局部（非全掌扑向镜头），细溪流沿皮槽落在指旁。教练提示：缩窄声场到树皮水声、衣料与安静呼吸；解剖自然手指，无紧握。",
+      },
+      {
+        number: 10,
+        description:
+          "00:17.5–00:20 冠层内仰视：18mm 枝下陡仰望稍外倾，缓微仰显露交错枝与叶层，雨从间隙落下，大滴从叶尖释放。教练提示：冠外更重雨幕对峭壁，庇护感亲密但仍湿；叶轻动，非同步波浪模式。",
+      },
+      {
+        number: 11,
+        description:
+          "00:20–00:21.5 垂直俯视水坑细节：50mm 正俯同一外露树根旁，人将一只靴子挪几厘米入浅水坑定住姿势（未离开树），倒影树枝碎为柔波。教练提示：真实水深、小位移与底下泥；无大溅水/跺脚/新行走旅程。",
+      },
+      {
+        number: 12,
+        description:
+          "00:21.5–00:23.5 安静人物侧影：85mm 紧侧影含肩与局部阴影脸，人站树干旁静止，唯缓呼气与轻微肩放松。教练提示：细滴挂发与锈橙衣料，后方雨幕成柔高光；无眼泪/美妆摆拍/夸张表情；让环境而非面部表演承载情感。",
+      },
+      {
+        number: 13,
+        description:
+          "00:23.5–00:25.5 远侧景观：28mm 超广从草地侧，树、其近侧根与微小人仍地理一致，大致锁定构图。教练提示：一低阵风梳过近湿草，再轻搅外枝；一条雾带穿树干后不遮它；这是一次连贯自然事件，非暴风/气象重置/延时。",
+      },
+      {
+        number: 14,
+        description:
+          "00:25.5–00:28 广角起落退离：24mm 始已广阔，缓升缓退，显露更多前景水并通过视差分离树与雾峭壁。教练提示：勿从人特写发射到山航拍；人留在树根，几乎在景观中消失。雨开始减弱；漫银光轻强于树冠；引入单个温暖克制乐音。",
+      },
+      {
+        number: 15,
+        description:
+          "00:28–00:30 参考匹配英雄帧：落定参考景观构图——巨树居中偏右、暗林墙、发光草地与前景水，微小锈橙人现于左侧根旁。教练提示：雾飘冠后，细雨续；树感古老静默压倒。00:28.2 淡入小号常规体白字于清晰左下安全区：AGAIN / Come back.；勿盖人或树；无额外文案或编造标志；00:29.7 淡出，留景观干净到末帧。",
+      },
+    ],
+    constraints:
+      "必须单图 master reference（REF01）维持树形、分支架构、地形、水面与悬崖；雨雾光线连续性（0–8s 轻 → 17.5–23.5s 最密 → 25.5–30s 渐缓）；人物一致（锈橙外套从树前走到树根，无跳切他处）；15 个精确时间戳镜头；片尾字 00:28.2–00:29.7 AGAIN / Come back. 左下；无模型名瞎编/无跳地点/无重设计树/无金色时刻变换/无超自然光晕。来源 @umesh_ai · sourceImpressions 26896。",
+    video_prompt: {
+      title: "AGAIN · 30s · 16:9 · 15 shots",
+      subtitle: "图生视频 / 单图 master reference · 电影级自然广告",
+      content: `Prompt : Create a 30-second cinematic nature-retreat advertisement titled "AGAIN", using the uploaded image as the master visual reference. Exactly 15 shots, landscape 16:9, 24 fps, photorealistic imagery. The emotional journey: discovery, approach, touch, surrender, longing. Make the viewer feel physically present in cool, rain-soaked air. Nature is the hero; the traveler provides scale. Sell the feeling of being here.
+
+REFERENCE AND CONTINUITY
+
+Preserve the reference's enormous solitary broad-canopied tree, distinctive trunk and branches, emerald meadow, white flowers, shallow foreground water, steep forest-covered valley walls and immense atmospheric depth. The closing landscape framing matches the reference, with the traveler now beside the tree's roots.
+
+Build every angle within this same landscape. Infer unseen surfaces conservatively. Maintain tree proportions, branch architecture, terrain, water placement and cliff formations across all cuts.
+
+Use one adult traveler in the reference's muted rust-orange outer garment, dark trousers and plain dark boots. Keep clothing, proportions and appearance consistent. Mostly show them distant, from behind or in partial silhouette. No posing or theatrical gestures. They begin a few paces from the tree and gradually reach its near-side roots. No teleportation.
+
+LIGHT, WEATHER AND TEXTURE
+
+Cool, diffused storm daylight. A broad cloud opening above the valley's right ridge softly illuminates the tree against darker cliffs. Keep this light geographically consistent across angles. Deep emerald greens, blue-grey distance, charcoal wet bark, silver highlights and one muted rust-orange accent. Gentle contrast, rich shadows, subtle film grain, realistic depth of field. No golden-hour transformation, excessive HDR or supernatural glow.
+
+Rain exists from the first frame. Show occasional soft foreground streaks, fine midground drops revealed by backlight and distant rain dissolving into haze. Water beads on leaves, runs along bark, darkens fabric and creates overlapping puddle ripples. Gravity and wind affect droplets consistently. The canopy interrupts direct rain, but branches still drip heavily. It is shelter, not a magically dry umbrella.
+
+Use layered fog: almost transparent near the camera, thin drifting ribbons behind the tree, denser blue-grey mist concealing distant cliffs. Fog moves slowly through the valley rather than boiling or covering everything evenly. Preserve separation between trunk, canopy and background. The tree remains recognizable.
+
+Weather progression: 0–8 seconds, delicate rain and drifting mist; 8–17.5 seconds, increasingly audible steady rain; 17.5–23.5 seconds, the fullest rain curtain and most enclosing atmosphere; 23.5–25.5 seconds, one gentle wind pulse; 25.5–30 seconds, softer rainfall and a subtle return of silver light. No sudden storm, weather reset or time-lapse.
+
+CAMERA AND EDITING
+
+Use physically plausible camera moves, one action and one movement per shot. Favor patient observation. Start moves already in progress so short shots do not feel hurried. No whip pans, speed ramps, spinning transitions or impossible acceleration. Scale rhythm: intimate detail, immense landscape, human experience, intimate detail, immense landscape.
+
+Follow the exact cut points below. Use clean cuts, not morphs. During the approach, keep the traveler moving left to right toward the trunk. Carry rain and wind continuously across cuts.
+
+15-SHOT TIMELINE
+
+01 | 00:00.0–00:02.0 | EXTREME MACRO, GRASS AT THE WATER'S EDGE
+
+100 mm macro, side-on at grass height, nearly stationary. A clear droplet hangs from the tip of one rain-darkened grass blade above shallow water. The meadow and massive tree are soft, recognizable shapes far behind it. The blade bows slightly; the droplet elongates and releases near the end. Silver light catches its edge without a fake sparkle. Hear one intimate water sound against distant rain.
+
+02 | 00:02.0–00:04.0 | WATERLINE REFLECTION
+
+50 mm, lens just above the same pool, low grazing angle. Begin with the tree's inverted reflection filling the water. The falling drop lands immediately, continuing Shot 01, and concentric ripples gently fracture the reflected canopy. Make a tiny forward drift, keeping the actual tree mostly outside the frame. Fine secondary rain impacts appear naturally. Cut on an expanding ring; do not morph the water into the next image.
+
+03 | 00:04.0–00:06.5 | HIGH OBLIQUE AERIAL REVEAL
+
+24 mm wide, elevated oblique view looking down the valley. A thin veil of mist drifts aside as the camera descends only slightly, revealing the same monumental tree, wet meadow, foreground water and steep forest walls. The person is almost imperceptible near the tree. Maintain natural perspective and the established terrain. The atmosphere opens sonically into a vast, rain-filled space.
+
+04 | 00:06.5–00:08.5 | DISTANT TELEPHOTO APPROACH
+
+135 mm from across the meadow, near human eye level. Compress the traveler, luminous trunk and layered fog behind them. The traveler takes one unhurried step left to right, already close to the near-side roots. Fine rain becomes visible against the dark forest. Nearly locked camera with a subtle push. Keep the tree monumental and the person small; this is not a fashion shot.
+
+05 | 00:08.5–00:10.0 | GROUND-LEVEL TRACKING
+
+24 mm, camera just above the wet grass, moving slowly beside the traveler's lower legs. Rain-laden white flowers and individual blades pass close to the lens with gentle foreground parallax. One boot presses the grass down, displacing a little surface water. The lower trunk stays ahead in the upper frame. Match the previous walking direction and use a soft, wet footstep.
+
+06 | 00:10.0–00:12.0 | MONUMENTAL LOW ANGLE
+
+21 mm from beside the near-side roots. Start on the broad, soaked trunk and slowly tilt upward into its first great branching junction, never attempting a full root-to-sky reveal in two seconds. Emphasize bark texture, immense weight and natural asymmetry. Silver-lit leaves tremble overhead. A few nearer rain streaks cross the lens; no artificial wide-angle stretching.
+
+07 | 00:12.0–00:14.0 | SHALLOW ORBIT AT THE ROOTS
+
+35 mm medium-wide, approximately waist height. Move through a restrained 10–15-degree arc around the near side of the tree, staying on the established side of the action. The traveler takes the last small step and stops within arm's reach of the trunk. Foreground roots shift gently against distant cliffs through parallax. Never perform a full circle or redesign the tree's unseen side.
+
+08 | 00:14.0–00:16.0 | OVER-THE-SHOULDER INVITATION
+
+50 mm from just behind the traveler, framing their shoulder at the edge and the wet trunk directly ahead. A subtle push brings the bark into greater presence. The traveler begins raising one hand toward it. Beyond the trunk, a soft silver opening in the fog reveals fine falling rain. Keep the light broad and natural, not a theatrical spotlight or laser beam.
+
+09 | 00:16.0–00:17.5 | TACTILE BARK CLOSE-UP
+
+100 mm close-focus detail. Continue the same hand movement as fingertips gently meet rain-soaked bark. Frame a small, believable portion of the hand rather than a full palm spread toward camera. A thin rivulet follows a bark groove beside the fingers and falls away. Anatomically natural fingers, subtle skin pressure, no gripping. Narrow the sound perspective to water on bark, fabric and quiet breath.
+
+10 | 00:17.5–00:20.0 | UPWARD VIEW INSIDE THE CANOPY
+
+18 mm, camera beneath the branches looking steeply upward and slightly outward. A slow, minimal tilt reveals the interlocking limbs and leaf layers of the same tree. Rain falls through gaps while larger drops release from leaf tips. Beyond the canopy edge, heavier rain forms a translucent curtain against the cliffs. The shelter feels intimate but remains wet. Leaves move gently, never as synchronized waving patterns.
+
+11 | 00:20.0–00:21.5 | VERTICAL TOP-DOWN PUDDLE DETAIL
+
+50 mm looking straight down beside the same exposed root. The traveler shifts one boot a few centimeters into a shallow puddle, settling their stance without leaving the tree. A reflected branch breaks into soft ripples. Show realistic water depth, a small displacement and mud beneath the surface. No large splash, stomping or new walking journey.
+
+12 | 00:21.5–00:23.5 | QUIET HUMAN PROFILE
+
+85 mm, tight side profile including shoulder and a partially shadowed face. The traveler stands beside the trunk, motionless except for a slow exhale and a slight release of shoulder tension. Tiny drops cling to hair and rust-orange fabric. The rain curtain becomes soft highlights behind them. No tears, beauty posing or exaggerated expression. Let the environment, not facial performance, carry the emotion.
+
+13 | 00:23.5–00:25.5 | DISTANT LATERAL LANDSCAPE
+
+28 mm ultra-wide from the meadow's side, with the tree, its near-side roots and the tiny traveler still geographically consistent. Mostly locked composition. One low gust combs through the nearby wet grass, then lightly stirs the outer branches. A ribbon of fog passes behind the trunk without concealing it. This is one connected natural event, not a violent storm.
+
+14 | 00:25.5–00:28.0 | WIDE CRANE WITHDRAWAL
+
+24 mm, beginning already wide. Rise and retreat slowly, revealing slightly more foreground water and separating the tree from the misty cliffs through parallax. Do not launch from a human close-up into a mountain aerial. The traveler remains at the roots, almost lost in the landscape. Rain starts easing; diffuse silver light gently strengthens across the crown. Introduce a single warm, restrained musical tone.
+
+15 | 00:28.0–00:30.0 | REFERENCE-MATCHED HERO FRAME
+
+Settle into the reference's landscape composition: enormous tree right of center, dark forest walls, luminous meadow and foreground water. The tiny rust-orange traveler now stands by the left-side roots. Fog drifts behind the canopy. Fine rain continues. The tree feels ancient and quietly overwhelming.
+
+At 00:28.2, fade in small, regular-weight off-white typography in a clear lower-left safe area:
+
+AGAIN
+Come back.
+
+Never cover the traveler or tree. No additional copy or invented logos. Fade text out by 00:29.7, leaving the landscape clean through the last frame. If accurate lettering is unavailable, leave the area empty for editorial typography.
+
+SOUND AND REPLAY
+
+No voice-over or dialogue. Layer fine rain on grass, brighter rain on leaves overhead, heavy canopy drips, wet footsteps, cloth movement, valley wind and quiet breathing. Keep rain continuous across cuts, adjusting its apparent distance to camera position. No thunder hits, trailer impacts, whooshes or orchestral climax.
+
+Move from microscopic water detail to broad aerial ambience, back to intimate hand contact, then outward into the final landscape. Music stays absent until the last two shots: one low, warm sustained note beneath nature. Let this note disappear into the rainfall before the ending.
+
+Let the final water texture and continuous rain lead back into the opening droplet. Replay feels like entering the same world again through a wide-to-macro cut, not a forced seamless morph. No fade to black, music sting or obvious stop.`,
+    },
+  },
+  {
+    id: "abxxai-riviera-fashion-campaign",
+    title: "里维埃拉时尚大片 · 1960s",
+    subtitle: "X · @abxxai · 约24秒 · 16:9",
+    description:
+      "24秒 1960s 意大利里维埃拉时尚大片：单人物单场景六镜头直切成片。工作流：人物表锁脸与衣柜 → 开场静帧锁光影 → 场景板锁地点 → Seedance 2.5 六镜分镜生成。墨镜状态按镜次变化，Kodachrome 胶片质感，手持摄影自然晃动。",
+    video: "/tutorials/abxxai-riviera-fashion-campaign/demo-web.mp4",
+    poster: "/tutorials/abxxai-riviera-fashion-campaign/poster.jpg",
+    duration: "约24秒",
+    shots: 6,
+    references: 3,
+    model: "Seedance 2.5",
+    style: "1960s 时尚大片 · 胶片质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/abxxai/status/2100600840373535136",
+    sourceAuthor: "@abxxai",
+    sourcePlatform: "X",
+    sourceImpressions: 51058,
+    tags: [
+      "约24秒 · 六镜头直切",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "1960s Kodachrome 胶片",
+      "意大利里维埃拉",
+      "时尚大片",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "人物表：锁定面部与衣柜",
+        description: `使用 GPT Image 2.5 制作人物角色表。上传清晰人脸照片，运行以下提示词生成人物表，锁定面部特征、发型、服装（奶油色红花头巾、猫眼墨镜、奶油色船领上衣、红色七分裤、平底鞋）。
+
+提示词：
+Create a photorealistic character reference sheet based on the woman in the image. Preserve her exact facial identity, structure, proportions and features.
+
+Identity & realism:
+Preserve her exact face shape, eyes, nose, lips, brows and hairline from the image
+Fair-to-tanned skin with visible pores, faint freckles across the nose and cheeks, a natural sheen on the forehead and cheekbones, slight redness, tiny natural imperfections, no over-smoothing
+Light brown hair with sun-bleached blonde tones, worn under the headscarf with loose strands escaping at the temples
+Real skin, real hair, no stylization, no CGI look, no illustration
+
+Pose & styling:
+Relaxed neutral standing pose, arms loose at her sides
+Fully dressed at all times: cream and red floral print silk headscarf tied under the chin with a long red tail hanging at the side; tortoiseshell cat-eye sunglasses; a fitted cream boat-neck short-sleeve top; high-waisted red cotton capri trousers; cream leather flat slingback shoes; small gold stud earrings; no other jewelry
+Expression calm and neutral, sunglasses ON in the full body panels, sunglasses LOWERED on the nose in the beauty close-up panel
+
+Look (same in every panel):
+Warm faded 1960s Kodachrome film photograph, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners
+
+Background: plain warm cream paper backdrop, flat and even, no environment, one soft directional shadow behind her
+
+Layout:
+Title at the top: "LENA RIVIERA — WARDROBE SHEET"
+Top row, evenly spaced: Full Body Front, Full Body Side, Full Body Back
+Bottom row, evenly spaced: Front Face Close-up, Three-Quarter Face Close-up, Left Profile Close-up, Beauty Close-up with sunglasses lowered, Headscarf Detail, Hand and Sleeve Detail
+
+Design details:
+Each frame enclosed in thin clean borders of consistent thickness
+Above each frame a centered readable serif label naming the view
+Labels never overlap the images
+
+Final quality: ultra-detailed real film photography, identical face, hair and outfit in every panel, consistent light and color across all panels, clean symmetrical professional layout, no distortion`,
+      },
+      {
+        number: 2,
+        title: "开场帧：锁定光影与构图",
+        description: `制作开场静帧作为后续视频生成的主参考。这一步是避免场景漂移的关键。使用 GPT Image 2.5 生成开场帧，锁定人物在场景中的初始姿态、光照方向、胶片质感。
+
+提示词：
+Photorealistic 1960s fashion editorial photograph of the woman in the reference image. Preserve her exact face, eyes, nose, lips, brows and hairline. Same wardrobe exactly: cream and red floral silk headscarf tied under the chin with the red tail hanging, tortoiseshell cat-eye sunglasses, fitted cream boat-neck short-sleeve top, high-waisted red capri trousers.
+
+Wide full-body shot from a low three-quarter angle, camera about 4 metres away at waist height. She sits on the door of the pastel mint 1960s open-top convertible, one leg extended, one hand resting on the door, head turned toward the lens, chin slightly down, unsmiling. The low stone wall, the Mediterranean sea, the green headland, terracotta villas and umbrella pines fill the background.
+
+Light: hard late-afternoon sun from camera left, warm and directional, crisp shadow edges on the car body and her legs, natural fill bouncing off the pale road and the mint paint, no artificial fill light.
+
+Skin is never smooth: visible pores, faint freckles, fine peach fuzz on the cheek edge, natural sheen on the forehead and cheekbone, tiny imperfections, individual brow hairs, no retouching, no beauty filter.
+
+Look: warm faded 1960s Kodachrome, slightly overexposed sky, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners, aged print border with edge wear.`,
+      },
+      {
+        number: 3,
+        title: "场景板：锁定地点与环境",
+        description: `使用 GPT Image 2.5 制作场景板，锁定里维埃拉悬崖公路、薄荷绿敞篷车、石墙、地中海海景、山坡别墅等环境元素。无人物，仅环境。
+
+提示词：
+Create a photorealistic environment reference sheet of the location in the image, with no people anywhere in any panel.
+
+Location: a narrow coastal cliff road on the Italian Riviera, a late summer afternoon in 1967. A pastel mint green 1960s open-top convertible parked at the edge, a low weathered stone wall, the glittering Mediterranean below, a green rocky headland, terracotta and ochre villas with a small domed church stacked up the hillside, umbrella pines and cypress trees, small white boats far out on the water.
+
+Lighting lock, identical in every panel: hard late-afternoon sun from the left, warm and directional, crisp shadow edges, a slightly overexposed pale sky, warm bounce light off the pale road surface.
+
+Panels:
+Top, full width: Wide Establishing. The road, the parked mint convertible seen in three-quarter, the stone wall, the sea and the villas on the hillside.
+Bottom left: The Car. The convertible close, showing the mint paintwork, chrome trim, the round side mirror, the thin black steering wheel, the cream-faced dashboard gauges and the empty cream leather seats.
+Bottom right: The Wall and View. The low weathered stone wall in the foreground with the sea, the boats and the headland beyond.
+
+Look, same in every panel: warm faded 1960s Kodachrome film photograph, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners.
+
+Layout: title at the top "RIVIERA CLIFF ROAD — LOCATION PLATE". Each panel in thin clean borders with a centered readable serif label above it. Labels never overlap the images.
+
+Final quality: ultra-detailed real film photography, the same place, same car and same light in every panel, no people, no distortion.`,
+      },
+      {
+        number: 4,
+        title: "Seedance 2.5 六镜头成片生成",
+        description: `将前三步生成的人物表、开场帧、场景板上传至 Seedance 2.5，粘贴下方完整六镜头提示词。24秒直切六镜头：广角全身 → 低角度英雄镜 → 侧面轮廓 → 手部细节 → 回望走姿 → 美妆特写。墨镜状态按镜次变化（戴上 → 推到头巾 → 手持 → 摘下）。
+
+完整提示词见下方"视频生成提示词"区域。`,
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-character-sheet",
+        number: "参考图 1",
+        title: "人物表：Lena Riviera",
+        subtitle: "GPT Image 2.5 · 角色锁定表",
+        image: "/tutorials/abxxai-riviera-fashion-campaign/ref-character-sheet.jpg",
+        prompt: `Create a photorealistic character reference sheet based on the woman in the image. Preserve her exact facial identity, structure, proportions and features.
+
+Identity & realism:
+Preserve her exact face shape, eyes, nose, lips, brows and hairline from the image
+Fair-to-tanned skin with visible pores, faint freckles across the nose and cheeks, a natural sheen on the forehead and cheekbones, slight redness, tiny natural imperfections, no over-smoothing
+Light brown hair with sun-bleached blonde tones, worn under the headscarf with loose strands escaping at the temples
+Real skin, real hair, no stylization, no CGI look, no illustration
+
+Pose & styling:
+Relaxed neutral standing pose, arms loose at her sides
+Fully dressed at all times: cream and red floral print silk headscarf tied under the chin with a long red tail hanging at the side; tortoiseshell cat-eye sunglasses; a fitted cream boat-neck short-sleeve top; high-waisted red cotton capri trousers; cream leather flat slingback shoes; small gold stud earrings; no other jewelry
+Expression calm and neutral, sunglasses ON in the full body panels, sunglasses LOWERED on the nose in the beauty close-up panel
+
+Look (same in every panel):
+Warm faded 1960s Kodachrome film photograph, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners
+
+Background: plain warm cream paper backdrop, flat and even, no environment, one soft directional shadow behind her
+
+Layout:
+Title at the top: "LENA RIVIERA — WARDROBE SHEET"
+Top row, evenly spaced: Full Body Front, Full Body Side, Full Body Back
+Bottom row, evenly spaced: Front Face Close-up, Three-Quarter Face Close-up, Left Profile Close-up, Beauty Close-up with sunglasses lowered, Headscarf Detail, Hand and Sleeve Detail
+
+Design details:
+Each frame enclosed in thin clean borders of consistent thickness
+Above each frame a centered readable serif label naming the view
+Labels never overlap the images
+
+Final quality: ultra-detailed real film photography, identical face, hair and outfit in every panel, consistent light and color across all panels, clean symmetrical professional layout, no distortion`,
+      },
+      {
+        id: "ref-start-frame",
+        number: "参考图 2",
+        title: "开场帧：悬崖边的瞬间",
+        subtitle: "GPT Image 2.5 · 光影与构图锁定",
+        image: "/tutorials/abxxai-riviera-fashion-campaign/ref-start-frame.jpg",
+        prompt: `Photorealistic 1960s fashion editorial photograph of the woman in the reference image. Preserve her exact face, eyes, nose, lips, brows and hairline. Same wardrobe exactly: cream and red floral silk headscarf tied under the chin with the red tail hanging, tortoiseshell cat-eye sunglasses, fitted cream boat-neck short-sleeve top, high-waisted red capri trousers.
+
+Wide full-body shot from a low three-quarter angle, camera about 4 metres away at waist height. She sits on the door of the pastel mint 1960s open-top convertible, one leg extended, one hand resting on the door, head turned toward the lens, chin slightly down, unsmiling. The low stone wall, the Mediterranean sea, the green headland, terracotta villas and umbrella pines fill the background.
+
+Light: hard late-afternoon sun from camera left, warm and directional, crisp shadow edges on the car body and her legs, natural fill bouncing off the pale road and the mint paint, no artificial fill light.
+
+Skin is never smooth: visible pores, faint freckles, fine peach fuzz on the cheek edge, natural sheen on the forehead and cheekbone, tiny imperfections, individual brow hairs, no retouching, no beauty filter.
+
+Look: warm faded 1960s Kodachrome, slightly overexposed sky, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners, aged print border with edge wear.`,
+      },
+      {
+        id: "ref-location-sheet",
+        number: "参考图 3",
+        title: "场景板：里维埃拉悬崖公路",
+        subtitle: "GPT Image 2.5 · 环境锁定表",
+        image: "/tutorials/abxxai-riviera-fashion-campaign/ref-location-sheet.jpg",
+        prompt: `Create a photorealistic environment reference sheet of the location in the image, with no people anywhere in any panel.
+
+Location: a narrow coastal cliff road on the Italian Riviera, a late summer afternoon in 1967. A pastel mint green 1960s open-top convertible parked at the edge, a low weathered stone wall, the glittering Mediterranean below, a green rocky headland, terracotta and ochre villas with a small domed church stacked up the hillside, umbrella pines and cypress trees, small white boats far out on the water.
+
+Lighting lock, identical in every panel: hard late-afternoon sun from the left, warm and directional, crisp shadow edges, a slightly overexposed pale sky, warm bounce light off the pale road surface.
+
+Panels:
+Top, full width: Wide Establishing. The road, the parked mint convertible seen in three-quarter, the stone wall, the sea and the villas on the hillside.
+Bottom left: The Car. The convertible close, showing the mint paintwork, chrome trim, the round side mirror, the thin black steering wheel, the cream-faced dashboard gauges and the empty cream leather seats.
+Bottom right: The Wall and View. The low weathered stone wall in the foreground with the sea, the boats and the headland beyond.
+
+Look, same in every panel: warm faded 1960s Kodachrome film photograph, low contrast with lifted blacks, soft halation on highlights, fine film grain, gentle softness at the frame corners.
+
+Layout: title at the top "RIVIERA CLIFF ROAD — LOCATION PLATE". Each panel in thin clean borders with a centered readable serif label above it. Labels never overlap the images.
+
+Final quality: ultra-detailed real film photography, the same place, same car and same light in every panel, no people, no distortion.`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description: "镜头 1 (0-4秒) — 广角全身建立镜头：低三分之二角度，距离4米腰部高度。她坐在车门上，手从墨镜移到车身，海风吹动红色围巾尾端。镜头慢推进。",
+      },
+      {
+        number: 2,
+        description: "镜头 2 (4-8秒) — 低角度英雄镜头：从地面近处低角度，距离约2米。她站在敞开的驾驶座旁，一手扶门框，重心移向一侧髋部，下巴缓缓抬起望向镜头外的大海。镜头缓慢上升至眼睛高度。",
+      },
+      {
+        number: 3,
+        description: "镜头 3 (8-12秒) — 侧面轮廓镜头：眼睛高度侧面轮廓，距离约2米。她站在石墙边望向大海，墨镜推到头巾里，露出双眼。海风吹起围巾尾端和鬓角发丝，她缓缓眨眼一次。镜头几乎静止。",
+      },
+      {
+        number: 4,
+        description: "镜头 4 (12-16秒) — 手部细节特写：距离约60厘米。她的手和前臂搭在方向盘上，手指放松，镀铬仪表板和奶油色仪表盘在旁，红色围巾尾端从画面顶部落下，海景在挡风玻璃外模糊。手指轻轻敲击方向盘一次。镜头缓慢沿镀铬装饰滑动。",
+      },
+      {
+        number: 5,
+        description: "镜头 5 (16-20秒) — 回望走姿镜头：四分之三后视角，眼睛高度，距离约3米。她沿着悬崖公路背对镜头走向停放的车，围巾和尾端清晰可见，墨镜拿在手中。约18.5秒时她转头越过左肩回望镜头，平静不笑。镜头跟随行走节奏。",
+      },
+      {
+        number: 6,
+        description: "镜头 6 (20-24秒) — 美妆特写镜头：头部和肩膀，眼睛高度，距离约80厘米。墨镜重新戴上。她用两指缓慢将墨镜沿鼻梁往下拉，直视镜头，越过墨镜上方看向镜头。一侧颧骨明亮侧光，另一侧柔和阴影。她保持凝视，影片在眼神定格中结束。镜头极慢推进至结束。",
+      },
+    ],
+    constraints:
+      "单角色单造型单地点 1960s 时尚大片工作流。人物表、开场帧、场景板需用 GPT Image 2.5 先行制作锁定面部、服装、光影、环境，再统一上传 Seedance 2.5 生成六镜头直切成片。墨镜状态按镜次变化：Shot 1-2 戴上，Shot 3 推到头巾，Shot 4 画面外，Shot 5 手持，Shot 6 戴上后摘下。来源 @abxxai / X / 51058 曝光。",
+    video_prompt: {
+      title: "Seedance 2.5 六镜头成片提示词",
+      subtitle: "完整可复制提示词 · 24秒六镜头直切",
+      content: `=== REFERENCE MAP ===
+[COVER FRAME] → the reference photograph: the woman in the cream and red floral headscarf and tortoiseshell cat-eye sunglasses, cream boat-neck top and red capri trousers, seated on the door of the pastel mint 1960s convertible, one hand lowering her sunglasses, the low stone wall, the glittering sea, the green headland, terracotta villas and umbrella pines behind. This is the master for her face, her wardrobe, the light and the film look of every shot in the film.
+@[lena] → wardrobe sheet. Her face, hair and the full outfit from every angle. Where the sheet and the cover frame differ on her face, the cover frame wins.
+@[road] → location plate. The cliff road, the mint convertible, the stone wall, the sea, the hillside villas. Every shot happens inside this one location.
+
+=== FILM FORMAT ===
+A 24 second 1960s fashion cover film, 1080p, shot on 35mm. SIX shots, each about 4 seconds, joined by clean straight cuts on the music. This is edited coverage of a single real photo shoot: one model, one look, one location, one afternoon.
+One character only. No second person, no crew, no photographer in frame, no camera or equipment visible anywhere.
+
+=== LOOK LOCK, IDENTICAL IN ALL SIX SHOTS ===
+Warm faded 1960s Kodachrome, low contrast with lifted blacks, a slightly overexposed pale sky, soft halation on highlights, fine even film grain, gentle softness at the frame corners, subtle gate weave.
+Light never changes: hard late-afternoon sun from camera left, warm and directional, crisp shadow edges, warm bounce off the pale road lifting the shadow side of her face. No lamps, no fill cards, no lighting changes, no grade shifts between shots.
+SKIN IS THE SUBJECT. In every shot: visible pores, faint freckles across the nose and cheeks, fine peach fuzz along the jaw and cheek edge, natural sheen on the forehead and cheekbones, tiny imperfections, individual lashes and brow hairs, flyaway hairs lit from behind. No smoothing, no beauty filter, no waxy or plastic skin, no retouching.
+WARDROBE LOCK, never changes: cream and red floral silk headscarf tied under the chin with the red tail hanging, tortoiseshell cat-eye sunglasses, fitted cream boat-neck top, high-waisted red capri trousers, cream flat slingbacks, small gold studs.
+CAMERA FEEL: every shot is handheld by a working stills photographer moving around his subject. Gentle continuous sway, small unhurried corrections, horizon 1 to 3 degrees off. Never jittery, never locked off, never gimbal-smooth. One single slow move per shot with a soft ease in and ease out, nothing more.
+
+=== SHOT 1, 0.0 to 4.0s, WIDE ESTABLISHING ===
+Frame 0.0 is [COVER FRAME]. Full body, low three-quarter angle from about 4 metres at waist height. She sits on the car door exactly as in the cover frame, then lowers her hand from the sunglasses to rest on the mint paintwork, settles her shoulders and turns her chin a fraction toward the lens. Sea wind moves the red scarf tail and loose strands at her temple.
+CAMERA: slow push in from 4 metres to about 3 metres, easing in and out.
+
+=== SHOT 2, 4.0 to 8.0s, LOW HERO ANGLE ===
+CUT. Low angle from near the road surface, about 2 metres away. She is now standing beside the open driver's door, one hand on the top of the door frame, weight settling onto one hip, chin lifting slowly as she looks off past the lens toward the sea. Pale sky and the tops of the umbrella pines fill the upper frame, sun flaring softly off the chrome trim below.
+CAMERA: slow rise from low to just under eye level as her chin lifts, the two moves finishing together.
+
+=== SHOT 3, 8.0 to 12.0s, PROFILE IN THE WIND ===
+CUT. Clean side profile at eye level, about 2 metres away. She stands at the low stone wall looking out to sea, spine straight, one hand on the wall. Her sunglasses are now pushed up into the scarf above her forehead and her eyes are bare. The wind lifts the scarf tail and the fine hairs at her temple sideways. She blinks once, slowly. The sun rakes across the bridge of her nose, her lashes and the edge of the scarf. The glittering sea and a distant white boat sit soft behind her.
+CAMERA: almost still, only the natural handheld sway and a very slight drift closer.
+
+=== SHOT 4, 12.0 to 16.0s, DETAIL, HAND AND CHROME ===
+CUT. Tight detail about 60 cm away. She is back at the car, her hand and forearm resting on the thin black steering wheel, fingers relaxed, short natural nails, the chrome dash trim and the round cream-faced gauges beside her hand, the red scarf tail falling through the top of the frame, the sea blurred far beyond the windscreen. Her fingers move once, tapping the wheel lightly. Her face is out of frame or only a soft edge at the top.
+CAMERA: slow drift along the chrome from the gauges to her hand, a bright specular streak travelling with it.
+
+=== SHOT 5, 16.0 to 20.0s, WALK AND LOOK BACK ===
+CUT. Three-quarter rear at eye level, about 3 metres away. She walks away from the lens along the cliff road toward the parked car, the tied scarf and the red tail reading clearly on her back, her sunglasses now held down at her side in one hand. At about 18.5s she turns her head back over her left shoulder into the lens, calm and unsmiling, and holds it. Her long shadow runs across the pale road, the sea and the villas ahead of her.
+CAMERA: slow follow at walking pace, drifting a little closer as she turns.
+
+=== SHOT 6, 20.0 to 24.0s, BEAUTY CLOSE-UP ===
+CUT. Head and shoulders at eye level, about 80 cm away, her face filling most of the frame. The sunglasses are back on. She slowly lowers them down the bridge of her nose with two fingertips, exactly the gesture from the cover frame, and looks directly over the top of them into the lens. One clean bright side light across one cheekbone, a soft warm shadow down the other side, a small catch-light in each eye. Every pore, freckle and fine hair readable. She holds it. The final frame is a still hold on her eyes as the film ends.
+CAMERA: extremely slow push in through the whole shot, coming to rest at the end.
+
+=== HARD RULES ===
+Exactly 24 seconds. Exactly six shots. Straight cuts only, on the beat, at 4.0, 8.0, 12.0, 16.0 and 20.0 seconds.
+NO dissolves, fades, wipes, whips, flash frames, speed ramps, slow motion, freeze frames, digital zoom, split screens, filters, light leaks, text, captions, logos or watermarks.
+The same woman, the same face and the same outfit in all six shots. No wardrobe change, no hair change, no makeup change.
+Her sunglasses state is exactly: on in shot 1 and 2, pushed up into the scarf in shot 3, out of frame in shot 4, in her hand in shot 5, on and then lowered in shot 6. Never any other state.
+One move per shot only. The camera never combines a push with a pan or a rise.
+The location matches @[road] in every shot. The camera never leaves this cliff road and the car is never moved or driven.
+Her poses are natural model poses with a visible beginning, middle and end. She settles into each one at human speed. Nothing snaps, jerks, teleports or holds unnaturally still. She is never frozen and never contorted.
+No dialogue. She never speaks and her mouth stays closed and relaxed.
+No other people, no crew, no photographer, no reflections of a camera in the chrome, the mirror or her sunglasses.
+The light and the grade in the last frame are identical to the first.
+
+=== AUDIO ===
+One continuous original instrumental for the whole 24 seconds: a soft, warm 1960s Riviera bossa nova. Nylon string guitar, brushed drums, a light upright bass and a distant vibraphone, unhurried and gentle, no vocals, no lyrics, no drop, no build. It starts at 0.0s and plays evenly to the end.
+Underneath it, quiet natural ambience: a light sea breeze, the sea far below, faint cicadas, the scarf fabric moving in the wind. No dialogue, no shutter sounds, no sound effects on any cut, no whooshes.
+
+=== OUTPUT ===
+24 seconds, 1080p, six shots, straight cuts, warm faded 1960s Kodachrome fashion film, one locked character, original instrumental score, no dialogue.`,
+    },
+  },
+  {
+    id: "shanghai-scallion-pancake",
+    title: "老上海葱油饼",
+    subtitle: "X · 369Serena · 30秒 · 16:9",
+    description:
+      "清晨老上海弄堂口的传统葱油饼小铺，展现完整制作过程：揉面、切葱、擀开抹猪油、卷起盘圆、煎制、入炉烘香、掰开展示层层酥脆。日式动漫美食电影风格，节奏明快，细节丰富。作者槽点：忘了放猪油。",
+    video: "/tutorials/shanghai-scallion-pancake/demo-web.mp4",
+    poster: "/tutorials/shanghai-scallion-pancake/poster.jpg",
+    duration: "30秒",
+    shots: 10,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "日式动漫美食 · 老上海街边",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/369Serena/status/2100887564274348245",
+    sourceAuthor: "@369Serena",
+    sourcePlatform: "X",
+    sourceImpressions: 3659,
+    tags: [
+      "30秒 · 10 制作节拍",
+      "无参考图 · 纯文生可跟做",
+      "Seedance 2.5",
+      "日式动漫美食电影风格",
+      "外脆内软层次感",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂美食制作节奏",
+        description:
+          "清晨开场→揉面→切葱→擀开抹油→卷起盘圆→压饼→煎制→翻面→入炉烘香→掰开展示。核心是真实制作物理（面团形变、葱花散落、油光）+ 层次感展示（外脆内软）+ 老上海氛围（石库门、木窗、晨光）。",
+      },
+      {
+        number: 2,
+        title: "选择模型与设置",
+        description:
+          "Seedance 2.5。16:9 · 30s · 打开声音（轻快爵士器乐 + ASMR 烹饪音效：揉面、切葱、擀面、滋啦声、酥壳断裂）。无需参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持清晨暖光；面团柔软形变；葱花真实散落；煎制物理（气泡、焦斑）；烘炉暖橙色光；掰开展示层次与热气；负面提示：无文字/无超现实变形/保持视觉一致性。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–2s 清晨弄堂：近景从木窗向内移动，晨光斜照案板，摊主放下醒好的面团。面团轻轻变形，表面光泽。",
+      },
+      {
+        number: 2,
+        description:
+          "2–4.5s 揉压面团：斜俯拍特写，掌根推压折叠面团，面粉飞扬，留下揉压痕迹。",
+      },
+      {
+        number: 3,
+        description:
+          "4.5–6.5s 切葱：微距侧拍，刀刃有节奏地切出细小均匀葱花，葱白与翠绿交错，切口湿润。",
+      },
+      {
+        number: 4,
+        description:
+          "6.5–9s 擀开抹油：擀成薄长面片，用小勺抹开半凝固猪油形成油膜，撒盐和葱花自然散落。",
+      },
+      {
+        number: 5,
+        description:
+          "9–12s 卷起盘圆：从长边卷成细长面卷，再从一端盘成螺旋形，末端压在底部。葱花包入层层面皮。",
+      },
+      {
+        number: 6,
+        description:
+          "12–14s 压成圆饼：低角度特写，手掌缓缓压下螺旋面团，形成厚实小圆饼，表面留有盘卷纹理。",
+      },
+      {
+        number: 7,
+        description:
+          "14–17s 入锅煎制：圆饼放入热油锅，接触瞬间出现气泡，通过时间跳切，饼边染上金黄色。",
+      },
+      {
+        number: 8,
+        description:
+          "17–19.5s 翻面：低机位微距，铲起翻面，露出金黄焦斑与鼓泡，落回锅中滋啦作响。",
+      },
+      {
+        number: 9,
+        description:
+          "19.5–22s 入炉烘香：送入小烘炉，暖橙色炉光映亮饼面，时间跳切至表面酥脆、焦斑加深，热气逸出。",
+      },
+      {
+        number: 10,
+        description:
+          "22–30s 掰开与展示：双手隔牛皮纸掰开，外层酥壳裂开，内部柔软层层面皮与翠绿葱花显现，热气升起。最终两半放在竹盘中，镜头后拉带出弄堂，自行车铃声收尾。",
+      },
+    ],
+    constraints:
+      "清晨暖光；真实面团物理；葱花自然散落；煎制气泡与焦斑；烘炉暖光；掰开层次感；保持视觉一致性；来源 369Serena/X；Seedance 2.5。",
+    video_prompt: {
+      title: "老上海葱油饼 · Shanghai Scallion Pancake · 30s · 16:9",
+      subtitle: "Seedance 2.5 · 日式动漫美食电影风格",
+      content: `Seedance 2.5 中文提示词｜老上海葱油饼
+
+创作一支 30 秒、节奏明快、具有电影感的日式动漫美食视频，内容是在老上海街边小吃铺制作传统葱油饼，并且完全根据以下文字描述生成。
+
+主角是一张厚实、小巧、圆形的上海葱油饼：
+表面金黄，带有深浅自然的焦斑，
+外壳酥脆，内部柔软，具有清晰的面皮层次与葱花。
+采用先煎后烘的制作过程。
+通过自然的时间跳切，表现实际需要更长时间的揉面、煎制与烘烤。
+
+重要要求：
+不要展示、重现、描摹、参考或模仿任何分镜图、草图、参考图、画格、标注或源素材。
+只生成原创的日系动漫风格动画。
+场景、食物、器具与生活细节体现老上海传统小吃铺的氛围。
+
+风格（STYLE）
+
+高质量日本动画电影风格，
+具有电影感的清晨暖光，
+食物材质超细节表现，
+真实的面团形变与烹饪物理效果，
+可见的轻微热气与锅边油烟，
+浅景深，
+微距特写镜头，
+顺滑而克制的镜头运动。
+
+场景是一间位于上海老弄堂口的传统葱油饼小铺。
+深色木质操作台、旧铁煎锅、嵌在灶台中的小烘炉，
+背景隐约可见石库门门框、灰砖墙与木窗。
+环境整洁，器具带有长期使用形成的自然痕迹。
+
+晨光从铺面一侧斜照进来，
+照亮面粉颗粒、面团上的薄油光和升起的热气。
+色彩以暖金色、木褐色、灰砖色与鲜葱绿色为主。
+环境作为柔和背景，镜头始终以食物和制作动作作为主体。
+
+只出现同一位摊主的双手与前臂，
+穿着素色棉布袖口，不展示人物面部。
+
+整体剪辑快速而富有韵律。
+通过动作方向、圆形轮廓、食材质感与相近构图进行自然匹配剪辑（match cuts）。
+每个镜头只有一个清晰的主要动作。
+关键的擀压、翻面、出炉与掰开动作保持连贯。
+
+时间轴（TIMELINE）
+
+0–2 秒 —— 老弄堂里的清晨
+近景镜头从小铺木窗边缓缓向内移动。
+清晨阳光斜落在木质案板上。
+摊主将一块已经醒好的柔软面团放在案板中央。
+面团落下时轻轻变形，表面细腻，带有柔和光泽。
+背景中的石库门与灰砖墙保持虚化。
+
+2–4.5 秒 —— 揉压面团
+切换至案板上方的斜俯拍特写。
+掌根向前推压面团，再将其折回。
+面团随着手掌自然伸展、折叠，呈现柔软而有韧性的质感。
+案板上的少量面粉被推开，留下清晰的揉压痕迹。
+
+4.5–6.5 秒 —— 切葱
+微距侧拍：洗净并沥干的青葱整齐放在案板上。
+刀刃有节奏地落下，切出细小均匀的葱花。
+葱白与翠绿葱叶交错散开。
+切口湿润，新鲜葱段随着刀刃轻轻跳动。
+镜头沿刀刃前进的方向短距离跟随。
+
+6.5–9 秒 —— 擀开与抹油
+通过手部向前移动的动作匹配，切换到擀面镜头。
+一份面剂被擀成较薄的长形面片。
+用小勺背将少量半凝固的猪油均匀抹开，
+在面片上形成一层薄薄的润泽油膜。
+随后撒上少量盐和切好的葱花。
+葱花自然散落在面片上，不堆成厚厚一团。
+
+9–12 秒 —— 卷起与盘圆
+保持同一个斜俯拍镜头。
+双手从面片长边开始，将其卷成细长面卷。
+随后把面卷从一端盘成紧凑的螺旋形，
+将末端轻轻压在底部。
+面团随着手指弯曲，葱花被包入层层面皮之间。
+动作清楚、连续，面团不突然改变形状。
+
+12–14 秒 —— 压成圆饼
+切换到贴近案板的低角度特写。
+手掌缓缓压下螺旋面团，形成厚实的小圆饼。
+饼身逐渐展开，边缘自然变圆，
+表面仍保留淡淡的盘卷纹理，
+局部能看到薄面皮下透出的绿色葱花。
+
+14–17 秒 —— 入锅煎制
+利用圆饼的轮廓进行匹配剪辑，切到旧铁煎锅的斜俯拍。
+摊主将圆饼平稳放入带有薄层热油的锅中。
+接触锅面的瞬间，饼边出现细密气泡。
+热油沿圆饼边缘轻轻流动。
+通过一次自然的时间跳切，
+表现饼边逐渐定型，并染上浅金黄色。
+
+17–19.5 秒 —— 翻面
+低机位微距特写。
+金属锅铲从饼底完整托起，将葱油饼翻面一次。
+翻转时露出已经煎成金黄色的一面，
+表面分布着深浅不一的焦斑与细小鼓泡。
+圆饼落回锅中，响起清脆的滋啦声。
+饼身保持完整，厚度与大小不变。
+
+19.5–22 秒 —— 入炉烘香
+侧面近景。
+摊主用长柄铲将煎至两面金黄的葱油饼送入小烘炉，
+平放在炉内烤架上。
+暖橙色炉光映亮饼面。
+以时间跳切切至炉口特写：
+葱油饼表面变得更干爽酥脆，
+边缘的薄面层略微翘起，焦斑颜色加深。
+轻微热气从炉口缓缓逸出。
+
+22–24 秒 —— 出炉
+镜头跟随长柄铲向外移动。
+烘好的葱油饼被轻轻放到木台上的金属沥油网上。
+落下时发出轻微而干脆的触碰声。
+晨光掠过起伏的饼面，
+细致表现酥壳、焦斑与少量露出的葱花。
+表面只保留薄薄油光，不滴油。
+
+24–27 秒 —— 掰开特写
+极近距离拍摄。
+双手隔着一张无文字的牛皮纸，轻轻掰开葱油饼。
+外层酥壳先出现裂纹，随后自然断开，
+少量金黄色碎屑落在纸上。
+内部柔软的面层随动作短暂牵连，再缓缓分开。
+断面露出层层面皮与翠绿、深绿交错的熟葱花，
+细薄热气从中心升起。
+重点表现外脆内软的质感。
+
+27–30 秒 —— 最终展示（Hero Reveal）
+两半葱油饼放在铺有无文字牛皮纸的竹编小盘中，
+其中一半略微倾斜，清楚展示内部层次。
+金黄酥壳、深色焦斑、柔软面层与葱花同时可见。
+
+镜头从断面微距缓慢后拉，
+逐渐带出木质窗台和虚化的老上海弄堂。
+清晨暖光照亮薄薄升起的热气，
+远处隐约传来一声自行车铃。
+以温暖、朴素而精致的动漫美食电影感结尾。
+
+音频（AUDIO）
+
+轻快、温暖、带有老上海清晨气息的爵士器乐，
+速度为 105–115 BPM，
+使用柔和钢琴、拨弦低音提琴与轻巧的刷奏鼓，
+加入少量温润的单簧管旋律。
+无歌词、无人声旁白。
+音乐保持轻盈，不盖过制作声音。
+
+同步加入真实、细腻的 ASMR 烹饪音效：
+面团落在案板上的轻响、
+掌根揉压面团的声音、
+有节奏的切葱声、
+擀面杖滚动声、
+撒落葱花的细微声响、
+圆饼入锅后的滋啦声、
+锅铲接触铁锅的声音、
+出炉后轻放在金属网上的声音、
+牛皮纸轻轻摩擦的声音、
+以及掰开酥壳时清晰的碎裂声。
+
+掰开葱油饼时，适当降低背景音乐，
+突出外壳断裂的酥脆声音。
+结尾用一声远处轻巧的自行车铃自然收尾。
+
+负面约束（NEGATIVE）
+
+不要出现任何：
+分镜图、参考图、草图、画格、边框、数字、箭头、标注、
+字幕、说明文字、UI、Logo、水印或文字叠加。
+
+不要出现其他菜品。
+不要加入鸡蛋、芝士、火腿、辣酱或无关配料。
+不要把葱油饼制作成薄脆煎饼、手抓饼、披萨或带大块馅料的馅饼。
+不要出现芝士式拉丝、夸张爆汁或不合理的食物膨胀。
+不要出现浓烟、火焰包围食物或过量飞溅的热油。
+不要出现现代塑料包装、霓虹灯或日式店铺装饰。
+
+避免多余手指、手部穿透食物、厨具变形，
+以及面团、葱花或成品突然增多、消失、变换形状。
+
+确保整支视频中的：
+同一张葱油饼的大小与厚度、
+摊主的双手与衣袖、
+厨具、操作台、光线方向与小铺环境
+都保持视觉一致性。`,
+    },
+  },
+  {
+    id: "anime-katsudon",
+    title: "日式猪排饭 Katsudon",
+    subtitle: "X · Goodmanprotocol · 30秒 · 16:9",
+    description:
+      "完整展示日式炸猪排盖饭制作流程：敲打猪肉、裹面包糠、油炸、切片、煨煮洋葱与高汤、滑蛋、盖浇米饭。快节奏动漫美食电影风格，搭配80年代日式城市流行乐器乐与ASMR烹饪音效。",
+    video: "/tutorials/anime-katsudon/demo-web.mp4",
+    poster: "/tutorials/anime-katsudon/poster.jpg",
+    duration: "30秒",
+    shots: 11,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "日式动漫美食 · 快节奏",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Goodmanprotocol/status/2098845134326808734",
+    sourceAuthor: "@Goodmanprotocol",
+    sourcePlatform: "X",
+    sourceImpressions: 10434418,
+    tags: [
+      "30秒 · 11 制作节拍",
+      "无参考图 · 纯文生可跟做",
+      "Seedance 2.5",
+      "日式动漫美食电影风格",
+      "80年代城市流行乐",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "读懂美食制作节奏",
+        description:
+          "敲打猪肉→裹粉→炸制→切片→煨煮高汤洋葱→加入炸猪排→淋蛋液→滑蛋凝固→准备米饭→盖浇成品→英雄展示。核心是真实烹饪物理（面糊附着、油泡、蛋液流动）+ 快速剪辑匹配 + 日式厨房氛围。",
+      },
+      {
+        number: 2,
+        title: "选择模型与设置",
+        description:
+          "Seedance 2.5。16:9 · 30s · 打开声音（80年代日式城市流行乐器乐 + ASMR 烹饪音效：敲打、油炸滋啦、刀切、气泡、蛋液倾倒）。无需参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "保持温暖日式厨房光；真实食材纹理；面糊附着物理；油炸气泡细节；蛋液半熟微颤；米饭光泽；负面提示：无文字叠加/无不相关食材/保持一致性。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–2.5s 准备猪肉：特写双手用木槌敲打厚猪里脊，肉逐渐变薄，纤维松弛，均匀撒盐和胡椒。清脆有节奏的敲打声。",
+      },
+      {
+        number: 2,
+        description:
+          "2.5–5s 裹面包糠：快速匹配剪辑——猪肉按入面粉、浸入打散的蛋液、牢固裹上粗面包糠。真实蛋液滴落与面包糠附着。",
+      },
+      {
+        number: 3,
+        description:
+          "5–7.5s 油炸：将裹好的猪排放入热油，猛烈气泡包围炸猪排，外壳变成金黄酥脆。温暖电影光与细腻油流动。",
+      },
+      {
+        number: 4,
+        description:
+          "7.5–9.5s 切片：炸好的猪排放在木板上，锋利的刀切成均匀条状，酥脆外壳自然裂开，露出多汁白色猪肉，轻微蒸汽逸出。",
+      },
+      {
+        number: 5,
+        description:
+          "9.5–12s 煨煮高汤与洋葱：切薄的洋葱在琥珀色高汤中的浅锅里轻轻煨煮，小气泡升起，洋葱变透明。筷子轻轻拨动。",
+      },
+      {
+        number: 6,
+        description:
+          "12–14s 加入猪排：用筷子将切好的炸猪排小心放在煨煮的洋葱上，汤汁开始浸入酥脆边缘，蒸汽升起。",
+      },
+      {
+        number: 7,
+        description:
+          "14–16.5s 淋蛋液：缓慢倾倒打散的金黄蛋液在猪排和洋葱上，蛋液自然流过缝隙，热边缘开始凝固。",
+      },
+      {
+        number: 8,
+        description:
+          "16.5–19s 滑蛋凝固：特写蛋液在小火上轻轻凝固，边缘变软金黄，中心保持光泽、微流动、微颤。无搅拌。",
+      },
+      {
+        number: 9,
+        description:
+          "19–21s 准备米饭：白色陶瓷丼碗盛满蒸腾的日本短粒米饭，米饭看起来蓬松且略带光泽。",
+      },
+      {
+        number: 10,
+        description:
+          "21–24s 盖浇：小心将锅中的蛋液猪排混合物滑入米饭上，蛋液自然落成柔和波浪，高汤轻微浸入米饭。",
+      },
+      {
+        number: 11,
+        description:
+          "24–30s 英雄展示：完成的猪排饭静置在台面上，光泽蛋液慢慢落在猪排和米饭上，轻轻颤动。慢速电影推进。最终呈现在传统蓝白陶瓷碗中的成品，金色蛋液覆盖酥脆猪排盖在光泽米饭上，顶部新鲜三叶草，蒸汽升起，镜头缓慢环绕碗身，以美丽的动漫美食电影感结尾。",
+      },
+    ],
+    constraints:
+      "温暖日式厨房光；真实食材纹理；面糊附着与油炸物理；蛋液半熟微颤；米饭光泽；保持一致性；来源 Goodmanprotocol/X；Seedance 2.5。",
+    video_prompt: {
+      title: "日式猪排饭 Katsudon · 30s · 16:9",
+      subtitle: "Seedance 2.5 · 日式动漫美食电影风格",
+      content: `Create a 30-second fast-paced cinematic Japanese anime cooking video showing the preparation of authentic katsudon, entirely from the text description below.
+
+IMPORTANT: Do not display, recreate, trace, reference, or imitate any storyboard, sketch, reference image, panel, annotation, or source material. Generate only original anime-style animation.
+
+STYLE
+
+High-quality Japanese anime film style, cinematic summer lighting, ultra-detailed food textures, realistic cooking physics, visible steam and moisture, shallow depth of field, macro close-ups, smooth camera movement, warm Japanese kitchen atmosphere. Fast rhythmic editing with natural match cuts based on movement, shape, texture, and composition.
+
+TIMELINE
+
+0–2.5s — Prepare Pork
+Close-up of hands pounding a thick pork loin with a wooden mallet on a cutting board. The meat gradually flattens and its fibers loosen. Sprinkle salt and pepper evenly. Crisp rhythmic impacts.
+
+2.5–5s — Bread the Pork
+Quick match cuts: press the pork into flour, dip into beaten egg, then firmly coat with coarse panko breadcrumbs. Show realistic egg dripping and breadcrumbs adhering to the surface.
+
+5–7.5s — Fry
+Lower the breaded pork into hot golden oil. Intense bubbling surrounds the cutlet as the crust turns golden brown and crispy. Warm cinematic lighting and detailed oil movement.
+
+7.5–9.5s — Slice
+Place the fried tonkatsu on a wooden board. A sharp knife cuts it into even strips. The crispy crust cracks naturally, revealing juicy white pork with gentle steam escaping.
+
+9.5–12s — Simmer Dashi & Onion
+Thinly sliced onions gently simmer in amber dashi inside a shallow pan. Small bubbles rise while the onions become translucent. Chopsticks gently move them through the broth.
+
+12–14s — Add Tonkatsu
+Place the sliced tonkatsu carefully over the simmering onions using chopsticks. The broth begins soaking into the crispy edges while steam rises.
+
+14–16.5s — Pour Egg
+Slowly pour beaten golden egg over the tonkatsu and onions. The egg spreads naturally through the gaps and begins setting around the hot edges.
+
+16.5–19s — Set the Egg
+Close-up of the egg gently coagulating over low heat. Edges become soft and golden while the center remains glossy, slightly runny, and trembling. No stirring.
+
+19–21s — Prepare Rice
+A white ceramic donburi bowl receives a generous mound of steaming Japanese short-grain rice. The rice looks fluffy and slightly glossy.
+
+21–24s — Assemble
+Carefully slide the egg-and-tonkatsu mixture from the pan onto the rice. The egg settles naturally in a soft wave while dashi lightly absorbs into the rice.
+
+24–26s — Final Close-Up
+The finished katsudon rests on the counter. Glossy egg slowly settles over the tonkatsu and rice, gently trembling. Slow cinematic push-in.
+
+26–30s — Hero Reveal
+Present the finished katsudon in a traditional blue-and-white ceramic bowl on a wooden surface. Golden egg covers crispy tonkatsu over glossy rice, topped with fresh mitsuba. Steam rises as the camera slowly arcs around the bowl for a beautiful anime-food-film ending.
+
+AUDIO
+
+Bright 1980s-inspired Japanese city-pop instrumental, 110–120 BPM, with subtle koto and light chime percussion. Synchronize realistic ASMR cooking sounds: mallet impacts, knife slicing, frying sizzle, bubbling dashi, chopsticks, egg pouring, steam, and a soft ceramic clink.
+
+End with one delicate wind-chime tone during the final reveal.
+
+NEGATIVE
+
+No storyboard, reference image, sketch, panels, borders, numbers, arrows, annotations, subtitles, captions, UI, logos, or text overlays. No unrelated ingredients or dishes. Katsudon only. Keep the food, hands, utensils, lighting, and environment visually consistent throughout.`,
+    },
+  },
+  {
+    id: "husky-kisaragi-precision-brand",
+    title: "精密部品品牌片 · 看不见的精度",
+    subtitle: "X · @husky__create · 约10秒 · 16:9",
+    description:
+      "日本精密零部件企业品牌视频：通过女性技术者的日常工作，展现「看不见的精度」——普通人看不到的小部件支撑着社会与产业。工作流程：先用 GPT Image 2.5 生成九宫格分镜，再将分镜作为参考输入 Gemini Omni 1.1 Flash 生成 10 秒成片（含音乐与剪辑）。",
+    video: "/tutorials/husky-kisaragi-precision-brand/demo-web.mp4",
+    poster: "/tutorials/husky-kisaragi-precision-brand/poster.jpg",
+    duration: "约10秒",
+    shots: 9,
+    references: 1,
+    model: "GPT Image 2.5 → Gemini Omni 1.1 Flash",
+    style: "企业品牌片 · 实拍质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/husky__create/status/2100519237131395288",
+    sourceAuthor: "@husky__create",
+    sourcePlatform: "X",
+    sourceImpressions: 38860,
+    tags: [
+      "约10秒 · 企业品牌片",
+      "16:9 横屏",
+      "GPT Image 2.5 → Gemini Omni 1.1 Flash",
+      "九宫格分镜 → 成片",
+      "实拍质感 · 制造业",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "用 GPT Image 2.5 生成九宫格分镜",
+        description:
+          "使用下方完整的分镜提示词，让 GPT Image 2.5 生成 3×3 九宫格分镜参考图。九宫格包含从工厂外观、技术者装备、切削加工、测定、设计确认到成品展示的 9 个关键镜头，每个镜头标注编号 01-09。",
+      },
+      {
+        number: 2,
+        title: "将九宫格分镜输入 Gemini Omni 1.1 Flash",
+        description:
+          "将生成的九宫格分镜图作为视觉参考，连同下方成片提示词一起输入 Gemini Omni 1.1 Flash。提示词中明确说明「完成动画では、9コマ画像、枠線、番号、分割状態を一切表示しない」，确保成片为连续流畅的视频而非九宫格显示。",
+      },
+      {
+        number: 3,
+        title: "生成含音乐与剪辑的 10 秒成片",
+        description:
+          "Gemini Omni 1.1 Flash 会根据分镜参考和详细的镜头时间轴（0.0-1.1秒外观、1.1-2.1秒走廊、2.1-3.0秒装备护目镜等），生成包含配乐（钢琴 + 金属打击乐）和旁白的完整 10 秒品牌视频。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "storyboard-9grid",
+        number: "参考",
+        title: "九宫格分镜",
+        subtitle: "GPT Image 2.5 生成 · 3×3 镜头设计",
+        image: "/tutorials/husky-kisaragi-precision-brand/storyboard.jpg",
+        prompt:
+          "使用 GPT Image 2.5 生成的分镜参考，包含 01-09 九个关键镜头：工厂外观、走廊、装备护目镜、切削加工、测定、设计确认、团队讨论、成品展示、产品特写。每个镜头都标注编号，便于后续成片时按顺序展开。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "朝の低い日差しを受ける工場外観。主人公が作業バッグを持って入口へ歩いている。" },
+      { number: 2, description: "工作機械が整然と並ぶ広い工場通路。主人公が機械を確認しながら中央を歩く。" },
+      { number: 3, description: "主人公が透明な保護眼鏡を装着する瞬間の顔と手の接写。" },
+      { number: 4, description: "金属部品を切削加工しているマクロショット。回転工具、切削油、金属表面。" },
+      { number: 5, description: "白い手袋を着けた手が、完成した小型部品をデジタルマイクロメーターで測定。" },
+      { number: 6, description: "主人公が紙の設計図とPC上の3D CADモデルを比較している横顔。" },
+      { number: 7, description: "技術者数名が図面と完成部品を囲む俯瞰ショット。" },
+      { number: 8, description: "主人公が完成した金属部品を両手で持つポートレート。" },
+      { number: 9, description: "完成した精密部品のヒーローショット。「見えない場所に、私たちの精度。」" },
+    ],
+    constraints:
+      "同じ女性技術者（20代後半、低い位置でまとめた黒髪、ネイビー作業着）を全カットで維持；過剰な火花や SF 的な無人工場は避ける；成片では九宫格的な枠線・番号を一切表示しない；来源 @husky__create / X / 38860 曝光。",
+    video_prompt: {
+      title: "10秒企業ブランドムービー提示詞",
+      subtitle: "Gemini Omni 1.1 Flash · 完整可复制提示詞",
+      content: `精密部品メーカー「KISARAGI INDUSTRIES」の10秒企業ブランドムービー。小さな部品に宿る加工精度と、それを支える技術者の仕事を、力強く端正な実写映像で描く。
+
+中心となる言葉：
+「見えない場所に、私たちの精度。」
+
+参照画像：
+添付の9コマボードを、工場、女性技術者、作業着、機械、金属部品、撮影アングルの厳密な参照として使用する。読み順は左上から右、上段から下段。
+
+完成動画では、9コマ画像、枠線、番号、分割状態を一切表示しない。各コマを全画面の独立した映像として再現し、リズミカルなカット編集でつなぐ。
+
+人物の一貫性：
+全カットで同じ20代後半の日本人女性技術者。低い位置でまとめた黒髪、ネイビーの作業着、安全靴、白い作業手袋。製造エリアでは透明な保護眼鏡を着用する。顔、身長、髪型、衣装、保護具を変化させない。
+
+ショット構成：
+0.0–1.1秒
+朝の工場外観。女性技術者が入口へ向かって一定の速度で歩く。低い朝日が建物の金属面を横から照らす。
+
+1.1–2.1秒
+整然と並ぶ工作機械の間を女性が歩く。カメラは低い位置から滑らかに後退し、彼女の進行方向を正面から捉える。
+
+2.1–3.0秒
+顔と手の接写。女性が保護眼鏡を正しく装着する。眼鏡に工場照明が一瞬反射する。
+
+3.0–4.0秒
+金属部品の切削加工。回転する工具へ切削油が流れ、精密な加工面が現れる。過剰な火花は出さない。
+
+4.0–5.0秒
+白い手袋を着けた両手で、部品をデジタルマイクロメーターに挟む。測定値が安定し、指が止まる。
+
+5.0–6.0秒
+女性が紙の図面からPC上の3Dモデルへ視線を移す。画面と実物部品の形状を一致させる。
+
+6.0–7.0秒
+技術者たちが図面を囲む俯瞰カット。主人公が部品の一点を指し、周囲の技術者が確認する。
+
+7.0–8.4秒
+主人公が完成部品を両手で持つ。金属面を確認してからカメラ方向へ静かに視線を上げる。笑顔は控えめ。
+
+8.4–10.0秒
+黒い台座に置かれた完成部品のヒーローショット。狭い光が加工面を移動し、「見えない場所に、私たちの精度。」「KISARAGI INDUSTRIES」を鮮明に見せる。
+
+映像表現：
+日本の製造業による高品質な実写企業CM。スチールシルバー、ネイビー、チャコール、ニュートラルな白。工場照明と窓からの自然光を混ぜ、青すぎない色温度にする。マクロ撮影では切削油、金属表面、測定器、手袋の繊維まで精密に描く。
+
+編集：
+機械、工具、技術者の動きを使った短いハードカット。動作方向を揃え、速さではなく精度を感じるテンポにする。分割画面やコラージュは禁止。物体が別の物体へ変化するモーフィングも使用しない。
+
+サウンドデザイン：
+低く抑えたピアノ、金属音を加工したパーカッション、短い弦楽器の音によるオリジナル曲。機械の回転音、切削油、測定器が閉じる小さなクリックを音楽のリズムへ自然に重ねる。
+
+ラストに、落ち着きと芯のある成人女性の声。
+「見えない場所に、私たちの精度。KISARAGI INDUSTRIES。」
+
+避ける要素：
+大量の火花、危険な作業、保護具の欠落、無人のSF工場、ロボット、過度なブルー加工、急激なカメラ回転、人物の変形、機械や測定器の破綻、余分な文字、透かし。
+
+---
+
+【分镜提示詞】（用于 GPT Image 2.5 生成九宫格参考）
+
+精密部品メーカー「KISARAGI INDUSTRIES」の企業ブランドムービー兼採用映像用フォトストーリーボードを作成してください。
+
+【テーマ】
+「見えない場所に、私たちの精度。」
+
+普段は目に触れない小さな部品が、社会や産業を支えていることを描く。工場の規模だけではなく、技術者の判断、加工、測定、連携、完成品への誇りを見せる。
+
+【画像仕様】
+完成画像は横長16:9。
+画面を3列×3行の9コマに均等分割する。
+すべてのコマを横長16:9で構成。
+細いアイボリーの線で区切る。
+各コマ左上に白色の小さな番号「01」〜「09」を表示。
+全カットを、実写で撮影された日本企業のブランドCMのように仕上げる。
+
+【メイン人物】
+20代後半の日本人女性技術者。
+黒髪を低い位置でひとつにまとめている。
+誠実で集中力を感じる自然な顔立ち。
+ネイビーの作業着、安全靴、白い作業手袋。
+製造エリアでは透明な保護眼鏡を正しく装着する。
+全カットで同じ人物、顔、体格、作業着を維持する。
+
+【工場】
+清潔に整備された日本の精密加工工場。
+CNC工作機械、測定室、設計用PC、金属部品、図面、工具。
+床の安全ラインや保護具も現実的に描く。
+近未来的な無人工場にはしない。
+
+【9コマの演出】
+
+01：
+朝の低い日差しを受ける工場外観。
+主人公が作業バッグを持って入口へ歩いている。
+建物、空、エントランスを端正に配置した企業広告らしい導入。
+
+02：
+工作機械が整然と並ぶ広い工場通路。
+主人公が機械を確認しながら中央を歩く。
+左右対称すぎず、実際に稼働している工場の奥行きを出す。
+
+03：
+主人公が透明な保護眼鏡を装着する瞬間の顔と手の接写。
+瞳に正確にピントを合わせ、レンズには工場照明を自然に反射させる。
+
+04：
+金属部品を切削加工しているマクロショット。
+回転工具、切削油、金属表面、細かな削り跡を高精細に描く。
+火花ではなく、精密加工らしい冷静な美しさを表現する。
+
+05：
+白い手袋を着けた手が、完成した小型部品をデジタルマイクロメーターで測定している。
+測定器と部品の接触位置を物理的に正しく描く。
+
+06：
+主人公が紙の設計図とPC上の3D CADモデルを比較している横顔。
+背景には実際の加工設備が自然にぼけて見える。
+
+07：
+技術者数名が図面と完成部品を囲む俯瞰ショット。
+主人公が部品の一箇所を指し、他の技術者が真剣に確認している。
+
+08：
+主人公が完成した金属部品を両手で持つポートレート。
+背景の工作機械は浅い被写界深度でぼかす。
+大げさに笑わず、静かな自信と誇りを表情に出す。
+
+09：
+チャコールブラックの台座に、完成した精密部品をひとつだけ置いた商品広告カット。
+細いリムライトで金属の加工面とエッジを際立たせる。
+左側に余白を設け、正確な日本語で「見えない場所に、私たちの精度。」
+その下に「KISARAGI INDUSTRIES」。
+
+【撮影・色彩】
+高品質な日本の製造業CM。
+スチールシルバー、ネイビー、チャコール、白を中心とした色設計。
+工場照明と窓からの自然光をバランスよく組み合わせる。
+人物には自然な肌の質感を残す。
+金属は過度に鏡面化せず、加工痕や重量感を表現する。
+
+【禁止事項】
+大量の火花、汚れた危険な工場、誤った保護具、SF的なロボット工場、過剰な青色加工、合成感の強い人物、破綻した測定器、余分なコピー、透かし、指定外のロゴを入れない。`,
+    },
+  },
+  {
     id: "minimax-h3-mv-typography",
     title: "H3 文字包装 MV",
     subtitle: "X · @liandeli2 · 约15秒 · 16:9",
@@ -166,8 +2073,8 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
     subtitle: "X · 369Serena · 约8秒 · 9:16",
     description:
       "竖屏舞蹈动作迁移：灰白深度捕捉→Seedance 人物重建。步骤嵌入抖音原片与灰白捕捉片供参考。无需参考图（需自备人物素材）。两大陷阱：先灰白勿直接迁移；音轨后期另加。",
-    video: "/tutorials/seedance-dance-mocap-migration/demo-web.mp4",
-    poster: "/tutorials/seedance-dance-mocap-migration/poster.jpg",
+    video: "/tutorials/seedance-dance-mocap-migration/demo-v2.mp4",
+    poster: "/tutorials/seedance-dance-mocap-migration/poster-v2.jpg",
     duration: "约8秒",
     shots: 1,
     references: 0,
@@ -190,8 +2097,8 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
         title: "准备抖音原片舞蹈素材",
         description:
           "寻找或自拍清晰舞蹈动作视频。动作要干净完整，画面稳定，人物主体清晰。这是整个流程的动作源。",
-        video: "/tutorials/seedance-dance-mocap-migration/douyin-web.mp4",
-        poster: "/tutorials/seedance-dance-mocap-migration/douyin-poster.jpg",
+        video: "/tutorials/seedance-dance-mocap-migration/douyin-v2.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/douyin-poster-v2.jpg",
         aspectRatio: "9/16",
       },
       {
@@ -199,8 +2106,8 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
         title: "制作灰白深度捕捉片",
         description:
           "将原片转为灰白深度图/姿态捕捉版本（用深度估计或姿态提取工具）。这是关键：必须先做灰白捕捉，不要直接将彩色原片迁移到 Seedance，否则动作会失真。",
-        video: "/tutorials/seedance-dance-mocap-migration/gray-web.mp4",
-        poster: "/tutorials/seedance-dance-mocap-migration/gray-poster.jpg",
+        video: "/tutorials/seedance-dance-mocap-migration/gray-v2.mp4",
+        poster: "/tutorials/seedance-dance-mocap-migration/gray-poster-v2.jpg",
         aspectRatio: "9/16",
       },
       {
@@ -981,6 +2888,105 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
       subtitle:
         "Gemini Omni · Seedance 2.0 · Prompt says 9:16 but video is 16:9",
       content: `Create a 10-second ultra-photorealistic premium fashion video "INVISIBLE FITTING ROOM", 9:16. One locked frontal camera, black seamless studio. Same tall muscular matte-white faceless male mannequin centered full-body, initially wearing only fitted black shorts. Female hands in long matte-black gloves remotely dress him without touching. No magic, glow, portals, particles or morphing; realistic cloth physics, gravity and inertia. 0–2s: espresso oversized shirt + caramel wide trousers + brown loafers fly in and physically dress him; mannequin strikes an editorial pose, then one sharp hand swipe pulls the outfit off and it falls to the floor. 2–4s: cognac leather jacket + cream knit + dark-chocolate trousers + boots fly in; mannequin takes a strong pose, then both hands pull the outfit away and garments fall beside the first look. 4–6s: cream turtleneck + coffee trousers + long mocha coat assemble onto him; coat rotates naturally around his body, he poses, then a wide swipe removes everything onto the growing clothing pile. 6–8.5s: final luxury outfit assembles layer by layer: ivory silk shirt, espresso tailored trousers, burnt-orange waistcoat, long dark-chocolate jacket, cognac shoes, tie and gold brooch. Precise hand gestures remotely tailor waist, shoulders, lapels and cuffs with realistic fabric tension. 8.5–9.2s: mannequin holds a powerful final fashion pose surrounded by discarded clothes. 9.2–10s: female hand reaches forward; mannequin physically takes her hand and walks confidently toward the fixed camera until his jacket naturally covers the lens → black. Premium coffee palette, burnt-orange accent, cinematic rim lighting, realistic silk, leather, cashmere and wool, seamless continuity.`,
+    },
+  },
+  {
+    id: "krevix-luxury-sofa-carousel",
+    title: "奢侈沙发轮播选型 · 黑手套 POV",
+    subtitle: "X · KrevixAi · 10秒 · 16:9",
+    description:
+      "第一人称 POV 黑棚奢侈家具商业片:黑手套滑动轮播四款沙发,暂停选定 hero 沙发后按压测试面料,沙发落地,最后整个奢华客厅围绕同一件沙发物理拼装。强调真实物理惯性、同一 hero 件贯穿始终、房间滑入而非沙发变形。",
+    video: "/tutorials/krevix-luxury-sofa-carousel/demo-web.mp4",
+    poster: "/tutorials/krevix-luxury-sofa-carousel/poster.jpg",
+    duration: "10 秒",
+    shots: 6,
+    references: 1,
+    model: "Gemini Omni",
+    style: "家具商业 · POV 遥控",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/KrevixAi/status/2099935072010822040",
+    sourceAuthor: "@KrevixAi",
+    sourcePlatform: "X",
+    sourceImpressions: 11749,
+    tags: [
+      "10 秒 · 6 节拍 · 第一人称 POV",
+      "1 张分镜静帧",
+      "Gemini Omni",
+      "家具商业 · POV 遥控",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "上传分镜图到 Gemini Omni",
+        description:
+          "打开 Gemini Omni Create Video 功能,先上传分镜静帧图(storyboard.jpg)作为视觉参考。设置:10 秒 · 16:9。",
+      },
+      {
+        number: 2,
+        title: "粘贴完整视频提示词",
+        description:
+          "在提示词框粘贴下方完整英文提示词。核心:26–28mm 第一人称男性 POV;黑手套滑动轮播;真实物理惯性;hero 沙发保持 100% 同一件;房间物理拼装而非沙发变形。",
+      },
+      {
+        number: 3,
+        title: "强调 hero 沙发全程不变",
+        description:
+          "关键约束:第四款 taupe/mocha 沙发选定后,这件沙发必须保持 100% 相同外观直到片尾,房间是围绕它物理组装,而不是沙发本身变形或替换。真实重量、惯性、摩擦力和机械停止感,禁止魔法、变形、传送、粒子、烟雾。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "storyboard",
+        number: "分镜静帧",
+        title: "15 格分镜参考",
+        subtitle: "分镜静帧(作者帖内配图) · 视觉参考",
+        image: "/tutorials/krevix-luxury-sofa-carousel/refs/storyboard.jpg",
+        prompt: "",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:08 秒:white-cream cloud 沙发居中悬浮,黑手套滑动,沙发快速左旋同时 ivory modular 沙发从右飞入停中;再滑动换 curved latte boucle 沙发;再滑动换 warm caramel leather 沙发。教练提示:固定 26–28mm 第一人称男性 POV 黑棚;每次滑动触发真实轨道惯性,不是瞬移。",
+      },
+      {
+        number: 2,
+        description:
+          "00:32–00:42 秒:第四款 taupe/mocha hero 沙发缓慢飞入、旋转到正面并带重量感停止。教练提示:这是全片 hero 沙发,后续必须保持 100% 同款同外观,不能变形或替换。",
+      },
+      {
+        number: 3,
+        description:
+          "00:42–00:50 秒:张开手掌做 STOP 手势冻结轮播,其他候选沙发消失到远处。教练提示:手势触发机械停止,不是魔法光效。",
+      },
+      {
+        number: 4,
+        description:
+          "00:50–00:58 秒:手掌按压并滑过 hero 沙发扶手,面料真实压缩回弹。教练提示:布料物理响应,可见压痕和恢复。",
+      },
+      {
+        number: 5,
+        description:
+          "00:58–00:66 秒:沙发落地;walnut 地板从底部滑入对齐,taupe 地毯向前展开铺平。教练提示:地面是滑入沙发下方,不是沙发移动。",
+      },
+      {
+        number: 6,
+        description:
+          "00:66–00:85 秒:保持 hero 沙发 100% 静止不变,奢华客厅围绕它物理组装——walnut 和 travertine 墙面滑入,coffee table 和 latte 椅子进场,置物架锁定,吊灯降下,窗帘和装饰物归位。教练提示:房间组件物理滑入/降下/锁定,hero 沙发绝不变形、变色或替换。",
+      },
+      {
+        number: 7,
+        description:
+          "00:85–01:00 秒:全景窗打开,暖色日光涌入完整的 quiet-luxury 室内;镜头缓慢后拉展示全貌。教练提示:真实质量、惯性、摩擦力和机械停止;禁魔法、变形、传送、粒子、烟雾、UI、文字、logo、人物、剪辑或机位变化。",
+      },
+    ],
+    constraints:
+      "26–28mm 第一人称男性 POV;黑棚黑手套;真实物理惯性摩擦;hero 沙发全程 100% 同一件;房间物理拼装而非沙发变形;禁魔法/粒子/传送/变形/UI/剪辑/机位变化;来源:KrevixAi/Gemini Omni。",
+    video_prompt: {
+      title: "LUXURY SOFA CAROUSEL · 10s · 16:9 · First-person POV",
+      subtitle: "Gemini Omni · Storyboard uploaded first, then prompt",
+      content: `Create a 10-second ultra-photorealistic 16:9 luxury furniture commercial, one continuous first-person male POV, 26–28mm lens, black studio, matte-black leather gloves, realistic physics only. 0–0.8s: white-cream cloud sofa floats centered; hand swipes left. 0.8–1.6s: sofa rapidly orbits left as a warm ivory modular sofa arrives from right and stops center. 1.6–2.4s: another swipe replaces it with a curved latte boucle sofa. 2.4–3.2s: swipe brings in a warm caramel leather sofa. 3.2–4.2s: final taupe/mocha hero sofa arrives slowly, rotates frontal and stops with heavy inertia. 4.2–5.0s: open-palm STOP gesture freezes the carousel; other sofas disappear into distance. 5.0–5.8s: hand presses and slides across hero sofa armrest, realistic fabric compression. 5.8–6.6s: sofa lands; walnut floor slides beneath it and taupe rug unrolls. 6.6–8.5s: KEEP THE EXACT SAME HERO SOFA stationary while the luxury room physically assembles around it—walnut and travertine walls slide in, coffee table and latte chairs enter, shelving locks into place, pendant descends, curtains and decor move into position. 8.5–10s: panoramic window opens, warm daylight floods the completed quiet-luxury interior; slow dolly backward reveals the full room. Hero sofa remains 100% identical throughout. Real mass, inertia, friction and mechanical stops; no magic, morphing, teleportation, particles, smoke, UI, text, logos, people, cuts or camera-angle changes.`,
     },
   },
   {
