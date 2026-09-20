@@ -2,6 +2,72 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "minimax-h3-mv-typography",
+    title: "H3 文字包装 MV",
+    subtitle: "X · @liandeli2 · 约15秒 · 16:9",
+    description:
+      "MiniMax H3 文字包装融合 MV 实验：将动态文字特效嵌入音乐视频，探索 AI 在包装特效与 AE 合成方向的切入点。原帖未公开完整提示词，以成片为学习目标。",
+    video: "/tutorials/minimax-h3-mv-typography/demo-web.mp4",
+    poster: "/tutorials/minimax-h3-mv-typography/poster.jpg",
+    duration: "约15秒",
+    shots: 0,
+    references: 0,
+    model: "MiniMax Hailuo H3 / Design",
+    style: "MV 文字包装特效",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/liandeli2/status/2083070647660609837",
+    tags: [
+      "约15秒 · MV 包装",
+      "16:9 横屏",
+      "MiniMax H3 / Design",
+      "文字包装特效融合",
+      "无公开提示词",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解 H3 与 Seedance 的不同切入点",
+        description:
+          "MiniMax H3 主攻视频门类中的「包装特效 / AE 包装合成」方向，与 Seedance 的叙事长片路线不同。适合做片头、MV 文字包装，而非纯文生叙事视频。",
+      },
+      {
+        number: 2,
+        title: "准备文案与视觉资产",
+        description:
+          "原帖未公开完整提示词。需自备文字内容、字体设计方向、MV 风格参考。注意 H3 Design 模式参考图数量上限（约 9 张）与一致性短板——适合取巧做包装特效，不适合大幅改动主体对象。",
+      },
+      {
+        number: 3,
+        title: "在 H3 Design 中实验文字融合",
+        description:
+          "使用 MiniMax Hailuo H3 / Design 模式，尝试将动态文字、图形包装与 MV 场景融合。核心是利用 H3 在包装特效合成上的优势，创造文字与画面的自然交互。参考成片学习节奏与融合效果。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [],
+    constraints:
+      "原帖未附完整生成提示词；H3 Design 参考图上限约 9 张；适合包装特效取巧，不适合主体大改；来源 @liandeli2 / X / 15802 曝光。",
+    video_prompt: {
+      title: "MiniMax H3 MV 文字包装实验 · 约15秒 · 16:9",
+      subtitle: "MiniMax Hailuo H3 / Design · 原帖未附完整生成提示词，以下为作者说明",
+      content: `尝试了一下minimax h3，把文字包装融合进了mv之中，效果还是很不错的。
+这次minimax找到了和seedance不一样的切入点，要去解决视频门类里包装特效这一块的痛点。
+ai开始pk传统制作里ae的包装合成领域。期待！
+
+---
+
+【教练提示】
+原帖未公开可复制的完整生成提示词。以上为作者 @liandeli2 的说明文字。
+
+H3 切入点：偏视频门类中的「包装特效 / AE 包装合成」方向，与 Seedance 的叙事长片路线不同。
+
+跟做建议：
+1. 用 MiniMax Hailuo H3 / Design 做片头或 MV 文字包装合成，而不是纯文生叙事片。
+2. 注意 H3 Design 参考图数量上限（约 9 张）与一致性短板——适合取巧做包装特效，不适合大幅改动主体对象。
+3. 本教程包仅有成片，无参考图、无原始提示词；以成片为学习目标，自己准备文字内容与视觉资产进行实验。`,
+    },
+  },
+  {
     id: "fridge-freshness-perfected",
     title: "冰箱广告：新鲜尽在掌握",
     subtitle: "X · HeyRu0by · 10秒 · 9:16",
