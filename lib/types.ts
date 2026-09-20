@@ -20,6 +20,7 @@ export interface Tutorial {
   sourceUrl?: string;
   sourceAuthor?: string;
   sourcePlatform?: string;
+  sourceImpressions?: number;
 }
 
 export interface Step {

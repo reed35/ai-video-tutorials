@@ -281,7 +281,7 @@ export default async function TutorialPage({
       </section>
 
       <footer className="mt-10 text-[var(--muted)] text-xs text-center">
-        {tutorial.sourcePlatform || tutorial.sourceAuthor || tutorial.sourceUrl ? (
+        {tutorial.sourcePlatform || tutorial.sourceAuthor || tutorial.sourceUrl || tutorial.sourceImpressions ? (
           <>
             来源
             {tutorial.sourcePlatform && ` · ${tutorial.sourcePlatform}`}
@@ -299,6 +299,9 @@ export default async function TutorialPage({
                 </a>
               </>
             )}
+            {tutorial.sourceImpressions !== undefined && (
+              <> · 曝光约 {formatImpressions(tutorial.sourceImpressions)}</>
+            )}
           </>
         ) : (
           "成片拆解 · 来源未标注 / 内部整理"
@@ -306,4 +309,14 @@ export default async function TutorialPage({
       </footer>
     </div>
   );
+}
+
+function formatImpressions(count: number): string {
+  if (count < 10000) {
+    return count.toLocaleString("zh-CN");
+  } else if (count < 100000000) {
+    return (count / 10000).toFixed(1) + "万";
+  } else {
+    return (count / 100000000).toFixed(1) + "亿";
+  }
 }

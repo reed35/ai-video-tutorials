@@ -16,8 +16,9 @@ export const tutorials: Tutorial[] = [
     style: "舞蹈动作迁移 · 竖屏",
     aspectRatio: "9/16",
     sourceUrl: "https://x.com/369Serena/status/2100805668206731346",
-    sourceAuthor: "369Serena",
+    sourceAuthor: "@369Serena",
     sourcePlatform: "X",
+    sourceImpressions: 7679,
     tags: [
       "约8秒 · 舞蹈重建",
       "9:16 竖屏 · 动作迁移",
@@ -124,6 +125,9 @@ export const tutorials: Tutorial[] = [
     style: "创意换装 · 竖屏 · 固定机位",
     aspectRatio: "9/16",
     sourceUrl: "https://x.com/YangOnchain/status/2100696904648786291",
+    sourceAuthor: "@YangOnchain",
+    sourcePlatform: "X",
+    sourceImpressions: 1047,
     tags: [
       "约28秒 · 7 分镜",
       "9:16 竖屏 · 不进胶片条",
@@ -260,6 +264,7 @@ export const tutorials: Tutorial[] = [
     sourceUrl: "https://x.com/HeyRu0by/status/2101186330025922663",
     sourceAuthor: "@HeyRu0by",
     sourcePlatform: "X",
+    sourceImpressions: 15419,
     tags: [
       "10秒 · 5 节拍",
       "9:16 竖屏 · 不进胶片条",
@@ -481,6 +486,7 @@ Audio should feel captured on location with soft room ambience, distant clinic m
     sourceUrl: "https://x.com/azed_ai/status/2101309410434044158",
     sourceAuthor: "@azed_ai",
     sourcePlatform: "X",
+    sourceImpressions: 17122,
     tags: [
       "约30秒 · 7 节拍战斗弧",
       "无参考图 · 纯文生可跟做",
@@ -622,6 +628,7 @@ Keep violence fierce but readable rather than gore-focused. Prioritize cavalry s
     sourceUrl: "https://x.com/Shorelyn_/status/2099013056013672761",
     sourceAuthor: "@Shorelyn_",
     sourcePlatform: "X",
+    sourceImpressions: 2367,
     tags: [
       "约29秒 · 7 节拍",
       "无参考图 · 纯文生视频可跟做",
@@ -741,8 +748,10 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
     model: "Gemini Omni · Seedance 2.0",
     style: "时装展示 · 黑棚遥控",
     aspectRatio: "16/9",
+    sourceUrl: "https://x.com/KrevixAi/status/2101361201271677294",
     sourceAuthor: "@KrevixAi",
     sourcePlatform: "X",
+    sourceImpressions: 255,
     tags: [
       "10 秒 · 5 节拍 · 固定机位",
       "1 张分镜静帧",
