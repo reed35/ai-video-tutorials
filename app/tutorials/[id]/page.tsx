@@ -53,9 +53,9 @@ export default async function TutorialPage({
           <img
             src="/brand/mark.png"
             alt=""
-            width={48}
-            height={48}
-            className="w-12 h-12 rounded-xl object-cover"
+            width={56}
+            height={56}
+            className="w-14 h-14 rounded-xl object-cover"
           />
           成片拆解
         </Link>
