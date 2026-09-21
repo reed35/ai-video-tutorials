@@ -163,7 +163,7 @@ VISUAL QUALITY: ultra-photorealistic, premium YouTube production, realistic skin
 
 IMPORTANT: Say "Zephyra Leigh" only during the opening introduction. After that, use only "Zephyra" if referring to her. Keep her new outfit consistent. No sci-fi elements, no holograms, no exaggerated reactions, no cartoon, no anime, no distorted hands, no extra fingers, no glitches, no fake-looking product interaction.`,
     },
-  },,
+  },
   {
     id: "zephyra-india-1907-well",
     title: "1907 印度村落打水 · 仿古默片",
@@ -275,7 +275,7 @@ Audio: No synchronized sound or recorded dialogue. Silent-film presentation only
 
 Goal: Create a respectful, historically grounded 1907 village memory–ordinary daily work, practical clothing, quiet cooperation, and authentic early-motion-picture imperfections.`,
     },
-  },,
+  },
   {
     id: "zephyra-paris-1906-market",
     title: "1906 巴黎早市 · 仿古默片",
@@ -387,7 +387,7 @@ Audio: No recorded dialogue or synchronized sound. Silent-film presentation only
 
 Goal: Create the feeling of a rare, authentic 1906 family film–period clothing, ordinary market errands, small humorous accidents, and imperfect early cinema captured before modern filmmaking existed.`,
     },
-  },,
+  },
   {
     id: "zephyra-sony-headphones-unbox",
     title: "Sony 旗舰耳机开箱 · YouTube Shorts",
@@ -542,7 +542,7 @@ VISUAL QUALITY: ultra-photorealistic, premium YouTube production, realistic skin
 
 IMPORTANT: Say "Zephyra Leigh" only in the opening introduction. After that, never introduce her again by her full name. Use natural creator dialogue. No sci-fi elements, no holograms, no exaggerated reactions, no cartoon, no anime, no distorted hands, no extra fingers, no glitches, no fake-looking product interaction.`,
     },
-  },,
+  },
   {
     id: "zephyra-ten-poses-fashion",
     title: "十姿态时尚闪拍 · 角色一致性",
@@ -685,7 +685,7 @@ Stable identity, anatomy, and outfit throughout. No added accessories, no text, 
 
 Also extract ref-char-from-demo.jpg from a clear face frame (~2s).`,
     },
-  },,
+  },
   {
     id: "lufzzliz-dunhuang-group-dance-white-mesh",
     title: "敦煌群舞白膜成片 · MiniMax Design 全流程",
@@ -914,7 +914,7 @@ NO sculpture, statues, clay, ceramics, porcelain, wax, doll, mannequin, CGI, 3D 
 先生成前10秒并核对五人映射；后10秒继续原舞蹈，保持身份、服装、光线与镜头衔接。若支持，可增加前段真实生成末帧作为后段连续性辅助，但五人身份仍以原五图为准。只生成这一版所需的2条，不自行批量生成候选。如果全能参考不能同时接收一个参考视频和这5张图，先报告实际限制，不能擅自降级成纯文生视频或单张首帧动画。
 生成后保存两个原始H3视频、完整实际提示词、实际模型/模式/输入/参数和可见消耗，未知费用写unknown。用本机已有ffmpeg按原时间轴合成20秒，回填08的原音乐；完成解码与五人对应关系抽帧核验。把两段和完整成片加入画布，并报告真实绝对路径和任务ID。实际完成生成和交付，不停在方案。`,
     },
-  },,
+  },
   {
     id: "flova-mona-lisa-neighbors",
     title: "蒙娜丽莎搬进街坊 · Flova 分屏教程",
@@ -1011,7 +1011,7 @@ Without cutting, protagonist continues walking forward; the Parisian boulevard n
 SEAMLESS TRANSITION 03 [Seconds 25-30]
 Without cutting, protagonist pulls hand back and turns head; a fast smooth physical whip-pan swings the camera left and slightly forward through continuous park-to-street space; the urban park transitions physically into a lively modern French pedestrian street. A contemporary hot-dog stand with a red-and-yellow awning is visible. Behind the counter stands a fully three-dimensional photorealistic real woman, referencing the soft brown eyes with characteristic over-the-shoulder glance, the wrapped blue and gold headscarf tied at the top, the dangling single large pearl earring, and the warm skin tone of image_5 — she is entirely real with realistic skin, hair escaping the scarf edges, fabric texture, natural French street lighting. She smiles warmly, holds out a hot dog toward the camera, and says cheerfully: "Try our hot dogs, handsome!" Protagonist's POV freezes. Camera slowly pans in a wide deliberate look around — left, right, ahead — revealing all the impossible painting-inspired characters simply living ordinary modern French lives in this sunlit Parisian street. Deadpan stillness. No music. No dialogue after her line.`,
     },
-  },,
+  },
   {
     id: "just-sharon7-venice-sphere",
     title: "威尼斯折叠成球 · 粉发女孩送信",
@@ -1144,7 +1144,7 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
 24–27s: She holds out the yellow envelope. The old woman turns, sets down the watering can, and takes it. Both smile warmly at each other. Rose petals drift upward past them, falling toward the inverted sky.
 27–30s: Camera pulls back and rises fast. The whole city folds and rotates until it becomes a top-down aerial of Venice's canals and streets curling into a sphere. The two tiny figures remain on the terrace. Slow fade to warm light.`,
     },
-  },,
+  },
   {
     id: "techiebysa-logo-embroidery-sew",
     title: "刺绣缝 Logo · 线自己爬上织物",
@@ -1205,7 +1205,7 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
       subtitle: "Gemini Omni Flash 1.1 · Pika · 需上传 Logo 参考图",
       content: `Extreme macro shot of woven cotton shirt fabric, empty at first. Colored embroidery threads rise from the surface and weave themselves into place, laying down tight satin stitches row by row, tracing out the logo. The stitched area grows steadily across the frame, thread pulling taut and raising into dimensional embroidered texture, until the full logo is complete. Camera holds steady, slow satisfying timelapse pace. Soft natural side light, shallow depth of field, visible fabric fibers and realistic thread sheen. No hands, thread moves on its own. One shot no scene change.`,
     },
-  },,
+  },
   {
     id: "aiwithkhan-rope-name-smiling",
     title: "红绳拼字 Smiling · 定格小人工坊",
@@ -1276,7 +1276,7 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
       subtitle: "Seedance 2.5 · 16:9 横屏 · 完整可复制提示词",
       content: `Using the reference image as the exact final frame, create a 10-second stop-motion-inspired fluid CGI animation of a single thick red braided rope forming the word "Smiling" on a pure white seamless background. At the beginning, the rope is loose and unformed, scattered in soft loops across the frame, with 4–5 tiny clay-like miniature characters wearing simple rope-green overalls and no distinct facial features standing around it. They quickly grab the rope and work together, pulling, stretching, coiling, twisting, and tying it into shape. The rope progressively transforms into the cursive letters "S-m-i-l-i-n-g", moving smoothly from left to right. Each letter must be created entirely from the same continuous rope, with realistic braided fibers, intricate knots, overlapping loops, natural crossings, and clean negative spaces matching the reference image. The characters playfully climb over and around the rope while shaping each letter, coordinating their movements as the word becomes recognizable. The camera remains completely static and top-down, with consistent soft studio lighting, subtle shadows beneath the rope, and no background elements. In the final 1–2 seconds, the characters finish the last knot on the "g," step back and hop away, leaving the completed "Smiling" rope artwork clearly visible and matching the reference image. No cuts, no camera movement, no independently generated text, no extra objects. Smooth continuous motion, tactile rope physics, realistic fibers, playful miniature stop-motion aesthetic blended with polished CGI.`,
     },
-  },,
+  },
   {
     id: "techhalla-french-polynesia-adventure",
     title: "法属波利尼西亚冒险 · 碎切度假记忆",
@@ -1389,7 +1389,7 @@ Every 0.5–1.0s = hard cut to a completely new framing or micro-moment. Pack th
 [REALISM / TONE LOCK]
 French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1 second, found-footage phone/action-cam only, energetic but gentle, just real salt, rain, lagoon, boats, food, night air, and breathless joy.`,
     },
-  },,
+  },
   {
     id: "techhalla-room214-stop-motion",
     title: "ROOM 214 · H3 定格收拾行李",
@@ -1529,7 +1529,7 @@ French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1
   ]
 }`,
     },
-  },,
+  },
   {
     id: "pixelaigc-dunhuang-desktop-fail",
     title: "敦煌飞天桌面壁纸翻车 · H3",
@@ -1590,7 +1590,7 @@ French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1
       subtitle: "MiniMax Hailuo H3 · 图生视频模式 · 完整可复制提示词",
       content: `飞天在跳舞，当她的脚踩下时，扯动了屏幕背景的幕布，幕布抖动，把左边的图标全都震落在地上，飞天吓得双手捂嘴，连忙停下舞蹈，跑到左边，把地上的图标一个个重新按回原来的位置，但由于太匆忙，有两个图标按歪了，她马上返回原来的右边位置，重新摆好开始的POSE，表情勉强微笑，轻风吹来，她的衣服和披帛飘动，固定机位，背景音乐从开始的传统敦煌音乐到后面的诙谐风趣曲风`,
     },
-  },,
+  },
   {
     id: "umesh-again-nature-ad",
     title: "AGAIN · 单图自然广告",
@@ -1832,7 +1832,7 @@ Move from microscopic water detail to broad aerial ambience, back to intimate ha
 
 Let the final water texture and continuous rain lead back into the opening droplet. Replay feels like entering the same world again through a wide-to-macro cut, not a forced seamless morph. No fade to black, music sting or obvious stop.`,
     },
-  },,
+  },
   {
     id: "abxxai-riviera-fashion-campaign",
     title: "里维埃拉时尚大片 · 1960s",
@@ -2110,7 +2110,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
 === OUTPUT ===
 24 seconds, 1080p, six shots, straight cuts, warm faded 1960s Kodachrome fashion film, one locked character, original instrumental score, no dialogue.`,
     },
-  },,
+  },
   {
     id: "shanghai-scallion-pancake",
     title: "老上海葱油饼",
@@ -2405,7 +2405,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
 厨具、操作台、光线方向与小铺环境
 都保持视觉一致性。`,
     },
-  },,
+  },
   {
     id: "anime-katsudon",
     title: "日式猪排饭 Katsudon",
@@ -2570,7 +2570,7 @@ NEGATIVE
 
 No storyboard, reference image, sketch, panels, borders, numbers, arrows, annotations, subtitles, captions, UI, logos, or text overlays. No unrelated ingredients or dishes. Katsudon only. Keep the food, hands, utensils, lighting, and environment visually consistent throughout.`,
     },
-  },,
+  },
   {
     id: "husky-kisaragi-precision-brand",
     title: "精密部品品牌片 · 看不见的精度",
@@ -2786,7 +2786,7 @@ CNC工作機械、測定室、設計用PC、金属部品、図面、工具。
 【禁止事項】
 大量の火花、汚れた危険な工場、誤った保護具、SF的なロボット工場、過剰な青色加工、合成感の強い人物、破綻した測定器、余分なコピー、透かし、指定外のロゴを入れない。`,
     },
-  },,
+  },
   {
     id: "minimax-h3-mv-typography",
     title: "H3 文字包装 MV",
@@ -2848,7 +2848,7 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
 
 视觉风格：dark-pop、cyber-grunge、rap 音乐视频，写实高时装质感，90年代末至00年代初独立杂志、地下音乐海报、复印纸、胶片扫描与 zine 拼贴美学。高反差黑白与低饱和暗红、银灰点缀。肤色真实，阴影厚重但保留服装细节。`,
     },
-  },,
+  },
   {
     id: "seedance-dance-mocap-migration",
     title: "Seedance 舞蹈动捕迁移",
@@ -2957,7 +2957,7 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
 无对白。
 无音乐。`,
     },
-  },,
+  },
   {
     id: "creative-fan-outfit-swap",
     title: "创意风扇换装",
@@ -3094,7 +3094,7 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
 每次换装必须让新造型完整可见再表演。遮挡只替换服装，不让人物脸、地板或整个画面先灰一下；不使用白闪、黑场、烟雾、粒子、交叉溶解或失焦掩饰变化。
 不生成参考图排版、白底、图片编号、文字贴纸、字幕或片尾Logo。没有对白，不擅自唱歌或说话，保留自然呼吸和表情。`,
     },
-  },,
+  },
   {
     id: "fridge-freshness-perfected",
     title: "冰箱广告：新鲜尽在掌握",
@@ -3211,7 +3211,7 @@ STYLE: Photorealistic, ultra-detailed, cinematic lighting, realistic materials, 
 NEGATIVE PROMPT:
 No people, no hands, no warped refrigerator, no changing product design, no extra doors, no duplicate appliance, no floating objects, no distorted food, no fake branding, no misspelled text, no watermark, no cartoon look, no CGI-looking plastic, no flickering, no unstable geometry.`,
     },
-  },,
+  },
   {
     id: "chiropractic-clinic-social",
     title: "整脊诊所社媒短片",
@@ -3316,7 +3316,7 @@ From 26 to 30 seconds, finish with the client sitting upright, rolling his shoul
 
 Audio should feel captured on location with soft room ambience, distant clinic movement, clothing rustle, table creaks, natural breathing, quiet conversation without clearly audible words, and crisp but not exaggerated adjustment sounds. Add a low volume modern instrumental track with warm piano, soft bass, light percussion, and a gentle rise at each release, ending on a clean resolved note.`,
     },
-  },,
+  },
   {
     id: "steppe-warrior-queen",
     title: "草原女王：骑射破阵",
@@ -3458,7 +3458,7 @@ Maintain exact continuity for the queen's face, braids, ornaments, helmet, armor
 
 Keep violence fierce but readable rather than gore-focused. Prioritize cavalry speed, arrow impacts, weapon clashes, riders falling away from the queen's path, dust, sparks, torn banners, collapsing formations, and the terrifying physical scale of mounted warfare. No duplicated riders, floating weapons, impossible horse movement, teleportation, changing armor, endless arrows, exaggerated blood spray, modern objects, firearms, subtitles, or comedic behavior.`,
     },
-  },,
+  },
   {
     id: "late-night-ramen",
     title: "深夜泡面：耳机里的小确幸",
@@ -3581,7 +3581,7 @@ Visual: Extreme close-up of wooden chopsticks lifting a massive, mouth-watering 
 00:23 - 00:28
 Visual: Close-up of the woman taking a big bite, slurping the noodles happily, and closing her eyes in pure comfort as elegant Chinese text fades onto the screen.`,
     },
-  },,
+  },
   {
     id: "invisible-fitting-room",
     title: "隐形试衣间:假人四套造型",
@@ -3671,7 +3671,7 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
         "Gemini Omni · Seedance 2.0 · Prompt says 9:16 but video is 16:9",
       content: `Create a 10-second ultra-photorealistic premium fashion video "INVISIBLE FITTING ROOM", 9:16. One locked frontal camera, black seamless studio. Same tall muscular matte-white faceless male mannequin centered full-body, initially wearing only fitted black shorts. Female hands in long matte-black gloves remotely dress him without touching. No magic, glow, portals, particles or morphing; realistic cloth physics, gravity and inertia. 0–2s: espresso oversized shirt + caramel wide trousers + brown loafers fly in and physically dress him; mannequin strikes an editorial pose, then one sharp hand swipe pulls the outfit off and it falls to the floor. 2–4s: cognac leather jacket + cream knit + dark-chocolate trousers + boots fly in; mannequin takes a strong pose, then both hands pull the outfit away and garments fall beside the first look. 4–6s: cream turtleneck + coffee trousers + long mocha coat assemble onto him; coat rotates naturally around his body, he poses, then a wide swipe removes everything onto the growing clothing pile. 6–8.5s: final luxury outfit assembles layer by layer: ivory silk shirt, espresso tailored trousers, burnt-orange waistcoat, long dark-chocolate jacket, cognac shoes, tie and gold brooch. Precise hand gestures remotely tailor waist, shoulders, lapels and cuffs with realistic fabric tension. 8.5–9.2s: mannequin holds a powerful final fashion pose surrounded by discarded clothes. 9.2–10s: female hand reaches forward; mannequin physically takes her hand and walks confidently toward the fixed camera until his jacket naturally covers the lens → black. Premium coffee palette, burnt-orange accent, cinematic rim lighting, realistic silk, leather, cashmere and wool, seamless continuity.`,
     },
-  },,
+  },
   {
     id: "krevix-luxury-sofa-carousel",
     title: "奢侈沙发轮播选型 · 黑手套 POV",
@@ -3770,7 +3770,7 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
       subtitle: "Gemini Omni · Storyboard uploaded first, then prompt",
       content: `Create a 10-second ultra-photorealistic 16:9 luxury furniture commercial, one continuous first-person male POV, 26–28mm lens, black studio, matte-black leather gloves, realistic physics only. 0–0.8s: white-cream cloud sofa floats centered; hand swipes left. 0.8–1.6s: sofa rapidly orbits left as a warm ivory modular sofa arrives from right and stops center. 1.6–2.4s: another swipe replaces it with a curved latte boucle sofa. 2.4–3.2s: swipe brings in a warm caramel leather sofa. 3.2–4.2s: final taupe/mocha hero sofa arrives slowly, rotates frontal and stops with heavy inertia. 4.2–5.0s: open-palm STOP gesture freezes the carousel; other sofas disappear into distance. 5.0–5.8s: hand presses and slides across hero sofa armrest, realistic fabric compression. 5.8–6.6s: sofa lands; walnut floor slides beneath it and taupe rug unrolls. 6.6–8.5s: KEEP THE EXACT SAME HERO SOFA stationary while the luxury room physically assembles around it—walnut and travertine walls slide in, coffee table and latte chairs enter, shelving locks into place, pendant descends, curtains and decor move into position. 8.5–10s: panoramic window opens, warm daylight floods the completed quiet-luxury interior; slow dolly backward reveals the full room. Hero sofa remains 100% identical throughout. Real mass, inertia, friction and mechanical stops; no magic, morphing, teleportation, particles, smoke, UI, text, logos, people, cuts or camera-angle changes.`,
     },
-  },,
+  },
   {
     id: "watch-her-reset-73",
     title: "两次失误后的复位",
@@ -3886,7 +3886,7 @@ Reinforce throughout: golden-hour warm lighting never shifts to cool tones, whea
 sound: wind through wheat, distant birds, the rifle shot itself, and glass shattering
 on the final hit.`,
     },
-  },,
+  },
   {
     id: "pov-stadium-rap-137",
     title: "体育场说唱 POV",
@@ -3990,7 +3990,7 @@ The instrumental cuts for one beat. He holds a deep wide stance, eyes fixed on t
 
 He shouts the final line while performing a rapid three-step, a controlled 180° pivot and one enormous downward arm strike. On "GROUND," he stomps once. The bass returns with a massive impact; the LED floor sends a bro`,
     },
-  },,
+  },
   {
     id: "seedance-six-rooms-89",
     title: "一镜到底穿越六个房间",
@@ -4048,7 +4048,7 @@ He shouts the final line while performing a rapid three-step, a controlled 180°
         "Seedance 2.5 · 16:9 · 图像1 mentioned but no ref available",
       content: `一镜到底,镜头平稳跟随一个穿黑色大衣的人(参考 图像1)从左向右穿过六个相连的不同色调、不同氛围的房间。每个房间结构相同:白墙、人字拼浅色木地板、法式双开落地 窗、白纱帘,参考`,
     },
-  },,
+  },
   {
     id: "burger-monster-battle-185",
     title: "麦当劳员工对战汉堡怪兽",
@@ -4204,7 +4204,7 @@ One child quietly picks up a falling fry.
 
 The employee`,
     },
-  },,
+  },
   {
     id: "epic-desert-scene-38",
     title: "史诗沙漠风暴:装甲车逃亡",
@@ -4271,7 +4271,7 @@ The employee`,
       subtitle: "Seedance 2.5 · IMAX 70mm · Villeneuve Style · No References",
       content: `Style: IMAX 70mm Film, Denis Villeneuve Style, Gritty Realism, Epic Scale, Desaturated.Duration: 15s.[00-05s] Extreme Wide Shot (The Scale). A colossal sandstorm, miles high, swallows a vast desert landscape. A tiny convoy of armored military vehicles races away from it. The scale of nature vs man is terrifying. Hans Zimmer style tension.[05-10s] Cockpit Cam (The Panic). Inside the lead rover. The pilot screams "GO! GO!" (Subtitle: MAX POWER!). Camera shakes violently. Sand blasts the windshield. The sun is blocked out by the approaching wall of dust.[10-15s] The Jump (The Climax). The rover hits a massive dune and launches into the air (Slow Motion). Silhouette against the dark storm. Lightning strikes within the dust cloud. Debris flies past the lens. Cut to black on impact.`,
     },
-  },,
+  },
   {
     id: "seoul-aurora-mango-billboard",
     title: "首尔黄金时刻广告牌递瓶",
@@ -4356,7 +4356,7 @@ The employee`,
       subtitle: "Seedance 2.5 · 16:9 · handheld push · diegetic sound",
       content: `Photorealistic street video, Seoul, South Korea, late afternoon golden hour. Busy urban sidewalk in front of a tall modern building with a massive photorealistic billboard. Yellow and orange taxis and pedestrians pass in the foreground. Camera is slightly handheld, slow push-in. On the giant billboard: a glamorous woman <image1> with long wavy blonde hair, tanned skin, wearing a cream sleeveless top with denim collar and gold buttons, short denim mini skirt, and black strappy sandals. She sits on a clean white platform against a soft cloudy sky. She starts reclining on her side, then fluidly sits up, smiles at camera, reaches down, picks up a stylish amber glass bottle of mango juice, and throws amber glass bottle of mango juice toward the viewer as if handing the bottle off the billboard. In the last 3 seconds a real hand enters the foreground holding the exact same physical bottle (label facing camera), perfectly matching the billboard pose. Billboard remains visible and slightly out of focus in the background. Natural city sound, cinematic color grade, high detail, 4K, 10 seconds. Fictional brand on bottle and billboard: AURORA MANGO Tagline style: "Cold-Pressed No.5" Key notes on label: Ripe Alphonso Mango · Passionfruit · Vanilla`,
     },
-  },,
+  },
   {
     id: "hr-replasty-anamorphic-billboard",
     title: "变形广告牌递霜",
@@ -4492,7 +4492,7 @@ Shot 1: ONE continuous wide shot from a low-angle street-level position at the c
 
 REPEAT: NO background music at any point — diegetic sound only. Camera and billboard stay wide and uncut.`,
     },
-  },,
+  },
   {
     id: "ride-or-paws",
     title: "金门大桥摩托猫",
@@ -4798,7 +4798,7 @@ Typography and graphic design should feel professionally art-directed, minimal, 
 
 Shot 1: ONE continuous POV shot, about 28 seconds, chase camera just behind the black hero bike — Tango the ginger cat perched on the tail seat facing back at us, the black rider ahead of him, the red bridge and road tearing past. (1) THE APPROACH, ~3s: the bike rockets across the bridge; wind flattening Tango's fur; a black-clad pursuer on a black sportbike surges up from the right rear and pulls alongside, leaning in aggressively. (2) FIRST KILL, ~3s: Tango calmly raises a rifle to his shoulder, sights down it at the pursuer, and FIRES — a hard muzzle flash — the deadpan face never changing. (3) BLOWN AWAY, ~3s: the pursuer's bike ERUPTS in a ball of fire and tumbles end over end off the road behind; Tango lowers the rifle, sits back, tail flicking, head turning to scan — and another pursuer is already closing in. (4) THE MACHINE GUN, ~5s: Tango hauls up a heavy belt-fed machine gun, a brass ammo belt swinging, braces it against his little body and UNLOADS on a whole pack of pursuing bikers — sustained muzzle flashes strobing, spent casings flying, the deadpan face lit by the flashes. (5) MAYHEM, ~5s: pursuing bikes are hit one after another — bursting into flame, high-siding, cartwheeling, smoke and debris flooding the road behind; Tango swings the barrel to track them, relentless and calm. (6) VICTORY CRUISE, ~4s: the road behind falls empty and smoking as the bike reaches the far end of the bridge (the far red tower and brown headlands ahead); Tango lowers the weapon, sits up on the tail, fur ruffling, tail swaying, scanning the clear road — a beat of calm. (7) OUT OF THE FIREBALL, ~5s: behind them a HUGE fireball erupts across the bridge, flame and smoke swallowing the frame — the hero bike punches straight out through the fire and smoke, embers streaking past, wreckage burning on the bridge behind; Tango turns his head and looks flatly back into the lens as they ride away. Hold one beat. End.`,
     },
-  },,
+  },
   {
     id: "painted-tunnel",
     title: "猫鼠画隧道",
@@ -4926,4 +4926,1646 @@ Shot 12 — Wide side view, static, the painted wall filling the right of the fr
 Shot 13 — Same framing: he peels off the rock and slides slowly down the painting, fur dragging on stone, and drops in a heap on his side on the packed dirt at the foot of the tunnel, ears flopped, eyes crossed, a few tiny faint yellow stars drifting in a slow circle above his head. End.`,
     },
   },
+  {
+    id: "crazykaomei-furniture-blindbox-asmr",
+    title: "粉色毛绒沙发盲盒选款 · ASMR 电商",
+    subtitle: "X · @CrazyKaomei · Google Flow (Omni Flash) · 10秒 · 16:9",
+    description:
+      "疯狂的烤妹儿的 Google Flow 盲盒家具电商视频。白色真丝手套在纯白工作室内滑动挑选迷你粉色毛绒沙发,从心形扶手椅、兔耳豆袋、猫耳圆沙发一路滑到最终的气泡泡芙长毛沙发,手掌STOP定格后深按毛绒展示真实压缩物理,随后场景从工作室组装到完整粉色极简客厅,全景窗透入白日光。先文生 12 格故事板、再图生视频,商业摄影质感的 ASMR 产品演示。",
+    video: "/tutorials/crazykaomei-furniture-blindbox-asmr/demo-web.mp4",
+    poster: "/tutorials/crazykaomei-furniture-blindbox-asmr/poster.jpg",
+    duration: "10秒",
+    shots: 1,
+    references: 1,
+    model: "Google Flow (Omni Flash)",
+    style: "商业产品摄影 · ASMR 质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/CrazyKaomei/status/2101842849079923104",
+    sourceAuthor: "@CrazyKaomei",
+    sourcePlatform: "X",
+    sourceImpressions: 1109,
+    tags: [
+      "10秒 · 一镜到底",
+      "16:9 横屏",
+      "Google Flow",
+      "ASMR 商业摄影",
+      "产品电商视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "先文生 12 格故事板",
+        description:
+          "用完整的 T2I 提示词生成 12 格分镜板:迷你粉色沙发产品系列、白手套操作、纯白工作室、商业产品摄影风格。参考图展示分镜布局。",
+      },
+      {
+        number: 2,
+        title: "上传故事板,选择图生视频模式",
+        description:
+          "在 Google Flow 选择 Image-to-Video,上传生成的 12 格故事板作为唯一参考图。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 I2V 提示词",
+        description:
+          "使用下方完整的 10 秒图生视频提示词。关键:手套滑动挑选→定格→深按毛绒→场景组装→全景窗开启。真实物理、无魔法变形、无剪辑。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref1",
+        number: "参考 01",
+        title: "12 格故事板",
+        subtitle: "T2I 生成 · 1200×670",
+        image: "/tutorials/crazykaomei-furniture-blindbox-asmr/ref-storyboard.jpg",
+        prompt: `12-panel grid storyboard, product commercial shot, ultra photorealistic, 8k, sharp focus, soft clean studio lighting, white seamless background, series of miniature pink fluffy fur sofas, matte white leather gloved human hands interacting with furniture, timeline numbered frames,
+Frame1: small pink plush single sofa, hand pointing
+Frame2: rotating display turntable with multiple tiny pink plush sofas, gloved hand pointing
+Frame3: pink bunny ear plush armchair
+Frame4: pink cat ear round fluffy sofa
+Frame5: large pink bubble marshmallow long-fur hero sofa
+Frame6: open palm stop gesture in front of hero sofa
+Frame7: close-up shot, white gloved hand pressing and sinking into pink fluffy fur fabric, realistic fur compression
+Frame8: hero pink bubble sofa placed on white platform
+Frame9: hero sofa inside minimalist pastel room, curved blue checkered mirror
+Frame10: same hero sofa, matching pink bunny chair, cloud-shaped coffee table
+Frame11: full room set, small doll figurines, wall art, pastel decor
+Frame12: complete cute living room with hero sofa, panoramic window, soft daylight
+All sofas are thick long pink faux lama fur, puffy segmented bubble shape, cute miniature dollhouse furniture style, clean white studio, soft shadow, commercial furniture photography, no distortion, no text artifacts, clean composition`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–0.8s:淡粉模块扶手椅浮在中央;白手套向左滑动",
+      },
+      {
+        number: 2,
+        description:
+          "0.8–1.6s:扶手椅快速左旋,迷你天鹅绒粉色沙发(心形&兔子形)从右滑入并定在中央",
+      },
+      {
+        number: 3,
+        description:
+          "1.6–2.4s:又一次滑动,替换成毛茸玫瑰粉豆袋猫耳沙发",
+      },
+      {
+        number: 4,
+        description:
+          "2.4–3.2s:最后一次滑动,鲜洋红模块长毛沙发滑入",
+      },
+      {
+        number: 5,
+        description:
+          "3.2–4.2s:英雄毛绒洋红沙发缓慢旋转正面、惯性停住",
+      },
+      {
+        number: 6,
+        description:
+          "4.2–5.0s:白手套张开手掌做STOP手势,旋转木马冻结;其他单品消失在远处",
+      },
+      {
+        number: 7,
+        description:
+          "5.0–5.8s:白手套深按并滑过毛绒沙发扶手,展示真实毛绒压缩与柔软物理",
+      },
+      {
+        number: 8,
+        description:
+          "5.8–6.6s:沙发落地;白色地板从下方滑入,浅粉地毯铺开",
+      },
+      {
+        number: 9,
+        description:
+          "6.6–8.5s:英雄毛绒粉沙发 100% 静止不动,极简房间组装——蓝色镜子、白咖啡桌和兔子椅滑入就位,搁板锁定",
+      },
+      {
+        number: 10,
+        description:
+          "8.5–10s:大全景窗打开,明亮日光淹没完成的鲜艳粉色室内;摄影机缓慢后退展示全房间",
+      },
+    ],
+    video_prompt: {
+      title: "Pink Fluffy Sofa Blind-Box Pick · ASMR Furniture Commerce · 10s",
+      subtitle: "Google Flow (Omni Flash) · 16:9 · I2V from 12-panel storyboard",
+      content: `平台：Google Flow（Omni Flash 模型）
+
+1、先文生图，生成详细的故事分镜板
+12-panel grid storyboard, product commercial shot, ultra photorealistic, 8k, sharp focus, soft clean studio lighting, white seamless background, series of miniature pink fluffy fur sofas, matte white leather gloved human hands interacting with furniture, timeline numbered frames,
+Frame1: small pink plush single sofa, hand pointing
+Frame2: rotating display turntable with multiple tiny pink plush sofas, gloved hand pointing
+Frame3: pink bunny ear plush armchair
+Frame4: pink cat ear round fluffy sofa
+Frame5: large pink bubble marshmallow long-fur hero sofa
+Frame6: open palm stop gesture in front of hero sofa
+Frame7: close-up shot, white gloved hand pressing and sinking into pink fluffy fur fabric, realistic fur compression
+Frame8: hero pink bubble sofa placed on white platform
+Frame9: hero sofa inside minimalist pastel room, curved blue checkered mirror
+Frame10: same hero sofa, matching pink bunny chair, cloud-shaped coffee table
+Frame11: full room set, small doll figurines, wall art, pastel decor
+Frame12: complete cute living room with hero sofa, panoramic window, soft daylight
+All sofas are thick long pink faux lama fur, puffy segmented bubble shape, cute miniature dollhouse furniture style, clean white studio, soft shadow, commercial furniture photography, no distortion, no text artifacts, clean composition
+
+2、再引用生成的故事板，选择图生视频模式——
+Ultra-photorealistic 10-second 16:9 luxury furniture commercial, one continuous first-person female POV, 26–28mm lens, bright white studio background, white silk gloves, realistic physics only. 
+
+0–0.8s: A sleek pale pink modular armchair floats centered; a white-gloved hand swipes left. 
+0.8–1.6s: The armchair rapidly orbits left as a carousel with miniature velvet pink armchairs (heart and bunny shapes) arrives from the right and stops center. 
+1.6–2.4s: Another swipe replaces it with a fluffy rose-pink beanbag chair with cat ears. 
+2.4–3.2s: A final swipe brings in a vibrant magenta modular sofa with long-pile fluffy fur. 
+3.2–4.2s: The hero fluffy magenta sofa arrives slowly, rotates frontal, and stops with heavy inertia. 
+4.2–5.0s: An open-palm STOP gesture freezes the carousel; other pieces disappear into the distance. 
+5.0–5.8s: A white-gloved hand presses deep and slides across the fluffy sofa armrest, showing realistic fur compression and soft physics. 
+5.8–6.6s: The sofa lands; a sleek white floor slides beneath it and a light pink rug unrolls. 
+6.6–8.5s: The hero fluffy pink sofa stays 100% stationary as the minimalist room assembles—sleek blue mirrors, white coffee tables, and bunny chairs slide into place and shelving locks in. 
+8.5–10s: A large panoramic window opens, bright daylight floods the completed vibrant pink interior; a slow dolly backward reveals the full room. 
+
+No magic, morphing, or cuts. High-quality textures, real mass and friction.`,
+    },
+  },
+  {
+    id: "charaspower-restaurant-drama-seedance",
+    title: "餐厅情侣对峙 · 30秒一镜到底",
+    subtitle: "X · @CharaspowerAI · Seedance 2.5 / Dreamina · 30秒 · 16:9",
+    description:
+      "Pierrick Chevallier 制作的 Seedance 2.5 连续 30 秒双人对话表演测试。高档餐厅夜戏,30 多岁情侣面对面坐在小桌前,争吵已开始但都在极力不公开吵架。从安静敌意 → 压力上升 → 争吵破防 → 水杯倾倒物理升级 → 情感逆转 → 最终击破,一镜到底完整覆盖六段情感节拍,精确英语口型同步,无剪辑连续镜头,摄影机缓慢环桌运动。极度真实的关系争吵,微表情、克制愤怒、公共场合压抑、自然声音叠加。",
+    video: "/tutorials/charaspower-restaurant-drama-seedance/demo-web.mp4",
+    poster: "/tutorials/charaspower-restaurant-drama-seedance/poster.jpg",
+    duration: "30秒",
+    shots: 1,
+    references: 0,
+    model: "Seedance 2.5 / Dreamina",
+    style: "高档餐厅夜戏 · 一镜到底对话",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/CharaspowerAI/status/2101733174912979337",
+    sourceAuthor: "@CharaspowerAI",
+    sourcePlatform: "X",
+    sourceImpressions: 3380,
+    tags: [
+      "30秒 · 一镜到底",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "双人对话",
+      "情感表演测试",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "设定高档餐厅夜景",
+        description:
+          "优雅拥挤的餐厅夜晚、温暖琥珀实用光、蜡烛、深色木材、白桌布、酒杯和餐具。附近其他情侣用餐,服务员自然穿过背景。房间保持精致平静,使情侣渐增的紧张更加不适。",
+      },
+      {
+        number: 2,
+        title: "一镜到底摄影机运动",
+        description:
+          "从桌侧中景双人镜头开始,摄影机缓慢向前靠近。随着争吵升级,逐步环绕桌子约 70–90 度。水杯倒下时摄影机自然下倾跟随动作,然后平滑恢复到角色。最后缓慢情感推进。保持正确画面方向、桌面地理和背景连续性。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 30 秒提示词",
+        description:
+          "使用下方完整提示词。六段情感节拍:0–5s 安静敌意 → 5–11s 压力上升 → 11–17s 争吵破防 → 17–22s 物理升级(水杯倾倒) → 22–27s 情感逆转 → 27–30s 最终击破。极度真实的关系争吵,避免戏剧性喊叫,两人最初在公共场合压抑愤怒,通过微表情建立:紧咬下巴、中断眼神接触、浅呼吸、紧张吞咽、苦涩半笑、轻微颤抖的手、痛苦陈述前的停顿。对话在争吵时刻轻微重叠,但每条重要台词必须保持清晰。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–5s 安静敌意:桌侧中景双人,摄影机缓慢靠近。女方盯着他,明显压抑愤怒:'You lied to me.' 男方低头看饮料,鼻子呼气,不看她回答:'I didn't lie.' 她前倾:'You looked me in the eye and said nothing happened.'",
+      },
+      {
+        number: 2,
+        description:
+          "5–11s 压力上升:摄影机缓慢从桌子环向女方侧,保持双人在画。他终于直视她:'Because every time I try to explain something, you decide what happened before I even finish.' 一拍。她给出苦涩半笑:'Oh, so this is my fault now?' 他下巴收紧:'That's not what I said.'",
+      },
+      {
+        number: 3,
+        description:
+          "11–17s 争吵破防:摄影机微妙地在两人之间推近。她立即打断,更大声:'It's always what you mean.' 附近食客短暂看过来。男方降低声音,对注意力感到尴尬:'Can you not do this here?' 她难以置信地盯着他:'Do what? React?' 她锐利地做手势,不小心碰到水杯。",
+      },
+      {
+        number: 4,
+        description:
+          "17–22s 物理升级:水杯自然倾倒。摄影机本能地随运动下倾,不切镜。水洒过桌布流向他的手机。他快速抓起手机,从桌子推开。椅腿刮擦地板。餐具移位。蜡烛闪烁。他看着混乱,然后看着她。冷冷地:'This. This is exactly what I'm talking about.' 女方僵住。愤怒变成羞辱。",
+      },
+      {
+        number: 5,
+        description:
+          "22–27s 情感逆转:摄影机缓慢升回眼平线,移入更紧的双人镜头。她现在说得更安静:'You know what hurts the most?' 他不回答。'You don't even care that I'm upset.' 他表情变化。愤怒软化成内疚,但他仍无法道歉。'I care. I'm just tired of being punished for everything.' 她立即回答:'Then stop giving me reasons.'",
+      },
+      {
+        number: 6,
+        description:
+          "27–30s 最终击破:沉默。餐厅环境音在混音中略微低沉。摄影机做最后一次非常缓慢的推进到两人之间的空间。女方直视他,眼睛湿润但克制,几乎耳语:'Maybe we shouldn't be together anymore.' 男方完全静止。不切镜。保持被蜡烛在前景分隔的两张脸上,远处餐厅声音逐渐回归,定格在震惊沉默上。",
+      },
+    ],
+    constraints:
+      "30 秒单镜连续不切;缓慢环桌摄影机运动;水杯倾倒时自然下倾跟随;极度真实关系争吵,微表情建立;精确英语口型同步;自然声音叠加;无背景音乐。",
+    video_prompt: {
+      title: "Restaurant couple confrontation · 30s continuous single take",
+      subtitle: "Seedance 2.5 / Dreamina · 16:9 · #DreaminaCPP · precise lip sync",
+      content: `ultra-realistic relationship drama, upscale restaurant at night, premium feature-film cinematography, tense intimate atmosphere, naturalistic acting, physically believable movement, precise English lip sync. One continuous uninterrupted shot — no cuts.
+
+A couple in their early 30s sits face-to-face at a small restaurant table. Their argument has already been building before the shot begins. They are trying not to make a public scene, but both are close to losing control. Preserve identical faces, hairstyles, body proportions, clothing and accessories throughout. No character identity drift.
+
+Elegant crowded restaurant at night, warm amber practical lights, candles, dark wood, white tablecloths, wine glasses and silverware. Other couples dine nearby. Waiters move naturally through the background. The room remains sophisticated and calm, making the couple's growing tension feel even more uncomfortable.
+
+Warm candlelight and overhead tungsten practicals shape their faces. Soft cool city light enters through windows behind them. Cinematic contrast, realistic skin, subtle reflections in glassware, creamy background bokeh, shallow depth of field.
+
+0–5s — Quiet hostility
+Begin in a medium two-shot from the side of the table, camera slowly creeping closer.
+The woman stares at him, visibly holding back anger.
+Woman, controlled and quiet:
+"You lied to me."
+The man looks down at his drink, exhales through his nose, then answers without looking at her.
+
+Man:
+"I didn't lie."
+She leans forward.
+
+Woman:
+"You looked me in the eye and said nothing happened."
+
+5–11s — Pressure rises
+The camera slowly arcs around the table toward the woman's side, maintaining both characters in frame.
+He finally looks directly at her.
+Man, frustrated:
+"Because every time I try to explain something, you decide what happened before I even finish."
+
+A beat.
+She gives a bitter half-laugh.
+Woman:
+"Oh, so this is my fault now?"
+His jaw tightens.
+
+Man:
+"That's not what I said."
+
+11–17s — Argument breaks containment
+The camera subtly pushes closer between them.
+She interrupts immediately:
+Woman, louder:
+"It's always what you mean."
+
+Nearby diners briefly glance over.
+The man lowers his voice, embarrassed by the attention.
+Man:
+"Can you not do this here?"
+She stares at him in disbelief.
+
+Woman:
+"Do what? React?"
+She gestures sharply and accidentally clips her water glass.
+
+17–22s — Physical escalation
+The glass tips over naturally. The camera instinctively dips with the movement without cutting.
+Water spreads across the tablecloth toward his phone.
+He grabs the phone quickly and pushes back from the table.
+Chair legs scrape against the floor. Silverware shifts. The candle flickers.
+He looks at the mess, then at her.
+
+Man, cold:
+"This. This is exactly what I'm talking about."
+The woman freezes.
+Her anger turns into humiliation.
+
+22–27s — Emotional reversal
+The camera slowly rises back to eye level and moves into a tighter two-shot.
+She speaks more quietly now.
+Woman:
+"You know what hurts the most?"
+He doesn't answer.
+
+Woman:
+"You don't even care that I'm upset."
+His expression changes. Anger softens into guilt, but he still cannot bring himself to apologize.
+He says:
+
+Man:
+"I care. I'm just tired of being punished for everything."
+
+She immediately answers:
+Woman:
+"Then stop giving me reasons."
+
+27–30s — Final blow
+Silence.
+Restaurant ambience becomes slightly muffled in the mix.
+the camera makes a very slow final push toward the space between them.
+The woman looks directly at him, eyes wet but controlled.
+Woman, almost whispering:
+"Maybe we shouldn't be together anymore."
+The man goes completely still.
+Do not cut away.
+Hold on the stunned silence between both characters as distant restaurant sounds gradually return.
+End the shot on their faces separated by the candle in the foreground.
+
+Single continuous take for the entire 30 seconds. Start with a medium two-shot, eye-level, 50mm cinematic lens feeling. Slow controlled handheld movement, barely perceptible instability. Gradually orbit approximately 70–90 degrees around the table as the argument escalates. When the glass falls, naturally dip the camera toward the action, then smoothly recover to the characters. Finish with a slow emotional push-in. Maintain correct screen direction, table geography and background continuity. No teleportation, no impossible camera movement, no hidden cuts.
+
+Extremely realistic relationship argument. Avoid theatrical shouting. Both characters initially suppress their anger because they are in public. Build through micro-expressions: clenched jaw, interrupted eye contact, shallow breathing, nervous swallowing, bitter half-smiles, slight trembling hands, pauses before painful statements. Emotional progression: suspicion → defensiveness → accusation → public embarrassment → anger → vulnerability → emotional shock.
+
+Dialogue must overlap slightly at moments like a real argument, but every important line must remain intelligible.
+
+Natural English dialogue with accurate lip synchronization and intimate voice performance.
+Layered restaurant ambience: low conversations, soft cutlery, glass clinks, footsteps, distant kitchen noise, subtle ventilation and room reverb.
+Detailed Foley: hand touching glass, glass tipping, liquid spill, silverware movement, chair scraping, fabric movement, controlled breathing.
+
+No background music.`,
+    },
+  },
+  {
+    id: "garylau-rei-city-travel-h3",
+    title: "绫波丽城市换装旅行 · H3 深度驱动",
+    subtitle: "X · @GaryLau0101 · MiniMax H3 Singularity · 12秒 · 9:16",
+    description:
+      "Gary Lau 制作的绫波丽(Rei)城市换装旅行短片。MiniMax H3 Singularity 深度视频驱动,12 秒竖屏连续变装。从纯白工作室黑色水手服开场,红色定位针出现后快速旋转变装依次穿过巴黎(海军条纹上衣+奶油长裤)、罗马(鼠尾草绿连衣裙)、开罗(象牙亚麻衬衫+米色长裤)、悉尼(天蓝色衬衫+藏青短裤),每个城市配对应城市地图与导航 UI。作者自述脸部后段一致性差因 GPT 生图角色卡;复刻可用深度视频,从零可用 Blender。",
+    video: "/tutorials/garylau-rei-city-travel-h3/demo-web.mp4",
+    poster: "/tutorials/garylau-rei-city-travel-h3/poster.jpg",
+    duration: "12秒",
+    shots: 7,
+    references: 2,
+    model: "MiniMax H3 Singularity",
+    style: "竖屏换装旅行 · 深度驱动",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/GaryLau0101/status/2101872019981889672",
+    sourceAuthor: "@GaryLau0101",
+    sourcePlatform: "X",
+    sourceImpressions: 1681,
+    tags: [
+      "12秒 · 7段变装",
+      "9:16 竖屏",
+      "MiniMax H3 Singularity",
+      "深度视频驱动",
+      "城市换装旅行",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备角色参考图 Picture1–6",
+        description:
+          "Picture1 定义 Rei 开场黑色水手服、黑贝雷帽、百褶裙、白膝袜、黑乐福鞋,以及精确脸型、五官、长直黑发与刘海。Picture2–5 定义巴黎、罗马、开罗、悉尼四城的服装、正面姿势、道具、城市地图与 UI。Picture6 是未修改的标准脸部裁剪,作为所有服装的最高优先级面部身份参考。注意:帖内未附这些参考图,需自备或参考原作者素材。",
+      },
+      {
+        number: 2,
+        title: "准备深度视频 Video1",
+        description:
+          "黑白相对深度参考视频,仅用于身体运动、摄影机后拉和时间节奏。深度亮度代表距离,不是肤色或脸部细节。使用场景图片解析每次转身后她的脸和胸部朝向。帖内有深度视频参考。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整 12 秒提示词。关键约束:生成一个连续 12 秒竖屏视频,下方分镜标签是连续阶段不是插入剪辑指令。保持参考时间线原速,不压缩开场。只有 Rei 旋转,摄影机不环绕她。背面是旋转中的短暂经过方向,不是停留姿势。每次完成变装后展示她的脸和新服装正面。服装、手持道具、城市地图与城市名 UI 一起更换。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref1",
+        number: "参考 01",
+        title: "深度视频缩略图",
+        subtitle: "黑白深度参考 · 9:16",
+        image: "/tutorials/garylau-rei-city-travel-h3/ref-depth-thumb.jpg",
+        prompt: `黑白相对深度参考视频缩略图,仅用于身体运动、摄影机后拉和时间节奏。深度亮度代表距离,不是肤色或脸部细节。完整深度视频见 ref-depth-web.mp4。`,
+      },
+      {
+        id: "ref2",
+        number: "参考 02",
+        title: "原帖引用的求图请求帖",
+        subtitle: "单图 · 非 Picture1–6 参考集",
+        image: "/tutorials/garylau-rei-city-travel-h3/ref-source-request.jpg",
+        prompt: `作者 Gary Lau 引用的 @weiyux2021 原帖是一个求图请求帖,仅有单图,不是 Picture1–6 角色换装参考集。Picture1–6 需自备或参考原作者素材。`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0.00–2.50s:纯白工作室与开场黑色水手服(Picture1)。Rei 看着胸前手机。跟随开场摄影机后拉。她的躯干保持大致面向摄影机;允许原始小幅手机和头部手势。此区间无全身旋转、无定位针、无城市背景、无服装更换。",
+      },
+      {
+        number: 2,
+        description:
+          "2.50–3.15s:红色定位针出现在 Rei 上方。此事件仅添加定位针。她继续在纯白工作室看手机,仍穿开场黑色水手服。定位针不触发旋转或场景变化。不在此处开始变装。",
+      },
+      {
+        number: 3,
+        description:
+          "3.15–4.05s:跟随小的准备性侧向枢轴,然后回到朝向摄影机的起始方向,同时握着手机。这是准备运动,不是快速变装旋转。保持开场黑色水手服、白背景和红色定位针贯穿此区间。4.05 秒前无巴黎地图或夏季服装。",
+      },
+      {
+        number: 4,
+        description:
+          "4.05–6.00s:4.05 秒开始跟随 Video1 的快速变装旋转。连续穿过侧面和背面方向不停顿。约 4.25 秒,在此旋转中,一起更换为巴黎服装、饮料、墨镜、地图和导航 UI(Picture2)。到 4.50 秒完成旋转并展示 Rei 面向摄影机,她的脸和海军象牙条纹上衣正面可见。4.50–6.00 秒保持正面/四分之三正面展示,带饮料和墨镜手势。奶油全长裤、条纹上衣和红色颈巾完全替换开场黑色水手服。无背面停留、无手机、无开场黑色水手服在巴黎展示期间。顶部搜索栏和底部位置卡都读作'巴黎'。",
+      },
+      {
+        number: 5,
+        description:
+          "6.00–8.00s:6.00 秒开始下一次参考转身。约 6.25 秒更换服装、道具、城市和 UI 为罗马(Picture3)。到 6.55 秒完成转身进入正面/四分之三正面视角,展示 Rei 的脸、鼠尾草绿中长连衣裙与棕色腰带。直到 8.00 秒使用罗马姿势,带纸质指南和温暖的图拉真柱与罗马广场地图。两个城市标签都读作'罗马'。背面帧仅在转身进行中出现;转身后无停止的背面视角。",
+      },
+      {
+        number: 6,
+        description:
+          "8.00–10.00s:8.00 秒开始下一次参考转身。约 8.25 秒一起更换为象牙亚麻衬衫、米色全长裤、赭石围巾、购物袋、开罗地图和 UI(Picture4)。到 8.55 秒展示她的脸和象牙亚麻衬衫正面。保持正面/四分之三展示与自然小动作直到 10.00 秒。两个城市标签都读作'开罗'。保持开罗服装和地图在一起;不引入之前的衣服或提前引入悉尼。",
+      },
+      {
+        number: 7,
+        description:
+          "10.00–12.00s:10.00 秒开始最后一次参考转身。约 10.25 秒替换开罗衣服和购物袋、城市和标签为悉尼天蓝色衬衫、白色 T 恤、藏青及膝短裤和白色运动鞋、悉尼塔地图和 UI(Picture5)。到 10.55 秒面向摄影机,天蓝色衬衫下的白色 T 恤可见,双手抬起一腿向后弯曲如 Picture5。保持此正面悉尼展示与微妙自然运动贯穿 12.00 秒。两个城市标签都读作'悉尼'。此最终展示后无额外旋转、目的地或服装更换。",
+      },
+    ],
+    constraints:
+      "参考图 Picture1–6 未在原帖附件中,需自备;引用的 weiyux2021 帖仅为求图请求帖(单图),非 Picture1–6 角色换装参考集;深度视频仅用于运动和时间节奏,渲染自然全彩色使用 Pictures;每次变装后展示脸部和服装正面,不停留在背面视角。",
+    video_prompt: {
+      title: "Rei City Travel Outfit Changes · 12s · Depth-Driven",
+      subtitle: "MiniMax H3 Singularity · 9:16 vertical · Picture1–6 + Video1 refs",
+      content: `<Picture 1> defines Rei's original opening black sailor uniform, black beret, pleated skirt, white knee socks and black loafers, as well as her exact face, natural facial proportions, long straight black hair and bangs throughout. Use this uniform for the white-studio opening only; do not reproduce the character-sheet layout. <Picture 2> defines her Paris outfit, front-facing presentation pose, drink, sunglasses, city map and UI. <Picture 3> defines her Rome outfit, front/three-quarter presentation pose, props, city map and UI. <Picture 4> defines her Cairo outfit, presentation pose, shopping bags, city map and UI. <Picture 5> defines her Sydney outfit, front-facing finishing pose, city map and UI. <Picture 6> is an unmodified slightly turned standard face crop from the original Rei character card. It is the highest-priority facial identity reference for ALL outfits: preserve its eye shape and spacing, eyelids, nose, lips and natural proportions without beautification. Picture 1 supplies the same identity and opening uniform. Pictures 2–5 supply new city outfits and environments, never a substitute face. These are the same person in different clothes.
+
+<Video 1> is a black-and-white relative-depth reference for body movement, camera pullback and chronological timing only. Depth brightness represents distance, not skin color or face detail. Render natural full color using the pictures. A featureless face in the depth map must not become the back of Rei's head. Use the scene pictures to resolve which way her face and chest point after each turn.
+
+Generate ONE continuous 12-second vertical video. The timed Shot labels below are successive phases of this one output, not instructions to insert camera cuts. Keep the reference timeline at its original speed. Do not compress the opening to make room for the cities. Only Rei rotates during transformation; the camera must not orbit her. A back view is a brief passing orientation during a spin, never a held destination pose. Each completed transformation reveals her face and the FRONT of the new outfit, as in its corresponding picture. Change clothing, handheld props, city map and city-name UI together; do not change only the background while leaving the previous outfit.
+
+Shot 1 [0.00–2.50 seconds]: White studio and opening black sailor uniform from <Picture 1>. Rei looks at the phone held in front of her chest. Follow the opening camera pullback in <Video 1>. Her torso remains generally facing the camera; allow the original small phone and head gestures. This interval contains no full-body spin, no location pin yet, no city background and no wardrobe change.
+
+Shot 2 [2.50–3.15 seconds]: The red location pin appears above Rei. This event ONLY adds the pin. She continues looking at her phone in the white studio, still wearing the opening black sailor uniform. The pin does not trigger a spin or a scene change. Do not begin the transformation here.
+
+Shot 3 [3.15–4.05 seconds]: Follow the small preparatory side pivot in <Video 1>, then return toward the camera-facing starting orientation while holding the phone. This is the preparatory movement, not the rapid transformation spin. Retain the opening black sailor uniform, white background and red pin throughout this interval. No Paris map or summer outfit before 4.05 seconds.
+
+Shot 4 [4.05–6.00 seconds]: At 4.05 seconds begin the rapid transformation rotation following <Video 1>. Pass continuously through the side and back orientations without pausing. Around 4.25 seconds, during this rotation, change together into the Paris outfit, drink, sunglasses, map and navigation UI from <Picture 2>. By 4.50 seconds complete the rotation and reveal Rei FACING THE CAMERA, with her face and the front of her navy-and-ivory striped top visible. From 4.50 to 6.00 seconds remain in this front/three-quarter FRONT presentation, with the drink and sunglasses gesture from <Picture 2>. The cream full-length trousers, striped top and red neck scarf replace the opening black sailor uniform completely. No back-facing hold, no phone, no opening black sailor uniform during the Paris presentation. The top search bar and bottom location card both read 巴黎.
+
+Shot 5 [6.00–8.00 seconds]: Begin the next reference turn at 6.00 seconds. Around 6.25 seconds change outfit, props, city and UI to Rome from <Picture 3>. Complete the turn by 6.55 seconds into a front/three-quarter FRONT view showing Rei's face, sage-green midi dress with brown belt. Until 8.00 seconds use the Rome pose with the paper guide and warm Trajan column and Roman Forum map. Both city labels read 罗马. Back-facing frames occur only while the turn is in progress; no stopped back view after the turn.
+
+Shot 6 [8.00–10.00 seconds]: Begin the next reference turn at 8.00 seconds. Around 8.25 seconds change together to the ivory linen shirt, beige full-length trousers, ochre scarf, shopping bags, Cairo map and UI from <Picture 4>. By 8.55 seconds reveal her face and the front of the ivory linen shirt. Hold the front/three-quarter presentation with natural small movements until 10.00 seconds. Both city labels read 开罗. Keep the Cairo outfit and map together; do not introduce previous clothes or Sydney early.
+
+Shot 7 [10.00–12.00 seconds]: Begin the final reference turn at 10.00 seconds. Around 10.25 seconds replace the Cairo clothes and shopping bags, city and labels with the Sydney sky-blue overshirt, white T-shirt, navy knee-length shorts and white sneakers, Sydney Tower map and UI from <Picture 5>. By 10.55 seconds face the camera with the white T-shirt beneath the sky-blue overshirt visible, hands raised and one leg bent backward as in <Picture 5>. Keep this front-facing Sydney presentation with subtle natural movement through 12.00 seconds. Both city labels read 悉尼. No additional spin, destination or wardrobe change after this final reveal.
+
+Keep Rei's identity and long hair throughout. Do not reproduce character-sheet panels, extra people, face closeups or depth-map gray colors. Keep the city UI style consistent; update both location labels at each city change. No generated speech or music.
+
+The angle in Picture 6 describes identity only, NOT a fixed head pose. Face direction, expression, head tilt, hand gestures and full body movement follow Video 1. In Paris the sunglasses are opaque black and fully cover both eyes and eye sockets; no eyes visible through the lenses or above the rims. Keep the sunglasses on.`,
+    },
+  },
+  {
+    id: "strength04-tomjerry-mac-desktop-h3",
+    title: "猫和老鼠搞乱 Mac 桌面 · H3",
+    subtitle: "X · @Strength04_X · MiniMax H3 on Flova · 10秒 · 16:9",
+    description:
+      "Strength04 制作的 Tom 和 Jerry macOS 桌面互动视频。MiniMax H3 on Flova(#flovaCPP)一镜到底 10 秒。Tom 追逐 Jerry 穿过电影化卡通客厅(日落窗光、木地板、舒适家具),意外踢飞爆米花,卡通气流震飞 Gmail、Discord、Microsoft Teams 三个桌面图标。Tom 冻结反应后决定修复,一个一个拾起图标、携带并放回原位,每次清楚点击声。Jerry 在旁观看持奶酪。最后 Tom 回到右侧,假装什么都没发生。先生成 macOS 桌面参考图,再用作第一帧喂给视频模型。",
+    video: "/tutorials/strength04-tomjerry-mac-desktop-h3/demo-web.mp4",
+    poster: "/tutorials/strength04-tomjerry-mac-desktop-h3/poster.jpg",
+    duration: "10秒",
+    shots: 1,
+    references: 1,
+    model: "MiniMax H3 on Flova (#flovaCPP)",
+    style: "桌面互动 · 卡通角色",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Strength04_X/status/2101913634293297466",
+    sourceAuthor: "@Strength04_X",
+    sourcePlatform: "X",
+    sourceImpressions: 607,
+    tags: [
+      "10秒 · 一镜到底",
+      "16:9 横屏",
+      "MiniMax H3",
+      "桌面互动",
+      "Tom 和 Jerry",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "先生成 macOS 桌面参考图",
+        description:
+          "使用完整的桌面参考图提示词生成高端 16:9 macOS 桌面截图。特色 Tom 和 Jerry 作为主角,电影化卡通客厅日落环境,左侧 18 个应用图标(3 列 6 行),macOS 菜单栏和底部 Dock。Tom 和 Jerry 在右侧处于表现力的玩耍时刻,保留经典卡通外观、比例、颜色、表情和原始 2D 动画美学。",
+      },
+      {
+        number: 2,
+        title: "上传桌面图作为第一帧",
+        description:
+          "在 MiniMax H3(Flova 或其他平台)上传生成的桌面图作为精确第一帧和视觉参考。保持参考桌面完全如图所示,包括温暖日落客厅、木地板、沙发、窗户、书籍、爆米花盒、散落爆米花、macOS 菜单栏、左侧应用网格、底部 Dock 和所有桌面元素。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 10 秒视频提示词",
+        description:
+          "使用下方完整提示词。关键:静态正面摄影机,一镜连续不切。Tom 追 Jerry → Jerry 变向 → Tom 滑行踢爆米花 → 卡通气流震飞 Gmail/Discord/Teams 三图标 → Tom 冻结震惊 → 逐个拾起并放回原位(每次清楚点击声) → Tom 回右侧假装无事。保持 Tom 和 Jerry 经典卡通外观、比例、颜色、表情不变。真实物理,每个移动图标必须可见离开原位置、空中落下、着陆、被拾起、携带、放回。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref1",
+        number: "参考 01",
+        title: "Tom 和 Jerry macOS 桌面",
+        subtitle: "参考图 · 16:9 · 电影化客厅日落",
+        image: "/tutorials/strength04-tomjerry-mac-desktop-h3/ref-desktop.jpg",
+        prompt: `Create a high-end 16:9 macOS desktop screenshot featuring Tom and Jerry as the main characters.
+
+Build an original cinematic cartoon living-room environment at sunset, with warm window light entering from one side, wooden flooring, cozy furniture, soft shadows, scattered playful objects, and subtle atmospheric depth.
+
+Place Tom and Jerry together on the RIGHT side in an expressive playful moment, preserving their recognizable classic cartoon appearance, proportions, colors, facial expressions, clothing/details, and original 2D animation aesthetic.
+
+Tom should be reacting dramatically while Jerry appears mischievous, creating a natural storytelling moment. Keep both characters fully visible and avoid cropping faces, hands, tails, or important details.
+
+Use warm golden-orange lighting mixed with deep brown, cream, muted red, and soft blue accents. Add subtle cinematic lighting and depth while keeping the artwork clearly cartoon-styled.
+
+Reserve the LEFT side for desktop shortcuts. Add exactly 18 applications in three columns and six rows:
+
+Chrome | Safari | Gmail
+YouTube | Spotify | Discord
+Slack | Zoom | Microsoft Teams
+Notion | Word | Excel
+Instagram | Reddit | Netflix
+Steam | Dropbox | Google Drive
+
+Use clean recognizable application logos, identical sizing, generous spacing, and crisp white labels.
+
+Add a realistic translucent macOS menu bar across the top:
+Apple logo, Finder, File, Edit, View, Go, Window, Help
+with Wi-Fi, battery, control icons, and clock on the right.
+
+Add a floating translucent Dock along the bottom, positioned toward the LEFT so Tom and Jerry remain unobstructed.
+
+Dock:
+Finder, Safari, Messages, Mail, Photos, Calendar, System Settings, separator, Downloads, Trash.
+
+Final style: premium animated-film artwork combined with a realistic macOS interface, cinematic composition, clean typography, strong character integration, polished lighting, detailed environment, and balanced negative space.
+
+No laptop, monitor, keyboard, mouse, open applications, extra characters, duplicate icons, large titles, advertisements, banners, or watermark.
+
+Output one finished high-resolution 16:9 edge-to-edge desktop image.`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–1.5s:Tom 继续在客厅地板上追逐 Jerry。Tom 看起来坚定且略微沮丧。Jerry 快速向右跑持奶酪。Jerry 回头向 Tom 露出淘气微笑。Tom 的手臂、腿、耳朵、尾巴和表情随夸张经典卡通动画自然移动。",
+      },
+      {
+        number: 2,
+        description:
+          "1.5–2.5s:Jerry 突然变向向左跑。Tom 戏剧性地反应并试图停下自己。Tom 的脚在木地板上滑行,意外向前踢飞散落的爆米花。突然夸张的卡通空气运动朝桌面左侧行进。",
+      },
+      {
+        number: 3,
+        description:
+          "2.5–3.2s:空气运动意外震飞三个桌面图标:Gmail、Discord、Microsoft Teams。三个图标物理离开它们在最右桌面图标列的原始位置。它们分别在空中旋转并落入底部 Dock 上方中心偏左的开放桌面区域。每个图标分别着陆带小弹跳。它们的原始网格位置现在明显空空的。",
+      },
+      {
+        number: 4,
+        description:
+          "3.2–4.2s:Tom 意识到发生了什么后冻结。他的眼睛睁大。Jerry 也停下一会儿看着掉落的图标。Tom 缓慢地向观众看来带尴尬表情。Jerry 带淘气地看着 Tom,好像对情况感到好笑。Tom 立即决定修复问题。",
+      },
+      {
+        number: 5,
+        description:
+          "4.2–7.8s:Tom 逐个修复三个掉落的图标。首先 Gmail:Tom 小心地向掉落的 Gmail 图标伸手。他用一只爪子单独拾起 Gmail。图标必须可见地离开桌面表面。Tom 携带 Gmail 穿过桌面到其原始空位置。他小心地将 Gmail 放回其精确原始位置。Gmail 标识和标签保持不变。听到柔和点击声。只有在 Gmail 完全修复后 Tom 才伸手拿下一个图标。",
+      },
+      {
+        number: 6,
+        description:
+          "7.8s 继续:第二个 Discord:Tom 向下伸手并单独拾起掉落的 Discord 图标。他携带 Discord 到其原始空位置。他小心地将它按回正确的网格位置。听到第二个温和点击声。Jerry 持奶酪站在附近观看 Tom。",
+      },
+      {
+        number: 7,
+        description:
+          "7.8s 继续:第三个 Microsoft Teams:Tom 再次向下伸手。他单独拾起 Microsoft Teams。他将它携带回其原始位置。他小心地将它释放到空网格位置。听到第三个温和点击声。显示所有三个单独的拾起并替换动作清楚。",
+      },
+      {
+        number: 8,
+        description:
+          "7.8–10s:放置 Microsoft Teams 回位置后,Tom 快速回到右侧。Jerry 持奶酪跑开短距离。Tom 挺直自己并试图恢复尊严。他看向修复的图标。然后他直接向观众看来带无辜、略微尴尬的表情。Jerry 短暂回头向 Tom 看来带淘气微笑。Tom 假装什么都没发生。保持最终姿势剩余时刻。最终桌面必须紧密匹配原始第一帧。",
+      },
+    ],
+    constraints:
+      "先生成桌面参考图,再用作第一帧;静态正面摄影机无运动;保持 Tom 和 Jerry 经典卡通外观不变;只有 Gmail/Discord/Teams 允许移动,其他一切保持静止;每个移动图标必须可见离开、落下、着陆、被拾起、携带、放回;Tom 必须分别修复三个图标;无自动修复、无瞬移、无同时移动多图标。",
+    video_prompt: {
+      title: "Tom and Jerry Mac Desktop Chaos · 10s · One Shot",
+      subtitle: "MiniMax H3 on Flova (#flovaCPP) · 16:9 · Desktop reference first frame",
+      content: `Platform / Model: MiniMax H3 on Flova (#flovaCPP)
+Aspect Ratio: 16:9
+Source: https://x.com/Strength04_X/status/2101913634293297466
+Reference image prompt reply: https://x.com/Strength04_X/status/2101913745794740629
+Video prompt reply: https://x.com/Strength04_X/status/2101913903802499214
+
+========== REFERENCE IMAGE PROMPT ==========
+
+Create a high-end 16:9 macOS desktop screenshot featuring Tom and Jerry as the main characters.
+
+Build an original cinematic cartoon living-room environment at sunset, with warm window light entering from one side, wooden flooring, cozy furniture, soft shadows, scattered playful objects, and subtle atmospheric depth.
+
+Place Tom and Jerry together on the RIGHT side in an expressive playful moment, preserving their recognizable classic cartoon appearance, proportions, colors, facial expressions, clothing/details, and original 2D animation aesthetic.
+
+Tom should be reacting dramatically while Jerry appears mischievous, creating a natural storytelling moment. Keep both characters fully visible and avoid cropping faces, hands, tails, or important details.
+
+Use warm golden-orange lighting mixed with deep brown, cream, muted red, and soft blue accents. Add subtle cinematic lighting and depth while keeping the artwork clearly cartoon-styled.
+
+Reserve the LEFT side for desktop shortcuts. Add exactly 18 applications in three columns and six rows:
+
+Chrome | Safari | Gmail
+YouTube | Spotify | Discord
+Slack | Zoom | Microsoft Teams
+Notion | Word | Excel
+Instagram | Reddit | Netflix
+Steam | Dropbox | Google Drive
+
+Use clean recognizable application logos, identical sizing, generous spacing, and crisp white labels.
+
+Add a realistic translucent macOS menu bar across the top:
+Apple logo, Finder, File, Edit, View, Go, Window, Help
+with Wi-Fi, battery, control icons, and clock on the right.
+
+Add a floating translucent Dock along the bottom, positioned toward the LEFT so Tom and Jerry remain unobstructed.
+
+Dock:
+Finder, Safari, Messages, Mail, Photos, Calendar, System Settings, separator, Downloads, Trash.
+
+Final style: premium animated-film artwork combined with a realistic macOS interface, cinematic composition, clean typography, strong character integration, polished lighting, detailed environment, and balanced negative space.
+
+No laptop, monitor, keyboard, mouse, open applications, extra characters, duplicate icons, large titles, advertisements, banners, or watermark.
+
+Output one finished high-resolution 16:9 edge-to-edge desktop image.
+
+
+========== VIDEO PROMPT ==========
+
+Create a 10-second horizontal 16:9 cinematic video using the provided Tom and Jerry macOS desktop image as the EXACT first frame and visual reference.
+
+IMPORTANT:
+
+Preserve the reference desktop exactly as shown, including the warm sunset living room, wooden floor, sofa, window, books, popcorn box, scattered popcorn, macOS menu bar, left-side application grid, bottom Dock, and all desktop elements.
+
+Keep Tom and Jerry's exact recognizable classic cartoon appearance, proportions, colors, facial features, expressions, poses, and original 2D animation style. Do not redesign, modernize, photorealize, or change their visual style.
+
+Begin with Tom running dramatically toward Jerry on the RIGHT side while Jerry runs away carrying a piece of cheese.
+
+CAMERA:
+
+Static front-facing camera.
+One continuous shot.
+No camera movement.
+No zoom.
+No pan.
+No cuts.
+
+TIMELINE:
+
+0–1.5s:
+Tom continues chasing Jerry across the living-room floor.
+
+Tom looks determined and slightly frustrated.
+Jerry runs quickly toward the RIGHT while holding the cheese.
+Jerry looks back at Tom with a mischievous smile.
+
+Tom's arms, legs, ears, tail, and facial expression move naturally with exaggerated classic cartoon animation.
+
+1.5–2.5s:
+Jerry suddenly changes direction and runs toward the LEFT.
+
+Tom reacts dramatically and tries to stop himself.
+
+Tom's feet slide across the wooden floor and he accidentally kicks the scattered popcorn forward.
+
+A sudden exaggerated cartoon air movement travels toward the LEFT side of the desktop.
+
+The air movement accidentally knocks THREE desktop icons loose:
+
+Gmail
+Discord
+Microsoft Teams
+
+The three icons physically leave their original positions in the RIGHTMOST desktop-icon column.
+
+They rotate separately through the air and fall into the open desktop area above the Dock near the center-left.
+
+Each icon lands separately with a small bounce.
+
+Their original grid positions are now visibly empty.
+
+2.5–3.2s:
+Tom freezes after realizing what happened.
+
+His eyes widen.
+
+Jerry also stops for a moment and looks at the fallen icons.
+
+Tom slowly looks toward the viewer with an embarrassed expression.
+
+Jerry looks at Tom mischievously as if amused by the situation.
+
+Tom immediately decides to fix the problem.
+
+3.2–7.8s:
+Tom restores the three fallen icons ONE AT A TIME.
+
+FIRST — Gmail:
+
+Tom carefully reaches toward the fallen Gmail icon.
+
+He picks up Gmail individually with one paw.
+
+The icon must visibly leave the desktop surface.
+
+Tom carries Gmail across the desktop toward its original empty position.
+
+He carefully places Gmail back into its exact original location.
+
+The Gmail logo and label remain unchanged.
+
+A soft click is heard.
+
+Only after Gmail is completely restored does Tom reach for the next icon.
+
+SECOND — Discord:
+
+Tom reaches down and individually picks up the fallen Discord icon.
+
+He carries Discord toward its original empty position.
+
+He carefully presses it back into the correct grid position.
+
+A second gentle click is heard.
+
+Jerry watches Tom while standing nearby with the cheese.
+
+THIRD — Microsoft Teams:
+
+Tom reaches down once more.
+
+He picks up Microsoft Teams individually.
+
+He carries it back to its original position.
+
+He carefully releases it into the empty grid position.
+
+A third gentle click is heard.
+
+Show all three separate pickup-and-replace actions clearly.
+
+IMPORTANT PHYSICAL ACTION RULES:
+
+Every moving icon must visibly:
+
+leave its original position
+fall through the air
+land on the desktop
+be physically picked up
+be carried by Tom
+be placed back into its original position
+
+Do NOT:
+- restore icons automatically
+- teleport icons
+- make icons snap back from a distance
+- move multiple icons simultaneously
+- scoop multiple icons together
+- stack icons
+- duplicate icons
+- morph logos
+- change labels
+
+Tom must restore Gmail, Discord, and Microsoft Teams separately.
+
+His paws must remain anatomically consistent with the original cartoon style.
+
+No extra paws.
+No extra fingers.
+No stretched limbs.
+No distorted characters.
+
+Jerry remains nearby and reacts naturally while Tom fixes the desktop.
+
+7.8–10s:
+After placing Microsoft Teams back into position, Tom quickly returns to the RIGHT side.
+
+Jerry runs a short distance away while still holding the cheese.
+
+Tom straightens himself and tries to regain his dignity.
+
+He looks toward the restored icons.
+
+Then he looks directly at the viewer with an innocent, slightly embarrassed expression.
+
+Jerry briefly looks back at Tom with a mischievous smile.
+
+Tom pretends nothing happened.
+
+Hold the final pose for the remaining moment.
+
+The final desktop must closely match the original first frame.
+
+DESKTOP PRESERVATION:
+
+Only Gmail, Discord, and Microsoft Teams are allowed to move.
+
+Everything else must remain completely stationary:
+
+Chrome
+Safari
+YouTube
+Spotify
+Slack
+Zoom
+Notion
+Microsoft Word
+Microsoft Excel
+Instagram
+Reddit
+Netflix
+Steam
+Dropbox
+Google Drive
+
+The macOS menu bar must remain stationary.
+
+The Dock must remain stationary.
+
+The wallpaper and all furniture must remain stationary.
+
+Do not change application logos or labels.
+
+Do not duplicate any icons.
+
+AUDIO:
+
+Light playful cartoon piano and pizzicato music.
+
+Fast playful rhythm during Tom's chase.
+
+A short cartoon sliding sound when Tom loses balance.
+
+A brief airy whoosh as the three icons are knocked loose.
+
+Three soft landing sounds as the icons fall.
+
+Three distinct gentle clicks as Tom restores Gmail, Discord, and Microsoft Teams.
+
+Music briefly pauses during Tom's shocked reaction, then resumes with a playful rhythm.
+
+No dialogue.
+No subtitles.
+No text overlays.
+
+VISUAL QUALITY:
+
+Premium cinematic cartoon animation integrated into the existing macOS desktop.
+
+Keep Tom and Jerry clearly 2D while maintaining the cinematic lighting of the environment.
+
+Natural squash-and-stretch animation.
+Smooth character motion.
+Clean cartoon outlines.
+Consistent colors.
+Natural shadows.
+Subtle floor reflections.
+Realistic interaction with the environment.
+
+FINAL FRAME:
+
+All three icons must be restored to their exact original positions.
+
+Tom and Jerry remain on the RIGHT side.
+
+Tom looks embarrassed but tries to appear innocent.
+
+Jerry remains mischievous.
+
+No missing icons.
+No duplicate icons.
+No changed logos.
+No extra characters.
+No extra objects.
+No camera movement.
+No cuts.
+
+The final frame should closely match the original reference image.`,
+    },
+  },
+  {
+    id: "strength04-cat-sneeze-desktop-h3",
+    title: "猫打喷嚏搞乱 Mac 桌面 · H3",
+    subtitle: "X · @Strength04_X · MiniMax Hailuo H3 Max on ImagineArt · 10秒 · 16:9",
+    description:
+      "Strength04 制作的猫打喷嚏 macOS 桌面互动视频。MiniMax Hailuo H3 Max on ImagineArt 一镜到底 10 秒。毛茸棕白猫戴大号银色耳机坐在桌面最右侧 MacBook 旁,突然打喷嚏,小型可见柔和气团从猫朝桌面图标飞去,意外震飞 Gmail、Discord、Microsoft Teams 三个图标。猫立即冻结、眼睛略大、耳朵向后倾、看向掉落图标带惊讶尴尬表情。随后猫匆忙逐个修复三图标:伸爪触碰拾起、携带、精确放回原位,每次温和点击声。最后猫快速回到 MacBook 旁原位,耳机正确就位,试图看起来完全无辜。先生成桌面参考图,再用作第一帧。",
+    video: "/tutorials/strength04-cat-sneeze-desktop-h3/demo-web.mp4",
+    poster: "/tutorials/strength04-cat-sneeze-desktop-h3/poster.jpg",
+    duration: "10秒",
+    shots: 1,
+    references: 1,
+    model: "MiniMax Hailuo H3 Max on ImagineArt",
+    style: "桌面互动 · 真实猫",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Strength04_X/status/2101868703482876376",
+    sourceAuthor: "@Strength04_X",
+    sourcePlatform: "X",
+    sourceImpressions: 5228,
+    tags: [
+      "10秒 · 一镜到底",
+      "16:9 横屏",
+      "MiniMax H3 Max",
+      "桌面互动",
+      "真实猫动物",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "先生成 macOS 桌面参考图",
+        description:
+          "使用完整的桌面参考图提示词生成高级 16:9 macOS 桌面环境。从上传的图像提取主体(猫戴耳机),保留精确身份、面部特征、比例、颜色、服装、发型、配饰、渲染风格和整体个性。桌面构图:电影化宽屏桌面壁纸,主体位于最右侧占约 42% 画面,中心保持开放呼吸空间,左侧 45% 留给 18 个桌面快捷方式(3 列 6 行),顶部 macOS 菜单栏和底部 Dock。",
+      },
+      {
+        number: 2,
+        title: "上传桌面图作为第一帧",
+        description:
+          "在 MiniMax H3 Max(ImagineArt 或其他平台)上传生成的桌面截图作为精确第一帧和视觉参考。保持参考图像完全如起始帧。不重新设计、替换或重新生成桌面环境。保持相同山湖背景、温暖日落光线、木桌、毛茸棕白猫戴大号银色耳机、MacBook、植物、书籍、咖啡杯、macOS 菜单栏、18 个桌面应用图标和底部 Dock。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 10 秒视频提示词",
+        description:
+          "使用下方完整提示词。关键:静态正面摄影机无运动。猫保持精确外观、毛皮图案、脸、眼睛、耳朵、耳机、身体比例、光线和位置。0–1.5s 猫完全平静原姿势,缓慢眨眼,鼻子轻微抽动。1.5–2.5s 猫突然打喷嚏,头快速向前略向左,小型可见柔和气团从猫朝桌面图标飞去,意外震飞 Gmail/Discord/Teams 三图标,它们物理旋转落下到 Dock 上方中心偏左开放桌面区域。3.3–7.8s 猫匆忙逐个修复:伸爪触碰拾起、携带、精确放回原位,每次温和点击声。7.8–10s 修复 Teams 后猫快速回到 MacBook 旁原位,坐直耳机正确就位,试图看起来完全无辜。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref1",
+        number: "参考 01",
+        title: "猫戴耳机 macOS 桌面",
+        subtitle: "参考图 · 16:9 · 山湖日落背景",
+        image: "/tutorials/strength04-cat-sneeze-desktop-h3/ref-desktop.jpg",
+        prompt: `Create a premium 16:9 macOS desktop environment using the uploaded image as the visual reference for the main subject.
+
+Extract the primary subject with clean, natural edges while preserving its exact identity, facial features, proportions, colors, outfit, hairstyle, accessories, rendering style, and overall personality. If the reference is anime, illustration, or photography, maintain the same medium and visual character. Remove all original background elements, borders, text, panels, and interface clutter. If multiple subjects are interacting, preserve their relationship and positioning.
+
+DESKTOP COMPOSITION:
+Build a cinematic widescreen desktop wallpaper with the subject positioned on the FAR RIGHT, taking roughly 42% of the frame. Keep the center open as visual breathing space. Reserve the LEFT 45% for desktop shortcuts. Maintain comfortable margins around the subject and ensure no face, hand, or important detail is hidden behind interface elements.
+
+BACKGROUND DESIGN:
+Generate an original macOS-inspired abstract environment based on colors found in the reference subject. Use layered translucent ribbons, soft glass-like shapes, subtle depth, flowing gradients, atmospheric lighting, and refined curved forms. Avoid generic blue macOS wallpaper styling. Match the background mood to the subject automatically:
+cute = soft pastel atmosphere
+futuristic = luminous gradients and subtle glow
+dark = charcoal, deep violet, burgundy, or muted emerald
+bright = clean warm gradients with controlled highlights
+natural = earthy muted tones
+
+Keep the LEFT area darker and visually simple so desktop labels remain readable. Add only subtle thematic shapes related to the subject.
+
+DESKTOP SHORTCUTS:
+Place exactly 18 application shortcuts in a precise 3-column × 6-row layout on the LEFT.
+
+Row 1:
+Chrome | Safari | Gmail
+
+Row 2:
+YouTube | Spotify | Discord
+
+Row 3:
+Slack | Zoom | Microsoft Teams
+
+Row 4:
+Notion | Microsoft Word | Microsoft Excel
+
+Row 5:
+Instagram | Reddit | Netflix
+
+Row 6:
+Steam | Dropbox | Google Drive
+
+Use recognizable modern application logos, uniform visual scale, consistent spacing, and small clean white labels beneath every icon. No missing icons, duplicates, substitutions, or additional shortcuts.
+
+TOP SYSTEM BAR:
+Create a realistic slim translucent macOS menu bar spanning the entire width. On the left show:
+Apple logo, Finder, File, Edit, View, Go, Window, Help
+
+On the right show subtle Wi-Fi, battery, control/status symbols and a realistic clock. Keep the bar understated and integrated into the wallpaper.
+
+BOTTOM DOCK:
+Add a compact glass-style macOS Dock centered near the bottom, positioned slightly toward the LEFT if needed to prevent overlap with the subject.
+
+Dock contents:
+Finder, Safari, Messages, Mail, Photos, Calendar, System Settings, separator, Downloads, Trash
+
+Use realistic macOS icon styling, subtle translucency, soft reflections, and restrained size.
+
+VISUAL QUALITY:
+Photorealistic desktop screenshot presentation, ultra-clean edges, accurate icon geometry, crisp typography, natural shadows, subtle glassmorphism, high dynamic range, refined lighting, balanced negative space, premium Apple-inspired design language.
+
+The final image must look like a real personalized macOS desktop rather than a poster or mockup.
+
+No computer hardware, monitor frame, keyboard, mouse, perspective view, open windows, browser tabs, banners, advertisements, large text, wallpapers containing duplicate characters, extra subjects, or additional desktop icons.
+
+Output: one finished high-resolution 16:9 edge-to-edge desktop screenshot.`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–1.5s:猫在原姿势保持完全平静。它坐在 MacBook 旁最右侧,耳机环绕耳朵。眼睛缓慢眨眼。鼻子轻微抽动。耳朵做小的自然运动。桌面壁纸、菜单栏、所有图标、Dock、MacBook、书籍、杯子和背景保持完全静止。",
+      },
+      {
+        number: 2,
+        description:
+          "1.5–2.5s:猫突然打喷嚏。头快速向前移动并略微向左。耳朵抽动,耳机自然弹跳。毛皮和胡须对喷嚏做出反应。小型可见柔和气团从猫朝桌面图标飞去。气团意外震飞只有三个桌面图标:Gmail、Discord、Microsoft Teams。这三个图标离开它们在最右桌面图标列的原始位置。它们物理旋转并向下落入 Dock 上方中心偏左的开放桌面区域。每个图标分别移动。每个图标带小的真实弹跳着陆。它们的原始位置变得明显空空的。所有其他图标必须保持完美静止。",
+      },
+      {
+        number: 3,
+        description:
+          "2.5–3.3s:猫打喷嚏后立即冻结。眼睛变得略微更大。耳朵向后倾斜。它看向掉落的图标带惊讶和尴尬的表情。猫短暂地向观众看来好像假装什么都没发生。然后它回看掉落的图标。",
+      },
+      {
+        number: 4,
+        description:
+          "3.3–7.8s:猫匆忙修复三个掉落的图标逐个。首先 Gmail:猫向掉落的 Gmail 图标伸爪。它的爪子小心触碰并抓住图标。它从桌面提起 Gmail。猫携带 Gmail 到其原始空位置。它精确地将 Gmail 放回其原始位置。Gmail 标识和标签保持不变。听到小的温和点击声。",
+      },
+      {
+        number: 5,
+        description:
+          "7.8s 继续:第二个 Discord:只有在 Gmail 被修复后,猫向掉落的 Discord 图标向下伸爪。它单独拾起 Discord。它携带 Discord 回其原始空位置。它精确地将 Discord 释放到位。听到第二个温和点击声。",
+      },
+      {
+        number: 6,
+        description:
+          "7.8s 继续:第三个 Microsoft Teams:只有在 Discord 被修复后,猫伸爪拿 Teams 图标。它单独拾起 Teams 图标。它携带它回其原始位置。它小心地将它释放到空网格位置。听到第三个温和点击声。",
+      },
+      {
+        number: 7,
+        description:
+          "7.8–10s:修复 Microsoft Teams 后,猫快速回到 MacBook 旁原位置。它再次坐直,耳机正确就位。猫试图看起来完全无辜。它轻轻眨眼。耳朵安定下来。胡须和毛皮停止移动。猫短暂地瞥向修复的图标,然后再次向前看。以猫坐在几乎完全相同的姿势如第一帧结束。最终桌面必须匹配原始参考构图。",
+      },
+    ],
+    constraints:
+      "先生成桌面参考图,再用作第一帧;静态正面摄影机无运动;保持猫精确外观、毛皮图案、脸、眼睛、耳朵、耳机不变;只有 Gmail/Discord/Teams 允许移动;每个移动图标必须可见离开原位、空中落下、着陆、被拾起、携带、放回;猫必须分别与每个图标互动;猫的爪子保持解剖学自然;无额外爪子、无拉伸肢体、无扭曲身体、无不可能的伸展。",
+    video_prompt: {
+      title: "Cat Sneeze Mac Desktop Chaos · 10s · One Shot",
+      subtitle: "MiniMax Hailuo H3 Max on ImagineArt · 16:9 · Desktop reference first frame",
+      content: `Platform / Model: MiniMax Hailuo H3 Max on ImagineArt
+Aspect Ratio: 16:9
+Source: https://x.com/Strength04_X/status/2101868703482876376
+Reference image prompt reply: https://x.com/Strength04_X/status/2101868833103602102
+Video prompt reply: https://x.com/Strength04_X/status/2101869064616542690
+
+========== REFERENCE IMAGE PROMPT ==========
+
+Create a premium 16:9 macOS desktop environment using the uploaded image as the visual reference for the main subject.
+
+Extract the primary subject with clean, natural edges while preserving its exact identity, facial features, proportions, colors, outfit, hairstyle, accessories, rendering style, and overall personality. If the reference is anime, illustration, or photography, maintain the same medium and visual character. Remove all original background elements, borders, text, panels, and interface clutter. If multiple subjects are interacting, preserve their relationship and positioning.
+
+DESKTOP COMPOSITION:
+Build a cinematic widescreen desktop wallpaper with the subject positioned on the FAR RIGHT, taking roughly 42% of the frame. Keep the center open as visual breathing space. Reserve the LEFT 45% for desktop shortcuts. Maintain comfortable margins around the subject and ensure no face, hand, or important detail is hidden behind interface elements.
+
+BACKGROUND DESIGN:
+Generate an original macOS-inspired abstract environment based on colors found in the reference subject. Use layered translucent ribbons, soft glass-like shapes, subtle depth, flowing gradients, atmospheric lighting, and refined curved forms. Avoid generic blue macOS wallpaper styling. Match the background mood to the subject automatically:
+cute = soft pastel atmosphere
+futuristic = luminous gradients and subtle glow
+dark = charcoal, deep violet, burgundy, or muted emerald
+bright = clean warm gradients with controlled highlights
+natural = earthy muted tones
+
+Keep the LEFT area darker and visually simple so desktop labels remain readable. Add only subtle thematic shapes related to the subject.
+
+DESKTOP SHORTCUTS:
+Place exactly 18 application shortcuts in a precise 3-column × 6-row layout on the LEFT.
+
+Row 1:
+Chrome | Safari | Gmail
+
+Row 2:
+YouTube | Spotify | Discord
+
+Row 3:
+Slack | Zoom | Microsoft Teams
+
+Row 4:
+Notion | Microsoft Word | Microsoft Excel
+
+Row 5:
+Instagram | Reddit | Netflix
+
+Row 6:
+Steam | Dropbox | Google Drive
+
+Use recognizable modern application logos, uniform visual scale, consistent spacing, and small clean white labels beneath every icon. No missing icons, duplicates, substitutions, or additional shortcuts.
+
+TOP SYSTEM BAR:
+Create a realistic slim translucent macOS menu bar spanning the entire width. On the left show:
+Apple logo, Finder, File, Edit, View, Go, Window, Help
+
+On the right show subtle Wi-Fi, battery, control/status symbols and a realistic clock. Keep the bar understated and integrated into the wallpaper.
+
+BOTTOM DOCK:
+Add a compact glass-style macOS Dock centered near the bottom, positioned slightly toward the LEFT if needed to prevent overlap with the subject.
+
+Dock contents:
+Finder, Safari, Messages, Mail, Photos, Calendar, System Settings, separator, Downloads, Trash
+
+Use realistic macOS icon styling, subtle translucency, soft reflections, and restrained size.
+
+VISUAL QUALITY:
+Photorealistic desktop screenshot presentation, ultra-clean edges, accurate icon geometry, crisp typography, natural shadows, subtle glassmorphism, high dynamic range, refined lighting, balanced negative space, premium Apple-inspired design language.
+
+The final image must look like a real personalized macOS desktop rather than a poster or mockup.
+
+No computer hardware, monitor frame, keyboard, mouse, perspective view, open windows, browser tabs, banners, advertisements, large text, wallpapers containing duplicate characters, extra subjects, or additional desktop icons.
+
+Output: one finished high-resolution 16:9 edge-to-edge desktop screenshot.
+
+========== VIDEO PROMPT ==========
+
+Create a 10-second horizontal 16:9 cinematic video using the provided macOS desktop screenshot as the EXACT first frame and visual reference.
+
+IMPORTANT:
+Preserve the reference image exactly as the starting frame. Do not redesign, replace, or regenerate the desktop environment. Maintain the same mountain lake background, warm sunset lighting, wooden desk, fluffy brown-and-white cat wearing large silver headphones, laptop, plant, books, coffee mug, macOS menu bar, 18 desktop application icons, and bottom Dock.
+
+CHARACTER:
+Keep the exact cat appearance, fur pattern, face, eyes, ears, headphones, body proportions, lighting, and position from the reference. The cat is sitting on the FAR RIGHT side of the desktop beside the laptop.
+
+CAMERA:
+Static front-facing camera.
+No camera movement.
+No zoom.
+No pan.
+No cuts.
+One continuous shot.
+Maintain exact 16:9 composition.
+
+TIMELINE:
+
+0–1.5s:
+The cat remains completely calm in its original pose.
+It sits beside the laptop with the headphones around its ears.
+Its eyes slowly blink.
+Its nose twitches slightly.
+The ears make a tiny natural movement.
+The desktop wallpaper, menu bar, all icons, Dock, laptop, books, mug and background remain completely stationary.
+
+1.5–2.5s:
+The cat suddenly sneezes.
+
+Its head quickly moves forward and slightly toward the LEFT.
+Its ears twitch and its headphones bounce naturally.
+Its fur and whiskers react to the sneeze.
+A small visible soft air puff travels from the cat toward the desktop icons.
+
+The air puff accidentally knocks ONLY THREE desktop icons loose:
+
+Gmail
+Discord
+Microsoft Teams
+
+These three icons leave their original positions in the RIGHTMOST desktop-icon column.
+
+They physically rotate and fall downward into the open desktop area above the Dock near the center-left.
+
+Each icon moves separately.
+Each icon lands with a small realistic bounce.
+
+Their original positions become visibly empty.
+
+ALL OTHER ICONS MUST REMAIN PERFECTLY STATIONARY.
+
+2.5–3.3s:
+The cat immediately freezes after sneezing.
+
+Its eyes become slightly wider.
+Its ears tilt backward.
+It looks toward the fallen icons with a surprised and embarrassed expression.
+
+The cat briefly looks toward the viewer as if pretending nothing happened.
+
+Then it looks back at the fallen icons.
+
+3.3–7.8s:
+The cat hurriedly fixes the three fallen icons ONE AT A TIME.
+
+FIRST — Gmail:
+The cat reaches toward the fallen Gmail icon.
+Its paw carefully touches and grips the icon.
+It lifts Gmail from the desktop.
+The cat carries Gmail toward its original empty position.
+It places Gmail precisely back into its original location.
+The Gmail logo and label remain unchanged.
+A small gentle click is heard.
+
+SECOND — Discord:
+Only after Gmail has been restored, the cat reaches down toward the fallen Discord icon.
+It picks Discord up individually.
+It carries Discord back to its original empty position.
+It releases Discord precisely into place.
+A second gentle click is heard.
+
+THIRD — Microsoft Teams:
+Only after Discord has been restored, the cat reaches for Microsoft Teams.
+It picks the Teams icon up individually.
+It carries it back to its original position.
+It carefully releases it into the empty grid position.
+A third gentle click is heard.
+
+IMPORTANT PHYSICAL ACTION RULES:
+Every icon must visibly leave its original position, fall, land, be physically picked up, carried, and placed back.
+
+Do NOT:
+- restore icons automatically
+- teleport icons
+- make icons snap back from a distance
+- move multiple icons simultaneously
+- scoop multiple icons together
+- stack icons
+- duplicate icons
+- morph logos
+- change icon labels
+
+The cat must interact with each icon separately.
+
+The cat's paws must remain anatomically natural.
+No extra paws.
+No stretched limbs.
+No distorted body.
+No impossible reach.
+
+7.8–10s:
+After restoring Microsoft Teams, the cat quickly returns to its original position beside the laptop.
+
+It sits upright again with the headphones correctly positioned.
+
+The cat tries to look completely innocent.
+
+It gently blinks.
+Its ears settle.
+Its whiskers and fur stop moving.
+
+The cat briefly glances toward the restored icons, then looks forward again.
+
+End with the cat sitting calmly in almost exactly the same pose as the first frame.
+
+The final desktop must match the original reference composition.
+
+VISUAL STYLE:
+Photorealistic cinematic desktop environment.
+Natural animal movement.
+Realistic fur physics.
+Subtle headphone movement.
+Natural paw interaction.
+Soft warm sunset lighting.
+Realistic shadows.
+Realistic depth of field.
+Premium Apple-style desktop presentation.
+
+PRESERVE:
+- exact macOS menu bar
+- exact desktop wallpaper
+- exact 18 application icons
+- exact icon positions
+- exact labels
+- exact Dock
+- laptop
+- books
+- mug
+- plant
+- cat
+- headphones
+- lighting
+- colors
+- composition
+
+ONLY Gmail, Discord and Microsoft Teams are allowed to move.
+
+AUDIO:
+Light playful piano and subtle pizzicato music.
+One cute realistic cat sneeze.
+Short airy whoosh during the sneeze.
+Three soft icon landing sounds.
+Three distinct gentle clicks when Gmail, Discord and Microsoft Teams are restored.
+Brief music pause during the cat's shocked reaction.
+No dialogue.
+No subtitles.
+No text overlays.
+
+FINAL FRAME:
+All three icons must be restored to their exact original positions.
+No missing icons.
+No duplicated icons.
+No changed logos.
+No extra objects.
+The cat returns to its original pose and looks innocent.
+
+The final frame should closely match the first frame.`,
+    },
+  },
+  {
+    id: "yangonchain-oriental-leaf-tea-moment",
+    title: "东方树叶概念广告 · 把这一刻还给自己",
+    subtitle: "X · @YangOnchain · 未标明模型 / 概念广告 · 30秒 · 16:9",
+    description:
+      "Yang Onchain 制作的东方树叶绿茶 AI 概念短片《把这一刻,还给自己》,非官方概念作品。30 秒 16:9 写实商业摄影与克制的 2.5D 水墨角色结合。唯一主角多多(成年中国女性,自然黑色中长发、轻微卷度)穿鼠尾草绿短袖针织上衣、奶油白宽松长裙,与三位好友在城市公园草坪野餐。原创 8-10cm 高 2.5D 水墨小茶客从东方树叶瓶标签下部建筑画中空间走出,举落叶滑到多多手机旁挥叶提醒;多多停止刷屏放下手机,拿起同一瓶绿茶旋开盖喝一口,听见朋友笑声转向朋友舒展;硬切茶汤微距意象;回到野餐垫,一阵风掀起餐巾罩住小茶客,多多揭开餐巾,旋紧瓶盖,接过朋友递来的葡萄加入话题;小茶客回头确认多多没再刷手机,满意收叶走回标签建筑入口压回画中,包装恢复原貌,右侧出现「东方树叶 / 把这一刻,还给自己。」文案与画外女声。",
+    video: "/tutorials/yangonchain-oriental-leaf-tea-moment/demo-web.mp4",
+    poster: "/tutorials/yangonchain-oriental-leaf-tea-moment/poster.jpg",
+    duration: "30秒",
+    shots: 7,
+    references: 1,
+    model: "未标明 / 概念广告",
+    style: "写实商业摄影 · 2.5D 水墨角色",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/YangOnchain/status/2101913629717381374",
+    sourceAuthor: "@YangOnchain",
+    sourcePlatform: "X",
+    sourceImpressions: 1302,
+    tags: [
+      "30秒 · 7段叙事",
+      "16:9 横屏",
+      "概念广告",
+      "2.5D 水墨角色",
+      "产品广告叙事",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备 5 张参考图 01–05",
+        description:
+          "01_多多身份:负责多多的脸型、五官、肤色与发色。02_绿白穿搭:负责衣服、鞋子,不继承为人物脸。03_东方树叶绿茶_实物参考:唯一产品外观依据,透明有棱面 PET 瓶、透明浅色旋盖、绿色瓶颈标签、奶油白长标签和下部建筑插画。04_小茶客:唯一动画角色的造型,8-10cm 高原创 2.5D 水墨角色,黑色手绘轮廓、米白纸感填色、圆软帽、小背包、布鞋。05_无人野餐场景:负责环境、摆设与光向;场景参考中无人是素材分工要求,成片仍应出现多多与三位好友。注意:帖内未附 01–05 参考图文件,仅文字指定按文件名识别,需自备参考图。",
+      },
+      {
+        number: 2,
+        title: "理解叙事结构与时间线",
+        description:
+          "30 秒包含连续推进的新事件,不把 18 秒内容减速拉长,不增加无信息空镜,不使用全程慢动作。始终在同一片城市公园草坪,奶油白野餐垫、浅藤色篮子、三明治、绿色葡萄、青苹果、合上的书和薄餐巾,大树在右后方,阳光从右后方斜入。前段声音较窄、画面略克制,放下手机后逐步打开色彩与环境声。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 30 秒提示词",
+        description:
+          "使用下方完整提示词。关键约束:只有同一瓶和同一瓶盖,状态依次:垫上封盖→右手持瓶、左手开盖→喝一口、左掌留盖→右手放回开盖瓶→空右手揭餐巾→左手旋紧盖→产品稳定留在原位。盖子不落地、不瞬移,手机反扣后不再亮屏。小茶客始终一个,衣帽、背包、纸感和比例不变;出入标签是广告中的绘画空间表现,除此之外只在现实表面行走,不飞行、不魔法、不变成真人。它的离开与返回不能改变包装品牌字、瓶型或建筑图案。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref1",
+        number: "参考 01",
+        title: "提示词卡片截图",
+        subtitle: "原帖附图 · 文字提示词卡片",
+        image: "/tutorials/yangonchain-oriental-leaf-tea-moment/ref-prompt-card.png",
+        prompt: `原帖附图为提示词文字卡片截图,非可视参考图。帖内自述按上传文件名识别素材:01_多多身份、02_绿白穿搭、03_东方树叶绿茶_实物参考、04_小茶客、05_无人野餐场景,但帖内未附这些文件,需自备。`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0—3s:瓶身低机位近景,产品在前景右侧清晰,多多在后景左侧低头刷手机,三位朋友再后方自然分享食物。镜头轻微向瓶身推进:小茶客从标签下部建筑插画的门洞探出头,先看手机方向,再扶着画面边缘跨出、脚落到野餐垫上;本来是印刷画面的入口恢复平整,不留破洞。一片小绿叶被真实微风吹到瓶旁。首三秒完成'包装中的空间走出一个小人'的可见钩子,不用空镜铺垫。极轻纸张掀动、布面落脚声。女声画外音自然略带笑意:'人出来了,心还在手机里?' 音乐只有轻拨弦和稀疏打击,朋友声轻而远。",
+      },
+      {
+        number: 2,
+        description:
+          "3—7s:贴着垫面的侧向跟拍,保持从瓶子朝多多手机的方向运动。小茶客一脚踩叶、另一脚蹬垫面,借一阵风向多多滑去,抬手招呼;多多仍在刷屏,没有看见。小茶客滑过了她视线,立即用一脚蹭垫面减速,身体微微前倾停住,回头发现白招呼了,扶正帽子。动作轻巧而真实,不摔飞、不用速度线。叶片摩擦布纹,音乐在它回头时轻轻空半拍,拒绝夸张卡通摔倒声。",
+      },
+      {
+        number: 3,
+        description:
+          "7—10s:多多与垫边的小茶客同框的中近景,机位固定。小茶客从叶子上下来,站在手机旁的垫面上,双手把叶子举高,在多多视线下沿挥两下,再指向三位朋友,随后把同一片叶子平放在自己脚边。多多拇指停住,视线落到它身上,忍不住笑;小茶客先退开手机落点,多多才将手机屏幕朝下放到自己左侧的野餐垫上。手机从此不再被拿起。手机接触垫面的清楚'嗒'声是音乐打开的拍点,贝斯、吉他和自然环境声加入;不为了拍情绪额外停顿。",
+      },
+      {
+        number: 4,
+        description:
+          "10—14s:多多人物近景,镜头轻微前推。多多右手拿起同一瓶绿茶,左手握住旋盖逆时针旋开,瓶盖完整留在左掌;右手送瓶口到嘴边,喝一口并自然吞咽,然后瓶口离开嘴唇。她听见朋友笑声,顺势把目光转向朋友,肩膀自然舒展。以动作完成情绪变化,不昂头灌、不把瓶身挤扁。先是握瓶轻响和旋盖'咔',再一次轻微吞咽;音乐舒展,风吹树叶和远处鸟鸣变清楚,无新增旁白。喝完后液位只略降一次,之后保持。",
+      },
+      {
+        number: 5,
+        description:
+          "14—17s:硬切同一瓶上的冷凝水珠特写,水珠亮部匹配切到独立的茶汤意象微距。清透浅金黄色液面形成轻盈弧面,两片嫩茶叶在流动里轻轻翻转,镜头沿曲面向前,叶片掠过镜头完成遮挡。此处是茶香与茶汤质感的广告意象,不表示实际瓶里突然出现固体茶叶;不出现汽水泡、牛奶、果汁、冰块或浑浊液体。小茶客不进入液体世界。仅细腻液体声和少量清亮音乐音色,保持三秒紧凑,不长时间慢放。",
+      },
+      {
+        number: 6,
+        description:
+          "17—21s:叶片遮挡切回同一垫边,固定中近景,小茶客与多多右手可见。先看见多多把开盖瓶用右手稳稳放回右前方原位置;左手继续握着瓶盖。餐巾已经摊开一个薄角,一阵风只掀起这张餐巾的单层薄角,落下恰好罩住小茶客,餐巾鼓起一个小包,它从边角顶出歪帽子。多多用已经空出的右手捏起餐巾一角,将它揭开并压回垫面。小茶客扶正帽子,站直,装作刚才什么也没发生,多多短促轻笑。必须先放瓶再揭餐巾,不能同时握瓶和揭餐巾。布料轻扑声、小脚摩擦声与笑声清楚,音乐给动作留空间,不加惊吓声。",
+      },
+      {
+        number: 7,
+        description:
+          "21—30s:同侧广一点的四人野餐中景,镜头沿垫边轻微横移。多多先用右手扶稳瓶身,左手将一直握着的同一个瓶盖顺时针旋紧,随后双手离开、产品仍直立原位置。后中的浅蓝衬衫朋友递来一颗绿色葡萄,多多用空出的右手接过,抬头接上大家的话题,自然笑起来。前景小茶客坐到瓶旁,拾起脚边同一片叶子举作小遮阳棚,往阴影里挪半步,也终于歇下来。手机仍反扣在多多左侧。音乐最舒展,盖子旋紧声、轻笑与树叶声自然可闻。26—30s:产品英雄近景,瓶子居画面左侧,瓶身占画面高约六成,完整瓶盖和瓶底都在画内,右侧留干净浅草色虚化空间。人物保持在后方原位置自然聊天、轻微虚焦。小茶客回头确认多多没有再刷手机,满意点头,收起叶子,把叶子留在垫上,走到标签下部同一个建筑入口,逐步压回二维画中并消失在门内,包装恢复实物参考的原貌;不要在标签上多印一个小人,不溶解品牌文字。镜头前段轻推,最后约 1.5 秒稳定展示。右侧出现两行清楚的深墨绿文字:'东方树叶''把这一刻,还给自己。' 这句是本概念片文案,不加官方广告或联名署名。画外女声:'东方树叶,把这一刻还给自己。' 音乐减鼓点,以轻柔两音收束,保留风和朋友笑声;自创收尾音,不冒充品牌已有声标。",
+      },
+    ],
+    constraints:
+      "帖内未附 01–05 参考图文件,仅文字指定按文件名识别,需自备;全片只有同一瓶和同一瓶盖,盖子不落地、不瞬移;手机反扣后不再亮屏;小茶客始终一个,出入标签是绘画空间表现,除此之外只在现实表面行走,不飞行、不魔法;它的离开与返回不能改变包装品牌字、瓶型或建筑图案;全片只有一个公园空间、同一光源方向与同一野餐布置。",
+    video_prompt: {
+      title: "Oriental Leaf Tea Concept Ad · Return This Moment to Yourself · 30s",
+      subtitle: "Unspecified model / Concept ad · 16:9 · Picture01–05 refs (not attached in post)",
+      content: `平台/说明:非官方东方树叶绿茶 AI 概念短片《把这一刻,还给自己》(作者 @YangOnchain)。成片为 30 秒 16:9。跟做需自备参考图:01_多多身份、02_绿白穿搭、03_东方树叶绿茶_实物参考、04_小茶客、05_无人野餐场景(帖内自述按文件名识别)。
+
+提示词全文:
+
+生成一条完整 30 秒、16:9 横屏的东方树叶绿茶概念广告《把这一刻,还给自己》。30 秒包含连续推进的新事件,不把 18 秒内容减速拉长,不增加无信息空镜,不使用全程慢动作。写实商业摄影与一位克制的 2.5D 水墨角色结合。画面目标为清晰细腻的商业广告质感,实际输出分辨率及帧率由生成界面设置,不用 "4K" 替代真实参数。 按上传文件名识别素材:01_多多身份只负责多多的脸型、五官、肤色与发色;02_绿白穿搭只负责衣服、鞋子,不继承为人物脸;03_东方树叶绿茶_实物参考是唯一产品外观依据;04_小茶客负责唯一动画角色的造型;05_无人野餐场景负责环境、摆设与光向。场景参考中无人是素材分工要求,成片仍应出现多多与三位好友。不要把素材排列成拼图、轮播或逐张转场,不照搬身份卡的证件照构图。 始终在同一片城市公园草坪。奶油白野餐垫、浅藤色篮子、三明治、绿色葡萄、青苹果、合上的书和薄餐巾的位置参考场景图。大树在右后方,阳光从右后方斜入。草地有细微不整齐的纹理,食物和餐具是真正正在使用的状态。自然草绿、鼠尾草绿、奶油白、清透金黄色茶汤与柔和暖金阳光;人物真实肤质,绿叶有透光层次,瓶身折射可信,不荧光、不磨皮。前段声音较窄、画面略克制,放下手机后逐步打开色彩与环境声,不能改变天气和太阳方向。 原创轻盈 indie pop 与轻电子配乐,约 100 BPM,木质打击、轻贝斯、少量吉他拨弦与空气感音色;不模仿现成歌曲。仅指定的两句普通话画外音可朗读,其他文字都是导演说明。朋友可有模糊交谈与笑声,不额外生成可辨识对白,不显示旁白字幕。 【主体定义】 多多:唯一主角,严格沿用 01 身份卡的成年中国女性外貌,自然黑色中长发、轻微卷度、清透日常妆;穿 02 的鼠尾草绿短袖针织上衣、奶油白宽松长裙、浅棕平底鞋。原身份卡的白色上衣不继承。表演从拇指机械刷屏、没接住朋友目光,逐步变为主动看人、动手帮忙、加入聊天,情绪在动作中发生,不专门停下来摆 "放松" 的表情。 三位好友为固定背景配角:短发米白衬衫女生在垫后左;低马尾浅蓝衬衫女生在后中;黑短发浅卡其上衣男生在后右。多多在前左,身体朝向好友。全片同四位真人,好友不换脸、不换装、不交换位置,镜头保持同侧观察,不做越轴反打。 产品:全片同一瓶 03 中的 500ml 东方树叶绿茶,透明有棱面 PET 瓶,透明浅色旋盖、绿色瓶颈标签、奶油白长标签和下部建筑插画。品牌 "东方树叶"、绿茶名称、瓶型、标识位置与清透金黄色茶汤以实物参考为准。不能沿用 nōni 虚构包装、奶油白盖或浅绿色荧光茶汤。瓶身少量细密冷凝水珠,不改造成玻璃瓶或汽水。产品从首镜开始在多多右前方、靠镜头的垫边直立,标签朝镜头,手机在多多右手;其余位置不出现第二瓶饮料。 小茶客:04 所示唯一 8—10 厘米高的原创 2.5D 水墨角色,黑色手绘轮廓、米白纸感填色、圆软帽、小背包、布鞋,只有极浅体积。它是本支概念广告的原创角色,不是宣称真实包装本来印有的官方人物。它从标签下部建筑插画的画中空间走出来,结束后回到同一画中入口;标签文字、建筑布局不重绘、不移动。它有重量和落脚点,会跑、蹬地、扶帽和举叶子,不说话、不发光、不瞬移。整片只有同一个小茶客和同一片滑行用落叶。 【时间线分镜与声音】 0—3 秒|瓶身低机位近景,产品在前景右侧清晰,多多在后景左侧低头刷手机,三位朋友再后方自然分享食物。镜头轻微向瓶身推进:小茶客从标签下部建筑插画的门洞探出头,先看手机方向,再扶着画面边缘跨出、脚落到野餐垫上;本来是印刷画面的入口恢复平整,不留破洞。一片小绿叶被真实微风吹到瓶旁。首三秒完成 "包装中的空间走出一个小人" 的可见钩子,不用空镜铺垫。极轻纸张掀动、布面落脚声。女声画外音自然略带笑意:"人出来了,心还在手机里?" 音乐只有轻拨弦和稀疏打击,朋友声轻而远。 3—7 秒|贴着垫面的侧向跟拍,保持从瓶子朝多多手机的方向运动。小茶客一脚踩叶、另一脚蹬垫面,借一阵风向多多滑去,抬手招呼;多多仍在刷屏,没有看见。小茶客滑过了她视线,立即用一脚蹭垫面减速,身体微微前倾停住,回头发现白招呼了,扶正帽子。动作轻巧而真实,不摔飞、不用速度线。叶片摩擦布纹,音乐在它回头时轻轻空半拍,拒绝夸张卡通摔倒声。 7—10 秒|多多与垫边的小茶客同框的中近景,机位固定。小茶客从叶子上下来,站在手机旁的垫面上,双手把叶子举高,在多多视线下沿挥两下,再指向三位朋友,随后把同一片叶子平放在自己脚边。多多拇指停住,视线落到它身上,忍不住笑;小茶客先退开手机落点,多多才将手机屏幕朝下放到自己左侧的野餐垫上。手机从此不再被拿起。手机接触垫面的清楚 "嗒" 声是音乐打开的拍点,贝斯、吉他和自然环境声加入;不为了拍情绪额外停顿。 10—14 秒|多多人物近景,镜头轻微前推。多多右手拿起同一瓶绿茶,左手握住旋盖逆时针旋开,瓶盖完整留在左掌;右手送瓶口到嘴边,喝一口并自然吞咽,然后瓶口离开嘴唇。她听见朋友笑声,顺势把目光转向朋友,肩膀自然舒展。以动作完成情绪变化,不昂头灌、不把瓶身挤扁。先是握瓶轻响和旋盖 "咔",再一次轻微吞咽;音乐舒展,风吹树叶和远处鸟鸣变清楚,无新增旁白。喝完后液位只略降一次,之后保持。 14—17 秒|硬切同一瓶上的冷凝水珠特写,水珠亮部匹配切到独立的茶汤意象微距。清透浅金黄色液面形成轻盈弧面,两片嫩茶叶在流动里轻轻翻转,镜头沿曲面向前,叶片掠过镜头完成遮挡。此处是茶香与茶汤质感的广告意象,不表示实际瓶里突然出现固体茶叶;不出现汽水泡、牛奶、果汁、冰块或浑浊液体。小茶客不进入液体世界。仅细腻液体声和少量清亮音乐音色,保持三秒紧凑,不长时间慢放。 17—21 秒|叶片遮挡切回同一垫边,固定中近景,小茶客与多多右手可见。先看见多多把开盖瓶用右手稳稳放回右前方原位置;左手继续握着瓶盖。餐巾已经摊开一个薄角,一阵风只掀起这张餐巾的单层薄角,落下恰好罩住小茶客,餐巾鼓起一个小包,它从边角顶出歪帽子。多多用已经空出的右手捏起餐巾一角,将它揭开并压回垫面。小茶客扶正帽子,站直,装作刚才什么也没发生,多多短促轻笑。必须先放瓶再揭餐巾,不能同时握瓶和揭餐巾。布料轻扑声、小脚摩擦声与笑声清楚,音乐给动作留空间,不加惊吓声。 21—26 秒|同侧广一点的四人野餐中景,镜头沿垫边轻微横移。多多先用右手扶稳瓶身,左手将一直握着的同一个瓶盖顺时针旋紧,随后双手离开、产品仍直立原位置。后中的浅蓝衬衫朋友递来一颗绿色葡萄,多多用空出的右手接过,抬头接上大家的话题,自然笑起来;不要求这几秒内再完成吃葡萄的动作。前景小茶客坐到瓶旁,拾起脚边同一片叶子举作小遮阳棚,往阴影里挪半步,也终于歇下来。手机仍反扣在多多左侧。音乐最舒展,盖子旋紧声、轻笑与树叶声自然可闻。 26—30 秒|产品英雄近景,瓶子居画面左侧,瓶身占画面高约六成,完整瓶盖和瓶底都在画内,右侧留干净浅草色虚化空间。人物保持在后方原位置自然聊天、轻微虚焦。小茶客回头确认多多没有再刷手机,满意点头,收起叶子,把叶子留在垫上,走到标签下部同一个建筑入口,逐步压回二维画中并消失在门内,包装恢复实物参考的原貌;不要在标签上多印一个小人,不溶解品牌文字。镜头前段轻推,最后约 1.5 秒稳定展示。右侧出现两行清楚的深墨绿文字:"东方树叶""把这一刻,还给自己。" 这句是本概念片文案,不加官方广告或联名署名。画外女声:"东方树叶,把这一刻还给自己。" 音乐减鼓点,以轻柔两音收束,保留风和朋友笑声;自创收尾音,不冒充品牌已有声标。 【统一约束】 人物保持多多身份与独立服装参考一致;三位好友固定后左、后中、后右,整片四位真人。表演连续且有生活感,不能复制多多、换脸或用静止肖像代替动作。 只有同一瓶和同一瓶盖。状态依次:垫上封盖→右手持瓶、左手开盖→喝一口、左掌留盖→右手放回开盖瓶→空右手揭餐巾→左手旋紧盖→产品稳定留在原位。盖子不落地、不瞬移,手机反扣后不再亮屏。左右手指和瓶口接触正确,不穿模。 小茶客始终一个,衣帽、背包、纸感和比例不变;出入标签是广告中的绘画空间表现,除此之外只在现实表面行走,不飞行、不魔法、不变成真人。它的离开与返回不能改变包装品牌字、瓶型或建筑图案。 全片只有一个公园空间、同一光源方向与同一野餐布置。转场依靠动作、遮挡或明确硬切,不用连续叠化伪装空间变化,不添加发光线、粒子或无意义旋转。除瓶身原有印刷和最后两行片尾文字,不生成其他字幕、水印、二维码或虚构功效卖点。瓶标微小文字以实物参考保留,不另写伪造内容。`,
+    },
+  },
+  {
+    id: "krevix-auto-service-reels-omni",
+    title: "汽车服务创意 Reels · 迷你宝马 ASMR 组装到全尺寸硬切",
+    subtitle: "X · @KrevixAi · Gemini Omni · 10秒 · 16:9",
+    description:
+      "KreviX 制作的 Gemini Omni 汽车 ASMR 短片。超真实 10 秒 16:9 第一人称 POV,纯白工作室内巨大男性双手戴哑光黑手套快速组装微型真实 1:12 白色宝马:插入引擎→咔哒,连接电子→啪,安装红色刹车卡钳和车轮→咔,装配方向盘和大灯→啪,装配前保险杠并合上引擎盖→咔哒。展示极端微距细节和明显的微缩比例尺:整车小于一只手。5 秒时完成的白色宝马被真实湿润深红汽车漆喷涂,清楚地从白色→红色变化,然后抛光成深镜面光泽。8.5 秒时展示微型红色宝马前四分之三英雄角度→硬剪切匹配到完全相同角度的全尺寸真实红色宝马在大型白色工作室内。引擎启动,车身振动,LED 大灯打开,然后宝马猛烈直冲向镜头→硬剪切黑场。",
+    video: "/tutorials/krevix-auto-service-reels-omni/demo-web.mp4",
+    poster: "/tutorials/krevix-auto-service-reels-omni/poster.jpg",
+    duration: "10秒",
+    shots: 3,
+    references: 1,
+    model: "Gemini Omni",
+    style: "ASMR 产品组装 · 匹配硬切",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/KrevixAi/status/2101930638022410525",
+    sourceAuthor: "@KrevixAi",
+    sourcePlatform: "X",
+    sourceImpressions: 1808,
+    tags: [
+      "10秒 · ASMR 组装",
+      "16:9 横屏",
+      "Gemini Omni",
+      "匹配硬切",
+      "汽车产品视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "可选:先生成 16 格故事板",
+        description:
+          "作者原帖提供了完成的 16 格故事板图片(1280×720,标题 BMW — THE PERFECT CLICK x MICRO PAINT LAB),但未发布生成故事板的文生图提示词。可自行设计故事板或直接用文字提示词生成视频。参考故事板见下方。",
+      },
+      {
+        number: 2,
+        title: "在 Gemini Omni Create Video 生成",
+        description:
+          "如有故事板,上传到 Gemini Omni 的 Create Video 部分。粘贴完整视频提示词。如无故事板,直接用文字提示词生成。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 10 秒提示词",
+        description:
+          "使用下方完整提示词。关键:第一人称 POV,26–28mm 镜头,明亮白色工作室背景,白色丝绸手套,仅真实物理。0–5s 快速组装微型白色宝马,展示极端微距细节和明显微缩比例尺。5s 完成的白色宝马被喷涂真实湿润深红汽车漆,清楚地从白色→红色变化,然后抛光成深镜面光泽。8.5s 展示微型红色宝马前四分之三英雄角度→硬剪切匹配到完全相同角度的全尺寸真实红色宝马。引擎启动,车身振动,LED 大灯打开,然后宝马猛烈直冲向镜头→硬剪切黑场。快速剪辑,真实物理,金属、碳纤维、皮革、橡胶和玻璃,强烈咔哒/啪/咔哒 ASMR,高级德国精密,无魔法、变形、粒子或数字变换。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref1",
+        number: "参考 01",
+        title: "16 格故事板",
+        subtitle: "作者提供 · 1280×720",
+        image: "/tutorials/krevix-auto-service-reels-omni/storyboard.jpg",
+        prompt: `16 格故事板,作者原帖附图,标题 BMW — THE PERFECT CLICK x MICRO PAINT LAB。注意:作者未发布生成此故事板的文生图提示词,仅发布了完成的故事板图片与视频生成提示词。`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–1s:纯白工作室,黑手套巨大男性双手持微型白色宝马引擎块,插入→咔哒",
+      },
+      {
+        number: 2,
+        description:
+          "1–2s:连接微型电子零件到底盘→啪,特写微距细节",
+      },
+      {
+        number: 3,
+        description:
+          "2–3s:安装红色刹车卡钳和车轮→咔,清楚微缩比例尺:整车小于一只手",
+      },
+      {
+        number: 4,
+        description:
+          "3–4s:装配方向盘和大灯→啪,快速剪辑保持节奏",
+      },
+      {
+        number: 5,
+        description:
+          "4–5s:装配前保险杠并合上引擎盖→咔哒,完成的白色宝马微缩车",
+      },
+      {
+        number: 6,
+        description:
+          "5–6.5s:真实湿润深红汽车漆喷涂微型白色宝马,清楚地从白色→红色变化,湿漆流动可见",
+      },
+      {
+        number: 7,
+        description:
+          "6.5–8.5s:抛光成深镜面光泽,手套在红色车身表面擦拭,反射清晰",
+      },
+      {
+        number: 8,
+        description:
+          "8.5s:微型红色宝马前四分之三英雄角度展示",
+      },
+      {
+        number: 9,
+        description:
+          "8.5s:→硬剪切匹配到完全相同角度的全尺寸真实红色宝马在大型白色工作室内",
+      },
+      {
+        number: 10,
+        description:
+          "8.5–9.5s:引擎启动轰鸣,车身振动,LED 大灯闪亮打开",
+      },
+      {
+        number: 11,
+        description:
+          "9.5–10s:宝马猛烈直冲向镜头加速→硬剪切黑场结束",
+      },
+    ],
+    constraints:
+      "作者未发布生成故事板的文生图提示词,仅有完成的故事板图片与视频提示词;快速剪辑、真实物理、无魔法变形;5s 喷漆必须清楚地从白色→红色变化;8.5s 硬剪切匹配必须完全相同角度。",
+    video_prompt: {
+      title: "Auto Service Creative Reels · Mini BMW ASMR → Full-Size Match Cut · 10s",
+      subtitle: "Gemini Omni Create Video · 16:9 · Optional 16-panel storyboard upload",
+      content: `Create a 10-second ultra-photorealistic 16:9 automotive ASMR video, first-person POV in a clean white studio. Giant male hands in matte-black gloves rapidly assemble a tiny realistic 1:12 white BMW: insert engine → THUNK, connect electronics → SNAP, install red brake calipers and wheels → CLICK, attach steering wheel and headlights → SNAP, fit front bumper and close hood → THUNK. Show extreme macro details and obvious miniature scale: the whole car is smaller than a hand. At 5s the finished white BMW is spray-painted with real wet crimson-red automotive paint, clearly changing WHITE → RED, then polished to a deep mirror gloss. At 8.5s show the tiny red BMW in front three-quarter hero angle → HARD MATCH CUT to a full-size real red BMW in exactly the same angle inside a large white studio. Engine starts, body vibrates, LED headlights turn on, then the BMW launches aggressively straight toward the camera → HARD CUT TO BLACK. Fast cuts, realistic physics, metal, carbon, leather, rubber and glass, strong CLICK/SNAP/THUNK ASMR, premium German precision, no magic, morphing, particles or digital transformation.`,
+    },
+  },
+  {
+    id: "noorwithwifi-wendys-cheeseburger-seedance",
+    title: "Wendy's 双层芝士汉堡广告",
+    subtitle: "X · @noorwithwifi · Seedance 2.5 · 13秒 · 4:3",
+    description:
+      "NoorAI 制作的 Seedance 2.5 商业风格食品视频。厨师戴黑手套穿 Wendy's 制服在热平板烤架上制备双层芝士汉堡。展示芝麻面包烤制、新鲜方形牛肉饼被按压并滋滋作响冒蒸汽、黄色美式奶酪融化、蛋黄酱涂抹在底部面包上,然后层叠两片奶酪肉饼与生菜、番茄、洋葱、泡菜、番茄酱和蛋黄酱,最后加上顶部面包。以厨师手持完成的汉堡朝向镜头带微妙微笑的动态特写结束,使用温暖光线、光泽质感、电影角度和柔焦背景。4:3 复古广告画幅,商业摄影 ASMR 质感。",
+    video: "/tutorials/noorwithwifi-wendys-cheeseburger-seedance/demo-web.mp4",
+    poster: "/tutorials/noorwithwifi-wendys-cheeseburger-seedance/poster.jpg",
+    duration: "13秒",
+    shots: 1,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "商业食品广告 · 4:3 复古画幅",
+    aspectRatio: "4/3",
+    sourceUrl: "https://x.com/noorwithwifi/status/2101955160696336440",
+    sourceAuthor: "@noorwithwifi",
+    sourcePlatform: "X",
+    sourceImpressions: 1518,
+    tags: [
+      "13秒 · 商业广告",
+      "4:3 复古画幅",
+      "Seedance 2.5",
+      "食品广告",
+      "ASMR 质感",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "设定 Wendy's 商业厨房场景",
+        description:
+          "厨师穿黑手套和 Wendy's 制服,在热平板烤架上工作。纯白或中性商业厨房背景,温暖光线照亮食材和烤架,柔焦背景突出产品。电影角度拍摄制备过程。",
+      },
+      {
+        number: 2,
+        title: "理解 4:3 复古广告画幅",
+        description:
+          "此视频为 4:3 画幅(960×720),不是常见的 16:9。4:3 复古画幅适合经典商业广告风格,聚焦产品和手部动作,减少水平空间干扰。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整 Seedance 2.5 提示词。关键要素:黑手套、Wendy's 制服、芝麻面包烤制、方形牛肉饼按压滋滋作响冒蒸汽、黄色美式奶酪融化、蛋黄酱涂抹底部面包、层叠两片奶酪肉饼与生菜番茄洋葱泡菜番茄酱蛋黄酱、加上顶部面包、最后厨师手持完成汉堡朝镜头带微妙微笑。温暖光线、光泽质感、电影角度、柔焦背景。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–3s:芝麻面包在热平板烤架上烤制,黑手套厨师手翻动面包,烤制痕迹出现",
+      },
+      {
+        number: 2,
+        description:
+          "3–6s:新鲜方形牛肉饼放在烤架上,黑手套手按压肉饼,滋滋作响冒蒸汽,肉饼表面焦化",
+      },
+      {
+        number: 3,
+        description:
+          "6–8s:黄色美式奶酪片放在热肉饼上,逐渐融化流动,奶酪边缘微微卷起",
+      },
+      {
+        number: 4,
+        description:
+          "8–10s:蛋黄酱涂抹在底部芝麻面包上,层叠第一片奶酪肉饼,加生菜、番茄片、洋葱圈、泡菜片",
+      },
+      {
+        number: 5,
+        description:
+          "10–11s:层叠第二片奶酪肉饼,加番茄酱和蛋黄酱,盖上顶部芝麻面包",
+      },
+      {
+        number: 6,
+        description:
+          "11–13s:动态特写:厨师戴黑手套双手手持完成的双层芝士汉堡朝向镜头,带微妙微笑,温暖光线,光泽质感,柔焦背景,汉堡层次清晰可见",
+      },
+    ],
+    video_prompt: {
+      title: "Wendy's Double Cheeseburger Commercial · 13s",
+      subtitle: "Seedance 2.5 · 4:3 vintage ad aspect ratio · commercial ASMR",
+      content: `Seedance 2.5
+
+Prompt:
+
+Create a commercial-style food video of a cook in black gloves and a Wendy's uniform preparing a double cheeseburger on a hot flat-top grill. Show sesame buns toasting, fresh square beef patties being pressed and sizzling with steam, yellow American cheese melting, mayonnaise spread on the bottom bun, then layer two cheesy patties with lettuce, tomato, onions, pickles, ketchup, and mayonnaise before adding the top bun. Finish with a dynamic close-up of the chef holding the completed burger toward the camera with a subtle smile, using warm lighting, glossy textures, cinematic angles, and a soft-focus background.`,
+    },
+  },
 ];
+
+export function getTutorialById(id: string): Tutorial | undefined {
+  return tutorials.find((tutorial) => tutorial.id === id);
+}
