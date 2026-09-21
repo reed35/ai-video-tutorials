@@ -163,7 +163,7 @@ VISUAL QUALITY: ultra-photorealistic, premium YouTube production, realistic skin
 
 IMPORTANT: Say "Zephyra Leigh" only during the opening introduction. After that, use only "Zephyra" if referring to her. Keep her new outfit consistent. No sci-fi elements, no holograms, no exaggerated reactions, no cartoon, no anime, no distorted hands, no extra fingers, no glitches, no fake-looking product interaction.`,
     },
-  },,
+  },
   {
     id: "zephyra-india-1907-well",
     title: "1907 印度村落打水 · 仿古默片",
@@ -275,7 +275,7 @@ Audio: No synchronized sound or recorded dialogue. Silent-film presentation only
 
 Goal: Create a respectful, historically grounded 1907 village memory–ordinary daily work, practical clothing, quiet cooperation, and authentic early-motion-picture imperfections.`,
     },
-  },,
+  },
   {
     id: "zephyra-paris-1906-market",
     title: "1906 巴黎早市 · 仿古默片",
@@ -387,7 +387,7 @@ Audio: No recorded dialogue or synchronized sound. Silent-film presentation only
 
 Goal: Create the feeling of a rare, authentic 1906 family film–period clothing, ordinary market errands, small humorous accidents, and imperfect early cinema captured before modern filmmaking existed.`,
     },
-  },,
+  },
   {
     id: "zephyra-sony-headphones-unbox",
     title: "Sony 旗舰耳机开箱 · YouTube Shorts",
@@ -542,7 +542,7 @@ VISUAL QUALITY: ultra-photorealistic, premium YouTube production, realistic skin
 
 IMPORTANT: Say "Zephyra Leigh" only in the opening introduction. After that, never introduce her again by her full name. Use natural creator dialogue. No sci-fi elements, no holograms, no exaggerated reactions, no cartoon, no anime, no distorted hands, no extra fingers, no glitches, no fake-looking product interaction.`,
     },
-  },,
+  },
   {
     id: "zephyra-ten-poses-fashion",
     title: "十姿态时尚闪拍 · 角色一致性",
@@ -685,7 +685,7 @@ Stable identity, anatomy, and outfit throughout. No added accessories, no text, 
 
 Also extract ref-char-from-demo.jpg from a clear face frame (~2s).`,
     },
-  },,
+  },
   {
     id: "lufzzliz-dunhuang-group-dance-white-mesh",
     title: "敦煌群舞白膜成片 · MiniMax Design 全流程",
@@ -914,7 +914,7 @@ NO sculpture, statues, clay, ceramics, porcelain, wax, doll, mannequin, CGI, 3D 
 先生成前10秒并核对五人映射；后10秒继续原舞蹈，保持身份、服装、光线与镜头衔接。若支持，可增加前段真实生成末帧作为后段连续性辅助，但五人身份仍以原五图为准。只生成这一版所需的2条，不自行批量生成候选。如果全能参考不能同时接收一个参考视频和这5张图，先报告实际限制，不能擅自降级成纯文生视频或单张首帧动画。
 生成后保存两个原始H3视频、完整实际提示词、实际模型/模式/输入/参数和可见消耗，未知费用写unknown。用本机已有ffmpeg按原时间轴合成20秒，回填08的原音乐；完成解码与五人对应关系抽帧核验。把两段和完整成片加入画布，并报告真实绝对路径和任务ID。实际完成生成和交付，不停在方案。`,
     },
-  },,
+  },
   {
     id: "flova-mona-lisa-neighbors",
     title: "蒙娜丽莎搬进街坊 · Flova 分屏教程",
@@ -1011,7 +1011,7 @@ Without cutting, protagonist continues walking forward; the Parisian boulevard n
 SEAMLESS TRANSITION 03 [Seconds 25-30]
 Without cutting, protagonist pulls hand back and turns head; a fast smooth physical whip-pan swings the camera left and slightly forward through continuous park-to-street space; the urban park transitions physically into a lively modern French pedestrian street. A contemporary hot-dog stand with a red-and-yellow awning is visible. Behind the counter stands a fully three-dimensional photorealistic real woman, referencing the soft brown eyes with characteristic over-the-shoulder glance, the wrapped blue and gold headscarf tied at the top, the dangling single large pearl earring, and the warm skin tone of image_5 — she is entirely real with realistic skin, hair escaping the scarf edges, fabric texture, natural French street lighting. She smiles warmly, holds out a hot dog toward the camera, and says cheerfully: "Try our hot dogs, handsome!" Protagonist's POV freezes. Camera slowly pans in a wide deliberate look around — left, right, ahead — revealing all the impossible painting-inspired characters simply living ordinary modern French lives in this sunlit Parisian street. Deadpan stillness. No music. No dialogue after her line.`,
     },
-  },,
+  },
   {
     id: "just-sharon7-venice-sphere",
     title: "威尼斯折叠成球 · 粉发女孩送信",
@@ -1144,7 +1144,7 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
 24–27s: She holds out the yellow envelope. The old woman turns, sets down the watering can, and takes it. Both smile warmly at each other. Rose petals drift upward past them, falling toward the inverted sky.
 27–30s: Camera pulls back and rises fast. The whole city folds and rotates until it becomes a top-down aerial of Venice's canals and streets curling into a sphere. The two tiny figures remain on the terrace. Slow fade to warm light.`,
     },
-  },,
+  },
   {
     id: "techiebysa-logo-embroidery-sew",
     title: "刺绣缝 Logo · 线自己爬上织物",
@@ -1205,7 +1205,7 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
       subtitle: "Gemini Omni Flash 1.1 · Pika · 需上传 Logo 参考图",
       content: `Extreme macro shot of woven cotton shirt fabric, empty at first. Colored embroidery threads rise from the surface and weave themselves into place, laying down tight satin stitches row by row, tracing out the logo. The stitched area grows steadily across the frame, thread pulling taut and raising into dimensional embroidered texture, until the full logo is complete. Camera holds steady, slow satisfying timelapse pace. Soft natural side light, shallow depth of field, visible fabric fibers and realistic thread sheen. No hands, thread moves on its own. One shot no scene change.`,
     },
-  },,
+  },
   {
     id: "aiwithkhan-rope-name-smiling",
     title: "红绳拼字 Smiling · 定格小人工坊",
@@ -1276,7 +1276,7 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
       subtitle: "Seedance 2.5 · 16:9 横屏 · 完整可复制提示词",
       content: `Using the reference image as the exact final frame, create a 10-second stop-motion-inspired fluid CGI animation of a single thick red braided rope forming the word "Smiling" on a pure white seamless background. At the beginning, the rope is loose and unformed, scattered in soft loops across the frame, with 4–5 tiny clay-like miniature characters wearing simple rope-green overalls and no distinct facial features standing around it. They quickly grab the rope and work together, pulling, stretching, coiling, twisting, and tying it into shape. The rope progressively transforms into the cursive letters "S-m-i-l-i-n-g", moving smoothly from left to right. Each letter must be created entirely from the same continuous rope, with realistic braided fibers, intricate knots, overlapping loops, natural crossings, and clean negative spaces matching the reference image. The characters playfully climb over and around the rope while shaping each letter, coordinating their movements as the word becomes recognizable. The camera remains completely static and top-down, with consistent soft studio lighting, subtle shadows beneath the rope, and no background elements. In the final 1–2 seconds, the characters finish the last knot on the "g," step back and hop away, leaving the completed "Smiling" rope artwork clearly visible and matching the reference image. No cuts, no camera movement, no independently generated text, no extra objects. Smooth continuous motion, tactile rope physics, realistic fibers, playful miniature stop-motion aesthetic blended with polished CGI.`,
     },
-  },,
+  },
   {
     id: "techhalla-french-polynesia-adventure",
     title: "法属波利尼西亚冒险 · 碎切度假记忆",
@@ -1389,7 +1389,7 @@ Every 0.5–1.0s = hard cut to a completely new framing or micro-moment. Pack th
 [REALISM / TONE LOCK]
 French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1 second, found-footage phone/action-cam only, energetic but gentle, just real salt, rain, lagoon, boats, food, night air, and breathless joy.`,
     },
-  },,
+  },
   {
     id: "techhalla-room214-stop-motion",
     title: "ROOM 214 · H3 定格收拾行李",
@@ -1529,7 +1529,7 @@ French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1
   ]
 }`,
     },
-  },,
+  },
   {
     id: "pixelaigc-dunhuang-desktop-fail",
     title: "敦煌飞天桌面壁纸翻车 · H3",
@@ -1590,7 +1590,7 @@ French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1
       subtitle: "MiniMax Hailuo H3 · 图生视频模式 · 完整可复制提示词",
       content: `飞天在跳舞，当她的脚踩下时，扯动了屏幕背景的幕布，幕布抖动，把左边的图标全都震落在地上，飞天吓得双手捂嘴，连忙停下舞蹈，跑到左边，把地上的图标一个个重新按回原来的位置，但由于太匆忙，有两个图标按歪了，她马上返回原来的右边位置，重新摆好开始的POSE，表情勉强微笑，轻风吹来，她的衣服和披帛飘动，固定机位，背景音乐从开始的传统敦煌音乐到后面的诙谐风趣曲风`,
     },
-  },,
+  },
   {
     id: "umesh-again-nature-ad",
     title: "AGAIN · 单图自然广告",
@@ -1832,7 +1832,7 @@ Move from microscopic water detail to broad aerial ambience, back to intimate ha
 
 Let the final water texture and continuous rain lead back into the opening droplet. Replay feels like entering the same world again through a wide-to-macro cut, not a forced seamless morph. No fade to black, music sting or obvious stop.`,
     },
-  },,
+  },
   {
     id: "abxxai-riviera-fashion-campaign",
     title: "里维埃拉时尚大片 · 1960s",
@@ -2110,7 +2110,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
 === OUTPUT ===
 24 seconds, 1080p, six shots, straight cuts, warm faded 1960s Kodachrome fashion film, one locked character, original instrumental score, no dialogue.`,
     },
-  },,
+  },
   {
     id: "shanghai-scallion-pancake",
     title: "老上海葱油饼",
@@ -2405,7 +2405,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
 厨具、操作台、光线方向与小铺环境
 都保持视觉一致性。`,
     },
-  },,
+  },
   {
     id: "anime-katsudon",
     title: "日式猪排饭 Katsudon",
@@ -2570,7 +2570,7 @@ NEGATIVE
 
 No storyboard, reference image, sketch, panels, borders, numbers, arrows, annotations, subtitles, captions, UI, logos, or text overlays. No unrelated ingredients or dishes. Katsudon only. Keep the food, hands, utensils, lighting, and environment visually consistent throughout.`,
     },
-  },,
+  },
   {
     id: "husky-kisaragi-precision-brand",
     title: "精密部品品牌片 · 看不见的精度",
@@ -2786,7 +2786,7 @@ CNC工作機械、測定室、設計用PC、金属部品、図面、工具。
 【禁止事項】
 大量の火花、汚れた危険な工場、誤った保護具、SF的なロボット工場、過剰な青色加工、合成感の強い人物、破綻した測定器、余分なコピー、透かし、指定外のロゴを入れない。`,
     },
-  },,
+  },
   {
     id: "minimax-h3-mv-typography",
     title: "H3 文字包装 MV",
@@ -2848,7 +2848,7 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
 
 视觉风格：dark-pop、cyber-grunge、rap 音乐视频，写实高时装质感，90年代末至00年代初独立杂志、地下音乐海报、复印纸、胶片扫描与 zine 拼贴美学。高反差黑白与低饱和暗红、银灰点缀。肤色真实，阴影厚重但保留服装细节。`,
     },
-  },,
+  },
   {
     id: "seedance-dance-mocap-migration",
     title: "Seedance 舞蹈动捕迁移",
@@ -2957,7 +2957,7 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
 无对白。
 无音乐。`,
     },
-  },,
+  },
   {
     id: "creative-fan-outfit-swap",
     title: "创意风扇换装",
@@ -3094,7 +3094,7 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
 每次换装必须让新造型完整可见再表演。遮挡只替换服装，不让人物脸、地板或整个画面先灰一下；不使用白闪、黑场、烟雾、粒子、交叉溶解或失焦掩饰变化。
 不生成参考图排版、白底、图片编号、文字贴纸、字幕或片尾Logo。没有对白，不擅自唱歌或说话，保留自然呼吸和表情。`,
     },
-  },,
+  },
   {
     id: "fridge-freshness-perfected",
     title: "冰箱广告：新鲜尽在掌握",
@@ -3211,7 +3211,7 @@ STYLE: Photorealistic, ultra-detailed, cinematic lighting, realistic materials, 
 NEGATIVE PROMPT:
 No people, no hands, no warped refrigerator, no changing product design, no extra doors, no duplicate appliance, no floating objects, no distorted food, no fake branding, no misspelled text, no watermark, no cartoon look, no CGI-looking plastic, no flickering, no unstable geometry.`,
     },
-  },,
+  },
   {
     id: "chiropractic-clinic-social",
     title: "整脊诊所社媒短片",
@@ -3316,7 +3316,7 @@ From 26 to 30 seconds, finish with the client sitting upright, rolling his shoul
 
 Audio should feel captured on location with soft room ambience, distant clinic movement, clothing rustle, table creaks, natural breathing, quiet conversation without clearly audible words, and crisp but not exaggerated adjustment sounds. Add a low volume modern instrumental track with warm piano, soft bass, light percussion, and a gentle rise at each release, ending on a clean resolved note.`,
     },
-  },,
+  },
   {
     id: "steppe-warrior-queen",
     title: "草原女王：骑射破阵",
@@ -3458,7 +3458,7 @@ Maintain exact continuity for the queen's face, braids, ornaments, helmet, armor
 
 Keep violence fierce but readable rather than gore-focused. Prioritize cavalry speed, arrow impacts, weapon clashes, riders falling away from the queen's path, dust, sparks, torn banners, collapsing formations, and the terrifying physical scale of mounted warfare. No duplicated riders, floating weapons, impossible horse movement, teleportation, changing armor, endless arrows, exaggerated blood spray, modern objects, firearms, subtitles, or comedic behavior.`,
     },
-  },,
+  },
   {
     id: "late-night-ramen",
     title: "深夜泡面：耳机里的小确幸",
@@ -3581,7 +3581,7 @@ Visual: Extreme close-up of wooden chopsticks lifting a massive, mouth-watering 
 00:23 - 00:28
 Visual: Close-up of the woman taking a big bite, slurping the noodles happily, and closing her eyes in pure comfort as elegant Chinese text fades onto the screen.`,
     },
-  },,
+  },
   {
     id: "invisible-fitting-room",
     title: "隐形试衣间:假人四套造型",
@@ -3671,7 +3671,7 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
         "Gemini Omni · Seedance 2.0 · Prompt says 9:16 but video is 16:9",
       content: `Create a 10-second ultra-photorealistic premium fashion video "INVISIBLE FITTING ROOM", 9:16. One locked frontal camera, black seamless studio. Same tall muscular matte-white faceless male mannequin centered full-body, initially wearing only fitted black shorts. Female hands in long matte-black gloves remotely dress him without touching. No magic, glow, portals, particles or morphing; realistic cloth physics, gravity and inertia. 0–2s: espresso oversized shirt + caramel wide trousers + brown loafers fly in and physically dress him; mannequin strikes an editorial pose, then one sharp hand swipe pulls the outfit off and it falls to the floor. 2–4s: cognac leather jacket + cream knit + dark-chocolate trousers + boots fly in; mannequin takes a strong pose, then both hands pull the outfit away and garments fall beside the first look. 4–6s: cream turtleneck + coffee trousers + long mocha coat assemble onto him; coat rotates naturally around his body, he poses, then a wide swipe removes everything onto the growing clothing pile. 6–8.5s: final luxury outfit assembles layer by layer: ivory silk shirt, espresso tailored trousers, burnt-orange waistcoat, long dark-chocolate jacket, cognac shoes, tie and gold brooch. Precise hand gestures remotely tailor waist, shoulders, lapels and cuffs with realistic fabric tension. 8.5–9.2s: mannequin holds a powerful final fashion pose surrounded by discarded clothes. 9.2–10s: female hand reaches forward; mannequin physically takes her hand and walks confidently toward the fixed camera until his jacket naturally covers the lens → black. Premium coffee palette, burnt-orange accent, cinematic rim lighting, realistic silk, leather, cashmere and wool, seamless continuity.`,
     },
-  },,
+  },
   {
     id: "krevix-luxury-sofa-carousel",
     title: "奢侈沙发轮播选型 · 黑手套 POV",
@@ -3770,7 +3770,7 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
       subtitle: "Gemini Omni · Storyboard uploaded first, then prompt",
       content: `Create a 10-second ultra-photorealistic 16:9 luxury furniture commercial, one continuous first-person male POV, 26–28mm lens, black studio, matte-black leather gloves, realistic physics only. 0–0.8s: white-cream cloud sofa floats centered; hand swipes left. 0.8–1.6s: sofa rapidly orbits left as a warm ivory modular sofa arrives from right and stops center. 1.6–2.4s: another swipe replaces it with a curved latte boucle sofa. 2.4–3.2s: swipe brings in a warm caramel leather sofa. 3.2–4.2s: final taupe/mocha hero sofa arrives slowly, rotates frontal and stops with heavy inertia. 4.2–5.0s: open-palm STOP gesture freezes the carousel; other sofas disappear into distance. 5.0–5.8s: hand presses and slides across hero sofa armrest, realistic fabric compression. 5.8–6.6s: sofa lands; walnut floor slides beneath it and taupe rug unrolls. 6.6–8.5s: KEEP THE EXACT SAME HERO SOFA stationary while the luxury room physically assembles around it—walnut and travertine walls slide in, coffee table and latte chairs enter, shelving locks into place, pendant descends, curtains and decor move into position. 8.5–10s: panoramic window opens, warm daylight floods the completed quiet-luxury interior; slow dolly backward reveals the full room. Hero sofa remains 100% identical throughout. Real mass, inertia, friction and mechanical stops; no magic, morphing, teleportation, particles, smoke, UI, text, logos, people, cuts or camera-angle changes.`,
     },
-  },,
+  },
   {
     id: "watch-her-reset-73",
     title: "两次失误后的复位",
@@ -3886,7 +3886,7 @@ Reinforce throughout: golden-hour warm lighting never shifts to cool tones, whea
 sound: wind through wheat, distant birds, the rifle shot itself, and glass shattering
 on the final hit.`,
     },
-  },,
+  },
   {
     id: "pov-stadium-rap-137",
     title: "体育场说唱 POV",
@@ -3990,7 +3990,7 @@ The instrumental cuts for one beat. He holds a deep wide stance, eyes fixed on t
 
 He shouts the final line while performing a rapid three-step, a controlled 180° pivot and one enormous downward arm strike. On "GROUND," he stomps once. The bass returns with a massive impact; the LED floor sends a bro`,
     },
-  },,
+  },
   {
     id: "seedance-six-rooms-89",
     title: "一镜到底穿越六个房间",
@@ -4048,7 +4048,7 @@ He shouts the final line while performing a rapid three-step, a controlled 180°
         "Seedance 2.5 · 16:9 · 图像1 mentioned but no ref available",
       content: `一镜到底,镜头平稳跟随一个穿黑色大衣的人(参考 图像1)从左向右穿过六个相连的不同色调、不同氛围的房间。每个房间结构相同:白墙、人字拼浅色木地板、法式双开落地 窗、白纱帘,参考`,
     },
-  },,
+  },
   {
     id: "burger-monster-battle-185",
     title: "麦当劳员工对战汉堡怪兽",
@@ -4204,7 +4204,7 @@ One child quietly picks up a falling fry.
 
 The employee`,
     },
-  },,
+  },
   {
     id: "epic-desert-scene-38",
     title: "史诗沙漠风暴:装甲车逃亡",
@@ -4271,7 +4271,7 @@ The employee`,
       subtitle: "Seedance 2.5 · IMAX 70mm · Villeneuve Style · No References",
       content: `Style: IMAX 70mm Film, Denis Villeneuve Style, Gritty Realism, Epic Scale, Desaturated.Duration: 15s.[00-05s] Extreme Wide Shot (The Scale). A colossal sandstorm, miles high, swallows a vast desert landscape. A tiny convoy of armored military vehicles races away from it. The scale of nature vs man is terrifying. Hans Zimmer style tension.[05-10s] Cockpit Cam (The Panic). Inside the lead rover. The pilot screams "GO! GO!" (Subtitle: MAX POWER!). Camera shakes violently. Sand blasts the windshield. The sun is blocked out by the approaching wall of dust.[10-15s] The Jump (The Climax). The rover hits a massive dune and launches into the air (Slow Motion). Silhouette against the dark storm. Lightning strikes within the dust cloud. Debris flies past the lens. Cut to black on impact.`,
     },
-  },,
+  },
   {
     id: "seoul-aurora-mango-billboard",
     title: "首尔黄金时刻广告牌递瓶",
@@ -4356,7 +4356,7 @@ The employee`,
       subtitle: "Seedance 2.5 · 16:9 · handheld push · diegetic sound",
       content: `Photorealistic street video, Seoul, South Korea, late afternoon golden hour. Busy urban sidewalk in front of a tall modern building with a massive photorealistic billboard. Yellow and orange taxis and pedestrians pass in the foreground. Camera is slightly handheld, slow push-in. On the giant billboard: a glamorous woman <image1> with long wavy blonde hair, tanned skin, wearing a cream sleeveless top with denim collar and gold buttons, short denim mini skirt, and black strappy sandals. She sits on a clean white platform against a soft cloudy sky. She starts reclining on her side, then fluidly sits up, smiles at camera, reaches down, picks up a stylish amber glass bottle of mango juice, and throws amber glass bottle of mango juice toward the viewer as if handing the bottle off the billboard. In the last 3 seconds a real hand enters the foreground holding the exact same physical bottle (label facing camera), perfectly matching the billboard pose. Billboard remains visible and slightly out of focus in the background. Natural city sound, cinematic color grade, high detail, 4K, 10 seconds. Fictional brand on bottle and billboard: AURORA MANGO Tagline style: "Cold-Pressed No.5" Key notes on label: Ripe Alphonso Mango · Passionfruit · Vanilla`,
     },
-  },,
+  },
   {
     id: "hr-replasty-anamorphic-billboard",
     title: "变形广告牌递霜",
@@ -4492,7 +4492,7 @@ Shot 1: ONE continuous wide shot from a low-angle street-level position at the c
 
 REPEAT: NO background music at any point — diegetic sound only. Camera and billboard stay wide and uncut.`,
     },
-  },,
+  },
   {
     id: "ride-or-paws",
     title: "金门大桥摩托猫",
@@ -4798,7 +4798,7 @@ Typography and graphic design should feel professionally art-directed, minimal, 
 
 Shot 1: ONE continuous POV shot, about 28 seconds, chase camera just behind the black hero bike — Tango the ginger cat perched on the tail seat facing back at us, the black rider ahead of him, the red bridge and road tearing past. (1) THE APPROACH, ~3s: the bike rockets across the bridge; wind flattening Tango's fur; a black-clad pursuer on a black sportbike surges up from the right rear and pulls alongside, leaning in aggressively. (2) FIRST KILL, ~3s: Tango calmly raises a rifle to his shoulder, sights down it at the pursuer, and FIRES — a hard muzzle flash — the deadpan face never changing. (3) BLOWN AWAY, ~3s: the pursuer's bike ERUPTS in a ball of fire and tumbles end over end off the road behind; Tango lowers the rifle, sits back, tail flicking, head turning to scan — and another pursuer is already closing in. (4) THE MACHINE GUN, ~5s: Tango hauls up a heavy belt-fed machine gun, a brass ammo belt swinging, braces it against his little body and UNLOADS on a whole pack of pursuing bikers — sustained muzzle flashes strobing, spent casings flying, the deadpan face lit by the flashes. (5) MAYHEM, ~5s: pursuing bikes are hit one after another — bursting into flame, high-siding, cartwheeling, smoke and debris flooding the road behind; Tango swings the barrel to track them, relentless and calm. (6) VICTORY CRUISE, ~4s: the road behind falls empty and smoking as the bike reaches the far end of the bridge (the far red tower and brown headlands ahead); Tango lowers the weapon, sits up on the tail, fur ruffling, tail swaying, scanning the clear road — a beat of calm. (7) OUT OF THE FIREBALL, ~5s: behind them a HUGE fireball erupts across the bridge, flame and smoke swallowing the frame — the hero bike punches straight out through the fire and smoke, embers streaking past, wreckage burning on the bridge behind; Tango turns his head and looks flatly back into the lens as they ride away. Hold one beat. End.`,
     },
-  },,
+  },
   {
     id: "painted-tunnel",
     title: "猫鼠画隧道",
@@ -4926,4 +4926,234 @@ Shot 12 — Wide side view, static, the painted wall filling the right of the fr
 Shot 13 — Same framing: he peels off the rock and slides slowly down the painting, fur dragging on stone, and drops in a heap on his side on the packed dirt at the foot of the tunnel, ears flopped, eyes crossed, a few tiny faint yellow stars drifting in a slow circle above his head. End.`,
     },
   },
+  {
+    id: "charaspower-restaurant-drama-seedance",
+    title: "餐厅情侣对峙 · 30秒一镜到底",
+    subtitle: "X · @CharaspowerAI · Seedance 2.5 / Dreamina · 30秒 · 16:9",
+    description:
+      "Seedance 2.5 连续30秒双人对话表演测试。高档餐厅夜戏,精确英语口型同步,一镜到底无剪辑。从压抑的敌意到公开爆发,最终以情感冲击结束。",
+    video: "/tutorials/charaspower-restaurant-drama-seedance/demo-web.mp4",
+    poster: "/tutorials/charaspower-restaurant-drama-seedance/poster.jpg",
+    duration: "30秒",
+    shots: 1,
+    references: 0,
+    model: "Seedance 2.5 / Dreamina",
+    style: "故事片 · 关系戏剧",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/CharaspowerAI/status/2101733174912979337",
+    sourceAuthor: "@CharaspowerAI",
+    sourcePlatform: "X",
+    sourceImpressions: 3380,
+    tags: ["30秒", "16:9 横屏", "Seedance 2.5", "双人对话", "一镜到底"],
+    steps: [],
+    references_detail: [],
+    storyboard: [],
+    video_prompt: {
+      title: "Restaurant Drama · 30s Single Take",
+      subtitle: "Seedance 2.5 · English Dialogue",
+      content: `Full prompt from PROMPT_FULL.txt - see source post`,
+    },
+  },
+  {
+    id: "crazykaomei-furniture-blindbox-asmr",
+    title: "粉色毛绒沙发盲盒选款 · ASMR 电商",
+    subtitle: "X · @CrazyKaomei · Google Flow / Omni Flash · 10秒 · 16:9",
+    description:
+      "Google Flow 商业级家具展示视频。从手势轮播中选择粉色毛绒沙发,通过第一人称视角展示产品旋转、面料触感和场景搭配。",
+    video: "/tutorials/crazykaomei-furniture-blindbox-asmr/demo-web.mp4",
+    poster: "/tutorials/crazykaomei-furniture-blindbox-asmr/poster.jpg",
+    duration: "10秒",
+    shots: 1,
+    references: 1,
+    model: "Google Flow / Omni Flash",
+    style: "商业电商 · ASMR",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/CrazyKaomei/status/2101842849079923104",
+    sourceAuthor: "@CrazyKaomei",
+    sourcePlatform: "X",
+    sourceImpressions: 1109,
+    tags: ["10秒", "16:9 横屏", "Google Flow", "ASMR", "图生视频"],
+    steps: [],
+    references_detail: [],
+    storyboard: [],
+    video_prompt: {
+      title: "Pink Sofa Carousel · ASMR E-commerce",
+      subtitle: "Google Flow · Image-to-Video",
+      content: `Full workflow in PROMPT_FULL.txt - see source post`,
+    },
+  },
+  {
+    id: "garylau-rei-city-travel-h3",
+    title: "绫波丽城市换装旅行 · H3 深度驱动",
+    subtitle: "X · @GaryLau0101 · MiniMax H3 Singularity · 12秒 · 9:16",
+    description:
+      "MiniMax H3 Singularity 驱动的角色换装旅行视频。绫波丽从白色工作室黑色水手服开始,通过快速旋转变换在巴黎、罗马、开罗、悉尼四城市间切换服装和地图UI。",
+    video: "/tutorials/garylau-rei-city-travel-h3/demo-web.mp4",
+    poster: "/tutorials/garylau-rei-city-travel-h3/poster.jpg",
+    duration: "12秒",
+    shots: 7,
+    references: 0,
+    model: "MiniMax H3 Singularity",
+    style: "角色动画 · 换装",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/GaryLau0101/status/2101872019981889672",
+    sourceAuthor: "@GaryLau0101",
+    sourcePlatform: "X",
+    sourceImpressions: 1681,
+    tags: ["12秒", "9:16 竖屏", "MiniMax H3", "深度驱动", "角色换装"],
+    steps: [],
+    references_detail: [],
+    storyboard: [],
+    constraints: "Picture 1-6角色参考图未在包中,需从原帖获取",
+    video_prompt: {
+      title: "Rei City Travel · H3 Depth Driven",
+      subtitle: "MiniMax H3 · 9:16 Vertical",
+      content: `Full prompt in PROMPT_FULL.txt - requires Picture 1-6 references`,
+    },
+  },
+  {
+    id: "krevix-auto-service-reels-omni",
+    title: "汽车服务创意 Reels · 迷你宝马 ASMR 组装到全尺寸硬切",
+    subtitle: "X · @KrevixAi · Gemini Omni · 10秒 · 16:9",
+    description:
+      "Gemini Omni 创意汽车营销视频。第一人称视角展示微缩1:12白色宝马的快速组装,5秒时喷涂红色车漆并抛光,8.5秒硬切至全尺寸真实红色宝马。",
+    video: "/tutorials/krevix-auto-service-reels-omni/demo-web.mp4",
+    poster: "/tutorials/krevix-auto-service-reels-omni/poster.jpg",
+    duration: "10秒",
+    shots: 3,
+    references: 1,
+    model: "Gemini Omni",
+    style: "商业营销 · ASMR · 汽车广告",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/KrevixAi/status/2101930638022410525",
+    sourceAuthor: "@KrevixAi",
+    sourcePlatform: "X",
+    sourceImpressions: 1808,
+    tags: ["10秒", "16:9 横屏", "Gemini Omni", "ASMR", "硬切转场"],
+    steps: [],
+    references_detail: [],
+    storyboard: [],
+    video_prompt: {
+      title: "Mini BMW ASMR Assembly → Full-Size Match Cut",
+      subtitle: "Gemini Omni · Storyboard-to-Video",
+      content: `Full prompt in PROMPT_FULL.txt - see source post`,
+    },
+  },
+  {
+    id: "noorwithwifi-wendys-cheeseburger-seedance",
+    title: "Wendy's 双层芝士汉堡广告",
+    subtitle: "X · @noorwithwifi · Seedance 2.5 · 13秒 · 4:3",
+    description:
+      "Seedance 2.5 商业级食品视频。穿 Wendy's 制服的厨师在热平底煎锅上准备双层芝士汉堡,展示完整制作过程,以厨师拿着成品微笑的特写结束。",
+    video: "/tutorials/noorwithwifi-wendys-cheeseburger-seedance/demo-web.mp4",
+    poster: "/tutorials/noorwithwifi-wendys-cheeseburger-seedance/poster.jpg",
+    duration: "13秒",
+    shots: 1,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "商业食品 · 汉堡广告",
+    aspectRatio: "4/3",
+    sourceUrl: "https://x.com/noorwithwifi/status/2101955160696336440",
+    sourceAuthor: "@noorwithwifi",
+    sourcePlatform: "X",
+    sourceImpressions: 1518,
+    tags: ["13秒", "4:3 画幅", "Seedance 2.5", "食品广告", "快餐品牌"],
+    steps: [],
+    references_detail: [],
+    storyboard: [],
+    video_prompt: {
+      title: "Wendy's Cheeseburger Commercial",
+      subtitle: "Seedance 2.5 · 4:3",
+      content: `Full prompt in PROMPT_FULL.txt - see source post`,
+    },
+  },
+  {
+    id: "strength04-cat-sneeze-desktop-h3",
+    title: "猫打喷嚏搞乱 Mac 桌面 · H3",
+    subtitle: "X · @Strength04_X · MiniMax Hailuo H3 Max · 10秒 · 16:9",
+    description:
+      "MiniMax Hailuo H3 Max 桌面交互创意视频。戴耳机的猫坐在macOS桌面右侧,打喷嚏时吹落三个图标,然后逐个捡起恢复原位。",
+    video: "/tutorials/strength04-cat-sneeze-desktop-h3/demo-web.mp4",
+    poster: "/tutorials/strength04-cat-sneeze-desktop-h3/poster.jpg",
+    duration: "10秒",
+    shots: 1,
+    references: 1,
+    model: "MiniMax Hailuo H3 Max on ImagineArt",
+    style: "桌面交互 · 角色动画",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Strength04_X/status/2101868703482876376",
+    sourceAuthor: "@Strength04_X",
+    sourcePlatform: "X",
+    sourceImpressions: 5228,
+    tags: ["10秒", "16:9 横屏", "MiniMax H3", "macOS桌面", "图标交互"],
+    steps: [],
+    references_detail: [],
+    storyboard: [],
+    video_prompt: {
+      title: "Cat Sneeze Messes Mac Desktop",
+      subtitle: "MiniMax H3 · Reference Image + Video Prompt",
+      content: `Full two-stage prompt in PROMPT_FULL.txt - see source post`,
+    },
+  },
+  {
+    id: "strength04-tomjerry-mac-desktop-h3",
+    title: "猫和老鼠搞乱 Mac 桌面 · H3",
+    subtitle: "X · @Strength04_X · MiniMax H3 on Flova · 10秒 · 16:9",
+    description:
+      "MiniMax H3 on Flova 经典卡通角色桌面交互创意视频。Tom 追逐 Jerry 时吹落三个桌面图标,Tom 尴尬后逐个恢复,Jerry 在旁淘气观看。",
+    video: "/tutorials/strength04-tomjerry-mac-desktop-h3/demo-web.mp4",
+    poster: "/tutorials/strength04-tomjerry-mac-desktop-h3/poster.jpg",
+    duration: "10秒",
+    shots: 1,
+    references: 1,
+    model: "MiniMax H3 on Flova (#flovaCPP)",
+    style: "桌面交互 · 经典卡通",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Strength04_X/status/2101913634293297466",
+    sourceAuthor: "@Strength04_X",
+    sourcePlatform: "X",
+    sourceImpressions: 607,
+    tags: ["10秒", "16:9 横屏", "MiniMax H3", "Tom and Jerry", "macOS桌面"],
+    steps: [],
+    references_detail: [],
+    storyboard: [],
+    video_prompt: {
+      title: "Tom & Jerry Mess Mac Desktop",
+      subtitle: "MiniMax H3 · Reference Image + Video Prompt",
+      content: `Full two-stage prompt in PROMPT_FULL.txt - see source post`,
+    },
+  },
+  {
+    id: "yangonchain-oriental-leaf-tea-moment",
+    title: "东方树叶概念广告 · 把这一刻还给自己",
+    subtitle: "X · @YangOnchain · 概念广告 · 30秒 · 16:9",
+    description:
+      "东方树叶绿茶非官方AI概念短片。30秒完整商业广告,结合写实摄影与2.5D水墨小茶客角色。从机械刷手机到放下、互动、喝茶、回归当下时刻。",
+    video: "/tutorials/yangonchain-oriental-leaf-tea-moment/demo-web.mp4",
+    poster: "/tutorials/yangonchain-oriental-leaf-tea-moment/poster.jpg",
+    duration: "30秒",
+    shots: 8,
+    references: 0,
+    model: "未标明 / 概念广告",
+    style: "商业广告 · 品牌概念",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/YangOnchain/status/2101913629717381374",
+    sourceAuthor: "@YangOnchain",
+    sourcePlatform: "X",
+    sourceImpressions: 1302,
+    tags: ["30秒", "16:9 横屏", "概念短片", "2.5D水墨", "品牌故事"],
+    steps: [],
+    references_detail: [],
+    storyboard: [],
+    constraints: "需自备01-05参考图:多多身份、绿白穿搭、东方树叶绿茶实物、小茶客造型、野餐场景",
+    video_prompt: {
+      title: "Oriental Leaf Tea · Give This Moment Back to Yourself",
+      subtitle: "Concept Ad · 30s · Multiple References Required",
+      content: `Full 30s prompt in PROMPT_FULL.txt - requires 01-05 reference images`,
+    },
+  }
 ];
+
+export function getTutorialById(id: string): Tutorial | undefined {
+  return tutorials.find((tutorial) => tutorial.id === id);
+}

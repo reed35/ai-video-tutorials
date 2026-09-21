@@ -1,0 +1,42 @@
+{
+  "id": "crazykaomei-furniture-blindbox-asmr",
+  "title": "Pink Fluffy Sofa Blind-Box Pick · ASMR Furniture Commerce",
+  "titleZh": "粉色毛绒沙发盲盒选款 · ASMR 电商",
+  "sourceUrl": "https://x.com/CrazyKaomei/status/2101842849079923104",
+  "sourceAuthor": "CrazyKaomei",
+  "sourceAuthorDisplay": "疯狂的烤妹儿",
+  "sourcePostId": "2101842849079923104",
+  "replyPromptUrl": "https://x.com/CrazyKaomei/status/2101842850526982540",
+  "replyPromptPostId": "2101842850526982540",
+  "sourceImpressions": 1109,
+  "sourceLikes": 8,
+  "sourceVideoViewsApprox": 461,
+  "aspectRatio": "16:9",
+  "durationSec": 10.13,
+  "model": "Google Flow / Omni Flash",
+  "platform": "Google Flow",
+  "modelHint": "Omni Flash",
+  "workflow": [
+    "1) Text-to-image: 12-panel storyboard (PROMPT_image_storyboard.txt)",
+    "2) Image-to-video from storyboard (PROMPT_video_i2v.txt)"
+  ],
+  "promptFiles": [
+    "PROMPT_FULL.txt",
+    "PROMPT_image_storyboard.txt",
+    "PROMPT_video_i2v.txt",
+    "PROMPT_STORYBOARD_T2I.txt",
+    "PROMPT_I2V.txt"
+  ],
+  "mediaFiles": {
+    "demo": "demo-web.mp4",
+    "poster": "poster.jpg",
+    "refStoryboard": "ref-storyboard.jpg"
+  },
+  "notes": [
+    "Full prompts recovered verbatim from author self-reply note_tweet (2101842850526982540); no OCR needed.",
+    "demo-web.mp4: H.264 CRF28, max edge 1280, AAC, +faststart.",
+    "ref-storyboard.jpg is the author's attached 12-panel storyboard image (1200x670).",
+    "LOCAL pack only — not pushed/deployed."
+  ],
+  "gaps": []
+}

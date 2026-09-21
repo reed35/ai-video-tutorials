@@ -1,0 +1,25 @@
+{
+  "id": "strength04-tomjerry-mac-desktop-h3",
+  "titleZh": "猫和老鼠搞乱 Mac 桌面 · H3",
+  "sourceUrl": "https://x.com/Strength04_X/status/2101913634293297466",
+  "sourceAuthor": "Strength04_X",
+  "sourceImpressions": 607,
+  "likes": 31,
+  "model": "MiniMax H3 on Flova (#flovaCPP)",
+  "aspectRatio": "16:9",
+  "promptReplyUrls": [
+    "https://x.com/Strength04_X/status/2101913745794740629",
+    "https://x.com/Strength04_X/status/2101913903802499214"
+  ],
+  "promptFiles": [
+    "PROMPT_image_reference.txt",
+    "PROMPT_video.txt",
+    "PROMPT_FULL.txt"
+  ],
+  "mediaFiles": [
+    "demo-web.mp4",
+    "poster.jpg",
+    "ref-desktop.jpg"
+  ],
+  "gaps": []
+}

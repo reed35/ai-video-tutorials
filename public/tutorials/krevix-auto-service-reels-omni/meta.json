@@ -1,0 +1,44 @@
+{
+    "id": "krevix-auto-service-reels-omni",
+    "title": "Auto Service Creative Reels \u00b7 Mini BMW ASMR \u2192 Full-Size Match Cut",
+    "titleZh": "\u6c7d\u8f66\u670d\u52a1\u521b\u610f Reels \u00b7 \u8ff7\u4f60\u5b9d\u9a6c ASMR \u7ec4\u88c5\u5230\u5168\u5c3a\u5bf8\u786c\u5207",
+    "sourceUrl": "https://x.com/KrevixAi/status/2101930638022410525",
+    "sourceAuthor": "@KrevixAi",
+    "sourceAuthorDisplay": "KreviX",
+    "sourcePostId": "2101930638022410525",
+    "replyPromptUrl": "https://x.com/KrevixAi/status/2101930645320618466",
+    "replyPromptPostId": "2101930645320618466",
+    "sourceImpressions": 1808,
+    "sourceLikes": 38,
+    "sourceBookmarks": 52,
+    "sourceReplies": 4,
+    "sourceVideoViewsApprox": 773,
+    "aspectRatio": "16:9",
+    "durationSec": 10.0,
+    "model": "Gemini Omni",
+    "platform": "Gemini Omni Create Video",
+    "workflow": [
+        "1) Upload the storyboard to the Create Video section in Gemini Omni",
+        "2) Paste the prompt from PROMPT_FULL.txt"
+    ],
+    "promptFiles": [
+        "PROMPT_FULL.txt"
+    ],
+    "mediaFiles": {
+        "demo": "demo-web.mp4",
+        "poster": "poster.jpg",
+        "refStoryboard": "storyboard.jpg"
+    },
+    "notes": [
+        "Full prompt recovered verbatim from author self-reply note_tweet (2101930645320618466); truncated API text expanded via note_tweet \u2014 no OCR needed.",
+        "Main post note_tweet mentions 'Prompt \ud83d\udc47' but omits the body; actual prompt lives in immediate author self-reply with attached 16-panel storyboard image.",
+        "t.co/UggPhLstns expands to the post video (pic.x.com); t.co/Yj7U2qwmNF expands to the storyboard photo.",
+        "demo-web.mp4: H.264 CRF28, max edge 1280x720, AAC 128k, +faststart (~1.2MB).",
+        "storyboard.jpg is the author's attached 16-panel storyboard (1280x720) titled BMW \u2014 THE PERFECT CLICK x MICRO PAINT LAB.",
+        "LOCAL pack only \u2014 no git/push/PR/deploy."
+    ],
+    "gaps": [
+        "No separate text prompt for generating the storyboard itself was published \u2014 only the video prompt + the finished storyboard image.",
+        "Original source video was 3840x2160; pack uses 1920x1080 download then compresses to 1280x720 demo-web."
+    ]
+}

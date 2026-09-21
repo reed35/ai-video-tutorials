@@ -1,0 +1,25 @@
+{
+  "id": "strength04-cat-sneeze-desktop-h3",
+  "titleZh": "猫打喷嚏搞乱 Mac 桌面 · H3",
+  "sourceUrl": "https://x.com/Strength04_X/status/2101868703482876376",
+  "sourceAuthor": "Strength04_X",
+  "sourceImpressions": 5228,
+  "likes": 232,
+  "model": "MiniMax Hailuo H3 Max on ImagineArt",
+  "aspectRatio": "16:9",
+  "promptReplyUrls": [
+    "https://x.com/Strength04_X/status/2101868833103602102",
+    "https://x.com/Strength04_X/status/2101869064616542690"
+  ],
+  "promptFiles": [
+    "PROMPT_image_reference.txt",
+    "PROMPT_video.txt",
+    "PROMPT_FULL.txt"
+  ],
+  "mediaFiles": [
+    "demo-web.mp4",
+    "poster.jpg",
+    "ref-desktop.jpg"
+  ],
+  "gaps": []
+}

@@ -1,0 +1,55 @@
+{
+  "id": "garylau-rei-city-travel-h3",
+  "titleZh": "绫波丽城市换装旅行 · H3 深度驱动",
+  "sourceUrl": "https://x.com/GaryLau0101/status/2101872019981889672",
+  "promptReplyUrl": "https://x.com/GaryLau0101/status/2101872641397129328",
+  "sourceAuthor": "GaryLau0101",
+  "sourceImpressions": 1681,
+  "model": "MiniMax H3 Singularity",
+  "aspectRatio": "9:16",
+  "notes": "用户贴的是评论区深度视频+提示词；成片用主帖彩色成片。作者说人脸后段一致性差因 GPT 生图；复刻可用深度视频，从零可用 Blender。原作者@陶阿狗君 / quoted weiyux2021。引用原帖仅为求图请求帖（单图），非 Picture1–6 角色换装参考集。",
+  "promptFiles": [
+    "pack/PROMPT_FULL.txt",
+    "pack/PROMPT_video.txt"
+  ],
+  "mediaFiles": {
+    "demoWeb": "pack/demo-web.mp4",
+    "poster": "pack/poster.jpg",
+    "refDepth": "pack/ref-depth.mp4",
+    "refDepthWeb": "pack/ref-depth-web.mp4",
+    "refDepthThumb": "pack/ref-depth-thumb.jpg",
+    "refSourceRequest": "pack/ref-source-request.jpg",
+    "demoRaw": "pack/demo-raw.mp4",
+    "refDepthRaw": "pack/ref-depth-raw.mp4"
+  },
+  "mediaSizes": {
+    "demo-web.mp4": 1982913,
+    "poster.jpg": 59034,
+    "ref-depth.mp4": 580439,
+    "ref-depth-web.mp4": 432314,
+    "ref-depth-thumb.jpg": 13949,
+    "ref-source-request.jpg": 108263,
+    "demo-raw.mp4": 7795662,
+    "ref-depth-raw.mp4": 580439
+  },
+  "demoWebSpec": {
+    "codec": "H.264",
+    "resolution": "640x1280",
+    "crf": 28,
+    "audio": "none (source had no audio; AAC path unused)",
+    "faststart": true,
+    "durationSec": 11.79,
+    "bytes": 1982913
+  },
+  "gaps": [
+    "参考图 Picture1–6 未在本帖附件中，需原帖/作者素材",
+    "Picture1–6 character/outfit refs not attached in this thread; only depth video + full prompt available",
+    "quoted weiyux2021 post is a request post with one photo only (saved as pack/ref-source-request.jpg), NOT the Picture 1–6 set"
+  ],
+  "originalCredits": {
+    "originalAuthor": "陶阿狗君",
+    "quotedRequest": "weiyux2021",
+    "quotedRequestUrl": "https://x.com/weiyux2021/status/2101256087106416828"
+  },
+  "localOnly": true
+}

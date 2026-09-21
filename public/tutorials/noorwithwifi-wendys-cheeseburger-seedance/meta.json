@@ -1,0 +1,24 @@
+{
+  "id": "noorwithwifi-wendys-cheeseburger-seedance",
+  "title": "Wendy’s Double Cheeseburger Commercial",
+  "titleZh": "Wendy’s 双层芝士汉堡广告",
+  "sourceUrl": "https://x.com/noorwithwifi/status/2101955160696336440",
+  "sourceAuthor": "@noorwithwifi (NoorAI)",
+  "sourcePostId": "2101955160696336440",
+  "sourceImpressions": 1518,
+  "sourceLikes": 62,
+  "sourceBookmarks": 12,
+  "sourceReplies": 31,
+  "aspectRatio": "4:3",
+  "durationSec": 13.002993,
+  "model": "Seedance 2.5",
+  "promptFiles": [
+    "PROMPT_FULL.txt"
+  ],
+  "mediaFiles": [
+    "demo-web.mp4",
+    "poster.jpg"
+  ],
+  "notes": "Downloaded from the supplied X video URL. Source is 960×720; duration and aspect ratio are from ffprobe. Demo re-encoded as H.264/AAC with CRF 28 and faststart.",
+  "gaps": []
+}

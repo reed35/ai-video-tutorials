@@ -1,0 +1,67 @@
+{
+  "id": "charaspower-restaurant-drama-seedance",
+  "titleZh": "餐厅情侣对峙 · 30秒一镜到底",
+  "title": "Restaurant couple confrontation · 30s continuous single take",
+  "description": "Seedance 2.5 continuous 30s two-character dialogue performance test: upscale restaurant night drama, precise English lip sync, one uninterrupted shot.",
+  "descriptionZh": "Seedance 2.5 一镜到底 30 秒双人对话表演测试：高档餐厅夜戏、精确英语口型、无剪辑连续镜头。",
+  "sourceUrl": "https://x.com/CharaspowerAI/status/2101733174912979337",
+  "promptReplyUrl": "https://x.com/CharaspowerAI/status/2101733198229012768",
+  "sourceAuthor": "CharaspowerAI",
+  "sourceAuthorDisplay": "Pierrick Chevallier | IA",
+  "sourcePostId": "2101733174912979337",
+  "promptReplyPostId": "2101733198229012768",
+  "sourceImpressions": 3380,
+  "sourceLikes": 53,
+  "sourceBookmarks": 35,
+  "aspectRatio": "16:9",
+  "durationSec": 30.14,
+  "model": "Seedance 2.5 / Dreamina",
+  "platform": "Dreamina",
+  "hashtags": [
+    "DreaminaCPP"
+  ],
+  "parentCaption": "Seedance 2.5 continuous 30s two-character dialogue performance test; Full prompt below",
+  "promptFiles": [
+    "PROMPT_FULL.txt",
+    "PROMPT_video.txt"
+  ],
+  "promptCharCount": 5356,
+  "promptByteCount": 5456,
+  "mediaFiles": {
+    "demo": "demo-web.mp4",
+    "poster": "poster.jpg"
+  },
+  "demo": {
+    "file": "demo-web.mp4",
+    "resolution": "1280x720",
+    "aspectRatio": "16:9",
+    "durationSec": 30.14,
+    "sizeBytes": 2368770,
+    "codec": "H.264 + AAC",
+    "encode": "libx264 CRF28, max edge 1280, AAC 128k, +faststart"
+  },
+  "poster": {
+    "file": "poster.jpg",
+    "resolution": "1200x675",
+    "sizeBytes": 75358,
+    "source": "https://pbs.twimg.com/ext_tw_video_thumb/2101733134374981632/pu/img/OXqhiyPjw7tGa36S.jpg"
+  },
+  "beatsCovered": [
+    "0–5s Quiet hostility",
+    "5–11s Pressure rises",
+    "11–17s Argument breaks containment",
+    "17–22s Physical escalation (glass tip)",
+    "22–27s Emotional reversal",
+    "27–30s Final blow / stunned silence"
+  ],
+  "notes": [
+    "Full video prompt recovered verbatim from user paste of author self-reply (2101733198229012768); X API note_tweet truncated in get_posts_by_ids.",
+    "demo-web.mp4: H.264 CRF28, 1280x720, AAC, +faststart; ~2.3MB under 4MB preferred.",
+    "poster.jpg from Twitter amplify video thumb.",
+    "LOCAL pack only — no git / push / PR / deploy."
+  ],
+  "gaps": [
+    "X API get_posts_by_ids returns truncated reply text (ends at 'A couple in their early'); full prompt supplied by user paste — not re-fetched from note_tweet body beyond API truncation.",
+    "Live impressions at pack time were ~3383; meta uses provided figure 3380."
+  ]
+}

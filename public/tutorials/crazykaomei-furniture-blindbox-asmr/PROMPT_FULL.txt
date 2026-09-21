@@ -1,0 +1,33 @@
+平台：Google Flow（Omni Flash 模型）
+
+1、先文生图，生成详细的故事分镜板
+12-panel grid storyboard, product commercial shot, ultra photorealistic, 8k, sharp focus, soft clean studio lighting, white seamless background, series of miniature pink fluffy fur sofas, matte white leather gloved human hands interacting with furniture, timeline numbered frames,
+Frame1: small pink plush single sofa, hand pointing
+Frame2: rotating display turntable with multiple tiny pink plush sofas, gloved hand pointing
+Frame3: pink bunny ear plush armchair
+Frame4: pink cat ear round fluffy sofa
+Frame5: large pink bubble marshmallow long-fur hero sofa
+Frame6: open palm stop gesture in front of hero sofa
+Frame7: close-up shot, white gloved hand pressing and sinking into pink fluffy fur fabric, realistic fur compression
+Frame8: hero pink bubble sofa placed on white platform
+Frame9: hero sofa inside minimalist pastel room, curved blue checkered mirror
+Frame10: same hero sofa, matching pink bunny chair, cloud-shaped coffee table
+Frame11: full room set, small doll figurines, wall art, pastel decor
+Frame12: complete cute living room with hero sofa, panoramic window, soft daylight
+All sofas are thick long pink faux lama fur, puffy segmented bubble shape, cute miniature dollhouse furniture style, clean white studio, soft shadow, commercial furniture photography, no distortion, no text artifacts, clean composition
+
+2、再引用生成的故事板，选择图生视频模式——
+Ultra-photorealistic 10-second 16:9 luxury furniture commercial, one continuous first-person female POV, 26–28mm lens, bright white studio background, white silk gloves, realistic physics only. 
+
+0–0.8s: A sleek pale pink modular armchair floats centered; a white-gloved hand swipes left. 
+0.8–1.6s: The armchair rapidly orbits left as a carousel with miniature velvet pink armchairs (heart and bunny shapes) arrives from the right and stops center. 
+1.6–2.4s: Another swipe replaces it with a fluffy rose-pink beanbag chair with cat ears. 
+2.4–3.2s: A final swipe brings in a vibrant magenta modular sofa with long-pile fluffy fur. 
+3.2–4.2s: The hero fluffy magenta sofa arrives slowly, rotates frontal, and stops with heavy inertia. 
+4.2–5.0s: An open-palm STOP gesture freezes the carousel; other pieces disappear into the distance. 
+5.0–5.8s: A white-gloved hand presses deep and slides across the fluffy sofa armrest, showing realistic fur compression and soft physics. 
+5.8–6.6s: The sofa lands; a sleek white floor slides beneath it and a light pink rug unrolls. 
+6.6–8.5s: The hero fluffy pink sofa stays 100% stationary as the minimalist room assembles—sleek blue mirrors, white coffee tables, and bunny chairs slide into place and shelving locks in. 
+8.5–10s: A large panoramic window opens, bright daylight floods the completed vibrant pink interior; a slow dolly backward reveals the full room. 
+
+No magic, morphing, or cuts. High-quality textures, real mass and friction.
