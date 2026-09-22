@@ -17,10 +17,16 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
   const videoRefs = useRef(new Map<string, HTMLVideoElement>());
   const stepIntervalRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
-  const landscape169 = tutorials.filter(
-    (t) => t.aspectRatio === "16/9" || !t.aspectRatio
-  );
-  const latest3 = landscape169.slice(0, 3);
+  // Filmstrip pins are curated for visual impact; not auto-latest
+  const FILMSTRIP_PINNED_IDS = [
+    "flova-mona-lisa-neighbors",
+    "krevix-sofa-workshop-reels-seedance",
+    "just-sharon7-venice-sphere"
+  ] as const;
+  
+  const latest3 = FILMSTRIP_PINNED_IDS.map(id => 
+    tutorials.find(t => t.id === id)
+  ).filter((t): t is Tutorial => !!t);
   const displayTutorials = [...latest3, ...latest3];
 
   useEffect(() => {
