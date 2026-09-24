@@ -2,6 +2,641 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "bmx-troy-2026-vlog-seedance",
+    title: "特洛伊战地 Vlog · 2026 穿越 · Seedance 2.5",
+    subtitle: "X · @bmx_ai13 · Seedance 2.5 · Dreamina · 30秒 · 16:9",
+    description:
+      "BMX 创作的 Seedance 2.5 手持时空穿越 Vlog：一位来自 2026 年的日裔 Gen Z 旅行者用手机自拍记录特洛伊战争现场。从突然穿越到城墙外青铜甲士兵，进入城门见到平民生活，登上城墙远眺战场，最后回到城内巷弄准备回归。角色一致性完全锁定在提示词文本中，无需角色卡；纯场景音，无配乐；手持手机拍摄质感，固定机位单镜头，自然对焦与曝光变化。",
+    video: "/tutorials/bmx-troy-2026-vlog-seedance/demo-web.mp4",
+    poster: "/tutorials/bmx-troy-2026-vlog-seedance/poster.jpg",
+    duration: "30秒",
+    shots: 5,
+    references: 2,
+    model: "Seedance 2.5",
+    style: "手持穿越战地 Vlog · 手机第一人称",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/bmx_ai13/status/2102790595412680764",
+    sourceAuthor: "@bmx_ai13",
+    sourcePlatform: "X",
+    sourceImpressions: 539,
+    tags: [
+      "30秒 · 时空穿越",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "Dreamina",
+      "手持 Vlog",
+      "特洛伊战争",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解角色锁定方式",
+        description:
+          "本片角色一致性完全写在提示词 CHARACTER LOCK 段落中，无需单独角色卡。主角：25 岁日裔女性，黑色马尾低扎，银色耳钉，旧炭灰卫衣，宽松工装裤，帆布背包，全程手持现代手机。面容、发型、服装、口音（温柔日本口音英语）全程一致。",
+      },
+      {
+        number: 2,
+        title: "准备 Seedance 2.5 / Dreamina",
+        description:
+          "使用 Dreamina 平台的 Seedance 2.5 模型。本片为手持手机 Vlog 质感：自然抖动、偶尔失焦、镜头灰尘、曝光变化；青铜时代材质（石墙、木门、亚麻、皮革、青铜、陶器、木车木船）；战斗保持远景，聚焦 Vlogger 视角所能见证的场景。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整 30 秒提示词。包含：Style（Gen Z 旅人从 2026 穿越到特洛伊战争），CHARACTER LOCK（日裔女性 Vlogger 完整描述），5 段时间码分镜（00:00–00:05 光晕闪烁穿越，00:05–00:11 城墙外士兵与海岸木船，00:11–00:17 城门内平民生活，00:17–00:24 城墙上远眺战场，00:24–00:30 城内巷弄准备回归），VISUAL & AUDIO DIRECTION（手持手机拍摄、青铜时代场景、纯场景声无配乐、对话精确口型同步），LAST FRAME（城市巷弄消失在白光闪烁后黑场），AVOID（现代物品除外、中世纪盔甲、神话生物、出名英雄、伤口特写、夸张口音、喜剧反应、换脸换衣、扭曲手、过度抖动、胜利叙事）。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-bmx-still-01",
+        number: "1",
+        title: "开场穿越自拍",
+        subtitle: "t≈2s · 特洛伊城墙",
+        image: "/tutorials/bmx-troy-2026-vlog-seedance/still-01-arrival-selfie.jpg",
+        prompt: "成片截帧示意（非原角色卡）：光晕闪烁后手持自拍，背后是特洛伊高耸城墙与拥挤城门，烟雾升向天空。",
+      },
+      {
+        id: "ref-bmx-still-02",
+        number: "2",
+        title: "城外士兵与木船",
+        subtitle: "t≈8s · 平原战场",
+        image: "/tutorials/bmx-troy-2026-vlog-seedance/still-02-troy-walls-soldiers.jpg",
+        prompt: "成片截帧示意：躲在石头后拍摄青铜甲士兵穿越平原，远处海岸线停靠木船，箭矢落在附近。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:05 穿越降临：光晕闪烁，她跌落到尘土山坡，手持手机自拍。背后是特洛伊高耸城墙与拥挤城门，烟雾升向明亮天空。VLOGGER：'好…我五秒前还在 2026。'号角声响，她转向镜头拍摄士兵冲过身边。",
+      },
+      {
+        number: 2,
+        description:
+          "00:05–00:11 城墙外：她躲在石头后。宽不稳定手机画面显示青铜甲士兵举盾穿越平原，箭矢落在附近土地。远处海岸线排满搁浅木船。VLOGGER（低声）：'那是特洛伊。这是战争。'她低头躲避一群人冲过，尘土短暂遮住镜头。",
+      },
+      {
+        number: 3,
+        description:
+          "00:11–00:17 城门内：快切跟随平民穿过城门：手拉沉重木门、陶匠扛工具、父母抱孩子上车。手机挣扎对焦。VLOGGER：'所有人都谈论英雄…'她注意到街上等待的恐惧家庭。VLOGGER（更轻）：'…但人们住在这里。'",
+      },
+      {
+        number: 4,
+        description:
+          "00:17–00:24 城墙上：从城墙避难位置拍摄远景战场。阳光在盾牌上闪光，号角回应。她放低手机，画面停在她沾尘鞋上，脚步与喊叫指令从周围经过。VLOGGER：'我以为我想看历史。我不知道那意味着什么。'",
+      },
+      {
+        number: 5,
+        description:
+          "00:24–00:30 归途：她举起手机对准城市：窄巷上方晾晒衣物，屋顶外烟雾，人们帮彼此搬水罐。带她来的同样光开始在画面边缘闪烁。VLOGGER：'我要回家了。我会记住他们。'手机画面破碎成光。切到黑。",
+      },
+    ],
+    constraints:
+      "角色锁定在提示词正文无需角色卡；手持手机拍摄偶尔失焦；青铜时代材质（石/木/亚麻/皮革/青铜/陶器）；战斗保持远景；纯场景声无配乐；对话精确口型同步；最后光闪烁后黑场。",
+    video_prompt: {
+      title: "A 2026 VLOG FROM TROY",
+      subtitle: "30s · 16:9 · Seedance 2.5 · Handheld Time-Travel Vlog · Diegetic Audio Only",
+      content: `Style: A Gen Z traveler from 2026 records a spontaneous handheld vlog during the legendary Trojan War. Photorealistic, grounded, urgent. Natural daylight. Diegetic audio only; no music.
+
+CHARACTER LOCK — VLOGGER
+Japanese woman, 25, straight black hair tied low, small silver stud earrings. Worn charcoal hoodie, loose cargo trousers, canvas backpack. She holds a modern phone throughout. Same face, hair, voice, and clothing in every shot. She speaks conversational English with a gentle, natural Japanese accent. Her reactions are curious at first, then shaken and sincere.
+00:00–00:05 — THE ARRIVAL
+A sharp burst of light glitches across her phone camera. Handheld selfie: she stumbles onto a dusty hillside. Behind her, the towering walls of Troy rise above a crowded gate. Smoke trails into the bright sky.
+ VLOGGER: "Okay… I was in 2026 five seconds ago."
+A horn sounds. She turns the camera toward soldiers rushing past.
+
+00:05–00:11 — OUTSIDE THE WALLS
+She moves behind a stone outcrop. Wide, unstable phone footage shows bronze-armored soldiers crossing the plain, shields raised. Arrows strike the earth nearby. The distant shoreline is lined with beached wooden ships.
+ VLOGGER (under her breath): "That's Troy. This is the war."
+She ducks as a group runs past. Dust briefly obscures the lens.
+00:11–00:17 — INSIDE THE GATE
+Quick cuts as she follows civilians through the gate: hands pulling a heavy wooden door, a potter carrying his tools, a parent lifting a child onto a cart. Her phone struggles to refocus.
+ VLOGGER: "Everyone talks about the heroes…"
+She notices frightened families waiting in the street.
+ VLOGGER (quieter): "…but people live here."
+00:17–00:24 — THE WALL
+From a sheltered position on the wall, she films the battlefield in a distant wide shot. Sunlight flashes on shields. A horn answers another across the plain. She lowers the phone, and the image rests on her dusty shoes while footsteps and shouted orders pass around her.
+ VLOGGER: "I thought I wanted to see history. I don't think I understood what that meant."
+00:24–00:30 — THE RETURN
+She raises the phone toward the city: laundry stirring above a narrow lane, smoke beyond the rooftops, people helping one another move water jars. The same light that brought her here begins to flicker at the edge of frame.
+ VLOGGER: "I'm going home. I'll remember them."
+The phone image breaks into light. CUT TO BLACK.
+
+VISUAL & AUDIO DIRECTION
+Handheld phone footage with occasional autofocus hunting, dust on the lens, and natural exposure changes. Bronze Age materials and architecture: stone walls, timber gates, linen, leather, bronze, clay vessels, wooden carts and ships. Keep combat mostly distant; focus on what the vlogger can plausibly witness. Sound is entirely from the scene: wind, sandals on stone, carts, horns, shouted orders, arrows, and breathing. Dialogue must be clearly audible and precisely lip-synchronized.
+LAST FRAME
+The city lane vanishes into a brief white flicker, then black. No text, captions, logos, subtitles, watermarks, or music.
+AVOID
+Modern objects other than the vlogger's clothing, backpack, and phone; medieval armor or castles; magical creatures; named heroes appearing without context; graphic injuries; exaggerated accents; comedic reactions; changing faces or clothing; distorted hands; excessive camera shake; or a triumphant portrayal of the battle.`,
+    },
+  },
+  {
+    id: "tsubaki-korean-outfit-lookbook-seedance",
+    title: "韩风穿搭 Lookbook 转盘 · Seedance 2.5",
+    subtitle: "X · @AI__TSUBAKI · GPT Image 2.5 + Seedance 2.5 · 17秒 · 3:4",
+    description:
+      "TSUBAKI 创作的韩风时尚 Lookbook 转盘动画：先用 GPT Image 2.5 生成垂直 3:4 时尚海报（左侧奶油色单品面板 + 右侧全身模特 + 顶部品牌字标与皇冠图标），再用 Seedance 2.5 图生视频让模特原地 360° 转身展示穿搭，同时面板内每件单品同步绕竖轴旋转一圈，版式锁定不变。低角度 35mm 镜头拍摄，模特腿部修长，高端电商产品页美学，布料质感清晰，自然肤质，摄影写实。",
+    video: "/tutorials/tsubaki-korean-outfit-lookbook-seedance/demo-web.mp4",
+    poster: "/tutorials/tsubaki-korean-outfit-lookbook-seedance/poster.jpg",
+    duration: "17秒",
+    shots: 1,
+    references: 1,
+    model: "Seedance 2.5",
+    style: "高端时尚 Lookbook 转盘 · 电商产品展示",
+    aspectRatio: "3/4",
+    sourceUrl: "https://x.com/AI__TSUBAKI/status/2102459655700287648",
+    sourceAuthor: "@AI__TSUBAKI",
+    sourcePlatform: "X",
+    sourceImpressions: 39252,
+    tags: [
+      "17秒 · 时尚展示",
+      "3:4 竖屏",
+      "GPT Image 2.5",
+      "Seedance 2.5",
+      "韩风穿搭",
+      "Lookbook 转盘",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备角色表并替换 [NAME]",
+        description:
+          "准备你自己的角色表（面部/发型/穿搭身份）。作者未公开本演示所用角色表。将 board 提示词中所有 [NAME] 替换为你的主体名称/品牌字标。",
+      },
+      {
+        number: 2,
+        title: "GPT Image 2.5 生成 Lookbook 静帧",
+        description:
+          "上传角色表 + PROMPT_BOARD_GPT_IMAGE（下方 references_detail[0].prompt）→ 生成垂直 3:4 时尚 Lookbook 海报（奶油色单品面板左侧，全身模特右侧，皇冠字标顶部）。这是 I2V 的起始帧。",
+      },
+      {
+        number: 3,
+        title: "Seedance 2.5 图生视频（Lookbook → 转盘）",
+        description:
+          "将完成的 Lookbook 静帧作为起始帧/image1，配合下方完整视频提示词。模特原地 360° 转身；每件单品同步绕竖轴转一圈；面板/说明文字/字标保持固定；摄影机锁定。演示约 17 秒 3:4。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-tsubaki-board",
+        number: "0",
+        title: "Lookbook 静帧 / 分镜板",
+        subtitle: "GPT Image 2.5 · 起始帧",
+        image: "/tutorials/tsubaki-korean-outfit-lookbook-seedance/board.jpg",
+        prompt: `Attach a character sheet and replace [NAME].
+
+Use the attached character sheet as the identity and outfit reference for [NAME]. Keep her face, hair and outfit exactly as shown.
+
+A vertical 3:4 fashion lookbook poster on a soft, pale warm-gray studio backdrop with gentle even lighting and a subtle floor shadow.
+
+[NAME] stands full-body on the right half of the frame, shot from a low camera angle at about knee height, tilted slightly upward, with a 35mm lens. The perspective makes her legs look long and her head look small, giving an elongated, model-like silhouette. She is slightly angled toward the camera in a relaxed model pose. Her feet sit close to the bottom edge of the frame, and her head sits well below the top edge. Calm expression, looking down into the lens.
+
+On the left side, a tall rounded-corner panel in soft cream, like an e-commerce item card, divided into rows by thin lines. Each garment and accessory from her outfit appears as a clean product cutout, up to two per row, with a tiny gray one-word caption under each. A small minimalist crest icon sits at the top of each row.
+
+Above the panel, a thin elegant white serif wordmark "[NAME]" with a small delicate crown icon above it.
+
+Clean, airy composition, high-end fashion product page aesthetic, sharp fabric texture, natural skin, photorealistic.`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "完整 17 秒：整体版式保持完全如起始帧显示：相同背景、相同奶油色单品面板、相同说明文字、相同皇冠图标、相同字标、相同取景。右侧模特像真实时装模特在片场那样原地完整 360° 转身：她自然迈步脚步绕圈，重心在两腿间转移，双臂自由活动，肩部放松。转到背面时她回眸看镜头，转回正面时她停到一个新的、不同的自信模特姿势。自然姿态，真实布料物理；头发、下摆和配饰随运动摆动并归位。她始终保持在相同位置和相同画面大小。同时，单品面板内每件产品抠图在其竖轴上原地旋转，像奢侈品产品展示渲染，展示正面、侧面和背面。每件单品保持在自己槽位中心，保持大小，与模特转身同步完成恰好一整圈，结束时回到原始方向。面板、分隔线、说明文字、皇冠图标和字标保持完全固定；只有模特移动和产品旋转。摄影机锁定，无缩放，无平移。柔和影棚光照，模特和产品下方有真实阴影。流畅自然运动，干净商业时尚广告美学，超清晰细节，奢华目录展示。",
+      },
+    ],
+    constraints:
+      "需要角色表 + 替换 [NAME]；整体版式锁定（背景/面板/文字/图标/字标不变）；模特原地 360° 转身（自然迈步/重心转移/自由手臂/放松肩膀/回眸/新姿势）；单品同步竖轴旋转一圈；摄影机锁定无缩放平移；柔和影棚光；真实布料物理和阴影；高端电商美学。",
+    video_prompt: {
+      title: "KOREAN OUTFIT LOOKBOOK TURNTABLE",
+      subtitle: "17s · 3:4 · Seedance 2.5 · Fashion Product Display Animation",
+      content: `A clean, premium 4-second fashion lookbook animation starting from the first frame. The entire layout stays exactly as shown: same background, same cream item panel, same captions, same crown icons, same wordmark, same framing.
+
+The model on the right turns a full 360° on the spot the way a real fashion model does on set: she steps her feet around naturally, shifting her weight from one leg to the other as she turns, her arms moving freely and her shoulders relaxed. As she comes around to the back she glances over her shoulder, and as she returns to face the camera she settles into a new, different confident model pose. Natural posture, realistic cloth physics; hair, hems and accessories swing and settle with the motion. She stays in the same spot and at the same size in frame throughout.
+
+At the same time, every product cutout inside the item panel rotates in place on its own vertical axis, like a luxury product display render, revealing front, side and back. Each item stays centered in its own slot, keeps its size, and completes exactly one full rotation in sync with the model's turn, ending in its original orientation.
+
+The panel, divider lines, captions, crown icons and wordmark stay perfectly fixed; only the model moves and the products rotate. Camera locked off, no zoom, no pan. Soft studio lighting with realistic shadows under the model and the products. Smooth, natural motion, clean commercial fashion-ad aesthetic, ultra-sharp details, luxury catalog presentation.`,
+    },
+  },
+  {
+    id: "johnagi-car-eye-contact-seedance",
+    title: "车内密戏眼神拉扯 · Seedance 2.5",
+    subtitle: "X · @johnAGI168 · Seedance 2.5 · Pollo MCP · 22秒 · 16:9",
+    description:
+      "John 创作的 Seedance 2.5 演员表演提示词：夜间车内固定机位单长镜头；眼神拉扯、微表情、倾身轻吻。ChatGPT + Seedance 2.5 on Pollo MCP。两人尚处于彼此试探的暧昧阶段，男主从回避镜头逐渐转为持续关注女主，等到再次对视后才主动靠近；女主维持自拍托腮姿势，通过余光确认他的注意，第一次对视很快收回，第二次则留下来回应。情绪推进克制，表演强度始终低调，最明显的变化留到最后的主动靠近。无对话，只有轻微车内环境底噪和自然呼吸。",
+    video: "/tutorials/johnagi-car-eye-contact-seedance/demo-web.mp4",
+    poster: "/tutorials/johnagi-car-eye-contact-seedance/poster.jpg",
+    duration: "22秒",
+    shots: 1,
+    references: 2,
+    model: "Seedance 2.5",
+    style: "电影级车内双人表演 · 固定机位长镜头",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/johnAGI168/status/2102720575110299823",
+    sourceAuthor: "@johnAGI168",
+    sourcePlatform: "X",
+    sourceImpressions: 6632,
+    tags: [
+      "22秒 · 情感短片",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "Pollo MCP",
+      "车内密戏",
+      "眼神拉扯",
+      "演员表演",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解角色与表演动机",
+        description:
+          "角色绑定：@图片1 为男主角色卡，@图片2 为女主角色卡（作者未公开为单独附件，需自备）。两位成年角色外貌、发型、服装严格遵循各自角色卡，全程保持一致。表演动机：两人尚处于彼此试探的暧昧阶段。男主从回避镜头逐渐转为持续关注女主；女主维持自拍托腮姿势，通过余光确认他的注意。情绪推进始终克制。",
+      },
+      {
+        number: 2,
+        title: "准备 Seedance 2.5 / Pollo MCP",
+        description:
+          "使用 Pollo MCP 平台的 Seedance 2.5 模型。本片为固定机位单长镜头，手机固定在两人前方正面双人中近景，同时容纳两人头部、肩胸和女主托腮的双手。全程不切镜、不推拉、不环绕，距离缩短由演员倾身完成。无对话，只有轻微车内环境底噪、细小衣料摩擦声与自然呼吸。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 ACTOR PERFORMANCE PROMPT",
+        description:
+          "使用下方完整 22 秒逐秒表演提示词。包含：时长/画幅/镜头（固定机位单连续长镜头）、Subject 角色绑定（@图片1/@图片2）、Environment 场景（夜间车内前排座椅，车顶阅读灯柔和正面光）、Camera/Style 摄影（手机固定正面双人中近景，不切镜不推拉不环绕）、Dramatic Engine 表演动机（暧昧试探阶段，从回避到关注到再次对视到靠近）、Action/Performance 逐秒表演（0–3s 她准备自拍他转开脸，3–5s 他转回来先垂眼再抬眼，5–8s 第一次对视她先结束，8–13s 她继续托腮他持续注视，13–14s 她再次确认他的目光，14–17s 第二次对视停下来，17–19s 先倾身再托脸，19–22s 轻吻保持贴近），Audio 声音（轻微车内环境底噪），Performance Constraints 表演约束，Negative 避免。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-johnagi-still-01",
+        number: "1",
+        title: "开场自拍托腮",
+        subtitle: "t≈1.5s · 女主看镜头",
+        image: "/tutorials/johnagi-car-eye-contact-seedance/still-01-open-selfie.jpg",
+        prompt: "成片截帧示意（非原角色卡）：开场女主靠近男主一侧的手松握成拳支在下巴与下颊旁，另一只手从镜头前方收回放到另一侧下颌附近，形成双手围着脸的自拍姿势。女主看镜头，男主转开脸看窗外。",
+      },
+      {
+        id: "ref-johnagi-still-04",
+        number: "2",
+        title: "第二次对视停顿",
+        subtitle: "t≈15s · 两人对视",
+        image: "/tutorials/johnagi-car-eye-contact-seedance/still-04-second-eye-lock.jpg",
+        prompt: "成片截帧示意：第二次对视，两人安静看着彼此，这次对视明显长于第一次。女主眼睛保持睁开，嘴唇轻合，托腮的手不放下。男主嘴角出现一点很浅的上扬。停顿的结束状态是两人仍在对视，靠近还没有发生。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–3s 她准备自拍，他转开脸：开场两人面向镜头。女主靠近男主一侧的手已经松握成拳支在下巴与下颊旁；另一只手从镜头前方收回，手指自然弯曲，放到另一侧下颌附近，形成双手围着脸的自拍姿势。女主看着镜头，嘴唇从微微分开变为轻轻合拢，自然眨眼。男主起初神情平静，随后把头转向画面左侧的侧窗，肩膀与上身基本留在原位。女主继续面对镜头，没有跟着大幅转身，也没有立即露出明显失落表情。结束状态：男主看向窗外，女主仍托着脸看镜头，两人尚未接触。",
+      },
+      {
+        number: 2,
+        description:
+          "3–5s 他转回来，先垂眼再抬眼：男主从窗外方向转回正面，转回途中视线先落低，头略微低着，停稳后再抬眼看向前方。嘴唇闭合，表情安静，不刻意摆出冷脸或笑脸。女主维持托腮姿势，唇角只有一点点变化，偶尔自然眨眼。两人的呼吸平缓，身体没有主动靠近。结束状态：两人重新面向前方，气氛安静，保留尚未确认对方意图的停顿。",
+      },
+      {
+        number: 3,
+        description:
+          "5–8s 第一次对视，她先结束：女主先把眼神移向画面左侧的男主，头稍后才跟着转过去。男主也转头看向她，两人的视线短暂对上。对视时嘴唇仍轻轻闭合，眉毛没有夸张上挑，不立即微笑或靠近。短暂停留后，女主先把眼神落低，伴随一次轻轻眨眼，将脸转回镜头；双手仍然托在脸侧。男主没有跟着转回去，保持侧脸看她，目光继续停在她脸上。结束状态：女主面向镜头，男主侧头看女主。一定保留两人结束对视的时间差。",
+      },
+      {
+        number: 4,
+        description:
+          "8–13s 她继续托腮，他持续注视：女主把两只松握的拳头略向内、向上调整，更对称地抵住下颊。脸颊受到轻微挤压，下巴稍收，嘴唇自然形成很小的抿拢与微噘。这个嘴部变化由托腮动作带出，幅度轻，不演成夸张嘟嘴索吻。她继续看镜头，间或眨眼，保持姿势，却能通过余光察觉男主仍在看她。男主保持侧向她的姿态，只有自然眨眼、轻微呼吸和很小的嘴角变化，不咬唇、不反复吞咽、不来回摇头。镜头持续停留，让'她看镜头，他看她'的关系充分成立。",
+      },
+      {
+        number: 5,
+        description:
+          "13–14s 她再次确认他的目光：女主先眨一下眼，睁开后眼神再次向男主方向移动，然后才慢慢带动头转过去。双拳继续托着下颊，身体没有整体转向男主。男主仍然看着她，因此她转过去便接住他的视线。这次女主没有马上把脸转回镜头。结束状态：两人保持近距离对视，身体尚未进一步靠近。",
+      },
+      {
+        number: 6,
+        description:
+          "14–17s 第二次对视，停下来：两人安静看着彼此，让这次对视明显长于第一次。女主眼睛保持睁开，嘴唇轻合，托腮的手不放下。目光留在男主脸上，眼睑和唇角仅有极小变化。男主嘴角出现一点很浅的上扬，然后自然放松，视线有轻微下移，再停留在她面部。呼吸和胸肩只有细小起伏。不要在这段安排多余手势，也不要提前闭眼等待接吻。停顿的结束状态是两人仍在对视，靠近还没有发生。",
+      },
+      {
+        number: 7,
+        description:
+          "17–19s 先倾身，再托脸：前半拍继续保留对视，然后男主主动将上身和头向女主方向倾过去，逐渐缩短距离。必须先发生倾身，再抬手。距离缩短后，男主一只手从画面下方抬起，轻托女主下颌，手指与掌侧顺势移到她面颊侧面，温柔承托，不抓住下巴猛拉。女主保持看着他的视线，双拳仍在脸颊附近。她随接近轻轻抬起下巴，头部略微后仰、侧转，调整两张脸接近的角度，没有大幅迎上去，也没有退开再被追上。男主低头并略偏头，两人鼻尖自然错开。接触前女主眼睛仍然睁着，不让两人从远处便同步闭眼。",
+      },
+      {
+        number: 8,
+        description:
+          "19–22s 轻吻，保持贴近：两人的嘴唇清楚地轻轻贴合，呈现真实、克制的接吻。男主保持托住女主侧脸，女主维持微抬下巴的姿势，双手仍停在下颊附近，不突然放下手抱住他的脖子。接吻后继续贴近，身体只有轻微自然调整和呼吸起伏。保留人物面部轮廓、手与脸的正确接触关系。以两人仍贴近亲吻的状态结束，不补分开大笑、再次追吻或额外拥抱。",
+      },
+    ],
+    constraints:
+      "需要男女主角色卡（未公开需自备）；固定机位单长镜头不切镜不推拉不环绕；手机固定正面双人中近景；夜间车内车顶阅读灯柔和正面光；眼神先移动头部随后跟上；第一轮对视短第二轮对视长；女主第一次先收回目光男主继续看她第二次她留下来对视；前段无亲密接触最后才发生倾身托下颌贴近和接吻；男主先倾身后抬手不颠倒顺序；情绪依靠一两个细微信号逐步变化；保留真实停顿人物有呼吸与自然眨眼。",
+    video_prompt: {
+      title: "SEEDANCE 2.5 ACTOR PERFORMANCE PROMPT",
+      subtitle: "22s · 16:9 · Fixed Wide · Single Continuous Take · No Dialogue",
+      content: `SEEDANCE 2.5 ACTOR PERFORMANCE PROMPT
+
+时长：22秒
+画幅：16:9
+镜头：固定机位，单个连续长镜头
+对白：无对白、无旁白，以目光、停顿、呼吸和身体距离完成表演。
+
+【Subject｜角色绑定】
+@图片1为男主角色卡，@图片2为女主角色卡。两位成年角色的外貌、发型、服装分别严格遵循各自角色卡，全程保持一致。
+
+【Environment｜场景】
+夜间车内，两人并排坐在前排座椅，男主位于画面左侧，女主位于画面右侧。后方是座椅头枕和暗色车厢，车顶阅读灯亮着，柔和正面光照亮两人的脸，窗外昏暗。
+
+【Camera / Style｜摄影】
+手机固定在两人前方，正面双人中近景，同时容纳两人的头部、肩胸和女主托腮的双手。男主转头、倾身和两人最后接吻始终留在同一画面内。
+
+固定焦段、固定构图，真实手机拍摄质感，自然肤质、柔和明暗。全程不切镜、不推拉、不环绕。距离缩短由演员倾身完成，相机保持不动，让观众完整看见细微反应。
+
+【Dramatic Engine｜表演动机】
+两人尚处于彼此试探的暧昧阶段。
+男主从回避镜头，逐渐转为持续关注女主，等到再次对视后才主动靠近。
+女主维持自拍托腮的姿势，通过余光确认他的注意；第一次对视很快收回，第二次则留下来回应。
+情绪推进：各自面对镜头 → 短暂错开 → 第一次试探对视 → 她收回、他继续看 → 再次确认 → 安静靠近 → 轻吻。
+表演强度始终克制，最明显的变化留到最后的主动靠近。
+
+【Action / Performance｜逐秒表演】
+
+0—3秒｜她准备自拍，他转开脸
+开场两人面向镜头。女主靠近男主一侧的手已经松握成拳，支在下巴与下颊旁；另一只手从镜头前方收回，手指自然弯曲，放到另一侧下颌附近，形成双手围着脸的自拍姿势。
+
+女主看着镜头，嘴唇从微微分开变为轻轻合拢，自然眨眼。
+男主起初神情平静，随后把头转向画面左侧的侧窗，肩膀与上身基本留在原位。女主继续面对镜头，没有跟着大幅转身，也没有立即露出明显失落表情。
+
+结束状态：男主看向窗外，女主仍托着脸看镜头，两人尚未接触。
+
+3—5秒｜他转回来，先垂眼再抬眼
+男主从窗外方向转回正面，转回途中视线先落低，头略微低着，停稳后再抬眼看向前方。嘴唇闭合，表情安静，不刻意摆出冷脸或笑脸。
+
+女主维持托腮姿势，唇角只有一点点变化，偶尔自然眨眼。两人的呼吸平缓，身体没有主动靠近。
+
+结束状态：两人重新面向前方，气氛安静，保留尚未确认对方意图的停顿。
+
+5—8秒｜第一次对视，她先结束
+女主先把眼神移向画面左侧的男主，头稍后才跟着转过去。男主也转头看向她，两人的视线短暂对上。
+
+对视时嘴唇仍轻轻闭合，眉毛没有夸张上挑，不立即微笑或靠近。
+短暂停留后，女主先把眼神落低，伴随一次轻轻眨眼，将脸转回镜头；双手仍然托在脸侧。
+男主没有跟着转回去，保持侧脸看她，目光继续停在她脸上。
+
+结束状态：女主面向镜头，男主侧头看女主。一定保留两人结束对视的时间差。
+
+8—13秒｜她继续托腮，他持续注视
+女主把两只松握的拳头略向内、向上调整，更对称地抵住下颊。脸颊受到轻微挤压，下巴稍收，嘴唇自然形成很小的抿拢与微噘。
+
+这个嘴部变化由托腮动作带出，幅度轻，不演成夸张嘟嘴索吻。
+她继续看镜头，间或眨眼，保持姿势，却能通过余光察觉男主仍在看她。
+男主保持侧向她的姿态，只有自然眨眼、轻微呼吸和很小的嘴角变化，不咬唇、不反复吞咽、不来回摇头。
+
+镜头持续停留，让"她看镜头，他看她"的关系充分成立。
+
+13—14秒｜她再次确认他的目光
+女主先眨一下眼，睁开后眼神再次向男主方向移动，然后才慢慢带动头转过去。双拳继续托着下颊，身体没有整体转向男主。
+
+男主仍然看着她，因此她转过去便接住他的视线。
+这次女主没有马上把脸转回镜头。
+
+结束状态：两人保持近距离对视，身体尚未进一步靠近。
+
+14—17秒｜第二次对视，停下来
+两人安静看着彼此，让这次对视明显长于第一次。
+
+女主眼睛保持睁开，嘴唇轻合，托腮的手不放下。目光留在男主脸上，眼睑和唇角仅有极小变化。
+男主嘴角出现一点很浅的上扬，然后自然放松，视线有轻微下移，再停留在她面部。
+
+呼吸和胸肩只有细小起伏。不要在这段安排多余手势，也不要提前闭眼等待接吻。
+停顿的结束状态是两人仍在对视，靠近还没有发生。
+
+17—19秒｜先倾身，再托脸
+前半拍继续保留对视，然后男主主动将上身和头向女主方向倾过去，逐渐缩短距离。
+
+必须先发生倾身，再抬手。
+距离缩短后，男主一只手从画面下方抬起，轻托女主下颌，手指与掌侧顺势移到她面颊侧面，温柔承托，不抓住下巴猛拉。
+
+女主保持看着他的视线，双拳仍在脸颊附近。她随接近轻轻抬起下巴，头部略微后仰、侧转，调整两张脸接近的角度，没有大幅迎上去，也没有退开再被追上。
+
+男主低头并略偏头，两人鼻尖自然错开。接触前女主眼睛仍然睁着，不让两人从远处便同步闭眼。
+
+19—22秒｜轻吻，保持贴近
+两人的嘴唇清楚地轻轻贴合，呈现真实、克制的接吻。
+男主保持托住女主侧脸，女主维持微抬下巴的姿势，双手仍停在下颊附近，不突然放下手抱住他的脖子。
+
+接吻后继续贴近，身体只有轻微自然调整和呼吸起伏。保留人物面部轮廓、手与脸的正确接触关系。
+以两人仍贴近亲吻的状态结束，不补分开大笑、再次追吻或额外拥抱。
+
+【Audio｜声音】
+轻微车内环境底噪，细小衣料摩擦声与自然呼吸。可有音量很低、无人声的柔和配乐，不用音乐骤然拔高代替演员表演。不添加台词、旁白、夸张喘息或夸张亲吻音效。
+
+【Performance Constraints｜表演约束】
+眼神先移动，头部随后跟上；第一轮对视短，第二轮对视长。
+女主第一次先收回目光，男主继续看她；第二次她留下来对视。
+前段无亲密接触，最后才发生倾身、托下颌、贴近和接吻。
+男主先倾身后抬手，不颠倒顺序。
+女主托腮动作从单侧支撑逐渐调整为双拳轻挤下颊，接吻时仍保留手的位置。
+情绪依靠一两个细微信号逐步变化，不把每种微表情同时堆在脸上。
+保留真实停顿，人物有呼吸与自然眨眼，不能变成静止照片。
+
+【Negative｜避免】
+夸张挑眉、持续咬唇、反复嘟嘴、大笑、突然哭泣、机械眨眼、同步转头、同步闭眼、频繁闪躲、额外对白、提前接吻、突然拥抱、强拉头部、头部穿插、嘴唇融合、手指畸形、多余手臂、角色换脸、服装变化、突然变焦、镜头切换、磨皮塑料感、字幕、文字、遮脸贴纸、水印。`,
+    },
+  },
+  {
+    id: "krevix-bmw-offroad-reels-seedance",
+    title: "宝马变越野 · 汽修 Reels · Seedance 2.0",
+    subtitle: "X · @KrevixAi · Seedance 2.0 · 10秒 · 16:9",
+    description:
+      "KreviX 创作的 Seedance 2.0 汽修 Reels：18 格分镜板 → 16:9 成片。白净车间里灰色原厂宝马经过真实改装（同款巨型越野轮装不上 → 扩轮眉 → 宽体/长行程悬架 → 喷成深红）变成越野 Safari 姿态，最后硬切黑场。10 秒超写实 16:9 宝马灰→深红拉力改装，第一人称技师 POV，黑色手套，快速高级 ASMR 剪辑，只有真实物理改装，无变形/魔法/粒子或漂浮零件。",
+    video: "/tutorials/krevix-bmw-offroad-reels-seedance/demo-web.mp4",
+    poster: "/tutorials/krevix-bmw-offroad-reels-seedance/poster.jpg",
+    duration: "10秒",
+    shots: 18,
+    references: 1,
+    model: "Seedance 2.0",
+    style: "汽修 Reels · 第一人称技师 POV · ASMR 快剪",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/KrevixAi/status/2102690184231890952",
+    sourceAuthor: "@KrevixAi",
+    sourcePlatform: "X",
+    sourceImpressions: 566,
+    tags: [
+      "10秒 · 汽修改装",
+      "16:9 横屏",
+      "Seedance 2.0",
+      "宝马拉力改装",
+      "第一人称 POV",
+      "ASMR 快剪",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "上传分镜板到 Seedance 2.0",
+        description:
+          "将 18 格分镜板（board.jpg / refs/storyboard.jpg — 标题 BMW: Engineered for Further）上传到 Seedance 2.0 的 Create Video 部分。",
+      },
+      {
+        number: 2,
+        title: "粘贴视频提示词",
+        description:
+          "粘贴下方完整提示词（来自作者自回复 note_tweet 2102690187885039676）。10 秒超写实 16:9 宝马灰→深红拉力改装，第一人称技师 POV，黑色手套，快速高级 ASMR 剪辑，只有真实物理改装，无变形/魔法/粒子或漂浮零件。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-krevix-board",
+        number: "0",
+        title: "18 格分镜板",
+        subtitle: "BMW: Engineered for Further",
+        image: "/tutorials/krevix-bmw-offroad-reels-seedance/board.jpg",
+        prompt: "18 格分镜板：STOCK BMW → THE PROBLEM/HOOK → WHEEL ARCH COMPASS → … → FINAL BEAST。面板标题与部分说明文字是分镜板标签，非 Seedance 粘贴提示词。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "起始：一台无菌白色车间内的原厂灰色宝马；移除前轮 → 滚入一个巨大全地形轮胎并尝试安装，但它物理上无法装入原厂轮拱 → 用机械指南针在更大轮拱上做标记 → 切割翼子板 → 安装加固宽履带副车架、长行程悬架、巨大刹车和铆接宽体翼子板 → 将完全相同的超大轮胎成功安装 → 更换保险杠为激进拉力车身套件、防滑板、通风引擎盖、LED 拉力灯、后部保护、性能排气和紧凑尾翼 → 贴黑色车窗膜 → 降下升降机，悬架压缩并沉降成高宽 Safari 姿态 → 展示完成的改装宝马仍为灰色 → 物理喷漆整车深红/深红色，涂清漆并抛光 → 最终低角度前方 3/4 英雄镜头：黑手套手按宝马钥匙，引擎启动，悬架震动，LED 大灯打开，巨大轮胎旋转，红色宝马猛烈加速直冲向镜头 → 硬切黑场。保留可识别的宝马设计、真实工具、重力、金属接触、悬架物理和湿漆。无文字、UI、投影、传送或 VFX。",
+      },
+    ],
+    constraints:
+      "18 格分镜板引导；第一人称技师 POV 黑手套；快速 ASMR 剪辑；只有真实物理改装无变形魔法粒子漂浮零件；保留宝马设计真实工具重力金属接触悬架物理湿漆；同款巨型轮装不上→扩轮眉→成功装上；灰→深红喷漆；最后钥匙启动加速冲镜头→硬切黑；无文字 UI 投影传送 VFX。",
+    video_prompt: {
+      title: "BMW → OFF-ROAD RALLY TRANSFORMATION",
+      subtitle: "10s · 16:9 · Seedance 2.0 · First-Person Mechanic POV · ASMR Fast Edit",
+      content: `Create a 10-second ultra-photorealistic BMW rally transformation video, 16:9, in one sterile white workshop. Same BMW throughout: factory GREY → finished deep RUBY RED. First-person mechanic POV, black gloves, fast premium ASMR editing, only real physical modifications, no morphing, magic, particles or floating parts. Start with stock grey BMW; remove front wheel → roll in one huge all-terrain wheel and try to install it, but it physically cannot fit the stock arch → mark a larger arch with a mechanical compass → cut the fender → install reinforced wide-track subframe, long-travel suspension, huge brakes and riveted widebody flare → return the EXACT SAME oversized wheel and install it successfully → replace bumpers with aggressive rally bodywork, skid plate, vented hood, LED rally lights, rear protection, performance exhaust and compact spoiler → apply black window tint → lower the lift, suspension compresses and settles into a high wide Safari stance → show completed modified BMW still grey → physically spray-paint the entire car deep RUBY/CRIMSON RED, apply clear coat and polish → final low front 3/4 hero shot: black-gloved hand presses BMW key, engine starts, suspension shudders, LED headlights switch on, huge tires rotate and the red BMW violently accelerates straight toward camera → hard cut to black. Preserve recognizable BMW design, realistic tools, gravity, metal contact, suspension physics and wet paint. No text, UI, projections, teleportation or VFX.`,
+    },
+  },
+  {
+    id: "joshesye-colorcard-outfit-change",
+    title: "陶阿狗色卡变装 · 行者AI拆解",
+    subtitle: "X · @joshesye · Codex 生图 + Seedance/H3/Wan 3.0 图生视频 · 11秒 · 9:16",
+    description:
+      "行者AI视频拆解陶阿狗君色卡变装：小红书找穿搭参考 → 模特图+场景参考 → Codex 批量出主场景静帧与四张换装分镜（色卡随新穿搭重绘）→ 确认后图生视频（Seedance / H3 / Wan 3.0）。流程分四个阶段：批量生图（主场景+4套换装分镜，色卡按新穿搭配色）、单张调整（用 {{Image}} 参考）、图生视频（参考视频+已确认分镜）、可选 Agent 一揽子（先拆结构分镜→生图确认→再生成视频，也可接 Hypit / 即梦 CLI）。",
+    video: "/tutorials/joshesye-colorcard-outfit-change/demo-web.mp4",
+    poster: "/tutorials/joshesye-colorcard-outfit-change/poster.jpg",
+    duration: "11秒",
+    shots: 4,
+    references: 4,
+    model: "Seedance / H3 / Wan 3.0",
+    style: "色卡变装 Lookbook · 垂直 9:16",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/joshesye/status/2102406681476956299",
+    sourceAuthor: "@joshesye",
+    sourcePlatform: "X",
+    sourceImpressions: 38021,
+    tags: [
+      "11秒 · 色卡变装",
+      "9:16 竖屏",
+      "Codex 生图",
+      "Seedance",
+      "H3",
+      "Wan 3.0",
+      "多巴胺穿搭",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "收集穿搭与参考",
+        description:
+          "小红书搜「秋季多巴胺穿搭」保存喜欢的搭配；准备模特图（可含三视图）与原视频截图（姿势/站位/构图比例）。",
+      },
+      {
+        number: 2,
+        title: "批量出图（主场景 + 4 换装分镜）",
+        description:
+          "用 references_detail[1] 批量生图提示词：［模特图］定脸，［场景与分镜参考图］定姿势构图，［穿搭参考图］换装；每张色卡按新穿搭配色重绘，保留位置与数量。也可单张用 references_detail[2] 单张调整提示词。",
+      },
+      {
+        number: 3,
+        title: "人工确认分镜",
+        description:
+          "检查人物是否变样、衣服是否对应、画面中人物大小位置、色卡是否已换成新配色。",
+      },
+      {
+        number: 4,
+        title: "图生视频",
+        description:
+          "用下方完整图生视频提示词 + 参考视频/已确认分镜。作者前期用 Seedance，后测 H3 / Wan 3.0。出片后检查顺序、转场脸、色卡与服装对应。",
+      },
+      {
+        number: 5,
+        title: "可选 Agent 一揽子",
+        description:
+          "references_detail[3] Agent 端到端提示词：先拆结构分镜→生图确认→再生成视频。也可接 Hypit / 即梦 CLI。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-joshesye-board",
+        number: "0",
+        title: "分镜板 · 色卡换装",
+        subtitle: "已确认分镜（含色卡新配色）",
+        image: "/tutorials/joshesye-colorcard-outfit-change/board.jpg",
+        prompt: "已确认的4张换装分镜静帧：每张图中的色卡按该张图的新穿搭配色重新生成，保留参考画面中色卡的位置和数量。",
+      },
+      {
+        id: "ref-joshesye-batch",
+        number: "1",
+        title: "批量生图提示词",
+        subtitle: "Codex 批量出主场景+4换装分镜",
+        image: "/tutorials/joshesye-colorcard-outfit-change/07_codex-batch-chat.png",
+        prompt: `请根据我上传的素材，生成一张主场景静帧和四张换装分镜图。用［模特图］确定人物长相，保持同一个人的五官、发型和身形比例。
+
+［场景与分镜参考图］用于参考姿势、动作、站位和构图。［穿搭参考图］用于更换服装，请先列出四张分镜各自对应哪套穿搭，确认后再出图。
+
+每张图中的色卡，请按该张图的新穿搭配色重新生成。保留对应参考画面中色卡的位置和数量。`,
+      },
+      {
+        id: "ref-joshesye-single",
+        number: "2",
+        title: "单张调整提示词",
+        subtitle: "Codex / canvas {{Image}} 单张换装",
+        image: "/tutorials/joshesye-colorcard-outfit-change/05_outfit-dopamine-refs.jpg",
+        prompt: `使用 {{Image}} 中的人物作为模特，穿上 {{Image 2}} 中的服装。
+
+人物的姿势、动作、站位和构图比例参考 {{Image 1}}，保持模特原有的五官、发型和身形比例。根据 {{Image 2}} 中的服装配色重新生成色卡，效果参考 {{Image 1}}，保留色卡的位置和数量。`,
+      },
+      {
+        id: "ref-joshesye-agent",
+        number: "3",
+        title: "Agent 端到端提示词",
+        subtitle: "先拆结构分镜→生图→再生成视频",
+        image: "/tutorials/joshesye-colorcard-outfit-change/01_article-cover.jpg",
+        prompt: `请参考我上传的色卡变装视频，先拆出视频结构与分镜，保留其中的镜头和景别安排。人物使用［模特图］，服装参考［穿搭图］重新搭配。［色卡参考图］只用于参考色卡的样式与排布，具体颜色要和新服装对应。先整理分镜与穿搭的对应关系，再生成图片。等我确认图片后，再继续生成视频。`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "第一段 · 首套穿搭：模特展示第一套服装，色卡显示对应配色。镜头运动与转场节奏保留参考视频原有风格。",
+      },
+      {
+        number: 2,
+        description:
+          "第二段 · 第二套穿搭：模特展示第二套服装，色卡切换为新配色。人物脸、发型和身形比例与第一段保持一致。",
+      },
+      {
+        number: 3,
+        description:
+          "第三段 · 第三套穿搭：模特展示第三套服装，色卡再次更新配色。背景、镜头运动与转场节奏与参考视频对应。",
+      },
+      {
+        number: 4,
+        description:
+          "第四段 · 第四套穿搭：模特展示最后一套服装，色卡显示最后一组配色。人物受光方向、明暗和阴影与场景匹配，边缘干净，无明显贴图感。",
+      },
+    ],
+    constraints:
+      "需要模特图/穿搭原图/原视频分镜截图（未单独发布，需自备或从文章配图/成片反推）；人物脸发型身形比例前后统一；四套服装按顺序出现；色卡使用已确认分镜新配色；受光方向明暗阴影与场景匹配边缘干净；转场顺序可能与参考视频不完全对齐需按片段重生成细调。",
+    video_prompt: {
+      title: "色卡变装图生视频",
+      subtitle: "11s · 9:16 · Seedance / H3 / Wan 3.0 · I2V",
+      content: `参考我上传的视频，将主体人物替换为［模特图］中的人物。尽量保留参考视频的背景、镜头运动和转场节奏，各段时长与原视频对应。人物的脸、发型和身形比例需要前后统一，以模特图为准。四套服装按［第一套穿搭图］、［第二套穿搭图］、［第三套穿搭图］、［第四套穿搭图］的顺序出现，对应参考视频中的四次造型展示。色卡使用已确认分镜中的新配色，与当前服装对应，位置和数量保持一致。人物的受光方向、明暗和阴影要与场景匹配，边缘干净，不要出现明显的贴图感。`,
+    },
+  },
+  {
     id: "codewithhajra-road-between-us-seedance",
     title: "我们之间的路——暴风雨中相遇的两个陌生人",
     subtitle: "X · @codewithhajra · Seedance 2.5 / OpenArt · 30秒 · 16:9",
