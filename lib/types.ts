@@ -30,21 +30,26 @@ export interface Tutorial {
   hook?: HookBreakdown;
 }
 
+export interface HookBeat {
+  /** 按成片真实结构起名，如「过程怎么推进」「成品揭晓」「几段怎么切换」「反转」「结尾怎么收」 */
+  title: string;
+  text: string;
+  /** 约第几秒（数字，秒），chip 可跳转播放器 */
+  at?: number;
+}
+
 export interface HookBreakdown {
-  /** 前 1–3 秒靠什么抓人（具体画面） */
+  /** 开场钩子：前 1–2 秒靠什么抓人（具体画面），固定第一张 */
   opening: string;
-  openingAt?: string;
-  /** 高潮 / 反转 */
-  peak: string;
-  /** 约第几秒，如 "约 6s" */
-  peakAt?: string;
-  /** 结尾怎么收 */
-  ending: string;
-  endingAt?: string;
+  openingAt?: number;
+  /** 中间 1–3 段，标题跟随成片真实结构；没有真反转就不写「反转」；结尾卡可选 */
+  beats: HookBeat[];
   /** 跟做时最该照抄的一点 */
   copyThis: string;
   /** 时间点为抽帧估计 */
   approx?: boolean;
+  /** 结构短标签，显示在标题下，如「过程推进 → 成品揭晓」 */
+  structure?: string;
 }
 
 /** 首页「按套路挑」筛选条的分类与顺序 */

@@ -2,24 +2,22 @@
 
 import type { HookBreakdown as Hook } from "@/lib/types";
 
-// 从「约 0–2s」「约 13s」里取第一个秒数，用于跳转播放器
-function firstSecond(at?: string): number | null {
-  const m = at?.match(/(\d+(?:\.\d+)?)/);
-  return m ? Number(m[1]) : null;
+// 秒数 → chip 文案；0 表示片头
+function formatAt(at: number): string {
+  return at === 0 ? "0s 起" : `约 ${at}s`;
 }
 
-function seek(at?: string) {
-  const s = firstSecond(at);
+function seek(at: number) {
   // 详情页第一个 <video> 即上方成片播放器；只改播放位置，不动播放器属性
   const video = document.querySelector("video");
-  if (s === null || !video) return;
-  video.currentTime = s;
+  if (!video) return;
+  video.currentTime = at;
   video.scrollIntoView({ behavior: "smooth", block: "center" });
   video.play().catch(() => {});
 }
 
-function TimeChip({ at }: { at?: string }) {
-  if (!at) return null;
+function TimeChip({ at }: { at?: number }) {
+  if (at === undefined || at === null) return null;
   return (
     <button
       type="button"
@@ -30,16 +28,24 @@ function TimeChip({ at }: { at?: string }) {
       <svg viewBox="0 0 12 12" className="w-2.5 h-2.5" fill="currentColor" aria-hidden="true">
         <path d="M3 1.8v8.4L10 6z" />
       </svg>
-      {at}
+      {formatAt(at)}
     </button>
   );
 }
 
+// 卡片总数 2–4：桌面横排，手机堆叠（Tailwind 需完整类名）
+const GRID_COLS: Record<number, string> = {
+  1: "grid-cols-1",
+  2: "grid-cols-1 md:grid-cols-2",
+  3: "grid-cols-1 md:grid-cols-3",
+  4: "grid-cols-1 md:grid-cols-2 lg:grid-cols-4",
+};
+
 export function HookBreakdown({ hook }: { hook: Hook }) {
-  const beats = [
-    { label: "开场钩子", at: hook.openingAt, text: hook.opening },
-    { label: "高潮 · 反转", at: hook.peakAt, text: hook.peak },
-    { label: "结尾怎么收", at: hook.endingAt, text: hook.ending },
+  // 开场钩子固定在第一张；中间按成片真实结构 1–3 段
+  const cards = [
+    { title: "开场钩子", at: hook.openingAt, text: hook.opening },
+    ...hook.beats.slice(0, 3),
   ];
 
   return (
@@ -52,22 +58,28 @@ export function HookBreakdown({ hook }: { hook: Hook }) {
           </span>
         )}
       </div>
+      {hook.structure && (
+        <p className="text-[13px] text-[#d6d3d1] mb-1 break-words">
+          <span className="text-[var(--accent)] font-semibold">结构：</span>
+          {hook.structure}
+        </p>
+      )}
       <p className="text-[var(--muted)] text-sm mb-4">
         看完成片再对照:这条片子靠什么在几秒内抓住人。点时间可跳到成片对应位置。
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-        {beats.map((beat) => (
+      <div className={`grid ${GRID_COLS[cards.length] ?? GRID_COLS[4]} gap-3`}>
+        {cards.map((card, i) => (
           <div
-            key={beat.label}
+            key={`${i}-${card.title}`}
             className="bg-[var(--panel)] border border-[var(--line)] rounded-[var(--radius)] p-4 pb-3.5 min-w-0"
           >
-            <div className="flex items-center justify-between gap-2 mb-2">
-              <h3 className="text-[15px] font-bold">{beat.label}</h3>
-              <TimeChip at={beat.at} />
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <h3 className="text-[15px] font-bold min-w-0 break-words">{card.title}</h3>
+              <TimeChip at={card.at} />
             </div>
             <p className="text-[#d6d3d1] text-[13px] leading-relaxed break-words">
-              {beat.text}
+              {card.text}
             </p>
           </div>
         ))}
