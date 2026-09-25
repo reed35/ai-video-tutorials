@@ -2,6 +2,906 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "diplomeme-front-row-girl-seedance-2-5",
+    title: "前排女孩与歌手的瞬间对视 · Seedance 2.5",
+    subtitle: "X · @Diplomeme · Seedance 2.5 · Flovaai · 30秒 · 16:9",
+    description:
+      "Diplomeme 创作的 Seedance 2.5 演唱会第一人称手机自拍：一位前排女观众用手机记录与虚构男歌手的短暂对视瞬间。全片用真实手机质感拍摄——前置自拍与后置镜头快速翻转、自然抖动、失焦呼吸、曝光泵动、偶尔裁脸与手指误入、滚动快门。舞台红白灯光、烟雾、密集人群、不断进画的手机。从兴奋自拍到变焦追歌手、短暂对视、失控反应、黑场手机灯海、灯光爆发、沿台边跟拍，最后举高手机录制。提示词开头标注9:16，但实际发布成片为16:9横屏；本包按实际媒体保持16:9，诚实注明画幅不一致。",
+    video: "/tutorials/diplomeme-front-row-girl-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/diplomeme-front-row-girl-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    shots: 12,
+    references: 5,
+    model: "Seedance 2.5",
+    style: "手机第一人称演唱会自拍 · 真实手机质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Diplomeme/status/2102613869365772296",
+    sourceAuthor: "@Diplomeme",
+    sourcePlatform: "X",
+    sourceImpressions: 182,
+    tags: [
+      "30秒 · 演唱会",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "Flovaai",
+      "手机自拍",
+      "前排对视",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解真实手机拍摄质感的核心约束",
+        description:
+          "本片的价值在于完整复刻真实手机演唱会录像：CAMERA段落定义前后置镜头翻转、自然手臂运动、手持抖动、构图不完美、偶尔裁脸、自动对焦/曝光呼吸、滚动快门、手指误入；VISUAL CHARACTER段落要求高ISO噪点、数码锐化、压缩失真、运动模糊和曝光泵动。明确排除云台、无人机和专业演唱会摄影。不要在跟随时先删除这些'瑕疵'段落，因为它们正是真实感的来源。",
+      },
+      {
+        number: 2,
+        title: "锁定角色与场景的持续一致性",
+        description:
+          "CHARACTER锁定女观众（20多岁、长黑发、金色圈耳环、黑色演唱会装+皮夹克）和虚构男歌手（原创外观、深色卷发、短胡须、黑色舞台装）；SETTING锁定夜间体育场、前排护栏、红白灯光、烟雾、密集人群。CONTINUITY段落要求同一女孩、服装、首饰、位置、歌手和手机；前后置镜头切换必须有物理动机（翻手机）；人群逐渐混乱、头发和衣服自然凌乱。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词并注意画幅不一致",
+        description:
+          "使用下方完整 30 秒提示词（含 STORY 的 12 个 2.5 秒节拍、CAMERA、CHARACTER、SETTING、LIGHTING、HUMAN PERFORMANCE、AUDIO、VISUAL CHARACTER、CONTINUITY 和 NO 清单）。注意：提示词开头标注 9:16 竖屏，但作者 X 发布视频实际为 1280×720、16:9 横屏。本包按实际媒体保持 16:9 并诚实注明；若需竖屏效果请根据自己目标调整。生成后检查两条硬连续性：前后置镜头翻转有物理动机、女孩和歌手外观一致；以及节拍对照 refs/ 成片截帧（非作者参考图）。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-front-row-frame-01",
+        number: "1",
+        title: "开场前排自拍",
+        subtitle: "t≈0s · 前置自拍",
+        image: "/tutorials/diplomeme-front-row-girl-seedance-2-5/refs/film-frame-01.jpg",
+        prompt: "成片截帧（非作者参考图/角色卡）：女孩在前排护栏前举手臂自拍，背后可见舞台和人群；她兴奋喊话'I'M SO CLOSE!'。从作者发布视频抽帧，仅作跟随拆解；不是角色卡/参考图。",
+      },
+      {
+        id: "ref-front-row-frame-02",
+        number: "2",
+        title: "翻到后置拍歌手",
+        subtitle: "t≈6s · 后置镜头变焦",
+        image: "/tutorials/diplomeme-front-row-girl-seedance-2-5/refs/film-frame-02.jpg",
+        prompt: "成片截帧（非作者参考图/角色卡）：翻到后置镜头，数码变焦拍摄虚构歌手接近舞台边缘，红色灯光照亮，手机微抖并失焦。从作者发布视频抽帧，仅作跟随拆解；不是角色卡/参考图。",
+      },
+      {
+        id: "ref-front-row-frame-03",
+        number: "3",
+        title: "对视瞬间与反应",
+        subtitle: "t≈12s · 短暂对视",
+        image: "/tutorials/diplomeme-front-row-girl-seedance-2-5/refs/film-frame-03.jpg",
+        prompt: "成片截帧（非作者参考图/角色卡）：虚构歌手看向前排区域，短暂对视后女孩翻回前置自拍，失控大笑，红色舞台光照亮一侧脸，头发凌乱。从作者发布视频抽帧，仅作跟随拆解；不是角色卡/参考图。",
+      },
+      {
+        id: "ref-front-row-frame-04",
+        number: "4",
+        title: "灯光爆发与追拍",
+        subtitle: "t≈18s · 红白光爆发",
+        image: "/tutorials/diplomeme-front-row-girl-seedance-2-5/refs/film-frame-04.jpg",
+        prompt: "成片截帧（非作者参考图/角色卡）：舞台红白灯光爆发，虚构歌手站在前台，女孩举高手机拍摄，画面短暂过曝。从作者发布视频抽帧，仅作跟随拆解；不是角色卡/参考图。",
+      },
+      {
+        id: "ref-front-row-frame-05",
+        number: "5",
+        title: "收尾举高录制",
+        subtitle: "t≈24s · 最后举高",
+        image: "/tutorials/diplomeme-front-row-girl-seedance-2-5/refs/film-frame-05.jpg",
+        prompt: "成片截帧（非作者参考图/角色卡）：女孩与朋友在前排举高手机录制，红色灯光下虚构歌手在舞台中央，手部和其他手机部分遮挡画面，最后手机因跳跃突然下落。从作者发布视频抽帧，仅作跟随拆解；不是角色卡/参考图。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:02.5 自拍开场：前置自拍，她已在前排，直视镜头微笑。头发随人群和舞台风扇飘动。她举起一只手臂兴奋尖叫：'I'M SO CLOSE!'。背后可见舞台。",
+      },
+      {
+        number: 2,
+        description:
+          "00:02.5–00:05 歌手出现：快速翻到后置镜头。虚构歌手走向舞台前沿。巨大红光照亮他。手机挣扎曝光场景。她的手因兴奋而抖动。几部观众手机出现在镜头前。",
+      },
+      {
+        number: 3,
+        description:
+          "00:05–00:07.5 拉近：她数码变焦拍虚构歌手。他接近舞台边缘。镜头短暂失焦。重新锁定他。他只有几米远。女人在画外尖叫。",
+      },
+      {
+        number: 4,
+        description:
+          "00:07.5–00:10 翻回自拍：翻回前置。她失控大笑尖叫。眼睛睁大兴奋。背后人群跳跃。她微微侧转镜头，试图同时框入自己和舞台。",
+      },
+      {
+        number: 5,
+        description:
+          "00:10–00:12.5 演出时刻：后置镜头。虚构歌手直接对前排表演。他把麦克风朝向观众。人群跟唱。手机因她跳跃剧烈抖动。一只举起的手臂短暂遮挡整个画面。",
+      },
+      {
+        number: 6,
+        description:
+          "00:12.5–00:15 眼神接触：她把手机绕过遮挡物。虚构歌手再次可见。他直视前排区域。短暂瞬间，他似乎与她对视。手机变得出奇稳定。她冻结半秒。然后尖叫。",
+      },
+      {
+        number: 7,
+        description:
+          "00:15–00:17.5 混乱反应：前置镜头。她把镜头转回自己。她失控大笑。头发凌乱。红色舞台光照亮她一侧脸。她喊道：'NO WAY!'。镜头剧烈抖动。",
+      },
+      {
+        number: 8,
+        description:
+          "00:17.5–00:20 黑场手机灯海：后置镜头。舞台突然黑暗。全场数千手机闪光灯亮起。镜头缓慢扫过观众。粉丝一起唱歌。她的呼吸和笑声靠近麦克风清晰可闻。",
+      },
+      {
+        number: 9,
+        description:
+          "00:20–00:22.5 灯光爆发：舞台突然爆发强烈红白光。虚构歌手出现在舞台前沿。人群爆发。她举高手机。画面短暂过曝。",
+      },
+      {
+        number: 10,
+        description:
+          "00:22.5–00:25 前排追拍：虚构歌手直接沿舞台边缘走。镜头跟随他。粉丝向他伸手。下方可见保安。她的手机在手、手机和表演者之间挣扎对焦。自然运动模糊。",
+      },
+      {
+        number: 11,
+        description:
+          "00:25–00:27.5 自拍反应：翻回前置。她完全不知所措，大笑喊叫同时试图喘气。背后朋友可见。所有人都在尖叫。肩膀上方舞台依然可见。",
+      },
+      {
+        number: 12,
+        description:
+          "00:27.5–00:30 最后录制：后置镜头。虚构歌手站在巨大红光下。护栏后数千手机发光。女人尽可能举高手机。画面倾斜。手部部分遮挡表演者。人群尖叫。手机因她跳跃突然稍微下落。录制突然结束。",
+      },
+    ],
+    constraints:
+      "提示词标注9:16但实际发布为16:9（本包按实际媒体诚实保留）；手机前后置翻转需有物理动机；手持抖动/失焦/曝光泵动/高ISO/数码锐化/压缩失真/滚动快门保留真实感；排除云台/无人机/专业摄影；女孩和虚构歌手外观/服装/首饰全程一致；原始手机声音（人群/歌手/低音失真/削波/呼吸笑声），无后配乐；作者未公开角色卡/参考图/negative prompt/seed/UI参数；Flovaai具体设置未披露。",
+    video_prompt: {
+      title: "FRONT ROW GIRL",
+      subtitle: "30s · 9:16 (prompt) / 16:9 (actual) · Seedance 2.5 · Smartphone Concert POV",
+      content: `"FRONT ROW GIRL"
+30 SECONDS | 9:16 | PHOTOREALISTIC SMARTPHONE CONCERT VIDEO | SEEDANCE 2.5 | MULTISHOT
+CAMERA
+The entire video is captured on a modern smartphone by a beautiful young adult woman standing directly against the front-row barricade at a massive sold-out concert featuring a fictional male singer.
+It feels like authentic personal phone footage uploaded immediately after the concert.
+Front-facing selfie camera mixed with quick flips to the rear camera.
+Natural arm movement.
+Handheld shake.
+Imperfect framing.
+Occasional face cropping.
+Autofocus hunting.
+Exposure pumping from intense stage lights.
+Digital sharpening.
+High-ISO noise in dark areas.
+Rolling-shutter distortion during fast movement.
+Accidental fingers near the lens.
+No professional camera.
+No cinematic gimbal.
+No drone.
+No polished concert-film cinematography.
+CHARACTER
+YOUNG WOMAN:
+Beautiful adult woman in her 20s.
+Long dark hair.
+Natural attractive facial features.
+Minimal glamorous concert makeup.
+Gold hoop earrings.
+Simple necklace.
+Fitted black concert outfit with a stylish leather jacket.
+She looks like a real concertgoer, not a professional model.
+Natural skin texture.
+Slight perspiration from the heat and crowd.
+Her hair becomes increasingly messy as she moves and dances.
+She is genuinely excited to be seeing the fictional headliner from the front row.
+FICTIONAL HEADLINER:
+Original male singer in his late 20s.
+Dark curly hair.
+Short beard.
+Black layered stage outfit.
+Distinctive but completely original appearance.
+Handheld microphone.
+Confident live-performance presence.
+He performs directly toward the front-row audience.
+Do not resemble any real-world singer or celebrity.
+SETTING
+Massive sold-out stadium concert at night.
+She is standing directly against the barricade.
+The stage is only a few meters away.
+The fictional singer is performing directly in front of her.
+Thousands of fans behind her.
+Hands and smartphones constantly entering the frame.
+Security personnel between the barricade and stage.
+Huge LED screens.
+Deep red stage lighting.
+White spotlights.
+Heavy atmospheric haze.
+Smoke drifting through the stage lights.
+The entire environment feels loud, crowded and physically overwhelming.
+STORY
+00:00–00:02.5 — SELFIE
+Front-facing smartphone camera.
+She is already in the front row, smiling directly into the camera.
+Her hair moves from the crowd and stage fans.
+She raises one arm and screams excitedly:
+"I'M SO CLOSE!"
+The stage is visible behind her.
+
+00:02.5–00:05 — THE SINGER APPEARS
+She quickly flips the camera to the rear camera.
+The fictional singer walks toward the front of the stage.
+Massive red lights illuminate him.
+The phone struggles to expose the scene.
+Her hand shakes from excitement.
+Several fans' phones appear in front of the lens.
+
+00:05–00:07.5 — CLOSE
+She digitally zooms toward the fictional singer.
+He approaches the edge of the stage.
+The camera briefly loses focus.
+It locks back onto him.
+He is only a few meters away.
+The woman screams off-camera.
+
+00:07.5–00:10 — BACK TO SELFIE
+The phone flips back to her face.
+She is laughing and screaming.
+Her eyes are wide with excitement.
+The crowd behind her is jumping.
+She turns the camera slightly sideways, trying to fit herself and the stage into the same frame.
+
+00:10–00:12.5 — THE PERFORMANCE
+Rear camera again.
+The fictional singer performs directly toward the front row.
+He holds the microphone toward the audience.
+The crowd sings along.
+The phone shakes heavily as she jumps.
+A raised arm briefly blocks the entire frame.
+
+00:12.5–00:15 — EYE CONTACT
+She moves the phone around the obstruction.
+The fictional singer becomes visible again.
+He looks directly toward the front-row section.
+For a brief moment, he appears to make eye contact with her.
+The phone becomes surprisingly steady.
+She freezes for half a second.
+Then screams.
+
+00:15–00:17.5 — CHAOS
+Front-facing camera.
+She turns the camera back toward herself.
+She is laughing uncontrollably.
+Her hair is messy.
+Red stage light illuminates one side of her face.
+She shouts:
+"NO WAY!"
+The camera shakes violently.
+
+00:17.5–00:20 — LIGHTS OUT
+Rear camera.
+The stage suddenly goes dark.
+Thousands of phone flashlights appear throughout the stadium.
+The camera slowly moves across the audience.
+Fans are singing together.
+Her breathing and laughter are audible close to the microphone.
+
+00:20–00:22.5 — LIGHT EXPLOSION
+The stage suddenly erupts in intense red and white light.
+The fictional singer appears at the front of the stage.
+The crowd explodes.
+She raises her phone higher.
+The image briefly becomes overexposed.
+
+00:22.5–00:25 — FRONT ROW
+The fictional singer walks directly along the edge of the stage.
+The camera follows him.
+Fans reach toward him.
+Security is visible below.
+Her phone struggles to focus between hands, phones and the performer.
+Natural motion blur.
+
+00:25–00:27.5 — SELFIE REACTION
+The phone flips back to her.
+She is completely overwhelmed, laughing and shouting while trying to catch her breath.
+Her friends are visible behind her.
+Everyone is screaming.
+The stage remains visible over her shoulder.
+
+00:27.5–00:30 — FINAL RECORDING
+Rear camera.
+The fictional singer stands beneath enormous red lights.
+Thousands of phones glow behind the barricade.
+The woman holds her phone as high as possible.
+The frame is tilted.
+Hands partially block the performer.
+The crowd screams.
+The phone suddenly drops slightly as she jumps.
+The recording ends abruptly.
+LIGHTING
+Authentic live-concert lighting.
+Deep red dominant lighting.
+White spotlights.
+Dark shadows.
+LED screen illumination.
+Strong backlighting.
+Stage haze.
+Occasional lens flare.
+Bright lights causing temporary smartphone exposure clipping.
+Natural skin tones whenever lighting allows.
+No beauty lighting.
+HUMAN PERFORMANCE
+The woman must behave like a genuine excited fan.
+She laughs.
+She screams.
+She dances.
+She loses her framing.
+She forgets the camera is recording.
+She reacts naturally to the fictional singer.
+She does not constantly pose.
+She does not behave like an influencer filming an advertisement.
+The surrounding crowd behaves independently.
+AUDIO
+RAW SMARTPHONE AUDIO.
+Massive crowd screaming.
+Fans singing.
+The fictional singer's amplified voice.
+Heavy bass distortion.
+Microphone clipping.
+Nearby fans shouting.
+The woman's laughter and screaming close to the microphone.
+Occasional muffled audio when the phone moves against clothing or another person.
+No studio-quality vocals.
+No added soundtrack.
+No cinematic sound design.
+VISUAL CHARACTER
+Photorealistic modern smartphone footage.
+Natural smartphone HDR.
+High-ISO noise.
+Digital sharpening.
+Subtle compression artifacts.
+Rolling-shutter distortion.
+Autofocus hunting.
+Exposure pumping.
+Natural motion blur.
+Occasional blown highlights.
+Realistic skin texture.
+Realistic hair movement.
+No beauty-filter smoothing.
+No plastic skin.
+No perfect framing.
+No professional camera look.
+The footage should look indistinguishable from a real fan's concert video.
+CONTINUITY
+Same woman throughout.
+Same hairstyle.
+Same outfit.
+Same jewelry.
+Same concert.
+Same front-row position.
+The phone remains the only recording device.
+The fictional singer remains consistent.
+Selfie camera and rear camera transitions must feel physically motivated by the woman flipping her phone.
+The crowd becomes progressively more chaotic as the performance intensifies.
+The woman's hair and clothing become naturally more disheveled from dancing and crowd movement.
+NO MUSIC VIDEO.
+NO PROFESSIONAL CONCERT FILM.
+NO MODEL POSES.
+NO STAGED REACTIONS.
+NO PERFECT CAMERA MOVEMENT.
+NO AI-SLOP.`,
+    },
+  },
+  {
+    id: "geekcatx-whitemodel-greenscreen-h3",
+    title: "白模绿幕抠像 · 动作复刻 · MiniMax H3",
+    subtitle: "X · @GeekCatX · MiniMax H3 · 8秒 · 16:9",
+    description:
+      "知识猫AI实验室创作的 MiniMax H3 白模绿幕输出：以作者未公开的上传参考视频 Video 1 作为唯一动作来源，逐帧复刻主体动作、节奏与构图，生成纯 #00B140 绿幕背景上的白模（哑光浅灰白#E6E6E6）并保留原始音频，便于后期抠像。白模是未上色的有机雕塑，去掉眼睛、五官、毛发纹理、衣物和花纹，但保留轮廓、比例和肌肉起伏。动作要求每帧姿态与原视频同一时刻一致，节奏卡点重合。绿幕规范要求纯色均匀无渐变、无投影、无溢色、边缘清晰。镜头与画面逐帧匹配原视频，使用均匀柔和正面光。",
+    video: "/tutorials/geekcatx-whitemodel-greenscreen-h3/demo-web.mp4",
+    poster: "/tutorials/geekcatx-whitemodel-greenscreen-h3/poster.jpg",
+    duration: "8秒",
+    shots: 1,
+    references: 4,
+    model: "MiniMax H3",
+    style: "白模绿幕抠像 · 动作复刻",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/GeekCatX/status/2103055823928995843",
+    sourceAuthor: "@GeekCatX",
+    sourcePlatform: "X",
+    sourceImpressions: 2350,
+    tags: [
+      "8秒 · 白模绿幕",
+      "16:9 横屏",
+      "MiniMax H3",
+      "动作复刻",
+      "绿幕抠像",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解输入与输出的关系",
+        description:
+          "本片是 OUTPUT 演示，不是输入教程。作者上传了未公开的参考视频 Video 1 作为动作来源，MiniMax H3 将主体转换为白模并放在纯绿幕背景前。提示词中的 <Video 1> 标记保留，表示需要你自己准备参考视频。白模是未上色的有机雕塑（哑光浅灰白 #E6E6E6），去掉眼睛/五官/毛发纹理/衣物/花纹/颜色，但保留轮廓/比例/体态/肌肉起伏。",
+      },
+      {
+        number: 2,
+        title: "准备参考视频与 MiniMax H3",
+        description:
+          "准备你自己的参考视频作为动作来源（作者未公开 Video 1）。使用 MiniMax H3 平台。提示词要求：动作要求每帧姿态、朝向、重心与原视频同一时刻一致，保留柔韧性和自然形变，节奏卡点重合。绿幕规范：背景纯色 #00B140，亮度均匀无渐变/暗角/地平线/地面纹理；无投影/光遮蔽暗区；主体无绿色反光/溢色/绿边/半透明/拖影；细长部位（耳朵/尾巴/翅膀边缘/手指）边缘清晰。镜头与画面逐帧匹配原视频，用均匀柔和正面光。音频完整保留参考视频原始音频，不替换/不重新生成，严格同步画面。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词并上传参考视频",
+        description:
+          "使用下方完整中文提示词（保留 <Video 1> 标记）。上传你准备的参考视频。禁止：机械关节/球形关节/拼接缝/分段结构/机器人/木偶/人偶/玩具/低多边形；僵硬动作；保留原场景和文字；出现五官/毛发纹理/衣物；背景出现绿色以外的颜色。检查输出：主体动作逐帧匹配参考视频；白模材质哑光浅灰白无接缝；背景纯色 #00B140 均匀无渐变；边缘清晰无溢色；原始音频保留。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-geekcatx-still-01",
+        number: "1",
+        title: "早期动作节拍",
+        subtitle: "t≈1s · 成片截帧",
+        image: "/tutorials/geekcatx-whitemodel-greenscreen-h3/refs/still-01.jpg",
+        prompt: "成片截帧（非角色卡）：约1秒动作节拍，白模主体在纯绿幕背景前，哑光浅灰白材质，无五官/毛发纹理/衣物，保留轮廓和比例。",
+      },
+      {
+        id: "ref-geekcatx-still-02",
+        number: "2",
+        title: "中段动作节拍",
+        subtitle: "t≈3s · 成片截帧",
+        image: "/tutorials/geekcatx-whitemodel-greenscreen-h3/refs/still-02.jpg",
+        prompt: "成片截帧（非角色卡）：约3秒动作节拍，白模主体动作变化，背景纯色 #00B140 均匀无渐变，边缘清晰无溢色。",
+      },
+      {
+        id: "ref-geekcatx-still-03",
+        number: "3",
+        title: "后段动作节拍",
+        subtitle: "t≈5s · 成片截帧",
+        image: "/tutorials/geekcatx-whitemodel-greenscreen-h3/refs/still-03.jpg",
+        prompt: "成片截帧（非角色卡）：约5秒动作节拍，展示白模动作的柔韧性和自然形变，脊柱弯曲/伸展收缩符合真实运动。",
+      },
+      {
+        id: "ref-geekcatx-still-04",
+        number: "4",
+        title: "收尾动作节拍",
+        subtitle: "t≈7s · 成片截帧",
+        image: "/tutorials/geekcatx-whitemodel-greenscreen-h3/refs/still-04.jpg",
+        prompt: "成片截帧（非角色卡）：约7秒动作节拍，白模完成动作序列，细长部位（手指等）边缘清晰，无拼接缝/机械关节感。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "完整 8 秒：白模主体按照上传参考视频 Video 1 的动作序列，在纯 #00B140 绿幕背景前逐帧复刻每个姿态、朝向、重心变化。白模为哑光浅灰白色（#E6E6E6）一体成型有机雕塑，表面平滑无接缝，去掉眼睛、五官、毛发纹理、衣物、花纹和颜色，但保留原主体的轮廓、比例、体态和肌肉起伏。动作柔韧自然，脊柱弯曲、伸展收缩、落地缓冲等形变真实。背景整片纯色 #00B140，亮度均匀无渐变/暗角/地平线/地面纹理，无投影和光遮蔽暗区。主体边缘清晰无绿色反光/溢色/绿边/半透明/拖影，细长部位（手指/耳朵等）边缘精确。镜头机位、景别、运动、构图、画幅比例与原视频逐帧一致，使用均匀柔和正面光。完整保留参考视频原始音频，与画面严格同步。",
+      },
+    ],
+    constraints:
+      "需要自备参考视频 Video 1（作者未公开输入）；白模哑光浅灰白 #E6E6E6 无接缝；去掉五官/毛发纹理/衣物/花纹/颜色；保留轮廓/比例/体态/肌肉起伏；动作每帧与原视频同一时刻一致，保留柔韧性和自然形变；背景纯色 #00B140 均匀无渐变/暗角/投影；边缘清晰无溢色/绿边；镜头逐帧匹配原视频；保留原始音频严格同步；禁止机械关节/拼接缝/僵硬动作/保留原场景。",
+    video_prompt: {
+      title: "白模绿幕提示词",
+      subtitle: "MiniMax H3 · 白模绿幕动作复刻 · 中文完整提示词",
+      content: `白模绿幕提示词
+
+请以我上传的参考视频<Video 1>为唯一动作来源，将【转换主体】转换为3D白模，放在纯绿幕背景前，完美复刻原视频中每个主体的位置、动作、节奏卡点、运动轨迹和镜头构图,方便后期抠像。
+
+【白模形象】
+白模是未上色的一体成型有机雕塑，材质为哑光浅灰白色（接近#E6E6E6）：表面平滑无接缝，身体各部分自然过渡；去掉眼睛、五官、毛发纹理、羽毛、衣物、花纹和颜色；保留主体原有的轮廓、比例、体态和肌肉起伏，一眼能认出是什么主体。有毛动物保留毛发撑出的外轮廓体积，只去掉毛发纹理。主体的数量和种类与原视频一一对应。
+
+【动作要求】
+- 每一帧的姿态、朝向、重心，以及四肢、尾巴、翅膀的位置，都与原视频同一时刻一致；
+- 保留动作的柔韧性和自然形变（脊柱弯曲、伸展收缩、落地缓冲、尾巴甩动）；
+- 节奏卡点完全重合，主体之间的位置和遮挡关系与原视频一致。
+
+【绿幕规范】
+- 背景整片是纯色色键绿（#00B140），亮度均匀，无渐变、无暗角、无地平线、无地面纹理；
+- 背景上没有投影，也没有环境光遮蔽造成的暗区；
+- 主体身上没有绿色反光或溢色，边缘没有绿边、半透明或拖影；
+- 耳朵、尾巴、翅膀边缘、手指等细长部位也要边缘清晰。
+
+【镜头与画面】
+机位、景别、镜头运动、构图、画幅比例、时长和帧率与原视频逐帧一致，用均匀柔和的正面光。
+
+【音频要求】
+完整保留参考视频的原始音频，不替换、不重新生成，与画面严格同步。
+
+【禁止】
+不得出现机械关节、球形关节、拼接缝、分段结构，也不能有机器人、木偶、人偶、玩具或低多边形的感觉；动作不能僵硬；不得保留原场景和文字；不得出现五官、毛发纹理、衣物；背景不得出现绿色以外的任何颜色。`,
+    },
+  },
+  {
+    id: "iqrasaifi-baroque-photoshoot-seedance",
+    title: "鎏金巴洛克聚光高定十姿 · Seedance 2.5",
+    subtitle: "X · @IqrasaifiAI · Seedance 2.5 · 15秒 · 16:9",
+    description:
+      "Iqra Saifi 创作的 Seedance 2.5 高级时装摄影短片：鎏金巴洛克厅堂中的十种姿态，以强烈聚光灯穿过薄雾、节奏化摄影闪光，配合液态动作、运动匹配剪辑、光晕与轻微镜头遮挡。10个姿态包括：地面水平视角命令式站姿、极端侧脸手托下巴、俯拍贵妃榻流畅斜躺、前景手部首饰透视、低旋转角度快速翘腿、紧身特写手指描摹领口刺绣、回旋展示服装背面、肩部前倾后头部急转凝视、向上伸展聚光灯倾斜高调广角、最后直视镜头戏剧性凝视。提示词使用 [ ref] 占位符表示需要角色参考，但作者未公开发布角色图；refs/ 内全部为成片截帧。",
+    video: "/tutorials/iqrasaifi-baroque-photoshoot-seedance/demo-web.mp4",
+    poster: "/tutorials/iqrasaifi-baroque-photoshoot-seedance/poster.jpg",
+    duration: "15秒",
+    shots: 10,
+    references: 5,
+    model: "Seedance 2.5",
+    style: "高定时装摄影 · 十姿态巴洛克",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/IqrasaifiAI/status/2103273778440540415",
+    sourceAuthor: "@IqrasaifiAI",
+    sourcePlatform: "X",
+    sourceImpressions: 182,
+    tags: [
+      "15秒 · 时装摄影",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "巴洛克",
+      "高定十姿",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解十姿态节奏与光影控制",
+        description:
+          "本片核心是10个姿态的快速流畅切换（约1.5秒/姿态）与巴洛克光影美学。Setting 定义昏暗鎏金厅堂、天鹅绒帷幔、单一强烈聚光灯穿过薄雾、节奏化柔和摄影闪光。The 10 Poses 段落按顺序定义：地面水平视角命令式站姿 → 极端侧脸手托下巴特写 → 俯拍贵妃榻旋转镜头 → 前景手部首饰透视 → 低旋转角度快速翘腿 → 紧身特写手指描摹领口刺绣 → 回旋展示服装背面 → 肩部前倾后头部急转凝视 → 向上伸展聚光灯倾斜高调广角 → 最后直视镜头强烈表情。最后一句要求表演快速但液态流动，用运动匹配剪辑、光晕和轻微镜头遮挡平滑过渡。",
+      },
+      {
+        number: 2,
+        title: "准备角色参考（提示词占位符 [ ref]）",
+        description:
+          "提示词使用 '[ ref]' 占位符，表示需要角色参考。作者原帖未公开发布角色图或角色卡（唯一公开回复来自 @ichelpark 的纯文本互动评论，非作者自回复，无媒体）。refs/ 内 5 张图全部为成片截帧，明确标注'film frame, not character card'。若需复现，请准备你自己的角色参考图（成人角色、服装、配饰）并在提示词中附加或替换 [ ref] 占位符。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词到 Seedance 2.5",
+        description:
+          "使用下方完整英文提示词（含 Setting、The 10 Poses、最后过渡指令和独立句点）。平台未披露，但确认为 Seedance 2.5 模型。生成后检查两条核心：10个姿态按顺序完成且每个约1.5秒流畅切换；巴洛克鎏金墙面与天鹅绒帷幔光影、单一聚光灯穿过薄雾、节奏化摄影闪光营造高定摄影氛围。对照 refs/ 成片截帧（非角色卡）检查姿态1/2/3/7/10的关键画面与光影是否匹配。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-iqrasaifi-baroque-still-01",
+        number: "1",
+        title: "姿态1 — 命令式站姿",
+        subtitle: "t≈1.5s · 地面水平视角",
+        image: "/tutorials/iqrasaifi-baroque-photoshoot-seedance/refs/still-01-standing-floor-level.jpg",
+        prompt: "成片截帧（非角色卡）：姿态1 — 地面水平浮动广角视角拍摄的命令式站姿；film frame, not a character card.",
+      },
+      {
+        id: "ref-iqrasaifi-baroque-still-02",
+        number: "2",
+        title: "姿态2 — 极端侧脸手托下巴",
+        subtitle: "t≈4.5s · 特写",
+        image: "/tutorials/iqrasaifi-baroque-photoshoot-seedance/refs/still-02-chin-side-profile.jpg",
+        prompt: "成片截帧（非角色卡）：姿态2 — 一只手优雅托在下巴下，极端侧脸特写；film frame, not a character card.",
+      },
+      {
+        id: "ref-iqrasaifi-baroque-still-03",
+        number: "3",
+        title: "姿态3 — 俯拍贵妃榻斜躺",
+        subtitle: "t≈7.5s · 俯拍旋转",
+        image: "/tutorials/iqrasaifi-baroque-photoshoot-seedance/refs/still-03-chaise-overhead.jpg",
+        prompt: "成片截帧（非角色卡）：姿态3 — 贵妃榻上流畅斜躺，俯拍视角镜头缓慢旋转；film frame, not a character card.",
+      },
+      {
+        id: "ref-iqrasaifi-baroque-still-04",
+        number: "4",
+        title: "姿态7 — 回旋展示服装背面",
+        subtitle: "t≈10.5s · 背面回旋",
+        image: "/tutorials/iqrasaifi-baroque-photoshoot-seedance/refs/still-04-pirouette-back.jpg",
+        prompt: "成片截帧（非角色卡）：姿态7 — 缓慢刻意回旋离开镜头，展示服装背面；film frame, not a character card.",
+      },
+      {
+        id: "ref-iqrasaifi-baroque-still-05",
+        number: "5",
+        title: "姿态10 — 最后直视镜头戏剧性凝视",
+        subtitle: "t≈13.5s · 最后凝视",
+        image: "/tutorials/iqrasaifi-baroque-photoshoot-seedance/refs/still-05-final-camera-gaze.jpg",
+        prompt: "成片截帧（非角色卡）：姿态10 — 最后直视镜头的戏剧性凝视，强烈表情；film frame, not a character card.",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "姿态1（0–1.5s）：地面水平浮动广角视角拍摄的命令式站姿。",
+      },
+      {
+        number: 2,
+        description:
+          "姿态2（1.5–3s）：一只手优雅托在下巴下，极端侧脸特写。",
+      },
+      {
+        number: 3,
+        description:
+          "姿态3（3–4.5s）：贵妃榻上流畅斜躺，直接俯拍视角镜头缓慢旋转。",
+      },
+      {
+        number: 4,
+        description:
+          "姿态4（4.5–6s）：一只手向镜头伸展，首饰或手套细节通过透视占据前景主导。",
+      },
+      {
+        number: 5,
+        description:
+          "姿态5（6–7.5s）：快速优雅翘腿和调整裙摆，从低旋转角度拍摄。",
+      },
+      {
+        number: 6,
+        description:
+          "姿态6（7.5–9s）：指尖轻轻描摹领口精致刺绣，紧身特写镜头。",
+      },
+      {
+        number: 7,
+        description:
+          "姿态7（9–10.5s）：缓慢刻意回旋离开镜头，展示服装背面。",
+      },
+      {
+        number: 8,
+        description:
+          "姿态8（10.5–12s）：肩部引领向镜头前倾，随后头部急转凝视。",
+      },
+      {
+        number: 9,
+        description:
+          "姿态9（12–13.5s）：向聚光灯方向拉长向上伸展，尖锐倾斜高调广角镜头展现。",
+      },
+      {
+        number: 10,
+        description:
+          "姿态10（13.5–15s）：最后戏剧性直视镜头姿态，强烈表情。表演快速但液态流动。用运动匹配剪辑、光晕和轻微镜头遮挡平滑过渡。",
+      },
+    ],
+    constraints:
+      "需要角色参考替换 [ ref] 占位符（作者未公开角色图）；10个姿态按顺序约1.5秒/姿态流畅切换；昏暗鎏金巴洛克厅堂、天鹅绒帷幔；单一强烈聚光灯穿过薄雾；节奏化柔和摄影闪光；运动匹配剪辑、光晕、轻微镜头遮挡；refs/ 全部为成片截帧非角色卡；平台/UI/负面词/seed未披露。",
+    video_prompt: {
+      title: "Baroque Spotlight High-Fashion Photoshoot",
+      subtitle: "15s · 16:9 · Seedance 2.5 · 10 Poses · Editorial Film",
+      content: `Create a 15-second ethereal and high-fashion editorial film starring the adult character in [ ref]. Preserve their exact appearance, outfit, and accessories.
+Setting: A dimly lit baroque chamber with gilded walls and velvet drapery. A single, powerful spotlight illuminates the subject, cutting through the haze. Rhythmic, soft photographic flashes.
+The 10 Poses:
+A commanding standing pose, filmed from floor level with a gentle, floating wide-angle perspective.
+One hand resting gracefully beneath the chin, captured in an extreme side-profile close-up.
+A graceful, flowing recline on a chaise lounge, seen directly overhead as the camera slowly rotates.
+One hand extended toward the lens, the jewelry or glove detail dominating the foreground through foreshortening.
+A quick, elegant leg cross and adjustment of dress, captured from a low, swirling angle.
+Fingertips gently tracing the intricate embroidery of the collar, framed in a tight detail shot.
+A slow, deliberate pirouette away from the camera, revealing the back of the outfit.
+A forward lean toward the lens, leading with the shoulder, followed by the head turning sharply to gaze.
+An elongated upward reach toward the spotlight, revealed in a sharply tilted, high-key wide shot.
+A final, dramatic pose looking directly into the camera with an intense expression.
+Keep the performance fast but with a liquid flow. Transition smoothly with movement-matched cuts, light flares, and subtle lens occlusion.
+.`,
+    },
+  },
+  {
+    id: "krevix-interior-origami-gemini-omni",
+    title: "未完工空间的折纸焕新 · Gemini Omni",
+    subtitle: "X · @KrevixAi · Gemini Omni · 10秒 · 16:9",
+    description:
+      "Krevix 创作的 Gemini Omni 室内折纸变形短片：从作者公开的 Reference 1 未完工房间到 Reference 2 翻新后奢华空间，使用静态锁定第一人称 POV 镜头。黑手套手完成一次响指，然后大型建筑平面按顺序展开并生成地板 → 特色墙 → 内建家具 → 咖啡桌 → 扶手椅 → 主沙发 → 地毯 → 窗帘 → 装饰 → 灯光。硬折叠几何变形为真实石材、木材和金属，沙发和扶手椅可见软化为高级软包座垫并带真实重量和落位。大块冷静精确折叠，一次一件，真实物理和接触阴影，无纸板感/粒子/魔法/发光/飞行物体/额外手势或镜头运动；暖光完成并在最后一秒保持完整奢华空间。提示词写 luxury living room 但 Reference 2 和成片实际展示带床的卧室式空间；包内诚实保留原文不擅自改写。",
+    video: "/tutorials/krevix-interior-origami-gemini-omni/demo-web.mp4",
+    poster: "/tutorials/krevix-interior-origami-gemini-omni/poster.jpg",
+    duration: "10秒",
+    shots: 1,
+    references: 2,
+    model: "Gemini Omni",
+    style: "室内折纸变形 · 第一人称 POV",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/KrevixAi/status/2103165342570651828",
+    sourceAuthor: "@KrevixAi",
+    sourcePlatform: "X",
+    tags: [
+      "10秒 · 室内变形",
+      "16:9 横屏",
+      "Gemini Omni",
+      "折纸焕新",
+      "空间生成",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解输入图与有序空间生成",
+        description:
+          "本片需要两张真实输入图：Reference 1 未完工房间、Reference 2 翻新后房间（作者在自回复 2103165346735604031 中公开发布，已原样放在 pack/refs/）。提示词开头锁定'10-second ultra-photorealistic MONOLITHIC ORIGAMI transformation'，把成片类型、写实质感、核心折纸变形和10秒时长一次说清。输入锚点：exact unfinished room in Reference 1 → exact luxury living room in Reference 2（注：提示词写 luxury living room，但作者 Reference 2 与成片实际为带床的卧室式空间，包内诚实保留原文）。static locked first-person POV camera 固定视角避免镜头运动破坏前后对照。有序的空间生成：floor → feature walls → built-ins → coffee table → armchair → HERO sofa → rug → curtains → decor → lighting，one element at a time。",
+      },
+      {
+        number: 2,
+        title: "准备 Reference 1/2 与 Gemini Omni",
+        description:
+          "使用作者公开的 Reference 1（未完工房间）和 Reference 2（翻新后房间），已存放在 refs/ 目录。平台/工具：Gemini Omni（具体版本/参数/seed未披露）。提示词包含：触发动作（ONE finger snap，黑手套手，唯一启动手势）；材质与物理（折叠硬几何变为 stone/wood/metal；沙发/扶手椅软化为 upholstery/cushions，补上 weight、settling、realistic physics、contact shadows）；负向约束（no paper/cardboard look, particles, magic, glow, flying objects, extra gestures or camera movement，同时要求 calm、precise folds）；收尾与停留（最后暖光完成，并在最后一秒 hold exact completed room 给结尾留出展示停帧）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词并上传 Reference 1/2",
+        description:
+          "使用下方完整英文提示词（单句90词，含输入锚点、POV 镜头、响指触发、有序生成序列、材质变形、物理约束、负向清单和收尾停留）。上传 Reference 1 和 Reference 2 到 Gemini Omni 的 Create Video。生成后检查：0–1秒锁定未装修空间/第一人称构图/黑手套响指；1–7秒按顺序逐件展开（先地面墙体，再内建/桌椅/主沙发，最后地毯/窗帘/装饰/灯光，不同时所有物件爆发）；7–9秒检查材质从硬折面过渡到石材/木材/金属/软包，要求接触阴影/重量/落位；最后1秒暖光稳定/完整房间保持不动，对照 Reference 2 对齐程度。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-krevix-before",
+        number: "1",
+        title: "Reference 1 — 未完工房间",
+        subtitle: "真实参考图 · 作者自回复",
+        image: "/tutorials/krevix-interior-origami-gemini-omni/refs/ref-01-before-unfinished-room.jpg",
+        prompt: "真实参考图：Reference 1 未完工房间（作者自帖 self-reply 2103165346735604031 公开发布）。这是作者上传到 Gemini Omni 的 TRUE 输入参考图，不是成片截帧。",
+      },
+      {
+        id: "ref-krevix-after",
+        number: "2",
+        title: "Reference 2 — 翻新后房间",
+        subtitle: "真实参考图 · 作者自回复",
+        image: "/tutorials/krevix-interior-origami-gemini-omni/refs/ref-02-after-renovated-room.jpg",
+        prompt: "真实参考图：Reference 2 翻新后房间（作者自帖 self-reply 2103165346735604031 公开发布）。这是作者上传到 Gemini Omni 的 TRUE 输入参考图，不是成片截帧。注：提示词写 luxury living room，但此图与成片实际展示带床的卧室式空间；本包诚实保留原文，不擅自改写观察结果冒充作者。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "完整 10 秒：静态锁定第一人称 POV 镜头，从 Reference 1 未完工房间到 Reference 2 翻新后奢华空间的超写实单体折纸变形。黑手套手完成一次响指触发，然后大型高级建筑平面按顺序展开并生成：地板 → 特色墙 → 内建家具 → 咖啡桌 → 扶手椅 → 主沙发 → 地毯 → 窗帘 → 装饰 → 灯光，一次一件。硬折叠几何变形为真实石材、木材和金属；沙发和扶手椅可见软化为高级软包和座垫，带真实重量和落位。大块冷静精确折叠，真实物理和接触阴影。无纸/纸板感、粒子、魔法、发光、飞行物体、额外手势或镜头运动。暖光完成，最后一秒保持完整奢华空间（注：提示词写 luxury living room，实际为带床卧室式空间，诚实保留原文）。",
+      },
+    ],
+    constraints:
+      "需要作者公开的 Reference 1（未完工）和 Reference 2（翻新后）真实参考图；static locked first-person POV camera 固定视角；黑手套手一次响指触发；有序生成 floor → walls → built-ins → table → armchair → HERO sofa → rug → curtains → decor → lighting，一次一件；硬折叠几何变石材/木材/金属，沙发/扶手椅软化软包座垫带重量落位；大块冷静精确折叠；真实物理接触阴影；无纸板感/粒子/魔法/发光/飞行物体/额外手势/镜头运动；暖光完成最后1秒停留；提示词写 luxury living room 但实际为卧室式空间（诚实保留原文）；Gemini Omni 版本/参数/seed/帧率/音频设置未披露。",
+    video_prompt: {
+      title: "MONOLITHIC ORIGAMI INTERIOR TRANSFORMATION",
+      subtitle: "10s · 16:9 · Gemini Omni · Reference 1 + Reference 2 → Video",
+      content: `Create a 10-second ultra-photorealistic MONOLITHIC ORIGAMI transformation from the exact unfinished room in Reference 1 to the exact luxury living room in Reference 2, static locked first-person POV camera; a black-gloved hand performs ONE finger snap, then large premium architectural planes sequentially unfold and become the floor → feature walls → built-ins → coffee table → armchair → HERO sofa → rug → curtains → decor → lighting; hard folded geometry transforms into real stone, wood and metal, while the sofa and armchair visibly soften into premium upholstery and cushions with realistic weight and settling; large calm precise folds, one element at a time, realistic physics and contact shadows, no paper/cardboard look, particles, magic, glow, flying objects, extra gestures or camera movement; finish with warm light and hold the exact completed luxury living room for the final second.`,
+    },
+  },
+  {
+    id: "diplomeme-iphone18-pro-max-seedance-25",
+    title: "绛红手机的一日漫游广告 · Seedance 2.5",
+    subtitle: "X · @Diplomeme · Seedance 2.5 · OpenArt · 30秒 · 16:9",
+    description:
+      "Diplomeme 创作的 Seedance 2.5 高端 Apple 产品广告风格短片：一位年轻旅行者从清晨走到夜晚，持续用酒红色 iPhone 18 Pro Max 记录城市、食物、人、风景和夜景。30秒12个镜头beat：清晨窗边手机特写 → 早晨街道举机拍摄 → 繁忙路口跟拍录制 → 街头食物摊蒸汽场景 → 咖啡馆人物肖像 → 绿色阶梯山谷风景 → 金色阳光产品瞬间 → 高铁平台动作捕捉 → 蓝调时刻夜间过渡 → 河岸现代区倒影 → 夜间街区查看图片 → 河岸天际线最后举机。旅行者面容/发型/服装/比例/配饰全程一致，酒红手机尺寸/镜头系统/材质/光泽全程一致，光线按日夜顺序推进（daylight → golden hour → blue hour → night）。镜头使用24/35/50/85mm；手持与物理驱动跟踪运动；中性偏暖调色；真实肤色与环境色；音乐驱动剪辑配合真实位置环境声。",
+    video: "/tutorials/diplomeme-iphone18-pro-max-seedance-25/demo-web.mp4",
+    poster: "/tutorials/diplomeme-iphone18-pro-max-seedance-25/poster.jpg",
+    duration: "30秒",
+    shots: 12,
+    references: 5,
+    model: "Seedance 2.5",
+    style: "高端 Apple 产品广告 · 电影级旅行片",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Diplomeme/status/2103143771781382285",
+    sourceAuthor: "@Diplomeme",
+    sourcePlatform: "X",
+    tags: [
+      "30秒 · 产品广告",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "OpenArt",
+      "iPhone 18 Pro Max",
+      "旅行片",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解产品一致性与真实使用动作的骨架",
+        description:
+          "本片不是'手机特写合集'，核心叙事是旅行者从清晨走到夜晚持续用同一台酒红色 iPhone 18 Pro Max 记录旅程。CHARACTER 锁定旅行者（炭灰外衫/中性裤/干净运动鞋/紧凑斜挎包，同一面容/发型/比例/配饰全程不变）；旅行者全程自然携带酒红 iPhone 18 Pro Max，不得虚构额外 Apple 产品/配件/品牌。SETTING 定义现代城市与自然风景连续旅程：清晨公寓 → 繁忙街道 → 现代咖啡馆 → 食物市场 → 高处观景点 → 高铁平台 → 金色时刻风景 → 活力夜间区 → 照明河岸天际线。STORY 用12个2.5秒beat从00:00到00:30写出产品钩子 → 早晨捕捉 → 运动跟拍 → 街头生活 → 人物瞬间 → 风景揭示 → 产品瞬间 → 动作捕捉 → 夜间过渡 → 低光瞬间 → 城市能量 → 最后揭示，每段写清镜头焦段/动作/手机如何被拿起拍摄查看/如何回到人物动作。",
+      },
+      {
+        number: 2,
+        title: "准备 Seedance 2.5 (OpenArt) 并掌握摄影约束",
+        description:
+          "使用 Seedance 2.5 on OpenArt 平台（具体档位/seed/采样参数未披露）。CAMERA 段落：24mm 负责空间和运动，35/50mm 负责跟拍与人物，85mm 负责产品/脸部压缩；浅景深特写/深焦广角风景；手持与物理驱动跟踪运动；自然微抖/不完美构图/轻微自动对焦调整/真实曝光适应/偶尔前景遮挡；排除不可能的镜头运动/漂浮无人机美学。COLOR GRADE：电影中性偏暖，绿色轻微自然克制，酒红 iPhone 在中性环境中保持丰富精致，金色时刻脸部和产品边缘金边，蓝调时刻与夜景冷氛围；维持真实肤色和自然环境色，无过度饱和或人工 HDR。MOTION：180度电影快门，头发/衣服/移动车辆自然运动模糊，24fps；排除肥皂剧60fps观感；手机交互必须物理准确，可信手部运动/重量/惯性。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词并检查三条硬连续性",
+        description:
+          "使用下方完整 30 秒英文提示词（含交付规格、CHARACTER、SETTING、12段 STORY beat、CAMERA、VISUAL/COLOR SETTING、COLOR GRADE、MOTION、LIGHTING、AUDIO、REALISM、BRAND CONTROL、EDITING、CONTINUITY、FINAL QUALITY TARGET）。生成后检查三条'硬连续性'：(1) 旅行者脸和衣服不变；(2) 酒红手机尺寸/镜头系统/材质不变；(3) 光线按 daylight → golden hour → blue hour → night 日夜顺序推进。检查产品使用是否真实：抬手机/取景/录制/查看/锁屏/放下都要有重量与惯性，不能只让手机悬在画面里。剪辑以走路方向/反射/蒸汽/手机手势/建筑形状/光线变化做 match cut；不要用泛化 AI 转场覆盖连续性问题。对照 refs/ 成片帧（非作者参考图）检查关键beat的构图/光线/手机使用动作。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-iphone18-frame-01",
+        number: "1",
+        title: "清晨窗边手机开场",
+        subtitle: "t≈2s · 85mm产品特写",
+        image: "/tutorials/diplomeme-iphone18-pro-max-seedance-25/refs/film-frame-01.jpg",
+        prompt: "成片截帧（非作者发布的参考图/角色卡）：清晨窗边酒红 iPhone 18 Pro Max 特写，柔和阳光穿过玻璃和金属边缘，旅行者伸手入画拿起手机看向明亮城市外景。",
+      },
+      {
+        id: "ref-iphone18-frame-02",
+        number: "2",
+        title: "街头/食物摊蒸汽段",
+        subtitle: "t≈8s · 50mm观察镜头",
+        image: "/tutorials/diplomeme-iphone18-pro-max-seedance-25/refs/film-frame-02.jpg",
+        prompt: "成片截帧（非作者发布的参考图/角色卡）：旅行者穿过拥挤街区，附近食物摊贩准备热气腾腾食物，旅行者短暂停下举起 iPhone 录制准备过程，蒸汽穿过前景。",
+      },
+      {
+        id: "ref-iphone18-frame-03",
+        number: "3",
+        title: "绿色山谷与举机取景",
+        subtitle: "t≈15s · 24mm深焦风景",
+        image: "/tutorials/diplomeme-iphone18-pro-max-seedance-25/refs/film-frame-03.jpg",
+        prompt: "成片截帧（非作者发布的参考图/角色卡）：旅行者走上长石阶穿过茂密绿植，镜头从后跟随，到达顶部时广阔风景穿过凉爽大气薄雾显现，旅行者举起 iPhone 框住整个山谷。",
+      },
+      {
+        id: "ref-iphone18-frame-04",
+        number: "4",
+        title: "蓝调/夜间街区",
+        subtitle: "t≈22s · 50mm手持街拍",
+        image: "/tutorials/diplomeme-iphone18-pro-max-seedance-25/refs/film-frame-04.jpg",
+        prompt: "成片截帧（非作者发布的参考图/角色卡）：蓝调时刻手持街拍，旅行者进入活力夜间区，暖灯笼/冷环境光/摩托车/行人创造层次深度，旅行者举起 iPhone 拍摄照明街道。",
+      },
+      {
+        id: "ref-iphone18-frame-05",
+        number: "5",
+        title: "河岸夜景收束",
+        subtitle: "t≈28s · 24mm广角构图",
+        image: "/tutorials/diplomeme-iphone18-pro-max-seedance-25/refs/film-frame-05.jpg",
+        prompt: "成片截帧（非作者发布的参考图/角色卡）：从旅行者背后拍摄的24mm广角构图，他们在河边短暂停下向照明天际线举起酒红 iPhone 18 Pro Max，镜头缓慢后退，旅行者捕捉最后一张图片/放下手机/继续走动，音乐达到最后节拍，城市填满背景。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–02.5 特写钩子：85mm 特写酒红 iPhone 18 Pro Max 靠窗摆放在柔和清晨阳光中。光线自然穿过玻璃和金属边缘。旅行者伸手入画拿起手机看向明亮城市外景。酒红表面捕捉轻微暖反射，第一个节拍开始。",
+      },
+      {
+        number: 2,
+        description:
+          "02.5–05 早晨捕捉：24mm 广角镜头旅行者清晨穿过活泼城市街道。建筑间阳光破开。旅行者自然举起 iPhone 捕捉瞬间。短暂切到手机显示屏显示同一场景被框住。旅行者放下手机继续走动。随音乐精确剪辑。",
+      },
+      {
+        number: 3,
+        description:
+          "05–07.5 运动跟拍：35mm 手持跟拍旅行者穿过繁忙路口。真实行人自然过马路。自行车/出租车/公交车在背景移动。旅行者边走边开始用 iPhone 录制视频。镜头稍微跟在后面而非完美框住主体。旅行者转向经过的对象同时保持手机自然使用中。",
+      },
+      {
+        number: 4,
+        description:
+          "07.5–10 街头生活：50mm 观察镜头。旅行者穿过拥挤街区，附近食物摊贩准备热气腾腾食物。旅行者短暂停下，举起 iPhone 录制准备过程。蒸汽穿过前景。旅行者检查捕捉的片段片刻，自然微笑并继续移动。",
+      },
+      {
+        number: 5,
+        description:
+          "10–12.5 人物瞬间：50mm 特写。旅行者在咖啡馆遇到当地人并自然举起 iPhone 捕捉肖像。短暂切到手机显示屏上捕捉的图像。自然肤质，真实发丝和柔和环境分离。旅行者放下手机，对象自然笑。浅景深，暖肤色，真实背景活动和轻微手持运动。",
+      },
+      {
+        number: 6,
+        description:
+          "12.5–15 风景揭示：24mm 深焦风景。旅行者走上长石阶穿过茂密绿植。镜头从后跟随。旅行者到达顶部时，广阔风景穿过凉爽大气薄雾显现。旅行者举起 iPhone 框住整个山谷。短暂手机显示视角展示风景被自然构图后返回真实世界广角镜头。",
+      },
+      {
+        number: 7,
+        description:
+          "15–17.5 产品瞬间：50mm 侧跟踪镜头在金色阳光中。旅行者沿高处观景点走动，酒红 iPhone 自然握在身侧。金色边缘光捕捉头发、肩膀和手机轻微金属边缘。自然风吹动衣服。酒红表面与深绿植被对比而不感觉人工突出。",
+      },
+      {
+        number: 8,
+        description:
+          "17.5–20 动作捕捉：24mm 广角镜头从真实高架平台拍摄高铁开始穿过场景。旅行者举起 iPhone 录制经过的列车。短暂切到手机显示屏列车快速穿过画面。反射滑过列车窗户，真实运动模糊跟随运动。返回旅行者，列车消失在远处。",
+      },
+      {
+        number: 9,
+        description:
+          "20–22.5 夜间过渡：50mm 手持街拍蓝调时刻。旅行者进入活力夜间区。暖灯笼，冷环境光，摩托车和行人创造层次深度。旅行者举起 iPhone 拍摄照明街道。音乐强度增加，真实街道氛围保持在下方。",
+      },
+      {
+        number: 10,
+        description:
+          "22.5–25 低光瞬间：35mm 跟踪镜头旅行者走在现代河岸区旁。反射在水面波动。现代塔楼在他们身后照明，船只自然穿过画面。旅行者短暂停下用 iPhone 捕捉天际线。酒红手机捕捉周围城市灯光的小反射。",
+      },
+      {
+        number: 11,
+        description:
+          "25–27.5 城市能量：50mm 特写旅行者边穿过夜间区边查看捕捉的图像。屏幕光轻微照亮脸部。旅行者自然微笑，锁定手机并继续走动。镜头移动在他们旁边，实用灯光、行人和反射创造层次电影深度。",
+      },
+      {
+        number: 12,
+        description:
+          "27.5–30 最后揭示：24mm 广角构图从旅行者背后。他们在河边短暂停下向照明天际线举起酒红 iPhone 18 Pro Max。镜头缓慢后退而非向上飞。旅行者捕捉最后一张图像，放下手机并继续走动，音乐达到最后节拍。酒红 iPhone 在手中保持自然可见，城市填满背景。",
+      },
+    ],
+    constraints:
+      "单一长 prompt 复现包，无输入图工作流（成片帧仅作审美参考非角色卡/产品ref）；旅行者面容/发型/服装/比例/配饰全程一致；酒红 iPhone 18 Pro Max 尺寸/比例/材质/镜头系统/表面全程一致；光线按 daylight → golden hour → blue hour → night 顺序推进；镜头 24/35/50/85mm 物理驱动手持跟踪；中性偏暖调色/克制绿/丰富酒红/真实肤色；180度电影快门24fps自然运动模糊；真实手机交互重量惯性；音乐驱动剪辑配位置环境声；无 CGI/塑料皮肤/美颜平滑/额外手指/扭曲手机几何/变化镜头系统/人工人群同步/不可能反射/漂浮物体/过度景深；原帖/线程无角色卡/产品参考图/negative prompt/seed/UI参数；OpenArt档位/音乐后期未披露。",
+    video_prompt: {
+      title: "iPhone 18 Pro Max Cinematic Travel Film",
+      subtitle: "30s · 16:9 · Seedance 2.5 · Premium Apple Product Campaign",
+      content: `30 seconds | 16:9 | premium Apple product film / cinematic lifestyle advertisement | 2026 commercial grade | MULTISHOT CORE CONCEPT A young traveler experiences a visually rich day through an energetic but natural sequence of movement, city life, architecture, food, people and landscapes — captured through the Apple iPhone 18 Pro Max in a sophisticated burgundy finish. The film feels like a flagship Apple product campaign combined with an elite cinematic travel film. The iPhone is always physically present and naturally used throughout the journey. Every location feels photographed rather than generated. Music drives the edit, but the footage retains the imperfections and spontaneity of real travel photography. CHARACTER ONE TRAVELER — young adult international traveler wearing a contemporary minimal travel outfit: premium charcoal overshirt, neutral trousers, clean sneakers, compact crossbody bag. Natural hair, realistic skin texture, minimal accessories. Same face, clothing, hairstyle, proportions and accessories throughout the entire film. The traveler carries the burgundy Apple iPhone 18 Pro Max naturally throughout the journey. Do not invent additional Apple products, accessories or branding. SETTING Modern urban environments and natural landscapes: early-morning apartment, busy city streets, contemporary café, food market, elevated viewpoint, high-speed train platform, golden-hour landscape, vibrant nighttime district and illuminated riverside skyline. Real pedestrians, vendors, commuters, vehicles and local activity. Locations feel naturally connected through the journey. The environments provide realistic opportunities for the traveler to photograph, record and experience the world with the iPhone. STORY — MUSIC-DRIVEN MULTISHOT VISUALS 00:00–02.5 — CLOSE-UP HOOK 85mm close-up of the burgundy iPhone 18 Pro Max resting beside a window in soft early-morning sunlight. Light travels naturally across the glass and metallic edges. The traveler reaches into frame, picks up the phone and looks toward the bright city outside. The burgundy finish catches a subtle warm reflection as the first beat begins. 02.5–05 — MORNING CAPTURE 24mm wide shot as the traveler walks through a lively city street during early morning. Sunlight breaks between buildings. The traveler naturally raises the iPhone and captures the moment. Cut briefly to the phone display showing the same scene being framed. The traveler lowers the phone and continues walking. Cut precisely with the music. 05–07.5 — MOVEMENT 35mm handheld follow shot as the traveler moves through a busy intersection. Real pedestrians cross naturally. Bicycles, taxis and buses move through the background. The traveler begins recording video on the iPhone while walking. The camera follows slightly behind rather than perfectly framing the subject. The traveler turns toward a passing subject while keeping the phone naturally in use. 07.5–10 — STREET LIFE 50mm observational shot. Traveler moves through a crowded neighborhood while a food vendor prepares steaming food nearby. Traveler briefly stops, raises the iPhone and records the preparation. Steam passes across the foreground. The traveler checks the captured footage for a moment, smiles naturally and continues moving. 10–12.5 — HUMAN MOMENT 50mm close-up. The traveler meets a local person at a café and naturally raises the iPhone to capture a portrait. Cut briefly to the captured image on the phone display. Natural skin texture, realistic hair strands and soft environmental separation. The traveler lowers the phone as the subject laughs naturally. Shallow depth of field, warm skin tones, authentic background activity and subtle handheld movement. 12.5–15 — LANDSCAPE REVEAL 24mm deep-focus landscape. Traveler walks up a long stone staircase through dense greenery. Camera follows from behind. As the traveler reaches the top, a vast landscape emerges through cool atmospheric mist. The traveler raises the iPhone and frames the entire valley. Brief phone-display perspective reveals the landscape composed naturally before returning to the real-world wide shot. 15–17.5 — PRODUCT MOMENT 50mm side-tracking shot in golden sunlight. Traveler walks along the elevated viewpoint holding the burgundy iPhone naturally at their side. Golden rim light catches the hair, shoulders and subtle metallic edges of the phone. Natural wind moves clothing. The burgundy finish contrasts against deep green vegetation without feeling artificially highlighted. 17.5–20 — ACTION CAPTURE 24mm wide shot from a realistic elevated platform as a high-speed train begins moving through the scene. Traveler raises the iPhone and records the passing train. Cut briefly to the phone display as the train moves rapidly through frame. Reflections slide across the train windows while realistic motion blur follows the movement. Return to the traveler as the train disappears into the distance. 20–22.5 — NIGHT TRANSITION 50mm handheld street shot at blue hour. Traveler enters a lively nighttime district. Warm lanterns, cool ambient light, scooters and pedestrians create layered depth. The traveler raises the iPhone to photograph the illuminated street. Music increases in intensity while authentic street ambience remains underneath. 22.5–25 — LOW-LIGHT MOMENT 35mm tracking shot as the traveler walks beside a modern riverside district. Reflections ripple across the water. Modern towers illuminate behind them while boats move naturally through the frame. Traveler stops briefly and uses the iPhone to capture the skyline. The burgundy phone catches small reflections from surrounding city lights. 25–27.5 — CITY ENERGY 50mm close-up of the traveler checking the captured images while walking through the nighttime district. Screen light subtly illuminates the face. The traveler smiles naturally, locks the phone and continues walking. Camera moves alongside them as practical lights, pedestrians and reflections create layered cinematic depth. 27.5–30 — FINAL REVEAL 24mm wide composition from behind the traveler. They stop briefly at the riverside and raise the burgundy iPhone 18 Pro Max toward the illuminated skyline. Camera slowly moves backward rather than flying upward. Traveler captures one final image, lowers the phone and continues walking as the music reaches its final beat. The burgundy iPhone remains naturally visible in hand as the city fills the background. CAMERA 35mm and 50mm for portraits and human moments, 24mm for landscapes, architecture and movement, occasional 85mm compression on faces and product details. Shallow DOF on close-ups, deep focus on landscape wides. Handheld and physically motivated tracking movement. Natural camera micro-movement, imperfect framing, subtle autofocus adjustment, realistic exposure adaptation and occasional foreground obstruction. No impossible camera movement, no floating drone aesthetic. VISUAL / COLOR SETTING Premium Apple product film / cinematic lifestyle campaign, 2026 commercial grade. Look: photoreal cinema, slight filmic grain, mild halation on highlights, neutral-to-cool city tones, sophisticated burgundy accents, deep forest greens, warm skin, controlled blacks and natural environmental color. COLOR GRADE Cinematic neutral-and-warm, greens slightly natural and restrained, burgundy iPhone remains rich and sophisticated against neutral environments, golden rim on faces and product edges in sunlight, cool atmosphere during blue hour and nighttime scenes. Maintain realistic skin tones and natural environmental color. No excessive saturation or artificial HDR. MOTION 180-degree cinematic shutter, natural motion blur on hair, clothing and moving vehicles, 24fps. No soap-opera 60fps look. Movement should retain the subtle imperfections of real location photography. Smartphone interaction must feel physically accurate, with believable hand movement, weight and momentum. LIGHTING Natural daylight, soft overcast city light, warm direct sunlight, golden-hour rim light, cool atmospheric light, practical lanterns and nighttime city illumination. Lighting must originate naturally from the environment. Reflections on the burgundy iPhone must respond naturally to surrounding light sources. AUDIO Premium contemporary cinematic soundtrack with subtle modern electronic textures. Music drives the transitions and rhythm. Keep authentic location sound underneath: footsteps, traffic, train ambience, station announcements, bicycles, vendors, cooking sounds, crowd chatter, wind, birds, distant city noise and riverside ambience. Environmental sound should occasionally become prominent during intimate moments. Subtle natural camera and shutter interaction sounds may accompany key captures without becoming exaggerated. REALISM No CGI look, no plastic skin, no beauty-filter smoothing, no extra fingers, no warped phone geometry, no changing camera system, no artificial crowd synchronization, no impossible reflections, no floating objects, no exaggerated depth of field. Realistic skin pores, hair strands, fabric texture, glass reflections, metallic surfaces, screen brightness, water reflections, atmospheric perspective and human movement. The iPhone must behave like a real physical smartphone with believable weight, grip, reflections and interaction with light. BRAND CONTROL The only Apple branding visible is the existing Apple logo and the authentic iPhone 18 Pro Max itself. Do not invent additional Apple branding, advertisements, storefront branding or branded products. Do not add fictional accessories, random UI, watermarks or random text. Preserve the burgundy finish and premium Apple product identity. The device must remain visually consistent throughout the entire film. EDITING Music-synchronized commercial editing without excessive effects. Cuts are motivated by movement, reflections, steam, phone gestures, architectural shapes, walking direction and changes in light. Use clean match cuts and occasional speed changes only when physically believable. Avoid generic AI transitions, artificial zooms, excessive whip transitions and over-edited montage pacing. CONTINUITY The traveler remains identical throughout all shots. Preserve face, hairstyle, clothing, trousers, sneakers, bag and accessories. Maintain the same burgundy iPhone 18 Pro Max throughout the entire film with consistent proportions, materials, camera system and finish. Maintain realistic weather and lighting progression from daylight → golden hour → blue hour → night. Each location should feel like part of one continuous journey, while every interaction with the iPhone remains physically and visually consistent. FINAL QUALITY TARGET The final film should look like genuine footage captured by an elite commercial filmmaker for a major Apple product campaign—not a collection of AI-generated beauty shots. The iPhone 18 Pro Max should feel like a real object being naturally used to experience and capture the world, rather than a product artificially inserted into every shot. The realism comes first; the commercial polish comes from cinematography, product design, color, music, editing and art direction.`,
+    },
+  },
+  {
     id: "bmx-troy-2026-vlog-seedance",
     title: "特洛伊战地 Vlog · 2026 穿越 · Seedance 2.5",
     subtitle: "X · @bmx_ai13 · Seedance 2.5 · Dreamina · 30秒 · 16:9",
