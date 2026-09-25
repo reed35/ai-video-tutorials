@@ -23,6 +23,17 @@ export const tutorials: Tutorial[] = [
     sourceImpressions: 2272,
     sourceStats: { asOf: "2026-09-25", likes: 53, reposts: 4, bookmarks: 66 },
     formats: ["角色表演"],
+    hook: {
+      structure: "固定机位 · 两次吐舌表情",
+      opening: "白墙前的自拍式正面近景，黑长直女孩穿浅蓝针织衫直视镜头，约 3s 就眨眼吐舌——第一个表情来得很快。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "吐舌后闭眼说话，约 7s 抬手指戳脸颊，约 8–9s 手指点脸再吐一次舌，比第一次更夸张。", at: 3 },
+        { title: "结尾怎么收", text: "约 11s 手比「一点点」，之后放松微笑对镜头说话，没有额外剪辑。", at: 11 },
+      ],
+      copyThis: "机位和构图全程不动，只靠脸部表情撑住：两次吐舌卡在约 3s 和约 8.5s。",
+      approx: true,
+    },
     tags: [
       "15秒 · 表情驱动",
       "16:9 横屏",
@@ -144,6 +155,18 @@ Begin from <Picture 1>, then smoothly perform the expression. From 0.00 to 3.20 
     sourceImpressions: 60638,
     sourceStats: { asOf: "2026-09-25", likes: 412, reposts: 72, bookmarks: 289 },
     formats: ["破壁出屏"],
+    hook: {
+      structure: "漫画里 → 破页而出 → 反转",
+      opening: "客厅地板上立着一本巨大的漫画书，书页里的黑白女孩在格子中推着页边——第一帧就是「人被困在漫画里」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1–2s 切漫画特写她惊慌推墙，约 4s 撕开书页，约 5–6s 变成真人冲出来，配「バンッ!」拟声大字。", at: 1 },
+        { title: "反转", text: "约 10s 她回头指着书，页里还站着一个黑白的自己在问「あなた…誰？」；约 11–12s 漫画版震惊脸。", at: 10 },
+        { title: "结尾怎么收", text: "约 13s 切回真人同款震惊脸，约 14s 背景变漫画速度线加「!?」，真人和漫画风叠在一起收。", at: 13 },
+      ],
+      copyThis: "漫画格和真人来回切：同一个表情先画成漫画、再给真人版，拟声字和速度线直接叠在实拍上。",
+      approx: true,
+    },
     tags: [
       "15秒 · 漫画脱出",
       "1:1 方形",
@@ -521,6 +544,18 @@ non_diegetic_music:
     sourceImpressions: 11056,
     sourceStats: { asOf: "2026-09-25", likes: 223, reposts: 19, bookmarks: 187 },
     formats: ["手机POV·Vlog", "角色表演"],
+    hook: {
+      structure: "自拍尖叫 ↔ 手机录舞台 交替",
+      opening: "演唱会人群里的前置自拍，女孩对镜头大笑，身后全是举手机的观众——一开场就是现场的兴奋感。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 3s 转成她举手机拍台上歌手，约 8s 切回自拍尖叫，之后「拍舞台 ↔ 自拍」反复交替。", at: 3 },
+        { title: "关键变化", text: "约 13.5s 歌手走到台前，朝她的镜头伸手一指，约 15.5s 立刻切她捂不住的尖叫。", at: 13.5 },
+        { title: "结尾怎么收", text: "约 18–21s 插一段全场灯海大全景，再回到举手机和大笑自拍，红光里收住。", at: 18 },
+      ],
+      copyThis: "全程用观众视角：一手自拍一手录，歌手的每个动作都立刻接一个她的反应镜头。",
+      approx: true,
+    },
     tags: [
       "30秒 · 演唱会",
       "16:9 横屏",
@@ -911,6 +946,17 @@ NO AI-SLOP.`,
     sourceImpressions: 5036,
     sourceStats: { asOf: "2026-09-25", likes: 56, reposts: 3, bookmarks: 69 },
     formats: ["角色表演"],
+    hook: {
+      structure: "白模绿幕 · 连续舞蹈动作",
+      opening: "纯绿幕上一只灰白色无贴图的猫白模，第一帧就摆出 dab 姿势——一眼看出是做抠像素材用的。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1.5–2s 猫爪朝镜头甩过来几乎占满画面，接着出拳、扭身、摆手，动作一个接一个不停。", at: 1.5 },
+        { title: "结尾怎么收", text: "约 6.5s 又一次举爪冲镜头，之后身体越来越靠近镜头，8 秒里没有切镜。", at: 6.5 },
+      ],
+      copyThis: "背景保持纯绿、角色用无材质白模，只看动作；再让爪子朝镜头甩出来制造纵深。",
+      approx: true,
+    },
     tags: [
       "8秒 · 白模绿幕",
       "16:9 横屏",
@@ -1034,6 +1080,18 @@ NO AI-SLOP.`,
     sourceImpressions: 1098,
     sourceStats: { asOf: "2026-09-25", likes: 30, reposts: 1, bookmarks: 30 },
     formats: ["时尚大片"],
+    hook: {
+      structure: "聚光开场 → 快切十个姿势",
+      opening: "漆黑舞台上一束顶光打下，红丝绒长裙的模特站在正中、红幕两侧——约 1s 画面转成粉色烟雾。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约每 1s 一个新机位：约 2s 黑手套托腮侧脸，约 3–4s 俯拍躺在金色贵妃榻上，约 6s 坐姿全景。", at: 2 },
+        { title: "关键变化", text: "约 7–8s 推到背后金线刺绣的微距，手套抚过纹样；约 9s 起回到金色墙板前连续摆姿。", at: 7 },
+        { title: "结尾怎么收", text: "约 12s 仰拍举臂入光，约 14s 模特正对镜头站定对视收尾。", at: 12 },
+      ],
+      copyThis: "一镜一姿势、约 1 秒一切：全景、特写、俯拍、面料微距轮流上，同一套红裙金绣贯穿。",
+      approx: true,
+    },
     tags: [
       "15秒 · 时装摄影",
       "16:9 横屏",
@@ -1199,6 +1257,18 @@ Keep the performance fast but with a liquid flow. Transition smoothly with movem
     sourceImpressions: 2697,
     sourceStats: { asOf: "2026-09-25", likes: 66, reposts: 7, bookmarks: 67 },
     formats: ["折叠·变形", "拆装·制作过程"],
+    hook: {
+      structure: "空房 → 折纸式展开 → 成品卧室",
+      opening: "空荡的清水混凝土毛坯房，一只黑手套入画打了个响指——约 0.5s 木地板像纸一样从地上翻折铺开。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2s 胡桃木墙板折出来，约 3–4.5s 床头柜和单椅从地面立起，约 5–6.5s 床像纸盒一样展开成形。", at: 2 },
+        { title: "成品揭晓", text: "约 7–8.5s 挂画、地毯、窗帘、台灯、绿植陆续补齐，约 9s 灯带亮起转暖光，完整卧室出现。", at: 7 },
+        { title: "结尾怎么收", text: "约 9.5s 黑手套再次入画，与开头呼应。", at: 9.5 },
+      ],
+      copyThis: "响指当开关，机位全程固定，家具一件件按「地面→墙→大件→软装→灯光」的顺序折出来。",
+      approx: true,
+    },
     tags: [
       "10秒 · 室内变形",
       "16:9 横屏",
@@ -1281,6 +1351,18 @@ Keep the performance fast but with a liquid flow. Transition smoothly with movem
     sourceImpressions: 2396,
     sourceStats: { asOf: "2026-09-25", likes: 78, reposts: 5, bookmarks: 37 },
     formats: ["产品广告"],
+    hook: {
+      structure: "清晨 → 夜晚 · 一天城市漫游",
+      opening: "晨光窗台上立着一台绛红色手机，背后是城市天际线——约 1s 一只手入画把它拿起。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "按时间推进：约 3s 街头取景，约 8s 蒸汽小吃摊，约 10s 咖啡馆拍朋友，约 12s 山顶，约 15s 夕阳。", at: 3 },
+        { title: "几段怎么切换", text: "多次插入手机屏幕取景画面；约 18s 疾驰列车糊过画面，转进约 20s 灯笼夜市。", at: 18 },
+        { title: "结尾怎么收", text: "约 22–27s 河边夜景天际线下举手机拍照、看屏幕微笑，约 28s 拉成大远景背影收。", at: 22 },
+      ],
+      copyThis: "产品只在开头露一次正脸，之后全靠「一天时间线」+ 屏幕取景画面带出拍照能力。",
+      approx: true,
+    },
     tags: [
       "30秒 · 产品广告",
       "16:9 横屏",
@@ -1443,6 +1525,18 @@ Keep the performance fast but with a liquid flow. Transition smoothly with movem
     sourceImpressions: 61789,
     sourceStats: { asOf: "2026-09-25", likes: 391, reposts: 21, bookmarks: 349 },
     formats: ["角色表演"],
+    hook: {
+      structure: "床榻 → 铜镜 → 月窗 → 回床榻",
+      opening: "红纱帘后，着红色纱衣的女子伏在床榻上，约 2–3s 缓缓回头看向镜头——第一眼就是眼神戏。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 6–7s 红纱扫过画面转场，约 11–15s 烛光铜镜前梳头，约 16–21s 背影推开月下花窗。", at: 6 },
+        { title: "关键变化", text: "约 22s 她回身正对镜头凝视，这是全片唯一一次正面直视。", at: 22 },
+        { title: "结尾怎么收", text: "约 23–27s 回到床榻，纱衣旋开坐下，约 28–29s 画面渐暗收。", at: 23 },
+      ],
+      copyThis: "用飘过镜头的红纱做转场，几个场景都以「背影/侧脸 → 回头看镜头」来收每段。",
+      approx: true,
+    },
     tags: [
       "30秒 · 古装",
       "16:9 横屏",
@@ -1635,6 +1729,18 @@ A gentle breeze pushes the sheer silk veil across the frame, slowly covering her
     sourceImpressions: 2256,
     sourceStats: { asOf: "2026-09-25", likes: 31, reposts: 2, bookmarks: 33 },
     formats: ["字效·片头"],
+    hook: {
+      structure: "3D 字 → PARADOX → 碎镜 → 书法字",
+      opening: "暗底火星四溅，绿发二次元女孩在一排转动的巨型白色 3D 字母上奔跑——开场就是「人踩着字跑」。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 4s 近景后，约 5–8s 切亮黄底「PARADOX」立体大字，她挥出蓝色刀光，颜料飞溅。", at: 5 },
+        { title: "关键变化", text: "约 9–11s 画面碎成镜面碎片，每块碎片里是她不同造型（含粉色裙装）。", at: 9 },
+        { title: "结尾怎么收", text: "约 12–14s 粉/黄底配黑色书法大字，刀光弧线绕着她旋转收住。", at: 12 },
+      ],
+      copyThis: "每 3–4 秒换一种字效场景，字始终是场景本身，角色和刀光在字上穿过。",
+      approx: true,
+    },
     tags: [
       "15秒 · 二次元",
       "16:9 横屏",
@@ -1755,6 +1861,18 @@ Shot 4 (Ink-Blade Storm & Kanji Compression): Through the cracked lens, she deli
     sourceImpressions: 6484,
     sourceStats: { asOf: "2026-09-25", likes: 132, reposts: 6, bookmarks: 139 },
     formats: ["字效·片头"],
+    hook: {
+      structure: "一个词一场景 · RIOT → VOID → BREAK",
+      opening: "暗红背景里黑红发少女朝镜头走来，约 1s 身后巨型石质「RIOT」大字破地而起，烟尘四起。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 4–7s 切荧光黄底，色散「VOID」字飞入；约 8–9s 她抬腿踢向镜头，红色鞋底占满画面。", at: 4 },
+        { title: "关键变化", text: "约 10s 墨笔「BREAK」+ 红色圆日，她落地蹲姿，约 11s 画面碎裂炸开。", at: 10 },
+        { title: "结尾怎么收", text: "约 12–14s 红黑墨迹旋转包住她，最后停在书法字与墨圈的构图上。", at: 12 },
+      ],
+      copyThis: "每个英文词配一种材质（石头/色散/墨笔）和一种底色，用踢向镜头的动作接下一段。",
+      approx: true,
+    },
     tags: [
       "15秒 · 二次元",
       "16:9 横屏",
@@ -1881,6 +1999,17 @@ in @higgsfield`,
     sourceImpressions: 12114,
     sourceStats: { asOf: "2026-09-25", likes: 248, reposts: 18, bookmarks: 210 },
     formats: ["电影叙事"],
+    hook: {
+      structure: "空飞毯 → 跳上 → 穿城 → 拉远",
+      opening: "云海里一张红色飞毯空荡荡地悬着，约 1s 穿橙衣的女孩从上方跳下落到毯上。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3s 俯冲进未来都市，约 5–7s 贴身跟拍她戴草帽大笑，约 8–10s 贴着河面和大桥低飞。", at: 3 },
+        { title: "结尾怎么收", text: "约 11s 转到她背后迎着太阳，约 12–14s 镜头拉到高空，飞毯缩成逆光小点悬在城市上。", at: 11 },
+      ],
+      copyThis: "先给空飞毯吊胃口再让人跳上去；中段贴身跟拍，结尾拉远给全景。",
+      approx: true,
+    },
     tags: [
       "15秒 · 幻想",
       "16:9 横屏",
@@ -1985,6 +2114,18 @@ Prompt:
     sourceImpressions: 7719,
     sourceStats: { asOf: "2026-09-25", likes: 48, reposts: 7, bookmarks: 26 },
     formats: ["折叠·变形"],
+    hook: {
+      structure: "蝴蝶飞远 → 熄灯红眼 → 亮灯出场",
+      opening: "昏暗长走廊正中，一只红黑色大蝴蝶正对镜头扇翅——竖屏对称构图，第一帧就有压迫感。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "蝴蝶往走廊深处飞去，约 5–6s 顶灯一盏盏熄灭，约 7–9s 全黑里只剩一对红色眼睛。", at: 5 },
+        { title: "关键变化", text: "约 10s 灯重新亮起，黑袍红领、戴护额的红眼男子站在走廊中央。", at: 10 },
+        { title: "结尾怎么收", text: "约 11–13s 缓推到脸部特写，约 14–15s 他伸出手指戳向镜头，画面虚焦。", at: 14 },
+      ],
+      copyThis: "用熄灯全黑做停顿，只留一对红眼，再亮灯揭晓角色；最后伸手戳镜头打破第四面墙。",
+      approx: true,
+    },
     tags: [
       "16秒 · 化身",
       "3:4 竖屏",
@@ -2271,6 +2412,18 @@ Prompt:
     sourceImpressions: 1738,
     sourceStats: { asOf: "2026-09-25", likes: 61, reposts: 8, bookmarks: 40 },
     formats: ["手机POV·Vlog", "电影叙事"],
+    hook: {
+      structure: "穿越者自拍 → 战场躲藏 → POV 录城内",
+      opening: "穿连帽衫的女孩举着手机自拍，身后是冒黑烟的古城城墙，她一脸震惊对镜头说话——一眼看出是「穿越 vlog」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 5–11s 她躲在岩石后，士兵从身边冲过，海滩上排满营帐；约 12–16s 城内人群奔逃、妇孺缩在墙角。", at: 5 },
+        { title: "几段怎么切换", text: "约 17–23s 切第一人称：坐在城墙上双脚悬空，手机拍夕阳海面上的船队；约 24s 用扫描线闪屏转场。", at: 17 },
+        { title: "结尾怎么收", text: "约 25–28s 举着手机录城内小巷的居民，约 29s 黑场。", at: 25 },
+      ],
+      copyThis: "把「现代人+手机」放进古代场景：自拍说话开场，后面改成手持手机的第一人称视角。",
+      approx: true,
+    },
     tags: [
       "30秒 · 时空穿越",
       "16:9 横屏",
@@ -2405,6 +2558,17 @@ Modern objects other than the vlogger's clothing, backpack, and phone; medieval 
     sourceImpressions: 58890,
     sourceStats: { asOf: "2026-09-25", likes: 1177, reposts: 162, bookmarks: 1171 },
     formats: ["时尚大片", "产品广告"],
+    hook: {
+      structure: "五套造型轮播 · 单品卡 + 模特转身",
+      opening: "灰底画面左侧是一张单品平铺卡，右侧金发模特穿水手领毛衣背心和格裙，顶部写着名字「YURI」——一开场就是穿搭拆解。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约每 3s 换一套：约 3s SEOYUN 绿背心牛仔裤，约 7s HARIN 棕格西装，约 10s RENA 黑色套装，约 14s HAEIN 黄色开衫。", at: 3 },
+        { title: "过程怎么推进", text: "每套里模特原地转身看背面再转回来，左侧卡片同步换成这一套的单品。", at: 1 },
+      ],
+      copyThis: "固定版式：左单品卡、右全身模特、上方名字；每套 3 秒，转身一圈就切下一套。",
+      approx: true,
+    },
     tags: [
       "17秒 · 时尚展示",
       "3:4 竖屏",
@@ -2498,6 +2662,18 @@ The panel, divider lines, captions, crown icons and wordmark stay perfectly fixe
     sourceImpressions: 62060,
     sourceStats: { asOf: "2026-09-25", likes: 575, reposts: 62, bookmarks: 263 },
     formats: ["角色表演"],
+    hook: {
+      structure: "字幕独白 → 眼神拉扯 → 吻",
+      opening: "夜里车后座，女孩双手托腮冲镜头挥手，旁边男生闭眼；字幕「他送我到家楼下…想自拍一下」——像一条真实自拍。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "她几次偷看男生又转回镜头，字幕接「我有点怔住了」「我不知道他什么意思 有点失落」。", at: 4 },
+        { title: "关键变化", text: "约 11s 字幕「但又觉得不对 我能看见他一直看我」，约 17s 男生转头看她。", at: 11 },
+        { title: "结尾怎么收", text: "约 19s 男生托住她下巴，出现「^>///<^」害羞贴纸，约 20s 吻上去收尾。", at: 19 },
+      ],
+      copyThis: "用第一人称字幕讲心理活动，画面只有托腮和偷看；最后一个动作兑现前面的铺垫。",
+      approx: true,
+    },
     tags: [
       "22秒 · 情感短片",
       "16:9 横屏",
@@ -2724,6 +2900,18 @@ The panel, divider lines, captions, crown icons and wordmark stay perfectly fixe
     sourceImpressions: 1808,
     sourceStats: { asOf: "2026-09-25", likes: 50, reposts: 7, bookmarks: 43 },
     formats: ["拆装·制作过程"],
+    hook: {
+      structure: "拆 → 改装 → 喷漆 → 成品揭晓",
+      opening: "白色车间里一台灰色宝马轿车，戴黑手套的手拿电动扳手拧轮毂——约 0.5s 旁边已换上越野大胎。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "每约 0.5s 一个改装步骤：黑轮毂、拆翼子板、约 2.5–3.5s 高避震、刹车盘、红卡钳，约 4.5s 前杠加灯排。", at: 0.5 },
+        { title: "关键变化", text: "约 6s 喷枪把车身喷成酒红色，约 7s 手按车钥匙。", at: 6 },
+        { title: "成品揭晓", text: "约 7.5–9s 酒红越野版宝马停在车间、灯排亮起，约 9.5s 推到车头灯特写收。", at: 7.5 },
+      ],
+      copyThis: "每个改装零件只给半秒特写，用黑手套贯穿；最后按车钥匙当揭晓开关。",
+      approx: true,
+    },
     tags: [
       "10秒 · 汽修改装",
       "16:9 横屏",
@@ -2793,6 +2981,17 @@ The panel, divider lines, captions, crown icons and wordmark stay perfectly fixe
     sourceImpressions: 45721,
     sourceStats: { asOf: "2026-09-25", likes: 375, reposts: 55, bookmarks: 431 },
     formats: ["变装·换装", "时尚大片"],
+    hook: {
+      structure: "五套造型 · 色卡跟着衣服变",
+      opening: "白底上女孩穿米色西装站在一扇打开的潘通色卡上，橙红到玫红的色卡扇形铺在脚下——色卡就是舞台。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 2s 她转身，约 2.5s 换迷彩上衣+卡其工装裤，身后的色块变成橄榄绿、卡其、红，和衣服一一对应。", at: 2 },
+        { title: "过程怎么推进", text: "约 4.5s 牛仔套装配蓝/棕色块，约 6.5s 红格毛衣背心，约 9s 黄卫衣+藏青裤，底部色卡扇也跟着换色。", at: 4.5 },
+      ],
+      copyThis: "每套衣服抽 2–3 个主色做成色卡块摆在身后，转身即换装，约 2 秒一套。",
+      approx: true,
+    },
     tags: [
       "11秒 · 色卡变装",
       "9:16 竖屏",
@@ -2926,6 +3125,18 @@ The panel, divider lines, captions, crown icons and wordmark stay perfectly fixe
     sourceImpressions: 15821,
     sourceStats: { asOf: "2026-09-25", likes: 92, reposts: 4, bookmarks: 16 },
     formats: ["电影叙事"],
+    hook: {
+      structure: "沙暴相遇 → 同行几天 → 并肩上路",
+      opening: "沙漠公路上一辆满是灰尘的越野车开过，约 1s 后视镜里是女主的眼睛——开场就交代了人物和路。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3–5s 沙暴里摩托车男子停在车旁和她搭话，约 7s 沙暴吞没画面，约 8s 黑场。", at: 3 },
+        { title: "几段怎么切换", text: "约 9–11s 夜晚篝火、银河；约 14s 起白天废墟、约 16s 峡谷里他拉她一把、约 20s 两人笑着冲下沙丘。", at: 9 },
+        { title: "结尾怎么收", text: "约 23–25s 越野车和摩托并排开在公路上，约 26–29s 夕阳下的空路收尾。", at: 23 },
+      ],
+      copyThis: "用「车+摩托」两个交通工具代表两个人：开头分开、结尾并排；中间用黑场分段。",
+      approx: true,
+    },
     tags: [
       "30秒 · 情感短片",
       "16:9 横屏",
@@ -3657,6 +3868,18 @@ Maintain exact character identity and visual continuity from beginning to end.`,
     sourceImpressions: 6247,
     sourceStats: { asOf: "2026-09-25", likes: 89, reposts: 6, bookmarks: 59 },
     formats: ["折叠·变形"],
+    hook: {
+      structure: "海上沙发 → 捏起海面 → 原来是毯子",
+      opening: "一张白沙发摆在一望无际的海中央，一对男女坐着看书休息，落地灯立在水里，天上一朵白云——第一帧就超现实。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–3s 女人放下书走进水里，约 5–7s 伸手捏住海面，像捏布料一样把水面提起来。", at: 2 },
+        { title: "反转", text: "约 8–11s 她把整片海像床单一样拉起抖开，约 12s 切俯拍：海和天空其实是一条印着海景的毯子。", at: 8 },
+        { title: "结尾怎么收", text: "约 13–14s 俯拍里她在木地板房间把毯子铺到沙发上。", at: 13 },
+      ],
+      copyThis: "先把超现实场景当真拍，再用「捏起水面」这个手部特写把海变成布料，最后俯拍揭晓。",
+      approx: true,
+    },
     tags: [
       "15秒 · 超现实",
       "16:9 横屏",
@@ -3925,6 +4148,18 @@ Hands are the control interface: SPREAD = disassemble, SWIPE = throw, ROTATE = r
     sourceImpressions: 2966,
     sourceStats: { asOf: "2026-09-25", likes: 38, reposts: 8, bookmarks: 22 },
     formats: ["字效·片头"],
+    hook: {
+      structure: "海面起浪 → 巨浪 → 水字 TIDAL → 溃散",
+      opening: "暗色风暴海面，镜头贴着水面往前推，约 1s 一道白色浪痕从中间划开海面。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–4s 浪越涌越高，约 5–7s 巨浪炸开占满画面，约 8s 水流卷成一个圆环冲向镜头。", at: 2 },
+        { title: "成品揭晓", text: "约 9s 穿过水环，海面上立起由水构成的「TIDAL」大字，浪花在字边翻卷。", at: 9 },
+        { title: "结尾怎么收", text: "约 13–14s 字母从左到右化成浪花溃散。", at: 13 },
+      ],
+      copyThis: "字不直接出现：先让浪一路蓄力，再穿过水环揭晓水字，结尾让字还原成浪。",
+      approx: true,
+    },
     tags: [
       "15秒 · 标题序列",
       "16:9 横屏",
@@ -4005,6 +4240,18 @@ Hands are the control interface: SPREAD = disassemble, SWIPE = throw, ROTATE = r
     sourceImpressions: 56095,
     sourceStats: { asOf: "2026-09-25", likes: 674, reposts: 114, bookmarks: 654 },
     formats: ["时尚大片", "变装·换装"],
+    hook: {
+      structure: "四套 LOOK 海报版式 · 播两轮",
+      opening: "一开场就是杂志海报：巨大黑体「FASHION」压在模特头顶，左下标「LOOK 01」，黑色阔腿连身裤。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 1s 紫色色块横扫转场，约 2s LOOK 02 紫裤白衬衫配空心大号「02」，约 3s LOOK 03 酒红裙，约 5s LOOK 04「IN MOTION」。", at: 1 },
+        { title: "过程怎么推进", text: "约 7s 起四套按原顺序再来一轮，节奏放慢、机位更近。", at: 7 },
+        { title: "结尾怎么收", text: "约 12–14s 停在 LOOK 04，镜头推近，模特双手叉腰站定。", at: 12 },
+      ],
+      copyThis: "每套造型配一版独立海报版式（大字/编号/底色），用色块横扫切换，第一轮快、第二轮慢。",
+      approx: true,
+    },
     tags: [
       "15秒 · 8镜头",
       "1:1 方形",
@@ -4219,6 +4466,18 @@ non_diegetic_music: A continuous instrumental fashion beat led by a dry kick dru
     sourceImpressions: 4717,
     sourceStats: { asOf: "2026-09-25", likes: 62, reposts: 4, bookmarks: 49 },
     formats: ["产品广告"],
+    hook: {
+      structure: "口播开场 → 开箱+产品特写 → 上手使用 → 口播收",
+      opening: "女博主坐在灯光工作室里，双手按着桌上的 MacBook Pro 包装盒直视镜头；约 1s 切到脸部近景开口说话。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4s 切俯拍双手掀盒盖取出机身；约 6–8s 连着三个微距：机身、键盘、侧面接口。", at: 4 },
+        { title: "上手使用", text: "约 9s 回到中景开盖，约 11–12s 屏幕上打开剪辑软件，手在触控板上操作。", at: 9 },
+        { title: "结尾怎么收", text: "约 13s 回到博主正面，合上电脑，双手放在机身上结束。", at: 13 },
+      ],
+      copyThis: "口播镜头和开箱俯拍、产品微距交替切，每个画面只停约 1–2 秒，像真博主剪辑节奏。",
+      approx: true,
+    },
     tags: [
       "约15秒 · 专业开箱",
       "16:9 横屏",
@@ -4386,6 +4645,18 @@ IMPORTANT: Say "Zephyra Leigh" only during the opening introduction. After that,
     sourceImpressions: 2916,
     sourceStats: { asOf: "2026-09-25", likes: 33, reposts: 3, bookmarks: 7 },
     formats: ["电影叙事"],
+    hook: {
+      structure: "标题字幕 → 井边打水 → 顶罐回家 → 黑场",
+      opening: "泛黄颗粒的默片质感：三名裹纱丽的妇女提着陶罐走向水井，画面中间直接压一行字幕「A Morning in the Village — 1907.」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3–8s 固定机位看她们在井边拉绳打水、把罐子装满，动作慢、不切镜。", at: 3 },
+        { title: "几段怎么切换", text: "约 9s 换到顶罐走回村子的背影，字幕「The journey home was never hurried.」；约 13s 在土屋前放下罐子。", at: 9 },
+        { title: "结尾怎么收", text: "约 14.5s 淡出到黑场，没有额外字卡。", at: 14.5 },
+      ],
+      copyThis: "开头就用一行「地点 — 年份」字幕定时代，配旧胶片颗粒和褪色棕调，镜头少切、动作放慢。",
+      approx: true,
+    },
     tags: [
       "约15秒 · 历史还原",
       "16:9 横屏",
@@ -4502,6 +4773,18 @@ Goal: Create a respectful, historically grounded 1907 village memory–ordinary 
     sourceImpressions: 6028,
     sourceStats: { asOf: "2026-09-25", likes: 52, reposts: 2, bookmarks: 23 },
     formats: ["电影叙事"],
+    hook: {
+      structure: "街景 → 片名字卡 → 早市群像 → 俏皮字卡 → 收尾",
+      opening: "黑白旧胶片里的巴黎街道，马车、行人在石板路上穿过；约 2s 切黑底白字片名卡「A Morning in Paris — 1906.」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4–8s 早市里女士们在面包摊、花摊前挑选；约 9s 三位女士坐在长凳上翻看小纸包，其中一位对镜头笑。", at: 4 },
+        { title: "字幕卡", text: "约 11s 插一张默片式字卡「The shopping was not a complete success.」，用文字制造一点幽默。", at: 11 },
+        { title: "结尾怎么收", text: "约 13s 两位提篮子的女士站在老式汽车旁，白衣女士回头朝镜头笑。", at: 13 },
+      ],
+      copyThis: "学默片用黑底衬线字卡分段：一张定时间地点，一张写一句俏皮旁白，比配音更有年代感。",
+      approx: true,
+    },
     tags: [
       "约15秒 · 历史还原",
       "16:9 横屏",
@@ -4618,6 +4901,18 @@ Goal: Create the feeling of a rare, authentic 1906 family film–period clothing
     sourceImpressions: 4690,
     sourceStats: { asOf: "2026-09-25", likes: 52, reposts: 4, bookmarks: 38 },
     formats: ["产品广告"],
+    hook: {
+      structure: "开箱特写 → 口播 → 取出+配件 → 佩戴 → App → 口播收",
+      opening: "开场第一帧就是双手捧着 Sony 耳机包装盒，约 1s 切近景手指掀开盒盖，露出耳机。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–5s 博主口播；约 6s 俯拍从盒里取出耳机，约 8–11s 耳机、收纳盒和线材在桌上排开。", at: 2 },
+        { title: "关键画面", text: "约 12–15s 手持耳机特写再戴上耳朵，约 16s 切一个大 SONY 品牌画面，约 18–20s 笔记本上操作配套 App。", at: 12 },
+        { title: "结尾怎么收", text: "约 21–24s 回到博主正面口播，微笑收尾。", at: 21 },
+      ],
+      copyThis: "第一秒先给「手+盒子」的开箱特写再切口播，后面按取出→配件→佩戴→App 的顺序排镜头。",
+      approx: true,
+    },
     tags: [
       "约25秒 · 开箱评测",
       "16:9 横屏",
@@ -4777,6 +5072,17 @@ IMPORTANT: Say "Zephyra Leigh" only in the opening introduction. After that, nev
     sourceImpressions: 15293,
     sourceStats: { asOf: "2026-09-25", likes: 147, reposts: 14, bookmarks: 135 },
     formats: ["时尚大片"],
+    hook: {
+      structure: "十个姿势快切 · 同一角色",
+      opening: "灰色棚景里，粉发女孩站在反光地面上的全身远景；约 2s 直接跳到侧脸特写，节奏一上来就是快切。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 1s 一个镜头：蹲姿、白色厚底鞋微距、坐姿、衣扣细节、挎包、约 10s 伸手指向镜头，景别在全身和特写间来回跳。", at: 2 },
+        { title: "结尾怎么收", text: "约 13–14s 拉回远景，她站在暗下来的棚里中央，定格收住。", at: 13 },
+      ],
+      copyThis: "同一套服装、同一张脸，每 1 秒换一个姿势和景别，远景开头远景收尾。",
+      approx: true,
+    },
     tags: [
       "约15秒 · 10 个姿势",
       "16:9 横屏",
@@ -4924,6 +5230,17 @@ Also extract ref-char-from-demo.jpg from a clear face frame (~2s).`,
     sourceImpressions: 18269,
     sourceStats: { asOf: "2026-09-25", likes: 161, reposts: 27, bookmarks: 184 },
     formats: ["角色表演"],
+    hook: {
+      structure: "群舞全景 ↔ 领舞近景交替",
+      opening: "壁画洞窟前一群身着飞天服饰的舞者同时抬臂起舞，第一帧就是满画面的红绿彩带和群像。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 7–10s 切到领舞近景，彩带划过镜头；约 11–15s 又拉回群舞全景，远近景来回交替。", at: 7 },
+        { title: "结尾怎么收", text: "约 16–19s 领舞甩起长绸，身后群舞跟着动作，在群像中结束。", at: 16 },
+      ],
+      copyThis: "群舞全景和领舞近景交替剪，近景时让彩带扫过镜头做转场。",
+      approx: true,
+    },
     tags: [
       "约20秒 · 敦煌群舞成片",
       "16:9 横屏",
@@ -5419,6 +5736,17 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
     sourceImpressions: 225607,
     sourceStats: { asOf: "2026-09-25", likes: 642, reposts: 77, bookmarks: 726 },
     formats: ["拆装·制作过程", "产品广告"],
+    hook: {
+      structure: "三个 Logo 依次绣出",
+      opening: "米色布面上几根绿、橙色线头自己扭动着钻进布里，约 1s 已经绣出多邻国猫头鹰的轮廓。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–3s 线继续爬出「duolingo」字样；约 3.5s 换成红线，约 5–7s 针带着线绣出 YouTube 图标和字；约 7.5s 蓝线开始绣小鸟。", at: 2 },
+        { title: "成品揭晓", text: "约 9.5–10s 蓝色 Twitter 小鸟绣完，最后一段线收进布面。", at: 9.5 },
+      ],
+      copyThis: "线头像活物一样自己爬、自己缝，每个 Logo 约 3 秒绣完就换下一个颜色。",
+      approx: true,
+    },
     tags: [
       "约10秒",
       "16:9 横屏",
@@ -5484,6 +5812,17 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
     sourceImpressions: 13490,
     sourceStats: { asOf: "2026-09-25", likes: 203, reposts: 32, bookmarks: 148 },
     formats: ["拆装·制作过程"],
+    hook: {
+      structure: "小人拉绳 → 逐字成形 → 成品揭晓",
+      opening: "白底上一根红色粗绳散着，几个戴绿帽的黏土小人抓着绳头拖动，第一帧就能看出它们在「干活」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "小人们合力拖拽、弯折绳子，约 2s 出「Sm」，约 4s「Smil」，约 5.5s 写到「Smiling」，一个字母一个字母往后推。", at: 2 },
+        { title: "成品揭晓", text: "约 7s 红绳花体字「Smiling」完整成形，小人们走开，剩下干净的字。", at: 7 },
+      ],
+      copyThis: "让小人当「工人」拖绳，字从左往右一个字母一个字母写出来，最后留白给成品。",
+      approx: true,
+    },
     tags: [
       "约10秒 · 单镜头",
       "16:9 横屏",
@@ -5559,6 +5898,17 @@ Without cutting, protagonist pulls hand back and turns head; a fast smooth physi
     sourceImpressions: 15226,
     sourceStats: { asOf: "2026-09-25", likes: 64, reposts: 6, bookmarks: 61 },
     formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "一天的度假碎片 · 从日出到夜晚",
+      opening: "水上屋露台望向粉色日出的海面，约 2s 切白色纱帘、约 3s 光脚踩上湿木地板——第一人称醒来的感觉。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 1s 一个镜头快切：约 4s 骑摩托 POV，约 7s 白沙滩上女孩指向远方，约 8s 水下，约 14s 砍椰子，约 16s 下雨，约 20s 泻湖航拍。", at: 4 },
+        { title: "结尾怎么收", text: "约 23s 日落栈桥，约 24s 烤鱼晚餐，约 26–27s 夜里手拨动发光的海水，约 29s 天花板吊扇收尾。", at: 23 },
+      ],
+      copyThis: "按时间顺序排碎片：日出醒来开头、夜里吊扇结尾，中间每个镜头只留约 1 秒。",
+      approx: true,
+    },
     tags: [
       "约30秒 · 60+ 快切场景",
       "16:9 横屏",
@@ -5676,6 +6026,17 @@ French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1
     sourceImpressions: 10858,
     sourceStats: { asOf: "2026-09-25", likes: 174, reposts: 9, bookmarks: 142 },
     formats: ["拆装·制作过程"],
+    hook: {
+      structure: "固定机位定格：乱床 → 自动装箱 → 合箱",
+      opening: "固定机位看酒店房间，床上摊着衬衫、牛仔裤、袜子和一个打开的空行李箱，门牌写着 ROOM 214。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "衣物以定格方式一件件跳进箱子折好，约 4s 衬衫飞起，椅子上的衣服也跟着消失；百叶窗的光条在床上慢慢移动。", at: 4 },
+        { title: "成品揭晓", text: "约 13s 箱子里叠得整整齐齐，约 14s 已合上的蓝色行李箱立在空床中央。", at: 13 },
+      ],
+      copyThis: "机位全程不动，只让物件逐帧跳动，用窗光移动暗示时间流逝。",
+      approx: true,
+    },
     tags: [
       "约15秒 · 定格动画",
       "16:9 横屏",
@@ -5820,6 +6181,18 @@ French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1
     sourceImpressions: 430296,
     sourceStats: { asOf: "2026-09-25", likes: 1629, reposts: 135, bookmarks: 980 },
     formats: ["破壁出屏"],
+    hook: {
+      structure: "静态壁纸 → 飞天走出来碰掉图标 → 捡回去 → 回到壁纸",
+      opening: "看起来就是一张普通 Mac 桌面：左侧一列 App 图标，右边是敦煌飞天壁纸，前 1.5s 几乎不动。",
+      openingAt: 0,
+      beats: [
+        { title: "关键变化", text: "约 2s 壁纸像布一样鼓起褶皱，飞天从画里走出来，左边图标全被碰掉在屏幕底部。", at: 2 },
+        { title: "过程怎么推进", text: "约 3.5–7s 她蹲下把图标一个个捡起，重新摆回左侧那一列。", at: 3.5 },
+        { title: "结尾怎么收", text: "约 8.5–9.5s 她回到原位摆回飞天姿势，桌面恢复成开头的样子，可循环。", at: 8.5 },
+      ],
+      copyThis: "开头先给 1–2 秒完全静止的真实桌面，让人以为是截图，再让壁纸人物动起来碰桌面元素。",
+      approx: true,
+    },
     tags: [
       "约10秒 · 桌面动画喜剧",
       "16:9 横屏",
@@ -5885,6 +6258,17 @@ French Polynesia adventure vacation memories, rapid-fire hard cuts every 0.5–1
     sourceImpressions: 28296,
     sourceStats: { asOf: "2026-09-25", likes: 268, reposts: 30, bookmarks: 258 },
     formats: ["产品广告", "电影叙事"],
+    hook: {
+      structure: "微距开场 → 走向大树 → 触摸细节 → 全景 + 品牌字",
+      opening: "草叶上挂着露珠的低角度微距，下面是积水倒影；约 2s 一滴雨落进水洼，倒影里是一棵树。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4s 揭出雾中草地上孤零零的大树；约 8s 靴子踩过草地走近，约 14s 穿橙色外套的男人背影，约 16s 手掌贴上树皮。", at: 4 },
+        { title: "结尾怎么收", text: "约 25s 拉回大树全景，人变成树下一个小点，约 27s 左下角出「AGAIN / Come back.」。", at: 25 },
+      ],
+      copyThis: "从露珠、水滴这类小细节进，最后拉到大全景给品牌字，中间用手摸树皮这种触感镜头。",
+      approx: true,
+    },
     tags: [
       "30秒 · 15 镜头",
       "16:9 横屏 · 进胶片条",
@@ -6131,6 +6515,17 @@ Let the final water texture and continuous rain lead back into the opening dropl
     sourceImpressions: 52628,
     sourceStats: { asOf: "2026-09-25", likes: 375, reposts: 46, bookmarks: 594 },
     formats: ["时尚大片"],
+    hook: {
+      structure: "海岸四个场景 → 摘墨镜对视收尾",
+      opening: "戴墨镜、系红丝巾的金发女子坐在薄荷绿老爷敞篷车上，身后是地中海海岸，第一帧就是 60 年代杂志大片的构图。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "每段约 4s：约 4s 从车门边走开，约 8s 包头巾侧脸望海上游艇，约 12s 手搭方向盘特写，约 16s 走在海边公路上回头。", at: 4 },
+        { title: "结尾怎么收", text: "约 20s 大特写，她双手拉下玳瑁墨镜，约 22s 露出眼睛直视镜头。", at: 20 },
+      ],
+      copyThis: "红色单品（丝巾、裤子）贯穿每个场景，结尾留一个「摘墨镜看镜头」的特写收住。",
+      approx: true,
+    },
     tags: [
       "约24秒 · 六镜头直切",
       "16:9 横屏",
@@ -6413,6 +6808,17 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
     sourceImpressions: 5024,
     sourceStats: { asOf: "2026-09-25", likes: 18, reposts: 1, bookmarks: 6 },
     formats: ["拆装·制作过程"],
+    hook: {
+      structure: "和面 → 擀卷 → 煎烤 → 掰开 → 成品",
+      opening: "手绘动画风的老厨房，窗前一双手揉着面团，约 1s 面团被放在案板上。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4s 切葱花，约 6–8s 擀面皮、刷油、撒葱，约 9–11s 卷起再盘成圈，约 14s 下锅，约 17s 翻面，约 19s 放进炉里烤。", at: 4 },
+        { title: "成品揭晓", text: "约 24–26s 双手把金黄的饼掰开，露出一层层葱花；约 27s 几块饼装在竹篮里放在窗前。", at: 24 },
+      ],
+      copyThis: "每个步骤只给一个近景，按做饭顺序剪；成品前加一个「掰开看层次」的特写。",
+      approx: true,
+    },
     tags: [
       "30秒 · 10 制作节拍",
       "无参考图 · 纯文生可跟做",
@@ -6700,7 +7106,7 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
     poster: "/tutorials/anime-katsudon/poster.jpg",
     duration: "30秒",
     durationSec: 30,
-    styleLabel: "日式动漫",
+    styleLabel: "写实美食",
     shots: 11,
     references: 0,
     model: "Seedance 2.5",
@@ -6712,6 +7118,17 @@ Underneath it, quiet natural ambience: a light sea breeze, the sea far below, fa
     sourceImpressions: 10451516,
     sourceStats: { asOf: "2026-09-25", likes: 4973, reposts: 274, bookmarks: 9563 },
     formats: ["拆装·制作过程"],
+    hook: {
+      structure: "拍肉 → 裹粉炸 → 切开 → 淋蛋 → 盖饭",
+      opening: "开场就是锤子敲打一块生猪排的特写，约 1s 切到拍薄的肉片。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3s 裹蛋液，约 4s 滚面包糠，约 6–8s 下油锅，约 9–11s 刀切开露出白嫩切面，约 12s 洋葱汤汁，约 16s 蛋液淋上猪排。", at: 3 },
+        { title: "成品揭晓", text: "约 21s 把猪排滑到米饭上，约 24s 热气腾起，约 27s 摆上一撮葱丝的整碗成品。", at: 21 },
+      ],
+      copyThis: "全程只拍食物和手，每步一个近景；关键节点放「切开的切面」和「淋蛋」两个特写。",
+      approx: true,
+    },
     tags: [
       "30秒 · 11 制作节拍",
       "无参考图 · 纯文生可跟做",
@@ -6881,6 +7298,17 @@ No storyboard, reference image, sketch, panels, borders, numbers, arrows, annota
     sourceImpressions: 41910,
     sourceStats: { asOf: "2026-09-25", likes: 403, reposts: 46, bookmarks: 540 },
     formats: ["产品广告"],
+    hook: {
+      structure: "走进工厂 → 加工/检测细节 → 团队 → 品牌字卡",
+      opening: "晨光里一名女员工背影走向写着 KISARAGI 的厂房，约 1s 切到她走在两排数控机床之间。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.5s 她戴上护目镜，约 3.5s 切削特写，约 5s 千分尺测量，约 6s 对照图纸，约 7s 团队围桌讨论，约 8.5s 她手捧零件看镜头。", at: 2.5 },
+        { title: "结尾怎么收", text: "约 9s 黑底上零件特写，左侧日文字「見えない場所に、私たちの精度。」和 KISARAGI INDUSTRIES。", at: 9 },
+      ],
+      copyThis: "10 秒里每个镜头约 1 秒：人→机器→测量→团队，最后黑底产品 + 一句标语收。",
+      approx: true,
+    },
     tags: [
       "约10秒 · 企业品牌片",
       "16:9 横屏",
@@ -7101,6 +7529,17 @@ CNC工作機械、測定室、設計用PC、金属部品、図面、工具。
     sourceImpressions: 15846,
     sourceStats: { asOf: "2026-09-25", likes: 96, reposts: 15, bookmarks: 60 },
     formats: ["字效·片头"],
+    hook: {
+      structure: "巨型字 + 舞者快切",
+      opening: "白底上满屏黑色粗体大字「NO」，黑发女孩站在字前；约 1s 切到另一成员特写，旁边是「SIGNAL」。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "每约 1s 换一个成员或队形，每个镜头都配一个大字：CTRL、约 5s 红色「LOST」、约 7s「ZERO MERCY」，字压在人前或人后。", at: 2 },
+        { title: "结尾怎么收", text: "约 13s 三人群舞配「NO SIGNAL」，约 14s「ECLIPSE MODE」大字压在三人前面结束。", at: 13 },
+      ],
+      copyThis: "每个镜头配一个满屏粗体英文词，字和人前后穿插，换词就换镜头。",
+      approx: true,
+    },
     tags: [
       "15秒 · K-pop 女团 MV",
       "16:9 横屏",
@@ -7167,6 +7606,17 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
     sourceImpressions: 8707,
     sourceStats: { asOf: "2026-09-25", likes: 42, reposts: 1, bookmarks: 70 },
     formats: ["角色表演"],
+    hook: {
+      structure: "上班装扮 → 甩包扔工牌 → 放开跳",
+      opening: "白墙前穿工牌、拎黑色托特包的女孩，画面上方一直挂着大字「我要辞职了！！！」，第一秒就交代了情绪。",
+      openingAt: 0,
+      beats: [
+        { title: "关键变化", text: "约 1s 张开双臂，约 1.5s 把包甩到地上，约 3s 扯下挂绳工牌往上一扔。", at: 1 },
+        { title: "过程怎么推进", text: "约 4s 起单人固定机位整段舞蹈，踢腿、转身、摆手，动作连贯不切镜。", at: 4 },
+      ],
+      copyThis: "开头先用「甩包、扔工牌」两个动作点题，再接整段舞；顶部一句大字幕全程不换。",
+      approx: true,
+    },
     tags: [
       "约8秒 · 舞蹈重建",
       "9:16 竖屏 · 动作迁移",
@@ -7280,6 +7730,17 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
     sourceImpressions: 1689,
     sourceStats: { asOf: "2026-09-25", likes: 7, reposts: 2, bookmarks: 10 },
     formats: ["变装·换装"],
+    hook: {
+      structure: "俯拍躺姿 · 吊扇扫过一次换一套",
+      opening: "正上方俯拍，女孩躺在地毯上；约 1s 一片木色吊扇叶从画面前扫过，约 2s 旁边出现红白竖排字「灰调日常」。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "扇叶每扫过一次换一套：约 4s「可可学院」、约 7s「薄荷假日」、约 11s「蓝莓甜酷」、约 15s「条纹叛逆」、约 19s「周末出逃」，包和鞋也跟着换。", at: 4 },
+        { title: "结尾怎么收", text: "最后一套不再换，约 25s 她举起手机比耶自拍收尾。", at: 25 },
+      ],
+      copyThis: "用吊扇叶挡住画面的一瞬间换装，每套配一个竖排小标题写风格+单品。",
+      approx: true,
+    },
     tags: [
       "约28秒 · 7 分镜",
       "9:16 竖屏 · 不进胶片条",
@@ -7421,6 +7882,18 @@ CORONA：深红棕长卷发，带细辫，叛逆锋利，红黑赛车短夹克�
     sourceImpressions: 16136,
     sourceStats: { asOf: "2026-09-25", likes: 237, reposts: 35, bookmarks: 152 },
     formats: ["产品广告"],
+    hook: {
+      structure: "推近开门 → 食材微距 → 冷气流动 → 标语",
+      opening: "昏暗的高级厨房里一台黑色对开门冰箱，镜头缓缓推近，前 1.5s 只有门缝的光。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.5s 冰箱门打开，冷雾涌出；约 4s 生菜、约 4.5s 带水珠的番茄、约 5s 玻璃瓶牛奶的微距。", at: 2.5 },
+        { title: "关键画面", text: "约 6–7.5s 蓝色光带在各层架子间流动，把「保鲜气流」画出来。", at: 6 },
+        { title: "结尾怎么收", text: "约 8s 门关上，约 8.5s 冰箱上方出「FRESHNESS.」，约 9s 补上「PERFECTED.」。", at: 8.5 },
+      ],
+      copyThis: "把看不见的卖点（冷气）做成可见的蓝色光带，标语分两拍出字。",
+      approx: true,
+    },
     tags: [
       "10秒 · 5 节拍",
       "9:16 竖屏 · 不进胶片条",
@@ -7540,6 +8013,17 @@ No people, no hands, no warped refrigerator, no changing product design, no extr
     sourceAuthor: "@bmx_ai13",
     sourcePlatform: "Evolink",
     formats: ["产品广告"],
+    hook: {
+      structure: "迎客 → 颈部调整 → 背部按压 → 起身放松",
+      opening: "明亮的诊所大厅全景，医生迎上前和患者握手，第一秒交代场景和人物关系。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4s 患者坐着、医生手放肩上；约 8s 侧面近景调整颈部，约 11s 患者露出笑容；约 12s 趴在理疗床上按压背部，约 17s 切手部特写。", at: 4 },
+        { title: "结尾怎么收", text: "约 22s 仰躺头部调整，约 26s 患者坐起转动肩膀，一脸轻松，医生站在身后。", at: 26 },
+      ],
+      copyThis: "按一次就诊流程排镜头：握手→坐姿→趴→躺→坐起，每步给一个手部或表情近景。",
+      approx: true,
+    },
     tags: [
       "约30秒 · 7 治疗节拍",
       "无参考图 · 纯文生可跟做",
@@ -7650,6 +8134,17 @@ Audio should feel captured on location with soft room ambience, distant clinic m
     sourceImpressions: 26219,
     sourceStats: { asOf: "2026-09-25", likes: 372, reposts: 35, bookmarks: 325 },
     formats: ["电影叙事"],
+    hook: {
+      structure: "驰骋 → 骑射 → 冲阵 → 正面收束",
+      opening: "暮色草原，侧跟镜头贴着栗色战马狂奔，马背上长发女战士，远处一排骑兵和烟尘——第一帧就是战场。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2s 推近脸部，约 6–11s 马背上拉弓连射；约 12s 起冲进敌骑阵，约 16s 穿过燃烧的辎重车，约 20s 起在扬尘里混战。", at: 2 },
+        { title: "结尾怎么收", text: "约 24s 举弯刀冲向对面骑兵，约 27s 正面骑行逼近，约 28s 停在镜头前，火光与旗帜作背景，满脸尘土直视镜头。", at: 24 },
+      ],
+      copyThis: "每段只给一个动作（奔、射、冲、挥刀），全程暮色逆光+扬尘统一质感，最后收在正面近景。",
+      approx: true,
+    },
     tags: [
       "约30秒 · 7 节拍战斗弧",
       "无参考图 · 纯文生可跟做",
@@ -7796,6 +8291,18 @@ Keep violence fierce but readable rather than gore-focused. Prioritize cavalry s
     sourceImpressions: 2488,
     sourceStats: { asOf: "2026-09-25", likes: 59, reposts: 10, bookmarks: 31 },
     formats: ["拆装·制作过程"],
+    hook: {
+      structure: "人物 → 食物特写煮面 → 吃第一口 → 字幕收",
+      opening: "深夜昏暗房间，戴白色耳机的女孩坐在小桌前，旁边一只电水壶和台灯——安静的正面构图先立氛围。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3s 撕开红色调料包，约 5–7s 粉末倒进面饼、热水冲下，约 8s 俯拍面碗，约 11–12s 打入鸡蛋，中间穿插她等待的镜头。", at: 3 },
+        { title: "成品揭晓", text: "约 19s 荷包蛋泡面特写，约 20–22s 筷子挑起面条拉丝，约 23–25s 她低头吸面。", at: 19 },
+        { title: "结尾怎么收", text: "约 26s 回到开场正面构图，闭眼嚼面，字幕「深夜裡，最溫柔的一口。」", at: 26 },
+      ],
+      copyThis: "开头和结尾用同一个正面机位首尾呼应，中间全是食物大特写，最后一句字幕点题。",
+      approx: true,
+    },
     tags: [
       "约29秒 · 7 节拍",
       "无参考图 · 纯文生视频可跟做",
@@ -7923,6 +8430,18 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
     sourceImpressions: 556,
     sourceStats: { asOf: "2026-09-25", likes: 5, reposts: 0, bookmarks: 16 },
     formats: ["变装·换装", "时尚大片"],
+    hook: {
+      structure: "四套造型轮换 → 终套 → 牵手挡镜",
+      opening: "黑棚里一个白色无脸假人只穿短裤，约 0.5s 两只黑手套一挥，衬衫和裤子从空中飞来往身上套。",
+      openingAt: 0,
+      beats: [
+        { title: "几套怎么切换", text: "约 1.5s 衣服卸落在地，约 2.5s 换皮夹克，约 3.5–4s 长外套绕身套上，约 4.5s 换马甲；每套卸下都堆在脚边。", at: 1.5 },
+        { title: "成品揭晓", text: "约 6s 终套到位：深棕长外套+橙色马甲+领带，手套在两侧微调，约 7s 定格全身。", at: 6 },
+        { title: "结尾怎么收", text: "约 8.5s 手伸进来牵住假人往前走，约 9.5s 外套和马甲贴满画面，胸针特写收尾。", at: 8.5 },
+      ],
+      copyThis: "机位全程不动，只有衣服在飞；每套卸下的衣服堆在地上，观众能数出换了几套。",
+      approx: true,
+    },
     tags: [
       "10 秒 · 5 节拍 · 固定机位",
       "1 张分镜静帧",
@@ -8017,6 +8536,17 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
     sourceImpressions: 12113,
     sourceStats: { asOf: "2026-09-25", likes: 254, reposts: 36, bookmarks: 341 },
     formats: ["产品广告", "拆装·制作过程"],
+    hook: {
+      structure: "滑动选款 → 选定 → 房间长出来",
+      opening: "黑底上一张白色毛绒沙发，黑手套一划，约 1s 一排沙发像转盘一样横着滑过——像在手机上刷款式。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.5s 滑到焦糖色皮沙发，约 3.5s 停在灰褐色布艺沙发；约 5s 手套按压坐垫，给面料特写。", at: 2.5 },
+        { title: "成品揭晓", text: "约 6s 沙发落到木地台上，约 6.5–8s 地毯、墙面、茶几和单椅依次出现，约 9s 成为一整间客厅。", at: 6 },
+      ],
+      copyThis: "用手套横划当「翻页」选款，选定后再让整间房围着沙发长出来。",
+      approx: true,
+    },
     tags: [
       "10 秒 · 6 节拍 · 第一人称 POV",
       "1 张分镜静帧",
@@ -8116,6 +8646,18 @@ Visual: Close-up of the woman taking a big bite, slurping the noodles happily, a
     aspectRatio: "16/9",
     sourcePlatform: "Pollo",
     formats: ["角色表演"],
+    hook: {
+      structure: "开枪不中 → 闭眼复位 → 击碎瓶子 → 余韵",
+      opening: "黄金时段的麦田，女人站在中央举枪瞄准，远处一排空瓶——广角先交代射手和目标。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3–10s 肩后中景持枪瞄准射击，远处瓶子一直立着没倒；约 11s 切脸部大特写，她闭眼，约 12s 睁眼。", at: 3 },
+        { title: "关键变化", text: "约 13–17s 扳机和手指的极近特写，慢慢压下；约 18–21s 瓶子特写被击碎，玻璃慢动作飞散。", at: 13 },
+        { title: "结尾怎么收", text: "约 25s 回到麦田远景，她垂下枪站着，约 28s 逆光剪影收尾。", at: 25 },
+      ],
+      copyThis: "情绪转折用两个特写讲：闭眼的脸 → 扣扳机的手指，只有最后命中那一枪给慢动作。",
+      approx: true,
+    },
     tags: [
       "30 秒 · 7 节拍 · 情绪弧",
       "无参考图",
@@ -8235,6 +8777,18 @@ on the final hit.`,
     aspectRatio: "3/4",
     sourcePlatform: "Pollo",
     formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "观众手机视角 → 跟拍表演 → 拉开全场",
+      opening: "体育场人群里一片举起的手机，约 1s 镜头直接怼近前排一部手机屏幕，失焦穿过去——点明「观众 iPhone 视角」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.5s 焦点落到台上白衣说唱者，之后竖屏手持一路跟着他：约 5–17s 边唱边做手势，约 18–20s 蹲低。", at: 2.5 },
+        { title: "关键变化", text: "约 21s 站起抬手指向看台，约 23s 高举手臂，约 24s 镜头拉远，约 25s 甩镜。", at: 21 },
+        { title: "结尾怎么收", text: "约 26s 起换成体育场高位全景，满场灯海，人物已看不见。", at: 26 },
+      ],
+      copyThis: "开头先拍「别人的手机」再穿过去对焦舞台，一下子交代这是观众在拍。",
+      approx: true,
+    },
     tags: [
       "30 秒 · 3:4 竖屏 · 5 节拍",
       "提示词含 @Image1 · 页面无参考图",
@@ -8342,6 +8896,17 @@ He shouts the final line while performing a rapid three-step, a controlled 180°
     aspectRatio: "16/9",
     sourcePlatform: "Pollo",
     formats: ["电影叙事"],
+    hook: {
+      structure: "推门 → 六个房间逐个穿过 → 白房间 → 品牌卡",
+      opening: "穿黑大衣的男人从门口走进一间刺眼白光的房间——第一帧就是「门」，暗示接下来要一间间穿过去。",
+      openingAt: 0,
+      beats: [
+        { title: "几个房间怎么切换", text: "约 2s 蓝调房里被人扑倒又撂倒，约 6s 向日葵房有卡通画家，约 11s 暗房，约 14s 花海房，约 17s 水下房，约 21s 烛光派对；每次都借门框遮挡换场。", at: 2 },
+        { title: "结尾怎么收", text: "约 24s 走进一间全白空房，约 27s 停住，约 28s 黑底「seedance」字卡。", at: 24 },
+      ],
+      copyThis: "人物一直往一个方向走，每过一道门框就换一个世界，门框就是转场。",
+      approx: true,
+    },
     tags: [
       "30 秒 · 一镜到底 · 6 房间",
       "提示词含图像1 · 页面无参考图",
@@ -8403,6 +8968,18 @@ He shouts the final line while performing a rapid three-step, a controlled 180°
     aspectRatio: "1/1",
     sourcePlatform: "Pollo",
     formats: ["电影叙事", "手机POV·Vlog"],
+    hook: {
+      structure: "上半成片 + 下半提示词滚动 → 怪兽出现 → 薯条反击 → 品牌收",
+      opening: "分屏：上半是端着汉堡薯条托盘的麦当劳女店员走出门店，下半是参考图和逐句滚动的英文提示词。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "她在停车场找位置，约 11s 背后地面裂开、巨型汉堡怪兽冒出来，车辆翻飞，她神色平静。", at: 11 },
+        { title: "高潮", text: "约 17s 她拿起一根薯条发光，约 19–21s 成群发光薯条绕着她飞，约 23s 射向怪兽，怪兽炸开。", at: 17 },
+        { title: "结尾怎么收", text: "约 25s 顾客回来，约 28s 她咬一口巨无霸，约 29s 麦当劳 M 标出现。下半提示词始终与画面同步。", at: 25 },
+      ],
+      copyThis: "下半屏按画面进度滚动对应的提示词句子，观众边看成片边对照每句写了什么。",
+      approx: true,
+    },
     tags: [
       "30 秒 · 1:1 方形 · 7 节拍",
       "提示词含 Image1 · 页面无参考图",
@@ -8562,6 +9139,17 @@ The employee`,
     aspectRatio: "16/9",
     sourcePlatform: "Pollo",
     formats: ["电影叙事"],
+    hook: {
+      structure: "远景立威胁 → 车内近景 → 车被卷上天",
+      opening: "广角沙漠，巨大的黑色沙暴墙压在地平线上，一列小小的车队沿沙丘脊线奔逃——尺度对比先把危险立住。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4s 切车内：戴头盔护目镜的司机在裂开的挡风玻璃后嘶吼；约 6–7s 驾驶位视角，玻璃继续炸裂，前方有车。", at: 4 },
+        { title: "关键变化", text: "约 9s 一辆装甲车被卷离地面，约 12s 沙暴里闪电劈下，车悬在半空；约 14s 切黑。", at: 9 },
+      ],
+      copyThis: "先用超远景给「沙暴 vs 小车」的尺度，再切到司机脸和驾驶位，最后回到外部看车被卷走。",
+      approx: true,
+    },
     tags: [
       "15 秒 · 3 段式 · 切黑收尾",
       "无参考图 · 纯文生视频",
@@ -8631,6 +9219,17 @@ The employee`,
     style: "真人摄影 · 街头广告",
     aspectRatio: "16/9",
     formats: ["破壁出屏", "产品广告"],
+    hook: {
+      structure: "街景广告牌 → 伸手 → 递瓶出屏",
+      opening: "城市街口的巨型广告牌上，女人侧躺着，旁边写 AURORA MANGO，下方黄色出租车和行人来往——看着就是普通户外广告。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 6.5s 她在屏幕里拿起一瓶芒果汁，约 7s 镜头前伸进一只手。", at: 6.5 },
+        { title: "关键变化", text: "约 7.5s 瓶子从屏幕里递到了现实的手中，约 8–10s 手握 AURORA MANGO 瓶身占据前景，广告牌作背景。", at: 7.5 },
+      ],
+      copyThis: "前 6 秒完全当普通街景拍，最后 2 秒让产品从广告牌「递」到镜头前的手里。",
+      approx: true,
+    },
     tags: [
       "10 秒 · 5 节拍 · 连贯",
       "1 张参考图",
@@ -8719,6 +9318,18 @@ The employee`,
     style: "真人摄影 · 户外变形广告",
     aspectRatio: "16/9",
     formats: ["破壁出屏", "产品广告"],
+    hook: {
+      structure: "3D 广告牌表演 → 递出产品 → 接住 → 欢呼",
+      opening: "雨夜时代广场式街口，转角裸眼 3D 大屏里女人侧躺，像要从屏幕里探出来；下方满街黄色出租车。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–16s 她在屏里换姿势：坐起、站立、张开双臂、跪姿、伸懒腰，始终贴着屏幕边缘表演。", at: 2 },
+        { title: "关键变化", text: "约 18s 她捧出一个黑色罐子伸出屏外，约 22s 镜头前的手伸上去，约 23s 接住，罐子到了现实里。", at: 18 },
+        { title: "结尾怎么收", text: "约 25s 她在屏里举手欢呼，手握罐子在前景，约 28s 她退回屏中站好。", at: 25 },
+      ],
+      copyThis: "前半段只做「人在转角屏里」的立体感，产品留到后半从屏幕递到观众手里。",
+      approx: true,
+    },
     tags: [
       "30 秒 · 6 节拍 · 一镜到底",
       "3 张参考图",
@@ -8858,6 +9469,18 @@ REPEAT: NO background music at any point — diegetic sound only. Camera and bil
     style: "真人摄影 · 动作追逐",
     aspectRatio: "16/9",
     formats: ["电影叙事"],
+    hook: {
+      structure: "猫坐摩托 → 开火 → 爆炸 → 继续狂飙",
+      opening: "金门大桥上，一只橘猫坐在摩托后座、抱着一把枪，旁边黑衣车手紧追——第一秒就是荒诞动作片设定。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2s 镜头侧倾，追兵翻车；约 4–5s 猫朝追兵开枪，约 8–9s 连续开火，约 11s 扛起火箭筒。", at: 2 },
+        { title: "高潮", text: "约 13s 火箭弹命中，画面被爆炸火球填满；约 16s 起换枪继续射击，桥塔在背景里掠过。", at: 13 },
+        { title: "结尾怎么收", text: "约 25s 又一团爆炸火光吞没画面，约 26s 猫穿过烟雾继续向前。", at: 25 },
+      ],
+      copyThis: "机位一直贴在摩托后方跟着猫，所有追车、爆炸都在猫身后背景里发生。",
+      approx: true,
+    },
     tags: [
       "28 秒 · 7 节拍 · 一镜到底",
       "3 张参考图",
@@ -9167,6 +9790,18 @@ Shot 1: ONE continuous POV shot, about 28 seconds, chase camera just behind the 
     style: "真人摄影质感",
     aspectRatio: "16/9",
     formats: ["电影叙事"],
+    hook: {
+      structure: "画隧道 → 老鼠穿过 → 猫追 → 撞墙",
+      opening: "路面低机位，一把刷子在碎石路上刷出黄色中线，一只猫握着刷子倒退着刷——开场就是动画式的恶作剧。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2s 猫用红色长柄滚筒在岩壁上画，约 5–8s 画出一个带黄线的隧道口；约 9s 躲到石头后，约 11–13s 老鼠沿路跑来。", at: 2 },
+        { title: "反转", text: "约 14s 老鼠直接跑进画出来的隧道，约 16s 镜头跟进隧道里，是真的通的；约 18–20s 猫在石头后惊呆。", at: 14 },
+        { title: "结尾怎么收", text: "约 25s 猫冲刺追进去，约 26.5s 整只糊在隧道画上，约 28–29s 顺着墙滑下来瘫在地上。", at: 25 },
+      ],
+      copyThis: "照搬经典卡通笑点：同一个画出来的隧道，老鼠能进，猫一头撞墙。",
+      approx: true,
+    },
     tags: ["30 秒 · 13 镜头", "5 张参考图", "Seedance 2.5 · 16:9", "真人摄影质感"],
     steps: [
       {
@@ -9302,6 +9937,17 @@ Shot 13 — Same framing: he peels off the rock and slides slowly down the paint
     sourceImpressions: 5739,
     sourceStats: { asOf: "2026-09-25", likes: 41, reposts: 8, bookmarks: 51 },
     formats: ["产品广告", "拆装·制作过程"],
+    hook: {
+      structure: "横划选款 → 选定毛绒沙发 → 房间长出来",
+      opening: "白色圆形取景里，白手套伸进来划过一张粉色扶手椅，约 1s 换成旋转木马家具，像拆盲盒一样一款款翻。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2s 翻到猫耳懒人沙发，约 3s 停在玫红长毛沙发；约 4.5s 手套抚摸长毛，其他椅子飞离画面，约 5s 毛发特写。", at: 2 },
+        { title: "成品揭晓", text: "约 6s 沙发落到地台上，约 6.5–8.5s 粉色地毯、兔耳椅、墙面柜依次出现，约 9s 窗外景色打开，成为整间粉色客厅。", at: 6 },
+      ],
+      copyThis: "手套划一下换一款，选定后先给摸毛的触感特写，再让整间房围绕它搭起来。",
+      approx: true,
+    },
     tags: [
       "10秒 · 一镜到底",
       "16:9 横屏",
@@ -9464,6 +10110,18 @@ No magic, morphing, or cuts. High-quality textures, real mass and friction.`,
     sourceImpressions: 5609,
     sourceStats: { asOf: "2026-09-25", likes: 88, reposts: 8, bookmarks: 53 },
     formats: ["角色表演"],
+    hook: {
+      structure: "一镜到底：低声对话 → 他探身 → 近距离对峙",
+      opening: "烛光餐厅，男女隔着小桌侧面对坐，背景坐满客人，两人压低声音说话——固定双人镜直接进戏。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 0–15s 镜头几乎不动，两人你一句我一句，她身体前倾、他手搭在桌边，情绪慢慢绷紧。", at: 0 },
+        { title: "关键变化", text: "约 17s 他猛地探身压过桌面，镜头随之绕低推近，这段声音也最响；约 20s 起两人脸贴很近对视。", at: 17 },
+        { title: "结尾怎么收", text: "约 24–29s 维持近距离侧脸对峙，没有剪切，停在两人对视。", at: 24 },
+      ],
+      copyThis: "不切镜头，用人物身体前倾 + 镜头缓慢推近来表现冲突升级。",
+      approx: true,
+    },
     tags: [
       "30秒 · 一镜到底",
       "16:9 横屏",
@@ -9660,6 +10318,17 @@ No background music.`,
     sourceImpressions: 40250,
     sourceStats: { asOf: "2026-09-25", likes: 26, reposts: 3, bookmarks: 32 },
     formats: ["变装·换装"],
+    hook: {
+      structure: "白底定位 → 地图 App 换城市 → 换装",
+      opening: "白底上黑发女孩穿黑色水手服低头刷手机，约 2s 头顶冒出一个红色地图定位针。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 4s 切进地图 App 界面：搜索栏「巴黎」，她换条纹衫站在埃菲尔铁塔前；约 6s「罗马」绿裙，约 8s「开罗」，约 10.5s「悉尼」。", at: 4 },
+        { title: "关键变化", text: "每换一座城市，搜索栏、底部卡片、地标背景和她的服装一起换，姿势跟着城市变。", at: 6 },
+      ],
+      copyThis: "用地图 App 的搜索栏当转场：输入一个城市名，背景和衣服就跟着换。",
+      approx: true,
+    },
     tags: [
       "12秒 · 7段变装",
       "9:16 竖屏",
@@ -9794,6 +10463,17 @@ The angle in Picture 6 describes identity only, NOT a fixed head pose. Face dire
     sourceImpressions: 660494,
     sourceStats: { asOf: "2026-09-25", likes: 6048, reposts: 620, bookmarks: 2831 },
     formats: ["破壁出屏"],
+    hook: {
+      structure: "壁纸动起来 → 图标被撞飞 → 汤姆看镜头",
+      opening: "Mac 桌面，左侧图标、底部 Dock 都在，壁纸是猫和老鼠的客厅，约 0.5s 汤姆扑向杰瑞——壁纸自己动了。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1.5s 汤姆扑空，Dock 上的图标被撞得弹起来；约 4.5–8.5s 他捡起桌面图标当武器扔向杰瑞，图标散落在壁纸地板上。", at: 1.5 },
+        { title: "结尾怎么收", text: "约 9s 汤姆站定，双手背后，对着屏幕外的人一脸心虚，杰瑞在旁边。", at: 9 },
+      ],
+      copyThis: "让卡通角色直接碰到真实的桌面图标和 Dock，图标被撞飞才让人意识到「壁纸活了」。",
+      approx: true,
+    },
     tags: [
       "10秒 · 一镜到底",
       "16:9 横屏",
@@ -10233,6 +10913,17 @@ The final frame should closely match the original reference image.`,
     sourceImpressions: 21062,
     sourceStats: { asOf: "2026-09-25", likes: 463, reposts: 34, bookmarks: 161 },
     formats: ["破壁出屏"],
+    hook: {
+      structure: "壁纸里的猫 → 打喷嚏 → 图标被吹飞",
+      opening: "Mac 桌面，壁纸是夜景书桌前戴耳机的虎斑猫，左侧一列图标、底部 Dock——开场像一张普通壁纸。",
+      openingAt: 0,
+      beats: [
+        { title: "关键变化", text: "约 1.5s 猫一个喷嚏，约 1.8s 左侧一排图标被喷飞，约 2.5s 散落在壁纸桌面上。", at: 1.5 },
+        { title: "过程怎么推进", text: "约 3s 猫盯着图标看，约 5–9s 伸爪一个个拨弄，把图标推来推去，约 9.5s 回到原位坐好。", at: 3 },
+      ],
+      copyThis: "先让壁纸静止一秒装普通，然后一个小动作（喷嚏）把真实桌面图标弄乱。",
+      approx: true,
+    },
     tags: [
       "10秒 · 一镜到底",
       "16:9 横屏",
@@ -10648,6 +11339,18 @@ The final frame should closely match the first frame.`,
     sourceImpressions: 3736,
     sourceStats: { asOf: "2026-09-25", likes: 26, reposts: 1, bookmarks: 14 },
     formats: ["产品广告", "破壁出屏"],
+    hook: {
+      structure: "刷手机 → 小人提醒 → 放下手机喝茶 → 品牌卡",
+      opening: "野餐毯上，女孩趴着刷手机，前景一瓶东方树叶，瓶身上的水墨小人走下来，扛着一片茶叶。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3s 字幕「人出来了」，约 4s「心还在手机里」；约 5–6s 小人举起叶子挡到她手机前，约 7s 她笑了。", at: 3 },
+        { title: "关键变化", text: "约 8s 她坐起来拧开茶，约 14–16s 茶汤和茶叶微距，约 17s 手机扣在毯上，和朋友们野餐。", at: 8 },
+        { title: "结尾怎么收", text: "约 26s 米白底品牌卡「东方树叶」，约 27s 标语「把这一刻，还给自己」。", at: 26 },
+      ],
+      copyThis: "让瓶身上的插画小人走进实拍画面当「推动者」，两句字幕就把痛点说清。",
+      approx: true,
+    },
     tags: [
       "30秒 · 7段叙事",
       "16:9 横屏",
@@ -10756,6 +11459,18 @@ The final frame should closely match the first frame.`,
     sourceImpressions: 12504,
     sourceStats: { asOf: "2026-09-25", likes: 230, reposts: 26, bookmarks: 265 },
     formats: ["拆装·制作过程", "产品广告"],
+    hook: {
+      structure: "微缩组装 ASMR → 喷漆抛光 → 硬切成真车",
+      opening: "白色台面上，黑手套正在组装一台白色微缩宝马，约 0.5s 直接怼到打开的引擎舱特写。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1.5s 装刹车盘，约 2s 红色卡钳，约 2.5–3s 装轮毂拧螺丝，约 3.5s 内饰，约 4s 大灯；约 5.5s 白车完工。", at: 1.5 },
+        { title: "关键变化", text: "约 6s 喷枪喷成红色，约 6.5s 抛光机打磨；约 7.3s 手指还捏着小车，约 8s 硬切到影棚转台上的红车，看起来已是真车尺寸。", at: 6 },
+        { title: "结尾怎么收", text: "约 9–9.5s 推到车头格栅特写，约 9.8s 又切回白车大灯特写。", at: 9 },
+      ],
+      copyThis: "前 7 秒全用手部特写建立「这是模型」，最后一刀硬切到转台大全景，尺寸感瞬间翻转。",
+      approx: true,
+    },
     tags: [
       "10秒 · ASMR 组装",
       "16:9 横屏",
@@ -10880,6 +11595,17 @@ The final frame should closely match the first frame.`,
     sourceImpressions: 7751,
     sourceStats: { asOf: "2026-09-25", likes: 161, reposts: 18, bookmarks: 91 },
     formats: ["产品广告", "拆装·制作过程"],
+    hook: {
+      structure: "逐层组装 → 成品举到镜头前",
+      opening: "黑手套按住一只烤得金黄的汉堡面包，背景是穿制服的店员——开场就是食物大特写。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1s 生牛肉饼，约 2s 压扁煎，约 3–5s 芝士片落下融化，约 6–7s 挤酱，约 8s 盖上生菜番茄和面包。", at: 1 },
+        { title: "成品揭晓", text: "约 9s 双手捧起双层芝士汉堡正对镜头，约 11s 镜头拉开露出店员的脸，约 12s 画面收在人和汉堡。", at: 9 },
+      ],
+      copyThis: "每一层只给 1 秒特写，芝士融化给足 2 秒，最后双手把成品举到镜头正中。",
+      approx: true,
+    },
     tags: [
       "13秒 · 商业广告",
       "4:3 复古画幅",
