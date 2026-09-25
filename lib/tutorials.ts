@@ -902,6 +902,814 @@ Keep the performance fast but with a liquid flow. Transition smoothly with movem
     },
   },
   {
+    id: "iqrasaifi-period-drama-silk-seedance",
+    title: "古装红纱闺房 · 六镜眼神戏 · Seedance 2.5",
+    subtitle: "X · @IqrasaifiAI · Seedance 2.5 · Higgsfield · 30秒 · 16:9",
+    description:
+      "Iqra Saifi 创作的 Seedance 2.5 古装红纱闺房眼神戏：六段连贯镜头穿过透纱、纱帘、铜镜、花窗、烛光到收镜凝视。每一段都是独立的眼神场景——透纱初见回眸、穿行垂帘、铜镜对视微笑、月光花窗回望、烛光中旋转捕纱、最终凝视淡出黑场。角色外貌写在提示词中无需单独角色卡；无配乐纯场景音；古装闺房美学（红纱、丝绸、青铜镜、木质花窗、烛台）；每镜聚焦眼神表演。",
+    video: "/tutorials/iqrasaifi-period-drama-silk-seedance/demo-web.mp4",
+    poster: "/tutorials/iqrasaifi-period-drama-silk-seedance/poster.jpg",
+    duration: "30秒",
+    shots: 6,
+    references: 6,
+    model: "Seedance 2.5",
+    style: "古装红纱闺房 · 眼神戏六镜",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/IqrasaifiAI/status/2102921306593505613",
+    sourceAuthor: "@IqrasaifiAI",
+    sourcePlatform: "X",
+    sourceImpressions: 10839,
+    tags: [
+      "30秒 · 古装",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "Higgsfield",
+      "眼神戏",
+      "红纱闺房",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解六镜眼神戏结构",
+        description:
+          "本片是六段连贯的古装闺房眼神场景：Shot 1 透纱回眸、Shot 2 纱帘穿行、Shot 3 铜镜对视、Shot 4 花窗月光、Shot 5 烛光旋转、Shot 6 收镜凝视淡出。角色外貌（深色长卷发、温柔诱人眼神、轻薄红纱长袍与披肩）完全写在提示词中，无需单独上传角色卡。",
+      },
+      {
+        number: 2,
+        title: "准备 Seedance 2.5 / Higgsfield",
+        description:
+          "使用 Higgsfield 平台的 Seedance 2.5 模型。本片为古装期刊美学：红色透纱与悬垂帘幕、青铜古镜、木质雕花窗、烛光暖调；镜头运动流畅（推进、穿帘、环绕、弧形特写）；每镜聚焦眼神表演；柔和景深虚化前景纱幕。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整六镜提示词。包含：Shot 1（透纱初见 · 侧卧回眸）、Shot 2（穿行纱帘 · 推帘锁眼）、Shot 3（铜镜对视 · 梳发微笑）、Shot 4（花窗月光 · 回望弧线特写）、Shot 5（烛光旋转 · 披肩滑落）、Shot 6（收镜凝视 · 纱幕淡出黑场）。每段都有详细的机位、动作、眼神和情绪描述。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-silk-still-01",
+        number: "1",
+        title: "透纱回眸",
+        subtitle: "Shot 1 · t≈2s",
+        image: "/tutorials/iqrasaifi-period-drama-silk-seedance/still-01-silk-glance.jpg",
+        prompt: "成片截帧：透过飘浮红纱看到她侧卧丝绸榻上，转身回眸镜头，眼神磁性诱人。",
+      },
+      {
+        id: "ref-silk-still-02",
+        number: "2",
+        title: "纱帘穿行",
+        subtitle: "Shot 2 · t≈7s",
+        image: "/tutorials/iqrasaifi-period-drama-silk-seedance/still-02-veil-curtains.jpg",
+        prompt: "成片截帧：推开透纱帘幕，侧头锁定镜头眼神后步过画面，纱幕划过镜头。",
+      },
+      {
+        id: "ref-silk-still-03",
+        number: "3",
+        title: "铜镜对视",
+        subtitle: "Shot 3 · t≈12s",
+        image: "/tutorials/iqrasaifi-period-drama-silk-seedance/still-03-bronze-mirror.jpg",
+        prompt: "成片截帧：梳妆台前梳发，眼神从青铜镜中抬起对视镜头，唇边微笑。",
+      },
+      {
+        id: "ref-silk-still-04",
+        number: "4",
+        title: "花窗月光",
+        subtitle: "Shot 4 · t≈17s",
+        image: "/tutorials/iqrasaifi-period-drama-silk-seedance/still-04-lattice-window.jpg",
+        prompt: "成片截帧：推开雕花木窗，月光洒在皮肤上，回望镜头，弧形特写脸颊唇颈。",
+      },
+      {
+        id: "ref-silk-still-05",
+        number: "5",
+        title: "烛光回旋",
+        subtitle: "Shot 5 · t≈22s",
+        image: "/tutorials/iqrasaifi-period-drama-silk-seedance/still-05-candlelight-turn.jpg",
+        prompt: "成片截帧：烛光中转身旋转，长裙与披肩在空中飞舞，披肩滑落肩头。",
+      },
+      {
+        id: "ref-silk-still-06",
+        number: "6",
+        title: "收镜凝视",
+        subtitle: "Shot 6 · t≈27s",
+        image: "/tutorials/iqrasaifi-period-drama-silk-seedance/still-06-final-gaze.jpg",
+        prompt: "成片截帧：回到丝绸榻上侧卧，抬头直视镜头，红纱幕推入柔焦淡出黑场。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "Shot 1 — 透纱初见：镜头位于飘浮透纱层后，她侧卧丝绸榻边背身，手轻抚披肩，夜风吹起发丝和披肩。感知到注视，她转身回眸，眼神磁性诱人。镜头穿纱推进到亲密特写。",
+      },
+      {
+        number: 2,
+        description:
+          "Shot 2 — 纱帘穿行：延续眼神接触，她起身穿行重叠纱帘，单手推开透纱，剪影显现。镜头后退跟随，纱幕反复划过镜头。临近时侧头锁眼后步过画面，镜头摇移跟随背影与纱尾。",
+      },
+      {
+        number: 3,
+        description:
+          "Shot 3 — 铜镜对视：她坐到青铜梳妆台前，披肩滑落肩头，凝视镜中自己，手指抚过颈边发丝，拿木梳慢梳长发。镜头横移到肩后，捕捉真实侧影与镜中面容双重构图。她放下梳子，眼神从镜中抬起对视镜头，唇边微笑。",
+      },
+      {
+        number: 4,
+        description:
+          "Shot 4 — 花窗月光：她从梳妆台起身走向雕花木窗，长裙扫地，镜头紧跟身后。推开窗扇，冷月光洗面，夜风吹拂发丝、披肩和帘幕。单手轻靠窗框，微倾身入风，闭眼享受，再缓缓睁眼。回望镜头，眼神魅力与自信。镜头弧线移动到侧面特写颧骨唇颈肌肤。",
+      },
+      {
+        number: 5,
+        description:
+          "Shot 5 — 烛光旋转：她走到房间中央，沐浴金色烛光，闪烁火焰在长裙上投影。听到风中低语，她转身，长裙与黑发在空中飞旋。镜头环绕旋转配合她的转身。轻薄披肩滑落肩头，她指尖接住，保持诱人姿态一拍后让它滑下手臂，动作自然优雅。",
+      },
+      {
+        number: 6,
+        description:
+          "Shot 6 — 收镜凝视：她缓步回到丝绸榻边，转身拢裙侧卧软枕，一臂靠枕支撑，另手把玩胸前发丝。眼神最初下垂沉思。镜头从前景飘浮红纱帘后缓推。推到亲密特写时她抬头直视镜头，眼神凝视慵懒不可抗拒。保持直视。微风推红纱幕划过画面，柔焦覆盖她的脸直至黑场。",
+      },
+    ],
+    constraints:
+      "角色外貌写在提示词中无需角色卡；六镜连贯眼神戏；古装闺房美学（红纱、丝绸、青铜镜、木窗、烛光）；柔和推进穿帘环绕机位；前景纱幕虚化；无配乐纯场景音；最后纱幕淡出黑场。",
+    video_prompt: {
+      title: "Period Drama Silk Boudoir · Six Gaze-Driven Shots",
+      subtitle: "30s · 16:9 · Seedance 2.5 on Higgsfield · Sheer Crimson Gauze",
+      content: `Seedance 2.5 on @higgsfield_ai 
+
+Prompt:
+
+Shot 1 — Sensual First Glimpse Through Sheer Silk
+The camera is positioned behind layers of floating translucent red gauze, creating a dreamy, blurred foreground frame.
+She rests sideways on the edge of the silk daybed with her back partially turned, her hand gently tracing the soft fabric of her loose silk shawl.
+A light night breeze softly lifts the loose hair framing her bare shoulders.
+Sensing a glance, her movements pause. She slowly rotates her body, her shoulders turning smoothly before her head follows.
+She looks back over her bare shoulder directly into the lens.
+Her eyes hold an intense, magnetic, and subtly seductive expression as her gaze meets the camera.
+The camera glides slowly closer through the sheer curtains, coming to a tight, intimate close-up on her alluring face, framed by flowing hair and crimson fabric.
+Shot 2 — Gliding Through Hanging Veil Curtains
+Continuing from her intense eye contact, she softly lets her gaze slip downward, pushes off the bed with one hand, and gracefully rises to her feet.
+Her sheer crimson robe flows down to touch the floorboards as the lightweight silk shawl softly trails behind her along the bedding.
+She turns and glides through overlapping layers of hanging silk veils.
+With one slender hand, she pushes aside a translucent curtain in front of her, revealing her silhouette.
+The camera tracks backward ahead of her, continuously capturing her movement as translucent silk repeatedly sweeps across the lens.
+As she gets close, she tilts her head slightly, locking eyes with the camera before stepping past the frame.
+The camera pans fluidly to follow her from behind as the silk fabric trails past the lens.
+Shot 3 — Intimate Moment at the Bronze Mirror
+She moves to the antique bronze vanity and lowers herself into a seat, her silk shawl slipping softly past her shoulders.
+She studies her reflection in the warm metallic mirror, her fingers gently stroking a strand of hair along her neck.
+She takes a carved wooden comb and slowly draws it down her long hair, accentuating her neckline and shoulders.
+The camera moves in a smooth lateral tracking shot behind her shoulder, bringing both her real profile and her reflected face into a captivating dual composition.
+She sets the comb down softly on the vanity.
+Without turning around, her eyes slowly rise in the bronze mirror to meet the camera's gaze through the reflection.
+A subtle, mesmerizing, seductive smile curves the edge of her lips.
+Shot 4 — Moonlit Allure by the Lattice Window
+She rises from the vanity and walks toward the carved wooden lattice window, her gown sweeping the floor as the camera follows closely behind.
+She pushes open the wooden window pane, letting cool pale moonlight wash over her skin.
+The night air stirs her loose hair, gossamer shawl, and the hanging curtains behind her.
+She rests one delicate hand against the window frame, leaning slightly into the breeze while looking into the moonlit night.
+She closes her eyes, letting the cool wind trace her face and bare neck, before slowly reopening them.
+She glances back over her shoulder toward the camera, her gaze brimming with charm and quiet confidence.
+The camera arcs gracefully to a close profile shot, highlighting her cheekbones, full lips, smooth neck, and moonlit skin.
+Shot 5 — A Fluid Turn in Candlelight
+She steps into the center of the room, bathing in the warm, golden candlelight.
+She pauses as the flickering flame casts soft shadows across her flowing gown.
+Hearing a faint whisper in the wind, she turns her body around.
+Her long silk dress and cascading dark hair swirl through the air in a fluid, hypnotic arc.
+The camera orbits smoothly around her figure as she rotates to match its arc.
+Her lightweight silk shawl slowly slides off one shoulder; she casually catches it with her fingertips, holding the seductive pose for a heart-beat before letting it drift down her arm.
+The motion feels completely organic, graceful, and captivating.
+Shot 6 — Seductive Final Gaze
+She slowly walks back toward the plush silk daybed.
+She turns gracefully, gathers the folds of her gown, and lowers herself sideways onto the soft cushions.
+One arm leans back onto a silk pillow for support while her other hand casually twirls a lock of dark hair falling across her chest.
+Her eyes initially remain lowered in quiet contemplation.
+The camera pushes in slowly from behind a floating crimson curtain in the foreground.
+When the camera reaches an intimate close-up, she lifts her head, looking straight into the lens with a piercing, languid, irresistibly attractive gaze.
+She holds the direct gaze.
+A gentle breeze pushes the sheer silk veil across the frame, slowly covering her face in a soft-focus blur until the screen fades smoothly to black.`,
+    },
+  },
+  {
+    id: "iqrasaifi-minimax-h3-typography",
+    title: "字筑暴走 · 二次元时装动作 · MiniMax H3",
+    subtitle: "X · @IqrasaifiAI · MiniMax H3 · Higgsfield · 15秒 · 16:9",
+    description:
+      "Iqra Saifi 创作的 MiniMax H3 二次元时装动作：字母作为物理建筑——跃踏 OVERRIDE 字筑屋顶、零重力斩开翻滚 PARADOX、踩碎第四面墙镜头、墨刃汉字风暴压碎文字闪白。超广鱼眼贴地跟踪、360° 荷兰角桶滚、踩碎玻璃镜头、快速多向斩击；字体动力学（字母物理掉落碰撞旋转碎裂）；pop-art 色彩转换与极限速度线；sakuga 动画美学。",
+    video: "/tutorials/iqrasaifi-minimax-h3-typography/demo-web.mp4",
+    poster: "/tutorials/iqrasaifi-minimax-h3-typography/poster.jpg",
+    duration: "15秒",
+    shots: 4,
+    references: 4,
+    model: "MiniMax H3",
+    style: "超动感二次元 · 字筑物理建筑",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/IqrasaifiAI/status/2100169159552466978",
+    sourceAuthor: "@IqrasaifiAI",
+    sourcePlatform: "X",
+    sourceImpressions: 2212,
+    tags: [
+      "15秒 · 二次元",
+      "16:9 横屏",
+      "MiniMax H3",
+      "Higgsfield",
+      "时装动作",
+      "字筑建筑",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解字筑物理建筑概念",
+        description:
+          "本片将字母作为物理建筑：OVERRIDE 作为跃踏的踏板字筑屋顶、PARADOX 在空中翻滚被斩开、BREAK 踩碎镜头玻璃、汉字从刀刃涌出压碎文字。字母不是装饰而是真实的建筑踏板、碰撞物、碎片，具有重量、碰撞、弹簧、火花。角色外貌写在提示词中（解构夹克、巨大靴子、黑红挑染发）。",
+      },
+      {
+        number: 2,
+        title: "准备 MiniMax H3 / Higgsfield",
+        description:
+          "使用 Higgsfield 平台的 MiniMax H3 模型。本片为超动感二次元时装动作：极端鱼眼低角贴地跟踪、360° 荷兰角桶滚、踩碎镜头玻璃、快速多向斩击；字体动力学（字母物理掉落碰撞旋转碎裂）；pop-art 色彩转换（洋红虚空→酸黄→纯白→黑红水墨）；sakuga 动画美学与极限速度线。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整四镜字筑提示词。包含：Shot 1（OVERRIDE 字筑屋顶跃踏 · 鱼眼贴地跟踪 · 洋红虚空 · 踩字弹簧震颤火花）、Shot 2（PARADOX 零重力斩开 · 360° 荷兰角桶滚 · 字母翻滚斩半 · 酸黄背景）、Shot 3（BREAK 踩碎镜头 · 第四面墙碎片 · 纯白虚空 · 反射多套服装）、Shot 4（汉字墨刃风暴 · 快速多向斩击 · 水墨汉字压碎文字 · 闪白）。完整 sakuga 动画指令在结尾。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-typo-still-01",
+        number: "1",
+        title: "OVERRIDE 字筑屋顶",
+        subtitle: "Shot 1 · t≈2s",
+        image: "/tutorials/iqrasaifi-minimax-h3-typography/still-01-override-rooftop.jpg",
+        prompt: "成片截帧：鱼眼低角贴地跟踪，巨大靴底踩踏 OVERRIDE 金属立体字母，字母弹簧下陷震颤火花，洋红虚空背景。",
+      },
+      {
+        id: "ref-typo-still-02",
+        number: "2",
+        title: "PARADOX 零重力斩字",
+        subtitle: "Shot 2 · t≈7.5s",
+        image: "/tutorials/iqrasaifi-minimax-h3-typography/still-02-paradox-slice.jpg",
+        prompt: "成片截帧：360° 荷兰角桶滚，重力倒转跃起，拔发光青蓝光刃斩开空中翻滚的 PARADOX 字母，酸黄背景。",
+      },
+      {
+        id: "ref-typo-still-03",
+        number: "3",
+        title: "踩碎镜头玻璃",
+        subtitle: "Shot 3 · t≈10s",
+        image: "/tutorials/iqrasaifi-minimax-h3-typography/still-03-lens-stomp-shatter.jpg",
+        prompt: "成片截帧：镜头俯冲贴地，她从空中踩碎镜头玻璃，碎片多边形反射她不同服装，纯白虚空。",
+      },
+      {
+        id: "ref-typo-still-04",
+        number: "4",
+        title: "汉字墨刃风暴",
+        subtitle: "Shot 4 · t≈13s",
+        image: "/tutorials/iqrasaifi-minimax-h3-typography/still-04-kanji-ink-storm.jpg",
+        prompt: "成片截帧：透过碎镜快速多向斩击，黑色水墨汉字从刀刃涌出膨胀压碎文字，闪白光爆。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "Shot 1（字筑屋顶跃踏）：极低角鱼眼贴地跟踪洋红虚空。穿解构夹克巨大锯齿靴的二次元女孩向前奔跑，用巨大金属立体字母 OVERRIDE 作为踏板跳跃。每次靴底踩字，字母液压弹簧下扣，引发镜头震颤、火花与霓虹漆溅入镜头。",
+      },
+      {
+        number: 2,
+        description:
+          "Shot 2（零重力斩字倒转）：镜头快速后退同时执行 360° 荷兰角桶滚。重力翻转倒挂，她跃入空中拔巨大发光青蓝光刃。巨大 3D 字母 PARADOX 在三维空间中翻滚冲向镜头，她凌空斩开字母两半，两半爆炸飞出镜头两侧，露出酸黄背景。",
+      },
+      {
+        number: 3,
+        description:
+          "Shot 3（踩碎镜头玻璃）：镜头俯冲贴地。她从天空坠落，踏步踩入镜头玻璃。整个屏幕碎裂成飘浮锯齿多边形碎片，反射她穿不同服装的镜像版本。",
+      },
+      {
+        number: 4,
+        description:
+          "Shot 4（墨刃汉字风暴）：透过碎镜她进行快速多向斩击。巨大爆炸黑色水墨汉字从刀刃涌出，膨胀向外压碎飘浮文字成尘埃后甩入闪白光爆。动态 sakuga 动画、极限速度线、鲜艳 pop-art 色彩转换、4k、60fps。",
+      },
+    ],
+    constraints:
+      "字母作为物理建筑（踏板、碰撞物、碎片）；极端鱼眼贴地跟踪；360° 荷兰角桶滚；踩碎镜头玻璃；快速多向斩击；字体动力学（掉落碰撞旋转碎裂）；pop-art 色彩转换；sakuga 动画美学；极限速度线；4k 60fps。",
+    video_prompt: {
+      title: "Typography Architecture Rampage · Anime Fashion Action",
+      subtitle: "15s · 16:9 · MiniMax H3 on Higgsfield · Kinetic Typography",
+      content: `on @higgsfield_ai 
+
+"Surreal, hyper-kinetic anime fashion action sequence where typography acts as physical architecture.
+Shot 1 (Typography Rooftop Vault): Extreme low-angle fisheye tracking shot skimming inches above a seamless hot-magenta void. An anime girl in an oversized deconstructed bomber jacket and massive jagged-tread boots sprints forward, using giant 3D extruded metallic letters reading 'OVERRIDE' as stepping stones. Each time her boot stomps on a letter, the character buckles downward on hydraulic springs, causing violent camera-shake tremors and sending sparks and neon paint splatters flying into the lens.
+Shot 2 (Zero-G Inversion & Letter Slice): The camera rapidly pulls backward while executing a continuous 360-degree Dutch barrel roll. Gravity flips upside down; she leaps into the air, drawing an oversized glowing cyan beam-blade. As the massive 3D word 'PARADOX' tumbles end-over-end through 3D space toward the camera, she cleanly cleaves the word in half mid-air. The bisected halves blast outward past both sides of the camera lens with intense motion smear and chromatic aberration, exposing a stark acid-yellow background behind it.
+Shot 3 (Fourth-Wall Stomp & Screen Shatter): The camera plunges straight down to floor level. She drops from the sky, driving her platform boot directly down into the 'glass' of the camera lens. The entire screen fractures into floating jagged polygonal shards that reflect alternate versions of her in different outfits.
+Shot 4 (Ink-Blade Storm & Kanji Compression): Through the cracked lens, she delivers a rapid-fire multi-directional slash. Giant, explosive black sumi-e Kanji characters erupt from her blade strokes, swelling outward to crush the floating 3D text into dust before whipping into a blinding flash of white light. Dynamic sakuga animation, extreme speed lines, vibrant pop-art color shifts, 4k, 60fps."`,
+    },
+  },
+  {
+    id: "iqrasaifi-minimax-h3-2d-intro",
+    title: "二次元动态片头 · 字效踩点 · MiniMax H3",
+    subtitle: "X · @IqrasaifiAI · MiniMax H3 · Higgsfield · 15秒 · 16:9",
+    description:
+      "Iqra Saifi 创作的 MiniMax H3 超动感二次元动态片头：四镜极端运镜 + 反应式 3D 字效（RIOT 砸地、VOID 旋转、BREAK 碎裂、水墨汉字）。贴地鱼眼靴底跟踪 RIOT 字母砸地、45° 荷兰角前冲 VOID 旋转划过、靴底擦镜 BREAK 碎裂、拔刀 360° 旋转水墨汉字斩击。上传角色即可生成大胆机位片头；镜头物理（贴地鱼眼、快速旋转、靴底擦镜）；字体动力学（字母掉落碰撞旋转碎裂）；高对比赛璐珞、激进速度线、快速 snap 变焦、4k 60fps。",
+    video: "/tutorials/iqrasaifi-minimax-h3-2d-intro/demo-web.mp4",
+    poster: "/tutorials/iqrasaifi-minimax-h3-2d-intro/poster.jpg",
+    duration: "15秒",
+    shots: 4,
+    references: 4,
+    model: "MiniMax H3",
+    style: "超动感二次元片头 · 字效踩点",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/IqrasaifiAI/status/2100030154668159256",
+    sourceAuthor: "@IqrasaifiAI",
+    sourcePlatform: "X",
+    sourceImpressions: 6443,
+    tags: [
+      "15秒 · 二次元",
+      "16:9 横屏",
+      "MiniMax H3",
+      "Higgsfield",
+      "动态片头",
+      "字效踩点",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解字效踩点片头结构",
+        description:
+          "本片是四镜超动感二次元动态片头：Shot 1 贴地靴底跟踪 RIOT 字母砸地、Shot 2 荷兰角前冲 VOID 旋转划过、Shot 3 靴底擦镜 BREAK 碎裂、Shot 4 拔刀 360° 旋转水墨汉字斩击。每镜都配合极端运镜（贴地鱼眼、快速旋转、靴底擦镜、360° 跟踪）与反应式字效（字母物理掉落碰撞旋转碎裂）。作者声称'上传角色即可生成大胆机位片头'但未公开角色卡，角色外貌写在提示词中。",
+      },
+      {
+        number: 2,
+        title: "准备 MiniMax H3 / Higgsfield",
+        description:
+          "使用 Higgsfield 平台的 MiniMax H3 模型。本片为超动感二次元片头：贴地鱼眼、快速 snap 变焦直冲眼睛或靴底、快速旋转 360° 滚动、突然甩镜；字体动力学（字母物理掉落碰撞旋转碎裂）；视觉转场（靴底擦镜、碎裂玻璃、宽幅水墨书法）；高对比赛璐珞、激进速度线、4k 60fps。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词",
+        description:
+          "使用下方完整四镜字效踩点提示词。包含：Shot 1（贴地鱼眼靴底跟踪 · RIOT 字母砸地 · 震颤扬尘）、Shot 2（45° 荷兰角前冲 · VOID 旋转划过 · 侧眼眨眼 · 酸绿背景）、Shot 3（靴底擦镜 · BREAK 碎裂 · 纯白虚空蹲踞红台座）、Shot 4（拔刀 360° 旋转 · 水墨汉字斩击 · 黑红笔触）。完整镜头物理、字体动力学、视觉转场指令在结尾，最后一行 in @higgsfield。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-intro-still-01",
+        number: "1",
+        title: "RIOT 靴底砸地",
+        subtitle: "Shot 1 · t≈2s",
+        image: "/tutorials/iqrasaifi-minimax-h3-2d-intro/still-01-riot-boots.jpg",
+        prompt: "成片截帧：贴地鱼眼后退跟踪巨大厚底平台靴，RIOT 混凝土立体字母从空中砸向红色地板，镜头震颤扬尘。",
+      },
+      {
+        id: "ref-intro-still-02",
+        number: "2",
+        title: "VOID 荷兰角旋转",
+        subtitle: "Shot 2 · t≈5s",
+        image: "/tutorials/iqrasaifi-minimax-h3-2d-intro/still-02-void-dutch.jpg",
+        prompt: "成片截帧：45° 荷兰角前冲钻过伸展手臂，她侧眼眨眼，VOID 巨大字母旋转划过镜头，酸绿背景。",
+      },
+      {
+        id: "ref-intro-still-03",
+        number: "3",
+        title: "BREAK 靴底擦镜",
+        subtitle: "Shot 3 · t≈9s",
+        image: "/tutorials/iqrasaifi-minimax-h3-2d-intro/still-03-break-stomp.jpg",
+        prompt: "成片截帧：靴底擦过镜头转场，纯白虚空她低蹲红台座上，BREAK 字母碎裂成飘浮碎片。",
+      },
+      {
+        id: "ref-intro-still-04",
+        number: "4",
+        title: "汉字拔刀旋转",
+        subtitle: "Shot 4 · t≈13s",
+        image: "/tutorials/iqrasaifi-minimax-h3-2d-intro/still-04-kanji-katana.jpg",
+        prompt: "成片截帧：砸碎玻璃转场，拔刀 360° 旋转跟踪，黑红水墨汉字涌现沿刀刃弯曲路径扭曲。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "Shot 1（贴地靴底跟踪）：地面鱼眼镜头后退，紧贴在叛逆二次元女孩（黑红挑染层叠发）的重厚平台靴下方。巨大混凝土质感 RIOT 立体字母从空中砸向无缝红色地板，镜头震颤扬尘，字母落在她脚跟寸后。",
+      },
+      {
+        number: 2,
+        description:
+          "Shot 2（荷兰角前冲旋转字）：瞬间上甩镜 45° 荷兰角，酸绿背景。镜头前冲钻过她伸展手臂下方，她侧眼眨眼玩味。巨大 VOID 字母从屏外横扫旋转划过镜头，强烈运动模糊与色差。",
+      },
+      {
+        number: 3,
+        description:
+          "Shot 3（靴底擦镜碎裂）：切纯白虚空，镜头快速后退荷兰角，她向前踏步逼近镜头。巨大靴底短暂遮蔽画面转场。她落到鲜红台座低蹲，飘浮 BREAK 字母碎裂成碎片。",
+      },
+      {
+        number: 4,
+        description:
+          "Shot 4（拔刀旋转汉字）：砸碎玻璃屏幕转场。她拔发光红刃武士刀旋转 360° 旋转跟踪。巨大黑红水墨汉字涌现扯过画面，三维扭曲沿刀刃弯曲斩击路径。高对比赛璐珞、激进速度线、快速 snap 变焦、4k、60fps。",
+      },
+    ],
+    constraints:
+      "上传角色即可生成大胆机位片头（作者声称，但未公开角色卡）；镜头物理（贴地鱼眼、快速旋转 360° 滚动、突然甩镜）；字体动力学（字母物理掉落碰撞旋转碎裂）；视觉转场（靴底擦镜、碎裂玻璃、宽幅水墨书法）；高对比赛璐珞；激进速度线；快速 snap 变焦；4k 60fps。",
+    video_prompt: {
+      title: "2D Anime Dynamic Intro · Kinetic Typography",
+      subtitle: "15s · 16:9 · MiniMax H3 on Higgsfield · Upload Your Character",
+      content: `PROMPT:
+
+High-speed, hyper-kinetic anime sequence with extreme camera acrobatics and reactive 3D typography.
+Shot 1 (Low-Angle Shoe Tracking): Ground-level fisheye lens tracks backward at breakneck speed right beneath the heavy, lug-soled platform boots of a rebellious anime girl with wild black-and-neon-red layered hair. Massive concrete-textured 3D letters spelling 'RIOT' slam violently downward out of thin air, crashing onto the seamless red studio floor with camera-shake impact dust just inches behind her heels.
+Shot 2 (Dynamic Lens Tilt & Word Spin): Instant whip-pan upward with a 45-degree Dutch angle tilt against an acid-lime backdrop. The camera barrels forward, diving under her outstretched arm as she throws a playful side-eye wink. The giant 3D word 'VOID' sweeps in from off-screen in a rapid rotational pivot, skimming past the lens with intense motion blur and chromatic aberration.
+Shot 3 (Step-Through & Text Smash): Cut to a stark white void; the camera pulls back fast on a low Dutch tilt as she stomps forward directly toward the lens. The oversized sole of her boot eclipses the frame for a split-second transition. She drops into a low crouch atop a bright-red pedestal; floating jagged 3D letters spelling 'BREAK' violently fracture into floating debris behind her.
+Shot 4 (Kinetic Combat & Ink-Brush Kanji): Smash zoom into a fractured-glass screen transition. The anime girl draws a glowing crimson-edged katana, spinning through a 360-degree rotational tracking shot. Massive black-and-blood-red brush-ink Kanji characters surge and rip across the frame, warping in three dimensions to follow the sword's curved slash path. High-contrast cel shading, aggressive speed lines, sharp snap zooms, 4k resolution, 60fps."
+Camera & Motion Directives for Generation
+Camera Physics: Ground-skimming fisheye, rapid snap-zooms directly into character eyes or boot soles, fast rotational 360-degree rolls, and abrupt whip-pans.
+Typography Dynamics: Kinetic typography that physically drops, collides with the floor, spins into the camera axis, and explodes into fragments upon impact.
+Visual Transitions: Boot-sole screen wipes, fractured glass impacts, and wide-swiping calligraphy ink ribbons that guide the cut to the next shot.
+
+in @higgsfield`,
+    },
+  },
+  {
+    id: "iqrasaifi-magic-carpet-city",
+    title: "飞毯穿城 · 史诗幻想航拍 · 15s",
+    subtitle: "X · @IqrasaifiAI · 模型未公开 · 15秒 · 16:9",
+    description:
+      "Iqra Saifi 创作的史诗幻想飞毯穿城航拍：穿云俯冲镀金尖顶 → 360° 环绕橙袍织行天桥 → 拉升鹤升全城日晕。低角动态跟踪飞毯穿云掠过镀金尖顶、360° 旋转环绕骑手（橙袍狂飙织行天桥）、高速反向拉升鹤升突破云层揭示大陆级城市日晕。结构化 JSON 提示词（24mm 变形宽镜头、FPV 无人机运动、厚重丝绸布料物理、青铜时代与未来尖塔融合、正午阳光）。模型与平台未公开，不捏造 MiniMax/Seedance。",
+    video: "/tutorials/iqrasaifi-magic-carpet-city/demo-web.mp4",
+    poster: "/tutorials/iqrasaifi-magic-carpet-city/poster.jpg",
+    duration: "15秒",
+    shots: 3,
+    references: 3,
+    model: "未公开",
+    style: "史诗幻想飞毯航拍 · FPV 无人机运动",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/IqrasaifiAI/status/2087491291986993632",
+    sourceAuthor: "@IqrasaifiAI",
+    sourcePlatform: "X",
+    sourceImpressions: 12096,
+    tags: [
+      "15秒 · 幻想",
+      "16:9 横屏",
+      "模型未公开",
+      "飞毯穿城",
+      "史诗航拍",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解史诗飞毯穿城结构",
+        description:
+          "本片是三段史诗幻想飞毯航拍：00:00–00:05 穿云俯冲掠过镀金尖顶、00:05–00:10 从 360° 环绕到肩后视角织行天桥、00:10–00:15 高速反向拉升鹤升突破云层揭示大陆级城市日晕。提示词为结构化 JSON 格式（prompt_metadata、shot_structure ×3、camera、environment、lighting、characters_and_props、audio_cues）。模型与平台未公开，不捏造 MiniMax/Seedance。",
+      },
+      {
+        number: 2,
+        title: "理解 JSON 提示词结构",
+        description:
+          "本片提示词为结构化 JSON：prompt_metadata（时长、画幅、风格、情绪）、shot_structure（三段时间码 + shot_type + description）、camera（24mm 变形宽镜头、f/8、动态 FPV 无人机运动、180° 快门角）、environment（高空、大陆级城市、多层云、湍流风）、lighting（正午阳光、5800K、高对比边缘光）、characters_and_props（骑手草帽橙袍、飞毯波斯编织流苏）、audio_cues（狂风、重布甩击、低频呼啸）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整 JSON 提示词",
+        description:
+          "使用下方完整 JSON 提示词。包含：explore whole city with magical carpet 标题行 + Prompt: 标签 + JSON 对象（prompt_metadata、shot_structure 三段、camera、environment、lighting、characters_and_props、audio_cues）。提示词为同一帖 note_tweet 内容，非自回复。模型与平台未公开，meta.model = 未公开 / undisclosed，不捏造工具名。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-carpet-still-01",
+        number: "1",
+        title: "穿云俯冲尖顶",
+        subtitle: "00:00–00:05 · t≈2.5s",
+        image: "/tutorials/iqrasaifi-magic-carpet-city/still-01-cloud-swoop-spires.jpg",
+        prompt: "成片截帧：飞毯穿云俯冲，云雾撕裂，掠过镀金尖顶与拥挤城门，烟雾升向天空。",
+      },
+      {
+        id: "ref-carpet-still-02",
+        number: "2",
+        title: "橙袍织行天桥",
+        subtitle: "00:05–00:10 · t≈7.5s",
+        image: "/tutorials/iqrasaifi-magic-carpet-city/still-02-saffron-weave-bridges.jpg",
+        prompt: "成片截帧：360° 旋转到肩后视角，橙袍狂飙织行天桥与方尖碑，河流闪光。",
+      },
+      {
+        id: "ref-carpet-still-03",
+        number: "3",
+        title: "鹤升全城日晕",
+        subtitle: "00:10–00:15 · t≈12.5s",
+        image: "/tutorials/iqrasaifi-magic-carpet-city/still-03-crane-city-flare.jpg",
+        prompt: "成片截帧：高速反向拉升鹤升突破云层，揭示大陆级城市全景，日晕镜头光晕。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "00:00–00:05 低角动态跟踪：飞毯穿云急速俯冲，高速转弯，云雾暴力撕裂边缘。掠过古代未来混合大都会的镀金尖顶。",
+      },
+      {
+        number: 2,
+        description:
+          "00:05–00:10 360° 旋转环绕到肩后视角：镜头快速螺旋环绕骑手，捕捉橙袍在狂风中飞舞。转为紧凑肩后视角，飞毯在巨大天桥与方尖碑间织行，下方宽阔河流闪光。",
+      },
+      {
+        number: 3,
+        description:
+          "00:10–00:15 高速反向拉升 + 垂直鹤升：飞毯直冲天空，突破上层云层。镜头暴力后退并火箭升空，执行史诗连续鹤升，揭示下方大陆级城市全景，日晕镜头光晕。",
+      },
+    ],
+    constraints:
+      "模型与平台未公开，不捏造 MiniMax/Seedance；结构化 JSON 提示词；24mm 变形宽镜头 f/8；动态 FPV 无人机运动 + 快速鹤升；厚重丝绸布料物理；古代未来混合建筑；多层云体积光；高空湍流风；正午阳光 5800K 边缘光；狂风重布甩击低频呼啸。",
+    video_prompt: {
+      title: "Magic Carpet City Flight · Epic Fantasy Aerial",
+      subtitle: "15s · 16:9 · Model undisclosed · Structured JSON Prompt",
+      content: `explore whole city with magical carpet 
+
+Prompt:
+
+{   "prompt_metadata": {     "duration": "15 seconds",     "aspect_ratio": "16:9",     "style": "Cinematic fantasy action, high-octane photorealistic CGI, 8K resolution",     "mood": "Exhilarating, majestic, high-speed adventure, wondrous, liberating"   },   "shot_structure": {     "sequence_breakdown": [       {         "timeframe": "00:00 - 00:05",         "shot_type": "Low-angle dynamic tracking shot",         "description": "The carpet swoops sharply downward through a layer of volumetric clouds, banking hard at high speed. Wisps of vapor violently pull off the edges of the carpet as it skims over the gilded spires of an ancient-futuristic metropolis."       },       {         "timeframe": "00:05 - 00:10",         "shot_type": "360-degree rotational whip-cam to over-the-shoulder",         "description": "The camera rapidly spirals 360 degrees around the rider, capturing her saffron robes whipping violently in the gale. The camera transitions into a tight over-the-shoulder shot as the carpet weaves sharply between massive sky-bridges and towering obelisks over a wide, sunlit river."       },       {         "timeframe": "00:10 - 00:15",         "shot_type": "High-speed continuous reverse-pull & vertical crane ascension",         "description": "The carpet accelerates straight up into the open sky, breaking through the upper cloud deck. The camera violently pulls back and rockets skyward, executing an epic continuous crane out to reveal the continent-spanning city below framed by a blinding solar lens flare."       }     ]   },   "camera": {     "lens": "24mm Anamorphic (ultra-wide distortion)",     "aperture": "f/8",     "movement": "Dynamic FPV-style drone motion combined with fast sweeping crane moves, rapid tracking, hard banking turns, and seamless focal depth pulls.",     "shutter_angle": "180 degrees (cinematic motion blur during high-speed maneuvers)"   },   "environment": {     "location": "High-altitude airspace over a continent-spanning mega-city",     "city": "A sprawling metropolis fusing ancient grand architecture with modern soaring spires, bisected by a glistening river filled with animated rivercraft.",     "clouds": "Dense, multi-layered volumetric cloudscape with dynamic airflow disruption caused by the high-speed flight of the carpet.",     "atmosphere": "Turbulent high-altitude wind currents, intense clear daylight, air resistance dynamics."   },   "lighting": {     "primary_source": {       "type": "Direct Midday Sun",       "color_temperature": "5800K",       "effects": "High-contrast rim lighting on floating cloud edges, bright glints reflecting off the river, dynamic motion shadows across the cityscape."     }   },   "characters_and_props": [     {       "entity": "Rider",       "details": "A woman leaning dynamically into high-speed turns, wearing a wide-brimmed straw hat secured tightly against the force of the wind.",       "materials": "Saffron-colored heavy silk robes with hyper-realistic high-velocity cloth physics simulation, flowing and snapping sharply in the wind."     },     {       "entity": "Magic Carpet",       "details": "Intricately woven Persian rug with vibrant reds, golds, and blues, dynamically rippling and bending under high aerodynamic pressure.",       "materials": "Individual thread detail with animated corner tassels trailing violently along wind vector trajectories."     }   ],   "audio_cues": {     "sound_design": "Rushing dynamic wind, heavy cloth snapping rapidly, low-frequency atmospheric swooshes, subtle echoing ambiance of the distant city below."   } }`,
+    },
+  },
+  {
+    id: "chengzilhy-butterfly-corridor-seedance",
+    title: "走廊蓝蝶化身 · 红眼亮灯出场 · Seedance 2.5",
+    subtitle: "X · @Chengzilhy · Seedance 2.5 · 16秒 · 3:4 竖屏",
+    description:
+      "小宇Chengzi 创作的 Seedance 2.5 一镜到底走廊化身：远处蓝蝶（红黑三勾玉眼纹）扑翼 → 走廊灯逐盏熄灭至纯黑 → 纯黑中两处微弱红眼纹无缝接成男性角色双眼 → 第10秒灯亮揭示近处人形红眼。作者公开两张参考图（蝴蝶眼纹 + 男性角色全身）与完整中文时间轴提示词。引用 Magncsans 仅作出场形式灵感，不打包其成片。作者回复提及勾玉还原困难 + 版权限制（写轮眼 / 鼬服装被卡）。",
+    video: "/tutorials/chengzilhy-butterfly-corridor-seedance/demo-web.mp4",
+    poster: "/tutorials/chengzilhy-butterfly-corridor-seedance/poster.jpg",
+    duration: "16秒",
+    shots: 5,
+    references: 5,
+    model: "Seedance 2.5",
+    style: "一镜到底走廊化身 · 蝶眼接人眼",
+    aspectRatio: "3/4",
+    sourceUrl: "https://x.com/Chengzilhy/status/2103031689467355647",
+    sourceAuthor: "@Chengzilhy",
+    sourcePlatform: "X",
+    sourceImpressions: 2520,
+    tags: [
+      "16秒 · 化身",
+      "3:4 竖屏",
+      "Seedance 2.5",
+      "走廊灯光",
+      "红眼亮灯",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "理解蝶眼接人眼化身结构",
+        description:
+          "本片是一镜到底走廊化身：0–5s 远处蓝蝶（红黑三勾玉眼纹）扑翼 → 5–7.5s 走廊灯逐盏熄灭至纯黑 → 7.5–10s 纯黑中两处微弱红眼纹无缝接成男性角色双眼 → t=10s 灯亮揭示近处人形 → 10–15s 近景电影肖像红眼三勾玉虹膜。作者公开两张参考图（蝴蝶眼纹 + 男性角色全身黑袍红衬金属额带）。作者回复提及勾玉还原困难 + 版权限制（写轮眼 / 鼬服装被卡）。",
+      },
+      {
+        number: 2,
+        title: "准备 Seedance 2.5 + 两张参考图",
+        description:
+          "使用 Seedance 2.5 模型。本片为真人电影实拍质感一镜到底：战争纪实式肩扛手持摄影（轻微呼吸起伏重心偏移构图修正）、中长焦电影镜头空间压缩、狭长封闭走廊纵深光区、冷白带青光、克制反射、灯逐盏熄灭后纯黑只留两处夜光般微弱红眼纹、第10秒灯亮揭示人形、10–15s 近景双眼清晰锁焦。上传两张作者公开的参考图：蝴蝶眼纹（提示词改底色为深蓝宝石蓝）+ 男性角色全身（黑袍红衬金属额带红眼）。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整中文时间轴提示词",
+        description:
+          "使用下方完整中文时间轴提示词。包含：角色/服装锁定（黑色长发、金属额带、黑袍暗红内衬、网眼内衫、腰封、露趾鞋）、眼睛红色三勾玉虹膜详细描述、蝴蝶参考改色深蓝宝石蓝、【电影摄影与光影】（真人实拍质感、肩扛手持、中长焦空间压缩、狭长走廊纵深光区、冷白带青、克制反射、灯熄纯黑）、【蝴蝶与眼纹】（蝶翼红黑三勾玉眼纹随展翅时隐时现）、【0—5秒】远处扑翼、【5—7.5秒】灯逐盏熄灭空间落实、【7.5—10秒】纯黑无缝衔接、【第10秒】灯亮揭示、【10—15秒】人形电影肖像、【声音与连续性】（低沉底噪电流通电微弱呼吸、无背景音乐对白字幕、结尾无烟雾粒子闪白转场）。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-butterfly-pub",
+        number: "1",
+        title: "蝴蝶眼纹参考",
+        subtitle: "作者公开参考图（非成片）",
+        image: "/tutorials/chengzilhy-butterfly-corridor-seedance/ref-butterfly.jpg",
+        prompt: "作者自回复公开的参考图1：红黑三勾玉眼纹蝴蝶。提示词将底色改为深蓝/宝石蓝，保留三勾玉眼纹结构。",
+      },
+      {
+        id: "ref-character-pub",
+        number: "2",
+        title: "男性角色参考",
+        subtitle: "作者公开参考图（非成片）",
+        image: "/tutorials/chengzilhy-butterfly-corridor-seedance/ref-character.jpg",
+        prompt: "作者自回复公开的参考图2：男性角色全身（黑袍红衬、金属额带、红眼三勾玉）— TRUE 角色参考卡。",
+      },
+      {
+        id: "ref-butterfly-still-01",
+        number: "3",
+        title: "蓝蝶走廊扑翼",
+        subtitle: "成片截帧 · t≈2.5s",
+        image: "/tutorials/chengzilhy-butterfly-corridor-seedance/still-01-butterfly-corridor.jpg",
+        prompt: "成片截帧：远处走廊中后段蓝蝶自然扑翼，红黑三勾玉眼纹随展翅时隐时现。",
+      },
+      {
+        id: "ref-butterfly-still-02",
+        number: "4",
+        title: "第10秒灯亮揭示",
+        subtitle: "成片截帧 · t=10.2s",
+        image: "/tutorials/chengzilhy-butterfly-corridor-seedance/still-02-lights-reveal.jpg",
+        prompt: "成片截帧：第10秒走廊灯突然亮起，揭示已站在镜头前的男性角色，两处蝶翼眼纹无缝接成他的双眼。",
+      },
+      {
+        id: "ref-butterfly-still-03",
+        number: "5",
+        title: "红眼近景肖像",
+        subtitle: "成片截帧 · t≈13.5s",
+        image: "/tutorials/chengzilhy-butterfly-corridor-seedance/still-03-red-eyes-portrait.jpg",
+        prompt: "成片截帧：10–15秒近景电影肖像，双眼清晰锁焦，红色三勾玉虹膜稳定可辨。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0–5s 远处扑翼：蓝蝶在走廊中后段自然扑翼，双翼上抬收合再向下扑动展开，带动身体轻微升降与横向漂移，整体不向镜头逼近。拍翼轻快连续有节奏变化，翼根带动翼尖，薄翼微小弯曲，翼缘运动模糊。远处顶灯掠过蓝色翼面，鳞粉光泽短暂显现。左右红色三勾玉眼纹时而同时露出时而只看见一侧随后又随收翅消失。镜头微幅手持捕捉，背景灯光柔和虚化但灯具排列明暗光区与走廊纵深仍可辨。",
+      },
+      {
+        number: 2,
+        description:
+          "5–7.5s 灯逐盏熄灭：走廊灯光突然异常。最远处一盏灯先逐渐暗下，接着下一盏再下一盏，沿纵深由远到近缓慢熄灭。每盏灯有短暂亮度衰减，相邻灯之间清楚时间差。灯光衰减落实到整个空间：对应墙面亮区收暗门框高光消失地面反射逐渐减弱黑暗一段一段向镜头推进。不是整幅画面统一降低亮度。蝴蝶仍在远处自然扑翼被尚未熄灭的灯短暂照到。蓝色翼面逐渐不可见红色三勾玉眼纹随展翅间歇显露。最后一盏灯熄灭空间彻底全黑。墙壁地面门框顶灯蝶翼与蝴蝶身体全部消失。没有应急灯轮廓光空气光或残留反射。曝光不自动抬高不把黑暗提成灰色。",
+      },
+      {
+        number: 3,
+        description:
+          "7.5–10s 纯黑无缝衔接：画面只剩两处微弱红色眼纹，像夜光涂层在暗处留下的余辉，低亮度柔和细小。可以勉强辨认红色虹膜区域黑色圆形中心与三枚黑色勾玉结构。没有明显光晕不照亮周围不呈现霓虹或火焰质感。最初两处微光仍随最后几次扑翼产生轻微角度变化与小幅起伏随后运动自然收缓。始终是同一对微光不熄灭后重现不叠入另一对眼睛。借助纯黑隐藏身体和空间距离的变化让蝶翼眼纹连续成为男性角色的红色三勾玉虹膜。两处微光的颜色纹样与画面轨迹延续一致间距和大小只作平滑克制的调整不突然跳位不夸张放大不像光圈冲向镜头。三枚黑色勾玉随整组眼纹自然衔接不单独旋转不重新排列不突然生成。男性角色已经在黑暗中完成转换并站在镜头前但此时看不见他的眼白眼睑鼻梁脸头发服装或身体。画面始终只有纯黑与两处夜光般微弱的红色眼纹。摄影机的细微手持运动持续不断微光自然响应同一套摄影机运动不固定贴在屏幕上。焦点在纯黑遮蔽下自然转移至近处为亮灯后的双眼做好清晰衔接不出现可见的反复寻焦。",
+      },
+      {
+        number: 4,
+        description:
+          "第10秒灯亮揭示：整条走廊的灯突然同时恢复正常照明。不是闪白不是渐渐显出一张透明脸而是真实灯光瞬间照见已经站在镜头前的男性角色。男性角色正面直视镜头胸部以上中近景。亮灯前的两处微光准确接成亮灯后他双眼中的红色三勾玉虹膜位置形状和运动轨迹连续。直到这一刻观众才发现远处蝴蝶已经化为近处的男性角色。近处侧上方顶灯为他形成有方向的电影主光：额头鼻梁一侧颧骨与上唇边缘接住柔和亮面另一侧面颊落入深而自然的阴影保留必要肤色细节。他身后的顶灯在发丝和肩线形成细窄克制的边缘亮度将人物从幽深走廊中分离。背景恢复交替排列的亮区与暗区突出纵深。肤色保持自然与冷青灰背景形成细微色温差不把脸整体染成蓝色。双眼清晰：黑色圆形瞳孔外围为深红至鲜红的真实虹膜三枚黑色勾玉围绕中央瞳孔均匀排列。三枚勾玉彼此分离圆头与弯曲尾部清楚与中央瞳孔之间保留红色间隔。眼白眼睑睫毛虹膜纤维与角膜反光真实自然。红色虹膜保留克制微光与正常照明融合不照亮整张脸不糊成两个光球。蝴蝶已完全消失。",
+      },
+      {
+        number: 5,
+        description:
+          "10–15秒人形电影肖像：完整人形保持约5秒。男性角色原地正面直视镜头嘴唇自然闭合只有微表情轻微呼吸与少量发丝运动。不走动不转头不抬手不触碰镜头不继续变形。摄影师保持原地肩扛手持细微呼吸起伏贯穿始终。景别稳定焦点锁在双眼。两只眼睛同时处于清晰焦点范围黑色圆形瞳孔边缘明确红色虹膜中的三枚黑色勾玉各自完整可辨。勾玉数量形状弯曲方向和排列保持稳定彼此不粘连不与中央瞳孔糊成黑团。图案贴合真实虹膜曲面位于透明角膜之下。虹膜不旋转不闪烁不扩散不改变图案。脸部光影自然皮肤纹理发丝层次与服装褶皱清楚可见。背景适度虚化保留走廊光区的纵深节奏。以男性角色近景和清晰的红色三勾玉眼睛结束。不冻结成照片不提前黑屏不淡出。",
+      },
+    ],
+    constraints:
+      "真人电影实拍质感；战争纪实式肩扛手持（轻微呼吸重心偏移构图修正）；中长焦空间压缩；一镜到底；狭长走廊纵深光区；冷白带青光；灯逐盏熄灭落实空间；灯熄后纯黑只留两处夜光般微弱红眼纹；纯黑中蝶眼无缝接人眼；第10秒灯亮瞬间揭示人形；10–15s 近景双眼清晰锁焦；红眼三勾玉虹膜稳定；无烟雾粒子闪白转场；无背景音乐对白字幕。作者回复提及勾玉还原困难 + 版权限制（写轮眼/鼬服装被卡）。",
+    video_prompt: {
+      title: "Corridor Blue Butterfly Morph · Red-Eye Lights-On Reveal",
+      subtitle: "16s · 3:4 竖屏 · Seedance 2.5 · 一镜到底走廊化身",
+      content: `参考男性角色的外貌、脸型、发型、身形与整套服装，锁定为同一个男性角色。保留黑色长发、金属额带、黑色高领长袍、暗红色内衬和红色细窄包边、黑色交领内搭、网眼内衫、缠绕式腰封、宽松长裤、灰白色小腿缠布与黑色露趾鞋。服装面料有细微暗纹与厚实垂坠感，袍身不增加其他图案。不采用参考图的灰色背景。
+
+眼睛是人物出现后的视觉重点。参考男性角色的红色眼睛：黑色圆形瞳孔，外围为深红至鲜红的虹膜，虹膜内有三枚清楚的黑色勾玉，围绕中央瞳孔均匀排列。每枚勾玉具有饱满圆头和逐渐收细的弯曲尾部，三枚沿同一环向排列，彼此分离，与中央瞳孔之间保留可见红色间隔。两只眼睛采用相同图案结构，数量、形状与排列全程稳定。保留真实虹膜纤维、眼白、眼睑、睫毛和角膜反光。
+
+ 参考蝴蝶的真实身体结构、蝶翼形状、翅脉、鳞粉质感和天然眼状斑纹的分布。蝴蝶底色调整为深蓝与宝石蓝，左右翅面各有一处主要眼状花纹，改为与男性角色虹膜相同的红黑三勾玉结构：黑色圆心，外围红色区域内分布三枚黑色勾玉。
+
+花纹自然融入蝶翼鳞粉，随蝶翼弯折、收合和改变透视。不采用参考图的白色背景。不使用参考视频。
+
+【电影摄影与光影】
+
+真人电影实拍质感，悬疑长镜头。真实皮肤、细腻发丝、厚实衣料与自然昆虫质感，细微胶片颗粒，柔和高光过渡，深沉纯净的黑位，避免锐化过度、塑料质感与廉价CG感。
+
+全程采用战争纪实式肩扛手持摄影，摄影机具有真实重量：轻微呼吸起伏、不规则重心偏移、小幅构图修正，动作有惯性和缓冲。克制而紧张，保持清晰的画面组织，不剧烈甩镜。
+
+摄影师始终留在原地，一镜到底，不向蝴蝶推进，不变焦。使用中长焦电影镜头的空间压缩感，沿走廊纵深拍摄，让远处蝴蝶可辨，同时保留它与镜头之间明确的距离。焦点随主体变化自然衔接，最终落在近处男性角色双眼。
+
+狭长封闭走廊，两侧房门与天花板形成强烈纵深线条。顶灯彼此间隔，每盏灯在墙面和地面形成独立光区，明亮光区与深暗间隙交替延伸。
+
+冷白光略带青色，墙面保留低饱和灰蓝，蝴蝶的蓝色与眼纹的红色形成精准冷暖对比。地面有克制的柔和反射，灯具高光不过曝，暗部层次由真实光源建立，不使用均匀环境补光。
+
+灯亮时，侧上方的走廊灯在主体表面形成有方向的明暗；灯灭时，对应光区与反射真实消退。最后一盏灯熄灭后，整个空间必须彻底全黑。
+
+电影光影不能成为保留轮廓光、蓝色底光或额外补光的理由。
+
+【蝴蝶与眼纹】
+
+全片只有一个主体，由一只蓝色蝴蝶连续化为同一个男性角色。
+
+蝴蝶身体纤细，触角自然，两对宽薄蝶翼协调运动，具有真实翅脉、细密鳞粉和柔软翼缘。蝴蝶始终停留在走廊中后段的小范围内，一扑一扑地飞动，不飞到镜头面前。
+
+左右翅面各有一个主要眼状花纹：黑色圆心，外围红色区域内有三枚黑色勾玉。图案结构与男性角色虹膜一致。
+
+花纹始终存在于翅面上，随翅膀弯折、收合和改变透视。只有在部分展翅角度，才能短暂看清两个像眼睛的花纹；收翅或侧转时，自然被遮挡。
+
+花纹不是浮在翼面外的图标，不是立体眼球。
+
+【0—5秒：远处扑翼】
+
+蝴蝶在走廊中后段自然飞动，双翼上抬收合，再向下扑动展开，带动身体轻微升降，伴随小幅横向漂移与方向修正，整体不向镜头逼近。
+
+拍翼轻快、连续，有节奏变化，翼根带动翼尖，薄翼发生微小弯曲，翼缘带自然运动模糊。不要慢动作摊翅，不要机械悬停。
+
+远处顶灯从不同角度掠过蓝色翼面，鳞粉光泽随拍翼短暂显现。
+
+左右红色三勾玉眼纹时而同时露出，时而只看见一侧，随后又随收翅消失。
+
+镜头以微幅手持捕捉这一过程，背景灯光柔和虚化，但灯具排列、明暗光区与走廊纵深仍然可辨。
+
+【5—7.5秒：光区逐段消失】
+
+走廊灯光突然开始出现异常。
+
+最远处一盏灯先逐渐暗下，接着下一盏，再下一盏，沿纵深由远到近缓慢熄灭。每盏灯有短暂亮度衰减，相邻灯之间存在清楚的时间差。
+
+灯光衰减落实到整个空间：对应墙面的亮区收暗，门框高光消失，地面反射逐渐减弱，黑暗一段一段向镜头推进。不是整幅画面统一降低亮度。
+
+蝴蝶仍在远处自然扑翼，被尚未熄灭的灯短暂照到。蓝色翼面逐渐不可见，红色三勾玉眼纹随展翅间歇显露。
+
+最后一盏灯熄灭，空间彻底全黑。
+
+墙壁、地面、门框、顶灯、蝶翼与蝴蝶身体全部消失。
+
+没有应急灯、轮廓光、空气光或残留反射。曝光不自动抬高，不把黑暗提成灰色。
+
+【7.5—10秒：纯黑中的无缝衔接】
+
+画面只剩两处微弱的红色眼纹，像夜光涂层在暗处留下的余辉，低亮度、柔和、细小。
+
+可以勉强辨认红色虹膜区域、黑色圆形中心与三枚黑色勾玉结构。没有明显光晕，不照亮周围，不呈现霓虹或火焰质感。
+
+最初，两处微光仍随最后几次扑翼产生轻微角度变化与小幅起伏，随后运动自然收缓。
+
+始终是同一对微光，不熄灭后重现，不叠入另一对眼睛。
+
+借助纯黑隐藏身体和空间距离的变化，让蝶翼眼纹连续成为男性角色的红色三勾玉虹膜。
+
+两处微光的颜色、纹样与画面轨迹延续一致，间距和大小只作平滑、克制的调整，不突然跳位，不夸张放大，不像光圈冲向镜头。
+
+三枚黑色勾玉随整组眼纹自然衔接，不单独旋转、不重新排列、不突然生成。
+
+男性角色已经在黑暗中完成转换并站在镜头前，但此时看不见他的眼白、眼睑、鼻梁、脸、头发、服装或身体。
+
+画面始终只有纯黑与两处夜光般微弱的红色眼纹。
+
+摄影机的细微手持运动持续不断，微光自然响应同一套摄影机运动，不固定贴在屏幕上。
+
+焦点在纯黑遮蔽下自然转移至近处，为亮灯后的双眼做好清晰衔接，不出现可见的反复寻焦。
+
+【第10秒：灯亮揭示】
+
+整条走廊的灯突然同时恢复正常照明。
+
+不是闪白，不是渐渐显出一张透明脸，而是真实灯光瞬间照见已经站在镜头前的男性角色。
+
+男性角色正面直视镜头，胸部以上中近景。
+
+亮灯前的两处微光，准确接成亮灯后他双眼中的红色三勾玉虹膜，位置、形状和运动轨迹连续。
+
+直到这一刻，观众才发现远处蝴蝶已经化为近处的男性角色。
+
+近处侧上方顶灯为他形成有方向的电影主光：额头、鼻梁、一侧颧骨与上唇边缘接住柔和亮面，另一侧面颊落入深而自然的阴影，保留必要肤色细节。
+
+他身后的顶灯在发丝和肩线形成细窄、克制的边缘亮度，将人物从幽深走廊中分离。
+
+背景恢复交替排列的亮区与暗区，突出纵深。肤色保持自然，与冷青灰背景形成细微色温差，不把脸整体染成蓝色。
+
+双眼清晰：黑色圆形瞳孔，外围为深红至鲜红的真实虹膜，三枚黑色勾玉围绕中央瞳孔均匀排列。
+
+三枚勾玉彼此分离，圆头与弯曲尾部清楚，与中央瞳孔之间保留红色间隔。
+
+眼白、眼睑、睫毛、虹膜纤维与角膜反光真实自然。
+
+红色虹膜保留克制微光，与正常照明融合，不照亮整张脸，不糊成两个光球。
+
+蝴蝶已完全消失。
+
+【10—15秒：人形电影肖像】
+
+完整人形保持约5秒。
+
+男性角色原地正面直视镜头，嘴唇自然闭合，只有微表情、轻微呼吸与少量发丝运动。
+
+不走动、不转头、不抬手、不触碰镜头、不继续变形。
+
+摄影师保持原地肩扛手持，细微呼吸起伏贯穿始终。景别稳定，焦点锁在双眼。
+
+两只眼睛同时处于清晰焦点范围，黑色圆形瞳孔边缘明确，红色虹膜中的三枚黑色勾玉各自完整可辨。
+
+勾玉数量、形状、弯曲方向和排列保持稳定，彼此不粘连，不与中央瞳孔糊成黑团。
+
+图案贴合真实虹膜曲面，位于透明角膜之下。
+
+虹膜不旋转、不闪烁、不扩散、不改变图案。
+
+脸部光影、自然皮肤纹理、发丝层次与服装褶皱清楚可见。背景适度虚化，保留走廊光区的纵深节奏。
+
+以男性角色近景和清晰的红色三勾玉眼睛结束。
+
+不冻结成照片，不提前黑屏，不淡出。
+
+【声音与连续性】
+
+走廊低沉环境底噪、灯具逐盏衰减的细微电流声、整体亮灯时短促通电声，最后保留微弱呼吸。
+
+远处蝴蝶不配夸张振翅声。
+
+无背景音乐，无对白，不要字幕。
+
+全程真人电影质感、肩扛手持、一镜到底。
+
+蝴蝶留在远处自然扑翼，眼纹始终存在于蝶翼上，但随展翅、收翅和侧转时隐时现。
+
+灯逐盏熄灭后必须纯黑，只留两处夜光般微弱的红色三勾玉眼纹。黑暗中不提前显露人形。
+
+第10秒灯光突然整体恢复，男性角色已经站在镜头前，两处蝶翼眼纹无缝接成他的双眼。
+
+10—15秒人物只保持近距离电影肖像，不走近、不触碰镜头、不增加额外表演动作。
+
+人物外貌、服装、眼睛结构与空间关系连续稳定。
+
+无烟雾、无粒子爆炸、无闪白转场。`,
+    },
+  },
+  {
     id: "bmx-troy-2026-vlog-seedance",
     title: "特洛伊战地 Vlog · 2026 穿越 · Seedance 2.5",
     subtitle: "X · @bmx_ai13 · Seedance 2.5 · Dreamina · 30秒 · 16:9",
