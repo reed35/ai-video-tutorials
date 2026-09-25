@@ -72,7 +72,7 @@ export default async function TutorialPage({
             <br />
             30 秒真人风动画,怎么做出来的?
           </h1>
-          <p className="text-[var(--muted)] text-[15px] max-w-[58ch] mb-4">
+          <p className="text-[var(--muted)] text-[15px] mb-4">
             {tutorial.description}
           </p>
           <div className="flex flex-wrap gap-2 mb-2">
