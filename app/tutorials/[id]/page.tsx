@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getTutorialById, tutorials } from "@/lib/tutorials";
+import { getTutorialSubtitle } from "@/lib/tutorial-subtitle";
 import { notFound } from "next/navigation";
 import { PromptBlock } from "@/components/prompt-block";
 import { HookBreakdown } from "@/components/hook-breakdown";
@@ -70,9 +71,7 @@ export default async function TutorialPage({
           <h1 className="text-[clamp(26px,4vw,36px)] leading-tight tracking-tight mb-2.5">
             {tutorial.title}
             <br />
-            {tutorial.durationSec && tutorial.styleLabel
-              ? `${tutorial.durationSec} 秒${tutorial.styleLabel}短片，怎么做出来的？`
-              : "这条片子怎么做出来的？"}
+            {getTutorialSubtitle(tutorial)}
           </h1>
           <p className="text-[var(--muted)] text-[15px] mb-4">
             {tutorial.description}

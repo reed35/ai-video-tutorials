@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { Tutorial } from "@/lib/types";
+import { getTutorialSubtitle } from "@/lib/tutorial-subtitle";
 
 export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -50,7 +51,7 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
           <h2 className="text-xl font-bold leading-tight tracking-tight mb-3">
             {tutorial.title}
             <br />
-            <span className="text-lg opacity-80">30 秒真人风动画,怎么做出来的?</span>
+            <span className="text-lg opacity-80">{getTutorialSubtitle(tutorial)}</span>
           </h2>
           <div className="flex flex-wrap gap-2 mb-2">
             {tutorial.tags.map((tag, idx) => (
