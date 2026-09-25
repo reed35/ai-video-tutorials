@@ -75,6 +75,16 @@ export default async function TutorialPage({
             {tutorial.description}
           </p>
           <div className="flex flex-wrap gap-2 mb-2">
+            {tutorial.formats?.map((format, idx) => (
+              <Link
+                key={`format-${format}`}
+                href={`/?format=${encodeURIComponent(format)}#tutorials`}
+                className="text-xs text-[var(--accent)] bg-[rgba(94,234,212,0.14)] border border-[rgba(94,234,212,0.3)] rounded-full px-3 py-1.5 hover:bg-[rgba(94,234,212,0.22)] transition-colors"
+                title={idx === 0 ? "主套路" : "副套路"}
+              >
+                套路 · {format}
+              </Link>
+            ))}
             {tutorial.tags.map((tag, idx) => (
               <span
                 key={idx}
@@ -299,8 +309,25 @@ export default async function TutorialPage({
                 </a>
               </>
             )}
-            {tutorial.sourceImpressions !== undefined && (
+            {tutorial.sourceImpressions !== undefined && !tutorial.sourceStats && (
               <> · 曝光约 {formatImpressions(tutorial.sourceImpressions)}</>
+            )}
+            {tutorial.sourceStats && (
+              <div className="mt-1.5">
+                原帖数据（截至 {tutorial.sourceStats.asOf}）：
+                {[
+                  tutorial.sourceImpressions !== undefined &&
+                    `播放 ${formatImpressions(tutorial.sourceImpressions)}`,
+                  tutorial.sourceStats.likes !== undefined &&
+                    `点赞 ${formatImpressions(tutorial.sourceStats.likes)}`,
+                  tutorial.sourceStats.reposts !== undefined &&
+                    `转发 ${formatImpressions(tutorial.sourceStats.reposts)}`,
+                  tutorial.sourceStats.bookmarks !== undefined &&
+                    `收藏 ${formatImpressions(tutorial.sourceStats.bookmarks)}`,
+                ]
+                  .filter(Boolean)
+                  .join(" · ")}
+              </div>
             )}
           </>
         ) : (

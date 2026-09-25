@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { tutorials } from "@/lib/tutorials";
-import { TutorialCard } from "@/components/tutorial-card";
+import { TutorialGrid } from "@/components/tutorial-grid";
 import { FilmstripPreview } from "@/components/filmstrip-preview";
 
 export default function Home() {
@@ -56,11 +56,7 @@ export default function Home() {
       </section>
 
       <div id="tutorials" className="max-w-[1200px] mx-auto px-[18px] pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tutorials.map((tutorial) => (
-            <TutorialCard key={tutorial.id} tutorial={tutorial} />
-          ))}
-        </div>
+        <TutorialGrid tutorials={tutorials} />
 
         <footer className="mt-16 text-[var(--muted)] text-xs text-center">
           成片拆解 · 素材来自 Filmera 公开模板,仅供演示
