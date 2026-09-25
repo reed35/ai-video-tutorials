@@ -26,6 +26,25 @@ export interface Tutorial {
   sourceStats?: SourceStats;
   /** 套路标签：第 1 个为主套路，可选第 2 个为副套路 */
   formats?: TutorialFormat[];
+  /** 「钩子在哪」拆解：只写抽帧真实看到的画面 */
+  hook?: HookBreakdown;
+}
+
+export interface HookBreakdown {
+  /** 前 1–3 秒靠什么抓人（具体画面） */
+  opening: string;
+  openingAt?: string;
+  /** 高潮 / 反转 */
+  peak: string;
+  /** 约第几秒，如 "约 6s" */
+  peakAt?: string;
+  /** 结尾怎么收 */
+  ending: string;
+  endingAt?: string;
+  /** 跟做时最该照抄的一点 */
+  copyThis: string;
+  /** 时间点为抽帧估计 */
+  approx?: boolean;
 }
 
 /** 首页「按套路挑」筛选条的分类与顺序 */
