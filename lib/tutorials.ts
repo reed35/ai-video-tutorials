@@ -2,6 +2,496 @@ import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
   {
+    id: "garylau-rei-tongue-minimax-h3",
+    title: "绫波丽双次吐舌表情深度驱动 · MiniMax H3",
+    subtitle: "X · @GaryLau0101 · MiniMax H3 ReferenceToVideo · 15秒 · 16:9",
+    description:
+      "GaryLau0101 用 MiniMax H3 的 ReferenceToVideo 节点制作的表情驱动短片：<Picture 1> 负责锁定绫波丽的脸、黑长直齐刘海、浅蓝针织衫、银项链、白色纹理墙与沙发边，以及首帧和光线；<Video 1> 是一段带面部运动曲线与舌头轮廓的深度诊断动画，只被读取为“动作与时间”的指引，外观全部来自 Picture 1。成片为固定机位的写实中近景，约 3.20–4.07 秒和 8.81–10.68 秒各做一次俏皮吐舌并收回，其余时间保持细微的眼神、嘴部、头部和手势。作者没有公开可确认的静态 Picture 1，本页 refs 全部是成片截帧；深度诊断视频（Video 1）同帖发布，但未作为静态参考图收录。",
+    video: "/tutorials/garylau-rei-tongue-minimax-h3/demo-web.mp4",
+    poster: "/tutorials/garylau-rei-tongue-minimax-h3/poster.jpg",
+    duration: "15秒",
+    shots: 1,
+    references: 5,
+    model: "MiniMax H3（ReferenceToVideo）",
+    style: "深度动画驱动表情 · 固定机位写实中近景",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/GaryLau0101/status/2103326557783925108",
+    sourceAuthor: "@GaryLau0101",
+    sourcePlatform: "X",
+    sourceImpressions: 31,
+    tags: [
+      "15秒 · 表情驱动",
+      "16:9 横屏",
+      "MiniMax H3",
+      "ReferenceToVideo",
+      "深度动画驱动",
+      "双次吐舌",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "先锁定身份与环境，只让 Picture 1 决定外观",
+        description:
+          "提示词的 subject_definitions 把 <Subject 1>（绫波丽：同一张脸、自然肤质、深色眼睛、黑长直齐刘海、浅蓝圆领针织衫、银项链）和 <Subject 2>（白色纹理墙与沙发边）都绑定到 <Picture 1>，并声明 Picture 1 决定身份、服装、背景、光线、构图和首帧。实际复刻时先准备一张稳定的正面中近景 Picture 1 作为唯一外观基准。注意：作者没有公开这张 Picture 1，本页 refs 只是成片截帧，不能当作原始参考图。",
+      },
+      {
+        number: 2,
+        title: "把动作和外观分层：Video 1 只提供动作与时间",
+        description:
+          "<Video 1> 是带面部运动曲线和舌头轮廓的深度诊断动画，提示词明确“只把它读作动作及其时间的指引；所有可见表面、颜色、面部比例和光照都只来自 Picture 1”。retention_analysis 进一步要求保持原有下颌宽度、脸颊体积和下巴长度，并把动作转译为自然皮肤与针织面料。这是避免模型把灰度深度图、彩色曲线或点直接渲染进成片的关键。",
+      },
+      {
+        number: 3,
+        title: "用时间码写两次吐舌，最后写负向连续性",
+        description:
+          "detailed_description 用时间码约束：0.00–3.20 秒舌头在口内；约 3.20 秒伸出、约 4.07 秒收回；约 8.81–10.68 秒第二次伸出、短暂停留并收回；10.68–15.00 秒按原节奏继续其余表情。强调“Two tongue cycles only”，禁止循环、变速、重置和结尾冻结；固定机位与脸部尺度，不改毛衣和墙面；禁止灰度深度图、彩色面部曲线、点、遮罩、文字、图形、断开的舌头和变形手臂。原声音频由作者外部添加，提示词要求不生成对白。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-garylau-tongue-frame-01",
+        number: "1",
+        title: "开场中近景",
+        subtitle: "t≈1s · 成片截帧",
+        image: "/tutorials/garylau-rei-tongue-minimax-h3/refs/film-frame-01.jpg",
+        prompt: "成片截帧（非作者参考图/非 Picture 1）：固定机位、写实中近景，绫波丽黑长直齐刘海、浅蓝针织衫，白色纹理墙与沙发边，舌头仍在口内，只有细微眼神与头部动作。从作者发布的彩色成片抽帧，仅作跟随拆解；作者未公开静态 Picture 1。",
+      },
+      {
+        id: "ref-garylau-tongue-frame-02",
+        number: "2",
+        title: "第一次吐舌",
+        subtitle: "t≈3.5–4s · 成片截帧",
+        image: "/tutorials/garylau-rei-tongue-minimax-h3/refs/film-frame-02.jpg",
+        prompt: "成片截帧（非作者参考图/非 Picture 1）：第一轮吐舌（提示词约 3.20–4.07 秒）：单眼眨眼、粉色舌头伸过下唇，头部微侧，脸型与服装保持不变。从作者发布的彩色成片抽帧，仅作跟随拆解；作者未公开静态 Picture 1。",
+      },
+      {
+        id: "ref-garylau-tongue-frame-03",
+        number: "3",
+        title: "两次吐舌之间",
+        subtitle: "t≈7s · 成片截帧",
+        image: "/tutorials/garylau-rei-tongue-minimax-h3/refs/film-frame-03.jpg",
+        prompt: "成片截帧（非作者参考图/非 Picture 1）：两轮吐舌之间的过渡表情：舌头已收回，嘴唇微张，正视镜头，机位与脸部尺度与开场一致。从作者发布的彩色成片抽帧，仅作跟随拆解；作者未公开静态 Picture 1。",
+      },
+      {
+        id: "ref-garylau-tongue-frame-04",
+        number: "4",
+        title: "第二轮吐舌区间",
+        subtitle: "t≈10s · 成片截帧",
+        image: "/tutorials/garylau-rei-tongue-minimax-h3/refs/film-frame-04.jpg",
+        prompt: "成片截帧（非作者参考图/非 Picture 1）：处于提示词第二轮吐舌区间（约 8.81–10.68 秒）附近：嘴部张开、表情变化，肩部和针织袖子保持连续。从作者发布的彩色成片抽帧，仅作跟随拆解；作者未公开静态 Picture 1。",
+      },
+      {
+        id: "ref-garylau-tongue-frame-05",
+        number: "5",
+        title: "收尾细微表情",
+        subtitle: "t≈13s · 成片截帧",
+        image: "/tutorials/garylau-rei-tongue-minimax-h3/refs/film-frame-05.jpg",
+        prompt: "成片截帧（非作者参考图/非 Picture 1）：10.68 秒之后的收尾段：闭眼、嘴部细微动作，继续原节奏的眼、嘴、头部表情，无循环或结尾冻结。从作者发布的彩色成片抽帧，仅作跟随拆解；作者未公开静态 Picture 1。",
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "完整 15 秒单镜头（固定机位、平视、16:9 写实中近景）：从 Picture 1 首帧开始。0.00–3.20 秒完成最初的眼部、嘴唇和细微头部动作，舌头在口内；约 3.20 秒嘴唇分开，自然粉色舌头伸过下唇，约 4.07 秒收回；中间继续表情与小手势；约 8.81–10.68 秒第二次伸舌、短暂停留并收回；10.68–15.00 秒按原节奏继续其余眼、嘴、头和手部动作。全程同一张脸、黑发、浅蓝毛衣、项链和白墙，无对白、无剪切、无循环或结尾冻结。",
+      },
+    ],
+    constraints:
+      "Picture 1 是唯一外观来源（脸/发型/浅蓝针织衫/银项链/白墙/光线/首帧）；Video 1 深度诊断动画只读动作与时间，不得渲染灰度深度图、彩色面部曲线、点、遮罩、文字或图形；仅两次吐舌（约3.20–4.07秒、约8.81–10.68秒），无循环/变速/重置/结尾冻结；固定机位与原脸部尺度；保持下颌宽度、脸颊体积、下巴长度与连续针织袖子；禁止断开的舌头和变形手臂；原声音频由作者外部添加，不生成对白。缺口：作者未公开静态 Picture 1，refs 全部为成片截帧（非参考图）；Video 1 深度/面部曲线动画随帖发布但为视频而非静态参考图，未在本页收录；未发现 quoted post 或额外提示词；demo-web.mp4 为网页压缩版，音频未做转录。",
+    video_prompt: {
+      title: "Rei 双次吐舌 · ReferenceToVideo 提示词",
+      subtitle: "15s · 16:9 · MiniMax H3 ReferenceToVideo · Picture 1 + Video 1 · 英文完整提示词",
+      content: `subject_definitions:
+<Subject 1> is Rei in <Picture 1>: the exact same face, natural skin, dark eyes, straight long black hair with blunt bangs, light-blue crewneck knitted sweater and silver necklace.
+<Subject 2> is the white textured wall and sofa edge in <Picture 1>.
+<Picture 1> defines identity, clothing, background, lighting, framing and the opening image.
+<Video 1> is a diagnostic depth animation with facial motion curves and a tongue silhouette. Read it only as a guide to movements and their timing; all visible surfaces, colors, facial proportions and illumination come exclusively from <Picture 1>.
+
+summary:
+[reference generation] A continuous fifteen-second photorealistic medium close-up of <Subject 1>, fixed eye-level camera, landscape 16:9. Keep the same face, black hair, light-blue sweater, necklace and white wall throughout. She makes two brief playful tongue-out gestures at the original reference times, retracts her tongue after each and continues subtle facial expressions. No speech or cuts.
+
+retention_analysis:
+Fully preserve <Picture 1> appearance and environment. Change only facial expression and small head movements. Preserve natural shoulders and continuous knitted sleeves. Translate the motion into natural skin and knitted cloth. The visible result is a normally illuminated color photograph of Rei, with her original jaw width, cheek volume and chin length.
+
+detailed_description:
+[Shot 1]
+Begin from <Picture 1>, then smoothly perform the expression. From 0.00 to 3.20 seconds, perform the initial eye, lip and small head movements with the tongue inside the mouth. Around 3.20 seconds the lips part and a naturally pink tongue extends over the lower lip; it retracts around 4.07 seconds. Continue the intervening expressions and small gestures. Around 8.81 to 10.68 seconds, perform the second tongue extension, brief hold and retraction. From 10.68 to 15.00 seconds, continue the remaining eye, mouth, head and hand gestures at the original pace. Two tongue cycles only, naturally connected inside the mouth. No looping, speed change, reset or forced freeze at the end. Keep the face recognizable and skin realistic. Keep the camera fixed and the original face scale. Do not change the light-blue sweater or white wall. No gray depth-map rendering, colored facial curves, dots, masks, text or graphics. No detached tongue or distorted arms. Original audio is added separately; do not generate speech.`,
+    },
+  },
+  {
+    id: "ailifehack-manga-book-escape-minimax-h3",
+    title: "漫画本脱出剧 · MiniMax H3",
+    subtitle: "X · @ai_lifehack55 · MiniMax H3 · 15秒 · 1:1",
+    description:
+      "AIライフハック（@ai_lifehack55）公开的 MiniMax H3 动画提示词：一位女性被困在巨大的展开漫画书里，从纸面内侧推破页面、由黑白漫画连续变换为实写人物走进现实卧室，最后回头发现“书里还留着一个自己”，两人互相指认，以夸张的惊讶和漫画式特效收尾。作者说明仅限 2K（768P 画面参照太弱、人物还原度无法保证），原本用简易分镜但漫画内文字无法被识别，于是改为“锚点图片参照”：先用引用帖的 GPT-Image2 指示书生成 4 张场景图，再加 1 张可替换的女性全身锚点，共 5 张参考图投入。本页 4 张 refs 是作者公开的真实场景参考图；05 / WOMAN_MASTER 女性锚点作者未公开，需要自行准备。",
+    video: "/tutorials/ailifehack-manga-book-escape-minimax-h3/demo-web.mp4",
+    poster: "/tutorials/ailifehack-manga-book-escape-minimax-h3/poster.jpg",
+    duration: "15秒",
+    shots: 10,
+    references: 4,
+    model: "MiniMax H3",
+    style: "实写 × 黑白漫画融合 · 脱出喜剧",
+    aspectRatio: "1/1",
+    sourceUrl: "https://x.com/ai_lifehack55/status/2094985989404205107",
+    sourceAuthor: "@ai_lifehack55",
+    sourcePlatform: "X",
+    sourceImpressions: 58641,
+    tags: [
+      "15秒 · 漫画脱出",
+      "1:1 方形",
+      "MiniMax H3",
+      "2K 限定",
+      "5 图参照",
+      "实写×漫画",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "先生成 4 张场景锚点图 + 准备女性全身锚点",
+        description:
+          "按引用帖的 GPT-Image2 指示书（原文已放在下方各参考图的提示词里）配合你自己的女性全身图，依次生成 01 困在书中、02 推破纸面、03 走出书页、04 互相指认四张 1:1 场景图；再准备 05 / WOMAN_MASTER 女性全身锚点——它是脸、发型、年龄感、肤色、体型、全身比例、服装、材质、配色和鞋子的唯一正本。作者没有公开自己的 05 锚点，本页只收录真实公开的 01–04 场景图。",
+      },
+      {
+        number: 2,
+        title: "投入 5 张图，理解 ID 引用规则",
+        description:
+          "主提示词要求把 image1~5 替换成对应图片：Image1–4 = 01–04 场景锚点，Image5 = 05 WOMAN_MASTER；06 / MANGA_SELF 与 07 / REAL_SELF 是 05 的两种状态（黑白漫画 / 实写），08 / BOOK_ROOM 是 01–04 共用的巨大展开书与卧室。每个镜头只用 ID 引用；从 01–04 的女性身上只取位置、姿势和动作，不取外观；人物同一性以 05 优先；不要使用场景锚点里的对白气泡、印刷文字、分格框和白色分割边距。作者强调必须用 2K，768P 参照太弱。",
+      },
+      {
+        number: 3,
+        title: "粘贴完整提示词，逐段检查时间轴",
+        description:
+          "使用下方完整原文（含作者日文说明与【REFERENCE】→【NEGATIVE】各段）。重点检查：0.0–4.6 秒全身必须是书页内的平面黑白漫画，4.6 秒起才出现肤色、实写服装、立体化和落地；4.6–6.8 秒按手→脸→上半身→腿连续变换，破裂时手绘「バリッ！」0.35 秒内碎成墨片消失；10.3 秒唱片刮擦急停，仅 0.2 秒静音；结尾巨大「！？」弹出。画面文字只允许「バリッ！」与「！？」，不得出现第三个女性或同一状态重复。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-ailifehack-manga-scene-01",
+        number: "1",
+        title: "01 / SCENE_TRAPPED · 困在书中",
+        subtitle: "Image1 · 作者场景图",
+        image: "/tutorials/ailifehack-manga-book-escape-minimax-h3/refs/scene-01-trapped.jpg",
+        prompt: `真实作者参考图（非成片截帧）：作者在引用帖 https://x.com/ai_lifehack55/status/2094632873458602046 公开的四张场景图之一，对应主提示词的 01 / SCENE_TRAPPED：巨大展开漫画书中的第一场景，女性仍是书页内的黑白漫画人物（吹き出し「ここは… どこ？」「出られない…！」），卧室实景作为共同环境。
+
+以下为引用帖中生成此图的 GPT-Image2 指示书原文（逐字）：
+
+GPT-Image2 カスタムプロンプト公開
+マンガ本に閉じ込められた女性の脱出劇
+
+これも動画化するために作ったのですが、ちょっと色々な不具合があるので動画は公開しないかもしれません😭
+※使い方
+・全身画像を用意
+・各指示書と一緒に投入
+・全部で4枚の画像を生成
+
+※1枚目指示書
+👇️👇️👇️
+【指示書】STORYBOARD_PANEL_1_INTRO
+
+【前提条件】
+対象キャラクターの「全身の参照画像」を読み込ませること。
+
+【目的】
+物語の導入シーン。巨大な漫画本の中に、参照画像の人物が2Dの漫画キャラクターとして閉じ込められている状況を生成する。（※このカットでは、まだ実写3Dの人物は外に存在しない）
+
+【基本設定と画質】
+・画質: Ultra-realistic 8K.
+・アスペクト比: 1:1（スクエア固定）
+・背景: 美しく整頓された寝室。木目の床。自然光。
+
+【シーンと構図の完全指定】
+・漫画本の配置: 巨大な漫画本が見開き状態で、画面奥から手前へ斜めに立てかけられている（V4と同一の背景・構造）。
+・アクションと状況: 本の前に実写の人物はいない。焦点は「本の中のページ」に当てられている。
+・破壊表現: まだ紙面は破れていない。完全な状態のページ。
+
+【漫画世界側の描写とセリフ指定】
+・漫画の仕様: スクリーントーンと太いインク線、コマ割りを持つ日本式モノクロ漫画。
+・漫画内の人物: 参照画像と同一人物（2D線画）。自分が漫画の中にいることに気づき、周囲を見渡して困惑している表情。
+・吹き出しのテキスト（以下の日本語をコマ内に配置）:
+ 1. 「ここは… どこ？」
+ 2. 「出られない…！」
+
+【出力における絶対条件】
+・実写の人物を登場させず、3Dの部屋と2Dの漫画本という空間を描写すること。
+
+----- ↑ ここまで ↑ -----`,
+      },
+      {
+        id: "ref-ailifehack-manga-scene-02",
+        number: "2",
+        title: "02 / SCENE_BREAKTHROUGH · 推破纸面",
+        subtitle: "Image2 · 作者场景图",
+        image: "/tutorials/ailifehack-manga-book-escape-minimax-h3/refs/scene-02-breakthrough.jpg",
+        prompt: `真实作者参考图（非成片截帧）：作者在引用帖 https://x.com/ai_lifehack55/status/2094632873458602046 公开的四张场景图之一，对应主提示词的 02 / SCENE_BREAKTHROUGH：漫画中的女性从纸面内侧向外推，纸面开始鼓起与破裂，展示突破动作与紧张表情。
+
+以下为引用帖中生成此图的 GPT-Image2 指示书原文（逐字）：
+
+
+
+※2枚目指示書
+👇️👇️👇️
+【指示書】STORYBOARD_PANEL_2_STRUGGLE
+
+【前提条件】
+対象キャラクターの「全身の参照画像」を読み込ませること。
+
+【目的】
+漫画の中にいる人物が現実世界に気づき、コマの枠や紙面を内側から強く押して破ろうとしている、ブレイクアウト直前のシーンを生成する。
+
+【基本設定と画質】
+・画質: Ultra-realistic 8K, photorealistic.
+・アスペクト比: 1:1（スクエア固定）
+・背景: 美しく整頓された寝室。木目の床。自然光。
+
+【シーンと構図の完全指定】
+・漫画本の配置: 巨大な漫画本が見開き状態で、斜めに立てかけられている（V4と同一の背景・構造）。
+・アクションと状況: 漫画の中の人物（2D）が、紙面の裏側から外の世界に向かって両手を強く押し当てている。
+・破壊・立体表現: 人物が押している部分の紙面が、わずかに外側（3D空間側）に向かって盛り上がり、紙が少し破れ始めている。モノクロの世界から、押している手や体の一部だけがほんの少しフルカラー（実写）に変化し始めている予兆を描く。
+
+【漫画世界側の描写とセリフ指定】
+・漫画の仕様: スクリーントーンと太いインク線、コマ割りを持つ日本式モノクロ漫画。
+・漫画内の人物: 参照画像と同一人物。外に出ようと必死な表情。
+・吹き出しのテキスト（以下の日本語をコマ内に配置）:
+ 1. 「外の世界…！？」
+ 2. 「開いて…！」
+
+【出力における絶対条件】
+・「2Dから3Dへ次元の壁を押し破ろうとしている」境界の緊張感を描くこと。
+
+----- ↑ ここまで ↑ -----`,
+      },
+      {
+        id: "ref-ailifehack-manga-scene-03",
+        number: "3",
+        title: "03 / SCENE_EMERGENCE · 走出书页",
+        subtitle: "Image3 · 作者场景图",
+        image: "/tutorials/ailifehack-manga-book-escape-minimax-h3/refs/scene-03-emergence.jpg",
+        prompt: `真实作者参考图（非成片截帧）：作者在引用帖 https://x.com/ai_lifehack55/status/2094632873458602046 公开的四张场景图之一，对应主提示词的 03 / SCENE_EMERGENCE：实写女性已从书页破洞踏到现实木地板，漫画中的自己仍留在书页中，展示破洞与落地位置。
+
+以下为引用帖中生成此图的 GPT-Image2 指示书原文（逐字）：
+
+
+
+※3枚目指示書
+👇️👇️👇️
+【指示書】STORYBOARD_PANEL__V3_PERFECT_BALANCE
+
+【前提条件】
+本プロンプトの実行時には、必ず対象キャラクターの「全身の参照画像」を読み込ませること。
+
+【目的】
+実写側の人体プロポーションの完全維持と、巨大な漫画本の構造（コマ割り・見開き）を両立させたシーンを生成する。
+
+【キャラクターのプロポーション維持（最重要）】
+・体型指定: 参照画像の人物が持つ「高頭身」「長い脚」「細身でスタイリッシュな骨格」を、実写側と漫画側の両方で完全に再現すること。
+・パース崩れの禁止: 実写の人物が本から足を踏み出す際、遠近法による脚の極端な短縮、胴長化、関節の不自然な曲がり、体型の崩れを厳格に禁止する。
+
+【基本設定と画質】
+・画質: Ultra-realistic 8K, photorealistic.
+・アスペクト比: 1:1（スクエア固定）
+・背景: 美しく整頓された寝室。木目の床。自然光。
+
+【シーンと構図の完全指定】
+・漫画本の配置: 巨大な漫画本が「見開き状態」で、画面奥から手前へ斜めに立てかけられている構図。単なる1枚の分厚いボードにならないよう、本のページとしての構造を保つこと。
+・アクションとポーズ: 実写の人物が、ページの枠内から画面の手前（左下方向）に向かって力強く足を踏み出している。視線は足元へ。片手は破れた紙の縁に添える。
+・破壊表現: 人物が踏み出した部分のページ「だけ」が破れており、本全体の構造は崩壊していないこと。
+
+【漫画世界側の描写とセリフ指定（レイアウト構造の維持）】
+・漫画の仕様: 必ず「複数の四角いコマ割り（パネル枠線）」を持つ、本格的な日本式のモノクロ漫画レイアウトにすること。1枚絵のポスターにならないこと。
+・漫画内の人物: 参照画像と同一人物（2D線画）。困惑して立ち尽くしているポーズ。
+・吹き出しのテキスト（以下の日本語をコマ内に配置）:
+ 1. 「あれ…？」
+ 2. 「私… どうしてこんなところ…!?」
+ 3. 「ここは… マンガの中…？」
+ 4. 「どうやって出たらいいの…？」
+
+【出力における絶対条件】
+・「見開きの本とコマ割り」の構造を維持しつつ、「手前への踏み出しとプロポーション」を崩さないこと。
+・実写のフルカラーと漫画のモノクロ2Dの強烈なコントラストを描くこと。
+
+----- ↑ ここまで ↑ -----`,
+      },
+      {
+        id: "ref-ailifehack-manga-scene-04",
+        number: "4",
+        title: "04 / SCENE_ENCOUNTER · 互相指认",
+        subtitle: "Image4 · 作者场景图",
+        image: "/tutorials/ailifehack-manga-book-escape-minimax-h3/refs/scene-04-encounter.jpg",
+        prompt: `真实作者参考图（非成片截帧）：作者在引用帖 https://x.com/ai_lifehack55/status/2094632873458602046 公开的四张场景图之一，对应主提示词的 04 / SCENE_ENCOUNTER：现实女性与书中的漫画自我面对面互相指认，保留巨大展开书、破洞和左右关系。
+
+以下为引用帖中生成此图的 GPT-Image2 指示书原文（逐字），末尾附引用帖同时公开的 2×2 分镜排版指示书原文：
+
+
+
+※4枚目指示書
+👇️👇️👇️
+【指示書】MANGA_BREAKOUT_FINALE_PUNCHLINE
+
+【前提条件】
+対象キャラクターの「全身の参照画像」を読み込ませること。
+
+【目的】
+本から抜け出した実写の人物と、本の中にいる漫画の人物が対面し、互いに指をさし合って驚くユーモラスな「オチ」のシーンを生成する。V4で確立したプロポーションと本の構造を維持する。
+
+【基本設定と画質】
+・画質: Ultra-realistic 8K, photorealistic.
+・アスペクト比: 1:1（スクエア固定）
+・背景: 美しく整頓された寝室。木目の床。自然光。
+
+【シーンと構図の完全指定】
+・漫画本の配置: 巨大な漫画本が「見開き状態」で斜めに立てかけられている（V4と同じ背景構造）。
+・アクションとポーズ: 
+ 実写の人物は本から完全に抜け出し、振り返って漫画のページと対面している。
+ 実写の人物と漫画内の人物が、互いに顔を見合わせ、目を丸くして驚きながら「互いに指をさし合っている（pointing at each other）」ポーズ。
+・破壊表現: ページの一部は破れたままであること。
+
+【漫画世界側の描写とセリフ指定】
+・漫画の仕様: スクリーントーンと太いインク線、コマ割りを持つ日本式モノクロ漫画。
+・漫画内の人物: 参照画像と同一人物（2D線画）。実写の自分を見て驚愕している。
+・吹き出しのテキスト（以下の日本語をコマ内に配置）:
+ 1. 「えぇっ！？」
+ 2. 「まさか… 本当に出てきた！？」
+ 3. 「あなた… 誰！？」
+
+【出力における絶対条件】
+・実写側の人体プロポーション（高頭身・長い脚）を崩さないこと。
+・「フルカラー実写」と「モノクロ2D漫画」の対比を明確にすること。
+
+----- ↑ ここまで ↑ -----
+
+【指示書】4-IMAGE_STORYBOARD_2X2_LAYOUT_COMPACT
+
+【配置】
+アップロードされた4枚の参照画像を使用し、1枚の4パネル・ストーリーボードに整理する。4パネルの2×2構成とし、1枚目＝左上、2枚目＝右上、3枚目＝左下、4枚目＝右下に配置する。アップロード順を変更しない。
+
+【画像の扱い】
+各参照画像のアスペクト比を変更しない。引き伸ばし、変形、再構成をしない。不要なクロップを避け、各画像全体が見えるように各パネル内へ収める。パネル比率と合わない余白は白で補う。
+
+【背景・余白】
+ストーリーボード全体の背景は白。各パネルの間に約16pxの白いマージンを設ける。黒線や装飾枠は不要。
+
+【維持条件】
+人物、顔、髪型、体型、衣装、ポーズ、背景、色味、構図、画質を変更しない。画像内の要素を追加・削除しない。タイトル、番号、キャプション、ロゴ、説明文など新規テキストは追加しない。元画像内にもともとある文字はそのまま維持する。
+
+【最重要条件】
+4枚の参照画像の比率を変えない。背景は白。各パネル間は約16pxの白マージン。2×2の4パネル構成。アップロード順に左上→右上→左下→右下へ配置する。参照画像を勝手に描き直さない。`,
+      },
+    ],
+    storyboard: [
+      {
+        number: 1,
+        description:
+          "0.0–1.0秒【参照：01、06、08】低角度广角展示巨大漫画书，高速推进到书中；MANGA_SELF 困惑地环顾，眉头紧皱、呼吸变浅。",
+      },
+      {
+        number: 2,
+        description:
+          "1.0–3.3秒【参照：01、06】硬切脸部、摸索边界的手、推纸面的侧脸；目光游移、嘴角颤抖，隔着纸说「ここは……どこ？　出られない……」；找到接缝，由恐惧转为决心。",
+      },
+      {
+        number: 3,
+        description:
+          "3.3–4.6秒【参照：02、06、08】低斜前方连切三镜：用力踩稳的鞋、嵌进纸面的手指、咬紧牙关的脸；「あいて……！」；集中线与黑墨压力环从手部扩散。",
+      },
+      {
+        number: 4,
+        description:
+          "4.6–6.8秒【参照：02、05、06、07、08】纸面向现实鼓起，手、脸、上半身、腿依次由平面墨线与纸纤维连续转换成 07 的皮肤、头发和服装，边界处网点变为彩色粒子；镜头绕裂口半周、景深变浅；破裂时手绘「バリッ！」飞向镜头并在 0.35 秒内碎成墨片消失。",
+      },
+      {
+        number: 5,
+        description:
+          "6.8–8.4秒【参照：03、05、07、08】REAL_SELF 落到纸片与地板上微微踉跄；低角度跟拍推近到脸，确认双手与服装，惊讶转为安心和小小的笑：「出られた……？」。",
+      },
+      {
+        number: 6,
+        description:
+          "8.4–10.3秒【参照：05、07、08】干脆的翻页声；笑容凝固、嘴角下垂、眉毛上扬、只有眼珠转向书；咽口水后战战兢兢回头，从脸快速甩镜到书，越肩衔接 10.3 秒的 04。",
+      },
+      {
+        number: 7,
+        description:
+          "10.3–11.2秒【参照：04、05、06、07、08】左右关系清楚的中广角：左侧 REAL_SELF 与书中央 MANGA_SELF 同时指向对方，末端短暂停顿（hit stop）；BGM 用唱片刮擦急停。",
+      },
+      {
+        number: 8,
+        description:
+          "11.2–12.8秒【参照：04、05、06】猛推到 MANGA_SELF：眼睛和嘴张大、脸颊排线增加，隔着纸说「まさか……本当に出てきた！？」，背后放射状漫画线。",
+      },
+      {
+        number: 9,
+        description:
+          "12.8–14.0秒【参照：04、05、07】约 85mm 猛推到 REAL_SELF 脸部：保持 05 的脸部比例，眉毛跳起、瞳孔收缩、嘴张开、肩膀后缩；短暂停顿后以室内声说「あなた……誰？」。",
+      },
+      {
+        number: 10,
+        description:
+          "14.0–15.0秒【参照：04、05、07】85mm 再近一档的惊讶脸：脸和服装保持彩色，只有背景变成黑白网点与集中线；巨大「！？」从脑后弹出一次；书→镜头→书两次回看，以一记滑稽音效结束。",
+      },
+    ],
+    constraints:
+      "仅限 2K（768P 画面参照太弱，人物还原无法保证）；共 5 张参照：01–04 场景锚点 + 05 WOMAN_MASTER（需自行替换）；01–04 只取位置/姿势/动作，外观以 05 为准，06/07 为同一人的漫画/实写两态；0.0–4.6 秒保持书页内平面黑白漫画，4.6 秒起才实写化；画面文字只允许「バリッ！」「！？」，无字幕/气泡/logo/水印；无第三位女性或同一状态重复；约 90 BPM 悬疑喜剧 BGM，仅 10.3 秒唱片刮擦后 0.2 秒静音。缺口：05 WOMAN_MASTER 独立原图作者未公开；MiniMax H3 具体入口/UI 参数/seed/采样与音频设置未公开；4 张场景图的生成输入与参数未公开（仅公开了 GPT-Image2 指示书）；原视频工程与未压缩音轨未公开。原片 1440×1440，本页 demo 压缩为 1280×1280。",
+    video_prompt: {
+      title: "漫画本脱出剧",
+      subtitle: "15秒 · 1:1 · MiniMax H3",
+      content: `MiniMax H3 動画プロンプト公開
+マンガ本に閉じ込められた女性の脱出劇
+
+こちら2K限定になります。理由は768Pは画像参照が弱すぎて人物の再現性が担保できないため🎥
+
+簡易ストーリーボードを使ったのですが、マンガ内の文字が認識できないのでアンカー画像参照に方向転換😅
+
+※動画化の進め方
+・参照元の指示書で4枚の画像を生成
+・生成された画像とアンカー画像が必要
+・合計5枚の画像を参照させます
+
+※投入用プロンプト（image1~5 置換え必須）
+👇️👇️👇️
+【REFERENCE】
+Image1 \`01 / SCENE_TRAPPED\`：本の中に閉じ込められた第一場面、巨大本、室内、人物の位置とポーズ。
+Image2 \`02 / SCENE_BREAKTHROUGH\`：ページを押し破る第二場面、動作、紙の亀裂。
+Image3 \`03 / SCENE_EMERGENCE\`：現実へ出た第三場面、破れ穴、着地位置。
+Image4 \`04 / SCENE_ENCOUNTER\`：本の中の自分と対面する第四場面の左右、指差し、巨大本。
+Image5 \`05 / WOMAN_MASTER\`：利用者が差し替える女性全身アンカー。顔、髪、年齢感、肌、体型、全身比率、衣装、素材、配色、靴の唯一の正本。
+\`06 / MANGA_SELF\`：05を同じ人物・衣装のままモノクロ漫画化した状態。
+\`07 / REAL_SELF\`：05を正確に維持した実写状態。
+\`08 / BOOK_ROOM\`：01～04共通の巨大な見開き本、木製床、寝具、カーテン、植物、暖かな昼光の寝室。
+
+各ショットはIDだけで参照する。01～04の女性からは位置、ポーズ、動作だけを使い、外見は使わない。人物同一性は05を最優先し、06と07を同一人物の二状態とする。女性アンカーの差し替えごとに05から読み直す。場面アンカーの吹き出し、印刷文字、コマ枠、白い分割余白は使わない。
+
+【CONDITION DEFINITION】
+15秒、1:1。シネマティック実写と精密なモノクロ漫画の融合。実写は自然な肌、布、髪、暖かな立体光、漫画は紙目、網点、インク線を明瞭に分ける。4パネルは物語アンカーで、カット数は4つに限定しない。前半は真剣な脱出劇、最後は「自分が本の中に残る」不条理を驚きとパロディーへ転換。表情は困惑→恐怖→決意→安堵→違和感→強い驚き。顔を変形させず眉、瞳、口、顎、肩、呼吸を連動する。0.0～4.6秒は全身を本の印刷面内に閉じ込めた平面モノクロ漫画とし、紙の内側から現実側へ押す。肌色、実写衣装、立体化、身体突出、床への接地は4.6秒から。
+
+【SHOT / FLOW】
+0.0～1.0秒【参照：01、06、08】巨大本を低い広角で見せ、本の中へ高速プッシュイン。MANGA_SELFは困惑して見回し、眉が寄り呼吸が浅くなる。
+1.0～3.3秒【参照：01、06】顔、境界を探る手、紙を押す横顔をハードカット。目が泳ぎ口元が震える。紙越しに「ここは……どこ？　出られない……」。継ぎ目を見つけ、恐怖から決意へ。
+3.3～4.6秒【参照：02、06、08】低い斜め前方。踏ん張る靴、紙へ食い込む指、歯を食いしばる顔を三連続で切る。「あいて……！」。集中線と黒インクの圧力リングが手から広がる。
+4.6～6.8秒【参照：02、05、06、07、08】紙が現実側へ膨らみ、手、顔、上半身、脚の順に平面のインクと紙繊維が07の肌、髪、衣装へ連続変換。境界で網点が色粒子へ変わる。カメラは裂け目を半周し、立体化に合わせ被写界深度を浅くする。破裂時、手描きの\`バリッ！\`が手前へ飛び、黒インク片へ砕け0.35秒以内に消える。女性は一人のまま05を維持する。
+6.8～8.4秒【参照：03、05、07、08】REAL_SELFが紙片と床へ着地し少しよろける。低い追従から顔へ寄る。両手と参照衣装を確認し、驚きが安堵と小さな笑みへ。「出られた……？」。
+8.4～10.3秒【参照：05、07、08】乾いたページ音。BGMに合わせ笑みが止まり、口角が落ち、眉が上がり、瞳だけ本へ動く。つばを飲み恐る恐る振り向く。顔から本へ高速ホイップパンし、肩越しのまま10.3秒の04へ接続。安堵が違和感へ変わる。
+10.3～11.2秒【参照：04、05、06、07、08】左右が読める中広角。左のREAL_SELFと本の中央のMANGA_SELFが同時に指を差し、終端で短くヒットストップ。BGMはレコードスクラッチで急停止。
+11.2～12.8秒【参照：04、05、06】MANGA_SELFへスマッシュズーム。目と口を大きく開き、頬のハッチングが増える。紙越しに「まさか……本当に出てきた！？」。背後に放射状の漫画線。
+12.8～14.0秒【参照：04、05、07】85mm相当でREAL_SELFの顔へスマッシュズーム。05の顔比率を保ち、眉が跳ね、瞳孔が縮み、口が開き、肩が引ける。短い間の後、室内音声で「あなた……誰？」。
+14.0～15.0秒【参照：04、05、07】85mmのまま一段近い驚き顔。顔と衣装はカラー、背景だけ白黒ハーフトーンと集中線へ変わり、巨大な\`！？\`が頭の後ろから出て一度弾む。本、カメラ、本の順に二度見し、コミカルな一音で終了。
+
+【CAMERA / EDITING】
+広角、顔、手元、低角度、短い回り込み、ホイップパン、交互スマッシュズームを使い、同じ中広角を続けない。動作か表情変化で切り、長い静止、スロー、無目的な360度回転、フェードなし。最終4.7秒は対面、交互リアクション、驚き顔アップの順に加速。
+
+【MOTION GRAPHICS / TYPOGRAPHY】
+集中線、ハーフトーン、インクの圧力リング、短いヒットストップ、紙片の奥行きを使う。\`バリッ！\`は黒インク、\`！？\`は白文字に赤いずれ影。わずかにオーバーシュートし、顔を隠さない。表示文字はこの二つだけで字幕や吹き出しにしない。
+
+【SOUND】
+overall_soundscape:
+紙越しと室内の声は同じ基礎声質で距離感だけ変える。紙の張り、破裂、紙片、着地、衣擦れ、ページ音を画面へステレオ同期。台詞を重ねず、追加の声や笑い声なし。
+non_diegetic_music:
+0.2秒の演出無音を除き全編に約90 BPMのミステリーコメディーBGMを連続使用。ピチカート弦、バスクラリネット、チェレスタ、軽い打楽器。脱出まで上昇し、破裂で低音と打楽器を同期、着地後は一瞬明るくする。10.3秒でレコードスクラッチ後0.2秒だけ無音、以後は低いピチカート、最後は乾いた一音。台詞中はダッキング。
+
+【NEGATIVE】
+場面アンカーの吹き出し、縦書き文字、複数コマ、白い分割余白を出さない。許可した\`バリッ！\`と\`！？\`以外の文字、字幕、ロゴ、透かしなし。第三の女性、同一状態の重複、01～04の人物外見流用、別人化、05の人物・衣装・配色の逸脱、広角による顔変形、4.6秒前の肌色・実写化・立体化・身体突出・床接地、解剖学的変形、無表情、10.3秒以降の長い同一構図、指定0.2秒以外のBGM欠落、イベント順の変更を避ける。`,
+    },
+  },
+  {
     id: "diplomeme-front-row-girl-seedance-2-5",
     title: "前排女孩与歌手的瞬间对视 · Seedance 2.5",
     subtitle: "X · @Diplomeme · Seedance 2.5 · Flovaai · 30秒 · 16:9",
