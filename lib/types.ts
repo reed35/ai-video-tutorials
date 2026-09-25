@@ -6,6 +6,10 @@ export interface Tutorial {
   video: string;
   poster: string;
   duration: string;
+  /** 成片文件真实时长（秒，ffprobe 四舍五入），用于详情页标题副行 */
+  durationSec?: number;
+  /** 风格短标签（2–5 字），用于详情页标题副行，如「真人风」「二次元」「定格动画」 */
+  styleLabel?: string;
   shots: number;
   references: number;
   model: string;
