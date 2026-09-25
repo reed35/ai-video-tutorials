@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getTutorialById, tutorials } from "@/lib/tutorials";
 import { notFound } from "next/navigation";
 import { PromptBlock } from "@/components/prompt-block";
+import { HookBreakdown } from "@/components/hook-breakdown";
 
 export function generateStaticParams() {
   return tutorials.map((tutorial) => ({
@@ -123,6 +124,8 @@ export default async function TutorialPage({
           </div>
         </div>
       </section>
+
+      {tutorial.hook && <HookBreakdown hook={tutorial.hook} />}
 
       <section className="mt-9">
         <h2 className="text-xl font-bold mb-1.5 tracking-tight">三步搞懂</h2>
