@@ -1,6 +1,1652 @@
 import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
+  // 提示词回复帖: https://x.com/iamsofiaijaz/status/2103686813600944332
+  {
+    id: "iamsofiaijaz-museum-steps-frozen-crowd-seedance",
+    title: "博物馆台阶上的静止人群 · Seedance 2.5",
+    subtitle: "X · @iamsofiaijaz · Seedance 2.5 · OpenArt · 30秒 · 16:9",
+    description:
+      "Seedance 2.5 两镜超现实短片：女主穿过台阶上静止的古装人群站到正中，下一镜全场疯狂甩身、她纹丝不动。",
+    video: "/tutorials/iamsofiaijaz-museum-steps-frozen-crowd-seedance/demo-web.mp4",
+    poster: "/tutorials/iamsofiaijaz-museum-steps-frozen-crowd-seedance/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "超现实",
+    shots: 2,
+    references: 0,
+    model: "Seedance 2.5（OpenArt）",
+    style: "写实古装群演 · 静止人群与失控人群 · 冷调胶片感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/iamsofiaijaz/status/2103685419695280351",
+    sourceAuthor: "@iamsofiaijaz",
+    sourcePlatform: "X",
+    sourceImpressions: 1251,
+    sourceStats: { asOf: "2026-09-26", likes: 22, reposts: 0, bookmarks: 10 },
+    formats: ["角色表演", "电影叙事"],
+    hook: {
+      structure: "近景抽烟 → 拉远穿过静止人群 → 全场失控而她不动",
+      opening: "第 0 秒是戴细框眼镜的女子正脸大特写，叼着烟吸一口，约 2–3s 把烟雾直接吐向镜头，糊住整个画面。",
+      openingAt: 0,
+      beats: [
+        { title: "静止人群揭晓", text: "约 3–6s 烟散开、镜头后拉，身后台阶上挤满红军装、芭蕾舞裙、胸甲的古装人群，全部一动不动盯着镜头。", at: 3 },
+        { title: "过程怎么推进", text: "约 6–13s 她转身背对镜头，从人群缝里侧身挤上台阶，没人让路，走到正中后回身站定。", at: 6 },
+        { title: "几段怎么切换", text: "约 14s 硬切到远景：全场人群突然前后弯腰甩身、此起彼伏，镜头一路拉远到整座博物馆立面，只有正中的她站着不动。", at: 14 },
+      ],
+      copyThis: "第一镜让所有人绝对静止、只有主角在动；第二镜反过来，所有人失控、只有主角不动——同一套站位，动静对调。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 两镜",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "OpenArt",
+      "静止人群",
+      "动静对调",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "准备主角参考图，写死所有群演站位",
+        description:
+          "两段提示词都以「参考图里的角色就是主角，脸、发型、服装每一帧保持一致」开头（作者没有公开这张参考图，跟做需自备）。然后按前排、第二排、第三排从左到右逐个写群演装扮，并把第三排正中标成主角的站位；第二镜要求「完全同一批人、同一位置」。",
+      },
+      {
+        number: 2,
+        title: "SHOT 1（14 秒）：全场静止，只有主角移动",
+        description:
+          "时间轴：0–3s 正脸特写抽烟吐烟；3–6s 烟散镜头后拉，露出身后静止的人群；6–7s 转身；7–12s 以正常步速侧身挤过人群上台阶（写明路线经过哪些人）；12–14s 到达正中、回身站定。反向约束：人群绝不移动、不让路、不留通道，主角不能慢动作。",
+      },
+      {
+        number: 3,
+        title: "SHOT 2（15 秒）：全场失控，只有主角不动",
+        description:
+          "第一帧就是远景且人群已在剧烈甩身：头后仰到底 → 上身猛折到膝盖 → 再弹回，循环不停，不同区块错开相位形成波浪；0–10s 镜头后拉上升到整座立面，10–15s 锁定。主角全程站在正中不动。两镜都要求无音乐，只留环境声。两段分别生成后在第一次动作处硬切拼接。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "SHOT 1（约 0–14s）：正脸特写吸烟吐烟 → 后拉露出台阶上静止的古装人群 → 转身挤过人群上台阶 → 在第三排正中回身站定。" },
+      { number: 2, description: "SHOT 2（约 14–30s）：硬切远景，全场人群前后弯腰甩身、此起彼伏，镜头拉远上升到整座博物馆立面后锁定，主角在正中始终不动。" },
+    ],
+    constraints:
+      "主角脸、发型、服装按参考图全程一致；群演站位、服装、顺序两镜完全相同；第一镜人群绝对静止、不让路、不留通道，主角正常步速不慢动作；第二镜人群全程剧烈甩身不停、不整齐划一，主角不动不跳舞；写实真人质感，禁止油画/插画/CGI/蜡像感；无音乐、无字幕水印。缺口：作者未公开主角参考图；成片人群以重复的红军装、芭蕾裙、胸甲为主，提示词里的名画人物基本认不出；音频未转录。",
+    video_prompt: {
+      title: "静止人群两镜 · Seedance 2.5 提示词",
+      subtitle: "SHOT 1 14s + SHOT 2 15s · 16:9 · Seedance 2.5 on OpenArt · 需主角参考图 · 英文完整提示词（作者楼中楼）",
+      content: `=== SHOT 1 — 14 SECONDS ===
+Live-action film footage from a period drama set. ARRI Alexa, 50mm spherical lens,
+natural overcast daylight, cool desaturated grade, 35mm film grain. Real
+photography of real human beings — visible skin pores and texture, stubble, fine
+flyaway hairs, real catchlights in the eyes, subsurface light through ears and
+fingers, natural blemishes and asymmetry, real fabric weave and wrinkles. A
+photograph of real actors on a real location. Not a painting, not a render, not an
+illustration.
+The character in the reference image is the hero — keep their face, hair and
+outfit exactly as shown, consistent in every frame.
+LOCATION: A grand neoclassical museum façade — tall columns, triangular pediment,
+arched doorway — above a wide grey stone staircase.
+FIXED CAST AND BLOCKING (identical positions in every frame, never rearranged).
+Hundreds of costumed background actors — ordinary real people, working actors and
+extras, dressed by a wardrobe department in screen-accurate historical costume,
+each styled to resemble a figure from a famous painting. They stand shoulder to
+shoulder in tight rows filling the staircase edge to edge, only body-width gaps
+between them, no aisle, no cleared path:
+FRONT ROW, left to right: an elderly actress in a full black mourning dress and
+white lace cap · a ballet dancer in a white tulle tutu and black ribbon choker · an
+actor in a black suit and red tie with a bowler hat and a real green apple hanging
+on a fine wire in front of his face as a practical prop · a gaunt actor with a real
+red beard, straw hat and worn blue workman's jacket · a stunt performer in real
+gilded plate armor.
+SECOND ROW, left to right: a heavyset bearded actor in a gold-embroidered doublet,
+fur collar and flat jewelled cap · an actress in a dark green-brown Renaissance
+gown and sheer veil, hands folded, faint closed-lipped smile · an actress in a
+yellow bodice, blue apron and white linen cap.
+THIRD ROW, left to right: an actress in a red embroidered Mexican dress with fresh
+flowers braided into her hair and strong dark brows · [THE HERO'S MARK — dead
+center] · an actor in a bicorne hat and blue and white military uniform.
+BEHIND THEM, hundreds deep: women in crimson turbans and white linen bonnets, men
+in black coats with starched white ruffs, a young actress in a blue and gold
+headwrap with a single pearl earring, rows of men in Edwardian tweed.
+Every face is a real human face with its own bone structure, weight and age.
+Nobody's skin is smooth or flat.
+TIMING:
+0:00–0:03 — CLOSE-UP on the hero's face filling the frame, facing camera front-on,
+standing at the bottom of the steps. Background soft and unreadable. They take a
+slow drag from a cigarette, lower it, and exhale a plume of smoke across the lens.
+0:03–0:06 — The camera smoothly PULLS BACK and widens as the smoke clears,
+revealing the hundreds of costumed figures packed on the staircase behind and
+around the hero — completely frozen, statue-still, unblinking, staring into camera.
+Settles into a medium shot, hero waist-up, crowd sharp and clearly visible behind.
+0:06–0:07 — The hero turns around, putting their back to camera.
+0:07–0:12 — They walk up the steps at a NORMAL, BRISK WALKING PACE — natural
+real-time speed. They squeeze between the frozen bodies, turning their torso to
+slip through, brushing shoulders. Their route: up between the ballerina in the
+white tutu and the man with the green apple in front of his face, past the
+gold-doubleted king on their left and the woman in the green-brown Renaissance gown
+on their right, brushing the gilded armor as they pass. Nobody steps aside for
+them. Nobody moves.
+0:12–0:14 — They arrive at their mark, dead center of the third row, with the
+woman in the red embroidered Mexican dress on their left and the man in the bicorne
+hat on their right. They stop and turn back around to face camera. Hold. The hero
+motionless, surrounded on all four sides, the crowd still completely frozen. END.
+Sound: no music, no soundtrack. Only wind across stone and shoes on the steps.
+DO NOT include any of the following. Nobody may look painted, illustrated, drawn,
+brushstroked, flat, 2D, smoothed, airbrushed, waxy, plastic, doll-like, CGI,
+rendered, cartoon or anime. No canvas texture, no brushstrokes, no oil-paint sheen,
+no picture frames. The crowd must not move at all in this shot and must not change
+position, costume or order. The crowd must not part, form an aisle, or leave empty
+space around the hero. The hero must not be in slow motion or drift slowly. No
+cuts, no camera shake, no morphing faces, no text, no watermark.
+=== SHOT 2 — 15 SECONDS — CUT ON THE FIRST MOVE ===
+Live-action film footage from a period drama set. ARRI Alexa, 50mm spherical lens,
+natural overcast daylight, cool desaturated grade, 35mm film grain. Real
+photography of real human beings — visible skin pores and texture, stubble, fine
+flyaway hairs, real catchlights in the eyes, natural blemishes and asymmetry, real
+fabric weave and wrinkles. Not a painting, not a render, not an illustration.
+The character in the reference image is the hero — identical face, hair and outfit
+to the previous shot.
+LOCATION: The same grand neoclassical museum façade — tall columns, triangular
+pediment, arched doorway — above the same wide grey stone staircase.
+FIXED CAST AND BLOCKING — exactly the same people in exactly the same positions as
+before, nobody added, removed or rearranged. Hundreds of costumed background actors
+— ordinary real people in screen-accurate historical costume, each styled to
+resemble a figure from a famous painting — standing shoulder to shoulder in tight
+rows filling the staircase edge to edge, only body-width gaps, no aisle:
+FRONT ROW, left to right: an elderly actress in a full black mourning dress and
+white lace cap · a ballet dancer in a white tulle tutu and black ribbon choker · an
+actor in a black suit and red tie with a bowler hat and a real green apple hanging
+on a fine wire in front of his face · a gaunt actor with a real red beard, straw hat
+and worn blue workman's jacket · a stunt performer in real gilded plate armor.
+SECOND ROW, left to right: a heavyset bearded actor in a gold-embroidered doublet,
+fur collar and flat jewelled cap · an actress in a dark green-brown Renaissance gown
+and sheer veil · an actress in a yellow bodice, blue apron and white linen cap.
+THIRD ROW, left to right: an actress in a red embroidered Mexican dress with fresh
+flowers in her hair · THE HERO, dead center · an actor in a bicorne hat and blue and
+white military uniform.
+BEHIND THEM, hundreds deep: women in crimson turbans and white linen bonnets, men
+in black coats with starched white ruffs, a young actress in a blue and gold
+headwrap with a single pearl earring, rows of men in Edwardian tweed.
+TIMING:
+0:00 — Open on a WIDE SHOT of the full façade and the entire staircase, already in
+motion. On the very first frame the whole crowd is mid-convulsion. No build-up, no
+lead-in, nobody standing still.
+0:00–0:10 — The crowd performs a wild, continuous, full-body rolling motion. The
+cycle: heads thrown ALL THE WAY BACK, chins pointed up at the sky, spines arched
+backward — then the entire torso whips forward and folds almost double at the hips,
+heads hanging down near their knees, hair and hats flying — then the body unrolls
+back up and the head snaps back again, chin to the sky. Over and over, without
+pause, never resting at neutral. Arms hang loose and swing and flail with the
+momentum. Loose, rubbery, boneless, possessed. Different sections of the staircase
+are out of phase, so one block is folded double while the block beside it is arched
+back with heads up, and the motion ripples across the crowd. Meanwhile the camera
+pulls back and rises slightly, widening to take in the whole façade.
+0:10–0:15 — The camera settles and holds locked off. The crowd keeps convulsing at
+full intensity to the last frame. The hero has not moved once — standing relaxed and
+unbothered at the dead center, facing camera, hands down, not dancing, not bending,
+not reacting.
+Sound: no music, no soundtrack. Only fabric snapping, armor rattling, breath and
+shoes scuffing stone.
+DO NOT include any of the following. Nobody may look painted, illustrated, drawn,
+flat, 2D, smoothed, waxy, plastic, CGI, rendered, cartoon or anime. Nobody may
+change position, costume or order from the previous shot. The crowd must never bow,
+curtsy, nod, greet, dip gently, bend shallowly, keep their heads level, move
+stiffly, or move in robotic unison, and must never stand still. The hero must not
+dance, bend or move, must not stand off to one side or at the edge of frame, and
+must not be in close-up. The crowd must not part, form an aisle, or leave empty
+space around the hero. No slow motion, no cuts within the shot, no camera shake, no
+morphing faces, no text, no watermark.`,
+    },
+  },
+  // 提示词回复帖: https://x.com/aimikoda/status/2103512353920754134
+  {
+    id: "aimikoda-sky-duel-seedance-2-5",
+    title: "红发双刀 vs 单刀武士 · 云端空战剑斗 · Seedance 2.5",
+    subtitle: "X · @aimikoda · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "Seedance 2.5 二次元空战剑斗：双刀红发剑士与单刀武士六镜追打，逆光剪影与彩色近身缠斗交替切换。",
+    video: "/tutorials/aimikoda-sky-duel-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/aimikoda-sky-duel-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "手绘动漫",
+    shots: 6,
+    references: 2,
+    model: "Seedance 2.5",
+    style: "手绘厚涂二次元 · 高空追逐剑斗 · sakuga 作画",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/aimikoda/status/2103512083778216062",
+    sourceAuthor: "@aimikoda",
+    sourcePlatform: "X",
+    sourceImpressions: 2508,
+    sourceStats: { asOf: "2026-09-26", likes: 51, reposts: 0, bookmarks: 27 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "剪影追击 → 彩色近身缠斗 → 剪影回收拉远",
+      opening: "第 0 秒就是淡蓝天空里两道逆光黑剪影对冲：长发双刀的一方从左上俯冲，单刀武士从右下迎上，刀已经碰在一起——没有铺垫直接开打。",
+      openingAt: 0,
+      beats: [
+        { title: "剪影追击怎么推进", text: "约 0–10s 全程逆光剪影，镜头横向跟拍两人在空中追砍、翻滚、互相绕到身后，只靠轮廓和刀线读动作。", at: 3 },
+        { title: "转彩色近身缠斗", text: "约 10.5s 突然切进彩色近景：红发 Erza 双刀与棕衣 Saito 贴身交错，约 15s 刀刃相撞迸出火花，之后连续翻身、下坠、换位。", at: 10.5 },
+        { title: "结尾怎么收", text: "约 26s 回到剪影对冲，约 27.5s 猛然拉远到云海全景：两条细长的刀痕弧线划过天空，两人变成小黑点继续飞开。", at: 27.5 },
+      ],
+      copyThis: "六镜都写清「谁从哪条路线逃、谁封住哪个出口」，再用一个开场同构的大全景收尾：两道交叉刀痕把天空「划开」。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 六镜空战",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "双角色参考图",
+      "Midjourney 角色",
+      "sakuga 剑斗",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "先准备两张角色参考图，只借外观和画风",
+        description:
+          "作者用自己引用帖里 Midjourney v8.2 出的两张角色图：@[char1 ref] = Erza（红发、双刀），@[char2 ref] = Saito（单刀武士）。提示词第一段就声明：参考图只提供外观、武器和厚涂动漫画风，不提供姿势——要求重新画全身动作轮廓，不要把参考图里的蹲姿平移或旋转。",
+      },
+      {
+        number: 2,
+        title: "设置 30 秒 · 六镜 · 16:9，把一句话剧情写在最前",
+        description:
+          "开头先交代总剧情：Saito 反复从 Erza 左臂下方钻到身后偷袭；被他踢翻后，Erza 故意露出同一个空档当诱饵，用第二把刀封住出口。再写统一的动作规范（实时 sakuga、不慢动作、不长时间对刀）和「刚好三把刀」的武器约束，防止刀凭空多出或脱手乱飞。",
+      },
+      {
+        number: 3,
+        title: "逐镜写时间段 + 路线，最后写画风与声音",
+        description:
+          "Shot 1–6 按 0-4s / 4-10s / 10-14s / 14-20s / 20-25s / 25-30s 写，每镜都说明镜头怎么跟（斜向追、横向跟拍、侧面全身、跟着下坠等）和两人路线变化；Shot 6 复刻开场斜向构图并拉远，交叉刀痕划破云层收尾。末段写淡蓝灰天空、手绘阴影、无能量光束，音效只要破空、布料、金属声，无对白、字幕、音乐。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-aimikoda-erza",
+        number: "1",
+        title: "@[char1 ref] · Erza（红发双刀）",
+        subtitle: "引用帖 Midjourney v8.2 · 第 3 张",
+        image: "/tutorials/aimikoda-sky-duel-seedance-2-5/refs/ref-erza.jpg",
+        prompt: `作者引用帖原文（只公开了风格参数，没有公开这张图的完整出图词）：
+Midjourney v8.2
+
+A new mix:
+--sref 1448908625 3123598145 387469134 3207844525 --profile kxxcnp9 --stylize 250
+
+And a tip for poses: Use keywords like mid-air action pose, mid-air combat pose for more dynamic poses.
+
+注：作者未点名 4 张图中哪两张是 char1/char2；按提示词描述（Erza 双刀）与成片比对判定为第 3 张。`,
+      },
+      {
+        id: "ref-aimikoda-saito",
+        number: "2",
+        title: "@[char2 ref] · Saito（单刀武士）",
+        subtitle: "引用帖 Midjourney v8.2 · 第 2 张",
+        image: "/tutorials/aimikoda-sky-duel-seedance-2-5/refs/ref-saito.jpg",
+        prompt: `作者引用帖原文（只公开了风格参数，没有公开这张图的完整出图词）：
+Midjourney v8.2
+
+A new mix:
+--sref 1448908625 3123598145 387469134 3207844525 --profile kxxcnp9 --stylize 250
+
+And a tip for poses: Use keywords like mid-air action pose, mid-air combat pose for more dynamic poses.
+
+注：作者未点名 4 张图中哪两张是 char1/char2；按提示词描述（Saito 单刀）与成片比对判定为第 2 张。`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 斜向追击大全景：Erza 从左上俯冲下劈，Saito 从右下迎上格挡，从她左臂下方滚到身后（成片此段为逆光剪影）。" },
+      { number: 2, description: "4–10s 横向跟拍追砍：Erza 连续转胯挥刀，Saito 后仰闪避后反撩，再次钻到她左肩后方（仍为剪影）。" },
+      { number: 3, description: "10–14s 侧面全身（成片约 10.5s 切进彩色）：Saito 从身后划破 Erza 左袖并侧踢她上臂，Erza 翻滚下坠、回头盯住对手收刀调整。" },
+      { number: 4, description: "14–20s 跟随下坠：Erza 重复右手下劈、故意露出左臂下空档，Saito 走老路线时她用蓄着的左刀封住出口，刀刃相撞迸出火花（约 15s），他被迫螺旋翻身闪开。" },
+      { number: 5, description: "20–25s 上升：Saito 改为头顶下劈，Erza 侧身滚到刀下、右刀引开、左刀横扫回程路线，擦碰后两人沿相反弧线分开又再次对冲。" },
+      { number: 6, description: "25–30s 复刻开场斜向构图（成片回到剪影）：交叉一击后猛拉远到云海全景，两道细长刀痕交叉划过天空，两人仍在飞行中。" },
+    ],
+    constraints:
+      "参考图只提供外观、武器与厚涂画风，不提供姿势；全程刚好三把刀（Erza 双手各一、Saito 右手一把、左手空着），刀柄不离手，禁止掉落/合并/复制/漂浮武器；实时 sakuga，禁慢动作、顿帧、对视僵持、长时间对刀、重复蹲姿轮廓；两人始终在空中移动，接触与踢击改变轨迹；淡蓝灰天空、漫射日光、手绘阴影，无能量光束或传送门；只要破空/布料/金属/踢击音效，无对白、字幕、屏幕文字或音乐。缺口：引用帖只公开 Midjourney 风格参数，未公开两张角色图出图词；char1/char2 对应哪张图为比对判断；成片开头与结尾的逆光剪影段提示词未要求，是模型自发处理。",
+    video_prompt: {
+      title: "Erza vs Saito 云端空战 · Seedance 2.5 提示词",
+      subtitle: "30s · 16:9 · Seedance 2.5 · 2 张角色参考图 · 六镜英文完整提示词（作者楼中楼）",
+      content: `Use @[char1 ref] for Erza's appearance and two swords; use @[char2 ref] for Saito's appearance and single katana. Both supply the painterly anime style, not poses. Animate new full-body silhouettes rather than sliding or rotating the reference crouches.
+
+30 seconds, six shots. Saito repeatedly escapes under Erza's left arm to attack from behind. After his counter sends her tumbling, she uses that habit as bait and closes the exit with her second blade. Show this reversal through their changed routes.
+
+Fast real-time sakuga combat: explosive travel, full torso and hip turns, extended limbs, deep foreshortening and directional smears resolving into clear anatomy at contact. Carry parries into displacement and recoveries into attacks. No slow motion, hit-stop, suspended staring, prolonged blade locks or repeated crouching silhouettes. Both fight while travelling through the sky; contacts, kicks and body rotation redirect their trajectories.
+
+Exactly three swords: Erza holds one separate katana in each hand; Saito holds one in his right hand, his left hand empty for balance. Hilts stay in their owning hands. Erza's blades work independently, one engaging his weapon while the other threatens an opening. No dropped, merged, duplicated or floating weapons.
+
+Shot 1, 0-4s. Wide diagonal chase, camera rushing alongside the bodies. Erza dives from upper left in a stretched silhouette, cutting down with her right blade while opening the left for a follow-up. Saito rises from lower right, deflects the first blade and rolls sideways beneath her left arm. He shoots out behind her left shoulder as she overshoots. Show the passage and changed positions together; both immediately twist back toward the fight.
+
+Shot 2, 4-10s. Fast lateral tracking through a horizontal pursuit. Erza chases with alternating cuts, her hips turning each missed swing into the next. Saito arches backward beneath a sweep, stretches sideways through the opening and answers with a rising slash. Erza cartwheels her body over that counter and attacks out of the inversion. Saito again slips under her left arm and emerges behind her left shoulder, forcing her to reverse while he is already attacking. Long extended silhouettes snap into sharp folds.
+
+Shot 3, 10-14s. Side-on full-body view preserving the escape direction. From behind her left shoulder, Saito slices the edge of Erza's left sleeve and drives a side kick into her upper arm. The kick throws her forward into an uncontrolled end-over-end tumble; he recoils into pursuit. Track her fall as she turns her head to keep him in view and pulls both swords close to recover. Her torn sleeve persists as the tumble carries directly into recovery.
+
+Shot 4, 14-20s. Drop with Erza's tumble, following her turn back into Saito's approach. She repeats the right-hand descending attack and exposes the same space beneath her left arm, but keeps the left blade drawn back. Saito takes the familiar low route. Erza rotates her torso toward his destination and snaps the delayed left blade across his exit. He must parry immediately and corkscrew sideways out of the lane, legs flung overhead by his evasive rotation. Keep both bodies visible: she takes the route and forces him away, blades touching and separating instantly.
+
+Shot 5, 20-25s. Rise with Saito's corkscrew as he changes tactics, extending out of it into an overhead descending slash. Erza rolls side-on beneath the attack, redirects his katana with her right sword and sweeps her separate left blade across his return path. He twists clear and answers on the way past; she ducks through the return without stopping. Glancing contact sends them apart on opposing arcs. Both convert separation straight into converging attacks across the cut.
+
+Shot 6, 25-30s. Reprise the opening's wide diagonal geometry at greater speed. Saito commits to his crossing cut; Erza turns it aside with her right sword, then closes his familiar low escape with the delayed left. A violent crossing contact snaps directly into follow-through. Erza drives through the centre while Saito is forced to corkscrew off to the side. Pull wide with their separating bodies so the changed outcome reads before the effect: two thin brushlike slash trails cross through displaced cloud haze, briefly making the sky seem torn. End with both still travelling, hair and torn hems whipping.
+
+Pale blue-gray sky, diffuse daylight, soft clouds, elastic sketch contours and compact hand-painted shading. Sparse thin arcs, silhouette smears and tiny flecks sourced from motion or contact. No energy beams or portals. Rapid air cuts, cloth snaps, dry steel cracks and a blunt kick impact; short sound tails keep the next attack audible. No dialogue, subtitles, on-screen text or music.`,
+    },
+  },
+  {
+    id: "just-sharon7-samurai-cat-reeds-seedance-2-5",
+    title: "斗笠武士橘猫 · 芦苇荡斗忍者 · Seedance 2.5",
+    subtitle: "X · @Just_sharon7 · Seedance 2.5 · TapNow · 30秒 · 16:9",
+    description:
+      "Seedance 2.5 写实武士猫动作短片：斗笠橘猫在芦苇荡连闪忍者、空中翻腾，落上小船后直立走向镜头。",
+    video: "/tutorials/just-sharon7-samurai-cat-reeds-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/just-sharon7-samurai-cat-reeds-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "写实动作",
+    shots: 8,
+    references: 0,
+    model: "Seedance 2.5（TapNow）",
+    style: "写实毛发 · 日式芦苇荡武侠动作 · 史诗又荒诞",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Just_sharon7/status/2103453974980591826",
+    sourceAuthor: "@Just_sharon7",
+    sourcePlatform: "X",
+    sourceImpressions: 38728,
+    sourceStats: { asOf: "2026-09-26", likes: 413, reposts: 25, bookmarks: 77 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "静态亮相 → 追打翻腾 → 落船直立收尾",
+      opening: "开场是斗笠橘猫侧坐在青苔石上的近景，嘴里叼根芦苇、背着小武士刀，约 1–2 秒慢慢转头盯向镜头——一只猫摆出浪人架势，第一眼就好笑又带感。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2s 切远景，猫从大石后冲出；约 3–6s 在两个黑衣忍者之间高速穿梭，低机位贴地冲刺、刀光和泥土飞溅。", at: 2 },
+        { title: "空中翻腾", text: "约 7–14s 钻进芦苇丛再跃起，仰拍逆天空螺旋翻滚，斗笠甩成圆盘飞离，忍者挥刀扑空。", at: 7 },
+        { title: "结尾怎么收", text: "约 18–20s 最后一跳，俯拍落向湖面小船；约 20.7s 一群忍者慢动作扑来，猫落在船头后直立起来，一步步走向镜头推近，身后忍者落水。", at: 20.7 },
+      ],
+      copyThis: "开头用一个「静止转头盯镜头」的角色亮相，结尾用同样的正面凝视+慢慢推近收，中间才放高速动作。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 武士猫动作",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "TapNow",
+      "纯文生视频",
+      "芦苇荡忍者",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "先写死角色与场景外观",
+        description:
+          "提示词第一段一次性锁定：橘猫白胸白爪、绿金色眼睛，戴编织斗笠，皮带斜背小武士刀，嘴里叼一根干芦苇；场景是起雾的日式湿地、阴天、高高的米色芦苇、青苔石，低饱和大地色、胶片颗粒、浅景深、快速动作带运动模糊。纯文生视频，作者没有用参考图。",
+      },
+      {
+        number: 2,
+        title: "按段落写动作顺序，每段一个画面任务",
+        description:
+          "依次写：石头上侧脸转头 → 从巨石后冲向镜头 → 两名黑衣忍者间穿梭 → 钻芦苇隧道后高跳旋转 → 空中翻腾与仰拍剪影 → 忍者挥刀、猫空中闪避 → 最后一跳落上小船、忍者慢动作扑来 → 船头低姿态盯镜头后走向镜头。每段一个清楚动作，Seedance 会按顺序剪成快切动作片。",
+      },
+      {
+        number: 3,
+        title: "最后统一写镜头语言和声音",
+        description:
+          "末段列出机位组合（定机位肖像、低机位跟拍、手持追逐感、低角度、俯拍翻滚、结尾慢推脸）、自然阴天光、雾、湿表面、写实毛发与布料、24fps 胶片感、略去饱和，基调「史诗又有点荒诞」；声音只要风声、芦苇沙沙、水花和远处刀声，无对白。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "约 0–2s 开场近景：斗笠橘猫侧坐青苔石上，叼芦苇、背刀，缓缓转头盯镜头。" },
+      { number: 2, description: "约 2–3s 远景：猫从大青苔石后跃下冲向镜头，芦苇分开。" },
+      { number: 3, description: "约 3–6.5s 两个黑衣蒙面忍者出现，猫在他们之间高速穿梭，低机位贴地冲过、泥土飞溅。" },
+      { number: 4, description: "约 6.5–9s 猫压低身子钻进芦苇丛，再冲出跃起，背着刀在灰天前旋转。" },
+      { number: 5, description: "约 9–13s 空中翻腾、螺旋跳，仰拍剪影；斗笠被甩离，忍者挥刀扑空。" },
+      { number: 6, description: "约 14–17s 快切：猫在忍者腿间奔跑、滑铲，再次起跳。" },
+      { number: 7, description: "约 18–22s 最后一跳，俯拍落向湖面小木船；一群忍者从芦苇岸边慢动作跃向小船。" },
+      { number: 8, description: "约 23–30s 猫落在船头，随后后腿直立沿船中线一步步走向镜头，镜头慢推到脸，身后忍者落水。" },
+    ],
+    constraints:
+      "纯文生视频，无参考图；角色外观一次写全（橘猫白胸白爪绿金眼、编织斗笠、斜背小武士刀、叼芦苇）；阴天雾气湿地、米色芦苇、低饱和、胶片颗粒、运动模糊；每段一个动作按顺序推进；结尾正面凝视+慢推脸；只要风声、芦苇、水花、远处刀声，无对白。缺口：作者未发布参考图（成片截帧不作参考图）；线程内无补充提示词；成片结尾猫为后腿直立行走，提示词未写直立；帖文称是『broken heart cat』系列续集，前作未收录。",
+    video_prompt: {
+      title: "斗笠武士猫 · Seedance 2.5 提示词",
+      subtitle: "30s · 16:9 · Seedance 2.5 on TapNow · 纯文生视频 · 英文完整提示词（主帖原文）",
+      content: `A cinematic 30-second action sequence in a misty Japanese wetland. An orange tabby cat with a white chest, white paws, and intense green-gold eyes wears a traditional woven straw conical kasa hat and a small katana strapped diagonally across its back with a leather harness. A thin stalk of dry reed hangs from its mouth like a toothpick. Overcast gray sky, dense tall beige reeds, moss-covered rocks, damp earth, light fog, muted earthy palette, filmic grain, shallow depth of field, motion blur on fast movement.
+
+Opening close-up: the cat sits in profile on a mossy rock, hat low over its eyes, looking off to the side. It slowly turns its head to face the camera with a calm, knowing stare.
+
+Cut to a tracking shot as the cat walks then sprints toward camera from behind a large mossy boulder, hat bouncing, tail up, reeds parting.
+
+Two black-clad ninjas in full face-covering outfits appear in the reeds. The cat weaves between them at high speed, sword flashing, kicking up dirt and leaves. Low-angle ground-level shots with heavy motion blur as the cat dashes past.
+
+The cat drops low and sprints through a dense bamboo-like reed tunnel, hat almost covering its face, then bursts out and leaps high into the air, body stretched, sword on its back, spinning against the gray sky.
+
+Mid-air flips and corkscrew jumps through tall swaying reeds. One shot from below as the cat silhouettes against the overcast sky. Another as it twists and lands rolling on the wet grass.
+
+A ninja swings a katana; the cat dodges in mid-air, hat flying slightly off-center. Quick cuts of the cat running, sliding, leaping again.
+
+The cat soars high one last time and lands on the bow of a small dark wooden rowboat floating on a still, misty lake. Ripples spread. Several ninjas leap from the reed bank toward the boat in dramatic slow-motion, swords drawn, bodies mid-jump.
+
+The cat lands in a low, wide stance on the wet wooden planks, front paws planted, staring straight into the camera. Hat slightly tilted. It then walks slowly and confidently forward along the center of the boat toward the lens, sword still on its back, expression unreadable and slightly menacing. Background reeds and fogged water. Distant ninjas splash or fall behind it.
+
+Cinematic camera work throughout: mix of locked-off portraits, low tracking shots, handheld chase energy, dramatic low angles, overhead flips, and a final slow push-in on the cat’s face. Natural overcast lighting, soft fog, wet surfaces, photorealistic fur and fabric texture, 24fps film look, slightly desaturated, epic yet slightly absurd tone. No dialogue, only wind, rustling reeds, splashes, and distant sword sounds.`,
+    },
+  },
+  // 查重别名(用户提交的视频提示词回复帖): https://x.com/husky__create/status/2103422119476641974
+  // 分镜提示词回复帖: https://x.com/husky__create/status/2103422116876222566
+  {
+    id: "husky-minori-foods-tomato-baton",
+    title: "一颗番茄的接力 · MINORI FOODS 食品企业广告",
+    subtitle: "X · @husky__create · GPT Image 2.5 → Gemini Omni 1.1 Flash · 10秒 · 16:9",
+    description:
+      "GPT Image 2.5 出九宫格分镜、Gemini Omni 成片：一颗番茄从农田接力到餐桌的日本食品企业广告。",
+    video: "/tutorials/husky-minori-foods-tomato-baton/demo-web.mp4",
+    poster: "/tutorials/husky-minori-foods-tomato-baton/poster.jpg",
+    duration: "10秒",
+    durationSec: 10,
+    styleLabel: "写实广告",
+    shots: 9,
+    references: 1,
+    model: "GPT Image 2.5 → Gemini Omni 1.1 Flash",
+    style: "日本食品企业广告 · 纪录片式暖调实拍质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/husky__create/status/2103422112312541342",
+    sourceAuthor: "@husky__create",
+    sourcePlatform: "X",
+    sourceImpressions: 2679,
+    sourceStats: { asOf: "2026-09-26", likes: 35, reposts: 2, bookmarks: 36 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "农田采摘 → 运输质检 → 厨房上桌 → 品牌字卡",
+      opening: "第 0 秒是晨光番茄田的大远景，农夫抱着空木箱从两排番茄架中间朝镜头走来，镜头缓慢前推。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约每 1 秒一镜：约 1s 手摘番茄，约 2s 掌心番茄微距，约 3s 木箱放进白色冷藏车，约 4s 戴白手套在秤上质检，约 5s 厨师切番茄，约 6s 俯拍淋橄榄油的番茄意面。", at: 1 },
+        { title: "结尾怎么收", text: "约 7s 一家三口吃饭、女儿咬一口意面；约 8.5s 石桌上的意面和整颗番茄，背景是黄昏农田，左侧淡入「一皿の向こう側。/ MINORI FOODS」。", at: 8.5 },
+      ],
+      copyThis: "同一颗番茄当「接力棒」串起 9 个 1 秒镜头，每镜只做一个动作，最后留左侧空白放标语。",
+      approx: true,
+    },
+    tags: [
+      "10秒 · 企业广告",
+      "16:9 横屏",
+      "GPT Image 2.5 → Gemini Omni 1.1 Flash",
+      "九宫格分镜 → 成片",
+      "番茄接力 · 食品农业",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2.5 生成 3×3 九宫格分镜",
+        description:
+          "把「参考图」卡片里的完整分镜提示词（① GPT Image 2.5）贴进 GPT Image 2.5：一张 16:9 图里排 9 格，每格也是 16:9，象牙色细边、左上角白色编号 01–09。提示词写全了农夫、厨师、一家三口的外观，以及 01 晨光农田 → 09 品牌字卡的 9 个画面。",
+      },
+      {
+        number: 2,
+        title: "第二步：把分镜图 + 视频提示词交给 Gemini Omni 1.1 Flash",
+        description:
+          "上传九宫格分镜，贴下方完整视频提示词（② Gemini Omni 1.1 Flash）。它要求从左到右、从上到下读 Shot 01–09，每格还原成全屏实拍镜头，成片里绝不出现九宫格、边框和编号；镜头之间用干净硬切，禁止人或物变形过渡。",
+      },
+      {
+        number: 3,
+        title: "第三步：按时间轴锁节奏，声音一起生成",
+        description:
+          "视频提示词给每镜写了精确秒数（0.0–1.1s 农田 … 8.5–10.0s 品牌定帧），每镜只做一个动作；音乐（木吉他 + 钢琴 + 手鼓，约 92 BPM）、环境音、扫码「嘀」声、切菜声，以及约 0.5s 和 6.4s 两句日文女声旁白，都由 Gemini Omni 一并生成。结尾左侧留白放「一皿の向こう側。/ MINORI FOODS」。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "husky-minori-storyboard-9grid",
+        number: "1",
+        title: "九宫格分镜 · ① GPT Image 2.5 提示词",
+        subtitle: "作者原图 1672×941 · 3×3 镜头 01–09",
+        image: "/tutorials/husky-minori-foods-tomato-baton/refs/storyboard.jpg",
+        prompt: `Create a production-ready photo storyboard for a 10-second corporate commercial for the fictional Japanese food and agriculture company “MINORI FOODS.”
+
+CONCEPT
+
+The central message is “Beyond Every Plate.”
+
+Follow one perfectly ripe red tomato as a visual baton connecting a farmer’s harvest, refrigerated transportation, quality inspection, professional cooking and a family dinner table.
+
+The commercial should communicate that one meal is made possible by the care and craftsmanship of many people, from the producer to the consumer.
+
+STORYBOARD FORMAT
+
+Create one landscape 16:9 image containing exactly nine storyboard panels.
+
+Arrange the panels in a perfectly even 3-column × 3-row grid. Each individual panel must be composed as a cinematic horizontal 16:9 frame.
+
+Use thin ivory-colored gutters between the panels.
+
+Place small white panel numbers “01” through “09” in the upper-left corner of each panel, ordered from left to right, top row to bottom row.
+
+Do not include captions, arrows, production notes, watermarks or additional logos.
+
+Every panel must look like a high-quality photographic frame extracted from the same finished live-action commercial—not nine unrelated stock photographs.
+
+VISUAL WORLD
+
+The commercial begins at a quiet tomato farm in rural Japan, moves through a clean food quality-control facility and a professional restaurant kitchen, and ends at a warm contemporary family dining table.
+
+Time progresses naturally from cool early-morning light to warm evening light.
+
+The same ripe red tomato serves as the visual thread throughout the sequence.
+
+Use a restrained color palette of natural leaf green, rich tomato red, earthy brown, stainless-steel silver, warm wood and clean off-white.
+
+CHARACTER CONTINUITY
+
+Farmer:
+
+A Japanese man approximately 58 years old. He has a naturally sun-weathered face, short salt-and-pepper hair and a calm, sincere expression.
+
+He wears the same dark indigo work shirt, beige work trousers and olive-green rubber boots in every relevant panel.
+
+His face, hairstyle, body proportions, hands and clothing must remain consistent. He should look like a real working farmer rather than a fashion model.
+
+Chef:
+
+A Japanese woman approximately 34 years old. She has a natural, approachable face, minimal makeup and straight black hair tied in a neat low ponytail.
+
+She wears the same clean white chef jacket in every kitchen scene. Preserve her face, hairstyle, physique and wardrobe.
+
+Family:
+
+A Japanese couple in their 30s and their elementary-school-age daughter. They live in a contemporary but warm and realistic home.
+
+Their expressions should be subtle and natural, without exaggerated advertising smiles.
+
+NINE STORYBOARD PANELS
+
+01 — DAWN AT THE FARM
+
+A wide environmental shot of a Japanese tomato farm at dawn.
+
+Long rows of tomato plants extend toward distant low mountains. The low morning sun shines through the leaves, and a light mist remains between the rows.
+
+The farmer walks toward the camera carrying an empty wooden harvest crate.
+
+Use a cinematic wide composition that establishes the location and atmosphere.
+
+02 — HARVEST
+
+A medium close-up of the same farmer gently twisting one ripe red tomato from the vine.
+
+Show his calm, focused expression, realistic leaves and warm backlight outlining his hands and face.
+
+The image should capture one simple, precise harvesting action.
+
+03 — THE TOMATO
+
+An extreme macro photograph of the freshly harvested tomato resting in the farmer’s open palm.
+
+Render tiny dew droplets, natural skin texture, subtle imperfections, the green calyx and the authentic texture of his working hands.
+
+The tomato must look fresh, moist and completely photorealistic—not glossy plastic.
+
+04 — REFRIGERATED DELIVERY
+
+A low-angle close shot beside a small white refrigerated delivery van.
+
+The farmer places a wooden crate filled with matching ripe tomatoes into the clean cargo area.
+
+Show one controlled lifting-and-placing action. Do not display any existing company logos or vehicle branding.
+
+05 — QUALITY CONTROL
+
+Inside a modern and hygienic food quality-control facility.
+
+White-gloved hands carefully inspect and weigh one tomato on a stainless-steel workstation. Include a realistic digital scale, a small lot-label scanner and clean food-processing equipment.
+
+The scene should feel credible, practical and sanitary—not futuristic or science-fictional.
+
+06 — PREPARATION
+
+A close-up inside a professional restaurant kitchen.
+
+The same female chef slices the tomato on a wooden cutting board using a stainless-steel chef’s knife.
+
+Render the tomato flesh, seeds, moisture, juice and metal reflections precisely.
+
+Her hands and fingers must be anatomically correct and positioned safely.
+
+07 — PLATING
+
+A top-down overhead food composition.
+
+The chef finishes a simple, elegant tomato pasta dish with fresh basil and pours one thin stream of olive oil over the plate.
+
+Show gentle steam, moist tomato pieces, the sheen of olive oil and refined but realistic restaurant presentation.
+
+08 — THE DINNER TABLE
+
+An intimate medium shot at a warm family dinner table.
+
+The young daughter takes her first bite of the tomato pasta while her parents watch and smile naturally.
+
+The plated tomato dish should remain clearly visible.
+
+Capture a genuine moment of quiet happiness rather than an exaggerated commercial performance.
+
+09 — FINAL BRAND FRAME
+
+A premium food-advertising hero shot on a textured stone tabletop.
+
+Place the finished tomato pasta, one whole ripe tomato and a few fresh green leaves on the right side of the frame.
+
+Use a softly blurred evening farm landscape in the background.
+
+Reserve generous clean negative space on the left side.
+
+In the left-side negative space, display only the following exact text:
+
+“一皿の向こう側。”
+
+Below it:
+
+“MINORI FOODS”
+
+Use refined dark-brown Japanese Mincho-style typography for the Japanese copy and an elegant serif typeface for the company name.
+
+Do not add any other words, claims or logos.
+
+PHOTOGRAPHY AND LIGHTING
+
+Ultra-photorealistic premium Japanese food advertising with warm documentary realism.
+
+Use realistic 35mm and 50mm lens perspectives for people and locations, and a 90mm macro-lens look for the tomato, food and hands.
+
+Use shallow depth of field where appropriate, smooth highlight roll-off and deep but readable shadows.
+
+Lighting should progress naturally from fresh golden morning light at the farm to clean neutral light in the quality-control facility and warm evening light in the kitchen and home.
+
+Preserve natural skin texture, fine food moisture, leaf veins, soil, wood grain, stainless steel and fabric detail.
+
+Add subtle cinematic film grain.
+
+Keep the color grading restrained and sophisticated.
+
+CONTINUITY REQUIREMENTS
+
+All nine panels must belong to the same visual story.
+
+Maintain consistent character identities, clothing, tomato appearance, locations, lighting direction and photographic style.
+
+Create visual rhythm by alternating wide shots, medium shots, macro details, process shots, overhead food photography, an emotional reaction and a final product hero frame.
+
+Each panel should contain only one clearly readable action.
+
+AVOID
+
+Malformed hands or fingers, extra limbs, duplicated or fused tomatoes, inconsistent faces, changing wardrobe, plastic-looking food, excessive saturation, heavy orange color grading, artificial CGI glow, fantasy effects, unhygienic food handling, unsafe knife positions, futuristic holograms, object morphing, split screens inside individual panels, unwanted text, extra logos and watermarks.`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1s 晨光番茄田大远景，农夫抱空木箱走来，缓慢前推。" },
+      { number: 2, description: "1–2s 中近景：农夫手轻轻拧下一颗红番茄。" },
+      { number: 3, description: "2–3s 固定微距：番茄躺在农夫掌心，带露珠。" },
+      { number: 4, description: "3–4s 低角度：农夫把一箱番茄放进白色冷藏车货厢。" },
+      { number: 5, description: "4–5s 质检车间：白手套转动番茄放上不锈钢秤。" },
+      { number: 6, description: "5–6s 厨房近景：女厨师在木砧板上切番茄。" },
+      { number: 7, description: "6–7s 俯拍：橄榄油细流淋在罗勒番茄意面上。" },
+      { number: 8, description: "7–8.5s 家庭晚餐：女儿吃一口意面，父母相视微笑。" },
+      { number: 9, description: "8.5–10s 石桌上的意面与整颗番茄，背景黄昏农田，慢推，左侧字卡「一皿の向こう側。/ MINORI FOODS」。" },
+    ],
+    constraints:
+      "九宫格只作参考：成片不得出现网格、边框、编号或拼贴；每格还原为全屏实拍镜头、干净硬切、禁止变形过渡；农夫（约58岁、靛蓝工作衫、米色裤、橄榄绿胶靴）贯穿 01–04，女厨师（约34岁、低马尾、白厨师服）贯穿 06–07；同一颗番茄做视觉锚点；每镜一个动作，禁止急推、快速环绕、延时、漂浮食材；色调叶绿/番茄红/土褐/不锈钢银/暖木/奶白，低饱和；左侧留白放「一皿の向こう側。/ MINORI FOODS」，不加其他文字。缺口：旁白音频未转录核对。",
+    video_prompt: {
+      title: "② Gemini Omni 1.1 Flash 视频提示词",
+      subtitle: "10s · 16:9 · 上传九宫格分镜作参考 · 英文完整提示词（作者线程第 3 帖）",
+      content: `Create an exactly 10-second, 16:9, ultra-photorealistic Japanese corporate commercial for the fictional food and agriculture company “MINORI FOODS.”
+
+TITLE AND CENTRAL IDEA:
+“Beyond Every Plate.”
+Follow one ripe red tomato as a visual baton traveling from a Japanese farmer at dawn, through refrigerated delivery and careful quality control, into a restaurant kitchen, and finally to a family dinner table.
+
+REFERENCE STORYBOARD:
+Use the uploaded 3×3 storyboard as the strict visual reference for character identity, wardrobe, tomato appearance, locations, camera compositions, lighting, color palette and art direction.
+
+Read the storyboard from left to right, top row to bottom row: Shot 01 through Shot 09.
+The finished video must never display the full storyboard, grid, collage, split screen, ivory borders, frame numbers or production notes. Reconstruct every panel as a separate full-screen cinematic live-action shot.
+
+Connect the scenes with clean editorial cuts. Never morph one person, object or location into another.
+
+CONTINUITY:
+The same Japanese farmer appears in Shots 01–04: approximately 58 years old, naturally sun-weathered face, short salt-and-pepper hair, dark indigo work shirt, beige work trousers and olive rubber boots.
+
+The same Japanese female chef appears in Shots 06–07: approximately 34 years old, natural appearance, black hair tied in a low ponytail and a clean white cook jacket.
+
+The same ripe red tomato is the recurring visual anchor. Preserve its realistic size, red skin, green calyx, moisture and natural imperfections.
+Lighting progresses naturally from cool golden dawn at the farm to clean neutral light in the quality-control facility, then to warm evening light in the kitchen and home. Preserve realistic food, skin, stainless steel, wood, soil, leaves and glass textures.
+
+SHOT TIMING:
+
+0.0–1.1 seconds — SHOT 01
+A wide cinematic view of a Japanese tomato farm at dawn. Low sunlight moves gently through the leaves. The farmer walks slowly between the rows carrying one empty wooden harvest crate. Use a stable, subtle forward dolly.
+
+1.1–2.1 seconds — SHOT 02
+Medium close-up. The farmer gently twists one ripe tomato from the vine. One simple hand movement only. Leaves shift slightly in the morning breeze.
+
+2.1–3.1 seconds — SHOT 03
+Locked extreme macro. The tomato rests in the farmer’s open palm. Tiny dew beads slowly roll across the natural skin. Preserve realistic fingertips and working-hand texture.
+
+3.1–4.1 seconds — SHOT 04
+Low close shot beside a small white refrigerated delivery van. The farmer places one wooden crate of tomatoes into the clean cargo area. Use a single controlled lifting and placing action.
+4.1–5.1 seconds — SHOT 05
+Inside a hygienic food quality-control facility. White-gloved hands rotate one tomato slightly and place it on a stainless weighing platform. A small scanner light activates once. No futuristic holograms.
+
+5.1–6.1 seconds — SHOT 06
+Kitchen close-up. The female chef makes one clean slice through the tomato. Juice and seeds catch the side light. The knife and fingers remain physically correct and safe.
+6.1–7.2 seconds — SHOT 07
+Overhead food shot. The chef pours one thin stream of olive oil over freshly plated tomato pasta with basil. Gentle steam rises from the plate.
+
+7.2–8.5 seconds — SHOT 08
+Warm family dinner. The young daughter takes one bite of the tomato pasta. Her parents exchange a subtle smile. Keep the acting intimate and natural, never exaggerated.
+8.5–10.0 seconds — SHOT 09
+Final hero frame. The finished tomato pasta, one whole ripe tomato and green leaves rest on a textured stone table. A softly blurred evening farm fills the background. Make a very slow cinematic push toward the plate and hold the final composition steadily.
+
+Leave clean negative space on the left for the exact copy:
+“一皿の向こう側。”
+“MINORI FOODS”
+Do not generate any additional text or claims. If exact Japanese typography cannot remain stable, output a completely clean left-side negative space so the copy can be added during post-production.
+
+CAMERA AND IMAGE QUALITY:
+Premium Japanese live-action food advertising with documentary warmth. Use realistic 35mm and 50mm lenses for people and environments, and a 90mm macro look for the tomato, hands and food details. Natural perspective, shallow depth of field, smooth highlight roll-off, detailed shadows and fine cinematic film grain.
+Color palette: leaf green, tomato red, soil brown, stainless silver, warm wood and creamy white. Keep saturation restrained. No artificial CGI glow, excessive orange grading or fantasy effects.
+
+MOTION RULES:
+One readable physical action per shot. Stable short dolly, restrained slider, locked macro or deliberate overhead camera. No crash zooms, fast orbiting, time-lapse, floating ingredients, teleportation or object transformation. Preserve faces, hands, wardrobe, food geometry and location continuity.
+AUDIO:
+Original gentle corporate music built from acoustic guitar, soft piano and restrained hand percussion, approximately 92 BPM. Begin with quiet morning ambience and birds. Add subtle leaf movement, the wooden crate touching the van floor, one scanner beep, one precise knife sound and a soft kitchen sizzle. Let the food sounds briefly lead the mix.
+
+VOICEOVER:
+Use one calm, warm Japanese adult female voice. Natural and sincere, not overly dramatic.
+From approximately 0.5 seconds:
+「つくる人から、食べる人へ。」
+
+From approximately 6.4 seconds:
+「一皿の向こう側に、私たちがいる。」
+Do not add improvised dialogue. End with a gentle musical resolution and hold the final brand frame until exactly 10.0 seconds.`,
+    },
+  },
+  // 分镜提示词回复帖: https://x.com/husky__create/status/2102337239443522023
+  // 视频提示词回复帖: https://x.com/husky__create/status/2102337252340994249
+  {
+    id: "husky-nexarc-construction-brand",
+    title: "从一条线到一座城 · NEXARC 建设公司广告",
+    subtitle: "X · @husky__create · GPT Image 2.5 → Gemini Omni 1.1 Flash · 10秒 · 16:9",
+    description:
+      "GPT Image 2.5 出九宫格分镜、Gemini Omni 成片：从一条蓝色画线到落成街区的日本建筑公司广告。",
+    video: "/tutorials/husky-nexarc-construction-brand/demo-web.mp4",
+    poster: "/tutorials/husky-nexarc-construction-brand/poster.jpg",
+    duration: "10秒",
+    durationSec: 10,
+    styleLabel: "企业品牌",
+    shots: 9,
+    references: 1,
+    model: "GPT Image 2.5 → Gemini Omni 1.1 Flash",
+    style: "日本建设企业广告 · 电影感实拍质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/husky__create/status/2102337226311180568",
+    sourceAuthor: "@husky__create",
+    sourcePlatform: "X",
+    sourceImpressions: 21118,
+    sourceStats: { asOf: "2026-09-26", likes: 275, reposts: 42, bookmarks: 302 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "画图 → 施工推进 → 落成街区 → 品牌字卡",
+      opening: "第 0 秒是晨光工作室里的建筑师中景，约 0.4s 切到手握蓝色笔沿尺子画线的特写——从一支笔开场。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约每 1 秒一镜：约 1.1s 地面上的钴蓝测量线与工人靴子，约 2s 泵车浇筑地基，约 3s 仰拍吊装钢梁，约 4s 幕墙玻璃吸盘安装，约 5s 广场种树铺地。", at: 1.1 },
+        { title: "结尾怎么收", text: "约 6s 建筑师推开大堂玻璃门走出，约 7.2s 金色黄昏的街区人来人往，约 8.3s 切到对称蓝调时刻的塔楼夜景，居中白字「NEXARC CONSTRUCTION / まだない景色を、つくる。」。", at: 8.3 },
+      ],
+      copyThis: "用一条蓝线把「纸上画线」和「工地测量线」硬切对上（match cut），后面按施工顺序每秒一镜推进到落成。",
+      approx: true,
+    },
+    tags: [
+      "10秒 · 企业广告",
+      "16:9 横屏",
+      "GPT Image 2.5 → Gemini Omni 1.1 Flash",
+      "九宫格分镜 → 成片",
+      "建设施工 · 匹配剪辑",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2.5 生成 3×3 九宫格分镜",
+        description:
+          "把「参考图」卡片里的完整分镜提示词（① GPT Image 2.5）贴进 GPT Image 2.5：一张 16:9 图、9 个等大 16:9 格子、象牙色细边、左上角白色编号 01–09。提示词锁定同一位 36 岁建筑师的外观与安全装备、同一组 18 层主楼 + 两栋 6 层副楼的建筑造型，以及贯穿全片的钴蓝色线条。",
+      },
+      {
+        number: 2,
+        title: "第二步：把分镜图 + 视频提示词交给 Gemini Omni 1.1 Flash",
+        description:
+          "上传九宫格分镜，贴下方完整视频提示词（② Gemini Omni 1.1 Flash）。它要求逐格还原为全屏实拍镜头，绝不显示九宫格、边框或编号；镜头之间用硬切，只有「纸上画线 → 地面测量线」一处匹配剪辑，禁止人、机械或建筑互相变形。",
+      },
+      {
+        number: 3,
+        title: "第三步：按时间轴锁节奏，安全与声音一起写",
+        description:
+          "视频提示词给 9 镜写了精确秒数（0.0–1.1s 画线 … 8.5–10.0s 蓝调字卡），并反复强调正确的安全装备与吊装规范；配乐约 104 BPM，8.4s 加日文男声旁白「まだない景色を、つくる。ネクサーク・コンストラクション。」。作者回复说本片是多次抽卡选出的，旁白也不稳定，跟做时多生成几次。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "husky-nexarc-storyboard-9grid",
+        number: "1",
+        title: "九宫格分镜 · ① GPT Image 2.5 提示词",
+        subtitle: "作者原图 1672×940 · 3×3 镜头 01–09",
+        image: "/tutorials/husky-nexarc-construction-brand/refs/storyboard.jpg",
+        prompt: `Create one premium photorealistic 3×3 storyboard for a 10-second Japanese construction-company corporate commercial.
+
+Brand: “NEXARC CONSTRUCTION”
+Audience: commercial-property owners, developers, business leaders and engineering recruits.
+Central message: disciplined design and construction create the places where tomorrow’s work and life begin.
+
+LAYOUT
+One overall landscape 16:9 image. Exactly nine equal 16:9 panels arranged in three columns and three rows. Thin ivory gutters. Small white panel numbers 01–09 in the upper-left corner of each panel. Read left to right, top row to bottom row.
+
+No captions, arrows, watermarks or production notes. Only panel numbers and the final brand typography in panel 09.
+
+CONTINUITY
+Recurring lead architect: the same 36-year-old Japanese man, lean build, calm intelligent face, short neatly parted black hair and natural skin texture. He wears a crisp white shirt, dark navy work jacket and charcoal trousers. At the active construction site, add the same white safety helmet, reflective charcoal vest, gloves and safety boots.
+
+The recurring development contains one central 18-story rectangular office tower with blue-gray glass, vertical silver fins and a transparent entrance canopy, plus two six-story side buildings, a pedestrian plaza, warm timber accents and young street trees.
+
+Keep this building geometry consistent through every construction phase.
+
+A thin cobalt-blue line is the visual motif. It appears first on tracing paper and then as a physical survey line at the construction site. It never magically transforms into a building.
+
+NINE PANELS
+01 — Overhead macro in a dawn architecture studio. The architect draws one precise cobalt-blue line across translucent tracing paper using a ruler and technical pencil.
+
+02 — Low close-up at an empty prepared construction site. A surveyor wearing correct PPE marks one straight cobalt-blue line on the ground. Survey tripod behind.
+
+03 — Wide active foundation stage with excavation, rebar, formwork and concrete pumping. Workers remain in organized safe zones.
+
+04 — Low-angle steel erection. A crane lifts one steel beam into position while properly equipped riggers guide it from safe positions. No worker beneath the load.
+
+05 — Detailed façade installation. Workers using approved lifting equipment and fall protection install one blue-gray glass panel and silver vertical fins.
+
+06 — Elevated wide of the nearly finished development. Crews install pale stone paving, timber benches and young trees around the coherent completed buildings.
+
+07 — Finished office lobby. The same architect, without his helmet but wearing the navy jacket, opens the glass entrance as the first office workers enter.
+
+08 — Grand golden-hour wide of the completed district. Office workers, pedestrians, parked bicycles and a café terrace bring the architecture to life.
+
+09 — Symmetrical blue-hour hero shot of the completed district. Illuminated offices and plaza. Stable centered white text: “NEXARC CONSTRUCTION”. Beneath it: “まだない景色を、つくる。”
+
+PHOTOGRAPHY
+High-end live-action Japanese corporate commercial. Natural full-frame cinema-camera perspective, realistic concrete, structural steel, glass, timber, cables, asphalt and foliage. Cool dawn progressing through clear daylight, golden hour and blue hour. Key light consistently from frame left. Architectural white, graphite, silver, blue-gray glass, warm timber and restrained cobalt blue. Smooth highlight roll-off, moderate depth of field and subtle film grain.
+
+SAFETY
+All construction activity must be physically believable. Correct PPE, fall protection, crane rigging, exclusion zones and stable scaffolding. No workers beneath suspended loads.
+
+AVOID
+Magical construction, object morphing, teleporting materials, instant trees, collapsing structures, demolition, unsafe workers, missing helmets, floating beams, bent cranes, impossible machinery, inconsistent architecture, changing façade colors, duplicate people, malformed hands, CGI-plastic surfaces, miniature-diorama appearance, cartoon styling, futuristic fantasy cities, extra logos, unreadable text or panels other than 01–09.`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.1s 晨光工作室：建筑师中景，切手部特写沿尺子画线。" },
+      { number: 2, description: "1.1–2.1s 硬切到平整地面上的钴蓝测量线，测量员低机位完成标记。" },
+      { number: 3, description: "2.1–3.1s 地基大全景：泵车向模板浇筑混凝土。" },
+      { number: 4, description: "3.1–4.1s 仰拍钢结构：塔吊吊着钢梁缓缓就位。" },
+      { number: 5, description: "4.1–5.1s 幕墙安装：吸盘吊具把蓝灰玻璃板移入框架，工人系安全绳引导。" },
+      { number: 6, description: "5.1–6.1s 俯瞰近完工广场：铺地、扶正新种的小树。" },
+      { number: 7, description: "6.1–7.2s 落成大堂：建筑师推开玻璃门走出，镜头后退跟拍。" },
+      { number: 8, description: "7.2–8.3s 金色黄昏的街区外景，行人、单车、咖啡座，慢推向主楼。" },
+      { number: 9, description: "约 8.3–10s 对称蓝调时刻塔楼夜景，居中白字「NEXARC CONSTRUCTION」与「まだない景色を、つくる。」。" },
+    ],
+    constraints:
+      "九宫格只作参考：成片不得出现网格、边框、编号；硬切为主，仅一处画线→测量线匹配剪辑，禁止变形；同一建筑师（36 岁、藏青工作夹克、白衬衫，工地加白色安全帽与反光背心）；同一组 18 层蓝灰玻璃主楼 + 两栋 6 层副楼，造型不得变化；主光始终来自画面左侧，清晨→白天→黄昏→蓝调时刻；正确安全装备与吊装、吊物下无人；字卡居中白字且稳定不逐字动画。缺口：作者自述多次抽卡、旁白不稳定，另可给重机单独参考图（未公开）；音频未转录。",
+    video_prompt: {
+      title: "② Gemini Omni 1.1 Flash 视频提示词",
+      subtitle: "10s · 16:9 · 24fps · 上传九宫格分镜作参考 · 英文完整提示词（作者线程第 3 帖）",
+      content: `Create an exact 10-second, high-end photorealistic Japanese corporate commercial for the fictional architecture and construction company “NEXARC CONSTRUCTION.”
+
+REFERENCE BOARD
+The uploaded 3×3 storyboard strictly controls the recurring architect, wardrobe, PPE, construction site, building geometry, shot composition, lighting progression, materials, colors and final architecture.
+
+Read the board from left to right across the top row, then the middle row, then the bottom row.
+
+Never display the complete storyboard. Never show a grid, collage, split screen, ivory gutters, panel numbers or production notes. Reconstruct each reference panel as one full-screen live-action 16:9 shot.
+
+Connect different stages using precise hard cuts and one design-line match cut. Never morph people, machinery, steel, glass or buildings from one object into another.
+
+FORMAT
+Exactly 10.0 seconds.
+Landscape 16:9.
+24 fps.
+Premium live-action commercial realism.
+
+CONTINUITY
+The recurring lead architect is the same 36-year-old Japanese man with a lean build, calm intelligent face, short neatly parted black hair and natural skin texture.
+
+In the design studio, he wears a white shirt, dark navy work jacket and charcoal trousers. On the active site, he adds the same white safety helmet, reflective charcoal vest, protective gloves and safety boots. In the finished lobby, he removes only the helmet and safety vest and returns to the same navy jacket and white shirt.
+
+The project remains one coherent development: a central rectangular 18-story tower with blue-gray glass, vertical silver fins and a transparent entrance canopy, flanked by two six-story buildings, a pedestrian plaza, timber accents and young street trees.
+
+Never change the tower’s height, proportions, façade pattern, entrance position or surrounding geography.
+
+LIGHT AND TIME
+Progress naturally from cool dawn in the studio and empty site, through clear daytime construction, warm golden-hour occupation and a blue-hour final hero shot. Key light always comes from frame left.
+
+TIMELINE
+
+0.0–1.1 seconds — Shot 01
+Overhead macro in the architecture studio. The architect’s right hand draws one precise cobalt-blue line across tracing paper using a ruler. Camera makes a restrained downward push. Let the pencil sound lead the mix.
+
+1.1–2.1 seconds — Shot 02
+Hard match cut from the drawn line to a real cobalt-blue survey line on prepared ground. A surveyor completes one short marking movement. Low locked camera; no magical transformation.
+
+2.1–3.1 seconds — Shot 03
+Wide foundation stage. A concrete pump delivers material into prepared formwork while workers monitor from safe positions. Use a short controlled lateral camera move.
+
+3.1–4.1 seconds — Shot 04
+Low-angle steel erection. A crane lowers one beam a short controlled distance toward its connection point. Workers remain outside the suspended-load zone. Camera tilts upward slightly.
+
+4.1–5.1 seconds — Shot 05
+Close process shot. A glass façade panel moves slowly into its mounting position using approved lifting equipment. Workers guide it safely with fall protection. Keep the camera stable.
+
+5.1–6.1 seconds — Shot 06
+Elevated view of the nearly completed plaza. A paving unit is placed while another worker adjusts one young tree support. Do not make plants or buildings appear instantly. Use a subtle forward glide.
+
+6.1–7.2 seconds — Shot 07
+Inside the finished office lobby, the architect opens the glass entrance door once and the first office workers walk through. Warm daylight enters from frame left. Camera tracks backward gently.
+
+7.2–8.5 seconds — Shot 08
+Grand golden-hour exterior. People walk through the plaza, bicycles remain parked and trees move lightly in the wind. Make a slow cinematic push toward the central tower.
+
+8.5–10.0 seconds — Shot 09
+Clean cut to the symmetrical blue-hour hero view. Office lights glow across the same completed buildings. Hold the frame steadily.
+
+Display only this exact centered white typography:
+“NEXARC CONSTRUCTION”
+
+Below it, display:
+“まだない景色を、つくる。”
+
+Keep the typography perfectly stable. Do not animate individual letters. If reliable text rendering is unavailable, output a clean text-free hero plate with centered negative space so the brand and Japanese copy can be composited in post-production.
+
+CAMERA AND IMAGE QUALITY
+Use full-frame cinema-camera realism. Environmental shots use restrained 24–35mm perspectives; human shots use natural 50mm perspective; design and material details use 85–100mm macro rendering.
+
+Smooth highlight roll-off, realistic motion blur, restrained contrast, natural depth of field, subtle fine film grain and physically accurate materials. No exaggerated time-lapse streaks.
+
+SOUND
+Original contemporary corporate score at approximately 104 BPM: restrained piano pulse, low strings, subtle industrial percussion and a warm final chord.
+
+Use motivated sounds sparingly: technical pencil, survey marking, concrete pump, controlled steel impact, glass suction equipment, footsteps and office ambience.
+
+At 8.4 seconds, add a calm adult Japanese male voiceover:
+「まだない景色を、つくる。ネクサーク・コンストラクション。」
+
+End the music and voice together at exactly 10.0 seconds.
+
+SAFETY AND AVOID
+Correct PPE, crane rigging, fall protection, exclusion zones and realistic construction sequencing.
+
+No worker beneath a suspended load. No unsafe climbing, missing helmets, floating beams, malformed machinery, collapsing structures, magical construction, teleportation, object morphing, instant vegetation, inconsistent building geometry, changing façade design, distorted hands, duplicate architect, CGI-plastic materials, miniature appearance, cartoon style, futuristic fantasy city, extra claims, extra text, watermarks or fake logos.`,
+    },
+  },
+  // 查重别名(用户提交的提示词回复帖): https://x.com/husky__create/status/2101876857004319206
+  {
+    id: "husky-nexbuild-city-timelapse-seedance",
+    title: "从空地到一座城 · NEXBUILD 建设延时广告 · Seedance 2.5",
+    subtitle: "X · @husky__create · Seedance 2.5 · BytePlus Lumina · 30秒 · 9:16",
+    description:
+      "Seedance 2.5 竖屏建筑延时广告：同一块空地从夜里放线到高楼林立，最后航拍拉起露出 NEXBUILD。",
+    video: "/tutorials/husky-nexbuild-city-timelapse-seedance/demo-web.mp4",
+    poster: "/tutorials/husky-nexbuild-city-timelapse-seedance/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "写实延时",
+    shots: 10,
+    references: 0,
+    model: "Seedance 2.5（BytePlus Lumina）",
+    style: "建设企业广告 · 固定工地延时 · 写实建筑摄影",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/husky__create/status/2101876852029825290",
+    sourceAuthor: "@husky__create",
+    sourcePlatform: "X",
+    sourceImpressions: 8180,
+    sourceStats: { asOf: "2026-09-26", likes: 52, reposts: 2, bookmarks: 29 },
+    formats: ["拆装·制作过程", "产品广告"],
+    hook: {
+      structure: "空地 → 地基与主体 → 幕墙与街道 → 航拍揭晓品牌",
+      opening: "第 0 秒是天亮前的俯拍空地：围挡、工作灯、成堆钢材，几个小小的工人在裸土上走动——画面几乎是空的，等着被填满。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "机位基本不动：约 3s 挖掘机开挖，约 5–7s 地基和柱子立起、塔吊就位，约 9–12s 钢结构一层层长高，约 13–14s 玻璃幕墙包满整栋楼。", at: 3 },
+        { title: "街道和广场成形", text: "约 15–21s 转到楼前：大道从土方到铺沥青画线，再铺草坪、水景和树，傍晚大楼亮灯。", at: 15 },
+        { title: "结尾怎么收", text: "约 22s 一名白盔工程师背影仰望大楼，约 25s 镜头拉升成航拍，整片办公街区铺满竖屏，中央浮现「NEXBUILD CORPORATION」。", at: 25 },
+      ],
+      copyThis: "整条片子锁在同一块地、同一个机位上延时建造，最后才拉起航拍——开头的「空」和结尾的「满」形成对照。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 建设延时",
+      "9:16 竖屏",
+      "Seedance 2.5",
+      "BytePlus Lumina",
+      "纯文生视频",
+      "空地到城市",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "本片没有分镜图：一条长提示词直接出片",
+        description:
+          "作者这条没有用 GPT Image 分镜，只在 BytePlus Lumina 上用 Seedance 2.5 跑一条约 1.2 万字符的英文提示词，直接生成 30 秒 9:16 竖屏成片。提示词先定概念「FROM NOTHING TO A CITY.」，要求整座城从零可见地建起来，建造过程本身就是主角。",
+      },
+      {
+        number: 2,
+        title: "先锁定同一块工地和空间布局",
+        description:
+          "LOCATION CONTINUITY 一段规定全片只在一块固定工地上、不重置环境：中央是未来广场，左侧中层办公楼群，右侧标志性玻璃塔，背景高层，前景主干道与步行区；最终画面里的每栋楼都必须来自前面出现过的施工区，不允许凭空冒出。",
+      },
+      {
+        number: 3,
+        title: "按 3 秒一段写 10 个施工阶段，最后才出品牌",
+        description:
+          "时间轴从 0–3s ZERO、3–6s GROUNDWORK 一直写到 27–30s GRAND REVEAL / BRAND，每段写清工种、机械和镜头运动；品牌名 NEXBUILD CORPORATION 要求到最后一场才出现，最后 1.5 秒压暗字标背后的中心区域。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "约 0–3s 天亮前俯拍空地：围挡、工作灯、钢材堆，工人放线测量。" },
+      { number: 2, description: "约 3–5s 挖掘机同时开挖，基坑成形。" },
+      { number: 3, description: "约 5–8s 地基浇筑、柱子立起，塔吊就位，天色渐亮。" },
+      { number: 4, description: "约 8–12s 钢结构逐层升高。" },
+      { number: 5, description: "约 12–15s 玻璃幕墙包覆整栋塔楼。" },
+      { number: 6, description: "约 15–18s 楼前主干道：土方 → 铺沥青 → 画标线。" },
+      { number: 7, description: "约 18–21s 广场、草坪、水景和行道树铺设，傍晚大楼亮灯。" },
+      { number: 8, description: "约 21–24s 白盔工程师背影站在完工广场上仰望大楼。" },
+      { number: 9, description: "约 24–27s 镜头后退并拉升，街区与行人车流出现。" },
+      { number: 10, description: "约 27–30s 航拍整片办公街区铺满竖屏，中央字标「NEXBUILD CORPORATION」。" },
+    ],
+    constraints:
+      "30 秒 9:16 竖屏；全片同一块工地、不重置环境，最终所有建筑必须来自先前施工区、不得凭空出现；写实材质与建筑摄影质感，禁卡通、奇幻、玩具感、科幻；品牌名只在最后一场出现，最后 1.5 秒压暗字标背后区域。缺口：本帖无分镜图、无分镜提示词（纯文生视频）；提示词要求的『微缩小人』质感在成片中不明显；成片结尾节奏比提示词时间轴略早；音频未转录。",
+    video_prompt: {
+      title: "NEXBUILD 从空地到城市 · Seedance 2.5 提示词",
+      subtitle: "30s · 9:16 · Seedance 2.5 on BytePlus Lumina · 纯文生视频 · 英文完整提示词（作者线程第 2 帖）",
+      content: `Create a 30-second vertical 9:16 ultra-photorealistic cinematic construction company brand film.
+
+CONCEPT:
+
+“FROM NOTHING TO A CITY.”
+
+Hundreds of tiny realistic construction workers, engineers, architects, cranes, excavators and construction vehicles physically transform a completely empty urban site into a sophisticated modern business district filled with premium office towers.
+
+The entire city must be built visibly from zero.
+
+The construction process itself is the hero.
+
+The film should communicate:
+
+engineering excellence,
+precision,
+coordination,
+technology,
+safety,
+scale,
+speed,
+and the ability to create the future of a city.
+This is a premium corporate advertisement for a fictional Japanese construction company.
+FINAL FICTIONAL COMPANY NAME:
+NEXBUILD CORPORATION
+Do NOT display the company name until the final scene.
+VISUAL STYLE
+Ultra-photorealistic.
+Premium architectural commercial.
+
+Real construction-site photography combined with realistic miniature macro cinematography.
+
+The workers and machinery should feel like an extremely detailed handcrafted miniature construction world photographed with a real cinema camera.
+
+Real:
+
+concrete,
+steel,
+glass,
+asphalt,
+soil,
+gravel,
+construction machinery,
+scaffolding,
+safety barriers,
+trees,
+water,
+metal,
+reflections.
+
+Natural physical materials.
+
+Extremely realistic shadows.
+
+High-end architectural photography.
+
+Clean modern Japanese metropolitan atmosphere.
+
+Sophisticated.
+
+Powerful.
+
+Precise.
+
+Professional.
+NOT cartoon.
+NOT fantasy.
+NOT toy-like.
+NOT futuristic sci-fi.
+The completed district should look like a believable near-future Japanese office district that could realistically exist today.
+LOCATION CONTINUITY
+The entire 30-second film takes place on ONE fixed urban development site.
+Never reset the environment.
+Initial geography:
+a huge empty development site surrounded by a distant existing city skyline.
+CENTER:
+future central business plaza.
+LEFT:
+future cluster of medium-rise office buildings.
+
+RIGHT:
+future signature glass skyscraper.
+
+BACKGROUND:
+future high-rise office towers.
+
+FOREGROUND:
+future main boulevard and landscaped pedestrian zone.
+
+All buildings seen in the final shot must originate from construction zones introduced earlier.
+
+No buildings may suddenly appear.
+
+0–3 SEC — ZERO
+
+Begin before sunrise.
+
+Extreme wide macro aerial shot.
+
+A massive empty urban development site.
+
+Bare soil.
+
+Construction markings.
+
+Temporary fences.
+
+Stacks of steel beams and concrete materials.
+
+A few work lights illuminate the site.
+
+Tiny engineers wearing helmets and reflective safety clothing walk across the empty land carrying plans.
+
+Surveyors place markers.
+
+Laser surveying equipment measures the terrain.
+
+Architects inspect large construction drawings on a temporary site table.
+
+Excavators and cranes stand ready.
+
+Slow cinematic push forward.
+The message should feel:
+
+“Everything begins here.”
+3–6 SEC — GROUNDWORK
+
+Construction starts simultaneously across the entire site.
+Excavators dig deep foundations.
+
+Dump trucks remove soil.
+Workers install temporary retaining structures.
+
+Foundation piles are driven into the ground.
+Large reinforcement cages are lowered into excavation zones.
+
+Concrete trucks arrive.
+
+Workers pour concrete into foundations.
+
+Road crews begin defining the future main boulevard.
+
+Small construction vehicles move naturally along temporary routes.
+
+Extremely dense coordinated activity.
+
+No chaos.
+
+Every worker has a purpose.
+
+6–9 SEC — STRUCTURAL FOUNDATIONS
+
+Continue from the exact same site.
+
+Concrete foundations harden through realistic accelerated time-lapse.
+
+Massive structural columns begin rising.
+
+Tower cranes rotate slowly.
+
+Steel beams are lifted from storage areas.
+
+Teams guide each beam into position.
+
+Bolts are physically installed.
+
+Welders work along structural joints.
+
+Multiple buildings are now at different stages of construction.
+
+Some only foundations.
+
+Some first floors.
+
+Some several floors high.
+
+This variation is important.
+
+Do NOT complete all buildings simultaneously.
+
+9–12 SEC — THE CITY RISES
+
+The camera moves vertically alongside one office tower.
+
+Floor after floor is physically assembled.
+
+Steel framework rises upward.
+
+Concrete floor slabs are installed.
+
+Temporary scaffolding grows around the structure.
+
+Construction elevators move workers between floors.
+
+Cranes lift steel and materials.
+
+In the background, other buildings are rising at different speeds.
+
+The visual should communicate enormous scale and precise coordination.
+
+No instant growth.
+
+Every floor must visibly belong to the structure beneath it.
+
+12–15 SEC — ARCHITECTURE
+
+Move closer to the facade.
+
+Workers begin installing the exterior skin.
+
+Large glass curtain-wall panels are lifted by cranes.
+
+Workers guide each panel into place.
+
+Glass sections gradually cover the steel structure.
+
+Other workers install aluminum framing.
+
+Completed floors reflect the surrounding city and sky.
+
+The raw construction frame progressively becomes a sophisticated modern office tower.
+
+Nearby buildings undergo the same logical transformation:
+
+structure
+→ facade
+→ windows
+→ completed exterior.
+
+15–18 SEC — INFRASTRUCTURE
+
+Shift toward street level.
+
+Road crews construct the surrounding business district.
+
+Underground utilities are installed.
+
+Drainage systems are completed.
+
+Curbs are placed.
+
+Road foundations are compacted.
+
+Asphalt is laid.
+
+Lane markings are applied.
+
+Sidewalk paving is installed piece by piece.
+
+Streetlights are erected.
+
+Traffic signals are installed.
+
+Workers construct entrances to office buildings.
+
+The city now begins connecting together.
+
+18–21 SEC — PUBLIC SPACE
+
+Landscape teams begin transforming the spaces between buildings.
+
+Soil is delivered.
+
+Trees arrive on trucks.
+
+Workers use cranes and small machinery to position mature trees.
+
+Trees are physically planted and secured.
+
+Grass is installed.
+
+Planters are positioned.
+
+Benches are assembled.
+
+Pedestrian plazas are paved.
+
+A shallow architectural water feature is completed.
+
+Bicycle parking and street furniture are installed.
+
+The previously industrial construction zone starts becoming a human-centered modern business district.
+
+21–24 SEC — FINAL CONSTRUCTION
+
+The district is almost complete.
+
+Workers install final entrance glass.
+
+Technicians test building systems.
+Electricians finish lighting.
+Cleaning crews remove protective coverings from windows.
+Road crews remove temporary barriers.
+
+Construction signs are taken away.
+
+Scaffolding is progressively dismantled.
+
+Tower cranes complete their final lifts.
+
+Building lights begin turning on floor by floor.
+
+The transition from construction site to functioning city must feel physically believable.
+
+24–27 SEC — THE CITY COMES ALIVE
+
+Morning transitions toward bright late-afternoon sunlight.
+
+The finished business district becomes active.
+
+Office workers walk through plazas.
+
+People enter modern glass office buildings.
+
+Cyclists pass through landscaped paths.
+
+Electric buses move along the main boulevard.
+
+Cars travel naturally through intersections.
+
+People sit on benches.
+
+Trees move gently in the wind.
+
+Architectural glass reflects the surrounding buildings.
+
+The district should feel premium, sustainable and prosperous.
+
+The construction workers who built the city remain briefly visible completing final inspections.
+
+Camera smoothly travels through the completed boulevard.
+
+27–30 SEC — GRAND REVEAL / BRAND
+
+Begin close behind one construction engineer standing on the completed central plaza.
+
+The engineer wears a clean white helmet and looks upward.
+
+Camera begins moving backward.
+
+Then smoothly accelerate upward and backward.
+
+Reveal the entire completed modern office district.
+
+Multiple contemporary office towers.
+
+One iconic glass skyscraper.
+
+Wide landscaped boulevard.
+
+Pedestrian plazas.
+
+Green trees.
+
+Modern street furniture.
+
+Active offices.
+
+Vehicles.
+
+People.
+
+Reflections across glass architecture.
+
+Warm golden-hour sunlight spreads between the skyscrapers.
+
+The enormous business district now occupies the same land that was completely empty at the beginning.
+
+Camera continues rising until the complete city development fills the vertical frame.
+
+Then slowly stabilize.
+
+The urban activity continues naturally.
+
+Do not freeze the environment.
+
+For the final 1.5 seconds:
+
+subtly darken the center background behind the typography area without changing the physical environment.
+
+A clean premium corporate title appears in the center:
+
+NEXBUILD
+
+Below in smaller text:
+
+CORPORATION
+
+Typography:
+
+modern geometric sans-serif,
+bold,
+clean,
+minimal,
+architectural,
+white or brushed-metal appearance,
+perfectly centered,
+high-end Japanese corporate branding.
+
+No additional text.
+
+No slogans.
+
+No random characters.
+
+No fake Japanese writing.
+
+Hold the final city and company name long enough to clearly read.
+
+CONSTRUCTION CONTINUITY
+
+Every building:
+
+surveying
+→ excavation
+→ foundation
+→ structural columns
+→ steel framework
+→ floors
+→ facade
+→ glass
+→ interior completion
+→ landscaping.
+
+Every road:
+
+excavation
+→ underground infrastructure
+→ base material
+→ compaction
+→ asphalt
+→ markings.
+
+Every tree:
+
+transport
+→ positioning
+→ planting
+→ securing.
+
+Every public space:
+
+ground preparation
+→ paving
+→ furniture
+→ landscaping.
+
+Previously completed structures must remain present.
+
+No structural resets.
+
+No disappearing cranes.
+
+No disappearing materials without being physically used or removed.
+
+Construction equipment must move naturally around the site.
+
+CAMERA
+
+9:16 vertical composition.
+
+Premium cinematic architectural cinematography.
+
+Use:
+
+macro construction close-ups,
+low-angle crane shots,
+ground-level tracking shots,
+vertical tower-rise tracking,
+smooth overhead movement,
+slow push-ins,
+controlled orbiting shots,
+subtle rack focus,
+final dramatic aerial pull-back.
+
+Camera movement must always feel physically achievable.
+
+Smooth transitions between work areas.
+
+No random teleporting camera.
+
+No excessive speed ramps.
+
+No excessive camera shake.
+
+Use vertical architecture strongly within the 9:16 composition.
+
+Skyscrapers should feel tall and imposing.
+
+LIGHTING PROGRESSION
+
+0–6 sec:
+blue-hour early morning.
+
+6–15 sec:
+soft morning daylight.
+
+15–24 sec:
+clear daytime sunlight.
+
+24–30 sec:
+warm premium golden hour.
+
+The changing light subtly communicates the passage of time and progress.
+
+No abrupt lighting changes.
+
+STRICT NEGATIVE
+No magical construction.
+No instant skyscrapers.
+No buildings popping into existence.
+No morphing structures.
+No floating steel beams.
+No autonomous materials.
+No teleporting workers.
+
+No duplicated workers.
+
+No giant humans.
+
+No giant construction equipment.
+
+No malformed machinery.
+
+No physically impossible cranes.
+
+No inconsistent building sizes.
+
+No randomly changing architecture.
+
+No collapsing buildings.
+
+No melting glass.
+No warped roads.
+No changing geography.
+No fantasy city.
+No cyberpunk.
+No neon sci-fi city.
+No cartoon.
+No anime.
+No plastic toy appearance.
+No Lego appearance.
+
+No exaggerated miniature toys.
+
+No random logos.
+No text until final brand reveal.
+No illegible signage.
+No excessive futuristic vehicles.
+No empty lifeless city at the end.
+FINAL QUALITY TARGET
+
+The result should look like a world-class Japanese construction company commissioned a premium brand film demonstrating its ability to transform empty land into a complete modern business district.
+
+The visual hook is the extraordinary miniature-scale construction activity.
+The corporate message is:
+precision,
+engineering,
+coordination,
+trust,
+and city-building capability.
+The emotional progression should be:
+
+nothing
+→ groundwork
+→ structure
+→ architecture
+→ infrastructure
+→ city
+→ future.
+
+The final impression should feel ambitious, sophisticated and credible.
+The construction process should create visual satisfaction.
+The final city reveal should create awe.
+The company name should feel like the natural signature on everything that has just been built.`,
+    },
+  },
   {
     id: "garylau-rei-tongue-minimax-h3",
     title: "绫波丽双次吐舌表情深度驱动 · MiniMax H3",
