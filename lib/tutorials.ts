@@ -1,6 +1,196 @@
 import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
+  // 查重别名(提示词自回复帖): https://x.com/GeekCatX/status/2104124888508473568
+  {
+    id: "geekcatx-cyclist-kicks-truck-pov",
+    title: "骑车一脚踹飞重卡 · 第一视角反物理",
+    subtitle: "X · @GeekCatX · 模型未标注 · 6秒 · 16:9",
+    description:
+      "第一视角骑行，迎面驶来的红色重卡被一脚踹得横滑冲进路边；6 秒单镜，提示词按秒写死接近、踢中、侧滑、扬尘。",
+    video: "/tutorials/geekcatx-cyclist-kicks-truck-pov/demo-web.mp4",
+    poster: "/tutorials/geekcatx-cyclist-kicks-truck-pov/poster.jpg",
+    duration: "6秒",
+    durationSec: 6,
+    styleLabel: "第一视角整活",
+    shots: 1,
+    references: 0,
+    model: "未标注（作者未公开）",
+    style: "运动相机第一视角 · 写实日光 · 反物理一脚",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/GeekCatX/status/2104124729716342944",
+    sourceAuthor: "@GeekCatX",
+    sourcePlatform: "X",
+    sourceImpressions: 5694,
+    sourceStats: { asOf: "2026-09-27", likes: 18, reposts: 0, bookmarks: 9 },
+    formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "骑行接近 → 抬腿一踹 → 重卡横滑 → 扬尘远去",
+      opening: "第 0 秒就是车把和骑手影子压在路面上，远处一辆红色重卡迎面开来，1 秒内越来越近。",
+      openingAt: 0,
+      beats: [
+        { title: "冲突怎么起", text: "约 1s 一条穿白袜白鞋的腿从右下角抬起；约 1.5s 卡车冲到眼前，鞋底蹬在车头右前角。", at: 1 },
+        { title: "反转", text: "约 2–3s 整辆卡车斜着滑向右侧，压上路肩冲进草地，路边树枝被带倒一地。", at: 2 },
+        { title: "结尾怎么收", text: "约 4–6s 骑手照常往前骑，卡车在右前方扬尘滑远，只剩空路和一地枝叶。", at: 4 },
+      ],
+      copyThis: "镜头全程是普通骑行第一视角，只让「一脚」这件事反物理；提示词写清接近、接触、横移、收腿四拍的先后。",
+      approx: true,
+    },
+    tags: [
+      "6秒 · 第一视角",
+      "16:9 横屏",
+      "单镜一镜到底",
+      "反物理整活",
+      "纯文生视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：先把「普通骑行」写实",
+        description:
+          "提示词先交代场景和机位：向右缓弯的沥青路、白色车道线、水泥路肩、田野、行道树、电线杆，强日光把骑手影子投在前方路面；画面底部一直露出黑色弯把，运动相机广角、带轻微骑行抖动。",
+      },
+      {
+        number: 2,
+        title: "第二步：按秒写死一脚的动作链",
+        description:
+          "0–1.1s 红色重卡由远到近逼到眼前；约 1.1s 白袜白鞋的小腿从右下角伸出，踢中车头一侧；接触后整车斜向右侧弹开；1.5–3s 卡车在路面擦出黑色胎痕、压过路肩冲进草地、扬起土黄色尘土，路边树枝被带倒。",
+      },
+      {
+        number: 3,
+        title: "第三步：加禁止项，一次生成 6 秒",
+        description:
+          "结尾要求卡车整体不散架、保持正常速度、第一视角不切镜，不要慢动作、字幕和额外的撞车结局。作者没说用的哪个模型，也没有参考图，整段提示词直接文生视频。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–1s 第一视角骑行，车把和影子在画面下方，红色重卡从远处迎面驶来。" },
+      { number: 2, description: "约 1–1.6s 白袜白鞋的腿从右下角抬起，卡车逼到眼前，鞋底蹬在车头右前角后收回。" },
+      { number: 3, description: "约 2–3s 卡车斜向右侧滑出，压上路肩冲进草地，树枝被带倒、尘土扬起。" },
+      { number: 4, description: "约 3–6s 骑手继续往前骑，卡车在右前方草地里扬尘滑远，路边一地枝叶。" },
+    ],
+    constraints:
+      "一镜到底第一视角、正常速度、卡车整体不散架；不要切镜、慢动作、字幕或额外的撞车结局。与成片不符：提示词写踢在「观众视角左侧」车灯旁，成片里鞋底蹬的是车头右前角；腿在约 1s 就已抬起，比卡车到眼前早约半秒。缺口：作者没有说明用的是哪个模型（评论区有人问，作者未回复），也没有参考图。",
+    video_prompt: {
+      title: "Cyclist Kicks a Cargo Truck · First-Person · 6s",
+      subtitle: "模型未标注 · 16:9 · 英文完整提示词（作者自回复长帖）",
+      content: `Create an approximately 6-second, 16:9 photorealistic video in one continuous first-person cycling shot. The camera moves forward along a smooth asphalt road curving gently to the right, with white lane markings, a raised concrete curb, green fields, roadside trees, utility poles and overhead wires beneath a bright blue sky. Strong sunlight casts the cyclist’s elongated shadow onto the road ahead. The black ends of drop handlebars remain visible at the bottom of the frame, with slight natural cycling vibration and a wide-angle action-camera perspective. During the first 1.1 seconds, a large red cargo truck approaches rapidly from ahead, growing from a distant vehicle into a looming close-up. It has a tall red cab, black grille, yellow license plate, large dark tires and a long red cargo bed with raised side panels. At approximately 1.1 seconds, the rider raises a bare lower leg from the lower-right corner, wearing a white ankle sock and a white lace-up sneaker. Extend the leg forward and deliver one firm kick against the truck’s front corner beside the headlight on the viewer’s left. Clearly show the shoe making brief contact with the red bodywork, followed by the leg withdrawing. The contact immediately produces an absurdly powerful reaction: the entire heavy truck jolts diagonally away toward screen right, its cab tilting as the cargo bed swings behind it. Preserve a clear sequence of approach, foot contact, sideways displacement and foot retraction. From roughly 1.5 to 3 seconds, the truck skids across the asphalt, leaving dark curved tire marks, bounces over the right-hand curb and slides into the grassy roadside, throwing up tan dust. Its cab remains partly facing the rider as it moves away. Roadside trees shake, leafy branches bend and fall along the curb, and loose leaves scatter near the road edge. Throughout the incident, the cyclist keeps moving forward along the bend with only a small camera wobble. During the final seconds, the truck becomes increasingly obscured by dust and foliage on the right while fallen branches fill the roadside foreground. End with the bicycle still moving and the clear road continuing ahead. Combine ordinary, convincing daytime cycling footage with the impossible strength of a single kick. Keep the truck intact through the sideways skid, retain normal-speed motion, and preserve the uninterrupted first-person viewpoint without cuts, slow motion, added captions or an invented final crash.`,
+    },
+  },
+  // 查重别名(提示词自回复帖，含第三方站点推广链接，未收录链接): https://x.com/GeekCatX/status/2104204992760680878
+  // 查重别名(提示词所在根帖，引用成片帖): https://x.com/GeekCatX/status/2104204249811026201
+  // 查重别名(同一成片，作者回复 @bigjusir 时重发): https://x.com/GeekCatX/status/2104148928656789511
+  // 查重别名(输入白模视频原帖 @bigjusir): https://x.com/bigjusir/status/2104013401475436713
+  {
+    id: "geekcatx-tickle-heels-whitemodel-seedance-2-5",
+    title: "挠痒高跟鞋 · 白模视频驱动试穿 · Seedance 2.5",
+    subtitle: "X · @GeekCatX · Seedance 2.5 · 15秒 · 3:4",
+    description:
+      "用 @bigjusir 的挠痒高跟鞋白模视频驱动，配角色卡，Seedance 2.5 出 15 秒试穿忍笑产品喜剧。",
+    video: "/tutorials/geekcatx-tickle-heels-whitemodel-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/geekcatx-tickle-heels-whitemodel-seedance-2-5/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "白模转写实",
+    shots: 4,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "灰模产品视频 → 写实试穿 · 明亮试穿间 · 产品喜剧",
+    aspectRatio: "3/4",
+    sourceUrl: "https://x.com/GeekCatX/status/2104148788873154686",
+    sourceAuthor: "@GeekCatX",
+    sourcePlatform: "X",
+    sourceImpressions: 70700,
+    sourceStats: { asOf: "2026-09-27", likes: 300, reposts: 11, bookmarks: 183 },
+    formats: ["产品广告", "角色表演"],
+    hook: {
+      structure: "穿好起身 → 鞋弓特写 → 忍笑推脸 → 坐下脱鞋挠脚",
+      opening: "第 0 秒她已经穿着灰色尖刺高跟鞋坐在长凳上，低头看鞋，约 2s 扶凳站起。",
+      openingAt: 0,
+      beats: [
+        { title: "产品怎么露", text: "约 2.8s 切鞋子侧面低机位特写：鞋弓下是镂空，里面的弧形活动件来回拨动脚底。", at: 2.8 },
+        { title: "反应怎么推", text: "约 5.8s 切中景，镜头推到脸：她先憋笑，再笑到眯眼。", at: 5.8 },
+        { title: "结尾怎么收", text: "约 8.9s 切全景，她笑着弯腰、坐回长凳，脱下一只鞋放在旁边，捧着脚笑到结束。", at: 8.9 },
+      ],
+      copyThis: "产品动作全交给白模视频（Video1），提示词只管人物反应和镜头顺序，并反复强调镂空不能被填实。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 产品喜剧",
+      "3:4 竖屏",
+      "Seedance 2.5",
+      "白模视频 + 角色卡",
+      "参考白模原音轨",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "输入素材：@bigjusir 的挠痒高跟鞋白模视频",
+        description:
+          "Video1 用的是 @bigjusir 发的灰模动画（7 秒、3:4、带原音轨；他自称是大四建模作品）：一双带尖刺和齿状鞋底的镂空绑带高跟鞋，鞋弓里的弧形活动件来回拨动脚底。GeekCatX 引用了这条帖子来做成片。原帖：https://x.com/bigjusir/status/2104013401475436713 。白模的建模方法和出图提示词作者都没公开。",
+        video: "/tutorials/geekcatx-tickle-heels-whitemodel-seedance-2-5/input-whitemodel.mp4",
+        poster: "/tutorials/geekcatx-tickle-heels-whitemodel-seedance-2-5/input-whitemodel-poster.jpg",
+        aspectRatio: "3/4",
+      },
+      {
+        number: 2,
+        title: "第二步：准备角色卡（image1）",
+        description:
+          "提示词里的 <Subject 2> 是 image1 角色卡上的成年女性：棕色低发髻、脸侧碎发、白色长袖裹身短上衣、浅灰米色运动内搭、灰色高腰短裤。作者没有公开这张角色卡，需要自己先做一张。",
+      },
+      {
+        number: 3,
+        title: "第三步：写主体定义和强制结构约束",
+        description:
+          "subject_definitions 把 Video1 定成鞋子、image1 定成人物、Audio1 定成白模原音轨；再用【强制结构约束】写死：足弓下方必须左右贯通、能看到背景，不能被鞋底或鞋面填实，活动件的轨迹、幅度、速度都照参考视频。",
+      },
+      {
+        number: 4,
+        title: "第四步：按时间码写 5 个镜头，一次生成 15 秒",
+        description:
+          "Shot 1 全身起身 → 00:02.5 鞋子侧面低机位特写 → 00:05.5 中景推脸忍笑 → 00:08.5 迈步怕痒、坐回长凳 → 00:10.5 脱右鞋挠脚底。声音只参考 Audio1 原有的层，加轻笑和吸气，不加台词。作者在评论区回复用的是 Seedance 2.5。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–2.8s 全身：她穿着灰色尖刺高跟鞋坐在长凳上，低头看鞋后扶凳站起。" },
+      { number: 2, description: "2.8–5.75s 鞋子侧面低机位特写：镂空鞋弓里的弧形活动件来回拨动脚底。" },
+      { number: 3, description: "5.75–8.9s 中景坐姿，镜头推到脸部特写：憋笑、闭眼、再笑开。" },
+      { number: 4, description: "8.9–15s 全景：站着笑到弯腰，坐回长凳，脱下一只鞋放在旁边，捧着脚笑。" },
+    ],
+    constraints:
+      "鞋子外形、镂空结构和活动件运动全照 Video1，镂空不能被鞋底或鞋面填满；人物照 image1 角色卡，全片同一人同一双鞋；声音只参考 Audio1 原有的层，不加台词和配乐。与成片不符：提示词写 9:16，成片是 834×1112（3:4）；提示词分 5 个镜头，成片 8.9s 后是一个连续全景，没有单独切「脱鞋挠脚」镜头，也看不清手指挠的是不是足弓；白模里的活动件更宽、像舌头，成片里是细一些的弧形钩。缺口：作者没有公开 image1 角色卡；提示词是成片发出约 3 小时 44 分后才补在另一条帖子下面的，作者没有明说这就是这条成片用的那版；白模的制作方法没有公开。",
+    video_prompt: {
+      title: "挠痒高跟鞋试穿 · 白模视频 + 角色卡 · 15s",
+      subtitle: "Seedance 2.5 · 中文完整提示词（作者自回复长帖；开头的站点推广链接未收录）",
+      content: `subject_definitions:  
+<Subject 1> 是Video1中的同一双开放式绑带高跟鞋，保留鞋带、前掌承托部分、高跟、尖刺、齿状边缘和内部弧形活动件的原有形状与比例。  
+【强制结构约束】 足弓下方必须是左右贯通、能够透视背景的真实镂空空间。前掌承托部分与后跟之间，不能被连续鞋底、实心楔形块、鞋面、皮革、薄膜或新增支撑板填满。 脚底足弓属于人物身体，使用真实肤色；灰模中的脚背与脚部不能被误识别为封闭鞋面。 镂空内部只保留参考视频原有的结构和活动件。活动件运动时，周围仍然存在清楚可见的空隙。 鞋子的整体灰色外观、鞋跟高度、开口轮廓、尖刺与齿状细节，以及活动件的轴线、轨迹、幅度和速度，全部以参考视频为准。  
+<Subject 2> 是image1
+角色卡中的同一位成年女性。固定她的面容、棕色低发髻、脸侧碎发、自然肤色、白色长袖裹身短上衣、浅灰米色运动内搭、灰色高腰短裤及身体比例。双腿和双脚保持真实皮肤质感。
+
+Audio1
+是白模视频的原始音轨。仅参考其中实际存在的环境声、产品动作声和配乐层；人物声音采用自然的忍笑、短促吸气和笑后的呼吸。
+  summary:  [reference generation + audio reference] 生成一支15.00秒、9:16竖屏的写实产品喜剧演示。
+<Subject 2> 穿着 <Subject 1>，鞋内活动件按照参考视频的原有方式运动。画面先明确展示贯通的镂空结构，再表现人物从突然感到痒、努力忍笑，到坐下脱鞋、短暂挠脚底的连续反应。人物脸颊随着笑意逐渐泛红。   retention_analysis:  <Subject 1>（出现在全部镜头）： fully_preserved — 完整保留参考鞋子的开放式结构、贯通镂空、外观比例、绑带位置和内部活动件运动。人物动作不能导致镂空闭合、鞋底增厚或结构变形。  <Subject 2>（出现在全部镜头）： fully_preserved — 保留角色卡中的人物身份、服装和身体比例；表情与脸颊泛红是本次演示新增的自然状态变化。  <Audio 1>： reference — 参考原轨实际存在的环境、动作和配乐层，保持其声音特征，自然衔接至15秒；人物发声采用非性化的自然笑声与呼吸。   detailed_description:  15.00秒，9:16竖屏，写实风格。场景为简洁明亮的试穿展示间，浅灰墙面、平整地面和稳固长凳。侧面柔光清楚照亮人物面部、脚部以及鞋弓镂空的内外边缘。全片始终是同一位人物和同一双鞋。  [Shot 1] 三分之四角度的全身画面。<Subject 2> 坐在长凳上，双脚已经穿好 <Subject 1>。她低头查看鞋子，带着好奇的浅笑，随后扶着长凳缓缓站起。面容、发型和服装与角色卡一致。两只鞋完整入镜，脚背与足部是人物的真实皮肤，绑带贴合在皮肤表面。鞋弓下方保持开放，能够看见后方地面。  [Shot 2] At 00:02.500, 切到鞋子的侧面近景，采用能够清楚看穿镂空区域的低机位。足弓下方是贯通空腔，镜头可以从开口看见另一侧背景，前掌承托部分与后跟之间没有填充物。  弧形活动件按
+
+Video1
+
+的原有轨迹往复运动，呈现其对脚底足弓的挠痒作用。只有参考中的活动件按照原有方式运动，外围鞋跟、尖刺、齿状边缘和承托结构保持稳定。她的脚趾轻轻收紧，脚踝随痒感短暂缩动。即使脚部移动，镂空仍然清楚可辨。  [Shot 3] At 00:05.500, 切至人物中景。她眉毛突然抬起，眼睛睁大，嘴角随即不由自主地上扬。她抿住嘴想忍笑，鼻尖轻轻皱起，肩膀缩了一下，一只手抓住长凳边缘稳住身体。  镜头小幅推近她的脸：眼角逐渐弯起，笑意越来越难以掩饰，双颊出现自然的淡粉色。她低头看鞋，又抬眼露出惊讶而觉得好笑的表情。声音是短促吸气和没有完全憋住的轻笑。  [Shot 4] At 00:08.500, 切回包含面部与双腿的中全景。她试着迈出一小步，随后因为怕痒停住，轻弯膝盖，左右脚短暂交换重心。鞋内活动件继续按参考视频的规律运动。  她忍不住笑出声，眼睛眯起，上身稍微前倾，一只手扶住长凳。脸颊比上一镜略红，保留自然肤色和皮肤细节。她转身坐回长凳，动作连贯、平衡稳定。  [Shot 5] At 00:10.500, 三分之四角度的中全景同时保留人物面部、双手和鞋子。她坐稳后解开右脚鞋带，将右脚抽出，随后用手指在刚受到刺激的脚底足弓处短促挠两三下。手指接触的是脚底足弓，不是脚背、脚踝或小腿。  她边笑边缓一口气，紧绷的眉间逐渐放松，泛红的脸颊和自然笑容保持连贯。右鞋完整地放在旁边，侧面朝向镜头，贯通镂空依旧能看见背景；左脚仍穿着另一只鞋。最后她看向鞋内的活动件，露出无奈又好笑的神情，画面保持到00:15.000。   
+overall_soundscape:  环境与产品动作声音参考
+
+Audio1
+
+实际包含的声音层。人物声音为自然的轻笑、忍笑时的短促吸气、笑出声以及笑后的正常呼吸，随表情和身体动作同步变化。没有新增台词。 
+
+ non_diegetic_music:  仅参考
+
+Audio1
+
+实际存在的配乐层，保持其原有风格和音量关系。原轨没有配乐时，目标视频不额外添加。`,
+    },
+  },
   // 查重别名(提示词自回复帖): https://x.com/ZephyraLeigh/status/2103849350736842794
   // 查重别名(引用帖：同作者 Switch 2 开箱，未附提示词): https://x.com/ZephyraLeigh/status/2102033368544329958
   {
