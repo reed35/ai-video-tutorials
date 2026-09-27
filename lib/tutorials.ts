@@ -1,6 +1,2854 @@
 import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
+  // 查重别名(提示词自回复帖): https://x.com/ZephyraLeigh/status/2103849350736842794
+  // 查重别名(引用帖：同作者 Switch 2 开箱，未附提示词): https://x.com/ZephyraLeigh/status/2102033368544329958
+  {
+    id: "zephyra-tiny-gimbal-camera-unbox",
+    title: "口袋云台相机开箱 · 创作者向评测",
+    subtitle: "X · @ZephyraLeigh · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "Seedance 2.5 口袋云台相机开箱：女博主 Zephyra 拆箱、比大小、讲三轴防抖，30 秒一段生成带口播。",
+    video: "/tutorials/zephyra-tiny-gimbal-camera-unbox/demo-web.mp4",
+    poster: "/tutorials/zephyra-tiny-gimbal-camera-unbox/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "科技开箱",
+    shots: 6,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "YouTube 科技评测 · 创作者工作室 · 口播 + 产品微距",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ZephyraLeigh/status/2103849346198655342",
+    sourceAuthor: "@ZephyraLeigh",
+    sourcePlatform: "X",
+    sourceImpressions: 943,
+    sourceStats: { asOf: "2026-09-27", likes: 22, reposts: 3, bookmarks: 6 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "口播开场 → 俯拍开箱 → 比大小 → 云台演示 → POV 试拍 → 第一印象",
+      opening: "第 0 秒是双手按着桌上还没拆的相机包装盒，约 2s 切到 Zephyra 拿着盒子对镜头开口。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 5s 俯拍掀开盒盖，从盒里取出相机；约 8s 回到桌前中景摆放配件；约 11s 把相机举在手机旁边比大小。", at: 5 },
+        { title: "功能演示", text: "约 13–16s 手部近景转动相机、露出云台和屏幕；约 17s 她站起来拿着相机走几步。", at: 13 },
+        { title: "结尾怎么收", text: "约 21–23s 切成相机视角在工作室里移动的试拍画面；约 24s 回到她把相机举近镜头，说出第一印象结束。", at: 21 },
+      ],
+      copyThis: "提示词按秒写死 6 段（钩子、开箱、盒内物品、功能、实测、第一印象），每段一个机位加一句台词，口播和产品镜头交替切。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 科技开箱",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "口播 + 产品微距",
+      "同一虚拟博主系列",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：锁定博主形象和工作室",
+        description:
+          "提示词开头要求保留 Zephyra Leigh 的脸、发型、身材、声音和人设，并给她换一身固定服装：米色针织上衣、深棕色高腰裤、金色手表、小耳饰和细手链；场景是摆着摄像机、麦克风、笔记本和柔光灯的创作者工作室。作者没有公开人物参考图。",
+      },
+      {
+        number: 2,
+        title: "第二步：按秒写 6 段口播和机位",
+        description:
+          "0–4s 钩子（相机从盒中取出、凑近镜头、自我介绍）→ 4–9s 俯拍开箱 → 9–14s 摆出盒内物品并和手机比大小 → 14–21s 云台微距和触屏演示 → 21–26s POV 式试拍 → 26–30s 第一印象。每段都写好了英文台词。",
+      },
+      {
+        number: 3,
+        title: "第三步：整段贴进 Seedance 2.5",
+        description:
+          "把下方完整提示词贴进 Seedance 2.5，一次生成 30 秒带口播的视频。结尾写了镜头、声音、表演、画质要求和禁止项：全名只在开场说一次，服装保持一致，不要科幻元素、夸张反应、畸形手指和假的产品互动。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–5s 双手按着未拆的相机包装盒；切到 Zephyra 拿着盒子对镜头自我介绍。" },
+      { number: 2, description: "5–8s 俯拍掀开盒盖，取出相机，盒里有相机、保护套、配件。" },
+      { number: 3, description: "8–12s 回到桌前中景摆放配件，把相机举在手机旁边比大小。" },
+      { number: 4, description: "13–19s 手部近景转动相机、露出云台和屏幕；她站起来拿着相机走几步。" },
+      { number: 5, description: "20–23s 相机装在杆上，切成相机视角在工作室里移动的试拍画面。" },
+      { number: 6, description: "24–30s 回到她把相机举近镜头，说出第一印象，自然微笑。" },
+    ],
+    constraints:
+      "保留同一位博主的脸、发型、身材、声音和人设；服装全程一致；全名只在开场说一次；真实的手部、手指和产品互动，不要科幻、全息、卡通、夸张反应和画面故障。与成片不符：开场不是提示词写的「从盒中取出相机的微距」，而是先拍未拆的包装盒；包装盒上的品牌字是乱码（类似「NUCEPOVIG」）；21–26s 的 POV 试拍拍的是空工作室，没有像提示词写的那样跟拍她的脸。缺口：作者没有公开人物参考图；口播音频没有转录核对。",
+    video_prompt: {
+      title: "Tiny Gimbal Camera Unboxing · Creator Review · 30s",
+      subtitle: "Seedance 2.5 · 16:9 · 英文完整提示词（作者自回复长帖）",
+      content: `Create an ultra-realistic professional YouTube Shorts camera unboxing featuring Zephyra Leigh, the same female technology creator. Preserve her exact face, hairstyle, body proportions, voice, personality, and recognizable creator identity.
+
+OUTFIT: Give Zephyra a fresh premium creator outfit: fitted beige knit top, high-waisted dark-brown trousers, elegant gold-tone watch, small minimalist earrings, and a delicate bracelet. Natural polished hairstyle and subtle professional makeup. Keep this outfit completely consistent throughout the video.
+
+She is filming in a premium creator studio with a clean desk, professional camera, microphone, laptop, soft studio lighting, and tasteful filmmaking equipment in the background.
+
+0–4s — STRONG VISUAL HOOK
+
+Start with an extreme macro shot of the tiny camera being lifted from its sealed box.
+
+Zephyra brings the camera directly toward the lens, showing how incredibly small it is.
+
+She looks at the camera and says:
+
+“Hey everyone, I’m Zephyra Leigh — and this tiny camera could completely change the way you vlog. Let's unbox it.”
+
+She immediately opens the package.
+
+4–9s — UNBOXING
+
+Overhead shot.
+
+She opens the box and reveals the compact gimbal camera, protective cover, battery/accessories, charging cable, and documentation.
+
+She picks up the camera and rotates it toward the lens.
+
+“Look at how small this thing is.”
+
+She unfolds the camera and turns on its display.
+
+9–14s — WHAT'S IN THE BOX
+
+She neatly arranges the contents on the desk.
+
+“Inside, you've got the camera, protective accessories, charging cable, and everything you need to start shooting.”
+
+She holds the camera beside a smartphone for a quick size comparison.
+
+14–21s — FEATURES & BENEFITS
+
+Macro close-up of the camera's moving gimbal.
+
+She rotates the camera and demonstrates the touchscreen.
+
+She says:
+
+“The cool part is the built-in three-axis gimbal. It physically stabilizes the camera while you move, so your walking shots can look much smoother.”
+
+She walks a few steps while holding the camera, demonstrating stabilized footage.
+
+21–26s — CREATOR TEST
+
+Show a quick realistic POV-style sample of Zephyra walking through the studio while the camera smoothly tracks her face.
+
+She says:
+
+“And because it's so small, you can literally carry it anywhere — perfect for travel, daily vlogs, and quick creator shots.”
+
+26–30s — FIRST IMPRESSION
+
+Zephyra holds the camera close to the lens.
+
+“First impression? Tiny, stabilized, and seriously creator-friendly. Now let's test the video quality.”
+
+Natural confident smile.
+
+CAMERA: professional YouTube creator cinematography, extreme macro product shots, overhead unboxing angle, medium talking-head framing, smooth camera movement, realistic autofocus, natural focus breathing, authentic creator B-roll.
+
+AUDIO: crystal-clear professional female creator voice, realistic packaging sounds, protective case clicks, camera startup sound, gimbal motor movement, subtle studio ambience.
+
+PERFORMANCE: Zephyra behaves like an experienced camera and creator-tech reviewer — confident, conversational, knowledgeable, and genuinely curious. She explains what each feature is, how it works, and the practical benefit for creators.
+
+VISUAL QUALITY: ultra-photorealistic, premium YouTube production, realistic skin texture, accurate hands and fingers, physically accurate camera and accessories, realistic reflections, natural facial expressions, believable product handling.
+
+IMPORTANT: Say “Zephyra Leigh” only during the opening introduction. After that, use only “Zephyra” if referring to her. Keep the outfit consistent. No sci-fi elements, no holograms, no exaggerated reactions, no cartoon, no anime, no distorted hands, no extra fingers, no glitches, no fake-looking product interaction.`,
+    },
+  },
+  // 查重别名(用户提交的提示词回复帖): https://x.com/EEJ_OOXO/status/2103905936998068258
+  // 查重别名(作者补充：提示词需让 GPT 按自己角色改写): https://x.com/EEJ_OOXO/status/2103989667939172631
+  // 查重别名(作者补充：动作参考视频): https://x.com/EEJ_OOXO/status/2103997179581059422
+  // 查重别名(引用帖：动作梗原视频，真人): https://x.com/LioraSolveil/status/2103872764868542495
+  {
+    id: "eej-ooxo-selfie-hand-sweep-face-switch",
+    title: "手一扫就变脸 · 双人自拍整活",
+    subtitle: "X · @EEJ_OOXO · 3 张参考图 + 动作参考视频 · 10秒 · 1:1",
+    description:
+      "动作参考视频驱动的双人自拍整活：闺蜜手一挡一扫，前面的她在咧嘴笑和面无表情间来回切换，最后两人笑崩。",
+    video: "/tutorials/eej-ooxo-selfie-hand-sweep-face-switch/demo-web.mp4",
+    poster: "/tutorials/eej-ooxo-selfie-hand-sweep-face-switch/poster.jpg",
+    duration: "10秒",
+    durationSec: 10,
+    styleLabel: "自拍整活",
+    shots: 1,
+    references: 0,
+    model: "未注明（参考图 + 动作参考视频驱动）",
+    style: "手机前置自拍 · 粉色阁楼卧室 · 一镜到底",
+    aspectRatio: "1/1",
+    sourceUrl: "https://x.com/EEJ_OOXO/status/2103905933999091826",
+    sourceAuthor: "@EEJ_OOXO",
+    sourcePlatform: "X",
+    sourceImpressions: 35597,
+    sourceStats: { asOf: "2026-09-27", likes: 280, reposts: 34, bookmarks: 277 },
+    formats: ["角色表演", "手机POV·Vlog"],
+    hook: {
+      structure: "两人板着脸 → 手扫过就变脸，反复切换 → 一起笑崩",
+      opening: "第 0 秒是手机前置自拍：戴橙色星星帽、扎双麻花辫的女孩在前，黑长发穿灰西装的闺蜜贴在她右后方，两人都面无表情看镜头。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 0.5s 起，后面的闺蜜两只手一上一下交替从前面女孩脸上扫过；每扫一下，前面的她就在咧嘴大笑和闭嘴面无表情之间切换一次，闺蜜全程板着脸，一直持续到约 8.5s。", at: 0.5 },
+        { title: "结尾怎么收", text: "约 9s 闺蜜放下手，两人同时笑崩，张大嘴、眯眼、肩膀抖动，笑着结束。", at: 9 },
+      ],
+      copyThis: "动作和表情节奏全部交给一段真人动作参考视频，提示词只负责换人、换场景和补最后 1 秒的笑场。",
+      approx: true,
+    },
+    tags: [
+      "10秒 · 自拍整活",
+      "1:1 方屏",
+      "3 张参考图 + 动作参考视频",
+      "一镜到底 · 手机前置视角",
+      "变脸梗 · 双人",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 3 张参考图（image_1–3）",
+        description:
+          "image_1、image_2 是两个角色的设定图，每张都要有一张大尺寸脸部特写，全身图上的灰色圆圈是遮挡标记、不能出现在成片里；image_3 是房间图，决定卧室的结构、陈设、配色和光线。作者没有公开这 3 张图，也没有给出图提示词，需要自己准备。",
+      },
+      {
+        number: 2,
+        title: "第二步：准备动作参考视频（video_1）",
+        description:
+          "前 9 秒的手部动作、表情切换时机、点头和两人站位，全部照搬 video_1。作者在回复里放出了他用的动作视频（一段两人自拍变脸的真人梗视频，16:9 带黑边），提示词里要求成片铺满画面、不要保留参考视频的黑边，也不要继承参考视频里人物的长相和衣服。",
+      },
+      {
+        number: 3,
+        title: "第三步：先让 GPT 按你的角色改写，再贴进视频模型",
+        description:
+          "作者特别提醒：这段提示词是按他自己的角色和房间写的，不能直接照搬，要先丢给 GPT，让它按你的角色和场景改写。改好后连同 3 张图和动作视频一起交给视频模型。作者没有说明用的是哪个视频模型。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–0.7s 前置自拍，两人面无表情看镜头；后面的闺蜜一只手举到帽子上方，另一只手放在前面女孩脸下方。" },
+      { number: 2, description: "0.7–9s 闺蜜两只手上下交替扫过前面女孩的脸，前面的她在咧嘴大笑和闭嘴面无表情之间来回切换，闺蜜始终板着脸。" },
+      { number: 3, description: "9–10s 闺蜜放下手，两人同时大笑，肩膀抖动，画面轻微晃动，笑着结束。" },
+    ],
+    constraints:
+      "只能有两个人；前面的女孩全程拿着手机，手和手机都不能入镜；一镜到底，不剪辑、不变焦、不绕拍；手扫过时人物的脸、发型、衣服和配饰不能变，帽子不能掉，外套保持露肩；保持参考动作的方向，不要左右镜像；不要镜子画面、多余的手、字幕和换装；最后 1 秒两人的笑声和表情同步。与成片不符：后面闺蜜的手腕上戴着一块表，提示词里没写，像是从动作参考视频带过来的。缺口：作者没公开 image_1–3 这 3 张参考图，也没给出图提示词；成片右上角有一个像素风「G」字水印，看不出是哪个平台；动作参考视频是真人素材，只留在本地，没有放进教程；音频没有核对。",
+    video_prompt: {
+      title: "双人自拍变脸 · 视频提示词",
+      subtitle: "10s · 1:1 · image_1–3 + video_1 · 英文完整提示词（作者回复长帖）",
+      content: `SCENE CONTEXT
+A playful selfie video of two friends inside the colorful attic bedroom in <<<image_3>>>. Recreate the hand-sweep and expression-switching gag from <<<video_1>>> for the first nine seconds. During the final second, both break into spontaneous, wide-mouthed laughter.
+
+ACTIVE REFERENCES / REFERENCE USAGE
+<<<image_1>>> defines the foreground character’s identity, hair, body proportions, and complete outfit: orange star cap, twin braids, white keyhole crop top, cream jacket worn off the shoulders, and matching accessories.
+<<<image_2>>> defines the rear character’s identity, hair, body proportions, and complete outfit: long black hair with bangs, gray suit, white blouse, and black choker with an orange bead.
+Use the large facial portrait on each sheet for facial identity. The gray circles on the full-body views are reference masks and must not appear.
+<<<image_3>>> defines the room’s architecture, furnishings, colors, and lighting. Adapt its viewing angle to the selfie camera.
+<<<video_1>>> controls the first nine seconds of hand choreography, facial-expression timing, head movements, and relative character placement. Its performers’ appearances and clothing do not transfer.
+
+FIRST FRAME
+The video begins directly through the phone’s front-facing camera. <<<image_1>>> holds the phone at arm’s length, approximately at eye level, with her holding hand and phone outside the frame. Her face and upper chest fill the foreground. <<<image_2>>> is close behind her, slightly offset toward screen-right, with her face clearly visible beside <<<image_1>>>’s head. Both initially look into the lens with straight faces.
+
+WORLD AND SPATIAL BLOCKING
+They are positioned on the pink rug near the foot of the bed, with the blue photo-covered wall behind them. Portions of the pastel sloped ceiling and warm string lights remain visible above their heads; the bed and bright curtained window appear toward screen-right.
+Keep the room consistent with <<<image_3>>>, allowing the tight selfie framing to crop most furniture.
+<<<image_1>>> holds the phone throughout. <<<image_2>>> has both hands free to perform the gesture around <<<image_1>>>’s face. Maintain their front-to-back arrangement.
+
+SHOT FORMAT
+One continuous 10-second selfie take. The selfie image fills the output frame without the reference video’s black side padding. No cuts or external views of them filming.
+
+OPTICS AND CAMERA
+Natural front-camera perspective at arm’s length, with both faces readable and enough space above <<<image_1>>>’s cap for the hand movements.
+Keep the camera almost stationary during the gag, matching the reference’s stable composition with only slight natural hand drift. During the final laughter, allow a small, believable wobble from <<<image_1>>>’s shaking shoulders while keeping both faces in frame. No zoom, orbit, or dramatic reframing.
+
+ACTION / PERFORMANCE TIMING
+0.0–0.7s:
+Match the reference’s brief neutral opening and hand preparation. <<<image_1>>> keeps a straight face. <<<image_2>>> raises one open hand above the cap and positions the other below <<<image_1>>>’s face.
+
+0.7–9.0s:
+<<<image_2>>> reproduces the reference’s rapid alternating hand sweeps, exchanging the upper and lower hand positions and briefly obscuring <<<image_1>>>’s face as they pass.
+<<<image_1>>> switches between a broad toothy grin and a closed-mouth neutral expression at the corresponding moments in <<<video_1>>>. Preserve the original sweep directions, pace, short expression holds, blinks, and small head dips. <<<image_2>>> remains deliberately deadpan.
+Use the reference’s precise motion timing rather than inventing additional gestures.
+
+9.0–10.0s:
+The gag breaks. <<<image_2>>> stops sweeping and lowers her hands clear of both faces. Both simultaneously burst into broad, open-mouthed laughter: cheeks lift, eyes crinkle, and shoulders bounce naturally. <<<image_2>>> leans slightly closer beside <<<image_1>>> so both laughing faces remain visible. <<<image_1>>> keeps holding the phone. End while both are still laughing, without a freeze or posed finish.
+
+PHYSICS AND CONTINUITY
+Maintain each character’s face, hairstyle, clothing, and accessories through all hand occlusions. Expressions change naturally without identity morphing. <<<image_2>>>’s hands remain anatomically connected to her arms.
+<<<image_1>>>’s orange cap stays securely on, her braids remain intact, and her cream jacket stays off her shoulders. Keep the hand choreography clear of the cap brim. Preserve natural hair and fabric movement.
+
+LIGHTING
+Use the bedroom’s soft window daylight from screen-right, balanced with the warm glow of the string lights. Keep both faces properly exposed and the pastel room recognizable. Lighting and exposure remain stable.
+
+AUDIO
+No added dialogue or narration. During the final second, both characters’ natural laughter begins in sync with their visible expressions, over quiet room ambience.
+
+LOCAL CONSTRAINTS
+Exactly two characters. Preserve the reference choreography’s screen direction without reversing it. Keep the phone outside its own camera view. No mirror shot, extra hands, face masks, captions, wardrobe changes, or unrelated action.`,
+    },
+  },
+  // 查重别名(同帖 Seedance 2.0 对比版，未收录): https://x.com/nastassiavideo/status/2100837082243407929/video/2
+  {
+    id: "nastassiavideo-burger-seedance-2-5",
+    title: "暗调汉堡广告 · 14 镜头快切",
+    subtitle: "X · @nastassiavideo · Seedance 2.5 · 15秒 · 16:9",
+    description:
+      "Seedance 2.5 双层芝士汉堡广告：压肉饼、抛饼、切番茄、淋芝士、一刀插穿，14 个镜头硬切 15 秒。",
+    video: "/tutorials/nastassiavideo-burger-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-burger-seedance-2-5/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "美食广告",
+    shots: 14,
+    references: 1,
+    model: "Seedance 2.5",
+    style: "暗调美食广告 · 微距 + 急推急刹 · 硬切蒙太奇",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/nastassiavideo/status/2100837082243407929",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 1240,
+    sourceStats: { asOf: "2026-09-27", likes: 31, reposts: 1, bookmarks: 4 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "压肉饼微距 → 人物亮相 → 食材快切 → 组装 → 推板 → 一刀插穿定格",
+      opening: "第 0 秒直接是铁板上铲子把牛肉球压扁的低角度微距，约 2s 切到穿 NastassiaVideo 围裙的她抬眼看镜头。",
+      openingAt: 0,
+      beats: [
+        { title: "食材快切", text: "约 3–4s 铲起肉饼、手腕一抖把肉饼抛起；约 5s 刀切番茄；约 6s 生菜叶逆光；约 7s 芝士淌过肉饼边缘。", at: 3 },
+        { title: "组装成型", text: "约 8s 双层芝士汉堡成品；约 9s 手指把芝麻顶盖按上；约 10–11s 她把木板推向镜头，镜头后退露出人。", at: 8 },
+        { title: "结尾怎么收", text: "约 12s 她拿起主厨刀；约 13–14s 刀从顶盖正中插穿整个汉堡；约 15s 刀立在汉堡上，她站在后面看镜头定格。", at: 12 },
+      ],
+      copyThis: "开头三段先写人物、产品、场景三张参考的文字说明，再逐镜头写「镜头焦段 + 动作 + 镜头怎么加速/刹车 + <音效>」，最后用一段总运镜规则统一节奏。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 美食广告",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "14 镜头逐条写",
+      "音效写在尖括号里",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：先用文字写清三张参考",
+        description:
+          "提示词开头三段分别描述人物 Nastassia（灰蓝眼睛、浅棕层次中长发、黑 T 恤、印白字 NastassiaVideo 的黑围裙）、双层芝士汉堡（芝麻布里欧修面包、两块压扁牛肉饼、切达芝士、生菜、番茄、紫洋葱、酸黄瓜、酱，层序固定）和暗调专业厨房，每段末尾挂一个参考图占位符。作者在主帖贴出了人物 Nastassia 的设定图（正脸、侧脸、背面发型、围裙正背面全身），对应第一段的人物参考占位符；汉堡和厨房两张参考图作者没有公开。",
+      },
+      {
+        number: 2,
+        title: "第二步：定整体影调，再逐镜头写 14 条",
+        description:
+          "总述写 ARRI Alexa 35 质感、24fps、胶片颗粒、90% 画面是深青灰阴影、只留一处琥珀色火光。随后 Shot 1–14 每条都写焦段（24/35/50/85/100mm）、动作、镜头怎么急推急刹，以及尖括号里的音效，比如 <heavy dull thud, aggressive sizzle>。",
+      },
+      {
+        number: 3,
+        title: "第三步：用总运镜规则收尾，贴进 Seedance 2.5",
+        description:
+          "最后一段总规则：冲向动作、在质感上刹车、放进下一刀；广角和微距交替；只在压肉、抛饼最高点和最后一刀用变速；不要环绕、数码变焦、漂浮食材、台词、字幕和片尾字。整段贴进 Seedance 2.5 一次生成。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-burger-nastassia-sheet",
+        number: "1",
+        title: "人物 Nastassia · 设定图",
+        subtitle: "对应提示词第一段人物参考 <<<ff948aa7…>>>；主帖第二张图原件（1600px 压缩）",
+        image: "/tutorials/nastassiavideo-burger-seedance-2-5/refs/nastassia-character-sheet.jpg",
+        prompt: "作者未公开这张设定图的出图提示词。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 铁板上铲子压扁牛肉球、铲起煎好的肉饼。" },
+      { number: 2, description: "2–3s 她站在灶火前抬眼看镜头，微笑。" },
+      { number: 3, description: "3–5s 铲子铲肉饼、手腕一抖把肉饼抛到空中。" },
+      { number: 4, description: "5–7s 刀切番茄、逆光生菜叶、芝士从肉饼边缘淌下。" },
+      { number: 5, description: "8–9s 双层芝士汉堡成品，手指按上芝麻顶盖。" },
+      { number: 6, description: "10–12s 她把木板推向镜头，拿起主厨刀。" },
+      { number: 7, description: "13–15s 刀从顶盖插穿汉堡，刀立在汉堡上，她在后面看镜头定格。" },
+    ],
+    constraints:
+      "人物脸和围裙字样、汉堡层序与比例都要和参考一致；变速只用在压肉、抛饼最高点和最后一刀；不要环绕、数码变焦、漂浮食材、镜头穿过实物、台词、人声、字幕、片尾字。与成片不符：提示词写 18 秒、24fps，成片约 15.5 秒、30fps；Shot 6 切紫洋葱在成片里没有出现；Shot 9 两块肉饼落到底座的过程被跳过，约 8s 直接是组装好的汉堡；Shot 2 人物亮相排在第 2 秒，前面只有压肉一镜。缺口：提示词里的汉堡和厨房两张参考图作者没有公开；背景音乐和音效没有逐条核对。",
+    video_prompt: {
+      title: "Burger Battle · Dark Food Commercial · 14 Shots",
+      subtitle: "Seedance 2.5 · 16:9 · 英文完整提示词（作者贴出的提示词截图，逐字转录）",
+      content: `Nastassia — grey-blue eyes, layered light-brown medium-length hair, natural skin texture, body proportions, black T-shirt, black apron with exact white lettering "NastassiaVideo", black trousers, bare hands, no jewelry — facial identity and wardrobe reference <<<ff948aa795194c81bcf50e89bee4d1b3>>>.
+
+Signature premium burger — sesame brioche bun, two smash beef patties, melted cheddar, lettuce, tomato, purple onion, pickles, sauce, strict layer order preserved — product reference <<<Element_Бургер_На_Доске_key_img>>>.
+
+Dark professional cooking stage — charcoal-metal counter, cast-iron griddle screen-left, dark walnut board centre, skillet on rear gas burner with open flame, near-black background, neutral soft side key light, warm amber firelight rim, deep negative fill — scene reference <<<Element_Кухонная_Сцена_Гриль_key_img>>>.
+
+Single continuous 18-second cinematic food commercial. ARRI Alexa 35 look, 24fps, fine film grain, controlled highlight roll-off, deep teal-charcoal shadow tones dominating 90% of frame, single warm amber practical flame accent. Hard editorial montage across 14 distinct phases with fast camera accelerations, braking textures, motivated scale changes, and short speed ramps.
+
+Shot 1 — SMASH:
+Extreme low griddle-level macro (85mm). Spatula drives beef ball hard onto hot steel mid-action; fast camera push with recoil on impact. Brief slow-motion shows meat spreading laterally, fat droplets scattering, steam rising. Return to real speed as spatula lifts. <heavy dull thud, aggressive sizzle>.
+
+Shot 2 — FACE REVEAL:
+Low medium shot (35mm). Camera rises fast from her hand and "NastassiaVideo" apron lettering up to her face and brakes. She raises her eyes directly into lens with a controlled, confident half-smile. Warm burner flare rims her shoulder and hair. <guitar riff enters>.
+
+Shot 3 — CRUST SCRAPE:
+Extreme macro (100mm). Spatula blade races laterally under browned patty, camera tracks alongside then brakes as crust peels from hot steel. Fat bubbles visible at patty edge. Blade rises and partially occludes lens as cut approaches. <metal scrape, sizzle>.
+
+Shot 4 — TOSS AND CATCH:
+Low close shot (50mm). Wrist flick launches patty above skillet; camera arcs upward briefly. Brief slow-motion at apex — patty suspended, juice droplets frozen. Snap to real speed, camera dips and brakes on sizzling pan landing. One intact patty settled in skillet. <sizzle burst on landing>.
+
+Shot 5 — TOMATO CHOP:
+Board-level macro, tight on the tomato and knife blade. Knife descends fast and strikes the tomato with full physical force — blade makes hard, clear contact with the walnut board in a single decisive downward chop; camera fires a rapid short push-in toward the blade at the instant of contact then immediately snaps into a sharp pull-back, creating a percussive whip recoil; tomato half falls forward toward lens. <sharp hard chop impact, blade-on-board crack>.
+
+Shot 6 — ONION SNAP:
+Tight overhead on purple onion ring at board surface. Knife comes down fast and clean — blade hits board with crisp audible contact, onion ring separates and drops flat; camera fires a short aggressive diagonal whip-slide right on the beat of impact then brakes hard; knife exits frame right with momentum. <dry sharp crack, blade-on-board snap>.
+
+Shot 7 — LETTUCE:
+Close macro. Rinsed lettuce leaf snapped once, releasing water droplets outward. Camera tracks right alongside ruffled edge. Backlit veins and droplets catch warm rim light. Quick rightward whip into next cut. <wet snap, droplets>.
+
+Shot 8 — CHEDDAR EDGE:
+Camera enters moving right, brakes into extreme macro. Melted cheddar folds over hot patty edge, glossy against dark seared crust. One fat bead travels slowly down the cheese face. Camera holds readable pause on texture.
+
+Shot 9 — DOUBLE DROP:
+Low close-up on dressed bottom bun — sauce pooled, lettuce layered, tomato placed. Two cheddar-covered patties arrive on spatula from above; camera surges toward them as she slides the stack onto the bun. Camera brakes on landing; cheese folds outward. Exactly two patties, stacked. <bass accent, heavy settle>.
+
+Shot 10 — CAP IT:
+Tight three-quarter overhead. Fingers lower sesame top bun onto onion, pickles, and sauce layer. Camera descends fast with bun. Soft bounce settle as bun seats; fingertips withdraw from frame. Finished burger matches reference proportions exactly. <soft compression>.
+
+Shot 11 — MACRO RUSH:
+Extreme side macro (100mm). Fast lateral pass across seared crust surface. Camera brakes at hanging cheddar edge and sauce bead. Foreground lettuce ruffles across lower frame revealing stack depth. Sharp texture held.
+
+Shot 12 — BOARD CHARGE:
+Low wide (24mm) aligned with walnut board. She drives the board forward, burger rushes toward lens as camera retires matching movement then travels slightly farther back, revealing her face and apron behind the burger. Board stops with wooden knock, camera brakes with natural inertia settle. Her hand releases the board edge. <wooden knock>.
+
+Shot 13 — THE WINDUP:
+Medium close three-quarter (50mm). Her right hand lifts chef's knife from beside the board. Camera pushes and tilts upward tracking blade steel — reflection travels along flat of knife. Knife point rotates downward above burger crown. Her left hand rests clear beside her body. She locks focused gaze toward lens. Brief musical dropout. Cut begins as downward stroke initiates. <silence before impact>.
+
+Shot 14 — KNIFE / IMPACT / REVEAL (one continuous final shot, 35mm):
+Rapid downward tracking whip-tilt follows hand and blade — knife penetrates centre of sesame bun crown and drives through all burger layers, tip lodging in walnut board; camera brakes hard at burger height on contact. Brief impact slow-motion: bun compresses around blade, sesame seeds scatter, cheddar shifts slightly, one tight camera recoil. <heavy wooden THUNK, final guitar hit>. Resume real speed — she releases handle and withdraws hand; camera accelerates backward and upward in a short 20-degree side arc, strong foreground parallax keeping knife handle dominant and clear of her face. Camera decelerates into stable hero composition: burger with embedded vertical knife dominating foreground, Nastassia behind with visible "NastassiaVideo" apron lettering, small satisfied smile, direct gaze into lens. Hold final image with subtle handheld breathing. (Heavy modern instrumental rock — tightly muted guitar, punchy bass, dry drums — guitar chord fades over faint grill sizzle).
+
+Overall camera choreography:
+accelerate toward action, brake on texture, release into next cut; alternate 24–35mm tracking wide shots with 85–100mm macro close-ups; wide lenses stay away from her face; vary movement direction with matching whip transition axes; speed ramps only on meat compression, patty apex, and final knife contact; strong foreground parallax throughout; controlled handheld inertia; short recoil on major impacts only. No continuous orbit. No digital zoom. No floating ingredients. No camera crossing solid objects. No prolonged slow motion beyond designated ramps. No speech. No vocals. No subtitles. No end title. No BAKU branding. No music added by model.`,
+    },
+  },
+  // 查重别名(同帖 9:16 竖屏版，未收录): https://x.com/nastassiavideo/status/2099350859490492465/video/2
+  // 查重别名(引用帖：同作者首次施工测试，9:16，另一条视频): https://x.com/nastassiavideo/status/2098705897195295194
+  {
+    id: "nastassiavideo-burj-khalifa-gravity-build-16x9",
+    title: "哈利法塔重力切换建造 · FPV 一镜到底",
+    subtitle: "X · @nastassiavideo · 模型未标注 · 15秒 · 16:9",
+    description:
+      "一镜到底 FPV：哈利法塔从工地地面开始，重力来回切换把钢梁、楼板、玻璃吸上去，15 秒盖完。",
+    video: "/tutorials/nastassiavideo-burj-khalifa-gravity-build-16x9/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-burj-khalifa-gravity-build-16x9/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "建造过程",
+    shots: 1,
+    references: 1,
+    model: "未标注（作者未公开）",
+    style: "照片级建筑施工特效 · FPV 第一人称飞行 · 一镜到底",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/nastassiavideo/status/2099350859490492465",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 14092,
+    sourceStats: { asOf: "2026-09-27", likes: 99, reposts: 10, bookmarks: 72 },
+    formats: ["拆装·制作过程"],
+    hook: {
+      structure: "贴地冲刺 → 碎屑上飞 → 钢构猛升 → 立面合拢 → 塔冠失重 → 高空全景",
+      opening: "第 0 秒镜头贴着工地沙地朝远处的楼群冲，约 1s 地面扬起一片粉尘和碎屑。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–4s 钢梁和碎片往天上飞，镜头跟着钢构往上爬；约 5s 穿过一层还没装立面的混凝土楼板。", at: 2 },
+        { title: "立面合拢", text: "约 6–8s 银色立面一圈圈包上塔身，周围全是飞着的板材；约 9–10s 塔冠附近的环形构件在空中漂着一层层落下。", at: 6 },
+        { title: "结尾怎么收", text: "约 11–12s 塔尖装好；约 13–15s 镜头拉到高空，整座哈利法塔和青绿色湖水完整入镜。", at: 11 },
+      ],
+      copyThis: "先写一条「重力方向顺序」（向上 → 向左 → 朝向建筑 → 向上 → 失重 → 向下），再按 0.1 秒精度的时间轴把每次切换对应一段施工阶段，参考图只管最终落成的样子。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 建造过程",
+      "16:9 横屏",
+      "FPV 一镜到底",
+      "中文提示词",
+      "1 张建筑参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备一张落成后的建筑参考图",
+        description:
+          "作者贴出的参考图是一张竖版高空俯拍的哈利法塔落成图，带迪拜喷泉湖和周边楼群。提示词里用 @image1 引用它，只控制建筑身份和最终完成状态，不限制开场构图。作者在引用帖的回复里说，做法是先用 GPT 2.5 做出完整建筑，再拆成各施工阶段；这张图的出图提示词没有公开。",
+      },
+      {
+        number: 2,
+        title: "第二步：写规则，再写 0.1 秒精度的时间轴",
+        description:
+          "提示词先规定整体视觉、看不见的 FPV 摄影机、重力切换顺序和「接近 → 旋转 → 对齐 → 接触 → 锁定」的构件规则，然后把 15 秒切成 9 段：贴地突进、猛烈向上、切换向左、朝向建筑、高速装配、再次向上、环绕立面、失重、向下锁定，最后留 2.5 秒完整揭示。",
+      },
+      {
+        number: 3,
+        title: "第三步：比例选 16:9 生成",
+        description:
+          "提示词原文写的是「竖屏9:16」，作者说同一段提示词出了两版，这版 16:9 是忘了改画幅设置才出来的，她自己更喜欢这版（更有电影感）。跟做时整段照贴，把生成比例设成 16:9 即可。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-burj-image1",
+        number: "1",
+        title: "哈利法塔落成参考图（@image1）",
+        subtitle: "主帖第 2 张图 · 941×1672 竖版高空俯拍",
+        image: "/tutorials/nastassiavideo-burj-khalifa-gravity-build-16x9/refs/image1-burj-khalifa.jpg",
+        prompt: "作者未公开这张参考图的出图提示词（作者在引用帖回复里提到用 GPT 2.5 先做完整建筑）。视频提示词中的用法：@image1 定义最终建筑及其环境的准确外观；参考图控制建筑身份和最终完成状态，不限制开场构图或飞行角度。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 镜头贴着工地沙地冲向楼群，地面扬起粉尘碎屑。" },
+      { number: 2, description: "2–4s 钢梁和碎片向上飞，镜头跟着钢构往上爬，下方露出城市和湖。" },
+      { number: 3, description: "5s 穿过一层没有立面的混凝土楼板。" },
+      { number: 4, description: "6–8s 银色立面包上塔身，空中飞满板材。" },
+      { number: 5, description: "9–12s 塔冠附近的环形构件在空中漂浮、落位，塔尖装好。" },
+      { number: 6, description: "13–15s 高空斜侧全景，整座哈利法塔和青绿色湖水完整入镜。" },
+    ],
+    constraints:
+      "全程一镜到底，无剪切、无瞬移；画面里不能出现无人机、螺旋桨、摄影机或其影子；镜头只穿过真实的开放缝隙，不穿透实体；重力只作用于松散施工材料，已装结构、城市和湖泊固定；构件不融化、不复制、不凭空生长；无重力波、发光能量、力场图形；只要音效，无对白、音乐、字幕。与成片不符：提示词写「竖屏9:16」，这版成片是 16:9（作者说忘了改画幅）；约 4s 镜头就已经在高空俯看湖面，提示词里这时应该还在工地低处朝向建筑；「切换向左」「失重」这几次重力换向在画面里不容易分辨；成片约 15.1 秒、30fps。缺口：作者没有标注用的视频模型；参考图的出图提示词没公开；提示词截图里有两处字形模糊（「结构跨间」「连续建造进度」），按上下文校读；音频没有核对。",
+    video_prompt: {
+      title: "哈利法塔——重力切换建造",
+      subtitle: "模型未标注 · 16:9 成片（提示词原文写 9:16）· 中文完整提示词（作者贴出的提示词截图，逐字转录）",
+      content: `哈利法塔——重力切换建造
+
+时长严格为15秒。竖屏9:16。
+全程为一个连续、不可能的FPV第一人称飞行长镜头，一镜到底。
+无剪切、无蒙太奇、无瞬移、无机位重置。
+
+参考图：
+@image1 定义最终建筑及其环境的准确外观：完整的哈利法塔建筑结构、比例、高度、楼层数量、逐级退台、向上收窄的轮廓、塔尖、银灰色立面、窗格排列、入口和裙楼。保留参考图中湖泊、道路、景观绿化及周围建筑的位置关系，不得凭空增加其他建筑。
+
+参考图控制建筑身份和最终完成状态，不限制开场构图或飞行角度。镜头从尚未完工的工地地面开始。最终画面必须呈现100%建造完成、与@image1一致的建筑。
+
+整体视觉：
+照片级真实的建筑施工视觉特效。混凝土、钢材、钢筋和反射玻璃具有真实、可触知的材质细节。
+匹配参考图中的定向阳光、偏冷的空气透视、青绿色湖水及银色立面高光。
+太阳方向始终一致，不使用过度偏黄的调色。
+
+摄影机：
+完全不可见的第一人称飞行视点，使用直线投影广角镜头。
+画面中绝不能出现无人机、螺旋桨、摄影机机身、支架、操作人员、摄影机阴影或反射。
+采用贴地加速、猛烈爬升、倾斜转弯、环绕上升以及紧贴材料的掠飞。
+镜头沿连续空间路径穿过真实的开放缝隙，绝不穿透实体表面。
+高速加速时具有强烈视差和方向性运动模糊。
+关键接触前短暂减速0.2秒，接触瞬间立即恢复高速。
+摄影机始终保持运动。
+
+建造与重力规则：
+向上 → 向左 → 朝向建筑 → 向上 → 失重 → 向下。
+每次重力切换时，所有松散施工物件、空中粉尘和第一人称视点同时作出反应。
+重型构件沿急剧弯折的轨迹改变方向，同时保持清晰可读的惯性。
+重力变化仅作用于该工地的松散施工材料；已安装结构、周围城市和湖泊始终固定。
+
+每个构件必须遵循：
+接近 → 旋转 → 对齐 → 接触 → 锁定。
+构件接近连接位置时，沿精确引导路径就位。
+建造从基础开始，依次推进至核心筒、楼层、退台、立面和塔尖。
+已安装部分始终保持安装状态。
+不融化、不变形融合、不复制、不凭空生长材料。
+不出现可见重力波、发光能量或力场图形。
+
+连续动作时间轴：
+00:00–00:01.3 — 向上／贴地突进
+镜头从粗糙平整地面上方20厘米处开始，快速冲向基础和裸露的下部核心筒。
+一颗石头向上升起，碎石、螺栓和粉尘立即跟随。
+镜头直接冲入向上流动的碎屑，侧身绕过一块混凝土碎片，同时保持向前速度。
+00:01.3–00:02.6 — 猛烈向上
+钢梁、钢筋笼、混凝土构件和管道向天空喷射。
+第一人称视点被同时拉入猛烈的垂直爬升。
+一根沉重钢梁从镜头旁几厘米处掠过，垂直粉尘尾迹突出加速度。
+始终让未完成的塔楼位于前方，作为空间定位参照。
+00:02.6–00:03.8 — 切换向左
+重力骤然转向工地左侧。
+所有空中材料同时急转向左，原本垂直的粉尘尾迹弯折至侧面。
+视点倾斜并被甩向左侧，与材料一同移动，惊险避开一根旋转钢梁。
+下方基础始终固定不动。
+00:03.8–00:05.0 — 朝向建筑
+重力重新指向裸露的建筑结构。
+材料从相对的两侧向内汇聚，对准各自的连接位置。
+镜头跟随一块混凝土楼板构件，猛烈加速冲向塔楼。
+核心筒通过连续构件装配逐段升高。
+00:05.0–00:06.5 — 高速装配突袭
+立柱竖直就位，横梁锁定在支撑之间，楼板构件依次落入各层位置。
+镜头穿行于裸露钢筋笼之间，并穿过一个开放的结构跨间。
+一块巨大楼板迎面冲来；镜头立即向侧下方俯冲，穿过相邻的开放洞口。
+楼板对齐时短暂进入仍在运动的慢动作，随后恢复全速接触——砰！
+楼板紧贴视点后方重重就位，连接处爆出局部碎屑和粉尘。
+在立面封闭前，镜头倾斜转弯，飞至建筑外侧。
+00:06.5–00:07.5 — 再次切换向上
+松散材料和粉尘突然沿弧线转向上方。
+视点被重新拉入沿建筑外侧的垂直爬升。
+尚未安装的钢梁高速掠过，立面模块沿塔楼向上升起。
+下方已经完成的楼层保持刚性固定，建造前沿继续向上推进。
+00:07.5–00:09.5 — 环绕立面风暴
+镜头沿塔楼逐渐收窄的退台轮廓，快速螺旋上升。
+通过连续向外和向内飞行，在紧贴立面的掠飞与较宽的环绕弧线之间变化。
+银色玻璃模块从下方追上并超过视点，旋转朝向对应框架，在正确楼层锁定。
+清晰呈现下方已经完成、上方仍为裸露结构的连续建造进度。
+贴近一个玻璃面板连接点：短暂减速，锁扣清脆扣合，立即再次向上加速。
+这一段结束时，镜头位于尚未完成的最上部退台旁。
+00:09.5–00:10.5 — 失重
+向上的加速度同时消失。
+松散的顶部立面模块、金属构件、螺栓和粉尘依靠剩余惯性漂移，缓慢旋转。
+视点在它们之间滑行，沿塔冠周围继续走一条平缓弧线。
+一段旋转金属构件贴近镜头掠过，接缝和表面纹理清晰可见。
+形成一个短暂、清晰的失重喘息节拍，但画面绝不冻结。
+00:10.5–00:12.5 — 向下／最终锁定
+重力骤然转向下方。
+视点与下落构件一起向下沉降，同时始终保持在塔楼外侧。
+已经预先对齐的顶部模块快速、有序地向下落入各自支撑位置。
+剩余塔冠面板就位；最后一段塔尖垂直下降，插入对应连接座。
+在最后的接近过程中短暂减速，始终保持运动。
+12.2秒时立即恢复全速：塔尖以一次干脆、沉重的金属撞击完成锁定。
+连接处短暂震动，并释放少量局部粉尘，随后稳定。
+到12.5秒，整座塔楼和裙楼永久完成建造，空中不再漂浮任何结构构件。
+00:12.5–00:15.0 — 完整建筑揭示
+将向下运动衔接为向外的大幅倾斜弧线，随后在开阔空域中加速向后远离塔楼。
+镜头始终朝向建筑，随着距离拉开，逐步揭示从裙楼到塔尖的完整高度。
+青绿色湖泊、道路和保持原样的周围城市在下方展开。
+平稳减速，进入高空斜侧四分之三视角的全景构图。
+最后0.8秒保持轻微后退漂移，整座完工塔楼清晰可读、完整入镜、不被裁切。
+此后不再发生施工或建筑形态变化。
+
+声音：
+仅使用音效：高速气流、具有方向感的碎屑掠过声、钢材受力声、混凝土撞击声及玻璃框架锁扣声。
+每次撞击声必须与真实接触瞬间严格同步。
+失重阶段将气流声降低为轻微、悬浮般的静谧声场。
+重力向下切换时出现低沉气流冲击，随后是塔尖最终锁定的沉重撞击声。
+最终揭示阶段收束为高空风声。
+无对白、无音乐、无字幕、无屏幕重力箭头。`,
+    },
+  },
+  {
+    id: "nastassiavideo-grumpy-monster-pumpkin-pie",
+    title: "暴躁怪兽做南瓜派 · 万圣节美食 vlog",
+    subtitle: "X · @nastassiavideo · 模型未标注 · 14秒 · 9:16",
+    description:
+      "毛绒绿怪兽一脸嫌弃地做南瓜派：打蛋、搅拌、压派皮、倒馅、进烤箱，手写字幕美食 vlog，8 镜 15 秒。",
+    video: "/tutorials/nastassiavideo-grumpy-monster-pumpkin-pie/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-grumpy-monster-pumpkin-pie/poster.jpg",
+    duration: "14秒",
+    durationSec: 14,
+    styleLabel: "美食 vlog",
+    shots: 8,
+    references: 4,
+    model: "未标注（作者未公开）",
+    style: "照片级美食博主风 · 万圣节暖调厨房 · 手写动画字幕",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/nastassiavideo/status/2099036524226511264",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 1688,
+    sourceStats: { asOf: "2026-09-27", likes: 41, reposts: 4, bookmarks: 20 },
+    formats: ["拆装·制作过程", "角色表演"],
+    hook: {
+      structure: "怪兽冷脸开场 → 俯拍备料 → 搅拌 → 压派皮 → 倒馅 → 烤箱 → 试吃",
+      opening: "第 0 秒是绿色毛绒怪兽系着南瓜围裙站在空玻璃碗后面，面无表情看镜头，左上角手写「Pumpkin Pie Today!」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3s 俯拍毛手往碗里打蛋；约 4s 加糖和南瓜；约 5s 搅拌特写配「mix mix mix」；约 6–7s 双手压派皮，配「perfect crust」。", at: 3 },
+        { title: "倒馅和烘烤", text: "约 8–9s 玻璃碗把南瓜馅倒进派盘，配「smooth pour」「almost ready」；约 10s 烤箱里的派，配「bake magic」。", at: 8 },
+        { title: "结尾怎么收", text: "约 11s 切好的一块派加奶油；约 12–13s 怪兽叉一口尝，脸还是臭着。", at: 11 },
+      ],
+      copyThis: "用一张四宫格把开场、备料、搅拌、倒馅四个关键画面先做成参考图，再在提示词里逐张写清用途，并锁死同一个碗、同一个派盘。",
+      approx: true,
+    },
+    tags: [
+      "14秒 · 美食 vlog",
+      "9:16 竖屏",
+      "手写动画字幕",
+      "4 张参考图",
+      "8 镜头按秒分",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：做 4 张关键画面参考图",
+        description:
+          "作者贴出的是一张四宫格：左上怪兽在厨房开场、右上俯拍备料、右下搅拌、左下倒馅，四张都已带手写字幕样式。提示词里分别用 @Image1–@Image4 引用。出图提示词没有公开。",
+      },
+      {
+        number: 2,
+        title: "第二步：写角色、道具、环境锁定",
+        description:
+          "CHARACTER LOCK 锁怪兽的绿色、稀疏乱毛、耷拉眼、触角和冷脸；PROP LOCK 锁同一个透明玻璃碗和同一个奶油色陶瓷派盘；ENVIRONMENT 锁明亮的万圣节厨房。再规定字幕只能出现在顶部或上侧，用白色手写字加橙色小涂鸦。",
+      },
+      {
+        number: 3,
+        title: "第三步：按秒写 8 个镜头",
+        description:
+          "0–2s 开场 → 2–3.4s 备料 POV → 3.4–5s 加料 → 5–6.9s 搅拌 → 6.9–8.2s 压派皮 → 8.2–10.2s 低角度倒馅（慢动作只给 0.3–0.4 秒）→ 10.2–11.9s 烤箱 → 11.9–15s 试吃反应，每个镜头写好要出现的字幕。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-pie-image1",
+        number: "1",
+        title: "@Image1 · 怪兽 + 厨房开场",
+        subtitle: "主帖第 2 张四宫格左上 · 已从拼图裁出",
+        image: "/tutorials/nastassiavideo-grumpy-monster-pumpkin-pie/refs/image1-monster-kitchen.jpg",
+        prompt: "作者未公开这张图的出图提示词。视频提示词中的用法：@Image1 = exact monster identity, exact kitchen, exact color palette, exact lighting, exact opening composition.",
+      },
+      {
+        id: "nastassiavideo-pie-image2",
+        number: "2",
+        title: "@Image2 · 俯拍备料 POV",
+        subtitle: "主帖第 2 张四宫格右上 · 已从拼图裁出",
+        image: "/tutorials/nastassiavideo-grumpy-monster-pumpkin-pie/refs/image2-pov-prep.jpg",
+        prompt: "作者未公开这张图的出图提示词。视频提示词中的用法：@Image2 = POV ingredient-prep reference, same glass bowl, same cream ceramic pie dish, same handwritten doodle style.",
+      },
+      {
+        id: "nastassiavideo-pie-image3",
+        number: "3",
+        title: "@Image3 · 搅拌",
+        subtitle: "主帖第 2 张四宫格右下 · 已从拼图裁出",
+        image: "/tutorials/nastassiavideo-grumpy-monster-pumpkin-pie/refs/image3-mixing.jpg",
+        prompt: "作者未公开这张图的出图提示词。视频提示词中的用法：@Image3 = mixing reference, same bowl, same kitchen, same batter texture, same doodle style.",
+      },
+      {
+        id: "nastassiavideo-pie-image4",
+        number: "4",
+        title: "@Image4 · 倒馅",
+        subtitle: "主帖第 2 张四宫格左下 · 已从拼图裁出",
+        image: "/tutorials/nastassiavideo-grumpy-monster-pumpkin-pie/refs/image4-pouring.jpg",
+        prompt: "作者未公开这张图的出图提示词。视频提示词中的用法：@Image4 = pouring reference, same bowl, same cream ceramic pie dish, same kitchen continuity, same doodle style.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 怪兽站在空玻璃碗后面冷脸看镜头，左上角「Pumpkin Pie Today!」。" },
+      { number: 2, description: "3–4s 俯拍毛手往碗里打蛋、加糖和南瓜块。" },
+      { number: 3, description: "5s 搅拌特写，字幕「mix mix mix」。" },
+      { number: 4, description: "6–7s 双手压派皮，字幕「perfect crust」。" },
+      { number: 5, description: "8–9s 玻璃碗把南瓜馅倒进派盘，字幕「smooth pour」「almost ready」。" },
+      { number: 6, description: "10s 烤箱里的南瓜派，字幕「bake magic」。" },
+      { number: 7, description: "11–14s 一块派加奶油，怪兽叉一口尝，仍然臭脸。" },
+    ],
+    constraints:
+      "怪兽造型不许改；全程同一个玻璃碗、同一个派盘、同一个厨房；字幕不放底部、不挡食物；不要拼贴、分镜格、多余的碗、暗黑恐怖调、过重橙色、畸形手、漂浮食材、随机文字、卡通感。与成片不符：成片约 14.5 秒，提示词写 15 秒；「prep time」「spice it up」「soft & silky」字幕在成片里看不到；结尾没有「spooky good」字幕；试吃时眼神软化不明显。缺口：作者没有标注用的视频模型；4 张参考图的出图提示词没公开；提示词截图里字幕清单有几处字形错乱（如 soft & silky、almost ready、bake magic），按各镜头里的同名字幕校读；音频没有核对。原片 60fps，网页版转成 30fps。",
+    video_prompt: {
+      title: "Grumpy Monster Makes Pumpkin Pie",
+      subtitle: "模型未标注 · 9:16 · 英文完整提示词（作者贴出的提示词截图，逐字转录）",
+      content: `GRUMPY MONSTER MAKES PUMPKIN PIE
+
+Exactly 15 seconds, vertical 9:16.
+Photorealistic cinematic Halloween food reel.
+Premium food-blog / food-commercial style.
+Strictly realistic live-action look.
+No cartoon rendering.
+No subtitles.
+No storyboard layout.
+No yellow/orange overgrading.
+Natural soft daylight with warm candle accents.
+Cute deadpan comedy tone.
+
+REFERENCES:
+@Image1 = exact monster identity, exact kitchen, exact color palette, exact lighting, exact opening composition.
+@Image2 = POV ingredient-prep reference, same glass bowl, same cream ceramic pie dish, same handwritten doodle style.
+@Image3 = mixing reference, same bowl, same kitchen, same batter texture, same doodle style.
+@Image4 = pouring reference, same bowl, same cream ceramic pie dish, same kitchen continuity, same doodle style.
+
+CHARACTER LOCK:
+Preserve the exact monster from @Image1:
+same green color, same skin texture, same messy sparse fur, same droopy eyes, same antennae, same facial proportions, same teeth, same deadpan grumpy expression.
+Do not redesign, beautify, stylize or recolor him.
+
+PROP LOCK:
+Use the exact same large transparent glass mixing bowl throughout the whole preparation.
+Use the exact same cream-colored ceramic pie dish throughout crust, pouring, baking and final presentation.
+Do not change bowl size, material, color or shape.
+Do not change pie dish size, material, color or shape.
+
+ENVIRONMENT:
+Use the exact same bright cozy Halloween kitchen throughout.
+Wood countertop, pumpkins, candles, autumn leaves, window daylight, ghost decor in background.
+Natural realistic shadows.
+Balanced neutral-warm color palette.
+No dark moody grading.
+
+CAMERA STYLE:
+Shot 1 = medium opening shot with the monster.
+After that, switch into authentic food-blog coverage:
+top-down POV,
+over-bowl POV,
+macro close-ups,
+low-angle pouring shot,
+oven-level shot,
+hero dessert close-up.
+Use dynamic editorial pacing, snap cuts, one or two whip-like transitions, gentle push-ins, slight handheld micro-sway.
+Make the reel feel energetic and premium.
+
+ANIMATED HANDWRITTEN TEXT:
+Use playful handwritten white captions with small orange accents and doodles.
+Text should animate in like hand-drawn writing.
+Add small arrows, hearts, spark lines, pumpkin doodles and a tiny ghost doodle.
+Do not place text at the bottom.
+Keep text only at top or upper side areas.
+Never cover the main food action.
+Use captions:
+"Pumpkin Pie Today!"
+"prep time"
+"spice it up"
+"mix mix mix"
+"soft & silky"
+"perfect crust"
+"smooth pour"
+"almost ready"
+"bake magic"
+
+AUDIO:
+No dialogue.
+Use food ASMR and kitchen SFX:
+light spoon tap,
+ingredient movement,
+pumpkin mash,
+egg crack,
+cream pour,
+whisking,
+dough press,
+thick batter pour,
+oven door close,
+fork into pie.
+Optional subtle playful Halloween music underneath.
+
+SHOT STRUCTURE:
+8 shots, exactly 15 seconds total.
+No extra shots.
+
+SHOT 1 — 0.0–2.0s — OPENING
+Medium cinematic shot.
+The monster stands behind the wooden counter in the bright cozy Halloween kitchen.
+In front of him: the same empty transparent glass bowl, spoon inside, eggs, sugar, flour, butter, milk, cinnamon, nutmeg, and the same cream ceramic pie dish.
+He looks straight at camera with total deadpan boredom.
+Camera makes a slight push-in.
+Animated upper-left text writes on:
+"Pumpkin Pie Today!"
+with orange doodles and a small pumpkin.
+HARD CUT.
+
+SHOT 2 — 2.0–3.4s — PREP POV
+Top-down POV from the monster's point of view.
+Only his furry hands are visible.
+The same bowl sits centered on the table, surrounded by pumpkin puree, eggs, milk, sugar, flour and spices.
+Hands quickly pull ingredients closer to the bowl in a neat food-blog rhythm.
+Animated upper-side captions:
+"prep time"
+"spice it up"
+SNAP CUT.
+
+SHOT 3 — 3.4–5.0s — ADDING INGREDIENTS
+Overhead / over-bowl POV.
+He cracks eggs into the bowl and adds pumpkin puree, sugar and spices.
+Use a fast but readable editorial pace.
+Keep the same bowl and same bright natural lighting.
+CUT.
+
+SHOT 4 — 5.0–6.9s — WHISKING
+Close over-bowl POV.
+He whisks the mixture quickly.
+Camera pushes slightly closer and gives a tiny dynamic orbit feel around the bowl.
+The filling becomes rich, glossy and smooth.
+Animated upper-left / upper-right text:
+"mix mix mix"
+"soft & silky"
+CUT.
+
+SHOT 5 — 6.9–8.2s — CRUST
+Top-down close POV.
+His hands press dough neatly into the same cream ceramic pie dish.
+Short punch-in on the fingers shaping the crust edge.
+Animated upper-side text:
+"perfect crust"
+CUT.
+
+SHOT 6 — 8.2–10.2s — POUR
+Dynamic low-angle macro food-commercial shot.
+He lifts the same glass bowl and pours the thick pumpkin filling into the same pie dish.
+The stream falls beautifully into the crust.
+Use a slight slow-motion emphasis only for the most satisfying part of the pour, about 0.3–0.4 seconds.
+Animated upper-side text:
+"smooth pour"
+"almost ready"
+CUT.
+
+SHOT 7 — 10.2–11.9s — OVEN
+Oven-level shot.
+He slides the filled pie into the oven.
+Camera almost travels inward with the pie, then the door closes.
+Quick believable baking transition through the oven window:
+the filling sets and becomes a finished baked pumpkin pie.
+Animated upper-side text:
+"bake magic"
+CUT.
+
+SHOT 8 — 11.9–15.0s — FINAL REACTION
+Start with a beautiful hero close-up of the finished pumpkin pie and one plated slice with whipped cream.
+Then the monster takes a forkful and tastes it.
+Hold a small comedy beat.
+His face stays grumpy, but his eyes soften very slightly with the tiniest satisfied reaction.
+No smile.
+Animated upper-side final text:
+"spooky good"
+with a tiny ghost doodle and small heart.
+
+NEGATIVE:
+No collage. No storyboard grid. No extra bowls. No changing props.
+No changing kitchen. No dark horror look. No heavy orange tint.
+No malformed hands. No extra fingers. No floating ingredients.
+No random text. No subtitles. No cartoon look. No monster redesign.`,
+    },
+  },
+  // 查重别名(引用帖：同作者 RED 角色跑酷 4 个版本，另一部片): https://x.com/nastassiavideo/status/2097311777012805924
+  {
+    id: "nastassiavideo-wrong-prince-kart-race",
+    title: "认错王子 · 卡丁车抢人反转",
+    subtitle: "X · @nastassiavideo · 模型未标注 · 15秒 · 16:9",
+    description:
+      "两个女孩开卡丁车抢王子，冲线后却一起扑向旁边的乌龟怪兽，王子躺地撒泼大哭，15 秒一镜到底。",
+    video: "/tutorials/nastassiavideo-wrong-prince-kart-race/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-wrong-prince-kart-race/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "喜剧反转",
+    shots: 1,
+    references: 5,
+    model: "未标注（作者未公开）",
+    style: "真人奇幻喜剧 · 卡丁车赛道 · 一镜到底跟拍",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/nastassiavideo/status/2097940769629782288",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 2520,
+    sourceStats: { asOf: "2026-09-27", likes: 52, reposts: 5, bookmarks: 22 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "赛车抢人 → 飞跃冲线 → 走向王子 → 反转抱怪兽 → 王子撒泼",
+      opening: "第 0 秒是两个女孩开卡丁车的并排脸部特写，戴绿帽和红帽，边开边喊。",
+      openingAt: 0,
+      beats: [
+        { title: "赛道追逐", text: "约 3–4s 镜头拉远到浮空赛道和金币；约 5s 两辆卡丁车一起飞过断口；约 6–7s 落到城堡前的格子地面刹停。", at: 3 },
+        { title: "反转", text: "约 8–11s 王子和乌龟怪兽 Bront 站在前面，两人下车站到他们身边；约 12–13s 两人绕过王子，一左一右抱住 Bront。", at: 8 },
+        { title: "结尾怎么收", text: "约 14–15s 王子仰面倒在地上蹬腿撒泼，Bront 搂着两个女孩。", at: 14 },
+      ],
+      copyThis: "前 8 秒只写赛车、后 7 秒只写喜剧，按 1.5–2.5 秒一段把表情和动作写死（皱鼻子、抿嘴、眼神移到怪兽），反转靠「王子张开双臂、女孩从他身边绕过去」这一个动作完成。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 喜剧反转",
+      "16:9 横屏",
+      "一镜到底",
+      "5 张参考图",
+      "马里奥赛车风",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 5 张参考图",
+        description:
+          "作者在帖里放了一段参考图拼图视频：@Image1 浮空赛道世界、@Image2 绿帽女孩 GREEN、@Image3 红帽女孩 RED、@Image4 金色卷发王子、@Image5 乌龟怪兽 Bront。五张都已收录（从拼图视频截帧裁出，约 530px）。出图提示词都没有公开。",
+      },
+      {
+        number: 2,
+        title: "第二步：写 REFS / GLOBAL / CAMERA",
+        description:
+          "REFS 给每张图写权重（世界 90%，角色 100%）和要保留的特征；GLOBAL 写赛道路线（直道、S 弯、小跳台、断口、下坡、最后一弯、格子线、城堡前广场）和王子与 Bront 等候的位置；CAMERA 规定 84° 广角、一个连续稳定的跟拍运动，从正面脸部特写拉远再侧向弧线移动。",
+      },
+      {
+        number: 3,
+        title: "第三步：按 6 段时间写动作，贴进生成",
+        description:
+          "0–1.5s 喊「My prince!」「No! MY prince!」→ 1.5–3.5s 超车 → 3.5–5s 飞跃 → 5–8s 漂移冲线刹停 → 8–10s 下车、看到王子皱鼻子、眼神移到 Bront → 10–12.5s 绕开王子亲 Bront → 12.5–15s 王子倒地撒泼大哭。最后写明不要剪切、慢动作、字幕和多余台词。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-prince-image1-world",
+        number: "1",
+        title: "@Image1 · 浮空赛道世界",
+        subtitle: "主帖参考图拼图视频左下格 · 截帧裁出（约 530px）",
+        image: "/tutorials/nastassiavideo-wrong-prince-kart-race/refs/image1-world.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@Image1 = world, 90%. Floating roads, mushrooms, pipes, coins, waterfalls, castle.",
+      },
+      {
+        id: "nastassiavideo-prince-image2-green",
+        number: "2",
+        title: "@Image2 · 绿帽女孩 GREEN",
+        subtitle: "主帖参考图拼图视频截帧裁出（约 530px）· AI 角色设定图",
+        image: "/tutorials/nastassiavideo-wrong-prince-kart-race/refs/image2-green.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@Image2 = GREEN, 100%. Exact face, dark bob, green cap.",
+      },
+      {
+        id: "nastassiavideo-prince-image3-red",
+        number: "3",
+        title: "@Image3 · 红帽女孩 RED",
+        subtitle: "主帖参考图拼图视频截帧裁出（约 530px）· AI 角色设定图",
+        image: "/tutorials/nastassiavideo-wrong-prince-kart-race/refs/image3-red.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@Image3 = RED, 100%. Exact face, light brown hair, red cap.",
+      },
+      {
+        id: "nastassiavideo-prince-image4-prince",
+        number: "4",
+        title: "@Image4 · 金色卷发王子",
+        subtitle: "主帖参考图拼图视频截帧裁出（约 530px）· AI 角色设定图",
+        image: "/tutorials/nastassiavideo-wrong-prince-kart-race/refs/image4-prince.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@Image4 = adult prince, 100%. Exact face, blond curls, crown, pink costume.",
+      },
+      {
+        id: "nastassiavideo-prince-image5-bront",
+        number: "5",
+        title: "@Image5 · 乌龟怪兽 Bront",
+        subtitle: "主帖参考图拼图视频左上格 · 截帧裁出（约 530px）",
+        image: "/tutorials/nastassiavideo-wrong-prince-kart-race/refs/image5-bront.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@Image5 = Bront, 100%. Exact teal scales, copper shell, horns, white crest, brown eyes.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 两个女孩开卡丁车的并排脸部特写，边开边喊。" },
+      { number: 2, description: "3–4s 镜头拉远，浮空赛道、金币和城堡。" },
+      { number: 3, description: "5s 两辆卡丁车一起飞过断口。" },
+      { number: 4, description: "6–7s 落到城堡前的格子地面，并排刹停。" },
+      { number: 5, description: "8–11s 王子和 Bront 站在前面，两个女孩下车站到旁边。" },
+      { number: 6, description: "12–13s 两人一左一右抱住 Bront。" },
+      { number: 7, description: "14–15s 王子仰面倒地蹬腿撒泼。" },
+    ],
+    constraints:
+      "角色长相和服装全程一致；参考图的面板排版不能出现在画面里；一镜到底，不要剪切、隐藏剪切、转场、跳时、慢动作和镜头瞬移；不要字幕和提示词以外的台词。与成片不符：约 8s 两人还坐在卡丁车里，王子和 Bront 已在画面中，下车过程不明显；提示词写 GREEN 超车领先，截帧里看不出明确的超车；约 9–11s 两人站在王子和 Bront 两侧，而不是提示词写的面对他们走过来；王子撒泼的蹬腿、捶地只在最后约 1 秒出现；成片约 15.4 秒。缺口：作者没有标注用的视频模型；5 张参考图的出图提示词没公开；参考图只有拼图视频里的低清截帧；台词和音频没有核对。",
+    video_prompt: {
+      title: "The Wrong Prince",
+      subtitle: "模型未标注 · 16:9 · 英文完整提示词（作者贴出的提示词截图，逐字转录）",
+      content: `THE WRONG PRINCE
+
+Exactly 15 seconds, 16:9. ONE CONTINUOUS UNBROKEN TAKE.
+
+Racing: first 8 seconds. Comedy ending: final 7 seconds.
+
+REFS:
+@Image1 = world, 90%. Floating roads, mushrooms, pipes, coins, waterfalls, castle.
+@Image2 = GREEN, 100%. Exact face, dark bob, green cap.
+@Image3 = RED, 100%. Exact face, light brown hair, red cap.
+Both retain reference overalls, cream tops, gloves and boots.
+@Image4 = adult prince, 100%. Exact face, blond curls, crown, pink costume.
+@Image5 = Bront, 100%. Exact teal scales, copper shell, horns, white crest, brown eyes.
+Keep identities and clothing identical throughout.
+Fresh framing; reference panels excluded.
+
+GLOBAL:
+Live action fantasy comedy, 35mm grain, neutral daylight, real skin and fabric.
+GREEN drives a green kart; RED drives a red kart. Low open sides.
+Connected route: straight, S bends, low ramp, short gap, downhill landing, final bend, checkered stripe, castle forecourt.
+Prince and Bront wait clear of the lane, near the stopping spaces, facing arriving drivers. Prince stands slightly ahead of Bront.
+Gaze stays engaged, natural blinks.
+
+CAMERA:
+One stabilized tracking move, fixed 84° wide lens.
+Start close ahead at face height, frontal 0°, both faces readable.
+Physically pull backward and rise slightly to reveal both complete karts and the road. Then match their speed, keeping both visible at different depths during overtaking.
+Maintain distance through jump and landing. At finish, decelerate and arc sideways to show women facing prince and Bront. Follow their approach laterally. Strong road parallax, readable faces. All reframing follows continuous travel through clear space.
+
+ACTION:
+0.0 to 1.5s:
+Already racing. Close faces and steering wheels. RED shouts "My prince!" GREEN replies louder, "No! MY prince!" Distinct breathless voices, precise lip sync. RED accelerates ahead. Engines soften beneath speech.
+1.5 to 3.5s:
+Camera smoothly pulls back. RED opens a two kart length lead. GREEN chases through the first bend, closes the gap and overtakes inside. Side bumpers briefly knock while level. GREEN clears RED and leads. Engines climb, barriers rush past.
+3.5 to 5.0s:
+RED follows close, swings outside the next bend and draws level at the ramp. Both launch across the short gap. Camera rises with them, preserving faces and landing road. Short ballistic arcs, visible tire contact, two suspension thumps.
+5.0 to 8.0s:
+Both accelerate downhill and drift through the final bend, rear tires sliding outward. Thin smoke trails behind. They straighten, cross the checkered stripe and brake completely in adjacent spaces. Camera decelerates and arcs sideways, revealing the waiting pair ahead.
+8.0 to 10.0s:
+Women step over the low kart sides onto the pavement. Prince opens his arms. Looking directly at him, RED wrinkles her nose; GREEN purses her lips a beat later. Their eyes shift to Bront beside him. Both break into wide smiles.
+10.0 to 12.5s:
+They hurry toward the pair. Prince beams and leans forward for a hug. Women pass around his empty arms and converge on Bront. He crouches. Each hugs one side and kisses his corresponding cheek. Two kisses, delighted giggles. Prince turns toward them.
+12.5 to 15.0s:
+Prince's smile collapses. He drops to his knees, flops sideways and rolls onto his back. He kicks his heels and pounds the pavement with gloved fists, loudly sobbing in an exaggerated adult tantrum. Crown stays crooked on his head. He remains the same adult man. Bront embraces both women and grins. Camera eases backward and tilts down to include prince's entire body and the trio. End with prince still kicking and sobbing.
+
+TECHNICAL:
+One uninterrupted shot. No cuts, hidden cuts, transitions, time jumps, slow motion or camera teleportation.
+No subtitles, captions or any additional spoken lines.`,
+    },
+  },
+  // 查重别名(同帖其它版本，未收录)：https://x.com/nastassiavideo/status/2097311777012805924 第 3 段 3840x2160（真人实拍风，另一版提示词 A）、第 4 段 1280x720（同提示词 A）
+  // 查重别名(同作者引用此帖的另一部片，已做本地包 nastassiavideo-wrong-prince-kart-race)：https://x.com/nastassiavideo/status/2097940769629782288
+  {
+    id: "nastassiavideo-pipe-girl-floating-kingdom-parkour",
+    title: "管道女孩 · 浮空王国跑酷",
+    subtitle: "X · @nastassiavideo · Seedance 2.5 · 15秒 · 16:9",
+    description:
+      "红帽背带裤女孩从绿管冲出，踩管子、弹蘑菇、蹬砖墙一路收金币，15 秒一镜到底跑酷。",
+    video: "/tutorials/nastassiavideo-pipe-girl-floating-kingdom-parkour/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-pipe-girl-floating-kingdom-parkour/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "游戏CG风",
+    shots: 1,
+    references: 2,
+    model: "Seedance 2.5（作者回复标注；同条还写了 Gpt 2、Astra）",
+    style: "游戏过场 CG 风 · 浮空岛跑酷 · 超广角一镜到底后退跟拍",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/nastassiavideo/status/2097311777012805924",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 14351,
+    sourceStats: { asOf: "2026-09-27", likes: 148, reposts: 5, bookmarks: 68 },
+    formats: ["角色表演", "电影叙事"],
+    hook: {
+      structure: "冲出管道 → 管子/蘑菇/砖墙连跳 → 空中收金币 → 翻滚落地 → 胜利姿势",
+      opening: "第 0 秒她从躺倒的绿色大管口里冲出来，身后一圈蓝色闪光，镜头贴着草地往后退。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2s 单手撑竖管翻越；约 3s 跑过横躺的长管；约 4–5s 跳到红蘑菇上方；约 8–10s 在两堵砖墙间蹬墙跑。", at: 2 },
+        { title: "空中收金币", text: "约 11–12s 她在空中伸手扫过一串金币，背景是草地浮岛和远处城堡。", at: 11 },
+        { title: "结尾怎么收", text: "约 12.3s 落地前滚翻，约 13s 滑铲扬起尘土，约 14–15s 在城堡前举拳定格。", at: 12 },
+      ],
+      copyThis: "每个动作段都配一句 SFX（金币一声 chime、蘑菇一声闷响），并写一条 coin_rule：碰到的金币当场变成金色火花消失，没碰到的留在空中。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 跑酷",
+      "16:9 横屏（另有 9:16 竖版）",
+      "一镜到底",
+      "Seedance 2.5",
+      "马里奥风浮空岛",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备两张参考图",
+        description:
+          "@Image1 世界参考（浮空岛、绿管、红蘑菇、砖块、金币、城堡），@Image2 女主角三视图（红帽、奶白背心、牛仔背带裤、白手套、棕靴）。作者回复里写的工具是 Seedance 2.5、Gpt 2、Astra，没说具体哪一步用哪个；出图提示词没公开。两张图都已收录（原图 1672x941，压到 1600px）。",
+      },
+      {
+        number: 2,
+        title: "第二步：写 REFS / GLOBAL STYLE NOTES / SHOT",
+        description:
+          "REFS 写清每张图只管什么、权重多少（人物 100%、世界和画风 90%），参考图本身不能进画面；GLOBAL 用 medium_lock 锁定「游戏 CG 画风 + 脸接近照片质感」，再写光线、配色比例、场景、角色服装、金币规则、物理和配乐；SHOT 规定 114° 超广角、贴地低机位、全程后退跟拍、第一帧就是满速。",
+      },
+      {
+        number: 3,
+        title: "第三步：按 12 段写动作和音效",
+        description:
+          "0–1.8s 冲出管道 → 撑竖管翻越 → 跑横管 → 弹第一个蘑菇 → 弹第二个蘑菇 → 最高点收金币 → 蹬砖墙 → 对面砖墙再蹬一次 → 空中收三枚金币 → 翻滚落地 → 滑到平台边 → 13.5–15s 胜利姿势。每段写 dynamic_framing、visual_action、SFX 三行。",
+      },
+      {
+        number: 4,
+        title: "竖版 9:16（同一条提示词，作者发的第 1 段）",
+        description:
+          "作者同帖还发了一个 720x1280 竖版，用的是同一条游戏 CG 风提示词。竖版原片就没有声音，不是文件坏了。",
+        video: "/tutorials/nastassiavideo-pipe-girl-floating-kingdom-parkour/demo-vertical-9x16.mp4",
+        poster: "/tutorials/nastassiavideo-pipe-girl-floating-kingdom-parkour/poster-vertical-9x16.jpg",
+        aspectRatio: "9/16",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-pipe-girl-image1-world",
+        number: "1",
+        title: "@Image1 · 浮空岛世界主视觉",
+        subtitle: "作者回复区图片原件 HRtzI--WcAArnjm（1600px 压缩）· 画面里女主从绿管口飞出",
+        image: "/tutorials/nastassiavideo-pipe-girl-floating-kingdom-parkour/refs/image1-world-keyvisual.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@Image1 = world reference. Controls the floating-island geography, green pipes, red mushroom caps, brick blocks, coin trails, waterfalls, castle; render style 90%.",
+      },
+      {
+        id: "nastassiavideo-pipe-girl-image2-woman",
+        number: "2",
+        title: "@Image2 · 女主三视图",
+        subtitle: "作者回复区图片原件 HRtzI-6XYAAHlom（1600px 压缩）· AI 角色设定图",
+        image: "/tutorials/nastassiavideo-pipe-girl-floating-kingdom-parkour/refs/image2-woman-charsheet.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@Image2 = the Woman. Controls face, body proportions and wardrobe only (identity 100%).",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1s 从绿管口冲出，拖着蓝色闪光冲向镜头。" },
+      { number: 2, description: "2s 单手撑竖管翻越。" },
+      { number: 3, description: "3s 在横躺的长绿管上奔跑。" },
+      { number: 4, description: "4–5s 腾空，跳向红蘑菇。" },
+      { number: 5, description: "5.5–7.5s 从闪光管口前飞过，两侧是红蘑菇，远处城堡。" },
+      { number: 6, description: "8–10s 在两堵砖墙之间蹬墙跑，砖屑飞溅。" },
+      { number: 7, description: "11–12s 空中伸手收一串金币。" },
+      { number: 8, description: "12.3–13s 前滚翻落地，滑铲扬尘。" },
+      { number: 9, description: "14–15s 城堡前举拳定格。" },
+    ],
+    constraints:
+      "人物长相、发色、服装全程一致；参考图的姿势和三视图面板不能进画面；一镜到底，镜头始终在她前方后退。碰到的金币必须消失，没碰到的留在空中。与成片不符：约 5.5–7.5s 她几乎定格在「从闪光管口飞出、两侧红蘑菇」的同一个姿势，和作者贴出的第一张横版图构图几乎一样，提示词写的第二次弹蘑菇、蘑菇压扁回弹看不清；两次蹬墙之间的过渡不明显；成片约 15.1 秒。缺口：作者没说 Seedance 2.5、Gpt 2、Astra 各用在哪一步；参考图出图提示词没公开；音频只量了音量，没有逐段核对音效。",
+    video_prompt: {
+      title: "Floating Kingdom Pipe Run（游戏 CG 风版）",
+      subtitle: "Seedance 2.5 · 16:9 主成片 + 9:16 竖版共用 · 英文完整提示词（作者回复里的提示词截图，逐字转录）",
+      content: `REFS:
+@Image1 = world reference. Controls the floating-island geography, green pipes, red mushroom caps with cream spots, brick island undersides and brick blocks, suspended coin trails, waterfalls, pastel capsule hills, white castle with red turrets, cloud sea and sky only.
+@Image2 = the Woman. Controls face, body proportions and wardrobe only.
+Both references stay out of the composition: fresh framing built from scratch, reference poses and character-sheet panels excluded.
+ACTIVE REFERENCES: @Image2 (identity) 100%; @Image1 (world and render style) 90%
+
+GLOBAL STYLE NOTES:
+- medium_lock: stylised game-cinematic render matching @Image1 exactly — painterly surfaces, high saturation, soft airbrushed gradients, glossy specular highlights on pipes and mushroom caps, clean bright air with no haze. Her face alone carries near-photographic fidelity against the painted world: real skin texture, individual eyelashes, fine flyaway hairs. Denim reads as painted fabric with hand-drawn seam lines.
+- lighting_philosophy: high open daylight as the single source; the blue sky bounces cool fill into her shadow side, white cloud tops kick soft light up under her jaw
+- color_grade: ~50% sky blue and cloud white (air, background) + ~30% denim indigo and grass green (her overalls, island tops) + ~20% saturated red and gold (cap, mushroom caps, coins). Highlights stay clean and unclipped.
+- setting: a kingdom of floating islands over a cloud sea — grass-topped chunks with brick and dirt undersides, thick green pipes standing and lying between them, giant red mushroom caps with cream spots, suspended brick blocks, waterfalls pouring off the island edges into open air, pastel capsule hills behind, a white castle with red conical turrets far on the horizon
+- atmosphere: fine sparkle motes drift near the pipe mouths and hang in the still air; steady wind runs against her direction of travel and drags her hair and overall straps backward. Every footfall kicks a burst of grass blades, brick dust or grit that arcs out and falls away between the islands
+- characters: <Woman> corresponds to @Image2 — soft red cabbie cap pulled low, long wavy honey-blonde hair loose beneath it, cream ribbed sleeveless top with bare shoulders and bare arms, blue denim overalls with gold buckle clasps and cuffed hems, white gloves on both hands, scuffed brown lace-up boots, a small red pendant at her throat, a gold bracelet on her RIGHT wrist, gold hoop earrings. Keep identical throughout.
+- coin_rule: palm-sized gold coins hang rotating in vertical and arcing trails along her reachable path. Each pickup reads as approach, visible glove contact, then the coin disappears instantly into a short gold spark with one crisp chime. Touched coins vanish, untouched coins stay suspended, her gloves stay empty afterwards, the spark lights the glove for one frame and her face stays readable
+- camera_character: one continuous backward tracking move ahead of her from first frame to last; fine high-frequency vibration from the rig's own speed, never an operator's hand tremor
+- physics: real ground contact, momentum conservation, authentic weight and balance. Mushroom caps compress under her weight and rebound at takeoff; brick holds firm under her wall-run steps; airborne travel follows clean ballistic arcs; her anatomy stays coherent and her joints stay in human range while perspective does the stretching
+- ambience: thunderous orchestral score with accelerating percussion under constant rushing wind, chimes sitting above the score
+
+SHOT:
+- first_frame: full body, Woman x 30%–70%, y 10%–95%; cloud layer x 0%–100%, y 55%–100%
+- camera_angle: low, inches above the grass, rising continuously across the take and never jumping
+- azimuth: frontal 0°, her face held near frame centre in every phase
+- lens: 114° rectilinear ultra-wide. Whatever comes nearest the lens enlarges hard — reaching gloves and driving boots read stretched and enormous while her face keeps natural proportions and straight verticals hold; deep separation between islands; no focal drift mid-shot
+- camera_motion: continuous backward track, always ahead of her, clearing every solid obstacle through open air with a metre of margin
+- speed_timing: 100% real time from first frame to last, already at maximum speed on frame one. Short shutter keeps her face and torso crisp; only the limbs crossing the near lens smear into directional blur
+
+ACTIONS:
+- action_sequence:
+1. beat (0.0-1.8s):
+- dynamic_framing: wide, camera inches above the grass, frontal 0°, violent ground parallax
+- visual_action: she bursts out of the mouth of a huge green pipe already at full speed, trailing a spiral of blue sparkle, then sprints at the retreating camera along a narrow grass-topped island path and sweeps her right glove through two coins at chest height. Her lead glove and driving boots swing through the near lens and enlarge enormously, then snap back to normal as they pass.
+- SFX: rising sparkle shimmer, wind past the lens, hard boot strikes, two chimes close together
+2. beat (1.8-2.9s):
+- dynamic_framing: camera dips beneath her, tightening to medium, azimuth swinging to three-quarter 45° with the physical move and easing back to frontal
+- visual_action: without slowing she plants her LEFT glove on the rim of a standing green pipe and vaults; her free RIGHT glove clips a coin above the rim; both legs sweep past the lens and fill the near frame.
+- SFX: glove slap on hard glossy plastic, hollow pipe clang, one chime
+3. beat (2.9-4.2s):
+- dynamic_framing: low medium, camera rising
+- visual_action: she lands onto a long horizontal green pipe and runs its full length, bare arms out for balance, boots rolling across the curved surface, taking two coins spaced along the pipe line.
+- SFX: steps ringing hollow through the pipe, two separate chimes
+4. beat (4.2-5.2s):
+- dynamic_framing: framing loosens as the camera keeps rising, islands rushing past on both sides
+- visual_action: she drops off the pipe end onto a giant red mushroom cap; the cap sinks deep under her and its cream spots stretch with the deformation, then it throws her back up.
+- SFX: a deep springy thump with a short tail, percussion stepping up a level
+5. beat (5.2-6.5s):
+- dynamic_framing: camera climbs with her
+- visual_action: she bounds to a second mushroom, taking one coin on the rising arc, and its recoil launches her far higher than the first.
+- SFX: second thump pitched lower, one chime, brass swelling
+6. beat (6.5-7.6s):
+- dynamic_framing: camera holds distance for the first time and drifts slightly above her, waterfalls and pastel capsule hills opening far below
+- visual_action: at the top of the arc her body extends, hair and overall straps dragged backward, and she takes a single coin at full stretch.
+- SFX: percussion thins to sustained brass, wind takes the foreground, one chime alone in the air
+7. beat (7.6-8.9s):
+- dynamic_framing: camera presses back in to eye level, the brick underside of a floating island filling frame-right
+- visual_action: she lands into three fast wall-run steps along the brick, taking a coin at head height on the second step, boots biting the brick and throwing dust.
+- SFX: full percussion back in, three hard scuffs, one chime
+8. beat (8.9-10.1s):
+- dynamic_framing: camera widens as the gap between two island walls opens up
+- visual_action: she kicks off the brick, crosses to the opposite brick wall, takes two more steps along it and kicks away hard across the huge open gap; brick dust bursts off both walls behind her.
+- SFX: the heaviest impact of the take on the second kick-off, dust and loose brick falling away
+9. beat (10.1-11.5s):
+- dynamic_framing: camera retreats faster and tilts up, she passes above it
+- visual_action: her outstretched right glove sweeps three spaced coins along the flight path.
+- SFX: percussion ducks out, three ascending chimes cut through the wind, then ambience drops to near-silence for one beat
+10. beat (11.5-12.6s):
+- dynamic_framing: camera settles back to eye level, framing her whole body
+- visual_action: she hits the final grass platform in a fast shoulder roll.
+- SFX: the landing lands into the silence, one heavy flat impact, wind and score returning underneath
+11. beat (12.6-13.5s):
+- dynamic_framing: medium, frontal 0°
+- visual_action: she springs upright out of the roll and slides the last metre toward the platform edge, boots dragging grass and grit ahead of her.
+- SFX: leather scraping earth
+12. beat (13.5-15.0s):
+- dynamic_framing: camera pulls back fast and cranes upward into a wide, revealing the castle and the whole floating kingdom behind her
+- visual_action: she snaps into a victory pose, one boot planted forward, one fist raised, grinning into the lens, chest heaving, and holds it. Sunlight breaks through the clouds behind her as a single soft bloom.
+- SFX: one final orchestral hit, then wind alone
+
+TECHNICAL:
+- continuous_shot: one continuous shot, single take, camera operates without interruption from 0.0s to 15.0s
+- the same woman is in frame from first frame to last, her face, hair colour, proportions and wardrobe identical at 0s, at 8s and at 15s, clean frame`,
+    },
+  },
+  // 查重别名(同作者引用本帖的另一部片，酒馆问厕所，已排队做本地包)：https://x.com/nastassiavideo/status/2096952053687808223
+  {
+    id: "nastassiavideo-medianoche-saloon-escape",
+    title: "蒙面女侠 · 酒馆打斗跳马追马",
+    subtitle: "X · @nastassiavideo · Seedance 2.5 · 32秒 · 16:9",
+    description:
+      "蒙面女侠在酒馆轻松打趴三个劫匪，撞窗逃出跳上黑马，却被树枝扫落，只能追着马跑。",
+    video: "/tutorials/nastassiavideo-medianoche-saloon-escape/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-medianoche-saloon-escape/poster.jpg",
+    duration: "32秒",
+    durationSec: 32,
+    styleLabel: "复古喜剧",
+    shots: 11,
+    references: 1,
+    model: "Seedance 2.5（作者帖文：Seedance 2.5、GPT-2、Claude）",
+    style: "1930–40 年代特艺色冒险片 · 西部酒馆 · 肢体喜剧",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/nastassiavideo/status/2095368017739653337",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 4162,
+    sourceStats: { asOf: "2026-09-27", likes: 33, reposts: 3, bookmarks: 9 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "酒馆打斗 → 撞见追兵 → 撞窗逃跑 → 吹哨跳马 → 被树枝扫落追马",
+      opening: "第 0 秒劫匪的剑从画面左侧刺过来，蒙面女侠在昏暗的酒馆里单手格挡。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.5–4s 撑桌翻越，劫匪扑空滑过桌面；约 4–6.5s 一脚把第三个劫匪踢进木桶堆；约 9–11.5s 她的脸部近景，身后门口进来一群持枪的人。", at: 2.5 },
+        { title: "逃跑上马", text: "约 14.5s 肩膀撞碎百叶窗冲到街上；约 16s 两指放进嘴里吹口哨；约 17–19.5s 黑马跑来刹停，她跳上马背。", at: 14.5 },
+        { title: "结尾怎么收", text: "约 23–25.5s 迎面的树枝把她从马上扫下来；约 26–29s 她爬起来追马；约 30–32s 远景圆形遮罩收成黑场。", at: 23 },
+      ],
+      copyThis: "每个镜头都写到 0.1 秒的时间码，并在动作之后塞一个短表情反应（挑眉歪嘴、瞪眼咽口水、咬紧牙），再用 HARD CUT / WHIP PAN / SMASH CUT 连起来，喜剧节奏靠这些反应停顿。",
+      approx: true,
+    },
+    tags: [
+      "32秒 · 西部喜剧",
+      "16:9 横屏",
+      "11 个镜头",
+      "Seedance 2.5",
+      "复古胶片圆形遮罩",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备角色设定图",
+        description:
+          "作者在回复里贴了角色 Medianoche 的设定图（正脸、侧脸、背面、全身正背面，外加身高 158cm、声音、性格说明），就是提示词里的 @Image1。帖文写的工具是 Seedance 2.5、GPT-2、Claude，没说各用在哪一步。设定图已收录（原图 1672x941，压到 1600px）。",
+      },
+      {
+        number: 2,
+        title: "第二步：先写各种「锁」",
+        description:
+          "REFS 锁脸和服装；FORMAT 定死 11 个镜头、30 秒；再写 GENRE AND COMEDY、PACING LOCK（每个镜头 0.2 秒内开始动作、打斗像 18fps 拍 24fps 放）、MIMICRY LOCK（挑眉、歪嘴笑、瞪眼等 8 种微表情）、VISUAL STYLE、场景 / 道具 / 马的连贯性。",
+      },
+      {
+        number: 3,
+        title: "第三步：11 个镜头逐个写时间码和转场",
+        description:
+          "每个镜头写景别、机位、精确到 0.1 秒的动作、SFX，以及 HARD CUT / WHIP PAN / AUDIO BRIDGE / SMASH CUT 等转场词。跳马那一镜作者单独写了方向锁（要求面朝马尾反坐）；结尾写明 29.5 秒开始圆形遮罩、30.0 秒刚好黑场。最后用 FINAL CONSTRAINTS 把所有要求再列一遍。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-medianoche-escape-image1",
+        number: "1",
+        title: "@Image1 · Medianoche 角色设定图",
+        subtitle: "作者回复区图片原件 HRQ-HUvXsAM3f4O（1600px 压缩）· AI 角色设定图",
+        image: "/tutorials/nastassiavideo-medianoche-saloon-escape/refs/image1-medianoche-charsheet.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@Image1 is the only character reference for Medianoche — same face, facial geometry, body proportions, hat, mask and cape in every shot.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.5s 酒馆里单手格挡劫匪的剑，收剑挑眉。" },
+      { number: 2, description: "2.5–4s 撑桌翻越，劫匪扑空滑过桌面。" },
+      { number: 3, description: "4–7s 踢飞第三个劫匪撞进木桶堆。" },
+      { number: 4, description: "7.5–9s 酒馆中景，她站在桌边。" },
+      { number: 5, description: "9–11.5s 脸部近景，身后门口涌进一群人。" },
+      { number: 6, description: "12–14s 在桌椅间躲开追兵往窗口跑。" },
+      { number: 7, description: "14.5–15.5s 撞碎百叶窗冲到街上。" },
+      { number: 8, description: "16–16.5s 街上近景，两指放进嘴里吹口哨。" },
+      { number: 9, description: "17–19.5s 黑马跑来刹停，她跳上马背。" },
+      { number: 10, description: "20–22.5s 从马后方拍她骑马跑远；23s 转为侧面跟拍。" },
+      { number: 11, description: "23–26s 迎面的树枝把她扫落，摔在土路上。" },
+      { number: 12, description: "26.5–29s 背影追马。" },
+      { number: 13, description: "29.5–32s 高角度远景，圆形遮罩收成黑场。" },
+    ],
+    constraints:
+      "Medianoche 的脸、面具、帽子、披风全程不变；披风不能掉，第一镜后剑一直插在右腰剑鞘里；马跑来时背上没人，完全停下后她才跳上去；她必须面朝马尾，树枝打在后背和肩膀；不要字幕、Logo 和提示词以外的台词；喊「Wait! Wait for me!」时不要背景音乐。与成片不符：提示词最核心的笑点「面朝马尾反坐」在成片里没有做出来，约 23–24.5s 的侧面镜头里她面朝马头方向坐着，树枝是从正面扫到她身上，不是打在后背；提示词写的踩到木板滑一跤看不清；成片约 32 秒，比提示词写的 30 秒长，各镜头整体后移约 1.5–2 秒；圆形遮罩约 30–32 秒才收完。缺口：作者没说 Seedance 2.5、GPT-2、Claude 各用在哪一步；角色设定图的出图提示词没公开；提示词原图只有 339×2048，破折号、引号的具体字形看不清。",
+    video_prompt: {
+      title: "Medianoche · Playful Fight to Backward Mount",
+      subtitle: "Seedance 2.5 · 16:9 · 英文完整提示词（作者回复里的提示词长图，逐字转录）",
+      content: `REFS: @Image1 is the only character reference for Medianoche. Keep Medianoche identical to @Image1 in every shot. Preserve exactly the same face, facial geometry, eyes, nose, lips, body proportions, hairstyle, hair length, hat, mask, corset, cape, gloves, trousers, boots, belt, rapier, scabbard and accessories. Never redesign, beautify, age, de-age or reinterpret her.
+
+SCENE (0:00–0:30) — PLAYFUL FIGHT → COMEDIC SLIP → REAL THREAT → ESCAPE → BACKWARD MOUNT → FALL → CHASE
+
+FORMAT: exactly 11 shots and exactly 30.0 seconds. Preserve the source/reference aspect ratio.
+
+GENRE AND COMEDY:
+A fast, playful 1930s–1940s Technicolor swashbuckling comedy in the spirit of an old theatrical adventure film. The humor is physical, elegant and deadpan: Medianoche always tries to remain dignified while increasingly ridiculous accidents happen around her.
+
+The comedy must never become cartoon animation. Human bodies retain realistic weight, balance and momentum. Expressions are clearly readable but remain natural.
+
+PACING LOCK:
+• no empty pauses or static posing
+• every shot begins a new action within its first 0.2 seconds
+• no expression is held longer than 0.5 seconds unless explicitly described as a reaction beat
+• fight movement is brisk and slightly undercranked, resembling action photographed at 18fps and projected at 24fps
+• horse movement, window impact and fall use realistic speed and weight
+• use quick whip-pans, snap reframes and short reaction holds to create vintage comic timing
+
+MIMICRY LOCK:
+Medianoche communicates through precise micro-expressions:
+• one raised eyebrow
+• restrained crooked smirk
+• quick amused glance
+• brief genuine nose-laugh
+• sudden wide-eyed alarm
+• tight jaw when embarrassed
+• stunned dignity after falling
+• breathless frustration during the chase
+
+Her facial identity must not change while her expression changes.
+
+VISUAL STYLE:
+• photographed like an aged early-Technicolor adventure film
+• warm cantina oil lamps, deep shadows and bright window light
+• exterior lit by low late-afternoon sun with long shadows and hard rim light
+• faded warm highlights, deep black costume, dusty golden atmosphere
+• natural skin tones with no muddy yellow filter and no sepia
+• visible fine 35mm grain, subtle gate weave, soft halation, occasional light scratches and gentle film flicker
+• authentic vintage optical circular iris ending
+
+LOCATION CONTINUITY:
+The cantina stands at the edge of a frontier town. Its dusty main street continues directly into a tree-lined dirt road. The cantina exterior, hitching post and several distant frontier buildings remain visible during the exterior sequence. All exterior shots take place on this same continuous road.
+
+OBJECT CONTINUITY:
+• Medianoche's cape remains attached to her shoulders throughout and is never removed
+• her rapier is returned to its scabbard in Shot 1 and remains securely sheathed at her right hip afterward
+• her hat and mask remain fixed during the vault, kick, window crash, horse ride, fall and chase
+• no duplicated cape, weapon or accessory
+• no disappearing or changing costume elements
+
+HORSE CONTINUITY:
+One realistic riderless black horse with a brown leather saddle. Heavy grounded quadruped with correct four-leg anatomy, natural gallop cycles, hard hoof contact, realistic braking, dust displacement and authentic momentum. No merged legs, extra limbs, sliding hooves or changing saddle.
+
+SHOT 1 (0:00–0:02.5) — ECU TO MS — PLAYFUL PARRY
+
+Camera: eye-level frontal axis with a rapid vintage dolly pullback.
+
+0:00–0:00.35: a bandit's blade suddenly rushes toward the lens from screen-left.
+
+0:00.35–0:00.60: Medianoche parries it with one tiny, effortless wrist movement. Steel makes clearly visible contact with steel.
+
+0:00.60–0:01.40: camera rapidly pulls backward into a medium two-shot. The bandit strains against his sword while Medianoche barely moves.
+
+0:01.40–0:01.90: she flicks his blade aside and smoothly returns her rapier to its scabbard.
+
+0:01.90–0:02.50: without looking at the bandit, she raises one eyebrow and forms a small crooked smirk. Hold the expression for one short vintage-comedy reaction beat.
+
+SFX: sharp steel ring, leather movement, quick cloth shift.
+
+Diegetic saloon piano and fiddle begin a brisk playful rhythm.
+
+HARD CUT TO:
+
+SHOT 2 (0:02.5–0:04.5) — MWS — TABLE VAULT
+
+Camera: energetic handheld tracking lead moving backward and slightly left.
+
+A second bandit lunges from Medianoche's right. She sidesteps at the final possible moment, plants one gloved hand firmly on a round table and performs one clean one-handed vault.
+
+Her palm compresses against the tabletop and the table tilts slightly under her weight. Both boots land solidly on the floor beyond him.
+
+The bandit misses her and slides chest-first across the tabletop, knocking over two empty cups.
+
+Medianoche gives him one quick amused glance over her shoulder and releases a short genuine laugh through her nose without stopping.
+
+Her cape remains attached and streams behind her.
+
+SFX: table creak, boots landing, cups clattering, body hitting wood.
+
+MOTION MATCH CUT TO:
+
+SHOT 3 (0:04.5–0:07.0) — MS — KICK AND BARRELS
+
+Camera: low profile handheld at 90°, opening slightly toward frontal as the kick lands.
+
+A third bandit charges clearly from screen-left. Medianoche pivots on one planted boot and drives her other boot into his midsection. Show clear boot-to-body contact.
+
+He folds from the impact and flies backward into stacked barrels. Two barrels break apart and one intact barrel rolls toward Medianoche.
+
+Without looking down, she calmly lifts one boot and allows the rolling barrel to pass beneath it. She places the boot back on the floor, raises her chin and gives the fallen bandit a tiny satisfied smirk.
+
+SFX: dull body impact, cracking wood, rolling barrel.
+
+The saloon piano briefly accents the barrel impact, then continues.
+
+HARD CUT TO:
+
+SHOT 4 (0:07.0–0:10.0) — MCU — COMEDIC SLIP TO REAL THREAT
+
+Camera: frontal handheld medium close-up with focus locked on Medianoche's face.
+
+0:07.0–0:07.7: a loose barrel stave rolls under her heel. She unexpectedly slips one short step. Her arms make one quick undignified balancing movement.
+
+0:07.7–0:08.1: she instantly regains perfect posture, straightens her hat and cape and looks forward with a deadpan expression as if nobody saw anything.
+
+0:08.1: the far cantina door violently bangs open.
+
+Four armed men enter behind her as blurred silhouettes. The piano and fiddle stop abruptly on the door impact.
+
+Her deadpan confidence disappears. Her eyes widen, brows tighten, lips part slightly and one visible swallow moves through her throat.
+
+She looks toward the armed men, then snaps her gaze toward the shuttered side window and turns hard.
+
+No dialogue and no speech-like lip movement.
+
+SFX: tiny boot skid, door impact, sudden musical stop, incoming boots and shouts.
+
+WHIP PAN TO:
+
+SHOT 5 (0:10.0–0:12.0) — MWS — FAST ESCAPE
+
+Camera: handheld tracking lead matching her running pace and moving backward through the tables.
+
+Medianoche accelerates into a hard run. She curves around one table, narrowly avoids a chair and ducks beneath the arm of an incoming bandit without slowing.
+
+The bandit's hand misses her hat by only a few centimetres. Her eyes flick upward toward the hand, followed by one irritated side-glance while she continues running.
+
+The shuttered window remains visible directly ahead. At the end of the shot, she lowers her shoulder and raises her left forearm across her face.
+
+SFX: fast boots, chair scrape, cloth snap, pursuing shouts.
+
+HARD CUT TO:
+
+SHOT 6 (0:12.0–0:14.5) — PROFILE WS — WINDOW CRASH
+
+Camera: profile 90° wide shot showing the cantina interior, the window and the street outside.
+
+Medianoche reaches the wooden shutters at full running speed and hits them shoulder-first. Her shoulder makes visible physical contact before the wood breaks.
+
+The shutters burst outward into several readable wooden pieces and small splinters. Her body slows slightly from the resistance before continuing through under its original momentum.
+
+She lands outside with one boot followed by the other, takes two unsteady recovery steps and regains her balance.
+
+One loose shutter panel lands behind her with a delayed wooden clatter. She flinches for a fraction of a second, then immediately restores her dignified posture.
+
+Lighting shifts naturally from warm lamplight to bright late-afternoon sun.
+
+SFX: heavy shutter crack, wood fragments, boots striking dirt, delayed wooden clatter, wind rush.
+
+HARD CUT TO:
+
+SHOT 7 (0:14.5–0:16.5) — CU — WHISTLE
+
+Camera: static three-quarter 45° close-up with subtle vintage operator breathing.
+
+Using only one hand, Medianoche places exactly two gloved fingers between her lips and produces one sharp whistle.
+
+Her other hand remains lowered near the sheathed rapier. Her eyes scan left, then right in two quick precise movements.
+
+For one brief beat she wears a confident "problem solved" expression. Approaching hoofbeats immediately wipe away the smirk. She turns sharply toward the sound.
+
+SFX: one clear whistle, wind, rapidly approaching horse.
+
+AUDIO BRIDGE TO:
+
+SHOT 8 (0:16.5–0:20.5) — PROFILE WS — BACKWARD MOUNT PUNCHLINE
+
+Camera: one unbroken eye-level profile wide shot. Keep Medianoche and the entire horse visible from hooves to hat. Do not cut away or hide the mount with dust, cape or camera movement.
+
+0:16.5–0:16.8: Medianoche stands visibly alone on the ground at screen-right. The horse is not yet beside her.
+
+0:16.8–0:17.7: the riderless black horse gallops into frame from screen-left.
+
+0:17.7–0:18.1: the horse performs a heavy grounded skid and comes to a complete stop directly in front of her. Dust moves forward from the braking hooves. Medianoche remains visibly separate from the horse.
+
+0:18.1–0:18.8: only after the horse has fully stopped, she jumps from the ground and lands with full body weight in the saddle.
+
+CRITICAL COMEDY AND ORIENTATION LOCK:
+She lands facing the horse's tail. Her face, chest and knees point toward the tail. The horse's head is behind her back. She must not face the horse's head.
+
+0:18.8–0:19.7: hold the wide view to prove the backward orientation. The saddle compresses beneath her weight.
+
+Medianoche looks down and discovers the horse's tail directly in front of her. Her eyes widen. She slowly turns only her head over one shoulder, sees the horse's head behind her and blinks once with stunned embarrassment. Her body remains facing the tail.
+
+She tightens her jaw and grabs the rear cantle instead of the reins, trying to pretend the mistake was intentional.
+
+0:19.7–0:20.5: the horse suddenly launches forward while she is still seated backward. Her torso jerks realistically from the acceleration.
+
+SFX: hoof skid, dirt spray, saddle thud, leather creak, sudden gallop.
+
+HARD CUT TO:
+
+SHOT 9 (0:20.5–0:24.5) — LATERAL MWS — BRANCH FALL
+
+Camera: lateral profile tracking matching the horse. Keep the full horse and Medianoche's backward orientation readable.
+
+The horse gallops along the same road. Medianoche remains facing the tail, holding the cantle and bouncing awkwardly while trying to maintain a dignified expression.
+
+Because she is facing backward, she cannot see the low branch approaching from behind her back.
+
+At 0:21.3 the thick branch strikes across her upper back and shoulders — never across her chest.
+
+Only the 0.5 seconds immediately surrounding branch contact play at 40% speed. During this brief slow-motion beat, her confident expression transforms into wide-eyed realization.
+
+Return immediately to normal speed.
+
+The branch lifts her cleanly from the saddle while the horse continues beneath her. Authentic momentum carries her through one airborne rotation.
+
+She hits the dirt with her shoulder and side, rolls once and stops in a small dust cloud.
+
+She lies still for half a beat, then slowly pushes onto one elbow. Her hair is dusty, but her hat and mask remain attached. She exhales through her nose and looks after the horse with stunned, wounded dignity.
+
+SFX: wooden impact, short grunt, heavy dirt impact, cloth rolling, receding hoofbeats.
+
+SMASH CUT TO:
+
+SHOT 10 (0:24.5–0:28.5) — REAR MS — BREATHLESS CHASE
+
+Camera: rear handheld tracking follow with natural vertical bounce from each footfall.
+
+0:24.5–0:25.2: Medianoche scrambles upright without teleporting. She briefly wobbles, catches her balance and immediately runs.
+
+0:25.2–0:25.8: she accelerates after the horse. Her boots strike packed dirt, small dust clouds appear at every step and her cape snaps behind her.
+
+At 0:25.8 she throws one arm toward the retreating horse and shouts in American English, in a low chest-resonant alto becoming breathless and ragged:
+
+"Wait! Wait for me!"
+
+Immediately after the final word she pushes into one last desperate burst of speed.
+
+Her hat tilts slightly from the running. Without slowing, she slaps it straight with one hand and continues chasing the horse.
+
+The camera gradually allows Medianoche to become smaller in frame as the horse increases the distance.
+
+No other spoken words. No music underneath the dialogue.
+
+CUT TO:
+
+SHOT 11 (0:28.5–0:30.0) — HIGH-ANGLE EWS — VINTAGE IRIS
+
+Camera: high-angle rear static extreme wide shot of the same dusty road. Frontier buildings remain visible near the cantina, with trees farther down the road.
+
+Medianoche continues running after the black horse. Both figures steadily shrink into the distance.
+
+A faint playful saloon-piano motif returns only after her dialogue has finished.
+
+The full rectangular image remains visible from 0:28.5 until exactly 0:29.5.
+
+At exactly 0:29.5 a vintage circular iris begins closing around Medianoche and the horse.
+
+The iris closes smoothly for exactly 0.5 seconds and reaches complete black only on the final frame at exactly 0:30.0. No black hold after the iris closes.
+
+SFX: hoofbeats, running footsteps and wind gradually recede.
+
+FINAL CONSTRAINTS:
+• exactly 30.0 seconds
+• exactly 11 separately timed shots
+• fast comic rhythm with no dead time
+• dynamic but readable fight choreography
+• expressive natural facial acting in every reaction shot
+• old Technicolor swashbuckling comedy, not modern action and not cartoon slapstick
+• Medianoche remains identical to @Image1 throughout
+• no face, mask, hairstyle, body or costume drift
+• cape remains attached throughout
+• rapier remains sheathed at the right hip after Shot 1
+• no teleportation between locations or actions
+• horse must arrive riderless
+• Medianoche must remain visibly on the ground until the horse fully stops
+• show her complete jump and saddle contact without obstruction
+• she lands facing the horse's tail and remains backward
+• branch strikes her upper back and shoulders because she is facing backward
+• realistic horse anatomy, gait, weight and hoof contact
+• authentic human weight during vault, kick, window impact, saddle landing and fall
+• no subtitles, captions, logos or on-screen text
+• no extra dialogue
+• no background music during "Wait! Wait for me!"`,
+    },
+  },
+  // 查重别名(本帖引用的同作者同角色另一部片，酒馆打斗跳马追马，已做本地包 nastassiavideo-medianoche-saloon-escape)：https://x.com/nastassiavideo/status/2095368017739653337
+  {
+    id: "nastassiavideo-medianoche-saloon-porch-gag",
+    title: "蒙面女侠 · 酒馆门廊出糗",
+    subtitle: "X · @nastassiavideo · Seedance 2.5 · 19秒 · 16:9",
+    description:
+      "蒙面女侠帅气推门出场却扑倒在地，起身装没事，躲拳让劫匪互殴，最后捡帽退场。",
+    video: "/tutorials/nastassiavideo-medianoche-saloon-porch-gag/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-medianoche-saloon-porch-gag/poster.jpg",
+    duration: "19秒",
+    durationSec: 19,
+    styleLabel: "复古喜剧",
+    shots: 6,
+    references: 1,
+    model: "Seedance 2.5（帖文：视频 Seedance 2.5，角色卡 GPT 2）",
+    style: "早期彩色冒险片 · 西部酒馆门廊 · 肢体喜剧",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/nastassiavideo/status/2096952053687808223",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 2591,
+    sourceStats: { asOf: "2026-09-27", likes: 31, reposts: 4, bookmarks: 13 },
+    formats: ["角色表演", "电影叙事"],
+    hook: {
+      structure: "帅气出场 → 绊倒 → 装没事 → 躲拳误伤 → 披风绊倒一堆 → 捡帽退场",
+      opening: "第 0–1.5 秒酒馆双开门被推开，蒙面女侠披着斗篷大步走出来；约 2 秒她扑倒向镜头，帽子飞到镜头前。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3–5s 近景里她扶正帽子和眼罩，抬下巴装作一切顺利；约 5.5–7s 劫匪挥拳，她低头躲过，拳头打在后面另一个劫匪身上。", at: 3 },
+        { title: "披风绊倒一堆", text: "约 8.5–12s 高角度门廊全景：她拔剑，披风甩开，披条纹披毯的劫匪扑过来，最后几个人摔在木桶旁。", at: 8.5 },
+        { title: "结尾怎么收", text: "约 13–15.5s 脸部特写挑眉；约 16–17.5s 收剑从画面左边走出；约 18–19s 一只黑手套拿着帽子伸进画面，圆形遮罩收成黑场。", at: 13 },
+      ],
+      copyThis: "每个镜头都用 vfx / camera_motion / action_visual / exit 四行写，exit 写清这一镜最后一个动作和转场方式（HARD CUT、MATCH CUT、WHIP PAN），镜头之间就能接得顺。",
+      approx: true,
+    },
+    tags: [
+      "19秒 · 西部喜剧",
+      "16:9 横屏",
+      "6 个镜头",
+      "Seedance 2.5",
+      "复古胶片圆形遮罩",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备角色卡",
+        description:
+          "@Image1 用的是同一张 Medianoche 角色卡（正脸、侧脸、背面、全身正背面，身高 158cm、声音、性格说明），帖文写角色卡用 GPT 2 做。角色卡已收录（原图 1672x941，压到 1600px），出图提示词没公开。",
+      },
+      {
+        number: 2,
+        title: "第二步：写全局设定和 4 个角色",
+        description:
+          "先写一句 @Image1 要保留的所有外观细节，再写 SCENE 的情节线（出场 → 出糗 → 打斗 → 淡定 → 退场笑点）、SHOT STRUCTURE（6 个镜头、20 秒）、GLOBAL STYLE NOTES（正午硬光、早期彩色片调色、门廊布景、环境音），最后给女主和 3 个劫匪各写一行 visual_anchors。",
+      },
+      {
+        number: 3,
+        title: "第三步：6 个镜头按四行格式写",
+        description:
+          "HOOK 出场摔倒 → PUNCHLINE 起身装没事 → RISING 躲拳误伤 → SIGNATURE 剑勾披风绊倒三人 → CALLBACK 特写挑眉 → RESOLUTION 收剑、退场、捡帽、圆形遮罩。结尾用 GENERATE FIRST 写明先生成第 4、5、6 镜。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-medianoche-porch-image1",
+        number: "1",
+        title: "@Image1 · Medianoche 角色卡",
+        subtitle: "作者帖内图片原件 HRnetSpbkAEnwzc（1600px 压缩）· 与《酒馆脱逃》同一张 AI 角色卡",
+        image: "/tutorials/nastassiavideo-medianoche-saloon-porch-gag/refs/image1-medianoche-charsheet.jpg",
+        prompt: "作者未公开出图提示词（帖文写角色卡用 GPT 2 做）。视频提示词中的用法：@Image1 is the masked heroine reference — hat, eye mask, cape, corset bodice, trousers, gloves, boots.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.5s 酒馆双开门推开，女侠大步走出。" },
+      { number: 2, description: "2s 扑倒向镜头，帽子飞到镜头前。" },
+      { number: 3, description: "3–5s 近景，扶正帽子和眼罩。" },
+      { number: 4, description: "5.5–8s 劫匪挥拳，她低头躲开，拳头打中另一个劫匪。" },
+      { number: 5, description: "8.5–12s 高角度门廊全景，拔剑甩披风，劫匪们摔在木桶旁。" },
+      { number: 6, description: "13–15.5s 脸部特写，身后劫匪虚焦。" },
+      { number: 7, description: "15.5–17.5s 收剑，从画面左边走出。" },
+      { number: 8, description: "18–19s 黑手套拿着帽子伸进画面，圆形遮罩收成黑场。" },
+    ],
+    constraints:
+      "女主的帽子、眼罩、披风、紧身胸衣、长靴、右腰的剑每个镜头都一样；3 个劫匪按各自服装区分（小胡子背带、棕马甲红领巾、条纹披毯）；全程复古胶片质感。与成片不符：提示词写 4:3、20 秒，成片是 16:9、约 19.3 秒；剑勾住披风、披风盖住劫匪头的过程在高角度全景里看不清；提示词写捡回帽子戴到头上，成片最后只看到手拿着帽子伸进画面；收剑两次插不进没有明显表现。缺口：角色卡出图提示词没公开。",
+    video_prompt: {
+      title: "Medianoche · Heroic Entrance to Exit Gag",
+      subtitle: "Seedance 2.5 · 提示词写 4:3（成片 16:9）· 英文完整提示词（主帖第二张图，逐字转录）",
+      content: `@Image1 is the masked heroine reference — keep the black flat-crown wide-brim hat, black eye mask, black cape tied at the neck, black corset bodice, fitted black trousers, black gloves, knee-high black heeled boots, rapier at the right hip, shoulder-length wavy chestnut hair, and pale steady-eyed face identical in every shot.
+
+SCENE 1 (0:00-0:20) — HEROIC ENTRANCE → HUMILIATION → SLAPSTICK FIGHT → DEADPAN CONTROL → EXIT GAG
+
+SHOT STRUCTURE: 6 shots, 20 seconds, 4:3
+
+GLOBAL STYLE NOTES:
+• lighting_philosophy: hard midday sun from above-left, dusty bounce fill from street, mild halation around bright sky.
+• color_grade: aged early-color adventure palette — ochre wood, dusty reds, faded sky blue, warm skin, deep black costume.
+• setting: frontier saloon exterior, wooden porch 30 cm above the street, swing doors center, barrels frame right, hitching post frame left, midday dust in the air.
+• ambience: boots on wood, cloth rustle, barrel thumps, light street murmur, distant horse snort.
+
+characters:
+• character_1:
+visual_anchors: black flat-crown wide-brim hat, black eye mask, black cape tied at the neck, black corset bodice, fitted black trousers, black leather gloves, knee-high black heeled boots, rapier at the right hip, shoulder-length wavy chestnut hair, pale composed face.
+• character_2:
+visual_anchors: thick mustache, dusty tan shirt with rolled sleeves, dark suspenders.
+• character_3:
+visual_anchors: brown vest, red neckerchief.
+• character_4:
+visual_anchors: striped serape, dark trousers.
+
+SEQUENCE LIST:
+
+SHOT 1 (0-3s) HOOK — Wide Shot
+• vfx: aged color film texture, visible 35mm grain, gate weave, light scratches, subtle flicker; speed: 18fps undercranked look, brief speed ramp (deceleration) to 70% on the fall.
+• camera_motion: low-angle dolly in from street level toward the saloon doors, ending 60 cm from character_1.
+• action_visual: saloon doors burst open. Character_1 strides out in full heroic posture, cape trailing. On the second step her heel catches the porch edge and she drops straight forward toward camera, boots kicking up dust on impact.
+• exit: her gloved hand reaches toward the fallen hat brim near lens. (HARD CUT TO)
+
+SHOT 2 (3-5s) PUNCHLINE — Medium Close-Up
+• vfx: aged color film texture continues; stacked effect: tiny impact aftershake settling into near-static frame.
+• camera_motion: side-view locked-off tripod at chest height with one slight corrective wobble as she rises.
+• action_visual: character_1 lies frozen for one beat, then calmly stands. She straightens the hat, aligns the eye mask, tightens the cape knot, and lifts her chin as if the entrance went perfectly.
+• exit: she finishes the adjustment and turns left toward the incoming attack. (MATCH CUT TO)
+
+SHOT 3 (5-9s) RISING — Medium Wide Shot
+• vfx: aged color film texture continues; stacked effect: brief handheld jolt on the punch impact.
+• camera_motion: 35mm lateral dolly right, tracking parallel to the porch as character_2 charges from frame right.
+• action_visual: character_2 throws a wide punch. Character_1 ducks under it without hurry. The punch lands on character_3 behind her. She rises into frame center, shifts half a step left, and character_3 stumbles into a barrel with a loud wooden crack.
+• exit: the barrel roll drives the frame rightward and bridges into the next angle. (WHIP PAN TO)
+
+SHOT 4 (9-13s) SIGNATURE — Full Shot
+• vfx: aged color film texture continues; stacked effect: slight top-frame shake as bodies collide.
+• camera_motion: high-angle static view from 45° above the porch, holding the full slapstick geometry.
+• action_visual: character_1 draws the rapier for a clean flourish, but the blade hooks into her own cape. She tugs once, then harder. The cape flips over character_4's head. Blind under black fabric, character_4 flails and crashes into character_2 and character_3, knocking all three into a heap. Add one small background visual gag with a bystander casually stepping back to protect a drink.
+• exit: character_1 turns her head 10° toward the fallen bandits while everything settles beneath her. (HARD CUT TO)
+
+SHOT 5 (13-16s) CALLBACK — Close-Up
+• vfx: aged color film texture continues; speed: normal 18fps cadence with stable focus on her eyes.
+• camera_motion: 85mm subtle push-in from CU to tighter CU, no more than 15 cm travel.
+• action_visual: character_1 stays perfectly composed in sharp focus. Behind her, the bandits remain blurred figures trying to untangle themselves. She raises one eyebrow, smooths the collar edge with two fingers, and gives a tiny satisfied exhale.
+• exit: her hand drops from the collar to the rapier hilt. (MATCH CUT TO)
+
+SHOT 6 (16-20s) RESOLUTION — Wide Shot
+• vfx: aged color film texture continues; stacked effect: brief 80% speed beat on the final hat-recovery gag; end with iris close.
+• camera_motion: eye-level dolly out from full figure to wider porch view, ending with the doorway and street both visible.
+• action_visual: character_1 tries to sheath the rapier and misses the scabbard twice. She glances sideways for one beat, succeeds on the third try, pivots with full swashbuckler pride, and walks out frame left. One second later a hard off-screen stumble is heard. After a pause, her black-gloved hand reaches back into frame, retrieves the fallen hat, places it neatly on her head just inside the edge of frame, and disappears again.
+• exit: iris close to black on the restored hat silhouette. (IRIS CLOSE TO BLACK)
+
+GENERATE FIRST: Shot 4 (cape entanglement slapstick geometry), Shot 5 (deadpan eyebrow reaction), Shot 6 (final stumble and hat recovery).`,
+    },
+  },
+  {
+    id: "nastassiavideo-suede-bag-ugc-review",
+    title: "麂皮手提包 · UGC 开箱口播",
+    subtitle: "X · @nastassiavideo · 模型未标注 · 20秒 · 9:16",
+    description:
+      "博主坐在床边拆盒取出麂皮手提包，边讲边展示缝线和内袋，再到镜子前试背，20 秒种草口播。",
+    video: "/tutorials/nastassiavideo-suede-bag-ugc-review/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-suede-bag-ugc-review/poster.jpg",
+    duration: "20秒",
+    durationSec: 20,
+    styleLabel: "真人风",
+    shots: 1,
+    references: 4,
+    model: "未标注（作者未公开）",
+    style: "UGC 博主测评 · 卧室暖光 · 手机手持竖拍",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/nastassiavideo/status/2096179182992527601",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 1990,
+    sourceStats: { asOf: "2026-09-27", likes: 50, reposts: 5, bookmarks: 22 },
+    formats: ["产品广告", "手机POV·Vlog"],
+    hook: {
+      structure: "拆盒 → 细节展示 → 打开看内袋 → 镜前试背 → 举包收尾",
+      opening: "第 0 秒她坐在床边，腿上放着一个白色纸盒，对着镜头笑着开口说话。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1–4s 打开盒子取出包；约 4.5–8.5s 把包横在镜头前转动，展示前片、明线和手柄；约 9–11.5s 打开磁扣，把包口朝向镜头看内袋。", at: 1 },
+        { title: "上身效果", text: "约 12–15.5s 她站起来把包背上肩，走到落地镜前侧身照。", at: 12 },
+        { title: "结尾怎么收", text: "约 16–17.5s 回到床边把包放下再拿起；约 18–20s 把包举到镜头前说最后一句。", at: 16 },
+      ],
+      copyThis: "把商品参数写死：材质（仿麂皮、哑光绒面）、配件（两根细圆手柄、两个前片小搭扣、磁扣、内侧拉链袋）和尺寸（37×17.5×10.5 cm），再让每句台词对应一个展示动作。",
+      approx: true,
+    },
+    tags: [
+      "20秒 · 带货口播",
+      "9:16 竖屏",
+      "一镜到底",
+      "商品参考图",
+      "UGC 开箱",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备人物图和商品图",
+        description:
+          "作者在主帖放了一张 2×2 拼图：三张包的棚拍图（斜侧、内部、正面）和一张女性面部特写。四张都已收录（面部特写是 AI 生成的人物参考）。作者没有标注用的视频模型。",
+      },
+      {
+        number: 2,
+        title: "第二步：锁定人物和商品",
+        description:
+          "第一段写人物参考要保留的脸、发型、妆容和服装（奶白针织上衣、直筒牛仔裤、细金饰）；第二段把包的材质、颜色、手柄、搭扣、磁扣、内袋和尺寸全部写死，要求每个镜头都一样。",
+      },
+      {
+        number: 3,
+        title: "第三步：按台词顺序写动作",
+        description:
+          "场景写明卧室、黄金时段暖光、手机手持轻微晃动。之后按顺序写 5 句台词，每句配一个动作：拆盒、转包看细节、打开磁扣看内袋、镜前试背、看镜头说收尾句。最后写声音（温暖的中音）、画面质感和「不要字幕、Logo、水印」。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-suede-bag-image1-angle",
+        number: "1",
+        title: "手提包 · 斜侧面",
+        subtitle: "主帖拼图左上格裁出",
+        image: "/tutorials/nastassiavideo-suede-bag-ugc-review/refs/image1-bag-angle.jpg",
+        prompt: "作者上传的商品图，不是生成图，没有出图提示词。",
+      },
+      {
+        id: "nastassiavideo-suede-bag-image2-interior",
+        number: "2",
+        title: "手提包 · 内部与内袋",
+        subtitle: "主帖拼图左下格裁出",
+        image: "/tutorials/nastassiavideo-suede-bag-ugc-review/refs/image2-bag-interior.jpg",
+        prompt: "作者上传的商品图，不是生成图，没有出图提示词。",
+      },
+      {
+        id: "nastassiavideo-suede-bag-image3-front",
+        number: "3",
+        title: "手提包 · 正面",
+        subtitle: "主帖拼图右下格裁出",
+        image: "/tutorials/nastassiavideo-suede-bag-ugc-review/refs/image3-bag-front.jpg",
+        prompt: "作者上传的商品图，不是生成图，没有出图提示词。",
+      },
+      {
+        id: "nastassiavideo-suede-bag-image4-face",
+        number: "4",
+        title: "人物参考 · 面部特写",
+        subtitle: "主帖拼图右上格裁出（512x540）· AI 人物参考",
+        image: "/tutorials/nastassiavideo-suede-bag-ugc-review/refs/image4-face-closeup.jpg",
+        prompt: "作者未公开出图提示词。提示词第一段按这张图锁定脸、发型、妆容。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1s 坐在床边，腿上放白盒子，看镜头开口。" },
+      { number: 2, description: "1–4s 打开盒子，取出麂皮包。" },
+      { number: 3, description: "4.5–8.5s 把包横在镜头前转动，展示前片和明线。" },
+      { number: 4, description: "9–11.5s 打开磁扣，展示内部和拉链内袋。" },
+      { number: 5, description: "12–13s 站起来把包背上肩。" },
+      { number: 6, description: "13.5–15.5s 在落地镜前侧身照。" },
+      { number: 7, description: "16–17.5s 回到床边，把包放到盒子旁再拿起。" },
+      { number: 8, description: "18–20s 把包举到镜头前说收尾句。" },
+    ],
+    constraints:
+      "人物脸、发型、妆容、服装全程一致；包的形状、颜色、绒面、明线、手柄、磁扣每个镜头都一样；不要字幕、Logo、水印。与成片不符：提示词写不要字幕，成片全程有逐词弹出的大字幕，应该是后期加的；结尾是她把包举到镜头前，不是提示词写的镜头推近后淡出。缺口：作者没有标注视频模型；口型和台词没有逐句核对。",
+    video_prompt: {
+      title: "Suede Shoulder Bag · UGC Review",
+      subtitle: "模型未标注 · 9:16 · 英文完整提示词（主帖第一张图，逐字转录）",
+      content: `Use the uploaded reference image as the exact character reference. Preserve her facial identity, hairstyle, eye color, makeup, skin tone, body proportions, wardrobe, and accessories consistently throughout the video. Wardrobe stays clean and neutral to complement the bag: a fitted cream knit top, tailored straight leg jeans in a neutral wash, delicate gold jewelry, rings, and a thin bracelet.
+
+Use the uploaded handbag images as the locked product reference. The product is a long rectangular shoulder bag in dark espresso brown imitation suede, with a soft matte nap, two thin rolled shoulder handles, light contrast topstitching, two small front flap tabs, a magnetic snap closure, and a fabric lined interior with one inner zip pocket. Keep the shape, proportions, suede texture, color, stitching, handles, and closure identical in every shot. The bag is a slim east to west silhouette, roughly 37 cm wide, 17.5 cm tall, 10.5 cm deep.
+
+Create an authentic UGC creator review filmed inside a bright modern bedroom with warm golden hour sunlight, soft natural shadows, and a calm premium lifestyle feel. The camera behaves like a handheld smartphone with subtle natural sway while staying steady enough to read the product clearly.
+
+The video begins with the woman sitting on the edge of the bed, a plain matte white box with no branding resting on her lap. Smiling at the camera she says, "Okay, I genuinely did not expect to love a bag this much." She lifts the lid off the white box, sets it beside her, and slowly draws the handbag out, running her hand across the suede.
+
+She rotates the bag in front of the camera, showing the front tabs, the topstitching, and the two handles as soft light glides across the nap. She smiles and says, "The suede feels so soft, and up close the stitching is actually really nice."
+
+She opens the magnetic snap and tips the bag toward the camera to show the lined interior and the inner zip pocket, then says, "Two handles, a magnetic snap, and a zip pocket inside, so it honestly holds everything."
+
+She stands, slides the handles onto her shoulder, and walks to a full length mirror. Looking at her reflection she settles the bag against her hip and says, "And the shape just goes with everything."
+
+She turns slightly left and right so the suede catches the light from different angles, then walks back to the bed, sets the bag down beside the open white box, and picks it up one more time, holding it beside her.
+
+Looking directly into the camera she smiles warmly and says, "Honestly, my favorite bag this season." The camera slowly pushes in on the bag before the shot fades out.
+
+Voice: warm upbeat alto, a genuine note of surprise on the opening line, settling into relaxed confidence by the end. Accurate lip sync on every line.
+
+Authentic UGC fashion content, handheld smartphone framing, shallow depth of field with the bag in sharp focus and the background soft, realistic suede texture and soft light reflections, expressive natural facial animation, warm natural color, vertical 9:16.
+
+no subtitles, no captions, no on-screen text, no logos, no watermarks, no identity changes, no wardrobe changes, no product changes.`,
+    },
+  },
+  {
+    id: "nastassiavideo-pink-after-dark-rap-minimax-h3",
+    title: "粉色夜城说唱 MV · MiniMax H3",
+    subtitle: "X · @nastassiavideo · MiniMax H3 · 12秒 · 16:9",
+    description:
+      "粉色霓虹夜城说唱 MV：每句歌词换一个雨夜场景，大字歌词印在她身后的墙、围栏和楼上。",
+    video: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/poster.jpg",
+    duration: "12秒",
+    durationSec: 12,
+    styleLabel: "真人风",
+    shots: 11,
+    references: 10,
+    model: "MiniMax H3",
+    style: "雨夜霓虹 · 酸性玫瑰粉 + 黑 · 35mm 胶片颗粒 · 巨型歌词排版",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/nastassiavideo/status/2093364039187308582",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 2020,
+    sourceStats: { asOf: "2026-09-27", likes: 33, reposts: 4, bookmarks: 10 },
+    formats: ["字效·片头", "角色表演"],
+    hook: {
+      structure: "每句歌词一个场景 → 歌词大字落在她身后的真实表面 → 卡在拍点上硬切",
+      opening: "第 0 秒她站在砖墙小巷里，身后一道竖向粉色霓虹；0.25 秒起「PINK AFTER DARK」三行大字从积水倒影里升起，贴到左边墙上。",
+      openingAt: 0,
+      beats: [
+        { title: "场景怎么换", text: "约 1.75s 切到地铁站近景，她整理马甲领口；2.5s 砖墙上贴出「CITY ON MY SKIN」海报；3.25s 铁丝网横幅「YOU CAN'T PULL ME IN」；3.75s 雨夜斑马线「I WALK LIKE THUNDER」，脚下一圈粉色涟漪。", at: 1.75 },
+        { title: "中段", text: "约 5s 天台粉烟里浮出「BLACK SKY BURNING」；6.25s 地下车库，「HEARTBEAT IN THE STREET」外套银色心电圆环；7.25s 玻璃大楼窗格拼出「I OWN THE NIGHT」，她摸头顶墨镜，随后窗格一排排熄灭。", at: 5 },
+        { title: "结尾怎么收", text: "约 8.5s 地下通道壁画上斜着落下「MOVE TO MY RHYTHM」；9.75s 切到隧道口；10–12.3s 近景，身后巨型「CONCRETE」和小字「WATCH ME LIGHT THE」，她看着镜头唱完最后一句。", at: 8.5 },
+      ],
+      copyThis: "把字写成场景的一部分：规定字体（超窄粗黑体、粉色填充 + 细银边）、字在她身后的哪种表面上（墙、横幅、窗格、壁画），并要求字离镜头比人远、不挡脸、拼写正确。",
+      approx: true,
+    },
+    tags: [
+      "12秒 · 说唱 MV",
+      "16:9 横屏",
+      "11 个镜头",
+      "歌词大字排版",
+      "角色卡 + 音频驱动",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备角色卡、歌词场景图和音轨",
+        description:
+          "作者在主帖放了三张图：一张角色卡（全身 + 脸部特写 + 半身，粉色马甲造型）、一张 3×3 歌词场景图（9 个场景各配一句歌词大字），和一张提示词长图。角色卡和 9 张场景图都已收录。提示词里的 @Audio1 是说唱音轨，作者没有公开。",
+      },
+      {
+        number: 2,
+        title: "第二步：写一段三次生成都用的公共设定",
+        description:
+          "开头的 SHARED BLOCK 每次生成都贴：@Image1 只管脸、发色、妆和服装，@Audio1 只管节奏和口型；每个场景只有一个酸性玫瑰粉霓虹光源、积水从下往上补光；色调约 70% 黑 + 27% 粉 + 3% 银；写明服装细节、字体规则和机位范围；音乐 160 BPM、每个切点落在小节第一拍、不要模型自己生成音乐。",
+      },
+      {
+        number: 3,
+        title: "第三步：分三次生成，每次 3 个镜头",
+        description:
+          "RUN A、B、C 各写 3 个镜头（5 秒、5 秒、6 秒），每个镜头都写：机位和镜头焦段、灯光变化、运镜、动作和要唱的歌词、字怎么出现、怎么转到下一个镜头（硬切、甩镜、光扫、烟雾转场、匹配剪辑、推镜爆闪）。结尾统一贴技术限制：只出现列出的字、不要字幕、水印、Logo、多余的人、不要换装换脸。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-pink-after-dark-image1-nastya",
+        number: "@Image1",
+        title: "@Image1 · 角色卡 Nastya",
+        subtitle: "主帖第一张图原件 HQ0fbK0WUAAsL00（1536x1024）· 全身 + 脸部特写 + 半身，AI 角色卡",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/image1-character-card-nastya.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@Image1 = character card. Controls face, grey blue eyes, ash brown hair, makeup and wardrobe only; the backdrop of @Image1 stays out of the output.",
+      },
+      {
+        id: "nastassiavideo-pink-after-dark-map1",
+        number: "1",
+        title: "歌词场景图 · PINK AFTER DARK",
+        subtitle: "砖墙小巷 + 竖向粉色霓虹；主帖第二张 3×3 拼图裁出",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/map1-pink-after-dark.jpg",
+        prompt: "作者没有公开这张图的出图提示词。",
+      },
+      {
+        id: "nastassiavideo-pink-after-dark-map2",
+        number: "2",
+        title: "歌词场景图 · CITY ON MY SKIN",
+        subtitle: "黑砖墙 + 三条粉色海报；主帖第二张 3×3 拼图裁出",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/map2-city-on-my-skin.jpg",
+        prompt: "作者没有公开这张图的出图提示词。",
+      },
+      {
+        id: "nastassiavideo-pink-after-dark-map3",
+        number: "3",
+        title: "歌词场景图 · I WALK LIKE THUNDER",
+        subtitle: "雨夜斑马线 + 粉色涟漪；主帖第二张 3×3 拼图裁出",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/map3-i-walk-like-thunder.jpg",
+        prompt: "作者没有公开这张图的出图提示词。",
+      },
+      {
+        id: "nastassiavideo-pink-after-dark-map4",
+        number: "4",
+        title: "歌词场景图 · YOU CAN'T PULL ME IN",
+        subtitle: "铁丝网 + 粉色横幅；主帖第二张 3×3 拼图裁出",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/map4-you-cant-pull-me-in.jpg",
+        prompt: "作者没有公开这张图的出图提示词。",
+      },
+      {
+        id: "nastassiavideo-pink-after-dark-map5",
+        number: "5",
+        title: "歌词场景图 · BLACK SKY BURNING",
+        subtitle: "天台 + 粉色烟雾；主帖第二张 3×3 拼图裁出",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/map5-black-sky-burning.jpg",
+        prompt: "作者没有公开这张图的出图提示词。",
+      },
+      {
+        id: "nastassiavideo-pink-after-dark-map6",
+        number: "6",
+        title: "歌词场景图 · HEARTBEAT IN THE STREET",
+        subtitle: "地下车库 + 银色圆环心电线；主帖第二张 3×3 拼图裁出",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/map6-heartbeat-in-the-street.jpg",
+        prompt: "作者没有公开这张图的出图提示词。",
+      },
+      {
+        id: "nastassiavideo-pink-after-dark-map7",
+        number: "7",
+        title: "歌词场景图 · I OWN THE NIGHT",
+        subtitle: "玻璃大楼窗格亮字；主帖第二张 3×3 拼图裁出",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/map7-i-own-the-night.jpg",
+        prompt: "作者没有公开这张图的出图提示词。",
+      },
+      {
+        id: "nastassiavideo-pink-after-dark-map8",
+        number: "8",
+        title: "歌词场景图 · MOVE TO MY RHYTHM",
+        subtitle: "地下通道几何壁画；主帖第二张 3×3 拼图裁出",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/map8-move-to-my-rhythm.jpg",
+        prompt: "作者没有公开这张图的出图提示词。",
+      },
+      {
+        id: "nastassiavideo-pink-after-dark-map9",
+        number: "9",
+        title: "歌词场景图 · WATCH ME LIGHT THE CONCRETE",
+        subtitle: "隧道口粉色天际 + 巨型字；主帖第二张 3×3 拼图裁出",
+        image: "/tutorials/nastassiavideo-pink-after-dark-rap-minimax-h3/refs/map9-watch-me-light-the-concrete.jpg",
+        prompt: "作者没有公开这张图的出图提示词。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.6s 砖墙小巷，竖向粉色霓虹；「PINK AFTER DARK」从积水倒影里升起贴到墙上。" },
+      { number: 2, description: "1.75–2.4s 地铁站近景，背后列车掠过，她整理马甲领口。" },
+      { number: 3, description: "2.5–3.1s 黑砖墙，「CITY / ON MY / SKIN」三条粉色海报贴在她身后。" },
+      { number: 4, description: "3.25–3.6s 铁丝网前，粉色横幅「YOU CAN'T PULL ME IN」。" },
+      { number: 5, description: "3.75–4.9s 雨夜斑马线，她朝镜头走来，「I WALK LIKE THUNDER」斜体大字，脚下粉色涟漪扩散。" },
+      { number: 6, description: "5–5.9s 天台低角度，粉色烟雾里浮出「BLACK SKY BURNING」，风吹起头发。" },
+      { number: 7, description: "6–7.1s 地下车库粉色灯管，「HEARTBEAT IN THE STREET」外套银色圆环和心电线。" },
+      { number: 8, description: "7.25–8.3s 玻璃大楼窗格拼出「I OWN THE NIGHT」，她摸头顶墨镜，窗格一排排熄灭。" },
+      { number: 9, description: "8.5–9.6s 地下通道几何壁画，「MOVE / TO MY / RHYTHM」斜着落下，她甩手腕转身。" },
+      { number: 10, description: "9.75s 隧道口，远处粉色天际，隧道灯依次亮起。" },
+      { number: 11, description: "10–12.3s 近景，身后巨型「CONCRETE」和小字「WATCH ME LIGHT THE」，她看镜头唱完最后一句。" },
+    ],
+    constraints:
+      "只出现列出的字，拼写正确，不要字幕、水印、Logo；字不挡脸；只有她一个人，不换装不换脸；不要模型自己生成音乐。与成片不符：提示词写 9:16、分三次生成（5+5+6 秒），成片是一条 12 秒 16:9 横屏；成片里的字是整句歌词（如「YOU CAN'T PULL ME IN」），提示词只写了部分关键词（如「PULL ME IN」）；「CITY ON MY SKIN」在成片里是地铁近景后另切一个砖墙镜头，不是贴在地铁瓷砖上；成片把铁丝网镜头放在斑马线之前。缺口：@Audio1 音轨没有公开；9 张歌词场景图怎么用（是否作为参考图上传）作者没说；口型和歌词没有逐句核对。",
+    video_prompt: {
+      title: "Pink After Dark · Rap Music Video",
+      subtitle: "MiniMax H3 · 提示词写 9:16（成片 16:9）· 英文完整提示词（主帖第三张图，逐字转录）",
+      content: `=== SHARED BLOCK – paste at the top of all three runs ===
+
+REFS:
+@Image1 = character card. Controls face, grey blue eyes, ash brown hair, makeup and wardrobe only.
+@Audio1 = the track for this segment. Controls tempo, flow, phrasing and every lip position only.
+ACTIVE REFERENCES: @Image1 100%; @Audio1 100%. Framing is fresh in every shot, the backdrop of @Image1 stays out of the output.
+
+GLOBAL STYLE NOTES:
+lighting_philosophy: one acid rose neon source per location, the brightest thing in frame, wet ground returning it as fill from below, everything outside its throw falling to black
+color_grade: 35mm film still, push processed, fine grain, halation off every pink source. ~70% black and carbon in asphalt, brick and concrete + ~27% acid rose in the neon, the lettering and the wet reflections, powder pink on her wardrobe + ~3% chrome silver on rings and letter outlines
+setting: rain soaked black city at night, a new location on every cut, real time
+ambience: rain on asphalt at three distances, tyre hiss, vent hum, dripping concrete, swapping on the same frame as every cut
+characters: <Nastya> corresponds to @Image1. Powder pink cropped puffer vest open over a powder pink long sleeve crop top, oversized powder pink parachute trousers, pink and grey plaid shirt knotted at her hips, grey faux fur boots with pink laces, black sunglasses pushed up on her head, silver rings, long ash brown layered hair loose in the wind, visible pores. Keep identical in every shot. She is the only person in the video.
+typography: ultra condensed heavyweight sans in capitals, acid rose fill with a thin chrome silver outline. The words live on a real surface behind her, painted, printed, projected or lit, always further from the lens than she is. They land in the first half of the shot and hold crisp and correctly spelled to the cut. Nothing crosses her face.
+camera_character: handheld throughout, operator breath, hand tremor, small live reframes in every shot
+location_map: she holds the centre of the vertical frame, x 25% to 75%, the lettering and the neon behind her in the upper and outer thirds
+
+MUSIC_LAYER:
+instrumental: supplied by @Audio1, 160 BPM half time, minor key, sub bass, tight kick, dry clap. Generate no music of your own.
+lyrics: rapped to @Audio1, one line per shot as listed
+vocal_style: rapping, percussive consonants, cold and unhurried, hitting the beat rather than sliding across it
+audio_visual_sync: every cut lands on the first beat of a bar, 36 frames apart, kick on each cut, the words locking on the clap
+lip_sync_mode: rapping, English, every consonant matched to @Audio1
+
+
+=== RUN A ===
+
+PINK AFTER DARK, SEGMENT A: IGNITION > CLAIM > SURGE
+SHOT STRUCTURE: 3 shots, 5 seconds, 9:16, 24 fps, exactly as listed, no added shots
+
+SEQUENCE LIST:
+SHOT 1 (0 to 1.5s) HOOK
+camera: waist up, eye level, three quarter 45. lens: 47 standard, no focal drift
+camera_motion: slow push in
+action_visual: brick alley, one vertical acid rose slit burning at the far end, rain falling through three depth planes into breaking puddles. She rolls one shoulder forward, turns into the lens and raps: 'Pink after dark'
+text: 'PINK AFTER DARK' stacked in three lines, rising out of the wet pavement reflection and locking upright on the brick wall at frame left
+exit: her chin drops on the last syllable
+(HARD CUT TO)
+SHOT 2 (1.5 to 3s) SETUP
+camera: medium close up, eye level, frontal 0. lens: 29 short telephoto
+LIGHT SHIFT: fluorescent tube overhead, one flicker, pink bleeding off wet subway tile
+camera_motion: small arc around her left shoulder
+action_visual: black subway tile, a train passing as a blurred band behind glass. She straightens her vest collar and raps: 'City on my skin'
+text: 'CITY', 'ON MY' and 'SKIN' printed on three pink poster strips that slide in from three directions and flatten onto the tile behind her, corners lifting in the airflow
+exit: the bottom poster corner peels and whips past the lens
+(WHIP PAN TO)
+SHOT 3 (3 to 5s) RISING
+camera: knees up medium wide, hip height, profile 90 turning frontal. lens: 65 moderate wide
+LIGHT SHIFT: distant pink signals, long reflections running the wet crosswalk
+camera_motion: retreating dolly, she closes the gap
+action_visual: rainwater sheeting across crosswalk stripes, mist off a street vent. She steps into the lens, shoulder rolling through it, and raps: 'I walk like thunder'
+text: 'THUNDER' in heavy oblique capitals slams down onto the wet crosswalk behind her, one acid rose ripple leaving the impact
+exit: her boot lands and the ripple widens past the frame
+
+
+=== RUN B ===
+
+PINK AFTER DARK, SEGMENT B: RESISTANCE > ELEVATION > PULSE
+SHOT STRUCTURE: 3 shots, 5 seconds, 9:16, 24 fps, exactly as listed, no added shots
+
+SEQUENCE LIST:
+SHOT 1 (0 to 1.5s)
+camera: waist up, eye level, three quarter 45 from her right. lens: 47 standard
+LIGHT SHIFT: pink headlight streaks sweeping behind chain link
+camera_motion: lateral track right, holding her frame left
+action_visual: rain beading down black wire, the fence shivering as a vehicle passes. She turns one shoulder away, looks straight back into the lens and raps: 'You can't pull me in'
+text: 'PULL ME IN' printed across a pink banner zip tied to the chain link behind her, stretching taut with the fence then snapping flat on the clap
+exit: a headlight streak slices the frame horizontally
+(LIGHT WIPE TO)
+SHOT 2 (1.5 to 3s) SIGNATURE
+camera: medium close up, low angle, frontal 0. lens: 29 short telephoto
+LIGHT SHIFT: acid rose city glow from below, matte black cloud above
+camera_motion: slow rise, tilting with her chin
+action_visual: rooftop under fast carbon cloud, pink smoke rolling along the deck, wind lifting her hair and collar. She raises her chin into it and raps: 'Black sky burning'
+text: 'BLACK SKY' above 'BURNING', revealing bottom to top through the rolling pink smoke behind her
+exit: smoke rushes the lens and fills the frame
+(SMOKE WIPE TO)
+SHOT 3 (3 to 5s)
+camera: waist up, eye level, three quarter 45. lens: 47 standard
+LIGHT SHIFT: pink ceiling tubes pulsing down the garage in sequence
+camera_motion: handheld hold, breathing only
+action_visual: black concrete pillars, vent fog crossing the floor, puddles trembling on the bass. She pulses both shoulders twice on the kick and raps: 'Heartbeat in the street'
+text: 'HEARTBEAT' inside a thin chrome silver ring behind her, the ring expanding once on the kick and freezing around the word
+exit: the tubes darken toward her one by one
+
+
+=== RUN C ===
+
+PINK AFTER DARK, SEGMENT C: OWNERSHIP > RELEASE > SIGNATURE
+SHOT STRUCTURE: 3 shots, 6 seconds, 9:16, 24 fps, exactly as listed, no added shots
+
+SEQUENCE LIST:
+SHOT 1 (0 to 1.5s) CLIMAX
+camera: tight medium close up, eye level, frontal 0. lens: 29 short telephoto
+LIGHT SHIFT: a grid of dark windows behind her, single cells lighting bubblegum pink
+camera_motion: push in to a stop
+action_visual: black glass tower, traffic reflections crossing the facade, fine rain sliding down it. She touches the sunglasses on her head without lowering them and raps: 'I own the night'
+text: 'I OWN THE NIGHT' assembled from individual lit window cells across the tower grid behind her, one word per floor
+exit: the lit windows switch off in a wave, one vertical pink column left burning
+(MATCH CUT TO)
+SHOT 2 (1.5 to 3s)
+camera: medium, eye level, profile 90 turning three quarter. lens: 65 moderate wide
+LIGHT SHIFT: hard pink projection sweeping a geometric mural
+camera_motion: arc right around her, ending frontal
+action_visual: concrete underpass, black and pink mural planes, ground fog sliding through. She shifts her weight, flicks one wrist and turns back into the lens rapping: 'Move to my rhythm'
+text: 'MOVE', 'TO MY' and 'RHYTHM' in three oblique lines dropping onto the mural planes from three directions and locking together on the clap
+exit: the projection sweeps diagonally off the lens
+(ZOOM BURST TO)
+SHOT 3 (3 to 6s) RESOLUTION
+camera: close up, eye level, frontal 0. lens: 29 short telephoto
+camera_motion: push in for two seconds, then settle and hold
+action_visual: tunnel mouth opening onto a saturated pink horizon, tunnel lights flickering in sequence toward it, fog drawn forward past her, wet pavement carrying the reflection to the lens. She raps the full line into the lens: 'Watch me light the concrete'
+text: 'CONCRETE' in monumental condensed capitals rising vertically out of the wet pavement behind her, 'WATCH ME LIGHT THE' small and crisp on the line above it
+reaction: the last syllable releases, her shoulders drop, a controlled half smile arriving a beat late while her eyes stay on the lens
+exit: the pavement reflection pulses once and settles, holding her gaze for the final eight frames
+
+
+=== TECHNICAL CONSTRAINTS – paste at the bottom of all three runs ===
+
+only the words listed appear in frame, spelled exactly as written, no captions, no subtitles, no misspelled or invented letters, no text over her face, no watermark, no logos, no generated music, no extra people, no costume changes, no identity changes`,
+    },
+  },
+  {
+    id: "nastassiavideo-brown-loafers-unboxing-seedance-2-5",
+    title: "棕色乐福鞋 · 开箱试穿种草 · Seedance 2.5",
+    subtitle: "X · @nastassiavideo · Seedance 2.5 · 23秒 · 9:16",
+    description:
+      "棕色乐福鞋开箱种草：拆盒、看细节、试穿、走到镜头前，手机手持拍法，配口播和大字幕。",
+    video: "/tutorials/nastassiavideo-brown-loafers-unboxing-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-brown-loafers-unboxing-seedance-2-5/poster.jpg",
+    duration: "23秒",
+    durationSec: 23,
+    styleLabel: "真人风",
+    shots: 10,
+    references: 5,
+    model: "Seedance 2.5",
+    style: "卧室晨光 · 暖中性色 + 棕色皮革 + 靛蓝牛仔 · 手机手持 UGC",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/nastassiavideo/status/2092993847475257425",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 1826,
+    sourceStats: { asOf: "2026-09-27", likes: 33, reposts: 2, bookmarks: 7 },
+    formats: ["产品广告", "手机POV·Vlog"],
+    hook: {
+      structure: "抱盒开口 → 拆盒 → 手持看鞋 → 微距看细节 → 穿上 → 俯视看脚 → 走到镜头前",
+      opening: "第 0 秒她坐在床边，把米色鞋盒捧到胸前，对着镜头说「Okay, these finally came」。",
+      openingAt: 0,
+      beats: [
+        { title: "拆盒和看鞋", text: "约 3–6.3s 俯拍掀盖、再切到她坐在地板上翻开白色包装纸；6.5–8.3s 一只手把鞋举起，四分之三侧面对镜头。", at: 3 },
+        { title: "细节", text: "约 8.5–10.8s 微距，指尖沿着鞋面横带和冲孔滑过；11–12.3s 翻过来看黑色锯齿大底；12.5–14.8s 双手拿鞋举到镜头前。", at: 8.5 },
+        { title: "上脚和收尾", text: "约 15–17.3s 低机位看脚伸进鞋里踩实；17.5–19.8s 站着往下拍两只鞋；20–23.4s 低机位全身，她从左边走进来站定面对镜头。", at: 15 },
+      ],
+      copyThis: "把鞋的四个视角分别当参考图，并写清每张图对应哪个角度；每个镜头都写机位、焦段、手在哪、光从哪来，让手持手机的质感贯穿全片。",
+      approx: true,
+    },
+    tags: [
+      "23秒 · 开箱种草",
+      "9:16 竖屏",
+      "10 个镜头",
+      "商品四视图参考",
+      "Seedance 2.5",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备人物和鞋子参考图",
+        description:
+          "作者的流程：用 Recraft 做人物，用 GPT-2 做鞋子映射，Seedance 2.5 生成视频，ElevenLabs 配音，CapCut 剪辑。回复区给了三张图：人物脸部特写、提示词长图、一张鞋子四视图（正面、四分之三侧、俯视、正侧面）。人物特写原图收录；鞋子四视图裁成四张收录。",
+      },
+      {
+        number: 2,
+        title: "第二步：锁定鞋子，写全局设定",
+        description:
+          "REFS 写明每张鞋图对应的角度，要求全片是同一双鞋：鞋头形状、带钥匙孔和冲孔的横带、皮纹、中棕色和擦色边、黑色锯齿大底；棚拍背景和灯光不要带进画面。全局设定写：左边一扇窗的上午阳光、手机视频质感、卧室橡木地板、人物服装（米白罗纹毛衣、卷边靛蓝牛仔裤、米白袜、右手两枚银戒），脸只在第 1 和第 8 镜出现。",
+      },
+      {
+        number: 3,
+        title: "第三步：按 8 个镜头写开箱到上脚",
+        description:
+          "8 个镜头共 30 秒：抱盒开口 → 俯拍掀盖 → 翻开包装纸取鞋 → 侧面转鞋 → 横带微距 → 脚伸进鞋 → 俯视双脚 → 低机位看她走进画面。每镜写景别、角度、焦段、手持方式、动作和声音；只有第 1 镜有一句台词，最后要求不要字幕、不要背景音乐。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-brown-loafers-image5-girl",
+        number: "5",
+        title: "@[Image 5] · 人物脸部特写",
+        subtitle: "作者回复区第一张图原件 HQvO0dDWcAIWFHx（896x1216）· 作者说人物用 Recraft 做",
+        image: "/tutorials/nastassiavideo-brown-loafers-unboxing-seedance-2-5/refs/image5-girl-face.jpg",
+        prompt: "作者未公开出图提示词（主帖写人物用 Recraft 生成）。视频提示词中的用法：REFS: @[Image 5]girl。编号对应是按提示词推断，作者没有单独标注。",
+      },
+      {
+        id: "nastassiavideo-brown-loafers-shoe1-front",
+        number: "1",
+        title: "乐福鞋 · 正面",
+        subtitle: "提示词里对应 @[Image 4]front；回复区商品四视图按四等分裁出",
+        image: "/tutorials/nastassiavideo-brown-loafers-unboxing-seedance-2-5/refs/shoe1-front.jpg",
+        prompt: "作者说鞋图用 GPT-2 做了映射，没有公开出图提示词。",
+      },
+      {
+        id: "nastassiavideo-brown-loafers-shoe2-three-quarter",
+        number: "2",
+        title: "乐福鞋 · 四分之三侧",
+        subtitle: "提示词里对应 @[Image 1](three quarter；回复区商品四视图按四等分裁出",
+        image: "/tutorials/nastassiavideo-brown-loafers-unboxing-seedance-2-5/refs/shoe2-three-quarter.jpg",
+        prompt: "作者说鞋图用 GPT-2 做了映射，没有公开出图提示词。",
+      },
+      {
+        id: "nastassiavideo-brown-loafers-shoe3-overhead",
+        number: "3",
+        title: "乐福鞋 · 俯视",
+        subtitle: "提示词里写作 @overhead，没有编号；回复区商品四视图按四等分裁出",
+        image: "/tutorials/nastassiavideo-brown-loafers-unboxing-seedance-2-5/refs/shoe3-overhead.jpg",
+        prompt: "作者说鞋图用 GPT-2 做了映射，没有公开出图提示词。",
+      },
+      {
+        id: "nastassiavideo-brown-loafers-shoe4-profile",
+        number: "4",
+        title: "乐福鞋 · 正侧面",
+        subtitle: "提示词里对应 @[Image 2]profile；回复区商品四视图按四等分裁出",
+        image: "/tutorials/nastassiavideo-brown-loafers-unboxing-seedance-2-5/refs/shoe4-profile.jpg",
+        prompt: "作者说鞋图用 GPT-2 做了映射，没有公开出图提示词。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 坐在床边，捧着鞋盒对镜头说第一句。" },
+      { number: 2, description: "3–4.3s 俯拍，戴银戒的手掀开盒盖，露出白色包装纸。" },
+      { number: 3, description: "4.5–6.3s 她坐在地板上，双手翻开包装纸。" },
+      { number: 4, description: "6.5–8.3s 手把一只鞋举起，四分之三侧面对镜头。" },
+      { number: 5, description: "8.5–10.8s 微距，指尖沿鞋面横带和冲孔滑过。" },
+      { number: 6, description: "11–12.3s 把鞋翻过来，展示黑色锯齿大底。" },
+      { number: 7, description: "12.5–14.8s 站着双手拿鞋，举到镜头前。" },
+      { number: 8, description: "15–17.3s 低机位，穿米白袜的脚伸进鞋里踩实。" },
+      { number: 9, description: "17.5–19.8s 站着往下拍两只鞋。" },
+      { number: 10, description: "20–23.4s 低机位全身，她从左边走进画面站定。" },
+    ],
+    constraints:
+      "同一双鞋贯穿全片；人物服装不变；脸只在开头和结尾出现；不要字幕、不要背景音乐。与成片不符：提示词是 8 镜 30 秒，成片 23 秒、约 10 个镜头（多了坐在地板上拆纸、看鞋底、举鞋到镜头前）；提示词只有第 1 镜一句台词，成片全程有口播（作者说配音用 ElevenLabs）；提示词写不要字幕，成片有逐词弹出的大字幕，应是 CapCut 后期加的；提示词写深棕中分及肩直发，成片是及肩以下的卷发，和人物参考图一致。原文 SHOT 3 里「Tissue cracklre」是原图拼写，照录。缺口：@[Image 5] 对应脸部特写是按提示词推断，作者没有说明编号对应；口播台词没有逐句核对。",
+    video_prompt: {
+      title: "Unboxing → Reveal → Wear → Walk",
+      subtitle: "Seedance 2.5 · 9:16 · 英文完整提示词（作者回复区第二张图，逐字转录）",
+      content: `UNBOXING → REVEAL → WEAR → WALK
+SHOT STRUCTURE: 8 shots, 30 seconds, 9:16, exactly as listed, no added shots
+
+REFS: @[Image 5]girl
+@[Image 4]front, @overhead, @[Image 1](three quarter, @[Image 2]profile. One pair of loafers, the same pair in every shot. They control toe shape, penny strap with keyhole and perforated dots, leather grain, mid brown with burnished edges, black lug sole and tread. Nothing else: the studio background and studio lighting stay out, and every shot builds fresh framing of its own.
+
+ACTIVE REFERENCES: @[Image 4](image_4) to @[Image 1](image_1) all 100%
+
+GLOBAL STYLE NOTES:
+- lighting_philosophy: one window screen left, late morning sun through thin curtain, warm bounce off the oak floor
+- color_grade: modern phone video, faint sensor noise in shadows. ~60% warm neutral (linen, oak, wall) + ~30% mid brown (leather) + ~10% indigo (denim).
+- setting: bright bedroom, wide oak floorboards, unmade linen bed, matte sand shoe box
+- ambience: quiet room tone, muffled street through glass
+- characters: <Girl> cream ribbed knit sweater, sleeves at mid forearm, indigo jeans cuffed once, cream ribbed socks, short almond nails in milky nude, two thin silver rings on the RIGHT index and middle finger, dark brown centre parted shoulder length hair. Keep identical in every shot. Face visible only in SHOT 1 and SHOT 8.
+- hand_behaviour: hands are already in contact whenever visible, fingers together, pads flat on leather, lid or floor
+- camera_character: handheld phone throughout, real hand tremor, small live reframes
+
+SEQUENCE LIST:
+SHOT 1 (0 to 3s) HOOK. MCU, high angle as if arm held, frontal 0 degrees, 65 degree wide. Handheld with breathing. Girl on the bed edge x 25% to 80%, closed box at her chest, hands flat on the lid sides. Window light rakes the left of her face, catchlight in both eyes. She lifts the box toward the lens, then tips it out of frame bottom.
+- dialog: Dialogue language: American English. Girl (light young alto, conversational) lifts the box a fraction, then says: 'Okay, these finally came.'
+(MATCH CUT TO)
+
+SHOT 2 (3 to 7s). CU, overhead 90 degrees. Handheld, drifting 5 cm closer. Hands lie flat on the lid, silver rings catching light. The lid lifts out of frame, white tissue folded over the pair beneath. Dry cardboard drag, one paper crackle. Fingertips settle on the fold.
+(HARD CUT TO)
+
+SHOT 3 (7 to 11s). MS, low angle at floor height, three quarter 45 degrees. Handheld, slow push toward the box. Fingers peel the tissue open and the rounded toe rises out of the paper, burnished edge catching light first. Tissue cracklre, then quiet. The hand closes on the shoe and lifts.
+(CUT TO)
+
+SHOT 4 (11 to 15s). CU, eye level, profile 90 degrees, 29 degree short telephoto, background compressed to a soft wash. Locked handheld while the shoe turns. One loafer held up, fingers round the heel counter, rotating 30 degrees toward the lens. The highlight travels the burnished edge from toe to heel, lug sole staying dark underneath. Rotation stops with the strap facing the lens.
+(MATCH CUT TO)
+
+SHOT 5 (15 to 19s) SIGNATURE. Macro, three quarter 45 degrees on the penny strap, close focus, depth of field a few centimetres. Handheld, tiny reframe, no travel. The strap fills frame. A fingertip already resting beside the keyhole draws along the strap edge. Perforated dots stay sharp, grain falls soft at frame edge. The finger lifts, frame settling on the keyhole.
+(CUT TO)
+
+SHOT 6 (19 to 22s). MS, low angle from the floor, three quarter 45 degrees on the lower leg. Handheld, static with breathing. Cream sock on the foot, jean cuff above the ankle. The foot slides in and the heel drops, lug sole taking weight on the oak, contact shadow forming under it. One dull sole tap. The foot presses down and holds.
+(CUT TO)
+
+SHOT 7 (22 to 26s). CU, POV straight down 90 degrees from standing height. Handheld, gentle body sway. Both loafers on the oak floor from above, cream socks and cuffed jeans above them, straps and keyholes reading clearly. A long highlight lies across both vamps. One foot pivots and settles.
+(CUT TO)
+
+SHOT 8 (26 to 30s) RESOLUTION. WS, very low angle with the lens 20 cm off the floor, frontal 0 degrees, 65 degree wide, floorboards running into the lens. Locked low handheld, framing identical at first and last frame. The floor sits empty, then Girl walks in from screen left, stops centre and turns to the lens. The loafers sit nearest camera and largest in frame, lug sole and burnished vamp both clear, a contact shadow travelling with each sole. Her head reads high and slightly softer than her feet. Two flat sole steps, then quiet. She settles her weight, one shoulder dropping.
+
+TECHNICAL:
+no subtitles, no captions, no on screen text, no background music, no extra dialogue beyond the line in SHOT 1`,
+    },
+  },
+  // 查重别名(同帖同提示词 WAN 3.0 版，未收录)：https://x.com/nastassiavideo/status/2092170146768921015 对比视频下半屏（约 20.1–40.1s 播放）
+  {
+    id: "nastassiavideo-steampunk-airship-bar-seedance-2-5",
+    title: "蒸汽朋克飞艇酒吧 · 小猴帮打 · Seedance 2.5",
+    subtitle: "X · @nastassiavideo · Seedance 2.5（对比视频上半屏裁出）· 20秒 · 16:9",
+    description:
+      "飞艇酒吧里，大汉伸手抓她手腕，肩上的小猴一口咬下，她一肘反击放倒对方，回座举杯。",
+    video: "/tutorials/nastassiavideo-steampunk-airship-bar-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-steampunk-airship-bar-seedance-2-5/poster.jpg",
+    duration: "20秒",
+    durationSec: 20,
+    styleLabel: "真人风",
+    shots: 1,
+    references: 2,
+    model: "Seedance 2.5",
+    style: "蒸汽朋克 · 黄铜吊灯顶光 · Kodak 500T 胶片颗粒 · 手持一镜到底",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/nastassiavideo/status/2092170146768921015",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 883,
+    sourceStats: { asOf: "2026-09-27", likes: 26, reposts: 1, bookmarks: 3 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "吧台独饮 → 大汉搭讪 → 抓手腕被猴咬 → 肘击 → 勾腿放倒 → 回座举杯",
+      opening: "第 0 秒镜头从吧台上方往下拍她握着酒杯的手，黄铜台面反着灯光。",
+      openingAt: 0,
+      beats: [
+        { title: "冲突怎么起", text: "约 2.5–7s 平视中近景，小猴蹲在她右肩，大胡子大汉从旁边凑过来；她抬眼看他。", at: 2.5 },
+        { title: "动作段", text: "约 7.5–8s 特写他抓她手腕，小猴咬住他手指；8.5–12s 她一肘顶上他下巴；12.5–15.5s 他扑空倒下，帽子被小猴扣到眼睛上，踉跄后退。", at: 7.5 },
+        { title: "结尾怎么收", text: "约 16–20s 回到吧台正面，她坐回原位，小猴回到肩上，她举杯喝酒。", at: 16 },
+      ],
+      copyThis: "每一拍都写时间段 + 机位高度 + 动作 + 音效（SFX），并把左右手、左右肩写死（酒杯在左手、小猴在右肩、大汉在右侧），打斗方向就不会乱。",
+      approx: true,
+    },
+    tags: [
+      "20秒 · 动作短剧",
+      "16:9 横屏",
+      "一镜到底",
+      "双角色设定图",
+      "Seedance 2.5 vs WAN 3.0",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备两张角色设定图",
+        description:
+          "作者在主帖放了两张设定图：@[Image 1] 女主 Nastassia（脸部特写 + 全身正背面，护目镜、奶白高领衬衫、棕色皮马甲、暗红裙摆、长靴），@[Image 2] 小猴（戴黄铜护目镜的绿帽、棕皮马甲、围巾，正面特写 + 正背面）。大汉只用文字描述。出图提示词没有公开。",
+      },
+      {
+        number: 2,
+        title: "第二步：写全局设定和镜头规则",
+        description:
+          "光只来自吧台上方的黄铜吊灯；Kodak Vision3 500T 胶片颗粒，色彩约 50% 黄铜琥珀 + 30% 棕色皮革 + 20% 深蓝窗光；场景是飞行中的飞艇吊舱酒吧。写明三个角色的服装、声音和身高（170 / 195 / 40 cm）。镜头是一次手持运动，从吧台上方降到平视、到她下巴下方、到地板、再回平视，肘击那 0.4 秒降到 40% 速度。",
+      },
+      {
+        number: 3,
+        title: "第三步：按 6 拍写动作和台词",
+        description:
+          "0–3s 坐着喝酒、大汉凑近；3–6.6s 放下杯子转头、起身；6.6–7.3s 他抓手腕、小猴咬手指；7.3–9.3s 肘击下巴；9.3–12.5s 他挥空、她勾腿放倒；12.5–20s 小猴把帽子扣他眼睛上、他仰倒、她举杯。台词两句：「Hey doll, let's play.」「Yeah. Right now.」最后写不要剪切、不要血和武器、不要字幕和音乐。作者用同一段提示词对比了 Seedance 2.5 和 WAN 3.0。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-steampunk-image1-nastassia",
+        number: "1",
+        title: "@[Image 1] · 女主 Nastassia 设定图",
+        subtitle: "主帖第一张图原件 HQjhl7hXwAAMC6R（1536x1024）· AI 角色设定图",
+        image: "/tutorials/nastassiavideo-steampunk-airship-bar-seedance-2-5/refs/image1-nastassia-steampunk-sheet.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@[Image 1]= Nastassia, controls face, hair and wardrobe only, full close up fidelity in every framing.",
+      },
+      {
+        id: "nastassiavideo-steampunk-image2-monkey",
+        number: "2",
+        title: "@[Image 2] · 小猴设定图",
+        subtitle: "主帖第二张图原件 HQjhl7VXUAALb3z（1536x1024）· AI 角色设定图",
+        image: "/tutorials/nastassiavideo-steampunk-airship-bar-seedance-2-5/refs/image2-monkey-sheet.jpg",
+        prompt: "作者未公开出图提示词。视频提示词中的用法：@[Image 2]= the Monkey, controls face, fur and outfit only.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 吧台上方俯拍，她握着酒杯的手。" },
+      { number: 2, description: "2.5–7s 平视，小猴在她右肩，大汉从旁边凑近，她抬眼看他。" },
+      { number: 3, description: "7.5–8s 特写：他抓她手腕，小猴咬住他手指。" },
+      { number: 4, description: "8.5–12s 她一肘顶上他下巴，他头往后仰。" },
+      { number: 5, description: "12.5–14.5s 快速晃动，他倒向地面，小猴抢过帽子。" },
+      { number: 6, description: "15–16s 帽子扣在他眼睛上，他踉跄后退。" },
+      { number: 7, description: "16–20s 吧台正面，她坐回原位，小猴回到肩上，她举杯喝酒。" },
+    ],
+    constraints:
+      "角色脸和服装全程一致；酒杯在左手、小猴在右肩、大汉在她右侧；一镜到底不剪切；不要血和武器，不要字幕、水印、Logo 和音乐。来源说明：原帖视频是 1080x1440 上下分屏对比，中间有「Seedance 2.5 /Wan 3.0」标签条；上半屏 Seedance 2.5 在 0–20.07s 播放（下半屏静止），下半屏 WAN 3.0 在 20.07–40.1s 播放。本页成片只裁出上半屏 0–20.07s（1080x606，去掉标签条和黑边），音频是原视频同一时段音轨，未改动。与成片不符：成片里她大部分时间坐着，提示词写的「起身、凳子被踢翻」看不清；中段有几次快速甩镜，是否有硬切没有逐帧确认。缺口：两张设定图的出图提示词没公开；台词没有逐句核对。",
+    video_prompt: {
+      title: "Steampunk Airship Bar · Nastassia & the Monkey",
+      subtitle: "Seedance 2.5（与 WAN 3.0 共用同一段提示词）· 英文完整提示词（主帖第三张图，逐字转录）",
+      content: `REFS: @[Image 1]= Nastassia, controls face, hair and wardrobe only, full close up fidelity in every framing. @[Image 2]= the Monkey, controls face, fur and outfit only. Framing of both stays out.
+ACTIVE REFERENCES: @[Image 1] @[Image 2] 100%; 100%
+
+GLOBAL STYLE NOTES:
+- lighting_philosophy: brass lamps over the counter are the only source, faces lit from above, room dark behind
+- color_grade: 35mm film still, Kodak Vision3 500T, grain, halation on the lamps. ~50% brass and amber (lamps, counter) + ~30% brown leather (crowd) + ~20% deep blue (windows)
+- setting: a bar in an airship gondola in flight, riveted hull, brass counter, bottles behind
+- characters:
+<Nastassia> per , focal. Goggles on the forehead, cream high collar blouse, brown leather vest with brass clasps, hair pinned up. Keep identical throughout. voice: quiet alto, flat
+<Monkey> per . Green cap with brass goggles, tan leather vest. Keep identical throughout
+<Patron> secondary: heavy man in an oiled canvas coat, brace on his RIGHT forearm. voice: loud gravel baritone
+- SCALE: Nastassia 170 cm, the Patron 195 cm, the Monkey 40 cm. It climbs and leaps, grips with hands and tail, no flight
+
+SHOT:
+- azimuth: three quarter 45° on her at the start, then orbiting to profile 90°, always by physically moving around her
+- camera_motion: one handheld move, operator weight, a whip reframe onto every contact. Height arc: above the counter looking down, to eye level, under her chin as she stands, to the boards on his fall, back to eye level
+- speed_timing: 100%, dropping to approximately 40% for 0.4s on the elbow contact, back to 100% immediately after
+
+ACTIONS:
+- action_sequence:
+beat (0.0s to 3.0s):
+dynamic_framing: high over the brass on her hands, sinking to eye level as he arrives, a drinker's back wiping the frame
+visual_action: Nastassia sits at the brass, glass in her LEFT hand, the Monkey on her RIGHT shoulder, the Patron slides in at her RIGHT elbow, his hand landing on the counter. SFX: glass on brass
+beat (3.0s to 6.6s):
+dynamic_framing: close up at eye level, held still, then under her chin as she rises, filling the frame against the lamps
+visual_action: she first sets the glass down without looking, then turns her head to him, jaw setting and the Monkey flattening its ears, finally comes up off the stool into his space, the stool kicking back. SFX: wood clattering over
+beat (6.6s to 7.3s):
+dynamic_framing: low, snaps to a close up on his hand and her wrist on the brass
+visual_action: the Patron grabs for her wrist and the Monkey bites his index finger. SFX: one shriek, a sharp breath
+beat (7.3s to 9.3s):
+dynamic_framing: stays low, orbits to profile 90° on the elbow, his jaw against the lamps
+visual_action: she twists out through his thumb and drives her elbow up into his jaw, his head going with it. SFX: room tone drops one beat, then a dense smack, short tail
+beat (9.3s to 12.5s):
+dynamic_framing: gives ground, swings with the miss, sinks to the boards as he folds, looking up past her boot
+visual_action: he swings wide, the air moving her hair, she ducks under and hooks his knee with her boot, he folds sideways. SFX: a low whoosh past the mic, timber taking him
+beat (12.5s to 20.0s):
+dynamic_framing: rises off the floor to eye level and back to wide, bodies crossing the foreground
+visual_action: the Monkey yanks his cap over his eyes, he goes back blind over a stool, crowd silhouettes surge in, the Monkey lands on her RIGHT shoulder with the cap, she lifts her glass. SFX: bodies on timber, crowd swelling
+- dialog: Dialogue language: English. Patron (loud gravel baritone), leaning in, says: "Hey doll, let's play." Pause. Nastassia (quiet alto), eyes up to his, says: "Yeah. Right now." Ambience ducks under the lines.
+
+TECHNICAL:
+- continuous_shot: no cuts, one handheld motion first frame to last
+- no blood, no weapons, no subtitles, no captions, no watermark, no logos, no music`,
+    },
+  },
+  {
+    id: "nastassiavideo-corset-hangar-vhs-seedance-2-0",
+    title: "黑色束腰机库大片 · VHS 复古手持 · Seedance 2.0",
+    subtitle: "X · @nastassiavideo · Seedance 2.0 · 24秒 · 16:9 · 提示词为反推",
+    description:
+      "黑色皮革束腰 × 私人飞机机库：手持 VHS 摄像机质感的复古时装短片，带橙色时间码。",
+    video: "/tutorials/nastassiavideo-corset-hangar-vhs-seedance-2-0/demo-web.mp4",
+    poster: "/tutorials/nastassiavideo-corset-hangar-vhs-seedance-2-0/poster.jpg",
+    duration: "24秒",
+    durationSec: 24,
+    styleLabel: "真人风",
+    shots: 14,
+    references: 5,
+    model: "Seedance 2.0",
+    style: "机库逆光 · 青橙调 · 90 年代摄像机 VHS 颗粒 · 橙色时间码",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/nastassiavideo/status/2090778378701832651",
+    sourceAuthor: "@nastassiavideo",
+    sourcePlatform: "X",
+    sourceImpressions: 731,
+    sourceStats: { asOf: "2026-09-27", likes: 16, reposts: 0, bookmarks: 4 },
+    formats: ["时尚大片", "产品广告"],
+    hook: {
+      structure: "背影走向飞机 → 逆光特写 → 机翼剪影 → 局部特写串联 → 奔跑甩镜 → 机库大门剪影收尾",
+      opening: "第 0 秒低机位从背后拍她走过机库、走向白色私人飞机，回头看镜头；右下角是橙色摄像机时间码「PM 2:29」。",
+      openingAt: 0,
+      beats: [
+        { title: "逆光和剪影", text: "约 2–4s 靠在机身上撩头发，身后强烈暖色逆光；4–5.5s 超低机位，她站在机翼上举起双臂，顶棚天窗打下光柱。", at: 2 },
+        { title: "局部特写串联", text: "约 5.5–13.8s 连续特写：手穿过发丝、一道光条横过眼睛、脖颈和金链、坐在舷梯扶手上、手指拉紧束腰上的两个银扣。", at: 5.5 },
+        { title: "节奏和收尾", text: "约 14–16s 她跑过机库，甩镜加运动模糊转场；之后正面走来、嘴唇特写、束腰特写、站在机头旁；21.5–23.6s 两台发动机之间，她的剪影站在敞开的机库大门口。", at: 14 },
+      ],
+      copyThis: "作者公开的复古质感关键词：handheld camera, shaky cam, VHS style, 90s camcorder, timestamp, motion blur。再把服装单独做成一张商品图当参考，锁定束腰的扣子和轮廓。",
+      approx: true,
+    },
+    tags: [
+      "24秒 · 时装短片",
+      "16:9 横屏",
+      "VHS 复古手持",
+      "提示词为反推",
+      "角色一致性测试",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：作者公开的流程和图片",
+        description:
+          "作者写的流程：用 Recraft 做人物，用 Seedream 4.5 出了几张写真，用 Seedance 2.0 生成视频测角色一致性，CapCut 剪辑。主帖附了三张图：束腰商品图、人物脸部特写、坐在飞机舷梯上的定妆照。三张原图都已收录，出图提示词作者没公开，本页按图反推（见参考图说明和 PROMPT_REVERSED.txt）。作者没有公开视频提示词，只公开了复古质感关键词。",
+      },
+      {
+        number: 2,
+        title: "第二步：作者公开的复古关键词",
+        description:
+          "作者原文：handheld camera, shaky cam, VHS style, 90s camcorder, timestamp, motion blur。成片里的对应效果：全程手持轻晃、VHS 颗粒和色边、右下角橙色时间码（远景 PM 2:29，特写 PM 2:34）、奔跑和转场时的运动模糊。",
+      },
+      {
+        number: 3,
+        title: "第三步：按成片反推的分镜写法（作者未公开，此为按成片反推）",
+        description:
+          "作者未公开，此为按成片反推。按 2fps 逐帧看成片，拆成 14 个镜头并写时间码：场景是午后的飞机机库，天窗和敞开的大门打进低角度硬光，有烟雾和光柱；青橙调色；每镜写景别、机位、动作和光线。成片应是多段生成后在 CapCut 剪在一起的，分段方式也是推测。反推的英文提示词见下方视频提示词。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "nastassiavideo-corset-hangar-image1-corset",
+        number: "1",
+        title: "黑色皮革束腰 · 商品图",
+        subtitle: "作者主帖第一张图原件",
+        image: "/tutorials/nastassiavideo-corset-hangar-vhs-seedance-2-0/refs/image1-corset-HQPvdE2XEAAMf57.jpg",
+        prompt: "作者未公开，此为按成片反推。（本条按作者原图反推出图提示词）Studio product photo of a black high-gloss leather corset top shown on an invisible mannequin, front view, centred on a seamless white background. Sculpted rounded cups with a deep V between them, front cord lacing visible in the gap, two horizontal leather belts with polished silver pin buckles across the ribs, curved panel seams, flared peplum hips, loose lace ends hanging below the hem. Soft even softbox lighting with long specular highlights on the leather, gentle floor shadow, e-commerce clarity, 3:4.",
+      },
+      {
+        id: "nastassiavideo-corset-hangar-image2-face",
+        number: "2",
+        title: "人物脸部特写 · 作者原图",
+        subtitle: "作者主帖第二张图原件 HQPvdE9WcAAmodJ（896x1216）· 作者说人物用 Recraft 做",
+        image: "/tutorials/nastassiavideo-corset-hangar-vhs-seedance-2-0/refs/image2-face-HQPvdE9WcAAmodJ.jpg",
+        prompt: "作者未公开，此为按成片反推。（本条按作者原图反推出图提示词）Editorial beauty close-up portrait of a young adult woman, face tilted slightly, voluminous tousled golden-blonde curls with wispy bangs, hazel-green eyes with defined lashes, light freckles, dewy skin with visible pores, glossy nude lips slightly parted. Hard directional daylight from the upper left casting a deep shadow over one side of the face, off-white background, shot on 85mm, shallow depth of field, fashion magazine realism, 3:4.",
+      },
+      {
+        id: "nastassiavideo-corset-hangar-image3-jet-stairs",
+        number: "3",
+        title: "飞机舷梯定妆照 · 作者原图",
+        subtitle: "作者主帖第三张图原件 HQPvdEzWoAA2EQ6（1290x1717）· 作者说写真用 Seedream 4.5 做",
+        image: "/tutorials/nastassiavideo-corset-hangar-vhs-seedance-2-0/refs/image3-jet-stairs-HQPvdEzWoAA2EQ6.jpg",
+        prompt: "作者未公开，此为按成片反推。（本条按作者原图反推出图提示词）Fashion editorial photo, low angle: the same curly blonde woman (@Image2) sits on the steel roll-in stairs of a white private jet with a navy stripe inside a hangar, forearm resting on her knee, cool direct gaze. She wears the black leather corset (@Image1) over a black glossy bodysuit and black high-gloss thigh-high stiletto boots. Polished handrails frame her, haze and warm backlight glow from the left, hangar windows behind, cinematic contrast, 3:4.",
+      },
+      {
+        id: "nastassiavideo-corset-hangar-frame-13s",
+        number: "4",
+        title: "束腰银扣特写 · 成片截帧",
+        subtitle: "成片第 13 秒截帧，不是作者的原参考图",
+        image: "/tutorials/nastassiavideo-corset-hangar-vhs-seedance-2-0/refs/frame-13s-corset-buckles.jpg",
+        prompt: "作者未公开，此为按成片反推。（成片截帧，不是原参考图）Extreme close-up of the black leather corset belts with two polished silver pin buckles, a hand with dark burgundy nails tugging the lower strap, shallow depth of field, warm side light, VHS grain, orange camcorder timestamp \"PM 2:34\" bottom right, 16:9.",
+      },
+      {
+        id: "nastassiavideo-corset-hangar-frame-22s",
+        number: "5",
+        title: "机库大门剪影 · 成片截帧",
+        subtitle: "成片第 22.5 秒截帧，不是作者的原参考图",
+        image: "/tutorials/nastassiavideo-corset-hangar-vhs-seedance-2-0/refs/frame-22s-hangar-door-silhouette.jpg",
+        prompt: "作者未公开，此为按成片反推。（成片截帧，不是原参考图）Wide symmetrical shot from deep inside a dark aircraft hangar, two jet engine nacelles as dark shapes in the foreground left and right, a small silhouette of a woman standing in the bright open hangar door, warm sunset sky and haze outside, industrial windows on the door panels, VHS grain, orange camcorder timestamp \"PM 2:29\" bottom right, 16:9.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 低机位背影，她走向白色私人飞机，回头看镜头。" },
+      { number: 2, description: "2–4s 靠在机身上撩头发，暖色逆光光晕。" },
+      { number: 3, description: "4–5.5s 超低机位，站在机翼上举起双臂，天窗光柱。" },
+      { number: 4, description: "5.5–7s 手穿过逆光的发丝。" },
+      { number: 5, description: "7–8.5s 眼睛大特写，一道光条横过双眼。" },
+      { number: 6, description: "8.5–9.5s 脖颈、肩膀和金链特写。" },
+      { number: 7, description: "9.5–11.5s 低机位，坐在飞机舷梯上，手臂搭在扶手上。" },
+      { number: 8, description: "11.5–13.8s 手指拉紧束腰腰带，两个银扣占满画面。" },
+      { number: 9, description: "14–15.8s 侧面跟拍她跑过机库，甩镜运动模糊。" },
+      { number: 10, description: "16–17s 正面，她朝镜头走来。" },
+      { number: 11, description: "17–18s 嘴唇大特写。" },
+      { number: 12, description: "18–20s 束腰正面特写，双手抚平腰部。" },
+      { number: 13, description: "20–21.5s 全身，站在机头旁。" },
+      { number: 14, description: "21.5–23.6s 两台发动机之间，她的剪影站在敞开的机库大门口，保持到结尾。" },
+    ],
+    constraints:
+      "作者未公开视频提示词；本页视频提示词、分镜时间码和出图提示词均为按成片反推，不是作者原文。作者原文只有一句复古关键词：handheld camera, shaky cam, VHS style, 90s camcorder, timestamp, motion blur。成片截帧（第 13 秒、第 22.5 秒）不是作者的原参考图。缺口：音轨是持续配乐、没有对白，具体曲目无法确认；是否分多段生成无法确认；评论区检索没有找到作者的补充说明。",
+    video_prompt: {
+      title: "Corset × Hangar · Retro VHS (Reverse-engineered)",
+      subtitle: "作者未公开，此为按成片反推 · 按作者标注的 Seedance 2.0 写 · 16:9",
+      content: `[作者未公开，此为按成片反推]
+Reverse-engineered from the finished 23.6 s 16:9 video (frame-by-frame at 2 fps). NOT the author's original prompt.
+Tool: the author states Seedance 2.0 (character consistency test) with Recraft for the model, Seedream 4.5 for stills and CapCut for the final edit. Written for Seedance 2.0 reference-to-video; the multi-shot structure is an assumption — the final cut was assembled in CapCut and was probably generated as several clips.
+The only wording confirmed by the author is the animation token line: handheld camera, shaky cam, VHS style, 90s camcorder, timestamp, motion blur.
+
+=== REFS ===
+@Image1 = character: young adult woman, voluminous shoulder-length curly golden-blonde hair with curtain bangs, hazel-green eyes, light freckles, glossy nude lips, dark burgundy nails. Controls face, hair and skin only.
+@Image2 = wardrobe: black high-gloss leather corset top, sculpted cups, front lacing, two horizontal belts with silver pin buckles across the ribs, flared peplum hem. Keep identical in every shot.
+Styling: black high-cut glossy bodysuit worn under the corset, black glossy thigh-high stiletto boots, thin gold chain necklace.
+
+=== GLOBAL STYLE ===
+setting: vast industrial aircraft hangar in the afternoon, white private jet with a navy stripe, steel roll-in stairs, open hangar doors, skylight grid in the roof, drifting haze and dust
+lighting: hard low sun raking through the skylights and the open doors, visible god rays in haze, warm amber lens flares from behind her, cool blue-grey shadows inside the hangar
+color_grade: teal-and-amber, lifted blacks, soft halation on highlights, slight VHS chroma bleed and fine tape noise
+camera: handheld camera, shaky cam, VHS style, 90s camcorder, timestamp, motion blur. Small live reframes, occasional quick push-ins, shallow depth of field on close-ups
+overlay: orange camcorder timestamp in the bottom-right corner, "PM 2:29" on wide and medium shots, "PM 2:34" on close-ups
+mood: confident retro fashion editorial, sultry but calm, no dialogue
+audio: continuous music bed only (added in edit), faint hangar room tone; no dialogue, no voice-over
+
+=== SHOT LIST (timecodes of the final cut) ===
+SHOT 1 (0.0–2.0s) WIDE, low angle from behind. She walks away from camera across the hangar floor toward the white jet, looks back over her shoulder. Sun flares through the skylights top frame. Camera follows handheld, slight sway.
+SHOT 2 (2.0–4.0s) MEDIUM CLOSE-UP. She leans her shoulder against the jet fuselage, one hand buried in her curls, eyes to lens. Strong amber backlight flare behind her head, face in soft shade.
+SHOT 3 (4.0–5.5s) WIDE, very low angle across the wing surface. She stands on top of the jet wing, arms stretched overhead, silhouetted against a burst of god rays through the roof grid; haze rolls across the wing.
+SHOT 4 (5.5–7.0s) CLOSE-UP. Her hand slowly combs through backlit hair; strands glow gold, heavy lens flare, motion blur on the hand.
+SHOT 5 (7.0–8.5s) EXTREME CLOSE-UP of her eyes. A hard horizontal stripe of sunlight falls across the eyes, the rest of the face in shadow; she looks straight into the lens.
+SHOT 6 (8.5–9.5s) CLOSE-UP of neck and bare shoulder, curls falling, gold chain catching light; camera drifts down.
+SHOT 7 (9.5–11.5s) MEDIUM, low angle from the tarmac. She sits sideways on the aircraft stairs, forearm draped over the steel railing, boots on the treads; the roof skylights glare behind her.
+SHOT 8 (11.5–13.8s) INSERT CLOSE-UP. Burgundy-nailed fingers trace the corset and tug the lower belt; the two silver buckles fill the frame, leather gloss highlights.
+SHOT 9 (14.0–15.8s) WIDE, side-on tracking. She runs across the hangar through haze and floor-level sunlight; fast whip pan with strong motion blur that smears into the next shot.
+SHOT 10 (16.0–17.0s) MEDIUM, frontal. She walks toward camera in the corset, hair bouncing, hangar lights behind; quick handheld push-in.
+SHOT 11 (17.0–18.0s) EXTREME CLOSE-UP of glossy lips parting slightly, visible freckles and skin texture.
+SHOT 12 (18.0–20.0s) CLOSE-UP of the corset front, her hands smoothing the leather at the waist; shallow focus.
+SHOT 13 (20.0–21.5s) FULL SHOT. She stands beside the jet's nose, weight on one hip, looking to lens; cool daylight on the fuselage.
+SHOT 14 (21.5–23.6s) WIDE, symmetrical. From deep inside the hangar, framed between two dark jet engines in the foreground, her small silhouette stands in the bright open hangar door against a warm sunset sky. Hold to end.
+
+=== CONSTRAINTS ===
+same face, hair and corset in every shot; only one person; camcorder timestamp is the only on-screen text; no subtitles, no logos, no watermark; real VHS artefacts rather than digital glitches`,
+    },
+  },
+  // 查重别名(同模板另两条 take，未收录)：Filmera f963cb32 GEN 1 take0 36efb177（节点 best_take=0）、take1 344087eb；本条用 take2 3777f407（模板封面 card2 同片）
+  {
+    id: "filmera-pvz-sunflowers-redemption-seedance-2-5",
+    title: "植物大战僵尸 · 向日葵的救赎 · Seedance 2.5",
+    subtitle: "Filmera 模板 · Seedance 2.5 + GPT Image 2.5 · 30秒 · 16:9",
+    description:
+      "植物大战僵尸真人版：戴锅的 Dave 挡在豌豆射手前护住黑化的向日葵，一枪阳光后重回花园。",
+    video: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "真人风",
+    shots: 14,
+    references: 8,
+    model: "Seedance 2.5（bytedance/seedance-2.5，480p，生成音频）+ GPT Image 2.5 Flare（参考图）",
+    style: "游戏 IP 真人化 · 原片直出感 · 低对比低饱和 · 剧烈手持晃动",
+    aspectRatio: "16/9",
+    sourceUrl: "https://www.filmera.ai/templates/f963cb32-3319-432d-93e6-ce858f1e2342",
+    sourceAuthor: "Filmera 模板（未署名创作者）",
+    sourcePlatform: "Filmera",
+    sourceImpressions: 155,
+    sourceStats: { asOf: "2026-09-27" },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "门廊砸僵尸 → 冲进后院 → 张开双臂护住黑化向日葵 → 被扑倒、枪口顶下巴 → 阳光一枪 → 回到往日花园",
+      opening: "第 0 秒机位在 Dave 右肩后，僵尸拖着步子走到拱形前门，Dave 用猎枪枪托砸过去，僵尸仰面摔下台阶。",
+      openingAt: 0,
+      beats: [
+        { title: "冲突怎么起", text: "约 4–5s 跟着他穿过昏暗走廊推开后门；6–7s 后院篱笆边，黑化向日葵转头，两眼发白光，两侧豌豆射手转向它；8–10s 他跑到中间张开双臂挡住。", at: 4 },
+        { title: "反转", text: "约 11–17s 低机位近景，他求豌豆射手别开火，又端起猎枪对准它们；18–19s 黑化向日葵从背后起身把他扑倒；20s 插入一段金色向日葵的回忆。", at: 11 },
+        { title: "结尾怎么收", text: "约 23–26s 向日葵用叶子举枪顶住他下巴，白光眼慢慢变成暖琥珀色；27–28s 枪口喷出金色阳光，他在光里散成光点；29–30s 回到阳光后院，他把脸贴在笑着的向日葵上。", at: 23 },
+      ],
+      copyThis: "先给每个角色、道具、场景各出一张设定图，再在视频提示词开头用 @Image1–8 逐个绑定；情绪只写成看得见的动作（喘气、吞口水、手抖），不写「害怕」「难过」这类词。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 短片",
+      "16:9 横屏",
+      "14 个镜头",
+      "8 张参考图",
+      "Seedance 2.5",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2.5 出 8 张参考图",
+        description:
+          "模板分三组：角色（Dave、僵尸）、道具（正常向日葵、黑化向日葵、豌豆射手、双管猎枪）、场景（前门廊、后院空景）。都用 openai/gpt-image-2.5-flare、3:2 出图；设定图统一写「浅奶油色背景、多视角、英文标签」，并要求像未修图的真实照片。每张的完整出图提示词见下方参考图。",
+      },
+      {
+        number: 2,
+        title: "第二步：视频提示词先写全局规则",
+        description:
+          "[GLOBAL] 段写：原片直出感、低对比低饱和、不调色、剧烈手持晃动；逐个写出 8 个对象的外观并标「match @ImageN exactly」；表演要像真人（呼吸、眨眼、吞咽、手收紧），情绪只写动作；英文台词对口型；不要字幕、不要背景音乐，只要现场声。",
+      },
+      {
+        number: 3,
+        title: "第三步：写 14 个镜头，一次生成 30 秒",
+        description:
+          "Shot 1–14 每条写景别、机位、动作和音效（CRACK、THUD、CLICK-CLACK、HUM），台词三句：「Please… don't hurt her.」「Don't hurt her. Trust me… she'll turn back.」「No…」。在 Seedance 2.5 里选 16:9、30 秒、480p、打开生成音频。模板里同一提示词跑了 3 条，本页用的是模板封面那条。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "filmera-pvz-sunflower-image1-dave",
+        number: "1",
+        title: "@Image1 · Dave 人物设定图",
+        subtitle: "人物：姜色大胡子、倒扣铁锅当头盔、白 Polo 衫、卡其裤；模板节点「01 · DAVE」，openai/gpt-image-2.5-flare 3:2",
+        image: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/refs/01-dave.jpg",
+        prompt: "Character-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME man, fully consistent. Layout: top-left a title block reading \"DAVE\" with a short info list (NAME: Dave / AGE: 32 / ROLE: the gardener who raised the sunflower / PERSONALITY: soft-hearted, stubborn, talks to his plants); below it a COLOR PALETTE section with labeled swatch rows for HAIR, EYES, SKIN, OUTFIT; center: a large FRONT VIEW bust portrait and a SIDE VIEW bust portrait, labeled; right: a full-body FRONT VIEW holding a double-barrel shotgun loosely at his side, and a full-body BACK VIEW, labeled; bottom: a DETAILS strip of four captioned close-up panels (the dented steel saucepan worn upside down as a helmet with its handle sticking out to his right, the white polo shirt collar, worn brown work boots, his hands with soil under the nails). The character: a man in his early thirties, a thick full ginger beard, short ginger hair, warm blue eyes, fair freckled skin, a dented stainless-steel saucepan worn upside down on his head with the handle pointing to his right, a clean white short-sleeved polo shirt, khaki work trousers, brown work boots; an original character, not resembling any real person. Every panel is a REAL candid photograph of the same person — soft natural daylight, slightly low contrast and low saturation, natural skin, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-pvz-sunflower-image2-sunflower",
+        number: "2",
+        title: "@Image2 · 向日葵（正常）",
+        subtitle: "种子盘天然长成笑脸的真向日葵；模板节点「02 · SUNFLOWER」，openai/gpt-image-2.5-flare 3:2",
+        image: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/refs/02-sunflower.jpg",
+        prompt: "Creature reference sheet on a clean light cream background, the same living plant shown four ways, labeled: a FULL VIEW, a THREE-QUARTER VIEW, a CLOSE-UP of the face, and a CLOSE-UP of the stem and leaves. The creature: a real sunflower as tall as a man's chest on a thick fuzzy green stem with broad heart-shaped leaves; a large head ringed with bright golden petals; the dark brown seed disc naturally forms a gentle face: two small arcs of darker seeds as smiling closed eyes, a soft curved line of seeds as a smile, a faint warm blush of orange seeds on the cheeks. Real plant textures, fine hairs on the stem, pollen dust on the petals. Every panel is a REAL photograph of the same plant — soft natural daylight, slightly low contrast and low saturation, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-pvz-sunflower-image3-sunflower-turned",
+        number: "3",
+        title: "@Image3 · 黑化向日葵",
+        subtitle: "紫黑卷曲花瓣、裂口獠牙、白光眼；模板节点「03 · SUNFLOWER TURNED」，openai/gpt-image-2.5-flare 3:2",
+        image: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/refs/03-sunflower-turned.jpg",
+        prompt: "Creature reference sheet on a clean light cream background, the same living plant shown four ways, labeled: a FULL VIEW, a THREE-QUARTER VIEW, a CLOSE-UP of the face with the mouth open, and a CLOSE-UP of a leaf curled tight around a stick. The creature: a tall sunflower that has turned, with the same stem, leaf shape and head size as a healthy sunflower as tall as a man's chest: its petals now dark purple-black, curled, torn and leathery; the seed disc split across into a wide mouth ringed with sharp seed-shell fangs and a dark wet throat; two deep pits in the disc glowing solid white as eyes; the stem darkened with purple veins and grey patches of rot; the broad leaves thickened, curled and strong enough to grip. Practical-effects creature look, wet organic surfaces. Every panel is a REAL photograph of the same plant — soft natural daylight, slightly low contrast and low saturation, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-pvz-sunflower-image4-pea-plant",
+        number: "4",
+        title: "@Image4 · 豌豆射手",
+        subtitle: "齐腰高、木质炮口的真实植物；模板节点「04 · PEA PLANT」，openai/gpt-image-2.5-flare 3:2",
+        image: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/refs/04-pea-plant.jpg",
+        prompt: "Creature reference sheet on a clean light cream background, the same living plant shown four ways, labeled: a FULL VIEW planted in dark soil, a SIDE VIEW with the head reared back to fire, a CLOSE-UP of the muzzle, and a CLOSE-UP of the stem base and roots. The creature: a waist-high plant with a thick fibrous green stem the width of a forearm, veined and glistening with sap; the head is a bulbous green pod the size of a football with a single round hollow wooden muzzle at the front, its lips ringed with tiny fibres; two ragged leaves at the base; a smooth green pea the size of a golf ball rests in the muzzle. Practical-effects creature look, wet organic surfaces, real soil. Every panel is a REAL photograph of the same plant — soft natural daylight, slightly low contrast and low saturation, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-pvz-sunflower-image5-zombie",
+        number: "5",
+        title: "@Image5 · 僵尸设定图",
+        subtitle: "灰绿皮肤、棕西装、红条纹领带；模板节点「05 · ZOMBIE」，openai/gpt-image-2.5-flare 3:2",
+        image: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/refs/05-zombie.jpg",
+        prompt: "Character-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME undead man, fully consistent. Layout: top-left a title block reading \"ZOMBIE\" with a short info list (TYPE: suburban walker / STATE: weeks dead / BEHAVIOUR: shuffles, jaw hanging); below it a COLOR PALETTE section with labeled swatch rows for SKIN, EYES, CLOTHES, TIE; center: a large FRONT VIEW bust portrait and a SIDE VIEW bust portrait, labeled; right: a full-body FRONT VIEW shuffling with arms low, and a full-body SIDE VIEW falling backwards, labeled; bottom: a DETAILS strip of four captioned close-up panels (the grey-green face with milky eyes and slack jaw, the frayed brown suit jacket, the red striped tie, a hand with black fingernails). The character: an adult male corpse with grey-green mottled skin, sunken milky eyes, a few thin strands of hair, a slack jaw with crooked teeth, an old brown suit, a stained white shirt and a red striped tie; a generic undead figure, not resembling any real person. Every panel is a REAL candid photograph of the same figure — soft natural daylight, slightly low contrast and low saturation, natural skin texture, practical make-up look, no retouching. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-pvz-sunflower-image6-shotgun",
+        number: "6",
+        title: "@Image6 · 双管猎枪",
+        subtitle: "外露双击锤、胡桃木枪托；模板节点「06 · SHOTGUN」，openai/gpt-image-2.5-flare 3:2",
+        image: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/refs/06-shotgun.jpg",
+        prompt: "Prop reference sheet on a clean light cream background, the same object shown three ways, labeled: a SIDE VIEW, a THREE-QUARTER VIEW, and a CLOSE-UP of the twin muzzles and hammers. The object: an old side-by-side double-barrel shotgun with twin exposed hammers, a scuffed walnut stock and fore-end, worn blued steel barrels with patches of rust. Every panel is a REAL photograph of the same prop — soft natural daylight, slightly low contrast and low saturation, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-pvz-sunflower-image7-front-porch",
+        number: "7",
+        title: "@Image7 · 前门廊空景",
+        subtitle: "灰色护墙板房子、拱形木门；模板节点「07 · FRONT PORCH」，openai/gpt-image-2.5-flare 3:2",
+        image: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/refs/07-front-porch.jpg",
+        prompt: "Empty scene plate, no people, no creatures, no text, no logos: the front porch of a pale grey clapboard suburban house, a dark wooden arched front door with small glass panes and black iron hinges, worn painted porch boards, three wooden steps down to a stone path, a potted shrub beside the door, low late-afternoon sun raking across the siding. Photoreal, natural light only, slightly low contrast and low saturation, unedited photo look. No other text.",
+      },
+      {
+        id: "filmera-pvz-sunflower-image8-back-yard",
+        number: "8",
+        title: "@Image8 · 后院空景",
+        subtitle: "草坪、白色尖桩篱笆、洒水壶；模板节点「08 · BACK YARD」，openai/gpt-image-2.5-flare 3:2",
+        image: "/tutorials/filmera-pvz-sunflowers-redemption-seedance-2-5/refs/08-back-yard.jpg",
+        prompt: "Empty scene plate, no people, no creatures, no text, no logos: the back yard of the same pale grey clapboard house seen from its arched back door, a lush green lawn in low warm afternoon sun, a white picket fence along the far side with neighbouring rooftops behind it, dark soil garden beds along the fence and on both sides of the lawn, a green watering can on the grass, the house wall with white window frames at the left edge. Photoreal, natural light only, slightly low contrast and low saturation, unedited photo look. No other text.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3.5s 门廊：僵尸走到前门，Dave 用枪托砸倒它，转身进屋。" },
+      { number: 2, description: "4–5.5s 跟拍穿过昏暗走廊，推开后门，阳光涌进来。" },
+      { number: 3, description: "6–7s 后院全景：篱笆边的黑化向日葵转头，两眼白光。" },
+      { number: 4, description: "8–10s 他跑上草坪，站在豌豆射手和向日葵之间张开双臂。" },
+      { number: 5, description: "11–14s 低机位近景，前景是模糊的豌豆射手，他喘着气求它们别开火。" },
+      { number: 6, description: "15s 豌豆射手特写，炮口对准。" },
+      { number: 7, description: "16–17s 他端起猎枪对准豌豆射手，双手发抖。" },
+      { number: 8, description: "18–19s 黑化向日葵从背后起身把他扑倒，獠牙和白光眼压到镜头上方。" },
+      { number: 9, description: "20s 回忆：阳光下金色的向日葵。" },
+      { number: 10, description: "21–22s 俯拍他仰躺在草地上，锅歪在头上。" },
+      { number: 11, description: "23–24s 贴地侧拍：向日葵用叶子举枪顶住他下巴。" },
+      { number: 12, description: "25–26s 向日葵脸部特写，白光眼变成暖琥珀色。" },
+      { number: 13, description: "27–28s 枪口喷出金色阳光，他在光里大喊、散成光点。" },
+      { number: 14, description: "29–30s 往日的后院，他把脸贴在笑着的向日葵上。" },
+    ],
+    constraints:
+      "8 个对象都要和各自参考图一致；原片直出感、不调色、剧烈手持；情绪只写成动作；英文台词对口型；不要字幕、不要背景音乐。与提示词对照：第 14 镜提示词写他穿干净白衬衫、手拿洒水壶跪在花旁，成片里是他俯身把脸贴在花上，没看到洒水壶，是否跪着看不清；第 12 镜「一片花瓣变回金色」在成片里不明显。版本说明：模板 GEN 1 同一提示词有 3 条 take（都是 854x480、30 秒），节点标记的 best_take 是第 1 条，模板封面预览与第 3 条同片；本页用第 3 条，因为它更贴近提示词后半段（黑化向日葵举枪、眼睛变色、人散成光点），第 1 条后半段直接变成金色向日葵举枪。存疑：8 张出图时作者还附了另一段视频的截帧作为输入参考，这些截帧未在模板里单独公开，本页没有收录；模板没有署名创作者。",
+    video_prompt: {
+      title: "Sunflower's Redemption · GEN 1",
+      subtitle: "Seedance 2.5 · 16:9 · 30s · 480p · 生成音频 · Filmera 模板页原文",
+      content: `[GEN 1 — SUNFLOWER'S REDEMPTION]
+[GLOBAL] Photoreal, raw unedited camera footage — natural and practical light only, slightly low contrast and low saturation, flat muted natural tones, NO color grading, not cinematic, looks like real untouched footage straight off the camera; very shaky handheld camera — constant organic jitter, drift and breathing sway, never smooth, never stabilized. DAVE: a man in his early thirties with a thick ginger beard, a dented steel saucepan worn upside down on his head with the handle pointing to his right, a white short-sleeved polo shirt and khaki trousers (match @Image1 exactly). SUNFLOWER: a tall real sunflower with golden petals whose seed disc forms a gentle smiling face (match @Image2 exactly). SUNFLOWER TURNED: a tall sunflower with dark purple-black torn petals, a split seed disc ringed with seed-shell fangs, two glowing white eyes and broad leaves that curl and grip (match @Image3 exactly). PEA PLANT: the waist-high pea plants guarding the yard, each with a hollow wooden muzzle (match @Image4 exactly). ZOMBIE: grey-green skin, milky eyes, an old brown suit and a red striped tie (match @Image5 exactly). SHOTGUN: DAVE's double-barrel shotgun (match @Image6 exactly). FRONT PORCH: the front porch and arched front door (match @Image7 exactly). BACK YARD: the sunlit back yard with its lawn and white picket fence (match @Image8 exactly). The performance must read as real human behaviour — natural breathing that visibly moves the chest and shoulders, natural blinking at a rate matching the emotion, small involuntary movements (swallowing, a hand tightening on the SHOTGUN, a flinch), micro-expressions flickering across the face. Describe emotion ONLY as visible physical behaviour — never name a feeling. Even when described as still, DAVE is NEVER absolutely still. Dialogue in English, lips in sync. No on-screen text, captions or subtitles. No background music — diegetic sound only.
+
+Shot 1 — Medium, camera behind DAVE's right shoulder on the FRONT PORCH: a ZOMBIE shuffles up to the arched front door, jaw hanging; DAVE drives the SHOTGUN's wooden stock into the ZOMBIE's face with a hard CRACK, the ZOMBIE topples backwards off the porch steps, and DAVE blows out one sharp breath, turns and pushes in through the door.
+
+Shot 2 — Close follow shot behind DAVE's back through the dark hallway, DAVE's white shirt the only bright shape, floorboards CREAKING under quick steps; DAVE opens the back door and the afternoon sun floods in around DAVE's silhouette.
+
+Shot 3 — Wide, camera behind DAVE's shoulder in the back doorway, facing the sunlit BACK YARD: by the white picket fence the SUNFLOWER TURNED stands with its back to the camera, dark petals twitching, one PEA PLANT standing right beside it; the SUNFLOWER TURNED turns its head toward the camera, two white eyes glowing, while the PEA PLANTS in the beds on both sides swivel their muzzles toward the SUNFLOWER TURNED with a wet creak.
+
+Shot 4 — Medium, camera following DAVE from behind as DAVE runs onto the lawn and stops between the PEA PLANTS and the SUNFLOWER TURNED, flinging both arms wide, the SHOTGUN swinging from DAVE's right hand.
+
+Shot 5 — Medium close-up, camera low in front of DAVE, PEA PLANTS blurred in the near left foreground: arms still wide, chest heaving, DAVE looks from one PEA PLANT to the other, swallows, and says breathless and pleading, "Please… don't hurt her."
+
+Shot 6 — Close-up over DAVE's shoulder on one PEA PLANT: its head rears back, the stem tightening with a wet creak.
+
+Shot 7 — Medium close-up on DAVE, low angle, a PEA PLANT blurred in the foreground: DAVE swings the SHOTGUN level at the PEA PLANTS, both hands shaking on the stock, and says with a cracking voice, "Don't hurt her. Trust me… she'll turn back." Over DAVE's right shoulder the SUNFLOWER TURNED rises up, fanged mouth parting, and shoves DAVE down.
+
+Shot 8 — Low angle from the grass: DAVE falls flat on the lawn with a heavy THUD, and the SUNFLOWER TURNED lunges over DAVE, fanged face and glowing eyes filling the frame above the lens.
+
+Shot 9 — Close-up, a warm memory in bright sun by the fence: the SUNFLOWER alone, golden petals stirring in the breeze, smiling seed face, head tilting a little toward the camera, pollen drifting through the light; the camera stays on the golden SUNFLOWER for the whole shot.
+
+Shot 10 — Overhead close-up looking straight down at DAVE lying face up in the grass, the back of the SUNFLOWER TURNED's head blurred in the foreground, the saucepan knocked crooked: DAVE blinks up, dazed, grass on one cheek.
+
+Shot 11 — Side view at ground level: the SUNFLOWER TURNED lifts the SHOTGUN with one curled leaf and presses the twin barrels under DAVE's chin with a metallic CLICK-CLACK as the hammers cock; DAVE's eyes find the glowing eyes above, DAVE's mouth trembles, and on a breath DAVE says, "No…"
+
+Shot 12 — Close-up on the SUNFLOWER TURNED's face above the barrels: one petal at the edge of the dark head flushes back to gold, the white glow in the eyes softens to a warm amber, and the curled leaf tightens on the trigger.
+
+Shot 13 — Close-up on DAVE from above: DAVE screams "NO!" as the barrels release a blast of warm golden sunlight with a deep ringing HUM; the light pours over DAVE's face and DAVE's whole body breaks into thousands of floating golden motes drifting up through the grass, the scream thinning into the hum.
+
+Shot 14 — Close-up on DAVE in warm afternoon sun, the BACK YARD as it once was: DAVE in a clean white shirt, a watering can in one hand, kneels on the lawn beside the smiling SUNFLOWER, closes both eyes and rests one cheek against the golden petals, and the SUNFLOWER bends its head down against DAVE's.`,
+    },
+  },
   {
     id: "naiknelofar788-me-time-dark-circles-seedance",
     title: "报复性熬夜 · 黑眼圈越刷越深 · Seedance 2.5",
