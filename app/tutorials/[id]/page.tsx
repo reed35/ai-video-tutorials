@@ -4,6 +4,7 @@ import { getTutorialSubtitle } from "@/lib/tutorial-subtitle";
 import { notFound } from "next/navigation";
 import { PromptBlock } from "@/components/prompt-block";
 import { HookBreakdown } from "@/components/hook-breakdown";
+import { MethodPromptCard } from "@/components/method-prompt-card";
 
 export function generateStaticParams() {
   return tutorials.map((tutorial) => ({
@@ -171,6 +172,8 @@ export default async function TutorialPage({
           ))}
         </div>
       </section>
+
+      {tutorial.method_prompt && <MethodPromptCard method={tutorial.method_prompt} />}
 
       {tutorial.references_detail.length > 0 && (
         <section className="mt-9">

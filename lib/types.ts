@@ -32,6 +32,17 @@ export interface Tutorial {
   formats?: TutorialFormat[];
   /** 「钩子在哪」拆解：只写抽帧真实看到的画面 */
   hook?: HookBreakdown;
+  /** 源头方法论提示词（可选）：产出本片提示词的上游简报/元提示词，如喂给 LLM 的创意 brief；有则详情页单独渲染强调色卡片 */
+  method_prompt?: MethodPrompt;
+}
+
+export interface MethodPrompt {
+  title: string;
+  subtitle?: string;
+  /** 原文逐字，可复制 */
+  content: string;
+  /** 来源与用法说明（中文），显示在提示词下方 */
+  note?: string;
 }
 
 export interface HookBeat {

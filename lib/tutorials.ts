@@ -1,6 +1,4439 @@
 import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
+  {
+    id: "harboriis-tiny-desk-skater-2d-seedance-2-5",
+    title: "桌面小滑板女孩 · 2D 手绘混实拍 · Seedance 2.5",
+    subtitle: "X · @harboriis · Seedance 2.5 on ImagineArt · 30秒 · 16:9",
+    description:
+      "2D 手绘小女孩踩滑板闯真实桌面：指尖、尺子、咖啡杯、键盘，Seedance 2.5 按秒写 7 段出 30 秒。",
+    video: "/tutorials/harboriis-tiny-desk-skater-2d-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/harboriis-tiny-desk-skater-2d-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "2D 混实拍",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5 on ImagineArt",
+    style: "2D 手绘角色 × 实拍桌面微距 · 移轴浅景深",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/harboriis/status/2104106520808157221",
+    sourceAuthor: "@harboriis",
+    sourcePlatform: "X",
+    sourceImpressions: 1424,
+    sourceStats: { asOf: "2026-09-27", likes: 50, reposts: 7, bookmarks: 24 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "指尖起步 → 桌面翻板 → 尺子/纸片 → 咖啡杯 → 蜡笔路线 → 键盘腾空 → 回到指尖",
+      opening: "第 0 秒就是两根真人手指之间，站着一个 2D 手绘小女孩踩在橙色小滑板上——大小对比一眼看懂。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.4s 低机位跟拍她在木桌上滑行、跳起翻板落地；约 5.2s 切到她沿橙色尺子边滑、冲上弯起的白纸。", at: 2.4 },
+        { title: "高潮", text: "约 8.7–13.7s 她跳进一杯黑咖啡，在液面上绕圈，咖啡跟着起漩涡，再从杯口飞出。", at: 8.7 },
+        { title: "结尾怎么收", text: "约 13.7s 真人手用绿蜡笔在方格纸上画路线给她滑；约 20.5s 从笔记本跳过键盘；约 24.4s 空中转板，落回开头那两根指尖之间。", at: 24.4 },
+      ],
+      copyThis: "角色是 2D 手绘、环境是实拍桌面，靠「巨大日常物件 + 真人手指/手」做尺度反差；首尾落回同一对指尖闭环。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 2D 混实拍",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "微距移轴",
+      "首尾闭环",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：写死角色和混合风格",
+        description:
+          "Subject 定一个 2D 手绘小女孩：乱糟糟的黑发、橙色上衣、青绿短裤、条纹袜、黄色背包、橙色小滑板；Style 写「2D 手绘涂鸦角色 + 真实实拍桌面」的混合动画，带定格动画般的物理感，配轻快背景音乐和滑板滚动、摩擦音效。",
+      },
+      {
+        number: 2,
+        title: "第二步：定微距机位",
+        description:
+          "Camera & Framing 写微距特写、低机位动态跟拍、移轴浅景深，焦点始终在小滑板女孩身上，让桌上的物件显得巨大。",
+      },
+      {
+        number: 3,
+        title: "第三步：按秒写 7 段场景，一次生成 30 秒",
+        description:
+          "00:00 指尖之间起步 → 00:03 翻板落到木桌 → 00:06 滑尺子边、冲上弯纸 → 00:09 跳进咖啡杯绕圈 → 00:15 跟着手画的绿蜡笔线滑、过橡皮和线圈 → 00:21 从笔记本跳过键盘 → 00:25 空中 360 转板落回指尖。作者在 ImagineArt 上用 Seedance 2.5 生成，没有公开参考图。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–2.4s 两根真人手指之间，2D 小女孩踩着橙色滑板站稳后蹬出。" },
+      { number: 2, description: "2.4–5.2s 低机位跟拍她在木桌上滑行，跳起翻板再落地。" },
+      { number: 3, description: "5.2–8.5s 沿橙色木尺边缘滑过，冲上一张弯起的白纸。" },
+      { number: 4, description: "8.7–13.7s 跳进一杯黑咖啡，在液面上绕圈、搅出漩涡，再飞出杯口。" },
+      { number: 5, description: "13.7–20.5s 真人手握绿蜡笔在方格本上画线，她沿线滑过橡皮、跳过螺旋线圈。" },
+      { number: 6, description: "20.5–24s 从翻开的笔记本起跳，腾空越过键盘。" },
+      { number: 7, description: "24.4–30s 近景空中转板，落回开头两根指尖之间。" },
+    ],
+    constraints:
+      "角色保持 2D 手绘涂鸦质感、环境保持实拍桌面；微距、低机位、移轴浅景深；首尾落回同一对指尖。与成片不符：提示词写她在杯子内壁绕圈，成片里她是在咖啡液面上绕圈；各段切点和提示词的秒数有约 0.5–1 秒出入（如咖啡杯段约 8.7–13.7s，蜡笔段约 13.7–20.5s）。缺口：作者没有公开角色参考图，不确定是不是纯文生视频；背景音乐和音效没有逐一核对。",
+    video_prompt: {
+      title: "Tiny Skateboarder on a Giant Desk · 30s",
+      subtitle: "Seedance 2.5 on ImagineArt · 16:9 · 英文完整提示词（原帖正文）",
+      content: `Subject
+A miniature hand-drawn 2D animated girl with messy black hair, an orange shirt, teal shorts, striped socks, and a yellow backpack, riding a tiny orange skateboard across real-world office desk items.
+Style
+Mixed-reality hybrid animation combining 2D hand-drawn doodle character art with a realistic live-action desk environment. Features playful stop-motion physics, smooth line animations, and lighthearted background music layered with miniature skateboard rolling and grinding sound effects.
+Camera & Framing
+Close-up macro shots, dynamic low-angle tracking perspectives, and tilt-shift shallow depth-of-field focusing on the tiny skateboarder as she navigates large household objects.
+Audio & Scene Breakdown
+00:00 - 00:02
+Visual: Macro shot of the tiny 2D skateboarder balancing between two giant human fingertips on her miniature orange board before pushing off.
+00:03 - 00:05
+Visual: Low-angle tracking shot as she performs a kickflip off the edge and lands smoothly onto a wooden desk surface.
+00:06 - 00:08
+Visual: Side-profile shot grinding across the edge of an orange wooden ruler and launching up a curved piece of white paper like a halfpipe.
+00:09 - 00:14
+Visual: Dynamic camera angle as she drops into the rim of a ceramic mug filled with dark coffee, riding around the inner wall before launching back out.
+00:15 - 00:20
+Visual: Tracking shot following her as a human hand draws a green crayon path on notebook paper, grinding over a white eraser and hopping over spiral notebook rings.
+00:21 - 00:24
+Visual: Air shot as she jumps off an open notebook, performing a trick mid-air over a computer keyboard and desk surface.
+00:25 - 00:30
+Visual: Close-up as she launches into the air, does a 360 spin with her board, and lands precisely back onto the gap between the two giant human fingertips where she started.`,
+    },
+  },
+  // 查重别名(提示词自回复帖：PROMPT 1–4 设定图): https://x.com/ivanka_humeniuk/status/2104043786783400008
+  // 查重别名(提示词自回复帖：PROMPT 5 视频): https://x.com/ivanka_humeniuk/status/2104043791766147187
+  {
+    id: "ivanka-cinderella-attic-morning-vlog-seedance-2-5",
+    title: "灰姑娘阁楼晨间 vlog · 4 张设定图锁一致 · Seedance 2.5",
+    subtitle: "X · @ivanka_humeniuk · Seedance 2.5 on Flova · 30秒 · 16:9",
+    description:
+      "真人版灰姑娘晨间 vlog：人、猫、服装、房间 4 张设定图锁一致，Seedance 2.5 写 12 镜出 30 秒。",
+    video: "/tutorials/ivanka-cinderella-attic-morning-vlog-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/ivanka-cinderella-attic-morning-vlog-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "童话真人 vlog",
+    shots: 12,
+    references: 4,
+    model: "Seedance 2.5 on Flova",
+    style: "1950 年代 Technicolor 胶片质感 · 阁楼卧室 · 固定机位换装",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ivanka_humeniuk/status/2104043780919758936",
+    sourceAuthor: "@ivanka_humeniuk",
+    sourcePlatform: "X",
+    sourceImpressions: 2586,
+    sourceStats: { asOf: "2026-09-27", likes: 91, reposts: 4, bookmarks: 34 },
+    formats: ["变装·换装", "手机POV·Vlog"],
+    hook: {
+      structure: "床边醒来 → 开窗伸懒腰 → 固定机位分层换装 → 抱猫 → 自拍收尾",
+      opening: "第 0 秒她侧躺在拼布被上，三花猫靠在腰边，她睁眼用两根手指挠猫脸——一开场就把人和猫同时立住。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3.3s 低机位看她双脚落到地毯；约 5.4s 背影开窗，约 7.8s 对窗伸懒腰。", at: 3.3 },
+        { title: "换装怎么做", text: "约 10.4s 起切到门口固定机位：拿衬衫比划 → 穿好裙子 → 走近系胸衣 → 退后穿围裙和鞋、扎蓝发带 → 转一圈展示裙摆，背景全程不动。", at: 10.4 },
+        { title: "结尾怎么收", text: "约 21s 抱着猫走近镜头；约 24.9s 把猫放回床上；约 27.2s 切手持自拍，猫在她肩后的床上。", at: 27.2 },
+      ],
+      copyThis: "先出人物、猫、服装、房间 4 张设定图，再在视频提示词里用 @image1–4 分别锁定；换装段写成「同一机位录像被跳剪」，背景就不会漂。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 童话真人",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "4 张设定图",
+      "固定机位跳剪换装",
+      "胶片颗粒",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：先出 4 张设定图",
+        description:
+          "PROMPT 1–4 分别出：人物正脸 + 全身（白色内衬）、三花猫正脸 + 全身、整套服装俯拍平铺、同一间阁楼卧室从门口和窗边各拍一张。四张提示词见下方参考图卡片，作者用 Flova 生成。",
+      },
+      {
+        number: 2,
+        title: "第二步：视频提示词里给每张图分工",
+        description:
+          "@image1 锁人物外貌和起始服装，@image2 锁最终每件衣服，@image3 锁房间布局（左半张是换装机位构图），@image4 锁猫的花色；再用 LOCATION MAP 写清床在左、梳妆台在右、门在机位身后。",
+      },
+      {
+        number: 3,
+        title: "第三步：按秒写 12 个硬切镜头，一次生成 30 秒",
+        description:
+          "Shot 1–4 床边、脚落地、开窗、伸懒腰；Shot 5–11 是门口 1.2 米高、47° 视角的固定机位，写成同一段三脚架录像被跳剪，只靠她走近走远改变景别；Shot 12 唯一一个 84° 手持自拍。最后加 1950 年代 Technicolor 调色、35mm 颗粒、拨弦配乐和环境音。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ivanka-cinderella-girl-map",
+        number: "1",
+        title: "@image1 · 人物设定图（Girl character map）",
+        subtitle: "20 岁成年女性正脸 + 全身白色内衬；截自原帖视频下半部作者展示的参考图拼板（分辨率有限）",
+        image: "/tutorials/ivanka-cinderella-attic-morning-vlog-seedance-2-5/refs/01-girl-character-map.jpg",
+        prompt: `A dual-portrait reference sheet features a 20-year-old adult woman depicted in two side-by-side Hasselblad H6D-100c photographs against a seamless medium-grey backdrop. On the left is a large frontal portrait, including her entire head and delicate hair silhouette—her calm, neutral expression and direct gaze at the viewer showcases softly curved eyebrows, proportionate lips with a small Cupid's bow, and subtle asymmetries such as a fuller cheek and slight variance between eyelids. Her high detail skin presents a natural glow and soft matte finish with faint pinkness on her cheeks and realistic lip texture, framed by long, wavy, center-parted beige-blonde hair that falls past her shoulders revealing her thin waist. The right image displays her full-body pose with upright posture, weight balanced and both bare feet visible with negative space beneath the soles. She is slender, tall (178 cm), with clearly defined waist curves, and wears a fitted short white opaque linen camisole (stopping below the ribs and covering the chest), paired with knee-length white opaque linen pantaloons that gather at the knees and fasten with small buttons below the navel. Lighting is broad, soft, and neutral daylight (key from camera-left at 45 degrees, gentle fill from camera-right), producing delicate soft shadows, visible fine skin texture and highlights on individual hair strands, and subtle, broken matte reflection off her white linen attire. Both images are expertly color graded with neutral tones, clean whites, moderate contrast, and gentle highlight roll-off—each is sharply resolved with visible linen weave, subtle contact shadows under her feet, and strong, confident posture. The overall mood is clinical, neutral, and highly authentic, intended for accurate photographic reference.`,
+      },
+      {
+        id: "ivanka-cinderella-outfit-map",
+        number: "2",
+        title: "@image2 · 服装设定图（Outfit map）",
+        subtitle: "象牙白衬衫、灰蓝束身胸衣、赤陶色长裙、燕麦色围裙、棕色搭扣鞋、蓝发带俯拍平铺；截自原帖视频拼板",
+        image: "/tutorials/ivanka-cinderella-attic-morning-vlog-seedance-2-5/refs/03-outfit-map.jpg",
+        prompt: `SHOT:
+  task: Create a photographic wardrobe reference board showing the complete everyday outfit for a live-action Cinderella.
+  aspect: 16:9 horizontal
+  shot_size: Overhead flat lay, every garment and accessory fully visible.
+  camera_angle: Directly overhead, perpendicular to the surface.
+  subject_placement: Blouse at upper left, bodice at upper centre, skirt across the right half, apron at lower left, shoes at lower centre, hair ribbon between blouse and bodice.
+  focal_anchor: All items equally sharp, with clear spacing between their edges.
+
+SUBJECTS:
+  blouse:
+    quantity: One
+    colour: Warm ivory
+    material: Dense opaque woven linen, matte surface, visible fine thread irregularities.
+    design: Soft square neckline with a narrow sewn binding, gently gathered shoulders, voluminous elbow-length sleeves finishing in slim cuffs, waist-length body suitable for tucking into the skirt.
+    presentation: Laid flat with the front facing upward, sleeves extended gently outward, neckline and cuffs clearly readable.
+
+  bodice:
+    quantity: One
+    colour: Dusty cornflower blue
+    material: Substantial tightly woven matte cotton canvas with a linen lining.
+    design: Sleeveless fitted historical bodice, wide shoulder straps, square neckline, shaped vertical seams, strongly tapered waist and a small central point at the lower front.
+    fastening: One matching blue cord threaded through two symmetrical rows of small stitched eyelets, neatly tied at the lower front.
+    presentation: Front facing upward, straps extended, complete lacing and waist shaping visible.
+
+  skirt:
+    quantity: One
+    colour: Warm muted terracotta
+    material: Medium-heavy matte wool with a visible fine weave and weighty folds.
+    design: Full ankle-length skirt, narrow fitted waistband sitting at the natural waist, dense gathers distributing generous volume around the hips, broad plain hem.
+    fastening: Small side opening with a fabric-covered button.
+    presentation: Front facing upward, waistband at the top, skirt spread into a broad fan with its full length and complete hem visible.
+
+  apron:
+    quantity: One
+    colour: Natural light oatmeal
+    material: Dense unbleached linen with a subtly irregular weave.
+    design: Simple waist apron with a softly gathered rectangular panel, reaching mid-calf when worn, narrow waistband and two long ties for fastening behind the waist.
+    presentation: Laid flat with both ties extended separately, panel and stitched hem fully visible.
+
+  shoes:
+    quantity: One matching pair
+    colour: Warm medium brown
+    material: Supple leather with fine natural grain, subtle creasing and a restrained worn sheen.
+    design: Closed rounded toes, low broad heels approximately 3 cm high, instep straps with small aged-brass buckles, thin leather soles.
+    presentation: Both shoes resting on their soles with uppers facing the overhead camera, arranged parallel with space between them.
+
+  hair_ribbon:
+    quantity: One
+    colour: Dusty cornflower blue matching the bodice
+    material: Matte woven cotton tape, approximately 3 cm wide.
+    design: A long simple ribbon with neatly finished ends.
+    presentation: Laid in a loose open curve, its complete length and both ends visible.
+
+SCENE:
+  surface: Continuous neutral light-grey matte surface filling the entire image.
+  arrangement: Each item occupies its own clear area; the skirt has the largest space, reflecting its actual size.
+  condition: Carefully maintained everyday clothing, gently softened through use, with subtle wear at edges and tidy stitching.
+  composition: Clothing and accessories alone form a clean image-only wardrobe board.
+
+LIGHT:
+  key: Broad diffused daylight from upper left.
+  fill: Soft reflected ambient light reveals detail within folds.
+  material_response: Linen and wool scatter light softly; leather carries restrained highlights; brass buckles reflect small warm accents.
+  integration: Delicate contact shadows beneath every item establish weight and contact with the surface.
+
+LOOK:
+  color_grading: Natural photographic colour, accurate ivory and oatmeal tones, dusty blue and warm terracotta, neutral grey background.
+  authenticity: Hasselblad H6D-100c, 80mm lens at f/8, evenly resolved fabric weave, seams, lacing, leather grain and garment edges.
+  style: Photographic costume-department wardrobe documentation for a live-action period fairy tale.
+
+CONSISTENCY_LOCK:
+  inventory: Exactly one blouse, one blue bodice, one terracotta skirt, one oatmeal apron, one pair of brown shoes and one blue hair ribbon.
+  construction: Preserve the specified colours, materials, garment lengths, fastenings and item counts.`,
+      },
+      {
+        id: "ivanka-cinderella-room-map",
+        number: "3",
+        title: "@image3 · 房间设定图（Room map，正反两视角）",
+        subtitle: "同一间阁楼卧室从门口和窗边各拍一张，左半是换装主机位构图；截自原帖视频拼板",
+        image: "/tutorials/ivanka-cinderella-attic-morning-vlog-seedance-2-5/refs/04-room-map.jpg",
+        prompt: `SHEET:
+  task: Create a photographic location reference sheet showing one identical Cinderella bedroom from opposite ends of the room.
+  aspect: 16:9 horizontal
+  layout: Two equally sized photographs side by side.
+  continuity: Build one fixed physical room and photograph it twice by moving the camera from the entrance end to the window end.
+
+SCENE:
+  setting: A lived-in attic bedroom in a French country house, with furnishings inspired by the late eighteenth century.
+  atmosphere: Modest, intimate and inviting, with carefully kept belongings and visible traces of everyday life.
+  architecture: Rectangular room approximately 5 metres wide and 6 metres deep, sloping roof along the west and east sides, exposed aged oak beams, warm ivory limewashed plaster, wide honey-brown floorboards.
+  ceiling: Sufficient standing height through the centre of the room for a tall woman.
+  palette: Warm ivory, honey oak, faded dusty blue, oatmeal linen and small terracotta accents.
+
+FIXED_ROOM_LAYOUT:
+  orientation: North is the window wall; south is the opposite entrance wall; west and east are the two long side walls. These physical directions remain fixed in both photographs.
+  window:
+    position: Centred on the north wall.
+    design: Tall inset wooden casement window with small rectangular glass panes, aged pale-blue paint and a deep wooden sill.
+    curtains: Two simple ivory linen curtains gathered at the sides.
+    sill_objects: One small earthenware pot of white daisies at the west end of the sill.
+    exterior: Softly visible garden foliage and distant countryside.
+  bed:
+    position: Along the west wall, headboard toward the north end, foot toward the south.
+    design: Narrow antique oak bed with a simple shaped headboard and sturdy wooden feet.
+    bedding: Cream linen sheets, two softly compressed pillows, a faded blue-and-ivory patchwork quilt loosely folded back near the head.
+  bedside_table:
+    position: Beside the head of the bed, between the bed and the northwest corner.
+    design: Small worn wooden table.
+    objects: One brass candleholder with a partly used ivory candle and one closed clothbound book.
+  dresser:
+    position: Against the east wall, in its southern half.
+    design: Waist-high aged oak chest of three drawers with small dark brass handles, reachable from the central dressing area.
+    objects: Wooden hairbrush, small ceramic dish containing a folded dusty-blue ribbon, and a modest oval tabletop mirror angled toward the north wall.
+  washstand:
+    position: Against the east wall, north of the dresser.
+    design: Slender wooden washstand with one lower shelf.
+    objects: Cream ceramic washbasin, matching water jug and a folded oatmeal linen towel.
+  chair:
+    position: Near the northwest side of the window, clear of the bed.
+    design: Simple spindle-back wooden chair with a woven rush seat.
+  sewing_basket:
+    position: On the floor beside the chair.
+    contents: Folded linen scraps, a small wooden spool and a neatly rolled piece of blue fabric.
+  door:
+    position: South wall, close to the southeast corner.
+    design: Aged solid oak door with a dark iron latch.
+    state: Closed.
+  wall_hooks:
+    position: West wall near the southwest corner.
+    objects: One plain oatmeal shawl hanging from a wooden peg.
+  rug:
+    position: Beside the bed, stopping before the central dressing area.
+    design: Small faded woven rug in muted terracotta and cream.
+  dressing_area:
+    position: Central and southern portion of the room.
+    clearance: A continuous clear floor area approximately 2.5 metres wide and 3 metres deep, allowing a tall woman to stand in full view and walk toward a camera.
+
+VIEWS:
+  left_photograph:
+    camera_position: At the south end, just inside the doorway near the southeast corner, approximately 1.45 metres above the floor.
+    direction: Looking diagonally northwest toward the window wall.
+    angle: Level camera, three-quarter interior view with both the north wall and west wall clearly readable.
+    composition: The window appears at the far end. The bed occupies the left side, with its foot nearer the camera and its head nearer the window. The dresser enters the right foreground, with the washstand farther along the same right wall. The chair and sewing basket remain beside the window. Open dressing floor runs through the centre.
+  right_photograph:
+    camera_position: At the north end, beside the east jamb of the window, approximately 1.45 metres above the floor.
+    direction: Looking diagonally southwest toward the entrance wall.
+    angle: Level camera, reverse three-quarter interior view with the south wall and west wall clearly readable.
+    composition: The closed entrance door appears at the far end on the left side of the photograph. The bed now occupies the right side, its head nearer the camera and its foot farther away. The washstand appears along the left foreground edge, with the dresser farther away on that same wall near the door. The shawl on the west-wall peg is visible beyond the foot of the bed. The central dressing floor remains open.
+    spatial_logic: This is the reverse view of the first photograph. West-wall furniture appears on the right, and east-wall furniture appears on the left because the camera faces the opposite direction.
+
+LIGHT:
+  source: Morning daylight enters through the north window in both photographs.
+  key: Soft warm sunlight falls diagonally across the floor toward the southwest portion of the room.
+  fill: Gentle reflected light from ivory plaster preserves detail in the bed, furniture and shaded corners.
+  view_relationship: In the first photograph the window is ahead of the camera; in the reverse photograph the same window illuminates the room from behind the camera.
+  material_response: Linen fibres scatter light softly, oak grain carries subdued highlights, ceramic glaze reflects the window, brass shows small warm glints.
+  integration: Furniture has firm contact shadows, bedding settles under its own weight, and the same sunlit patches remain on the same floorboards in both views.
+
+LOOK:
+  medium: Photographed practical interior for a live-action period film.
+  authenticity: Full-frame photography with a 35mm lens at f/8, natural room proportions, straight verticals, clear texture in plaster, wood, linen and ceramic.
+  color_grading: Restrained 1950s Technicolor-inspired colour separation, warm luminous highlights, rich readable shadows, natural whites and delicate photographic grain.
+  realism: Tangible aged materials, subtle surface wear, believable joinery, irregular linen folds and detailed woven fabrics.
+
+CONSISTENCY_LOCK:
+  geometry: One shared three-dimensional room with identical dimensions, roof slopes, beams, window and door positions.
+  furniture: Every piece remains anchored to its specified physical wall and position.
+  objects: Preserve the exact placement of the hairbrush, ribbon dish, mirror, jug, basin, towel, candleholder, book, flowerpot and sewing basket.
+  fabrics: Quilt folds, pillow positions, curtain gathers and rug orientation remain identical.
+  visibility: Objects appear according to the camera viewpoint and natural occlusion; furnishings stay fixed even when outside the frame.
+  camera_change: Only the camera moves between the two photographs, travelling from the entrance end to the window end and turning to face back toward the door.
+  presentation: Exactly two unoccupied three-quarter room photographs from opposite ends, with the room filling both panels edge to edge.`,
+      },
+      {
+        id: "ivanka-cinderella-cat-map",
+        number: "4",
+        title: "@image4 · 三花猫设定图（Cat map）",
+        subtitle: "长毛三花猫正脸 + 四分之三全身，锁花色分布；截自原帖视频拼板",
+        image: "/tutorials/ivanka-cinderella-attic-morning-vlog-seedance-2-5/refs/02-cat-map.jpg",
+        prompt: `A precise split-reference sheet presents one real, small adult female calico domestic long-haired cat, approximately two years old, depicted in two side-by-side, full-color high-resolution photographs in a 16:9 landscape layout. The left side features a large, frontal head-and-chest portrait, tightly cropped to include the tip of each upright triangular ear within a field of smooth neutral medium-grey background extending above, below and around the head and shoulders, with the fine whiskers framed by negative space. The right side displays a complete standing front-left three-quarter view showing the whole trunk, all four compact white paws, a visible tail that spirals edgewise away from the body, and a gentle leftward body posture. The subject’s fur is dense, fluffy and well groomed, with a thousand directional hairs, soft tufts around the chest, irregular guard hairs along the silhouette and a natural undercoat beneath. The cat’s soft, rounded face is anatomically correct, with a short natural muzzle, soft cheek fur, a centered pink nose, and large pale inner ear tufts. Clear, moisture-sheened amber eyes with fine radial iris detail and matching pupils stare attentively at the camera in both images, expressing serene, gently curious feline calm. The calico coat shows a white blaze along the central forehead and muzzle bordered by a large ginger patch around the right ear and upper right brow, and a distinct soft black patch around the left ear and left upper brow sufficient to separate the colored ears; both eyes remain edged below by white fur. The cat’s continuous white fur covers her chin, throat, chest, belly, all four legs and all paws. On the body, one broad ginger patch covers the right shoulder, one large black patch extends over the left dorsal midsection and flank, and one round ginger patch marks her left hip; white fur always separates the three main patches. Her fluffy tail is marked with a ginger base, a broad black midsection and a white tip. The backdrop extends seamlessly behind and beneath the cat in both views, with soft contact shadows beneath chin and paws, and fine individual hair shadows under the chest. The image is captured with soft, broad daylight from camera-left, with gentle reflected light from camera-right that preserves the detailed structure of black, white, and ginger fur, producing delicate volumetric fur shadows, individual hair highlights, and a neutral photographic color balance with true-to-life black, white, amber, warm ginger, pink, and grey. The full 85mm f/8 optical effect is preserved: clear whiskers, visible iris and moist nose details, and natural depth-of-field softly separating the cat from a featureless grey background. The overall mood is calm, professional, and clinical, with a realistic, authentic and slightly warm photographic rendering of a detailed, healthy longhaired calico feline on a plain studio backdrop, formatted as a paired animal reference sheet with consistent lighting, background, coat markings and breed features in both images.`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3.3s 侧躺在拼布被上醒来，挠身边三花猫的脸。" },
+      { number: 2, description: "3.3–5.4s 床边低机位：双脚落到地毯上。" },
+      { number: 3, description: "5.4–7.8s 梳妆台上的机位看她背影，向内拉开右扇窗。" },
+      { number: 4, description: "7.8–10.4s 同一机位，对着窗外举臂伸懒腰。" },
+      { number: 5, description: "约 10.4–12s 门口固定机位：穿白色内衬，拿象牙白衬衫在身前比划。" },
+      { number: 6, description: "约 12–13.6s 同机位：衬衫和赤陶色长裙已穿好，抚平腰头。" },
+      { number: 7, description: "约 13.6–16s 走近镜头，低头拉紧灰蓝胸衣的系带。" },
+      { number: 8, description: "约 16–18s 退回全身：围裙、棕鞋、蓝发带都已上身。" },
+      { number: 9, description: "约 18–21s 提起裙摆转一下，展示裙子的分量。" },
+      { number: 10, description: "约 21–24.9s 抱着三花猫走近镜头。" },
+      { number: 11, description: "约 24.9–27.2s 在左侧床边弯腰把猫放回被子上。" },
+      { number: 12, description: "27.2–30s 手持自拍，猫坐在她肩后的床上，她回头看一眼再对镜头笑。" },
+    ],
+    constraints:
+      "一个人、一只猫、一间房、一张床；Shot 5–11 同一固定机位，背景地标位置和大小不变，只靠人走动改变景别；已穿上的衣服后续一直穿着，蓝发带从 Shot 8 起不掉；全片 1950 年代胶片调色与颗粒。与成片不符：各镜切点比提示词晚约 0.3–1.4 秒（如 Shot 2 从约 3.3s 开始，Shot 5 从约 10.4s 开始）。说明：作者发布的视频是上下拼接版（上半 1706×960 为 16:9 成片，下半为 4 张设定图拼板并带作者水印），本条 demo 只裁取上半成片；4 张参考图是从视频下半拼板截出的，不是原图，分辨率约 850×480。缺口：Shot 5–11 之间的跳剪背景不变，自动切点检测抓不到，这几段时间码是按画面估的。",
+    video_prompt: {
+      title: "Cinderella Attic Morning Self-Shot Vlog · 30s",
+      subtitle: "Seedance 2.5 on Flova · 16:9 · PROMPT 5 英文完整提示词（作者自回复长帖）",
+      content: `SCENE CONTEXT
+A 30-second morning self-shot vlog inside Cinderella’s attic bedroom. One young woman wakes beside her calico cat, welcomes the morning at the window, dresses for the day and introduces her companion to the viewer. Twelve shots connected by instantaneous HARD CUTS.
+
+ACTIVE REFERENCES
+@image1 defines the exact adult woman, age 20: face, eyes, natural blonde hair, tall proportions, narrow waist and white starting outfit. Preserve her reference appearance.
+@image2 defines every final wardrobe item: ivory blouse, dusty-blue lace-front bodice, terracotta skirt, oatmeal apron, brown buckle shoes and blue hair ribbon.
+@image3 contains two opposite views of ONE bedroom with ONE bed. Its left panel supplies the fixed dressing composition. Its right panel explains the reverse architecture of this same room.
+@image4 defines the exact fluffy calico cat, amber eyes, face markings, body patches and tail colour. Preserve the photographed patch map.
+
+LOCATION MAP
+Exactly one bed occupies the wall on the left when looking from the entrance toward the window. Its headboard stands near the window and its foot points toward the entrance. The dresser and washstand occupy the opposite wall on the right. The entrance is behind the dressing camera. Preserve the reference chair, basket, mirror, rug and bedside table.
+
+The room’s right-hand side contains the dresser and washstand throughout. Every interaction with the bed takes place at the single bed on the left.
+
+At the beginning, the folded outfit rests on the chair, the shoes stand together beneath it, and the ribbon lies in the dresser dish. The cat rests on the quilt beside the woman’s waist. The central floor remains clear for dressing.
+
+CAMERA AND EDITING
+Shots 1–11 are self-placed resting-camera views, completely stationary throughout each shot. The early bedside and window setups change only through the specified HARD CUTS.
+
+DRESSING MASTER, SHOTS 5–11:
+One camera rests near the entrance at a height of 1.2 metres, facing toward the window with a fixed 47° field of view. Match the left panel of @image3: single bed on screen-left, blue window at the rear centre, dresser at screen-right, washstand farther back on screen-right. The dresser edge remains a visible foreground anchor.
+
+Treat shots 5–11 as excerpts from ONE uninterrupted tripod recording, shortened by jump cuts. The background is the same registered image across all seven shots: identical window size and position, identical bedpost alignment, identical dresser edge and ceiling beams. Position, height, lens, direction, focus setting and exposure remain fixed. Framing changes solely through the woman physically approaching or retreating from this stationary lens. Her complete head remains visible when she approaches.
+
+Shot 12 is the sole handheld selfie, at 84° field of view. Her extended arm motivates its slight natural movement. Recording equipment stays outside the captured frame and outside mirror reflections throughout. The mirror reflects the opposite wall.
+
+Every transition is an instantaneous HARD CUT at the stated time. Wardrobe changes take place in omitted time between shots. Each visible action runs at natural human speed.
+
+ACTION
+
+0.0–3.0 seconds — SHOT 1, 47°, STATIC SIDE VIEW.
+Resting camera beside the single bed at mattress height, a soft quilt edge in the near foreground. She lies on her side facing the camera, head on the pillow, wearing the white cropped top and knee-length white bottoms from @image1. The calico rests beside her waist. She opens her eyes, looks down at the cat and gently scratches its cheek with two fingers. The cat leans into her touch; a small closed-lip smile appears.
+
+3.0 seconds — HARD CUT.
+
+3.0–4.5 seconds — SHOT 2, 29°, STATIC LOW DETAIL.
+Resting camera near floor level beside the same bed, wooden bedpost at the frame edge. She is already seated on the mattress edge. Her bare lower legs descend together, and both feet settle naturally onto the rug. The white knee-length bottoms remain visible. The mattress compresses beneath her weight.
+
+4.5 seconds — HARD CUT.
+
+4.5–7.0 seconds — SHOT 3, 47°, STATIC INTERIOR WINDOW VIEW.
+Resting camera on the dresser INSIDE the bedroom, looking diagonally toward the window. The dresser edge is visible in the near foreground. She stands entirely INSIDE the room, both feet on the bedroom floor, between the camera and the window. Her back and right shoulder face the camera in three-quarter view; her face looks toward the glass and countryside.
+
+Still wearing her white starting outfit, she stands beside the opening path of the right-hand casement as viewed from inside. She turns its interior latch with her right hand, steps slightly backward and draws the handle toward herself. The leaf rotates inward around hinges fixed to the right jamb. Her body remains on the room side of the sill throughout. The other casement stays closed, and the flowerpot remains at the left end of the sill. She finishes with the opened leaf held beside her inside the room.
+
+7.0 seconds — HARD CUT.
+
+7.0–9.0 seconds — SHOT 4, EXACT SAME STATIC INTERIOR WINDOW VIEW.
+The right-hand casement is already open inward. She stands one step back from the sill, clear of the opened leaf, still seen from behind in three-quarter view. Facing the morning outside, she raises both arms overhead in one comfortable stretch, lifts her chest with an inhale and begins lowering her arms. A light breeze stirs her hair ends and the curtain edge.
+
+9.0 seconds — HARD CUT.
+
+9.0–11.0 seconds — SHOT 5, FIXED DRESSING MASTER, 47°.
+Establish the master composition that remains identical through shot 11: window at rear centre, single bed left, dresser right. Her complete standing figure fits inside the frame. She still wears the white starting outfit and already holds the ivory blouse by its shoulder seams. She presents its front against her torso, glances at the fabric, then meets the lens with a small pleased smile. The remaining garments stay on the chair.
+
+11.0 seconds — HARD CUT.
+
+11.0–13.0 seconds — SHOT 6, SAME DRESSING MASTER.
+The background stays exactly registered to shot 5. The ivory blouse and terracotta skirt are now fully worn, blouse tucked neatly into the skirt’s natural-waist waistband. She is barefoot. She smooths the waistband with her palms, then shifts her weight lightly; the skirt settles in broad folds. Her white base layers remain beneath the outfit.
+
+13.0 seconds — HARD CUT.
+
+13.0–15.5 seconds — SHOT 7, SAME DRESSING MASTER.
+The background keeps the same scale, direction and alignment. The dusty-blue bodice is now worn over the blouse, its front lacing already threaded and tied. She has moved closer to the stationary lens, bringing her entire head and torso into a larger view while the window remains behind her. Looking down, she gives the two finished bow loops one small tightening tug, then releases them. Her face lifts toward the viewer.
+
+15.5 seconds — HARD CUT.
+
+15.5–18.0 seconds — SHOT 8, SAME DRESSING MASTER.
+She has stepped back into complete head-to-foot view within the unchanged composition. The oatmeal apron is now tied over the skirt and both brown shoes are on her feet. Her hair is half-up, secured with the blue ribbon, while the remaining blonde lengths hang loose. In a relaxed three-quarter stance she smooths the apron once, then turns toward the lens.
+
+18.0 seconds — HARD CUT.
+
+18.0–21.0 seconds — SHOT 9, SAME DRESSING MASTER.
+She stands in the full finished outfit at the same distant mark. She lightly takes the skirt at its sides, makes a small quarter-turn to show its volume, then faces forward and releases the fabric. The skirt swings after her body and settles. She gives the viewer a warm closed-lip smile, then looks toward the single bed on screen-left.
+
+21.0 seconds — HARD CUT.
+
+21.0–25.0 seconds — SHOT 10, SAME DRESSING MASTER.
+She is already securely holding the calico against her torso, one forearm supporting its hindquarters and the other supporting its chest. From the middle of the room she takes two short steps toward the stationary camera, bringing their faces closer together in the frame. The window remains behind her; the bed and dresser stay at their established screen positions. She looks affectionately at the cat, then at the lens. The cat watches the viewer, ears relaxed, paws resting naturally over her supporting arm.
+
+25.0 seconds — HARD CUT.
+
+25.0–27.0 seconds — SHOT 11, SAME DRESSING MASTER.
+The full master composition remains fixed. She is beside the SINGLE BED ON SCREEN-LEFT, bending with the cat supported just above its blue quilt. She lowers it the final short distance. Its paws contact the bedding before her hands release; it settles onto the quilt as she straightens. The dresser and washstand remain on screen-right.
+
+27.0 seconds — HARD CUT.
+
+27.0–30.0 seconds — SHOT 12, 84°, HANDHELD SELFIE.
+She stands beside the same bed in her complete outfit, holding the viewpoint at arm’s length slightly above eye level. Her extended forearm enters the lower corner; her face stays near the image centre. The calico sits visibly on the single bed behind her shoulder. She glances back at it, returns her gaze to the lens and smiles with closed lips. A small natural wrist adjustment and breathing create the only camera movement in the sequence. End on her relaxed smile as the cat gives a slow blink.
+
+PERFORMANCE
+A real living woman with visible pores, delicate facial hairs, natural lip texture and fine variations in skin colour. Individual blonde strands catch the window light. Natural blinking, breathing and gaze changes. Her sleepy expression gradually becomes alert and quietly cheerful. The cat behaves like a real animal, with small ear adjustments, whisker movement and subtle breathing.
+
+PHYSICS
+Linen bends into weighty folds; the skirt follows turns with a slight delay. Hands make clear contact with fabric and the window handle. Feet bear weight against the floor. The cat’s body remains supported during carrying, its fur compressing naturally against her forearms. Bedding depresses beneath paws and body weight.
+
+LIGHTING
+One continuous bright morning. Daylight enters through the reference window, with warm reflected light from the wooden floor and soft fill from ivory plaster. Stable exposure and 5300K white balance. Opening the casement introduces a light breeze while maintaining consistent illumination.
+
+COLOR GRADE AND FILM TEXTURE
+The entire sequence resembles a well-preserved colour theatrical film print from the 1950s. Three-strip Technicolor-inspired dye density: deep cornflower-blue fabric, rich copper-terracotta skirt, warm cream linen and honey-amber wood. Skin retains natural peach and rose variation within the period colour palette.
+
+Clearly visible fine-to-medium 35mm photochemical grain dances independently from frame to frame across skin, walls, fabrics and shadows. Gentle optical softness blends high-contrast edges while facial features remain readable. Bright window highlights carry restrained warm halation; illuminated linen has a soft luminous bloom. Dense coloured shadows retain texture, and highlights roll into creamy film white. The same film-print response covers every shot, including the selfie. The grain moves while the photographed room remains spatially steady.
+
+AUDIO
+A light playful instrumental with pizzicato strings and soft woodwind runs quietly beneath the entire sequence. Audible bedding rustle, gentle purring, bare feet touching the rug, window-latch click, hinge creak, morning birds, clothing rustle and soft shoe taps. The final close moment carries a quiet contented breath and the cat’s purr. Instrumental music and natural location sounds form the complete soundtrack.
+
+STYLE AND OUTPUT
+30 seconds, 16:9 horizontal, full-frame live-action imagery, 1950s colour-film finish and visible organic grain. Self-shot intimacy within a period-film world. Real-time movement within each shot.
+
+POSITIVE LOCKS
+One woman, one calico cat, one bedroom, exactly one bed. The two room-reference panels represent opposing views of that single room. Reference identity and cat markings stay consistent.
+
+The woman opens the window from inside, seen from behind in three-quarter view. The right casement stays open after shot 3.
+
+Shots 5–11 use one identical locked camera composition facing the window. The woman moves within that composition; background landmarks retain their exact positions and sizes across cuts.
+
+Completed wardrobe layers remain worn in subsequent shots; the blue ribbon stays secured from shot 8 onward. The finished video presents one full-screen scene at a time.`,
+    },
+  },
+  // 查重别名(提示词自回复帖：PROMPT 1–4 角色/产品/房间图): https://x.com/ivanka_humeniuk/status/2103318583354736688
+  // 查重别名(提示词自回复帖：PROMPT 5–6 两集视频): https://x.com/ivanka_humeniuk/status/2103318588832559195
+  {
+    id: "ivanka-therabody-smartgoggles-ad-seedance-2-5",
+    title: "Therabody 眼部按摩仪广告 · 主持 + 演员双角色 · Seedance 2.5",
+    subtitle: "X · @ivanka_humeniuk · GPT Image 2.5 + Seedance 2.5 · 40秒 · 16:9",
+    description:
+      "Therabody 眼部按摩仪两集广告：男演员、女主持、产品、卧室 4 图锁定，Seedance 2.5 每集 7 镜。",
+    video: "/tutorials/ivanka-therabody-smartgoggles-ad-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/ivanka-therabody-smartgoggles-ad-seedance-2-5/poster.jpg",
+    duration: "40秒",
+    durationSec: 40,
+    styleLabel: "产品广告",
+    shots: 14,
+    references: 4,
+    model: "GPT Image 2.5 + Seedance 2.5",
+    style: "高端健康科技广告 · 暖光卧室 · CGI 解剖图 + 女声旁白",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ivanka_humeniuk/status/2103318579269501067",
+    sourceAuthor: "@ivanka_humeniuk",
+    sourcePlatform: "X",
+    sourceImpressions: 4221,
+    sourceStats: { asOf: "2026-09-27", likes: 116, reposts: 5, bookmarks: 56 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "痛点 → 解剖讲解 → 产品亮相 → 戴上 → 三层放松 → 躺平 → 产品定格",
+      opening: "第 0 秒是男人眼睛的大特写，笔记本屏幕的光映在眼球上，他眨眼揉眼——先把「屏幕眼疲劳」这个痛点拍出来。",
+      openingAt: 0,
+      beats: [
+        { title: "痛点怎么讲", text: "约 3.9s 切到他在书桌前揉太阳穴；约 7.4s 俯拍他合上笔记本；约 9.2s 进入 CGI 头部解剖，眼周和太阳穴肌肉发亮，女主持出现在左下角讲解。", at: 3.9 },
+        { title: "产品怎么露", text: "约 14.9s 桌面微距推出 SmartGoggles；约 17.1s 他双手拿起产品；第二集约 20s 起从背后戴上、侧面贴合特写、CGI 透视加热层。", at: 14.9 },
+        { title: "结尾怎么收", text: "约 32.4s 俯拍他戴着眼罩平躺在床上；约 34.9s 摘下后的放松近景；约 37.6s 产品在床头定格。", at: 32.4 },
+      ],
+      copyThis: "两个人物分开做角色卡，产品当成「第三个锁定角色」单独出图；每集写死 7 个硬切镜头和一条连续女声旁白。",
+      approx: true,
+    },
+    tags: [
+      "40秒 · 两集产品广告",
+      "16:9 横屏",
+      "GPT Image 2.5 + Seedance 2.5",
+      "4 张锁定参考图",
+      "女声旁白",
+      "CGI 解剖图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2.5 出 4 张参考图",
+        description:
+          "PROMPT 1 男主演角色卡（正脸 + 全身）、PROMPT 2 女主持角色卡、PROMPT 3 产品两个角度、PROMPT 4 卧室。视频提示词里的编号和出图顺序不同：@Image3 是卧室、@Image4 是产品。四段出图提示词见下方参考图卡片。",
+      },
+      {
+        number: 2,
+        title: "第二步：写第一集（20 秒 7 镜）",
+        description:
+          "PROMPT 5：眼睛特写钩子 → 书桌前揉太阳穴 → 俯拍合上笔记本 → CGI 眼周与颞肌解剖 → 太阳穴紧张特写 → 产品桌面微距亮相 → 拿起产品。每镜写 camera 和 action_visual，另写一条贯穿 20 秒的女声旁白和 VOICE LOCK 锁音色。",
+      },
+      {
+        number: 3,
+        title: "第三步：写第二集并拼接成 40 秒",
+        description:
+          "PROMPT 6：戴上 → 开机 → 贴合微距 → CGI 加热/按压机制 → 俯拍平躺 → 十五分钟后的放松近景 → 产品定格。作者说用 GPT Image 2.5 出图、Seedance 2.5 出片，两集各生成 20 秒后前后相接。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ivanka-therabody-man-map",
+        number: "1",
+        title: "@Image1 · 男主演角色卡（Man character map）",
+        subtitle: "左半正脸控制长相，右半全身控制身材和深灰家居服；截自原帖视频下半部参考图拼板（约 480×265，非原图）",
+        image: "/tutorials/ivanka-therabody-smartgoggles-ad-seedance-2-5/refs/01-man-character-map.jpg",
+        prompt: `A cleanly formatted, horizontally-oriented 16:9 photorealistic character reference card presents two precise side-by-side images of the same man, aged 32, with a relatable yet camera-ready appearance and a lean athletic build. On the left, a close frontal portrait from the crown to mid-chest displays short textured hair, styled up at the front, light stubble, subtly uneven eyebrows, a slightly asymmetric mouth, and a small natural stubble gap below the lower lip. His expression is calm and attentive, with a closed mouth and understated evening fatigue in the eyes. His natural bright skin texture, enhanced by ambient gloss and visible pores, shows fine lines with a minimal matte finish. The man wears a stone-grey crew-neck knit top, visible with leveled shoulders and no jewelry or other adornments. The background is a seamless, neutral mid-grey studio backdrop without visible labeling or graphic elements. The right panel provides a full-frontal, full-body view of the same man, standing naturally with relaxed arms and parallel feet, dressed in the same top, charcoal lounge trousers, and dark house shoes amid generous negative space. The consistent studio light setup, soft and neutral, uses a large key light camera-left and gentle fill from the right, creating natural, even lighting with subtle contact shadowing at the feet. The crisp, continuous capture in both views results from a professional medium-format digital system, with an 80mm portrait lens and a 65mm wide-angle for the full-body shot on a Hasselblad H6D-100c, delivering wide dynamic range, natural depth, and balanced focus throughout, conveying a calm, professional, and approachable studio mood.`,
+      },
+      {
+        id: "ivanka-therabody-narrator-map",
+        number: "2",
+        title: "@Image2 · 女主持角色卡（Narrator character map）",
+        subtitle: "米白上衣、项链的讲解主持人；截自原帖视频拼板",
+        image: "/tutorials/ivanka-therabody-smartgoggles-ad-seedance-2-5/refs/02-narrator-character-map.jpg",
+        prompt: `A straight-on dual-panel character reference card displays two equal, side-by-side studio portraits of a 29-year-old Central European woman with a relatable, naturally attractive appearance. In both images, her face features minimal everyday makeup: natural, softly-shaped brows, gently defined eyes, light cheek warmth, and softly colored lips. Her complexion is bright, retaining high skin detail including visible pores, faint freckles, fine lines, natural gloss, subtle under-eye texture, and minor imperfections for a life-like, photographic realism. Her long hair is parted cleanly in the center, falling in soft natural waves around her face with a few loose strands gently framing her features. A hint of subtle micro-asymmetry is present: in the left image her left eyebrow is slightly higher with a marginally raised right corner of her gently smiling mouth. She is wearing a fitted ivory fine-rib knit top with a clean bateau neckline, complemented by a delicate gold chain necklace and polished gold hoop earrings. In the left panel, the close-up head-and-chest portrait focuses on her calm, direct eye contact and relaxed demeanor, while the right panel shows a frontal, waist-up View with both arms and hands visible, one arm slightly raised in a presenter’s gesture, and a warm attentive smile. The portrait has a seamless, neutral mid-grey background, illuminated by a large diffused 5200K key light from front-left and a soft frontal fill, producing subtle catchlights in the eyes and natural, soft-edged shadows. The subject is photographed with a Hasselblad H6D-100c medium-format camera and crisp, noise-free, sharp digital detail with a natural perspective. The composition is clean and professional, with no filters, grain, or added graphic elements, evoking a calm, professional, and approachable mood.`,
+      },
+      {
+        id: "ivanka-therabody-room-map",
+        number: "3",
+        title: "@Image3 · 卧室场景图（Room map）",
+        subtitle: "带书桌、床、落地窗和台灯的暖光卧室；截自原帖视频拼板（作者提示词编号为 PROMPT 4）",
+        image: "/tutorials/ivanka-therabody-smartgoggles-ad-seedance-2-5/refs/04-room-map.jpg",
+        prompt: `SHOT:
+  shot_size: Wide interior establishing shot with the entire bedroom, work area, bed and clear circulation space readable from foreground to background
+  camera_angle: Eye level
+  azimuth: Three-quarter 45° view from the room entrance
+  subject_placement: Desk and open laptop anchored on the left third, bed occupying the right half, bedside table clearly visible between the two functional zones
+  focal_anchor: Focus centered on the desk-to-bed connection while architectural details remain naturally readable throughout the room
+
+SUBJECTS:
+  subject_1:
+    description: Bright contemporary bedroom designed for a modern wellness lifestyle commercial, elegant and lived-in with balanced furniture proportions and realistic materials
+    asymmetry_mapping: Slightly uneven bedding folds, casually angled desk chair and naturally varied decorative placement create believable lived-in character
+    wardrobe: Warm white plaster walls, light oak flooring, upholstered bed, textured cotton bedding, wool throw, oak desk, boucle desk chair, brushed metal lighting
+    mood: Calm evening atmosphere expressed through orderly surfaces, open space and soft practical illumination
+
+SCENE:
+  action: Single uninterrupted full-frame photograph of the empty room, prepared for a person to work at the laptop and later relax on the bed
+  props: Open slim laptop with a subtle abstract interface, ceramic cup, small notebook and pen on the desk; one clear open area on the desk for later product placement; bedside table with a sculptural lamp; neatly layered pillows and duvet; one indoor plant and restrained contemporary decor
+  location: Spacious modern European bedroom at early evening — floor-to-ceiling window at back-left, compact home-office desk directly beside it, upholstered bed against the right wall, bedside table fully visible, warm ivory and light oak foundation with muted sage and terracotta accents
+
+LIGHT:
+  key: Soft diffused 6000K blue-hour window light entering from camera-left, carrying evenly across the desk and bed
+  fill: Warm 3200K ceiling and bedside practicals at a low 2:1 ratio, keeping every furniture surface open and readable
+  rim: Gentle warm edge from the bedside lamp separating the headboard and bedding from the wall
+  ambient: Balanced cool window contribution with warm bounce from the oak floor and ivory walls
+  falloff: Gradual falloff with light carrying deep into the room
+  motivated_by: Floor-to-ceiling window, recessed ceiling fixtures and visible bedside lamp
+  atmosphere: Clean clear interior air with natural depth between foreground furniture and the window wall
+  material_response: Soft highlights across cotton bedding, fine woven texture on upholstery, restrained reflections on brushed metal, natural grain visible in the oak
+  integration: Realistic contact shadows beneath the bed, desk and chair, cool window spill on the left side and warm practical bounce around the sleeping area
+
+LOOK:
+  color_grading: Neutral warm digital tones with gently lifted shadows, natural midtones and smooth highlight rolloff, preserving the contrast between cool evening window light and warm interior practicals
+  authenticity: Phase One XT, 28mm lens with straight architectural lines and natural spatial depth, f/8 keeping foreground and background clearly readable, modern clinical lens with circular smooth bokeh limited to distant exterior lights
+  style: contemporary digital interior photography, clean sensor response, realistic material texture, present-day European residential design`,
+      },
+      {
+        id: "ivanka-therabody-product-map",
+        number: "4",
+        title: "@Image4 · 产品图（Product map）",
+        subtitle: "黑色编织外壳的 SmartGoggles 两个角度；截自原帖视频拼板（作者提示词编号为 PROMPT 3）",
+        image: "/tutorials/ivanka-therabody-smartgoggles-ad-seedance-2-5/refs/03-product-map.jpg",
+        prompt: `Create one horizontal 16:9 product reference card from  and , treating both images as exact identity references for the same Therabody SmartGoggles 2nd Gen device.
+
+SHEET:
+  layout: two equal side-by-side product photographs with generous spacing, identical device scale, full product visible inside each half
+  aspect: 16:9 horizontal
+  surface: one continuous neutral medium-grey seamless studio backdrop, the frame carrying only the two product views
+
+REFERENCE_MAPPING:
+  image1: exact outer front panel, proportions, woven texture, central blue seam and white Therabody logo
+  image2: exact padded interior, adjustable strap, buckle, buttons, biometric sensor and white SmartGoggles marking
+
+PRODUCT:
+  identity: Therabody SmartGoggles 2nd Gen reconstructed as the same single physical device across both views
+  geometry: broad curved eye mask with rounded outer corners, deep central nose notch, padded interior and adjustable wraparound strap
+  outer_material: black graphite woven textile with fine uniform micro-weave, narrow electric-blue vertical seam centered above the nose notch
+  inner_material: soft matte black cushioning shaped around the eyes and nose bridge, subtle compression contours and square biometric sensor
+  controls: original buttons and indicator details held in their exact positions from the references
+  branding: exact small white "Therabody" logo on the lower-left front panel and exact white "SmartGoggles" marking on the strap, every letterform fully legible
+
+VIEWS:
+  left:
+    camera: eye level, straight frontal 0°
+    pose: outer face pointing directly toward the camera, strap arranged naturally behind the body
+    visible_details: complete front silhouette, woven fabric, blue central seam, nose notch, Therabody logo and upper control edges
+  right:
+    camera: slightly elevated rear three-quarter 45°
+    pose: padded interior turned toward the camera, strap forming a natural open loop
+    visible_details: inner cushioning, nose contour, biometric sensor, side controls, adjustable buckle and SmartGoggles strap marking
+
+LIGHT:
+  key: large diffused source from upper-front, soft-edged, revealing the textile micro-weave and padded contours
+  fill: even frontal fill keeping all black surfaces separated through visible tonal detail
+  rim: narrow soft edge defining the black silhouette against the grey
+  integration: soft contact shadows directly beneath both devices, consistent weight and surface contact
+
+LOOK:
+  medium: shot on Hasselblad H6D-100c, medium-format digital capture
+  optics: 100mm macro at f/11, the entire depth of each device holding clear material detail
+  color_grading: neutral catalogue grade, graphite blacks retaining texture, blue seam and white branding holding their exact reference colours
+
+CONSISTENCY_LOCK:
+  instruction: both views show the exact same SmartGoggles device with identical dimensions, silhouette, materials, stitching, padding, controls, sensor, strap construction and branding; only the camera position and device orientation change
+  background_hygiene: clean continuous grey surface, every area surrounding the product free of titles, badges, captions, icons, diagrams and overlay graphics`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3.9s 男人眼睛大特写，屏幕光映在眼里，眨眼。" },
+      { number: 2, description: "3.9–7.4s 书桌前中景，揉太阳穴，窗外是夜景。" },
+      { number: 3, description: "7.4–9.2s 俯拍手合上笔记本。" },
+      { number: 4, description: "9.2–12.9s CGI 头部，眼周和颞肌半透明发亮；女主持在左下角讲解。" },
+      { number: 5, description: "12.9–14.9s 眼周肌肉特写。" },
+      { number: 6, description: "14.9–17.1s 桌面低机位微距，SmartGoggles 亮相。" },
+      { number: 7, description: "17.1–20s 他双手拿起产品端详（第一集结束）。" },
+      { number: 8, description: "20–24.5s 背后视角，他把眼罩戴到头上。" },
+      { number: 9, description: "24.5–27s 侧面近景，眼罩贴合脸部。" },
+      { number: 10, description: "27–29.7s 眼罩与皮肤接触处的微距。" },
+      { number: 11, description: "29.7–32.4s CGI 透明头骨，眼罩的作用层发光。" },
+      { number: 12, description: "32.4–34.9s 俯拍他戴着眼罩平躺在床上，女主持在左下角。" },
+      { number: 13, description: "34.9–37.6s 摘下眼罩后的放松近景。" },
+      { number: 14, description: "37.6–40s 产品在床头定格。" },
+    ],
+    constraints:
+      "男主演、女主持、卧室、产品四者全程与参考图一致，场景里只有一台 SmartGoggles；画面除产品上的真实品牌字样外不出现任何文字，留白给后期加字；每集 7 个硬切镜头。与成片不符：第一集切点比提示词早（如 Shot 1 约 3.9s 就切，提示词写 4.8s）；第二集前两镜（戴上、开机）在成片里只有约 4.5s 一个背影戴上镜头加一个侧面近景。说明：作者发布的视频是上下拼接版（上半 960×540 为成片，下半为 4 张参考图拼板带水印），本条 demo 只裁取上半；4 张参考图从视频下半拼板截出，约 480×265，不是原图。Therabody 与 SmartGoggles 是真实品牌/产品。缺口：旁白台词没有逐字核对。",
+    video_prompt: {
+      title: "Therabody SmartGoggles Ad · Episode 1 + Episode 2 · 2×20s",
+      subtitle: "Seedance 2.5 · 16:9 · PROMPT 5 与 PROMPT 6 英文完整提示词（作者自回复长帖）",
+      content: `📌 PROMPT 5: Animation prompt Episode 1
+SHOT STRUCTURE: exactly 7 shots, 20 seconds, 16:9, exactly as listed, no added shots. Every transition is a clean HARD CUT. Deliberate changes of framing and angle, controlled camera motion, clear visual continuity.
+
+REFS: @Image1 = man character sheet. The LEFT close portrait exclusively controls his facial geometry, skin, eyes, hair and identity. The RIGHT full-body panel controls only body proportions and charcoal loungewear. Keep him identical throughout. @Image2 = female presenter character sheet. Preserve her exact identity, natural appearance, hair, cream top and jewellery. @Image3 = exact bedroom. Preserve its architecture, furniture positions, wooden desk, bed, window, lamps and colour palette. @Image4 = SmartGoggles product sheet. The two pictured units are reference views of one device. Exactly one physical SmartGoggles device exists in the scene. Preserve its black woven shell, blue centre seam, eye contour, padding, strap, controls and authentic branding.
+IMAGE-ONLY OUTPUT: Every frame remains clean visual imagery. The only readable lettering in the entire video is the authentic branding physically printed on the SmartGoggles from @Image4. All open areas of the frame remain clean for typography to be added during editing.
+GLOBAL STYLE: Photorealistic premium wellness-tech advertisement with realistic skin, natural human anatomy, precise product materials and believable physical contact. High-end commercial cinematography, crisp focus, clean highlights, rich detail, restrained depth of field and polished 4K clarity. Warm practical lamps inside @Image3 provide the main illumination, balanced by cool blue dusk through the window. Sophisticated neutral colour grade with natural skin tones, deep blacks and soft warm highlights.
+BODY AND HAND CONTINUITY: The man has normal human anatomy: two arms, two hands and five fingers on each hand, with every wrist visibly connected to its corresponding forearm. Each shot uses only the specific hand placement described for that shot. Hand poses remain simple, separated and physically achievable.
+ACTING — MAN: He tries to finish his work normally, but sustained visual concentration keeps pulling his attention toward one temple. He closes the laptop expecting the sensation to end, registers that it remains, then chooses the SmartGoggles. His eyes remain engaged with each physical task, with natural blinking, controlled breathing and restrained movement. His lips remain naturally closed.
+PRESENTER: @Image2 appears exclusively in SHOT 4 and SHOT 5 as a clean waist-up picture-in-picture presenter occupying the lower-left 22% of the frame. Her source background is replaced by the medical CGI. She looks directly into the lens, uses small natural gestures and lip-syncs precisely to the voice-over words spoken while she is visible. Her position, scale, clothing, face and hair remain consistent across both shots.
+SEQUENCE:
+SHOT 1 (0.0–4.8s) HOOK — extreme close-up • first_frame: the man’s real eye and surrounding skin from @Image1 already fill the frame; a laptop interface creates a subtle natural reflection across the cornea. • camera: extreme close-up, eye level, three-quarter 30°, slow controlled push-in, focus plane locked on the iris. • action_visual: his eye tracks across the screen, maintains near focus and completes one slow dry blink. Pores, eyelashes, moisture and fine skin texture remain fully realistic. (HARD CUT TO)
+SHOT 2 (4.8–6.9s) SETUP — medium three-quarter shot • camera: medium shot from desk height, three-quarter 45°, gentle handheld breathing. • action_visual: inside the exact bedroom from @Image3, he sits at the wooden desk facing the open laptop. His RIGHT hand is the single hand visible in the composition: five fingers rest naturally against his right temple, with the wrist connected to the right forearm. His left arm remains relaxed below the desktop and outside the frame. He releases one controlled breath while his eyes remain on the screen. (HARD CUT TO)
+SHOT 3 (6.9–8.5s) TURN — overhead close shot • camera: tight overhead composition containing only the laptop, the desk surface and one visible RIGHT hand. • action_visual: his right hand leaves the temple outside the shot, enters the overhead frame and closes the laptop completely. Five fingers remain naturally attached to one hand and one forearm. The lid contacts the base with a soft click, settles under its own weight and remains closed. (HARD CUT TO)
+SHOT 4 (8.5–12.7s) EXPLANATION — external anatomical muscle map • camera: medium-close three-quarter view of a medically accurate adult male head, static with a very slow controlled push-in. • action_visual: premium clinical CGI shows a recognisable human face with intact eyes in their normal positions. The skin becomes softly translucent only around the eye and temple, revealing the superficial muscle anatomy beneath it. The orbicularis oculi forms one anatomically correct concentric muscle ring around the upper and lower eyelids. The temporalis appears as a broad fan-shaped muscle along the side of the skull, above and in front of the ear. Both structures retain realistic fibre direction, proportion and attachment. Restrained amber illumination marks these two separate areas as a visual representation of perceived tension. @Image2 speaks from the lower-left overlay. (HARD CUT TO)
+SHOT 5 (12.7–15.0s) DETAIL — eye and temple tension map • camera: close three-quarter profile of the outer eye, eyebrow and temple, fixed frame with subtle parallax. • action_visual: the eyeball remains intact behind natural eyelids in its normal facial position. Through softly translucent skin, only the circular orbicularis oculi around the eyelids and the fan-shaped temporalis at the temple are visible. The two muscles remain anatomically separate. Fine muscle fibres tighten subtly, then hold, while restrained amber illumination alternates between the eye area and temple. @Image2 remains in the lower-left 22%, speaking directly to camera. (HARD CUT TO)
+SHOT 6 (15.0–17.1s) PRODUCT REVEAL — macro hero shot • camera: low tabletop close-up, three-quarter 45°, short controlled lateral slide. • action_visual: one SmartGoggles device from @Image4 rests firmly on the wooden desk with a clear contact shadow and natural weight. Warm light travels across the woven black shell, exact blue centre seam, controls and padded contour. Product shape, scale, materials and physical branding remain faithful to @Image4. (HARD CUT TO)
+
+SHOT 7 (17.1–20.0s) RESOLUTION — medium close-up • camera: medium close-up from a frontal three-quarter angle, eye level, stable composition. • action_visual: the man reaches toward the single SmartGoggles device with exactly two hands. His right hand supports the right padded end and his left hand supports the left padded end; the hands remain separated by the full width of the device, with five natural fingers on each and both wrists visibly connected to their forearms. He lifts the device, feels its weight settle into his hands and holds it securely at chest height. The completed action rests for the final beat.
+VOICE-OVER — continuous across the complete 20 seconds: “Hours of screen time can leave the area around your eyes and temples feeling tight, heavy, and overstimulated. Closing the laptop stops the screen, but it doesn’t always switch off the tension. So instead of waiting for it to fade, give your eyes a deliberate reset.”
+VOICE LOCK: A female voice in her late twenties with a warm, clear mid-range timbre and lightly textured natural resonance. Calm, intelligent and reassuring, with conversational confidence rather than polished announcer delivery. General American accent, precise consonants, soft sibilants, controlled breath and a measured pace of approximately 135 words per minute. She begins with focused concern, becomes subtly brighter while explaining the solution, and lands the final line with quiet certainty. Close-mic, intimate and consistent in pitch, pace, accent and energy across both episodes.
+
+AUDIO: Continuous minimal premium electronic underscore beneath the narration. Quiet bedroom room tone, subtle laptop ambience, one precise laptop-closing click and natural fabric-and-hand contact during the product lift. The voice remains clear and dominant.
+
+📌 PROMPT 6:  Animation prompt Episode 2
+PUTTING THEM ON → THREE-LAYER RELIEF → THE BODY SETTLES → QUIET RESOLUTION
+
+SHOT STRUCTURE: exactly 7 shots, 20 seconds, 16:9, exactly as listed, no added shots. Every transition is a clean HARD CUT. Each new shot changes framing, angle and visual scale. Camera movement remains controlled and deliberate.
+
+REFS:
+@Image1 = man character sheet. The LEFT close portrait exclusively controls his face, skin, eyes, hair and identity. The RIGHT panel controls only body proportions and charcoal loungewear.
+@Image2 = female presenter. Preserve her exact identity, hair, cream top, jewellery and natural appearance.
+@Image3 = exact bedroom. Preserve its furniture positions, wooden desk, bed, window, lamps and evening colour palette.
+@Image4 = SmartGoggles product sheet. The two pictured units are reference views of one device. Exactly one physical device exists in the scene. Preserve its black woven shell, blue centre seam, padding, strap, controls and authentic branding.
+IMAGE-ONLY OUTPUT:
+Every frame contains clean visual imagery. The only readable lettering is the authentic branding physically printed on @Image4. Keep open areas clean for typography added during editing.
+GLOBAL STYLE:
+Photorealistic premium wellness-tech advertising, natural skin, precise product materials, realistic physical contact, crisp commercial focus and polished 4K clarity. Warm practical lamps provide the main light, balanced by cool evening ambience through the window. Refined neutral colour grade, deep clean blacks, soft highlights and realistic fabric detail.
+BODY AND PRODUCT CONTINUITY:
+The man has two arms, two hands and five fingers on each hand, every wrist connected to one forearm. Each shot uses only the hand placement explicitly described. The SmartGoggles retain one stable shape and scale while moving from his hands to his face and later to the bedside table.
+ACTING — MAN:
+He tests whether one deliberate pause can replace the strain of continued screen focus. He positions the device carefully, commits to stillness and lets his attention leave the room. His breathing gradually lengthens, jaw pressure releases and shoulders settle. Natural blink cadence while his eyes are visible; lips remain closed.
+
+ACTING — PRESENTER:
+She makes the product mechanism easy to understand. Her gaze stays connected to the viewer, checking the lens after each feature, with small economical hand gestures and natural speech rhythm.
+PRESENTER PLACEMENT:
+@Image2 appears in SHOTS 2, 3, 4 and 5—approximately eleven seconds in total. She is a clean waist-up picture-in-picture presenter in the lower-left 24% of the frame. Her identity, clothing, position and scale remain consistent. She lip-syncs precisely to the continuous voice-over. SHOTS 1, 6 and 7 use full-frame product and lifestyle imagery.
+
+SEQUENCE:
+SHOT 1 (0.0–2.8s) CONTINUATION — close side angle
+• first_frame: from behind his left shoulder, the man already holds the single SmartGoggles at chest height, matching the completed action of the previous clip from a distinctly different angle.
+• camera: close three-quarter profile, eye level, 45° side sector, stable handheld breathing.
+• action_visual: ONE CONTINUOUS UNCUT ACTION — both hands lift the device together; the right hand supports the right padded end and the left supports the left padded end. The padding settles over his eyes while the elastic strap slides into position behind his head. Both hands release and lower out of frame after the device is secure.
+(HARD CUT TO)
+
+SHOT 2 (2.8–5.1s) ACTIVATION — tight side close-up
+• camera: tight profile of the device and temple, eye level, 90° side angle, locked focus.
+• action_visual: the SmartGoggles sit securely across his eyes and align with his temples and nose bridge. One visible RIGHT index finger presses the physical power button once and releases; the remaining fingers stay softly curled into the same hand and wrist. A small authentic indicator activates. @Image2 speaks from the lower-left overlay.
+(HARD CUT TO)
+SHOT 3 (5.1–7.7s) FEATURE — product-contact macro
+• camera: macro three-quarter detail of the padded edge touching the temple, slight high angle, slow 8 cm lateral slide.
+• action_visual: fine fabric fibres, stitching and padded contours remain sharply visible. The padding makes complete contact with the temple. A restrained amber warmth visualization spreads evenly beneath the contact surface while the product itself remains physically unchanged. @Image2 continues speaking in the lower-left overlay.
+(HARD CUT TO)
+
+SHOT 4 (7.7–10.5s) MECHANISM — premium external CGI
+• camera: clean three-quarter profile of a medically coherent male head wearing the exact SmartGoggles, static frame with subtle parallax.
+• action_visual: softly translucent skin reveals only the anatomically correct orbicularis oculi around the eyelids and fan-shaped temporalis at the temple. The padded contact area performs a subtle rhythmic press-and-release against the outer skin; fine controlled vibration remains localised within the padding. Warm amber illumination marks heat across the eye and temple contact zones. The intact eyes stay naturally positioned beneath the closed eyelids. @Image2 remains lower-left and speaks directly to camera.
+(HARD CUT TO)
+SHOT 5 (10.5–13.5s) BLACKOUT — overhead lifestyle shot
+• camera: overhead medium-wide shot, vertical 90°, static composition.
+• action_visual: the man lies centred on the exact bed from @Image3 with the SmartGoggles securely covering his eyes. His hands rest separately on the blanket, palms down, one on each side of his torso. His chest completes one slow breathing cycle and his shoulders settle deeper into the bedding. The mask blocks room light at every facial contact edge. @Image2 remains lower-left for the final presenter shot.
+(HARD CUT TO)
+
+SHOT 6 (13.5–16.8s) RESULT — intimate close-up
+• SHIFT: fifteen minutes later in the same bedroom; practical lamps remain warm while the window has deepened slightly toward night.
+• camera: close frontal three-quarter portrait, eye level, stable frame with a slow 10 cm push-in.
+• action_visual: the SmartGoggles are already resting outside the frame. His face fills the image. His eyes remain closed for one beat, then open naturally. His jaw releases, his exhale lengthens and his gaze settles into the middle distance. Both hands remain outside the composition.
+(HARD CUT TO)
+SHOT 7 (16.8–20.0s) RESOLUTION — premium product packshot
+• camera: low bedside-table hero angle, three-quarter 45°, slow controlled arc of 15 cm.
+• action_visual: one SmartGoggles device rests firmly on the wooden bedside table with a clean contact shadow and visible physical weight. The woven black shell, blue centre seam, padding, controls and authentic branding remain exact. Warm lamplight travels across the fabric and contour. In the softly defocused background, the man rests against the pillows with his eyes closed. Hold the final product composition for the last half-second.
+
+PRIOR AUDIO CONTEXT ONLY, NOT VISUAL CONTENT:
+“So instead of waiting for it to fade, give your eyes a deliberate reset.”
+VOICE-OVER — begins within the first 0.2 seconds and runs continuously:
+“SmartGoggles combine heat, compression, and vibration around the eyes and temples. The blackout design removes visual distraction, while three modes help ease strain, support relaxation, or prepare you for sleep. Fifteen minutes later, the screen is off—and the tension feels switched off too.”
+
+VOICE LOCK:
+A female voice in her late twenties with a warm, clear mid-range timbre and lightly textured natural resonance. Calm, intelligent and reassuring, with conversational confidence rather than polished announcer delivery. General American accent, precise consonants, soft sibilants, controlled breath and a measured pace of approximately 135 words per minute. She begins with focused concern, becomes subtly brighter while explaining the solution, and lands the final line with quiet certainty. Close-mic, intimate and consistent in pitch, pace, accent and energy across both episodes.
+
+AUDIO:
+The minimal premium electronic underscore carries seamlessly through the episode. Quiet bedroom room tone, soft strap movement, one precise button click, subtle fabric contact and a restrained low pulse accompanying the massage visualisation. Music and ambience remain beneath the narration.`,
+    },
+  },
+  // 查重别名(提示词自回复帖：PROMPT 1–3，开头 Pollo 推广已剔除): https://x.com/ivanka_humeniuk/status/2102956323121881225
+  {
+    id: "ivanka-virtual-ootd-plaid-western-seedance-2-5",
+    title: "虚拟穿搭 OOTD · 格纹上衣 + 西部靴 · Seedance 2.5",
+    subtitle: "X · @ivanka_humeniuk · ChatGPT + Seedance 2.5（Pollo MCP）· 20秒 · 16:9",
+    description:
+      "AI 虚拟博主 OOTD：角色卡 + 穿搭平铺图两张锁定，Seedance 2.5 按 10 镜逐件展示再全身亮相。",
+    video: "/tutorials/ivanka-virtual-ootd-plaid-western-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/ivanka-virtual-ootd-plaid-western-seedance-2-5/poster.jpg",
+    duration: "20秒",
+    durationSec: 20,
+    styleLabel: "时尚展示",
+    shots: 10,
+    references: 2,
+    model: "ChatGPT + Seedance 2.5",
+    style: "博主 OOTD 竖直构图 · 奶油色卧室自然光 · 单品逐件展示",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ivanka_humeniuk/status/2102956316889075950",
+    sourceAuthor: "@ivanka_humeniuk",
+    sourcePlatform: "X",
+    sourceImpressions: 10290,
+    sourceStats: { asOf: "2026-09-27", likes: 182, reposts: 11, bookmarks: 189 },
+    formats: ["变装·换装", "时尚大片"],
+    hook: {
+      structure: "单品逐件展示 → 扎发/香水 → 穿上 → 全身亮相",
+      opening: "第 0 秒她穿黑色吊带裙站在奶油色卧室里，把黑色短裙举到镜头前展示——先给单品再给人。",
+      openingAt: 0,
+      beats: [
+        { title: "单品怎么轮流露", text: "约 1.5s 起依次举起红黑格纹露肩上衣、腰封、黑帽、黑色方包，每件 1–2 秒。", at: 1.5 },
+        { title: "过程怎么推进", text: "约 7.7s 双手在脑后扎低发髻；约 10.4s 喷香水特写；约 12.1s 起换上格纹上衣与短裙。", at: 7.7 },
+        { title: "结尾怎么收", text: "约 16.1s 起完整造型全身亮相，戴上帽子看向镜头。", at: 16.1 },
+      ],
+      copyThis: "先做一张人物角色卡、一张穿搭平铺图，视频提示词里每镜只让一个单品出场。",
+      approx: true,
+    },
+    tags: [
+      "20秒 · OOTD 穿搭",
+      "16:9 横屏",
+      "ChatGPT 出图 + Seedance 2.5",
+      "2 张锁定参考图",
+      "Pollo MCP 调用",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：出角色卡",
+        description:
+          "PROMPT 1 用 ChatGPT 出 16:9 角色卡（同一女生正脸 + 全身）。提示词见参考图 1。",
+      },
+      {
+        number: 2,
+        title: "第二步：出穿搭平铺图",
+        description:
+          "PROMPT 2 把格纹露肩上衣、黑短裙、腰封、帽子、包、西部靴、金耳夹平铺成一张图。提示词见参考图 2。",
+      },
+      {
+        number: 3,
+        title: "第三步：写 10 镜 20 秒动画",
+        description:
+          "PROMPT 3：Shot 1–5 逐件展示单品，Shot 6 扎低发髻，Shot 7 香水，Shot 8 穿上短裙，Shot 9 金耳夹，Shot 10 全身亮相。作者经 Pollo MCP 调用 Seedance 2.5 生成。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ivanka-ootd-character-map",
+        number: "1",
+        title: "@image1 · 角色卡（Character map）",
+        subtitle: "同一女生正脸 + 全身；截自原帖视频下半参考图拼板，非原图、分辨率有限",
+        image: "/tutorials/ivanka-virtual-ootd-plaid-western-seedance-2-5/refs/01-character-map.jpg",
+        prompt: `Two side-by-side photographs of the same adult 24-year-old woman wearing a matching black satin pajama set against a plain medium-grey background. Exactly two views: a large frontal portrait on the left and a complete head-to-toe frontal photograph on the right.
+
+She has a soft oval face, naturally defined cheekbones, a gently tapered jaw, warm brown almond-shaped eyes, full softly arched eyebrows, a straight delicate nose and naturally full muted rose lips. Clear light warm-neutral skin with natural pores, fine facial hairs and gentle colour in the cheeks. Thick beige-blonde hair with darker natural roots, a centre part and loose soft waves reaching her chest. Hair tucked behind one ear, face fully visible. Light everyday makeup and individually defined eyelashes.
+
+Her matching black satin pajamas consist of a camisole with thin shoulder straps and delicate black lace edging at the neckline, paired with relaxed pajama shorts with an elastic waistband. Both garments have opaque fabric, natural folds and a subtle satin sheen. She is barefoot.
+
+LEFT VIEW: frontal portrait from the complete crown of her head to mid-torso. Her face is large and clearly readable, both shoulders visible. Head upright, chin level, eyes looking directly into the camera. Calm neutral expression, lips gently closed, relaxed eyebrows, cheeks and jaw.
+
+RIGHT VIEW: complete full-body frontal photograph with her entire head and both feet inside the frame. Natural body proportions, upright relaxed stance, shoulders level, feet slightly apart and arms resting beside her body. Both hands visible. The same neutral expression and direct gaze.
+
+A continuous smooth medium-grey background fills both views, with a matching grey floor beneath her feet. Soft, even illumination gives her face natural depth, preserves warm skin tones and reveals individual hair strands and fabric texture. Small natural catchlights in both eyes and a delicate contact shadow beneath her feet.
+
+Medium-format digital photography, 80mm portrait lens, natural perspective, clearly focused facial features, realistic skin and hair, accurate colours and detailed black fabric. Clean image-only composition. Both photographs show identical facial features, hairstyle, skin tone and pajamas.`,
+      },
+      {
+        id: "ivanka-ootd-outfit-map",
+        number: "2",
+        title: "@image2 · 穿搭平铺图（Outfit map）",
+        subtitle: "格纹上衣、短裙、腰封、帽、包、西部靴平铺；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-virtual-ootd-plaid-western-seedance-2-5/refs/02-outfit-map.jpg",
+        prompt: `SHOT:
+  shot_size: Vertical 4:5 editorial wardrobe flat lay, complete outfit and accessories fully visible
+  camera_angle: Bird’s-eye view at exactly 90° above the surface
+  azimuth: Front-facing presentation of each garment
+  subject_placement: Blouse in the upper-left, skirt beneath it, paired boots along the right edge; corset belt, cap, shoulder bag, tights and jewellery arranged in the remaining space with clear separation
+  focal_anchor: Clearly resolved plaid weave, pleats, leather grain, suede nap, stitching and jewellery details
+
+SUBJECTS:
+  subject_1:
+    description: Fitted orange-and-black plaid off-the-shoulder blouse. Vivid orange base colour #FF4900 crossed by black tartan lines of varied widths. Broad folded neckline extending horizontally across both shoulders, shaped bodice with curved tailoring seams, small black buttons down the centre front, slightly flared hem. Long sleeves with gentle gathering near the wrists and fitted buttoned cuffs. Soft woven fabric with visible fine texture.
+    orientation: Front facing upward, bodice smoothed, sleeves extended slightly outward, complete neckline and hem visible
+
+  subject_2:
+    description: Black layered pleated mini skirt with a smooth structured waistband and evenly spaced broad knife pleats. A second layer of vivid orange #FF4900 pleated fabric extends approximately three centimetres beneath the black hem, forming a continuous contrasting border. Matte woven fabric with clean, defined folds.
+    orientation: Front facing upward, waistband horizontal, both layers clearly separated and fully visible
+
+  subject_3:
+    description: Wide black leather corset belt with a sculpted waist shape, curved upper and lower edges, vertical stitched panels and a large rectangular brushed-gold buckle centred on the front. Smooth semi-matte leather with fine natural grain.
+    orientation: Front buckle facing upward, belt opened into a gentle curve showing its full width and shaped construction
+
+  subject_4:
+    description: Matching pair of black suede knee-high Western cowboy boots with tall structured shafts, curved scalloped tops rising at the front and back, side pull tabs, pointed toes and approximately six-centimetre slanted Cuban heels. Subtle tonal Western stitching along the shafts, fine directional suede nap and natural folds around the ankles.
+    orientation: Both boots displayed side by side, complete shafts and soles visible, one slightly rotated to reveal the slanted heel and pointed toe
+
+  subject_5:
+    description: Black wool baker-boy cap with a softly rounded panelled crown, fitted headband and short curved visor. Fine felted wool texture and discreet tonal seams.
+    orientation: Crown and visor visible in a natural three-quarter product position
+
+  subject_6:
+    description: Small structured black leather shoulder bag with a gently rectangular body, rounded lower corners, shaped front flap and rectangular gold clasp. One medium-length leather shoulder strap attached with small gold fittings. Smooth leather with restrained sheen and precise tonal stitching.
+    orientation: Front flap facing upward, strap arranged in a clear arc above the bag
+
+  subject_7:
+    description: Pair of plain sheer black tights with a smooth waistband, fine uniform mesh and softly shaped feet.
+    orientation: Neatly folded into a compact arrangement, waistband and a section of both legs visible
+
+  subject_8:
+    description: Three fine warm-gold necklaces of graduated lengths, each carrying a small round pendant; the longest chain ends in a slightly larger circular medallion.
+    orientation: Arranged as three nested curves with separate chains and clearly visible pendants
+
+  subject_9:
+    description: Matching pair of substantial warm-gold clip-on earrings with rounded domed oval forms, softly sculpted curved surfaces and a polished finish. Vintage-inspired old-money styling, discreet clip fastenings on the back.
+    orientation: Placed together as a mirrored pair, both domed front surfaces clearly visible
+
+  subject_10:
+    description: One warm-gold ring with a smooth medium-width band and a gently domed polished surface.
+    orientation: Displayed individually, complete circular band and curved outer surface clearly readable
+
+SCENE:
+  action: Carefully arranged wardrobe catalogue photograph, each item retaining its natural shape and separated from neighbouring pieces
+  props: The listed outfit pieces and accessories form the entire composition
+  location: Smooth warm-ivory surface extending to every edge of the image, clean image-only layout
+
+LIGHT:
+  key: Broad soft illumination from above and slightly camera-left
+  fill: Gentle illumination across darker materials preserves visible detail
+  falloff: Even brightness across the entire arrangement
+  material_response: Woven plaid and wool remain matte, suede shows directional texture, leather carries restrained reflections, gold holds narrow warm highlights
+  integration: Delicate contact shadows beneath every item place all objects on the same surface
+
+LOOK:
+  color_grading: Accurate vivid orange #FF4900, rich neutral blacks, warm gold and a softly ivory background; natural contrast and smooth highlight transitions
+  authenticity: Medium-format digital product photograph, 80mm lens at f/11, detailed materials and natural object proportions throughout
+  style: Contemporary fashion catalogue photography, clearly resolved fabric and construction details`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.5s 黑吊带裙站在卧室，举起黑色短裙展示（SKIRT PRESENTATION）。" },
+      { number: 2, description: "1.5–3s 举起红黑格纹露肩上衣。" },
+      { number: 3, description: "3–4.3s 腰封细节。" },
+      { number: 4, description: "4.3–5.5s 举起黑色帽子。" },
+      { number: 5, description: "5.5–7s 举起黑色方包。" },
+      { number: 6, description: "7–10s 双手在脑后扎低发髻。" },
+      { number: 7, description: "10–11.5s 喷香水特写。" },
+      { number: 8, description: "11.5–13.5s 换上短裙，格纹上衣已穿好。" },
+      { number: 9, description: "13.5–15.5s 戴金色耳夹。" },
+      { number: 10, description: "15.5–20s 完整造型全身亮相，戴帽看镜头。" },
+    ],
+    constraints:
+      "人物与 @image1、全部单品与 @image2 一致，每镜只展示一件单品，最后一镜才出现完整造型。与成片不符：成片前 7 秒的单品展示镜头切点检测不明显，时间按提示词写；成片右上角有 POLLO MCP 字样叠加（原片自带）。说明：作者视频是上下拼接版（上半 1920×1080 为成片，下半是 2 张参考图拼板带水印），demo 只裁上半；参考图从拼板截出，非原图。提示词回帖开头的 Pollo 推广段和短链接已剔除。",
+    video_prompt: {
+      title: "Virtual OOTD · Animation · 10 shots / 20s",
+      subtitle: "Seedance 2.5 · 16:9 · PROMPT 3 英文完整提示词（作者自回复长帖）",
+      content: `📌 PROMPT 3:  Animation
+OUTFIT CHOICES → LOW BUN → PERFUME → COMPLETE LOOK → FINAL TURN
+
+10 shots, 20 seconds.
+
+REFERENCES
+@image1 = character sheet. The large left portrait controls facial geometry, features, skin texture and identity. The right full-body panel controls proportions and the starting black satin camisole and pajama shorts. Her hair begins loose and is securely gathered into a low bun in Shot 6.
+@image2 = exact wardrobe design, colour and material reference: orange-and-black plaid off-the-shoulder blouse, black pleated mini skirt with orange lower layer, wide black corset belt with gold buckle, black knee-high Western boots, black baker-boy cap, black shoulder bag, sheer black tights, layered gold necklaces, domed oval gold clip-on earrings and one gold ring. Orange fabric carries brand colour #FF4900.
+
+CAMERA AND EDITING LOCK
+One vertical camera remains firmly locked to the same position in the doorway from 0.0 to 20.0 seconds. Camera height, frontal 0° angle, fixed 47° field of view, exposure and lens character stay identical throughout. Doorway edges, wall mouldings, vanity and bed retain exactly the same size, perspective and alignment in every shot.
+Every boundary is a one-frame instantaneous straight HARD CUT, exclusively at the nine listed times. All changes in subject distance occur during omitted edit intervals. Each shot begins with the woman already at its specified distance and in its specified clothing. The camera records only the action listed within that shot.
+Presented items remain fully visible with space around their edges. Face and items stay in focus. Full-body framing includes her entire cap and both boot soles with margins throughout the turn.
+
+SETTING AND LIGHT
+A realistic apartment bedroom with a dressing area, viewed through an open doorway. Warm ivory walls with restrained mouldings and honey-toned oak parquet. A walnut vanity stands toward the back-left, holding a few cosmetic bottles, an open jewellery box and a small illuminated lamp with a cream shade. An oval mirror above it reflects the opposite interior wall. Part of a bed appears at the right edge with cream bedding and natural soft creases. A softly upholstered stool is tucked beneath the vanity.
+The central floor stays clear; furniture remains beside and behind her.
+Soft daylight enters from camera-left through a sheer curtain, illuminating her face and clothing. The vanity lamp adds a small warm pool of light behind her. Fixed white balance preserves natural skin warmth, rich black materials and vivid orange fabric. Exposure stays fixed.
+
+PERFORMANCE AND PHYSICS
+She treats the lens like a friend watching her get ready. Her eyes move naturally between each item and the viewer. Small smiles, loose shoulders, rhythmic energy, natural blinking, skin texture and living eye reflections.
+Fabric follows gravity, the bag swings with believable weight, jewellery rests against skin and both feet contact the floor.
+
+WARDROBE CONTINUITY
+Shots 1–5: black satin camisole and matching pajama shorts from @image1, bare feet, loose highlighted hair.
+Shots 6–7: orange-and-black blouse already worn and fully buttoned, its broad folded neckline across the upper arms with shoulders exposed. The camisole has been replaced during the cut. Pajama shorts remain beneath the blouse. Hair becomes a low bun during Shot 6 and stays secured afterwards.
+Shots 8–9: blouse, black pleated skirt with visible orange lower layer and sheer black tights already worn; blouse hem tucked into the skirt.
+Shot 10: complete outfit from @image2, including corset belt, jewellery, cap, bag and tall black suede Western boots.
+BOOT HEIGHT: both shafts extend all the way up to the knees; their tallest front edges finish immediately below the kneecaps. Preserve pointed toes, curved Western shaft tops, tonal stitching and slanted heels. The knee-high shafts remain fully extended during the final turn.
+HAIR: the compact bun sits low at the nape, below the rear edge of the cap. Hair colour and facial identity remain those of the character sheet. Two fine face-framing strands remain beside her cheeks after the bun is secured.
+
+SEQUENCE
+
+SHOT 1 | 0.0–1.5s | SKIRT PRESENTATION
+She stands centred at the presentation distance, framed from crown to mid-thigh, wearing the black satin pajamas with loose hair. She holds the black pleated skirt by both ends of its waistband against her waist.
+One light hip shift makes the pleats and orange lower layer sway. She glances down at the skirt, then meets the lens with a brief smile.
+
+1.5s — INSTANT STRAIGHT HARD CUT
+
+SHOT 2 | 1.5–3.0s | BLOUSE PRESENTATION
+Same presentation distance, same pajamas and loose hair. She holds the orange-and-black blouse in front of her torso by its upper edges.
+One small lift reveals the broad folded neckline, fitted body, front buttons and long sleeves. She checks the plaid, then looks back at the viewer.
+
+3.0s — INSTANT STRAIGHT HARD CUT
+
+SHOT 3 | 3.0–4.3s | CORSET BELT DETAIL
+She is already closer to the fixed camera, still in her pajamas with loose hair. Both hands hold the wide black corset belt, its gold buckle centred toward the lens. The belt and her eyes above it stay visible.
+She briefly aligns the buckle and looks over it with a small smile.
+
+4.3s — INSTANT STRAIGHT HARD CUT
+
+SHOT 4 | 4.3–5.5s | CAP PRESENTATION
+She holds the black baker-boy cap at chest height, still wearing pajamas with loose hair. Her face stays visible above it.
+She tips it slightly to show the rounded crown and curved visor, then looks from the cap to the lens.
+
+5.5s — INSTANT STRAIGHT HARD CUT
+
+SHOT 5 | 5.5–7.0s | BAG PRESENTATION
+She holds the complete black shoulder bag in front of her chest, one hand supporting its base and the other holding its strap. Her face is visible above it. Pajamas and loose hair remain.
+She gives the bag a small quarter-turn so its gold clasp catches the light, then returns its front toward the viewer.
+
+7.0s — INSTANT STRAIGHT HARD CUT
+
+SHOT 6 | 7.0–10.0s | TYING THE LOW BUN
+The orange-and-black off-the-shoulder blouse is already worn and fully buttoned. She stands at the presentation distance with her body slightly angled and her head gently turned so her face and hands at the nape remain readable. Her hair is already gathered into a loose low ponytail, with a black elastic around her fingers.
+In one continuous action she twists the gathered length into a compact low coil, stretches the elastic around it and releases both hands. The bun rests at the nape below the future rear edge of the cap. Her crown lies smooth, two fine strands beside her cheeks.
+
+10.0s — INSTANT STRAIGHT HARD CUT
+
+SHOT 7 | 10.0–11.5s | PERFUME
+She is already closer, wearing the blouse with her low bun secured. She holds a small clear perfume bottle beside her neck.
+She lifts her chin slightly and presses the atomiser once. Fine realistic mist disperses beside her neck. Her eyes briefly close during the spray, then she lowers her chin and reconnects with the viewer through a soft smile.
+
+11.5s — INSTANT STRAIGHT HARD CUT
+
+SHOT 8 | 11.5–13.5s | SKIRT APPEARS
+She is already farther back, framed from head to just above her knees. She now wears the blouse, black pleated skirt with its orange lower layer and sheer black tights. The blouse hem is neatly tucked into the skirt; the low bun remains secured.
+She makes one small adjustment at both sides of the waistband, then releases it. The pleats settle naturally and the continuous orange border remains visible. She checks the outfit, shifts her weight and looks into the lens.
+
+13.5s — INSTANT STRAIGHT HARD CUT
+
+SHOT 9 | 13.5–15.5s | GOLD CLIP-ON EARRING
+She is already closer. Layered gold necklaces, one gold ring and one domed oval gold clip-on earring are in place. Her low bun leaves both ears accessible.
+She positions the second clip-on at her other earlobe and gently closes its rear clip with her fingertips. She lowers her hand, makes a small head turn to show the curved gold surface and gives a brief smile.
+
+15.5s — INSTANT STRAIGHT HARD CUT
+
+SHOT 10 | 15.5–20.0s | COMPLETE OUTFIT REVEAL
+She is centred at the full-body distance, entirely visible from cap to both boot soles. She wears the complete outfit: orange-and-black plaid blouse, wide black corset belt centred at the waist with its gold buckle forward, black pleated skirt with orange lower layer, sheer black tights, knee-high black suede Western boots, layered gold necklaces, two domed gold clip-on earrings and one gold ring.
+The cap sits above the low bun. The blouse stays tucked beneath the waistband and belt. She holds the black bag by its strap in her left hand.
+She holds the frontal view for half a beat, lightly touches the cap visor with her right fingertips, then lowers her hand. With two small grounded steps she turns in place through a side view into a back three-quarter view. The low bun becomes visible beneath the back of the cap.
+Pleats move with gentle delayed motion, the orange lower layer stays visible and the bag swings with realistic weight. Both boot shafts remain extended up to the knees. She finishes with her head turned naturally over her shoulder toward the lens, cheeks lifting into a warm smile. She holds this pose through 20.0 seconds.
+
+AUDIO
+One continuous upbeat instrumental fashion track with rhythmic accents at the specified cuts. Subtle fabric movement, one perfume spray, a soft jewellery click and grounded boot steps.
+
+STYLE AND OUTPUT
+Photorealistic fashion-blogger reel, natural phone-video rendering, detailed skin, hair and fabrics. 20 seconds, vertical 9:16, exactly 10 shots, real-time movement within each shot.
+
+POSITIVE LOCKS
+One woman, one room, one fixed camera position and one fixed field of view. Straight instantaneous HARD CUTs only at the nine specified boundaries. Wardrobe changes and changes in standing distance occur in omitted edit intervals. The low bun stays secured from Shot 6 onward. Both final boots reach the knees. One gold ring and one matching pair of gold clip-on earrings.`,
+    },
+  },
+  // 查重别名(提示词自回复帖：PROMPT 1–4): https://x.com/ivanka_humeniuk/status/2102231452339298333
+  {
+    id: "ivanka-1890s-grwm-bicycle-seedance-2-5",
+    title: "1890 年代 GRWM · 束腰到骑车出门 · Seedance 2.5",
+    subtitle: "X · @ivanka_humeniuk · GPT Image 2.5 + Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "1890 年代少女出门 GRWM：人物、服装、自行车三张图锁定，Seedance 2.5 写 12 镜从束腰到骑车。",
+    video: "/tutorials/ivanka-1890s-grwm-bicycle-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/ivanka-1890s-grwm-bicycle-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "古装真人",
+    shots: 12,
+    references: 3,
+    model: "GPT Image 2.5 + Seedance 2.5",
+    style: "维多利亚时代写实 · 暖木卧室 + 林荫道逆光 · 35mm 胶片质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ivanka_humeniuk/status/2102231446114988424",
+    sourceAuthor: "@ivanka_humeniuk",
+    sourcePlatform: "X",
+    sourceImpressions: 28839,
+    sourceStats: { asOf: "2026-09-27", likes: 413, reposts: 34, bookmarks: 355 },
+    formats: ["变装·换装", "手机POV·Vlog"],
+    hook: {
+      structure: "束腰穿衣 → 梳妆 → 早餐 → 出门骑车 → 自拍收尾",
+      opening: "第 0 秒是她穿白色衬裙、被女仆收紧束腰的腰部特写，手指从镜头上滑开——一上来就是「那个年代怎么穿衣服」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3s 床边低机位；约 8s 梳妆镜前女仆盘发；约 10s 白色长裙从举起的手臂上落下；约 13s 手套和草帽两个快切。", at: 8 },
+        { title: "场景怎么换", text: "约 15s 窗边早餐桌；约 17.4s 背影走向敞开的花园门；约 19.8s 砾石路上走向自行车。", at: 17.4 },
+        { title: "结尾怎么收", text: "约 25s 骑车时伸臂自拍大笑；约 27.2s 低机位看她骑过林荫道逆光离开。", at: 25.2 },
+      ],
+      copyThis: "把「时代服装」拆成人物照、服装平铺图、道具（自行车）三张锁定图，动画里每镜写清镜头焦段和一个穿戴动作。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 古装 GRWM",
+      "16:9 横屏",
+      "GPT Image 2.5 + Seedance 2.5",
+      "3 张参考图",
+      "12 镜",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：出人物照",
+        description:
+          "PROMPT 1 出 3:4 腰部以上人像：铜红长发、白色棉衬裙、素颜。原图不在作者拼板里，参考图 1 用成片截帧示意。",
+      },
+      {
+        number: 2,
+        title: "第二步：出服装图和自行车图",
+        description:
+          "PROMPT 2 服装平铺图（白色长裙、蕾丝手套、草帽、系带靴等）；PROMPT 3 复古自行车图。提示词见参考图 2、3。",
+      },
+      {
+        number: 3,
+        title: "第三步：写 12 镜 30 秒动画",
+        description:
+          "PROMPT 4：每镜写时间段、镜头焦段角度（如 47°）和动作——束腰、坐便盆、衣柜、梳妆、穿裙、手套草帽、早餐、出门、上车、骑行自拍、逆光离开。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ivanka-1890s-girl-photo",
+        number: "1",
+        title: "人物照（Girl photo）· 截帧",
+        subtitle: "作者未在视频拼板中展示这张图；此处为成片约 9 秒梳妆镜头的截帧，仅示意人物，非原图",
+        image: "/tutorials/ivanka-1890s-grwm-bicycle-seedance-2-5/refs/01-girl-photo-framegrab.jpg",
+        prompt: `Render a single photorealistic portrait photograph. Every field describes the finished frame.
+
+FRAME:
+  layout: single female subject, waist-up portrait, centered, facing camera directly
+  aspect: 3:4 vertical
+  resolution: 4K
+
+MEDIUM:
+  stock: Kodak Portra 400, early-1990s film emulation
+  artifact: fine 35mm grain, subtle chromatic aberration, gentle halation on highlights
+
+SUBJECT:
+  description: beautiful young woman, 23 years old, natural realistic beauty, slender graceful figure
+  face: soft oval face, high cheekbones, large expressive hazel-green eyes, delicate straight nose, full natural lips with a calm closed-mouth expression, light natural freckles across the nose bridge, visible skin pores and fine facial texture
+  makeup: none, completely bare natural skin
+  hairstyle: very long copper-auburn hair with a soft natural wave, parted slightly off-center, falling loose over both shoulders and down past the chest, individual strands catching the light
+
+WARDROBE:
+  top: white cotton chemise with a loose gathered neckline and delicate thin shoulder straps of soft fabric, lightweight natural linen-cotton weave with visible texture, slightly relaxed fit
+  hands: relaxed at her sides, out of frame
+  skin: natural fair skin with warm undertone, visible pores, fine vellus hair catching the light, physically accurate subsurface scattering
+
+POSE:
+  stance: standing straight and relaxed, shoulders level, chin neutral, eyes looking directly into the lens with a calm open gaze
+
+LIGHT:
+  key: soft directional source from beyond the upper-left frame edge, gentle wrap across the face
+  fill: broad soft fill from the right, low contrast
+  accent: subtle warm rim catching the copper tones of the hair
+
+LOOK:
+  color_grading: warm neutral, gentle highlight roll-off, soft filmic contrast
+  authenticity: 85mm lens at f/5.6, natural depth of field, seamless mid-grey studio backdrop filling the frame edge to edge
+  style: early-1990s Kodak-film portraiture, Slim Aarons warmth`,
+      },
+      {
+        id: "ivanka-1890s-outfit-map",
+        number: "2",
+        title: "服装图（Outfit map）",
+        subtitle: "维多利亚白色长裙、手套、草帽、靴子等；截自原帖视频下半拼板，非原图",
+        image: "/tutorials/ivanka-1890s-grwm-bicycle-seedance-2-5/refs/02-outfit-map.jpg",
+        prompt: `Render a single photorealistic reference sheet photograph. Every field describes the finished frame.
+
+FRAME:
+  layout: two views of the same woman side by side — left: full-body view head to toe, standing; right: waist-up close view showing bodice detail and face
+  aspect: 16:9 horizontal
+  resolution: 4K
+  background: seamless mid-grey studio backdrop #C2C4C6 filling the frame edge to edge, clean floor of the same tone
+
+MEDIUM:
+  stock: Kodak Portra 400, early-1990s film emulation
+  artifact: fine 35mm grain, subtle chromatic aberration, gentle halation on highlights
+
+IDENTITY_PRIORITY:
+  source: @image_1
+  rule: the woman's face, freckles, hazel-green eyes, copper-auburn hair color and slender figure follow @image_1 exactly and take priority over every styling instruction below
+
+SUBJECT:
+  description: the same beautiful young woman from @image_1, 23 years old, slender graceful figure
+  face: identical to @image_1 — light natural freckles, large hazel-green eyes, full natural lips, calm poised expression with the faintest hint of a smile
+  makeup: none, bare natural skin with visible pores
+  hairstyle: copper-auburn hair gathered into a soft loose braided updo at the back of the head, a few fine face-framing strands left loose at the temples
+
+WARDROBE:
+  dress: ivory cream cotton day dress in 1890s Belle Époque style — high lace-trimmed standing collar, voluminous leg-of-mutton sleeves gathered high at the shoulder and tapering to fitted forearms, fitted bodice closed by a row of tiny fabric-covered buttons down the front, natural waistline with a narrow ivory silk sash, full ankle-length skirt falling in soft pressed pleats, lightweight natural cotton weave with visible fabric texture
+  hat: natural straw wide-brimmed hat with a long dusty-sage silk ribbon tied around the crown, ribbon ends hanging loose — worn in the full-body view, absent in the close view
+  gloves: delicate ivory crochet-lace gloves reaching just past the wrist
+  shoes: cream leather lace-up ankle boots with a low stacked heel, visible in the full-body view
+  skin: natural fair skin with warm undertone, visible pores, physically accurate subsurface scattering
+
+POSE:
+  left_view: standing straight and relaxed, full body head to toe, arms softly at her sides, one hand lightly holding the skirt fabric
+  right_view: waist-up, angled slightly three-quarter to camera, chin level, eyes into the lens
+
+LIGHT:
+  key: soft directional source from beyond the upper-left frame edge, gentle wrap
+  fill: broad soft fill from the right, low contrast
+  accent: subtle warm rim catching the copper tones of the hair
+
+LOOK:
+  color_grading: warm neutral, gentle highlight roll-off, soft filmic contrast
+  authenticity: 85mm lens at f/5.6, natural depth of field, both figures fully sharp
+  style: early-1990s Kodak-film portraiture, Slim Aarons warmth
+
+CONSISTENCY_LOCK:
+  rule: this exact dress, hat, gloves, boots, hairstyle and the identity from @image_1 stay identical in every future frame referencing this sheet — the frame contains only the two described views, zero text, zero borders, zero logos`,
+      },
+      {
+        id: "ivanka-1890s-bike-map",
+        number: "3",
+        title: "自行车图（Bike map）",
+        subtitle: "复古安全自行车，车把挂花篮；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-1890s-grwm-bicycle-seedance-2-5/refs/03-bike-map.jpg",
+        prompt: `Render a single photorealistic reference sheet photograph. Every field describes the finished frame.
+
+FRAME:
+  layout: two views of the same bicycle side by side — left: full side profile view, entire bicycle from wheel to wheel; right: three-quarter front view showing handlebar, basket and frame detail
+  aspect: 16:9 horizontal
+  resolution: 4K
+  background: seamless mid-grey studio backdrop #C2C4C6 filling the frame edge to edge, clean floor of the same tone, soft natural contact shadow under the wheels
+
+MEDIUM:
+  stock: Kodak Portra 400, early-1990s film emulation
+  artifact: fine 35mm grain, subtle chromatic aberration, gentle halation on highlights
+
+SUBJECT:
+  description: an 1890s Belle Époque ladies' safety bicycle, elegant and well-kept with light honest signs of daily use
+  frame: graceful curved step-through ladies' frame in deep glossy black enamel with thin hand-painted gold pinstripe lines along the tubes
+  wheels: two equal-size wire-spoke wheels with slim cream-white rubber tires, polished thin steel rims
+  skirt_guard: fine cord skirt-guard laced in a fan pattern over the upper half of the rear wheel, protecting a long dress from the spokes
+  chain: fully enclosed slim black chain case with a gold pinstripe accent
+  handlebar: gently upswept polished nickel handlebar with stitched tan leather grips
+  saddle: sprung tan leather saddle with visible rivets and coil springs, leather softly patinated
+  basket: woven natural wicker basket mounted on the front handlebar with two small leather straps
+  details: simple polished brass bell on the handlebar, slim rear mudguard in black with gold pinstripe
+
+MATERIALS:
+  rule: physically accurate material behavior — true glossy enamel reflections on the frame, matte woven texture on the wicker, soft worn sheen on the leather, fine metallic sparkle on the spokes
+
+LIGHT:
+  key: soft directional source from beyond the upper-left frame edge, gentle wrap across the frame tubes
+  fill: broad soft fill from the right, low contrast
+  accent: subtle warm specular highlights on the nickel handlebar and brass bell
+
+LOOK:
+  color_grading: warm neutral, gentle highlight roll-off, soft filmic contrast
+  authenticity: 85mm lens at f/5.6, natural depth of field, both views fully sharp
+  style: early-1990s Kodak-film product photography, Slim Aarons warmth
+
+CONSISTENCY_LOCK:
+  rule: this exact bicycle — black enamel frame with gold pinstripes, cream tires, cord skirt-guard, wicker basket, tan leather saddle and grips, brass bell — stays identical in every future frame referencing this sheet; the frame contains only the two described views, zero text, zero borders, zero logos`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 腰部特写：白衬裙，女仆在身后收紧束腰，指尖从镜头上滑开。" },
+      { number: 2, description: "3–5.2s 床边低机位，她坐在搪瓷便盆上，白衬裙盖住。" },
+      { number: 3, description: "5.2–8s 卧室角落，洗漱台前洗脸。" },
+      { number: 4, description: "8–10s 梳妆台三折镜前，女仆为她盘发。" },
+      { number: 5, description: "10–12.8s 白色长裙从举起的手臂上落下，她站在卧室中间扣衣。" },
+      { number: 6, description: "12.8–15.1s 快切：蕾丝手套戴上手指；草帽特写。" },
+      { number: 7, description: "15.1–17.4s 窗边早餐桌，她戴帽坐下喝茶。" },
+      { number: 8, description: "17.4–19.8s 走廊背影，走向敞开的花园门，逆光剪影。" },
+      { number: 9, description: "19.8–22s 砾石路低机位，系带靴走向自行车。" },
+      { number: 10, description: "22–25.2s 撩裙上车，骑上林荫道。" },
+      { number: 11, description: "25.2–27.2s 伸臂自拍视角，骑车大笑。" },
+      { number: 12, description: "27.2–30s 低机位，她从镜头前骑过，林荫道尽头逆光。" },
+    ],
+    constraints:
+      "人物、服装、自行车全程与参考图一致；每镜写明时间段和镜头角度（焦段角度数字），不加额外镜头。与成片不符：成片切点与提示词大致一致但有 ±0.5 秒偏差（如 Shot 2 提示词 3.0s、成片约 2.97s；Shot 6 两个快切在成片约 12.8s、13.8s）。说明：作者视频是上下拼接版（上半 1920×1080 成片，下半为服装图 + 自行车图拼板带水印），demo 只裁上半；PROMPT 1 人物照原图未出现在拼板中，参考图 1 为成片截帧。Shot 2 为坐便盆的时代生活细节，画面有衬裙遮盖。",
+    video_prompt: {
+      title: "1890s GRWM · Animation · 12 shots / 30s",
+      subtitle: "Seedance 2.5 · 16:9 · PROMPT 4 英文完整提示词（作者自回复长帖）",
+      content: `📌 PROMPT 4:  Animation prompt
+A 30-second 16:9 cinematic self-shot morning vlog of a young Belle Époque aristocrat in a French countryside manor, 1890s, one continuous golden morning, natural location sound dominant, every prop and interior strictly period-accurate to the 1890s.
+
+[CHARACTER]
+@image1 is her exact identity in every shot — face, light natural freckles, large hazel-green eyes, full natural lips, very long copper-auburn hair, slender graceful figure with a full rounded feminine bust and a narrow waist. Shots 1–3 she wears a white cotton chemise with a loose gathered neckline and thin fabric straps, bare feet, her hair loose and wavy; in Shot 1 an ivory cotton corset is being laced over the chemise. From Shot 4 onward her hair is gathered into the exact soft braided updo from @image2 with fine face-framing strands at the temples, and it stays neat and identical through the end. Shot 5 she dresses into the styling from @image2. Shots 6–12 she wears the exact full styling from @image2 — ivory cream 1890s day dress with high lace-trimmed standing collar, voluminous leg-of-mutton sleeves, row of tiny fabric-covered buttons down the fitted bodice, narrow ivory silk sash, full ankle-length pleated skirt, ivory crochet-lace gloves, cream leather lace-up ankle boots, natural straw wide-brimmed hat with a long dusty-sage silk ribbon. Same face, same freckles, same hair color in every shot. @image3 is the bicycle in every shot where the bicycle appears — the same 1890s black-enamel step-through ladies' bicycle with gold pinstripes, cream tires, fan-laced cord skirt-guard over the rear wheel, sprung tan leather saddle, wicker handlebar basket, brass bell. The maid appears only as a presence behind or beside the heroine: in every shot involving her, the frame holds her hands, forearms and dark dress sleeves only, her body and face staying entirely beyond the frame edge.
+
+[REALISM]
+True photographic realism throughout: this is captured live-action footage of a real living woman in a real historic interior. Skin shows visible pores, fine vellus hair, natural freckle texture and real subsurface light scatter. Hair resolves as thousands of individual copper strands with flyaways catching the light. Cotton, lace, straw and silk behave as true physical materials — visible weave, real weight, real crease and drape. Porcelain, enamelled metal and brass carry true specular reflections.
+
+[SHOTS]
+Shot 1, 0–3.0, 40°. Cold open hook: her fingertips slide off the lens and the view settles — front view, waist-up, her chest and collarbones large in frame, the loose chemise neckline curving over her full rounded breasts with soft natural cleavage catching the light, as the maid's hands behind her haul the corset laces tight; a sharp audible inhale lifts her ribcage and swells her chest, the corset cinches visibly at her waist and pushes the bust gently upward, her knuckles whiten around the carved bedpost, chin rising. Hard cut.
+
+Shot 2, 3.0–5.5, 50°. Static low frame beside the bed: she sits on a low rounded enamelled-metal chamber pot, the white chemise hem gathered loosely over her knees, her bare lower legs angled apart so the curved metal rim of the pot shows clearly between her feet on the parquet; she rests her chin on one hand and gazes off-frame in calm, bored stillness while a steady liquid trickle rings brightly against the metal and birdsong continues outside. Hard cut.
+
+Shot 3, 5.5–8.0, 47°. Resting view in the bedroom corner: a freestanding antique dark wooden side table stands against plain papered wall, its flat polished wooden top holding exactly two objects — a wide porcelain basin and a tall porcelain pitcher — with bare wood everywhere else; the pitcher is the only source of water in the room. The maid's hands tip the pitcher and a clear stream pours over the heroine's cupped hands into the basin, catching the window light; she presses the cool water to her face, droplets falling back and sliding down her jaw, loose copper hair swinging forward. Hard cut.
+
+Shot 4, 8.0–10.5, 47°. The view rests on the vanity table looking up at her: she sits before the trifold mirror as the maid's deft hands work behind her head, dividing the copper hair and weaving it into the soft braided updo, a silk ribbon passing through; the heroine's eyes flick to the lens with a small conspiratorial look. Hard cut.
+
+Shot 5, 10.5–13.0, 55°. Resting view across the bedroom: the ivory dress descends over her raised arms in a waterfall of fabric and settles onto her shoulders over the corseted chemise, her hair holding the exact neat braided updo from @image2 with only the fine temple strands loose; her fingers run up the row of tiny buttons, closing the high lace collar last. Hard cut.
+
+Shot 6, 13.0–15.0, 35°. Two fast detail inserts in one breath: crochet-lace gloves drawn over her fingers; the straw hat lowered onto the braided updo, her gloved palms pressing the brim snug. Hard cut.
+
+Shot 7, 15.0–17.5, 47°. Resting view across a laid breakfast table by a tall window: porcelain, silver, a steaming cup of hot chocolate; she sits, lifts the cup toward the lens in a tiny toast, takes a sip and lets her eyes close for one satisfied beat. Hard cut.
+
+Shot 8, 17.5–20.0, 65°. Resting view inside the hallway facing the open garden doors: with her back to the lens she walks away down the hall and steps out through the doorway into flooding golden light, her figure receding onto the gravel as her ivory parasol blooms open over her shoulder, backlit. Hard cut.
+
+Shot 9, 20.0–22.0, 50°. Low resting view on the gravel path: her cream lace-up boots stride toward the waiting bicycle from @image3, the pleated hem swinging with each step; she folds the parasol and lays it into the wicker basket. Hard cut.
+
+Shot 10, 22.0–24.5, 55°. Resting view on the gravel path: she sweeps her full skirt aside with one practiced hand, steps through the low frame of the bicycle and settles onto the sprung saddle, gloved thumb flicking the brass bell once. Hard cut.
+
+Shot 11, 24.5–27.5, 47°. Handheld selfie view from her outstretched arm at the lower frame corner as she rides down a plane-tree alley: her face bright with open laughter, the dusty-sage hat ribbons streaming behind her, sunlight strobing through the leaves across her freckles, the frame carrying the true jitter of gravel under the wheels. Hard cut.
+
+Shot 12, 27.5–30.0, 40°. Final resting view set low at the edge of the alley: she sweeps past close through the frame with open laughter and one bright ring of the bell, wheels crackling on gravel, and rides on away from the lens down the avenue into the low golden sun — her silhouette and the streaming hat ribbons shrinking into the glowing dust as the light blooms. Hold on this frame.
+
+[IDENTITY AND PROP CONTINUITY]
+Her face, freckles, eye color and copper-auburn hair from @image1 stay identical in every shot. Her hair is loose in Shots 1–3 and holds the exact braided updo from @image2 in every shot from Shot 4 to the end. The chemise exists in Shots 1–5, the corset is visible only in Shot 1 and stays beneath the dress afterward. The full styling from @image2 stays identical item for item across Shots 6–12, the hat worn from Shot 6 through Shot 12. The enamelled-metal chamber pot exists only in Shot 2, the wooden side table with pitcher and basin only in Shot 3, the trifold mirror only in Shot 4, the breakfast service only in Shot 7, the parasol only in Shots 8–9. The bicycle from @image3 exists in Shots 9–12 with the same frame, pinstripes, skirt-guard, basket and bell every time. The maid's hands and dark sleeves appear only in Shots 1, 3 and 4.
+
+[MOTION AND ENVIRONMENTAL PHYSICS]
+The corset laces draw through their eyelets with real friction, the ribcage lifting against true fabric tension. Water pours from the pitcher in a clear continuous stream, splashing over her hands and into the basin under gravity, droplets arcing in the window light. Hair strands move independently under the maid's fingers, the finished braid holding its weight. The dress falls with true cotton mass, sleeves inflating and settling. The skirt sweeps and drapes over the saddle with real cloth behavior, kept clear of the rear wheel by the cord skirt-guard. The bicycle rolls with genuine wheel rotation, gravel crunching and shifting under the tires, the selfie frame carrying handlebar vibration and one small horizon correction. In the final pass-by the near sweep carries a brief motion blur and a soft air wake, dust rising and hanging gold in the backlight as she recedes. Sunlight through the plane trees strobes across her face at riding speed.
+
+[AUDIO]
+A delicate period solo-piano waltz sits low in the mix under the whole video, lifting gently through the bicycle ride and settling under the final hold. Natural location sound rides above it from the first frame to the last: the creak of drawn corset laces and her sharp inhale; morning birdsong through tall windows; the steady liquid trickle ringing brightly against enamelled metal; water pouring from the pitcher and splashing in the basin; the whisper of hair through fingers and silk ribbon; cotton rushing over skin and tiny buttons snicking closed; the rustle of lace gloves and the soft press of straw; porcelain on saucer and a quiet sip; the garden doors' hinge, her receding footsteps on gravel, the parasol's soft bloom; boots crunching closer, wicker creak; the single bright brass bell, chain-case whir and gravel crackle under cream tires; wind, her open laughter, ribbons snapping; then the close whoosh of the pass-by, one last ring of the bell fading down the alley, and distant birdsong under the final frame.`,
+    },
+  },
+  // 查重别名(提示词自回复帖：PROMPT 1–2): https://x.com/ivanka_humeniuk/status/2101661857421705611
+  // 查重别名(提示词自回复帖：PROMPT 3–4 两集视频): https://x.com/ivanka_humeniuk/status/2101661864803651760
+  {
+    id: "ivanka-yoga-wrist-buddy-ad-seedance-2-5",
+    title: "瑜伽护腕支撑块广告 · 两集 14 镜 · Seedance 2.5",
+    subtitle: "X · @ivanka_humeniuk · Seedance 2.5 · 40秒 · 16:9",
+    description:
+      "瑜伽护腕支撑块两集广告：人物卡 + 产品图锁定，Seedance 2.5 每集 7 镜讲痛点、上手、复用。",
+    video: "/tutorials/ivanka-yoga-wrist-buddy-ad-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/ivanka-yoga-wrist-buddy-ad-seedance-2-5/poster.jpg",
+    duration: "40秒",
+    durationSec: 40,
+    styleLabel: "写实广告",
+    shots: 14,
+    references: 2,
+    model: "Seedance 2.5",
+    style: "明亮瑜伽室自然光 · 酒红运动服 + 青绿色产品 · 生活方式广告",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ivanka_humeniuk/status/2101661853545849180",
+    sourceAuthor: "@ivanka_humeniuk",
+    sourcePlatform: "X",
+    sourceImpressions: 7140,
+    sourceStats: { asOf: "2026-09-27", likes: 125, reposts: 10, bookmarks: 94 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "手腕痛点 → 产品亮相 → 上手支撑 → 第二集复用 → 产品定格",
+      opening: "第 0 秒她在瑜伽垫上做平板支撑，手掌压地——下一镜就是手腕受力的特写，痛点直接拍出来。",
+      openingAt: 0,
+      beats: [
+        { title: "产品怎么露", text: "约 6.4s 她跪坐揉手腕；约 9.2s 两块青绿色支撑块摆在垫上亮相；约 11.4s 过肩镜头双手握上去。", at: 9.2 },
+        { title: "第二集怎么接", text: "约 20s 换角度回到握块平板；约 23s 平板推成下犬式；约 26.4s 产品受力接触特写。", at: 20 },
+        { title: "结尾怎么收", text: "约 35.8s 产品设计细节快切；约 38s 产品在垫上定格。", at: 38 },
+      ],
+      copyThis: "产品图单独出一张锁定；每集 7 镜按「钩子→痛点→打断→亮相→决定→招牌用法→收尾」写死节奏。",
+      approx: true,
+    },
+    tags: [
+      "40秒 · 两集产品广告",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "2 张锁定参考图",
+      "14 镜",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：出人物卡和产品图",
+        description:
+          "PROMPT 1 人物角色卡（酒红运动服瑜伽女生，正脸 + 全身）；PROMPT 2 青绿色护腕支撑块产品图。提示词见参考图卡片。",
+      },
+      {
+        number: 2,
+        title: "第二步：写第一集 7 镜",
+        description:
+          "PROMPT 3：平板支撑钩子 → 手腕受压特写 → 跪坐揉手腕 → 产品亮相 → 过肩握块 → 握块平板招牌镜头 → 收尾。",
+      },
+      {
+        number: 3,
+        title: "第三步：写第二集并拼接",
+        description:
+          "PROMPT 4：换角度握块平板 → 下犬式 → 受力接触特写 → 回到平板 → 放松 → 设计细节快切 → 产品定格。两集各 20 秒前后相接。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ivanka-yoga-girl-map",
+        number: "1",
+        title: "人物角色卡（Girl character map）",
+        subtitle: "酒红运动服瑜伽女生，正脸 + 全身；截自原帖视频下半拼板，非原图、分辨率有限",
+        image: "/tutorials/ivanka-yoga-wrist-buddy-ad-seedance-2-5/refs/01-girl-character-map.jpg",
+        prompt: `SHEET:
+  instruction: "Create a consistent character reference card for a natural yoga e-commerce advertisement."
+  format: "horizontal 16:9 canvas divided into exactly two equal vertical photographic panels"
+  composition_priority: "left panel contains one portrait; right panel contains one clearly distant full-body view"
+  background: "continuous neutral light-gray seamless studio backdrop with visible studio floor in the right panel"
+
+SUBJECT:
+  identity: "attractive 27-year-old Central Eastern European woman with a distinctly contemporary Ukrainian appearance"
+  face: "soft oval European facial structure, gently defined cheekbones, straight narrow nose with a delicate tip, open rounded eyes, softly arched natural eyebrows, balanced natural lips, subtle facial micro-asymmetry"
+  complexion: "fair ivory-beige complexion with a delicate cool pink undertone, natural indoor skin tone, clear healthy unmarked skin"
+  skin_detail: "high detail, bright skin, natural skin texture and realistic gloss, natural glow, skin grain, soft matte finish, every pore and fine line retained, faint under-eye detail and subtle tonal variation"
+  appearance: "fresh bare-face appearance, natural eyebrows, natural eyelashes, clean natural lips with transparent lip balm"
+  body: "tall athletic feminine physique, hourglass figure, rounded hips, thin defined waist, full bust, toned arms and legs, realistic anatomical proportions"
+  hair: "simple clean high ponytail, natural hairline, a few soft flyaway strands near the temples"
+  wardrobe: "matching deep-terracotta yoga set, fitted sleeveless sports top with a secure high neckline, high-waisted full-length leggings, dense matte stretch fabric, barefoot"
+  expression: "calm neutral resting expression, relaxed direct gaze, naturally closed lips, level mouth corners"
+
+LIGHT:
+  setup: "large diffused softbox from front upper-left, neutral daylight balance, broad frontal bounce, soft gradual falloff"
+  integration: "natural catchlights, gentle facial shadows, grounded contact shadow beneath both bare feet"
+
+FIGURE_VIEWS:
+  left_panel:
+    framing: "portrait from crown to mid-torso"
+    camera: "eye level, 85mm lens, gentle three-quarter azimuth at 35 degrees"
+    placement: "head and upper torso centered within the left panel with comfortable space above the ponytail"
+    pose: "relaxed shoulders, upright posture, face directed toward camera"
+    expression: "neutral closed-mouth expression, composed gaze, level mouth corners"
+    focal_anchor: "European facial identity and authentic bare skin"
+
+  right_panel:
+    framing: "distant complete full-body catalogue view from the top of the ponytail to the soles of both bare feet"
+    camera: "eye level, 50mm lens, camera positioned approximately five meters from the woman, frontal azimuth at 0 degrees"
+    placement: "entire figure fully contained inside the right panel, visible gray space above the ponytail, visible studio floor beneath both feet, figure occupying approximately seventy percent of panel height"
+    pose: "feet hip-width apart, legs fully visible, arms naturally lowered beside the body, both hands and every finger fully visible"
+    expression: "neutral closed-mouth expression identical to the left panel"
+    focal_anchor: "complete body proportions, full yoga outfit and grounded bare feet"
+
+LOOK:
+  style: "clean contemporary yoga catalogue photography, authentic everyday beauty"
+  palette: "neutral gray environment, accurate deep-terracotta wardrobe, fair neutral skin rendering"
+  grading: "soft balanced contrast, open shadows, restrained saturation, gentle highlight rolloff"
+
+CONSISTENCY_LOCK:
+  instruction: "Maintain the exact same Central Eastern European woman, fair complexion, neutral expression, facial geometry, body proportions, ponytail, bare-face appearance and wardrobe in both panels."`,
+      },
+      {
+        id: "ivanka-yoga-product-map",
+        number: "2",
+        title: "产品图（Product map）",
+        subtitle: "青绿色护腕支撑块（WRIST Buddy 字样）；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-yoga-wrist-buddy-ad-seedance-2-5/refs/02-product-map.jpg",
+        prompt: `Create one horizontal 16:9 product reference card divided into two equal side-by-side photographic panels against the same plain neutral medium-gray studio background. The left panel shows the exact pair of teal WRISTBuddy yoga blocks from the first reference photo, large in frame and arranged exactly as shown in the reference, preserving their precise shape, proportions, sculpted hand grooves, thumb openings, raised supports, matte foam texture, teal colour, R and L markings, and clear WRISTBuddy logos. The right panel shows the exact same pair of blocks in use, based on the second reference photo: a tight close-up containing only two female forearms cropped just below the elbows and two anatomically correct hands properly inserted into the blocks. Each palm rests inside the shaped support, each thumb fits into its dedicated opening, four fingers wrap naturally through the finger grooves, and both wrists remain straight and correctly supported under realistic body weight. Five natural fingers on each hand, accurate joints and natural contact pressure against the foam. Identical product design, colour, scale and branding in both panels. Soft even studio lighting, realistic contact shadows, natural skin texture, detailed product surfaces, clean central seam, sharp commercial product photography.`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3.4s 明亮瑜伽室，她在垫上做平板支撑。" },
+      { number: 2, description: "3.4–6.4s 手掌压地、手腕受力的大特写。" },
+      { number: 3, description: "6.4–9.2s 她跪坐下来揉手腕，神情不适。" },
+      { number: 4, description: "9.2–11.4s 两块青绿色支撑块在垫上亮相。" },
+      { number: 5, description: "11.4–14.7s 过肩镜头，她把双手握上支撑块。" },
+      { number: 6, description: "14.7–17.3s 握块做平板，手腕保持中立。" },
+      { number: 7, description: "17.3–20s 侧面全身，握块完成动作（第一集结束）。" },
+      { number: 8, description: "20–23s 换角度，握块平板。" },
+      { number: 9, description: "23–26.4s 平板推成下犬式。" },
+      { number: 10, description: "26.4–29.6s 手握支撑块受力的正面特写。" },
+      { number: 11, description: "29.6–33.4s 从下犬式回到平板。" },
+      { number: 12, description: "33.4–35.8s 放松，自然呼吸。" },
+      { number: 13, description: "35.8–38s 产品设计细节快切。" },
+      { number: 14, description: "38–40s 产品在瑜伽垫上定格。" },
+    ],
+    constraints:
+      "人物与产品全程与参考图一致，场景里只有这一对支撑块，每集 7 个硬切镜头。与成片不符：成片切点比提示词整体晚约 0.5–0.8 秒（如第一集 Shot 1 提示词 2.6s、成片约 3.4s）。说明：作者视频是上下拼接版（上半为 16:9 成片，下半为人物卡 + 产品图拼板带水印），demo 只裁上半；参考图从拼板截出，非原图。PROMPT 3 的 SHOT 6 里有一个平台引用符 @2ddc3e71-4dd1-4d0f-b4f3-2777edffaf0e（疑为作者所用平台的素材 ID），按原文保留。WRIST Buddy 字样疑为真实品牌。",
+    video_prompt: {
+      title: "Wrist support ad · Episode 1 + Episode 2 · 2×20s",
+      subtitle: "Seedance 2.5 · 16:9 · PROMPT 3 与 PROMPT 4 英文完整提示词（作者自回复长帖）",
+      content: `📌 PROMPT 3: Animation prompt Episode 1
+PRESSURE → FLOW INTERRUPTED → PRODUCT DISCOVERY → PRECISE SETUP → CONTROL RESTORED
+
+SHOT STRUCTURE: 7 shots, 20.0 seconds, horizontal 16:9, exactly as listed, no added shots.
+
+REFS:
+
+@da892c6c-ae67-4409-a8a4-dc6e58fa3948 = product reference card. Strictly controls the exact pair of turquoise WRIST Buddy supports: shape, scale, EVA texture, sculpted recesses, wrist channels, L/R markings and molded branding.
+
+@89d57094-2375-46b0-bd90-39ed2e9dded4 = character reference card. The LEFT portrait exclusively controls her complete facial identity, skin and features. The RIGHT panel controls body proportions, burgundy yoga set, ponytail and barefoot styling only. The gray facial oval is metadata masking with zero visual authority; every visible face is fully rendered from the LEFT portrait.
+
+@befdeaa8-eee4-419a-9d91-dd3171ddb457 = location reference. Strictly controls the yoga room, windows, garden, oak floor, bench, plant, beige mat and daylight direction.
+
+@2ddc3e71-4dd1-4d0f-b4f3-2777edffaf0e = dedicated usage reference. Strictly controls only the anatomical contact relationship between both forearms, wrists, palms, thumbs, fingers and the two upright WRIST Buddy supports during weight-bearing. Reproduce this exact hand position; character identity and clothing come from @89d57094-2375-46b0-bd90-39ed2e9dded4, product appearance comes from @da892c6c-ae67-4409-a8a4-dc6e58fa3948, and environment comes from @befdeaa8-eee4-419a-9d91-dd3171ddb457.
+
+ACTIVE REFERENCES: @da892c6c-ae67-4409-a8a4-dc6e58fa3948 strict product appearance lock; @89d57094-2375-46b0-bd90-39ed2e9dded4 strict character lock; @befdeaa8-eee4-419a-9d91-dd3171ddb457 strict architectural continuity lock; @2ddc3e71-4dd1-4d0f-b4f3-2777edffaf0e strict hand-placement and weight-bearing geometry lock.
+
+GLOBAL STYLE NOTES:
+
+• look: polished live-action e-commerce advertising, bright natural daylight from the windows as the motivated source, soft warm reflections from the oak floor, accurate skin texture, fine fabric weave, clean focus, restrained warm-neutral grade, realistic highlight rolloff
+
+• setting: the exact room from @befdeaa8-eee4-419a-9d91-dd3171ddb457; faint garden birds, soft room tone, fabric movement, palms contacting rubber and dense foam
+
+• product continuity: exactly two supports exist, one L and one R. Their geometry, colour, cutouts and branding remain identical to @da892c6c-ae67-4409-a8a4-dc6e58fa3948 through every contact and camera angle.
+
+• character: the woman from @89d57094-2375-46b0-bd90-39ed2e9dded4, complete face from its LEFT portrait, body and burgundy yoga outfit from its RIGHT panel. Keep her identity and proportions unchanged.
+
+• acting — WOMAN:
+
+scene direction: regain her flow through a more stable hand position
+
+fuel: she came to practise with control and wants to finish the movement cleanly
+
+goal: find a stable way to load her upper body
+
+obstacle: pressure through flat palms repeatedly breaks her alignment
+
+tactic: tests the load, reads the physical signal, stops, finds the supports, places them precisely and tests the same movement again
+
+channel: plank attempt → controlled pause → product setup → supported plank
+
+gaze always engaged with the mat, wrist or product; natural blink cadence
+
+• edit: direct hard cuts only at the listed times, each cut opening instantly on a fully formed new camera setup; cuts land on movement and change framing, azimuth and height
+
+LOCATION MAP — fixed throughout:
+
+• WINDOW WALL: floor-to-ceiling windows and garden, the only daylight source
+
+• BENCH WALL: oak bench, folded towels, bottle, artwork and plant
+
+• CENTRE: beige mat in the exact position from @befdeaa8-eee4-419a-9d91-dd3171ddb457
+
+• PRODUCT START: the stacked WRIST Buddy pair rests on the oak floor 35 cm beyond the woman’s own right edge of the mat
+
+VOICE LOCK — COPY VERBATIM INTO EVERY EPISODE:
+
+One off-screen female narrator, native American English, age 30–35, warm clear mid-low mezzo timbre with a faint natural huskiness, intimate close-microphone studio recording, conversational premium-wellness delivery, precise consonants, gentle downward sentence endings, 132 words per minute, controlled dynamics and short natural breaths. Her tone begins grounded and understanding, then gains a subtle lift of warmth at the product reveal. Lock the exact same speaker identity, accent, pitch range, cadence, microphone distance and recording texture for the entire 40-second campaign.
+
+VOICEOVER — exact words:
+
+“Yoga should build strength, not wrist pain. But flat palms can push your wrists into an uncomfortable angle and interrupt every flow. Meet Wrist Buddy: ergonomic supports that lift your grip, encourage a more natural wrist position, and let you focus on your form.”
+
+MUSIC:
+
+Minimal contemporary wellness instrumental: soft muted percussion, warm plucked notes and a restrained airy pad. It stays beneath the narrator, gains one gentle rhythmic layer at the product reveal and lands on a clean soft beat at 20.0 seconds.
+
+SEQUENCE LIST:
+
+SHOT 1 (0.0–2.6s) HOOK — wide physical action
+
+• first_frame: the woman already holds a high plank at the centre of the beige mat; her full body and both flat palms are visible, windows filling the background
+
+• camera: full wide shot, low waist height, three-quarter 45°, 84° wide character, short controlled lateral track parallel to the mat
+
+• action_visual: she shifts forward and begins a controlled lowering motion; body weight travels through shoulders into flattened palms, mat compressing beneath them; quiet fabric tension and rubber contact
+
+• acting: her eyes stay on a point between her hands, checking whether the position remains stable
+
+• exit: shoulders pass slightly forward of the wrists
+
+(HARD CUT TO)
+
+SHOT 2 (2.6–4.7s) PRESSURE — extreme hand detail
+
+• camera: extreme close-up of one palm and wrist, mat level, profile 90°, 29° short-telephoto character, static
+
+• action_visual: the heel of her palm compresses into the mat as the wrist bends; tendons tighten, fingertips press down, then load eases as she shifts back; a soft rubber creak accompanies the pressure release
+
+• acting: her attention narrows to the loaded wrist
+
+• exit: the hand lifts a few centimetres from the mat
+
+(HARD CUT TO)
+
+SHOT 3 (4.7–7.4s) INTERRUPTION — medium portrait
+
+• camera: medium shot, eye level, opposite three-quarter 135°, 47° standard character, gentle push-in
+
+• action_visual: both knees settle onto the mat with natural weight; she sits back on her heels and rotates the loaded wrist once with the other hand, breathing remaining controlled
+
+• acting: she studies the exact pressure point, then searches the floor within reach for a practical answer
+
+• reaction: her flow has stopped, but her posture stays purposeful
+
+• exit: her gaze fixes on the stacked turquoise supports
+
+(HARD CUT TO)
+
+SHOT 4 (7.4–9.7s) PRODUCT REVEAL — hero insert
+
+• camera: product close-up from floor height, three-quarter 45°, 18° telephoto character, slow 12 cm push-in; compressed room dissolves softly behind
+
+• action_visual: the exact stacked WRIST Buddy pair from @da892c6c-ae67-4409-a8a4-dc6e58fa3948 sits firmly on the oak floor; window light travels across the textured foam, molded grooves and readable branding while her hand enters the distant background
+
+• audio: the music gains one gentle rhythmic layer under “Meet Wrist Buddy”
+
+• exit: her fingertips reach the upper support
+
+(HARD CUT TO)
+
+SHOT 5 (9.7–12.5s) DECISION — over-shoulder action
+
+• camera: medium over-shoulder view, 25° downward angle, azimuth 45°, 47° standard character, handheld with controlled breathing
+
+• action_visual: she lifts the pair with visible foam weight, separates L from R, and sets both vertically upright on their long flat bases at shoulder width. The broad molded faces stand perpendicular to the mat; each base lands flat with a soft dense thump.
+
+• acting: her eyes alternate between the markings and her shoulder line, verifying placement
+
+• exit: both upright supports finish settling firmly against the mat
+
+(HARD CUT TO)
+
+SHOT 6 (12.5–16.3s) SIGNATURE — exact usage from @2ddc3e71-4dd1-4d0f-b4f3-2777edffaf0e
+
+• camera: close frontal three-quarter view at hand height, 20° downward angle, azimuth 45°, 47° standard character, locked composition containing both upright supports, both forearms, both complete hands and all ten fingers
+
+• action_visual: reproduce the hand-and-support geometry from @2ddc3e71-4dd1-4d0f-b4f3-2777edffaf0e exactly. The L support stands vertically beneath her own left hand and the R support vertically beneath her own right hand. Both broad molded faces remain vertical and parallel to her palms. Each wrist settles across its curved upper saddle; the heel of each palm bears weight against the upper molded face; four fingers extend vertically downward and seat individually into the recessed finger grooves; each thumb enters its dedicated deep side channel. Both forearms descend in straight vertical alignment above the wrists. Dense foam compresses subtly at the loaded contact points while both bases remain fully planted.
+
+• acting: she visually checks the L hand, then the R hand, confirming the mirrored placement
+
+• exit: both hands reach the final locked position shown in @2ddc3e71-4dd1-4d0f-b4f3-2777edffaf0e and her shoulders stack directly above them
+
+(HARD CUT TO)
+
+SHOT 7 (16.3–20.0s) RESOLUTION — completed action with locked hand placement
+
+• camera: full-body side view, low chest height, profile 90°, 84° wide character, smooth 40 cm track along the mat
+
+• action_visual: the exact hand placement established from @2ddc3e71-4dd1-4d0f-b4f3-2777edffaf0e remains physically locked: both supports stay vertically upright on their long bases, wrists stay seated across the upper saddles, palms remain vertical against the molded faces, fingers remain extended down inside their individual grooves, and thumbs remain inside the dedicated channels. She transfers weight through this fixed contact, lifts both knees and extends into one stable high plank; shoulders, hips and heels settle into a clean line. Her ponytail and clothing finish their natural follow-through. Hold the completed plank for the final 0.8 seconds.
+
+• acting: her eyes remain anchored between the supports while one longer exhale confirms the stable position
+
+• reaction: the same movement now continues with controlled alignment
+
+• exit: stable completed plank on the clean musical beat at exactly 20.0 seconds
+
+AUDIO AND SPEECH CONSTRAINTS:
+
+The woman remains silent with naturally resting lips; every spoken word comes only from the off-screen narrator. Use the exact voiceover text and voice identity written above. Narration stays clear above the music; music ducks gently beneath every phrase. Physical contact sounds remain subtle and synchronized. The only visible lettering is the authentic molded product branding and L/R markings from @da892c6c-ae67-4409-a8a4-dc6e58fa3948; the video carries an image-only advertising frame.
+
+📌 PROMPT 4: Animation prompt Episode 2
+SUPPORTED LOAD → FLUID TRANSITION → STABILITY PROOF → PHYSICAL RELEASE → PRODUCT RESOLVE
+
+SHOT STRUCTURE: 7 shots, 20.0 seconds, horizontal 16:9, exactly as listed, no added shots.
+
+REFS:
+
+@4dbcc791-d7fb-4c56-b360-7abd959c86cd = product reference card. Strictly controls the exact pair of turquoise WRIST Buddy supports: shape, scale, EVA texture, sculpted recesses, wrist channels, L/R markings and molded branding.
+
+@896c80a4-1c22-490f-85c7-93bfece586b1 = character reference card. The LEFT portrait exclusively controls her complete facial identity, skin and features. The RIGHT panel controls body proportions, burgundy yoga set, ponytail and barefoot styling only. The gray facial oval is metadata masking with zero visual authority; every visible face is fully rendered from the LEFT portrait.
+
+@9a198461-bb99-4136-864e-6ca71370aabf = location reference. Strictly controls the yoga room, windows, garden, oak floor, bench, plant, beige mat and daylight direction.
+
+@a913dca2-7711-4062-b075-fac8b7f65af9 = dedicated usage reference. Strictly controls only the anatomical contact relationship between both forearms, wrists, palms, thumbs, fingers and the two upright WRIST Buddy supports during weight-bearing. Reproduce this exact hand position; character identity and clothing come from @896c80a4-1c22-490f-85c7-93bfece586b1, product appearance comes from @4dbcc791-d7fb-4c56-b360-7abd959c86cd and environment comes from @9a198461-bb99-4136-864e-6ca71370aabf.
+
+ACTIVE REFERENCES: @Image1 strict product appearance lock; @896c80a4-1c22-490f-85c7-93bfece586b1 strict character lock; @9a198461-bb99-4136-864e-6ca71370aabf strict architectural continuity lock; @a913dca2-7711-4062-b075-fac8b7f65af9 strict hand-placement and weight-bearing geometry lock.
+
+GLOBAL STYLE NOTES:
+
+• look: polished live-action e-commerce advertising, bright natural daylight entering through the windows as the motivated source, warm reflections from the oak floor, accurate skin texture, fine fabric weave, clean focus, restrained warm-neutral grade, realistic highlight rolloff
+
+• setting: the exact room from @9a198461-bb99-4136-864e-6ca71370aabf; faint garden birds, soft room tone, controlled breathing, fabric tension, rubber mat contact and dense foam compression
+
+• product continuity: exactly two supports exist, one L and one R. Their geometry, turquoise colour, cutouts, branding and scale remain identical to @4dbcc791-d7fb-4c56-b360-7abd959c86cdin every shot.
+
+• character: the woman from @896c80a4-1c22-490f-85c7-93bfece586b1, complete face from its LEFT portrait, body and burgundy yoga outfit from its RIGHT panel. Keep her identity and proportions unchanged.
+
+• acting — WOMAN:
+
+scene direction: test the support through a complete controlled movement
+
+fuel: the stable hand position allows her to return her attention to the practice
+
+goal: complete one clean plank-to-downward-dog cycle
+
+obstacle: shifting body weight could disturb the supports or break her hand alignment
+
+tactic: loads each support gradually, checks the contact through her hands, moves through shoulders and hips, then confirms the result through the return
+
+channel: supported plank → downward dog → return to plank → controlled release
+
+gaze always engaged with the mat or the space between her hands; natural blink cadence
+
+• edit: direct hard cuts only at the listed times, each cut opening instantly on a fully formed new camera setup; every adjacent shot changes framing, azimuth and camera height
+
+LOCATION MAP — fixed throughout:
+
+• WINDOW WALL: floor-to-ceiling windows and garden, the only daylight source
+
+• BENCH WALL: oak bench, folded towels, bottle, artwork and plant
+
+• CENTRE: beige mat in the exact position from @9a198461-bb99-4136-864e-6ca71370aabf
+
+• WORKING POSITION: two upright WRIST Buddy supports planted at shoulder width on the front half of the mat
+
+HAND CONTACT LOCK — ACTIVE THROUGH SHOTS 1–4:
+
+Reproduce @a913dca2-7711-4062-b075-fac8b7f65af9 precisely. The L support stands vertically beneath her own left hand and R beneath her own right. Both supports rest on their long flat bases with broad molded faces vertical. Each wrist rests across its curved upper saddle; the heel of each palm bears weight against the upper molded face; four fingers extend vertically downward inside the individual recessed finger grooves; each thumb sits inside its dedicated deep side channel. The palms remain in a vertical plane parallel to the product faces. Forearms extend directly from the supported wrists in continuous anatomical alignment while their angle changes naturally with the yoga pose. Both product bases remain planted in the same positions throughout the movement.
+
+VOICE LOCK — COPY VERBATIM INTO EVERY EPISODE:
+
+One off-screen female narrator, native American English, age 30–35, warm clear mid-low mezzo timbre with a faint natural huskiness, intimate close-microphone studio recording, conversational premium-wellness delivery, precise consonants, gentle downward sentence endings, 132 words per minute, controlled dynamics and short natural breaths. Her tone begins grounded and understanding, then gains a subtle lift of warmth at the product reveal. Lock the exact same speaker identity, accent, pitch range, cadence, microphone distance and recording texture for the entire 40-second campaign.
+
+VOICEOVER — exact words:
+
+“Wrist Buddy is shaped around the hand, giving every finger a secure place to settle while the wrist stays supported. From plank to downward dog, each transition feels steadier and more controlled. Less distraction. Better alignment. More freedom to keep moving.”
+
+MUSIC:
+
+Minimal contemporary wellness instrumental: soft muted percussion, warm plucked notes and a restrained airy pad. It enters on a clean soft beat at 0.0 seconds, remains beneath the narrator, grows gently through the movement demonstration and resolves on one warm final note at 20.0 seconds.
+
+SEQUENCE LIST:
+
+SHOT 1 (0.0–2.4s) CALLBACK — supported plank from a new angle
+
+• first_frame: the woman already holds a stable high plank on the beige mat with both hands positioned exactly as @a913dca2-7711-4062-b075-fac8b7f65af9; both upright turquoise supports, her complete face and full body are immediately visible
+
+• camera: low frontal three-quarter view, chest height, azimuth 225°, 47° standard character, smooth 25 cm push-in
+
+• action_visual: body weight travels evenly from shoulders through the fixed hand contacts; foam compresses subtly beneath both wrists while the bases remain firmly planted; her breathing and fabric movement provide natural micro-motion
+
+• acting: her eyes check the space between the supports, then hold there as she confirms balance
+
+• voiceover: “Wrist Buddy is shaped around the hand,”
+
+• exit: her shoulders begin moving backward while both hands remain locked
+
+(HARD CUT TO)
+
+SHOT 2 (2.4–5.5s) RISING — plank into downward dog
+
+• camera: full-body side view, eye level, profile 90°, 84° wide character, controlled lateral track parallel to the mat
+
+• action_visual: she presses through both supports and sends her hips upward and backward into downward dog; shoulders rotate, spine lengthens and heels travel toward the mat. Both product bases remain stationary while the hand contact from @a913dca2-7711-4062-b075-fac8b7f65af9stays intact.
+
+• acting: her attention moves from the supports through the line of her arms, measuring the transition
+
+• voiceover: “giving every finger a secure place to settle”
+
+• exit: hips reach their highest point and the movement settles
+
+(HARD CUT TO)
+
+SHOT 3 (5.5–8.8s) PRODUCT PROOF — loaded contact detail
+
+• camera: close frontal detail of both complete hands and supports, mat height, frontal 0°, 29° short-telephoto character, static
+
+• action_visual: show the exact mirrored L/R placement from @a913dca2-7711-4062-b075-fac8b7f65af9 under full downward-dog load: wrists seated in the upper saddles, palms vertical, all eight fingers visibly occupying individual grooves, both thumbs inside their channels. Dense foam yields slightly at the pressure points and returns with each breath.
+
+• acting: her attention remains physically directed through the hands into the product
+
+• voiceover: “while the wrist stays supported.”
+
+• exit: shoulder pressure begins moving forward
+
+(HARD CUT TO)
+
+SHOT 4 (8.8–11.5s) SIGNATURE — controlled return
+
+• camera: high three-quarter full shot, 30° downward angle, azimuth 45°, 47° standard character, short diagonal track toward the mat
+
+• action_visual: she shifts forward from downward dog into one clean high plank. Shoulders arrive directly above the supported wrists; hips lower into line; both upright supports remain planted and the exact @a913dca2-7711-4062-b075-fac8b7f65af9 contact geometry survives the complete weight transfer.
+
+• acting: her eyes settle between her hands as the returning alignment proves the movement
+
+• reaction: the supports function through motion rather than only during a static pose
+
+• voiceover: “From plank to downward dog, each transition feels steadier and more controlled.”
+
+• exit: she completes the plank and holds for one controlled breath
+
+(HARD CUT TO)
+
+SHOT 5 (11.5–14.3s) RELEASE — natural physical response
+
+• camera: medium side portrait, eye level, opposite three-quarter 135°, 29° short-telephoto character, gentle pull-back
+
+• action_visual: both knees settle onto the mat; she sits back, lifts each hand cleanly upward from its support and opens and closes her fingers once. Her shoulders drop on a long exhale; lips remain naturally at rest.
+
+• acting: she compares how both wrists feel after the completed movement, then lets her attention return to the practice
+
+• voiceover: “Less distraction. Better alignment.”
+
+• exit: her hand moves away, revealing the complete pair standing upright
+
+(HARD CUT TO)
+
+SHOT 6 (14.3–16.7s) DESIGN DETAIL — feature montage
+
+• camera: extreme product close-up from floor height, three-quarter 45°, 18° telephoto character, controlled 20 cm arc around the stationary pair
+
+• action_visual: sunlight travels across the curved wrist saddles, separate thumb channels, recessed finger grooves, dense EVA texture, L/R markings and molded WRIST Buddy branding. Both products remain exact to @4dbcc791-d7fb-4c56-b360-7abd959c86cd.
+
+• audio: one soft foam touch and the warm plucked musical phrase rise beneath the final line
+
+• voiceover: “More freedom to keep moving.”
+
+• exit: the camera arc reveals both branded faces together
+
+(HARD CUT TO)
+
+SHOT 7 (16.7–20.0s) RESOLUTION — final product hero
+
+• first_frame: the exact two WRIST Buddy supports are already stacked in the mirrored hero arrangement from the LEFT panel of @4dbcc791-d7fb-4c56-b360-7abd959c86cd, positioned on the oak floor at the front edge of the beige mat; both logos face the camera
+
+• camera: product hero close-up, low eye line, frontal three-quarter 30°, 29° short-telephoto character, very slow 15 cm push-in
+
+• action_visual: the turquoise pair occupies the central foreground in clean focus; textured foam, sculpted channels and molded branding remain readable. The exact room from @9a198461-bb99-4136-864e-6ca71370aabf dissolves softly behind, with the woman seated upright on the mat in the distant background, shoulders loose and lips naturally at rest. Window light creates one controlled highlight along the product edges.
+
+• acting: in the background she looks toward the garden while her breathing returns to an even rhythm
+
+• audio: narration ends cleanly, room tone and music remain for one beat, then the instrumental resolves on one warm final note at exactly 20.0 seconds
+
+• exit: hold the completed product hero composition through the final frame
+
+AUDIO AND SPEECH CONSTRAINTS:
+
+The woman remains silent with naturally resting lips; every spoken word comes only from the off-screen narrator. Use the exact voiceover text and voice identity written above. Narration stays clear above the music; music ducks gently beneath every phrase. Physical contact sounds remain subtle and synchronized. The only visible lettering is the authentic molded product branding and L/R markings from @4dbcc791-d7fb-4c56-b360-7abd959c86cd; the video carries an image-only advertising frame.`,
+    },
+  },
+  // 查重别名(提示词自回复帖：PROMPT 1–5 五张参考图): https://x.com/ivanka_humeniuk/status/2099490874845544900
+  // 查重别名(提示词自回复帖：PROMPT 6 第一集): https://x.com/ivanka_humeniuk/status/2099490880004473303
+  // 查重别名(提示词自回复帖：PROMPT 7 第二集): https://x.com/ivanka_humeniuk/status/2099490885402591651
+  {
+    id: "ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5",
+    title: "5 张参考图同时锁定 · 维生素软糖两集广告 · Seedance 2.5",
+    subtitle: "X · @ivanka_humeniuk · Seedance 2.5 · 40秒 · 9:16",
+    description:
+      "人物、产品、公寓、办公室、包 5 图同时锁定，Seedance 2.5 两集各 10 镜的竖屏维生素软糖广告。",
+    video: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/poster.jpg",
+    duration: "40秒",
+    durationSec: 40,
+    styleLabel: "写实广告",
+    shots: 20,
+    references: 5,
+    model: "Seedance 2.5",
+    style: "都市通勤生活方式广告 · 自然光公寓/办公室/健身房 · 竖屏",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/ivanka_humeniuk/status/2099490867878703430",
+    sourceAuthor: "@ivanka_humeniuk",
+    sourcePlatform: "X",
+    sourceImpressions: 22371,
+    sourceStats: { asOf: "2026-09-27", likes: 430, reposts: 22, bookmarks: 501 },
+    formats: ["产品广告", "手机POV·Vlog"],
+    hook: {
+      structure: "加班疲惫 → 回家瘫倒 → 早晨吃软糖 → 第二集办公室 → 健身 → 产品定格",
+      opening: "第 0 秒是她在电脑前的面部近景，屏幕光打在脸上、神情疲惫——先拍「累」，产品晚点出。",
+      openingAt: 0,
+      beats: [
+        { title: "痛点怎么讲", text: "约 2.4s 俯拍双手打字；约 4.3s 拎着酒红色包走进公寓；约 7.1s 包落地低机位；约 8.6s 她瘫在沙发上。", at: 4.3 },
+        { title: "产品怎么露", text: "约 11.4s 早晨厨房全景；约 13.5s vitafusion 瓶身特写；约 14.9s 软糖倒在掌心的俯拍微距；约 16.8s 侧脸吃下。", at: 13.5 },
+        { title: "第二集和结尾", text: "约 20s 起回到办公室，拎包去健身房、系鞋带、举哑铃、跑步机脚步特写；约 38.8s 产品在厨房台面定格。", at: 20 },
+      ],
+      copyThis: "地点也当成锁定参考图（公寓、办公室各一张），再加一个贯穿两集的道具（包），5 张图在视频提示词里用 @Image 逐一点名。",
+      approx: true,
+    },
+    tags: [
+      "40秒 · 两集产品广告",
+      "9:16 竖屏",
+      "Seedance 2.5",
+      "5 张锁定参考图",
+      "20 镜",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：出 5 张参考图",
+        description:
+          "PROMPT 1 人物卡、PROMPT 2 产品图（维生素软糖瓶）、PROMPT 3 公寓、PROMPT 4 办公室、PROMPT 5 酒红色旅行包。五段提示词见参考图卡片。",
+      },
+      {
+        number: 2,
+        title: "第二步：写第一集 10 镜",
+        description:
+          "PROMPT 6：面部钩子 → 打字 → 进门 → 包落地 → 瘫沙发 → 早晨厨房 → 产品特写 → 掌心软糖 → 侧脸吃下 → 产品定格。",
+      },
+      {
+        number: 3,
+        title: "第三步：写第二集并拼接",
+        description:
+          "PROMPT 7：办公室专注 → 打字 → 下班 → 包落地呼应 → 系鞋带 → 健身房全景 → 哑铃 → 跑步机脚步 → 运动后近景 → 产品推荐定格。两集各 20 秒前后相接。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ivanka-vita-girl-map",
+        number: "1",
+        title: "@Image1 · 人物卡（Girl character map）",
+        subtitle: "白衬衫黑马甲的都市女生，正脸 + 全身；截自原帖视频右侧拼板，非原图、分辨率有限",
+        image: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/refs/01-girl-character-map.jpg",
+        prompt: `A 16:9 horizontal two-panel reference card features a striking European woman of about 30 years old, depicted in matching contemporary studio fashion styling, both panels set against a seamless neutral medium-grey cyclorama (#8A8A8A) swept wall-to-floor with a visible floor at the base and real depth behind, producing soft touch shadows. The left close portrait panel is a crisply detailed optical study, framed from just above the crown to mid-torso, with a front-facing pose, shoulders open and square, facial features including a softly sculpted oval face with a neat chin taper, defined cheekbones, full natural eyebrows, hazel-brown almond eyes, a straight refined nose, and gently full lips with a faint upward lift. Highly natural facial skin texture, subtle natural gloss, creamy desaturated finish, realistic pores and fine lines, faint beauty mark beneath left cheekbone and shallow dimple beside the right mouth corner, and micro-asymmetry (left eyebrow fractionally higher, right eye marginally narrower, right mouth corner lifted). Hair is chestnut brown with caramel ribbons, center part, face-framing curtain layers, large retro waves falling below the chest with individual strands visible, polished and sculpted. The wardrobe consists of a high-quality bright white cotton-poplin button-down shirt (collar wide and sharply pointed, top two buttons undone) with mid-forearm rolled sleeves, over which sits a tailored black waistcoat with a deep V neckline, smooth fitted panels, five black buttons, sharply pointed hem at the high hip; layered with high-waisted ivory wide-leg suiting trousers (matte, creamy texture, double pleats, concealed fly, long fluid hem) and ivory pointed pumps. Accessories include slim gold drop earrings, a fine pendant necklace, a slim gold wristwatch with bracelets on the left, and a visible structured cognac brown leather shoulder bag (gold hardware, matching charm) slung over the right shoulder. The right panel is a tightly matched full-body portrait of the same woman, crown to shoes with visible matte grey floor, positioned straight-on, standing with weight evenly balanced, left arm relaxed, right hand near the pocket, full bag visible, jewelry and wardrobe consistent with the left panel. The lighting combines a large diffused softbox from camera left at 45 degrees, broad bounce from camera right (open readable shadows, 2:1 fill) and a slender rim from behind, which traces the hair and outer edges of the figure across both views. Refined shadow definition, small even catchlights, mild highlights on metal, and a natural creamy skin roll-off define the neutral graphite palette, while accent colors appear as brown hair, gold jewelry and the brown bag. Technical clarity, consistent 85mm Hasselblad digital lens at f/5.6, and subtle natural sensor texture with a gentle filmic s-curve give the image a contemporary neutral editorial fashion mood with cinematic tonality.`,
+      },
+      {
+        id: "ivanka-vita-product-map",
+        number: "2",
+        title: "@Image2 · 产品图（Product map）",
+        subtitle: "绿色瓶身维生素软糖（vitafusion 字样）；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/refs/02-product-map.jpg",
+        prompt: `SHOT:
+  shot_size: "Horizontal 16:9 product reference card with two complete views of the same vitafusion Women's Multi bottle, fully visible from base to top with generous gray space."
+  camera_angle: "Eye level."
+  azimuth: "Left bottle frontal 0°; right bottle three-quarter 45° camera-left."
+  subject_placement: "Closed bottle centered in the left half; open bottle centered in the right half, equal in scale and aligned along one baseline."
+  focal_anchor: "Exact labels, bottle geometry, open threaded neck, lid and berry-shaped gummies holding clear readable detail."
+
+SUBJECTS:
+  subject_1:
+    description: "One closed vitafusion Women's Multi bottle reproduced exactly from : identical compact proportions, bright green faceted packaging, dark green screw lid, white diamond label, strawberry and blueberry illustrations, logo placement and berry graphics."
+    source_lock: "Bottle shape, cap geometry, green pattern, label design, branding, printed text, fruit illustrations and proportions derive strictly from ."
+
+  subject_2:
+    description: "The identical vitafusion Women's Multi bottle from , opened and photographed at a three-quarter 45° angle. The full circular threaded neck is clean and clearly visible. Every gummy sits deep inside the bottle, with the gummy fill level ending below the base of the threaded neck; only a subtle glimpse of the upper gummy surfaces is visible through the opening."
+    gummy_design: "Small squat berry-shaped gummies with rounded cylindrical bases, domed textured tops, translucent red and deep blackberry-purple coloring, soft confectionery gloss."
+    source_lock: "Packaging identity, dimensions, label, colors, printed artwork and bottle proportions remain identical to ."
+
+SCENE:
+  action: "A single product reference card presenting the closed retail state and the opened usage state."
+  props: "The removed dark green lid rests face-up on the gray surface in front of the open bottle. Two loose gummies sit beside it: one translucent red gummy and one deep blackberry-purple gummy."
+  location: "Seamless medium-gray studio sweep continuing beneath and behind both products; empty space cleanly separates the two views."
+
+LIGHT:
+  key: "Large softbox camera-left at 5200K, soft diffused side-front light shaping both cylindrical bottles and the gummy texture."
+  fill: "White bounce card camera-right at a low 2:1 key-to-fill ratio, keeping every green label plane readable."
+  rim: "Soft upper-edge reflection created by the same large studio source."
+  ambient: "Neutral studio bounce from the gray sweep."
+  falloff: "Gradual falloff carrying evenly across both product views."
+  motivated_by: "Controlled commercial tabletop studio lighting."
+  atmosphere: "Clean clear studio air with precise separation between the product edges and gray background."
+  material_response: "Green plastic carries broad controlled reflections; matte printed labels retain dense color; gummies reveal translucent interiors through small surface highlights."
+  integration: "Soft contact shadows sit directly beneath both bottles, the detached lid and the two loose gummies, fixing every object firmly to the surface."
+
+TEXT_ELEMENTS:
+  visible_text:
+    - "\\"vitafusion\\" (English)"
+    - "\\"women's multi\\" (English)"
+    - "\\"supports energy metabolism, bone & immune health*\\" (English)"
+    - "\\"BERRY FLAVORS\\" (English)"
+    - "\\"120 GUMMIES\\" (English)"
+  typography: "Exact original logo lettering, weights, capitalization, spacing, purple and pink brand colors from ."
+  placement: "Locked to the original white diamond label and lower green package area in the same proportions as ."
+  rendering_quality: "Every glyph retains its exact designed shape, alignment and scale under the studio light."
+
+LOOK:
+  color_grading: "Neutral commercial grading with a low-contrast soft curve, cool gray shadows, accurate green midtones and gently controlled highlights."
+  authenticity: "Hasselblad H6D-100c, 85mm modern clinical lens with neutral rendering and accurate product proportions, f/11 deep focus keeping both bottles, labels, lid and gummies fully resolved from front to back."
+  style: "commercial product photography, smooth digital sensor rendering, clean speculars, tactile material detail, contemporary studio advertising"`,
+      },
+      {
+        id: "ivanka-vita-apartment-map",
+        number: "3",
+        title: "@Image3 · 公寓（Apartment map）",
+        subtitle: "暖色沙发与开放厨房的公寓；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/refs/03-apartment-map.jpg",
+        prompt: `SHOT:
+  shot_size: wide interior establishing shot — kitchen island in the foreground, complete kitchen in the midground, part of the living room on the left and entrance nook on the right
+  camera_angle: eye level at 1.55 metres
+  azimuth: three-quarter 45° view from the front-right corner, looking diagonally across the open-plan apartment
+  subject_placement: travertine island anchored across the lower centre, kitchen filling the upper middle, terracotta sofa entering from frame-left, entrance door and bench clearly visible at frame-right
+  focal_anchor: front edge of the kitchen island with clear detail continuing through the complete room
+
+SUBJECTS:
+  subject_1:
+    description: broad contemporary kitchen island with a warm cream travertine waterfall worktop, visible mineral pores and softly rounded edges; muted petrol-blue base cabinetry with slim brushed-brass handles
+    material_state: clean daily-use surface with subtle natural stone variation, one handmade ceramic cup and a shallow brass bowl placed at the far end
+    spatial_relation: island stands centrally between the kitchen, living room and entrance, leaving clear walking space around every side
+
+SCENE:
+  action: soft late-morning daylight travels diagonally across the island, honey-oak floor and living-room rug
+  props: two sculptural amber-glass pendant lights above the island; terracotta upholstered sofa with a textured cream throw; patterned rug combining petrol blue, rust and warm ivory; round walnut coffee table; slim black floor lamp; ribbed ceramic vase; entry bench with a cognac leather cushion; rounded wall mirror and a small tray for keys
+  location: bright contemporary 2020s open-plan apartment with warm off-white plaster walls, honey-toned oak flooring and generous ceiling height. The kitchen has medium walnut floor-to-ceiling cabinets, petrol-blue lower cabinets, cream travertine backsplash and brushed-brass fixtures. Two large windows bring abundant daylight from camera-left. The living area remains visually connected on the left, while the walnut entrance door, rounded mirror and bench form a clearly readable hallway nook on the right. The interior feels colourful, polished and lived-in, with open surfaces and balanced visual warmth
+
+LIGHT:
+  key: large soft 5200K window light entering from camera-left, wrapped gentle side light shaping the island, cabinetry and furniture
+  fill: warm bounce from the plaster walls and honey-oak floor at a low 2:1 ratio, shadows open and readable
+  rim: soft daylight edge tracing the amber pendants, sofa and entrance bench
+  ambient: neutral skylight spreading evenly through the open-plan room
+  falloff: gradual falloff carrying deep from the foreground island to the entrance nook
+  exposure: balanced for the interior materials, window detail retained within a soft highlight roll-off
+  motivated_by: two large windows visible along the left side of the apartment
+  atmosphere: clear indoor air with gentle depth separation between foreground, midground and background
+  material_response: travertine returns broad matte highlights, walnut holds satin reflections, brass catches restrained warm points, woven textiles retain visible fibre texture
+  integration: soft contact shadows beneath the island and furniture, warm floor bounce lifting the cabinetry, window reflections repeating consistently across polished surfaces
+
+LOOK:
+  color_grading: warm cinematic rendering with a filmic s-curve, soft graphite shadows, rich walnut midtones, saturated terracotta and petrol-blue accents, creamy highlight roll-off and bright balanced exposure
+  authenticity: Sony A7R V with a 24mm rectilinear architectural lens at f/8 — full room depth remains in focus, vertical lines stay straight, foreground proportions remain natural, travertine pores, walnut grain, upholstery weave and oak texture remain visible
+  style: shot on Sony A7R V, contemporary architectural interior photography, natural micro-contrast, current 2020s editorial finish`,
+      },
+      {
+        id: "ivanka-vita-office-map",
+        number: "4",
+        title: "@Image4 · 办公室（Office map）",
+        subtitle: "落地窗开放办公区；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/refs/04-office-map.jpg",
+        prompt: `SHOT:
+  shot_size: wide interior establishing shot — principal workstation in the foreground, shared desks across the midground, glass meeting room and tall windows receding into the background
+  camera_angle: eye level at 1.55 metres
+  azimuth: three-quarter 45° view from the front-right corner, looking diagonally through the complete office
+  subject_placement: principal desk anchored along the lower-right third, open walkway leading diagonally through the centre, shared workstations extending toward the windows on the left
+  focal_anchor: principal oak workstation with clear detail continuing through the complete office depth
+
+SUBJECTS:
+  subject_1:
+    description: contemporary principal workstation with a broad honey-oak desktop, slim charcoal metal frame, large graphite monitor, compact keyboard, wireless mouse and adjustable burnt-orange ergonomic chair
+    material_state: natural oak grain, soft handling marks near the keyboard, one open cream notebook with a black pen, ceramic coffee cup and neatly coiled charging cable
+    spatial_relation: desk faces diagonally into the room, allowing the background workstations and glass meeting room to remain visible behind it
+
+SCENE:
+  action: bright late-morning daylight stretches across the desks and floor; active monitors cast faint cool reflections onto nearby surfaces
+  props: four additional honey-oak workstations with graphite monitors and rust-coloured chairs; slim black task lamps; cream notebooks; ceramic mugs; charcoal filing cabinets; tall indoor plants in cobalt-blue planters; deep petrol acoustic panels; pinboards carrying colour swatches and geometric diagrams; one round collaboration table with teal chairs
+  location: spacious contemporary creative office with floor-to-ceiling windows along the left wall, warm white plaster, honey-oak surfaces, light terrazzo flooring and slim black architectural frames. A glass meeting room occupies the rear-right corner, while the central walkway remains open and clearly connects every workstation. Chairs sit at slightly different angles, notebooks remain open and monitors display abstract blue, coral and white interface blocks, giving the temporarily unoccupied office a convincing active-workday presence. Every visible screen and wall surface carries graphic shapes and image content free of legible lettering and branding
+
+LIGHT:
+  key: large soft 5400K window light entering from camera-left, wrapped gentle side light shaping the desks, chairs and glass partitions
+  fill: broad bounce from the warm white walls and terrazzo floor at a low 2:1 ratio, shadows open across the complete room
+  rim: soft window edge tracing chair backs, plant leaves and black meeting-room frames
+  ambient: neutral skylight spreading evenly through the office ceiling and rear workstations
+  falloff: gradual falloff carrying from the foreground desk through the distant glass meeting room
+  exposure: bright balanced interior exposure with window detail held inside a soft highlight roll-off
+  motivated_by: continuous floor-to-ceiling windows visible along the left side of the office
+  atmosphere: clear interior air with layered depth created by glass reflections, plants and repeating desk lines
+  material_response: oak returns warm matte reflections, terrazzo scatters soft daylight, black metal holds narrow highlights, glass carries restrained room reflections, woven chairs preserve visible textile texture
+  integration: soft contact shadows beneath desks and chairs, cool window spill across the terrazzo, warm oak bounce beneath the monitors and consistent reflections across every glass partition
+
+LOOK:
+  color_grading: warm neutral editorial rendering with a filmic s-curve, soft graphite shadows, honey-oak midtones, saturated teal and burnt-orange accents, clean creamy highlights and bright natural daylight balance
+  authenticity: Sony A7R V with a 28mm rectilinear architectural lens at f/8 — full office depth remains in focus, vertical lines stay straight, foreground proportions remain natural, oak grain, terrazzo aggregate, woven upholstery and plant texture remain visible
+  style: shot on Sony A7R V, contemporary architectural interior photography, documentary scouting capture, natural micro-contrast, current 2020s office design`,
+      },
+      {
+        id: "ivanka-vita-bag-map",
+        number: "5",
+        title: "@Image5 · 包（Bag map）",
+        subtitle: "酒红色旅行包；截自原帖视频拼板，约 374×210，分辨率很低",
+        image: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/refs/05-bag-map.jpg",
+        prompt: `SHOT:
+  shot_size: "Horizontal 16:9 two-panel studio reference card, two large product views with equal visual weight"
+  camera_angle: "Left panel at bag height; right panel slightly elevated to reveal the interior"
+  azimuth: "Left panel front three-quarter view at 45 degrees; right panel front three-quarter view from the opposite side"
+  subject_placement: "One bag centered in each half of the frame, generous clean spacing between panels, entire silhouette visible"
+  focal_anchor: "The dark burgundy sports bag and its construction details"
+
+SUBJECTS:
+  subject_1:
+    description: "The exact same modern medium-size gym duffel in both panels, approximately 48 x 25 x 28 cm, dark burgundy matte dense technical fabric, softly structured rectangular body with rounded side panels, black webbing handles continuing beneath the base, broad detachable black shoulder strap, matte black metal hardware, sturdy double zipper, discreet exterior side pocket, refined minimal contemporary design, blank exterior surfaces"
+    left_panel_state: "Bag fully zipped and neatly structured, handles resting naturally together, shoulder strap attached and arranged beside the body"
+    right_panel_state: "Bag fully unzipped with the opening naturally expanded, sidewalls retaining their realistic shape"
+    visible_contents: "A neatly folded black athletic top and black leggings, a compact rolled warm-grey gym towel, a smoke-grey reusable water bottle with a matte black cap; all contents seated naturally below the rim"
+    consistency: "Identical dimensions, burgundy tone, seam placement, zipper construction, handles, strap, hardware and fabric texture across both panels"
+
+SCENE:
+  action: "Two static reference views presenting the exterior design and practical interior capacity"
+  props: "Folded black athletic outfit, rolled warm-grey towel, smoke-grey water bottle"
+  location: "Seamless medium neutral-grey studio cyclorama with a smooth grey floor and subtle tonal depth"
+
+LIGHT:
+  key: "Large diffused 5200K softbox from camera-left at 45 degrees, shaping the bag volume and fabric folds"
+  fill: "Broad frontal bounce creating a soft 2:1 contrast ratio"
+  rim: "Narrow rear strip light separating the burgundy silhouette from the grey background"
+  ambient: "Neutral studio illumination preserving accurate burgundy and black tones"
+  falloff: "Gradual soft falloff across the cyclorama"
+  exposure: "Balanced commercial exposure retaining detail in the deep burgundy fabric and black accessories"
+  motivated_by: "Professional studio softboxes and reflector panels positioned beyond the frame"
+  atmosphere: "Clear studio air with natural depth"
+  material_response: "Dense fabric produces soft diffuse reflections, matte hardware carries restrained edge highlights, zipper teeth and bottle receive narrow controlled specular accents"
+  integration: "Soft realistic contact shadows anchor both bags firmly to the floor"
+
+LOOK:
+  color_grading: "Neutral contemporary commercial palette, true dark burgundy, graphite-black details, medium-grey background, clean whites, controlled saturation"
+  authenticity: "Realistic fabric weave, stitching tension, zipper geometry, strap thickness, interior depth, natural folds and believable object scale; both panels depict one physically identical product"
+  style: "Medium-format digital product photography shot on Hasselblad H6D-100c with a 70mm lens at f/8, modern premium e-commerce campaign, crisp product separation, subtle sensor texture"`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.4s 电脑前的面部近景，屏幕光，神情疲惫。" },
+      { number: 2, description: "2.4–4.3s 俯拍双手在键盘上打字。" },
+      { number: 3, description: "4.3–7.1s 拎酒红色包推门走进公寓。" },
+      { number: 4, description: "7.1–8.6s 地面低机位，包落在地毯上。" },
+      { number: 5, description: "8.6–11.4s 高机位中景，她瘫坐在沙发上。" },
+      { number: 6, description: "11.4–13.5s 早晨厨房全景，她走到台面前。" },
+      { number: 7, description: "13.5–14.9s vitafusion 瓶身特写，手拧开盖。" },
+      { number: 8, description: "14.9–16.8s 俯拍微距，软糖倒在掌心。" },
+      { number: 9, description: "16.8–18.6s 侧脸近景，吃下软糖。" },
+      { number: 10, description: "18.6–20s 产品在台面定格（第一集结束）。" },
+      { number: 11, description: "20–22.5s 办公室专注近景。" },
+      { number: 12, description: "22.5–24.7s 俯拍打字，显示器上是图表。" },
+      { number: 13, description: "24.7–26.8s 拎包起身离开办公室。" },
+      { number: 14, description: "26.8–28.6s 地面低机位，包落地（呼应第一集）。" },
+      { number: 15, description: "28.6–30.8s 健身房，蹲下系鞋带。" },
+      { number: 16, description: "30.8–33.1s 健身房全景，她站在哑铃架前。" },
+      { number: 17, description: "33.1–35s 举哑铃中景。" },
+      { number: 18, description: "35–36.6s 跑步机上的脚步特写。" },
+      { number: 19, description: "36.6–38.8s 运动后近景，拿着毛巾微笑。" },
+      { number: 20, description: "38.8–40s 产品在厨房台面定格。" },
+    ],
+    constraints:
+      "5 张参考图（人物、产品、公寓、办公室、包）全程一致，每集 10 个硬切镜头，产品只在指定镜头出现。与成片不符：第一集 Shot 1 提示词 1.8s、成片约 2.4s，其余切点有约 ±0.5 秒偏差。说明：作者视频是左右拼接版（左 1122×2000 为 9:16 成片，右侧一列是 5 张参考图拼板带水印），demo 只裁左侧；参考图从拼板截出，非原图，包图只有约 374×210。PROMPT 7 正文末尾多了一行「📌 PROMPT 7: ) Animation prompt Episode 2」（作者复制残留），按原文保留。vitafusion 是真实品牌。",
+    video_prompt: {
+      title: "Vitamin gummies ad · Episode 1 + Episode 2 · 2×20s",
+      subtitle: "Seedance 2.5 · 9:16 · PROMPT 6 与 PROMPT 7 英文完整提示词（作者自回复长帖）",
+      content: `📌 PROMPT 6: Animation prompt Episode 1
+DRAINED → THE UNTOUCHED BAG → A SMALLER CHOICE → THE ROUTINE BEGINS
+
+SHOT STRUCTURE: exactly 10 shots, 20 seconds, 9:16 vertical; preserve the listed order, timing and compositions.
+
+EDITING LOCK:
+Every transition is a clean direct HARD CUT. Each shot starts immediately in its listed framing. Camera movement stays physically grounded inside each individual shot. The montage constantly changes shot size, horizontal angle and camera height: close-up → insert → wide → low detail → high medium → wide → close-up → macro → medium close-up → product hero.
+
+REFS:
+@image1 = product reference card for vitafusion Women's Multi. Controls the exact bottle proportions, translucent green plastic, green cap, label shape, colors, printed wording, berry graphics and the exact red and dark-purple gummy shapes. The two reference views depict one product in closed and open states. Each product shot contains exactly one physical bottle.
+
+@image2 = character reference card. The large left portrait is the sole source for her facial geometry, eyes, nose, lips, jaw, natural skin texture and exact center-parted chestnut-brown hair with warm caramel face-framing sections. The right full-body panel controls her tall proportions, white collared shirt with rolled sleeves, fitted black buttoned waistcoat, ivory high-waisted wide-leg trousers, cream pointed heels, structured cognac shoulder bag and delicate gold jewellery. Apply the exact face from the left portrait to the full-body woman in every shot; the grey full-body placeholder functions only as an identity placement marker.
+
+@image3 = apartment photo reference. Controls the architecture, blue lower cabinetry, dark walnut storage, pale stone island, amber pendant lights, rust leather sofa, wooden floor, entry door, oval mirror and brown entry bench.
+
+@image4 = office photo reference. Controls the bright modern open-plan office, wooden desks, large windows, black-framed glass meeting room, polished concrete floor, rust-colored office chairs and blue design board.
+
+@image5 = gym duffel reference card. Controls the exact dark-burgundy fabric body, rectangular proportions, black handles, black shoulder strap, zipper construction and realistic material weight. Use the closed version during this episode.
+
+ACTIVE REFERENCES:
+@image1 maximum product fidelity.
+@image2 maximum identity, hair, proportions and wardrobe fidelity.
+@image3 maximum apartment architecture fidelity.
+@image4 maximum office architecture fidelity.
+@image5 maximum gym-bag design fidelity.
+
+GLOBAL STYLE NOTES:
+- look: premium realistic live-action lifestyle commercial captured on ARRI Alexa 35, natural late-afternoon window light during the problem section and fresh directional morning sunlight during the product section; restrained commercial grade, natural contrast, gentle highlight roll-off, moderate saturation and subtle sensor texture
+- realism: facial skin retains pores, peach fuzz, fine under-eye texture and natural tonal variation; hair separates into individual strands; garments fold under gravity; footsteps carry body weight; bags compress at contact; hands move through anatomically natural joints; the product retains stable geometry and accurate printed packaging
+- setting: late-afternoon office, then the referenced apartment entry and living area, then the referenced kitchen the following morning; keyboard taps, office room tone, door latch, heel steps on wood, weighted fabric contact, cap threads, gummies landing in a palm and a final cap click
+- score: contemporary understated lifestyle-ad instrumental with a soft pulse, muted percussion, warm bass and light plucked synth; subdued during the exhausted evening, gaining a gentle rhythmic lift at the morning shift; music remains beneath the narration
+- voiceover identity lock — repeat this exact description in Episode 2: American English woman, approximately 30 years old, warm medium-low mezzo register, lightly textured timbre, close-microphone intimacy, natural breathing, clear articulation, stable pitch, conversational first-person testimonial delivery at approximately 150 words per minute
+- spoken performance: the voice begins within the first 0.2 seconds and flows continuously across the hard cuts as one natural thought
+
+CHARACTER:
+<WOMAN> corresponds to @image2. She is a tall realistic 30-year-old woman with the exact face from the large portrait, straight center-parted chestnut-brown hair with warm caramel face-framing sections, white shirt, fitted black waistcoat, ivory wide-leg trousers, cream pointed heels, cognac shoulder bag and gold jewellery. Her identity, hair, proportions and clothing remain identical throughout every shot.
+
+ACTING — WOMAN:
+scene direction: recognise that forcing a larger routine keeps failing, then choose one small action she can genuinely complete
+fuel: she is tired of watching plans for herself disappear at the end of each workday
+goal: rebuild a routine that leaves something for her own life after work
+obstacle: the workday has consumed her remaining capacity and the packed gym bag has become physical evidence of another promise slipping away
+tactic: she tests whether she can face one more demand, allows the untouched bag to answer honestly, then narrows her attention to a manageable breakfast ritual
+channel: finishing computer work, carrying and setting down the duffel, sitting on the sofa, then opening the bottle and taking the gummies
+gaze always engaged in the current task, natural blink cadence
+
+LOCATION MAP — OFFICE:
+- WEST WALL: floor-to-ceiling windows providing the single late-afternoon daylight source
+- NORTH ZONE: black-framed glass meeting room
+- FOREGROUND DESK: wooden workstation from @image4, woman seated facing her monitor
+- GYM BAG POSITION: @image5 zipped and resting on the polished floor directly under the outer side of her desk
+
+LOCATION MAP — APARTMENT:
+- NORTH WALL: dark walnut kitchen storage, blue lower cabinets, stone backsplash and sink
+- CENTER: large pale stone kitchen island
+- EAST ZONE: wooden entrance door, oval mirror and brown bench
+- WEST ZONE: rust leather sofa
+- EVENING BAG POSITION: she places @image5 directly in front of the brown entry bench; it remains there while she walks toward the sofa
+- MORNING PRODUCT POSITION: exactly one @image1 bottle stands at the center of the kitchen island
+
+SEQUENCE LIST:
+
+SHOT 1 (0.0–1.8s) HOOK — tight facial close-up
+- first_frame: the woman's face already fills roughly 65% of the vertical frame; monitor glow reflected softly in her eyes, office windows blurred behind her
+- camera: tight close-up, eye level, front three-quarter azimuth 35°, narrow short-telephoto field of view, very slow physical push-in of 8 cm
+- action_visual: she reads the final line on her monitor, reaches the end, blinks once and tries to refocus; her breath leaves through her nose while distant office room tone and soft keyboard activity continue
+- acting: her eyes finish the task, briefly test whether she has enough attention for another one, then return to the last line
+- dialog: VOICEOVER — "By the end of every workday,"
+- exit: her gaze drops from the monitor toward the keyboard
+(HARD CUT TO)
+
+SHOT 2 (1.8–4.2s) SETUP — overhead hand insert
+- camera: close insert above the desk, high angle tilted 55° down, opposite three-quarter azimuth 70°, normal field of view, locked composition
+- action_visual: her fingers type the final short command, press the key once and release; the monitor falls to a dark standby screen, her hand stays resting on the mouse for one extra beat before sliding away; a precise key tap and soft computer chime sit beneath the voice
+- acting: she completes the work exactly, then allows her hand to stop performing
+- reaction: the still hand reveals that the workday has taken more from her than the opening portrait initially showed
+- dialog: VOICEOVER — "I had nothing left for myself."
+- exit: the monitor reaches full black
+(HARD CUT TO)
+
+SHOT 3 (4.2–6.4s) RISING — apartment entry wide
+- SHIFT: warm late-afternoon sunlight from the apartment windows; quiet residential room tone, door latch and wooden-floor footsteps replace the office ambience while the instrumental bed continues
+- camera: full-body wide shot from inside the apartment, knee-height low angle, diagonal azimuth 45° toward the east entry, classic wide field of view, short backward track of 35 cm
+- action_visual: the door opens and the woman steps inside carrying the zipped burgundy gym duffel in her right hand while the cognac office bag remains on her left shoulder; her heel contacts the floor, weight transfers through her body, the duffel swings once with inertia, then she lowers it directly in front of the brown bench and its fabric base compresses against the floor with a soft weighted thump
+- acting: her eyes move from the bench to the duffel as if measuring whether she can still take it back out tonight
+- dialog: VOICEOVER — "My gym bag kept coming home"
+- exit: her fingers release the black handles and they fold naturally onto the bag
+(HARD CUT TO)
+
+SHOT 4 (6.4–7.9s) TWIST — floor-level bag detail
+- camera: close-up at floor height, slightly high vertical angle tilted 15° down, side azimuth 105°, standard field of view, static
+- action_visual: the zipped @image5 duffel fills the lower foreground; her cream heels cross behind it toward the west side of the apartment, each step carrying natural weight while the bag remains firmly settled in front of the bench
+- acting: her body chooses the sofa while her eyes steal one final backward look toward the duffel
+- reaction: what first appeared to be a plan for the gym is re-read as evidence of depleted capacity rather than indifference
+- dialog: VOICEOVER — "untouched."
+- exit: her final heel leaves the bag frame
+(HARD CUT TO)
+
+SHOT 5 (7.9–11.1s) LOW POINT — high medium shot
+- camera: medium shot from above the rust sofa, high angle tilted 30° down, frontal azimuth 0°, standard field of view, restrained handheld breathing that settles with her body
+- action_visual: she reaches the sofa, slides the cognac shoulder bag from her shoulder and sits; the cushion compresses under her weight, her forearms rest across her thighs and her breathing gradually lengthens; late sunlight forms a warm stripe across the wooden floor while the rest of the room remains naturally exposed
+- acting: she stops arguing with her own capacity and searches for one smaller promise she could realistically keep
+- dialog: VOICEOVER — "I needed one simple habit I could actually keep."
+- exit: she lifts her gaze toward the kitchen island
+(HARD CUT TO)
+
+SHOT 6 (11.1–12.9s) TURN — morning kitchen wide
+- SHIFT: fresh morning sunlight enters from the apartment windows, the instrumental pulse gains a light rhythmic lift; soft kitchen room tone and distant city ambience
+- camera: wide shot from the far corner of the kitchen, eye level, rear three-quarter azimuth 135°, classic wide field of view, smooth lateral track of 45 cm
+- action_visual: dressed in the exact same office outfit for a new morning, she walks toward the center island where one closed @image1 bottle is already visible; her stride is unhurried and physically natural, and she places her fingertips around the bottle
+- acting: her eyes settle on one finite action and stay with it
+- dialog: VOICEOVER — "So I added two"
+- exit: her fingers secure the bottle while the other hand reaches for the cap
+(HARD CUT TO)
+
+SHOT 7 (12.9–14.8s) SOLUTION — product close-up
+- camera: close-up at countertop height, slight low angle of 8°, frontal three-quarter azimuth 35°, short-telephoto field of view, locked composition
+- action_visual: one hand holds the exact green bottle firmly against the stone island while the other rotates the green cap through the real threaded resistance and lifts it clear; the exact label faces camera and remains sharply readable; plastic threads create a small tactile release sound
+- acting: her attention follows the thread until the cap releases, completing one clear step
+- dialog: VOICEOVER — "vitafusion Women's Multi gummies to breakfast—"
+- exit: the open bottle rises a few centimetres from the counter
+(HARD CUT TO)
+
+SHOT 8 (14.8–16.4s) SIGNATURE — overhead macro
+- camera: macro insert directly overhead, vertical 90° angle, opposite azimuth 180°, narrow macro field of view, static
+- action_visual: she tilts the open bottle above her cupped palm; exactly two gummies from @image1 fall separately under gravity, land with two soft taps and settle in the center of her hand; the bottle opening remains clean and unobstructed, and the gummy surfaces carry realistic translucent berry texture
+- acting: her eyes remain directed toward her palm, registering the exact two pieces
+- dialog: VOICEOVER — "a berry-flavored daily step"
+- exit: her palm closes slightly around the two gummies
+(HARD CUT TO)
+
+SHOT 9 (16.4–18.1s) COMMITMENT — profile medium close-up
+- camera: medium close-up, eye level, clean side profile azimuth 90°, standard field of view, gentle handheld breathing
+- action_visual: standing at the kitchen island, she brings the two gummies to her mouth, chews naturally and lowers her hand; her jaw movement is small and realistic, her shoulders release a fraction as she turns back toward the bottle
+- acting: she completes the manageable ritual and immediately returns her attention to closing the product
+- dialog: VOICEOVER — "that supports energy metabolism,"
+- exit: her hand reaches toward the cap on the stone surface
+(HARD CUT TO)
+
+SHOT 10 (18.1–20.0s) RESOLUTION — product hero
+- first_frame: exactly one @image1 bottle occupies the central 55% of the vertical frame on the pale stone island, exact label facing the lens; her hand enters from the upper third holding the matching green cap
+- camera: product close-up at countertop height, low vertical angle of 5°, frontal azimuth 0°, narrow short-telephoto field of view, slow 10 cm push-in that becomes fully locked during the final half-second
+- action_visual: staged directly from @image1; she places the cap squarely onto the bottle and rotates it until the threads tighten and finish with one tactile click, then her hand leaves the frame; morning sunlight creates realistic highlights through the translucent green plastic while the bottle remains stable and the printed label stays exact and legible
+- acting: the completed physical action carries the decision; the routine has begun through something she can finish
+- dialog: VOICEOVER — "bone and immune health."
+- audio: the final cap click lands clearly beneath the last word; music holds one warm resolved note while natural kitchen room tone remains present
+- exit: hold the closed bottle for the final half-second
+
+SPOKEN TRACK — EXACT WORDING:
+"By the end of every workday, I had nothing left for myself. My gym bag kept coming home untouched. I needed one simple habit I could actually keep. So I added two vitafusion Women's Multi gummies to breakfast—a berry-flavored daily step that supports energy metabolism, bone and immune health."
+
+PERFORMANCE AND FRAME CONTROL:
+The written voiceover is the complete spoken track. The woman remains silent on camera with naturally resting lips outside the chewing action. Every frame remains typography-free apart from the exact printed packaging inherited from @image1. Diegetic sounds and music remain beneath the narration. The final cap click completes Episode 1 as a fully finished action.
+
+📌 PROMPT 7: Animation prompt Episode 2
+CONSISTENCY → THE WORKDAY ENDS → THE BAG LEAVES WITH HER → SHE SHOWS UP → PERSONAL RECOMMENDATION
+
+SHOT STRUCTURE: exactly 10 shots, 20 seconds, 9:16 vertical; preserve the listed order, timing and compositions.
+
+EDITING LOCK:
+Every transition is a clean direct HARD CUT. Each shot starts immediately in its listed framing. Camera movement stays physically grounded inside each individual shot. The montage constantly changes shot size, horizontal angle and camera height: medium close-up → hand insert → wide → floor-level detail → macro → full-body wide → medium action → low close-up → intimate close-up → product hero.
+
+REFS:
+@image1 = product reference card for vitafusion Women's Multi. Controls the exact bottle proportions, translucent green plastic, green cap, label shape, colors, printed wording, berry graphics and the exact red and dark-purple gummy shapes. The two reference views depict one product in closed and open states. Each product shot contains exactly one physical bottle.
+
+@image2 = character reference card. The large left portrait is the sole source for her facial geometry, eyes, nose, lips, jaw, natural skin texture and exact center-parted chestnut-brown hair with warm caramel face-framing sections. The right full-body panel controls her tall proportions, white collared shirt with rolled sleeves, fitted black buttoned waistcoat, ivory high-waisted wide-leg trousers, cream pointed heels, structured cognac shoulder bag and delicate gold jewellery. Apply the exact face from the left portrait to the full-body woman in every shot; the grey full-body placeholder functions only as an identity placement marker.
+
+@image3 = apartment photo reference. Controls the architecture, blue lower cabinetry, dark walnut storage, pale stone island, amber pendant lights, rust leather sofa, wooden floor and warm natural light.
+
+@image4 = office photo reference. Controls the bright modern open-plan office, wooden desks, large windows, black-framed glass meeting room, polished concrete floor, rust-colored office chairs and blue design board.
+
+@image5 = gym duffel reference card. Controls the exact dark-burgundy fabric body, rectangular proportions, black handles, black shoulder strap, zipper construction, realistic material weight and the open interior containing a black athletic outfit, grey towel and dark water bottle.
+
+ACTIVE REFERENCES:
+@image1 maximum product fidelity.
+@image2 maximum identity, hair, proportions and office-wardrobe fidelity.
+@image3 maximum apartment architecture fidelity for the closing product shot.
+@image4 maximum office architecture fidelity.
+@image5 maximum gym-bag design fidelity.
+
+GLOBAL STYLE NOTES:
+- look: premium realistic live-action lifestyle commercial captured on ARRI Alexa 35, natural late-afternoon window light in the office, fresh warm daylight in the gym and directional morning-style sunlight for the final product hero; restrained commercial grade, natural contrast, gentle highlight roll-off, moderate saturation and subtle sensor texture
+- realism: facial skin retains pores, peach fuzz, fine under-eye texture and natural tonal variation; hair separates into individual strands; garments fold under gravity; feet transfer body weight naturally; the duffel responds to inertia; dumbbells carry believable resistance; breathing and perspiration develop gradually; the product retains stable geometry and accurate printed packaging
+- gym: bright contemporary fitness studio with tall windows, pale plaster walls, light oak slat panels, matte black steel equipment, neatly arranged dumbbells, warm-grey rubber flooring and natural afternoon daylight
+- setting and sound: late-afternoon office, then the bright gym, then the referenced apartment kitchen for the product hero; keyboard taps, chair wheels, fabric movement, duffel hardware, trainer laces, rubber flooring, controlled breathing, restrained dumbbell contact and quiet kitchen room tone
+- score: contemporary understated lifestyle-ad instrumental with a soft pulse, muted percussion, warm bass and light plucked synth; the rhythm gains a natural lift during the gym sequence and resolves warmly beneath the final recommendation
+- voiceover identity lock — EXACTLY THE SAME VOICE DESCRIPTION AS THE FIRST EPISODE: American English woman, approximately 30 years old, warm medium-low mezzo register, lightly textured timbre, close-microphone intimacy, natural breathing, clear articulation, stable pitch, conversational first-person testimonial delivery at approximately 150 words per minute
+- spoken performance: the voice begins within the first 0.2 seconds and flows continuously across all hard cuts as one natural personal statement
+
+CHARACTER:
+<WOMAN> corresponds to @image2. During the office shots she wears the exact white shirt, fitted black waistcoat, ivory wide-leg trousers, cream pointed heels, gold jewellery and cognac shoulder bag from the reference. During the gym shots she wears a fitted black longline athletic top with wide straps, matte high-waisted black leggings and clean white training shoes; her shoulder-length hair is gathered into a neat low ponytail. Her exact facial identity, body proportions and chestnut-brown hair with warm caramel sections remain consistent across both wardrobe states.
+
+ACTING — WOMAN:
+scene direction: turn the small routine into visible follow-through and reclaim the part of the day that used to disappear
+fuel: she wants the packed gym bag to become evidence of a promise kept
+goal: finish work and act on the plan while she still has capacity
+obstacle: the end of the workday is the familiar decision point where the gym plan previously collapsed
+tactic: completes the final work task cleanly, reaches for the duffel before hesitation grows, then converts intention into a sequence of physical actions
+channel: saving her work, standing, lifting the bag, tying her trainers, exercising and recovering
+gaze always engaged in the current task, natural blink cadence
+
+LOCATION MAP — OFFICE:
+- WEST WALL: floor-to-ceiling windows providing the late-afternoon daylight
+- NORTH ZONE: black-framed glass meeting room
+- FOREGROUND DESK: wooden workstation from @image4, woman seated facing her monitor
+- GYM BAG POSITION: closed @image5 duffel resting directly under the outer side of her desk
+- COGNAC BAG POSITION: hanging from the back of her office chair
+
+LOCATION MAP — GYM:
+- SOUTH WALL: tall daylight windows
+- NORTH WALL: light oak panels and a long dumbbell rack
+- CENTER: open workout floor with warm-grey rubber surface
+- EAST ZONE: low changing bench
+- GYM BAG POSITION: open @image5 duffel firmly resting on the floor directly against the changing bench
+
+LOCATION MAP — FINAL PRODUCT:
+- exact @image3 kitchen fills the frame
+- exactly one closed @image1 bottle stands at the center of the pale stone island
+- one red gummy and one dark-purple gummy rest flat on the stone, six centimetres to the right of the bottle
+
+SEQUENCE LIST:
+
+SHOT 1 (0.0–1.8s) HOOK — focused office close-up
+- first_frame: the woman already fills the central 60% of the vertical frame at her desk; her exact face is clearly visible in three-quarter profile, monitor edge in the foreground and daylight windows softly separated behind her
+- camera: medium close-up, eye level, front three-quarter azimuth 35°, standard field of view, slow physical push-in of 8 cm
+- action_visual: she studies the monitor, compares two visible graphic elements, makes one precise mouse movement and immediately registers the result; her breathing stays even and her posture remains supported rather than collapsed
+- acting: her eyes test the completed work, confirm it is correct and move directly toward finishing the task
+- dialog: VOICEOVER — "With time, that small"
+- exit: her index finger leaves the mouse and moves toward the keyboard
+(HARD CUT TO)
+
+SHOT 2 (1.8–3.9s) SETUP — overhead hand insert
+- camera: close insert above the desk, high angle tilted 55° down, opposite three-quarter azimuth 70°, normal field of view, locked composition
+- action_visual: her fingers press the final key command; the design file confirms completion through a small clean interface movement, then her hand releases naturally from the keyboard; the key tap lands clearly beneath the narration
+- acting: she checks the monitor response and accepts the task as finished instead of searching for another correction
+- dialog: VOICEOVER — "morning habit became easy to keep."
+- exit: her chair begins rolling backward from the desk
+(HARD CUT TO)
+
+SHOT 3 (3.9–5.8s) RISING — office departure wide
+- camera: full-body wide shot, chest-height vertical angle, diagonal azimuth 45° across the foreground desk, classic wide field of view, restrained handheld breathing
+- action_visual: the woman rolls the chair backward, stands with a natural heel-to-toe weight transfer and lifts the cognac shoulder-bag strap from the chair onto her left shoulder in one continuous action; the zipped burgundy duffel remains clearly visible under the desk
+- acting: her eyes leave the monitor and lock onto the duffel before another task can reclaim her attention
+- dialog: VOICEOVER — "By the end of the day,"
+- exit: her torso lowers slightly as her right hand reaches toward the black duffel handles
+(HARD CUT TO)
+
+SHOT 4 (5.8–7.7s) CALLBACK — floor-level bag detail
+- camera: close-up at floor height, slight low angle of 8°, side azimuth 105°, standard field of view, short lateral track of 25 cm
+- action_visual: her right hand closes firmly around both black handles of @image5; the fabric tightens around the handle stitching, the duffel base lifts from the polished concrete with believable weight, the shoulder strap drags for a fraction of a second and then clears the floor as she steps toward the office exit
+- acting: her gaze stays directed toward the exit while her hand commits fully to the weight of the bag
+- reaction: the familiar duffel changes meaning from evidence of an abandoned plan into evidence of follow-through
+- dialog: VOICEOVER — "I finally had something left for myself."
+- exit: the bottom of the duffel rises through the upper edge of the frame
+(HARD CUT TO)
+
+SHOT 5 (7.7–9.4s) COMMITMENT — gym macro
+- SHIFT: bright modern gym with warm daylight through tall windows; office room tone gives way to soft ventilation, distant equipment movement and shoes contacting rubber flooring while the instrumental pulse gains energy
+- camera: macro close-up at bench height, high angle tilted 40° down, rear three-quarter azimuth 145°, narrow field of view, static
+- action_visual: now wearing the exact black athletic outfit, she pulls the white trainer laces evenly, crosses them, tightens one compact knot and releases; the open burgundy duffel rests firmly against the bench behind her with the grey towel and dark water bottle visible inside
+- acting: her eyes stay on the knot until it is secure, turning the decision into a completed physical step
+- dialog: VOICEOVER — "I could finish work,"
+- exit: her hands leave the tied shoe and press once against her thigh as she stands
+(HARD CUT TO)
+
+SHOT 6 (9.4–11.3s) RISING — full-body gym wide
+- camera: full-body wide shot from the open workout floor, low angle at knee height, frontal three-quarter azimuth 25°, classic wide field of view, smooth backward track of 45 cm
+- action_visual: she walks from the east bench toward the north dumbbell rack with a grounded athletic stride, stops directly in front of it and lifts two moderate black dumbbells; her wrists settle under the weight and her shoulders engage naturally
+- acting: her eyes choose the correct pair, confirm the grip and move toward the open training space
+- dialog: VOICEOVER — "grab my bag,"
+- exit: both dumbbells clear the rack at the same height
+(HARD CUT TO)
+
+SHOT 7 (11.3–13.3s) CLIMAX — controlled exercise medium shot
+- camera: medium full-body shot, slightly low vertical angle of 12°, side three-quarter azimuth 70°, standard field of view, gentle handheld movement synchronized with her breathing
+- action_visual: standing on the center floor, she performs one controlled dumbbell shoulder-press repetition: knees softly unlocked, core stable, elbows travel upward, weights slow near the top and return with real resistance; her ponytail shifts subtly as the weights settle
+- acting: her eyes stay fixed on her own alignment in the wall mirror, checking the movement rather than performing for the camera
+- dialog: VOICEOVER — "and still show up."
+- exit: the dumbbells reach shoulder height and settle
+(HARD CUT TO)
+
+SHOT 8 (13.3–15.2s) RESULT — low running detail
+- camera: close-up at treadmill-belt height, low vertical angle of 5°, opposite side azimuth 120°, narrow field of view, parallel tracking with her stride
+- action_visual: her white trainers alternate through realistic treadmill foot strikes: heel contact, full weight transfer and toe push-off; black leggings stretch naturally over the moving knee, the belt carries each foot backward and her cadence remains steady
+- acting: her attention stays forward on maintaining the rhythm
+- dialog: VOICEOVER — "If you want a daily vitamin"
+- exit: one foot completes its push-off and rises from the belt
+(HARD CUT TO)
+
+SHOT 9 (15.2–17.3s) RESOLUTION — post-workout intimate close-up
+- camera: tight medium close-up at eye level, frontal azimuth 0°, short-telephoto field of view, very slow physical push-in of 7 cm
+- action_visual: standing beside the gym bench, she presses the grey towel lightly against the back of her neck, lowers it and takes one natural recovering breath; fine perspiration remains along her hairline and collarbone, her pulse gradually settles and a small smile builds as she looks toward the open burgundy bag
+- acting: her eyes register the bag as proof that she followed through, then return to the task of packing
+- reaction: the woman is now read through consistency and action rather than a sudden burst of motivation
+- dialog: VOICEOVER — "that fits into real life,"
+- exit: her hand lowers the towel toward the open duffel
+(HARD CUT TO)
+
+SHOT 10 (17.3–20.0s) PRODUCT HERO — recommendation
+- SHIFT: the exact @image3 kitchen now fills the entire frame, with warm directional sunlight crossing the pale stone island and soft amber reflections from the pendant lights
+- first_frame: exactly one closed @image1 bottle occupies the central 55% of the vertical frame; the exact label faces the lens, one red and one dark-purple gummy rest flat six centimetres to its right, and the kitchen falls into natural optical softness behind it
+- camera: product close-up at countertop height, low vertical angle of 5°, frontal azimuth 0°, narrow short-telephoto field of view, slow physical push-in of 12 cm that becomes fully locked for the final half-second
+- action_visual: staged directly from @image1; the translucent green bottle remains firmly planted on the stone, the green cap sits squarely on its threads, the exact label and berry graphics stay stable and legible, and sunlight produces realistic highlights through the plastic and gummy surfaces
+- dialog: VOICEOVER — "I'd recommend vitafusion Women's Multi."
+- audio: the brand name lands clearly over the warm musical resolution; one soft final pulse and natural kitchen room tone remain through the last frame
+- exit: hold the exact product hero for the final half-second
+
+SPOKEN TRACK — EXACT WORDING:
+"With time, that small morning habit became easy to keep. By the end of the day, I finally had something left for myself. I could finish work, grab my bag, and still show up. If you want a daily vitamin that fits into real life, I'd recommend vitafusion Women's Multi."
+
+PERFORMANCE AND FRAME CONTROL:
+The written voiceover is the complete spoken track. The woman remains silent on camera with naturally resting lips. Every frame remains typography-free apart from the exact printed packaging inherited from @image1. Diegetic sounds and music remain beneath the narration. The final frame holds the exact product, exact label and direct personal recommendation.📌 PROMPT 7: ) Animation prompt Episode 2`,
+    },
+  },
+  // 查重别名(提示词自回复帖：ANIMATION PROMPT): https://x.com/ivanka_humeniuk/status/2098782281884172344
+  {
+    id: "ivanka-country-farm-morning-vlog-seedance-2-5",
+    title: "乡村农场晨间 vlog · 男主 + 狗 · Seedance 2.5",
+    subtitle: "X · @ivanka_humeniuk · Seedream 5.0 Pro + Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "乡村男生和狗的农场早晨：起床、煎蛋、喂狗、马厩、劈柴到骑马自拍，Seedance 2.5 写 12 镜。",
+    video: "/tutorials/ivanka-country-farm-morning-vlog-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/ivanka-country-farm-morning-vlog-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "写实生活",
+    shots: 12,
+    references: 0,
+    model: "Seedream 5.0 Pro + Seedance 2.5",
+    style: "乡村农舍自然光 · 前景虚化的固定机位 · 暖色晨光",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ivanka_humeniuk/status/2098782275940823331",
+    sourceAuthor: "@ivanka_humeniuk",
+    sourcePlatform: "X",
+    sourceImpressions: 9677,
+    sourceStats: { asOf: "2026-09-27", likes: 193, reposts: 10, bookmarks: 119 },
+    formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "起床 → 厨房与喂狗 → 洗漱穿衣 → 马厩与农活 → 骑马自拍",
+      opening: "第 0 秒从床头柜的水杯后面看过去，他和一只灰白长毛狗挤在床上醒来——前景虚化的「放在桌上的相机」视角。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4.3s 平底锅煎蛋；约 6.7s 狗碗倒狗粮；约 8.8s 餐桌吃早饭；约 11.3s 石水槽洗脸；约 13.9s 卧室穿衬衫。", at: 4.3 },
+        { title: "场景怎么换", text: "约 16.4s 门口靴子特写；约 18.2s 马厩过道；约 21s 马场门边。", at: 18.2 },
+        { title: "结尾怎么收", text: "约 23.6s 劈柴；约 26s 高草丛里骑马逆光；约 27.5s 起骑在马上伸臂自拍。", at: 27.5 },
+      ],
+      copyThis: "每镜都写一个「前景虚化的具体物件」（水杯、罐子、狗碗、马鞍），让固定机位也有纵深和 vlog 感。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 乡村 vlog",
+      "16:9 横屏",
+      "Seedream 5.0 Pro + Seedance 2.5",
+      "12 镜",
+      "作者仅公开动画提示词",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备男主和狗的参考图",
+        description:
+          "作者用 Seedream 5.0 Pro 出了男主和狗的参考图（原帖视频下半可见），但没有公开这两张图的提示词，本页不收录参考图。",
+      },
+      {
+        number: 2,
+        title: "第二步：写 12 镜 30 秒动画",
+        description:
+          "作者公开的 ANIMATION PROMPT：每镜写时间段、镜头角度（如 47°、29°）、前景虚化物件和动作——起床、煎蛋、喂狗、吃早饭、洗脸、穿衣、穿靴、马厩、马场、劈柴、骑马、自拍。",
+      },
+      {
+        number: 3,
+        title: "第三步：用 Seedance 2.5 生成",
+        description:
+          "把两张参考图和动画提示词一起喂给 Seedance 2.5，一次生成 30 秒 16:9。",
+      },
+    ],
+    references_detail: [
+
+    ],
+    storyboard: [
+      { number: 1, description: "0–4.3s 床头柜水杯前景，他和灰白长毛狗在床上醒来。" },
+      { number: 2, description: "4.3–6.7s 厨房台面，平底锅煎蛋，他赤膊站在灶前。" },
+      { number: 3, description: "6.7–8.8s 厨房地面低机位，狗粮倒进金属碗，狗凑过来。" },
+      { number: 4, description: "8.8–11.3s 木餐桌，他站着吃早饭。" },
+      { number: 5, description: "11.3–13.9s 石水槽前弯腰洗脸。" },
+      { number: 6, description: "13.9–16.4s 卧室角落，他穿上浅色衬衫。" },
+      { number: 7, description: "16.4–18.2s 门口瓷砖地面，靴子特写。" },
+      { number: 8, description: "18.2–21s 马厩过道，马鞍前景，他牵马。" },
+      { number: 9, description: "21–23.6s 马场门边低机位，远处的马与狗。" },
+      { number: 10, description: "23.6–26s 劈柴，木柴堆在前景。" },
+      { number: 11, description: "26–27.5s 高草丛低机位，他骑马经过逆光。" },
+      { number: 12, description: "27.5–30s 骑在马上伸臂自拍，微笑。" },
+    ],
+    constraints:
+      "男主和狗全程与参考图一致；每镜固定机位、前景有虚化物件，最后一镜才是手持自拍。与成片不符：成片切点与提示词有约 ±0.5 秒偏差，约 25–27s 劈柴与骑马之间有额外短切。说明：作者视频是上下拼接版（上半为成片，下半为男主 + 狗参考图拼板带水印），demo 只裁上半；男主和狗的参考图作者没有公开提示词，本页 0 张参考图。成片里男主起床、煎蛋时赤膊只穿内裤（成年男性，非露骨）。",
+    video_prompt: {
+      title: "Country farm morning · Animation · 12 shots / 30s",
+      subtitle: "Seedance 2.5 · 16:9 · 作者自回复长帖中的英文完整动画提示词",
+      content: `📌 ANIMATION PROMPT:
+A 30-second 16:9 cinematic self-shot farm vlog in a Provençal stone farmhouse and its yard, one continuous golden morning, natural location sound dominant.
+[CHARACTER]
+@Image 1  is his exact identity in every shot — face, warm dark-hazel eyes, chestnut-brown hair, short even stubble, tall athletic build with broad shoulders and defined arms. Shots 1–5 he wears fitted charcoal-grey cotton boxer shorts only, bare torso and bare feet. Shots 6–7 he dresses into the styling from @Image 2 . Shots 8–12 he wears the exact full styling from @Image 2  — off-white pinstriped work shirt with both sleeves rolled firmly above the elbow, khaki canvas Y-back suspenders, high-waisted olive-brown pleated trousers with turned-up cuffs, worn brown leather lace-up boots. Same face, same hair, same stubble in every shot. @Image 3  is the dog in every shot where the dog appears — one blue merle border collie with heterochromia, left eye ice-blue, right eye amber, left ear semi-erect, right ear tipped forward, identical merle patch map throughout.
+[REALISM]
+True photographic realism throughout: this is captured live-action footage of a real living man and real animals. Skin shows visible pores, fine vellus hair, natural micro-texture and real subsurface light scatter, a faint sheen of morning warmth on the face. Hair and stubble resolve as thousands of individual strands with flyaways catching the light. The dog's coat and the horses' hides read as true fur and hide — individual guard hairs, whisker detail, muscle moving under the skin. Fabrics show real weave and wrinkle — washed linen, soft cotton, canvas webbing, worn leather each with its own true material response, alongside cast iron, stone, hardwood, water and drifting dust responding to light with physically accurate behavior. Faces hold natural involuntary micro-movement: blinks at irregular intervals, tiny eye saccades, breathing visible in the shoulders.
+[STYLE AND CAMERA]
+The image carries an early-2000s home-video warmth over the modern sensor: faded sunlit colors, gently clipped highlights, slightly uneven white balance between shots, mild exposure pumping when light changes, brief autofocus hunting, lens breathing. Warm old-money grade: muted rich creams plus terracotta, olive and warm straw-gold as the location tones, lifted soft blacks, low-contrast curve, highlights rolling into gentle bloom. Fixed FOV inside every shot: 47° normal, 29° for close details, 84° wide for the selfie. Resting shots sit perfectly still; movement lives only in the handheld selfie.
+[LOCATION AND LIGHT]
+A Provençal stone farmhouse: bedroom with a low wooden bed, rumpled cream linen bedding, tall wooden shutters half-open, a bedside chair; rustic kitchen with a gas stove, cast-iron skillet, butter dish, stoneware plate, long wooden table with a bread board, a metal dog bowl and a paper sack of kibble by the wall, a stone sink with a brass tap under a small window; by the front door a bedside chair holding the folded shirt and suspenders, leather boots on the tile; outside a stone courtyard, a timber stable aisle with two saddles on a rail and hay bales, dust motes drifting in light shafts, a rail-fenced paddock with a wooden gate, two bay horses, a chopping block with an axe and a scatter of split logs, a dirt track running into tall golden grass and rolling fields. Low warm morning sun rakes through shutters and doorways, deepening to rich golden backlight outside. Surfaces stay clean of lettering.
+[CONTROLLED MULTI-SHOT SEQUENCE]
+Shot 1, 0:00–4.5, 47°. Resting view from the bedside dresser, a ceramic water cup soft in the near foreground: he sleeps on his side in the linen, bare-shouldered, the dog curled tight against his chest. The dog stirs first, lifts its head, licks his jaw twice — he scrunches his face, squints into the light, breaks into a sleepy closed-lip smile and rubs the dog's neck. Hard cut.
+Shot 2, 4.5–6.5, 29°. Resting view on the kitchen counter, a jar of wooden utensils soft in the near foreground: two eggs slide from his hand into the smoking cast-iron skillet, butter spitting, whites blistering at the edges; his bare torso and grey boxers soft behind the pan. Hard cut.
+Shot 3, 6.5–8.5, 47°. Resting view low on the kitchen floor, the metal bowl large in the near foreground: kibble rattles down into the bowl from the tipped sack, the dog dancing tight circles, claws ticking the tile, then diving in as he stands over it barefoot. Hard cut.
+Shot 4, 8.5–10.5, 47°. Resting view across the wooden table, the bread board soft in the near foreground: he eats standing, fork in hand, chews, then picks a small piece from the plate with his free hand and tosses it sideways in an easy arc — the dog leaves the floor and snaps it clean out of the air. Hard cut.
+Shot 5, 10.5–12.5, 29°. Resting view on the windowsill above the stone sink, a ceramic soap dish soft in the near foreground: he bends into a double handful of cold water, splashes his face hard, droplets flying in the window light, then slicks his wet hair back with both hands, water running down his jaw. Hard cut.
+Shot 6, 12.5–14.5, 47°. Resting view from the bedroom corner, the chair back soft in the near foreground: he stands with his bare muscular back to the lens, shoulder blades and the line of his spine catching the window light; the pinstriped shirt swings over his bare shoulders and settles across the broad back; he rolls each sleeve above the elbow in two quick folds, then pulls both suspender straps up over his shoulders — the leather tabs snap taut. Hard cut.
+Shot 7, 14.5–16.0, 29°. Resting view on the tile floor by the front door, the boot toes large in the near foreground: his foot drives into the leather boot, laces whipped tight in one pull; beside the door the dog already stands waiting, tail sweeping. Hard cut.
+Shot 8, 16.0–18.5, 47°. Resting view inside the stable aisle, a saddle on its rail soft in the near foreground: he walks through the light shafts and drifting dust with the dog at his heel, trails one hand along a horse's neck as both bay horses shift and blow in their stalls. Hard cut.
+Shot 9, 18.5–21.5, 47°. Resting view at ground level beside the paddock gate, a fence post edge soft in the near foreground: the gate swings, he walks both horses through into the paddock, the dog sweeping low half-circles behind their heels; the horses break into a trot across the grass, he latches the gate. Hard cut.
+Shot 10, 21.5–24.0, 47°. Resting view level with the chopping block, split logs stacked soft in the near foreground: the axe rises against the sun and drops in one clean strike — the log cracks and both halves tumble off the block; he sets the next log, forearms flexing under the rolled sleeves. Hard cut.
+Shot 11, 24.0–27.5, 47°. Resting view low in the tall grass by the dirt track, sunlit grass blades soft in the near foreground: he gallops past left to right on the bay horse, body low and moving with the stride, the dog sprinting flat-out alongside, hooves throwing dust that glows in the golden backlight. Hard cut.
+Shot 12, 27.5–30.0, 84°. Handheld selfie at a walking horseback pace, his raised arm reading at the lower corner of the frame: breathless, grinning, hair ruffled, the horse's ears and the golden fields behind him, the dog trotting into frame below; he gives the lens a loose two-finger salute off his brow and a single nod, then looks off to the horizon, still smiling.
+[SELF-SHOT VLOG LOGIC]
+Every resting shot proves its placement with its own named foreground: the ceramic cup on the dresser, the utensil jar on the counter, the metal bowl on the floor, the bread board on the table, the soap dish on the sill, the chair back in the bedroom, the boot toes by the door, the saddle in the aisle, the fence post at the gate, the split logs at the block, the grass blades by the track. He behaves like a real man alone with his dog: rubs sleep from one eye in Shot 1, blows across the fork before the first bite in Shot 4, shakes water off his hands once in Shot 5, pats the horse's neck twice before latching the gate in Shot 9.
+[IDENTITY AND PROP CONTINUITY]
+The dog exists in Shots 1, 3, 4, 7, 8, 9, 11, 12 — same merle patch map, same mismatched eyes, same ear set every time. The cast-iron skillet exists only in Shot 2, the metal bowl only in Shot 3, the fork, plate and bread board only in Shot 4, the axe and split logs only in Shot 10. The two bay horses exist in Shots 8, 9, 11, 12 — the ridden horse in 11 and 12 is the same darker bay. The boxer shorts exist in Shots 1–5, the full work styling from @Image 2  stays identical item for item across Shots 8–12, sleeves staying rolled above the elbow throughout.
+[MOTION AND ENVIRONMENTAL PHYSICS]
+The linen sheet slides off his shoulder half a beat behind his movement. Kibble bounces and scatters with true weight; the dog's leap in Shot 4 lands with a compressed front-leg recovery. Water droplets in Shot 5 arc and fall under gravity, catching the window light. The suspender straps stretch and snap back with elastic tension. Boot heels strike tile and gravel with weight transfer through the whole body. The horses move at a true trot and a true three-beat gallop, mane and tail streaming, dust hanging in the backlight after they pass. The axe carries real follow-through, the log halves tumbling with hardwood weight. In the selfie the frame carries a walking horseback sway and one small horizon correction.
+[AUDIO]
+A warm unhurried acoustic folk instrumental — fingerpicked guitar with a soft upright-bass pulse — sits low in the mix under the whole video, lifting gently through the gallop and settling under the selfie. Natural location sound rides above it from the first frame to the last: linen rustle and the dog's snuffling licks, birdsong through the shutters; butter spitting in the skillet; kibble rattling into metal and eager crunching; the wet snap of the dog's jaws on the caught scrap; water splashing on stone and dripping into the sink; fabric sliding over skin and the double snap of suspender tabs; boot thuds on tile; horses blowing and shifting in straw, leather creak; the gate hinge, hooves drumming onto grass; the sharp crack of the axe and clatter of falling halves; the rolling three-beat gallop with the dog's fast panting; then wind, his easy breath and the soft four-beat walk under the selfie.`,
+    },
+  },
+  // 查重别名(提示词自回复帖：PROMPT 1–4 人物/服装/两张产品图): https://x.com/ivanka_humeniuk/status/2093535876978458791
+  // 查重别名(提示词自回复帖：PROMPT 5 动画): https://x.com/ivanka_humeniuk/status/2093535883790041224
+  {
+    id: "ivanka-90s-supermodel-beauty-ad-seedance-2-5",
+    title: "90 年代超模美妆广告 · GRWM 30 镜变装 · Seedance 2.5",
+    subtitle: "X · @ivanka_humeniuk · Seedream 5.0 Pro + Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "1992 年超模 GRWM 美妆广告：人物、服装、眼影盘、唇釉 4 图锁定，Seedance 2.5 一秒一镜共30镜",
+    video: "/tutorials/ivanka-90s-supermodel-beauty-ad-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/ivanka-90s-supermodel-beauty-ad-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "时尚广告",
+    shots: 30,
+    references: 4,
+    model: "Seedream 5.0 Pro + Seedance 2.5",
+    style: "1992 年卧室 · 冷蓝窗光 + 钨丝壁灯 · Portra 400 胶片颗粒",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ivanka_humeniuk/status/2093535869680472305",
+    sourceAuthor: "@ivanka_humeniuk",
+    sourcePlatform: "X",
+    sourceImpressions: 8941,
+    sourceStats: { asOf: "2026-09-27", likes: 206, reposts: 13, bookmarks: 211 },
+    formats: ["产品广告", "变装·换装"],
+    hook: {
+      structure: "仪式感开场 → 上妆 → 金属配饰 → 换装 → 全身亮相",
+      opening: "第 0 秒俯拍床上的复古化妆品托盘、黑色电话和杂志，红指甲的手伸进来——物件先于人出场。",
+      openingAt: 0,
+      beats: [
+        { title: "上妆怎么推进", text: "约 5s 起一秒一镜：修容、腮红、唇线、@Image4 唇釉、@Image3 眼影盘、睫毛膏，特写和俯拍交替。", at: 5 },
+        { title: "变装怎么切", text: "约 15s 戴金耳夹、喷雾；约 19s 白 T 掉到地毯上，接皮夹克、长靴、手包三个拎起的动作。", at: 19 },
+        { title: "结尾怎么收", text: "约 24s 起床边全身亮相完整造型，最后切中近景转身离开。", at: 24 },
+      ],
+      copyThis: "30 秒写死 30 个镜头、每镜 0.6–1.5 秒，用「手拿起一件东西」的动作把镜头串起来；两个产品各给一个招牌特写。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 美妆广告 GRWM",
+      "16:9 横屏",
+      "Seedream 5.0 Pro + Seedance 2.5",
+      "4 张锁定参考图",
+      "30 镜快切",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：出人物卡和服装图",
+        description:
+          "PROMPT 1 人物卡（短卷发女生正脸 + 白 T 红短裤全身）；PROMPT 2 服装平铺图（皮夹克、高领、人字纹短裙、酒红手套和长靴、金耳夹）。",
+      },
+      {
+        number: 2,
+        title: "第二步：出两张产品图",
+        description:
+          "PROMPT 3 眼影盘产品图（黑色绗缝盒、金色标志）；PROMPT 4 红色唇釉产品图。两款产品都是真实品牌外观（YSL 眼影盘、Fenty Beauty 唇釉）。",
+      },
+      {
+        number: 3,
+        title: "第三步：写 30 镜动画",
+        description:
+          "PROMPT 5：30 镜 30 秒，每镜写时间段、景别机位、动作和转场方式（HARD CUT / MATCH CUT / CUT ON ACTION），分 仪式 → 上妆 → 金属 → 变装 → 亮相 五段。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ivanka-90s-character-map",
+        number: "1",
+        title: "@Image1 · 人物卡（Character Map）",
+        subtitle: "短卷发女生正脸 + 白 T 红短裤全身；截自原帖视频下半拼板，非原图、分辨率有限",
+        image: "/tutorials/ivanka-90s-supermodel-beauty-ad-seedance-2-5/refs/01-character-map.jpg",
+        prompt: `Render a horizontal 16:9 character reference card with exactly two photographs of the same adult woman on one light cool-grey seamless studio background.
+SHEET:
+  layout: two-panel image-only card; close portrait on the left, full-body view on the right; balanced spacing, clean continuous background
+REFERENCES:
+  image_1: exact facial identity and hairstyle reference; preserve her recognizable face, brunette colouring, long oval shape, high cheekbones, refined straight nose, tapered jaw, full lips with a defined Cupid's bow and elegant neck; eyes fully visible
+  image_2: wardrobe reference only; preserve the cropped white T-shirt and very short high-waisted red shorts
+MEDIUM:
+  stock: 35mm fashion photograph on Kodak Ektachrome 100
+  artifact: fine uniform film grain, restrained highlight halation
+  note: both panels look like frames of the same living actress photographed during one early-1990s studio session
+SUBJECTS:
+  subject_1:
+    description: tall adult woman, approximately 25 years old and 175 cm; slender hourglass figure, long lean legs, very narrow waist, full naturally rounded bust, softly rounded hips, lean arms. Use Image 1 as the exact facial identity reference. Dark chocolate chin-length voluminous bob, deep side part, strong root lift, thick rounded sides, curled-out ends at jaw level, individual strands and fine flyaways. Fresh bare face with natural brows, clean eyelids, individual lashes, warm brown eyes and natural muted lips. High detail, bright skin, natural skin texture and realistic gloss, natural glow, skin grain, soft matte finish, every pore and fine line retained. Fine peach fuzz, slight tonal variation, faint capillaries beside the nose, delicate under-eye tone, tiny lower-eyelid folds, moist eye waterline and a smooth uninterrupted skin surface
+    asymmetry_mapping: left brow sits fractionally lower, right eye opens slightly wider, right mouth corner rests subtly higher
+    wardrobe: fitted white cropped cotton baby T-shirt with cap sleeves, crew neckline, hem above the navel and a small burgundy retro sports-car graphic; opaque cherry-red stretch shorts, extremely high rise, skin-tight fit, ultra-short brief-cut legs and secure full seat coverage; bare feet
+    mood: eyelids softly relaxed, lips naturally closed, jaw loose, shoulders lowered, direct gaze into the lens
+SCENE:
+  backdrop: light cool-grey #DDE0E3 seamless ground with soft contact shadow beneath the full-body figure
+LIGHT:
+  key: large diffused 5200K source from front-upper-left, soft-edged
+  fill: broad frontal bounce at 2:1, preserving facial volume
+  rim: gentle cool edge along the brunette bob and shoulders
+  integration: natural catchlights in both eyes, pore-level skin specular, soft ground contact
+  note: one continuous lighting recipe across both panels
+LOOK:
+  color_grading: early-1990s fashion-film palette with cool steel-grey background, blue-violet shadows, warm peach skin, deep brunette hair and saturated cherry red; filmic midtones and gently rolling highlights
+  authenticity: 85mm at f/5.6, natural facial compression, undistorted body proportions, face and complete outfit clearly resolved
+  style: 35mm film still, Kodak Ektachrome 100, fine natural film grain, early-1990s European fashion casting photography
+FIGURE_VIEWS:
+  close_portrait: frontal close view from upper chest to head, face large in frame, hair silhouette fully visible, direct eye contact
+  full_body: subtle 10° front rotation, complete figure from head to bare feet, arms relaxed, one knee softly released, weight balanced through one hip
+CONSISTENCY_LOCK: both panels show the same woman from Image 1 with identical facial geometry, eyes, hairline, bob shape, micro-asymmetry, body proportions, bare-face state, wardrobe, skin tone, light, film stock and colour treatment`,
+      },
+      {
+        id: "ivanka-90s-outfit-map",
+        number: "2",
+        title: "@Image2 · 服装图（Outfit Map）",
+        subtitle: "皮夹克、高领、裙、酒红手套和长靴、金耳夹平铺；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-90s-supermodel-beauty-ad-seedance-2-5/refs/02-outfit-map.jpg",
+        prompt: `SHOT:
+  shot_size: Wide overhead wardrobe flat lay, every item fully visible on one plane with clean spacing
+  camera_angle: Bird's-eye at a true 90° angle
+  azimuth: Frontal 0° alignment of the complete outfit
+  subject_placement: Centred editorial grid from accessories at the top to boots at the bottom, balanced negative space around every piece
+  focal_anchor: Deep focus across leather grain, herringbone weave, gold hardware and rectangular sunglass frames
+SUBJECTS:
+  subject_1:
+    description: Cropped black leather biker jacket from @image1 — strong structured shoulders, broad pointed notch lapels, asymmetric silver zipper, diagonal zipped chest pocket, fitted waist, softly ruched sleeves, round gold hardware near the hem, supple lambskin with natural creases
+    placement: Upper centre, front opened flat, sleeves angled outward
+  subject_2:
+    description: Fitted black fine-gauge knit turtleneck from @image1 — tall folded collar, long slim sleeves, close body shape, dense smooth ribbing, matte black wool
+    placement: Centre-left with sleeves extended
+  subject_3:
+    description: High-waisted warm taupe mini skirt from @image1 — beige-grey herringbone wool, sharply tailored narrow waist, fitted hip line, asymmetric wrap front, diagonal overlap and short angular hem
+    placement: Lower centre with the complete silhouette visible
+  subject_4:
+    description: Deep oxblood leather belt from @image1 — medium width, polished edges, sculptural gold buckle with interlocking geometric forms, short decorative gold chain, realistic leather pores
+    placement: Horizontal between the turtleneck and skirt
+  subject_5:
+    description: Compact medium-sized horizontal rectangular sunglasses copied precisely from @image1 — low lens height, approximately 2:1 width-to-height ratio, straight upper edge, softly rounded outer corners, moderately thick translucent burgundy acetate frame, short broad temples and deep smoky-brown rectangular lenses
+    placement: Top-left with temples folded, presented at realistic scale
+  subject_6:
+    description: Matching pair of vintage round gold clip-on earrings in an elegant 1980s old-money couture style — medium-sized domed circular shape, substantial sculpted volume, raised rope-twist border, softly hammered central surface, warm polished 18-karat gold finish and functional hinged clip backs
+    placement: Top-right as a perfectly matched symmetrical pair, front surfaces facing upward with one clip mechanism subtly visible
+  subject_7:
+    description: Pair of long oxblood leather opera gloves from @image1 — above-elbow length, slim tapered fingers, glossy burgundy finish, natural creases at knuckles and wrists
+    placement: One glove along each outer side, fingers directed downward
+  subject_8:
+    description: Pair of knee-high oxblood leather boots extending the exact outfit — fitted straight shafts, pointed almond toes, slim angular 8 cm heels, minimal seams, polished burgundy leather matching the belt, gloves and glasses
+    placement: Bottom centre, parallel pair angled outward
+SCENE:
+  action: Every garment and accessory lies empty and separately as a precise exploded wardrobe reference, preserving real construction, scale and material behaviour
+  location: Light cool-grey #D9DBDE seamless studio surface, smooth matte finish, subtle contact shadows beneath each item
+  reference_usage: Use SHOT:
+  shot_size: Horizontal 16:9 medium-wide studio reference card, closed compact on the left and open compact on the right, both fully visible
+  camera_angle: Eye-level with a gentle 8° downward tilt
+  azimuth: Frontal 0° product presentation
+  subject_placement: Balanced two-column composition, closed view occupying the left third and open view occupying the right two-thirds
+  focal_anchor: Deep focus across the gold monogram, quilted leather, four powder pans and applicator compartment
+SUBJECTS:
+  subject_1:
+    description: Exact closed YSL eyeshadow compact from @image1 — vertical rectangular form with softened corners, slim polished pale-gold perimeter, raised black quilted leather front with broad horizontal chevron channels and fine grain, large sculptural gold YSL monogram centred on the lid, precise compact proportions
+    state: Fully closed, front cover facing camera, standing upright on its lower edge
+    placement: Left side with subtle three-quarter depth visible along the right gold edge
+  subject_2:
+    description: Exact open YSL eyeshadow compact from @image1 — matching black-and-gold rectangular body, lid raised to approximately 105°, inner lid carrying the padded black chevron surface and small centred gold YSL monogram; lower section divided into four eyeshadow pans above and a black applicator compartment below
+    eyeshadow_grid: Four equal square pans copied from @image1 — top-left luminous pale champagne rose with fine metallic shimmer; top-right muted taupe-beige satin; bottom-left dusty cocoa-mauve matte; bottom-right rich cranberry burgundy with fine ruby shimmer; each powder carries a crisp embossed YSL chevron monogram
+    applicators: Two fitted black tools — one double-ended oval sponge applicator and one precision brush with dense black bristles, glossy handles and small tonal YSL marks
+    placement: Right side, base facing camera with the complete interior readable, lid rising behind it
+SCENE:
+  action: The same palette appears in two exact product states, closed and open, forming a clear packaging and colour reference
+  location: Light cool-grey #D9DBDE seamless studio cyclorama with a smooth matte surface and gentle tonal falloff
+  reference_usage: Use @image1 as the exact product identity reference for dimensions, quilted pattern, gold frame, monogram scale, pan arrangement, shade colours, powder finishes and applicator design
+LIGHT:
+  key: Large diffused 5200K source from front-upper-left, revealing quilted leather relief and pressed powder texture
+  fill: Broad frontal white bounce at a 2:1 ratio, preserving detail inside the black compartment
+  rim: Narrow soft strip from camera-right tracing the pale-gold edges and open lid
+  ambient: Neutral grey studio spill with open shadows
+  falloff: Gradual falloff across both product states
+  motivated_by: Overhead softbox and right-side diffusion panel surrounding the product table
+  material_response: Gold carries clean warm specular lines, black leather holds satin highlights across raised quilting, powders retain dry micro-grain and distinct shimmer density, glossy tray reflects restrained rectangular highlights
+  integration: Soft contact shadows anchor both compacts, consistent reflections and scale establish the same physical product
+TEXT_ELEMENTS:
+  visible_text: Intertwined "YSL" monogram (Latin letters) on the closed lid, open lid, four powder pans and applicator handles
+  typography: Exact sculptural interlocking YSL letterform from @image1, polished gold on the lids and embossed tonal relief on powders and tools
+  placement: Large centred mark on the closed front, small centred mark on the open lid, one centred embossing inside each pan
+  rendering_quality: Precise continuous contours, clean polished edges, realistic relief and material-integrated reflections
+LOOK:
+  color_grading: Neutral cosmetics grade derived from the cool-grey set — deep textured blacks, pale warm gold, accurate champagne, taupe, cocoa-mauve and cranberry shades; controlled contrast and smooth highlight rolloff
+  authenticity: Phase One XF IQ4, 120mm macro lens with compressed perspective and straight product edges, f/11 keeping both compacts and interior details sharply resolved, subtle sensor micro-noise and minute metal handling marks retained
+  style: medium-format digital product photograph, precise material rendering, high-end cosmetics campaign still, contemporary luxury catalogue photography exclusively for the exact clothing design, colours, cuts, textures and proportions; present the wardrobe itself as the subject while applying the specified round clip-on earring design
+LIGHT:
+  key: Large diffused 5000K overhead source, soft-edged, revealing leather grain, wool weave and jewellery relief
+  fill: Cool-grey ground bounce at a 2:1 ratio, keeping black fabric construction readable
+  rim: Gentle edge from camera-left separating black leather from the grey surface
+  ambient: Neutral studio spill with soft open shadows
+  falloff: Gradual falloff across the arrangement
+  motivated_by: Single ceiling softbox above the flat-lay table
+  material_response: Black leather carries satin highlights, oxblood leather reflects burgundy streaks, herringbone wool remains matte, gold earrings and hardware produce compact warm speculars, sunglass lenses hold soft rectangular reflections
+  integration: Soft contact shadows anchor every object, consistent light direction and scale across the card
+LOOK:
+  color_grading: Early-1990s European fashion palette — cool neutral grey, deep textured black, warm taupe wool, saturated oxblood leather and antique gold; restrained blue-violet shadows, filmic midtones and gently rolling highlights
+  authenticity: Hasselblad H6D-100c, 80mm lens with natural proportions and minimal edge distortion, f/11 holding the entire flat lay sharply resolved, fine fabric weave, leather pores and tiny metal marks retained
+  style: medium-format fashion photograph, fine natural photographic grain, tactile material realism, early-1990s luxury wardrobe editorial`,
+      },
+      {
+        id: "ivanka-90s-palette-map",
+        number: "3",
+        title: "@Image3 · 产品图 1：眼影盘（Makeup Palette）",
+        subtitle: "黑色绗缝盒四色眼影盘（YSL 标志）；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-90s-supermodel-beauty-ad-seedance-2-5/refs/03-palette-map.jpg",
+        prompt: `SHOT:
+  shot_size: Horizontal 16:9 medium-wide studio reference card, closed compact on the left and open compact on the right, both fully visible
+  camera_angle: Eye-level with a gentle 8° downward tilt
+  azimuth: Frontal 0° product presentation
+  subject_placement: Balanced two-column composition, closed view occupying the left third and open view occupying the right two-thirds
+  focal_anchor: Deep focus across the gold monogram, quilted leather, four powder pans and applicator compartment
+SUBJECTS:
+  subject_1:
+    description: Exact closed YSL eyeshadow compact from @image1 — vertical rectangular form with softened corners, slim polished pale-gold perimeter, raised black quilted leather front with broad horizontal chevron channels and fine grain, large sculptural gold YSL monogram centred on the lid, precise compact proportions
+    state: Fully closed, front cover facing camera, standing upright on its lower edge
+    placement: Left side with subtle three-quarter depth visible along the right gold edge
+  subject_2:
+    description: Exact open YSL eyeshadow compact from @image1 — matching black-and-gold rectangular body, lid raised to approximately 105°, inner lid carrying the padded black chevron surface and small centred gold YSL monogram; lower section divided into four eyeshadow pans above and a black applicator compartment below
+    eyeshadow_grid: Four equal square pans copied from @image1 — top-left luminous pale champagne rose with fine metallic shimmer; top-right muted taupe-beige satin; bottom-left dusty cocoa-mauve matte; bottom-right rich cranberry burgundy with fine ruby shimmer; each powder carries a crisp embossed YSL chevron monogram
+    applicators: Two fitted black tools — one double-ended oval sponge applicator and one precision brush with dense black bristles, glossy handles and small tonal YSL marks
+    placement: Right side, base facing camera with the complete interior readable, lid rising behind it
+SCENE:
+  action: The same palette appears in two exact product states, closed and open, forming a clear packaging and colour reference
+  location: Light cool-grey #D9DBDE seamless studio cyclorama with a smooth matte surface and gentle tonal falloff
+  reference_usage: Use @image1 as the exact product identity reference for dimensions, quilted pattern, gold frame, monogram scale, pan arrangement, shade colours, powder finishes and applicator design
+LIGHT:
+  key: Large diffused 5200K source from front-upper-left, revealing quilted leather relief and pressed powder texture
+  fill: Broad frontal white bounce at a 2:1 ratio, preserving detail inside the black compartment
+  rim: Narrow soft strip from camera-right tracing the pale-gold edges and open lid
+  ambient: Neutral grey studio spill with open shadows
+  falloff: Gradual falloff across both product states
+  motivated_by: Overhead softbox and right-side diffusion panel surrounding the product table
+  material_response: Gold carries clean warm specular lines, black leather holds satin highlights across raised quilting, powders retain dry micro-grain and distinct shimmer density, glossy tray reflects restrained rectangular highlights
+  integration: Soft contact shadows anchor both compacts, consistent reflections and scale establish the same physical product
+TEXT_ELEMENTS:
+  visible_text: Intertwined "YSL" monogram (Latin letters) on the closed lid, open lid, four powder pans and applicator handles
+  typography: Exact sculptural interlocking YSL letterform from @image1, polished gold on the lids and embossed tonal relief on powders and tools
+  placement: Large centred mark on the closed front, small centred mark on the open lid, one centred embossing inside each pan
+  rendering_quality: Precise continuous contours, clean polished edges, realistic relief and material-integrated reflections
+LOOK:
+  color_grading: Neutral cosmetics grade derived from the cool-grey set — deep textured blacks, pale warm gold, accurate champagne, taupe, cocoa-mauve and cranberry shades; controlled contrast and smooth highlight rolloff
+  authenticity: Phase One XF IQ4, 120mm macro lens with compressed perspective and straight product edges, f/11 keeping both compacts and interior details sharply resolved, subtle sensor micro-noise and minute metal handling marks retained
+  style: medium-format digital product photograph, precise material rendering, high-end cosmetics campaign still, contemporary luxury catalogue photography`,
+      },
+      {
+        id: "ivanka-90s-lipgloss-map",
+        number: "4",
+        title: "@Image4 · 产品图 2：唇釉（Lip Gloss）",
+        subtitle: "红色唇釉（Fenty Beauty 字样）；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-90s-supermodel-beauty-ad-seedance-2-5/refs/04-lipgloss-map.jpg",
+        prompt: `SHOT: shot_size: Horizontal 16:9 medium-wide cosmetics reference card with one closed lip gloss on the left and the same product open on the right, both fully visible camera_angle: Eye-level with a gentle 6° downward tilt azimuth: Frontal product presentation with subtle three-quarter depth subject_placement: Balanced two-column composition, equal visual weight and clean grey negative space surrounding both product states focal_anchor: Deep focus across the holographic lettering, transparent tube edges, metallic cap and plush applicator fibres SUBJECTS: subject_1: description: Exact closed Fenty Beauty Gloss Bomb Heat lip gloss in Hot Cherry from @Image 1 — tall compact rectangular tube with softly faceted vertical edges, thick crystal-clear acrylic walls and a transparent base; translucent vivid cherry-red gloss filling the inner reservoir; tall pale rose-champagne metallic cap with flat rectangular faces, bevelled upper corners and softly reflective surfaces; exact packaging proportions and construction from the reference state: Fully closed, cap aligned precisely with the tube, standing upright placement: Left side, front label facing camera, bottle rotated approximately 5° to reveal one clear side edge subject_2: description: The same exact Fenty Beauty Gloss Bomb Heat in Hot Cherry shown open, using @Image 2 for the cap, wand and applicator construction; transparent cherry-red tube standing upright with its threaded neck visible, separate pale rose-champagne cap positioned beside it, long straight pearly-white wand extending from the cap, oversized plush doe-foot applicator fully extracted and coated evenly in glossy translucent hot-cherry pigment applicator: Broad flattened oval doe-foot with rounded tip, dense short flocked fibres, realistic gloss saturation, small beads of product held between the fibres and a smooth wet highlight along one edge state: Open product with the complete applicator clearly visible as part of the second view placement: Right side, tube upright and wand angled diagonally upward at approximately 20°, metallic cap resting securely at its base SCENE: action: One lip gloss appears in two exact reference states — closed packaging view and open applicator view — forming a clear product identity and texture card location: Light cool-grey #D9DBDE seamless studio cyclorama with a smooth matte surface and gentle tonal falloff reference_usage: @Image 1 defines the exact closed tube, cap, proportions, red gloss colour and front branding; @Image 2 defines the exact open construction, wand length, doe-foot shape, product coating and metallic finish LIGHT: key: Large diffused 5200K source from front-upper-left, creating long controlled highlights across the cap and clear tube edges fill: Broad frontal white bounce at a 2:1 ratio, revealing the cherry-red liquid through the transparent walls rim: Narrow soft strip from camera-right tracing the bottle edges, wand and applicator profile ambient: Neutral grey studio spill with open shadows falloff: Gradual falloff across both product states motivated_by: Large overhead softbox and right-side diffusion panel surrounding the product table material_response: Metallic caps carry pale champagne-rose specular bands, transparent acrylic produces clean refraction and restrained edge reflections, cherry gloss remains translucent with dense red colour at the centre, applicator fibres hold wet micro-highlights integration: Soft compact contact shadows anchor each item, matching reflections and dimensions establish one identical product across both views TEXT_ELEMENTS: visible_text: Vertical "FENTY BEAUTY" and large central "HEAT" (English) on both tubes typography: Exact lettering from @Image 1 and @Image 2 — small clean uppercase "FENTY BEAUTY" arranged vertically around the larger expressive "HEAT" mark, iridescent silver-gold holographic foil placement: Centred vertically on the front face of each tube, following the precise scale and spacing of the references rendering_quality: Crisp continuous letterforms, clean holographic foil edges, legible spacing and reflections integrated into the transparent packaging LOOK: color_grading: Neutral cosmetics grade derived from the cool-grey set — vivid translucent hot-cherry red, pale rose-champagne metal, crystal-clear acrylic and iridescent silver-gold lettering; controlled contrast, accurate colour density and smooth highlight rolloff authenticity: Phase One XF IQ4, 120mm macro lens with compressed perspective and straight packaging edges, f/11 keeping both tubes and the complete applicator sharply resolved, subtle sensor micro-noise, acrylic edge thickness and minute metal handling marks retained style: medium-format digital product photograph, precise material rendering, high-end cosmetics campaign still, contemporary beauty catalogue photography`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 俯拍床上白色漆盘里的复古化妆品、黑色电话、杂志，红甲手从左边伸进来。" },
+      { number: 2, description: "2–2.8s 低机位，拇指按下卡带机播放键。" },
+      { number: 3, description: "2.8–3.5s 俯拍翻杂志。" },
+      { number: 4, description: "3.5–5s 全景：白 T 红短裤，盘腿坐在铺满杂志的床上。" },
+      { number: 5, description: "5–5.6s 颧骨画两道修容膏。" },
+      { number: 6, description: "5.6–6.2s 侧脸大特写，刷子打圈晕开修容。" },
+      { number: 7, description: "6.2–6.8s 正面中近景，沿下颌扫到太阳穴。" },
+      { number: 8, description: "6.8–7.4s 俯拍，打开腮红盒。" },
+      { number: 9, description: "7.4–8s 腮红刷落在颧骨上。" },
+      { number: 10, description: "8–8.6s 侧面中景，腮红往耳朵方向晕，粉尘在蓝光里飘。" },
+      { number: 11, description: "8.6–9.3s 唇部大特写，唇线笔描唇。" },
+      { number: 12, description: "9.3–10s 招牌镜头：@Image4 唇釉刷把下唇涂满湿亮红色。" },
+      { number: 13, description: "10–10.6s 抿唇再张开，唇釉均匀。" },
+      { number: 14, description: "10.6–11.3s 俯拍 @Image3 眼影盘打开，四格闪粉。" },
+      { number: 15, description: "11.3–11.9s 微距，刷子蹭进深莓色格。" },
+      { number: 16, description: "11.9–12.6s 侧面眼部大特写，扫眼影，睫毛颤一下。" },
+      { number: 17, description: "12.6–13.2s 另一侧眼窝晕染，头微后仰。" },
+      { number: 18, description: "13.2–13.7s 俯拍杂志翻页落下。" },
+      { number: 19, description: "13.7–14.4s 睫毛膏微距刷上睫毛。" },
+      { number: 20, description: "14.4–15s 俯拍，金色锤纹耳夹躺在杂志上，被拿走一只。" },
+      { number: 21, description: "15–15.6s 侧面，耳夹已戴上，晃了一下。" },
+      { number: 22, description: "15.6–17s 招牌镜头：盘腿在床上举起喷雾，雾在蓝光里停留。" },
+      { number: 23, description: "17–18.5s 全景，双手翻大开本杂志后扔到床上。" },
+      { number: 24, description: "18.5–19.2s 俯拍报纸翻页。" },
+      { number: 25, description: "19.2–20s 地面低机位，白 T 从上方落到地毯上。" },
+      { number: 26, description: "20–20.8s 双手从床上拎起黑色皮夹克。" },
+      { number: 27, description: "20.8–22s 胸前特写，已穿黑高领 + 皮夹克，戴手套的手整理领口。" },
+      { number: 28, description: "22–23s 地面低机位，手拎起酒红色长靴。" },
+      { number: 29, description: "23–24s 床头柜，手拎起黑色复古手包，香水瓶轻晃。" },
+      { number: 30, description: "24–30s 高潮：床边全身完整造型，站 4 秒后切到四分之三中近景，她转身看向窗外走出画面。" },
+    ],
+    constraints:
+      "人物、服装、两款产品全程与参考图一致；严格 30 镜 30 秒、不加镜头，参考图原构图不得出现在成片里。与成片不符：成片切点检测到约 33 处，节奏和提示词大致对应但偏差可达 1 秒，Shot 4 成片是她在床上梳头；变装段（Shot 25–29）在成片里更短，约 23s 起已是全身造型。提示词自身有一处矛盾：人物段写 shots 1–24 穿白 T 红短裤、shots 21–30 穿全套服装（21–24 重叠），按原文保留。说明：作者视频是上下拼接版（上半 960×540 为成片，下半为 4 张参考图 2×2 拼板带水印），demo 只裁上半；参考图从拼板截出，约 480×266，非原图。YSL、Fenty Beauty 为真实品牌。",
+    video_prompt: {
+      title: "GRWM 1992 · Animation · 30 shots / 30s",
+      subtitle: "Seedance 2.5 · 16:9 · PROMPT 5 英文完整提示词（作者自回复长帖）",
+      content: `📌 PROMPT 5: Animation (Seedance 2.5)
+GRWM 1992 — RITUAL → FACE → METAL → TRANSFORMATION → LOOK
+Shot structure: 30 shots, 30 seconds, 16:9, follow the list strictly, do not add any extra shots.
+
+REFERENCES:
+@Image1 = the woman and her starting outfit. Controls face, hair, skin and the white cotton tee and red micro shorts ONLY.
+@Image2 = her going-out outfit. Controls garment silhouette, materials, colors and gold hardware ONLY.
+@Image3 = the eyeshadow palette. Controls that object's design, surface texture and gold logo hardware ONLY.
+@Image4 = the lip gloss tube. Controls that object's design, surface texture and lettering ONLY.
+Activated references: @Image1 100%; @Image2 100%; @Image3 100%; @Image4 100%
+Every shot uses a brand-new composition; the framing and angles of the reference images must not appear in the output.
+
+GLOBAL STYLE NOTES:
+
+lighting_philosophy: a cold blue-violet source coming through the sheer window curtains from the west as key, bouncing off the white satin as fill; a tungsten wall sconce on the east wall that enters frame as a practical.
+
+color_grade: 35mm film still, Kodak Portra 400 pushed one stop, heavy grain, halation bloom around the sconce. Roughly 55% cold blue-violet (curtains, walls, her shadow side) + roughly 30% amber (sconce spill on skin, chrome, gold hardware) + roughly 15% blood red (nail polish, red shorts, lip gloss, burgundy leather).
+
+setting: a bedroom, winter evening, 1992. White satin bedding pressed flat under glossy 1991 magazines and an open newspaper; a white lacquer tray of vintage cosmetics sitting between the magazines on the bed and a vintage black corded telephone; a chrome vanity mirror on a stand, a jar of makeup brushes, cut-glass perfume bottles, a cassette radio, a red-and-gold brooch loose on the sheets, a black-and-white polka-dot pillow, a blue curtain, a sconce with vertical glass tubes, a spiky houseplant, a black-and-white geometric wall hanging, a nightstand holding a vintage black clasp handbag, clothes scattered across the rug beside the bed, a pair of burgundy knee-high boots standing upright.
+
+ambience: cassette hiss, radio playing slow synth-pop at low room volume, ticking radiator, muffled traffic through the glass.
+
+characters: per @Image1. Chin-length dark brown bob, ends curling inward, warm brown eyes, full lips, golden skin. In shots 1 to 24 she wears the fitted white cotton crew-neck tee and red knit micro shorts from @Image1. In shots 21 to 30 she is in the complete @Image2 outfit: black cropped leather biker jacket with gold zips and two gold belt buckles, black fine-gauge turtleneck underneath, beige herringbone wool wrap mini skirt, burgundy belt with a heavy gold interlocking clasp and a short chain drop, elbow-length burgundy leather gloves, burgundy pointed-toe knee-high boots, burgundy-tinted rectangular sunglasses. Constants throughout: long blood-red glossy nails; from shot 21 onward a round hammered gold clip-on earring on the left ear. Natural skin texture with visible pores and fine vellus hair, sheen in the highlights and matte elsewhere, left eyebrow slightly higher than the right. Keep the features perfectly consistent in every shot.
+
+camera_character: handheld throughout, with real operator breathing and small live reframes; overhead and floor-level shots sit on a low tripod with breathing drift.
+
+location_map: she sits center of the bed facing south, the chrome mirror on its stand within arm's reach in front of her, the curtained window and sconce on the west wall, the nightstand and radio on the east wall, the headboard and wall hanging on the north wall, the rug and the exit to the south.
+
+ATMOSPHERE: dust motes hang and drift slowly through the blue window beam at every depth; every hand that enters frame and every garment that lands on the rug kicks a fresh swirl of dust up into the beam.
+
+SHOT LIST:
+
+SHOT 1 (0-2s) HOOK — MACRO OVERHEAD
+first_frame: the white lacquer tray of vintage cosmetics spanning the center of the bed x 20%-85%, y 28%-78%; the black corded telephone x 0%-22%, y 0%-30%; a magazine reading "Rolling Stone" x 62%-100%, y 70%-100%; a hand with blood-red nails has already entered frame from the left edge.
+camera: macro, vertical overhead 90°, 55 cm above the bed surface, 12° telephoto close-up, low tripod with breathing drift, no focus drift mid-shot.
+action_visual: her hand picks @Image4 out from among the other products, turns it once so the red liquid rolls and the iridescent lettering flashes, then sets it back on the tray and pushes the whole tray 15 cm east across the bed. The magazine slides under the tray with real friction, the tray comes to a smooth stop with a hard contact shadow.
+exit: the hand exits east with the tray. (MATCH CUT TO)
+
+SHOT 2 (2-2.8s) — CLOSE-UP LOW ANGLE
+camera: close-up, low angle at bed height, 90° profile on the radio, 47° standard, static.
+action_visual: her thumb presses play. The key travels four millimetres and stays depressed with a crisp mechanical click, the cassette door glass catches amber, dust lifts off the speaker grille.
+exit: the music comes up under frame and carries across the cut. (AUDIO BRIDGE TO)
+
+SHOT 3 (2.8-3.5s) — MEDIUM CLOSE-UP OVERHEAD
+camera: medium close-up, vertical overhead 90°, 29° medium telephoto, low tripod with breathing drift.
+action_visual: her hand turns a page of the magazine. The paper lifts, rotates and settles with real weight, the corner curling slightly as it lands.
+exit: her hand withdraws upward. (HARD CUT TO)
+
+SHOT 4 (3.5-5s) ESTABLISHING — WIDE FRONTAL
+first_frame: she sits cross-legged in the center of the bed x 32%-68%, y 22%-92%; curtain and sconce x 0%-26%; chrome mirror and tray x 68%-100%.
+camera: wide, eye level, frontal 0°, 47° standard, handheld with breathing, static composition, verticals kept straight and facial proportions natural.
+action_visual: in the white tee and red shorts she sits among the magazines and the tray, pulling a red-handled comb through her hair in one long stroke, chin slightly tucked, eyes on the chrome mirror. Blue curtain light runs down her west arm, amber sconce light sits on her east shoulder.
+exit: she lowers the comb and reaches for the tray. (CUT ON ACTION TO)
+
+SHOT 5 (5-5.6s) — CLOSE-UP THREE-QUARTER
+camera: close-up, eye level, three-quarter 45° from her east side, 18° natural portrait, no focus drift mid-shot.
+action_visual: she draws two stripes of cream contour stick along her cheekbone, leaving two distinct unblended lines on the skin.
+exit: the contour stick leaves frame. (HARD CUT TO)
+
+SHOT 6 (5.6-6.2s) — EXTREME CLOSE-UP PROFILE
+camera: extreme close-up, eye level, 90° profile on her west cheek, 18° natural portrait, focus locked on the cheekbone.
+action_visual: a dense brush blends the contour in fast circles, the bristles splaying and springing back, the lines melting into the skin, blood rising underneath.
+exit: the brush lifts. (HARD CUT TO)
+
+SHOT 7 (6.2-6.8s) — MEDIUM CLOSE-UP FRONTAL
+camera: medium close-up, eye level, frontal 0°, 29° medium telephoto, handheld with breathing.
+action_visual: she sweeps along the jawline all the way up to the temple, chin turned away, lips slightly parted, gaze down at the mirror.
+exit: the brush drops toward the tray. (MATCH CUT TO)
+
+SHOT 8 (6.8-7.4s) — CLOSE-UP OVERHEAD
+camera: close-up, vertical overhead 90°, 12° telephoto close-up, low tripod with breathing drift.
+action_visual: her hand lifts a blush pan off the tray and flips the lid open, the pan sitting steady in her palm, the powder surface catching the sconce light.
+exit: the blush pan exits frame upward. (HARD CUT TO)
+
+SHOT 9 (7.4-8s) — EXTREME CLOSE-UP THREE-QUARTER
+camera: extreme close-up, eye level, three-quarter 45°, 18° natural portrait, focus locked on the cheekbone.
+action_visual: the blush brush lands on the high cheekbone, the bristles splaying, warm color blooming across the skin.
+exit: the brush travels up toward the ear. (CUT ON ACTION TO)
+
+SHOT 10 (8-8.6s) — MEDIUM SHOT PROFILE
+camera: medium shot, eye level, 90° profile from her east side, 29° medium telephoto, handheld, micro-stabilized.
+action_visual: she blends the blush up toward the ear in three short passes, loose powder falling as visible particles through the blue beam.
+exit: she reaches for the lip liner. (HARD CUT TO)
+
+SHOT 11 (8.6-9.3s) — EXTREME CLOSE-UP FRONTAL
+camera: extreme close-up on the lips, eye level, frontal 0°, 18° natural portrait, focus locked on the lip line.
+action_visual: a lip pencil traces the outer edge of the lips, the lip skin dragging slightly under the tip then springing back.
+exit: the liner pulls away. (MATCH CUT TO)
+
+SHOT 12 (9.3-10s) SIGNATURE SHOT — MACRO THREE-QUARTER
+camera: macro, eye level, three-quarter 45°, 18° natural portrait, focus locked on the lower lip.
+action_visual: the gloss-loaded @Image4 wand floods the lower lip with wet red into an uneven film that reflects the sconce like a ribbon.
+exit: the wand withdraws. (HARD CUT TO)
+
+SHOT 13 (10-10.6s) — MEDIUM CLOSE-UP FRONTAL
+camera: medium close-up, eye level, frontal 0°, 29° medium telephoto, handheld with breathing.
+action_visual: she presses her lips together then parts them, the film evening out, a wet highlight rolling across the lower lip.
+exit: her hand reaches for the eyeshadow palette. (MATCH CUT TO)
+
+SHOT 14 (10.6-11.3s) — MEDIUM CLOSE-UP OVERHEAD
+camera: medium close-up, vertical overhead 90°, 29° medium telephoto, low tripod with breathing drift.
+action_visual: @Image3 sits on the open magazine; her fingers open the lid and four shimmer pans come into view, the gold logo throwing back the sconce light, edges sharp, quilted leather rolling mirror highlights along each channel.
+exit: two fingers pick the applicator brush up off the tray. (CUT ON ACTION TO)
+
+SHOT 15 (11.3-11.9s) — MACRO
+camera: macro, low three-quarter 45°, 15 cm from the palette, 18° natural portrait, static, focus locked on the pan surface.
+action_visual: the brush tip presses into the deep berry pan and drags, breaking the embossed monogram, loose particles shedding and hanging in the beam.
+exit: the brush exits frame upward. (CUT ON ACTION TO)
+
+SHOT 16 (11.9-12.6s) — EXTREME CLOSE-UP PROFILE
+camera: extreme close-up, eye level, 90° profile on her east eye, 18° natural portrait, focus locked on the lash root.
+action_visual: her fingertip pulls the outer corner of the lid taut, the brush sweeps the shimmer across in a single pass, the eye stays open, the lashes flutter once, the sconce catchlight reflects in the iris.
+reaction: the brush touches the lash root, the inner corner waters, the other eye squeezes shut for half a beat, she finishes the pass anyway.
+exit: the lid opens fully. (HARD CUT TO)
+
+SHOT 17 (12.6-13.2s) — MEDIUM CLOSE-UP THREE-QUARTER
+camera: medium close-up, eye level, three-quarter 45° from her west side, 29° medium telephoto, handheld.
+action_visual: she works the same shadow into the crease of her west eye, head tipped back, lips loose, the brush moving in short arcs.
+exit: the brush drops. (HARD CUT TO)
+
+SHOT 18 (13.2-13.7s) — CLOSE-UP OVERHEAD
+camera: close-up, vertical overhead 90°, 12° telephoto close-up, low tripod with breathing drift.
+action_visual: a magazine page turns over under her hand and falls, a printed cover sliding underneath it.
+exit: the hand leaves frame. (WHIP CUT TO)
+
+SHOT 19 (13.7-14.4s) — MACRO FRONTAL
+camera: macro, eye level, frontal 0°, 18° natural portrait, static, focus locked on the lashes.
+action_visual: a mascara wand combs the upper lashes from root to tip, the lashes separating and clumping wetly at the ends, her mouth opening as she combs.
+exit: the wand pulls away. (HARD CUT TO)
+
+SHOT 20 (14.4-15s) — CLOSE-UP OVERHEAD
+camera: close-up, vertical overhead 90°, 12° telephoto close-up, low tripod with breathing drift.
+action_visual: a pair of round hammered gold clip-on earrings lies on the open page, throwing amber back at the sconce. Five fingers take the west one and carry it out of frame, the second rocks once and stills on the paper.
+exit: the empty page holds for a quarter beat. (MATCH CUT TO)
+
+SHOT 21 (15-15.6s) — MEDIUM CLOSE-UP PROFILE
+camera: medium close-up, eye level, 90° profile on her west side, 29° medium telephoto, handheld, micro-stabilized.
+action_visual: the gold clip is already fixed to her west ear and swings once with real metal weight as her fingers leave the lobe, the jawline clean against the blue curtain.
+exit: she sits back and reaches east. (CUT ON ACTION TO)
+
+SHOT 22 (15.6-17s) SIGNATURE SHOT — WIDE FRONTAL
+camera: wide, eye level, frontal 0°, 47° standard, handheld with breathing, static composition.
+action_visual: cross-legged on the bed she lifts the spray bottle to head height and presses. A fine mist fires east, expands, slows and drifts down through the blue beam, hanging visibly for a full second and lighting the dust around it. She brings the bottle down into her lap.
+reaction: the mist lands on her face, she closes her eyes, chin up, a short breath held in her chest.
+exit: she reaches for the magazine below. (HARD CUT TO)
+
+SHOT 23 (17-18.5s) — WIDE FRONTAL
+camera: wide, eye level, frontal 0° slightly low, 47° standard, handheld with breathing.
+action_visual: she holds a large open magazine in both hands at chest height, turns two pages, head down, her whole body in frame among the spread bedding and the scattered newspaper.
+exit: she tosses the magazine onto the bed. (CUT ON ACTION TO)
+
+SHOT 24 (18.5-19.2s) — CLOSE-UP OVERHEAD
+camera: close-up, vertical overhead 90°, 12° telephoto close-up, low tripod with breathing drift.
+action_visual: the newspaper is spread across the bed, her hand turns a page, the paper lifts, snaps over and falls.
+exit: the hand leaves frame. (SMASH CUT TO)
+
+SHOT 25 (19.2-20s) — WIDE FLOOR LEVEL
+camera: wide, low angle 20 cm off the floor, 45° three-quarter cutting across the rug, 63° observational, low tripod with breathing drift.
+action_visual: a white cotton tee drops into frame from above, lands on the rug and folds into creases, dust lifting off the pile through the blue beam. She stays out of frame.
+exit: the fabric goes still. (HARD CUT TO)
+
+SHOT 26 (20-20.8s) — CLOSE-UP THREE-QUARTER
+camera: close-up on both hands, eye level, three-quarter 45°, 18° natural portrait, handheld with breathing.
+action_visual: her hands take the black leather biker jacket off the bedding and lift it, the lambskin folding heavy over her forearms with real weight, the gold zips swinging.
+exit: the jacket exits frame upward. (CUT ON ACTION TO)
+
+SHOT 27 (20.8-22s) — CLOSE-UP FRONTAL
+camera: close-up on chest and shoulders, head cropped off above frame, eye level, frontal 0°, 29° medium telephoto, handheld.
+action_visual: she is already in the black fine-gauge turtleneck and the black leather jacket. Gloved hands square the lapels and smooth the collar, the leather creaking, the gold buttons catching the sconce light.
+exit: her hands drop out of frame. (HARD CUT TO)
+
+SHOT 28 (22-23s) — WIDE FLOOR LEVEL
+camera: wide, low angle 20 cm off the floor, 90° profile across the rug, 63° observational, low tripod with breathing drift.
+action_visual: the burgundy knee-high boots stand upright among the clothes scattered on the rug. A hand reaches down, grabs both shafts and lifts them clear, the pile springing back where they stood.
+exit: the boots leave frame upward. (MATCH CUT TO)
+
+SHOT 29 (23-24s) — CLOSE-UP THREE-QUARTER
+camera: close-up on the cluttered nightstand, eye level, three-quarter 45°, 29° medium telephoto, handheld, micro-stabilized.
+action_visual: a hand takes hold of the vintage black clasp handbag sitting among the cut-glass perfume bottles and lifts it clear, the bottles rocking and chiming faintly against each other, then stilling.
+exit: the bag swings up out of frame. (PULL BACK ON ACTION TO)
+
+SHOT 30 (24-30s) CLIMAX — FULL SHOT FRONTAL INTO MEDIUM CLOSE-UP
+first_frame: she stands beside the bed x 30%-66%, y 6%-98%; curtain and sconce x 0%-26%; wall hanging and plant x 70%-100%.
+camera: full shot, eye level, frontal 0°, 47° standard, handheld with breathing, holds static for four seconds, then cuts in to a medium close-up at three-quarter 45° for the final two seconds.
+action_visual: the first four seconds are one continuous uncut action. She stands in the complete @Image2 outfit, settles the handbag onto her east hip, then runs both gloved hands down the front of the jacket, straightens the belt buckle, head down, eyes on her own hands. At 28s the frame cuts in close: hands land on her hips, elbows flared out, chin slightly down, eyes lifting to the lens and holding. One slow blink. In the final half second her head turns west, her gaze goes off, and she begins to leave frame.
+reaction: the gaze is steady and firm, jaw relaxed, lips lightly closed, brows smooth; she gives the camera nothing before she leaves it.`,
+    },
+  },
+  {
+    id: "elsasofia-hallway-dance-kid-filming-seedance-2-5",
+    title: "走廊跳舞 + 小朋友手机跟拍 · 18 格故事板复刻 · Seedance 2.5",
+    subtitle: "X · @ElsaSofia__AI · Seedance 2.5 · 12秒 · 9:16",
+    description:
+      "AI 走廊舞蹈：18 格故事板加角色参考喂给 Seedance 2.5，一镜到底复刻 12 秒，小朋友举手机跟拍。",
+    video: "/tutorials/elsasofia-hallway-dance-kid-filming-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/elsasofia-hallway-dance-kid-filming-seedance-2-5/poster.jpg",
+    duration: "12秒",
+    durationSec: 12,
+    styleLabel: "3D 卡通",
+    shots: 6,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "3D 卡通角色 · 夜晚走廊暖色吊灯 · 木地板反光 · 一镜到底",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/ElsaSofia__AI/status/2104029660619153720",
+    sourceAuthor: "@ElsaSofia__AI",
+    sourcePlatform: "X",
+    sourceImpressions: 4862,
+    sourceStats: { asOf: "2026-09-28", likes: 88, reposts: 7, bookmarks: 65 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "走舞步 → 捧脸卖萌 → 左右换步 → 抱头 → 双臂高举收尾",
+      opening: "第 0 秒她在暖光走廊里朝镜头走舞步，旁边的小朋友弯腰举着手机拍她：两个人物一出场，关系就交代清楚了。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.3s 她双手捧脸卖萌，小朋友跟着踢腿；约 4.3–7.7s 左右换步跳舞，小朋友弓步跟拍。", at: 2.3 },
+        { title: "结尾怎么收", text: "约 10.5s 双臂高举，约 11.8s 双手抱头咧嘴笑，小朋友全程没放下手机。", at: 10.5 },
+      ],
+      copyThis: "把源视频按时间抽成带秒数标注的故事板，连同角色参考图一起喂给 Seedance 2.5，提示词只写「逐格照做、不加戏」。",
+      approx: true,
+    },
+    tags: [
+      "12秒 · 一镜到底",
+      "9:16 竖屏",
+      "Seedance 2.5",
+      "18 格故事板驱动",
+      "角色表演",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：把动作做成故事板",
+        description:
+          "作者附图是一张 MASTER STORYBOARD：从一段 12 秒源视频（文件名 493926.mp4）里等间隔抽出 18 张关键帧，每格标注秒数（00.2s 到 11.8s）。故事板本身没有生成提示词，作者也没说明源视频从哪来。",
+      },
+      {
+        number: 2,
+        title: "第二步：准备角色参考图",
+        description:
+          "提示词要求同时提供一张女性角色参考图（the provided character reference），作者没有发布这张图。",
+      },
+      {
+        number: 3,
+        title: "第三步：用 Seedance 2.5 逐格复刻",
+        description:
+          "把角色参考图、故事板和下方的通用提示词一起输入：按故事板顺序复刻动作、机位和节奏，锁定角色一致性，不加字幕、Logo、水印和额外角色。作者自述生成 1080p、12 秒。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.6s（故事板 01–03）走廊木地板，暖色吊灯；深蓝长卷发、一身黑衣的女人朝镜头方向走舞步，右侧扎蓝色冲天辫、白 T 牛仔裤的卡通小朋友弯腰举手机拍她。" },
+      { number: 2, description: "1.6–3.6s（04–06）女人双手捧脸摆可爱姿势，小朋友跟着一条腿往外踢，仍举着手机。" },
+      { number: 3, description: "3.6–7.7s（07–12）女人左右换步跳舞、手臂前伸，小朋友弓步跟拍，一直对着她。" },
+      { number: 4, description: "7.7–9.1s（13–14）女人压低身子前倾，随后双手抱头。" },
+      { number: 5, description: "9.1–10.5s（15–16）女人站直微笑，接着双臂高举过头。" },
+      { number: 6, description: "10.5–12s（17–18）双手张开再抱头咧嘴笑，小朋友始终举着手机拍，结束。" },
+    ],
+    constraints:
+      "严格按 18 格故事板的动作、机位和先后顺序复刻，角色外观全程一致，不加额外场景、角色、字幕、Logo 或水印。与成片不符：提示词要求「ultra-realistic 真人实拍质感」，成片却是和故事板一样的 3D 卡通风；帖子头部写 Aspect Ratio 16:9、1080p，提示词写 vertical，成片实际是 9:16 竖屏 720×1280（X 上能拿到的最高清晰度）；成片全程一镜到底，没有剪辑点，提示词里的 close-ups 和运镜变化在成片里基本没有体现。缺口：角色参考图没有发布；故事板来自一段来源不明的源视频（493926.mp4）。",
+    video_prompt: {
+      title: "Storyboard-driven recreation · 12s",
+      subtitle: "Seedance 2.5 · 作者主帖英文完整提示词（含头部参数）",
+      content: `Made with Seedance 2.5 in 1080p
+
+Duration: 12seconds
+Aspect Ratio: 16:9
+
+Prompt
+Create a 12-second ultra-realistic vertical cinematic video.
+
+Use the provided character reference for the exact same female character and use the provided master storyboard as the strict visual guide for the entire sequence.
+
+Recreate the storyboard's actions, camera positions, framing, timing and visual progression in the same chronological order. Do not invent additional scenes or change the main actions.
+
+Maintain strict character consistency throughout the entire video: identical face, hairstyle, body proportions, clothing, accessories and overall appearance.
+
+The video should feel like premium realistic live-action footage with natural human movement, believable physics, realistic facial expressions and physically accurate interaction with the environment.
+
+Follow the storyboard panel by panel:
+- preserve the opening composition and first action
+- reproduce each major movement and reaction in the correct order
+- match the camera perspective and framing of each storyboard moment
+- use natural transitions between consecutive actions
+- preserve the exact spatial relationship between the character and surrounding objects
+- keep all props consistent and physically present
+- reproduce the final composition and ending shown in the storyboard
+
+Use dynamic but realistic camera movement, including handheld tracking, close-ups, wider framing and motivated camera shifts wherever shown by the storyboard.
+
+Keep motion fluid and continuous. Avoid sudden teleportation, duplicated objects, changing clothing, facial identity drift, unnatural body deformation or inconsistent backgrounds.
+
+Prioritize realistic lighting, natural shadows, authentic textures, detailed skin, realistic hair movement and believable environmental physics.
+
+The final result must look like a professionally captured real-life video rather than an AI-generated sequence.
+
+No subtitles.
+No captions.
+No logos.
+No watermark.
+No unnecessary text.
+No additional characters or actions that are not shown in the storyboard.`,
+    },
+  },
+  {
+    id: "elsasofia-subway-corridor-fight-storyboard-seedance-2-5",
+    title: "地铁通道以一敌多 · 故事板驱动动作戏 · Seedance 2.5",
+    subtitle: "X · @ElsaSofia__AI · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "地铁通道打斗：15 格动作故事板加角色设定喂给 Seedance 2.5，30 秒复刻一场以一敌多。",
+    video: "/tutorials/elsasofia-subway-corridor-fight-storyboard-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/elsasofia-subway-corridor-fight-storyboard-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "写实动作",
+    shots: 16,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "写实动作片 · 夜间地铁通道日光灯 · 手持跟拍 + 蓝色能量光效",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ElsaSofia__AI/status/2103667614606368931",
+    sourceAuthor: "@ElsaSofia__AI",
+    sourcePlatform: "X",
+    sourceImpressions: 4228,
+    sourceStats: { asOf: "2026-09-28", likes: 97, reposts: 6, bookmarks: 42 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "被堵 → 眼神特写 → 格挡反击 → 以一敌多 → 穿烟雾走出",
+      opening: "第 0 秒她被黑大衣男人堵在地铁卷帘门前，下一镜直接切到她眼睛的大特写：冲突一开场就摆出来了。",
+      openingAt: 0,
+      beats: [
+        { title: "冲突怎么升级", text: "约 5.9s 靠墙格挡，接触处冒蓝光；约 10.9s 更多男人冲进来；约 12s 她起跑，身后拖出蓝色残影。", at: 5.9 },
+        { title: "打斗怎么推进", text: "约 14.3s 高踢反击、纸张飞起；约 17s 起和运动服男人近身互殴；约 21s 腾空踢人的全景。", at: 14.3 },
+        { title: "结尾怎么收", text: "约 24s 雾气转场，约 26.8s 她穿过烟雾朝镜头走来，身后的人都倒在地上。", at: 26.8 },
+      ],
+      copyThis: "把动作戏先拆成带秒数的故事板格子，再在提示词里逐镜写时间段（每镜 1–3 秒），角色身份另用一张角色设定图锁定。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 动作戏",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "故事板驱动",
+      "以一敌多",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备动作故事板",
+        description:
+          "作者附图是一张 MASTER STORYBOARD，标题写「从提供的视频中抽取的 15 个动作节拍」，每格标动作名和秒数（00.0s 到约 24s）。故事板没有生成提示词，源视频来源作者也没说明。",
+      },
+      {
+        number: 2,
+        title: "第二步：准备角色设定图",
+        description:
+          "提示词要求另给一套「Elsa Master Character Set」锁定长相，并明确要求不要从故事板里继承身份。作者没有发布这套设定图。",
+      },
+      {
+        number: 3,
+        title: "第三步：用 Seedance 2.5 按 20 镜提示词生成",
+        description:
+          "输入角色设定、故事板和下方提示词。提示词逐镜写了 SHOT 1–20 的时间段和动作，另写了镜头语言、物理连贯、音效（地铁环境声、极简配乐、无对白）和非血腥要求。作者自述生成 1080p、30 秒。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "约 0–0.6s 地铁通道里，一身黑大衣的男人把她堵在卷帘门前，远处站着几个人。" },
+      { number: 2, description: "约 0.6–2.8s 她眼睛的大特写，抬眼盯人。" },
+      { number: 3, description: "约 2.8–4.9s 过肩对峙：男人背影在前景，她一脸警觉。" },
+      { number: 4, description: "约 4.9–5.9s 通道全景，她侧头看向走来的男人们。" },
+      { number: 5, description: "约 5.9–7.7s 靠墙格挡：她架住男人伸来的手臂，接触处有蓝色光效。" },
+      { number: 6, description: "约 7.7–9s 她把人推开，男人倒地，通道纵深全景。" },
+      { number: 7, description: "约 9–10.9s 惊讶反应：前景一只手伸向镜头，她瞪大眼睛。" },
+      { number: 8, description: "约 10.9–12s 更多男人从后面冲进来。" },
+      { number: 9, description: "约 12–12.7s 她起跑，身后拖出蓝色残影。" },
+      { number: 10, description: "约 12.7–14.3s 男人扑过来，她压低身子闪开。" },
+      { number: 11, description: "约 14.3–17.2s 高踢反击，蓝光一闪，满地纸张飞起。" },
+      { number: 12, description: "约 17.2–21s 近身交手：她和穿运动服的男人互相出拳。" },
+      { number: 13, description: "约 21–24s 通道全景：她腾空踢人，后面有人倒地。" },
+      { number: 14, description: "约 24–26.1s 雾气和能量光效转场。" },
+      { number: 15, description: "约 26.1–26.8s 她的手伸向镜头的特写。" },
+      { number: 16, description: "约 26.8–30s 她穿过烟雾朝镜头走来，身后的人都倒在地上。" },
+    ],
+    constraints:
+      "角色身份只按角色设定图，动作、机位和先后顺序按故事板；写实质感，没有超能力，不血腥；无对白、字幕和 Logo。与成片不符：提示词写的是 20 格故事板、20 个镜头，附图只有 15 格，成片节奏也跟着这 15 格走；提示词写的服装是黑色短上衣、黑长裤、黑皮夹克、黑靴和单肩包，成片里是黑 T 恤配牛仔短裤，没有夹克，也基本看不到包；提示词明确「no supernatural effects」，成片格挡、踢腿和转场处却有明显的蓝色能量光效；帖子写 1080p，X 上最高只有 1276×718。缺口：角色设定图没有发布；故事板说明是「从提供的视频中抽取」，源视频来源不明。",
+    video_prompt: {
+      title: "Subway Corridor Action · 20 shots / 30s",
+      subtitle: "Seedance 2.5 · 16:9 · 作者主帖英文完整提示词（含头部参数）",
+      content: `Made with Seedance 2.5 in 1080p
+
+Duration: 30 seconds
+Aspect Ratio: 16:9
+
+Prompt:
+Create a 30-second, 1080p ultra-realistic cinematic action video featuring Elsa.
+
+Use the provided Elsa Master Character Set only as the strict identity reference for Elsa. Use the provided 20-panel Master Storyboard as the exact visual and chronological guide for the entire video.
+
+Do not copy any identity from the storyboard. The storyboard controls the action, shot progression, locations, framing and choreography, while the Master Character Set controls Elsa's face and physical identity.
+
+CHARACTER CONSISTENCY:
+Preserve Elsa's exact facial identity, facial proportions, hairstyle, skin tone, body proportions and recognizable appearance throughout the entire video.
+
+Keep her outfit consistent: black cropped top, fitted black pants, black leather jacket, black boots and a black shoulder bag.
+
+The same Elsa must appear in every shot.
+
+STYLE:
+Ultra-realistic live-action cinematic action sequence set inside a modern underground subway corridor.
+
+The environment should feel real and lived-in: tiled walls, fluorescent ceiling lights, concrete floors, distant commuters, signage, subway entrances and realistic urban details.
+
+Use cinematic handheld camera work combined with controlled action cinematography.
+
+Natural motion blur, realistic lighting, realistic shadows, physically accurate movement and believable human reactions.
+
+No fantasy powers, no supernatural effects, no exaggerated wire-fu and no impossible movements.
+
+ACTION:
+Keep the confrontation clearly fictional and choreographed for cinematic storytelling. Avoid graphic injury, blood or gore.
+
+SHOT 1 — 00:00–00:01
+Elsa walks alone through the subway corridor carrying her shoulder bag.
+
+Use a medium-wide tracking shot from the front as commuters move naturally in the background.
+
+SHOT 2 — 00:01–00:02
+Cut to a closer side angle as Elsa senses movement behind her.
+
+She slightly turns her head and looks over her shoulder.
+
+Her expression becomes alert but controlled.
+
+SHOT 3 — 00:02–00:03
+Reveal several suspicious figures approaching from behind.
+
+Use a longer lens perspective that compresses the corridor and creates tension.
+
+SHOT 4 — 00:03–00:04
+Close-up on Elsa's face.
+
+She notices the situation and remains calm and focused.
+
+Use shallow depth of field with the subway corridor softly blurred behind her.
+
+SHOT 5 — 00:04–00:05
+Elsa turns into a narrower side passage.
+
+The camera follows quickly behind her as the atmosphere becomes more confined.
+
+SHOT 6 — 00:05–00:06
+The figures block Elsa's path.
+
+Use a frontal medium shot showing Elsa surrounded by the group while maintaining clear spatial geography.
+
+SHOT 7 — 00:06–00:08
+One attacker reaches toward Elsa's arm.
+
+Elsa reacts immediately, pulling her arm away and creating distance.
+
+Use a dynamic side angle with realistic body mechanics.
+
+SHOT 8 — 00:08–00:09
+Elsa performs a quick defensive movement to escape the grab.
+
+Keep the choreography controlled and realistic.
+
+The camera moves with the action rather than using exaggerated effects.
+
+SHOT 9 — 00:09–00:11
+A second attacker moves toward her.
+
+Elsa pivots out of the way and uses a controlled defensive counter, causing the attacker to lose balance and fall safely.
+
+Use a wider shot so the complete movement is readable.
+
+SHOT 10 — 00:11–00:12
+Elsa creates space between herself and the attackers.
+
+Her shoulder bag swings naturally with the movement.
+
+Use a fast handheld camera adjustment.
+
+SHOT 11 — 00:12–00:14
+An attacker moves toward Elsa again.
+
+Elsa uses the shoulder bag defensively to create distance and escape the immediate threat.
+
+Do not depict graphic impact.
+
+SHOT 12 — 00:14–00:15
+Elsa performs a fast controlled kick that stops the attacker's advance.
+
+Use a low three-quarter angle emphasizing the movement while keeping realistic proportions.
+
+SHOT 13 — 00:15–00:17
+Another attacker approaches.
+
+Elsa quickly changes direction, evades the incoming movement and performs a controlled defensive strike.
+
+Use a dynamic tracking camera.
+
+SHOT 14 — 00:17–00:18
+Close action beat as Elsa completes the defensive sequence and creates separation.
+
+Keep the movement realistic and clearly choreographed.
+
+SHOT 15 — 00:18–00:20
+Wide shot of the corridor.
+
+The attackers are now on the ground or backing away while Elsa remains standing and composed.
+
+No blood, wounds or graphic injury.
+
+SHOT 16 — 00:20–00:22
+The tension disappears.
+
+Elsa calmly fixes her hair and adjusts her jacket.
+
+Use a close-up that contrasts her calm expression with the action that just occurred.
+
+SHOT 17 — 00:22–00:24
+Elsa picks up and adjusts her shoulder bag.
+
+Use a medium close-up with natural handheld movement.
+
+SHOT 18 — 00:24–00:27
+Elsa walks confidently down the subway corridor.
+
+The camera tracks backward in front of her.
+
+Commuters naturally move through the background.
+
+SHOT 19 — 00:27–00:29
+Elsa approaches the subway exit stairs.
+
+Use a rear tracking shot as she walks toward the brighter exit.
+
+The lighting gradually becomes warmer and brighter.
+
+SHOT 20 — 00:29–00:30
+Before leaving, Elsa briefly turns her head and looks back toward the camera with a calm, confident expression.
+
+Hold for a short cinematic beat.
+
+Cut to black.
+
+CAMERA LANGUAGE:
+Use a mixture of wide establishing shots, handheld tracking shots, close facial shots, side angles, low three-quarter angles and dynamic action framing.
+
+Every camera movement should be motivated by the action.
+
+Use short speed ramps only where they naturally emphasize an important movement. Do not overuse slow motion.
+
+Maintain clear spatial continuity so the viewer always understands where Elsa and the other characters are positioned.
+
+PHYSICS & CONTINUITY:
+Realistic human anatomy and movement.
+Realistic weight transfer.
+Natural hair and clothing movement.
+Natural shoulder-bag physics.
+Realistic footsteps and body momentum.
+No teleportation.
+No duplicated characters.
+No disappearing props.
+No impossible body deformation.
+
+AUDIO:
+Authentic subway ambience throughout.
+
+Footsteps, distant train sounds, station announcements, ventilation, commuters talking, clothing movement, bag movement and subtle action impacts.
+
+Music should be minimal and cinematic, building tension during the confrontation and becoming quieter as Elsa walks toward the exit.
+
+No dialogue.
+No subtitles.
+No text overlays.
+No logos.
+No watermark.
+
+FINAL LOOK:
+Premium ultra-realistic live-action action cinema with believable choreography, strong visual continuity and a grounded urban atmosphere.
+
+The sequence should feel tense, stylish and cinematic while remaining physically realistic and non-graphic.`,
+    },
+  },
+  {
+    id: "elsasofia-fragrant-rice-cooking-vlog-seedance-2-5",
+    title: "香料米饭烹饪 vlog · 6 段场景 + 英文口播 · Seedance 2.5",
+    subtitle: "X · @ElsaSofia__AI · Seedance 2.5 · 20秒 · 16:9",
+    description:
+      "AI 博主做香料米饭：Seedance 2.5 按 6 段场景和逐句英文台词生成 20 秒烹饪 vlog，口型同步。",
+    video: "/tutorials/elsasofia-fragrant-rice-cooking-vlog-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/elsasofia-fragrant-rice-cooking-vlog-seedance-2-5/poster.jpg",
+    duration: "20秒",
+    durationSec: 20,
+    styleLabel: "美食 vlog",
+    shots: 8,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "写实家庭厨房 · 暖色自然光 · 食材微距 + 真人口播",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ElsaSofia__AI/status/2092930512918589541",
+    sourceAuthor: "@ElsaSofia__AI",
+    sourcePlatform: "X",
+    sourceImpressions: 13025,
+    sourceStats: { asOf: "2026-09-28", likes: 113, reposts: 30, bookmarks: 24 },
+    formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "淘米 → 下香料 → 下米 → 煮 → 拨松 → 装盘",
+      opening: "第 0 秒是手在碗里淘米的特写，紧接着切到她站在水槽前开口说「Let's make some simple delicious rice」：先给动作，再给人和台词。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3.1s 俯拍台面上摆好的香料；约 6.4s 米倒进锅里、木勺搅拌；约 10.2s 沸腾特写。每个场景配一句口播。", at: 3.1 },
+        { title: "结尾怎么收", text: "约 14.6s 叉子把米拨松；约 16.7s 米饭盛进白碗、放上餐桌冒热气，最后一句「ready to serve」。", at: 16.7 },
+      ],
+      copyThis: "每个场景写死时间段，并配一句带引号的英文台词，再要求 Elsa must visibly speak each line，口型就能对上。",
+      approx: true,
+    },
+    tags: [
+      "20秒 · 烹饪 vlog",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "英文口播 + 口型同步",
+      "6 段场景",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备角色参考图",
+        description:
+          "提示词用 @IMG1 当角色身份参考，要求全程同一张脸、同一套家居服加围裙。作者没有发布这张图。",
+      },
+      {
+        number: 2,
+        title: "第二步：按 6 段场景写提示词",
+        description:
+          "淘米（0–3s）→ 香料（3–6s）→ 煮水下米（6–10s）→ 煮（10–15s）→ 拨松（15–17s）→ 装盘（17–20s）。每段写画面，再写一句 Elsa 要说的英文台词。",
+      },
+      {
+        number: 3,
+        title: "第三步：写镜头、写实和声音要求",
+        description:
+          "CAMERA 段列出要拍的微距特写；REALISM 段要求口型同步、年轻成年女性自然英语、厨房环境音，不要盖过人声的背景音乐；STYLE 段排除卡通、CGI 感食物和水印。然后用 Seedance 2.5 生成。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–1s 手在玻璃碗里淘米的特写。" },
+      { number: 2, description: "1–3.1s 中景：她在厨房水槽前用滤网冲洗大米，对着镜头说「Let's make some simple delicious rice.」" },
+      { number: 3, description: "3.1–6.4s 俯拍台面：大米、清水、盐、孜然、月桂叶、肉桂、绿豆蔻、丁香、油，手逐一拿起香料。" },
+      { number: 4, description: "6.4–10.2s 锅中特写：香料在水里，淘好的米从滤网倒进锅，木勺搅拌。" },
+      { number: 5, description: "10.2–12.1s 米在锅里翻滚沸腾的特写，蒸汽升起。" },
+      { number: 6, description: "12.1–14.6s 侧面中景：她在灶台前用勺子查看米的软硬。" },
+      { number: 7, description: "14.6–16.7s 叉子在锅里把米饭拨松，米粒分明。" },
+      { number: 8, description: "16.7–20s 把米饭盛进白色餐碗放到餐桌上，热气升起。" },
+    ],
+    constraints:
+      "全程同一个 Elsa，服装不变；按 6 段场景的时间顺序，每段说一句指定的英文台词；写实质感，无文字、Logo、水印。成片核对：6 句台词都说了，语音转写与提示词一致，时间点也基本对上（第 4 句约从 12.2s 开始）。与成片不符：Scene 6 要求她看着成品微笑，成片最后 3 秒只有米饭装盘和餐碗特写，没有露脸；Scene 2 要求把配料加进锅里，成片是俯拍拿香料，下一镜香料就已经在锅里了。缺口：@IMG1 角色参考图没有发布。",
+    video_prompt: {
+      title: "Fragrant Rice Cooking Vlog · 6 scenes / 20s",
+      subtitle: "Seedance 2.5 · 作者主帖英文完整提示词",
+      content: `Create a 20-second ultra-photorealistic cinematic cooking vlog featuring Elsa preparing simple fragrant rice at home.
+
+CHARACTER:
+Use @IMG1 as the STRICT identity reference.
+
+The EXACT SAME Elsa must appear throughout the entire video.
+
+Preserve her exact face, facial features, hairstyle, skin tone, body proportions and identity.
+
+She wears a clean, comfortable and elegant home-cooking outfit with a simple kitchen apron.
+
+No identity change and no outfit change.
+
+SCENE 1 — RICE PREPARATION | 0–3s
+
+Elsa stands in her home kitchen.
+
+She takes uncooked white rice from a bowl.
+
+She washes the rice thoroughly under clean running water.
+
+Close-up of the rice and her hands.
+
+Elsa says naturally in English:
+
+"Let's make some simple, delicious rice."
+
+SCENE 2 — INGREDIENTS | 3–6s
+
+Show the ingredients clearly on the kitchen counter:
+
+white rice,
+water,
+salt,
+cumin,
+bay leaf,
+cinnamon,
+green cardamom,
+cloves,
+a small amount of oil or ghee.
+
+Elsa adds the ingredients naturally into a saucepan.
+
+She says:
+
+"I'll add a little salt, cumin, cardamom, and spices."
+
+SCENE 3 — BOILING & RICE | 6–10s
+
+The seasoned water begins boiling.
+
+Show realistic bubbling and steam.
+
+Elsa adds the washed rice into the boiling water.
+
+She gently stirs it.
+
+She says:
+
+"Now, let it boil, then add the rice."
+
+SCENE 4 — COOKING | 10–15s
+
+Show the rice cooking naturally.
+
+Close-up of boiling water, rice grains and rising steam.
+
+The rice gradually becomes tender.
+
+Elsa checks the rice carefully.
+
+She says:
+
+"Let it cook until the rice is nice and tender."
+
+SCENE 5 — FLUFFING | 15–17s
+
+The water has cooked away.
+
+Elsa gently fluffs the cooked rice with a fork.
+
+Show separate fluffy rice grains and natural steam.
+
+She smiles slightly and says:
+
+"Perfect! Look how fluffy it is."
+
+SCENE 6 — FINAL SERVING | 17–20s
+
+Elsa transfers the freshly cooked rice into an elegant serving bowl.
+
+Beautiful steam rises from the rice.
+
+She places the bowl on the dining table.
+
+She looks at the finished dish with a small satisfied smile.
+
+She says:
+
+"And that's it—fresh, fragrant rice, ready to serve."
+
+CAMERA:
+
+Premium cinematic food vlog.
+
+Natural handheld movement.
+
+Macro close-ups of:
+
+rice,
+spices,
+boiling water,
+milk-free rice cooking,
+steam,
+fluffy rice,
+final serving.
+
+Use smooth transitions between shots.
+
+REALISM:
+
+Realistic rice washing.
+
+Realistic boiling water.
+
+Realistic steam.
+
+Realistic ingredient movement.
+
+Realistic cooking physics.
+
+Natural hands and fingers.
+
+Accurate lip synchronization.
+
+Elsa must visibly speak each line.
+
+Her voice should sound like a natural young adult female speaking fluent English.
+
+Warm, friendly, conversational delivery.
+
+No exaggerated acting.
+
+No background music overpowering her voice.
+
+Add subtle kitchen ambience, water sounds, boiling sounds and utensil sounds.
+
+STYLE:
+
+Ultra-photorealistic live-action.
+
+Premium cinematic cooking/lifestyle vlog.
+
+Warm natural home lighting.
+
+Realistic food textures.
+
+Natural skin texture.
+
+Cinematic depth of field.
+
+Subtle film grain.
+
+No cartoon.
+No anime.
+No CGI-looking food.
+No face change.
+No identity swapping.
+No distorted hands.
+No extra fingers.
+No text overlays.
+No logos.
+No watermark.
+
+FINAL STORY:
+
+WASH RICE → ADD SPICES → BOIL → ADD RICE → COOK → FLUFF → SERVE.`,
+    },
+  },
+  {
+    id: "elsasofia-creamy-chicken-pasta-cooking-vlog-seedance-2-5",
+    title: "奶油鸡肉意面烹饪 vlog · 角色设定图 + 6 图参考 · Seedance 2.5",
+    subtitle: "X · @ElsaSofia__AI · GPT Image 2 + Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "GPT Image 2 角色设定图加 6 张参考图喂 Seedance 2.5，30 秒奶油鸡肉意面烹饪 vlog。",
+    video: "/tutorials/elsasofia-creamy-chicken-pasta-cooking-vlog-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/elsasofia-creamy-chicken-pasta-cooking-vlog-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "美食 vlog",
+    shots: 11,
+    references: 1,
+    model: "GPT Image 2 + Seedance 2.5",
+    style: "写实家庭厨房 · 暖色窗光 · 美食广告质感特写",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ElsaSofia__AI/status/2091483398972080172",
+    sourceAuthor: "@ElsaSofia__AI",
+    sourcePlatform: "X",
+    sourceImpressions: 20317,
+    sourceStats: { asOf: "2026-09-28", likes: 194, reposts: 66, bookmarks: 95 },
+    formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "备料 → 切菜 → 翻炒 → 奶油酱拌面 → 装盘 → 开吃",
+      opening: "第 0 秒是暖色窗光的厨房中远景，她站在摆好食材的台面前，镜头慢慢推近：先交代人、厨房和今天要做的菜。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4.3s 切菜，约 6.1s 刀切洋葱特写；约 8.9s 下锅翻炒鸡肉和蘑菇；约 14.9s 倒奶油、下意面。", at: 4.3 },
+        { title: "成品怎么露", text: "约 19.6s 意面倒进碗；约 21.7s 撒帕玛森和欧芹的成品特写。", at: 19.6 },
+        { title: "结尾怎么收", text: "约 23.6s 起她捧碗吃意面，看向镜头微笑，最后淡出黑场。", at: 23.6 },
+      ],
+      copyThis: "把人物、厨房、食材、动作、成品、用餐拆成 6 张参考图，在每个时间段里写明「Use @IMGx」，指定这一段该参照哪几张图。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 烹饪 vlog",
+      "16:9 横屏",
+      "GPT Image 2 + Seedance 2.5",
+      "角色设定图",
+      "6 张参考图分段调用",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2 出角色设定图（@IMG1）",
+        description:
+          "以一张女性照片为身份参考，生成 9 格角色设定图：正面、四分之三侧面、侧面、背面全身，半身、面部特写、微笑、中性表情和手部服装细节。提示词见参考图 1。作者没有发布这张身份参考照片。",
+      },
+      {
+        number: 2,
+        title: "第二步：准备其余 5 张场景参考图",
+        description:
+          "@IMG2 厨房、@IMG3 食材与烹饪台、@IMG4 烹饪动作、@IMG5 成品奶油鸡肉意面、@IMG6 用餐场景。这 5 张图和它们的提示词作者都没有发布。",
+      },
+      {
+        number: 3,
+        title: "第三步：用 Seedance 2.5 分 6 段生成 30 秒",
+        description:
+          "视频提示词按 0–4 / 4–9 / 9–15 / 15–20 / 20–24 / 24–30 秒分成备料、切菜、翻炒、奶油酱拌面、装盘、用餐 6 段，每段写明用哪几张参考图，另附镜头、写实和最终规则。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "elsasofia-pasta-character-sheet",
+        number: "1",
+        title: "@IMG1 · 角色设定图（Character reference sheet）",
+        subtitle: "米色针织居家服，9 格：正面、侧面、背面、特写、表情和细节；作者原帖附图",
+        image: "/tutorials/elsasofia-creamy-chicken-pasta-cooking-vlog-seedance-2-5/refs/01-character-sheet.jpg",
+        prompt: `Create an ultra-photorealistic premium female character reference sheet using the uploaded woman as the STRICT IDENTITY REFERENCE.
+
+IDENTITY — ABSOLUTE PRIORITY:
+
+Preserve the exact identity of the woman in the uploaded image.
+
+Keep her:
+- exact face shape
+- eyes
+- eyebrows
+- nose
+- lips
+- jawline
+- skin tone
+- natural skin texture
+- hairstyle
+- hairline
+- facial proportions
+- age appearance
+- feminine body proportions
+
+Do not redesign her face.
+Do not beautify or alter her recognizable features.
+She must look like the exact same real woman in every view.
+
+CHARACTER CONCEPT:
+
+Create a realistic modern young woman who will be the main protagonist of a cinematic everyday cooking/lifestyle video.
+
+She has a natural, approachable appearance and relaxed confident personality.
+
+Create a realistic everyday home-cooking appearance rather than a fashion-model look.
+
+OUTFIT:
+
+A tasteful modern casual home outfit suitable for cooking dinner:
+
+- simple fitted neutral-colored top
+- comfortable casual trousers
+- clean natural styling
+- minimal jewelry
+- no high-fashion styling
+- no excessive makeup
+
+Keep the outfit practical and believable for a woman cooking at home.
+
+CHARACTER SHEET LAYOUT:
+
+Create one professional reference sheet containing:
+
+1. Full-body FRONT view
+2. Full-body 3/4 FRONT view
+3. Full-body SIDE view
+4. Full-body BACK view
+5. Medium portrait
+6. Close-up facial portrait
+7. Natural smiling expression
+8. Neutral expression
+9. Hands and clothing detail
+
+Every view must show the EXACT SAME WOMAN.
+
+BODY & ANATOMY:
+
+Natural realistic feminine proportions.
+Lean, healthy everyday physique.
+Accurate human anatomy.
+Natural posture.
+No exaggerated body proportions.
+
+HAIR:
+
+Preserve the exact hairstyle from the uploaded reference.
+
+Show realistic individual hair strands and natural volume.
+
+PHOTOGRAPHY:
+
+Ultra-photorealistic live-action photography.
+
+Premium cinematic lifestyle production quality.
+
+Realistic skin pores and texture.
+
+Natural hair detail.
+
+Physically accurate clothing fabric.
+
+Soft professional studio lighting.
+
+Natural shadows.
+
+Subtle realistic depth of field.
+
+High-end commercial photography quality.
+
+BACKGROUND:
+
+Clean warm-neutral studio background.
+
+Minimal distractions.
+
+The character must be clearly separated from the background.
+
+IDENTITY CONSISTENCY:
+
+This exact woman will be used as the main character in:
+
+@IMG1 Character
+@IMG4 Cooking Action
+@IMG6 Dining Scene
+and the final 30-second video.
+
+Her face and identity must remain identical across all references and video scenes.
+
+IMPORTANT NEGATIVE RULES:
+
+No face redesign.
+No different woman.
+No face morphing.
+No age change.
+No hairstyle change.
+No masculine features.
+No exaggerated makeup.
+No unrealistic body proportions.
+No cartoon.
+No anime.
+No CGI-looking skin.
+No text.
+No logo.
+No watermark.
+
+Premium photorealistic cinematic character reference sheet.`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–4.3s 厨房中远景：她站在台面前，食材摆好，镜头慢慢推近。" },
+      { number: 2, description: "4.3–6.1s 中景：在木砧板上切菜。" },
+      { number: 3, description: "6.1–7.7s 刀切洋葱的特写。" },
+      { number: 4, description: "7.7–8.9s 回到中景，她专注切菜。" },
+      { number: 5, description: "8.9–13.2s 灶台特写：锅里倒油，从砧板推入鸡肉和蘑菇，木勺翻炒。" },
+      { number: 6, description: "13.2–14.9s 鸡肉和蘑菇在锅里翻炒上色。" },
+      { number: 7, description: "14.9–18.2s 倒入奶油酱汁，再放入煮好的意面。" },
+      { number: 8, description: "18.2–19.6s 木勺把意面和奶油酱拌匀的特写。" },
+      { number: 9, description: "19.6–21.7s 意面从锅里倒进陶瓷碗。" },
+      { number: 10, description: "21.7–23.6s 成品特写，撒上帕玛森和欧芹。" },
+      { number: 11, description: "23.6–30s 她捧着碗用叉子吃意面，看向镜头微笑，淡出黑场。" },
+    ],
+    constraints:
+      "同一个女人、同一间厨房、同一套居家服、同一道奶油鸡肉意面贯穿全片；按 6 个时间段推进，每段参照指定的 @IMG；写实，无文字、Logo、水印。与成片不符：提示词要她坐在餐桌前、从陶瓷盘里吃，成片是装进碗里，她在厨房里捧着碗吃；开头没有拍到她走进厨房，第 0 秒她已经站在台面前；切点和各段时间基本对得上（翻炒约从 8.9s 开始、装盘约从 19.6s 开始）。缺口：@IMG2–@IMG6 五张参考图没有发布，也没有提示词；角色设定图所依据的那张原始人物照片来源不明。",
+    video_prompt: {
+      title: "Creamy Chicken Pasta Cooking Vlog · 6 segments / 30s",
+      subtitle: "Seedance 2.5 · 作者主帖英文完整视频提示词",
+      content: `DURATION: 30 seconds
+
+ASPECT RATIO: Use the video's available landscape/cinematic ratio.
+
+STYLE:
+Ultra-photorealistic live-action cooking and lifestyle vlog, premium food-commercial cinematography, realistic human behavior, natural hand movements, realistic cooking physics, authentic home atmosphere, cinematic lighting, subtle handheld camera movement, realistic food textures, natural skin and hair.
+
+REFERENCE ASSIGNMENT:
+
+@IMG1 = FEMALE CHARACTER
+@IMG2 = KITCHEN ENVIRONMENT
+@IMG3 = INGREDIENTS AND COOKING SETUP
+@IMG4 = COOKING ACTION
+@IMG5 = FINISHED CREAMY CHICKEN PASTA
+@IMG6 = DINING SCENE
+
+Use all uploaded references consistently.
+
+CHARACTER CONSISTENCY:
+
+The SAME woman from @IMG1 must appear throughout the entire video.
+
+Preserve her exact face, facial features, hairstyle, skin tone, body proportions and overall identity.
+
+Do not change her appearance between scenes.
+
+Preserve the same casual home-cooking outfit from @IMG1.
+
+FOOD CONSISTENCY:
+
+The dish throughout the entire video is EXACTLY the creamy chicken pasta shown in @IMG3 and @IMG5.
+
+Maintain the same pasta, chicken, mushrooms, cherry tomatoes, cream sauce, parmesan and parsley throughout.
+
+Do not change the dish between scenes.
+
+---
+
+0–4 SECONDS — PREPARATION
+
+Use @IMG2 and @IMG3.
+
+The woman enters the kitchen and approaches the countertop.
+
+The ingredients for creamy chicken pasta are neatly arranged in front of her.
+
+She looks over the ingredients and begins preparing dinner.
+
+Camera starts with a natural medium-wide kitchen shot and gently moves closer.
+
+Show the real home environment.
+
+---
+
+4–9 SECONDS — CHOPPING
+
+Use @IMG3 and @IMG4.
+
+The woman places vegetables on the wooden cutting board.
+
+She carefully chops garlic, onion and mushrooms with a kitchen knife.
+
+Show realistic hand and finger movement.
+
+Include a brief close-up of the knife cutting the vegetables.
+
+Vegetables naturally separate as she cuts them.
+
+Return to a medium shot showing her focused expression.
+
+Keep the action smooth and believable.
+
+---
+
+9–15 SECONDS — COOKING
+
+Use @IMG4.
+
+She places the pan on the stove and adds a small amount of olive oil.
+
+She adds the prepared chicken and vegetables into the hot pan.
+
+A realistic sizzling sound and subtle steam accompany the cooking.
+
+She uses a wooden spoon to stir the ingredients.
+
+The chicken gradually cooks while the vegetables soften.
+
+Camera moves from a side angle toward the pan.
+
+Include a close-up of the food sizzling and being stirred.
+
+---
+
+15–20 SECONDS — CREAMY SAUCE & PASTA
+
+Continue using @IMG4 and @IMG3.
+
+She adds the creamy sauce ingredients to the pan.
+
+The sauce mixes naturally with the chicken and vegetables.
+
+She adds the cooked pasta.
+
+She gently tosses and stirs everything together.
+
+The creamy sauce coats the pasta realistically.
+
+Steam rises naturally from the pan.
+
+Show a satisfying close-up of the finished creamy texture.
+
+Do not rush this action.
+
+---
+
+20–24 SECONDS — PLATING
+
+Use @IMG5.
+
+The woman transfers the freshly cooked creamy chicken pasta from the pan onto the ceramic plate.
+
+She carefully arranges the pasta.
+
+She adds parmesan and fresh parsley on top.
+
+A small amount of realistic steam rises from the hot food.
+
+Camera transitions into a premium close-up food shot.
+
+Make the dish look genuinely freshly cooked and appetizing.
+
+---
+
+24–30 SECONDS — DINNER
+
+Use @IMG6.
+
+The woman sits at the dining table with the finished creamy chicken pasta.
+
+She picks up the fork naturally.
+
+She takes a small bite.
+
+She tastes the food and gives a genuine satisfied smile.
+
+She briefly looks toward the camera as if sharing the moment with her audience.
+
+Camera slowly pushes toward her and the plate.
+
+End on a warm, cozy lifestyle shot of the woman enjoying the dinner she prepared herself.
+
+CUT TO BLACK.
+
+---
+
+CAMERA PRIORITY:
+
+Use natural cinematic camera movement.
+
+Wide establishing shots for the kitchen.
+
+Medium shots for cooking actions.
+
+Close-ups for chopping and sizzling food.
+
+Macro-style food detail during sauce and plating.
+
+Gentle push-in during the final dining moment.
+
+Avoid excessive camera shake.
+
+Avoid unnecessary camera movement.
+
+Keep the woman and the food clearly readable.
+
+---
+
+REALISM PRIORITY:
+
+Natural human movement.
+
+Realistic hand anatomy.
+
+Realistic knife handling.
+
+Realistic food physics.
+
+Realistic steam.
+
+Realistic sauce consistency.
+
+Realistic sizzling and stirring.
+
+Natural facial expressions.
+
+Natural eating motion.
+
+No exaggerated movements.
+
+No instant food transformations.
+
+No teleporting ingredients.
+
+No changing kitchen.
+
+No changing outfit.
+
+No changing character.
+
+---
+
+FINAL RULES:
+
+Same woman throughout.
+Same face throughout.
+Same kitchen throughout.
+Same outfit throughout.
+Same creamy chicken pasta throughout.
+Same ingredients throughout.
+
+No different woman.
+No face morphing.
+No extra people.
+No distorted hands.
+No extra fingers.
+No unrealistic eating.
+No cartoon.
+No anime.
+No fantasy.
+No text.
+No logos.
+No watermark.
+
+The final result should feel like a genuine cinematic cooking vlog filmed inside a real woman's home.`,
+    },
+  },
+  // 同作者已上线：naiknelofar788-me-time-dark-circles-seedance（2103770487117713631，熬夜黑眼圈题材），不同视频、不同题材、无引用关系
+  {
+    id: "naiknelofar788-rainy-night-intruders-shotgun-standoff-seedance-2-5",
+    title: "雨夜入侵者对峙 · 好莱坞惊悚短片 · Seedance 2.5",
+    subtitle: "X · @Naiknelofar788 · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "雨夜别墅惊悚短片：Seedance 2.5 按 7 段时间轴生成 30 秒，女主在闪电中握起霰弹枪对峙入侵者。",
+    video: "/tutorials/naiknelofar788-rainy-night-intruders-shotgun-standoff-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/naiknelofar788-rainy-night-intruders-shotgun-standoff-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "电影感",
+    shots: 11,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "好莱坞惊悚片 · 雨夜冷青色调 · 闪电照明 · 35mm 变形宽银幕质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Naiknelofar788/status/2104190921730642155",
+    sourceAuthor: "@Naiknelofar788",
+    sourcePlatform: "X",
+    sourceImpressions: 1094,
+    sourceStats: { asOf: "2026-09-28", likes: 46, reposts: 5, bookmarks: 18 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "察觉异样 → 看见入侵者 → 盯上霰弹枪 → 走过去 → 握枪 → 转身对峙",
+      opening: "第 0 秒是她在昏暗大厅里的背影，落地窗外暴雨如注：镜头跟在身后，没有动作，只靠环境制造不安。",
+      openingAt: 0,
+      beats: [
+        { title: "悬念怎么建立", text: "约 4s 她停步侧头，焦点从她脸上转到远处窗前的一排剪影；约 10.7s 眼睛大特写，约 11.9s 切到桌上的霰弹枪。", at: 4 },
+        { title: "高潮怎么推", text: "约 13s 起她一步步走向桌子；约 19s 手握住枪；约 21.4s 闪电照亮整个房间。", at: 19 },
+        { title: "结尾怎么收", text: "约 22s 她端枪转身，约 26.7s 最后一道闪电下的全景对峙，约 28s 黑场。", at: 26.7 },
+      ],
+      copyThis: "每个时间段都分开写 Camera、Audio、Performance、Lighting，并且明确「悬念来自沉默、节奏和光」，不写打斗，只写对峙。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 惊悚短片",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "7 段时间轴",
+      "闪电照明",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：定总时长和整体风格",
+        description:
+          "开头写 TOTAL DURATION 30 秒和 STYLE：好莱坞惊悚片、写实摄影、克制的悬疑感、35mm 变形宽银幕、轻微胶片颗粒。",
+      },
+      {
+        number: 2,
+        title: "第二步：按 7 段时间轴写剧情",
+        description:
+          "0–4 预警、4–8 有东西在动、8–13 意识到、13–19 走过去、19–23 握枪、23–27 转身、27–30 对峙。每段单独写 Camera、Audio、Performance、Lighting。",
+      },
+      {
+        number: 3,
+        title: "第三步：写画质要求和禁区",
+        description:
+          "VISUAL QUALITY 写皮肤、头发、雨水反射、体积光、变形宽银幕散景；IMPORTANT 写明不血腥、不暴力、不夸张动作。纯文字提示词，不用参考图，直接用 Seedance 2.5 生成。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 雨夜，现代别墅的昏暗大厅，镜头在她身后手持跟拍，落地窗外下着大雨。" },
+      { number: 2, description: "4–10.7s 她停步侧头，镜头推近侧脸，景深转到远处窗前一排入侵者的剪影。" },
+      { number: 3, description: "10.7–11.9s 她眼睛的大特写。" },
+      { number: 4, description: "11.9–约12.3s 桌上的霰弹枪特写。" },
+      { number: 5, description: "约12.3–13s 回到她的侧脸。" },
+      { number: 6, description: "13–19s 她朝桌子走过去：先是腿部低机位跟拍，再到侧面，最后是手伸向桌面的特写，入侵者一动不动。" },
+      { number: 7, description: "19–21.4s 手握住桌上的霰弹枪。" },
+      { number: 8, description: "21.4–22s 闪电照亮整个房间，枪口前方的入侵者被照清楚。" },
+      { number: 9, description: "22–26.7s 她端着枪转身，镜头绕到她正面，表情从害怕变成坚定。" },
+      { number: 10, description: "26.7–28s 最后一道闪电，全景：她端枪站在一侧，四个入侵者排在落地窗前。" },
+      { number: 11, description: "28–30s 黑场。" },
+    ],
+    constraints:
+      "雨夜别墅单一场景，一名女主和几名入侵者；按 7 段时间轴推进，每段的机位、声音、表演和光线照写；不血腥、不暴力，悬念只靠沉默、节奏和光线。与成片不符：成片约 28s 就黑场了，比提示词写的 30s 早；最后的全景里她站在画面一侧，入侵者在窗前排成一排，不是提示词写的「她站在房间中央、入侵者散在黑暗里」，也没有推近到她脸上；中段剪辑点比提示词少，约 4–10.7s 是一个连续镜头，从推近侧脸接到转焦剪影。说明：画面里有霰弹枪，全程只是握在手里对峙，没有开枪。",
+    video_prompt: {
+      title: "Rainy Night Standoff · 7 segments / 30s",
+      subtitle: "Seedance 2.5 · 16:9 · 作者主帖英文完整提示词",
+      content: `TOTAL DURATION: 30 SECONDS
+STYLE: Ultra-realistic Hollywood thriller, photorealistic cinematography, natural performances, realistic physics, cinematic lighting, restrained suspense, premium production design, 35mm anamorphic look, subtle film grain, realistic depth of field.
+
+0–4 SEC — THE WARNING
+
+Night. Heavy rain hits the windows of a secluded modern house. A dim hallway stretches into darkness. The young woman slowly enters the frame, immediately sensing that something is wrong.
+
+Camera: Slow handheld tracking shot behind her, subtle natural camera movement.
+Audio: Rain, distant thunder, quiet breathing, faint house creaks.
+Mood: Uneasy silence and anticipation.
+
+4–8 SEC — SOMETHING MOVES
+
+She stops. A faint movement appears at the far end of the living room. She slowly turns her head.
+
+Lightning briefly illuminates the room, revealing several intruders partially concealed in the shadows.
+
+Camera: Slow push-in toward her face, then rack focus from her eyes toward the silhouettes.
+Performance: Controlled fear, widened eyes, shallow breathing.
+Audio: Thunder suddenly rolls closer, followed by complete silence.
+
+8–13 SEC — THE REALIZATION
+
+The woman remains completely still. One intruder subtly shifts position.
+
+Her eyes move toward a shotgun lying on a nearby table.
+
+Camera: Extreme close-up of her eyes → cut to the shotgun → cut back to her face.
+Lighting: A cold lightning flash briefly outlines the weapon and the surrounding darkness.
+Audio: Her breathing becomes slightly louder; faint heartbeat-like bass begins.
+
+13–19 SEC — THE WALK
+
+She slowly begins walking toward the table.
+
+Every footstep echoes through the quiet room. The intruders remain motionless, watching her.
+
+Camera: Low-angle tracking shot beside her legs → slow side profile → close-up of her hand approaching the table.
+Performance: Fear controlled by determination; no exaggerated movements.
+
+19–23 SEC — THE GRAB
+
+Her hand suddenly closes around the shotgun.
+
+She pauses for one tense second.
+
+The room becomes completely silent.
+
+Camera: Extreme close-up of her hand gripping the weapon → rapid rack focus to the intruders.
+Lighting: Lightning flashes across the room, revealing everyone's faces for a split second.
+
+23–27 SEC — THE TURN
+
+She slowly turns around and faces the intruders.
+
+The camera moves around her shoulder, revealing the silhouettes ahead.
+
+Nobody speaks.
+
+Camera: Slow 180-degree cinematic arc, ending in a dramatic frontal shot.
+Performance: Her expression changes from fear to controlled determination.
+
+27–30 SEC — THE STANDOFF
+
+Wide shot.
+
+She stands alone in the center of the room, shotgun held defensively, while the intruders remain spread across the darkness.
+
+A final lightning flash freezes the composition.
+
+Camera: Extremely slow push-in toward her face.
+
+Audio: Thunder crack → silence → single deep cinematic impact.
+
+END ON: Her unwavering expression as the screen cuts to black.
+
+VISUAL QUALITY: Photorealistic skin, realistic hair movement, physically accurate shadows, detailed environments, natural cloth simulation, realistic rain and reflections, cinematic volumetric lighting, subtle lens imperfections, anamorphic bokeh, HDR, restrained color grading, authentic Hollywood thriller cinematography.
+
+IMPORTANT: No gore, no graphic violence, no exaggerated action. The suspense must come from silence, pacing, acting, framing, lighting, sound, and anticipation.`,
+    },
+  },
+  // 查重别名(提示词 2 楼自回复帖): https://x.com/hxhxhx0916/status/2104248057672217055
+  {
+    id: "hxhxhx0916-one-hit-fashion-lookbook-mv-seedance-2-5",
+    title: "ONE HIT 时尚造型图册 MV · 1.5 秒一换装卡点 · Seedance 2.5",
+    subtitle: "X · @hxhxhx0916 · Seedance 2.5 · 15秒 · 16:9",
+    description:
+      "Seedance 2.5 时尚造型图册 MV：15 秒按 1.5 秒一格换装，配杂志大字版式卡点，女孩始终站在画面中央。",
+    video: "/tutorials/hxhxhx0916-one-hit-fashion-lookbook-mv-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/hxhxhx0916-one-hit-fashion-lookbook-mv-seedance-2-5/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "时尚变装",
+    shots: 10,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "韩系时尚图册 · Y2K 杂志版式 · 黑白底色加红色点缀 · 卡点换装",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/hxhxhx0916/status/2104248054044086437",
+    sourceAuthor: "@hxhxhx0916",
+    sourcePlatform: "X",
+    sourceImpressions: 132,
+    sourceStats: { asOf: "2026-09-28", likes: 2, reposts: 0, bookmarks: 3 },
+    formats: ["变装·换装", "时尚大片"],
+    hook: {
+      structure: "定机位 → 大字揭示 → 特写 → 卡点换装 → 定格",
+      opening: "第 0 秒纯白摄影棚里女孩站在正中，身后黑色大字「ONE HIT」和条形码、十字线同时弹出，白棚一下变成杂志海报。",
+      openingAt: 0,
+      beats: [
+        { title: "换装怎么卡点", text: "约 3.2s 起每 1.5 秒换一身：黑皮夹克、白西装、运动装、黄色套装配蓝发、黑西装，背景版式同时跟着换。", at: 3.2 },
+        { title: "结尾怎么收", text: "约 13.8s 黑色简约装双臂交叉站在中央，背景简化成几张小杂志图，定格在最后一拍。", at: 13.8 },
+      ],
+      copyThis: "按 1.5 秒一格写时间轴，每格只写换哪身衣服、摆什么姿势、背景换成什么版式，人物始终锁在画面中央。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 时尚 MV",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "1.5 秒一换装",
+      "杂志大字版式",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 7 张换装参考图",
+        description:
+          "提示词里的「看图 01」到「外观 07」对应 7 身造型：皮夹克、白西装、运动装、黄色制服、剪裁西装等。作者没有发布这些图，也没有给出图的提示词，需要自己准备同一个人的 7 套造型。",
+      },
+      {
+        number: 2,
+        title: "第二步：写开场和整体结构",
+        description:
+          "先写明是非叙事的 15 秒 16:9 造型图册 MV，核心结构是「锁定镜头 → 文字揭示 → 特写 → 快速切换视角 → 英雄结局」，并要求同一个女孩全程在画面中央、长相不变。",
+      },
+      {
+        number: 3,
+        title: "第三步：按 1.5 秒一格写时间轴，再写整体风格和避免项",
+        description:
+          "0–15 秒切成 10 格，每格写换装、姿势、机位和背景版式；整体风格写黑白底色加红色点缀、超大英文字、条形码、扫描线、胶片颗粒；最后列出要避免的问题。提示词是中文，直接用 Seedance 2.5 生成。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.7s 纯白摄影棚，女孩穿灰色亮片短裙站在中央，身后黑色大字「ONE HIT」展开，四周出现条形码、十字线等杂志元素。" },
+      { number: 2, description: "1.7–3.2s 大字推近后切到面部特写，她看向镜头，头发轻飘。" },
+      { number: 3, description: "3.2–4.7s 换装：黑色皮夹克配短裙，背景是黑白「ONE HIT」海报版式。" },
+      { number: 4, description: "4.7–6.2s 同一身黑色皮夹克，背景换成带红色大字母和条形码的杂志版式。" },
+      { number: 5, description: "6.2–7.8s 换成白色西装，她转身，背景是红白编辑图形和编号。" },
+      { number: 6, description: "7.8–9.3s 黑色运动装，背景红色「ONE HIT」大字。" },
+      { number: 7, description: "9.3–10.8s 黄色套装、蓝色长发，她蹲下，镜头推近，背景是满屏红色大字。" },
+      { number: 8, description: "10.8–12.3s 同一身黄色套装站起来，背景回到黑白「ONE HIT」和条形码。" },
+      { number: 9, description: "12.3–13.8s 黑色西装走向镜头，背景是红底黑字的杂志版式。" },
+      { number: 10, description: "13.8–15s 黑色简约装双臂交叉站在中央，背景简化成几张小杂志图，定格。" },
+    ],
+    constraints:
+      "同一个女孩全程站在画面中央，长相和身材比例不变；每 1–1.5 秒换一身衣服或换一种版式，跟着音乐卡点；黑白底色加红色点缀；无水印、无多余字幕。与成片不符：第 1 格的换装（看图 01）在成片里是黑色皮夹克，而且和第 2 格穿同一身，没有换；黄色套装配蓝发在第 5 格蹲姿就出现了，提示词写的是第 6 格；背景英文大多是乱码（如「1IANED ME」「RENIANH HIT」），只有「ONE HIT」拼写正确；结尾没有出现提示词说的标志或视觉标记。缺口：7 张换装参考图作者没有发布。",
+    video_prompt: {
+      title: "ONE HIT 时尚造型图册 MV · 10 格 / 15 秒",
+      subtitle: "Seedance 2.5 · 16:9 · 作者 2 楼中文完整提示词",
+      content: `制作一个 15 秒 16:9 时尚造型图册 MV，结合快速的服装更换、杂志风格的图片和与节拍同步的转场。
+该视频并非叙事性视频。核心结构：
+锁定镜头 → 文字揭示 → 特写 → 快速切换视角 → 英雄结局
+在整个视频中，保持同一位女性角色位于画面中心。无论换装如何，都要保持其面部特征、身材比例、肤色和整体形象不变。
+0.0–1.5秒
+纯白色的摄影棚，女孩自然地站在中央。
+摄像头已锁定。
+在她身后，巨大的黑色字体“ONE HIT”迅速展开。
+杂志元素出现在报道中：
+条形码、扫描线、十字线、数字、细边框、网格图形。
+干净整洁的工作室瞬间变成了一张大胆的时尚杂志海报。
+1.5–3.0秒
+快速镜头推近至特写镜头。
+女孩轻轻地转向镜头，头发自然飘动，眼神直视镜头，表情平静自信。
+带有细微胶片颗粒感的黑白编辑背景。
+3.0–4.5秒
+看图 01。
+瞬间换装，节奏感十足。
+人物保持居中，摆出自然时尚的姿势。
+背景切换到全新的杂志版式，标题、条形码和编号都放大了。
+4.5–6.0秒
+看图02。
+新衣服。
+中景镜头。女孩自信地向前迈出一步。
+背景文字快速变化。
+黑白两色依然是主色调，并以醒目的红色作为点缀。
+6.0–7.5秒
+看图 03。
+新衣服。
+女孩轻轻转过身，头发自然地摆动。
+背景变为红白相间的编辑图形，包含巨大的英文字体、数字、坐标、扫描线和边框。
+7.5–9.0秒
+第四张图。
+运动时尚装扮。
+女孩微微前倾，脸上带着轻松自信的微笑。
+巧妙的低角度拍摄。
+醒目的红色杂志字体随着节拍滑入画面。
+9.0–10.5秒
+第五张图。
+新衣服。
+女孩摆出一个时髦的蹲姿。
+快速推进相机。
+背景布局完全重新排列，营造出全新的视觉效果。
+10.5–12.0秒
+第六张图。
+女孩再次站了起来。
+镜头拉远至中景。
+醒目的黄色时尚制服，搭配飘逸的蓝色长发。
+背景恢复为黑白编辑设计，带有醒目的标题和条形码元素。
+12.0–13.5秒
+外观 07。
+剪裁合身的西装。
+女孩自信地走向镜头。
+背景切换为红黑相间的杂志设计。
+新的标题、编号、扫描线和图形网格迅速出现。
+步伐加快。
+13.5–15.0秒
+最终英雄镜头。
+女孩身着简约的黑色时尚装扮。
+双臂交叉，自信地站在中央。
+镜头稳定下来，拍摄清晰的中景。
+背景逐渐简化，只保留少量精美的杂志插图。
+最终的标志或视觉标记自然而然地呈现出来。
+定格在最后一个节拍。
+整体风格
+高端韩国时尚造型图册、时尚大片摄影、Y2K 杂志设计、高端商业摄影。
+黑白底色，红色点缀。
+超大号英文字体、条形码、扫描线、十字准星、坐标、编号、网格、细边框、细微的胶片颗粒。
+每隔 1-1.5 秒切换一次新的服装或视觉布局，与音乐节拍紧密同步。
+保持对镜头的相对控制。使用快速推拉、轻微拉远、姿势变化、画面过渡和布局切换等技巧。
+人物必须始终保持在画面中心附近。
+保持逼真的头发运动、织物物理效果、自然的姿势、干净的摄影棚灯光和高对比度的优质摄影效果。
+避免
+没有面部漂移、角色替换、身体变形、额外肢体、扭曲的手、不稳定的比例、杂乱的排版、混乱的镜头运动、随机的背景、卡通风格、低质量的 CGI、水印或不需要的字幕。
+最终效果应该感觉像是高端韩国时尚广告、千禧年杂志封面和节奏感十足的音乐视频的结合体。`,
+    },
+  },
   // 查重别名(提示词自回复帖): https://x.com/GeekCatX/status/2104124888508473568
   {
     id: "geekcatx-cyclist-kicks-truck-pov",
@@ -4360,6 +8793,12 @@ BGMあり。前半は制作進行を支える明確なリズム、後半は公�
     ],
     constraints:
       "每镜都重复同一段风格描述：电影机拍摄、光晕、暖调胶片颗粒、钴蓝 / 信号红 / 奶油色、海报式大字叠实拍、四角小标签；画面里只能有一瓶酱，不出现其他品牌；无对白，只有音效和音乐；无黑边、无强暗角；第 5 镜用全画幅，不分屏、不用圆形画框。与成片不符：定版的品牌字和瓶身标签是「MAYAM」，不是提示词写的「MAYDAY」；「EMERGENCY」上方的手写字不是提示词写的「obviously」，拼写不清；第 5 镜四角标签的编号有错（左下写成 SP-03）。缺口：帖子没说 Magnific 内部用的是哪个视频模型；4 张参考图是给大模型的风格参考，帖子没说是否直接喂给了视频模型；参考图 2 的 ALT 正好 1000 字符，原文不完整；音频没有转录。",
+    method_prompt: {
+      title: "给大模型的创意简报（Creative brief）",
+      subtitle: "Claude Opus 5.5 与 GPT-6 Astra 拿到的同一句创意 · 英文原文 · 帖子称为 short version",
+      content: `Create a cinematic 30-second hot sauce ad. One drop hits a taco and triggers a control-room emergency. Action-movie humor, original branding and motion graphics. English text, no dialogue. Take inspiration from the references without copying them.`,
+      note: "来源：@magnific 同一线程第二条帖（https://x.com/magnific/status/2103889158972580030），帖子原话：“We gave Claude and GPT an idea and a few visual references. Here’s the short version so you don’t have to start from scratch:” 引号里就是这段 brief，帖子称之为 short version（精简版）。\n用法：Magnific 把这同一句创意，连同 4 张风格参考图（出图提示词在帖子每张图的 ALT 里，见下方「参考图」卡片），分别交给 Claude Opus 5.5 和 GPT-6 Astra，让模型自己发展方向、写出逐镜提示词；本页「步骤三」就是 Claude Opus 5.5 写出来的那一版。帖子结尾原话：“Each model developed its own direction, watch both below / Prompts in ALT”。",
+    },
     video_prompt: {
       title: "Claude Opus 5.5 写的 6 镜视频提示词",
       subtitle: "30s · 16:9 · 6 × 5s · 英文完整提示词（线程第 3 帖长文）",
