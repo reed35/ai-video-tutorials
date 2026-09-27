@@ -1,6 +1,1349 @@
 import { Tutorial } from "./types";
 
 export const tutorials: Tutorial[] = [
+  {
+    id: "naiknelofar788-me-time-dark-circles-seedance",
+    title: "报复性熬夜 · 黑眼圈越刷越深 · Seedance 2.5",
+    subtitle: "X · @Naiknelofar788 · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "Seedance 2.5 熬夜刷手机小短剧：下班后舍不得睡，黑眼圈随时间一路加深，最后黑屏字幕收梗。",
+    video: "/tutorials/naiknelofar788-me-time-dark-circles-seedance/demo-web.mp4",
+    poster: "/tutorials/naiknelofar788-me-time-dark-circles-seedance/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "写实生活",
+    shots: 5,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "写实生活喜剧 · 暖色卧室转冷色手机光 · 网络梗短剧",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Naiknelofar788/status/2103770487117713631",
+    sourceAuthor: "@Naiknelofar788",
+    sourcePlatform: "X",
+    sourceImpressions: 1846,
+    sourceStats: { asOf: "2026-09-27", likes: 51, reposts: 0, bookmarks: 30 },
+    formats: ["角色表演", "电影叙事"],
+    hook: {
+      structure: "下班瘫倒 → 手机光下黑眼圈加深 → 照镜子又解锁 → 黑屏字幕收梗",
+      opening: "开场是暖黄台灯的卧室，女孩下班进门、跪上床再整个人趴倒——先用一个人人都有过的「终于到家」动作把人拉进来。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4.6s 切到黑暗里被手机照亮的脸，她笑着刷手机，屏上字幕「Me: I should sleep early tonight.」；机位几乎不动，约 13–20s 黑眼圈一点点加深成墨色，字幕换成「But I didn't get enough ME TIME today.」。", at: 4.6 },
+        { title: "照镜子又解锁", text: "约 21s 前景举着亮屏手机，后面暗色镜面里是满眼黑眼圈的自己；她看看自己、又低头把手机点亮继续刷。", at: 21 },
+        { title: "结尾怎么收", text: "约 26s 贴脸大特写，只剩被屏幕照亮的黑眼圈；约 28.8s 切黑屏，白字「Tomorrow's problem.」和一行小字 Me time / Sleep / Regrets: loading…。", at: 28.8 },
+      ],
+      copyThis: "同一个机位、同一张被手机照亮的脸，只让黑眼圈一路加深来表现时间流逝，最后用黑屏字幕把梗说破。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 生活喜剧",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "纯文生视频",
+      "熬夜刷手机",
+      "黑屏字幕收梗",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "先用一句话定题，再分 5 场写剧情",
+        description:
+          "提示词开头一句定调：一个下班后终于有自己时间、所以不肯睡觉的年轻女孩，幽默写实生活短片。然后按 Scene 1–5 写：下班瘫倒 → 「Finally, Me Time」刷手机 → 时间小偷（时间跳跃）→ 视觉比喻（照镜子后又解锁手机）→ 笑点收尾。纯文生视频，没有参考图。",
+      },
+      {
+        number: 2,
+        title: "把屏幕字幕和时间跳字原样写进提示词",
+        description:
+          "要出现的字都用引号写死：「Me: I should sleep early tonight.」「But I didn't get enough ME TIME today.」、结尾黑屏「Tomorrow's problem.」和三行小字。时间写成 11:47 PM → 12:38 AM → 1:52 AM → 3:07 AM，并要求每跳一次黑眼圈更深、手机始终明亮。注意：成片里时间数字没有清晰渲染，结尾小字也出现了错字。",
+      },
+      {
+        number: 3,
+        title: "最后写风格、画幅和「黑眼圈变钟影」的小花招",
+        description:
+          "Style 段写暖色卧室光混冷色手机光、夸张但不过火的黑眼圈、表情表演、浅景深和少量手持感，并写了 9:16、15–20 秒；最后的 Extra visual trick 要求黑眼圈逐渐像时钟阴影。实际成片是 16:9、30 秒，黑眼圈只是一路加深，没有出现时钟形状——跟做时画幅和时长要在平台参数里单独设。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "约 0–4.6s 暖黄卧室：女孩下班进门，跪上床后趴倒，放松地翻身。" },
+      { number: 2, description: "约 4.6–13s 黑暗中手机照亮的脸，她笑着刷手机，字幕「Me: I should sleep early tonight.」。" },
+      { number: 3, description: "约 13–21s 同一机位，黑眼圈逐渐加深成墨色，字幕换成「But I didn't get enough ME TIME today.」。" },
+      { number: 4, description: "约 21–26s 前景亮屏手机，后方暗色镜面里满眼黑眼圈的自己，她又把手机点亮继续刷。" },
+      { number: 5, description: "约 26–30s 贴脸大特写后切黑屏，白字「Tomorrow's problem.」与小字 Me time / Sleep / Regrets: loading…。" },
+    ],
+    constraints:
+      "写实生活喜剧质感，暖色卧室光与冷色手机光对比；黑眼圈随时间逐步加深但保持夸张得体；屏幕字幕与结尾黑屏文字按引号原文；表情表演为主，浅景深，少量手持。缺口：纯文生视频无参考图；提示词写 9:16、15–20 秒，成片为 16:9、30 秒；时间跳字未清晰出现，『手机变大人变小』与『黑眼圈变时钟阴影』未在成片中呈现；结尾小字渲染为『Me l time』；音频（耳语台词）未转录。",
+    video_prompt: {
+      title: "熬夜刷手机 · Seedance 2.5 提示词",
+      subtitle: "Scene 1–5 · Seedance 2.5 · 纯文生视频 · 英文完整提示词（主帖原文）",
+      content: `Create a short cinematic, humorous lifestyle video about a young woman who refuses to sleep because she finally has time for herself after work.
+Scene 1 — After Work
+Late evening. A tired young woman arrives home after a long workday, drops her bag, changes into comfortable clothes and finally collapses onto her bed. Warm, cozy bedroom lighting. She looks exhausted but relieved.
+Scene 2 — “Finally, Me Time”
+She picks up her phone and smiles. The room becomes darker and quieter while the phone screen illuminates her face. She scrolls through videos, messages, memes and social media.
+Add subtle on-screen text:
+“Me: I should sleep early tonight.”
+She checks the time: 11:47 PM.
+She shrugs and keeps scrolling.
+Scene 3 — The Time Thief
+Time passes rapidly through a cinematic time-lapse.
+11:47 PM → 12:38 AM → 1:52 AM → 3:07 AM
+With every time jump, make her eyes slightly more tired and the dark circles underneath them progressively darker.
+The phone remains perfectly bright and addictive.
+On-screen text:
+“But I didn’t get enough ME TIME today.”
+Scene 4 — Visual Metaphor
+Make the concept surreal and funny: the phone slowly grows larger while she becomes smaller, as if the phone is consuming the night.
+Her dark circles become exaggerated like soft ink shadows beneath her eyes.
+She looks at herself in the mirror.
+She is exhausted, hair slightly messy, huge dark circles under her eyes.
+She looks at the phone.
+Then back at herself.
+Then immediately unlocks the phone again.
+Scene 5 — The Punchline
+Close-up of her face glowing from the phone at 3:47 AM.
+She whispers:
+“Tomorrow I’ll fix my sleep schedule.”
+Cut to black.
+Text appears:
+“Tomorrow’s problem.”
+Tiny final text:
+“Me time: 4 hours
+Sleep: 3 hours
+Regrets: loading…”
+Style: cinematic realistic lifestyle film, relatable internet humor, warm bedroom lighting mixed with cool phone light, subtle exaggerated dark circles, expressive facial acting, smooth camera movements, realistic skin and fabric, shallow depth of field, natural handheld moments, tasteful comedy, premium social-media reel aesthetic, 9:16 vertical, 15–20 seconds, seamless time transitions, highly polished visual storytelling.
+Extra visual trick: make the dark circles progressively resemble a clock shadow under her eyes. It makes the joke more visually unique instead of just showing someone looking tired.`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/ShamsAmin56/status/2103849855114518601
+  {
+    id: "shamsamin56-tharog-hunter-cave-chase-seedance",
+    title: "别惹 THAROG · 猎人射兽逃进山洞 · Seedance 2.5",
+    subtitle: "X · @ShamsAmin56 · Seedance 2.5 · videoduck · 30秒 · 16:9",
+    description:
+      "Seedance 2.5 写实奇幻追逐：猎人一箭射中巨兽 THAROG 后被一路狂追，扑进山洞，巨兽撞上洞口。",
+    video: "/tutorials/shamsamin56-tharog-hunter-cave-chase-seedance/demo-web.mp4",
+    poster: "/tutorials/shamsamin56-tharog-hunter-cave-chase-seedance/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "史诗写实",
+    shots: 13,
+    references: 2,
+    model: "Seedance 2.5（videoduck）",
+    style: "写实奇幻 · 荒漠峡谷猎人与巨兽追逐 · 电影感运镜",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ShamsAmin56/status/2103849845467537562",
+    sourceAuthor: "@ShamsAmin56",
+    sourcePlatform: "X",
+    sourceImpressions: 15070,
+    sourceStats: { asOf: "2026-09-27", likes: 201, reposts: 24, bookmarks: 68 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "潜伏拉弓 → 射中怒吼 → 追逐 → 逃进山洞",
+      opening: "第 0 秒猎人蹲在前景巨石后，远处荒漠里一头长着巨角的怪兽正站着——一眼就知道有人要惹大麻烦。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1–6s 从猎人脸推到抽箭、搭弦、越肩瞄准、满弓手部特写；约 6–8s 松弦，镜头跟着箭飞过峡谷，巨兽越来越大；约 8.5s 箭扎进它眼睛上方。", at: 1 },
+        { title: "怒吼与追逐", text: "约 10s 低角度正面怒吼，扬起尘土；约 12–14s 它发现猎人，猎人转身狂奔；约 15–22s 侧跟、低机位、俯拍轮番切，巨兽撞断枯树越追越近，山洞在崖壁上出现。", at: 10 },
+        { title: "结尾怎么收", text: "约 23–26s 从洞内往外拍，猎人扑进洞口翻滚，巨兽冲到洞口撞上岩壁、扬尘糊满画面；约 28.5s 洞内逆光剪影，猎人喘气，巨兽被卡在明亮的洞口外。", at: 23 },
+      ],
+      copyThis: "提示词按每 1 秒写一格，并规定每一秒都从上一秒的位置和动作接着来——30 秒追逐的空间方向和箭伤位置才能一直连得上。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 奇幻追逐",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "videoduck",
+      "双角色设定图",
+      "逐秒时间轴",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "先准备猎人和巨兽两张设定图，开头锁死参考",
+        description:
+          "作者在提示词回复里附了两张设定图：猎人（多角度全身、脸部特写、弓箭细节）和 THAROG（侧/正/背/俯视图、身高对比、头角与爪细节）。提示词开头 STRICT REFERENCE LOCK 要求两者外观完全照参考，并提前规定箭射中后一直插在同一只眼上。注意：提示词里写 HUNTER=image2、THAROG=image1，和 X 帖的发图顺序相反，上传时按图内容对应。",
+      },
+      {
+        number: 2,
+        title: "每 1 秒写一格：机位 + 动作 + 转场",
+        description:
+          "00:00–00:30 每一秒都写 CAMERA（焦段、机位）、动作和 TRANSITION（这一秒怎么接到下一秒），例如松弦时镜头跟箭飞、冲进洞口前镜头先进洞里回拍。整条片几乎不用无关硬切，靠运镜和扬尘、碎木、灰尘把镜头接起来。",
+      },
+      {
+        number: 3,
+        title: "最后写连续性规则，防止位置和伤势重置",
+        description:
+          "CONTINUITY RULE 把 30 秒当成一个连续事件：每一秒继承上一秒的位置、方向、动作惯性、镜头轨迹、扬尘、箭伤位置和角的损伤；山洞必须先在远景出现、追逐中逐渐看清，最后才成为逃生口；角只在 27–28 秒断裂。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-shamsamin56-hunter",
+        number: "1",
+        title: "猎人角色设定图",
+        subtitle: "作者提示词回复帖第 1 张 · 对应 [REFERENCE 1 — HUNTER]",
+        image: "/tutorials/shamsamin56-tharog-hunter-cave-chase-seedance/refs/ref-hunter.jpg",
+        prompt: "作者未公开这张设定图的出图提示词。视频提示词中的用法：[REFERENCE 1 — HUNTER] Use the supplied Hunter reference exactly: same face, hair, beard, physique, fur-and-leather clothing, bow, arrows, quiver and materials.（提示词里标为 image2，与 X 帖发图顺序相反。）",
+      },
+      {
+        id: "ref-shamsamin56-tharog",
+        number: "2",
+        title: "THAROG 巨兽设定图",
+        subtitle: "作者提示词回复帖第 2 张 · 对应 [REFERENCE 2 — THAROG]",
+        image: "/tutorials/shamsamin56-tharog-hunter-cave-chase-seedance/refs/ref-tharog.jpg",
+        prompt: "作者未公开这张设定图的出图提示词。视频提示词中的用法：[REFERENCE 2 — THAROG] Use the supplied THAROG reference exactly: same giant proportions, skull, crescent horns, armored dorsal plates, fur, hide coloration, limbs and tail.（提示词里标为 image1，与 X 帖发图顺序相反。）",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "约 0–1s 猎人蹲在前景巨石后，远处巨兽站在荒漠中。" },
+      { number: 2, description: "约 1–4s 推到猎人脸，抽箭、搭弦。" },
+      { number: 3, description: "约 4–6s 越肩瞄准，满弓手部特写。" },
+      { number: 4, description: "约 6–8s 松弦，镜头跟随箭飞过峡谷，巨兽迎面变大。" },
+      { number: 5, description: "约 8–10s 慢动作特写：箭扎进眼睛上方，头猛地后仰。" },
+      { number: 6, description: "约 10–12s 低角度正面，巨兽仰头怒吼，尘土震落。" },
+      { number: 7, description: "约 12–14s 独眼搜寻，发现巨石旁的猎人，猎人转身逃跑。" },
+      { number: 8, description: "约 14–18s 巨兽冲锋，侧跟与低机位追逐，距离拉近。" },
+      { number: 9, description: "约 18–20s 俯拍/正面跟拍，巨兽撞断枯树，崖壁上的洞口出现。" },
+      { number: 10, description: "约 20–23s 猎人看到山洞，加速冲刺，猎人—巨兽—洞口同框。" },
+      { number: 11, description: "约 23–26s 洞内往外拍，猎人扑进洞口翻滚，巨兽冲到洞口。" },
+      { number: 12, description: "约 26–28s 巨兽撞上洞口岩壁，扬尘糊满画面。" },
+      { number: 13, description: "约 28–30s 洞内逆光剪影，猎人喘气握弓，巨兽被卡在明亮洞口外。" },
+    ],
+    constraints:
+      "两张设定图严格锁定猎人与 THAROG 外观；箭从命中起一直插在同一只眼；每一秒从上一秒的位置与动作继续，不重置人物、镜头地理和方向；14 秒起猎人始终朝同一处崖壁山洞跑，巨兽沿同一追逐轴线；山洞先在远景出现再成为逃生口；角只在 27–28 秒撞断；避免过度血腥；30.00 秒切黑。缺口：设定图出图词未公开；提示词 image1/image2 编号与发帖顺序相反；成片中箭看起来插在眼睛上方、角断裂细节被扬尘遮住，巨兽角形与设定图不完全一致；音频未转录。",
+    video_prompt: {
+      title: "猎人 vs THAROG · Seedance 2.5 逐秒提示词",
+      subtitle: "30s · 16:9 · Seedance 2.5 on videoduck · 2 张设定图参考 · 英文完整提示词（作者楼中楼）",
+      content: `STRICT REFERENCE LOCK
+
+[REFERENCE 1 — HUNTER] image2 
+Use the supplied Hunter reference exactly: same face, hair, beard, physique, fur-and-leather clothing, bow, arrows, quiver and materials.
+
+[REFERENCE 2 — THAROG] image1 
+Use the supplied THAROG reference exactly: same giant proportions, skull, crescent horns, armored dorsal plates, fur, hide coloration, limbs and tail.
+
+The arrow must remain embedded in THAROG's SAME injured eye after the hit.
+
+Every second below begins from the physical position and movement established in the previous second. Never reset character positions, camera geography, direction of travel or environment.
+
+00:00–00:01 — ESTABLISH
+
+CAMERA: 24mm extreme-wide, low aerial descent.
+
+Hunter crouches behind a foreground boulder on FRAME LEFT. THAROG stands approximately 30–35 meters away on FRAME RIGHT.
+
+A cliff containing a small dark cave entrance is faintly visible far behind Hunter's eventual escape direction.
+
+TRANSITION → Camera continues descending toward Hunter rather than cutting to a different location.
+
+00:01–00:02 — FIND HUNTER
+
+CAMERA: Descending wide naturally becomes an 85mm-feeling compressed close-up through a motivated push-in.
+
+Hunter remains behind THE SAME boulder.
+
+He slowly raises his head and studies THAROG.
+
+THAROG remains visible as a blurred shape behind him.
+
+TRANSITION → Hunter's eyes move downward toward his quiver; camera follows his gaze.
+
+00:02–00:03 — TAKE ARROW
+
+CAMERA: Tilt/pan downward into macro hand detail.
+
+Without changing position, Hunter reaches over his shoulder and smoothly pulls ONE arrow from the quiver.
+
+THAROG remains unaware.
+
+TRANSITION → Camera follows the arrow downward from quiver to bow.
+
+00:03–00:04 — NOCK
+
+CAMERA: Close three-quarter shot of Hunter's hands and torso.
+
+The SAME arrow enters frame continuously and is placed onto the bowstring.
+
+Hunter begins rising from his crouched position behind the SAME rock.
+
+TRANSITION → Camera rises simultaneously with Hunter and settles behind his shoulder.
+
+00:04–00:05 — ACQUIRE TARGET
+
+CAMERA: Over Hunter's right shoulder.
+
+Hunter brings the bow upward.
+
+THAROG's head becomes centered between the bow limbs.
+
+Hunter starts drawing the string.
+
+TRANSITION → Camera pushes along the arrow shaft toward Hunter's drawing fingers.
+
+00:05–00:06 — FULL DRAW
+
+CAMERA: Extreme close-up.
+
+Hunter reaches full draw.
+
+Forearm tendons tighten. Bow limbs bend. String reaches maximum tension.
+
+His breathing briefly stops.
+
+TRANSITION → Stay on the hand until the fingers open, using the bowstring release itself as the transition.
+
+00:06–00:07 — RELEASE
+
+CAMERA: 120fps profile close-up transitioning immediately into arrow tracking.
+
+Hunter releases.
+
+String snaps forward.
+
+Arrow exits the bow.
+
+Camera accelerates alongside it instead of introducing an unrelated angle.
+
+TRANSITION → Camera rotates from side-follow to directly behind the SAME flying arrow.
+
+00:07–00:08 — ARROW FLIGHT
+
+CAMERA: Arrow-follow POV.
+
+The arrow flies through the valley.
+
+THAROG's head rapidly grows larger in frame.
+
+Background streaks naturally from velocity.
+
+TRANSITION → Camera gradually overtakes the arrow and swings around toward THAROG's face immediately before impact.
+
+00:08–00:09 — EYE IMPACT
+
+CAMERA: 120fps extreme three-quarter close-up.
+
+The SAME arrow enters THAROG's ONE EYE.
+
+No excessive gore.
+
+Eyelids contract violently.
+
+Head begins snapping backward.
+
+TRANSITION → Do NOT cut away. Maintain the slow-motion close-up as THAROG's head continues backward.
+
+00:09–00:10 — PAIN REACTION
+
+CAMERA: Slow-motion close-up widening slightly.
+
+THAROG completes the backward head movement.
+
+Arrow remains embedded in the SAME injured eye.
+
+Neck muscles tighten.
+
+Nostrils expand.
+
+Its front foot shifts backward from the shock.
+
+TRANSITION → Slow motion ramps smoothly back toward real time while camera drops lower.
+
+00:10–00:11 — ROAR
+
+CAMERA: 24mm low-angle frontal creature shot.
+
+THAROG violently throws its head upward.
+
+It unleashes a huge territorial roar.
+
+Chest expands.
+
+Dust shakes from armor and nearby stones.
+
+TRANSITION → As the roar ends, THAROG lowers its head directly toward camera.
+
+00:11–00:12 — SEARCH
+
+CAMERA: Slow push toward THAROG's face.
+
+THAROG lowers its head.
+
+One eye remains injured with the arrow embedded.
+
+The functional eye scans left-to-right.
+
+Its breathing becomes increasingly aggressive.
+
+TRANSITION → Camera moves toward the functional eye until the eye fills frame.
+
+00:12–00:13 — THAROG SEES HUNTER
+
+CAMERA: Match transition through THAROG's functional eye into THAROG POV.
+
+Through drifting dust, Hunter is visible beside the SAME boulder from which he fired.
+
+THAROG visually locks onto him.
+
+Hunter realizes he has been detected.
+
+TRANSITION → THAROG POV surges slightly forward; cut on Hunter's reaction.
+
+00:13–00:14 — HUNTER RUNS
+
+CAMERA: 85mm Hunter close-up immediately matching his previous position.
+
+Hunter's eyes widen.
+
+He drops the firing posture but KEEPS THE BOW.
+
+He pivots away from THAROG and begins sprinting.
+
+TRANSITION → Camera swings around Hunter during his pivot and follows behind him.
+
+00:14–00:15 — THAROG CHARGES
+
+CAMERA: Brief reverse tracking shot past Hunter toward THAROG.
+
+Hunter enters foreground while THAROG launches into pursuit behind him.
+
+THAROG lowers its massive horns.
+
+First enormous stride hits the ground.
+
+TRANSITION → Impact vibration becomes camera shake as camera turns back into Hunter's running direction.
+
+00:15–00:16 — CHASE BEGINS
+
+CAMERA: 35mm lateral tracking.
+
+Hunter runs left-to-right across uneven terrain.
+
+THAROG follows along EXACTLY the same travel direction.
+
+Hunter remains approximately 20 meters ahead.
+
+TRANSITION → Camera gradually falls behind Hunter rather than changing screen direction.
+
+00:16–00:17 — CLOSING DISTANCE
+
+CAMERA: Ground-level rear chase shot.
+
+Hunter's boots dominate foreground.
+
+THAROG's enormous legs pound the earth behind him.
+
+The distance decreases.
+
+Hunter jumps over a small rock.
+
+TRANSITION → Camera rises above Hunter as he lands, producing the next overhead view.
+
+00:17–00:18 — REVEAL ESCAPE ROUTE
+
+CAMERA: Rising crane into top-down aerial.
+
+Hunter continues along the SAME path.
+
+THAROG follows.
+
+Ahead, the previously established cliff becomes clearly visible.
+
+A narrow cave entrance can now be seen in the rock wall.
+
+Hunter has NOT noticed it yet.
+
+TRANSITION → Camera dives from overhead toward Hunter's front.
+
+00:18–00:19 — THAROG GETS CLOSER
+
+CAMERA: Front-facing tracking shot moving backward.
+
+Hunter runs directly toward camera.
+
+He glances over his shoulder.
+
+THAROG is now frighteningly close behind.
+
+Each footfall shakes the camera.
+
+TRANSITION → Hunter turns forward again; camera follows his gaze toward the cliff.
+
+00:19–00:20 — VIOLENT PURSUIT
+
+CAMERA: Side tracking with Hunter foreground and THAROG background.
+
+A small dead tree lies directly in THAROG's path.
+
+Hunter passes it.
+
+THAROG does NOT divert.
+
+It smashes straight through it.
+
+TRANSITION → Flying wood fragments cross lens, providing natural foreground wipe.
+
+00:20–00:21 — HUNTER SEES CAVE
+
+CAMERA: Foreground debris clears into Hunter POV.
+
+The narrow cave entrance is now directly ahead.
+
+Hunter immediately recognizes that it can fit him but cannot accommodate THAROG's huge horn crown.
+
+TRANSITION → Rapid push toward cave followed by snap back to Hunter's face.
+
+00:21–00:22 — DECISION
+
+CAMERA: Tight 85mm tracking close-up.
+
+Hunter's eyes lock onto the cave.
+
+No stopping.
+
+No dialogue.
+
+He leans his torso forward and accelerates.
+
+THAROG remains directly behind him.
+
+TRANSITION → Camera pulls sideways while Hunter accelerates, opening into a wide profile.
+
+00:22–00:23 — FINAL SPRINT
+
+CAMERA: Wide 35mm side-tracking shot.
+
+Hunter → THAROG → cave entrance are ALL visible in the SAME composition.
+
+This explicitly establishes geography.
+
+Hunter approaches the cave.
+
+THAROG closes to only several meters behind him.
+
+TRANSITION → Camera accelerates past Hunter and enters the cave BEFORE him.
+
+00:23–00:24 — CAVE APPROACH
+
+CAMERA: 18mm from immediately INSIDE the cave looking outward.
+
+Hunter runs directly toward lens.
+
+THAROG fills more and more of the exterior background.
+
+Hunter prepares to jump.
+
+THAROG's horns remain lowered.
+
+TRANSITION → Camera retreats deeper inside the cave as Hunter launches toward it.
+
+00:24–00:25 — DESPERATE LEAP
+
+CAMERA: 120fps slow-motion backward tracking from inside cave.
+
+Hunter jumps through the narrow opening.
+
+Both feet leave the ground.
+
+Bow stays firmly in one hand.
+
+THAROG's horn crown appears dangerously close behind him.
+
+TRANSITION → Continue tracking backward with Hunter's airborne body until he crosses the cave threshold.
+
+00:25–00:26 — HUNTER ENTERS CAVE
+
+CAMERA: Interior cave, returning smoothly toward normal speed.
+
+Hunter hits the rocky floor.
+
+Momentum carries him into a shoulder roll.
+
+He slides deeper inside.
+
+Outside, THAROG reaches the entrance but is still moving too quickly to stop.
+
+TRANSITION → Keep Hunter foreground while focus racks through the entrance onto THAROG.
+
+00:26–00:27 — THAROG TRIES TO BRAKE
+
+CAMERA: Focus passes through cave opening to exterior side angle.
+
+THAROG desperately plants all four feet.
+
+Claws dig trenches through loose soil.
+
+Its huge body continues sliding because of inertia.
+
+Horn crown remains aimed at the rock surrounding the entrance.
+
+TRANSITION → Track WITH the sliding skull directly toward the cave wall.
+
+00:27–00:28 — HORN IMPACT
+
+CAMERA: 18mm exterior three-quarter impact shot.
+
+THAROG's massive horns COLLIDE with solid stone.
+
+CRASH.
+
+Camera violently shakes.
+
+Rock fractures.
+
+Dust explodes outward.
+
+Several OUTER horn sections crack and break away.
+
+The primary horn bases remain attached.
+
+TRANSITION → Dust from impact completely fills frame, creating a natural dust wipe into the cave interior.
+
+00:28–00:29 — AFTERMATH
+
+CAMERA: Inside cave through settling dust.
+
+Hunter raises one arm to protect his face.
+
+Broken horn fragments fall outside the entrance.
+
+THAROG pulls its injured head backward.
+
+The SAME arrow remains embedded in its injured eye.
+
+THAROG releases another furious roar.
+
+TRANSITION → Camera begins continuously dollying backward deeper into darkness.
+
+00:29–00:30 — END FRAME
+
+CAMERA: Slow backward dolly from inside cave.
+
+Hunter remains foreground, breathing heavily and gripping his bow.
+
+The bright cave entrance frames THAROG outside.
+
+THAROG cannot enter because of its enormous body and remaining horns.
+
+It aggressively strikes and scrapes around the entrance while broken horn fragments lie on the ground.
+
+Camera continues withdrawing until Hunter becomes a dark silhouette against the entrance.
+
+CUT TO BLACK AT EXACTLY 30.00.
+
+CONTINUITY RULE:
+
+Treat 00:00–00:30 as ONE continuous physical event rather than 30 independent generated shots.
+
+Every second inherits:
+• exact subject position from previous second
+• exact direction of movement
+• current body pose and momentum
+• current camera trajectory
+• accumulated dust and environmental damage
+• Hunter's bow/quiver state
+• THAROG's injured eye
+• embedded arrow position
+• progressive horn damage
+• established cave location
+
+Never reset either subject between timestamps.
+
+Hunter travels consistently toward the same cliff/cave from 00:14 onward.
+
+THAROG follows the exact same chase axis.
+
+The cave must first exist in the distant geography, become increasingly visible during pursuit, and only then become Hunter's escape route.
+
+The arrow remains in the SAME eye from 00:08 through 00:30.
+
+Horn damage occurs ONLY at 00:27–00:28 and remains visible afterward.
+
+Maintain [REFERENCE 1 — HUNTER] and [REFERENCE 2 — THAROG] exactly throughout.`,
+    },
+  },
+  // 查重别名(引用帖：海报与角色设定图指示书): https://x.com/ai_lifehack55/status/2103328089979961698
+  {
+    id: "ai-lifehack55-shibuya-billboard-wink-wan3",
+    title: "我怎么上广告牌了 · 涩谷夜景海报眨眼",
+    subtitle: "X · @ai_lifehack55 · ChatGPT 出图 → WAN3.0（SJinn）· 15秒 · 1:1",
+    description:
+      "WAN3.0 夜景广告短片：涩谷路人纷纷回头，女孩抬头发现自己登上巨幅广告牌，海报里的她眨了下眼。",
+    video: "/tutorials/ai-lifehack55-shibuya-billboard-wink-wan3/demo-web.mp4",
+    poster: "/tutorials/ai-lifehack55-shibuya-billboard-wink-wan3/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "时尚广告",
+    shots: 7,
+    references: 1,
+    model: "ChatGPT 图像生成 → WAN3.0（SJinn）",
+    style: "夜晚涩谷街头 · 时尚杂志海报 · 写实电影感广告",
+    aspectRatio: "1/1",
+    sourceUrl: "https://x.com/ai_lifehack55/status/2103685792665329715",
+    sourceAuthor: "@ai_lifehack55",
+    sourcePlatform: "X",
+    sourceImpressions: 8250,
+    sourceStats: { asOf: "2026-09-27", likes: 171, reposts: 20, bookmarks: 63 },
+    formats: ["时尚大片"],
+    hook: {
+      structure: "路人回头 → 困惑张望 → 抬头看广告牌 → 海报眨眼",
+      opening: "第 0 秒是俯拍的夜晚涩谷十字路口，人潮里一个穿西装的短发女孩正常走着，周围已经有人开始看她。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1.8s 横向跟拍，旁边的西装男回头看她；约 3.5s 正脸特写，她眼神往旁边瞟；约 5s 斜俯拍街道；约 6.3s 斜前方跟拍，她左右张望、一脸困惑。", at: 1.8 },
+        { title: "成品揭晓", text: "约 8.3s 更近的脸部特写，视线往上抬；约 9.6s 硬切到大楼外墙的巨幅广告牌，上面是她的「COUTURE」时尚海报，镜头一路推近。", at: 8.3 },
+        { title: "结尾怎么收", text: "约 11.5s 推到海报人物的脸，画面静止；约 13.4s 海报里的她单眼眨了一下，随后恢复静止结束。", at: 13.4 },
+      ],
+      copyThis: "先用一连串短镜头攒「大家为什么都在看我」的疑问，最后抬头把答案放在广告牌上，只让海报里的人眨一次眼收尾。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 时尚广告",
+      "1:1 方屏",
+      "ChatGPT 出图 → WAN3.0",
+      "海报 + 角色设定图 → 成片",
+      "广告牌眨眼 · 夜晚涩谷",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 ChatGPT 生成时尚杂志海报（image2）",
+        description:
+          "上传一张成人人物照片，把「参考图」卡片 ① 的完整海报指示书贴进 ChatGPT 图像生成，在开头「选择」里选一种 TYPE（1 TREND / 2 SHIFT / 3 MODE / 4 COUTURE）。输出竖版 3:4 的写实时尚杂志海报，只放该 TYPE 固定的一个单词。成片里广告牌上的就是 TYPE 4「COUTURE」。",
+      },
+      {
+        number: 2,
+        title: "第二步：生成简易角色设定图（image1）",
+        description:
+          "用「参考图」卡片 ② 的角色设定图指示书生成一张 16:9 的简易角色设定图（三视图 + 两张脸部特写），用来锁定主角的脸、发型、体型、服装和鞋。作者未公开设定图，卡片 ② 的配图是成片截帧，不是参考图。",
+      },
+      {
+        number: 3,
+        title: "第三步：image1 + image2 + 视频提示词交给 WAN3.0",
+        description:
+          "在 SJinn 上选 WAN3.0（或 Seedance2.0），<image1> 放角色设定图、<image2> 放海报，贴下方完整视频提示词，提示词里的 <image1><image2> 要改成平台里对应的图片引用。提示词按秒写了 7 个硬切镜头：路人渐渐回头、指她，她越来越困惑，最后抬头看到广告牌，只有海报里的人眨一次眼。作者体感眨眼成功率 WAN3.0 约 40%、Seedance2.0 约 70%，不成功就多抽几次。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ai-lifehack55-poster-couture",
+        number: "1",
+        title: "时尚杂志海报 · ① ChatGPT 海报指示书（image2）",
+        subtitle: "作者引用帖示例图 TYPE 4「COUTURE」1086×1448 · 成片广告牌上显示的就是这张",
+        image: "/tutorials/ai-lifehack55-shibuya-billboard-wink-wan3/refs/ref-poster-couture.jpg",
+        prompt: `【ポスタータイプ選択】
+選択：［TYPE 1 / TYPE 2 / TYPE 3 / TYPE 4］
+
+【出力仕様】
+フォトリアルな実写写真ベースのファッション・エディトリアルポスターを生成する。縦3:4固定。完成画像は1枚のみ。比較画像、分割画像、複数案、制作過程画像は生成しない。
+
+【入力】
+本指示書と同時に、成人人物が1人だけ全身で写った人物画像を1枚添付する。頭頂から靴底まで切れず、顔・髪・衣装・靴を確認できる画像を使用する。添付画像内の人物を以下「参照人物」と呼ぶ。画像が未添付、2枚以上、複数人物、または全身を確認できない場合は生成せず、条件を満たす画像1枚の添付を求める。
+
+【目的】
+参照人物を唯一の人物参照として使用し、選択されたTYPE専用の構図、背景、配色、タイポグラフィを適用した完成ポスターを1枚生成する。人物とタイポグラフィを二大視覚要素として扱い、両者のサイズ差、前後関係、透過、裁ち落とし、余白設計によって、ファッション誌のエディトリアルページのような強い誌面デザインを作る。選択されていないTYPEの要素は混在させない。
+
+【人物同一性】
+参照人物の顔立ち、目元、鼻、口元、輪郭、年齢感、肌色、髪型、髪色、髪の長さ、体型、身長感、頭身、肩幅、胴体と脚の比率を維持する。衣装、靴、色、形状、素材感、重なり、シルエットも維持する。選択TYPEの構図に応じて写る範囲と自然な姿勢のみ変更し、人物や衣装そのものを再設計しない。
+
+【共通デザイン】
+人物をポスターの主役として見せるが、タイポグラフィも添え物にせず、誌面を構成する主要グラフィックとして強く扱う。タイポグラフィは読むための見出しではなく、空間を埋め、人物・余白・背景をつなぐデザイン要素として扱う。人物に積極的に重ねてよいが、軽い透過によって顔、衣装、輪郭の視認性は保つ。文字の太さそのものではなく、分割、大小差、改行、積層、ずらし、裁ち落とし、前後関係、局所背景プレートによって構造変化を作る。
+タイポグラフィは各TYPEに固定された英大文字1語のみを使用する。1語を横一列にベタ置きせず、複数の文字群へ分割してよい。単語内で文字サイズは完全均一にせず、一部の文字または文字群だけを大きく、他をやや小さくしてリズムを作る。必要に応じて軽い透過を使用する。文字形そのものを極端に変形せず、湾曲、多重アウトライン、立体文字、過剰な影、装飾過多は行わない。
+文字専用の局所背景プレートは1TYPEにつき最大1個とし、単語全体を囲わず、1文字または1文字群だけに用いる。背景プレートは背景装飾ではなくタイポグラフィ構造の一部として扱う。
+背景は単色にせず、明るいベース色の上に、大きな色面、円弧、斜め面、矩形、余白を整理して構成する。細かな模様、細線、小図形の反復、複雑な抽象模様、写真背景、コラージュは使用しない。背景は単独で目立つためではなく、人物とタイポグラフィの空間を成立させるために使う。
+ポージングの大胆さではなく、人物サイズ、トリミング、タイポグラフィのレイヤー処理、背景色面の配置、余白によってデザイン性を作る。全体の印象は、安価なテンプレートではなく、ファッション誌の1ページやギャラリーポスターのような洗練された誌面とする。
+
+【TYPE 1 — TREND】
+使用する文字は「TREND」のみ。
+構図：胸上から頭頂までのクローズポートレート。人物を完全な中央には置かず、画面中心からやや左右へオフセットする。肩はごく軽く斜め、顔はカメラ方向。手は顔周辺へ入れない。顔と上半身を大きく見せ、人物の存在感を最優先で確保する。
+タイポグラフィ構造：COMPACT LAYER GRID。TRENDを横一列に置かず、3段のずれた文字ブロックとして扱う。基本構造は「TR / EN / D」。Tを最大、Rをそれより少し小さく、ENを中サイズの文字群、Dを独立した大きめのアクセントとする。全体を人物の肩〜胸付近と片側の余白へまたがらせる。基本透過は70〜80％程度とし、Dだけやや濃くしてよい。Dの背後だけに縦長または正方形寄りの淡いコーラル色プレートを置き、文字とプレートは少しずらす。文字の一部は人物前面に、一部は背後に回してよい。顔、目、鼻、口は隠さない。
+背景：明るいウォームグレージュを主面とする。画面片側に淡いコーラル〜サーモン系の縦色面を画面幅の15〜20％程度で入れる。反対側には大きなペールベージュ〜アプリコットの円弧を一部だけ見せる。円弧の中心は画面外に置き、背景の隅へ曲線だけが入り込むようにする。TRENDの文字ブロックは色面とニュートラル面の境界付近へ置き、文字自体が誌面構造の一部になるようにする。
+印象：洗練、誌面性、軽やかさ、都会的なファッション広告。文字ブロックそのものがグラフィックオブジェクトとして成立している状態にする。
+
+【TYPE 2 — SHIFT】
+使用する文字は「SHIFT」のみ。
+構図：腰上から頭頂まで。人物をやや大きめに配置する。身体をわずかに斜めへ向け、片肩を少し前に出す程度とする。腕は交差させず、自然で安定した形を維持する。人物のシルエットが背景や文字に埋もれないようにする。
+タイポグラフィ構造：SPLIT SCALE。SHIFTを一列に置かず、「SH / IFT」の大小2ブロックとして扱う。SHを非常に大きくし、IFTの文字高はSHの文字高の約70〜80％とする。上下の開始位置は揃えない。SHは画面上端または左右端で大胆に裁ち落とし、IFTは人物の肩〜胴体周辺へ入り込ませる。SHは比較的薄く、IFTは少し濃くして不透明度差を作る。「IF」の背後だけに朱赤〜オレンジレッドの小さな矩形プレートを入れる。SHは人物の背後寄り、IFTは人物の前面へ軽く重なる構成にする。
+背景：少しくすんだサフラン〜マスタードを主面とする。そこへ右上から左下へ向かう朱赤〜コーラルレッドの大きな台形状の斜面を入れ、画面の約25〜35％を占める大きな面として扱う。さらに反対側に淡いクリームの大きな三角形または斜め色面を一部だけ入れる。黄の主面、赤の大きな斜面、淡いクリームの補助面の3面構成とし、文字群はその色面境界を横断するように配置する。
+印象：大胆、グラフィック、エディトリアル、広告的。大きな文字塊と小さな文字塊の構造差で画面を二分し、背景面との交差によって誌面の緊張感を作る。
+
+【TYPE 3 — MODE】
+使用する文字は「MODE」のみ。
+構図：膝上から頭頂まで。自然な立位。片脚へ軽く重心を移す程度とする。腰や胴体を大きくひねらず、腕は身体から大きく離さない。人物を縦方向に美しく見せる。
+タイポグラフィ構造：TRANSPARENT COLOR LAYERS。MODEの白い一列見出しは使用しない。基本構造は「M   O /   D   E」のような非対称2段構造とし、きれいなグリッドには揃えない。Mは中サイズ、Oを最大サイズ、DはMより少し大きく、Eは中〜小サイズとする。Oは文字形そのものを最大サイズで扱い、人物の胸〜腰へ大きく重ねる。Oとは別の円形図形に置換したり、Oを補う別の円を追加したりしない。色は青紫→紫→マゼンタの狭い色域のみを使い、Mはブルーパープル、Oはバイオレット、Dはパープル、Eはマゼンタ寄りとする。全体の透過は55〜70％程度の半透明とし、人物の胸、腰、スカートにかなり重ねてよい。Dの背後だけに薄いラベンダーまたはマゼンタ系の半透明矩形プレートを入れる。Mは人物背後、Oは人物前面、Dは人物前面＋背景プレート、Eは画面右端寄りの人物背後に配置して前後差をつける。単語を読む前に、透明な紫系グラフィックが人物の周囲を漂っているように見せる。
+背景：ダスティローズ〜ソフトマゼンタのなだらかな同系色空間とする。上側をやや明るく、下側を少し深いローズ〜ワイン寄りにするが、明確な横線で二分しない。境界は柔らかく、同色域の中で明暗が移行するようにする。画面上部または片側に、背景より少しだけ明るい巨大なソフトピンクの円弧を一部だけ入れてよいが、低コントラストで背景に溶け込ませる。背景は静かに保ち、主なグラフィック色面はMODEの半透明文字自体とする。
+印象：華やか、誌面的、女性誌的。4TYPEの中で最もレイヤー表現が強く、文字そのものが色面として空間を埋めるTYPEにする。
+
+【TYPE 4 — COUTURE】
+使用する文字は「COUTURE」のみ。
+構図：頭頂から靴底まで完全に入る全身。人物を画面中心から左右どちらかへずらし、反対側に意図的な余白を作る。片脚に軽く重心を置く自然な立位。腕は自然に下ろすか片腕だけ軽く曲げる。人物を小さくしすぎず、全身がポスターの主要要素として十分な大きさになるようにする。
+タイポグラフィ構造：SPACED GRID + PLATE。COUTUREを一列に置かず、「C O U / T U R E」の2段ワイドグリッドとする。文字は中〜大型、字間は大きく、上下段の開始位置は少しずらし、完全な左右対称にはしない。上段中央のOだけを他の文字より少し大きくし、下段は比較的均一とする。白文字を75〜85％程度の軽い透過で用いる。上段のUの背後にだけ、赤〜マゼンタの縦長矩形プレートを入れる。矩形は文字より上下に長く、文字専用の色面として使う。追加の細い縦線は使用しない。文字列の一部が人物の肩や腕へ軽く重なってもよいが、すべてを人物へ乗せず、人物＋空白＋文字グリッドの三者で構成する。
+背景：ペールブルー〜スモーキーブルーを主面とする。人物とは反対側へ、少し濃いブルーグリーンの広い縦色面を画面端から20〜30％程度入れる。背景側には赤い矩形を置かない。赤〜マゼンタの矩形はCOUTUREのUに付随するタイポグラフィ用プレートとしてだけ使う。背景そのものは青系だけで整理し、余白を広く使い、面と人物のバランスで高級感を出す。
+印象：クリーン、モード、洗練。派手さではなく、字間、余白、局所プレートの位置関係で高級感を作る。
+
+【優先順位】
+1. 参照人物の同一性と衣装維持
+2. 人物とタイポグラフィの両方が魅力として成立していること
+3. 顔・髪・衣装の視認性
+4. 選択TYPEのタイポグラフィ構造と背景構成
+5. 全体が安っぽく見えず、誌面として洗練されていること
+
+【禁止事項】
+複数人物化しない。各TYPEに固定された1語以外の文字、数字、説明文、疑似文字、ランダム文字列を生成しない。人物の顔や主要な身体輪郭を文字や図形で大きく隠さない。参照人物の顔、髪型、体型、衣装、靴を別物へ変更しない。背景を単純な安価なテンプレート風ベタ塗りにしない。単純な1列見出しを置いただけのタイポグラフィ処理にしない。分割レイアウト、4連ポスター、比較表示、複数案を生成しない。`,
+      },
+      {
+        id: "ai-lifehack55-character-sheet",
+        number: "2",
+        title: "简易角色设定图 · ② 角色设定图指示书（image1）",
+        subtitle: "作者未公开设定图，此为成片截帧（约 3.8s），不是参考图",
+        image: "/tutorials/ai-lifehack55-shibuya-billboard-wink-wan3/refs/frame-heroine-NOT-a-reference.jpg",
+        prompt: `Title: WIDESCREEN_CHARACTER_SHEET_3VIEW_DOUBLE_CLOSEUP_v1_2
+
+【出力仕様】
+シンプルなキャラクターシートを1枚生成する。アスペクト比は16:9固定。完成画像を1枚だけ生成する。デザイン性を加えたポスター風表現、装飾的な背景、演出用グラフィック、複数案、比較画像、制作過程画像は生成しない。
+
+【入力】
+本指示書と同時に、成人人物が1人だけ写った人物画像を1枚添付する。頭頂から靴底まで切れず、顔・髪・衣装・靴を確認できる画像を使用する。添付画像内の人物を、以下「参照人物」と呼ぶ。画像が未添付、2枚以上、複数人物、または全身を確認できない場合は生成せず、条件を満たす人物画像1枚の添付を求める。
+
+【目的】
+参照人物を唯一の人物参照として使用し、動画制作で使いやすいシンプルなキャラクターシートを1枚生成する。1枚の中に、正面全身、側面全身、背面全身、正面顔アップ、側面顔アップの5要素を必ず含める。
+
+【人物同一性】
+参照人物の顔立ち、目元、鼻、口元、輪郭、年齢感、肌色、髪型、髪色、髪の長さ、体型、身長感、頭身、肩幅、胴体と脚の比率を維持し、同一人物として明確に認識できるようにする。衣装、靴、色、素材感、シルエットも維持する。正面・側面・背面・顔アップのすべてで同じ人物、同じ衣装として統一する。
+
+【シート構成】
+16:9の横長キャンバス内に、左側へ3面図、右側へ2つの顔アップを整理して配置する。左側には正面全身・側面全身・背面全身を横並びで配置し、右側には顔アップを上下2段で配置して、上に正面顔アップ、下に側面顔アップを置く。全身3体は同じ縮尺感でそろえ、頭頂位置と足元位置もできるだけそろえる。顔アップ2点は、正面と側面の顔立ち・髪型・輪郭・耳まわりが分かりやすい大きさで見せる。レイアウトはシンプルにし、情報整理を優先する。余計な装飾は加えない。
+
+【3面図の条件】
+正面全身：人物は真正面を向いた自然な直立姿勢にする。頭頂から靴底まで完全に入れる。腕や脚を大きく開かず、衣装形状と体型が分かりやすい中立的な立ち姿にする。
+側面全身：人物は真横を向いた自然な直立姿勢にする。顔と身体は同じ方向を向き、正確な側面として見えるようにする。頭頂から靴底まで完全に入れる。奥側の手足の位置関係が不自然にならないようにする。
+背面全身：人物は真後ろを向いた自然な直立姿勢にする。後頭部、背中、衣装の後ろ側、靴の後ろ側が分かるようにする。頭頂から靴底まで完全に入れる。
+
+【顔アップの条件】
+正面顔アップ：顔は正面向きとする。顔全体、髪型、前髪、耳まわり、首元が分かるようにする。表情は落ち着いた自然な表情とする。誇張した笑顔や強い感情表現は避ける。
+側面顔アップ：顔は側面全身と同じ向きの真横とする。横顔の輪郭、鼻筋、口元、耳、髪の流れ、首元が分かるようにする。斜め顔ではなく、側面として明確に認識できる向きにする。
+
+【背景・見た目】
+背景は白、薄いグレー、またはごく淡い無地背景とする。3面図と顔アップを見やすくするため、背景は装飾しない。ライティングは均一で明るく、人物の形状と衣装が見やすい状態にする。影は弱く、シンプルにする。
+
+【文字・表示】
+最小限の実用表示のみ許可する。各ビューには「FRONT」「SIDE」「BACK」「FACE FRONT」「FACE SIDE」の簡潔なラベルを付ける。それ以外の長文説明、装飾文字、不要な情報表示は加えない。
+
+【出力の方向性】
+動画制作の参照用として使いやすい、正確で見やすいキャラクターシートにする。ポーズの格好よさやアート性よりも、人物同一性、衣装形状、体型バランス、各方向の見え方の分かりやすさを優先する。
+
+【禁止事項】
+複数人物化しない。参照人物を別人化しない。衣装、髪型、体型、靴を大きく変更しない。3面図を斜め角度にしない。正面・側面・背面を不正確な向きにしない。顔アップを斜め顔にしない。動きのあるポーズ、演技的なポーズ、過度な手振りを入れない。背景を装飾しない。ポスター風、広告風、デザインボード風にしない。不要な小物、武器、装飾要素を追加しない。比較画像、複数案、分割された別画像を生成しない。`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.8s 俯拍夜晚涩谷十字路口，女孩在人潮里正常走，周围有人开始看她。" },
+      { number: 2, description: "1.8–3.5s 横向跟拍，旁边的西装男回头看她，她还没察觉。" },
+      { number: 3, description: "3.5–5s 正脸特写，她察觉到视线，眼神往旁边瞟。" },
+      { number: 4, description: "5–6.3s 斜俯拍街道，路人纷纷看向她。" },
+      { number: 5, description: "6.3–8.3s 斜前方跟拍，她左右张望，一脸困惑。" },
+      { number: 6, description: "8.3–9.6s 更近的脸部特写，视线往上抬。" },
+      { number: 7, description: "9.6–15s 大楼外墙巨幅广告牌显示「COUTURE」海报，镜头推近到海报人物的脸，约 13.4s 她单眼眨眼一次后恢复静止。" },
+    ],
+    constraints:
+      "image1 只继承人物的脸、发型、体型、服装和鞋，设定图里的文字、标签、背景不能出现在画面里；image2 海报要原样显示在广告牌上，字体、背景、配色、构图全部不变；前中段用短镜头硬切，路人反应要克制、写实；结尾只有海报人物眨一次眼，其余保持静止；不要淡入淡出等柔和转场。缺口：作者没公开角色设定图原图；成片里街上的女孩穿黑西装白衬衫，海报人物穿印花吊带裙，衣服对不上；路人指她的动作在成片里不明显；音频没有转录。",
+    video_prompt: {
+      title: "③ WAN3.0 / Seedance2.0 视频提示词",
+      subtitle: "15s · 1:1 · <image1> 角色设定图 + <image2> 海报 · 日文完整提示词（主帖）",
+      content: `Title: 01_V8_City_Billboard_Wink
+[REFERENCE]
+<image1> → 主人公の唯一の人物参照。人物の顔、髪、体型、身長感、衣装、靴、人物同一性だけを引き継ぐ。スタイルシート内の文字、ラベル、背景、レイアウトは映像へ表示・転写しない。
+<image2> → 街頭ビルボードに表示する唯一の完成ポスター参照。建物外壁などに設置された大型デジタル広告画面の表示内容として、完成ポスター全体をそのまま使用する。タイポグラフィ、背景、配色、構図、レイアウトを維持する。
+
+[CONDITION]
+15秒。1:1スクエア。高品質な実写。シネマティック、フォトリアル、都会的で洗練された広告映像。全ショットを通して人物同一性、都市空間、光、色調、質感、撮影トーンを統一し、ショット間に統一感のある視覚連続性を保つ。
+舞台は夜の渋谷の繁華街を思わせる、人通りと大型デジタルビルボードのある都市空間。街全体は明るいビルの照明、看板、街頭ビルボードの光によって自然にライトアップされている。主人公の表情、周囲の反応、ビルボードの表示内容がはっきり視認できる夜の街とする。
+主人公は普通に街を歩いているが、周囲の通行人が次第に主人公へ視線を向け、振り返り、数人が自然に指をさす。主人公は理由が分からず、歩きながら少しずつ戸惑う。
+前半から中盤は短いショットをハードカットで連結する。正面、横追従、やや高い視点、斜め前、顔寄りへ視点を切り替え、人物の表情と周囲の反応をテンポよく見せる。群衆の反応は自然な範囲に抑える。
+終盤で主人公が上方へ視線を向け、その先の大型デジタルビルボードに参照ポスターが大きく表示されていることを明かす。ビルボードは夜の街の中で明るくライトアップされ、参照ポスターの表示内容がはっきり見える状態とする。最後はビルボードへ寄り、静止していた参照ポスター内の人物だけが一度ウィンクする。
+
+[SHOT FLOW]
+[Shot 1｜0.00~1.70秒]
+やや高い位置から夜の都市歩道と人の流れを捉える。主人公が人混みの中を普通に歩く。周囲の数人が主人公へ視線を向け始める。ハードカット。
+
+[Shot 2｜1.70~3.30秒]
+横方向から主人公を追従する。手前を横切る通行人が振り返り、奥の人物が主人公を自然に指さす。主人公はまだ理由に気づかず歩き続ける。ハードカット。
+
+[Shot 3｜3.30~4.90秒]
+正面寄りの顔アップ。歩きながら周囲の視線に気づき、表情にわずかな戸惑いが現れる。視線だけを横へ動かす。ハードカット。
+
+[Shot 4｜4.90~6.60秒]
+やや高い斜め俯瞰。主人公は歩き続ける。周囲の複数人が主人公を見て振り返り、そのうち数人だけが自然に指をさす。反応は控えめで現実的。ハードカット。
+
+[Shot 5｜6.60~8.50秒]
+斜め前から近めに追従する。主人公は歩きながら左右の人々を確認し、なぜ注目されているのか分からず戸惑う。最後に周囲ではなく上方へ意識が移り始める。ハードカット。
+
+[Shot 6｜8.50~10.80秒]
+顔を中心にさらに寄る。主人公の視線が明確に上へ移動し、戸惑いから何かに気づいた表情へ変化する。その視線方向を残してハードカット。
+
+[Shot 7｜10.80~15.00秒]
+主人公の視線の先にある建物外壁の大型デジタルビルボードを見せる。ビルボードの広告画面全体には参照ポスターが完成デザインのまま大きく表示され、最初は完全な静止広告として見える。カメラはそのビルボードへ連続的にプッシュインし、ポスター内の人物が確認できる大きさまで寄る。寄り切った後にカメラを安定させ、参照ポスター内の人物だけが一度、明確に小さくウィンクする。ウィンク以外の人物動作は行わず、タイポグラフィ、背景、配色、構図、レイアウトは最後まで静止したまま維持する。ウィンク後は人物も再び静止して終了する。
+
+[SOUND]
+都会的でシネマティックなBGMあり。都市の環境音と必要な効果音を入れる。
+
+[NEGATIVE]
+参照人物の別人化、人物参照シートの文字や背景の転写、参照ポスターの別デザイン化、主ビルボード表示の差し替え、ポスター構成の崩れ、過剰な群衆リアクション、フェードやソフトトランジションを避ける。`,
+    },
+  },
+  {
+    id: "studio-oneroom-copypaste-motion-graphics-h3",
+    title: "复制粘贴就能做的动态图形片头 · MiniMax H3",
+    subtitle: "X · @studio_oneroom · MiniMax H3 (2k) · Domo AI · 15秒 · 16:9",
+    description:
+      "MiniMax H3 纯文字生成的扁平动态图形片头：黑白三次反转，字块砸入、碎裂、对撞，15 秒一镜不剪。",
+    video: "/tutorials/studio-oneroom-copypaste-motion-graphics-h3/demo-web.mp4",
+    poster: "/tutorials/studio-oneroom-copypaste-motion-graphics-h3/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "扁平动态图形",
+    shots: 9,
+    references: 0,
+    model: "MiniMax H3 (2k)（Domo AI）",
+    style: "扁平图形动态设计 · 白 / 黑 / 橙三色 · 粗几何无衬线字",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/studio_oneroom/status/2092220604309205341",
+    sourceAuthor: "@studio_oneroom",
+    sourcePlatform: "X",
+    sourceImpressions: 167166,
+    sourceStats: { asOf: "2026-09-27", likes: 988, reposts: 103, bookmarks: 1441 },
+    formats: ["字效·片头"],
+    hook: {
+      structure: "线条漩涡 → 标题拼装 → 字块连砸 → 品牌对撞定版",
+      opening: "第 0 秒黑底上白色线条从四周涌向中心形成漩涡，约 0.5s 一个巨大的橙色圆砸进画面。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1–2s 线条拼成「MiniMax H3」，底色翻成白；约 2.5s 急推到橙色「H3」占满全屏；约 4.5s 竖条把画面切成三列；约 5.5s「MOTION」整屏砸入。", at: 1 },
+        { title: "节奏加速", text: "约 6.5s 硬切黑底，白色线框网格往纵深延伸，「GRAPHICS」沿网格成片复制；约 8–9.5s 字卡连闪「NO EDIT」「ONE SHOT」「コピペで」「超簡単！」。", at: 6.5 },
+        { title: "结尾怎么收", text: "约 10.5s 橙底上「ONEROOM」从两侧对撞成一行，碎片像玻璃一样四散；约 12.5s 翻回白底，「AI STUDIO」在上、「ONEROOM」在下，中间一条橙色短线，静止到结束。", at: 10.5 },
+      ],
+      copyThis: "开头把 9 段要出现的文字全列成变量，只锁 3 色、1 种字体和 3 层不同速度，每镜只写一句动作加时间点，细节交给模型发挥。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 片头 / 标题 Logo",
+      "16:9 横屏",
+      "MiniMax H3 (2k)",
+      "纯文生视频 · 无参考图",
+      "改开头 9 个字符串就能套用",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：改掉 subject_definitions 里的 9 个字符串",
+        description:
+          "下方完整提示词开头定义了强调色（饱和橙）和第 1–9 个字符串（MiniMax H3 / MOTION / GRAPHICS / NO EDIT / ONE SHOT / コピペで / 超簡単！ / ONEROOM / AI STUDIO），换成你自己的标题、口号和品牌名即可；分屏竖条取自第 1 个字符串里大写 H 的竖笔。",
+      },
+      {
+        number: 2,
+        title: "第二步：整段贴进 MiniMax H3，纯文字生成",
+        description:
+          "不需要参考图。作者在 Domo AI 上用 MiniMax H3 (2k) 生成，说生成偏慢、但画面很干净。提示词锁死了只用 9 个字符串、1 种粗几何无衬线字、白 / 黑 / 橙 3 色、底色黑白反转 3 次，以及背景、装饰、文字 3 层用不同速度运动。",
+      },
+      {
+        number: 3,
+        title: "第三步：少写细节，多抽几次",
+        description:
+          "作者的经验是这类提示词不要写太满，留给 H3 自由发挥再多抽几次更有意思，这次特意删到不足 3000 字。每镜只给时间点和一句动作（00:01 拼标题 … 00:12 定版），最后 13.8–15s 全画面静止。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–1s 黑底，白色线条从四边涌向中心形成漩涡，巨大橙色圆砸入，画面震动。" },
+      { number: 2, description: "1–2.5s 线条拼成「MiniMax H3」，底色由黑翻白，「H3」为橙色。" },
+      { number: 3, description: "2.5–3.5s 急推到橙色「H3」，放大到占满全屏。" },
+      { number: 4, description: "3.5–5.2s 白底，竖条贯穿全高，把画面切成三列上下滚动，其余字母被甩出画面。" },
+      { number: 5, description: "5.2–6.4s 三列急停，「MOTION」整屏砸入并定住。" },
+      { number: 6, description: "6.4–8s 硬切黑底，白色线框网格倾斜延伸向纵深，「GRAPHICS」沿网格成片复制涌来。" },
+      { number: 7, description: "8–10s 字卡快闪：「NO EDIT」「ONE SHOT」「コピペで」「超簡単！」。" },
+      { number: 8, description: "10–12s 橙底，「ONEROOM」从左右两侧高速对撞成一行，碎片像玻璃一样四散。" },
+      { number: 9, description: "12–15s 黑底「ONEROOM」落到下半屏，随后翻白底，「AI STUDIO」在上、中间一条橙色短线，静止到结束。" },
+    ],
+    constraints:
+      "画面上只能出现 9 个指定字符串，拼写、大小写、空格都要一字不差，不能乱码、多字或少字；「第 1 个字符串」这类称呼本身不能画到画面上；只用 1 种粗几何无衬线字体（日文用粗黑体），只用米白、墨黑、强调色 3 色；底色黑白反转 3 次；背景、装饰、文字 3 层始终以不同速度运动，只有最后 13.8–15s 全部静止；背景是空心描边的「ONEROOM」超低速从右往左流动；9 镜构图不能重复；字形不能随机故障。与成片不符：提示词只让第 1 个字符串的最后一个字是强调色，成片里「H3」两个字都是橙色；Shot 7 要求一卡一词，成片里「コピペで」和「ONE SHOT」、「超簡単！」出现在同一张卡上。",
+    video_prompt: {
+      title: "MiniMax H3 完整提示词（纯文生视频）",
+      subtitle: "15s · 16:9 · 无参考图 · 日文完整提示词（主帖长文）",
+      content: `subject_definitions:
+この映像の設定は以下の通りである。
+アクセント色は彩度の高いオレンジである。
+第1の文字列は "MiniMax H3" である。
+第2の文字列は "MOTION" である。
+第3の文字列は "GRAPHICS" である。
+第4の文字列は "NO EDIT" である。
+第5の文字列は "ONE SHOT" である。
+第6の文字列は "コピペで" である。
+第7の文字列は "超簡単！" である。
+第8の文字列は "ONEROOM" である。
+第9の文字列は "AI STUDIO" である。
+画面を3分割する縦棒は、第1の文字列に含まれる大文字 H の縦棒である。
+
+画面に登場する文字列は上の9つだけであり、これ以外の文字・単語・記号・数字は一切出現しない。すべて上に書いた通りの綴りで、大文字と小文字の別も空白の有無もそのまま正確に保ち、平坦・鮮明・安定した状態で描画する。崩れたり、文字が増減したり、文字化けしたりすることは決してない。
+「第1の文字列」「第2の文字列」などの呼び方は、この指示書の中だけで使う呼称である。画面に描くのは必ずその呼称に割り当てられた文字列そのものであり、「第1」「文字列」といった呼称の語や数字が画面に描かれることは決してない。
+書体は太いジオメトリックサンセリフ1種類のみで、欧文はすべて大文字。ただし固有名詞にもともと小文字が含まれる場合は、その混在をそのまま正確に保つ。日本語は太いゴシック体1種類のみ。
+色はオフホワイト、インクブラック、アクセント色の3色のみ。この3色以外は一切使わない。地の色は映像の途中で白と黒のあいだで3回反転し、そのたびに文字色も反転する。
+画面には常に3つの層がある。奥の背景層、中間の装飾層、手前の文字層。この3層は必ず異なる速度で動き、3層すべてが同時に静止する瞬間は最後のホールドだけである。
+背景層には第8の文字列が、塗りのない輪郭線だけで描かれ、画面幅の3倍の大きさで横倒しに寝そべり、右から左へ超低速で流れ続けている。これは背景の壁紙であり、手前の文字層とは別物である。重複した単語ではない。
+中間の装飾層には、細いバーコードの帯、極小のUIティックの列、レジストレーションマーク、ハーフトーンのドット網、テクニカルな円弧、データ数値のティックが常時いずれか複数存在し、文字層とは別の速度で動いている。
+
+summary:
+15秒の爆発的なフラットグラフィック・モーションデザイン。9つのカットすべてが構図的に全く異なり、地の白黒が3回反転し、背景の巨大なアウトライン文字が全編流れ続ける。文字は硬い物体として叩きつけられ、圧縮され、砕け、跳ね返り、増殖し、最後に激突する。ばらばらの線分が第1の文字列を組み上げ、縦棒が画面を3分割し、第2の文字列が叩き込まれ、第3の文字列がワイヤーフレームのグリッド上で増殖し、カードが連打され、収束した光点から第8の文字列が左右から激突して生まれ、最後に第9の文字列を上、第8の文字列を下に置いた2行のロックアップで着地する。
+
+retention_analysis:
+各文字列が出現するショットは次の通りであり、増殖・複製された文字もすべて同じ綴りを保つ。
+第1の文字列は [Shot 2]、[Shot 3]、[Shot 4] に出現する。
+第2の文字列は [Shot 5] に出現する。
+第3の文字列は [Shot 6] に出現する。
+第4、第5、第6、第7の文字列は [Shot 7] に出現し、いずれも完全に読める状態で保持される。
+第8の文字列は背景層に全編出現し、手前の文字層としては [Shot 8]、[Shot 9] に出現する。背景層のものは輪郭線のみ、手前のものは塗りつぶしであり、同じ綴りだが別の層である。誤って重複した単語として扱わない。
+第9の文字列は [Shot 9] に出現する。
+
+detailed_description:
+本映像は高密度で攻撃的なフラットグラフィックモーションデザインである。エネルギーはすべてタイポグラフィの物理から生み出す。9つのショットはすべて構図が異なっていなければならず、同じ構図、同じスケール、同じ配置を二度使わない。各ショットの演出の細部はここでは指定しない。
+
+[Shot 1] 地は黒。黒い線分の群れが四辺すべてから爆発的に飛び込み、渦を巻きながら中央へ加速して吸い込まれていく。巨大なアクセント色の円が画面外から叩きつけられて着弾し、強いインパクトシェイクが走る。
+
+[Shot 2] At 00:01.000, 渦の中心で線分が一斉に噛み合い、第1の文字列が画面いっぱいに組み上がる。組み上がった瞬間、地が黒から白へ一気に反転する。第1の文字列の最後の1字だけがアクセント色である。
+
+[Shot 3] At 00:02.600, スナップズームでそのアクセント色の1字へ急速に寄り、その1字が画面全体を覆い尽くすまで巨大化する。画面全体が一度だけフリーズする。
+
+[Shot 4] At 00:03.400, 地は白。縦棒が上下へ伸び上がって画面の全高を貫き、画面を3つの縦列に切り分ける。第1の文字列の残りの文字は左へ弾き飛ばされて画面外へ消える。3つの縦列はそれぞれ異なる速度で上下にスクロールする。
+
+[Shot 5] At 00:05.200, 3つの縦列が一斉に急停止し、第2の文字列が画面いっぱいに正面から叩き込まれ、完全に読める状態で静止する。
+
+[Shot 6] At 00:06.400, ハードカットで黒地へ反転する。巨大な白いワイヤーフレームのグリッドが3次元的に傾きながら奥へ伸び、その面に沿って第3の文字列が格子状に増殖して手前へ流れてくる。
+
+[Shot 7] At 00:08.000, グラフィックカードが4枚、ハードカットで連打される。1枚ごとに構図もスケールも配置も異なり、第4、第5、第6、第7の文字列が1枚に1つずつ、画面の中央に大きく現れる。各カードの切り替わりはシャッターフラッシュで区切られる。
+
+[Shot 8] At 00:10.000, 4枚のカードが中央へ一気に吸い込まれ、1つのアクセント色の光点に凝縮する。光点から左右へ、第8の文字列が2つの塊に分かれて超高速で飛び込み、画面中央で激突して一行に綴られる。アクセント色の同心円の衝撃波が中央から外へ炸裂し、砕けた平面の破片がガラスのように四方へ飛び散る。
+
+[Shot 9] At 00:12.000, 破片が画面外へ抜け、第8の文字列が画面の下半分へ落下して着地し、その真上により小さいサイズで第9の文字列が固定される。2行が中央揃えで積み重なる。地が黒から白へ最終反転する。2行のあいだに短いアクセント色の罫線が1本割り込む。00:13.800 から 00:15.000 まで、背景層も含めて画面上のすべてが一切動かない状態を保持する。字形がランダムにグリッチすることは決してない。`,
+    },
+  },
+  // 查重别名(引用帖：同作者 Seedance2.0 威尼斯微缩城，未附提示词): https://x.com/ai_lifehack55/status/2083529174221001156
+  {
+    id: "ai-lifehack55-miniature-coronation-portrait-wan3",
+    title: "微缩城市的戴冠式 · 巨幅公主肖像揭幕",
+    subtitle: "X · @ai_lifehack55 · WAN3.0（SJinn）· 15秒 · 1:1",
+    description:
+      "WAN3.0 微缩城市延时：广场上的小人搭起脚手架、挂上巨幕，烟花升空后幕布落下，露出公主巨幅肖像。",
+    video: "/tutorials/ai-lifehack55-miniature-coronation-portrait-wan3/demo-web.mp4",
+    poster: "/tutorials/ai-lifehack55-miniature-coronation-portrait-wan3/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "微缩模型",
+    shots: 11,
+    references: 0,
+    model: "WAN3.0（SJinn）",
+    style: "微缩城市大场景 · 施工进度跳切 · 烟花揭幕",
+    aspectRatio: "1/1",
+    sourceUrl: "https://x.com/ai_lifehack55/status/2103806816731681212",
+    sourceAuthor: "@ai_lifehack55",
+    sourcePlatform: "X",
+    sourceImpressions: 2240,
+    sourceStats: { asOf: "2026-09-27", likes: 73, reposts: 9, bookmarks: 7 },
+    formats: ["拆装·制作过程"],
+    hook: {
+      structure: "空广场 → 搭架装框 → 挂幕布 → 烟花 → 幕落揭幕",
+      opening: "第 0 秒高位斜俯拍一座密密麻麻的微缩城市，中央广场只堆着建材，小人们正把木料往里搬。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "每一刀都跳一大段工期：约 1.5s 多层脚手架已搭好、工人在顶层固定横杆；约 2.5s 巨大的竖版金色画框吊装到位；约 4s 工人把整块幕布拉开盖住画框；约 6s 广场挂满彩旗，人群开始聚集。", at: 1.5 },
+        { title: "蓄势", text: "约 7.5s 镜头升高后拉，广场、街区和远处城市全部入画，满场观众；约 9.5s 天色转暗，一发烟花从城市深处升空，约 10.5s 在画框上空炸开。", at: 7.5 },
+        { title: "成品揭晓", text: "约 11.2s 幕布往下滑落，露出头戴王冠、身穿白色礼服的公主肖像；约 12.3s 切近到整幅画框，观众举手欢呼，纸屑飘落到结束。", at: 11.2 },
+      ],
+      copyThis: "每个镜头只拍当前工期剩下的最后一步，一刀跳一大段进度；肖像一直用幕布盖住，攒到烟花炸开后再一次性揭开。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 微缩城市",
+      "1:1 方屏",
+      "WAN3.0（SJinn）",
+      "1 张 3:4 图 → 揭幕肖像",
+      "施工跳切 · 烟花揭幕",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：需自备一张 3:4 竖图作 image1",
+        description:
+          "需自备一张 3:4 竖图作 image1，它只作为最后揭幕的巨幅肖像内容，不影响城市、建筑、居民和装饰。作者没有公开自己用的这张图，也没有给出图提示词；成片里揭开的是一位头戴王冠、身穿白色礼服、手持权杖的公主全身像。",
+      },
+      {
+        number: 2,
+        title: "第二步：image1 + 下方完整提示词交给 WAN3.0",
+        description:
+          "在 SJinn 上选 WAN3.0，把提示词里的 <image1> 改成平台里对应的图片引用，贴下方完整提示词。它按 11 个镜头写死了施工进度（0% → 30% → 50% → 70% → 85% → 100%），每个镜头从已完成的部分开始，只拍剩下的最后一步；全程用远景大广角，肖像在揭幕前一直被不透明幕布完全遮住。",
+      },
+      {
+        number: 3,
+        title: "第三步：烟花、揭幕和收尾按秒控制",
+        description:
+          "9.5s 起一发烟花升空、10.7s 炸开，11.5s 幕布整块落下，12.3–15s 镜头缓慢推近，但始终让 3:4 画框完整留在画面里。作者提醒生成结果会有波动、复现性基本没验证过，WAN3.0 也还做不好高速蒙太奇。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–1.5s 高位斜俯拍微缩城市，中央广场只有建材，工人把木料、纸板、绳子运进来。" },
+      { number: 2, description: "1.5–2.5s 跳切：多层脚手架已搭好，工人在顶层固定最后一根横杆。" },
+      { number: 3, description: "2.5–3.8s 跳切：脚手架里吊起巨大的竖版金色画框，工人扶着固定顶梁。" },
+      { number: 4, description: "3.8–5s 跳切：工人把幕布从上往下展开，盖满画框正面。" },
+      { number: 5, description: "5–6s 侧面高位：外侧脚手架大多已拆，工人挂最后的彩旗和纸饰。" },
+      { number: 6, description: "6–7.3s 远景：彩旗挂满，工人离场，居民开始聚集到广场。" },
+      { number: 7, description: "7.3–9.5s 最大远景，镜头升高后拉：广场挤满观众，街区和远处城市全部入画。" },
+      { number: 8, description: "9.5–10.5s 天色转暗，一发烟花从城市深处升空，观众抬头看。" },
+      { number: 9, description: "10.5–11.2s 烟花在画框上空炸开，幕布仍然盖着。" },
+      { number: 10, description: "11.2–12.3s 幕布往下滑落，露出头戴王冠、身穿白色礼服的公主肖像。" },
+      { number: 11, description: "12.3–15s 切近到整幅画框，观众举手欢呼，纸屑飘落，定格到结束。" },
+    ],
+    constraints:
+      "image1 只用作最后揭幕的肖像内容，揭幕前不能露出，幕布不能透光，也不能把参考图的内容用到城市、建筑、居民和装饰上；城市要做出剪纸、纸板、布料拼贴的手工质感，不要光滑的 3DCG 模型或游戏渲染；全程远景大广角，不能只拍画框；不要魔法式的自动建造，不要画面文字、Logo、字幕；只能出现一幅肖像。与成片不符：成片更像普通微缩模型，纸张拼贴的质感不明显；约 12.3s 是直接切近到画框，不是提示词写的从远景缓慢推近，最后画框约占画面高度 95%，超过要求的 75–80%；烟花段天色突然变暗，揭幕后又回到白天；前景道路上不止一辆车。缺口：作者没公开 image1 原图，也没有出图提示词；音频没有转录。",
+    video_prompt: {
+      title: "WAN3.0 完整视频提示词",
+      subtitle: "15s · 1:1 · <image1> 3:4 竖版肖像图 · 日文完整提示词（主帖长文）",
+      content: `[DECLARATION]
+15秒、1:1スクエア。切った紙、厚紙、印刷紙、布、紙片を貼り合わせて作った広大な紙コラージュ都市を、物理的な大型セットとして撮影した高品質なエディトリアル映像。建物、道路、屋根、階段、橋、広場まで紙とクラフト素材で構成し、紙の繊維、断面、折り、重なり、歪み、接着跡、手仕事の不均一さが見える。整った一般的な建築模型ではなく、巨大な紙コラージュ作品の内部に本物の町が存在しているような世界。都市中央の大広場で町の人々が巨大な制作物を完成させる過程を、時間が大きく進む短いハードカットでつなぎ、最後に祝祭的な公開へ到達する。
+
+[REFERENCE]
+<image1> → 3:4縦長の参照画像。最終除幕後に公開される巨大肖像画の画面内容としてのみ使用する。除幕前の都市、建物、広場、住民、足場、幕、装飾には反映しない。
+
+[CONDITION]
+舞台は広場だけで完結せず、道路、建物、階段、橋、複数街区と多数の住民が奥まで続く広大な紙コラージュ都市。中央広場は都市の一部分として存在する。全編を通して制作物から十分に離れた遠距離ワイドを基本とし、巨大制作物だけで画面を埋めない。左右の広場と街区、前景道路、奥の建物群まで同時に見せ、町の人々は小さく見せる。
+前半のハードカットは連続作業の分割ではなく、カットごとに時間と制作進捗が大きく進む。各SHOTはすでに完成した部分から始め、その段階で残る最後の作業だけを見せる。
+巨大な3:4縦長制作物の正面は公開まで厚い不透明幕で完全に覆い、内部の画像、色、人物、輪郭を見せない。
+
+[SHOT FLOW]
+[Shot 1｜0.00~1.60秒]
+[START]
+制作進捗0%。広大な都市中央の大広場に資材だけが集まっている。
+[MAIN EVENT]
+遠距離ワイド。左右の街区、前景道路、奥の建物群を入れた高めの斜め俯瞰から、ゆっくり広場へ前進。多数の作業員が紙、厚紙、木材、ロープ、足場部品を運び込み建設を始める。
+[END]
+都市の大きさと中央広場の制作現場が同時に見える。
+
+[Shot 2｜1.60~2.70秒]
+[START]
+HARD CUT。制作進捗30%。巨大な多層足場の下部と中段は完成済み。
+[MAIN EVENT]
+遠距離の斜め側面から軽く横移動。足場と周辺街区を同時に見せ、作業員が残る最上段の横桟だけを固定する。
+[END]
+巨大な多層足場が100%完成する。
+
+[Shot 3｜2.70~3.80秒]
+[START]
+HARD CUT。制作進捗50%。足場内部の巨大な3:4縦長フレームは約70%完成。
+[MAIN EVENT]
+制作物から十分に距離を取ったワイド。左右の広場と背後の街並みを残し、ロープで吊られた最後の大型上部フレームを作業員が誘導して固定する。
+[END]
+巨大な3:4縦長フレームが100%完成する。
+
+[Shot 4｜3.80~4.90秒]
+[START]
+HARD CUT。制作進捗70%。巨大フレームは完成し、正面の約半分まで不透明幕が取り付けられている。
+[MAIN EVENT]
+遠距離ワイド。広場の左右と周辺街区を残し、作業員が残りの幕を上から下へ広げ、左右から引いてロープと留め具で固定する。
+[END]
+巨大制作物の正面が一枚幕で100%完全に覆われる。
+
+[Shot 5｜4.90~6.10秒]
+[START]
+HARD CUT。制作進捗85%。幕は固定済み。外側の足場はすでに大半が撤去済みで、残るのは最後の祝祭装飾だけ。
+[MAIN EVENT]
+高めの遠距離ワイドで短く横移動。複数チームが最後の旗と紙飾りを取り付ける。奥の都市を残す。
+[END]
+祝祭装飾が完成し、公開準備が整う。
+
+[Shot 6｜6.10~7.30秒]
+[START]
+HARD CUT。制作進捗100%。足場は撤去済み。幕付き巨大制作物と広場の祝祭装飾が完成している。
+[MAIN EVENT]
+非常に広い遠距離ワイド。巨大制作物は画面中央の一部に留め、左右の広場、周辺街区、奥の都市まで見せる。作業員が広場を離れ、住民が集まり始める。
+[END]
+完成した広場へ観衆が集まり、公開直前になる。
+
+[Shot 7｜7.30~9.50秒]
+[START]
+完成した幕付き巨大制作物を中心に観衆が集まっている。
+[MAIN EVENT]
+最も広い遠距離ワイド。広場全体、左右の街区、前景道路、奥の都市を収めたまま、ゆっくり大きくクレーンアップ＋ドリーアウト。前景道路を小さな車が一台だけ走り抜ける。
+[END]
+巨大制作物は画面高の約25〜30%に留まり、広場全体、左右の複数街区、前景道路、奥の都市まで広く見える。
+
+[Shot 8｜9.50~10.70秒]
+[START]
+十分に引いたワイド位置。幕は完全に閉じている。
+[MAIN EVENT]
+カメラ位置と画角を維持したまま、一発の花火が都市の奥から上空へ上昇する。観衆が空を見上げ、幕は動かない。
+[END]
+花火が巨大制作物の上空へ到達する。
+
+[Shot 9｜10.70~11.50秒]
+[START]
+花火が上空へ到達。カメラはワイド位置、幕は完全に閉じている。
+[MAIN EVENT]
+カメラを動かさず、花火だけが大きく華やかに爆発する。都市、広場、観衆、幕付き巨大制作物、満開の花火を一つのワイド画面で見せる。
+[END]
+花火が完全に開いた全景。幕はまだ閉じたまま。
+
+[Shot 10｜11.50~12.30秒]
+[START]
+花火爆発直後。カメラは同じワイド位置。幕はまだ閉じている。
+[MAIN EVENT]
+ここで初めて幕の上部固定が外れ、厚い一枚幕が前方から下へ勢いよく剥がれ落ちる。カメラは動かさない。
+[END]
+幕が完全に落ち切り、巨大な3:4肖像画の額縁全体が上下左右とも切れずに初めて公開される。カメラはまだ同じワイド位置。
+
+[Shot 11｜12.30~15.00秒]
+[START]
+幕は完全に落ち切り、3:4肖像画の額縁全体が広場の中で見えている。カメラはまだワイド位置。
+[MAIN EVENT]
+ここで初めて巨大肖像画へゆっくり前進しながら控えめにズームインする。3:4の額縁全体を常に画面内に保持し、上端・下端を切らない。観衆は旗を振り、少量の紙吹雪と花火の余韻だけが残る。顔や上半身だけのアップにはしない。
+[END]
+最終フレームで3:4肖像画は画面高の約75〜80%に留め、額縁全体と周囲の広場を少量残した状態で終了する。
+
+[SOUND]
+BGMあり。前半は制作進行を支える明確なリズム、後半は公開へ向けて高揚。紙、厚紙、木材、ロープ、布、足場の工作音、町の環境音、観衆のざわめき、花火の上昇・破裂音、幕が落ちる布音、公開後の歓声と拍手。
+
+[NEGATIVE]
+除幕前に参照画像の内容を見せない。幕を透過させない。参照画像の内容を都市、建物、住民、装飾へ流用しない。滑らかな3DCG模型、ゲーム風レンダリング、均一なプラスチック質感、狭い広場だけで完結する構図、巨大肖像画の複数生成、魔法のような自動建設、過度な発光、画面内テキスト、ロゴ、字幕は禁止。`,
+    },
+  },
+  // 查重别名(用户提交的参考图 + 简版创意帖): https://x.com/magnific/status/2103889158972580030
+  // 查重别名(Claude Opus 5.5 完整版 + 提示词回复帖): https://x.com/magnific/status/2103889213309739134
+  // 查重别名(同线程 GPT-6 Astra 版 + 提示词回复帖): https://x.com/magnific/status/2103889266334130518
+  {
+    id: "magnific-mayday-hot-sauce-claude-opus",
+    title: "一滴辣酱，全员警报 · MAYDAY 辣酱广告",
+    subtitle: "X · @magnific · Claude Opus 5.5 → Magnific · 30秒 · 16:9",
+    description:
+      "Claude Opus 5.5 写分镜、Magnific 出片的辣酱广告：一滴辣酱落向塔可，控制室拉响最高警报。",
+    video: "/tutorials/magnific-mayday-hot-sauce-claude-opus/demo-web.mp4",
+    poster: "/tutorials/magnific-mayday-hot-sauce-claude-opus/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "写实广告",
+    shots: 6,
+    references: 4,
+    model: "Claude Opus 5.5（写提示词）→ Magnific",
+    style: "复古 70 年代控制室 · 钴蓝 / 信号红 / 奶油色 · 海报大字叠实拍",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/magnific/status/2103889116022931629",
+    sourceAuthor: "@magnific",
+    sourcePlatform: "X",
+    sourceImpressions: 10798,
+    sourceStats: { asOf: "2026-09-27", likes: 108, reposts: 11, bookmarks: 80 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "辣酱将滴 → 控制室警报 → 全力抢险 → 咬一口破防 → 任务完成 → 产品定版",
+      opening: "第 0 秒是极近的慢镜头：红色辣酱瓶斜在一只脆皮塔可上方，瓶口一滴辣酱正在成形，约 3s 巨大的红字「T-MINUS 3」铺满背景。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 5s 切到复古控制室，留小胡子的主管起身拍下红色按钮，约 7s 满屏「SPICE LEVEL / CRITICAL」；约 10s 巨型风扇全速转动，约 12s 闸门放水，约 13s 红字「EMERGENCY」横扫画面。", at: 5 },
+        { title: "包袱", text: "约 15s 那一滴终于落到塔可上；约 17s 卷发小哥咬一口、若无其事地嚼，约 19s 突然瞪大眼睛，叠上「too MUCH」。", at: 15 },
+        { title: "结尾怎么收", text: "约 20s 控制室欢呼、纸片乱飞，约 23s 小哥含泪竖大拇指，「MISSION ACCOMPLISHED」配手写「barely」；约 25s 钴蓝底上单瓶定版，身后是巨大品牌字，下方「ONE DROP. FULL ALERT.」。", at: 20 },
+      ],
+      copyThis: "把「吃辣」这件小事当成灾难片来拍：每镜都配一句铺满全屏的大字，四角加小编号标签，全程只用 3 种颜色，最后回到一瓶酱的定版。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 产品广告",
+      "16:9 横屏",
+      "Claude Opus 5.5 → Magnific",
+      "简版创意 + 4 张风格参考 → 6 镜提示词",
+      "辣酱 · 控制室警报喜剧",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：一句创意 + 4 张风格参考图交给大模型",
+        description:
+          "Magnific 给 Claude Opus 5.5 和 GPT-6 Astra 的是同一句简版创意：30 秒辣酱广告，一滴辣酱落到塔可上，引发控制室紧急事态，动作片式幽默、原创品牌和动态图形，英文字幕、无对白，参考但不照抄。另附 4 张风格参考图，它们的出图提示词写在帖子每张图的 ALT 文字里，见「参考图」卡片。",
+      },
+      {
+        number: 2,
+        title: "第二步：让模型写出 6 镜分镜提示词",
+        description:
+          "Claude 把品牌定为 MAYDAY，写成 6 个 5 秒镜头（T-MINUS 3 → SPICE LEVEL CRITICAL → EMERGENCY → TOO MUCH → MISSION ACCOMPLISHED → ONE DROP. FULL ALERT.）。每镜都重复同一段风格描述（电影机、光晕、胶片颗粒、钴蓝 / 信号红 / 奶油色）、四角小标签文字、一句满屏大字和声音，并写明无对白、无黑边。",
+      },
+      {
+        number: 3,
+        title: "第三步：在 Magnific 里逐镜生成并拼成 30 秒",
+        description:
+          "把下方完整提示词按镜头在 Magnific 里生成。帖子没说 Magnific 内部具体用了哪个视频模型。成片左上角有「Claude Opus 5.5」标签、右上角有 Magnific 水印；同线程还有 GPT-6 Astra 版（品牌 GOTA），可以对比同一个创意的不同写法。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "magnific-ref-01-stands-nugget",
+        number: "1",
+        title: "看台观众与蘸酱的她 · 出图提示词（图片 ALT 文字）",
+        subtitle: "作者原图 2688×1520 · 编辑风看台群像",
+        image: "/tutorials/magnific-mayday-hot-sauce-claude-opus/refs/ref-01-stands-nugget.jpg",
+        prompt: `Wide 16:9 editorial campaign photo: ten stylish spectators packed in three tiers of outdoor stands, all looking right at an off-frame match. Hazy pale blue seaside sky, warm golden-hour sun. Preppy vintage tennis-club wardrobe in cream, butter yellow, forest green, navy and sky blue: cable-knit cricket sweaters and vests with striped V-necks, polo collars, green Harrington jacket, yellow windbreaker, sweater tied over shoulders, white bucket hat, white cap, navy cap. Almost all wear retro tortoiseshell or black sunglasses. Diverse ages and ethnicities, including a mustached man, a woman with a dark bob and gold hoops, a bearded older man with salt-and-pepper hair, a blonde with a scrunchie ponytail, a grey-haired woman with a low bun. Everyone serious except a curly red-haired woman in a bright turquoise terry zip jacket, eyes closed, blissfully dipping a chicken nugget into a ketchup cup. Medium format film, soft grain, faded warm grade.`,
+      },
+      {
+        id: "magnific-ref-02-office-football",
+        number: "2",
+        title: "办公室走廊踢球 · 出图提示词（图片 ALT 文字）",
+        subtitle: "作者原图 2688×1520 · 35mm 低机位广角 · 注意：这段 ALT 正好 1000 字符（X 上限），「holding a roll」后面接的是另一段描述，原文不完整",
+        image: "/tutorials/magnific-mayday-hot-sauce-claude-opus/refs/ref-02-office-football.jpg",
+        prompt: `Wide 16:9 editorial fashion photo on 35mm film, low wide-angle from floor level, slight Dutch tilt. Late-90s office hallway: beige walls, drop ceiling, grey filing cabinets, burnt orange carpet. Left foreground, a man with long dark wavy hair kicks a football mid-strike, leaning back, leg toward camera; royal blue sleeveless jersey with white trim, red shorts with white stripes, white crew socks, chunky white retro sneakers. The ball flies, slightly blurred. Back right, an open steel elevator is the goal: a dark-haired goalkeeper crouches inside in ready stance, white gloves, white retro football jersey, blue shorts, sneakers, eyes on the ball. Middle background, a couple leans on the wall chatting, ignoring it: a man in a mint-green oversized V-neck sweater and grey trousers, a blonde woman with messy updo in black turtleneck, black pleated mini skirt and heels holding a roll adults in an office space, one person kicks a soccer ball while another prepares to catch it near an elevator.`,
+      },
+      {
+        id: "magnific-ref-03-poster-todo-cambia",
+        number: "3",
+        title: "「TODO CAMBIA」字效海报 · 出图提示词（图片 ALT 文字）",
+        subtitle: "作者原图 2048×1152 · 橙色压字 + 草坡照片",
+        image: "/tutorials/magnific-mayday-hot-sauce-claude-opus/refs/ref-03-poster-todo-cambia.jpg",
+        prompt: `Wide 16:9 editorial poster. Background: 35mm film photo of a vast, gently curved green grassy hill under a deep blue sky with wispy cirrus clouds. A tiny lone man stands on the crest at the right third, looking down: red knit sweater, off-white trousers, navy cap, hands in pockets, dwarfed by empty space. Over the photo, a massive condensed all-caps grotesque sans-serif headline fills the canvas edge to edge in three tightly stacked lines: "TODO CAMBIA" / "CUANDO" / "LO MIRAS BIEN". Letters in warm saturated orange with crumpled paper risograph texture, white speckles, scuffed ink dropouts and slight transparency so sky and grass show through. A loose hand-drawn cream marker loop circles "TODO" and the "C" of "CUANDO". Tiny centered white spaced-out caps at the bottom: "OTRA PERSPECTIVA". Crinkled paper overlay, film grain, muted analog colors, faded 90s print feel. Bold graphic design meets documentary photography.`,
+      },
+      {
+        id: "magnific-ref-04-poster-otra-mirada",
+        number: "4",
+        title: "「OTRA MIRADA」字效海报 · 出图提示词（图片 ALT 文字）",
+        subtitle: "作者原图 2048×1152 · 动态模糊奔跑 + 奶油色粗圆体",
+        image: "/tutorials/magnific-mayday-hot-sauce-claude-opus/refs/ref-04-poster-otra-mirada.jpg",
+        prompt: `Wide 16:9 cinematic poster. Background: heavily motion-blurred photo of a woman running in profile left to right along a beach at golden hour, long-exposure panning shot, her silhouette smeared into horizontal streaks of warm orange and dark brown with ghosted trails. Deep teal-green sky in the upper two thirds, a pale blurred light band across the middle, burnt orange sand below, dark vignette. Heavy analog grain, saturated 70s color grade. Typography: ultra-bold wide rounded heavy sans-serif in cream, all caps, tight tracking. Upper left: "OTRA" / "MIRADA" stacked. Lower right: "MISMO" / "MUNDO" stacked, overlapping the runner's legs. Small spaced-out cream caps top right: "CAMBIA LA PERSPECTIVA". Small spaced-out cream caps bottom left: "TODO EMPIEZA EN CÓMO LO VES." Sharp clean type against the dreamy blurred photo, editorial sports-campaign aesthetic.`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–5s 极近慢镜头：红色辣酱瓶斜在塔可上方，一滴辣酱成形、颤动、滴落，背景铺满红字「T-MINUS 3」。" },
+      { number: 2, description: "5–10s 复古 70 年代控制室，红色连体服操作员，留小胡子的主管拍下红色按钮，红色警灯转起，满屏「SPICE LEVEL / CRITICAL」。" },
+      { number: 3, description: "10–15s 动作蒙太奇：巨型风扇全速转动、钢闸门放出水墙、操作员双手拉杆，红字「EMERGENCY」横扫，叠红色手写字。" },
+      { number: 4, description: "15–20s 辣酱落在塔可上，卷发红运动服小哥咬一口，先淡定后瞪眼、流汗、头发被风吹起，急推脸部，叠「too MUCH」。" },
+      { number: 5, description: "20–25s 快切：控制室欢呼拥抱、纸片乱飞，主管擦汗，小哥含泪竖大拇指，「MISSION ACCOMPLISHED」配手写「barely」。" },
+      { number: 6, description: "25–30s 钴蓝底单瓶产品定版，身后巨大红色品牌字，下方奶油色「ONE DROP. FULL ALERT.」。" },
+    ],
+    constraints:
+      "每镜都重复同一段风格描述：电影机拍摄、光晕、暖调胶片颗粒、钴蓝 / 信号红 / 奶油色、海报式大字叠实拍、四角小标签；画面里只能有一瓶酱，不出现其他品牌；无对白，只有音效和音乐；无黑边、无强暗角；第 5 镜用全画幅，不分屏、不用圆形画框。与成片不符：定版的品牌字和瓶身标签是「MAYAM」，不是提示词写的「MAYDAY」；「EMERGENCY」上方的手写字不是提示词写的「obviously」，拼写不清；第 5 镜四角标签的编号有错（左下写成 SP-03）。缺口：帖子没说 Magnific 内部用的是哪个视频模型；4 张参考图是给大模型的风格参考，帖子没说是否直接喂给了视频模型；参考图 2 的 ALT 正好 1000 字符，原文不完整；音频没有转录。",
+    video_prompt: {
+      title: "Claude Opus 5.5 写的 6 镜视频提示词",
+      subtitle: "30s · 16:9 · 6 × 5s · 英文完整提示词（线程第 3 帖长文）",
+      content: `SHOT 1 · T-MINUS 3 · 0–5s
+Shot on cinema camera, halation effect, warm analog film grain, saturated cobalt blue, signal red and butter cream palette, editorial poster typography layered over live action, tiny uppercase micro labels in the four corners reading “SP-01”, “HOT SAUCE”, “LEVEL 5”, “EST. 2026”. Extreme macro slow motion on a clean cream kitchen counter against a cobalt blue wall: a glossy red glass bottle labeled MAYDAY tilts over a crispy taco; one bright red drop forms at the tip, trembles and detaches. Giant full-bleed tightly tracked bold red grotesk uppercase text “T-MINUS 3” fills the whole frame behind the drop, edge to edge. No other bottles, no other brands. No dialogue, no speech, only a deep trailer boom and a ticking clock. No black borders, no strong vignette.
+
+SHOT 2 · SPICE LEVEL CRITICAL · 5–10s
+Shot on cinema camera, halation effect, warm analog film grain, saturated cobalt blue, signal red and butter cream palette, editorial poster typography layered over live action, tiny uppercase micro labels in the four corners reading “SP-02”, “CONTROL”, “ALERT”, “02/06”. Wide shot of a retro 70s mission control room with cobalt blue walls and cream consoles, operators in red jumpsuits with headsets. A serious mustached chief in a cream uniform rises in slow motion and slams a giant red button, red beacons start spinning. Huge wide rounded extra-bold butter cream words “SPICE LEVEL” stacked over giant bold red grotesk uppercase “CRITICAL” spanning the full frame width. No dialogue, no speech, only an alarm siren. No black borders, no strong vignette.
+
+SHOT 3 · EMERGENCY · 10–15s
+Shot on cinema camera, halation effect, warm analog film grain, saturated cobalt blue, signal red and butter cream palette, editorial poster typography layered over live action, tiny uppercase micro labels in the four corners reading “SP-03”, “FANS ON”, “GATES OPEN”, “03/06”. Fast action montage with crash zooms and horizontal motion blur streaks: enormous industrial fans spin up to full speed, then heavy steel floodgates slide open and release a powerful wall of cool water, an operator in a red jumpsuit pulls a big lever with both hands. Giant full-bleed bold red grotesk uppercase text “EMERGENCY” slides across the frame, with a flowing red handwritten script word “obviously” overlaid on top. No numbers, no gauges. No dialogue, no speech, only roaring fans, rushing water and siren. No black borders, no strong vignette.
+
+SHOT 4 · TOO MUCH · 15–20s
+Shot on cinema camera, halation effect, warm analog film grain, saturated cobalt blue, signal red and butter cream palette, editorial poster typography layered over live action, tiny uppercase micro labels in the four corners reading “SP-04”, “IMPACT”, “CONFIRMED”, “04/06”. Clean kitchen with a cobalt blue wall and cream counter, nothing else on the counter. The red drop lands on the taco with a tiny splash in slow motion. A young man with curly hair in a red tracksuit picks up the taco and takes a big bite, chews calmly, then his eyes widen dramatically, a bead of sweat rolls down, a strong wind blows his hair back. Crash zoom into his face. Huge wide rounded extra-bold butter cream words “too” stacked over giant bold red uppercase “MUCH” filling the frame. No dialogue, no speech, only a deep bass hit then silence. No black borders, no strong vignette.
+
+SHOT 5 · MISSION ACCOMPLISHED · 20–25s
+Shot on cinema camera, halation effect, warm analog film grain, saturated cobalt blue, signal red and butter cream palette, editorial poster typography layered over live action, tiny uppercase micro labels in the four corners reading “SP-05”, “STATUS”, “STABLE”, “05/06”. Fast rhythmic cuts: the control room operators cheering and hugging as papers fly through the air, the mustached chief calmly wiping his brow with a handkerchief, the young man in the red tracksuit smiling with teary eyes and giving a thumbs up. Full-frame images, no split screen, no circular frames. Giant full-bleed bold red grotesk uppercase text “MISSION ACCOMPLISHED” across the frame with a flowing red script word “barely” overlaid on top. No dialogue, no speech, only a triumphant brass hit. No black borders, no strong vignette.
+
+SHOT 6 · ONE DROP. FULL ALERT. · 25–30s
+Shot on cinema camera, halation effect, warm analog film grain, saturated cobalt blue, signal red and butter cream palette, editorial poster typography layered over live action, tiny uppercase micro labels in the four corners reading “SP-06”, “HOT SAUCE”, “ONE DROP”, “06/06”. Clean product packshot: a single glossy red glass MAYDAY hot sauce bottle stands centered on a smooth cobalt blue background with a soft shadow, one red drop glistening at its tip, a light horizontal motion blur streak passes across. Behind it, a giant full-bleed tightly tracked bold red grotesk uppercase wordmark “MAYDAY” fills the entire frame edge to edge, with a small butter cream uppercase tagline underneath: “ONE DROP. FULL ALERT.” Only one bottle, no other brands. No dialogue, no speech, only a short siren blip and final beat. No black borders, no strong vignette.`,
+    },
+  },
   // 提示词回复帖: https://x.com/iamsofiaijaz/status/2103686813600944332
   {
     id: "iamsofiaijaz-museum-steps-frozen-crowd-seedance",
