@@ -34,6 +34,22 @@ export interface Tutorial {
   hook?: HookBreakdown;
   /** 源头方法论提示词（可选）：产出本片提示词的上游简报/元提示词，如喂给 LLM 的创意 brief；有则详情页单独渲染强调色卡片 */
   method_prompt?: MethodPrompt;
+  /** 二创 / 改创视频（可选）：他人基于本片改创的作品，详情页主视频下方展示并署名 */
+  remix_videos?: RemixVideo[];
+}
+
+export interface RemixVideo {
+  video: string;
+  poster: string;
+  /** 二创作者，如 @JOJO85871961 */
+  author: string;
+  /** 二创原帖链接 */
+  source_url: string;
+  /** 小标题，如「二创 · @xxx 根据原片改创」 */
+  label: string;
+  /** 一句话说明（如实描述改了什么） */
+  note: string;
+  aspectRatio?: string;
 }
 
 export interface MethodPrompt {
