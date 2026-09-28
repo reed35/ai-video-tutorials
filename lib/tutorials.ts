@@ -22531,6 +22531,377 @@ STYLE LOCK
 Fast, intimate cinematic realism in the present; warm grainy Super 8 memory with soft remembered voices in the past; angles and camera movement carry the mood; sound effects and four spoken lines only, absolutely no music.`,
     },
   },
+  // 提示词回复帖: https://x.com/aimikoda/status/2104474741050397141
+  {
+    id: "aimikoda-cat-zoomies-house-seedance-2-5",
+    title: "猫咪暴走拆家 · 手绘动漫风 Zoomies · Seedance 2.5",
+    subtitle: "X · @aimikoda · Midjourney v8.2 + Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "Midjourney 出猫咪图，Seedance 2.5 生成 30 秒手绘动漫猫在家狂暴跑酷拆家，结尾卖萌定格。",
+    video: "/tutorials/aimikoda-cat-zoomies-house-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/aimikoda-cat-zoomies-house-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "手绘动漫",
+    shots: 10,
+    references: 1,
+    model: "Seedance 2.5（参考图 Midjourney v8.2）",
+    style: "厚涂手绘动漫 · 低机位追拍 + 甩镜 · 越拆越乱",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/aimikoda/status/2104474150215578011",
+    sourceAuthor: "@aimikoda",
+    sourcePlatform: "X",
+    sourceImpressions: 6281,
+    sourceStats: { asOf: "2026-09-28", likes: 179, reposts: 6, bookmarks: 108 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "张嘴冲镜头 → 地毯漂移 → 撞翻东西 → 越拆越乱 → 突然乖巧定格",
+      opening: "第 0 秒低机位，蓬毛灰白猫瞪大眼、张着嘴朝镜头扑过来，爪子几乎贴到镜头——一开场就是满速。",
+      openingAt: 0,
+      beats: [
+        { title: "速度怎么表现", text: "约 3–5.8s 微距拍爪子在红地毯、蓝地毯上打滑漂移，爪尖刮起地毯纤维；约 8–10s 只拍后果：边桌上的盆栽被撞飞、泥土四溅，猫已经不在画面里。", at: 3 },
+        { title: "中段加码", text: "约 12.3s 走廊远景里猫只是个小点，下一秒冲到跟前；约 13.7s 张嘴尖叫的超近脸部特写；约 15–19s 窜过厨房、跑上柜顶，镜头一甩一甩才追得上。", at: 12.3 },
+        { title: "结尾怎么收", text: "约 20–23s 糊成一团白影冲过被毁的客厅，约 23–27s 低机位扫过满地纸张碎片；约 27.5s 猫落在镜头正前方，乖乖坐好、微笑定格。", at: 20 },
+      ],
+      copyThis: "提示词不写具体镜头表，而是规定「速度靠再出现的时机表现」：镜头只拍到碎片、撞击和后果，猫早已在别处；最后用一个乖巧定格反差收尾。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 萌宠动画",
+      "16:9 横屏",
+      "Midjourney + Seedance 2.5",
+      "1 张猫咪参考图",
+      "越拆越乱",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 Midjourney 出猫咪参考图（Image1）",
+        description:
+          "作者在回复里公开了 Midjourney v8.2 提示词：一句「cat doing zoomies in house」加 16:9 画幅、风格参考码 --sref 3309178205 和个人风格档 --profile 9f11bbt（这是作者自己的风格档，别人用同一串码出图可能不一样）。出来的就是下方参考图卡里的那张：厚涂手绘动漫风、蓬毛灰白猫张嘴冲镜头，它在视频里是 Image1，锁定猫的长相、夸张表情和画风。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者写明用 Midjourney v8.2 + Seedance 2.5。成片为 2560×1440、30fps、30 秒横屏，部分画面右下角有作者签名水印「Kōda」。声音：没有识别到人声或台词，主要是奔跑、撞击、抓挠、东西掉落的音效，约 14 秒特写处有一声猫的尖叫；没有明显的规律节拍，没听出清晰的配乐（语音识别和频谱判断，未人工试听）。提示词里没有写声音。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整 Seedance 提示词",
+        description:
+          "把下方英文提示词整段粘贴，Image1 放 Midjourney 出的猫图。提示词是一整段描述，没有逐镜头时间码：先说明速度要夸张到「半秒穿过整个房间」，再列出走廊、地毯漂移、沙发、边桌、柜顶这些路线，规定用「只拍到碎片和后果」来表现速度，要求破坏逐步升级，最后一个拆家连招后猫落在镜头前乖巧定格。只要一只猫、不许分身、不许瞬移。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-aimikoda-zoomies-image1",
+        number: "1",
+        title: "Image1 · Midjourney v8.2 猫咪参考图",
+        subtitle: "作者回复附图原图（1456×816）：蓬毛灰白猫张嘴冲镜头，锁定长相、表情和画风",
+        image: "/tutorials/aimikoda-cat-zoomies-house-seedance-2-5/refs/01-image1-mj.jpg",
+        prompt: `cat doing zoomies in house --ar 16:9 --sref 3309178205 --profile 9f11bbt`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.4s 低机位：蓬毛灰白猫张嘴瞪眼朝镜头扑来，身后是铺红地毯的走廊。" },
+      { number: 2, description: "2.4–5.8s 一闪而过的脸部特写，接微距：爪子在红地毯、蓝地毯上打滑漂移，爪尖刮起纤维。" },
+      { number: 3, description: "5.8–7.4s 沙发上抱枕被撞飞，猫翻过靠背窜向窗边。" },
+      { number: 4, description: "7.4–10.1s 边桌上的盆栽被撞得倾倒，泥土四溅，猫已经不在画面里。" },
+      { number: 5, description: "10.1–12.3s 厨房调料架一晃而过，盆栽还在半空飞。" },
+      { number: 6, description: "12.3–13.6s 走廊远景：猫在尽头只是个小点，瞬间冲到跟前。" },
+      { number: 7, description: "13.6–14.6s 超近脸部特写：瞪眼张嘴尖叫，一脸疯狂。" },
+      { number: 8, description: "14.6–19s 窜过厨房冰箱前，跑上柜顶、在暗处架子间穿梭，甩镜追拍。" },
+      { number: 9, description: "19–27s 从暗处扑向镜头，接着糊成白影冲过被毁的客厅；低机位扫过满地纸张和碎片。" },
+      { number: 10, description: "27–30s 猫落在镜头正前方，乖乖坐好、瞪眼微笑定格，四周一片狼藉。" },
+    ],
+    constraints:
+      "猫的长相、夸张表情和厚涂动漫画风全部锚定 Image1；只有一只猫，不许分身、不许瞬移，速度靠「镜头只拍到碎片和后果、猫已在别处」表现；破坏逐步升级；结尾在镜头前乖巧定格。Midjourney 的 --profile 9f11bbt 是作者个人风格档，别人复用效果可能不同。成片部分画面有作者签名水印「Kōda」；声音以音效和猫叫为主、没有台词，提示词未写声音。",
+    video_prompt: {
+      title: "Cat Zoomies in the House · 30s",
+      subtitle: "Seedance 2.5 · 作者回复英文完整提示词 · Image1 = Midjourney 猫咪图",
+      content: `Create a 30-second sequence using Image1 as the anchor for the cat’s exact fluffy design, exaggerated expression language and painterly anime rendering. The cat is having impossibly intense zoomies and must feel far beyond ordinary fast—so fast that in half a second it can cross an entire room, reappear on a cabinet, disappear again and already be drifting across a rug in another part of the house before the viewer fully processes the first move. The house is its racetrack. It tears down a hallway, hits a rug and goes into a full sideways drift with claws carving through the carpet, then uses that drift energy to slingshot onto a sofa. It sprints across the backrest, rebounds off cushions, launches onto a side table, jumps to the top of a cabinet, races along the cabinet edge, kicks objects into the air and drops back down into another full-speed lap without ever feeling like it paused. It should repeatedly run across rugs, skid on them so hard they bunch and twist, jump onto sofas, use armrests as stepping points, scramble across cabinet tops and shelf edges, then dive back to floor level and instantly redirect again. The speed must be conveyed through impossible re-entry timing: the camera catches only fragments, impacts and consequences, while the cat is already somewhere else. A plant starts falling in one room and before it lands the cat has already blasted through the kitchen and returned to the same hallway. Cushions are still airborne from one pass when the cat ricochets through the frame again from another direction. Show repeated routes with escalating destruction: rugs dragged out of alignment, sofa fabric clawed, small objects swept off surfaces, frames tilted, papers tornadoing through the air, scattered debris rolling across the floor. Use ultra-fast cinematic language: low-lens chase shots that immediately lose the cat, whip-pans that reacquire it on top of furniture, split-second macro flashes of claws catching rug fibers, hind legs kicking off polished wood, paws flattening into upholstery, eyes going feral and mouth open in manic excitement. Keep one cat only, no clones, no teleportation—just absurdly continuous real movement at a speed that feels almost impossible. In the final beat, after one last catastrophic rug drift and a cabinet-to-sofa-to-floor combo that wrecks half the room, the cat suddenly lands right in front of the lens and freezes into an absurdly cute pose, perfectly composed and innocent, surrounded by total household devastation.`,
+    },
+  },
+  {
+    id: "imastudio-kfashion-pattern-collage-mv-h3",
+    title: "韩系时尚 MV · 图形拼贴 + 动态大字 · MiniMax H3",
+    subtitle: "X · @ImaStudio_ai · MiniMax H3 · 16秒 · 16:9",
+    description:
+      "Ima Studio 官方示例：MiniMax H3 生成 K-fashion 图形拼贴 MV，一个女孩 8 套造型。",
+    video: "/tutorials/imastudio-kfashion-pattern-collage-mv-h3/demo-web.mp4",
+    poster: "/tutorials/imastudio-kfashion-pattern-collage-mv-h3/poster.jpg",
+    duration: "16秒",
+    durationSec: 16,
+    styleLabel: "时尚编辑",
+    shots: 10,
+    references: 0,
+    model: "MiniMax H3（Ima Studio 官方帖）",
+    style: "韩系时尚杂志 · 几何图形拼贴 · 大字排版 · 卡点快切",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ImaStudio_ai/status/2104407114206904789",
+    sourceAuthor: "@ImaStudio_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 2639,
+    sourceStats: { asOf: "2026-09-28", likes: 48, reposts: 9, bookmarks: 52 },
+    formats: ["时尚大片"],
+    hook: {
+      structure: "封面卡闪现 → 8 套造型约 1.6 秒一切 → 杂志封面定格",
+      opening: "第 0 秒先闪约 0.5 秒的杂志封面卡：女孩伸手指向镜头，巨大斜体「TRENDY LOOK」压在画面中间，四周是 K-POP STYLE、STAY COOL 等贴纸字。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 0.5s「SEOUL POP」条纹背景，约 2.1s「SOFT CHIC」粉蓝波点色块全身，约 3.7s 黑白棋盘格坐姿托腮，约 5.3s 紫底「LOVELY MOOD」竖排字——大约每 1.6 秒卡点切一套版式。", at: 0.5 },
+        { title: "中段怎么变", text: "约 6.9s 手掌伸向镜头配「TRENDY LOOK」，约 8.5s 米白底脸部特写，约 10.2s 黑色弧线图形前的全身站姿，约 11.8s 菱形棋盘格前手扶耳侧。", at: 6.9 },
+        { title: "结尾怎么收", text: "约 13.5s 前面的棋盘格、波点、条纹圆和「SEOUL POP」大字重新拼成一张杂志封面，她站在中间定格到结束。", at: 13.5 },
+      ],
+      copyThis: "提示词先锁死同一个人，再把图案、配色、服装、动作、字体、时间线分块写清；动作用「半步向前、回头、撩头发、伸手向镜头」这种 pose-to-pose 清单，结尾要求所有图形重新拼成封面。",
+      approx: true,
+    },
+    tags: [
+      "16秒 · 时尚 MV",
+      "16:9 横屏",
+      "MiniMax H3",
+      "图形拼贴 + 大字排版",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备一张人物参考图",
+        description:
+          "提示词第一句写明基于「attached single character reference image」（一张人物参考图）生成，整条都要锁定同一个韩系女孩的脸、发型和身材。这张参考图原帖没有公开，需要自己准备一张。原帖没有故事板，也没有驱动视频。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "这是 Ima Studio 官方账号发的产品示例帖，主帖写用的是 MiniMax H3，并附了自家 AI 音乐 MV 生成器的推广链接（本页不收录）。提示词要求 15 秒、16:9、24fps；X 上的成片是 3840×2160、30fps、约 15.7 秒。画面里没看到水印。声音与成片差异：成片从头到尾是一段节奏很满的配乐，剪辑基本卡在节拍上；没有识别到台词或旁白，也没有单独的音效。提示词里完全没写声音，配乐来源原帖没说明（Ima Studio 这个工具的卖点是上传音频生成卡点 MV，但帖子没明说这条是不是这样做的）。与提示词不符：开头多了约 0.5 秒的贴纸风封面卡；结尾封面上有一组字母变形、读不出来（约像「JOEFV COOD」），而提示词要求文字清晰可读。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴。分块依次是：Character lock（锁人）→ Style → Visual system（图案清单）→ Color → Fashion → Motion & camera（pose-to-pose 动作清单）→ Typography（可用关键词）→ Timeline（8 套造型 + 封面定格 0.5 秒）→ Avoid。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–0.5s 贴纸风杂志封面卡：女孩伸手指向镜头，斜体「TRENDY LOOK」，四周 K-POP STYLE、STAY COOL、KOREAN GIRL VIBES 贴纸字。" },
+      { number: 2, description: "0.5–2.1s 黑白斜条纹 + 米色大圆，「SEOUL POP」大字，牛仔吊带上衣半身。" },
+      { number: 3, description: "2.1–3.7s 粉色与浅蓝波点色块前全身站姿，拎小白包，左上「SOFT CHIC」细体字。" },
+      { number: 4, description: "3.7–5.3s 黑白棋盘格背景 + 黄色细框，她坐着托腮看镜头。" },
+      { number: 5, description: "5.3–6.9s 淡紫底，右侧竖排重复「LOVELY MOOD」，她双手自然下垂站着看镜头。" },
+      { number: 6, description: "6.9–8.5s 蓝灰斜带背景，手掌伸向镜头，「TRENDY LOOK」大字压在下方。" },
+      { number: 7, description: "8.5–10.2s 米白底脸部特写，两侧小字「KOREAN GIRL」重复排列，先垂眼再抬眼。" },
+      { number: 8, description: "10.2–11.8s 黑色同心弧线图形前的全身站姿，轻微转身。" },
+      { number: 9, description: "11.8–13.5s 黑白菱形棋盘格 + 浅蓝色块，近景手扶耳侧。" },
+      { number: 10, description: "13.5–15.7s 棋盘格、波点、条纹圆和「SEOUL POP」拼成杂志封面，她站在中间定格；左下一组变形字母读不出来。" },
+    ],
+    constraints:
+      "全片只有同一个韩系女孩，不换脸、不出现第二个人；背景和设计元素是干净的 2D 平面图形，人物保持写实；8 套造型 + 结尾封面定格 0.5 秒；大字排版不能挡脸；避免静态海报感、夸张舞蹈、Logo、水印、字幕。与成片不符：开头多了约 0.5 秒封面卡；结尾有一组变形字母读不出来。声音：成片是整段配乐、无台词，提示词没写声音，配乐来源未说明。缺口：人物参考图未公开。",
+    video_prompt: {
+      title: "K-Fashion Pattern Collage MV · 1 girl · 8 looks",
+      subtitle: "MiniMax H3 · 主帖英文完整提示词（开头宣传语、推广链接和话题标签未收录）",
+      content: `Create a 15-second, 16:9, 24fps high-quality fashion MV based on the attached single character reference image.
+Character lock: Keep 1 young Korean-style woman only throughout the entire video. Strictly preserve her face, facial proportions, skin tone, age, long dark-brown hair, bangs, body proportions, limb proportions, identity, and overall Korean beauty vibe. She must always remain the same person. No face drift, no westernized features, no masculine look, no second person, no crowd.
+Style: Pattern Collage Pop × Korean Fashion Editorial × Fashion MV. The feeling is a stylish Korean fashion girl entering a magazine world made of classic patterns, geometric graphics, collage layouts, and bold typography. Keep the girl realistic, but make the background and design elements flat, sharp, clean 2D graphic design. Avoid rough handmade collage; make it polished, chic, trendy, glossy, and editorial.
+Visual system: Use patterns and shapes such as stripes, polka dots, checkerboard, plaid, grids, zigzags, borders, concentric circles, triangles, circles, squares, geometric lines, graphic frames, cutout color blocks, paper-edge collage shapes, overlapping color fields, whitespace, and offset layouts. Use them as backgrounds, framing devices, cross-screen bands, layered blocks behind the subject, and magazine-style title areas.
+Color: Extract 2 main colors from the girl’s vibe, plus white or black as support. Keep the palette clean and unified. Preferred tones: cream white, light blue, icy blue, silver gray, soft pink, muted lavender.
+Fashion: Extend the styling from the reference into sweet-cool Korean / light Y2K / chic Asian fashion. Possible items: light denim, fitted tops, cute-cool mini skirts, small bags, necklaces, earrings, platform ankle boots, Korean accessories. Slight outfit variation is allowed, but she must still feel like one continuous character.
+Motion & camera: This is a fashion MV, not a slideshow. Each segment must have a clear pose-to-pose action: half-step forward, look back, lower gaze then look up, fix hair, touch bag strap, hand near face, seated side look, crouch with soft smile, reach toward camera, light turn, final hero pose. Expressions: soft, sweet-cool, confident, polished. Use fast but smooth lateral movement, light push-in/pull-out, alternating close/medium/full shots, detail inserts, and editorial split compositions.
+Typography: Add large, readable fashion typography without covering the face. Use a main NAME title, plus supporting English keywords and occasional Korean text. Words can include: SEOUL POP, CUTE SIGNAL, SOFT CHIC, KOREAN GIRL, FASHION CUT, LOVELY MOOD, TRENDY LOOK. Vary placement, size, direction, and color while keeping a unified magazine design system.
+Timeline: 8 stylish looks across 15s, ending in a strong final hero shot where previous graphics and keywords reassemble into a polished Korean magazine-cover composition. Hold the final frame for 0.5s.
+Avoid: multiple people, identity drift, static poster feel, stiff motion, overly realistic backgrounds, unreadable text, text over face, childish tone, cheap filters, logos, watermarks, subtitles, exaggerated dance, or goofy expressions.`,
+    },
+  },
+  {
+    id: "imastudio-tokyo-pink-bag-fashion-film-seedance-2-5",
+    title: "东京街头时装片 · 粉色 Prada 手袋 · Seedance 2.5",
+    subtitle: "X · @ImaStudio_ai · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "Ima Studio 官方示例：Seedance 2.5 生成东京街头粉色 Prada 手袋时装短片，快切大字。",
+    video: "/tutorials/imastudio-tokyo-pink-bag-fashion-film-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/imastudio-tokyo-pink-bag-fashion-film-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "时尚大片",
+    shots: 8,
+    references: 0,
+    model: "Seedance 2.5（Ima Studio 官方帖）",
+    style: "Vogue 编辑感 × 东京街拍 · 鱼眼低机位 · 快切大字",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ImaStudio_ai/status/2103067682299937160",
+    sourceAuthor: "@ImaStudio_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 1475,
+    sourceStats: { asOf: "2026-09-28", likes: 19, reposts: 6, bookmarks: 27 },
+    formats: ["时尚大片", "产品广告"],
+    hook: {
+      structure: "鱼眼靴子开场 → 手袋微距 → 街头快切大字 → 举包定格 → 黑底尾卡",
+      opening: "第 0 秒鱼眼低机位贴地：银色厚底靴占满前景，她在东京十字路口朝镜头走来，中间压着「TOKYO / Luxury moves differently.」。",
+      openingAt: 0,
+      beats: [
+        { title: "产品怎么露", text: "约 4–8s 切粉色手袋微距：三角 Logo、银色五金、手握提带，接着「PRADA / THE NEW ICON」压在走动的手袋上。", at: 4 },
+        { title: "节奏怎么推", text: "约 8–13s 放射状运动模糊里的人物近景，BOLD. / MODERN. / UNMISSABLE. 一个词一闪；约 13–18s 斑马线低机位，她把包举向镜头，推到 Logo 特写配「MADE TO BE SEEN」。", at: 8 },
+        { title: "结尾怎么收", text: "约 23–26.7s 十字路口中央举包定格「OWN THE MOMENT」，约 26.7s 手袋特写上摇到脸，约 29s 切黑底尾卡「PRADA / TOKYO EDITION / The city is your runway.」。", at: 23 },
+      ],
+      copyThis: "按 4–6 秒一段写时间线，每段配一行屏幕大字，产品（同一只包、同一个 Logo）在每段都要露出；开头用鱼眼低机位靴子抓眼球，结尾落到黑底品牌尾卡。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 时装广告",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "分段时间线 + 屏幕大字",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：读懂提示词结构",
+        description:
+          "主帖直接贴了完整英文提示词：先定 30 秒、时装片风格和快节奏；再锁定同一个模特和同一只粉色 Prada 手袋（三角 Logo、银色五金不能变）；然后按 0–4s、4–8s……27–30s 分 7 段写镜头和每段的屏幕大字；最后一行写光线、镜头和禁止项。原帖没有附参考图、故事板或驱动视频，提示词里也没提到参考图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "这是 Ima Studio 官方账号的产品示例帖，主帖写「Made with Seedance 2.5」，并附了自家 AI 音乐 MV 生成器的推广链接（本页不收录）。成片是 1280×720、24fps、约 30.1 秒的横屏，画面里没看到水印。与提示词不符：提示词写的是竖屏（vertical），成片却是 16:9 横屏。声音：提示词没写任何声音要求；成片底下有持续的低频音乐铺底和嘈杂的宽频底噪，约 9–13s、16–24s 有人声念出屏幕上的词（能听清 Modern、Unmissable、Made to be seen、Tokyo，约 23s 结尾疑似 runway），其余听不清；以上为语音识别和频谱判断，未人工试听，声音来源原帖没说明。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴。想要竖屏就在生成时明确选 9:16，成片本身是横屏。成片里手袋、三角 Logo 和银色厚底靴在各段保持一致，尾卡文字和提示词一致。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 鱼眼低机位：银色厚底靴占满前景，她在东京十字路口走向镜头，大字「TOKYO / Luxury moves differently.」。" },
+      { number: 2, description: "4–5.8s 粉色手袋微距：三角 Logo、银色五金，手握住提带，「PRADA」大字。" },
+      { number: 3, description: "5.8–8s 斑马线上手袋随步伐摆动，「PRADA / THE NEW ICON」。" },
+      { number: 4, description: "8–13s 放射状运动模糊里的人物近景快切，BOLD. / MODERN. / UNMISSABLE. 逐词闪现。" },
+      { number: 5, description: "13–17.5s 高楼间斑马线低机位，她把包举向镜头，推到包身和 Logo 特写，「MADE TO BE SEEN」。" },
+      { number: 6, description: "17.5–22.7s 蒙太奇：绿色出租车、墨镜特写、银色外套配粉包、厚底靴过马路，TOKYO → FASHION → PRADA 快闪，俯拍人群。" },
+      { number: 7, description: "22.7–26.7s 十字路口中央，她举包面向镜头，人群虚化流动，「OWN THE MOMENT」。" },
+      { number: 8, description: "26.7–30.1s 手袋特写上摇到侧脸，约 29s 切黑底尾卡「PRADA / TOKYO EDITION / The city is your runway.」。" },
+    ],
+    constraints:
+      "全片同一个模特、同一只粉色 Prada 手袋，三角 Logo 和银色五金不变；东京街头写实氛围、鱼眼低机位、手持运动镜头、镜头光晕和轻微胶片颗粒；不许换脸、不许换包、不要廉价广告感。与成片不符：提示词写竖屏，成片是 16:9 横屏。声音：提示词没写；成片有低频音乐铺底、底噪和念出屏幕词的人声，来源未说明。画面出现真实品牌 Prada 的 Logo 与名称。",
+    video_prompt: {
+      title: "Tokyo Street Fashion Film · Pink Prada Bag · 30s",
+      subtitle: "Seedance 2.5 · 主帖英文完整提示词（宣传语、推广链接和话题标签未收录）",
+      content: `Create an exactly 30-second vertical fashion film, Vogue editorial × Tokyo street fashion × cinematic luxury, with fast energetic pacing and sharp cuts.
+Use ONE consistent young female model throughout. Keep the same face, hairstyle, body proportions and identity in every shot. She carries the same glossy pastel-pink Prada handbag throughout, with the Prada triangle logo and silver hardware consistent.
+0–4s: Extreme low-angle street-level opening at a busy Tokyo crossing. Metallic silver platform boots dominate foreground as she walks toward camera, pink Prada bag swinging beside her. Skyscrapers and digital billboards behind. Quick whip-pan boots → bag → face. Text: TOKYO / Luxury moves differently.
+4–8s: Rapid macro cuts: glossy pink bag in sunlight, Prada logo, silver hardware, hand gripping handle, bag swinging while walking. Text: PRADA / THE NEW ICON.
+8–13s: Fast tracking through Shibuya-style streets with crowds, neon and giant screens. Camera circles her as she looks confidently toward lens. Use speed ramps, whip transitions, motion blur and flash cuts. Text: BOLD. MODERN. UNMISSABLE.
+13–18s: Dramatic low-angle crosswalk shot. She stops, lifts the bag toward camera, turns sharply, hair moving in wind. Fast push-in to bag. Text: MADE TO BE SEEN.
+18–24s: Vogue montage: walking between Tokyo taxis, sunglasses close-up, bag against metallic outfit, boots crossing street, side profile against neon architecture, overhead crowd shot. Hard cuts on beat. Text flashes: TOKYO → FASHION → PRADA.
+24–27s: Hero shot. Motion slows. She stands centered while crowd moves in soft blur, holding the bag toward camera. Smooth 360° orbit. Text: OWN THE MOMENT.
+27–30s: Extreme bag close-up, then tilt from logo to face. Cut to clean black/white editorial end card. Text: PRADA / TOKYO EDITION / The city is your runway.
+Glossy luxury lighting, realistic Tokyo atmosphere, premium fashion photography, fisheye low angles, dynamic handheld camera, cinematic lens flares, subtle film grain, sophisticated typography, no identity drift, no bag changes, no cheesy commercial look.`,
+    },
+  },
+  {
+    id: "imastudio-midnight-seoul-8-looks-h3",
+    title: "深夜首尔 K-Fashion 时装片 · 8 套造型 8 个场景 · MiniMax H3",
+    subtitle: "X · @ImaStudio_ai · MiniMax H3 · 16秒 · 16:9",
+    description:
+      "Ima Studio 官方示例：MiniMax H3 深夜首尔韩系时装片，8 套造型 8 个场景卡点大字。",
+    video: "/tutorials/imastudio-midnight-seoul-8-looks-h3/demo-web.mp4",
+    poster: "/tutorials/imastudio-midnight-seoul-8-looks-h3/poster.jpg",
+    duration: "16秒",
+    durationSec: 16,
+    styleLabel: "时尚大片",
+    shots: 10,
+    references: 0,
+    model: "MiniMax H3（Ima Studio 官方帖）",
+    style: "K-pop 回归预告感 · 黑红高定 · 深夜首尔 · 杂志大字排版",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ImaStudio_ai/status/2101511003213312129",
+    sourceAuthor: "@ImaStudio_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 13056,
+    sourceStats: { asOf: "2026-09-28", likes: 204, reposts: 33, bookmarks: 220 },
+    formats: ["时尚大片", "变装·换装"],
+    hook: {
+      structure: "封面卡闪现 → 8 个场景约 1.5 秒一换 → 3D 拼贴 → 天台杂志封面定格",
+      opening: "第 0 秒先闪约 0.4 秒首尔夜景天台封面卡「MIDNIGHT SEOUL」，随即切进黑色镜面电梯快速推近，巨大「MIDNIGHT」字母压在身后。",
+      openingAt: 0,
+      beats: [
+        { title: "几段怎么切换", text: "约 2s 雨夜街道「After Dark」，约 3.5s 红毯酒店楼梯「OWN IT」，约 5.1s 白色画廊红色雕塑「UNTAMED」，约 6.7s 后台化妆镜铬字「ICON」——每个强拍换场景、换构图和大字。", at: 2 },
+        { title: "中后段", text: "约 8.3s 地下车库黑色轿车「NO BRAKES」，约 9.5s 酒红幕布剧场聚光灯「나답게 / MY RULES.」，约 11.2s 高层玻璃走廊「THE FINAL LOOK」。", at: 8.3 },
+        { title: "结尾怎么收", text: "约 12.4s 前面几套造型变成杂志页、海报在她身边飞散成 3D 拼贴，约 13.2s 落到首尔夜景天台：「DARK / IS BEAUTIFUL」「나만의 밤.」「SOLVÉRA — MIDNIGHT SEOUL」「OUT NOW」，定格到结束。", at: 12.4 },
+      ],
+      copyThis: "规定「每个强拍同时换衣服 + 换场景 + 换构图」，时间线按 1.5 秒一格写清场景、服装、镜头动作和那一格的大字，结尾让前面所有造型以杂志页拼贴回归。",
+      approx: true,
+    },
+    tags: [
+      "16秒 · 换装时装片",
+      "16:9 横屏",
+      "MiniMax H3",
+      "8 套造型 × 8 个场景",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备两张参考图",
+        description:
+          "提示词用到两张图：Image1 是唯一的人物身份参考（锁脸、肤色、身材和深棕长发），Image2 只用来参考节奏。两张原帖都没有公开，需要自己准备。原帖没有故事板和驱动视频。作者在评论区说明，这不是预设模板，是专门为这条视频写的提示词，可以拿来改造型、场景和字体。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "这是 Ima Studio 官方账号的产品示例帖，标题写用的是 MiniMax H3，并附了自家社区页的推广链接（本页不收录）。成片为 3840×2160、30fps、约 15.6 秒，画面里没看到水印。声音：整段是节奏很满的配乐，换场基本卡在节拍上；没有识别到人声或台词，也没有单独的音效；提示词没写声音，配乐来源原帖没说明（语音识别和频谱判断，未人工试听）。与提示词不符：开头多了约 0.4 秒的天台封面卡，后面每段因此比提示词时间码晚约 0.5 秒；剧场段的「MY RULES.」有字母被人物挡住。另外提示词要求每段换一套衣服（银色短裙、酒红皮裙、灰色夹克等），成片里大多数段落其实是同一条酒红吊带短裙，有时外搭黑色毛绒外套，服装变化远少于提示词。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴，Image1、Image2 换成你自己的图。结构：画幅和参考图用法 → Style 与配色、情绪 → 锁人规则 → 「每个强拍换衣服 + 场景 + 构图」→ 0–15s 按 1.5 秒一格的时间线（场景、服装、镜头、大字）→ 写实要求与禁止项。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–0.4s 封面卡：首尔夜景天台，酒红吊带裙，左上「MIDNIGHT SEOUL」。" },
+      { number: 2, description: "0.4–2s 黑色镜面电梯，黑色毛绒外套，快速推近，身后巨大「MIDNIGHT」字母。" },
+      { number: 3, description: "2–3.5s 雨夜首尔街道，低机位跟拍她回头，红色手写体「After Dark」。" },
+      { number: 4, description: "3.5–5.1s 红毯酒店楼梯，低机位推近，巨大衬线字「OWN IT」。" },
+      { number: 5, description: "5.1–6.7s 白色画廊 + 红色雕塑，揭示式构图，「UNTAMED」加韩文小字。" },
+      { number: 6, description: "6.7–8.3s 后台化妆镜，灯泡边框，她背对镜头照镜，铬金属立体字「ICON」。" },
+      { number: 7, description: "8.3–9.5s 地下车库 + 黑色轿车，倾斜构图，「NO BRAKES」。" },
+      { number: 8, description: "9.5–11.2s 酒红幕布剧场，聚光灯下转身，「나답게 / MY RULES.」。" },
+      { number: 9, description: "11.2–12.4s 高层玻璃走廊，向前走后停住，「THE FINAL LOOK」。" },
+      { number: 10, description: "12.4–15.6s 前面各套造型化作杂志页和海报 3D 飞散，落到首尔夜景天台：「DARK / IS BEAUTIFUL」「나만의 밤.」「SOLVÉRA — MIDNIGHT SEOUL」「OUT NOW」，定格。" },
+    ],
+    constraints:
+      "全片只有同一个东亚女性，保持 Image1 的脸、肤色、身材和深棕长发，不换脸、不加人、不换发色；每个强拍同时换衣服、场景和构图，场景不重复；只做克制的动作，不跳复杂舞蹈；每段用不同的英文/韩文大字，不能挡脸；避免塑料皮肤、变形、乱码、Logo、水印、字幕、UI。与成片不符：开头多了约 0.4 秒封面卡，后续时间码整体晚约 0.5 秒；「MY RULES.」部分字母被人物挡住；服装大多是同一条酒红吊带短裙（有时加黑色毛绒外套），没有做到每段换装。声音：整段配乐、无台词，提示词未写声音。缺口：Image1、Image2 未公开。",
+    video_prompt: {
+      title: "Midnight Seoul K-Fashion Film · 8 Looks + 8 Scenes",
+      subtitle: "MiniMax H3 · 主帖英文完整提示词（标题宣传语、推广链接和话题标签未收录）",
+      content: `Create a 15s, 16:9, 24fps live-action fashion transformation MV. Use Image1 as the only female identity reference; Image2 only for pacing.
+Style: K-pop comeback film × black-red haute couture × Seoul Midnight × luxury editorial × typography. Palette: black, burgundy, cherry red, gunmetal silver, cool white. Mood: cold, mature, sexy, restrained, expensive. No cyberpunk/nightclub look.
+Keep one East Asian woman only, preserving Image1’s face, skin tone, body proportions, and long dark-brown hair. No face drift, extra people, or hair-color change.
+Every strong beat changes outfit + location + composition. Each look uses a different space. Controlled actions only; no complex dance. Use different English/Korean fashion typography in each scene without covering her face.
+
+0–1.5s: black mirrored elevator, black crop top + silver mini; fast push-in. “MIDNIGHT / SEOUL”.
+1.5–3s: rainy Seoul street, burgundy mini + black jacket; low tracking look-back. “After Dark”.
+3–4.5s: red-carpet hotel stairs, oversized black blazer + mini; low-angle push-in. “OWN IT”.
+4.5–6s: minimalist gallery + red sculpture, gunmetal jacket + black mini; reveal. “UNTAMED / 나다운 순간”.
+6–7.5s: backstage vanity, black off-shoulder top + silver skirt; lip touch-up, mirror reveal. Chrome “ICON”.
+7.5–9s: parking garage + black car, black-red jacket + black mini; Dutch angle. “NO BRAKES”.
+9–10.5s: burgundy-curtain theater, burgundy leather mini; spotlight turn. “나답게 / MY RULES.”
+10.5–12s: high-rise glass corridor, fitted black mini dress; walk forward, stop. “THE FINAL LOOK”.
+12–15s: Seoul rooftop hero. Previous looks return as contact sheets, magazine pages, film strips and posters in a 3D collage. Text: “DARK” → “IS BEAUTIFUL” → “나만의 밤.” → “SOLVÉRA — MIDNIGHT SEOUL / OUT NOW”. Final 0.5s freezes like a magazine cover.
+Photoreal fashion cinematography, real skin/hair/materials. Avoid identity drift, extra people, plastic skin, deformation, repeated sets/type, gibberish, logos, watermarks, subtitles, UI.`,
+    },
+  },
 ];
 
 export function getTutorialById(id: string): Tutorial | undefined {
