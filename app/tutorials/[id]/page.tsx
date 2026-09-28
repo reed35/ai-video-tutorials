@@ -172,6 +172,32 @@ export default async function TutorialPage({
                 </video>
               </div>
             </div>
+            {remix.images && remix.images.length > 0 && (
+              <div className="mt-4">
+                <div className="text-[12px] font-bold text-[#fbbf24] mb-2">二创作者的参考图</div>
+                <div className="flex flex-wrap gap-3">
+                  {remix.images.map((img) => (
+                    <figure key={img.image} className="w-[150px] m-0">
+                      <a href={img.image} target="_blank" rel="noopener noreferrer" title="点击查看原图">
+                        <img
+                          src={img.image}
+                          alt={img.title}
+                          loading="lazy"
+                          className="w-full h-[200px] object-cover rounded-lg border border-[var(--line)] hover:opacity-85 transition-opacity"
+                        />
+                      </a>
+                      <figcaption className="text-[12px] font-semibold mt-1.5">{img.title}</figcaption>
+                      {img.subtitle && (
+                        <p className="text-[11px] text-[var(--muted)] mt-0.5">{img.subtitle}</p>
+                      )}
+                      <p className="text-[11px] text-[var(--muted)] mt-1 whitespace-pre-wrap max-h-28 overflow-y-auto">
+                        {img.prompt}
+                      </p>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </section>
