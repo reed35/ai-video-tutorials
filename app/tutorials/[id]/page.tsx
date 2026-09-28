@@ -125,6 +125,55 @@ export default async function TutorialPage({
             </video>
           </div>
         </div>
+        {tutorial.remix_videos?.map((remix) => (
+          <div
+            key={remix.video}
+            className="mx-[18px] mb-[18px] rounded-2xl border border-[rgba(251,191,36,0.3)] bg-[rgba(251,191,36,0.05)] p-4"
+          >
+            <div className="flex flex-wrap items-center gap-2 mb-1">
+              <span className="text-[11px] font-bold tracking-widest text-[#fbbf24] bg-[rgba(251,191,36,0.14)] border border-[rgba(251,191,36,0.35)] rounded-full px-2.5 py-0.5">
+                REMIX
+              </span>
+              <h2 className="text-base font-bold">{remix.label}</h2>
+            </div>
+            <p className="text-[var(--muted)] text-[13px] mb-3">
+              {remix.note}{" "}
+              <a
+                href={remix.source_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#fbbf24] hover:underline whitespace-nowrap"
+              >
+                查看 {remix.author} 原帖 ↗
+              </a>
+            </p>
+            <div className="flex justify-center">
+              <div
+                className="rounded-xl overflow-hidden bg-black border border-[var(--line)] max-w-full"
+                style={{
+                  aspectRatio: remix.aspectRatio ?? "16/9",
+                  maxHeight: "min(60vh, 640px)",
+                  width: `min(100%, calc(min(60vh, 640px) * ${
+                    (() => {
+                      const [aw, ah] = (remix.aspectRatio ?? "16/9").split("/").map(Number);
+                      return aw / ah;
+                    })()
+                  }))`,
+                }}
+              >
+                <video
+                  className="w-full h-full object-contain"
+                  controls
+                  playsInline
+                  preload="none"
+                  poster={remix.poster}
+                >
+                  <source src={remix.video} type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        ))}
       </section>
 
       {tutorial.hook && <HookBreakdown hook={tutorial.hook} />}

@@ -19950,6 +19950,17 @@ REPEAT: NO background music at any point — diegetic sound only. Camera and bil
     model: "Seedance 2.5 · 连续一镜",
     style: "真人摄影 · 动作追逐",
     aspectRatio: "16/9",
+    remix_videos: [
+      {
+        video: "/tutorials/ride-or-paws/remix-jojo-web.mp4",
+        poster: "/tutorials/ride-or-paws/remix-jojo-poster.jpg",
+        author: "@JOJO85871961",
+        source_url: "https://x.com/JOJO85871961/status/2104218028951077301",
+        label: "二创 · @JOJO85871961 根据原片改创",
+        note: "《夺命老奶之无敌三蹦子》：沿用原片的「猫当枪手、边逃边打追兵」结构，把摩托换成老奶奶骑的三轮车，金门大桥换成城市公路，后段加了直升机和火箭筒。作者未公开工具和提示词。",
+        aspectRatio: "16/9",
+      },
+    ],
     formats: ["电影叙事"],
     hook: {
       structure: "猫坐摩托 → 开火 → 爆炸 → 继续狂飙",
