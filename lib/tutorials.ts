@@ -22169,6 +22169,349 @@ Prompt:
 Create a commercial-style food video of a cook in black gloves and a Wendy's uniform preparing a double cheeseburger on a hot flat-top grill. Show sesame buns toasting, fresh square beef patties being pressed and sizzling with steam, yellow American cheese melting, mayonnaise spread on the bottom bun, then layer two cheesy patties with lettuce, tomato, onions, pickles, ketchup, and mayonnaise before adding the top bun. Finish with a dynamic close-up of the chef holding the completed burger toward the camera with a subtle smile, using warm lighting, glossy textures, cinematic angles, and a soft-focus background.`,
     },
   },
+  {
+    id: "iqrasaifi-wuxia-temple-duel-2v1",
+    title: "山寺屋顶 1 打 2 · 红衣女侠武侠动作短片 · 30s",
+    subtitle: "X · @IqrasaifiAI · 模型未公开 · 30秒 · 16:9",
+    description:
+      "30 秒写实武侠打斗：红衣女侠在山寺屋顶与石桥上以一敌二。模型未公开，提示词按秒写动作。",
+    video: "/tutorials/iqrasaifi-wuxia-temple-duel-2v1/demo-web.mp4",
+    poster: "/tutorials/iqrasaifi-wuxia-temple-duel-2v1/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "写实武侠",
+    shots: 8,
+    references: 0,
+    model: "未公开",
+    style: "写实武侠动作 · 雾中山寺 · 低机位快速甩镜",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/IqrasaifiAI/status/2104277900208099623",
+    sourceAuthor: "@IqrasaifiAI",
+    sourcePlatform: "X",
+    sourceImpressions: 5900,
+    sourceStats: { asOf: "2026-09-28", likes: 140, reposts: 22, bookmarks: 118 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "开场即交手 → 石桥夹击 → 香炉旁收尾 → 推脸定格",
+      opening: "第 0 秒带刺的铁锤头直接甩向镜头，红衣女侠侧躺在屋瓦上：一开场就在打，不做铺垫。",
+      openingAt: 0,
+      beats: [
+        { title: "打斗怎么推进", text: "约 1–4s 她贴着屋瓦滑过长兵器，另一名黑衣僧从屋脊跃下；约 5–9s 低机位仰拍她跃上屋檐、贴着石柱和桥拱空翻。", at: 1 },
+        { title: "中段夹击", text: "约 12–17s 窄石桥上两名黑衣僧一左一右夹击，她在两人之间旋身躲闪，约 17s 腾空跃起。", at: 12 },
+        { title: "结尾怎么收", text: "约 20–25s 冒烟的铜香炉旁与持双环的僧人缠斗，约 25s 炸起一团烟尘；约 26–27s 她持剑旋身，约 28s 推近到脸部特写，约 29.3s 硬切黑场。", at: 20 },
+      ],
+      copyThis: "提示词按 6 秒一段写清每段的具体动作，并用负面词明确排除摆姿势、慢动作、回合制出招，让整条片子一直在动。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 武侠动作",
+      "16:9 横屏",
+      "模型未公开",
+      "1 打 2",
+      "按秒写动作",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：读懂提示词结构",
+        description:
+          "作者在主帖直接贴出了完整英文提示词，分成五块：开头一句定时长、画幅、24fps、写实真人质感，并规定只保留环境声和打斗声（不要配乐、旁白、字幕）；【Visual Style & Characters】写红衣女侠和两名各持不同兵器的黑衣僧；【Combat Dynamics & Actions】要求连续动作、不停顿不摆姿势；【Camera & Environment】写山寺、云雾悬崖、香炉、樱花和镜头运动；【Timeline】把 30 秒按 6 秒一段写具体动作；最后是负面词。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者没有说明用的是哪个模型或平台，帖子和作者回复里都没写，所以这里不猜。按提示词设置 30 秒、16:9、24fps；X 上能拿到的成片是 1280×720、24fps、30 秒。原帖没有附参考图，是纯文字生成。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴。成片与提示词不完全一致：Monk A 的兵器在画面里是带刺铁锤头的长兵器，不像三节棍；提示词里的樱花花瓣和香炉被撞碎，在成片里只看到零星红色花瓣和一团烟尘。想更贴近文字，可以把兵器外观写得更具体。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–1s 带刺铁锤头甩向镜头，红衣女侠侧躺在雾中山寺的屋瓦上，后方屋脊上站着另一名黑衣僧。" },
+      { number: 2, description: "1–4s 她贴着屋瓦滑过横扫的长兵器，翻身站起，在两名黑衣僧之间旋身，红色花瓣从画面飞过。" },
+      { number: 3, description: "5–9s 低机位仰拍：她跃上屋檐，接着贴着石柱和石桥桥拱连续空翻，背景是云雾里的山峰。" },
+      { number: 4, description: "10–11s 她落上石桥栏杆，两名黑衣僧从桥的两头逼近。" },
+      { number: 5, description: "12–17s 窄石桥上两人夹击：一人挥长兵器，一人持铁环；她在两人之间旋身躲闪，约 17s 腾空跃起。" },
+      { number: 6, description: "18–23s 转到庭院，铜香炉冒着火和烟；她从僧人头顶翻过，与持双环的僧人近身缠斗，在香炉边翻滚。" },
+      { number: 7, description: "24–27s 香炉旁持剑挥斩，约 25s 炸起一团烟尘；她在烟里持剑旋身，红袍甩开。" },
+      { number: 8, description: "28–29.3s 镜头推近到她的脸部特写，目光看向镜头侧方，约 29.3s 硬切黑场。" },
+    ],
+    constraints:
+      "30 秒、16:9、24fps 写实真人质感；只保留环境声与打斗声，不要配乐、旁白、字幕、UI、Logo、水印；两名反派必须始终是两个不同的人、各持不同兵器；动作连续，不停顿、不摆姿势、不用慢动作。模型未公开，原帖没有参考图。与成片不符：Monk A 的兵器画面里是带刺铁锤头长兵器；樱花与香炉碎裂只呈现为零星花瓣和一团烟尘。",
+    video_prompt: {
+      title: "Mythological Wuxia Temple Duel · 1 vs 2",
+      subtitle: "30s · 16:9 · 24fps · 作者主帖英文完整提示词 · 模型未公开",
+      content: `Generate a 30-second, 16:9, 24fps high-budget mythological Wuxia action short film. AAA cinematic quality, photorealistic live-action. No subtitles, no UI, no logos, no text, no voiceover, no background music—retain only environmental and combat audio: mountain gusts, silk robes snapping, foot-taps on roof tiles, flying stone tiles shattering, blade hums, heavy air-displacements, and focused breathing.
+【Visual Style & Characters】
+Protagonist: A female martial arts master in flowing crimson-and-gold silk robes, hair held by a jade pin, wielding a flexible steel double-edged Jian (straight sword). Ethereal, lethal, calm aura.
+Antagonists: Two distinct shadow monks in dark silk wraps. Monk A wields a heavy iron three-section staff for variable-range whipping and trapping strikes. Monk B wields a pair of heavy iron ring-daggers for high-speed spinning slices. Must remain two distinct fighters throughout.
+【Combat Dynamics & Actions】 Super-speed Wuxia agility and gravity-defying aerial swordplay. Continuous motion—no pauses, no eye-contact pauses, no static posing. Every jump, aerial flip, wall-run, and slide binds directly into a sword strike or parry.
+【Camera & Environment】
+Environment: Ancient mountain temple courtyard surrounded by misty cliffs, terracotta roof tiles, burning incense burners, and floating cherry blossom petals.
+Camera: Feral, ultra-dynamic camera tracking aerial movements. Uses low-angle tilts, quick whip-pans, camera lagging slightly behind hyper-speed leaps before snapping back, and lens-grazing debris.
+【Timeline】
+0–6s: Immediate combat. Monk A’s iron staff whips into frame; Monk B dives from a temple roof. Protagonist low-slides across tile floors under the staff whip, uses a one-hand ground spin to parry B’s daggers, and leaps upward to dodge a low staff sweep.
+6–12s: Protagonist step-runs along the vertical surface of a stone pillar, executes a reverse aerial twist-slash at Monk B, lands onto a roof beam, and side-flips through Monk A’s staff arc.
+12–18s: Midpoint close-quarters tangle. Trapped between both attackers on a narrow stone bridge. Camera rapid orbital whip. Protagonist drops flat to let their weapons collide, then performs a 360° spinning leg sweep clearing both.
+18–24s: Peak aerial agility. Z-pattern wall-rebounds → hilt strikes to weapon joints → mid-air sword deflections → cartwheel dodges through incense smoke.
+24–30s: Climax finish. Protagonist slices straight through their combined defense. A rapid triple-strike disarms Monk B, sending him flying into a stone incense burner that shatters on impact. She instantly pivots, leaping into a 360° aerial full-body rotation sword cleave against Monk A, blowing back mist and petals. Final frame: protagonist lands lightly on one foot, sword held diagonally, robes settling in the wind, fast dolly-in to face, hard cut.
+【Negative Prompt / Exclusions】 Stance-holding, slow motion, turn-based attacks, idle stances, prolonged eye-locks, magic glowing spell circles, excessive particle effects obscuring action, UI, text, watermarks, subtitles.`,
+    },
+  },
+  {
+    id: "garylau-maid-gesture-dance-depth-minimax-h3",
+    title: "深度视频驱动抖音手势舞 · 女仆装真人 · MiniMax H3",
+    subtitle: "X · @GaryLau0101 · MiniMax H3 · 15秒 · 9:16",
+    description:
+      "用深度+脸部网点视频驱动 MiniMax H3，复刻抖音手势舞：女仆装女孩逐帧跟动作。",
+    video: "/tutorials/garylau-maid-gesture-dance-depth-minimax-h3/demo-web.mp4",
+    poster: "/tutorials/garylau-maid-gesture-dance-depth-minimax-h3/poster.jpg",
+    duration: "15秒",
+    durationSec: 16,
+    styleLabel: "真人风",
+    shots: 1,
+    references: 0,
+    model: "MiniMax H3",
+    style: "深度视频驱动动作 · 固定机位竖屏手势舞",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/GaryLau0101/status/2104394661070848194",
+    sourceAuthor: "@GaryLau0101",
+    sourcePlatform: "X",
+    sourceImpressions: 7841,
+    sourceStats: { asOf: "2026-09-28", likes: 103, reposts: 9, bookmarks: 88 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "固定机位 · 手势舞逐帧复刻 · 挥手收尾",
+      opening: "第 0 秒女仆装黑长直女孩就把手掌推向镜头，紧接着用双手比出取景框——一开场就是爆款手势。",
+      openingAt: 0,
+      beats: [
+        { title: "取景框手势", text: "约 1–5s 双手一上一下比出取景框，停在胸前，节奏和停顿都跟参考视频一致。", at: 1 },
+        { title: "托腮与指脸", text: "约 6–10s 换成托腮、手指点下巴的可爱动作，头部随之轻轻歪动。", at: 6 },
+        { title: "结尾怎么收", text: "约 11–15s 双手在胸前交叉摆动，再向画面两侧挥手，最后放下手看镜头。", at: 11 },
+      ],
+      copyThis: "把真人舞蹈转成深度+脸部网点视频当 <Video 1>，提示词反复强调按原时间顺序逐帧复刻、不跳帧不加速，并声明只借动作不借可视化外观。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 手势舞",
+      "9:16 竖屏",
+      "MiniMax H3",
+      "附深度驱动视频",
+      "动作复刻",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "作者公开的深度驱动视频（对应提示词里的 <Video 1>）",
+        description:
+          "576×1024 · 15.65 秒 · 9:16。作者在自回复里连同提示词一起公开了这段驱动视频：把一段抖音手势舞转成黑白深度图，再叠上脸部网点/连线。它只负责身体动作、头部姿态和节奏，不是最终画面。作者没有说明深度和脸部网点是用什么工具做的。",
+        video: "/tutorials/garylau-maid-gesture-dance-depth-minimax-h3/depth-driver-web.mp4",
+        poster: "/tutorials/garylau-maid-gesture-dance-depth-minimax-h3/depth-driver-poster.jpg",
+        aspectRatio: "9/16",
+      },
+      {
+        number: 2,
+        title: "第二步：准备人物参考图并选模型",
+        description:
+          "提示词里的 <Picture 2> 是决定最终人物外观的彩色写实参考图，作者没有公开这张图。模型是 MiniMax H3（作者回复「我用 Mini Max H3」），作者还推荐了 Hugging Face 上的 Minimax-h3_Singularity 版本。成片为 1440×2560、30fps、15.65 秒竖屏。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方中文提示词整段粘贴，<Video 1> 对应深度视频、<Picture 2> 对应人物图。提示词分三块：按参考视频逐帧复刻动作与停顿；只借动作、不复制面部可视化标记；输出保持 <Picture 2> 的彩色写实外观，不出现灰色深度、点线、网格、字幕或新增镜头。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–1s 白墙房间固定机位，女仆装黑长直女孩右手掌推向镜头。" },
+      { number: 2, description: "1–5s 双手一上一下比出取景框手势，停在胸前，头部微微摆动。" },
+      { number: 3, description: "6–8s 手托下巴、手指点脸，做可爱表情。" },
+      { number: 4, description: "9–10s 侧身，手握拳贴近下巴，头微歪。" },
+      { number: 5, description: "11–12s 双手在胸前交叉摆动。" },
+      { number: 6, description: "13–14s 双手向画面两侧挥手。" },
+      { number: 7, description: "15s 放下手，看向镜头收尾。" },
+    ],
+    constraints:
+      "动作的时刻、持续时间和停顿全部由深度参考视频决定，不另编舞、不跳帧、不加速；深度视频只控制身体动作、头部姿态和节奏，不复制其中的可视化标记；输出保持 <Picture 2> 的彩色写实外观，不出现灰色深度、点线、网格、字幕或新增镜头。<Picture 2> 人物图和制作深度/脸部网点视频的工具作者均未公开。",
+    video_prompt: {
+      title: "深度视频驱动手势舞 · 逐帧动作复刻",
+      subtitle: "作者回复中文完整提示词 · MiniMax H3 · <Video 1> 深度视频 + <Picture 2> 人物图",
+      content: `<Video 1> 是本次片段的深度动作参考。以它的原始时间顺序和节奏为准，复刻身体、头部、手臂、手掌及手指的运动；完整保留动作幅度很小的阶段和停顿，不省略、压缩、加速或提前进入后续动作。动作的发生时刻与持续时间由参考视频决定，不另编舞。 严格按参考视频每一帧的先后顺序，在对应的时间复现其姿态和连续变化；即使相邻帧动作很小或姿态基本不变，也完整保留这一阶段的持续时间，不跳帧概括动作、不提前执行后面的动作、不重新排列动作、不自行增加动作或加快节奏。
+
+<Video 1>仅控制身体动作、头部姿态和动作节奏，不复制其中的可视化标记作为面部外观。
+
+参考视频只用于身体动作、头部姿态和动作节奏控制，不是最终画面内容。输出保持<Picture 2>的正常彩色写实外观，不出现灰色深度、点线、网格、字幕或新增镜头。`,
+    },
+  },
+  {
+    id: "kiber-alla-sculptor-clay-bust-super8-memory",
+    title: "雕塑家与亡妻的黏土半身像 · Super 8 回忆蒙太奇 · Seedance 2.5",
+    subtitle: "X · @Kiber_Alla · Seedance 2.5（Higgsfield）· 24秒 · 16:9",
+    description:
+      "雕塑家掀开亡妻黏土半身像，拇指抚过唇瞬间切入 Super 8 回忆。Seedance 2.5，26 镜头。",
+    video: "/tutorials/kiber-alla-sculptor-clay-bust-super8-memory/demo-web.mp4",
+    poster: "/tutorials/kiber-alla-sculptor-clay-bust-super8-memory/poster.jpg",
+    duration: "24秒",
+    durationSec: 24,
+    styleLabel: "电影感写实",
+    shots: 26,
+    references: 1,
+    model: "Seedance 2.5（Higgsfield）",
+    style: "现代数字电影质感 + Super 8 胶片回忆 · 快节奏蒙太奇 · 只用中近景以内",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Kiber_Alla/status/2104220821992636469",
+    sourceAuthor: "@Kiber_Alla",
+    sourcePlatform: "X",
+    sourceImpressions: 3540,
+    sourceStats: { asOf: "2026-09-28", likes: 48, reposts: 3, bookmarks: 18 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "掀布揭像 → 塑像细节 → 拇指抚唇 → 匹配剪辑进回忆 → 回到现在落泪",
+      opening: "第 0 秒极低机位：雕塑家坐在凳上攥住盖布猛地一扯，约 1s 白布扫过镜头当转场，约 2s 露出闭眼的黏土半身像。",
+      openingAt: 0,
+      beats: [
+        { title: "怎么进回忆", text: "约 9.6–10.6s 他沾泥的拇指滑过黏土下唇，下一镜同样构图变成干净的拇指滑过她真实的嘴唇——匹配剪辑直接切进 Super 8 回忆。", at: 9.6 },
+        { title: "回忆段", text: "约 11.4–19s 夜店回眸与对白「Hi, Sarah.」「Hey, handsome.」，再到黄昏公园牵手、拉他走、捧脸接吻，画面烧白。", at: 11.4 },
+        { title: "结尾怎么收", text: "约 19.5s 回到现在，焦点从旧照片移到他睁眼；他捧住塑像的脸、额头相抵，最后侧脸特写一滴泪停在胡茬里。", at: 19.5 },
+      ],
+      copyThis: "用一个动作（拇指抚唇）做匹配剪辑连接现实与回忆，两段用画质区分：现在是干净数字画面，回忆一律 Super 8 颗粒；再把 26 个镜头逐个写上秒数。",
+      approx: true,
+    },
+    tags: [
+      "24秒 · 电影短片",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "26 镜头分镜表",
+      "匹配剪辑进回忆",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 4 张参考图",
+        description:
+          "提示词开头的 REFERENCES 引用了 4 张参考：sculptor（雕塑家，含第 1 镜的低机位构图）、bust（黏土半身像）、studio（工作室多格场景图）、woman（回忆里的女人 Sarah）。作者只在自回复里附了 sculptor 这一张（见下方参考图卡，原图 1456×816），没有给出图提示词；bust、studio、woman 另外 3 张没有公开，需要自己准备。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者在主帖写明用 Higgsfield 上的 Seedance 2.5 生成。提示词写约 24 秒；X 上的成片是 1920×1080、30fps、约 23.6 秒。成片左下角有作者 KIBER ALLA 标识，右下角有 Higgsfield 水印。成片声音：四句英文台词都在（约 12.6s「Hi, Sarah.」、约 14s「Hey, handsome.」、约 16.4s「Come on, slowpoke!」、约 18s「Don't let go.」），有掀布、揉泥等音效；成片实际有配乐，与提示词「absolutely no music」的要求不同：开头就有低沉的持续铺底音色，约 11.5s 进回忆起加入明显鼓点和旋律，一直持续到结尾。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴。结构：REFERENCES（每张参考取什么、不取什么）→ 一句话剧情 → GLOBAL SETTINGS（26 镜头、轴线、机位、景别上限、现在与回忆两种画质、禁止配乐）→ 场景地图与人物 → 按秒写的 26 镜分镜表 → 音效与四句台词 → 物理与一致性规则 → 风格锁定。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref1",
+        number: "1",
+        title: "@雕塑家 · 作者公开的角色参考图",
+        subtitle: "原帖附图原图（1456×816）：对应提示词里的 sculptor（THE SCULPTOR），也是第 1 镜低机位构图的参考；bust、studio、woman 三张参考作者未公开",
+        image: "/tutorials/kiber-alla-sculptor-clay-bust-super8-memory/refs/01-sculptor-ref.jpg",
+        prompt: `原帖未附提示词；这是作者喂给 Seedance 2.5 的 sculptor 角色参考图`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.4s 极低机位：雕塑家坐在凳上，攥住前景白布猛地一扯。" },
+      { number: 2, description: "1.4–3s 白布扫过镜头当转场，随后低机位露出闭眼仰脸的黏土半身像。" },
+      { number: 3, description: "3–5.6s 越过塑像肩头看他用手腕推眼镜；微距拇指抹平黏土脸颊。" },
+      { number: 4, description: "5.6–8.8s 他的手抚过塑像脖颈、揉捏湿黏土，侧脸隔着台灯暖光。" },
+      { number: 5, description: "8.8–10.6s 侧面双人近景，他抬起拇指；眼睛特写闭眼；微距拇指滑过黏土下唇。" },
+      { number: 6, description: "10.6–11.4s 匹配剪辑：干净的拇指滑过女人真实的嘴唇，暖色漏光。" },
+      { number: 7, description: "11.4–15s 夜店红蓝光：她回眸，他说「Hi, Sarah.」，她笑答「Hey, handsome.」。" },
+      { number: 8, description: "15–18.8s 黄昏公园：并肩走、十指相扣、她倒退着拉他走，捧脸接吻。" },
+      { number: 9, description: "18.8–19.5s 她的手指插进他后颈的头发，画面烧白。" },
+      { number: 10, description: "19.5–21.2s 回到现在：焦点从桌上旧照片移到他睁眼；他双手捧住塑像的脸。" },
+      { number: 11, description: "21.2–23.6s 额头贴着塑像额头，最后侧脸特写，一滴泪滑下停在胡茬里。" },
+    ],
+    constraints:
+      "约 24 秒、26 个短镜头，最宽只到中近景；工作室里雕塑家永远在画面左、塑像在右，不越轴；现在是干净数字画面，回忆一律 Super 8 颗粒；全片不要任何配乐，只有音效和四句英文台词（只在回忆里）；塑像始终与参考一致、真人大小、闭眼不动，唯一的眼泪是第 26 镜他的。与成片不符：成片实际有配乐（开头低沉铺底，约 11.5s 起鼓点和旋律直到结尾），与提示词禁止任何配乐不同；四句台词和音效都在。缺口：bust、studio、woman 三张参考图未公开，sculptor 参考图无出图提示词；成片带 KIBER ALLA 标识与 Higgsfield 水印。",
+    video_prompt: {
+      title: "The Sculptor · Clay Bust & Super 8 Memories · 26 shots",
+      subtitle: "Seedance 2.5（Higgsfield）· 作者自回复英文完整提示词 · 约 24 秒",
+      content: `REFERENCES
+sculptor — THE SCULPTOR. Take: face, thin metal glasses, damp dark-brown wavy hair, stubble with grey threads, muscular build, sleeveless charcoal-brown t-shirt, glossy black vinyl bib overalls, wet clay on hands and forearms, and the low-angle framing for shot 1. Do not take: the palette knife in his hand — he holds no tool, only the sheet; the blurred white relief panel.
+bust — THE BUST. Take: the exact clay sculpture — female head and shoulders cut at the upper chest, eyes closed, face tilted slightly up, full lips, loose updo with thin strands beside the face, soft grey-brown clay with fine cracks and tool marks. Do not take: the grey backdrop, the panel layout. Scale: THE BUST is exactly life-size — its head and face are the size of a real adult woman's, slightly smaller than THE SCULPTOR's head, never larger. It always stands on the tall sculpting pedestal from THE STUDIO.
+studio — THE STUDIO. Take: architecture, colors, props and their positions. Do not take: the short-curly-haired bust in these frames — that place is always THE BUST; ignore the grid and dividers.
+woman — THE WOMAN, named Sarah. Take: face, eyes, hair, skin, black sleeveless V-neck dress, small gold hoop earrings. Do not take: the backdrop and panel layout.
+
+SCENE ESSENCE
+A sculptor unveils the clay bust of the woman he lost; his thumb on her clay lips throws him into Super 8 memories of their love, and he returns to rest his forehead against hers.
+
+GLOBAL SETTINGS
+About 24 seconds. Fast rhythmic cinematic montage of 26 short shots. Editing: cut on action, alternate shot sizes and angles, never two consecutive shots of the same size and angle. Axis: in the studio THE SCULPTOR is always screen left, THE BUST screen right; the camera never crosses this line.
+Camera: extreme low angles, over-the-shoulder shots, blurred foreground with focus behind, rack focus, slow orbits, macro inserts; handheld only in flashbacks.
+Shot size limit: the widest shot is a medium close-up. No wide shots, no full-body shots, no establishing shots.
+Present day: crisp digital cinema image, shallow depth of field, cool skylight mixed with the warm pool of the desk lamp, deep contrast, bottle-green and plum tones.
+Flashbacks: vintage Super 8 — heavy grain, gate weave, halation, orange light leaks, faded warm color, flicker. Present day never has grain; flashbacks always do.
+AUDIO RULE: absolutely no music of any kind — no score, no background music, no piano, no strings, no ambient pads, no club music. The audio is only sound effects and the four spoken lines.
+Exclusions: no voiceover, no narration, no speech in the present day, no subtitles, no on-screen text, no split screen, no grid, no face or hand deformation, no extra fingers, no character swapping.
+
+LOCATION MAP (THE STUDIO)
+Foreground: wooden workbench with brush jars, lumps of wet clay, a black desk lamp with warm light, an old faded photograph of THE WOMAN near the lamp. Center: tall pedestal with THE BUST, a wooden stool. Background: bottle-green panelling, deep plum sloping ceiling, angled skylight, white sheets draped in the corners.
+
+CHARACTERS
+THE SCULPTOR (present): man around 40, true micro-pores, sweat sheen, blue-grey eyes behind thin glasses; quiet focused gaze holding back pain; heavy deliberate movements.
+THE SCULPTOR (flashbacks): the same man ten years younger, no glasses, short stubble, dark button-up shirt with rolled sleeves, no clay.
+THE WOMAN (flashbacks only): woman around 30, faint freckles, green-hazel eyes, full muted-rose lips; playful, certain gaze; long dark-brown wavy hair that swings on every turn; black V-neck dress, gold hoops.
+Do not interchange appearances, clothing, actions or lines. Glasses only in the present day.
+
+SHOT LIST
+HOOK
+1 (0–1 s) Extreme low angle as in the THE SCULPTOR reference: he sits on the stool looking down into the lens, arm thrust toward camera; his clay-covered fist is empty of tools and clenches a thick bunched fold of the white canvas sheet that covers THE BUST in the blurred foreground. He yanks the sheet hard toward himself.
+2 (1–1.5 s) The sheet whips across the lens and fills the frame with rippling white fabric and motion blur — a whip transition.
+3 (1.5–2.5 s) Low angle on THE BUST: the last corner of the sheet drags off the clay lips and chin and slides out of frame; skylight falls on the closed eyes; slow orbit begins.
+THE WORK
+4 (2.5–3.5 s) Over-the-shoulder from behind THE BUST, blurred clay hair in the foreground, focus on THE SCULPTOR's face as he pushes his glasses up with the back of his clay-covered wrist.
+5 (3.5–4.3 s) Macro: his wet thumb presses into the soft clay of her cheekbone and smooths it upward; the clay yields and holds the new curve with a glossy wet sheen.
+6 (4.3–5.2 s) Low angle from pedestal height, the clay collarbone blurred in the foreground: his open palm glides slowly up the clay neck of THE BUST, his face above in sharp focus, eyes following his hand.
+7 (5.2–6.5 s) Slow orbit around THE BUST at eye level; rack focus from the clay hair to his eyes as his fingers smooth the hair at her temple.
+8 (6.5–7.3 s) Macro: his fingers knead a lump of wet clay, it squeezes out between the knuckles with a wet sheen.
+9 (7.3–8 s) Close-up of his profile through the blurred warm glow of the desk lamp in the foreground; jaw tight.
+THE TOUCH
+10 (8–9 s) Close two-shot in profile, their faces a hand's width apart and in natural human proportion; he slowly lifts his thumb to her mouth; slow push in.
+11 (9–9.7 s) Extreme close-up of his eyes behind the glasses: the eyelids drop, the skylight reflects in the lenses.
+12 (9.7–10.5 s) Macro: his clay-coated thumb slowly glides along the clay lower lip from one corner to the other, the soft clay yielding slightly under the pad of the thumb.
+FLASHBACKS (Super 8, handheld)
+13 (10.5–11.3 s) Match cut on action, same macro framing: the same thumb, now clean, continues the same slow glide across THE WOMAN's real lower lip; her lips part into a smile; an orange light leak flares across.
+14 (11.3–12.2 s) Crowded nightclub, red and blue light through haze: over the younger SCULPTOR's blurred shoulder, THE WOMAN turns and looks back at him over her bare shoulder, hair swinging then settling.
+15 (12.2–13.2 s) Slight low-angle close-up of the younger SCULPTOR, blue light on his face, a shy smile. He says, in English: {Hi, Sarah.}
+16 (13.2–14.4 s) Close-up of THE WOMAN, red light raking across her face, a slow knowing smile. She says, in English, playful: {Hey, handsome.} and breaks into a soft laugh.
+17 (14.4–15.2 s) Summer park at golden hour: low tracking shot at hip height beside them walking, sun flaring between their bodies; she laughs and bumps his shoulder.
+18 (15.2–15.8 s) Close-up: their hands brush, then the fingers interlock, sun glowing behind.
+19 (15.8–16.9 s) Medium close-up: she walks backward ahead of him, pulling him by the hand, hair lit gold. She says, laughing: {Come on, slowpoke!}
+20 (16.9–18.2 s) Slow orbit around them: she pulls him in by the jaw, whispers against his lips {Don't let go.} and they kiss, the low sun flaring through the gap between their faces.
+21 (18.2–18.8 s) Extreme close-up: her fingers slide into the hair at the back of his neck.
+22 (18.8–19.3 s) The Super 8 frame overexposes and burns inward from the edges into a white flare.
+RETURN
+23 (19.3–20.2 s) Clean present-day image. Rack focus across the workbench: blurred brush jars in the foreground, the old photograph of THE WOMAN sharpens, then focus slides to THE SCULPTOR behind it as his eyes open.
+24 (20.2–21.2 s) Low angle from under the chin of THE BUST: his clay-coated hands cup both clay cheeks, his face above leaning closer.
+25 (21.2–22.6 s) Slow orbit from over his shoulder to a perfect profile as he presses his forehead against the forehead of THE BUST, eyes closing, glasses shifting on his nose; natural human scale, her face slightly smaller than his; skylight across both.
+26 (22.6–24 s) FINAL SHOT. Extreme close-up of his face in profile, forehead still pressed to the clay: a single tear slides from under his closed eyelid, runs down his cheek and stops in the stubble. The camera holds completely still; the video ends on the tear.
+
+SOUND
+Speech: only the four short English lines above, only in flashbacks, soft and close like a memory, slightly muffled with a light echo.
+Effects: <heavy canvas ripped away with a sharp whoosh> <stool creaks> <desk lamp hum> <wet squelch of soft clay under the thumb> <slow breathing> <one long exhale>. Match cut: <camera shutter click> <Super 8 projector rattle runs softly under all flashbacks> <muffled crowd murmur, no club music> <leaves rustling> <her soft laughter> <sharp inhale before the kiss>. Burn: <film strip flapping> <projector winding down>. Ending: <slow shaky exhale> <lamp hum>, then silence on the tear.
+
+PHYSICS AND CONSISTENCY
+The sheet is heavy canvas: it snaps taut, ripples, its corner catches on the clay lips for a moment, then slides off with delay. The clay is soft and wet: it only yields, smooths and smears under his fingers and holds the new shape; no pieces break off, crumble or fall anywhere. Her hair and dress lag behind each turn and settle a moment later. The glasses shift only when his forehead touches the bust.
+Always true: THE BUST matches its reference in every shot, exactly life-size, never larger than his head, eyes closed, never moves, never changes material, never cries — the only tear is his, in shot 26. THE SCULPTOR wears glasses and black vinyl overalls in every present-day shot. THE WOMAN appears only in Super 8 flashbacks.
+
+STYLE LOCK
+Fast, intimate cinematic realism in the present; warm grainy Super 8 memory with soft remembered voices in the past; angles and camera movement carry the mood; sound effects and four spoken lines only, absolutely no music.`,
+    },
+  },
 ];
 
 export function getTutorialById(id: string): Tutorial | undefined {
