@@ -50,6 +50,16 @@ export interface RemixVideo {
   /** 一句话说明（如实描述改了什么） */
   note: string;
   aspectRatio?: string;
+  /** 二创作者公开的参考图（原图），显示在二创视频下方 */
+  images?: RemixImage[];
+}
+
+export interface RemixImage {
+  image: string;
+  title: string;
+  subtitle?: string;
+  /** 逐字提示词；作者没给就写「原帖未附提示词」 */
+  prompt: string;
 }
 
 export interface MethodPrompt {

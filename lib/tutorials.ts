@@ -3021,6 +3021,25 @@ reaction: the gaze is steady and firm, jaw relaxed, lips lightly closed, brows s
     sourcePlatform: "X",
     sourceImpressions: 4862,
     sourceStats: { asOf: "2026-09-28", likes: 88, reposts: 7, bookmarks: 65 },
+    remix_videos: [
+      {
+        video: "/tutorials/elsasofia-hallway-dance-kid-filming-seedance-2-5/remix-seerat-web.mp4",
+        poster: "/tutorials/elsasofia-hallway-dance-kid-filming-seedance-2-5/remix-seerat-poster.jpg",
+        author: "@SeeratFatima112",
+        source_url: "https://x.com/SeeratFatima112/status/2104475144102297955",
+        label: "二创 · @SeeratFatima112 根据原片改创",
+        note: "沿用原片同一条暖光走廊、同一套舞步和「一人跳、一人蹲着举手机拍」的构图，把跳舞的女生和拍摄的小朋友换成穿彩色开衫绿裙的老奶奶和跪地拍摄的老爷爷；前 15 秒跟原片动作走，15 秒后接一段近景：奶奶凑过去看手机，表情夸张。作者写参考图用 GPT Image 2 制作，并在原帖公开了英文视频提示词，视频模型没有公开；成片 22 秒，比提示词写的 6–8 秒长。",
+        aspectRatio: "9/16",
+        images: [
+          {
+            image: "/tutorials/elsasofia-hallway-dance-kid-filming-seedance-2-5/remix-seerat-ref-01.jpg",
+            title: "老奶奶跳舞 + 老爷爷跪拍",
+            subtitle: "二创原帖附图原图（720×1612）",
+            prompt: "原帖未附提示词",
+          },
+        ],
+      },
+    ],
     formats: ["角色表演"],
     hook: {
       structure: "走舞步 → 捧脸卖萌 → 左右换步 → 抱头 → 双臂高举收尾",
