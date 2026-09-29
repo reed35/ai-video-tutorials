@@ -92,12 +92,10 @@ export function FilmstripPreview({ tutorials }: FilmstripPreviewProps) {
     videoRefs.current.forEach((video, key) => {
       const index = parseInt(key.split("-")[0], 10) % latest3.length;
       const isActive = index === activeIndex;
-      const isNeighbor = Math.abs(index - activeIndex) === 1 || 
-                        (activeIndex === 0 && index === latest3.length - 1) ||
-                        (activeIndex === latest3.length - 1 && index === 0);
-      
-      // Only load active and neighbor videos
-      if (isActive || isNeighbor) {
+
+      // Only the middle (active) strip mounts src; others keep poster only (no download on first paint).
+      // Both duplicated cards of the active item keep src so the seamless loop wrap is unchanged.
+      if (isActive) {
         if (!video.src) {
           // Resolve video URL from stable latest3 array
           const tutorial = latest3[index];

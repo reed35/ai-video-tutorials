@@ -10,7 +10,8 @@ const __dirname = dirname(__filename);
 const tutorialsPath = join(__dirname, '../lib/tutorials.ts');
 const tutorialsContent = readFileSync(tutorialsPath, 'utf-8');
 
-const arrayMatch = tutorialsContent.match(/export const tutorials[^=]*=\s*\[([\s\S]*?)\n\];/);
+// 数组声明为 `const rawTutorials: Tutorial[] = [`（导出的 tutorials 由 withMedia 包装），兼容旧写法 `export const tutorials`
+const arrayMatch = tutorialsContent.match(/(?:export )?const (?:rawTutorials|tutorials)\b[^=]*=\s*\[([\s\S]*?)\n\];/);
 if (!arrayMatch) {
   console.error('❌ Could not parse tutorials array');
   process.exit(1);
