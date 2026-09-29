@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run check:tutorials && next build",
+    "build": "npm run check:tutorials && npm run check:media && next build",
     "start": "next start",
     "lint": "next lint",
-    "check:tutorials": "node scripts/check-tutorial-uniqueness.mjs"
+    "check:tutorials": "node scripts/check-tutorial-uniqueness.mjs",
+    "check:media": "node scripts/check-public-media.mjs"
   },
   "dependencies": {
     "react": "^19.0.0",

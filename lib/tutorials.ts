@@ -1,6 +1,8 @@
 import { Tutorial } from "./types";
+import { withMedia } from "./media";
 
-export const tutorials: Tutorial[] = [
+// 数据里照常写站内路径 "/tutorials/<id>/..."；导出时由 withMedia 统一指向 R2（见 lib/media.ts）。
+const rawTutorials: Tutorial[] = [
   {
     id: "harboriis-tiny-desk-skater-2d-seedance-2-5",
     title: "桌面小滑板女孩 · 2D 手绘混实拍 · Seedance 2.5",
@@ -23687,7 +23689,2065 @@ The center girl catches the strawberry in one hand, looks directly into camera a
 **KEYWORDS:** K-pop girl group choreography, synchronized dance, signature dance move, formation change, dance break, beautiful Korean idols, stylish Y2K fashion, 2000s American teen movie, surreal summer fantasy, cinematic music video, photorealistic, dynamic camera, fashion editorial, youthful and sophisticated.`,
     },
   },
+  // Ima Studio 社区画布帖（社区详情页 canvas-detail，快照 snapshot_90c6b360309f4cde9126740390897636，发帖账号 Ima_Cyan，2026-08-24）；提示词取自快照画布视频节点原文（匿名 canvas/get）
+  {
+    id: "imastudio-cherry-can-tokyo-girls-ad-seedance-2-5",
+    title: "樱桃饮料日系广告 · 四个女孩鱼眼开场与碰罐 · Seedance 2.5",
+    subtitle: "Ima Studio 社区画布 · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "Ima Studio 官方示例：一张樱桃饮料罐产品图，Seedance 2.5 参考图生视频，四个日系女孩拍饮料广告。",
+    video: "/tutorials/imastudio-cherry-can-tokyo-girls-ad-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/imastudio-cherry-can-tokyo-girls-ad-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "产品广告",
+    shots: 11,
+    references: 1,
+    model: "Seedance 2.5（Ima Studio 画布，参考图生视频）",
+    style: "写实日系广告 · 樱桃红与粉色 · 超广角鱼眼 · 快切转场",
+    aspectRatio: "16/9",
+    sourceUrl: "https://www.imastudio.com/community/canvas-detail/90c6b360309f4cde9126740390897636",
+    sourceAuthor: "Ima Studio 官方（Ima_Cyan）",
+    sourcePlatform: "Ima Studio",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["产品广告"],
+    hook: {
+      structure: "鱼眼递吸管 → 穿圆洞进走廊 → 墙洞递罐喝一口 → 俯拍传罐 → 微距插入 → 仰拍大笑 → 碰罐 → 产品定格",
+      opening: "第 0 秒鱼眼超广角：樱桃饮料罐顶在画面正前方，黑色波波头女孩在后面探身，手指捏着吸管往镜头推，约 2.4s 吸管擦过镜头。",
+      openingAt: 0,
+      beats: [
+        { title: "转场怎么接", text: "约 2.4–3.2s 甩镜到一个红色圆洞，镜头穿过去进入粉白瓷砖走廊，四人穿酒红色走向镜头；约 6.5s 有人把罐子从墙上的圆洞递出去，下一镜落到另一个女孩手里，她用吸管喝一口。", at: 2.4 },
+        { title: "中段怎么推进", text: "约 10.5–13.3s 俯拍四人躺在红色圆台周围传罐；两颗樱桃滚过台面；约 15.5–19s 连续微距：罐顶字样、指尖拿罐、樱桃掰开、罐身水珠。", at: 10.5 },
+        { title: "结尾怎么收", text: "约 19–24.3s 地面鱼眼仰拍，四人低头看镜头大笑；约 24.3s 红色舞台落日大圆灯下四人各拿一罐碰在一起；约 26.8s 切纯色背景产品定格到结尾。", at: 19 },
+      ],
+      copyThis: "提示词先用一段 ACTIVE REFERENCE 把产品图写死（形状、吸管、标志、标签都要保持），再按镜头逐段写：每段开头就是转场方式（WHIP CUT / MATCH CUT）加视角度数（107°、84°、18°、29°），最后单独一段是产品定格。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 产品广告",
+      "16:9 画幅",
+      "Seedance 2.5 · 参考图生视频",
+      "1 张产品图",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备一张产品图",
+        description:
+          "这是 Ima Studio 社区里官方账号发的画布帖。视频节点只接了一张上传的樱桃饮料罐产品图（1200×1600），没有故事板，也没有参考视频。画布上另一组节点是拿成片截图 + GPT Image 2 做封面（提示词只有一句「做封面、加标题 Cherry Juice Ad」），和出片无关。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "节点参数：Seedance 2.5、16:9、30 秒、720p、开启音频、不加水印。成片 1280×720、24fps、约 30.0 秒，没看到水印。声音：全程日系电子流行乐，带女声切片和拍手；约 22.8–27s 有女声齐喊，语音识别听着像「SIPPO Cherry」，和提示词写的齐喊一致（语音识别判断，未人工试听）。与提示词不符：提示词写的是粉色纸盒装 SIPPO Cherry、还强调「绝不能变成罐子」，但产品图和成片都是 MADAME CHERRY 易拉罐，罐身字和齐喊的品牌名对不上；提示词要求开场「不要鱼眼气泡」，成片开场和仰拍都是明显的圆形鱼眼。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴，并把你的产品图作为第 1 张参考图。第一段里那串 <@json>…</@json> 是 Ima Studio 画布里 @ 参考图时自动生成的引用标记，换别的平台时改成你的 @图片1 即可；<<<image_1>>> 指的也是这张产品图。其余依次是：产品保持规则、四个女孩的造型、首帧要求、逐镜头动作与视角度数、灯光、物理和 AUDIO（电子流行乐、齐喊品牌名、结尾两音符音效）。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-imastudio-cherry-can-01",
+        number: "1",
+        title: "@Image1 · 产品参考图（樱桃饮料罐）",
+        subtitle: "画布里上传的原图（1200×1600），视频节点唯一的输入图；图上是 MADAME CHERRY 易拉罐，不是提示词里写的 SIPPO 纸盒",
+        image: "/tutorials/imastudio-cherry-can-tokyo-girls-ad-seedance-2-5/refs/01-product-input-madame-cherry-can.jpg",
+        prompt: "原帖未附提示词；这是作者上传给视频节点的产品参考图（实拍产品照，不是在画布里生成的）。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.4s 鱼眼超广角：易拉罐在前景，黑色波波头女孩在后面探身，捏着吸管推向镜头，吸管擦过镜头。" },
+      { number: 2, description: "2.4–3.2s 甩镜：红色圆洞填满画面。" },
+      { number: 3, description: "3.2–6.5s 穿过圆洞：粉白瓷砖走廊，四个女孩穿酒红色走向镜头，两侧有巨大樱桃雕塑，镜头后退跟拍。" },
+      { number: 4, description: "6.5–7.5s 墙上的圆洞里递出易拉罐，推到镜头前。" },
+      { number: 5, description: "7.5–10.5s 红色复古隔间：棕色短发女孩双手捧罐用吸管喝，闭眼后抬眼看镜头。" },
+      { number: 6, description: "10.5–13.3s 正俯拍：四人躺在红色圆台周围，手传手递罐子。" },
+      { number: 7, description: "13.3–15.5s 两颗樱桃滚过红色台面。" },
+      { number: 8, description: "15.5–19s 微距插入：罐顶「SEM AÇÚCAR」字样和吸管、指尖拿起罐子、樱桃掰开露出果汁、罐身水珠和樱桃图案。" },
+      { number: 9, description: "19–24.3s 地面鱼眼仰拍：四人围着罐子，镜头上升，她们低头看镜头、大笑。" },
+      { number: 10, description: "24.3–26.8s 红色舞台和落日条纹大圆灯：四人各拿一罐，凑到中间碰罐。" },
+      { number: 11, description: "26.8–30s 奶油到粉色渐变背景：镜面小台上的易拉罐和两颗樱桃，缓慢推近定格。" },
+    ],
+    constraints:
+      "产品必须每一镜都和产品图一模一样（形状、吸管、标志、标签），画面里除了产品本身的字不出现别的文字；四个女孩的脸和酒红色造型全片不变；每一镜都换一个新点子，用甩镜、匹配转场、硬切接起来；最后留一段较长的产品定格。提示词里的产品名和产品图对不上时，模型跟的是图。这是平台官方示例。",
+    video_prompt: {
+      title: "“Cherry Juice Ad” · Japanese Cherry Drink Commercial",
+      subtitle: "Seedance 2.5 · Ima Studio 社区画布视频节点英文完整提示词 · 1 张产品图",
+      content: `SCENE CONTEXT
+
+A premium 30-second Japanese commercial for <@json>{"type":"file","id":"https://ima-ga.esxscloud.com/webAgent/privite/2026/08/24/1787559005686_1946162980622026752_6a5d378525844b69bc8d7e22575a77bf.jpg","name":"749addbde9565397…","metaId":"online-9fgVpcc6hUqBvTPz967Cu","trigger":"@","url":"https://ima-ga.esxscloud.com/webAgent/privite/2026/08/24/1787559005686_1946162980622026752_6a5d378525844b69bc8d7e22575a77bf.jpg","fileType":"image","cover_url":""}</@json>，cherry juice: playful, surreal, fashion-forward and highly polished. Energetic pacing, wide-angle intimacy, colorful Japanese advertising language and inventive graphic transitions. Create original scenes, choreography, styling and compositions.
+
+ACTIVE REFERENCE
+
+<<<image_1>>> is the exact product reference and the visual source of truth. Preserve the small rectangular matte pink drink carton, its proportions, folded top, white bendable straw, striped sunset symbol, dark cherry-red SIPPO logo, Cherry label and two smiling cherries with green stems. Keep the packaging recognizable and unchanged in every shot. It remains a carton and never becomes a can, bottle or plastic container.
+
+CHARACTERS
+
+Four strikingly beautiful adult Japanese women, 22–28, with distinctive editorial identities: a sharp black bob with graphic eyeliner, a long raven ponytail with burgundy ribbons, a softly curled copper-brown bob, and sleek waist-length black hair with blunt bangs. Sophisticated Tokyo fashion styling in cherry red, powder pink, ivory and small chrome accents. Expressive eyes, charismatic micro-expressions, natural skin texture and believable friendship chemistry. Their faces remain attractive and anatomically stable during all wide-angle shots.
+
+FIRST FRAME
+
+The first visible frame already contains the SIPPO Cherry carton in the extreme foreground and the lead woman directly behind it. The carton fills the lower center of the frame while its complete front panel remains readable. No empty establishing shot and no delayed product reveal.
+
+FORMAT MODE
+
+A controlled multi-shot commercial with precisely motivated HARD CUTS, MATCH CUTS and WHIP CUTS. Every shot introduces a new visual idea while preserving the same product design, character identities, wardrobe continuity and cherry-pink color world. Energetic pacing with one longer final packshot.
+
+ACTION AND CAMERA SEQUENCE
+
+OPENING SHOT — 107° wide rectilinear view. The camera sits only 60 cm above a glossy powder-pink table, 70 cm from the product. The carton looms large in the immediate foreground while the lead woman leans toward the lens from midground, smiles mischievously and points directly at the straw. A rapid physical tabletop push-in ends with the straw passing close above the lens. Straight lines remain straight, with dynamic perspective but no fisheye bubble.
+
+WHIP CUT — A cherry-red circular portal fills the frame. The camera bursts through it into a surreal Tokyo-inspired studio street built from cream walls, pink tiles, chrome rails and oversized round cherry sculptures. All four women stride toward camera in synchronized formation. Use an 84° classic wide field of view, camera at waist height moving backward on a stabilized dolly. Their foreground hands and fashion accessories feel large and energetic while faces remain near the center and flattering.
+
+MATCH CUT — One woman passes the SIPPO carton through a round opening in a wall. The package crosses the lens and emerges into the hands of another woman in a completely different set: a polished retro Japanese photo booth in burgundy and pale pink. The camera performs a fast 180-degree orbit around her as she takes a refreshing sip through the straw and gives an unexpected confident side-eye to camera.
+
+OVERHEAD SHOT — Perfect top-down view of the four women lying in a clean radial composition around a giant circular cherry-red platform. They pass the carton clockwise from hand to hand. The camera rotates gently in the opposite direction. Two real cherries roll across the platform and create a practical match transition.
+
+PRODUCT SENSORY INSERTS — Controlled rapid macro cuts: tiny cold condensation beads sliding down the matte pink carton; the flexible ridges of the white straw bending naturally; fingertips lifting the package; a dark red cherry splitting open with glossy juice; the two smiling cherry characters and SIPPO logo remaining clean and faithful to <<<image_1>>>. Use 18° detail optics with precise rack focus and crisp commercial highlights.
+
+LOW-ANGLE HERO SHOT — 107° wide rectilinear view from floor height. The four women form a loose diamond around the product pedestal. The lead steps across the lens, then the camera cranes rapidly upward between them as they turn and look directly into camera. Hair, fabric and jewelry react naturally with delayed physical motion. Their expressions shift from cool editorial confidence into spontaneous laughter.
+
+FINAL GROUP SHOT — 84° wide view on a glossy cherry-red stage beneath an enormous soft circular light resembling the striped sunset symbol on the packaging. The camera makes a fast curved dolly move around the group. Each woman holds one identical SIPPO Cherry carton, then they bring the packages toward the center for a playful synchronized toast. Every carton remains correctly scaled and visually identical to <<<image_1>>>.
+
+FINAL PACKSHOT — HARD CUT to a pristine cream-to-pink studio background. One exact SIPPO Cherry carton stands upright on a small mirror-polished pedestal, front panel facing camera. Two fresh cherries rest beside it. The white straw bends elegantly toward screen-right. A slow 29° short-telephoto push creates subtle premium parallax while the product stays razor-sharp. Hold this final composition long enough for clear brand recognition.
+
+LIGHTING AND IMAGE QUALITY
+
+High-end Japanese beauty-commercial lighting: large soft overhead source, clean pearlescent skin highlights, crisp cherry-red edge light and controlled reflections. Bright commercial exposure with rich burgundy reds, powder pink, warm cream and small chrome accents. The product receives its own precise soft key and remains the brightest, cleanest object whenever visible. Premium photorealistic footage, ARRI Alexa 35 texture, sharp art direction, subtle natural grain, polished color separation, high dynamic range and pristine advertising finish.
+
+PHYSICS
+
+Every package has consistent cardboard stiffness, weight and scale. Fingers create believable pressure against the carton. The straw bends only at its flexible ridges. Condensation follows gravity and leaves tiny wet trails. Hair, clothing, rolling cherries and camera-adjacent gestures have realistic inertia, contact and follow-through.
+
+AUDIO
+
+Original upbeat Japanese electro-pop and Shibuya-kei-inspired track with playful female vocal chops, punchy bass, handclaps and sparkling synth accents; no borrowed melody. Precisely synchronized camera-shutter clicks, straw flex, soft carton taps, cherry rolls, fabric swishes, fast transition whooshes and a clean refreshing sip. At the final group toast, the women joyfully chant together: “SIPPO Cherry!” The packshot ends with a short, memorable two-note sonic logo. No extra dialogue and no subtitles.
+
+`,
+    },
+  },
+  // Ima Studio 公开画布项目（从社区帖克隆，source=template-detail-clone，原快照 snapshot_2444d0e9874445409260618431254ad8，原作者 Ima_Cyan）；提示词取自画布视频节点原文（匿名 canvas/get）
+  {
+    id: "imastudio-lip-tint-y2k-studio-ad-seedance-2-5",
+    title: "唇釉 Y2K 美妆广告 · 四人团队拍广告里的广告 · Seedance 2.5",
+    subtitle: "Ima Studio 画布 · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "Ima Studio 官方示例：一张唇釉产品图，Seedance 2.5 参考图生视频，四人 Y2K 摄影棚拍唇釉广告。",
+    video: "/tutorials/imastudio-lip-tint-y2k-studio-ad-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/imastudio-lip-tint-y2k-studio-ad-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "美妆广告",
+    shots: 9,
+    references: 1,
+    model: "Seedance 2.5（Ima Studio 画布，参考图生视频）",
+    style: "写实美妆广告 · Y2K 撞色 · 蓝粉配色 · 微距质感",
+    aspectRatio: "16/9",
+    sourceUrl: "https://www.imastudio.com/canvas-editor/prj_1790653664778_97ac7da658a8d1dc",
+    sourceAuthor: "Ima Studio 官方（Ima_Cyan）",
+    sourcePlatform: "Ima Studio",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["产品广告"],
+    hook: {
+      structure: "亚克力下仰拍 → 穿粉圈拉出摄影棚 → 摆产品 → 涂唇肖像 → 微距拉丝 → 四格肖像 → 看手机 → 产品定格",
+      opening: "第 0 秒从透明亚克力板下面往上拍：四个穿撞色衣服的女孩俯身看镜头，拿着彩色道具在板上画粉色圆圈和啫喱条纹。",
+      openingAt: 0,
+      beats: [
+        { title: "转场怎么接", text: "约 4–6.3s 镜头穿过粉色圆圈往后拉，露出蓝色 Y2K 摄影棚，四人各就各位；约 6.3s 圆圈对上产品，蓝衣女孩把蓝管粉盖的唇釉放到台子上。", at: 4 },
+        { title: "中段怎么推进", text: "约 8.3–12.5s 粉蓝绸布前的美妆肖像，她把唇釉涂上嘴唇；约 12.5–18s 微距：盖子拧开、涂头挂着粉色啫喱拉丝、涂过嘴唇、水光唇特写。", at: 8.3 },
+        { title: "结尾怎么收", text: "约 18–20s 四人撞色四格同屏；约 20–24s 橙衣女孩举手机，四人凑过来看；约 24s 手机画面变成实物产品照，泡泡和粉色啫喱围着产品定格到结尾，同时女声念广告词。", at: 18 },
+      ],
+      copyThis: "提示词分成 8 个 BEAT，每个 BEAT 之间写清转场（WHIP CUT、MATCH CUT、HARD CUT…），前半段玩闹、后半段干净聚焦产品；视角按场景分四档写死（107° 开场、47° 群像、29° 肖像、18° 微距），结尾只给一句女声口播。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 美妆广告",
+      "16:9 画幅",
+      "Seedance 2.5 · 参考图生视频",
+      "1 张产品图",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备一张产品图",
+        description:
+          "这是 Ima Studio 画布里公开的官方示例项目。视频节点只接了一张上传的唇釉产品图（1200×1371，四支不同颜色的 rhode 唇釉），没有故事板。提示词里写了「@Video1 只做节奏参考」，但画布里并没有接参考视频。另一组节点是拿成片截图 + GPT Image 2 做封面（提示词只有一句加标题 Lip Balm Ad），和出片无关。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "节点参数：Seedance 2.5、16:9、30 秒、720p、开启音频、不加水印。成片 1280×720、24fps、约 30.0 秒，没看到水印。声音：全程轻快电子放克音乐；约 25–29s 有英文女声口播「Hydrate, Plump, Protect, SPF 35, Bounce.」，和提示词一致（语音识别判断，未人工试听）。与提示词不符：提示词写的产品是 Bounce 唇部精华，成片里管身印的却是产品图上的 rhode，口播又念 Bounce；提示词要四人一个接一个的单人肖像，成片做成了一张四格同屏。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴，并把你的产品图作为 @Image1。提示词依次是：场景设定、参考图说明（@Image1 是产品，@Video1 只借节奏；没有参考视频就删掉这段）、四个女孩的造型、首帧、剪辑方式、8 个 BEAT 的动作、视角度数、灯光、物理和 AUDIO（电子放克音乐、结尾一句女声口播）。记得把产品名换成你图上的品牌。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-imastudio-lip-tint-01",
+        number: "1",
+        title: "@Image1 · 产品参考图（唇釉）",
+        subtitle: "画布里上传的原图（1200×1371），视频节点唯一的输入图；图上是四支 rhode 唇釉，不是提示词里写的 Bounce",
+        image: "/tutorials/imastudio-lip-tint-y2k-studio-ad-seedance-2-5/refs/01-product-input-rhode-lip-tint.jpg",
+        prompt: "原帖未附提示词；这是作者上传给视频节点的产品参考图（实拍产品照，不是在画布里生成的）。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 透明亚克力板下仰拍：四个女孩俯身看镜头，拿彩色道具，在板上画粉色圆圈和啫喱条纹。" },
+      { number: 2, description: "4–6.3s 镜头穿过粉色圆圈往后拉：蓝色 Y2K 摄影棚，镀铬管道和粉色面板，四人各站一处。" },
+      { number: 3, description: "6.3–8.3s 蓝衣女孩把蓝管粉盖的唇釉放到蓝色台子上。" },
+      { number: 4, description: "8.3–12.5s 粉蓝绸布前的长发女孩肖像：拿起唇釉涂嘴唇，看向镜头。" },
+      { number: 5, description: "12.5–15s 微距：粉色盖子拧开，涂头挂着一滴粉色啫喱拉丝。" },
+      { number: 6, description: "15–18s 嘴唇大特写：涂头滑过嘴唇，最后是水光唇。" },
+      { number: 7, description: "18–20s 四格同屏：蓝、橙、玫红、黄四个女孩正面肖像。" },
+      { number: 8, description: "20–24s 橙衣女孩举着手机，四人凑过来看屏幕上的美妆照，镜头推向手机。" },
+      { number: 9, description: "24–30s 手机画面变成实物产品照：蓝色唇釉管和玫红包装盒立在蓝色台上，粉色啫喱溅起、泡泡漂浮，定格约 6 秒，女声念广告词。" },
+    ],
+    constraints:
+      "产品每一镜都要和产品图一致（形状、颜色、标志）；四个女孩的脸、发型和撞色衣服全片不变，不出现第五个人；前半段玩闹快切，后半段干净、聚焦产品；结尾产品定格留够时间并给后期加字留空；只有结尾一句口播，不加字幕。提示词里的品牌名和产品图对不上时，模型跟的是图。这是平台官方示例。",
+    video_prompt: {
+      title: "Lip Balm Ad · Y2K Beauty Studio Commercial",
+      subtitle: "Seedance 2.5 · Ima Studio 画布视频节点英文完整提示词 · 1 张产品图",
+      content: `SCENE CONTEXT
+
+A 30-second premium beauty commercial for Bounce Vita Tinol Bounce Balloon Lip Serum SPF 35. Four adult Korean women form a bold, playful creative team inside a vibrant Y2K beauty studio. The concept moves from an unexpected behind-the-scenes hook into a polished “commercial inside the commercial,” then ends with a luxurious product packshot.
+
+ACTIVE REFERENCES
+
+@Image1 is the exact product reference and the source of truth for the blue tube, pink cap, grooved applicator, metallic pink package, proportions, colors, logo, and label design. Every product appearance must match @Image1 exactly. All visible packaging lettering stays sharp and recognizable.
+
+@Video1 is inspiration only for the energetic pacing, unusual transparent-surface opening, behind-the-scenes reveal, ad-within-an-ad structure, playful team chemistry, smartphone review moment, and clean final packshot. Create an original commercial with different casting, wardrobe, studio design, actions, compositions, transitions, and shot order.
+
+CHARACTERS
+
+Exactly four adult Korean women appear, each with a clearly different face, hairstyle, silhouette, personality, and bright color-coded outfit:
+
+Woman A — sharp black bob, cobalt-blue structured mini dress with a glossy pink belt, silver ear cuffs, confident creative-director energy.
+
+Woman B — high ponytail, saturated tangerine oversized pantsuit with sky-blue accessories, expressive and energetic producer.
+
+Woman C — long soft waves, sculptural hot-pink top with violet trousers, glossy lips, charismatic beauty talent.
+
+Woman D — short pixie cut, sunflower-yellow cropped jacket over a turquoise outfit, playful stylist energy.
+
+Their identities, wardrobes, hairstyles, and colors remain consistent throughout the entire commercial. No additional people appear.
+
+FIRST FRAME AND SPATIAL BLOCKING
+
+The first visible frame already contains all four women leaning over a transparent acrylic surface directly above the camera. Their faces occupy four different zones of the frame and remain individually readable. They look down into the lens while drawing inflated circles and sweeping glossy pink serum-like streaks across the acrylic. One hand wipes a clear opening directly over the lens, creating the first transition.
+
+FORMAT MODE
+
+Controlled multi-shot commercial with fast, precise HARD CUTS, MATCH CUTS, WHIP CUTS, and practical foreground wipes. The first half is energetic and playful; the second half becomes cleaner, more sensual, and product-focused. Every cut advances from creative process to beauty result to product payoff.
+
+ACTION TIMING
+
+BEAT 1 — Ultra-wide under-glass hook. All four women peer through the transparent surface, rapidly moving bright props and glossy pink swatches around the lens. Their gestures feel coordinated but spontaneous.
+
+WHIP CUT
+
+BEAT 2 — The camera quickly pulls backward and reveals an original saturated Y2K studio: cobalt-blue walls, translucent pink panels, chrome furniture, circular lights, oversized inflatable shapes, and a glossy product table. Each woman performs a different role while staying visually distinct.
+
+MATCH CUT
+
+BEAT 3 — A pink circular serum mark becomes the round pink cap of the real @Image1 product. Woman A places the exact tube onto a cobalt pedestal. Woman B rotates a light. Woman D adjusts a translucent backdrop. The product remains stable and never changes shape.
+
+HARD CUT
+
+BEAT 4 — Polished finished-ad portrait of Woman C against flowing cobalt and hot-pink fabric. She twists off the pink cap, reveals the grooved applicator, and applies one smooth layer of glossy pink serum to her lips. Her skin remains natural and detailed; the lips gain a hydrated mirror-like shine.
+
+INSERT CUT
+
+BEAT 5 — High-end macro sequence: the cap clicks open, the grooved applicator catches a controlled bead of translucent pink serum, the gel stretches with realistic viscosity, then glides across the lips. Follow with an extreme close-up of the finished glossy lip texture.
+
+SMASH CUT
+
+BEAT 6 — Each woman receives one rapid color-coded hero portrait: blue, orange, magenta-violet, then yellow-turquoise. Their poses and expressions are different—calm confidence, energetic excitement, glamorous focus, playful satisfaction. The rhythm follows the music without repeating the reference video’s compositions.
+
+HARD CUT
+
+BEAT 7 — The four women gather around a smartphone held by Woman B. The screen shows the finished beauty portrait and exact @Image1 product, not a generic substitute. They exchange quick approving reactions while the camera makes a weighted handheld push-in.
+
+MATCH CUT
+
+BEAT 8 — The glowing product image on the phone expands into the final physical packshot. The exact blue-and-pink tube and metallic pink package from @Image1 stand on a glossy cobalt pedestal surrounded by controlled pink gel ripples, translucent bubbles, chrome spheres, and soft star-shaped highlights. The tube remains front-facing with the Bounce identity readable. Hold the final composition long enough for brand recognition and leave clean negative space for typography added in post-production.
+
+OPTICS AND CAMERA
+
+Hook: 107° diagonal field of view, camera directly beneath the acrylic, 0.5 meters from the faces, immersive rectilinear perspective.
+
+Studio reveal and group moments: 47° standard-normal field of view, physical dolly movement, natural proportions, controlled handheld weight.
+
+Beauty portraits: 29° short-telephoto field of view, camera 4 meters away, stable flattering facial proportions and soft background compression.
+
+Product and lip details: 18° macro-telephoto character, razor-sharp product surfaces and serum texture, shallow creamy background separation.
+
+LIGHTING
+
+Bright premium beauty lighting with saturated cyan, cobalt, fuchsia, tangerine, and warm yellow accents. Soft frontal key light preserves natural Korean skin tones and eye detail, while colored edge lights separate each wardrobe from the background. Product shots use crisp specular highlights that reveal the matte blue tube, glossy pink cap, metallic package, applicator grooves, and wet serum texture without clipping the label.
+
+PHYSICS
+
+Hands maintain believable contact with the tube, cap, phone, and studio props. The cap twists with visible resistance and releases with a precise click. The serum behaves as a thick glossy gel with surface tension, controlled stretching, gravity, adhesion, and realistic residue. Hair and fabric react naturally to body motion. Product geometry, branding, scale, and colors remain identical to @Image1 in every shot.
+
+AUDIO
+
+Upbeat premium electro-funk track with a warm analog bass line, glossy pop percussion, handclaps, and playful Y2K synth accents. Synchronize cuts with the beat. Add tactile glass wipes, marker squeaks, fabric swishes, camera shutter clicks, a crisp cap twist, a soft applicator glide, bubble pops, and a final low glossy impact.
+
+One clean, confident female English voice-over during the final product sequence:
+“Hydrate. Plump. Protect. SPF thirty-five. Bounce.”
+
+No additional dialogue. No subtitles or autogenerated advertising copy. Only the authentic product lettering from @Image1 appears inside the generated footage.
+
+
+`,
+    },
+  },
+  // 提示词回复帖: https://x.com/jackzhang123vip/status/2104799645239328915（作者本人楼中楼，note_tweet 全文；主帖末尾的推广短链未收录）
+  {
+    id: "jackzhang123vip-subway-fluffy-bag-puppy-sausage",
+    title: "地铁毛绒包里探出小白狗 · 手机偷拍感喂香肠 · 超写实",
+    subtitle: "X · @jackzhang123vip · 模型未公开 · 10秒 · 9:16",
+    description:
+      "超写实手机实拍感：地铁上前排女生的白色毛绒包里探出一只小白狗，凑过来咬住递过去的香肠。",
+    video: "/tutorials/jackzhang123vip-subway-fluffy-bag-puppy-sausage/demo-web.mp4",
+    poster: "/tutorials/jackzhang123vip-subway-fluffy-bag-puppy-sausage/poster.jpg",
+    duration: "10秒",
+    durationSec: 10,
+    styleLabel: "真人风",
+    shots: 5,
+    references: 0,
+    model: "未标注（作者未公开）",
+    style: "超写实手机实拍 · 地铁车厢日常 · 一镜到底 · 萌宠反差",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/jackzhang123vip/status/2104745522930274494",
+    sourceAuthor: "@jackzhang123vip",
+    sourcePlatform: "X",
+    sourceImpressions: 2050,
+    sourceStats: { asOf: "2026-09-29", likes: 11, reposts: 1, bookmarks: 4 },
+    formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "女生背影和毛绒包 → 香肠凑近 → 小狗探头 → 盯住香肠 → 咬住 → 狗脸越凑越近",
+      opening: "第 0 秒手机视角：前排女生穿粉色吊带裙背对镜头，白色毛绒包靠在腿边，右下角一只手已经拿着撕开的香肠伸向包口。",
+      openingAt: 0,
+      beats: [
+        { title: "反差怎么出来", text: "约 2.5–3.5s 包口先动了一下，接着一只雪白的小狗从毛绒包里探出头，因为狗和包都是白色，前两秒几乎看不出包里有狗。", at: 2.5 },
+        { title: "过程怎么推进", text: "约 4–6s 小狗整个头探出包外，盯着香肠凑过来，张嘴咬住顶端；手机跟着往前靠，狗脸越来越大。", at: 4 },
+        { title: "结尾怎么收", text: "约 7–10s 狗脸占满画面中间，一直咬着香肠，女生的手臂挡进右上角，背景地铁门和乘客慢慢虚掉，停在小狗咬着香肠看镜头。", at: 7 },
+      ],
+      copyThis: "先把「不要把地铁做得太干净、太高级」写进去，再强调「狗和包几乎都是白色，刚开始很难看出包里有狗」——真实感和反差都靠这两句撑住；动作按秒写成 闻 → 舔 → 轻咬，并明确不要撕咬、不要快速吞咽。",
+      approx: true,
+    },
+    tags: [
+      "10秒 · 真人风",
+      "9:16 竖屏",
+      "模型未公开",
+      "一镜到底手机视角",
+      "作者公开完整提示词",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：读懂这条片子怎么骗过眼睛",
+        description:
+          "全片是一个不剪辑的手机视角长镜头：像乘客坐在座位上随手拍前排女生。关键反差是白狗藏在白色毛绒包里，开头看不出来，香肠一凑近才探头。原帖没附参考图或故事板，是纯文字生成。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者没写用的哪个模型。成片 720×1280（9:16 竖屏）、24fps、约 10.1 秒，没看到水印。声音：只有很小声的环境底噪，语音识别没识别出人声或音乐（语音识别判断，未人工试听）；提示词本身也没写声音。与提示词不符：提示词写手从画面外伸进来，成片第 0 秒手和香肠就已经在画面里；提示词要小狗身体大部分藏在包里、只露头，成片后半段狗的头和前胸几乎全探出包外，香肠也被吃掉了一大截。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方中文提示词整段粘贴。开头写时长、画幅、手机实拍感和地铁环境清单；然后分别写女生（背对镜头、粉色吊带长裙、白色毛绒包）和小狗（白色博美/比熊、只露头）；最后按 0–2、2–3.5、3.5–5、5–6.5、6.5–8、8–10 秒六段写动作。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.5s 手机视角：前排女生背对镜头坐着，白色毛绒包靠在腿边，手拿撕开包装的香肠从右下角凑向包口。" },
+      { number: 2, description: "2.5–3.5s 包口一动，一只雪白小狗从包里探出头，盯着香肠。" },
+      { number: 3, description: "3.5–5s 小狗头探出包外，鼻子凑近香肠嗅，手机稍往前靠。" },
+      { number: 4, description: "5–7s 小狗张嘴咬住香肠顶端，狗脸变大占到画面中间。" },
+      { number: 5, description: "7–10s 狗脸近景持续咬着香肠，女生手臂挡进右上角，背景地铁门和乘客虚化，停在小狗咬着香肠看镜头。" },
+    ],
+    constraints:
+      "一镜到底、不剪辑，要像乘客随手用手机拍的；地铁车厢要有真实的杂乱感，不要太干净、太未来；女生始终背对镜头、不露脸；狗和包都是白色，开头要看不出包里有狗；小狗动作按 闻 → 舔 → 轻咬 推进，不能凶猛撕咬或快速吞咽。",
+    video_prompt: {
+      title: "地铁毛绒包小白狗 · 完整提示词",
+      subtitle: "作者楼中楼公开的中文完整提示词 · 纯文字生成 · 模型未公开",
+      content: `生成一段 10秒、9:16竖屏、4K超写实手机实拍视频。
+
+场景位于一节正在行驶的城市地铁/轨道交通车厢内部。
+
+画面具有非常真实的公共交通环境：
+
+银灰色金属座椅
+白色车门
+金属扶杆
+灰色地板
+普通乘客
+休闲服装
+有人低头看手机
+有人坐着休息
+背景存在真实生活杂乱感
+
+不要把地铁做得过于干净、未来化或高级。
+
+整体像普通乘客坐在座位上，用手机临时拍到的有趣瞬间。
+
+⸻
+
+人物
+
+画面主体前方坐着一名明确成年女性。
+
+摄影机从她的后侧偏右方向拍摄。
+
+人物穿：
+
+淡粉色细肩带吊带长裙
+
+面料轻薄柔软，带轻微褶皱，颜色是柔和浅粉色。
+
+肩部、背部和手臂自然露出。
+
+头发为深棕色或黑棕色中长发，披散在后背和肩膀附近。
+
+人物背对摄影机。
+
+不需要露脸。
+
+她肩上斜挎着一个非常显眼的：
+
+白色毛绒单肩包 / fluffy shoulder bag
+
+包体蓬松、柔软、毛茸茸，体积偏大。
+
+白色毛绒包自然靠在人物腰侧和大腿附近。
+
+⸻
+
+小狗
+
+包里藏着一只非常可爱的白色小型犬。
+
+整体外观类似：
+
+白色博美 / 比熊系小型犬
+
+全身雪白、毛发极其蓬松。
+
+头部接近圆形。
+
+耳朵较小，部分被蓬松毛发遮盖。
+
+拥有：
+
+大而圆的深色眼睛
+湿润眼球高光
+小巧黑褐色鼻子
+短嘴
+细小胡须
+柔软蓬松面部毛发
+
+小狗体型很小。
+
+身体大部分藏在毛绒包内部。
+
+主要只露出：
+
+头部
+部分脖颈
+少量前胸毛发
+
+最重要的是：
+
+狗和包几乎都是白色，刚开始很难看出包里有狗。
+
+⸻
+
+0–2秒｜先拍女性背影和毛绒包
+
+视频开场。
+
+摄影机从坐着的第一人称角度拍摄前方。
+
+人物背对镜头坐在地铁座位上。
+
+粉色吊带裙和大片背部占据画面右侧。
+
+白色毛绒包位于画面中央偏下。
+
+此时小狗几乎完全躲在包里。
+
+摄影机前方一只手进入画面。
+
+手里拿着一根已经打开包装的香肠/火腿肠。
+
+包装只撕开顶部。
+
+香肠顶部露出。
+
+手从画面右下方伸向毛绒包附近。
+
+动作自然。
+
+像是准备偷偷逗包里的小狗。
+
+⸻
+
+2–3.5秒｜小狗突然探头
+
+香肠逐渐靠近白色毛绒包。
+
+包里首先出现轻微运动。
+
+随后一只白色小狗的头突然从包口里缓慢探出来。
+
+先露出：
+
+额头毛发
+
+随后是：
+
+双眼
+鼻子
+整个圆圆的脸
+
+小狗睁着大眼睛看向香肠。
+
+表情好奇、警觉又期待。
+
+这一步要有一点：
+
+“原来包里藏着一只狗”
+
+的视觉反差。
+
+⸻
+
+3.5–5秒｜狗盯住香肠
+
+小狗继续向前探头。
+
+头部逐渐离开毛绒包。
+
+鼻子靠近香肠顶部。
+
+眼睛牢牢盯着食物。
+
+摄影机稍微向前靠近一点。
+
+形成更近距离的小狗脸部特写。
+
+小狗鼻子出现非常细微的：
+
+嗅闻动作
+
+鼻尖轻微抽动。
+
+嘴巴暂时保持闭合。
+
+头部缓慢向前伸。
+
+⸻
+
+5–6.5秒｜第一次舔/轻咬
+
+香肠进一步靠近小狗嘴边。
+
+小狗嘴巴轻轻张开。
+
+舌头短暂露出。
+
+先轻轻舔一下香肠。
+
+随后用前排牙齿或嘴唇轻轻咬住顶部。
+
+不要夸张撕扯。
+
+不要快速吞咽。
+
+重点表现：
+
+小心试探 → 闻 → 舔 → 轻咬
+
+的小动物自然行为。
+
+⸻
+
+6.5–8秒｜更靠近镜头
+
+小狗的头进一步向画面前方靠近。
+
+因为摄影机也略微靠近，小狗脸部开始占据画面中央较大面积。
+
+眼睛又圆又亮。
+
+鼻子非常靠近镜头。
+
+白色毛发根根清晰。
+
+香肠停留在嘴边。
+
+小狗持续轻轻咬住或用嘴探索香肠顶部。
+
+头部左右存在非常小幅度调整。
+
+⸻
+
+8–10秒｜持续咬住收尾
+
+小狗最终更积极地张嘴。
+
+轻轻咬住香肠顶部。
+
+嘴巴张开幅度略微增加。
+
+但动作仍然可爱、自然。
+
+不要做成凶猛撕咬。
+
+摄影机继续维持近距离。
+
+小狗的脸成为整个画面视觉中心。
+
+背景仍然可以看到：
+
+地铁门
+座椅
+扶杆
+其他乘客
+
+但已经自然虚化和弱化。
+
+视频以：
+
+小狗张嘴咬着香肠 + 大眼睛看向前方
+
+的状态结束。`,
+    },
+  },
+  // 提示词回复帖: https://x.com/jackzhang123vip/status/2102297845001003013（作者本人自回复，同帖附深度捕捉参考视频；开头「深度捕捉参考视频在这里，提示词在这里」一句已去掉，主帖推广短链未收录）
+  {
+    id: "jackzhang123vip-red-coat-silver-mask-crowd-depth-seedance-2-5",
+    title: "暗红衣女主走进银色面具人群 · 深度视频驱动一镜到底 · Seedance 2.5",
+    subtitle: "X · @jackzhang123vip · Seedance 2.5 · 30秒 · 4:3",
+    description:
+      "《STORM》MV 二创：深度视频驱动 Seedance 2.5，一镜到底拉远，红衣女主走进鞠躬的银色面具人群。",
+    video: "/tutorials/jackzhang123vip-red-coat-silver-mask-crowd-depth-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/jackzhang123vip-red-coat-silver-mask-crowd-depth-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "真人风",
+    shots: 9,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "深度视频驱动动作 · 一镜到底连续拉远 · 冷灰蓝阴天 · 个体与人群对比",
+    aspectRatio: "4/3",
+    sourceUrl: "https://x.com/jackzhang123vip/status/2102296936149872723",
+    sourceAuthor: "@jackzhang123vip",
+    sourcePlatform: "X",
+    sourceImpressions: 9090,
+    sourceStats: { asOf: "2026-09-29", likes: 26, reposts: 2, bookmarks: 18 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "红衣女主近景 → 转身走向人群 → 挤进队列 → 转回站定 → 人群一轮轮俯身 → 拉到最宽全景",
+      opening: "第 0 秒近景：暗红大衣、深棕长发的女主正面看镜头，嘴前飘着一小团白气，身后是一片戴银色无五官面具的深灰人群。",
+      openingAt: 0,
+      beats: [
+        { title: "她怎么走进人群", text: "约 0.5–2s 她低头转身背对镜头；约 2–9s 镜头一直往后拉，她走到前排两人之间的窄缝，侧身屈臂挤进去；约 9–13s 被前排挡住，在人群里慢慢转回来面对镜头。", at: 0.5 },
+        { title: "人群怎么动", text: "约 13–18s 她站到中央抬起脸，人群全部直立；约 18s 起面具人群一片片俯身又回起，上方露出弧形钢梁玻璃顶棚，只有她一直站着。", at: 13 },
+        { title: "结尾怎么收", text: "约 26–29.5s 拉到最宽全景：前排直立、双手交握在腹前，后面几排还弯着腰，红衣女主站在正中间，画面停在这里。", at: 26 },
+      ],
+      copyThis: "把原片转成深度（白模）视频当动作和运镜的骨架，提示词只负责换人换景：先写「第一规则」（全场只有她露脸、只有她穿暗红），再按原片时间轴逐段写动作，并逐排指定面具人群的外套款式，防止人物跨帧换衣服。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 一镜到底",
+      "4:3 画幅",
+      "Seedance 2.5",
+      "附深度驱动视频",
+      "《STORM》MV 二创",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "作者公开的深度捕捉参考视频（推断即提示词里的「白模」）",
+        description:
+          "1440×1080 · 约 30.0 秒 · 4:3 · 无声。作者在自回复里连同提示词一起公开了这段视频：把《STORM》原作 MV 的一镜到底转成黑白深度图，能看到原片的短发女主和一排排人群，负责人物站位、身体动作、前后遮挡和连续拉远的运镜。提示词末尾写「原片作为主要动作参考，白模作为结构辅助，头像作为身份参考」，所以作者实际还喂了原作 MV 和一张女主头像，这两样都没有公开。作者也没说深度图用什么工具做的。",
+        video: "/tutorials/jackzhang123vip-red-coat-silver-mask-crowd-depth-seedance-2-5/depth-capture-ref-web.mp4",
+        poster: "/tutorials/jackzhang123vip-red-coat-silver-mask-crowd-depth-seedance-2-5/depth-capture-ref-poster.jpg",
+        aspectRatio: "4/3",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "模型是 Seedance 2.5（原帖写「Seedance 2.5 原生 30 秒一镜到底 + 多模态参考」）。成片 1920×1440（4:3）、30fps、约 29.5 秒，左上角全程有 HitPaw Edimakor 水印。声音：全程是一首带英文歌词的歌，语音识别断续听到「Like an empty fire」「Stand tall, go higher」，提示词里没写声音，疑似后期配的原作音乐（语音识别判断，未人工试听）。与提示词不符：提示词要结尾前排多人处于俯身状态，成片最后前排是直立、双手交握，弯腰的是后面几排；台阶上也看不太出提示词写的积水反光。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方中文提示词整段粘贴，并按末尾说明上传三样素材：原片（主要动作参考）、白模/深度视频（结构辅助）、人物头像（身份参考）。开头「以 参考视频」「以新的人物图 替换原片  中央女性」中间的空格，是作者原帖里 @ 素材的位置；{{Mixed 1}} 指女主头像。其余依次是：第一规则、场景、主角、群像（逐排外套）、按秒对应原片的动作、风格和负面词。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–0.5s 近景：暗红大衣、深棕长发的女主正面看镜头，嘴前一小团白气，身后是银色面具人群。" },
+      { number: 2, description: "0.5–2s 她低头转身，背对镜头。" },
+      { number: 3, description: "2–5.5s 镜头连续拉远，她朝台阶上的面具人群走去。" },
+      { number: 4, description: "5.5–9s 走到前排两人之间的窄缝，侧身屈臂挤进队列。" },
+      { number: 5, description: "9–13s 在人群里穿行，被前排挡住，逐渐转回面对镜头。" },
+      { number: 6, description: "13–18s 站到中央抬起脸，镜头扩大到人群全景，所有人直立。" },
+      { number: 7, description: "18–20s 人群第一次大范围俯身，上方露出弧形钢梁玻璃顶棚，女主直立不动。" },
+      { number: 8, description: "20–26s 人群一轮轮俯身、回起，女主始终站在中央。" },
+      { number: 9, description: "26–29.5s 拉到最宽全景：前排直立、双手交握在腹前，后几排仍在俯身，女主站在正中间。" },
+    ],
+    constraints:
+      "一个连续镜头、只往后拉，不环绕、不推近、不跳切；全场只有女主露脸、只有她穿暗红，其余人全部戴银色无五官面具、穿深灰外套；每个原片人物始终对应同一个替换人物，不能换衣服、不能增减人数；女主开场在镜头近处，要真的走进队列，不能瞬移；人群俯身要错落，不能全员同步鞠躬，女主不跟着弯腰。原作 MV 和女主头像作者没有公开。",
+    video_prompt: {
+      title: "《STORM》二创 · 暗红衣女性进入银色面具人群",
+      subtitle: "作者自回复中文完整提示词 · Seedance 2.5 · 原片 + 白模深度视频 + 人物头像",
+      content: `以 参考视频作为动作、运镜和节奏的首要依据，辅助约束人物位置、身体运动及前后遮挡。以新的人物图 替换原片  中央女性的身份与服装
+保留原片连续拉远的镜头、构图变化、人物移动路线、动作顺序、动作幅度和节拍。光线与调色替换为雨后阴天的冷灰蓝色。整个视频为一个连续镜头。
+【第一规则】
+这是“一名露出真实面孔的暗红衣女性，进入银色面具人群”的画面。
+全场只有主角露出面孔，只有她穿暗红色。其余人物全部佩戴银色无五官面具，穿深灰色系外套，禁止残留原片的白布头罩、白色短袖衬衫和米色长裤。
+每个原片人物始终对应同一个替换人物。谁先俯身、谁后起身、谁向哪边倾斜，都跟随原片各自的动作，不把所有人简化成完全同步的循环。
+主角开场位于镜头近处，随后实际走入队列，不能开场就站在人群中央，不能瞬移到最终站位。
+【场景】
+雨刚停，阴天，柔和冷色天光，低饱和冷灰蓝调。
+背景可见三种主要结构：高大的弧形钢梁与玻璃顶棚、带雨痕的深色立柱、逐级向上延伸的宽阔湿石阶。钢梁轮廓接替原片上方砖拱的构图位置，保留原片建筑与人群之间的空间比例。
+台阶边缘残留水珠，踏面有薄薄积水和暗淡反光。空气轻微潮湿，背景有很淡的雾，不下大雨，不出现遮挡人物的浓雾。
+人群依照原片排列在台阶上，前后错位，形成密集队列。保留主角穿行时原有的窄小间隙，不新增宽阔通道。
+【主角】
+将原片黑衣短发女性替换为提供的角色头像中的同一位成年女性 {{Mixed 1}} 。视觉设定约25岁、东亚女性面孔，深棕色长发，自然分缝，发尾轻微波浪，小型耳饰，不戴眼镜。
+五官比例、眼睛、鼻子、嘴唇和下颌轮廓以头像为准；正面、侧面及转回镜头时保持同一身份。
+穿无文字、无标志的暗红色及膝大衣，内搭酒红色高领上衣，下穿黑色修身长裤和深色短靴。保留手臂活动空间，衣摆不遮住全部腿部动作。
+神情平静、克制。她是全场唯一不戴面具、唯一穿暗红色的人。长发随转身和行走自然摆动，但不改变原片头部转动的方向、速度及停顿。
+【群像】
+周围为数十名成年人物，人数和每一帧的可见人数以原片为准；镜头拉远后，原本画外的人逐渐进入画面，不能凭空生成新的人。
+人物高矮、肩宽、体型及露出手部的肤色有自然差异。全部佩戴贴合头部的银色金属无五官面具，没有可见眼睛和嘴巴。面具反射阴天光与钢梁轮廓，不发光、不变形、不脱落。
+服装在深灰、炭黑、石墨灰范围内变化。按画面站位固定分配，跨帧不换衣服：
+第1排从画面左至右依次采用：炭灰单排扣风衣、石墨灰立领外套、煤黑翻领长外套、深灰双排扣风衣、蓝灰直筒外套、炭黑腰带风衣、烟灰暗扣外套、深石墨灰窄翻领外套。超出这些位置的角色继续采用相近但有区别的剪裁，不强行改变原片每排人数。
+第2排使用错位搭配：立领、翻领、单排扣、双排扣、暗扣及腰带款交错出现，避免前后相邻人物的衣服完全相同。
+第3排起延续深灰色系，通过衣领、纽扣、衣长和材质区分人物。外套长度控制在大腿至膝部附近，不能拖地，确保俯身时手臂、腰部和膝盖动作可辨认。
+开场所有人依原片站立，手臂自然下垂。主角穿行时，周围人保留原片对应人物的微小反应，不额外转头围观，不主动让出整条通道。
+【动作——与原片时间轴对应】
+以下时间为近似定位，分段衔接连续；具体动作起止与每个人的时间差以参考视频为准。左右方向均指画面左右。
+0.0—0.5秒：
+镜头从主角正面胸部以上的近景开始轻缓拉远；主角面对镜头，嘴前出现与原片开头对应的一小团浅淡白气；背景面具人群保持直立。
+0.5—2.0秒：
+镜头延续原片的拉远趋势；主角低头，经画面右侧的侧脸方向转身，逐渐背对镜头；背景人群维持原有站姿。
+2.0—5.5秒：
+镜头连续拉远，逐步显露主角更多身体；主角背对镜头，沿原片路径向台阶上的人群走去，保留原片一侧手臂屈起的姿态变化；人群留在各自站位。
+5.5—8.0秒：
+镜头继续拉远；主角沿原片步伐接近前排人物之间的窄缝；前排人群保持直立，保留各自轻微的头部及重心变化。
+8.0—9.25秒：
+镜头继续缓慢拉远；主角侧身屈臂，头部压低至身旁人物肩部附近，按原片姿态挤入队列间隙；身旁人物保留原片的局部反应，不夸张闪避。
+9.25—11.5秒：
+镜头拉远，呈现更多前后排人物；主角继续背向或斜背向镜头穿过人群，沿原片路线低头侧身移动，身体被前排人物自然遮挡；周围人物保持各自位置，不穿透主角身体。
+11.5—13.5秒：
+镜头继续拉远；主角在队列中逐渐转回面对镜头，保留原片低头、手停留在上胸附近的过渡姿态；周围人群继续直立。
+13.5—15.0秒：
+镜头继续拉远；主角在中央位置站稳，逐渐放下手臂并抬起脸；周围人群保持站立，不提前开始大幅俯身。
+15.0—18.5秒：
+镜头扩大为更完整的人群全景；主角正面站立，保留原片轻微的头部变化；人群保持原片中的轻微晃动及个别头部倾斜。
+18.5—19.7秒：
+镜头保持原有拉远速度；主角留在中央直立；周围人物按原片各自时序屈臂，将手移向腹部或下胸，俯身低头，形成第一次明显的大范围前倾。
+19.7—20.6秒：
+镜头继续拉远；主角保持直立；人群按各自原始节拍从俯身中回起，保留有人先直起、有人仍弯腰的差异。
+20.6—22.2秒：
+镜头继续拉远；主角保持中央位置；人群延续第二轮前倾与回起，双手维持原片对应的腹部附近姿态，身体倾斜方向不统一修改。
+22.2—24.0秒：
+镜头继续扩大可见台阶范围；主角依原片保持基本直立；人群再次以错落节奏俯身、回起，形成连续波动，不能变成机械同步鞠躬。
+24.0—26.0秒：
+镜头继续拉远，显露更多脚部和下方湿地面；主角保持中央稳定站姿；周围人物重复原片中的前倾、侧倾与回起，各自保留不同幅度。
+26.0—28.0秒：
+镜头连续拉远至更宽全景；主角保留原片轻微身体变化；人群继续各自的屈身起伏，脚部落点跟随原片，不自行走动换位。
+28.0—30.0秒：
+镜头拉远至与原片结束相同的构图尺度；主角仍在中央露出面孔、基本直立；前排多名人物处于俯身状态，后排人物错落地回起或倾斜，按原片结束时的姿态自然结束。
+最后一帧：
+暗红衣女性直立在人群中央，周围银色面具人物停留在各不相同的俯身或回起阶段，下方可见湿润地面，上方可见弧形钢梁。不要额外添加所有人站直、集体看镜头或静帧定格的结尾。
+【风格】
+电影级写实，一镜到底。皮肤、长发、金属面具和湿润布料细节自然。人物身份、服装和面具结构跨帧一致。面具反光随头部角度连续变化，大衣褶皱随俯身和回起自然变化。
+主角行走进入人群的距离变化，以及镜头拉远带来的人物缩小，都遵循原片，不通过人物变形或突然缩放实现。
+【负面】
+白布蒙头、白色短袖衬衫、米色长裤、原片黑色短发主角、砖砌拱门、校服、领带、主角戴面具、其他人露出面孔、第二件红色衣服、开场主角已经站在队列中央、人物瞬移、人群主动分开形成宽通道、全员完全同步鞠躬、主角跟着人群反复弯腰、擅自新增舞蹈动作、换位、重复人物、增减人数、身份漂移、肢体畸形、身体穿透、面具软化、衣服换色、镜头环绕、突然推近、跳切、慢动作、暴雨、浓雾遮挡、卡通、白模残留、深度图残留、文字、水印、播放器界面。
+上传素材时：原片作为主要动作参考，白模作为结构辅助，头像作为身份参考。 原片里的手部接触和遮挡细节比白模更清楚；如果两者产生冲突，以上述原片为准。`,
+    },
+  },
+  // Pollo 官方博客 Viral Video Breakdown 页（Clara Hayes 撰，2026-09-21 更新）；提示词为 Pollo 页面给出的版本（页面自称已把原始来源里冲突的镜头时间「规范化」），原作者和原帖页面未注明；文末推广段未收录
+  {
+    id: "pollo-bw-cat-studio-commercial-seedance-2-5",
+    title: "黑白英短猫棚拍广告 · 五套衣服排排坐 · Seedance 2.5",
+    subtitle: "Pollo 官方示例 · Seedance 2.5 · 15秒 · 16:9",
+    description:
+      "Pollo 官方示例：一张黑白英短猫图，按精确到毫秒的镜头表出 15 秒白棚宠物广告。",
+    video: "/tutorials/pollo-bw-cat-studio-commercial-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/pollo-bw-cat-studio-commercial-seedance-2-5/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "写实广告",
+    shots: 10,
+    references: 1,
+    model: "Seedance 2.5（成片右上角 Pollo 角标写明）",
+    style: "白色无缝棚拍 · 暖白柔光 · 青灰色英文字 · 硬切",
+    aspectRatio: "16/9",
+    sourceUrl: "https://pollo.ai/hub/premium-black-and-white-cat-commercial-video-breakdown",
+    sourceAuthor: "Pollo AI 官方博客（Clara Hayes）",
+    sourcePlatform: "Pollo",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["产品广告"],
+    hook: {
+      structure: "耳朵微距 → 举爪后拉全身 → 侧面飞跃 → 探头入画 → 风衣口袋抱起 → 摸头 → 两猫碰鼻 → 五猫换装 → 独坐收尾",
+      opening: "第 0 秒极近微距：只拍猫头顶和两只黑耳朵，眼睛在画面下方外面，暖色逆光勾出耳朵边缘，耳朵轻轻抖一下。",
+      openingAt: 0,
+      beats: [
+        { title: "前 5 秒怎么抓人", text: "约 1.1s 切正面，两只白爪举向镜头，快速后拉露出坐姿全身，上方出字「Big on Cute.」；约 2.6s 侧面飞跃从左到右；约 3.3s 空白画面里猫从右边一点点探头进来，左侧出字「Cute. Refined.」。", at: 1.1 },
+        { title: "中段怎么推进", text: "约 5.8s 穿卡其风衣的人（不露脸）把猫从口袋边抱起；约 7.0s 一只手从头顶往后摸，左侧字换成「Take Joy With You.」；约 8.2s 两只黑白猫侧面相对碰鼻子。", at: 5.8 },
+        { title: "结尾怎么收", text: "约 10.1s 五只猫排成一排，各穿一套衣服，上方出字「Find Your Favorite.」；约 14.1s 切到一只猫独自坐在白棚中间收尾。", at: 10.1 },
+      ],
+      copyThis: "提示词开头先写死总时长和每个硬切的精确时间点（精确到 0.001 秒），每个镜头只写一个动作、一行字；字幕固定四句，写明出现在哪个镜头、画面哪个位置。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 9 个硬切",
+      "16:9 画幅",
+      "Seedance 2.5 · 参考图生视频",
+      "1 张猫咪参考图",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：先生成一张猫咪参考图",
+        description:
+          "这是 Pollo 官方博客的示例页，不是个人创作者帖。页面第一步用 GPT Image 2.5 生成一张黑白英短猫的正面坐姿白底图（生图提示词见下方参考图卡片），这张图就是后面视频里 [@Image 1] 唯一的长相参考。原图左右带白边，这里已裁掉。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "页面说可选 Seedance 2.5、Seedance 2.0、MiniMax H3 或 Wan 3.0；成片右上角全程有「POLLO AI / SEEDANCE 2.5」角标，未处理。成片 1920×1080、30fps、约 15.1 秒。实测硬切点和提示词时间表几乎一致，只有最后一刀在约 14.1s（提示词写 13.633s）。与提示词不符：提示词要求不要音乐、留给后期配乐，成片却全程有很响的节奏音乐；第 5 镜没有字，第 6 镜显示的是「Cute. Refined.」，「Take Joy With You.」要到第 7 镜才出现。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "上传猫咪图后选参考图生视频，把下方英文提示词整段粘贴，[@Image 1] 换成你的图。结构依次是：总时长、长相锁定、全局棚拍风格、四句英文字幕，然后是 SHOT 1–9 逐镜头写法（每镜都写开始/结束秒数和「Hard cut exactly at …」），最后是五只猫的衣服顺序和负面提示词。页面说原始来源的镜头时间有冲突，这版是 Pollo 规范化后的提示词，不一定是原作者原文。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-pollo-bw-cat-01",
+        number: "1",
+        title: "@Image 1 · 黑白英短猫长相参考",
+        subtitle: "Pollo 页面给的生图结果（GPT Image 2.5），已裁掉左右白边",
+        image: "/tutorials/pollo-bw-cat-studio-commercial-seedance-2-5/refs/01-bw-cat-identity-image.jpg",
+        prompt: "British short haired black and white cat, with a relatively large head, soft and cute, 8-month-old kitten, fluffy fur, white background, front sitting posture, smartphone shooting texture",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.1s 极近微距：只拍头顶和两只黑耳朵，耳朵抖一下。" },
+      { number: 2, description: "1.1–2.6s 正面近景两只白爪举向镜头，快速后拉到坐姿全身，出字「Big on Cute.」。" },
+      { number: 3, description: "2.6–3.3s 侧面慢动作飞跃，从左跳到右。" },
+      { number: 4, description: "3.3–5.1s 大片白色空间，猫从右边探头进来，左侧出字「Cute. Refined.」。" },
+      { number: 5, description: "5.1–5.8s 低机位拍白胸口和两只前爪，向前迈一步。" },
+      { number: 6, description: "5.8–7.0s 卡其风衣的人（不露脸）把猫从口袋边托起，左侧仍是「Cute. Refined.」。" },
+      { number: 7, description: "7.0–8.2s 正面近景，一只手从额头往后摸，出字「Take Joy With You.」。" },
+      { number: 8, description: "8.2–10.1s 两只黑白猫侧面相对，慢慢碰鼻子。" },
+      { number: 9, description: "10.1–14.1s 五只猫排成一排，各穿一套衣服，出字「Find Your Favorite.」。" },
+      { number: 10, description: "14.1–15.1s 一只猫独自坐在白棚中央收尾。" },
+    ],
+    constraints:
+      "猫的脸、花纹、眼睛颜色全片保持和参考图一致；只出现四句指定英文，不要中文、logo、水印；每个硬切严格卡在写好的时间点；五只猫的衣服按固定左右顺序。这是平台官方示例，成片带 Pollo 角标。",
+    video_prompt: {
+      title: "Premium Black-and-White Cat Studio Commercial",
+      subtitle: "Pollo 官方博客页英文完整视频提示词（Pollo 规范化版本）· 1 张参考图",
+      content: `PROMPT HEADER:
+Create a 15.069-second, 16:9 horizontal live-action premium pet commercial.
+REFERENCE AND IDENTITY:
+Use [@Image 1] as the only identity reference.
+The subject is a black-and-white shorthair cat with a round face, large amber-brown eyes, pink nose, white muzzle and chest, black ears and crown, symmetrical dark facial patches, compact body, sturdy white front legs, rounded paws, and a thick dark tail.
+The cat should feel like a soft, cute 8-month-old British Shorthair-style kitten with a relatively large head, plush fur, a white background reference, a frontal seated pose, and a realistic smartphone-photo texture.
+Preserve the same face, markings, eye color, fur texture, body proportions, compact build, chest shape, paw shape, and tail throughout. Do not reference any video or music. Follow the exact timing below so the finished video can later be aligned to an external soundtrack. Never shift cut points, merge shots, or reorder actions.
+GLOBAL STYLE:
+Use real high-end pet advertising photographed in a physical white studio. Create a seamless warm-white cyclorama, clean satin floor, faint reflections, soft contact shadows, bright diffused softboxes, realistic short fur, individual whiskers, moist eyes, natural catchlights, believable depth of field, and accurate motion blur.
+Keep true feline anatomy and realistic body weight. Do not use cartoon styling, illustration, plastic CGI, human-like limbs, or upright human standing. Use clean hard cuts.
+Only English may appear. Do not include Chinese, logos, or watermarks.
+TYPOGRAPHY:
+Use clean modern medium-bold sans-serif typography in muted teal or slate blue. Use only the following text:
+- “Big on Cute.”
+- “Cute. Refined.”
+- “Take Joy With You.”
+- “Find Your Favorite.”
+Do not add any other readable text.
+SHOT 1 — 0.000–1.100 SECONDS:
+Use an extreme macro shot showing only the top of the cat’s head and both ears. The eyes stay completely below the frame.
+Warm rear-side light creates a delicate rim on the black ear edges and crown fur while the front remains cooler. Preserve the black crown pattern visible in [@Image 1].
+Show one tiny ear twitch and an almost imperceptible head shift. Keep the camera nearly locked with a slow micro push-in. No text.
+Hard cut exactly at 1.100 seconds.
+SHOT 2 — 1.100–2.567 SECONDS:
+Use a frontal close-up. The cat looks directly toward the camera with both white front paws raised toward the lens, one paw slightly closer.
+From 1.100–1.450 seconds, let the face and paws dominate the frame.
+From 1.450–1.850 seconds, perform a fast smooth dolly backward revealing the white chest and upper body.
+From 1.850–2.050 seconds, reveal the full cat seated upright on its haunches, hind paws grounded, chest forward, front paws lifted loosely near the chest, and dark tail lying toward screen left or naturally beside the body.
+From 2.050–2.567 seconds, stop and hold the centered full-body hero pose.
+Preserve the round amber eyes, pink nose, and distinctive black-and-white facial pattern from [@Image 1]. Display “Big on Cute.” at the upper center.
+Hard cut exactly at 2.567 seconds.
+SHOT 3 — 2.567–3.367 SECONDS:
+Use a tight side-profile action shot. The cat performs one natural horizontal feline leap from screen left to screen right.
+The head faces right, front legs extend forward, hind legs trail, and the thick tail follows behind. Use subtle slow motion.
+The camera makes only a small parallel rightward tracking move. Keep real body weight, launch trajectory, paw placement, and natural short-fur motion. No text.
+Hard cut exactly at 3.367 seconds.
+SHOT 4 — 3.367–5.067 SECONDS:
+Use a mostly empty white frame with the camera nearly fixed. The cat begins outside the far right edge and slowly peeks in: first the black ear, then one amber eye and part of the cheek, then progressively more until the full round face occupies the right half.
+Preserve the exact black crown, white blaze, white muzzle, amber eyes, and pink nose from [@Image 1]. The cat moves slightly closer and gives one tiny curious head tilt.
+Keep the left half open. Display “Cute. Refined.” at left-center.
+Hard cut exactly at 5.067 seconds.
+SHOT 5 — 5.067–5.833 SECONDS:
+Use a very low close-up of the white chest, front legs, and white paws. Keep the head mostly outside the frame.
+The cat takes one deliberate forward step: one front paw lifts, moves forward, lowers, contacts the floor, compresses slightly, and accepts weight while the other paw supports.
+Show toe fur, shifting contact shadow, faint reflection, and subtle body-weight transfer. Keep “Cute. Refined.” at left-center and fade it before the cut.
+Hard cut exactly at 5.833 seconds.
+SHOT 6 — 5.833–7.033 SECONDS:
+Use a medium fixed shot. On screen right, show only the torso and hands of an adult in a tan cotton trench coat. Never show the face.
+The coat has realistic texture, seams, buttons, folds, and a roomy side pocket. The black-and-white cat is partially nestled in or beside the pocket area with head, white chest, and front paws visible.
+A hand supports the body from underneath and gently lifts it upward and slightly outward. Keep realistic scale and weight. Hindquarters remain supported and legs hang naturally. Leave large white negative space on the left.
+Display “Take Joy With You.” at left-center.
+Hard cut exactly at 7.033 seconds.
+SHOT 7 — 7.033–8.200 SECONDS:
+Use a closer frontal portrait of the supported cat on the right half. One hand remains beneath the body.
+A second hand enters from the upper right and slowly strokes from the forehead backward over the black crown. Fingers softly compress the short fur.
+The cat starts with eyes open, briefly narrows or closes them during the stroke, then opens them and looks calmly toward the camera. Add a tiny ear response and whisker shift.
+Keep “Take Joy With You.” stable on the left. The camera remains fixed.
+Hard cut exactly at 8.200 seconds.
+SHOT 8 — 8.200–10.067 SECONDS:
+Use a fixed, balanced two-cat profile composition. Show two matching black-and-white cats from the same visual family as [@Image 1], with comparable mask patterns and amber eyes.
+The left cat wears a pale blue-and-white striped fitted pet shirt, small dark bow tie, and short black cape with dark red lining.
+The right cat wears a dark navy formal pet outfit, crisp white collar, burgundy neck detail, and short black cape with rich red lining and a slightly raised collar.
+Garments look physical, with realistic thickness, seams, folds, and fur compression.
+At 8.200 seconds, the cats are separated on opposite sides.
+From 8.200–8.900 seconds, they move toward center.
+From 8.900–9.300 seconds, their noses approach.
+From 9.300–9.700 seconds, they gently touch pink noses and hold.
+From 9.700–10.067 seconds, they ease apart slightly while staying close.
+Keep natural feline posture and separate whiskers. Supporting hands may barely appear at the lower edge. No text.
+Hard cut exactly at 10.067 seconds.
+SHOT 9 — 10.067–13.633 SECONDS:
+Use a wide frontal group shot with exactly five black-and-white cats sharing the same facial family, coat pattern, amber eyes, and compact proportions as [@Image 1].
+Keep this fixed left-to-right outfit order:
+1. Pale blue striped shirt, dark bow tie, short black cape with red lining.
+2. Bright yellow duck-inspired hooded jacket with a small soft orange bill.
+3. Center cat in a dark navy formal outfit, white collar, burgundy neck detail, and black cape with rich red lining.
+4. Dark green varsity-style jacket with pale trim and a playful dinosaur-inspired hood with small soft rounded spikes.
+5. Transparent clear raincoat with matching translucent hood, visible seams and fasteners, with fur visible through it.
+Use no branding. Display “Find Your Favorite.” at the upper center. Keep the camera fixed.
+From 10.067–10.900 seconds, the five cats appear in elevated presentation poses, with the center cat slightly forward. Front paws lift, hind legs partly tuck at different angles, tails balance naturally, and capes or hoods react to movement. Do not clone identical poses. Keep the scene like live-action animal photography.
+From 10.900–11.800 seconds, all five descend, paws visibly reconnect with the floor, and the group begins moving forward. Contact shadows strengthen. Maintain exact outfit order.
+From 11.800–12.700 seconds, all five advance toward the camera with one or two small coordinated feline steps. They become slightly larger because they physically approach; do not zoom. Tails rise naturally and clothing reacts with believable secondary motion. Preserve realistic short cat legs and compact bodies.
+From 12.700–13.200 seconds, the five cats settle into a clean frontal row in the same order, slow to a stop, and prepare to sit. Keep every outfit readable.
+From 13.200–13.633 seconds, all five sit on their haunches in a compact synchronized motion and hold a front-facing presentation pose. Front paws may lift slightly near chest height, but they remain anatomically feline and seated. Let capes, hoods, and raincoat settle naturally. Keep “Find Your Favorite.” visible.
+Hard cut exactly at 13.633 seconds.
+SHOT 10 — 13.633–15.069 SECONDS:
+Hard cut to the original unclothed black-and-white cat matching [@Image 1], alone in the white studio. Show the full body in a frontal seated pose near the lower center.
+Preserve the round face, amber eyes, pink nose, black crown and ears, white chest, sturdy white forelegs, rounded white paws, and dark tail.
+The cat remains almost completely still with only one tiny head adjustment, blink, or eye movement. The camera is fully locked.
+No text, logo, additional animal, or human. End exactly at 15.069 seconds.
+ABSOLUTE TIMELINE:
+0.000–1.100 / 1.100–2.567 / 2.567–3.367 / 3.367–5.067 / 5.067–5.833 / 5.833–7.033 / 7.033–8.200 / 8.200–10.067 / 10.067–13.633 / 13.633–15.069.
+Every boundary is mandatory. Do not shift, merge, shorten, or extend any shot.
+FINAL PRIORITY:
+Prioritize exact timing, exact shot order, consistent black-and-white cat identity, believable live-action fur and feline anatomy, restrained camera movement, white-studio advertising style, stable costume continuity, and English-only typography.
+NEGATIVE PROMPT:
+timing drift, shifted cut points, merged shots, missing shots, extra shots, changed shot order, changed black-and-white cat identity, changed mask pattern, changed amber eyes, changed pink nose, changed crown marking, long fur, plastic fur, cartoon cat, illustration, human-like limbs, upright human standing, extra paws, duplicated cats, missing outfit, wrong outfit order, duplicated outfit, extra animals, visible human face, extra hands, distorted hands, broken anatomy, floating paws, unrealistic leap, unstable white studio, dirty background, harsh shadows, changing text, Chinese text, misspelled text, extra text, logos, watermarks, subtitles outside the specified copy, music reference, background music, added SFX, camera shake, random zoom, low resolution, CGI render`,
+    },
+  },
+  // Pollo 官方博客 Viral Video Breakdown 页（Clara Hayes 撰，2026-09-29 更新）；提示词为 Pollo 页面给出的版本（含页面自带的 Final Summary 段），原作者和原帖页面未注明；文末推广段未收录
+  {
+    id: "pollo-painted-staircase-fries-police-chase",
+    title: "抱薯条女孩跑上墙上的画楼梯 · 警察扑墙摔倒",
+    subtitle: "Pollo 官方示例 · 12秒 · 9:16",
+    description:
+      "Pollo 官方示例：一张三视图，一镜到底手机视角，女孩跑上墙上画的楼梯，警察学她摔倒。",
+    video: "/tutorials/pollo-painted-staircase-fries-police-chase/demo-web.mp4",
+    poster: "/tutorials/pollo-painted-staircase-fries-police-chase/poster.jpg",
+    duration: "12秒",
+    durationSec: 12,
+    styleLabel: "手机实拍",
+    shots: 8,
+    references: 1,
+    model: "未标明（Pollo 页面列 Seedance 2.5 / 2.0、MiniMax H3、Wan 3.0 可选）",
+    style: "手机手持一镜到底 · 白天户外 · 墙面错视画 · 超现实喜剧",
+    aspectRatio: "9/16",
+    sourceUrl: "https://pollo.ai/hub/french-fries-painted-staircase-police-chase-reference-video-breakdown",
+    sourceAuthor: "Pollo AI 官方博客（Clara Hayes）",
+    sourcePlatform: "Pollo",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["手机POV·Vlog", "角色表演"],
+    hook: {
+      structure: "抱薯条近景听到喊声 → 拉开看到墙上画的楼梯 → 她跑上去推门消失 → 警察摸墙发现是平的 → 助跑扑墙摔倒",
+      opening: "第 0 秒手持近景：红棕色头发、黑白条纹衣服的女孩怀里抱着一大摞薯条，嘴里叼一根，回头看向画外，画外有人喊「Stop!」。",
+      openingAt: 0,
+      beats: [
+        { title: "她怎么上楼", text: "约 2s 镜头拉开，米色高墙上画着一段斜楼梯和一扇木门；约 2.5–5s 她抱着薯条踩着画出来的台阶一路跑上去；约 5.5s 推开画上的门钻进去，门留着开着。", at: 2 },
+        { title: "警察怎么反应", text: "约 6s 两个警察追到墙下抬头愣住，说「What the? That's not possible.」；约 7.5s 一个警察把手按在台阶上，发现墙是平的。", at: 6 },
+        { title: "结尾怎么收", text: "约 9–10s 另一个警察助跑扑到墙上想踩台阶，脚一滑；约 11s 摔倒在砖地上，镜头跟着往下晃。", at: 9 },
+      ],
+      copyThis: "提示词反复强调楼梯和门「只是平面画」：开头没有真楼梯、没有门洞，只有女主能把画当真用；再让警察用手摸墙把「是平的」演出来，笑点就成立了。",
+      approx: true,
+    },
+    tags: [
+      "12秒 · 一镜到底",
+      "9:16 竖屏",
+      "参考图 + 参考视频",
+      "1 张人物三视图",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备人物三视图",
+        description:
+          "这是 Pollo 官方博客的示例页，不是个人创作者帖。页面只给了一张女孩的三视图（正面、侧面、背面，黑白横条纹上衣和裤子），没有给生图提示词；原图左右带黑白边，这里已裁掉。提示词里还用到一段 @Reference Video，页面没有提供。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "页面说可选 Seedance 2.5、Seedance 2.0、MiniMax H3 或 Wan 3.0，没写成片用的是哪个。页面放的成片是 854×480 横版文件，中间才是竖版画面，实际只有 270×480，画质很低，这里只裁掉黑边、没有放大。画面右上角全程有橙色「Pollo.ai」水印，未处理。声音和提示词一致：开头画外喊「Stop!」，约 6.3–8.5s 警察说「What the? That's not possible.」，没有配乐（语音识别判断，未人工试听）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "上传三视图后选参考图生视频，把下方英文提示词整段粘贴，@Reference Image 换成你的图。结构依次是：总要求、场景、「楼梯和门都是平面画」的关键设定，然后按 [0.0–2.0s] 这样的时间段逐段写动作，最后是镜头、光线、声音、负面提示词和页面自带的 Final Summary。这版提示词是 Pollo 页面给的，不一定是原作者原文。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-pollo-fries-staircase-01",
+        number: "1",
+        title: "@Reference Image · 女主三视图",
+        subtitle: "Pollo 页面给的人物参考（正面 / 侧面 / 背面），已裁掉左右边",
+        image: "/tutorials/pollo-painted-staircase-fries-police-chase/refs/01-striped-outfit-three-view.jpg",
+        prompt: "原帖未附提示词；Pollo 页面只放了这张三视图，没有给生成它的提示词。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 手持近景：女孩抱着一大摞薯条、嘴里叼一根，听到画外喊「Stop!」回头。" },
+      { number: 2, description: "2–2.5s 镜头拉开：米色高墙上画着斜楼梯和一扇木门，看起来像真的。" },
+      { number: 3, description: "2.5–5s 她从右下跑进来，踩着画出来的台阶一路斜着跑上去。" },
+      { number: 4, description: "5–6s 推开画上的门钻进去，门留着开着。" },
+      { number: 5, description: "6–7s 两个警察追到墙下，抬头愣住，说「What the? That's not possible.」。" },
+      { number: 6, description: "7–9s 一个警察把手按在台阶上来回摸，墙是平的。" },
+      { number: 7, description: "9–11s 一个警察后退助跑扑到墙上，脚在墙面上打滑。" },
+      { number: 8, description: "11–12s 他摔倒在砖地上，镜头跟着往下晃，另一个警察站在旁边。" },
+    ],
+    constraints:
+      "楼梯和门从头到尾都是墙上的平面画，不能长出真的台阶或门洞；只有女主能踩着它走；一镜到底，不要剪辑和慢动作；女主长相和条纹衣服保持一致；没有字幕和水印。这是平台官方示例，成片带 Pollo 水印，分辨率很低。",
+    video_prompt: {
+      title: "Painted Staircase French Fries Police Chase",
+      subtitle: "Pollo 官方博客页英文完整视频提示词（含 Final Summary）· 1 张人物三视图",
+      content: `PROMPT HEADER:
+Create a 12-second vertical 9:16, 24 fps, ultra-realistic live-action viral smartphone video, filmed as ONE CONTINUOUS HANDHELD SHOT. Use @Reference Image as the exact protagonist reference and use @Reference Video only as a broad reference for authentic handheld smartphone movement, chase pacing, natural camera response, and the final physical-comedy payoff. The reference sheet shows three views of ONE young woman, not three different people. Preserve her same face, fair skin, shoulder-length wavy auburn hair, natural proportions, and outfit throughout: a loose black-and-white horizontally striped long-sleeve top, matching striped pants, and black slip-on shoes. She cradles an oversized open paper carton against her chest, overflowing with a comically tall mound of golden French fries. One separate fry sticks out from between her lips. The carton, the mound of fries and the fry in her mouth remain recognizable throughout. No identity, hairstyle or wardrobe changes.
+SCENE: a quiet outdoor urban pedestrian passage in natural daylight. Reddish brick pavement beside one very tall, completely flat beige concrete/stone wall with soft tree shadows. Painted directly onto this single flat wall is one trompe-l’oeil mural consisting of BOTH a diagonal concrete staircase AND a single brown wooden door at the top.
+Make the painted staircase longer and more clearly inclined across the wall: around 12–14 visible painted steps stretching a substantial horizontal distance from the lower-right near ground level to the single upper-left door. The woman’s climb travels sideways as well as upward, rather than almost vertically beneath the door. Keep the full diagonal staircase and door natural within the vertical composition.
+CRITICAL CONCEPT: BOTH THE STAIRCASE AND THE CLOSED DOOR ARE FLAT 2D PAINTINGS. At the beginning there is NO real staircase and NO real architectural door. The gray stair treads, risers, shadows, door frame, wooden panels, upper glass panes, handle and all apparent depth are painted directly onto the same smooth vertical wall. From the camera angle they look highly three-dimensional, but physically the wall is perfectly flat. No protruding steps, no real ledges, no landing, no recessed doorway, no existing black opening.
+The surreal joke is that only the woman can physically use these painted elements as if they were real.
+[0.0–2.0s] Start immediately on a handheld upper-body close shot of the woman in the outdoor passage, filmed from slightly in front of her at natural phone-camera height. Her face is clearly visible and matches the front view of @Reference Image. The close shot also shows the towering pile of fries in her arms and the single fry between her lips. She is moving past the camera when approaching police footsteps and a distant English shout are heard from off-screen behind her. Her eyes flick sharply toward the sound; her expression shifts from alertness to startled fear as she realizes they are closing in. She hugs the carton tighter, glances toward the painted staircase, makes a split-second decision and pivots into a run, still holding the fry in her mouth. The camera operator reacts with her, stepping back and swinging the phone in the direction she runs. This movement naturally opens the frame into the following wide view without a cut. The officers remain off-screen during this opening reaction.
+[2.0–2.5s] The same continuous handheld movement settles into a wide smartphone shot showing the tall beige wall, brick pavement, the full longer diagonal painted staircase and the single painted closed door at the top. The mural looks astonishingly real from this angle.
+[2.5–5.0s] The woman from @Reference Image runs in from the lower right. Without stopping, she turns toward the wall and sprints upward along the PAINTED staircase. She keeps the overflowing carton braced against her body; the tall pile of fries wobbles slightly with her movement while the fry remains between her lips. Her black shoes land exactly on the painted tread positions as though invisible solid steps exist there. She climbs quickly across all 12–14 painted steps, moving diagonally upward with believable running mechanics and natural body movement.
+CRITICAL: nothing appears beneath her feet. The staircase mural never extrudes, grows, unfolds or becomes real. The wall stays flat. She alone mysteriously behaves as if the painted stairs are solid. The handheld camera pans and tilts upward to follow her while staying far enough away to preserve the optical illusion.
+[5.0–5.9s] She reaches the final painted step directly in front of the PAINTED DOOR. Until this moment, the door is still only a completely flat painting: no thickness, no recessed doorway and no dark interior.
+Holding the carton against her body with one arm, she reaches for the PAINTED handle with her free hand and pushes it. The exact flat painted door suddenly functions like a real hinged door and swings INWARD, away from her and into the space behind the wall. Do not show any magical transformation. The same single painted brown door leaf simply begins rotating inward while preserving the same wooden-panel and upper-glass-pane design.
+Only as that one door swings inward does a dark rectangular doorway appear behind it for the first time. The woman crosses the very thin threshold with the carton of fries and disappears inside. Keep the same single door visibly OPEN inward after she enters. No second door appears beside the opening. No platform or balcony appears beneath it.
+[5.9–6.7s] Two white Western male police officers in realistic dark navy uniforms, utility belts and caps rush into the lower frame chasing her. They stop abruptly and stare upward at the impossible staircase and still-open elevated door, confused. Their brief reactions are spoken naturally in English.
+[6.7–8.8s] One officer approaches the apparent staircase while the handheld camera moves closer. He reaches toward what looks like thick concrete steps and places both palms directly on them.
+REVEAL: his palms press completely flat against one smooth vertical wall. There is zero depth. He pats and slides his hands across several painted stair edges. His fingers move continuously over the fake boundaries and cannot grip anything.
+[8.8–9.5s] The camera backs away slightly. One officer keeps staring toward the open doorway and decides to imitate the woman. He backs several steps away on the brick pavement and prepares for a short run. The second officer remains near the wall.
+[9.5–10.8s] He sprints toward the painted staircase and jumps. Both palms slap against the flat wall and he tries to plant one shoe on a painted tread exactly as the woman did. Nothing supports him. His shoes scrape downward across the smooth painted surface and he awkwardly scrambles for a moment before losing support. The mural NEVER becomes physical for him.
+[10.8–12.0s] He slides and falls awkwardly back onto the brick pavement near the camera. The phone operator reacts naturally, quickly dipping and tilting downward with the fall. End on a close handheld view of the fallen officer reacting in frustrated disbelief while the second officer remains nearby.
+CAMERA STYLE: authentic casual viral smartphone recording, subtle handheld shake, imperfect human framing, realistic autofocus breathing and normal phone-camera motion blur. Camera movement only through walking, panning and tilting. No drone, orbit, crane or impossible floating camera.
+LIGHTING AND REALISM: ordinary bright daytime exterior, neutral exposure, natural tree shadows, realistic skin, auburn hair, black-and-white striped fabric, golden fries, paper carton, painted wall and brick textures. It should feel like an impossible real event unexpectedly captured on a phone.
+AUDIO: natural outdoor ambience, a distant English shout from an officer, running footsteps, breathing, shoe contact, door-handle movement, wooden door creak, police footsteps and brief natural English reactions of confusion, palms hitting the wall, shoe soles scraping the flat wall and believable body impact. No narrator or dramatic soundtrack.
+STRICT NEGATIVES: no real staircase at the beginning, no real door at the beginning, no recessed doorway before opening, no permanent black doorway, no deep door tunnel, no balcony, no landing, no protruding stairs, no staircase extrusion or materialization, no second door, no outward-swinging door, no door changing design, no magical glow, no portal effect, no wall melting, no teleportation, no hidden cuts, no jump cuts, no slow motion, no replay, no duplicated characters, no identity drift, no wardrobe changes, no cartoon physics, no gore, no text, no subtitles, no logos, no watermark. @Reference Image
+Final Summary
+Create one complete 12-second vertical 9:16 photorealistic live-action smartphone comedy at 24 fps. Use Reference Image as the fixed identity and wardrobe source for exactly one auburn-haired woman in a black-and-white striped outfit, and use Reference Video only for broad handheld movement, pursuit rhythm, and the final failed-climb gag.
+The finished video must make the central visual rule immediately understandable: the long staircase and closed door begin as flat 2D paint on one smooth beige wall. Only the woman carrying the tall carton of fries can run across the 12 to 14 painted steps, open the painted door inward, and disappear through it. The two officers reveal the wall is flat, fail to imitate her, and end with one natural fall. Preserve the protagonist's identity, carton, fry in her mouth, diagonal mural geometry, one inward-swinging door, continuous handheld camera path, short natural English reactions, real-time pacing, and no watermark.
+`,
+    },
+  },
+  // Pollo 官方博客 Viral Video Breakdown 页（Clara Hayes 撰，2026-09-29 更新）；提示词为 Pollo 页面给出的版本（含页面自带的 Final Summary 段），原作者和原帖页面未注明；文末推广段未收录
+  {
+    id: "pollo-golden-cat-world-sprint-stopwatch",
+    title: "金渐层胖猫一口气跑完全世界 · 回到起跑线急刹",
+    subtitle: "Pollo 官方示例 · 15秒 · 16:9",
+    description:
+      "Pollo 官方示例：一只金渐层胖猫从干湖起跑线出发，穿过六个地方绕地球一圈又刹回原地。",
+    video: "/tutorials/pollo-golden-cat-world-sprint-stopwatch/demo-web.mp4",
+    poster: "/tutorials/pollo-golden-cat-world-sprint-stopwatch/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "超现实",
+    shots: 9,
+    references: 1,
+    model: "未标明（Pollo 页面列 Seedance 2.5 / 2.0、MiniMax H3、Wan 3.0 可选）",
+    style: "写实 · 超高速喜剧 · 地点快切 · 正午阳光",
+    aspectRatio: "16/9",
+    sourceUrl: "https://pollo.ai/hub/cat-world-sprint-video-breakdown",
+    sourceAuthor: "Pollo AI 官方博客（Clara Hayes）",
+    sourcePlatform: "Pollo",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "起跑线蹲伏 + 秒表 → 冲出去 → 盐湖 → 森林 → 冰湖 → 凯旋门 → 地球轨道 → 海滩 → 回到起跑线急刹",
+      opening: "第 0 秒低机位：金渐层胖猫趴在龟裂干湖的白色起跑线后面，右侧前景一只手握着秒表。",
+      openingAt: 0,
+      beats: [
+        { title: "怎么起跑", text: "约 2–3.5s 猫一蹬冲出画面，只留下一道贴地扬起的尘土；约 3.5–5.4s 俯拍盐湖，一道金色残影拖着尘烟划过。", at: 2 },
+        { title: "中段怎么推进", text: "约 5.4s 起每 1–2 秒换一个地方：森林里贴着猫背跟拍、约 7s 冰湖上一道白线、约 8.6s 凯旋门前冲过来、约 9.9s 太空里绕地球一圈的白色轨迹、约 11.9s 海滩浪边一道水花。", at: 5.4 },
+        { title: "结尾怎么收", text: "约 13s 切回起跑线同一个机位，猫从远处冲回来，四爪张开急刹，尘土飞起，秒表还在右边。", at: 13 },
+      ],
+      copyThis: "开头和结尾用同一个起跑线机位、同一只拿秒表的手，中间每个地点只给 1–2 秒、只拍一道残影，观众自己就会得出「它刚绕地球跑了一圈」。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 8 个地点",
+      "16:9 画幅",
+      "参考图 + 参考视频",
+      "1 张猫咪参考图",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备猫咪参考图",
+        description:
+          "这是 Pollo 官方博客的示例页，不是个人创作者帖。页面只给了一张白底坐姿金渐层猫图，没有给生图提示词；原图左右带黑边，这里已裁掉。提示词说参考图应是「起跑线 + 秒表」的开场构图，但页面给的是白底猫图，对不上。提示词里用到的参考视频页面没有提供。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "页面说可选 Seedance 2.5、Seedance 2.0、MiniMax H3 或 Wan 3.0，没写成片用的是哪个。成片 1280×720、24fps、约 15.1 秒，没看到水印。与提示词不符：提示词要求只有配乐和音效、不要对白旁白和倒数，成片却全程有英文解说，比如「How long would it take to run around the Earth? Three, two, one. Go!」「Paris already?」「That might be the fastest cat on Earth.」（语音识别判断，未人工试听）；秒表上的品牌字样和数字清晰可读；换地点的时间比提示词晚约 0.5–1 秒。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "上传猫咪图后选参考图生视频，把下方英文提示词整段粘贴。结构依次是：总要求、猫的长相（CAT）、起跑线和秒表的布置、参考图用法，然后按「0.0-2.4 seconds」这样的时间段写十段镜头，最后是画面规则、AUDIO、负面提示词和页面自带的 Final Summary。这版提示词是 Pollo 页面给的，不一定是原作者原文。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-pollo-cat-sprint-01",
+        number: "1",
+        title: "@Reference image · 金渐层猫长相参考",
+        subtitle: "Pollo 页面给的白底猫图，已裁掉左右黑边；和提示词说的起跑线构图对不上",
+        image: "/tutorials/pollo-golden-cat-world-sprint-stopwatch/refs/01-golden-cat-reference.jpg",
+        prompt: "原帖未附提示词；Pollo 页面只放了这张猫图，没有给生成它的提示词。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 低机位：金渐层猫趴在干湖白色起跑线后，右侧一只手握着秒表。" },
+      { number: 2, description: "2–3.5s 猫一蹬冲出画面，贴地扬起一道尘土。" },
+      { number: 3, description: "3.5–5.4s 俯拍盐湖，一道金色残影拖着尘烟划过。" },
+      { number: 4, description: "5.4–7s 森林里贴着猫背低机位跟拍。" },
+      { number: 5, description: "7–8.6s 俯拍冰湖，冰面上划出一道白线。" },
+      { number: 6, description: "8.6–9.9s 凯旋门前，猫带着尘烟冲向镜头。" },
+      { number: 7, description: "9.9–11.9s 太空视角，一道白色轨迹绕地球一圈。" },
+      { number: 8, description: "11.9–13s 俯拍海滩，一道水花沿着浪边划过。" },
+      { number: 9, description: "13–15s 回到起跑线同一机位，猫冲回来四爪张开急刹，尘土飞起。" },
+    ],
+    constraints:
+      "全片只有这一只猫，脸、毛色、绿眼睛、尾巴保持一致；开头结尾必须是同一个起跑线机位和同一只拿秒表的手；中间用干净的地点硬切；画面里不要可读文字、别的人和动物、水印。这是平台官方示例，成片的英文解说和提示词要求不一致。",
+    video_prompt: {
+      title: "Cat World Sprint · Golden Shaded Cat Around the World",
+      subtitle: "Pollo 官方博客页英文完整视频提示词（含 Final Summary）· 1 张猫咪参考图",
+      content: `PROMPT HEADER:
+Generate a 15-second horizontal 16:9 photorealistic live-action speed-comedy video at 24 fps. Use the generated Image Prompt result as Reference image and the supplied clip as Reference Video. Use Reference image as the fixed global appearance and opening-composition reference for one CAT. Use Reference Video only as a broad reference for hyper-speed movement, camera energy, montage timing, and comedic rhythm. Show one round golden shaded cat completing an impossible world sprint: it launches from the reference image's cracked-dry-lakebed start line, flashes through six distinct environments, and skids to a stop at the identical start line. The tone is spectacular but playful, with realistic fur, believable cat motion at the start and finish, cinematic natural environments, and one clear visual joke: this small cat has apparently raced around the world in seconds.
+CAT IDENTITY AND CONTINUITY:
+Show exactly one CAT, based strictly on Reference image: a chubby, low-to-the-ground golden shaded British Shorthair-like cat with a broad round face, huge round green eyes, a short dense warm-golden coat with darker brown shading along the back and tail, pale cream muzzle, chest, belly, and front paws, a small pink nose, short rounded ears, white whiskers, and a dark-tipped thick tail. CAT has no collar, clothing, accessories, shoes, harness, backpack, wings, or humanlike behavior.
+CAT moves on four paws. At the start it lowers into a recognizable feline running crouch. At the finish it executes a real four-paw braking slide, with front legs extended and hindquarters lowered. Do not turn CAT into a cheetah, tiger, lion, cartoon animal, humanoid, or a different domestic breed. The same coat pattern, eye color, face, body mass, paw proportions, and tail must survive every cut, distant action shot, motion-blur moment, and final close shot.
+START-LINE SET AND STOPWATCH:
+The opening and ending use the same vast sunlit dry lakebed: flat pale-tan cracked earth under a clear light-blue sky, no vegetation, buildings, vehicles, crowds, signs, or text. A single clean white painted starting stripe lies diagonally across the lower-left foreground and extends toward CAT. It is a plain stripe, not a branded road marking.
+At screen-right, a single adult human right hand holds one chunky dark navy-and-black digital stopwatch in the near foreground. The wrist and hand are otherwise unremarkable, without jewelry, logo, sleeve text, or visible person. The stopwatch remains physically held in the hand and looks suitably small compared with the cat. The display may show indistinct changing digits, but no readable words, labels, logos, or branded interface. In the start and finish shots, keep CAT, the white stripe, and the stopwatch hand together in one legible composition.
+IMAGE AND REFERENCE VIDEO USAGE:
+Use Reference image for CAT's exact identity, coat, face, anatomy, starting-line environment, white stripe placement, lighting direction, composition, and stopwatch-hand position in the opening and ending shots. The generated image is a visual anchor, not a storyboard that must be copied into every destination. Preserve the cat's identity and return the final shot to the same start-line setup.
+Use Reference Video only for broad hyper-speed pacing, the feeling of a tiny subject covering enormous distances, whip-fast environment changes, low chase energy, aerial travel inserts, restrained natural camera shake, and the final dust-filled braking gag. The following shot plan controls all exact locations, action, framing, and timing. Do not replicate unrelated subjects, visual defects, readable timing numbers, or any implied text from Reference Video.
+CONTINUOUS MONTAGE SHOT PLAN:
+0.0-2.4 seconds - Ready at the line:
+Begin on the dry lakebed in a low, medium-wide side three-quarter composition. CAT is just behind the white starting stripe, occupying the center-left. It initially faces screen-left, then dips its head slightly, fixes its green eyes ahead, and lowers from a standing position into a compact running crouch. Its tail rises slightly and its shoulder blades compress naturally beneath the short fur.
+The stopwatch hand fills part of the near foreground at screen-right and remains steady. The white stripe is clearly visible in front of CAT. Use bright midday sun, a short soft shadow beneath CAT, sharp cracked-earth detail, and a calm anticipatory pause. There are no other people or animals. CAT must not cross the stripe yet.
+2.4-3.3 seconds - One explosive launch:
+CAT pushes off once from all four paws, crosses the white stripe, and accelerates away toward screen-left. The first stride is a believable feline sprint; then its speed becomes comically impossible. The camera holds low near the start line as CAT becomes a compact golden streak and exits frame left. A small low plume of tan dust trails along the ground. The stopwatch hand stays visible at screen-right for the beginning of the launch. Do not show CAT flying, leaping vertically, or transforming into an object.
+3.3-4.7 seconds - Salt-flat aerial streak:
+Hard cut to a high oblique aerial view above a huge empty tan salt flat. CAT is now very distant and reads as a tiny golden moving body at the leading tip of a long curved dust wake, traveling rapidly from lower-left toward upper-right. The dust wake curls naturally across the flat ground and remains attached to CAT's path. Do not enlarge CAT, add vehicles, or add tire marks. The camera floats gently above the curve; this is the first proof of the cat's absurd speed.
+4.7-6.5 seconds - Forest chase:
+Cut to a low rear chase camera directly behind CAT as it races through a lush temperate forest. The lower center of the frame shows CAT's recognizable rounded back, dark shading along the spine, upright ears, and the top of its thick tail. A narrow leaf-litter trail rushes below; straight tree trunks and green foliage streak outward at the edges. Warm shafts of sunlight pass between trees. Keep CAT grounded on the path and retain a readable suggestion of four-paw running beneath the motion blur. The camera follows smoothly at CAT's height, never overtaking it and never revealing another cat.
+6.5-7.8 seconds - Frozen-lake flyover:
+Cut high above a vast blue-white frozen lake. Fine branching cracks spider across the ice, with dark deep-blue water visible beyond a broken snowy edge in the lower part of the frame. CAT crosses left-to-right as a tiny golden fast-moving subject with a narrow white vapor-and-snow wake behind it. CAT remains on the ice surface; it does not swim, sink, skate upright, or crack the ice. The wake follows one clear path and lasts only long enough to read as speed.
+7.8-9.2 seconds - Monumental city approach:
+Cut to a very low centered wide shot of a grand pale-stone triumphal arch in an empty European-style city square at late afternoon. The arch is centered, the cobbled plaza occupies the foreground, and the camera sits almost at ground level facing through the main opening. No flags, readable signs, vehicles, crowds, or logos are visible.
+CAT appears tiny beneath the central arch opening and races straight toward the lens along the center line, kicking up a small golden dust haze that glows in the backlight. Keep the architectural scale enormous and CAT's body and face recognizably consistent even at distance. Before CAT reaches the foreground, cut away; it must not collide with the camera.
+9.2-10.7 seconds - Orbital world lap:
+Cut to a photorealistic view of Earth floating against black star-filled space. Africa, Europe, the Middle East, and the Indian Ocean are softly sunlit; the planet has a thin blue atmospheric rim and realistic clouds. A tiny golden CAT silhouette or golden fast-moving point races once around Earth from left to right, leaving a continuous curling pale cloud-like contrail in low orbit. The contrail wraps around the globe along one coherent path and does not damage the planet.
+This is an intentionally impossible comic visual, but CAT must still be the same subject, not a rocket, meteor, spacecraft, shooting star, or glowing ball. Do not show explosions, satellites, aliens, astronauts, text, flags, or brand marks.
+10.7-12.2 seconds - Tropical shoreline pass:
+Cut to a straight-down aerial view of a quiet tropical shoreline: pale sand at screen-left, foamy white surf forming a vertical edge in the center, and clear turquoise ocean at screen-right. CAT races across the shallow edge of the water from screen-right toward screen-left as a compact golden figure, leaving a brief narrow white spray wake. Keep the cat at water level rather than hovering above the ocean. The camera remains high and stable; no people, boats, wildlife, umbrellas, buildings, or text appear.
+12.2-13.1 seconds - Empty line before the return:
+Hard cut back to the exact opening dry-lakebed angle. The white start stripe sits at lower-left and the same stopwatch hand is at screen-right. The place is briefly empty, allowing the audience to recognize that the cat has returned to its original line. A faint distant rushing sound grows; the hand still holds the stopwatch in the same orientation. Maintain matching sunlight, horizon, cracked-earth texture, and composition from the opening.
+13.1-15.0 seconds - Return and braking slide:
+CAT re-enters rapidly from screen-left, now facing toward the camera and the stripe. It brakes hard at the line in one continuous natural feline slide: front paws spread and extend forward over the white stripe, hind legs fold beneath the rounded body, and the thick tail rises curved behind it. Dust billows behind CAT and outward along the ground, with a few tiny warm spark-like glints only where paws scrape dry mineral grit. The dust must remain grounded and non-explosive.
+End in a tight low frontal composition. CAT is stopped just over the white stripe, its huge green eyes looking directly at the lens with an alert, slightly proud neutral cat expression. Its face, cream muzzle, pink nose, whiskers, paws, and coat match @Reference image. The stopwatch hand remains at screen-right, visible but not blocking CAT's face. Let the dust settle slightly as the final image holds. No titles, captions, score graphics, or celebratory human reaction.
+VISUAL AND MOTION RULES:
+Photorealistic cinematic live action with detailed short cat fur, stable green eyes, correct feline anatomy, sunlit natural environments, realistic dust, water spray, forest foliage, ice texture, stone architecture, and Earth imagery. The middle section is a fast-cut world-travel montage, while the start and finish intentionally match in composition. Every location change is a deliberate clean cut; do not attempt an incoherent morph from one environment to another.
+Preserve CAT as one consistent character. The cat is visible and grounded in the start, finish, forest, city, ice, and beach shots; when it is distant, it still reads as the same compact golden shaded cat. Speed effects must originate at CAT's direction of travel and remain physically connected to the route. Keep motion blur mostly in the environment and dust wake; do not blur CAT's face or duplicate its limbs in the final braking shot.
+AUDIO:
+Use a lively original cinematic speed-comedy score with a brief held anticipatory beat at the starting line, then a fast rhythmic rise during the journey and a playful resolved hit as CAT skids to a stop. Add synchronized effects: a soft digital stopwatch start beep, paw scrapes on dry earth, a sharp accelerating whoosh, a long sand rush, leaf and wind rush in the forest, a light icy wind pass, distant city-air movement, a soft space-like cinematic sweep without radio chatter, small water spray at the shoreline, and a dry gritty brake skid at the finish. No dialogue, narration, lyrics, captions, spoken countdown, crowd noise, or animal vocalization.
+NEGATIVE PROMPT:
+Multiple cats, duplicate cat, kitten, different cat breed, cheetah, tiger, lion, wildcat, humanoid cat, cartoon cat, cat wearing clothing, collar, harness, shoes, backpack, wings, cat standing upright, cat driving a vehicle, cat flying, cat transforming, face drift, changed green eyes, changed coat color, changed cream muzzle, wrong tail, missing tail, extra tail, missing whiskers, distorted paws, extra paws, extra limbs, broken feline anatomy, cat sinking into ice, cat breaking ice, cat floating over beach, cat turning into a rocket, meteor, spaceship, or light orb, vehicle tracks, cars, crowds, extra people, full human body, different stopwatch hand, floating stopwatch, giant stopwatch, smartwatch interface, readable stopwatch words, logos, brand marks, readable signs, flags, captions, subtitles, title cards, score graphics, watermark, duplicate dust trails, detached speed trails, fire, explosions, planet damage, debris, disaster imagery, aliens, astronauts, satellites, city traffic, blurry cat face at finish, excessive motion blur on CAT, camera collision, cat hitting camera, cat crossing the line before launch, cat failing to return to the same line, finish in a different desert, changed stripe position, changed stopwatch position, abrupt identity change, incoherent location morphs, bad match cut, low resolution, video-game render, flat cartoon lighting, harsh horror lighting, shaky camera, random dialogue, narration, lyrics, crowd cheering, meowing, audio mismatch.
+Final Summary
+Create one complete 15-second horizontal 16:9 photorealistic speed-comedy video at 24 fps. Use Reference image as the fixed identity source for exactly one round golden shaded CAT and use Reference Video only for broad hyper-speed pacing, camera energy, montage structure, and the final braking-payoff rhythm.
+The finished video begins and ends on the same cracked dry-lakebed start line, with a physical stopwatch hand at screen-right. Between those matching frames, CAT launches once and travels through a salt flat, forest, frozen lake, monumental city square, orbital Earth view, and tropical shoreline. Preserve the cat's face, body, fur, tail, and green eyes across every shot; use clean location cuts, legible directional speed effects, original music and sound design, no readable text, no extra animals or people, and no watermark.
+`,
+    },
+  },
+  // Pollo 官方博客 Viral Video Breakdown 页（Clara Hayes 撰，2026-09-28 更新）；文生视频，提示词为 Pollo 页面给出的版本（含页面自带的 Final Summary 段），原作者和原帖页面未注明；文末推广段未收录
+  {
+    id: "pollo-sleepy-commuter-bed-subway-gate",
+    title: "上班族躺在床上进地铁 · 闭着眼刷卡过闸",
+    subtitle: "Pollo 官方示例 · 文生视频 · 15秒 · 16:9",
+    description:
+      "Pollo 官方示例：纯文字生成，一镜到底跟拍上班族连床带人滑进地铁站，躺着刷卡过闸机。",
+    video: "/tutorials/pollo-sleepy-commuter-bed-subway-gate/demo-web.mp4",
+    poster: "/tutorials/pollo-sleepy-commuter-bed-subway-gate/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "荒诞写实",
+    shots: 8,
+    references: 0,
+    model: "未标明（Pollo 页面列 Seedance 2.5 / 2.0、MiniMax H3、Wan 3.0 可选）",
+    style: "写实 · 低机位一镜到底跟拍 · 纽约地铁站 · 冷灰晨光",
+    aspectRatio: "16/9",
+    sourceUrl: "https://pollo.ai/hub/sleepy-commuter-bed-subway-comedy-reference-video-breakdown",
+    sourceAuthor: "Pollo AI 官方博客（Clara Hayes）",
+    sourcePlatform: "Pollo",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["角色表演"],
+    hook: {
+      structure: "侧面跟拍整张床 → 推近闸机 → 伸手刷卡 → 缩回去接着睡 → 绕到床尾 → 床穿过闸机滑远",
+      opening: "第 0 秒低机位侧面：一张带轮子的原木单人床在地铁站里往前滑，穿白衬衫、打领带的男人侧躺盖着灰被子，周围上班族快步走过。",
+      openingAt: 0,
+      beats: [
+        { title: "怎么刷卡", text: "约 4–6s 镜头推近床头，绿色刷卡感应圈越来越大；约 6.5–7.5s 他眯着眼抬手把卡贴到感应圈上，脸始终压在枕头上。", at: 4 },
+        { title: "刷完之后", text: "约 8s 他把手缩回被子里重新闭眼；约 10s 镜头往后退，整张床和被子上的黑色公文包重新入画。", at: 8 },
+        { title: "结尾怎么收", text: "约 11–15s 镜头绕到床尾正后方，两侧是闸机，整张床穿过通道滑进站厅越来越远。", at: 11 },
+      ],
+      copyThis: "笑点只有一个：人懒到连床一起来上班，却还是规规矩矩刷卡。提示词把刷卡这个因果链写得很细：卡贴到装在闸机上的感应器 → 亮灯 → 闸门打开 → 床通过，全在一个镜头里看清。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 一镜到底",
+      "16:9 画幅",
+      "文生视频 · 无参考图",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：选文生视频",
+        description:
+          "这是 Pollo 官方博客的示例页，不是个人创作者帖。页面写的是文生视频流程：不用上传任何图片，直接粘贴提示词、设时长和画幅。提示词里提到「Reference Video 只参考运镜和节奏」，但页面没有提供这段参考视频。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "页面说可选 Seedance 2.5、Seedance 2.0、MiniMax H3 或 Wan 3.0，没写成片用的是哪个。成片 1280×720、24fps、约 15.1 秒，一镜到底没有剪辑，没看到水印。声音是持续的地铁站环境声，没有配乐，没听到清楚的人声（语音识别只认出低置信乱码，未人工试听）。与提示词不符：闸机在画面左边（提示词写右边）；他是从头顶上方伸胳膊刷卡，不是贴着床垫低位伸手。另外男主长得很像某位知名演员，上线前请留意。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴。结构依次是：总要求、地铁站场景和闸机、男主和衣服、床和道具、路人，然后按「0.0-2.7 seconds」这样的时间段写八段连续运镜，最后是画面规则、AUDIO、负面提示词和页面自带的 Final Summary。这版提示词是 Pollo 页面给的，不一定是原作者原文。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.7s 低机位侧面跟拍：带轮子的原木单人床在地铁站里滑行，男人侧躺盖灰被子，路人快步走过。" },
+      { number: 2, description: "2.7–5.5s 镜头慢慢推近床头，闸机和绿色感应圈越来越大。" },
+      { number: 3, description: "5.5–6.7s 近景：他眯着眼，手拿卡准备刷。" },
+      { number: 4, description: "6.7–7.4s 卡贴到绿色感应圈上，闸门打开。" },
+      { number: 5, description: "7.4–8.7s 他把手缩回被子里，重新闭眼睡。" },
+      { number: 6, description: "8.7–10.5s 镜头往后退，整张床和被子上的黑色公文包重新入画。" },
+      { number: 7, description: "10.5–12.8s 镜头绕到床尾正后方，两侧是闸机，床穿过通道。" },
+      { number: 8, description: "12.8–15s 床滑进站厅越来越远，镜头慢慢跟在后面。" },
+    ],
+    constraints:
+      "一镜到底不剪辑；床的四个轮子一直贴地转动，人、被子、公文包、卡全程不变；先刷卡、闸门再开、床再通过，顺序不能乱；只要环境声和一声轻的刷卡提示音，不要对白和音乐。这是平台官方示例，纯文生视频。",
+    video_prompt: {
+      title: "Sleepy Commuter Bed Subway Comedy",
+      subtitle: "Pollo 官方博客页英文完整视频提示词（含 Final Summary）· 文生视频",
+      content: `PROMPT HEADER:
+Generate a 15-second horizontal 16:9 photorealistic live-action comedy video at 30 fps. Use Reference Video only as a broad motion, camera, pacing, and live-action realism reference. Create one flowing, uninterrupted low-camera tracking shot with no cuts. The comedy should read immediately: an exhausted office worker has brought his entire bed on his morning commute, yet he still pays the subway fare in the ordinary way.
+LOCATION AND WORLD:
+Use one spacious, plausible New York-style subway concourse and one wide automatic accessible fare lane. The station has off-white glazed tile walls, gray floor tiles with visible seams, brushed stainless-steel gate housings, a few dark-red structural columns, overhead fluorescent panels, yellow tactile paving, and restrained overhead route signs written in English. Keep the station practical and believable, with natural morning crowd movement and no readable branding.
+The electronic reader is integrated into the right-hand steel gate housing at the entering end of the lane. It has a small green-lit contactless surface above the man's mattress level, a visible metal body continuing down to the floor, and an automatic gate panel connected to the housing. The reader must look physically mounted to the gate, not like a floating screen.
+PROTAGONIST AND WARDROBE:
+Show exactly one American male office worker, about forty years old, with short dark-brown hair, a natural slightly tired face, and faint morning stubble. He wears a white button-down work shirt with a loosened navy tie, visible at the neck and shoulders above the duvet.
+He lies on his left side throughout the entire shot, with his head on a white pillow, torso and legs beneath a thick rumpled cool-gray duvet. His expression begins with heavy eyelids and a weary crease between his brows. His cheek compresses the pillow. He never needs to lift his head to complete the commute. He carries one small contactless fare card beside his pillow, flat in the fingers of the hand nearest the gate.
+BED AND PROPS:
+The bed is one compact American single bed with a simple pale-oak rectangular frame, a low slatted headboard at the pillow end, four small swiveling caster wheels, a fitted gray sheet, one gray mattress supported completely by the wood frame, one white pillow, and one gray duvet. The wheels touch the tiles and rotate as the bed rolls at a gentle walking pace.
+A closed black leather work briefcase with a short handle lies flat on the upper surface of the duvet near the foot. In the opening side composition, the foot and briefcase appear screen-left, while the man's face, pillow, and approaching fare reader appear screen-right.
+COMMUTERS:
+The crowd comprises adult American commuters of varied backgrounds wearing contemporary Western work clothes: navy and charcoal suits, office shirts, business-casual jackets, practical coats, leather shoes, backpacks, shoulder bags, and occasional briefcases. They walk at an ordinary brisk morning pace through adjacent fare lanes and across the distant concourse. A few closer passersby may briefly cross the edges of the shot and partially mask the bed without becoming subjects. Do not introduce a second version of the protagonist.
+CONTINUOUS SHOT PLAN:
+0.0-2.7 seconds — Opening side track:
+Start already moving at low mattress height on the visible side of the bed, roughly a three-quarter side angle. Keep the whole wooden bed in frame, from its near foot and front caster at screen-left to the pillow and the man's face at screen-right. Office workers stride toward the fare gates beneath English wayfinding signs in the background. The camera tracks alongside at almost the same pace as the bed, so the bed holds a fairly stable place in frame while the tiled floor, commuters, and station equipment slide past. The man's face is half visible, his eyes heavy and his mouth relaxed, with his cheek still on the pillow.
+2.7-5.5 seconds — Advance toward the reader:
+Continue the same tracking move and gradually advance the camera toward the head of the moving bed. Change organically from the complete bed in a low wide side view to a tighter side medium shot of the man's upper body, white pillow, near edge of the gray mattress, and approaching gate. The green reader, a restrained orange or dark accent on the metal housing, and the gate panel grow larger at screen-right as the pillow comes alongside them. Keep enough of the steel housing visible to show that the reader is part of the station gate and firmly planted on the floor.
+The man gives a faint squint and a tiny sleepy frown as he senses the reader beside him. Near 5.2 seconds, his hand rests beside the pillow holding the card, ready to move.
+5.5-6.7 seconds — Prepare the tap:
+Settle into a close side composition that keeps four elements together: the man's face, the white pillow, his card hand, and the green reader set into the upright steel gate. His eyelids crack open just enough to aim; his eyebrows draw together slightly, then relax. He extends the hand resting near the pillow, keeping his elbow and forearm low over the mattress. His wrist lifts only a little, bringing the small card toward the reader at screen-right. His cheek remains on the pillow and his body stays curled beneath the duvet. The camera matches the bed's forward movement and inches closer to the card and reader without losing the face or the vertical metal post.
+6.7-7.4 seconds — Single decisive payment:
+Show one clear fare payment. The card touches the green-lit contactless surface on the gate housing and holds there for a short beat. The reader brightens in confirmation, and the gate panel opens to give the approaching bed a clear passage. Keep the close framing wide enough to read the entire causal chain in one view: card in hand, contact with a mounted reader, reader response, gate opening, and the man's face still pressed into the pillow.
+7.4-8.7 seconds — Return to sleep:
+Continue past the reader in the same flowing shot. The man bends his elbow, brings the card back to the mattress near his pillow, and relaxes his hand under the gray duvet. His eyelids settle shut, the small crease in his brow smooths out, and his mouth returns to a slack sleepy expression. The camera glides with the bed, allowing the reader to leave the close composition while the metal gate body remains briefly visible beside and behind him.
+8.7-10.5 seconds — Reveal the bed again:
+Widen gradually as the camera shifts backward alongside the rolling bed. Show more of the gray duvet, pale-oak side rail, front and rear casters, and the black briefcase reentering the frame toward the foot. The steel gate reader is now behind the pillow end; its changed position clearly shows that the bed has passed the payment point. The bed keeps a steady heading through the open passage while commuters continue through their own lanes at faster speed.
+10.5-12.8 seconds — Arc around the foot:
+Let the moving camera arc gently around the foot of the bed while still following its travel. Change from the side-rear angle into a low, nearly centered view directly behind the footboard. Frame the two fixed steel gate housings as vertical borders to the lane, one on each side of the bed. The head and front casters lead through first, followed visibly by the side rails, the footboard, the briefcase above it, and finally the rear casters. Follow far enough to show the entire wooden frame and all wheels clearing the passage.
+12.8-15.0 seconds — Final trailing view:
+Settle behind the bed in a more symmetrical, slightly wider trailing view. The gate housings slide behind the camera's field of view as the complete bed rolls out into the station hall. Center the bed and let it gradually appear smaller as it travels farther ahead, with the black briefcase still lying on the duvet. Follow gently at a slower pace than the bed, opening up the space around it for the final image.
+VISUAL AND MOTION RULES:
+Photorealistic live-action subway comedy, natural overhead station lighting, restrained gray-blue morning colors, subtle reflections on brushed metal, realistic tile and wood materials, and clean detail on the man's face and card during payment. Use realistic motion blur only on passing commuters. Maintain one continuous physical space and one uninterrupted camera move. The bed must remain a single coherent object, all four wheels must stay attached, and the man's body, wardrobe, pillow, duvet, briefcase, and card must remain consistent.
+No cuts, hidden transitions, sudden camera jumps, teleportation, impossible bed movement, floating reader, detached gate parts, or unexplained changes in the station layout. The bed should move through the gate in the same direction established at the beginning, and the payment must happen before the bed passes the reader.
+AUDIO:
+Generate authentic synchronized subway ambience only: shoe steps, faint rolling casters, distant station hum, subtle fabric and mattress movement, the automatic gate mechanism, and one single soft contactless confirmation beep. No spoken lines, no narration, no subtitles, no lyrics, and no music bed.
+NEGATIVE PROMPT:
+Cuts, montage editing, hidden cuts, camera teleportation, discontinuous tracking shot, impossible camera path, floating fare reader, detached gate housing, missing gate panel, extra fare readers, broken gate geometry, bed levitating, bed sliding without wheel rotation, missing caster, extra caster, warped wood frame, changing mattress, changing duvet, duplicate briefcase, missing briefcase, extra beds, extra protagonist, duplicate man, face drift, changed hair, changed shirt, tightened tie, standing man, sitting man, man lifting his head, man changing sides, card disappearing, card failing to touch reader, gate opening before payment, payment without mounted reader, hand deformation, extra fingers, extra limbs, broken pillow, duplicated commuters, cloned commuters, crowd blocking the payment, empty station, unreadable or nonsensical route signs, logos, branded clothing, captions, subtitles, watermarks, neon lighting, sci-fi gate, futuristic scanner, game-rendered look, harsh horror lighting, excessive motion blur, shaky footage, low resolution, blurry face, distorted anatomy, unrealistic reflections, loud beep, dialogue, narration, music, BGM, singing, sound mismatch.
+Final Summary
+Create one complete 15-second horizontal 16:9 photorealistic live-action comedy video at 30 fps. Use Reference Video only for natural low-camera tracking, motion continuity, and comic timing. The written prompt controls the single New York-style subway concourse, the exhausted American office worker, the pale-oak wheeled bed, the mounted green contactless reader, the one decisive card tap, the opening gate, and the final trailing shot.
+The finished video should make the joke legible without dialogue: the man is too tired to leave his bed, but still follows the normal fare-payment ritual. Preserve the causal order, stable props, continuous camera path, realistic station materials, ordinary commuter behavior, one soft confirmation beep, and a clean final image of the bed rolling away into the concourse.
+`,
+    },
+  },
+  // Pollo 官方博客 Viral Video Breakdown 页（Clara Hayes 撰，2026-09-28 更新）；文生视频，提示词为 Pollo 页面给出的版本（含页面自带的 Final Summary 段），原作者和原帖页面未注明；文末推广段未收录
+  {
+    id: "pollo-classroom-cannon-study-hall-teacher",
+    title: "自习课教室里放大炮 · 老师只管让你收手机",
+    subtitle: "Pollo 官方示例 · 文生视频 · 15秒 · 16:9",
+    description:
+      "Pollo 官方示例：纯文字生成，学生手机偷拍视角，教室里大炮朝窗外开一炮，老师只管收手机。",
+    video: "/tutorials/pollo-classroom-cannon-study-hall-teacher/demo-web.mp4",
+    poster: "/tutorials/pollo-classroom-cannon-study-hall-teacher/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "荒诞写实",
+    shots: 6,
+    references: 0,
+    model: "未标明（Pollo 页面列 Seedance 2.5 / 2.0、MiniMax H3、Wan 3.0 可选）",
+    style: "写实 · 学生第一人称固定手持 · 美式高中教室 · 冷面喜剧",
+    aspectRatio: "16/9",
+    sourceUrl: "https://pollo.ai/hub/classroom-cannon-study-hall-absurdist-reference-video-breakdown",
+    sourceAuthor: "Pollo AI 官方博客（Clara Hayes）",
+    sourcePlatform: "Pollo",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "安静自习 + 窗边大炮 → 女生开一炮 → 窗帘翻飞大家继续写 → 老师转身训话 → 走过来发现手机 → 手掌盖住镜头",
+      opening: "第 0 秒后排学生视角：教室里学生背对镜头低头写作业，右边窗前架着一门巨大的炮，炮管伸出窗外，老师在前面黑板写字。",
+      openingAt: 0,
+      beats: [
+        { title: "怎么开炮", text: "约 3.9s 坐在炮旁边的长发女生开一炮，窗外一闪、窗帘被气浪掀起，画面跟着一震；之后大多数学生只抬了下头又接着写。", at: 3.9 },
+        { title: "老师怎么反应", text: "约 8s 老师转身说「This is study hall. Keep it quiet.」，然后沿着过道往后走。", at: 8 },
+        { title: "结尾怎么收", text: "约 11–14s 她盯住镜头说「And you—why is your phone out? Put it away.」；约 14.5s 伸手用手掌盖住镜头，画面变暗结束。", at: 11 },
+      ],
+      copyThis: "荒诞感来自「所有人都当没事」：炮只开一次、老师只在意吵和手机。提示词花最大篇幅锁死大炮的空间关系（炮尾在屋里、炮管穿过开着的窗、炮口在外面），防止模型把炮对着人。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 一镜到底",
+      "16:9 画幅",
+      "文生视频 · 无参考图",
+      "两句英文台词",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：选文生视频",
+        description:
+          "这是 Pollo 官方博客的示例页，不是个人创作者帖。页面写的是文生视频流程：不用上传任何图片，直接粘贴提示词、设时长和画幅。提示词最后的 Final Summary 提到「Reference Video 只参考机位和节奏」，但页面没有提供这段参考视频。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "页面说可选 Seedance 2.5、Seedance 2.0、MiniMax H3 或 Wan 3.0，没写成片用的是哪个（视频文件名是 Text_to_video_2026_09_23，看起来是 Pollo 文生视频直接导出的）。成片 1280×720、24fps、约 15.1 秒，一镜到底，没看到水印。声音和提示词基本一致：一声炮响，老师两句英文台词都说了，没有配乐（语音识别判断，未人工试听）。与提示词不符：学生穿的是灰色连帽衫，不是提示词写的私校制服（白衬衫、格子裙）；开炮在约 3.9s，比提示词写的 4.6s 早。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴。结构依次是：总要求、机位和教室布置、学生和制服、唯一的老师、大炮的空间关系和开炮女生，然后按「0.0-4.5 seconds」这样的时间段写六段连续镜头，最后是表演与声音、画面规则、负面提示词和页面自带的 Final Summary。这版提示词是 Pollo 页面给的，不一定是原作者原文。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–3.9s 后排学生视角：学生背对镜头写作业，老师在黑板写字，窗边女生调整大炮，炮管伸出窗外。" },
+      { number: 2, description: "3.9–5s 女生开一炮，窗外一闪，窗帘被掀起，画面一震。" },
+      { number: 3, description: "5–8s 窗帘慢慢落下，几个学生抬头又接着写，老师停笔转身。" },
+      { number: 4, description: "8–10.5s 老师说「This is study hall. Keep it quiet.」，从黑板前走进过道。" },
+      { number: 5, description: "10.5–14s 老师越走越近，盯住镜头说「And you—why is your phone out? Put it away.」。" },
+      { number: 6, description: "14–15s 她伸出手掌盖住镜头，画面变暗结束。" },
+    ],
+    constraints:
+      "一镜到底、机位固定不换角度；只有一个老师，外形不变；炮尾在屋里、炮管穿过开着的窗、炮口在外面，永远不对着人；只开一炮、屋里不起火；只有老师两句台词，不要音乐和字幕。这是平台官方示例，纯文生视频；内容是教室里开炮，上线前请确认题材可以接受。",
+    video_prompt: {
+      title: "Classroom Cannon Study Hall Absurdist",
+      subtitle: "Pollo 官方博客页英文完整视频提示词（含 Final Summary）· 文生视频",
+      content: `PROMPT HEADER:
+Create a 15-second horizontal 16:9 photorealistic live-action absurdist video in one uninterrupted first-person take at 30 fps. The viewer is a student quietly filming on a phone from a seated position near the back of an American high-school classroom with a practical private-school dress code. Keep a fixed, slightly wide-angle composition with only small natural handheld tremors. Rows of desks fill the left and center, all facing the distant chalkboard at the front, and an enormous wheeled cannon occupies the right foreground beside tall windows. No cuts, zooms, reverse angles, or time jumps. Everyone treats the absurd sight as routine.
+CAMERA AND CLASSROOM LAYOUT:
+Build a recognizable American classroom with painted cinder-block walls, fluorescent ceiling lights, a wall clock over a large green chalkboard, a side bulletin board with English class notices, a U.S. map, slightly worn tile flooring, metal-framed student desks, open textbooks, notebooks, pencils, and piles of classwork.
+Tall white-framed windows run along the right wall, with pale floor-length curtains. Outside is an empty American campus athletic field and a low brick school building with distant trees. Keep the exterior sunlit and clearly visible through the windows.
+Camera placement and seating direction are nonnegotiable: the lens is BEHIND the ordinary students and looks toward the front wall. Every ordinary desk has its writing edge and chair oriented toward the chalkboard, with students facing away from the camera. The lens mostly sees backs of heads, shoulders, and uniform jackets. A small side profile may appear when someone turns.
+Never show a row of ties, chests, and full faces facing the lens while the teacher writes behind those students. Only the girl operating the cannon is seated sideways by the right window. The nearest student on the left bends over a workbook.
+STUDENTS AND UNIFORM:
+All people have distinct Western faces and stable identities. The older teenage students wear one coherent contemporary American private-school uniform: white or pale-blue polo or collared shirts, charcoal chinos, knee-length navy-and-gray plaid skirts, and optional navy sweaters or blazers with a modest school crest. A few students wear loosened navy ties; most do not. The clothing is practical and casually worn. The unseen operator filming the scene wears the same uniform.
+Keep all ordinary students at their assigned desks. They write, turn pages, or make small natural movements while facing the chalkboard. No ordinary student enters the aisle before the cannon fires.
+TEACHER CONTINUITY:
+There is exactly ONE teacher. She is an adult Western woman with a short dark-brown bob, a plain white short-sleeved button-down blouse, and dark trousers. At the beginning she stands at the distant chalkboard with her back or side to the camera and writes with chalk.
+She is the SAME woman who later leaves the board, walks down the aisle, speaks to the class, notices the phone, and confronts the student filming. Keep her appearance consistent and never add a second adult. She writes, pauses, scolds the class, then notices the phone.
+CANNON GEOMETRY AND OPERATOR:
+Lock the cannon geometry before any action begins. The huge dark-steel carriage, two thick black rubber tires with solid enclosed hubs, rear breech, and controls are INSIDE the classroom in the lower-right foreground.
+A long pale-gray metal barrel runs diagonally UP AND TO THE RIGHT from that breech, crosses a visibly open section of the right-side window, and continues OUTSIDE toward the empty field. Its muzzle lies beyond the outer wall near the upper-right edge of the frame. Show one continuous, rigid barrel from interior breech to exterior muzzle in every frame, including during recoil.
+This exact relationship is the most important spatial constraint: breech inside, barrel through the open right window, muzzle outside. Its line of fire points away from the classroom. It never angles left across the desks or toward the teacher, students, or camera. It never ends inside the room or passes through closed glass. It is a modern field gun with broad tires and enclosed hubs, never an antique spoked-wheel cannon. Never shorten or reverse the barrel.
+A Western teenage girl with long dark hair sits on a low seat at the rear-left side of the cannon, between it and the nearest desks. She is shown in profile, with her hands near the rear controls, wearing the same school's white shirt, navy uniform layer, and plaid skirt. She stays seated in this position throughout. Before firing she makes small precise adjustments; afterward she remains composed. She never leaves her seat.
+CONTINUOUS SHOT PLAN:
+0.0-4.5 seconds — Quiet study hall:
+Hold the established wide first-person view. At the front, the only teacher is still writing on the chalkboard, her chalk hand moving in short strokes. She may reach higher but does not turn, speak, or leave. Students, viewed from behind, lean over their books, write, and turn pages while facing the chalkboard. The girl beside the cannon adjusts its rear mechanism and settles her hands. The full barrel remains unmistakably aimed out of the right window. No one enters the aisle or approaches the lens before the shot.
+4.6-4.9 seconds — One outward discharge:
+The seated girl fires the cannon exactly ONCE, outward toward the unoccupied field. Her small control movement leads to one abrupt report. Show a split-second warm flash at or just beyond the EXTERIOR muzzle, a brief recoil and vibration through the fixed carriage, then a restrained puff of pale smoke at the open window.
+The nearby long curtain snaps upward and inward, twists in the moving air, and begins to settle. Normal daylight returns immediately. Both solid-hub rubber wheels stay planted and the long barrel retains its rightward outdoor direction. Show no indoor fire, shown impact, or second discharge.
+5.0-8.8 seconds — Deadpan aftermath:
+Show the aftermath of that single shot. The curtain continues to sway and gradually falls back. Thin haze drifts along the right windows and starts to disperse. Its continuing motion must not read as another cannon shot.
+A few students briefly lift their heads or shift in their seats, while most keep working and quickly resume writing. The girl at the controls stays calmly seated. At the far front, the teacher stops writing, lowers her chalk hand, and turns from the board after hearing the report. She remains near the front during this immediate aftermath and is annoyed by the noise. The room stays fixed.
+8.8-10.5 seconds — Teacher's first reprimand:
+The SAME teacher faces the room and says in natural American English, firmly and matter-of-factly: “This is study hall. Keep it quiet.” She glances over the desks, then steps away from the chalkboard into the center aisle.
+Start her walk visibly at the front. She must gradually grow larger as she passes successive desk rows. Show a continuous normal-paced walk from the front. The operator remains seated and the barrel remains outside.
+10.5-13.9 seconds — She notices the phone:
+The teacher walks farther down the same aisle, with desks on her left and the cannon operator near her right as she approaches the phone viewpoint. Her gaze first scans the room and then fixes directly on the lens when she notices the unseen student recording.
+Her brows tighten slightly. Her face changes from general irritation about the noise to direct disapproval of the phone. Address only the person behind the camera, not the girl at the cannon. Say once, clearly and with natural lip synchronization: “And you—why is your phone out? Put it away.” The unseen student does not reply; the phone itself need not appear. Keep her walk continuous from the chalkboard into the foreground.
+13.9-15.0 seconds — Hand covers the lens:
+Now close enough for her face and upper body to be clearly recognized, the teacher leans toward the lens, raises one hand from her side in a visible motion, and extends her open palm toward the student's phone. Her face remains briefly visible behind the growing hand. The hand fills the frame naturally as it reaches the lens, and the image darkens because the palm physically covers it.
+Finish there. This is the only full lens obstruction in the video: no early hand, no disembodied hand, and no hidden cut behind it. The camera may shift a fraction in the student's grip at the final touch but never changes viewpoint.
+PERFORMANCE, AUDIO, AND TONE:
+Keep the pacing fluid rather than freezing each time interval into a separate shot. The teacher's chalk writing leads into her pause, turn, spoken warning, uninterrupted walk, phone reprimand, and final reach. The girl's adjustment leads into one outward cannon discharge, then one continuous curtain-and-haze aftermath.
+Use modest classroom ambience, chalk and pencil sounds, one short heavy report, moving fabric, footsteps, and only the teacher's two short English lines. Keep both lines intelligible. No other dialogue, music, captions, titles, or logos.
+The final tone is deadpan: the teacher objects to noise and a phone while the enormous cannon remains beside students who are quietly doing their work. Preserve all character identities, uniforms, props, and spatial relationships from the first frame to the last.
+VISUAL AND CONTINUITY RULES:
+Photorealistic live-action classroom comedy with natural daylight from the right, practical fluorescent light, restrained handheld motion, realistic smoke and fabric movement, stable faces, stable uniforms, and physically coherent props. Keep the classroom architecture fixed. Keep the cannon barrel rigid and continuous from breech to exterior muzzle. Keep the window section open where the barrel passes through. Keep the cannon operator seated and the teacher's walk physically continuous.
+Do not turn the scene into an action film, war scene, horror scene, or video game. The absurdity comes from the students and teacher treating the cannon as ordinary while reacting only to noise and phone use.
+NEGATIVE PROMPT:
+Second teacher, extra adults, duplicate teacher, teacher identity drift, teacher teleportation, teacher starting near the camera, teacher appearing without walking, teacher addressing the cannon operator, teacher facing the wrong direction, students facing the camera at ordinary desks, rows of full faces toward the lens, desks facing away from the chalkboard, reversed classroom layout, cannon aimed left, cannon aimed at people, cannon aimed at camera, barrel ending inside classroom, shortened barrel, reversed barrel, broken barrel, barrel through closed glass, missing open window, floating cannon, antique spoked wheels, missing tires, detached carriage, changing cannon geometry, cannon recoil changing its direction, second firing, repeated muzzle flash, indoor muzzle flash, shown impact, fire inside classroom, explosion, dangerous debris, cannon operator standing, operator changing seats, operator leaving frame, students abandoning desks, extra cannon, duplicate students, cloned faces, unstable identities, changed uniforms, missing chalkboard, missing windows, missing curtains, dark exterior, unreadable classroom signs, readable brand names, captions, subtitles, titles, logos, watermark, music, extra dialogue, missing dialogue, bad lip synchronization, early hand obstruction, disembodied hand, hidden cut behind hand, zoom, reverse angle, time jump, camera viewpoint change, excessive camera shake, excessive smoke, excessive motion blur, horror lighting, war-movie tone, videogame render, low resolution, blurry faces, distorted hands, extra fingers, extra limbs, broken anatomy, unnatural curtain motion, sound mismatch.
+Final Summary
+Create one complete 15-second horizontal 16:9 photorealistic live-action absurdist classroom video at 30 fps. Use Reference Video only for fixed first-person framing, subtle handheld movement, natural pacing, and deadpan comedy timing. The written prompt controls the classroom, one consistent teacher, uniformed students viewed from behind, the seated cannon operator, the cannon's interior-to-exterior geometry, one outward shot, the teacher's two lines, her continuous walk, and the final palm covering the lens.
+The finished video should make the joke legible without changing the room's ordinary routine: a cannon fires outside the classroom, but the teacher's priorities are keeping study hall quiet and stopping the student from filming. Preserve the spatial logic, physical continuity, two short English lines, one heavy report, restrained aftermath, and final lens obstruction.
+`,
+    },
+  },
+  // Pollo 官方博客 Viral Video Breakdown 页（Clara Hayes 撰，2026-09-29 更新）；页面自称提示词是「entirely original」改写版，页面视频不是用这份提示词生成的；原作者和原视频页面未注明；文末推广段未收录
+  {
+    id: "pollo-live-action-fantasy-virtual-world-saga",
+    title: "真人奇幻虚拟世界史诗 · 戴头盔进入浮空城到最终决战",
+    subtitle: "Pollo 官方示例 · 4分08秒 · 16:9",
+    description:
+      "Pollo 官方示例：戴上头盔进入浮空中世纪城，组队攻略、森林小屋、红衣团长决战，4 分钟真人奇幻长片。",
+    video: "/tutorials/pollo-live-action-fantasy-virtual-world-saga/demo-web.mp4",
+    poster: "/tutorials/pollo-live-action-fantasy-virtual-world-saga/poster.jpg",
+    duration: "4分08秒",
+    durationSec: 248,
+    styleLabel: "史诗写实",
+    shots: 10,
+    references: 6,
+    model: "未标明（Pollo 页面列 Seedance 2.5 / 2.0、MiniMax H3、Wan 3.0 可选）",
+    style: "真人奇幻 · 中世纪浮空城 · 冷蓝与深红 · 电影预告式快切",
+    aspectRatio: "16/9",
+    sourceUrl: "https://pollo.ai/hub/original-live-action-fantasy-virtual-world-saga-video-breakdown",
+    sourceAuthor: "Pollo AI 官方博客（Clara Hayes）",
+    sourcePlatform: "Pollo",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "卧室戴头盔 → 粒子穿越到浮空城广场 → 红色封锁警告 → 组队冒险 → 地下城攻略 → 森林小屋 → 团长现身决战 → 回到卧室",
+      opening: "第 0 秒夜里的卧室：黑发青年坐在床边，约 6s 戴上黑色头盔，约 12s 画面碎成蓝白粒子。",
+      openingAt: 0,
+      beats: [
+        { title: "怎么进入世界", text: "约 18s 他站在阳光下的浮空中世纪城广场抬头看；约 24–36s 广场上挤满人群，天空和画面变成红色，出现红色锁形警告，人群惊恐。", at: 18 },
+        { title: "中段怎么推进", text: "约 1:00 一行人列队出发；约 1:06–1:12 草原奔跑、远处浮空城；约 1:24 酒馆里出现发光的图标面板；约 1:36–2:06 昏暗地下大殿里攻略巨型怪物；约 2:12–2:36 森林小屋、两人吃饭、森林里出现一个白裙小女孩。", at: 60 },
+        { title: "结尾怎么收", text: "约 2:54–3:12 红衣银发团长张开金色六边形屏障，红色大殿里决战；约 3:18–3:24 夕阳下两人牵手、拥抱；约 3:42 再次碎成粒子，约 3:48 又是戴头盔的特写，3:54 起回到卧室收尾。", at: 174 },
+      ],
+      copyThis: "提示词把 4 分钟拆成 14 段、每段写明时间和要 @ 哪几张角色图；同一个主角的新手装和进阶装做成两张图（Character1 / Character3），并在总开头写死「是同一个人」。",
+      approx: true,
+    },
+    tags: [
+      "4分08秒 · 14 段",
+      "16:9 画幅",
+      "参考图 + 参考视频",
+      "6 张角色参考图",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：生成 6 张角色参考图",
+        description:
+          "这是 Pollo 官方博客的示例页，不是个人创作者帖。页面第一步用 GPT Image 2.5 按 6 段提示词生成 6 张角色图：新手主角、红衣团长、进阶主角（和新手主角是同一个人）、女剑士、四人辅助小队、女枪兵。每张图和它的提示词见下方参考图卡片。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "页面说可选 Seedance 2.5、Seedance 2.0、MiniMax H3 或 Wan 3.0，没写成片用的是哪个。页面视频 854×480、30fps、完整 4 分 08 秒，没看到水印，这里保留完整长度（约 14.7MB）。声音有配乐和日语对白，比如「この世界からログアウトすることはできない」「ここでの死は現実の死だ」（语音识别判断，未人工试听）。注意：页面说下方提示词是「完全原创」的改写版，每段都挂着 @Reference Video，页面视频并不是用这份提示词生成的；画面整体很像《刀剑神域》真人版（头盔登录、无法登出），怪物、段落顺序和提示词也对不上，比如提示词要求尾声不戴头盔，视频约 3:48 仍有头盔特写。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "按页面做法，上传角色图后选参考图生视频，把下方英文提示词逐段使用。结构依次是：GLOBAL PROMPT HEADER（画幅、画风、谁和谁是同一人、禁止项），然后是 CLIP 01–14，每段写时间段、要 @ 的角色和 @Reference Video、以及这段的剧情，最后是全局负面提示词和页面自带的 Final Summary。页面没有提供那段参考视频。这是 Pollo 给的改写版提示词，不是生成这条视频的那份。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-pollo-saga-01",
+        number: "1",
+        title: "@Character1 · 新手主角",
+        subtitle: "Pollo 页面给的生图结果（GPT Image 2.5）",
+        image: "/tutorials/pollo-live-action-fantasy-virtual-world-saga/refs/01-character1-beginner-hero.jpg",
+        prompt: "Create a premium photorealistic live-action Japanese male fantasy character reference. One Japanese man, age 20, slim athletic build, pale warm skin, clean-shaven youthful angular face, calm dark eyes, layered medium-length black hair framing the forehead. Full-body neutral three-quarter standing pose. He wears a lightly worn beginner adventurer outfit: charcoal linen tunic under a short dark-gray fitted outer jacket, black trousers, black fingerless gloves, weathered brown leather belt, diagonal leather shoulder strap, small waist pouch, and dark leather boots. One plain realistic straight sword in a scabbard is secured across his back. Grounded medieval-European fantasy costume construction, realistic fabric and leather, practical proportions, high-end live-action film casting. No anime rendering, no cosplay look, no armor, no second sword, no interface, no action pose.",
+      },
+      {
+        id: "ref-pollo-saga-02",
+        number: "2",
+        title: "@Character2 · 红衣团长",
+        subtitle: "Pollo 页面给的生图结果（GPT Image 2.5）",
+        image: "/tutorials/pollo-live-action-fantasy-virtual-world-saga/refs/02-character2-crimson-commander.jpg",
+        prompt: "Create a premium photorealistic live-action Japanese male guild commander character reference. One Japanese man in his late forties, tall and imposing, lean powerful build, stern unreadable face, cold gray eyes, silver-gray hair swept straight back. Full-body neutral three-quarter standing pose. He wears sophisticated deep-crimson and brushed-silver articulated plate armor over dark-red leather underlayers, a long off-white cape, and reinforced armored boots. He carries exactly one straight sword in his right hand and one large angular rectangular shield in his left hand. The shield is white, crimson, and worn metal with one original abstract geometric sunburst emblem only; no letters, cross marks, official insignia, or copied symbols. Grounded medieval-European fantasy design, physically plausible armor joints, premium film costume construction, realistic steel, leather, and fabric. No magic glow, no battle scene, no round shield, no extra weapon.",
+      },
+      {
+        id: "ref-pollo-saga-03",
+        number: "3",
+        title: "@Character3 · 进阶主角（同一人）",
+        subtitle: "Pollo 页面给的生图结果（GPT Image 2.5）",
+        image: "/tutorials/pollo-live-action-fantasy-virtual-world-saga/refs/03-character3-advanced-hero.jpg",
+        prompt: "Create a premium photorealistic live-action Japanese male fantasy character reference. This must be exactly the SAME person as Character1: identical face, layered black hair, dark eyes, age, skin tone, and slim athletic body proportions. Full-body neutral three-quarter standing pose. Upgrade him into an advanced swordsman wearing an elegant long charcoal-black combat coat with restrained silver-gray piping, layered dark shirt, black fitted trousers, black gloves, and black leather boots. A crossed back harness holds exactly two distinct realistic swords: one dark steel sword and one pale silver sword, both fully sheathed. The design is refined but grounded, with tailored wool, leather straps, subtle protective quilting, and practical combat movement. High-end photorealistic live-action fantasy casting, no anime rendering, no superhero silhouette, no action pose, no third sword, no duplicate face, no white hair.",
+      },
+      {
+        id: "ref-pollo-saga-04",
+        number: "4",
+        title: "@Character4 · 白红女剑士",
+        subtitle: "Pollo 页面给的生图结果（GPT Image 2.5）",
+        image: "/tutorials/pollo-live-action-fantasy-virtual-world-saga/refs/04-character4-fencer.jpg",
+        prompt: "Create a premium photorealistic live-action Japanese female fantasy character reference. One Japanese woman, age 20, slender athletic build, fair warm skin, expressive hazel-brown eyes, very long chestnut hair with two thin side braids and soft face-framing strands. Full-body neutral three-quarter standing pose. She wears elegant white-and-crimson fitted tunic armor with small brushed-silver shoulder and forearm plates, white split skirt panels over fitted charcoal leggings, brown leather belt, dark-red gloves, and brown ankle boots. She holds exactly one narrow silver rapier with an ornate but practical hand guard. The outfit must look combat-ready, tailored, and physically plausible rather than decorative cosplay. High-end live-action Japanese fantasy casting, realistic skin, hair, fabric, leather, and metal. No second sword, no shield, no cape, no magical glow, no anime style.",
+      },
+      {
+        id: "ref-pollo-saga-05",
+        number: "5",
+        title: "@Character5 · 四人辅助小队",
+        subtitle: "Pollo 页面给的生图结果（GPT Image 2.5），原图 3840×2160",
+        image: "/tutorials/pollo-live-action-fantasy-virtual-world-saga/refs/05-character5-party.jpg",
+        prompt: "Create a clean photorealistic live-action medieval-European fantasy party reference on a pure-white studio background. Show exactly four distinct full-body adult adventurers standing side by side with no overlap: a brown-haired male sword-and-round-shield scout in faded moss-green gear; a curly-haired male mace fighter in rust-brown leather; a tall black-haired male spear guard in muted slate-blue padded armor; and a short-haired female archer in olive-green layered clothing with a simple bow and quiver. Use n atural Japanese casting, practical worn leather, cloth, belts, boots, and non-branded gear. Each person has one clear weapon only, distinct face and silhouette, neutral pose, head-to-boots visible. This is only a general supporting-party reference; do not make any member resemble Character1, Character2, Character3, Character4, or Character6.",
+      },
+      {
+        id: "ref-pollo-saga-06",
+        number: "6",
+        title: "@Character6 · 女枪兵",
+        subtitle: "Pollo 页面给的生图结果（GPT Image 2.5）",
+        image: "/tutorials/pollo-live-action-fantasy-virtual-world-saga/refs/06-character6-lancer.jpg",
+        prompt: "Create a premium photorealistic live-action Japanese female fantasy character reference. One Japanese woman in her twenties, athletic build, warm fair skin, short layered black bob haircut, alert dark eyes, calm confident expression. Full-body neutral three-quarter standing pose. She wears blue-gray weathered leather armor over a fitted charcoal shirt, one practical brushed-steel shoulder pauldron, diagonal brown leather harness, broad utility belt with pouches, dark fitted trousers, and worn dark boots. She holds exactly one long wooden spear with a realistic steel leaf-shaped spearhead, its full length visible in frame. Grounded medieval-European adventurer design, premium film costume construction, realistic leather, steel, and fabric. No shield, no sword, no gun, no cape, no magical effects, no anime rendering, no action scene.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0:00–0:12 夜里卧室，黑发青年戴上黑色头盔。" },
+      { number: 2, description: "0:12–0:18 画面碎成蓝白粒子，穿越。" },
+      { number: 3, description: "0:18–0:42 阳光下的浮空中世纪城广场，人群聚集，天空变红、出现红色锁形警告，人群惊恐。" },
+      { number: 4, description: "0:42–1:00 人群拔剑、原野上和小怪物交手，一行人列队出发。" },
+      { number: 5, description: "1:00–1:24 草原奔跑、远处浮空城、酒馆里围桌商量。" },
+      { number: 6, description: "1:24–2:06 发光图标面板，昏暗地下大殿，队伍攻略巨型怪物。" },
+      { number: 7, description: "2:06–2:42 森林小屋、两人吃饭、森林里遇到一个白裙小女孩。" },
+      { number: 8, description: "2:42–3:12 再次战斗；红衣银发团长张开金色六边形屏障，红色大殿里决战。" },
+      { number: 9, description: "3:12–3:42 夕阳下两人牵手拥抱，红色大殿，广场，再次碎成粒子。" },
+      { number: 10, description: "3:42–4:08 戴头盔的特写，回到卧室收尾。" },
+    ],
+    constraints:
+      "Character1 和 Character3 是同一个主角的两个阶段；女剑士、团长、女枪兵各只有一个；武器数量（单剑、双剑、细剑、长枪、长方盾）全程不变；不要可读文字、字幕、logo、真实品牌或已有作品的标志。这是平台官方示例，提示词是 Pollo 的改写版，页面视频不是用它生成的。",
+    video_prompt: {
+      title: "Original Live-Action Fantasy Virtual World Saga · 14 Clips",
+      subtitle: "Pollo 官方博客页英文完整视频提示词（Pollo 自称的「原创」改写版，含 Final Summary）· 6 张角色图",
+      content: `GLOBAL PROMPT HEADER:
+Entirely original premium photorealistic live-action fantasy adventure. Cinematic horizontal 16:9, 1080p, 24 fps, restrained 35mm anamorphic camera, physically grounded action, natural volumetric light, realistic metal, stone, cloth, rain, vegetation, and skin. Character1 and Character3 are the same hero at different progression stages. Character4 remains the same fencer; Character2 is the only commander; Character6 is the only lancer. Preserve faces, hair, costumes, weapon counts, and screen direction across cuts.
+Use only original medieval-European floating cities, gothic towers, plazas, bridges, ruins, cathedrals, and forest sanctuaries. No Japanese roofs, franchise names, copied emblems, readable words, letters, numbers, subtitles, captions, logos, watermarks, modern HUD, guns, blood, gore, extra limbs, duplicated people, face drift, costume drift, morphing, or teleportation. Any magical panel is translucent, abstract, icon-only, and unreadable. Use original score and synchronized environmental sound; spoken lines are Japanese with no subtitles.
+CLIP 01 - 00:00-00:18 - ENTERING THE WORLD: Attach @Character1 and @Reference Video. In a modern bedroom at night, use Character1's face in a charcoal T-shirt as he puts on a plain black headset. Cut through blue-white particles to a sunlit floating medieval plaza, where he materializes in the exact Character1 beginner gear with one sword and looks upward in wonder.
+CLIP 02 - 00:18-00:34 - STARTING CITY LOCKDOWN: Attach @Character1, @Character5, and @Reference Video. Character1 stands among a controlled crowd in the same plaza. Ice-blue icon-only panels become muted amber-red warning shapes; no text. Use a close reaction, a high aerial, and a wide crowd exit as he grips his sword strap and chooses a direction.
+CLIP 03 - 00:34-00:50 - FIRST ALLIES: Attach @Character1, @Character4, @Character6, @Character5, and @Reference Video. At a rain-darkened gate, Character1 meets Character4 and Character6. A small wooden training construct attacks: Character6 braces her spear, Character4 parries once, Character1 destroys it with one measured sword strike. They agree in short Japanese lines to travel together and cross the bridge.
+CLIP 04 - 00:50-01:08 - PROGRESSION: Attach @Character1, @Character4, @Character6, @Character5, and @Reference Video. Use five clean cuts: wet bridge, stone stair, ruined-courtyard training, campfire rest, and dawn outpost. Character1 has one sword, Character4 one rapier, and Character6 one spear throughout. End on the group approaching a blue-lit ruin.
+CLIP 05 - 01:08-01:26 - BLUE RUIN RAID: Attach @Character1, @Character4, @Character6, @Character5, and @Reference Video. In a cold-blue ruined cathedral, one horned obsidian mineral guardian drags a stone cleaver toward the expedition. Character1 protects the women behind a pillar, opens one icon-only panel, selects a second sword, then draws two distinct swords. Character4 warns him; he answers that he will hold the line.
+CLIP 06 - 01:26-01:46 - DUAL-BLADE VICTORY: Attach @Character1, @Character4, @Character6, and @Reference Video. Six readable combat cuts: evade, crossed-blade block, Character6 spear brace, Character4 ankle strike, frontal sprint, then a final X-shaped impact into the guardian's chest fracture. It shatters into blue-white mineral particles; Character4 catches the exhausted hero. Keep both swords distinct.
+CLIP 07 - 01:46-02:04 - FOREST SANCTUARY: Attach @Character3, @Character4, and @Reference Video. In a quiet lake forest with a small timber-and-stone cottage, use the advanced Character3 coat but no swords. Character4 wears an original cream blouse and muted rose skirt. Aerial, hand-holding walk, two bowls on a table, then a sunset dock embrace. No other people.
+CLIP 08 - 02:04-02:22 - RETURN TO THE FRONT: Attach @Character3, @Character4, @Character6, @Character5, and @Reference Video. Hard cut to a stormy high-level bridge. Character3 has exactly two sheathed swords, Character4 is armored again, and Character6 carries one spear. Use a low approach, floating-ruin aerial, silent command gesture, icon-only two-sword panel, and crimson tower doors opening.
+CLIP 09 - 02:22-02:40 - COMMANDER REVEAL: Attach @Character2, @Character3, @Character4, @Character6, and @Reference Video. In a cold upper hall, Character3 makes one controlled sword thrust toward Character2. A thin amber geometric barrier stops it before armor. He asks in Japanese whether the commander made this world; the commander confirms. Blue light changes to crimson and the hall becomes a red gothic cathedral. End with the rectangular shield on the floor.
+CLIP 10 - 02:40-02:58 - FIRST DUEL: Attach @Character2, @Character3, and @Reference Video. No other people may appear. Make at least ten fast readable shots of dual-sword attacks, shield parries, footwork, sparks, a low slide, and a weapon lock. Character2's shield stays large and rectangular. End with one shield impact knocking Character3 down; Character2 raises his sword for a finishing strike. No blood.
+CLIP 11 - 02:58-03:18 - INTERCEPTION: Attach @Character2, @Character3, @Character4, and @Reference Video. Start behind fallen Character3's shoulder. Character2 swings downward; only now does Character4 enter, block the attack with rapier and body, then look back and tell him to live. No blood or wound. Her rapier drops and she dissolves fully into pale-gray ash in the crimson wind. Character3 remains staring at the empty space.
+CLIP 12 - 03:18-03:38 - BREAK THE SHIELD: Attach @Character2, @Character3, and @Reference Video. Only the two men remain. Character3 rises, gathers physical momentum, and drives one full-body sword thrust into the center of the rectangular shield, never the commander. Sparks and compressed air burst outward; the shield flies sideways while Character3 keeps his sword. Character2 remains standing but exposed.
+CLIP 13 - 03:38-03:54 - WORLD RELEASE: Attach @Character2, @Character3, and @Reference Video. In one final grounded exchange, Character3 strikes the commander's chest plate without blood. Character2 says in Japanese that this is the end, then dissolves into crimson-gold polygons. The cathedral washes to white. Hard cut to a people-free aerial of an original European floating fortress dissolving into gold-white particles over a sunset cloud ocean.
+CLIP 14 - 03:54-04:08 - EPILOGUE: Attach @Character1, @Character4, and @Reference Video. In a quiet modern bedroom at dawn, use only their faces in simple contemporary clothes. They sit by an open window and join hands. Finish on clouds clearing over an ordinary sunlit landscape. No headset, fantasy prop, title, or text.
+GLOBAL NEGATIVE PROMPT: White studio background, character sheet, literal source frame, existing franchise content, copied symbol, readable interface, captions, subtitles, logo, watermark, extra principal, missing principal, duplicate character, identity swap, Character1 and Character3 treated as different people, changed face, changed hair, changed costume, extra sword, missing sword, malformed weapon, round shield, missing shield, Character4 visible during Clip 10, Character4 surviving Clip 11, commander defeated before Clip 13, floating weapon, energy beam, impossible stunt, gore, corpse, text, low resolution, distorted hands, extra fingers, extra limbs, audio mismatch, narration, lyrics, title card.
+Final Summary
+Create fourteen consecutive original clips totaling about 4 minutes and 8 seconds. Character1 and Character3 are one hero in beginner and advanced gear; Character4 is the recurring fencer; Character2 is the only crimson commander; Character6 is the supporting lancer. Use the reference video only for broad visual rhythm and motion, while this prompt controls the full original story and continuity.
+`,
+    },
+  },
+  // Pollo 官方博客 Viral Video Breakdown 页（页面标题「Two Characters Rocking Music Video」，Clara Hayes 撰，2026-09-23 更新）；提示词为 Pollo 页面给出的版本（含 Final Summary）；源视频和两张角色图来自页面；文末推广段未收录
+  {
+    id: "pollo-two-characters-singing-performer-replacement",
+    title: "两人唱歌片段换角 · 骷髅面罩特种兵和灰绿外星人",
+    subtitle: "Pollo 官方示例 · 视频换人 · 30秒 · 16:9",
+    description:
+      "Pollo 官方示例：上传一段两人唱歌的视频和两张角色图，把左右两位演员换成特种兵和外星人。",
+    video: "/tutorials/pollo-two-characters-singing-performer-replacement/demo-web.mp4",
+    poster: "/tutorials/pollo-two-characters-singing-performer-replacement/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "真人换装",
+    shots: 5,
+    references: 2,
+    model: "未标明（Pollo 页面列 Seedance 2.5 / 2.0、MiniMax H3、Wan 3.0 可选）",
+    style: "视频换人 · 橙色摄影棚 · 保留原片机位剪辑",
+    aspectRatio: "16/9",
+    sourceUrl: "https://pollo.ai/hub/original-character-singing-video-editing-breakdown",
+    sourceAuthor: "Pollo AI 官方博客（Clara Hayes）",
+    sourcePlatform: "Pollo",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["变装·换装", "角色表演"],
+    hook: {
+      structure: "橙色棚里两人并排近景唱歌 → 手势和转身 → 约 18.5s 切全景",
+      opening: "第 0 秒橙色背景近景：左边是戴骷髅面罩和头盔的特种兵，右边是灰绿色外星人，头顶吊着麦克风，外星人朝特种兵比手势。",
+      openingAt: 0,
+      beats: [
+        { title: "中段怎么推进", text: "约 4–16s 两人随音乐摆动、比手势，外星人一度转身背对镜头，特种兵抬手指点；动作和源视频里两位演员一一对应。", at: 4 },
+        { title: "结尾怎么收", text: "约 18.5s 切到全景，两人站在橙色棚里，头顶的麦克风吊杆露出来，继续随音乐动作到结尾。", at: 18.5 },
+      ],
+      copyThis: "提示词先写清楚谁是母版：源视频决定动作、机位、剪辑、背景和声音，两张图只管长相；再按「开场时站左边 / 右边」把角色 A、B 对应到原来的两个人，并要求交叉走位时按运动轨迹跟踪、不要换人。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 视频换人",
+      "16:9 画幅",
+      "源视频 + 2 张角色图",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备源视频和两张角色图",
+        description:
+          "这是 Pollo 官方博客的示例页，不是个人创作者帖。页面给了一段源视频（上方可播放，1280×720、24fps、约 29 秒，文件里没有音轨）：两位真人演员在橙色摄影棚里对着吊麦唱歌，从人物造型看是电影《超级名模》（Zoolander）里 Ben Stiller 和 Owen Wilson 的片段（按造型判断，未核实具体出处）。另有两张角色设定图：骷髅面罩特种兵（角色 A，对应左边的人）和灰绿色外星人（角色 B，对应右边的人），页面没给生图提示词。",
+        video: "/tutorials/pollo-two-characters-singing-performer-replacement/source-clip-ref-web.mp4",
+        poster: "/tutorials/pollo-two-characters-singing-performer-replacement/source-clip-ref-poster.jpg",
+        aspectRatio: "16/9",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "页面写的是参考视频生视频流程，可选 Seedance 2.5、Seedance 2.0、MiniMax H3 或 Wan 3.0，没写成片用的是哪个。成片 1280×720、30fps、约 29.7 秒，没看到水印；机位、剪辑、橙色背景和吊麦都跟源视频一致，只把两个人换了。成片带音轨，是一首英文说唱歌曲（语音识别低置信，未人工试听）；页面提供的源视频文件没有声音，这首歌可能是原片段配的歌，未核实。页面提示词末尾自带一段版权说明：只有拥有源视频或获得授权时才能这样用。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "上传源视频和两张角色图后选参考视频生视频，把下方英文提示词整段粘贴，@your-video 换成你的视频，@character-a / @character-b 换成你的两张图。结构依次是：总要求、源视频和参考图的分工、角色对应关系、保留原表演、镜头与剪辑、光线合成、声音、安全边界、结尾、负面提示词、版权说明和页面自带的 Final Summary。这版提示词是 Pollo 页面给的。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-pollo-singing-01",
+        number: "1",
+        title: "@character-a · 骷髅面罩特种兵",
+        subtitle: "Pollo 页面给的角色设定图（头像 + 正面 + 背面），替换源视频左边的人",
+        image: "/tutorials/pollo-two-characters-singing-performer-replacement/refs/01-character-a-skull-mask-soldier.jpg",
+        prompt: "原帖未附提示词；Pollo 页面只放了这张角色设定图，没有给生成它的提示词。",
+      },
+      {
+        id: "ref-pollo-singing-02",
+        number: "2",
+        title: "@character-b · 灰绿外星人",
+        subtitle: "Pollo 页面给的角色设定图（头像 + 正面 + 背面），替换源视频右边的人",
+        image: "/tutorials/pollo-two-characters-singing-performer-replacement/refs/02-character-b-gray-green-alien.jpg",
+        prompt: "原帖未附提示词；Pollo 页面只放了这张角色设定图，没有给生成它的提示词。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 橙色棚近景：左边骷髅面罩特种兵，右边灰绿外星人，外星人朝特种兵比手势。" },
+      { number: 2, description: "4–10s 两人随音乐摆动，外星人抬手、转向特种兵。" },
+      { number: 3, description: "10–16s 外星人一度转身背对镜头，特种兵抬手指点。" },
+      { number: 4, description: "16–18.5s 外星人抬手遮额，两人继续比划。" },
+      { number: 5, description: "18.5–29.7s 切全景：两人站在橙色棚里，头顶吊着麦克风，继续随音乐动作到结尾。" },
+    ],
+    constraints:
+      "源视频是唯一母版：动作、机位、剪辑、背景、声音都不改；两张图只管长相；全程只有两个人，交叉走位时不能互换身份；角色没有人类嘴巴，不做对口型；不加武器、字幕、旗帜、logo。这是平台官方示例；源视频是他人的影视片段，页面提示词自带版权说明。",
+    video_prompt: {
+      title: "Two-Character Singing Performance Replacement",
+      subtitle: "Pollo 官方博客页英文完整视频提示词（含版权说明和 Final Summary）· 源视频 + 2 张角色图",
+      content: `PROMPT HEADER:
+Edit the uploaded source video by replacing the two original performers with the two supplied original character references while preserving the source video as the only motion, performance, camera, editing, environment, and audio master.
+SOURCE VIDEO AND REFERENCE ROLES:
+Use @your-video as the sole editing master. Do not reinterpret, redesign, restage, extend, shorten, or replace the source performance. Use @character-a only as the global appearance reference for Character A, corresponding to the performer who starts on the left side of the original frame. Use @character-b only as the global appearance reference for Character B, corresponding to the performer who starts on the right side of the original frame.
+The two PNG reference images are appearance references only. They are not first frames, last frames, keyframes, location references, lighting references, background plates, storyboard panels, or split-screen layouts. Do not show the reference images inside the edited video.
+CHARACTER MAPPING AND IDENTITY:
+Replace the original left performer with Character A from @character-a. Preserve Character A’s recognizable skull-style face covering, helmet, dark tactical clothing, equipment layout, colors, materials, and overall silhouette as shown in the reference image. Replace the original right performer with Character B from @character-b. Preserve Character B’s recognizable pale gray-green humanoid appearance, elongated head and body proportions, surface texture, eye design, colors, and overall silhouette as shown in the reference image.
+Maintain exactly two performers throughout the full video. Keep Character A and Character B as separate identities with stable appearance, clothing or surface structure, masks or facial coverings, helmets or head shapes, colors, materials, proportions, and accessories. Do not exchange identities when they cross the frame. Track each character by the original performer’s motion path, body position, depth relationship, and temporal identity rather than by screen-left or screen-right position after the opening frame.
+PERFORMANCE PRESERVATION:
+Preserve the original singing performance from the source video. Match the original performers’ head orientation, torso movement, shoulder and chest rhythm, hand gestures, arm timing, stance, sway, and interaction timing. The replacement characters should appear to perform the same song through body language and the exact original audio timing, without inventing new choreography or extra gestures.
+Because the characters’ mouths and noses are covered or otherwise not human-readable, do not generate exposed human faces, visible human lips, realistic mouth shapes, or lip movements that conflict with the references. Express singing through head direction, subtle nods, shoulder and chest breathing, body rhythm, hand gestures, posture, and the original performance timing. Keep the replacement motion synchronized to the existing singing audio without generating new dialogue or changing the vocal track.
+CAMERA, EDITING, AND SPATIAL CONTINUITY:
+Preserve every original camera cut, shot size, framing, lens perspective, camera movement, zoom, pan, tilt, tracking move, depth of field, focus transition, editing beat, and temporal rhythm. Maintain the original orange photography-studio background, the top-hanging microphones, the performers’ relative depth, their starting left and right positions, their height relationship, the distance between them, and all original stage-space relationships.
+If the performers briefly cross, overlap, or exchange apparent screen positions, follow each original motion trajectory continuously. Do not swap Character A and Character B simply because one moves to the other side of the frame. Preserve foreground and background order, occlusion, entry and exit timing, and the exact screen-space relationship wherever the source video provides it.
+LIGHTING, COMPOSITING, AND MATERIAL INTEGRATION:
+Integrate the replacement characters naturally into the source footage. Match the original orange studio lighting, direction and softness of shadows, highlights, reflections, color temperature, exposure, contrast, perspective, depth of field, grain, compression, and motion blur. Keep character edges stable during movement and camera changes. Make the character materials respond consistently to the source lighting without introducing a new environment, a new color grade, or an unrelated cinematic style.
+Preserve realistic contact with the original stage space. Keep feet, lower bodies, microphones, shadows, occlusions, and foreground-background relationships aligned with the source video. Do not let reference-image backgrounds, borders, panels, or studio layouts appear in the result.
+AUDIO AND TIMELINE:
+Keep the original singing audio exactly aligned to the source video’s timeline, rhythm, dynamics, pauses, and volume changes. Preserve the original music, singing, room sound, microphone presence, and timing only as they exist in the uploaded source. Do not add dialogue, narration, voice-over, subtitles, captions, sound effects, music, or a new vocal performance. Do not retime the audio to fit newly invented movement; fit the character replacement to the original audio and video timing.
+SAFETY AND CONTENT BOUNDARIES:
+This is a fictional stage singing performance. Do not depict combat, attack, weapon use, ammunition, explosions, wounds, blood, gore, threats, or real military operations. The performers’ hands may perform only the original stage gestures from the source video. Do not add weapons, dangerous props, political symbols, real military organizations, national flags, brand logos, film logos, title cards, subtitles, captions, or watermarks.
+ENDING AND OUTPUT STATE:
+End exactly when the source video ends, with the same final shot, final positions, final gestures, final lighting, final audio state, and final edit timing. The result must be a clean full-screen edited singing video containing exactly two original characters, with no visible reference-image panels, no split-screen character sheet, no extra people, and no generated text.
+NEGATIVE PROMPT:
+Changing the source choreography, new choreography, new gestures, new dialogue, narration, voice-over, new music, changed singing audio, changed audio timing, lip-sync animation, exposed human face, visible human lips, human mouth, wrong mask, wrong helmet, wrong head shape, identity swap, face swap between characters, character cloning, extra performer, missing performer, performer duplication, screen-left and screen-right identity exchange, incorrect crossing trajectory, broken occlusion, changed height ratio, changed distance, changed foreground-background order, changed microphone position, missing hanging microphone, new microphone, changed orange studio background, reference-image background, white reference sheet, dark alien environment, battlefield, weapons, ammunition, combat, attack, explosion, wounds, blood, gore, threat, realistic military operation, political symbols, national flags, brand logo, film logo, subtitles, captions, title cards, watermarks, split screen, triptych, character turnaround sheet, model sheet, storyboard panels, image borders, extra props, dangerous hand actions, deformed hands, extra limbs, unstable clothing, changing armor, changing mask, changing helmet, changing colors, material flicker, texture flicker, facial drift, anatomy drift, temporal flicker, frame interpolation artifacts, frozen body, stiff motion, broken tracking, floating feet, incorrect shadows, wrong perspective, mismatched depth of field, missing motion blur, excessive motion blur, low quality, blurry character replacement.
+RIGHTS AND SOURCE-MATERIAL NOTE:
+Use the source video and its music, singing, and imagery only when you own them or have permission to edit them. If the source contains third-party material and you do not have authorization, replace it with a self-owned or properly licensed singing video and audio before using this workflow.
+Final Summary
+Use the original singing video as the sole editing master and replace only the two performers. Character A from image 1 takes the original left performer’s identity track, while Character B from image 2 takes the original right performer’s identity track. Preserve the original singing performance, audio timeline, camera cuts, framing, orange studio background, hanging microphones, lighting, shadows, perspective, depth of field, motion blur, and spatial relationships.
+The two reference images control appearance only. They must never become first frames, end frames, backgrounds, split-screen panels, or character sheets inside the output. Track each identity through crossings and camera changes using the original motion path, not the character’s temporary screen position. The finished result is a two-character fictional stage performance with no added dialogue, subtitles, weapons, violence, or unrelated visual elements.
+`,
+    },
+  },
+  // Pollo 官方博客 Viral Video Breakdown 页（Emma Whitaker 撰并审，2026-09-20 更新）；提示词为 Pollo 页面给出的版本（含 Final Summary），原作者和原帖页面未注明；文末推广段未收录
+  {
+    id: "pollo-self-rescue-cliff-two-versions",
+    title: "悬崖边自己救自己 · 白衣的她把快坠崖的她拉上来",
+    subtitle: "Pollo 官方示例 · Seedance 2.5 · 23秒 · 9:16",
+    description:
+      "Pollo 官方示例：一张人物照，同一个人分成两个版本，白西装的她把挂在悬崖边的她拉上来。",
+    video: "/tutorials/pollo-self-rescue-cliff-two-versions/demo-web.mp4",
+    poster: "/tutorials/pollo-self-rescue-cliff-two-versions/poster.jpg",
+    duration: "23秒",
+    durationSec: 23,
+    styleLabel: "电影感",
+    shots: 9,
+    references: 1,
+    model: "Seedance 2.5（成片右上角 Pollo 角标写明）",
+    style: "电影感时尚短片 · 暴风雨海崖 · 冷青灰色调 · 浅景深",
+    aspectRatio: "9/16",
+    sourceUrl: "https://pollo.ai/hub/self-rescue-cliff-video-breakdown",
+    sourceAuthor: "Pollo AI 官方博客（Emma Whitaker）",
+    sourcePlatform: "Pollo",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "俯拍挂在崖边 → 巨浪拍上来 → 湿脸特写 → 上方伸下一只手 → 白衣的她现身 → 握手 → 拉上来 → 拥抱看镜头 + 字幕",
+      opening: "第 0 秒高角度俯拍：穿红黑条纹毛衣的女孩双手扒着黑色礁石边缘，下面是翻涌的蓝绿色海浪。",
+      openingAt: 0,
+      beats: [
+        { title: "危险怎么推高", text: "约 3–4.5s 巨浪拍上崖壁，水雾盖住画面；约 5–8s 切到崖边视角，她湿透的脸从石头边露出来往上看，一只手从画面上方伸下来。", at: 3 },
+        { title: "怎么救", text: "约 8.3s 反打：戴白色宽檐帽、穿白西装的她蹲在崖上伸手；约 9.6–12.5s 两只手特写，滑了一下再握紧；约 12.5–15s 全景把人拉上崖。", at: 8.3 },
+        { title: "结尾怎么收", text: "约 15s 起紧凑特写：白衣的她抱住湿发的她，手抚后脑，看向镜头；约 17.5s 下方淡入字幕「Only you can save yourself / No one else...」到结尾。", at: 15 },
+      ],
+      copyThis: "同一张人物照同时当两个角色用：提示词反复强调「是同一个人的两个版本」，只用衣服区分（照片里的原衣服 vs 白西装白帽子），最后一镜要求帽子不能挡住眼睛。",
+      approx: true,
+    },
+    tags: [
+      "23秒 · 9 个镜头",
+      "9:16 竖屏",
+      "Seedance 2.5 · 参考图生视频",
+      "1 张人物照",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备一张人物照",
+        description:
+          "这是 Pollo 官方博客的示例页，不是个人创作者帖。页面只放了一张「Your Photo」：黑发挑染、穿红黑条纹毛衣的女性自拍式照片，没有给生图提示词，也没说照片来源；原图左右带白边，这里已裁掉。这一张图同时决定两个版本的长相。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "页面说可选 Seedance 2.5、Seedance 2.0、MiniMax H3 或 Wan 3.0；成片右上角全程有「POLLO AI / SEEDANCE 2.5」角标，未处理。页面文件是 1920×1080 横版、中间放竖版画面，这里裁成 608×1080 竖版，约 23.1 秒。声音是配乐加海浪风声，没有人声（语音识别未识别出语音，未人工试听）。与提示词不符：提示词写 15 秒，成片约 23 秒，拥抱结尾拉长到约 8 秒；字幕要求全程显示，成片约 17.5s 才淡入。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "上传人物照后选参考图生视频，把下方英文提示词整段粘贴。结构依次是：参考图用法（同一人两个版本）、画幅画风、两套衣服、故事含义，然后按「0.0–2.0 SECONDS」这样的时间段写八段镜头，最后是字幕原文、AUDIO、连续性规则、负面提示词和页面自带的 Final Summary。这版提示词是 Pollo 页面给的，不一定是原作者原文。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-pollo-cliff-01",
+        number: "1",
+        title: "@your-image · 人物照（Your Photo）",
+        subtitle: "Pollo 页面给的人物参考，已裁掉左右白边；两个版本都用这一张",
+        image: "/tutorials/pollo-self-rescue-cliff-two-versions/refs/01-your-photo-character-reference.jpg",
+        prompt: "原帖未附提示词；Pollo 页面只放了这张人物照，没有给生成它的提示词，也没说明照片来源。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 高角度俯拍：红黑条纹毛衣的她双手扒着黑色礁石边，下方海浪翻涌。" },
+      { number: 2, description: "3–4.5s 巨浪拍上崖壁，水雾盖住画面。" },
+      { number: 3, description: "4.5–6s 崖边视角：她湿透的脸从石头边露出来往上看，手指扣着石头。" },
+      { number: 4, description: "6–8.3s 一只手从画面上方伸下来。" },
+      { number: 5, description: "8.3–9.6s 反打：戴白色宽檐帽、穿白西装的她蹲在崖上伸手。" },
+      { number: 6, description: "9.6–12.5s 两只手特写：差一点碰到，滑了一下，再握紧。" },
+      { number: 7, description: "12.5–15s 全景：白衣的她把人拉上崖，膝盖压上岩石。" },
+      { number: 8, description: "15–17.5s 紧凑特写：白衣的她抱住湿发的她，手抚后脑。" },
+      { number: 9, description: "17.5–23s 她看向镜头，下方淡入字幕「Only you can save yourself / No one else...」。" },
+    ],
+    constraints:
+      "两个版本必须是同一张脸、同一身材发型，只靠衣服区分；手部接触要真实（没有多余手指、没有瞬间握紧）；最后一镜帽子不能挡住眼睛；画面里只允许那一句字幕。这是平台官方示例，成片带 Pollo 角标。",
+    video_prompt: {
+      title: "Self-Rescue Cliff · One Identity, Two Versions",
+      subtitle: "Pollo 官方博客页英文完整视频提示词（含 Final Summary）· 1 张人物照",
+      content: `PROMPT HEADER:
+REFERENCE ROLE:
+Use the uploaded character reference as the main identity guide. Preserve the character’s facial identity, body shape, hairstyle, clothing style, posture, and overall presence.
+The exact same reference identity appears as two versions of one person: one version is hanging from the edge of a dark sea cliff, and the other version is standing above as the rescuer. Both versions must share the same face, proportions, skin tone, hairstyle, gaze quality, and overall presence. Do not create two different identities.
+FORMAT AND VISUAL STYLE:
+Create a 15-second vertical 9:16 cinematic video. Set the story on a stormy ocean cliff with black wet volcanic rocks, crashing blue-green waves, cold mist, sea spray, a gray overcast sky, and dramatic coastal wind.
+Use a cinematic, emotional, fashion-editorial, realistic high-end short-film style with shallow depth of field, soft cold daylight, a muted teal-gray palette, tactile water droplets, and physically believable movement.
+WARDROBE:
+The cliff-edge version wears the exact same outfit shown in the character reference image. Preserve the reference outfit’s silhouette, fabric texture, colors, layering, fit, footwear, and overall styling.
+The rescuer version wears a refined white suit set with a clean structured blazer, a simple white inner layer, white tailored trousers, and a white wide-brim hat. Use minimal neutral tailoring.
+Keep both outfits elegant and weather-worn by mist and sea spray. Preserve wardrobe continuity within each version across all shots.
+STORY AND EMOTIONAL FUNCTION:
+A single identity confronts danger and rescue at the same time. One version is nearly falling from the cliff and grips the rock with both hands. The other version reaches down calmly and pulls the cliff-edge version back to safety.
+The emotional meaning is self-rescue, inner strength, survival, quiet confidence, and the realization that help can come from within.
+SHOT TIMELINE:
+0.0–2.0 SECONDS — CLIFF HOLD:
+Use a high-angle overhead shot. The cliff-edge version clings to the black rock ledge with both hands while violent ocean foam churns far below.
+The body is pressed against the cliff edge, making small desperate attempts to climb upward. Each effort lifts the body only slightly before gravity pulls it back down. The head tilts upward toward the top of the cliff with fear and effort.
+Show wet hair, soaked clothing, trembling fingers, unstable breathing, and realistic body weight. The camera slowly pushes downward, creating controlled vertigo without losing the character’s anatomy.
+2.0–4.5 SECONDS — WAVE IMPACT:
+Continue the high-angle overhead perspective. A heavy wave crashes upward against the cliff. Sea spray washes across the lens and partially covers the frame.
+The cliff-edge version keeps the head angled upward while gripping the ledge tightly. The character continues trying to climb, but the wave and gravity force the body back against the cliff. The powerful wave impact peaks during this section.
+4.5–5.6 SECONDS — EXHAUSTED FACE:
+Use a close shot from ledge level. The face rises into frame, wet, exhausted, and frightened, with the eyes looking upward. Fingers scrape against the dark stone. Keep the background ocean blurred but visibly violent and moving.
+5.6–7.1 SECONDS — REACHING HAND:
+A hand enters from the upper frame and reaches downward. Shift focus from the exhausted face to the approaching hand.
+The cliff-edge version hesitates for one brief beat, then reaches toward the rescuer’s hand. Keep the hesitation visible before contact.
+7.1–8.4 SECONDS — RESCUER REVEAL:
+Use a reverse angle to reveal the rescuer version above the ledge, wearing the white wide-brim hat and pearl-textured white outfit.
+The rescuer kneels low with one arm extended, calm and focused. Mist blows across the frame. Hold a low heroic angle from below the ledge. The rescuer’s face remains visible and readable.
+8.4–10.5 SECONDS — HAND CONTACT:
+Use an extreme close-up of the two hands. Fingers almost touch, slip slightly because of water, and then lock firmly together.
+Keep the hand contact realistic: one clear grasp, no extra fingers, no duplicated hands, no broken anatomy, and no instant teleportation into a locked grip.
+10.5–13.2 SECONDS — PULL-UP:
+Use a wider shot. The rescuer version pulls with steady force while the cliff-edge version climbs over the ledge.
+One knee rises onto the rock. Boots scrape against the wet cliff. Ocean mist surges behind them. The camera shakes subtly with the physical effort, but the movement remains controlled and readable.
+13.2–15.0 SECONDS — CALM SELF-BELIEF:
+Use a tight emotional close-up after the rescue. The rescuer version holds the cliff-edge version close. The rescuer’s right hand gently strokes the back of the cliff-edge version’s head in a comforting gesture.
+Keep the rescuer’s entire face clearly visible and well lit. The wide-brim hat must not hide the face or obscure the eyes; angle the hat slightly upward or position the camera so both eyes remain fully readable.
+The rescuer looks directly into the camera with a gentle yet determined expression, conveying self-belief, quiet confidence, emotional control, and a relaxed sense of ease. End on this calm, self-assured gaze with soft sea mist and muted coastal light.
+Do not turn the face away, hide it under the hat, or cover the eyes with shadow.
+ON-SCREEN TEXT:
+Only one subtitle appears at the lower center throughout the video in elegant white serif type with a subtle shadow:
+“Only you can save yourself
+No one else...”
+No other readable text appears.
+AUDIO:
+Begin with low cinematic ambience, distant wind, deep ocean rumble, and tense soft strings.
+Add a strong crashing-wave sound at 3.5–4.0 seconds. Keep breathing and wet-hand contact subtle but audible during the close-ups.
+Add a rising emotional swell from 8.4 seconds as the hands connect. Peak the music and ocean impact around 11.0–13.0 seconds during the pull-up.
+End with softer waves, wind, and a warm resolved musical tone.
+CONTINUITY RULES:
+Both visible versions are the exact same reference identity, styled differently only by situation and wardrobe. Preserve the face, body shape, hairstyle, and overall presence across every shot.
+Maintain the same cliff location, wet black-rock texture, stormy ocean direction, mist behavior, subtitle placement, and emotional arc.
+Do not add random extra people. Do not allow identity drift, glamour-pose breaks during the danger sequence, comedy, fantasy glow, superhero effects, a clean studio background, extra captions, distorted hands, duplicated limbs, or changing outfits mid-shot.
+NEGATIVE PROMPT:
+two unrelated identities, changed face, face drift, changed body shape, changed hairstyle, changed skin tone, extra people, extra rescuers, extra cliff-edge characters, duplicated limbs, extra fingers, fused fingers, broken hand contact, missing hands, impossible climbing, teleportation, instant grip, falling to the ocean, death, blood, injury, fantasy glow, superhero effects, clean studio background, glamour pose during danger, changing wardrobe, hidden rescuer face, hat covering the eyes, heavy eye shadow, camera losing the subject, random camera cuts, excessive camera shake, subtitles other than the exact provided line, extra text, logos, watermark, cartoon, anime, glossy CGI, low resolution
+Final Summary
+Create a 15-second vertical cinematic video in which one character confronts danger and rescues herself. Use one uploaded character reference to preserve the same face, body shape, hairstyle, gaze quality, and overall presence across both visible versions.The sequence moves from a dangerous cliff hold to a close hand connection, a controlled pull-up, and a calm final embrace. The stormy ocean, wet volcanic rocks, cold mist, wardrobe contrast, subtitle, and audio arc work together to express self-rescue, inner strength, and survival.
+`,
+    },
+  },
+  // 提示词回复帖: https://x.com/Chengzilhy/status/2104864175222907058（作者本人自回复，附 2 张参考图；开头「Prompt ⬇️」一句已去掉）；另一条自回复是 Pollo MCP 注册推广链接，未收录。提示词只写了前 30 秒，成片后半段（约 29.5–57s）未附提示词
+  {
+    id: "chengzilhy-pvz-dave-shovel-infected-sunflower-seedance-2-5",
+    title: "植物大战僵尸真人版 · 戴夫拿铲救被感染的向日葵",
+    subtitle: "X · @Chengzilhy · Seedance 2.5 · 57秒 · 16:9",
+    description:
+      "《植物大战僵尸》真人化：末日庭院只剩戴夫，他放下割草机拿铲去救被僵尸啃咬的向日葵。",
+    video: "/tutorials/chengzilhy-pvz-dave-shovel-infected-sunflower-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/chengzilhy-pvz-dave-shovel-infected-sunflower-seedance-2-5/poster.jpg",
+    duration: "57秒",
+    durationSec: 57,
+    styleLabel: "真人风",
+    shots: 12,
+    references: 2,
+    model: "Seedance 2.5 + GPT 6 Astra（参考图），经 Pollo MCP",
+    style: "游戏 IP 真人化 · 阴天末日庭院 · 左房右花固定轴线 · 暖光回忆段",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Chengzilhy/status/2104856708535443641",
+    sourceAuthor: "@Chengzilhy",
+    sourcePlatform: "X",
+    sourceImpressions: 2276,
+    sourceStats: { asOf: "2026-09-29", likes: 20, reposts: 2, bookmarks: 7 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "僵尸啃咬向日葵 → 叶上阳光亮起 → 戴夫拿铲冲过去 → 挖根失败、花盘差点咬到他 → 被花推开 → 暖色回忆 → 跪地挽留",
+      opening: "第 0 秒阴天庭院全景：左边是房子和红色割草机，中间一株黑化的向日葵被两只僵尸围着啃，远处还有僵尸走来。",
+      openingAt: 0,
+      beats: [
+        { title: "前半段怎么推进", text: "约 2–5s 花叶近景，叶上一团阳光亮起；约 6s 戴夫喊「Hold on!」抄起铲子；约 8–12s 他用铲子推开僵尸、插进花根旁挖土；约 14s「Come on.」根纹丝不动。", at: 2 },
+        { title: "转折", text: "约 15–17s 花盘突然朝他张口，差点咬到，他喊「Oh no!」；约 22–29s 第一人称视角，他的手接住一团阳光。", at: 15 },
+        { title: "结尾怎么收", text: "约 29.5s 切到暖色回忆：浇水、戴夫推着割草机经过健康的笑脸向日葵、向日葵把阳光放进他掌心；约 50–57s 回到现在，戴夫跪在空土坑边说「No. Stay.」「Please.」。", at: 29.5 },
+      ],
+      copyThis: "提示词把整片的空间轴线写死（左边房子和割草机、中间花、右边栅栏和僵尸），每一镜都写焦段、机位高度和「不反打、不绕轴」，所以连续切镜也不乱。",
+      approx: true,
+    },
+    tags: [
+      "57秒 · 前 30 秒有提示词",
+      "16:9 画幅",
+      "Seedance 2.5 + GPT 6 Astra",
+      "2 张参考图（作者只公开了 5 张里的 2 张）",
+      "游戏 IP 真人化",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备参考图",
+        description:
+          "作者提示词开头定义了 5 张参考图：图片1 戴夫、图片2 感染向日葵、图片3 四只僵尸、图片4 红色割草机、图片5 末日庭院，帖子里只附了 2 张：戴夫的人物设定图（头像 + 正面 / 侧面 / 背面）和一张向日葵设定图。附的向日葵是健康的笑脸向日葵（像成片后半段回忆里的样子），不是提示词里写的感染形态；作者没说这张对应哪个编号。两张图都没有附生图提示词，帖子写的是用 GPT 6 Astra 做的。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者写的是 GPT 6 Astra + Seedance 2.5，通过 Pollo MCP 生成。成片 3840×2160、30fps、约 57.3 秒，右上角全程有「GPT-6 Astra × POLLO MCP」角标，未处理。注意：提示词只写了一条 30 秒视频（说「真正启动机器留给下一条视频」），对应成片前约 29.5 秒；后面的暖色回忆和结尾约 28 秒没有公开提示词。对白和提示词对得上：约 6s「Hold on!」、约 14s「Come on.」、约 17s 喊「No」（语音识别听成「Oh no!」），后半段还有「No. Stay.」「Please.」（语音识别判断，未人工试听）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方中文提示词整段粘贴，按编号上传参考图。结构依次是：参考素材定义（5 张图的角色）、视频要求（30 秒、16:9、声音只要环境声和三句英文对白）、场景环境（左房右入口的空间轴线）、摄影机设置（机位、距离、高度、方向、焦段、运镜）、按秒写的动作时间轴，以及反应顺序和节奏要求。想做出后半段回忆，需要自己再写一条。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-chengzilhy-pvz-01",
+        number: "1",
+        title: "图片1 · 戴夫人物设定图",
+        subtitle: "作者附图原图（1536×1024）：头上顶锅的大胡子男人，头像 + 正面 / 侧面 / 背面",
+        image: "/tutorials/chengzilhy-pvz-dave-shovel-infected-sunflower-seedance-2-5/refs/01-dave-reference-sheet.jpg",
+        prompt: "原帖未附提示词；这是作者附在提示词回复帖里的人物参考图（帖子写用 GPT 6 Astra 生成）。",
+      },
+      {
+        id: "ref-chengzilhy-pvz-02",
+        number: "2",
+        title: "向日葵设定图（编号未注明）",
+        subtitle: "作者附图原图（1536×1024）：健康的笑脸向日葵，特写 + 正面 / 侧面 / 背面，带根；和提示词里「图片2＝感染向日葵」对不上",
+        image: "/tutorials/chengzilhy-pvz-dave-shovel-infected-sunflower-seedance-2-5/refs/02-sunflower-reference-sheet.jpg",
+        prompt: "原帖未附提示词；这是作者附在提示词回复帖里的第 2 张参考图（帖子写用 GPT 6 Astra 生成），作者没说明它对应哪个编号。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.4s 阴天庭院全景：左边房子和红色割草机，中间黑化向日葵被两只僵尸啃咬，远处僵尸走来。" },
+      { number: 2, description: "2.4–4.3s 花叶近景：叶上一团阳光亮起。" },
+      { number: 3, description: "4.3–7.5s 房前：戴夫看见阳光，喊「Hold on!」，抄起铲子。" },
+      { number: 4, description: "7.5–12.4s 他冲到花旁，用铲子推开僵尸，把铲插进花根旁挖土。" },
+      { number: 5, description: "12.4–15.2s 近景：他压铲、托着花茎往上抬，说「Come on.」，根不动。" },
+      { number: 6, description: "15.2–17.9s 花盘近景：花突然朝他张口，他缩手，喊「No」。" },
+      { number: 7, description: "17.9–21s 同侧全景：花把他推开，黑根缠住近处的僵尸。" },
+      { number: 8, description: "21–29.5s 戴夫站起，第一人称视角里他的手接住一团阳光。" },
+      { number: 9, description: "29.5–35.5s 暖色回忆：一只手给健康的笑脸向日葵浇水。" },
+      { number: 10, description: "35.5–42.5s 回忆：戴夫推着红色割草机经过向日葵。" },
+      { number: 11, description: "42.5–50.3s 回忆：向日葵把一团阳光放进他掌心。" },
+      { number: 12, description: "50.3–57.3s 回到现在：戴夫跪在空土坑边，说「No. Stay.」「Please.」。" },
+    ],
+    constraints:
+      "整片保持左房右花的空间轴线，切镜不反打、不绕轴；割草机在前 30 秒一直熄火停在原位；铲子、阳光、僵尸位置每镜承接上一镜；声音只要环境声和三句英文对白，不加配乐。提示词只覆盖成片前约 30 秒。内容是《植物大战僵尸》游戏 IP 真人化。",
+    video_prompt: {
+      title: "植物大战僵尸 · 戴夫救向日葵（前 30 秒）",
+      subtitle: "作者自回复帖中文完整提示词 · 5 张参考图定义（公开 2 张）· 只覆盖成片前约 30 秒",
+      content: `【参考素材定义】
+图片1＝戴夫唯一的人物身份参考：
+图片2＝唯一感染向日葵的形态参考：
+图片3＝四只不同僵尸的身份参考：
+图片4＝唯一一台红色旧割草机的道具参考：
+图片5＝唯一末日庭院的场景参考：
+
+【视频要求】
+生成一条从0秒开始的30秒、16:9照片级写实电影视频，完整讲述戴夫从房前发现向日葵受袭、放弃启动割草机、拿铲赶去救它、挖根失败、险些被感染的花咬到，最后被花推回安全步道的连续事件。不是两条视频拼接；第8秒只延续同一个人的动作，不重新开场、不重置空间或道具。
+全片自然速度、明确物理接触。割草机在这30秒内始终熄火停在房前；戴夫真正启动机器留给下一条视频。
+声音只有庭院风声、僵尸低吼与啃咬、启动绳轻响、脚步、铲面撞击与铲土、黑根绷紧、花盘咬合、戴夫呼吸，以及三句英文对白“Hold on!”、“Come on…”、“No!”。不添加背景音乐、配乐或旋律性音效。
+
+【场景环境】
+画面始终遵守左房右入口的空间轴线：左侧房屋与门廊 → 戴夫及门前割草机 → 中段土坑与向日葵、两只近处僵尸 → 右后方破栅栏与两只远处僵尸。割草机四轮落在房前草坪的清场起点，机身前部与花相隔约三米空草坪；门廊外没有第二台机器。木柄铲靠在戴夫右后方一步可及的门廊立柱上。南侧石步道沿草坪前缘从房子通向花，是戴夫救援和撤退的唯一通路。
+戴夫从画面左侧沿步道向右赶去；到花的南偏西侧后，用铲子把瘦高僵尸向草坪北侧推开，不把僵尸推向摄影机。花在戴夫右前方，铁桶僵尸在花后侧，路障与歪领带僵尸始终更靠右。结尾花的叶片把戴夫向画面前方的南侧步道推开；它的黑根只困住两只近处僵尸，另外两只尚在靠近。
+
+【摄影机设置】
+摄影机起始位置：草坪南侧、房前石步道外缘，位于面向花的戴夫右侧后方约四米处，整条视频都留在房屋—割草机—向日葵轴线的南侧。
+拍摄距离：开场用全景同框呈现门廊、戴夫全身、完整割草机、花和四只僵尸；跟拍救援时距戴夫约三米；根部和花盘近景距主体约一至两米。
+机位高度：开场约1.7米微高斜侧视角，跟拍约1.3米，花盘近景约1.2米；结尾全景约1.4米。
+拍摄方向：从南向北偏东看，画面左侧一直是房屋与机器，右侧是花与栅栏；戴夫的前进方向始终是画面左向右。
+镜头焦段：开场28毫米全景；阳光50毫米近景；房前拿铲35毫米中全景；沿步道跟拍35毫米；挖根50毫米近景；花盘70毫米近景；结尾35毫米同侧全景。
+运镜方式：开场沿南侧向右轻移半米，露出完整机器前轮和它正对的花；第3秒切花叶近景轻推；第5秒切回房前同侧；第8秒沿南侧步道向右平行跟拍戴夫，不返回房前重新开始；第12秒切到土坑同侧近景；第16秒切花盘近景；第19秒切回同侧全景。每次切镜均保持左房右花，不反打、不绕轴。
+
+【动作时间轴】
+【0—5秒】房前微高斜侧全景立即建立全部站位。左侧可见房屋墙面与门廊，戴夫双脚站在门廊前地面步道，左手扶割草机后推把，右手搭在发动机启动绳把手上但没有拉。完整机身与四轮位于他前方的草坪起点，前轮朝画面右侧的向日葵。花在中段土坑，被瘦高与铁桶僵尸从两侧啃咬；路障与歪领带僵尸从更右方走来。镜头向右轻移半米，仍让戴夫、机器、花和僵尸同框；机器不动、引擎无声。
+【5—8秒】同轴南侧切到花叶近景。花忍着两侧啃咬，根仍固定，一片主叶向画面左侧房子与戴夫的方向伸出，叶上托着唯一阳光。阳光短促亮起，暖光先照叶缘再照地面；戴夫画外呼吸停住，僵尸没有换位。
+【8—13秒】切回房前同侧中全景，同时保留门廊、完整机器和远处花。戴夫眼睛先锁定阳光，随后转头；右手松开启动绳，绳把回到发动机，左手放开后推把。他右手从身后门廊立柱旁拿起唯一木柄铲，沿机器南侧的石步道朝画面右侧花的位置迈出第一步，急声说英文：“Hold on!” 末帧右手持铲、身体和脚尖向右，机器熄火留在原位。
+【13—18秒】动作直接接上一个迈步。摄影机在南侧以35毫米平行跟拍，戴夫沿同一石步道向右跑过机器正面与草坪前缘，到中部花的南偏西侧；房屋与割草机逐渐留在他身后画面左侧，不能让他在花旁凭空出现。他用右手的铲面把挡路的瘦高僵尸向北侧草坪推开，僵尸脚落地踉跄退开，并未被击飞。戴夫顺势把铲刃插在花根旁的土中，左脚踩稳步道边缘。
+【18—22秒】切土坑同侧近景并保持戴夫和花的相对位置。戴夫右手下压铲柄，左脚抵住松土，真实土块翻起，但地下黑根绷得更紧；他右手始终握铲柄，左手托住花茎向上试抬，根部纹丝不动。戴夫喘着说英文：“Come on…” 阳光仍在另一片叶上，没有跳到他手里。先前被推开的瘦高僵尸在后景重新站稳。
+【22—26秒】切花盘近景，画面一侧仍看见戴夫的左手和握铲的右手。感染抽动使花突然向他张口，戴夫左手立即从茎上缩回；花在咬到他之前强行转开花盘，咬向空处。戴夫右手没有放掉铲柄，脚仍在土坑南侧；后景瘦高僵尸开始重新逼近。
+【26—30秒】切回轴线南侧全景。戴夫仍弯身靠花，花的一片主叶真正抵住他的左肩，向南侧安全步道推他。受力后戴夫先把铲刃从土里拔出，右手握铲，脚从土坑边先后退到前景步道，喊英文：“No!” 花的黑根从固定土坑向两侧伸出，先缠住重新靠近的瘦高僵尸脚踝，再缠住铁桶僵尸脚踝；两只僵尸因真实拉力停步挣扎。路障与歪领带僵尸还在右侧接近，未提前受困。末帧戴夫在南侧步道、右手持铲，花仍扎根，唯一阳光仍在叶上，房前割草机仍熄火未动。
+所有动作在同一片庭院连续发生；第8秒没有新开场或姿势重置。手中铲子、绳把、阳光与两只近处僵尸的位置每镜承接前镜。
+
+【反应顺序】
+戴夫先看到花送来的光，眼睛改变后才转头、松绳、拿铲。挖根时先感到铲柄与根部阻力才加力；花突然张口距离过近时，他的左手因近身威胁立即缩回；叶片实际抵到左肩后，肩和双脚立即按推力退开，不人为延迟。
+
+【节奏要求】
+前5秒让观众同时理解割草机将清掉这一排、向日葵正在被啃咬、它却仍给戴夫阳光。8—12秒完整看见戴夫从房前跑到花旁，不能省略空间移动。救援、失控、保护按自然速度连续推进；不添加额外战斗、慢动作或长时间停顿。`,
+    },
+  },
 ];
+
+export const tutorials: Tutorial[] = rawTutorials.map((t) => withMedia(t));
 
 export function getTutorialById(id: string): Tutorial | undefined {
   return tutorials.find((tutorial) => tutorial.id === id);

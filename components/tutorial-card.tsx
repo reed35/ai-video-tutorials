@@ -8,6 +8,21 @@ import { getTutorialSubtitle } from "@/lib/tutorial-subtitle";
 export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isInView, setIsInView] = useState(false);
+  // 封面也懒加载：首页 130+ 张卡片，<video poster> 会在首屏一次性全下；离视口约一屏时再挂 poster
+  const [isNear, setIsNear] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || isNear) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) setIsNear(true);
+      },
+      { rootMargin: "1000px 0px" }
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, [isNear]);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -81,7 +96,7 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
             <video
               ref={videoRef}
               className="w-full h-full object-contain"
-              poster={tutorial.poster}
+              poster={isNear ? tutorial.poster : undefined}
               playsInline
               preload={isInView ? "metadata" : "none"}
               muted
