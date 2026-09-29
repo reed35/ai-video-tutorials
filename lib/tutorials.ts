@@ -22902,6 +22902,791 @@ Every strong beat changes outfit + location + composition. Each look uses a diff
 Photoreal fashion cinematography, real skin/hair/materials. Avoid identity drift, extra people, plastic skin, deformation, repeated sets/type, gibberish, logos, watermarks, subtitles, UI.`,
     },
   },
+  // 提示词回复帖: https://x.com/umesh_ai/status/2104516804223926724（开头写明 Generated using Seedance 2.5 on @AdobeFirefly / Upscaled with Topaz Astra，工具信息不计入提示词）
+  // 提示词里写了 5 张参考图，作者只附了 4 张（缺第 5 张森林瀑布图）
+  {
+    id: "umesh-rainy-bike-paper-friendship-seedance-2-5",
+    title: "雨天单车送同学回家 · 低多边形纸艺定格动画 · Seedance 2.5",
+    subtitle: "X · @umesh_ai · Seedance 2.5（Adobe Firefly）+ Topaz Astra 放大 · 30秒 · 16:9",
+    description:
+      "一段提示词加4张参考图，Seedance 2.5 做出低多边形纸艺雨天暖心短片，12个镜头带对白。",
+    video: "/tutorials/umesh-rainy-bike-paper-friendship-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/umesh-rainy-bike-paper-friendship-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "纸艺定格",
+    shots: 12,
+    references: 4,
+    model: "Seedance 2.5（Adobe Firefly，Topaz Astra 放大）",
+    style: "低多边形纸艺/纸板手作 · 定格动画质感 · 冷雨转暖光",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/umesh_ai/status/2104516798981025827",
+    sourceAuthor: "@umesh_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 6766,
+    sourceStats: { asOf: "2026-09-28", likes: 114, reposts: 7, bookmarks: 86 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "雨中学校远景 → 骑车男孩发现淋雨同学 → 撑伞邀请同行 → 穿过纸艺森林和瀑布 → 送到小屋门口约好明天见",
+      opening: "第 0 秒是纸板搭出来的学校远景，高大的纸树，细雨落下，一开场就交代了“放学下雨”和整部片的手作画风。",
+      openingAt: 0,
+      beats: [
+        { title: "怎么立起人物关系", text: "约 4.9–14.4s 男孩停车，特写问「Hey... are you okay?」，再切到红门前抱着球发愁的孩子，一问一答两个镜头就把“需要帮助”交代清楚。", at: 4.9 },
+        { title: "情绪转折点", text: "约 14.4–17s 男孩把伞倾过去罩住两人、把球放进车筐，说「Come on. Let's go together.」，之后画面和配乐开始变暖。", at: 14.4 },
+        { title: "结尾怎么收", text: "约 18–22s 两人骑车穿过低多边形森林、经过纸做的瀑布；约 22s 起暖光小屋出现，约 27s 同学在金色门口挥手、把球抛回来：「See you tomorrow?」「Definitely.」", at: 22 },
+      ],
+      copyThis: "提示词先写一句“参考图只作灵感，不要照抄”，再把每张参考图分给一个元素（骑车雨伞、小屋、友谊、学校、森林）；然后按 2.5 秒一镜写 12 个镜头，每镜配上台词，最后把灯光从冷雨写到暖屋。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 暖心短片",
+      "16:9 横屏",
+      "Seedance 2.5 · Adobe Firefly",
+      "4 张风格参考图",
+      "12 镜带台词",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备风格参考图",
+        description:
+          "作者在回复里附了 4 张纸艺低多边形风格图（下方参考图卡，原图 2944×1648，作者未附这几张图的提示词）：雨中骑红单车撑橙伞的男孩、纸板学校、手作小屋、两个踢球的孩子。提示词写的是 5 张参考图，第 5 张（手作森林和瀑布）作者没有发出来，可以自己补一张同风格的，也可以不放。注意：作者发图的顺序和提示词里的编号不一样，提示词的 2 号是小屋、3 号是友谊、4 号是学校。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者在 Adobe Firefly 里用 Seedance 2.5 生成，再用 Topaz Astra 放大。成片为 3840×2160、24fps、30 秒横屏，没看到水印。声音：提示词里的 12 句英文台词都能听到，另外有雨声和轻柔配乐（语音识别和频谱判断，未人工试听）。成片大致按提示词的 12 个镜头走，但镜头长短和提示词写的每镜 2.5 秒不完全一样，比如「Hey... are you okay?」那个特写约有 4 秒。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴，同时放上参考图。提示词依次写了：参考图只作灵感、纸艺定格画风、每张参考图对应什么、两个孩子的造型、故事梗概、12 个分镜（带时间码和台词），然后是镜头、灯光、动画、声音要求，以及画风统一、画面上不要出现文字字幕等规则。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-umesh-rainy-bike-01",
+        number: "1",
+        title: "参考图 1 · 雨中骑车撑伞的男孩",
+        subtitle: "作者回复附图原图（2944×1648），对应提示词里的 Reference image 1：雨天骑车、橙色雨伞、情绪基调",
+        image: "/tutorials/umesh-rainy-bike-paper-friendship-seedance-2-5/refs/01-rainy-bicycle-umbrella.jpg",
+        prompt: "原帖未附提示词",
+      },
+      {
+        id: "ref-umesh-rainy-bike-02",
+        number: "2",
+        title: "参考图 2 · 纸板学校",
+        subtitle: "作者回复附图原图（2944×1648），对应提示词里的 Reference image 4：学校外景",
+        image: "/tutorials/umesh-rainy-bike-paper-friendship-seedance-2-5/refs/02-school-exterior.jpg",
+        prompt: "原帖未附提示词",
+      },
+      {
+        id: "ref-umesh-rainy-bike-03",
+        number: "3",
+        title: "参考图 3 · 手作小屋",
+        subtitle: "作者回复附图原图（2944×1648），对应提示词里的 Reference image 2：温暖的家",
+        image: "/tutorials/umesh-rainy-bike-paper-friendship-seedance-2-5/refs/03-cozy-cottage-home.jpg",
+        prompt: "原帖未附提示词",
+      },
+      {
+        id: "ref-umesh-rainy-bike-04",
+        number: "4",
+        title: "参考图 4 · 两个踢球的孩子",
+        subtitle: "作者回复附图原图（2944×1648），对应提示词里的 Reference image 3：孩子间的友谊",
+        image: "/tutorials/umesh-rainy-bike-paper-friendship-seedance-2-5/refs/04-kids-friendship-ball.jpg",
+        prompt: "原帖未附提示词",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.1s 远景：纸板学校被高大的纸树环绕，细雨落下。" },
+      { number: 2, description: "2.1–4.9s 侧面跟拍：男孩撑橙伞骑红单车经过路灯和墙边，车筐里放着纸箱。台词「Rainy day again...」" },
+      { number: 3, description: "4.9–6.8s 越肩镜头：男孩放慢车速，远处红门前站着抱球的孩子。" },
+      { number: 4, description: "6.8–10.7s 男孩伞下特写，关切地问「Hey... are you okay?」" },
+      { number: 5, description: "10.7–14.4s 中景：红门前的孩子抱着橙白足球抬头，说「I can't get home before the rain gets worse.」" },
+      { number: 6, description: "14.4–16.5s 男孩把伞倾过去罩住两人，把球放进车筐。「You don't have to wait alone.」" },
+      { number: 7, description: "16.5–17.5s 孩子第一次露出笑容，男孩示意上车。「Come on. Let's go together.」" },
+      { number: 8, description: "约 17.5–20.5s 侧面远景：两人骑车穿过低多边形纸树林，雨渐小，聊起「Your bike is really cool.」「Thanks.」" },
+      { number: 9, description: "约 20.5–22s 纸做的白色瀑布和小纸树，过渡镜头。" },
+      { number: 10, description: "约 22–24.6s 暖光小屋出现在前方，单车驶近。「That’s my home.」" },
+      { number: 11, description: "24.6–26.8s 中景：单车停在小屋前，孩子拿回球道谢，「Thank you for helping me.」「Anytime.」" },
+      { number: 12, description: "26.8–30s 金色灯光的门口，孩子挥手、把球抛回给男孩：「See you tomorrow?」「Definitely.」" },
+    ],
+    constraints:
+      "全片统一低多边形纸艺/纸板手作画风，不要写实、不要中途换风格；参考图只作灵感、不照抄；只有两个孩子，不要人群；画面上不要出现文字和字幕；镜头慢而柔，不要快速运动和手持晃动；灯光从冷色雨天逐步转到暖色屋内光。提示词写了 5 张参考图，作者只公开了 4 张（缺森林瀑布图），且发图顺序和提示词编号不一致。成片无水印，12 句台词都能听到，还有雨声和轻柔配乐。",
+    video_prompt: {
+      title: "Rainy Day Bicycle Friendship · Low-Poly Paper Short",
+      subtitle: "Seedance 2.5（Adobe Firefly）· 作者回复英文完整提示词 · 配 4 张参考图",
+      content: `Create a 30-second heartwarming animated short inspired by the supplied reference images.
+
+IMPORTANT:
+Use all reference images only as inspiration, not as exact scenes to copy.
+Blend their mood and design language into one cohesive world:
+- rainy bicycle boy and umbrella atmosphere
+- cozy cottage/home warmth
+- playful childlike friendship energy
+- school building as a story location
+- whimsical handmade forest and waterfall environment
+
+VISUAL STYLE:
+A handcrafted low-poly paper-and-cardboard world with a soft stop-motion feel. Everything looks built by hand from folded paper, painted cardboard, textured craft materials, and simple geometric shapes. Use soft cinematic lighting, shallow depth of field, clean compositions, and a child-friendly storybook tone. Keep the whole short visually consistent from beginning to end.
+
+STYLE INSPIRATION:
+- Reference image 1 inspires the rainy bicycle journey, orange umbrella, and emotional tone.
+- Reference image 2 inspires the warm cozy home destination.
+- Reference image 3 inspires child friendship and playful innocence.
+- Reference image 4 inspires the school exterior and setting transition.
+- Reference image 5 inspires the whimsical handcrafted natural world and magical path.
+
+CHARACTER DESIGN:
+Main boy: the same charming low-poly child aesthetic, simple face, geometric hair, warm-colored jacket, dark pants, riding a red bicycle with a front basket and a large umbrella.
+Second child: same handcrafted style, simple geometric form, child-friendly appearance, soft colors, kind expression.
+Both children must remain stylistically consistent with the same low-poly paper-crafted design language.
+
+STORY:
+On a rainy afternoon after school, a boy cycles home under his umbrella. He notices another child waiting sadly outside the school gate, unable to walk home in the rain. The boy stops, offers help and friendship, and together they travel through the handcrafted world toward a warm little home. The journey turns a gloomy rainy day into a comforting memory.
+
+DURATION:
+30 seconds total, about 12 shots.
+
+SHOT 1, 0:00-0:02.5
+Wide establishing shot of a handmade paper-art school building framed by tall stylized trees. Light rain falls. The atmosphere is calm and gray, but warm tones peek through the scene.
+Audio: gentle rain, soft piano and glockenspiel.
+
+SHOT 2, 0:02.5-0:05
+Cut to the boy riding his red bicycle slowly past the school path under a large orange umbrella. Wheels spin gently through the wet ground, and the basket bounces softly.
+Boy, quietly:
+"Rainy day again..."
+
+SHOT 3, 0:05-0:07.5
+The boy notices another child standing near the school entrance, holding a small orange-and-white ball and looking worried in the rain.
+The child looks down, shivering slightly.
+
+SHOT 4, 0:07.5-0:10
+Close-up of the boy slowing down and stopping the bicycle. He leans toward the other child with a kind expression.
+Boy:
+"Hey... are you okay?"
+
+SHOT 5, 0:10-0:12.5
+Medium shot. The second child looks up.
+Second child:
+"I can't get home before the rain gets worse."
+
+The rain continues softly. The mood is tender, not sad.
+
+SHOT 6, 0:12.5-0:15
+The boy smiles and tilts the umbrella to cover both of them.
+Boy:
+"You don't have to wait alone."
+
+He gently places the ball into the bicycle basket.
+
+SHOT 7, 0:15-0:17.5
+The second child smiles for the first time. The boy gestures kindly toward the bicycle.
+Boy:
+"Come on. Let's go together."
+
+Music becomes warmer.
+
+SHOT 8, 0:17.5-0:20
+A gentle traveling shot as they move along a whimsical handcrafted path through stylized trees and paper-crafted nature. The rain begins to soften. The children laugh lightly as they roll forward.
+
+Second child:
+"Your bike is really cool."
+Boy, shyly:
+"Thanks."
+
+SHOT 9, 0:20-0:22.5
+They pass a small handcrafted waterfall and tiny paper trees, creating a magical storybook transition. The atmosphere feels hopeful and cozy now.
+The ball peeks from the basket. Raindrops glisten on the path.
+
+SHOT 10, 0:22.5-0:25
+A warm cottage appears ahead, glowing softly. Flowers and tiny garden details surround it. The children slow down and look toward it.
+Second child, softly:
+"That’s my home."
+
+SHOT 11, 0:25-0:27.5
+The bicycle stops in front of the cottage. The second child takes the ball from the basket and turns to the boy with gratitude.
+Second child:
+"Thank you for helping me."
+Boy:
+"Anytime."
+
+SHOT 12, 0:27.5-0:30
+Final warm shot. The cottage door opens with cozy golden light. The second child waves from the doorway, then tosses the ball lightly back toward the boy in a playful gesture of new friendship.
+Second child:
+"See you tomorrow?"
+Boy smiles:
+"Definitely."
+
+Hold on a warm ending image: the boy beside the bicycle, umbrella lowered, rain almost stopped, cottage glowing, and the feeling that a new friendship has begun.
+
+CAMERA STYLE:
+Use about 12 clean cinematic cuts.
+Alternate between wide establishing shots, medium emotional shots, close-ups, and gentle traveling side shots.
+Camera movement should stay slow and soft: subtle push-ins, side tracking, and calm framing.
+No fast action, no shaky camera, no dramatic zooms.
+
+LIGHTING:
+Start with soft cool rainy daylight.
+Introduce warmer highlights as the emotional connection grows.
+End with cozy warm house light and softened rain for a comforting finish.
+
+ANIMATION:
+Gentle handcrafted motion with subtle stop-motion charm.
+Small body movements, soft head tilts, blinking, umbrella shifts, wheel rotation, light bouncing in the basket, and delicate rain motion.
+Everything should feel tactile and handmade.
+
+AUDIO:
+Gentle rain ambience at the beginning.
+Soft piano, glockenspiel, light strings, and warm acoustic touches.
+Subtle wheel sounds, tiny splashes, and soft footsteps.
+Dialogue should be quiet, natural, childlike, and heartwarming.
+
+IMPORTANT CONSISTENCY RULES:
+- Keep one unified low-poly paper-art / cardboard handcrafted visual style.
+- Do not copy the reference images literally; use them only as inspiration.
+- No photorealism.
+- No style switching.
+- No overly complex facial expressions.
+- No extra crowd scenes.
+- No text or subtitles on screen.
+- Maintain a cozy, child-friendly, emotional storybook tone throughout.
+
+EMOTIONAL THEME:
+A rainy day becomes special through a small act of kindness, friendship, and the feeling of helping someone get home safely.`,
+    },
+  },
+  // 查重别名(提示词 2 楼自回复帖): https://x.com/hxhxhx0916/status/2104608974402371620
+  // 作者未写生成模型；提示词里的参考图 1（人物照）未公开
+  {
+    id: "hxhxhx0916-fire-dancer-match-cut-wuxia",
+    title: "中国火舞者 · 挥臂硬切变装东方控火武术",
+    subtitle: "X · @hxhxhx0916 · 模型未注明 · 15秒 · 16:9",
+    description:
+      "挥臂一帧硬切，现代室内变夜间古风院落，女武者挥火杆画出火环、俯拍火圈，火墙收尾。",
+    video: "/tutorials/hxhxhx0916-fire-dancer-match-cut-wuxia/demo-web.mp4",
+    poster: "/tutorials/hxhxhx0916-fire-dancer-match-cut-wuxia/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "东方奇幻",
+    shots: 6,
+    references: 1,
+    model: "未标注（作者未公开）",
+    style: "真人写实 · 电影级火焰特效 · 夜间中式古建院落 · 固定机位",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/hxhxhx0916/status/2104565655383224799",
+    sourceAuthor: "@hxhxhx0916",
+    sourcePlatform: "X",
+    sourceImpressions: 482,
+    sourceStats: { asOf: "2026-09-29", likes: 5, reposts: 0, bookmarks: 1 },
+    formats: ["角色表演", "变装·换装"],
+    hook: {
+      structure: "窗帘前浅笑挥臂 → 一帧硬切变古风武者 → 掌前火团 → 火环 → 腾空竖环 → 俯拍火圈 → 火墙收尾",
+      opening: "第 0 秒女孩穿黑色短袖站在青绿色窗帘前浅笑，约 1.2s 右臂横扫胸前的那一帧直接硬切，换成夜间古建院落和古风武者装，手边同时爆出火团。",
+      openingAt: 0,
+      beats: [
+        { title: "变装怎么切", text: "约 1.2s 在手臂扫过画面中线、运动模糊最强的一帧硬切：窗帘、衣服、灯光一帧换掉，脸和手臂位置前后对齐，不做渐变或融化。", at: 1.2 },
+        { title: "火环怎么升级", text: "约 3.6s 切大全景挥火杆，火弧扩成火环；约 5.4s 火环塌成火墙，约 7s 旋身腾空时一个大竖环包住全身；约 8s 切 90 度俯拍，火圈在脚下画圆后熄成烟圈。", at: 3.6 },
+        { title: "结尾怎么收", text: "约 10.4s 切低机位广角，她举杆斜劈，头顶扩成半圆火弧、下方升起火墙；约 14s 火势回落，只剩余火和黑烟。", at: 10.4 },
+      ],
+      copyThis: "提示词先把道具锁死（一根长杆、只有一端着火、双手始终握住），再按镜头写【机位】【动作】【特效】【固定】【音效】；每次换镜都写明在哪一帧切（手臂模糊最强、烟最浓、只剩一个小火点），最后列一长串禁止项。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 东方奇幻",
+      "16:9 横屏",
+      "动作匹配硬切变装",
+      "1 张人物参考图（未公开）",
+      "6 镜分段提示词",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备一张人物参考图",
+        description:
+          "提示词里的角色A用「图片1」锁定脸和身份（写法是 <<<image_1>>> 和 @图片1），但作者没有公开这张图。自己准备一张清晰的正脸人物照当图片1即可；成片里是一位黑发盘起、穿黑色短袖的女性。用真人照片请确认已获授权。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者没写用的是哪个模型（这位作者之前的作品用的是 Seedance 2.5，参考图写法也像 Seedance，但这条没有注明）。成片为 1280×720、24fps、15 秒横屏，没看到水印。声音：没有人声或台词，是火焰呼啸、破风声和几声低频轰鸣，底下有很轻的配乐，没有明显的规律节拍（语音识别和频谱判断，未人工试听），和提示词写的「无对白、东方打击乐和火焰音效」一致。成片基本按提示词的 6 个镜头走，但镜头3 更像竖向火弧，不是提示词写的绕下半身的水平火环。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方中文提示词整段粘贴，图片1 放人物照。提示词先写风格、时长、场景、角色和核心道具（一根只有一端着火的长杆），再按时间码分 6 个镜头，每镜写机位、动作、特效、固定要求和音效，并写明每次在哪一帧硬切；最后是声音、角色道具固定和一长串全片禁止项。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–1.2s 固定中近景：女孩穿黑色短袖站在青绿色窗帘前浅笑，低头看右手，右拳绕到左肩后横扫胸前。" },
+      { number: 2, description: "1.2–3.6s 手臂横扫的一帧硬切：变成夜间古建院落、黑色古风武者装，右手伸向画面左侧，掌前一团白热火焰不断收缩膨胀。" },
+      { number: 3, description: "3.6–5.4s 硬切正面大全景：她在院落中央压低重心挥动火杆，火弧扩成大火环。" },
+      { number: 4, description: "5.4–8s 火环塌成地面火墙和浓烟；她旋身短暂腾空，一个巨大竖直火环包住全身，落地后火环碎成火星。" },
+      { number: 5, description: "8–10.4s 硬切 90 度俯拍：她在圆心旋转火杆，脚下画出火圈，镜头升高拉远，火圈变成暗红余烬和烟圈。" },
+      { number: 6, description: "10.4–15s 硬切低机位广角：她举杆斜劈，头顶扩成横跨画面的半圆火弧，下方升起翻卷火墙；最后火势回落，只剩余火和黑烟。" },
+    ],
+    constraints:
+      "角色A的脸和身份全片锁定图片1；现代服装只出现在开场，1.2 秒硬切成古风造型后不再改变。长杆长度、粗细、颜色不变，始终双手握住，只有同一端着火，火焰只能从着火端的运动轨迹生成。换装必须是一帧硬切，不能渐变、融化或衣服生长。腾空要看得到起跳、落地和屈膝缓冲。不要第二个人、动物、火龙火凤、字幕和水印，不要甩镜和镜头抖动。作者没有写模型，也没有公开图片1；成片无水印、无台词。",
+    video_prompt: {
+      title: "中国火舞者 · 东方奇幻控火武术短片",
+      subtitle: "作者 2 楼回复中文完整提示词 · 图片1 = 人物照（作者未公开）",
+      content: `【风格】东方奇幻控火武术短片（Oriental Fantasy Live-Action），真实摄影（Photorealistic），电影级安全火焰特效（Cinematic Fire VFX），高对比夜景，白热火芯、橙黄外焰、红褐烟雾、真实火星与动态火光，IMAX构图，4K高清，全片实时速度、无慢动作
+【时长】15秒
+【场景】开场是青绿色厚窗帘前的简洁现代室内；随后通过动作匹配硬切，进入夜间中式木构建筑前的宽阔石板院落。院落背景低调昏暗，中央木门、台阶、廊柱和石栏位置全片固定，周围无人、无文字
+【角色】角色A 图片1 ，人物身份和脸部严格遵循参考图<<<image_1>>>。开场穿简洁黑色短袖；切换后穿黑色多层古风武者服装，宽袖、宽下摆、腰部束带和高束长发。古风造型一经出现，全片保持不变
+
+【核心道具】一根固定长度的深色细长表演杆，只有一端带电影级安全火焰特效；角色A始终双手牢固握住杆身，杆身不能消失、缩短、弯曲或脱手
+
+[00:00-00:01.20] 镜头1：横臂瞬变（Match Cut Transformation）
+【机位】固定正面中近景（Locked Medium Close-Up），角色A站在青绿色褶皱窗帘前，右后方硬光在窗帘上投出清晰人影。
+【动作】角色A直视镜头露出浅笑，随即低头看向右手；右拳从腰侧迅速绕到左肩，再以很快速度横扫胸前。
+
+【爆点】右前臂扫到画面中线、运动模糊最强的一帧，执行动作匹配硬切（Action Match Cut）：窗帘、现代服装和室内灯光一帧消失，瞬间切成夜间古风石板院落和黑色古风武者造型；右手边同时爆开白热火焰、橙色火舌、火星和灰烟。
+【固定】不是衣服连续生长，不是身体变形；人物脸部、手臂位置和横扫方向在切换前后准确衔接。
+【音效】手臂破风声接低频重拍，变装切点同步一声火焰轰鸣。
+[00:01.20-00:03.00] 镜头2：伸掌控火（Fire Control Close-Up）
+【机位】保持固定中近景，人物比例和前一镜头一致，焦点锁定角色A的右手与掌前火团。
+【动作】角色A延续横扫动作，把右臂完全伸向画面左侧，手掌突然张开，五指清楚分离；角色A低头看向掌前火团，嘴唇闭合，眉眼收紧。
+
+【特效】一团白热核心、橙黄外焰的火焰停留在手掌前方左侧，连续收缩再膨胀；红褐烟雾向上翻卷，细小火星向下散落。火光从左下方动态照亮角色A的脸侧、手掌和黑衣边缘。
+【固定】火团来自电影视觉特效，不接触皮肤；不出现第二人物，不生成具体火焰生物。
+【音效】火焰持续呼啸、细碎火星爆裂声，配乐节拍逐渐加快。
+[00:03.00-00:04.20] 镜头3：横扫成环（Horizontal Fire Ring）
+【镜头切换】火团仍位于画面左侧时，硬切到正面固定大全景（Wide Locked Shot）。
+【画面】角色A站在古建庭院中央，双腿大幅分开并降低重心，双手握住单端燃烧的深色长杆。
+
+【动作】角色A以腰胯带动长杆，从左后方向右侧完成一次快速水平旋转；燃烧端先划出一条橙黄色月牙，随后扩张成围绕角色A下半身的巨大水平火环。
+【特效】火环具有白热核心和橙红边缘，火焰经过后仍短暂悬留；环外飞散火星，灰黑烟雾滞后上升并逐渐遮住角色A下半身。
+【收束】火环快速碎裂成地面余火，浓烟填满画面中下部。
+【音效】长杆破风声沿左右声道移动，火环闭合时落下一记低频鼓点。
+[00:04.20-00:08.40] 镜头4：竖环升空（Vertical Fire Ring，Continuous Action）
+【转场】利用浓烟遮住角色A，在烟幕最厚时硬切重置动作；场景和人物身份不变。
+【00:04.20-00:05.40】角色A重新直立，长杆斜指左上；双手把燃烧端从左上带到左下，再贴近石板地面从左向右横扫，随后由右侧高举过头顶。燃烧端在竖直平面画出一个完整圆形火环，角色A始终位于圆心。
+
+【00:05.40-00:06.70】火环坍散成地面火墙和浓烟。角色A沉入低蹲，把燃烧端从腰后绕到胸前右侧，再从低位起身，将长杆向头顶抡起；宽袖、长下摆和高束长发顺着旋转方向甩开。
+【00:06.70-00:08.00】角色A宽步旋身，完成一次短促、轻盈的腾空动作；燃烧端沿人物外侧高速画圆，月牙火弧迅速膨胀成包围全身的巨大竖直火环。
+【00:08.00-00:08.40】角色A自然下降，双脚接触石板后屈膝缓冲；巨大火环同步断裂成火星、地面余火和厚重烟雾。
+【机位】全段保持正面固定中远景，不推拉、不绕拍。
+【固定】腾空时间短促，必须看见起跳、下降、脚掌落地和屈膝缓冲；人物不能在空中静止，长杆不能与双手分离。
+[00:08.40-00:10.70] 镜头5：俯瞰画圆（Top Shot Fire Circle）
+【镜头切换】人物落地、烟雾铺开时，硬切到90度垂直俯拍（Top Shot）。
+【动作】角色A位于圆心附近，保持低身姿态旋转长杆；燃烧端依次经过人物右侧、画面下方和人物左侧，在与地面平行的水平面画出明亮U形火轨，再接近完整圆形火圈。
+
+【特效】最新火头呈白黄色，旧火迹逐渐由橙红变成暗红余烬，随后熄成灰黑烟圈；主火头始终固定在长杆同一端。
+【运镜】摄影机持续垂直升高并缓慢拉远，角色A、火圈和烟雾逐渐缩小，四周石板沉入黑暗。
+【固定】火圈与地面平行，不倾斜、不立起；不出现火龙、凤凰、火鸟或悬浮光球。
+【音效】火圈经过画面四个方向时配连续环绕破风声，拉远时配乐短暂降低。
+[00:10.70-00:15.00] 镜头6：斜劈起火墙（Low-Angle Fire Wall Finale）
+【镜头切换】俯拍画面只剩一个小火点时，硬切到低机位广角荷兰角（Low-Angle Dutch Shot）。
+【画面】角色A站在夜间石板院落中央偏左，双手把同一根燃烧长杆高举过头；背景左后方是暗色木构门窗，右后方只有少量暖色灯点。
+
+【00:10.70-00:12.00】角色A向镜头方向压进半步，转动腰胯并降低重心，把燃烧端从头顶沿身体左侧斜向挥到镜头左下方；火焰逼近镜头，形成短暂黄白过曝和大片橙色失焦散景。
+【00:12.00-00:13.30】角色A抬臂完成收势；燃烧端的挥动轨迹在画面上方扩张成横跨左右的巨大半圆火弧，画面下方中央和右侧同时升起粗大的翻卷火墙。
+【00:13.30-00:14.50】火墙内部呈黄白色，外缘呈橙红色，表面不断翻出细碎火舌；黑烟向火弧下方堆积，火星向上散落。角色A稳定站在半圆火弧内部，衣摆受热流和动作惯性轻微摆动。
+【00:14.50-00:15.00】火墙快速回落，白热核心缩小，橙红余火和黑烟占据画面；角色A保持收势姿态，火弧在头顶逐渐断裂，最后一簇火星落下完成收尾。
+【固定】从斜向挥杆到火墙展开保持同一连续镜头，火焰遮挡不能触发换景；随机火舌不能变成具象动物。
+【音效】斜向挥杆配沉重破风声，火墙升起配低频火焰轰鸣；最后火势回落时配乐停止，只剩火星落地声和烟火余响。
+【音响】
+全片无对白、无旁白、无人物喊叫。使用低沉东方打击乐、持续环境低频、长杆破风声、火焰呼啸声、火星爆裂声和烟火闷响；硬切、火环闭合、腾空和最终火墙分别与音乐重拍同步。音效必须跟随燃烧端的真实运动方向，不提前出现。
+【角色与道具固定】
+
+角色A的脸部、身份和肤色严格遵循@图片1；现代服装只存在于开场，1.20秒切换成古风造型后不得恢复或改变。
+深色长杆全片长度、粗细和颜色不变；角色A始终双手握住杆身，只有同一端燃烧。火焰必须由燃烧端的运动轨迹生成，不得从角色A身体、头发、手掌或长杆另一端冒出。
+
+【全片禁止】
+连续融化式变装、衣服从皮肤生长、背景渐变、无剪辑换景、人物脸部变化、身份漂移、服装颜色变化、发型变化、第二人物、群众、动物、火龙、火凤凰、火焰怪物、悬浮光球、字幕、片名、台标、logo、水印、乱码。
+禁止长杆变短、变粗、弯曲、变成软绳、复制成两根、穿过身体、脱离双手、握点漂移、双端燃烧、火焰离开杆端独立飞行。禁止手指融合、手脚增减、关节反折、身体重影、人物瞬移、角色出画后重新出现。
+
+禁止长时间悬空、空中静止、缺少落地过程、脚掌穿过地面、落地后身体无缓冲。禁止火环平面突然翻转、火圈与长杆脱离、火焰一帧消失、烟雾瞬间重置、卡通火焰、动漫线条、塑料皮肤、大面积纯白过曝。
+禁止镜头抖动、甩镜、冲击变焦、无故旋转、机位漂移、错误运镜、反射镜头和无关转场。`,
+    },
+  },
+  // 提示词回复帖: https://x.com/aimikoda/status/2104620676346744871（含 Midjourney 参数 + Seedance 提示词 + 4 张图）
+  {
+    id: "aimikoda-sword-vs-sky-creatures-seedance-2-5",
+    title: "巨剑剑客连斩空中怪群 · 厚涂手绘奇幻动作 · Seedance 2.5",
+    subtitle: "X · @aimikoda · Midjourney v8.2 + Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "Midjourney 出巨剑剑客和橙眼飞怪图，Seedance 2.5 生成厚涂手绘风剑客在草坡上连斩空中怪群。",
+    video: "/tutorials/aimikoda-sword-vs-sky-creatures-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/aimikoda-sword-vs-sky-creatures-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "手绘动漫",
+    shots: 10,
+    references: 4,
+    model: "Seedance 2.5（参考图 Midjourney v8.2）",
+    style: "厚涂手绘奇幻 · 蓝天草坡 · 琥珀色刀光 · sakuga 武器作画",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/aimikoda/status/2104619926702932219",
+    sourceAuthor: "@aimikoda",
+    sourcePlatform: "X",
+    sourceImpressions: 10918,
+    sourceStats: { asOf: "2026-09-29", likes: 360, reposts: 29, bookmarks: 121 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "开场即交手 → 连续偷袭与反击 → 近身刀光特写 → 怪群四面合围 → 多圈旋斩收尾",
+      opening: "第 0 秒没有铺垫：一只橙眼飞怪从正上方俯冲下来，草坡上的剑客压低身子，巨剑已经划出一道琥珀色刀光。",
+      openingAt: 0,
+      beats: [
+        { title: "偷袭和反击怎么交替", text: "约 2–9s 飞怪从上方、侧面轮流扑下，剑客转身、背后换手、回身上劈，被砍中的怪碎成墨色碎片；镜头贴着剑刃或跟着怪俯冲。", at: 2 },
+        { title: "中段加码", text: "约 9–19s 刀光越来越密：琥珀色月牙横扫、刀刃撞击迸火星，一只巨大的怪贴地掠过，镜头在低机位和近剑特写之间来回切。", at: 9 },
+        { title: "结尾怎么收", text: "约 20–26s 成群的飞怪从四面八方同时扑向画面中央，剑客在草坡中心旋转，脚下亮起一圈刀光；约 26s 一记多圈旋斩把怪群撕开，最后剑指天空定格。", at: 20 },
+      ],
+      copyThis: "提示词开头就写「镜头一开始已经在打」，不给站桩亮相；然后反复强调「偷袭—反击」的节奏、镜头要贴着剑刃和怪一起冲，最后用一记多圈旋斩把整群怪一次清掉；声音明确写「不要配乐，只要风声、剑鸣、怪叫和撞击声」。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 奇幻动作",
+      "16:9 横屏",
+      "Midjourney + Seedance 2.5",
+      "4 张参考图",
+      "无配乐纯音效",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 Midjourney 出风格参考图",
+        description:
+          "作者说第一张图是用关键词「weapon」加一组风格参数出的：4 个 --sref 风格码、个人风格档 --profile kxxcnp9（这是作者自己的风格档，别人用同一串码出图可能不一样）和 --stylize 250。这张拿巨剑的剑客就是提示词里的「@[referenced first image]」，锁定画风。另外 3 张橙眼飞怪图作者没给关键词（原帖未附提示词），对应提示词里怪物要保持的「provided references」外形。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者写明用 Midjourney v8.2 + Seedance 2.5。成片为 2560×1440、30fps、30 秒横屏，右下角全程有作者签名水印「Kōda」。声音：没有台词和配乐，只有破风声、刀光呼啸、撞击声和怪物尖叫，和提示词写的「No background music」一致（语音识别、频谱和节拍分析判断，未人工试听）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整 Seedance 提示词",
+        description:
+          "把下方英文提示词整段粘贴，第一张剑客图作为主风格参考，3 张飞怪图一起放上。提示词是一整段描述，没有逐镜头时间码：先写开场就被偷袭、连续反击，再写镜头要贴着剑刃和怪一起冲，结尾一记多圈旋斩撕开整群怪；然后规定声音、画风锁定、武器动作、怪物外形（长条蝠鲼/鳗鱼身、角、触须、成簇橙色眼睛）和镜头语言。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-aimikoda-sky-creatures-01",
+        number: "1",
+        title: "第一张图 · 巨剑剑客（Midjourney v8.2）",
+        subtitle: "作者回复附图原图（1024×1024）：关键词 weapon 出的图，提示词里的 @[referenced first image]，主风格锁定",
+        image: "/tutorials/aimikoda-sword-vs-sky-creatures-seedance-2-5/refs/01-first-image-weapon-mj.jpg",
+        prompt: `Midjourney v8.2:  --sref 1448908625 3123598145 387469134 3207844525 --profile kxxcnp9 --stylize 250`,
+      },
+      {
+        id: "ref-aimikoda-sky-creatures-02",
+        number: "2",
+        title: "飞怪参考 A · 尖刺背鳍橙眼怪",
+        subtitle: "作者回复附图原图（1024×1024）：对应提示词里怪物要保持的 provided references 外形",
+        image: "/tutorials/aimikoda-sword-vs-sky-creatures-seedance-2-5/refs/02-creature-ref-a.jpg",
+        prompt: "原帖未附提示词",
+      },
+      {
+        id: "ref-aimikoda-sky-creatures-03",
+        number: "3",
+        title: "飞怪参考 B · 长条鳗鱼形怪",
+        subtitle: "作者回复附图原图（1024×1024）：草坡上方掠过的长条怪，旁边有个小人",
+        image: "/tutorials/aimikoda-sword-vs-sky-creatures-seedance-2-5/refs/03-creature-ref-b.jpg",
+        prompt: "原帖未附提示词",
+      },
+      {
+        id: "ref-aimikoda-sky-creatures-04",
+        number: "4",
+        title: "飞怪参考 C · 双翼天线橙眼怪",
+        subtitle: "作者回复附图原图（1024×1024）：展开双翼、头顶一根天线的飞怪",
+        image: "/tutorials/aimikoda-sword-vs-sky-creatures-seedance-2-5/refs/04-creature-ref-c.jpg",
+        prompt: "原帖未附提示词",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.7s 开场即交手：一只橙眼飞怪从正上方俯冲，草坡上的剑客压低身子挥出琥珀色刀光。" },
+      { number: 2, description: "1.7–4s 中景：剑客抡起发光巨剑，远处飞怪扑来，被砍中的怪碎成墨色碎片。" },
+      { number: 3, description: "4–7.2s 剑客转身把巨剑扛过头顶再横扫；低机位从他身后仰拍，飞怪从天上俯冲。" },
+      { number: 4, description: "7.2–9.3s 几只飞怪贴近画面扑来，剑客横剑前刺。" },
+      { number: 5, description: "9.3–12.9s 快速交锋：琥珀色月牙刀光横扫，一只大怪逼近，近剑特写，剑客弓步突刺。" },
+      { number: 6, description: "12.9–15.4s 刀刃撞击迸出火星；远景怪群俯冲，一只巨大的怪贴着草坡掠过。" },
+      { number: 7, description: "15.4–19.5s 连续反击：挥剑、近剑刀光拖尾特写、低机位仰拍剑刃。" },
+      { number: 8, description: "19.5–21.7s 飞怪从两侧合拢，剑客横剑，画面拉出几道水平刀光。" },
+      { number: 9, description: "21.7–26.1s 成群的飞怪从四面八方同时扑向画面中央，剑客在草坡中心旋转，脚下亮起一圈刀光。" },
+      { number: 10, description: "26.1–30s 多圈旋斩划出巨大弧形刀光，把怪群撕碎四散，最后剑客举剑指天，天空只剩零星碎片。" },
+    ],
+    constraints:
+      "画风全部锚定第一张剑客图（厚涂笔触、蓝天、简洁环境、琥珀色刀光）；飞怪保持参考图外形：长条蝠鲼/鳗鱼身、不规则角、垂下的触须、成簇橙色眼睛；怪被砍中碎成墨色碎片，不要写实血腥；不要配乐，只要风声、剑鸣、衣料、怪叫和撞击声。--profile kxxcnp9 是作者个人风格档，别人复用效果可能不同。成片右下角全程有作者签名水印「Kōda」。",
+    video_prompt: {
+      title: "Just Grinding Mobs · Swordsman vs Sky Creatures",
+      subtitle: "Seedance 2.5 · 作者回复英文完整提示词 · 第一张图 = Midjourney 剑客图",
+      content: `The scene opens already in motion: one of the orange-eyed sky creatures suddenly drops from directly above while another skims in from the blind side, forcing the swordsman into an immediate evasive half-turn and a rising counter-spin that sends the giant blade carving a luminous amber curve across the sky. Before the first body even finishes splitting apart, a second creature lunges low, he snaps the sword behind his back, absorbs the attack with a sliding rotational parry and whips the momentum upward into a reverse overhead strike that catches a third beast diving from the clouds. The fight escalates into a constant exchange of surprise attacks and sharp counter-hits—creatures feint, swarm, dive, overshoot and re-attack while the swordsman keeps the blade in uninterrupted motion, chaining circular guards, pivot slashes, vertical snap-cuts, full-body spin recoveries and giant sweeping finishers. The camera never settles for long, diving with the attackers, circling around the swordsman during sword-flourish transitions and rushing alongside the blade so each counter feels sudden, heavy and dangerously close. The final stretch becomes a storm of overlapping ambushes from multiple directions, ending in a massive multi-rotation finishing arc that tears through the entire formation and leaves the sky briefly sliced open by glowing painted trails. No background music—only wind shear, blade resonance, cloth movement, creature shrieks, magical air displacement and brutal impact sounds. Use @[referenced first image] as the primary style lock and preserve its painterly blue-sky fantasy language, rough brush textures, graphic silhouettes, sparse environmental simplicity and glowing amber blade energy. High-end painterly cinematic 2D action fused with sakuga-grade weapon choreography defines the preset: the colossal enchanted sword is handled with impossible mastery through whipping spins, one-handed momentum redirects, overhead helicopter rotations, behind-the-back grip switches, rising corkscrew slashes, mid-step reversals, airborne recovery arcs and explosive counter-cuts that convert defense into offense in a single motion. The movement language must feel predatory and reactive rather than heroic-and-static: creatures strike in abrupt divebombs, side-blitzes and fake-out lunges, while the swordsman answers with instant angle changes, near-miss evasions, last-second deflections, spinning parries and chained retaliations that cut through multiple targets across different depths of the frame. The visual physics are driven by huge calligraphic blade trails, atmosphere-splitting amber crescents, torn cloud wakes, pressure-ring distortions, flying debris, cloth snap, ember fragments and dark creature remains breaking apart into painterly shreds instead of realistic gore. The airborne monsters should keep the eerie visual logic of the provided references—elongated manta- or eel-like bodies, irregular horns, dangling tendrils and clusters of glowing orange eyes—so every attack wave feels uncanny and visually distinct. Camera language is highly aggressive and unpredictable: low-angle rushes, fast lateral tracking, violent orbital sweeps, sudden push-ins, near-blade passes, upward whip reframes, steep perspective drops and wide resets that briefly re-establish scale before collapsing back into the chaos. Despite the speed, readability stays sharp through clean silhouettes, bold spacing, strong directionality and clear impact poses, making the whole sequence feel like premium feature-animation concept art brought to life at full intensity.`,
+    },
+  },
+  // 提示词回复帖: https://x.com/egeberkina/status/2100147380851024153（开头 "Here’s the prompt I used" 和结尾挑战赛链接已去掉）
+  {
+    id: "egeberkina-credit-card-receipt-coins-motion-h3",
+    title: "黑卡变小票变图表变金币 · 金融动态图形一镜变形 · MiniMax H3",
+    subtitle: "X · @egeberkina · MiniMax H3 · 14秒 · 16:9",
+    description:
+      "MiniMax H3 金融动态图形：黑卡数字飞出变小票，小票折成柱状图，数据点变金币，金币再拼回黑卡。",
+    video: "/tutorials/egeberkina-credit-card-receipt-coins-motion-h3/demo-web.mp4",
+    poster: "/tutorials/egeberkina-credit-card-receipt-coins-motion-h3/poster.jpg",
+    duration: "14秒",
+    durationSec: 14,
+    styleLabel: "动态图形",
+    shots: 7,
+    references: 0,
+    model: "MiniMax H3",
+    style: "黑白极简金融动态图形 · 纸张模拟 · 金属硬币物理 · 物体无缝变形",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/egeberkina/status/2100147377671655632",
+    sourceAuthor: "@egeberkina",
+    sourcePlatform: "X",
+    sourceImpressions: 3442,
+    sourceStats: { asOf: "2026-09-29", likes: 26, reposts: 3, bookmarks: 12 },
+    formats: ["折叠·变形", "产品广告"],
+    hook: {
+      structure: "黑卡旋转 → 数字脱离卡面 → 打印成长小票 → 小票折成柱状图 → 数据点变金币 → 金币雨堆叠 → 拼回黑卡",
+      opening: "第 0 秒纯黑背景里一张黑色信用卡慢慢旋转，凸起的卡号反光；约 0.5s 镜头贴近卡号，数字开始从卡面浮起。",
+      openingAt: 0,
+      beats: [
+        { title: "数字怎么变成小票", text: "约 1.5–2.5s 卡号一个个脱离卡面飘在空中；约 2.6s 起切到一条长长的小票，镜头贴着纸面往下冲，一行行交易金额不断打印出来，约 4s 出现 TOTAL。", at: 1.5 },
+        { title: "小票怎么变成图表", text: "约 4.4s 小票向上卷起、折成一排竖条；约 6.2s 竖条变成柱状图起伏，一条青色折线沿柱顶划过；约 8s 最后一个数据点猛地往上冲。", at: 4.4 },
+        { title: "结尾怎么收", text: "约 8.5s 数据点变成一枚旋转的金属硬币；约 10s 成百上千的硬币落下、弹跳、堆起来；约 11.7s 硬币排成整齐的方阵，约 13s 变回开头那张黑卡。", at: 8.5 },
+      ],
+      copyThis: "每 2 秒写一个变形：卡 → 数字 → 小票 → 图表 → 硬币 → 卡，每一步都让上一步的物体直接变成下一步的物体，最后回到起点形成闭环；结尾一句列出质感关键词（纸张模拟、金属硬币、动态字体、物理感）。",
+      approx: true,
+    },
+    tags: [
+      "14秒 · 动态图形",
+      "16:9 横屏",
+      "MiniMax H3",
+      "无参考图",
+      "首尾闭环变形",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：纯文字生成，不需要参考图",
+        description:
+          "作者只公开了一段英文提示词，没有参考图。提示词用时间码把 15 秒分成 8 段，每段写一个物体变成下一个物体：黑卡、飘出的数字、长小票、柱状图、硬币，最后回到黑卡，首尾闭环。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者写明用 MiniMax H3。成片为 2560×1440、24fps、约 13.9 秒横屏，比提示词写的 15 秒短一点，没看到水印。小票上的金额和提示词列的 4.50、12.99、48.20、127.00 对不上，部分数字有乱码。声音：没有人声，以音效为主，有转场风声、打印和纸张声、硬币碰撞声，约 7.8 秒有一声上扬的提示音，没听出清晰的旋律或规律节拍（语音识别和频谱判断，未人工试听）。提示词里没写声音。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴。开头一句定调「15 秒超风格化金融动态图形」，然后按 0–2s、2–4s……14–15s 逐段写变形，4–6s 那段还列出了小票上要打印的金额和 TOTAL；最后一句写质感和风格：纸张模拟、动态字体、金属硬币、数据可视化、物体无缝变形、高端金融科技广告。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–1.5s 纯黑背景里黑色信用卡慢慢旋转，镜头贴近凸起的卡号。" },
+      { number: 2, description: "1.5–2.6s 卡号脱离卡面，浮在三维空间里从镜头前掠过。" },
+      { number: 3, description: "2.6–4.4s 一条长长的小票，镜头贴着纸面往下冲，一行行金额不断打印出来，出现 TOTAL。" },
+      { number: 4, description: "4.4–6.2s 小票向上卷起、折叠，印着的数字变成一排竖条。" },
+      { number: 5, description: "6.2–8.1s 竖条变成柱状图高低起伏，青色折线沿柱顶划过，最后一个点猛地往上冲。" },
+      { number: 6, description: "8.1–11.7s 数据点变成一枚旋转的金属硬币，接着成百上千的硬币落下、弹跳、堆起来。" },
+      { number: 7, description: "11.7–13.9s 硬币排成整齐的方阵，再拼成卡片形状，变回开头的黑卡。" },
+    ],
+    constraints:
+      "每一步都让上一个物体直接变成下一个物体（卡 → 数字 → 小票 → 图表 → 硬币 → 卡），最后回到开头的黑卡形成闭环；纯黑背景、黑白银配色，只有图表折线带一点青色。成片约 13.9 秒，比提示词写的 15 秒短；小票上的金额和提示词列的不一致，部分数字有乱码；无水印、无人声，以音效为主。",
+    video_prompt: {
+      title: "Financial Motion Graphics · Card → Receipt → Graph → Coins",
+      subtitle: "MiniMax H3 · 作者回复英文完整提示词 · 无参考图",
+      content: `15-second hyper-stylized financial motion graphics sequence.
+
+0–2s: A minimal black credit card rotates slowly in empty space. Embossed numbers catch the light.
+
+2–4s: Camera pushes extremely close into the card numbers. The digits detach from the surface and begin floating in three-dimensional space. Hundreds of numbers stream past camera like financial data.
+
+4–6s: The numbers align into columns and suddenly print themselves onto an impossibly long receipt. Camera races downward along the receipt as transactions rapidly appear.
+
+4.50
+12.99
+48.20
+127.00
+TOTAL
+
+6–8s: The receipt folds upward like paper architecture. Its printed numbers become vertical bars, transforming the paper into a physical financial graph.
+
+8–10s: Graph bars rise and fall dramatically. A thin line races across their tops while percentages and tiny data labels appear.
+
+10–12s: One graph point shoots upward and becomes a spinning metallic coin.
+
+12–14s: Hundreds of coins rain downward, bounce, stack and organize themselves into the exact rectangular proportions of the original credit card.
+
+14–15s: The coin structure instantly becomes the black card again.
+
+Premium financial identity, tactile paper simulation, kinetic typography, metallic coins, elegant data visualization, satisfying physics, seamless object transformations, luxury fintech commercial meets experimental motion design.`,
+    },
+  },
+  // Ima Studio 公开画布项目（从官方模板克隆，source=template-detail-clone，原快照 snapshot_f5ae692ae774442c8e5aa17a6c5d287c）；提示词取自画布视频节点原文
+  {
+    id: "imastudio-kpop-strawberry-kitchen-dance-mv-seedance-2-5",
+    title: "韩系女团草莓 MV · 厨房同步舞转场粉色客厅 · Seedance 2.5",
+    subtitle: "Ima Studio 画布 · Seedance 2.5 · 10秒 · 4:3",
+    description:
+      "Ima Studio 官方示例：Seedance 2.5 纯文字生成韩系女团 MV，草莓开场，厨房同步舞转场粉色客厅。",
+    video: "/tutorials/imastudio-kpop-strawberry-kitchen-dance-mv-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/imastudio-kpop-strawberry-kitchen-dance-mv-seedance-2-5/poster.jpg",
+    duration: "10秒",
+    durationSec: 10,
+    styleLabel: "K-pop MV",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5（Ima Studio 画布，文生视频）",
+    style: "写实电影感 MV · 夏日暖光 · Y2K 时尚 · 女团同步编舞",
+    aspectRatio: "4/3",
+    sourceUrl: "https://www.imastudio.com/canvas-editor/prj_1790589516398_bb5719f0d5d6a7c9",
+    sourceAuthor: "Ima Studio 官方模板",
+    sourcePlatform: "Ima Studio",
+    sourceStats: { asOf: "2026-09-29" },
+    formats: ["角色表演"],
+    hook: {
+      structure: "草莓掉进苏打水 → 厨房岛台齐舞 → 主舞近景手势 → 草莓填满画面转场 → 粉色客厅高潮 → 接住草莓微笑",
+      opening: "第 0 秒微距：一颗草莓掉进冒泡的苏打水，气泡猛地炸开；约 1.1s 硬切到四个女孩站在厨房岛台后，鼓点落下就开跳。",
+      openingAt: 0,
+      beats: [
+        { title: "舞蹈怎么推进", text: "约 1.1–3.3s 四人在岛台后同步踩点，镜头快速推近，主舞走到前面做手势；约 3.3–5s 全景齐舞变队形，厨房里的水果和瓶罐飘到半空。", at: 1.1 },
+        { title: "转场怎么做", text: "约 5–6s 主舞近景看镜头比手势；约 6s 一颗草莓飞过镜头、填满整个画面，下一秒变成粉色客厅里飘着的红色圆球，四人接着跳同一套舞。", at: 5 },
+        { title: "结尾怎么收", text: "约 7–8.7s 低机位跟拍甩头发、转身；约 8.7s 音乐收住，切主舞近景，她一手接住草莓、看镜头浅浅一笑，约 9.7s 黑场。", at: 8.7 },
+      ],
+      copyThis: "提示词按 8 个镜头写，每镜都标焦段和运镜（ECU 微距、35mm 快推、85mm 特写、甩镜），舞蹈动作用「肩部卡点 → 转头 → 手扫过身体 → 同步胯部」这种箭头清单写死；再单独写一段 DANCE PRIORITY，要求 10 秒里大约 5 秒在真跳舞。",
+      approx: true,
+    },
+    tags: [
+      "10秒 · K-pop MV",
+      "4:3 画幅",
+      "Seedance 2.5 · 文生视频",
+      "8 镜分镜提示词",
+      "平台官方示例",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：纯文字生成，不需要参考图",
+        description:
+          "这是 Ima Studio 画布里公开的官方模板项目，视频节点是 Seedance 2.5 文生视频，没有输入图片，也没有故事板。画布上另有一个 Gemini 文字节点，只写了标题；还有一个「按视频反推提示词」的节点，没有运行结果，都和出片无关。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "节点参数：Seedance 2.5、4:3、10 秒、720p、开启音频、不加水印。成片为 1112×834、24fps、约 10.1 秒，最后约 0.4 秒是黑场，没看到水印。声音：全程是一段有鼓点的流行舞曲，里面疑似有含糊的人声演唱，听不清歌词；约 8.8 秒音乐明显收住，和提示词写的「Music briefly drops out」一致（语音识别和频谱判断，未人工试听）。与提示词不符：约 6 秒草莓填满画面后变成的是飘在客厅里的红色圆球，没有提示词写的「巨大红气球」那么大。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴。开头写格式、概念、四人造型和视觉风格；然后按 8 个镜头写时间码、焦段、运镜和舞蹈动作（草莓开场、厨房齐舞、物体飘起、主舞手势、草莓变气球转场、粉色客厅高潮、接住草莓结尾）；最后是 AUDIO（K-pop 舞曲、无台词）、DANCE PRIORITY 和关键词。",
+      },
+    ],
+    references_detail: [],
+    storyboard: [
+      { number: 1, description: "0–1.1s 微距：一颗草莓掉进冒泡的苏打水，气泡猛地炸开。" },
+      { number: 2, description: "1.1–3.3s 硬切厨房：四个女孩站在岛台后同步踩点，镜头快速推近，主舞走到前面对着镜头做手势。" },
+      { number: 3, description: "3.3–5s 全景：四人在厨房里齐舞、变换队形，水果和瓶罐飘到半空。" },
+      { number: 4, description: "5–6s 主舞近景：看着镜头比手势、弹手指。" },
+      { number: 5, description: "6–6.8s 草莓飞过镜头、填满整个画面，转到粉色客厅，一颗红色圆球飘在前景。" },
+      { number: 6, description: "6.8–8.7s 粉色客厅：四人低机位同步跳舞，甩头发、转身、伸臂定点。" },
+      { number: 7, description: "8.7–10.1s 音乐收住，主舞近景一手接住草莓，看镜头浅浅一笑，最后约 0.4 秒黑场。" },
+    ],
+    constraints:
+      "四个女孩要一直是同一组人和同一套 Y2K 造型；10 秒里大约 5 秒必须在真跳舞，动作要同步、清楚，不能只是摆姿势或走路；两个场景之间用草莓填满画面来转场，舞蹈动作要接得上；无台词，音乐卡在动作上，结尾前音乐收住，最后一拍黑场。这是平台官方模板的示例项目。",
+    video_prompt: {
+      title: "Stylish K-pop Girl Group MV · Strawberry Summer",
+      subtitle: "Seedance 2.5 · Ima Studio 画布视频节点英文完整提示词 · 无参考图",
+      content: `**FORMAT:** 10s · 4:3
+**CONCEPT:** Stylish K-pop girl group MV · chic 2000s American teen movie · surreal summer fantasy · fashion-forward, playful, youthful, effortlessly cool.
+
+**CAST:** Four exceptionally beautiful Korean female idols in their early 20s. Distinctive faces, polished natural makeup, glossy hair, refined Y2K-inspired fashion: fitted tops, mini skirts, delicate jewelry, ballet flats and stylish sneakers. Feminine, expensive-looking, never costume-like.
+
+**VISUAL STYLE:** Photorealistic cinematic music video, warm summer daylight, soft film grain, natural skin texture, sophisticated production design, glossy fashion cinematography, dynamic handheld camera, energetic rhythmic editing.
+
+### SHOT 01 — 0.0–0.8s | VISUAL HOOK
+
+**ECU / macro**
+A strawberry drops into sparkling soda. Bubbles violently erupt around it.
+
+**BEAT:** *BOOM.*
+
+### SHOT 02 — 0.8–2.0s | DANCE INTRO
+
+**35mm / fast push-in**
+Hard cut to four girls standing around a beautiful kitchen island.
+
+The beat drops.
+
+They immediately hit a **sharp synchronized 4-count choreography**:
+shoulder hit → head turn → hand sweep across body → synchronized hip snap.
+
+Camera pushes rapidly toward them as they hit the final pose.
+
+### SHOT 03 — 2.0–3.0s
+
+**50mm / lateral tracking**
+The main dancer steps forward and performs a fast **signature hand choreography** toward camera while the other three mirror her movement behind her.
+
+On the final hand gesture, every object in the kitchen suddenly floats upward.
+
+### SHOT 04 — 3.0–4.5s | MAIN CHOREOGRAPHY
+
+**35mm / dynamic orbit**
+The four girls launch into a **full synchronized dance sequence** in the kitchen.
+
+Sharp footwork → synchronized body roll → crossed-arm hit → formation change.
+
+They move from a straight line into a diamond formation while the camera circles around them.
+
+### SHOT 05 — 4.5–5.5s | CENTER MOMENT
+
+**85mm close-up**
+The center dancer performs a quick **facial-expression + hand gesture signature move**, looking directly into camera.
+
+She finishes by flicking her fingers toward the lens.
+
+A strawberry flies past camera.
+
+### SHOT 06 — 5.5–7.0s | SURREAL TRANSITION
+
+**Whip pan / 24mm**
+The strawberry fills the frame and transforms into a giant red balloon.
+
+Whip pan reveals the girls now dancing inside a dreamy pastel-pink living room.
+
+They immediately continue the **same choreography**, creating a seamless dance continuity between locations.
+
+### SHOT 07 — 7.0–8.8s | DANCE CLIMAX
+
+**Low angle / 35mm / fast tracking**
+Four girls perform the final synchronized section:
+
+step forward → sharp shoulder hit → hair flip → synchronized turn → powerful final arm extension.
+
+The camera rushes toward the center dancer as all four hit the final pose together.
+
+### SHOT 08 — 8.8–10.0s | ICONIC ENDING
+
+**85mm close-up**
+Music briefly drops out.
+
+The center girl catches the strawberry in one hand, looks directly into camera and gives a tiny confident smile.
+
+**CUT TO BLACK ON THE FINAL BEAT.**
+
+**AUDIO:** High-energy K-pop track with punchy drums, addictive bass and a memorable dance break. The choreography must visibly respond to every major beat. No dialogue.
+
+**DANCE PRIORITY:** The girls are **actively dancing for approximately 5 seconds of the 10-second video**. Choreography must be synchronized, deliberate and visually readable — not casual posing, walking, or vague hand gestures.
+
+**KEYWORDS:** K-pop girl group choreography, synchronized dance, signature dance move, formation change, dance break, beautiful Korean idols, stylish Y2K fashion, 2000s American teen movie, surreal summer fantasy, cinematic music video, photorealistic, dynamic camera, fashion editorial, youthful and sophisticated.`,
+    },
+  },
 ];
 
 export function getTutorialById(id: string): Tutorial | undefined {
