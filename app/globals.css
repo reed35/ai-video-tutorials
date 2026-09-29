@@ -53,6 +53,14 @@ details[open] summary span {
   .text-balance {
     text-wrap: balance;
   }
+  /* 横向滚动但隐藏滚动条（首页套路筛选条） */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Filmstrip scroll animation */

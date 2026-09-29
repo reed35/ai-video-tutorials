@@ -2,6 +2,7 @@ import Link from "next/link";
 import { tutorials } from "@/lib/tutorials";
 import { TutorialGrid } from "@/components/tutorial-grid";
 import { FilmstripPreview } from "@/components/filmstrip-preview";
+import { HomeVisitMarker } from "@/components/back-to-list";
 
 export default function Home() {
   return (
@@ -56,6 +57,7 @@ export default function Home() {
       </section>
 
       <div id="tutorials" className="max-w-[1200px] mx-auto px-[18px] pb-20">
+        <HomeVisitMarker />
         <TutorialGrid tutorials={tutorials} />
 
         <footer className="mt-16 text-[var(--muted)] text-xs text-center">

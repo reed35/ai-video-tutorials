@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { PromptBlock } from "@/components/prompt-block";
 import { HookBreakdown } from "@/components/hook-breakdown";
 import { MethodPromptCard } from "@/components/method-prompt-card";
+import { BackToList } from "@/components/back-to-list";
 
 export function generateStaticParams() {
   return tutorials.map((tutorial) => ({
@@ -47,6 +48,17 @@ export default async function TutorialPage({
   }
 
   return (
+    <>
+    <nav className="sticky top-0 z-40 border-b border-[var(--line)] bg-[rgba(11,13,16,0.72)] backdrop-blur-md supports-[backdrop-filter]:bg-[rgba(11,13,16,0.6)]">
+      <div className="max-w-[980px] mx-auto px-[18px] h-12 flex items-center justify-between">
+        <BackToList className="inline-flex items-center gap-1.5 text-sm text-[#e7e5e4] hover:text-[var(--accent)] transition-colors">
+          <span aria-hidden>←</span> 返回教程列表
+        </BackToList>
+        <Link href="/" aria-label="成片拆解首页" className="hover:opacity-80 transition-opacity">
+          <img src="/brand/mark.png" alt="成片拆解" width={32} height={32} className="w-8 h-8 rounded-md object-cover" />
+        </Link>
+      </div>
+    </nav>
     <div className="max-w-[980px] mx-auto px-[18px] py-7 pb-20">
       <header className="flex items-center gap-3 mb-8 py-4">
         <Link
@@ -416,7 +428,14 @@ export default async function TutorialPage({
           "成片拆解 · 来源未标注 / 内部整理"
         )}
       </footer>
+
+      <div className="mt-10 flex justify-center">
+        <BackToList className="inline-flex items-center gap-2 min-h-[44px] px-6 py-3 rounded-xl border border-[rgba(94,234,212,0.35)] bg-[rgba(94,234,212,0.1)] text-[15px] font-semibold text-[var(--accent)] hover:bg-[rgba(94,234,212,0.18)] transition-colors">
+          <span aria-hidden>←</span> 返回首页，看更多教程
+        </BackToList>
+      </div>
     </div>
+    </>
   );
 }
 
