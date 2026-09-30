@@ -25745,6 +25745,735 @@ Create a 15-second vertical cinematic video in which one character confronts dan
 前5秒让观众同时理解割草机将清掉这一排、向日葵正在被啃咬、它却仍给戴夫阳光。8—12秒完整看见戴夫从房前跑到花旁，不能省略空间移动。救援、失控、保护按自然速度连续推进；不添加额外战斗、慢动作或长时间停顿。`,
     },
   },
+  // 主帖附 Part-1 提示词；Part-2 提示词和 4 张参考图在作者自回复 https://x.com/itxabdullaa/status/2104167861866651673 。OpenArt 广告大赛（#OpenArtAdAwards）参赛作品；推广链接和话题标签未收录
+  {
+    id: "itxabdullaa-aurel-watch-vanta-car-ad-seedance-2-5",
+    title: "机芯腕表 × 黑色超跑奢华广告 · AUREL VX-01",
+    subtitle: "X · @itxabdullaa · OpenArt · Seedance 2.5 · 47秒 · 4:3",
+    description:
+      "全黑背景里的机芯微距、男模看表、黑色超跑登场，两段提示词接成的 47 秒腕表超跑广告。",
+    video: "/tutorials/itxabdullaa-aurel-watch-vanta-car-ad-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/itxabdullaa-aurel-watch-vanta-car-ad-seedance-2-5/poster.jpg",
+    duration: "47秒",
+    durationSec: 47,
+    styleLabel: "奢华写实",
+    shots: 11,
+    references: 4,
+    model: "Seedance 2.5（BytePlus），经 OpenArt",
+    style: "全黑奢华广告 · 金属银高光 + 暗红点缀 · 机芯微距 · 超跑赛车氛围",
+    aspectRatio: "4/3",
+    sourceUrl: "https://x.com/itxabdullaa/status/2104167237070537128",
+    sourceAuthor: "@itxabdullaa",
+    sourcePlatform: "X",
+    sourceImpressions: 9495,
+    sourceStats: { asOf: "2026-09-30", likes: 212, reposts: 40, bookmarks: 28 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "机芯组装微距 → 暗影男模 → 齿轮与悬浮腕表 → 暗红粒子转场 → 看表 → 超跑登场 → 轮毂 → 雨夜超跑阵列 → 第二段：表壳微距、车内驾驶、收尾腕表英雄镜头",
+      opening: "第 0 秒全黑背景里，机芯零件在微距镜头下组装。",
+      openingAt: 0,
+      beats: [
+        { title: "前 30 秒怎么推进", text: "约 6–10s 男模暗影肖像和齿轮微距；约 12–14s 暗红粒子转场；约 15–16s 男模抬手看表；约 18–19s 黑色超跑亮相。", at: 6 },
+        { title: "第一段收尾", text: "约 22s 轮毂微距、约 24s 腕表微距，约 27–29s 男模走在车旁，雨里一排同款超跑。", at: 22 },
+        { title: "第二段（约 30–47s）", text: "表壳和机芯微距、男模坐进车里驾驶，最后停在腕表英雄镜头上。", at: 30 },
+      ],
+      copyThis: "提示词先写「锁定元素」（同一个男模、同一块表、同一辆车，脸和材质颜色都不许变），再用一串箭头写镜头顺序；第二段开头写明「直接接上一段」，两段接起来就是一条长广告。",
+      approx: true,
+    },
+    tags: [
+      "47秒 · 两段提示词接成",
+      "4:3 画幅",
+      "OpenArt · Seedance 2.5",
+      "4 张参考图（含分镜图）",
+      "腕表 × 超跑广告",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 4 张参考图",
+        description:
+          "作者在自回复里附了 4 张图：男模设定图、AUREL VX-01 腕表设定图、BLACK VANTA R1 超跑设定图，以及一张标了 00:00–00:30 时间码的第一段分镜图。4 张图都没有附生图提示词。提示词第一句写「尽量还原参考广告」，说明作者手上还有一条参考广告，但没有公开。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者用 OpenArt 上的 BytePlus Seedance 2.5 生成。成片 1440×1080（4:3）、24fps、约 46.8 秒，由两段拼成：第一段 30 秒，第二段约 16.8 秒，没有水印。声音只有配乐和音效，没有人声（语音识别判断，未人工试听）。注意：腕表造型接近 Richard Mille，超跑的上掀车门接近迈凯伦，商用前要注意外观近似的风险。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方提示词整段粘贴：前半是 Part-1（30 秒、4:3、24fps），依次写锁定元素、视觉风格、镜头顺序、声音；后半是 Part-2，开头写明直接接上一段。生成第一段时上传 4 张参考图，第二段接着第一段结尾生成，最后把两段剪在一起。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-itxabdullaa-watch-01",
+        number: "1",
+        title: "男模设定图",
+        subtitle: "作者附图原图（1408×768）：约 30 岁黑人男模，黑背心黑长裤，多角度",
+        image: "/tutorials/itxabdullaa-aurel-watch-vanta-car-ad-seedance-2-5/refs/01-model-reference-sheet.jpg",
+        prompt: "原帖未附提示词；这是作者附在提示词回复帖里的参考图。",
+      },
+      {
+        id: "ref-itxabdullaa-watch-02",
+        number: "2",
+        title: "AUREL VX-01 腕表设定图",
+        subtitle: "作者附图原图（1408×768）：碳纤维酒桶形表壳、镂空表盘、红色表冠、黑表带",
+        image: "/tutorials/itxabdullaa-aurel-watch-vanta-car-ad-seedance-2-5/refs/02-aurel-vx01-watch-sheet.jpg",
+        prompt: "原帖未附提示词；这是作者附在提示词回复帖里的参考图。",
+      },
+      {
+        id: "ref-itxabdullaa-watch-03",
+        number: "3",
+        title: "BLACK VANTA R1 超跑设定图",
+        subtitle: "作者附图原图（1408×768）：黑色超跑多角度",
+        image: "/tutorials/itxabdullaa-aurel-watch-vanta-car-ad-seedance-2-5/refs/03-vanta-r1-car-sheet.jpg",
+        prompt: "原帖未附提示词；这是作者附在提示词回复帖里的参考图。",
+      },
+      {
+        id: "ref-itxabdullaa-watch-04",
+        number: "4",
+        title: "第一段分镜图（00:00–00:30）",
+        subtitle: "作者附图原图（1376×768）：按时间码排列的第一段分镜",
+        image: "/tutorials/itxabdullaa-aurel-watch-vanta-car-ad-seedance-2-5/refs/04-part1-storyboard.jpg",
+        prompt: "原帖未附提示词；这是作者附在提示词回复帖里的参考图。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–5.8s 全黑背景，机芯零件微距组装。" },
+      { number: 2, description: "5.8–9.9s 男模暗影肖像，红黑机械微距。" },
+      { number: 3, description: "9.9–12s 齿轮转动，腕表悬浮在黑暗里。" },
+      { number: 4, description: "12–14s 暗红粒子转场。" },
+      { number: 5, description: "15–17.4s 男模抬手看表。" },
+      { number: 6, description: "17.4–21.4s 黑色超跑在暗处亮相。" },
+      { number: 7, description: "21.4–24.8s 轮毂微距、腕表微距。" },
+      { number: 8, description: "24.8–30s 男模走在车旁摆姿势，雨里一排同款超跑。" },
+      { number: 9, description: "30–35.6s 第二段：表壳和机芯微距。" },
+      { number: 10, description: "35.6–41.7s 男模坐在车里驾驶。" },
+      { number: 11, description: "41.7–46.8s 收尾：腕表正面英雄镜头。" },
+    ],
+    constraints:
+      "男模、腕表、超跑三样全片锁定，不改脸、比例、材质和颜色；全黑环境配银色高光和暗红点缀；要真实镜头质感，不要 CG 感、变形的手和塑料皮肤。腕表和超跑外观分别接近 Richard Mille 和迈凯伦，商用需注意。",
+    video_prompt: {
+      title: "AUREL VX-01 腕表 × 超跑广告（Part-1 + Part-2）",
+      subtitle: "主帖 Part-1 + 自回复 Part-2 英文完整提示词 · 配 4 张参考图",
+      content: `Part-1 | 30s | 4:3 | 24fps | Photorealistic Live-Action Luxury Commercial
+
+Recreate the reference advertisement as closely as possible in shot structure, timing, framing, lighting, camera movement, macro photography, transitions, editing rhythm, and overall cinematic language.
+
+LOCKED ELEMENTS:
+• Same Black male model (~30, athletic build, black tank top, black trousers)
+• Same AUREL VX-01 watch (carbon tonneau case, skeleton dial, silver hands, red crown, black strap)
+• Same BLACK VANTA R1 supercar
+• No changes to face, watch, car, proportions, materials, or colors
+
+VISUAL STYLE:
+Pure black environment, deep charcoal shadows, metallic silver highlights, dark crimson accents, luxury motorsport atmosphere. Real cameras, real lenses, real lighting, real reflections, real depth of field, realistic motion blur. No CGI look, no render look, no AI artifacts, no morphing, no floating objects, no deformed hands, no plastic skin.
+
+SEQUENCE:
+Mechanical assembly macro → shadowed model portrait → red/black engineering macros → rotating gears → suspended watch beauty shot → crown/strap/movement macros → dark crimson particle transition → model checks watch → VANTA R1 reveal → speed transition → wheel macro → watch hero macros → frontal watch product shot → model walking with car → hero pose beside car → rainy lineup of multiple VANTA R1 supercars.
+
+AUDIO:
+Dark luxury industrial-electronic soundtrack, deep sub-bass, subtle ticking, metallic clicks, restrained engine rumble, cinematic impacts. No dialogue. No voiceover.
+
+EDITING:
+Elegant luxury-commercial pacing, hard cuts synchronized with impacts, minimal motion-blur transitions. No text, logos, captions, or typography.
+
+OUTPUT:
+Ultra-photorealistic premium cinema commercial. Natural skin, real materials, realistic reflections and shadows, consistent character, watch, vehicle, and lighting. ZERO AI VIBE.
+
+PART 2 — DIRECT CONTINUATION
+
+16.8s | 4:3 | 24fps | Photorealistic Live-Action
+
+CONTINUITY LOCK:
+Continue directly from Part 1's final rainy BLACK VANTA R1 formation. Keep the exact same male model, face, skin tone, hair, physique, wardrobe, AUREL VX-01 watch, watch movement, red crown, strap, BLACK VANTA R1, burgundy interior, lighting, color grade, lens behavior, film grain, reflections, motion blur, and cinematic style.
+
+No redesigns. No character drift. No watch changes. No car changes. No CGI look. No AI artifacts. No morphing. No plastic skin.
+
+SEQUENCE:
+• Extreme macro tracking along the AUREL VX-01 carbon case edge with visible screws and red crown highlights.
+• Abstract black-and-silver metallic surface macro resembling luxury automotive reflections.
+• Inside BLACK VANTA R1: same driver seated behind the wheel, watch visible, burgundy interior, controlled lighting.
+• Wrist close-up on steering wheel, watch catching dashboard light.
+• Extreme macro of the skeletonized movement, gears, bridges, screws, and subtle mechanical motion.
+• Hero watch shot against deep crimson-black studio background, slow push-in.
+• Return to car interior; camera tracks outward through the side window, revealing more of the vehicle while keeping the watch visible.
+• Final hero product reveal: slow rotation/dolly around AUREL VX-01 into a premium three-quarter hero angle, then hold a nearly static luxury product shot until the end.
+
+AUDIO:
+Continue the exact same industrial-electronic score from Part 1. Deep sub-bass, subtle ticking, metallic details, restrained engine rumble during car shots only. No restart, no dialogue, no voiceover.
+
+EDITING:
+Elegant luxury-commercial pacing, clean hard cuts, realistic motion blur, no text, logos, taglines, or graphic overlays.
+
+OUTPUT:
+Premium luxury-watch commercial filmed with real cinema cameras, macro lenses, real materials, natural skin, realistic carbon fiber, sapphire crystal, reflections, shadows, and optical depth of field. Consistent character, watch, vehicle, and lighting throughout. ZERO AI VIBE.
+`,
+    },
+  },
+  // 主帖附 Part-1 提示词；Part-2 提示词和 3 张参考图（人物、分镜、产品）在作者自回复 https://x.com/itxabdullaa/status/2103085231821734010 。推广链接和话题标签未收录
+  {
+    id: "itxabdullaa-velvet-kiss-lip-oil-ad-seedance-2-5",
+    title: "VELVET KISS 唇油奢华美妆广告 · 红色液体与金发模特",
+    subtitle: "X · @itxabdullaa · OpenArt · Seedance 2.5 · 38秒 · 9:16",
+    description:
+      "唇油瓶泡在红色液体里、金发模特白棚走秀涂唇，两段提示词接成的 38 秒竖屏唇油广告。",
+    video: "/tutorials/itxabdullaa-velvet-kiss-lip-oil-ad-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/itxabdullaa-velvet-kiss-lip-oil-ad-seedance-2-5/poster.jpg",
+    duration: "38秒",
+    durationSec: 38,
+    styleLabel: "奢华写实",
+    shots: 10,
+    references: 3,
+    model: "Seedance 2.5，经 OpenArt",
+    style: "欧洲奢华美妆广告 · 白色影棚 + 红色液体 · 唇部微距 · 竖屏",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/itxabdullaa/status/2103084704979394875",
+    sourceAuthor: "@itxabdullaa",
+    sourcePlatform: "X",
+    sourceImpressions: 4301,
+    sourceStats: { asOf: "2026-09-30", likes: 240, reposts: 12, bookmarks: 29 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "产品浸在红色液体 → 白棚走路 → 涂唇与唇部特写 → 产品与液体 → 脸部 → 水滴与莓果 → 蓝调镜头 → 拿产品的脸部 → 唇部 → 产品收尾",
+      opening: "第 0 秒唇油瓶浸在翻涌的红色液体里，特写。",
+      openingAt: 0,
+      beats: [
+        { title: "前半段", text: "约 5–6s 金发模特在白色影棚里走来；约 7–12s 涂唇油，唇部微距；约 13–17s 回到产品和液体。", at: 5 },
+        { title: "中段", text: "约 18–21s 脸部和唇部；约 22–23s 水滴和莓果；约 24s 走路；约 26s 一个蓝色调镜头。", at: 18 },
+        { title: "结尾", text: "约 27–35s 模特拿着产品的脸部特写和唇部；约 37s 产品收尾。", at: 27 },
+      ],
+      copyThis: "提示词先写「绝对写实」和「人物锁定」两段，把真人皮肤、液体物理、镜头光学都写死，再按秒排镜头；产品镜头和人物镜头交替出现，节奏不拖。",
+      approx: true,
+    },
+    tags: [
+      "38秒 · 两段提示词接成",
+      "9:16 竖屏",
+      "OpenArt · Seedance 2.5",
+      "3 张参考图（含分镜图）",
+      "美妆产品广告",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 3 张参考图",
+        description:
+          "作者在自回复里附了 3 张图：金发女模人物设定图、VELVET KISS 唇油产品图、一张标了 0–30 秒时间码的第一段分镜图。3 张图都没有附生图提示词。人物是 AI 生成的写实女模。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者用 OpenArt 上的 Seedance 2.5 生成。成片 720×1280（9:16）、30fps、约 38.2 秒，由两段拼成，没有水印。声音只有配乐，没有人声（语音识别判断，未人工试听）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方提示词整段粘贴：前半是 Part-1（30 秒竖屏），依次写绝对写实、人物锁定、产品锁定和按秒排的镜头；后半是作者自回复里的 Part-2 原文（第一行是回复帖原话）。第一段上传 3 张参考图生成，第二段接着生成，最后剪在一起。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-itxabdullaa-lipoil-01",
+        number: "1",
+        title: "金发女模人物设定图",
+        subtitle: "作者附图原图：金发女模多角度设定",
+        image: "/tutorials/itxabdullaa-velvet-kiss-lip-oil-ad-seedance-2-5/refs/01-model-character-sheet.jpg",
+        prompt: "原帖未附提示词；这是作者附在提示词回复帖里的参考图。",
+      },
+      {
+        id: "ref-itxabdullaa-lipoil-02",
+        number: "2",
+        title: "VELVET KISS 唇油产品图",
+        subtitle: "作者附图原图：唇油瓶产品参考",
+        image: "/tutorials/itxabdullaa-velvet-kiss-lip-oil-ad-seedance-2-5/refs/02-velvet-kiss-product.jpg",
+        prompt: "原帖未附提示词；这是作者附在提示词回复帖里的参考图。",
+      },
+      {
+        id: "ref-itxabdullaa-lipoil-03",
+        number: "3",
+        title: "第一段分镜图（0–30 秒）",
+        subtitle: "作者附图原图：按时间码排列的第一段分镜",
+        image: "/tutorials/itxabdullaa-velvet-kiss-lip-oil-ad-seedance-2-5/refs/03-part1-storyboard.jpg",
+        prompt: "原帖未附提示词；这是作者附在提示词回复帖里的参考图。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 唇油瓶浸在红色液体里。" },
+      { number: 2, description: "5–6s 金发模特在白色影棚里走来。" },
+      { number: 3, description: "7–12s 涂唇油，唇部微距。" },
+      { number: 4, description: "13–17s 产品和红色液体。" },
+      { number: 5, description: "18–21s 脸部和唇部特写。" },
+      { number: 6, description: "22–23s 水滴和莓果。" },
+      { number: 7, description: "24–26s 走路，一个蓝色调镜头。" },
+      { number: 8, description: "27–33s 模特拿着产品的脸部特写。" },
+      { number: 9, description: "34–35s 唇部微距。" },
+      { number: 10, description: "36–38s 产品收尾。" },
+    ],
+    constraints:
+      "同一个金发女模全片不变脸；产品外形、颜色和标签锁定；真人皮肤毛孔、真实液体和镜头光学，不要蜡像皮肤、诡异眼睛和 AI 感。",
+    video_prompt: {
+      title: "VELVET KISS 唇油广告（Part-1 + Part-2）",
+      subtitle: "主帖 Part-1 + 自回复 Part-2 英文完整提示词 · 配 3 张参考图",
+      content: `Part-1 30-SEC VERTICAL 9:16 | PHOTOREALISTIC LUXURY BEAUTY COMMERCIAL
+
+Create a premium European luxury beauty commercial using the provided CHARACTER REFERENCE and PRODUCT REFERENCE.
+
+ABSOLUTE REALISM:
+Live-action cinema quality. Real human model, practical cosmetics, real glass, real liquids, real fruit and physical studio sets. Natural skin pores, realistic eyes, hair strands, hands, reflections, liquid physics and camera optics. No CGI look, wax skin, uncanny eyes, plastic face or AI aesthetic.
+
+CHARACTER LOCK:
+Use the exact same blonde female model throughout. Preserve her face, blue-green eyes, high bun, makeup, body proportions and dusty-rose pink suit.
+
+PRODUCT LOCK:
+Use the exact VELVET KISS raspberry-red lip oil in every product shot. Preserve bottle shape, color, lettering, glass and rose-gold cap.
+
+SHOT TIMELINE:
+0–1.7s — Extreme macro product reveal inside glossy raspberry-red liquid, droplets, rose-gold highlight, slow push-in and subtle rotation.
+
+1.7–4.1s — Model walks through a pristine white luxury studio, then approaches camera holding VELVET KISS close to lens. Natural focus shift from product to eyes.
+
+4.1–7.3s — Realistic hands open the lip oil. Macro applicator movement and close-up lip application with natural glossy texture.
+
+7.3–10.6s — Product hero surrounded by raspberry-red liquid, followed by glossy lips and a chrome-surface product shot.
+
+10.6–13.5s — Product inside soft blush-pink liquid folds. Realistic fluid physics, macro details and slow camera push toward VELVET KISS branding.
+
+13.5–18.8s — Model in dusty-rose suit holds product beside her cheek, applies it again, then looks into camera with subtle natural expressions and blinking.
+
+18.8–22.4s — Editorial upside-down portrait, followed by floating cosmetic droplets and a transition into realistic fresh raspberries and strawberries.
+
+22.4–26.6s — Product among fresh berries, then model returns to the white studio. She walks toward camera, leans in and holds the product near her lips. Final clean product hero on dusty-rose background.
+
+26.6–30s — Brief realistic blue-toned editorial beauty contrast, then immediately return to the model in white studio holding VELVET KISS beside her face. Subtle final camera push-in.
+
+AUDIO:
+Sophisticated minimal electronic-pop luxury soundtrack with deep bass pulse, glossy synth textures, subtle sparkle and restrained percussion. No vocals or dialogue. Add faint realistic cap-twist, applicator and liquid sounds.
+
+EDITING:
+Premium fashion-commercial pacing. Precise music-synced cuts, elegant slow motion, fast editorial transitions and realistic focus pulls. No AI morphing, text, subtitles, promotional graphics or watermarks.
+
+CAMERA:
+Full-frame cinema look with 35mm, 50mm, 85mm and 100mm macro lenses. Realistic depth of field, motion blur, exposure, reflections and controlled studio lighting.
+
+FINAL QUALITY:
+Photorealistic live-action luxury beauty campaign. Maintain perfect character and product continuity in every frame. Same face, hair, makeup, outfit, body, product design, color, proportions, lettering and cap throughout. Every shot must feel like it was filmed during one professional production.
+
+Part-2 + Refrences Character+Storyboard+Product 
+
+CONTINUE DIRECTLY FROM THE FINAL FRAME OF PART 1.
+
+CRITICAL CONTINUITY LOCK:
+The first frame of this generation must match the final frame of Part 1 exactly in character identity, face, hairstyle, makeup, clothing, body position, product position, product design, studio environment, lighting direction, lens characteristics and overall color grade.
+
+SAME CHARACTER:
+27-year-old blonde female fashion model, fair realistic skin, blue-green eyes, high ballerina bun, defined cheekbones, natural glossy raspberry-red lips, dusty-rose pink tailored suit and matching trousers.
+
+SAME PRODUCT:
+VELVET KISS luxury raspberry-red lip oil, clear glass cylindrical bottle, translucent deep raspberry-red liquid, polished metallic rose-gold cap, same dimensions, same branding and same applicator.
+
+STYLE:
+Photorealistic live-action luxury beauty campaign. No AI appearance. No character drift. No product redesign. No fantasy CGI. No InVideo branding or watermark.
+
+30.00–31.10
+Continue with the same model standing in the pristine white studio, holding the VELVET KISS lip oil beside her face. She subtly turns her head toward camera. Natural blink and tiny facial movement. Maintain exact pose continuity from the final frame of Part 1.
+
+31.10–32.20
+Cut to an extreme macro product shot. VELVET KISS rests in a thin layer of glossy raspberry-red liquid. Camera slowly pushes closer as realistic reflections move across the glass and rose-gold cap.
+
+32.20–33.30
+Macro beauty shot of the same product surrounded by silky translucent raspberry-red liquid. The liquid folds naturally around the bottle with physically believable movement. No artificial CGI appearance.
+
+33.30–34.30
+Return to the model in the white studio. Medium close-up. She holds the product beside her cheek, looking directly into camera. She gives a very subtle natural smile, keeping the sophisticated luxury editorial mood.
+
+34.30–35.30
+Close-up of the model's lips and lower face. The glossy raspberry-red lip oil catches the studio light. She slightly turns her head, creating a natural highlight across the lips.
+
+35.30–36.60
+Final hero shot: VELVET KISS product lying diagonally inside a smooth glossy raspberry-red liquid surface. Slow cinematic camera slide from left to right. Product remains perfectly sharp and centered enough to clearly recognize the packaging.
+
+36.60–37.75
+Clean final product beauty frame. VELVET KISS stands upright against a sophisticated dusty-rose/pale-pink studio background with a soft realistic shadow beneath it. The rose-gold cap catches one elegant highlight. Camera performs an extremely subtle push-in and then settles completely.
+
+END EXACTLY ON THE CLEAN PRODUCT HERO FRAME.
+No fade into black.
+No end card.
+No InVideo logo.
+No watermark.
+No extra text.
+No artificial UI.
+No sudden camera movement.
+No additional scene after the final product frame.
+
+AUDIO CONTINUITY:
+Continue the exact same luxury electronic beauty soundtrack from Part 1 without restarting the music. The final 2 seconds become slightly quieter and more refined, leaving a clean premium ending. Keep subtle cosmetic handling and liquid ambience underneath. No dialogue, no narration, no vocals.
+
+CAMERA AND IMAGE QUALITY:
+Same professional full-frame cinema camera aesthetic as Part 1. Realistic macro optics, natural depth of field, physically correct reflections, realistic glass refraction, natural skin texture, realistic liquid physics, controlled studio lighting, natural motion blur.
+
+FINAL REQUIREMENT:
+The entire 37.75-second commercial must feel like ONE continuous real-world production filmed with the SAME model, SAME product, SAME camera package, SAME lighting team, SAME set and SAME color grade. No visual discontinuity between Part 1 and Part 2.
+`,
+    },
+  },
+  // 主帖附提示词；产品图在作者自回复 https://x.com/itxabdullaa/status/2103426887683014798 。产品图和站内 imastudio-cherry-can-tokyo-girls-ad-seedance-2-5 用的是同一张 MADAME CHERRY 罐图，提示词是同一份 SIPPO 纸盒提示词的精简版，但视频是另一次生成。推广链接未收录
+  {
+    id: "itxabdullaa-madame-cherry-tokyo-girls-ad-wan-3-0",
+    title: "MADAME CHERRY 樱桃饮料广告 · 东京四人时装风",
+    subtitle: "X · @itxabdullaa · OpenArt · WAN 3.0 · 30秒 · 16:9",
+    description:
+      "四个日本女生在走廊喝樱桃饮料，俯拍、樱桃微距、干杯收尾，30 秒日式时装风饮料广告。",
+    video: "/tutorials/itxabdullaa-madame-cherry-tokyo-girls-ad-wan-3-0/demo-web.mp4",
+    poster: "/tutorials/itxabdullaa-madame-cherry-tokyo-girls-ad-wan-3-0/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "时尚写实",
+    shots: 7,
+    references: 1,
+    model: "WAN 3.0（阿里），经 OpenArt",
+    style: "日式时装广告 · 粉红色调 · 硬切 / 匹配剪辑 / 甩镜 · 俏皮超现实",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/itxabdullaa/status/2103426808008057247",
+    sourceAuthor: "@itxabdullaa",
+    sourcePlatform: "X",
+    sourceImpressions: 10278,
+    sourceStats: { asOf: "2026-09-30", likes: 198, reposts: 13, bookmarks: 12 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "前景饮料罐 → 四个女生走廊登场 → 喝一口 → 俯拍 → 樱桃与微距 → 大笑干杯 → 产品收尾",
+      opening: "第 0 秒粉色樱桃罐立在画面前景。",
+      openingAt: 0,
+      beats: [
+        { title: "登场", text: "约 4–7s 四个日本女生站在走廊里；约 8–10s 其中一人喝一口。", at: 4 },
+        { title: "中段", text: "约 12–13s 俯拍四人；约 14–18s 樱桃滚落和饮料微距。", at: 12 },
+        { title: "结尾", text: "约 20–25s 四人大笑、举罐干杯；约 26–30s 产品收尾。", at: 20 },
+      ],
+      copyThis: "提示词按「场景背景 → 参考图 → 人物 → 镜头」分段写，明确要求硬切、匹配剪辑和甩镜，所以 30 秒里节奏很快。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 画幅",
+      "OpenArt · WAN 3.0",
+      "1 张产品图",
+      "饮料广告",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备产品图",
+        description:
+          "作者在自回复里附了一张 MADAME CHERRY 粉色樱桃罐产品图，没有附生图提示词。这张图和站内另一篇 Ima Studio 樱桃罐广告用的是同一张图，提示词也是同一份的精简版，可能来自同一个广告比赛命题，但两条视频是分别生成的。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者用 OpenArt 上的阿里 WAN 3.0 生成。成片 1920×1080（16:9）、30fps、30 秒，没有水印。注意两处对不上：提示词写的是 SIPPO 粉色纸盒，成片和产品图却是 MADAME CHERRY 易拉罐；提示词要求干杯时齐喊「SIPPO Cherry!」，语音识别没听到这句（未人工试听）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方提示词整段粘贴，上传产品图。提示词依次写场景背景、参考图要求、四个人物、镜头和剪辑、声音。如果你的产品是罐装，记得把提示词里纸盒的描述改成罐子。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-itxabdullaa-cherry-01",
+        number: "1",
+        title: "MADAME CHERRY 樱桃罐产品图",
+        subtitle: "作者附图原图（1200×1600）：粉色樱桃饮料罐；与站内 Ima Studio 樱桃罐广告同一张图",
+        image: "/tutorials/itxabdullaa-madame-cherry-tokyo-girls-ad-wan-3-0/refs/01-madame-cherry-can-product.jpg",
+        prompt: "原帖未附提示词；这是作者附在自回复里的产品参考图。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 樱桃罐在前景，背景虚化。" },
+      { number: 2, description: "4–7s 四个日本女生在走廊里登场。" },
+      { number: 3, description: "8–10s 一人拿罐喝一口。" },
+      { number: 4, description: "11–13s 俯拍四人。" },
+      { number: 5, description: "14–18s 樱桃滚落，饮料和罐身微距。" },
+      { number: 6, description: "19–25s 四人大笑，举罐干杯。" },
+      { number: 7, description: "26–30s 产品收尾。" },
+    ],
+    constraints:
+      "四个成年女生发型各不相同，全片不变脸；产品外观锁定；硬切、匹配剪辑和甩镜保持快节奏。提示词写的是 SIPPO 纸盒，成片是 MADAME CHERRY 罐，二者不一致。",
+    video_prompt: {
+      title: "MADAME CHERRY 樱桃饮料广告",
+      subtitle: "主帖英文完整提示词 · 配 1 张产品图 · 提示词描述的是 SIPPO 纸盒",
+      content: `SCENE CONTEXT
+Premium 30-second Japanese cherry juice commercial: playful, surreal, fashion-forward, photorealistic and highly polished. Energetic pacing, Japanese fashion-ad aesthetics, creative HARD CUTS, MATCH CUTS and WHIP CUTS.
+
+ACTIVE REFERENCE
+<<<image_1>>> is the exact SIPPO Cherry carton reference. Preserve its matte powder-pink rectangular carton, folded top, white flexible straw, striped sunset symbol, dark-red SIPPO logo, Cherry label and two smiling cherries. Never change the packaging into another container.
+
+CHARACTERS
+Four adult Japanese women, 22–28, distinct hairstyles: black bob, raven ponytail with burgundy ribbons, copper-brown bob, waist-length black hair with blunt bangs. Tokyo fashion styling in cherry red, pink, ivory and chrome. Stable faces, natural skin and believable friendship.
+
+FIRST FRAME
+Carton already dominates the foreground with its full front panel readable; lead woman directly behind it. No establishing shot.
+
+FORMAT MODE
+Fast multi-shot commercial with consistent product, characters, wardrobe and color world. Every shot introduces a new visual idea.
+
+ACTION AND CAMERA SEQUENCE
+OPENING — 107° wide rectilinear shot. Carton fills foreground on glossy pink table. Lead woman smiles and points at straw as camera rapidly pushes in.
+
+WHIP CUT — Camera bursts through a cherry-red circular portal into a surreal Tokyo studio street with pink tiles, cream walls, chrome rails and giant cherries. Four women walk toward camera in synchronized formation. 84° wide stabilized dolly.
+
+MATCH CUT — Carton passes through a circular wall opening and emerges into another woman’s hands inside a burgundy/pink Japanese photo booth. Fast 180° orbit as she sips and side-eyes camera.
+
+OVERHEAD — Four women form a radial composition around a cherry-red platform, passing the carton clockwise while camera rotates opposite. Two cherries roll across frame as transition.
+
+MACRO INSERTS — Condensation, flexible straw, fingertips, glossy cherry, SIPPO logo and smiling cherry graphics. Product remains faithful to <<<image_1>>>.
+
+LOW ANGLE — Four women surround the product pedestal. Camera rapidly cranes upward as they turn toward camera and break into natural laughter. Realistic hair and fabric motion.
+
+FINAL GROUP — 84° wide cherry-red stage with giant circular sunset-inspired light. Each woman holds an identical carton and they perform a synchronized toast.
+
+FINAL PACKSHOT — HARD CUT to cream-pink studio. Exact SIPPO Cherry carton on polished pedestal with two cherries beside it. Straw bends right. Slow premium telephoto push. Hold for brand recognition.
+
+LIGHTING AND IMAGE QUALITY
+Premium Japanese beauty-commercial lighting, soft overhead light, cherry-red edge light, pearlescent skin, powder pink/burgundy/cream palette. Photorealistic ARRI Alexa 35 look, natural grain, HDR, pristine commercial finish.
+
+PHYSICS
+Realistic carton weight and stiffness, natural finger pressure, flexible straw, gravity-driven condensation, believable hair, fabric and cherry motion.
+
+AUDIO
+Original upbeat Japanese electro-pop with female vocal chops, bass, claps and sparkling synths. Add synchronized carton taps, straw flex, cherry rolls, fabric swishes, whooshes and sip sounds. Final toast: “SIPPO Cherry!” End with a two-note sonic logo. No subtitles.
+`,
+    },
+  },
+  // 主帖附完整提示词（开头「Prompt - 」已去掉）；提示词里的 @image1 女性参考图作者没有公开，也没有自回复。推广链接和 @ 提及未收录
+  {
+    id: "itxabdullaa-kitten-blind-cord-rainy-selfie-seedance-2-5",
+    title: "雨天窗边自拍 · 小猫扑百叶窗拉绳",
+    subtitle: "X · @itxabdullaa · ImagineArt · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "雨天窗边抱着小猫自拍，小猫扑百叶窗拉绳、爬上肩膀凑近镜头，30 秒一镜到底的手机自拍。",
+    video: "/tutorials/itxabdullaa-kitten-blind-cord-rainy-selfie-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/itxabdullaa-kitten-blind-cord-rainy-selfie-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "手机实拍感",
+    shots: 6,
+    references: 0,
+    model: "Seedance 2.5，经 ImagineArt",
+    style: "手机前置自拍 · 雨天窗边自然光 · 不调色 · 一镜到底",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/itxabdullaa/status/2098625551833669826",
+    sourceAuthor: "@itxabdullaa",
+    sourcePlatform: "X",
+    sourceImpressions: 1955,
+    sourceStats: { asOf: "2026-09-30", likes: 91, reposts: 8, bookmarks: 9 },
+    formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "抱猫看雨 → 小猫盯上拉绳 → 扑绳 → 挣扎玩闹 → 爬上肩膀 → 凑近镜头",
+      opening: "第 0 秒女生抱着虎斑小猫站在下雨的窗边，对着手机说「Such a cozy day, huh?」。",
+      openingAt: 0,
+      beats: [
+        { title: "小猫被吸引", text: "约 5–10s 小猫盯住窗边的拉绳，女生问「What are you looking at?」；约 10–17s 小猫双爪抓绳，她说「Leave that alone!」。", at: 5 },
+        { title: "玩闹升级", text: "约 15–20s 小猫扭来扭去，她说「You're getting way too curious.」；约 18–23s 小猫往她肩膀上爬。", at: 15 },
+        { title: "结尾", text: "约 24–30s 小猫转向手机，脸和爪子凑到镜头前，她说「Oh, now you want…」笑出声。", at: 24 },
+      ],
+      copyThis: "提示词每 5 秒一段，每段写一个动作、一句台词和手机怎么晃，并写明不剪辑、不变焦、只有一只猫，所以 30 秒像一条真实的手机自拍。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 一镜到底",
+      "16:9 画幅（提示词要 9:16）",
+      "ImagineArt · Seedance 2.5",
+      "参考图未公开",
+      "手机自拍 · 萌宠",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备人物参考图",
+        description:
+          "提示词用「@image1」指定女生的样子（保持脸、发型、衣服不变），但作者没有公开这张图，也没有自回复，所以本页没有参考图。你需要自己准备一张人物照片。成片里的女生非常写实，可能用的是真人照片，用别人的照片要先取得本人同意。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者用 ImagineArt 上的 Seedance 2.5 生成。成片 1280×720（16:9）、24fps、约 30 秒，没有黑边和水印。注意：提示词写的是 9:16 竖屏，成片却是 16:9 横屏，二者不一致。台词和提示词对得上：「Such a cozy day, huh?」「What are you looking at?」「Leave that alone!」「You're getting way too curious.」「Oh, now you want…」（语音识别判断，未人工试听）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方提示词整段粘贴，上传你的人物照片作为 @image1。提示词依次写参考与主体、格式（手机前置自拍、雨天窗边）、每 5 秒一段的动作和台词、声音要求。想要竖屏，生成时记得手动选 9:16。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–5s 女生抱着小猫站在雨窗边，挠小猫下巴，说「Such a cozy day, huh?」。" },
+      { number: 2, description: "5–10s 小猫盯住窗边的拉绳，她问「What are you looking at?」。" },
+      { number: 3, description: "10–15s 小猫双爪抓住拉绳，她说「Leave that alone!」。" },
+      { number: 4, description: "15–20s 小猫扭来扭去，她说「You're getting way too curious.」。" },
+      { number: 5, description: "20–24s 小猫往她肩膀上爬，手机晃动。" },
+      { number: 6, description: "24–30s 小猫凑近镜头，爪子快碰到镜头，她笑着说「Oh, now you want…」。" },
+    ],
+    constraints:
+      "只有一只小猫、全程同一只；一镜到底，不剪辑、不变焦；不调色、不加滤镜、不加字幕和水印；声音只要雨声、环境声和女生的自然说话声，不加配乐。提示词要 9:16，成片是 16:9。人物参考图未公开。",
+    video_prompt: {
+      title: "雨天窗边自拍 · 小猫扑拉绳",
+      subtitle: "主帖英文完整提示词 · @image1 人物参考图作者未公开",
+      content: `REFERENCE & SUBJECT Use "@<image1" as the exact visual reference for the woman. Preserve her identity, face, hairstyle, clothing, skin texture, body proportions, and natural appearance throughout the entire clip. Exactly ONE small tabby kitten. The same kitten remains continuous throughout. No other animal, no duplicate kitten.
+
+FORMAT 30-second vertical 9:16 handheld front-camera selfie. Indoor room beside a window on a rainy day. Soft gray natural daylight through the glass. Very subtle window reflections and realistic ambient room sound. No color grading, no cinematic lighting, no beauty filter.
+
+---
+
+0–5 SEC — COZY RAINY MOMENT
+
+The woman stands beside the window holding the kitten against her chest. Rain droplets slowly run down the glass behind her. She looks into the phone, then gently scratches the kitten under its chin. The kitten calmly looks toward the window. She smiles softly and casually says: "Such a cozy day, huh?" The phone remains slightly imperfect and naturally handheld.
+
+---
+
+5–10 SEC — SOMETHING MOVES
+
+A small movement from the window blinds catches the kitten's attention. Its ears suddenly point forward. The woman notices the kitten staring past her shoulder. She turns slightly toward the window while keeping the kitten securely supported. The kitten reaches one paw toward the hanging blind cord. She quietly laughs and says: "What are you looking at?"
+
+---
+
+10–15 SEC — BLIND CORD ATTACK
+
+The kitten suddenly grabs the blind cord with both paws. The woman reacts with surprise and gently tries to move the cord away. The kitten refuses and pulls it toward itself. She laughs as the phone shakes slightly in her hand. She says: "Hey, leave that alone." The kitten keeps batting at the cord.
+
+---
+
+15–20 SEC — CHAOTIC PLAY
+
+The kitten squirms excitedly against her chest while trying to catch the moving cord. She supports its body securely with one hand and gently blocks its paws with the other. The kitten twists around and reaches again. She laughs harder and says: "You're getting way too curious." A few loose strands of her hair fall naturally beside her face.
+
+---
+
+20–25 SEC — KITTEN CLIMBS
+
+The kitten suddenly climbs toward her shoulder, still focused on the window. Its paws grip the fabric of her top. She gives a small surprised yelp followed by laughter. Her phone hand rises slightly as she tries to keep both herself and the kitten in frame. The camera briefly becomes uneven before naturally re-centering.
+
+---
+
+25–30 SEC — SURPRISE SELFIE
+
+The kitten reaches her shoulder and suddenly turns away from the window toward the phone. It moves its face close to the lens, sniffing curiously. She leans backward while laughing. The kitten raises one paw toward the camera. She starts: "Oh, now you want—" and breaks into laughter. The paw nearly touches the lens. The phone dips naturally. The clip ends mid-laugh.
+
+AUDIO Rain ambience through the window, faint blind movement, fabric rustling, kitten movement, one tiny mewl, woman's natural voice, breathing, nose-laughs and genuine laughter. No background music. No subtitles. No text. No logo. No watermark. No cuts. No zoom. Exactly one kitten.
+`,
+    },
+  },
+  // 主帖附的提示词是 GPT Image 2 出分镜图用的（开头「Prompt - 」已去掉，收在参考图卡片里）；视频提示词作者未公开，下方视频提示词是按成片反推的（见 PROMPT_REVERSED.txt）。Lart AI 推广链接未收录
+  {
+    id: "itxabdullaa-sparkle-citrus-drink-storyboard-ad-seedance-2-0",
+    title: "SPARKLE 柑橘气泡饮广告 · 8 格分镜图直出",
+    subtitle: "X · @itxabdullaa · GPT Image 2 + Seedance 2.0 · 10秒 · 9:16 · 视频提示词为反推",
+    description:
+      "先用 GPT Image 2 出 8 格分镜图，再让 Seedance 2.0 照着分镜生成 10 秒竖屏气泡饮广告。",
+    video: "/tutorials/itxabdullaa-sparkle-citrus-drink-storyboard-ad-seedance-2-0/demo-web.mp4",
+    poster: "/tutorials/itxabdullaa-sparkle-citrus-drink-storyboard-ad-seedance-2-0/poster.jpg",
+    duration: "10秒",
+    durationSec: 10,
+    styleLabel: "商业写实",
+    shots: 8,
+    references: 1,
+    model: "GPT Image 2（分镜图）+ Seedance 2.0（视频），经 Lart AI",
+    style: "高端饮料广告 · 深蓝背景 + 金色饮料 + 橙色点缀 · 高速液体摄影 · 微距",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/itxabdullaa/status/2093263096408399900",
+    sourceAuthor: "@itxabdullaa",
+    sourcePlatform: "X",
+    sourceImpressions: 2415,
+    sourceStats: { asOf: "2026-09-30", likes: 84, reposts: 5, bookmarks: 21 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "冰镇瓶身 → 开盖喷气 → 气泡微距 → 倒入杯中 → 冰块落下 → 橙片飞溅 → 水珠微距 → 瓶杯英雄镜头",
+      opening: "第 0 秒挂满水珠的琥珀色玻璃瓶立在碎冰和橙片中间，深蓝背景。",
+      openingAt: 0,
+      beats: [
+        { title: "开瓶", text: "约 1.2s 瓶盖弹开，白色气雾喷出；约 2.1s 切到饮料里气泡上涌的微距。", at: 1.2 },
+        { title: "倒饮料", text: "约 2.9s 瓶子斜着把金色饮料倒进水晶杯；约 4.1s 冰块慢动作落进杯里溅起水花；约 5.6s 橙片落在杯沿。", at: 2.9 },
+        { title: "收尾", text: "约 7.3s 瓶身水珠微距；约 8.4s 瓶子和杯子并排的英雄镜头，周围是冰和定格水花。", at: 7.3 },
+      ],
+      copyThis: "成片 8 个镜头和分镜图 8 格一一对应，每格的时长标签（0.8–1.2 秒）也基本照做了：先把分镜图做好，视频就只是照图走。",
+      approx: true,
+    },
+    tags: [
+      "10秒 · 8 个镜头",
+      "9:16 竖屏",
+      "GPT Image 2 + Seedance 2.0",
+      "1 张分镜图（附生图提示词）",
+      "视频提示词为反推",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2 出分镜图",
+        description:
+          "作者公开的提示词是出分镜图用的：一张 3:4 竖版海报式分镜，顶部写时长 10 秒、风格、产品、声音，下面 8 格镜头，每格标镜头号、时长、机位、动作和产品细节。这份提示词原文收在下方参考图卡片里，可以直接复制去出图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者用 Lart AI 上的 Seedance 2.0 把分镜图变成视频。成片 720×1280（9:16）、24fps、约 10.1 秒，没有水印，没有人声（语音识别判断，未人工试听）。成片 8 个镜头的切点约在 1.2、2.1、2.9、4.1、5.6、7.3、8.4 秒，和分镜图 8 格对得上。",
+      },
+      {
+        number: 3,
+        title: "第三步：视频提示词（作者未公开，此为按成片反推）",
+        description:
+          "作者未公开，此为按成片反推。作者没有公开生成视频时写的提示词。下方视频提示词是照成片逐镜写的：上传分镜图作为 @image1，按 8 格顺序和秒数写每一镜的景别、动作和声音。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ref-itxabdullaa-sparkle-01",
+        number: "1",
+        title: "8 格分镜图（GPT Image 2）",
+        subtitle: "作者附图原图（1152×1536）：「SPARKLE. SIP. SUBLIME.」气泡饮广告分镜，8 格带时长标签",
+        image: "/tutorials/itxabdullaa-sparkle-citrus-drink-storyboard-ad-seedance-2-0/refs/01-sparkle-storyboard.jpg",
+        prompt: "TITLE: Premium Sparkling Fruit Drink Product Commercial Storyboard FORMAT: • Single-page premium storyboard • 3:4 Portrait ratio • Luxury beverage product campaign • 8 cinematic storyboard scenes • Product remains the central hero • Premium advertising agency presentation HEADER: • Modern luxury typography • Information cards: Duration: 10 Seconds Style: Cinematic Beverage Commercial Product: Sparkling Fruit Drink Audio: Fizz + Refreshing Liquid ASMR • Why This Style Works section • Silver, citrus orange and deep blue aesthetic • Minimal premium decorative accents STORYBOARD: 1. Chilled sparkling drink bottle covered in condensation 2. Bottle cap opening with a burst of carbonation 3. Extreme macro shot of bubbles racing through the drink 4. Sparkling drink pouring into a crystal glass 5. Ice cubes falling into the glass in slow motion 6. Fresh citrus slices creating a dramatic splash 7. Macro shot of condensation and carbonation bubbles 8. Final hero bottle and glass surrounded by frozen splash EVERY PANEL: • Scene number • Duration badge • Camera direction • Visual • Action • Product detail CAMERA: High-speed liquid photography, extreme macro, frozen splash capture, slow-motion pour, dramatic backlighting, condensation close-up, cinematic product hero framing. STYLE: Ultra-realistic beverage advertising, realistic carbonation, detailed water droplets, dynamic liquid splash, premium glass reflections, studio lighting, luxury branding, commercial photography, 8K.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.2s 挂满水珠的瓶子立在碎冰和橙片中间。" },
+      { number: 2, description: "1.2–2.1s 瓶盖弹开，白色气雾喷出。" },
+      { number: 3, description: "2.1–2.9s 饮料里气泡上涌的微距。" },
+      { number: 4, description: "2.9–4.1s 瓶子把金色饮料倒进水晶杯。" },
+      { number: 5, description: "4.1–5.6s 冰块慢动作落进杯里，溅起水花。" },
+      { number: 6, description: "5.6–7.3s 橙片落在杯沿，液体飞溅。" },
+      { number: 7, description: "7.3–8.4s 瓶身水珠和气泡微距。" },
+      { number: 8, description: "8.4–10.1s 瓶子和杯子并排的英雄镜头，冰块和定格水花围绕。" },
+    ],
+    constraints:
+      "产品全片是同一个琥珀色瓶子和深蓝标签；深蓝背景、金色饮料、橙色点缀；高速液体摄影、真实气泡和水珠。视频提示词为反推，不是作者原文。",
+    video_prompt: {
+      title: "SPARKLE 气泡饮广告（反推）",
+      subtitle: "作者未公开，此为按成片反推 · 英文视频提示词 · 配分镜图",
+      content: `（作者未公开，此为按成片反推）
+Use @image1 (the 8-panel "SPARKLE. SIP. SUBLIME." storyboard) as the exact shot plan and product reference. 10-second vertical 9:16 premium sparkling citrus drink commercial, 24fps, ultra-realistic beverage advertising, deep navy background, golden drink, citrus orange accents, dramatic backlighting, hard cuts that follow the storyboard panel by panel. Keep the same amber glass bottle with the navy "SPARKLE CITRUS" label in every shot.
+
+0–1.2s: close-up hero shot, the chilled bottle stands among crushed ice and orange slices, covered in condensation, slow push-in.
+1.2–2.1s: macro high-speed shot, the gold cap pops off the bottle neck and a white burst of carbonation sprays upward.
+2.1–2.9s: extreme macro inside the drink, golden bubbles race upward, shallow depth of field.
+2.9–4.1s: side close-up, the bottle tilts in from the top left and pours a clear golden stream into a crystal glass.
+4.1–5.6s: slow motion, ice cubes fall from above into the glass and splash.
+5.6–7.3s: high-speed splash, an orange slice drops onto the rim of the glass and liquid splashes out.
+7.3–8.4s: extreme macro of the bottle shoulder, condensation droplets and bubbles, slow slide.
+8.4–10s: final hero shot, center frame, bottle and a glass with an orange slice surrounded by ice and a frozen splash, slow push-in.
+
+Audio: cap pop, fizz, pouring liquid, ice clinks and splashes, refreshing liquid ASMR with a light modern beat. No voice-over, no subtitles, no extra text.
+`,
+    },
+  },
 ];
 
 export const tutorials: Tutorial[] = rawTutorials.map((t) => withMedia(t));
