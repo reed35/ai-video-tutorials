@@ -26474,6 +26474,495 @@ Audio: cap pop, fizz, pouring liquid, ice clinks and splashes, refreshing liquid
 `,
     },
   },
+  // 查重别名(同模板另一条 take，未收录)：Filmera abcbc1d4 GEN 1 take0 fbfa4258（节点 best_take=0）；本条用 take1 38cb4a01（模板封面 card2 同片）。模板未署名创作者；分享链接里的 ref 参数已去掉
+  {
+    id: "filmera-girl-pearl-earring-vermeer-sitting-seedance-2-5",
+    title: "戴珍珠耳环的少女 · 维米尔画室里的那一次坐姿",
+    subtitle: "Filmera 模板 · Seedance 2.5 + GPT Image 2.5 · 30秒 · 4:3",
+    description:
+      "名画前传：母亲给少女缠头巾、珍珠耳环晃得她直笑，关门后画家轻声一句，她回头定格成名画。",
+    video: "/tutorials/filmera-girl-pearl-earring-vermeer-sitting-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/filmera-girl-pearl-earring-vermeer-sitting-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "古典油画感",
+    shots: 7,
+    references: 4,
+    model: "Seedance 2.5（bytedance/seedance-2.5，480p，生成音频）+ GPT Image 2.5 Flare（参考图）",
+    style: "17 世纪油画质感 · 北窗侧光 · 明暗对比 · 巴洛克鲁特琴配乐",
+    aspectRatio: "4/3",
+    sourceUrl: "https://www.filmera.ai/templates/abcbc1d4-a1e5-4d24-bb47-e779e6d413de",
+    sourceAuthor: "Filmera 模板（未署名创作者）",
+    sourcePlatform: "Filmera",
+    sourceImpressions: 440,
+    sourceStats: { asOf: "2026-09-30" },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "母亲缠头巾、少女被耳环逗笑 → 画家在画布后偷笑 → 坐上凳子 → 母亲关门、笑容消失、音乐停 → 调蓝颜料 → 轻声「看着我」→ 回头定格成名画",
+      opening: "第 0 秒窗边特写：少女侧脸对着窗光，母亲的手把黄布缠到她的蓝头巾上。",
+      openingAt: 0,
+      beats: [
+        { title: "前半段", text: "约 3–4s 母亲低声说「Будь посерьёзнее」（严肃点）；约 5–8s 画家只露出眼睛，从画布上方看着她笑；约 8–13s 母亲牵她坐上凳子，画家说「Мама, уходите」（妈妈，出去吧）。", at: 3 },
+        { title: "转折", text: "约 13–18s 母亲在门口回头看她，少女的笑一点点消失，门关上，音乐停；约 18–21s 画笔蘸青金石蓝颜料，只有笔刷声。", at: 13 },
+        { title: "结尾", text: "约 21–26s 少女独自坐着摸耳环、吸一口气，画外传来「Посмотри на меня」（看着我）；约 26–30s 黑背景里她回头看镜头，定格成名画构图。", at: 21 },
+      ],
+      copyThis: "提示词把配乐写成跟着剧情走：前三镜轻快的鲁特琴，关门那一刻音乐戛然而止，第 5 镜完全无乐，最后一句台词下才进来一个弦乐长音，结尾淡出。声音越来越安静，情绪就出来了。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 7 个镜头",
+      "4:3 画幅",
+      "Seedance 2.5 + GPT Image 2.5",
+      "4 张参考图（附出图提示词）",
+      "名画前传 · 俄语对白",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2.5 出 4 张参考图",
+        description:
+          "模板分两组：角色（少女、母亲、维米尔）和场景（画室）。都用 openai/gpt-image-2.5-flare、16:9 出图；角色设定图统一写「浅奶油色背景、正面 / 侧面 / 全身 / 细节特写、英文标签」，要求像未修图的真实照片；画室是一张左右两个视角的空景图。每张的完整出图提示词见下方参考图。",
+      },
+      {
+        number: 2,
+        title: "第二步：视频提示词先写全局规则",
+        description:
+          "[GLOBAL] 段写：7 个镜头连续 29 秒左右，17 世纪油画质感、北窗侧光；逐个写出少女、母亲、维米尔和画室的外观并标「match @ImageN exactly」；写明珍珠耳环一碰就晃、贴到脖子让她发笑；表演只写看得见的动作；配乐只用一把鲁特琴，并按镜头写好什么时候停、什么时候进；三句俄语台词轻声说，不要画面文字。",
+      },
+      {
+        number: 3,
+        title: "第三步：写 7 个镜头，一次生成 30 秒",
+        description:
+          "Shot 1–7 每条写景别、机位、动作和声音，最后一镜要求完全复刻名画构图后定格。在 Seedance 2.5 里选 4:3、30 秒、480p、打开生成音频，上传 4 张参考图。成片 752×560、24fps、30 秒，没有水印；切点约在 5.2、8.1、13.4、18.3、21.5、26.6 秒，正好 7 镜。三句俄语台词都在（语音识别判断，未人工试听）。模板里同一提示词跑了 2 条，本页用的是模板封面那条。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "filmera-pearl-earring-image1-girl",
+        number: "1",
+        title: "@Image1 · 少女人物设定图",
+        subtitle: "约 12 岁、蓝头巾黄头布、大珍珠耳环、芥末黄外衣；模板节点「01 · GIRL」，openai/gpt-image-2.5-flare 16:9",
+        image: "/tutorials/filmera-girl-pearl-earring-vermeer-sitting-seedance-2-5/refs/01-girl.jpg",
+        prompt: "Character-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME girl\n, fully consistent. Layout: top-left a title block reading \"GIRL\" with a short info list (NAME: the Girl with a Pearl Earring / AGE: 12 / ROLE: Vermeer's sitter in Delft, 1665 / PERSONALITY: shy, giggly, curious); below it a COLOR PALETTE section with labeled swatch rows for SKIN, EYES, HEAD BAND BLUE, HEAD CLOTH YELLOW, JACKET, COLLAR; center: a large FRONT VIEW bust portrait and a LEFT PROFILE bust portrait, labeled; right: a full-body FRONT VIEW and a full-body SEATED pose on a low wooden stool, labeled; bottom: a DETAILS strip of four captioned close-up panels (\"HEAD WRAP FROM BEHIND\" showing the yellow tail hanging down the back of the neck with its ends dyed blue, \"PEARL EARRING\", \"WHITE COLLAR\", \"THE LOOK\" with the head turned over the left shoulder straight into the lens, lips softly parted). The character: the girl from Johannes Vermeer's painting Girl with a Pearl Earring, her face matching the painting exactly: a young girl of about 12 with very pale luminous skin and faint freckles, pale strawberry-blond brows and lashes, large wide-set grey-blue eyes with bright wet catchlights, a soft rounded nose, full pale-pink lips that rest slightly parted; her hair is completely hidden. Her head is wrapped in a snug band of faded ultramarine-blue linen across the forehead, with a pale yellow-ochre cloth folded over the crown whose long crinkled tail hangs down the back of her neck, the tail ends dipped in the same blue. One oversized teardrop pearl earring hangs from her left earlobe, catching a single bright highlight. She wears a heavy mustard yellow-ochre linen jacket-dress with a fitted bodice closed by a row of small cloth buttons, long sleeves, a full gathered skirt to the ankles, and a plain white linen collar at the neck; plain dark leather shoes. Every panel is a REAL candid photograph of the same person — soft natural daylight, slightly low contrast and low saturation, natural skin, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-pearl-earring-image2-mother",
+        number: "2",
+        title: "@Image2 · 母亲人物设定图",
+        subtitle: "赤褐色编发髻、锈棕上衣、矢车菊蓝围裙；模板节点「02 · MOTHER」，openai/gpt-image-2.5-flare 16:9",
+        image: "/tutorials/filmera-girl-pearl-earring-vermeer-sitting-seedance-2-5/refs/02-mother.jpg",
+        prompt: "Character-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME woman, fully consistent. Layout: top-left a title block reading \"MOTHER\" with a short info list (NAME: the Girl's mother / AGE: 34 / ROLE: dresses the sitter in Vermeer's studio / PERSONALITY: brisk, strict, quietly tender); below it a COLOR PALETTE section with labeled swatch rows for HAIR, EYES, SKIN, BODICE, SKIRT, APRON; center: a large FRONT VIEW bust portrait and a SIDE VIEW bust portrait, labeled; right: a full-body FRONT VIEW and a full-body BACK VIEW clearly showing the braided bun and the long blue apron strings tied at the waist, labeled; bottom: a DETAILS strip of four captioned close-up panels (\"BRAIDED BUN\", \"WHITE COLLAR AND TURNED-BACK CUFFS\", \"APRON TIES\", \"HANDS\"). The character: a woman of 34 with fair lightly freckled skin, chestnut-auburn hair pulled tight off the face into a braided bun at the back of the head, calm hazel eyes, a straight nose, thin natural brows; she wears a rust-brown wool bodice with elbow-length sleeves finished in turned-back white linen cuffs, a wide white linen collar folded open at the neckline, a long charcoal-black gathered wool skirt, and a cornflower-blue linen apron tied at the back with long blue strings; an original character, not resembling any real person. Every panel is a REAL candid photograph of the same person — soft natural daylight, slightly low contrast and low saturation, natural skin, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-pearl-earring-image3-vermeer",
+        number: "3",
+        title: "@Image3 · 维米尔人物设定图",
+        subtitle: "及肩深色卷发、小胡子山羊胡、黑色紧身上衣；模板节点「03 · VERMEER」，openai/gpt-image-2.5-flare 16:9",
+        image: "/tutorials/filmera-girl-pearl-earring-vermeer-sitting-seedance-2-5/refs/03-vermeer.jpg",
+        prompt: "Character-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME man, fully consistent. Layout: top-left a title block reading \"VERMEER\" with a short info list (NAME: Johannes Vermeer / AGE: 38 / ROLE: painter, Delft, 1665 / PERSONALITY: patient, watchful, warm); below it a COLOR PALETTE section with labeled swatch rows for HAIR, EYES, SKIN, DOUBLET, COLLAR; center: a large FRONT VIEW bust portrait and a SIDE VIEW bust portrait, labeled; right: a full-body FRONT VIEW and a full-body pose standing behind a tall wooden easel holding a palette, labeled; bottom: a DETAILS strip of four captioned close-up panels (\"PEEKING\" with only eyes, brows and hair visible above the top edge of a stretched canvas, \"HANDS\" with long fingers and faint blue paint at the fingertips, \"MOUSTACHE AND GOATEE\", \"WHITE COLLAR\"). The character: Johannes Vermeer as a man of 38 with shoulder-length wavy dark brown hair parted in the middle, a long face, deep-set warm brown eyes, olive skin, a thin moustache and a small pointed goatee; he wears a plain black wool doublet buttoned to the neck with a flat white linen collar. Every panel is a REAL candid photograph of the same person — soft natural daylight, slightly low contrast and low saturation, natural skin, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-pearl-earring-image4-studio",
+        number: "4",
+        title: "@Image4 · 画室空景（两个视角）",
+        subtitle: "左：铅框高窗角落；右：画架与门的暗墙；模板节点「04 · STUDIO」，openai/gpt-image-2.5-flare 16:9",
+        image: "/tutorials/filmera-girl-pearl-earring-vermeer-sitting-seedance-2-5/refs/04-studio.jpg",
+        prompt: "Environment reference sheet: two labeled photographs side by side of the SAME empty 17th-century Delft painter's studio, no people, no text except the two small view labels, no logos. VIEW A \"WINDOW CORNER\": a tall leaded window fills the left wall, a grid of many small rectangular clear glass panes in pale wooden frames, bright soft northern daylight pouring through and flaring white, a plain dark wooden chair directly in front of the window, dark green-grey plaster walls at the edges. VIEW B \"EASEL WALL\": the opposite side of the same room in deep shadow, seen with the window light entering from the left: flat dark green-grey plaster walls, a worn herringbone oak parquet floor, a low wooden stool at center facing a tall dark-stained wooden easel on the right holding a large blank primed cream canvas with its face turned away from the stool, and in the back wall a heavy dark wooden door standing slightly open; beside the easel a small painter's table with a wooden palette holding blobs of lead white, vermilion red and rich lapis-lazuli ultramarine blue oil paint, two small ceramic paint pots, a squat dark brown stoneware jar of long-handled brushes, and a cream linen rag smudged with blue. Natural daylight only, deep chiaroscuro falloff into near-black corners, slightly low contrast and low saturation, muted earthy tones, raw unedited photograph, no color grading.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–5.2s 窗边特写：母亲给少女缠黄头布，耳环一晃她笑出声；母亲低声说「Будь посерьёзнее」（严肃点）。" },
+      { number: 2, description: "5.2–8.1s 画架居中，画家只露出眼睛和额头，从画布上方看着她，差点笑出来。" },
+      { number: 3, description: "8.1–13.4s 中远景：母亲牵她坐上凳子，最后整理一次头布，画家拿着调色板走出来说「Мама, уходите」（妈妈，出去吧）。" },
+      { number: 4, description: "13.4–18.3s 母亲在门口回头看她，少女的笑一点点消失，门轻轻关上。" },
+      { number: 5, description: "18.3–21.5s 微距：画家的手用画笔蘸青金石蓝颜料。" },
+      { number: 6, description: "21.5–26.6s 少女独自坐着，侧脸对窗，摸耳环、吸一口气；画外传来「Посмотри на меня」（看着我）。" },
+      { number: 7, description: "26.6–30s 黑背景侧光，她回头看镜头，定格成名画构图。" },
+    ],
+    constraints:
+      "4 个对象都要和各自参考图一致；17 世纪油画质感、自然窗光；表演只写动作；配乐只用一把鲁特琴，关门时停、结尾一个弦乐长音淡出；三句俄语台词轻声说；不要画面文字。内容改编自维米尔 1665 年左右的名画（已进入公有领域）；少女设定为约 12 岁。",
+    video_prompt: {
+      title: "Girl with a Pearl Earring · The Sitting · GEN 1",
+      subtitle: "Seedance 2.5 · 4:3 · 30s · 480p · 生成音频 · Filmera 模板页原文",
+      content: `[GEN 1 — GIRL WITH A PEARL EARRING — THE SITTING]
+[GLOBAL] A continuous sequence of about 29 seconds told in 7 numbered shots in order — real time runs continuously, each shot beginning where the last ended. Classical 17th-century masterpiece oil-painting cinematic look — soft directional northern window daylight from one side, deep chiaroscuro contrast, rich fabric and skin texture, authentic period costumes. GIRL: the girl from Vermeer's Girl with a Pearl Earring, pale skin, large grey-blue eyes, a blue head band and a yellow head cloth whose long tail hangs down her back, an oversized pearl earring in her left ear, a mustard-yellow jacket and white collar (match @Image1 exactly). MOTHER: auburn braided bun, rust-brown bodice, white collar and cuffs, charcoal skirt, cornflower-blue apron (match @Image2 exactly). VERMEER: the painter, shoulder-length wavy dark hair, thin moustache and goatee, black doublet, white collar (match @Image3 exactly). STUDIO: Vermeer's studio, a tall leaded window on one side, dark green-grey plaster walls, herringbone oak floor, a low stool facing the easel, a heavy wooden door (match @Image4 exactly). THE EARRING: the GIRL's pearl earring is oversized and heavy — whenever the GIRL's head or turban is touched it SWINGS and brushes cold against the GIRL's neck, and that is what keeps making the GIRL laugh. ACTING: the GIRL's laughter is real and involuntary — shoulders shaking, eyes crinkling, a hand rising to the mouth — and across the scene it drains away into stillness; the MOTHER is brisk and strict with tender hands; VERMEER is quiet, patient, watching. Emotion shown only through visible physical behaviour. Nobody is ever completely still — breathing, blinking, fabric settling — except the final held frame. SOUND grows quieter shot by shot. MUSIC: a sparse period score played by a single instrument only — a baroque lute (or harpsichord), no orchestra, no modern instruments, no percussion. MUSIC ARC (follows the story exactly): shots 1–3 a light, quick, playful plucked lute tune, intimate and close, like someone practising in the next room; the moment the door closes in shot 4 the music STOPS mid-phrase; shot 5 is completely without music; under VERMEER's whispered line in shot 6 a single soft sustained bowed string note enters, barely there; in shot 7 it swells gently as the GIRL turns, then holds and slowly fades to nothing on the held frame. Music always sits beneath the diegetic sound, never over the whispered lines. NO ON-SCREEN TEXT OVERLAYS or modern burn-in elements. Diegetic audio: soft cloth rustling, a wooden stool scraping the floor, a wooden door closing softly, paintbrush bristles stirring oil paint, soft female giggles, whispered Russian dialogue ("Будь посерьёзнее", "Мама, уходите", "Посмотри на меня"), and quiet breathing.
+
+Shot 1: close-up, eye-level, in the brightly lit window corner of the STUDIO, the GIRL in profile facing the window light and the MOTHER's hands in frame: the MOTHER carefully wraps the yellow cloth over the blue band on the GIRL's head, tugging the cloth snug; the heavy pearl earring SWINGS and touches the GIRL's neck, and the GIRL bursts into a soft candid giggle, shoulders shaking, one hand flying up to steady the pearl with the fingertips. The MOTHER leans down and whispers strictly: "Будь посерьёзнее." The GIRL presses both lips together, trying.
+
+Shot 2: medium shot from the GIRL's side of the STUDIO, the wooden easel centred, only VERMEER's eyes and forehead visible above the top edge of the stretched canvas: VERMEER watches the GIRL laugh, and for one moment the corner of VERMEER's eye creases and the moustache lifts, a smile VERMEER does not allow to finish; then VERMEER's face settles back into patient stillness and VERMEER looks down at the palette.
+
+Shot 3: medium wide shot, eye-level, the dark STUDIO with the window on the left and the easel on the right: the MOTHER leads the GIRL by the hand across the floorboards to the low wooden stool in front of the easel, the stool SCRAPING as the GIRL sits; the MOTHER reaches in to adjust the head cloth one last time, the earring swings, the GIRL giggles again, a hand to the mouth, until VERMEER steps out from behind the canvas, palette in hand, and says quietly: "Мама, уходите."
+
+Shot 4: medium shot, eye-level, the STUDIO door in the background and the GIRL seated at the foreground edge of frame: the MOTHER pauses in the doorway with one hand on the door and looks back at the GIRL for one long beat; the GIRL's giggle FADES as the GIRL meets the MOTHER's eyes, the smile going out of the GIRL's face by degrees; the MOTHER steps out, the wooden door closing with a soft thud, and the lute STOPS mid-phrase on the thud. The STUDIO is quiet.
+
+Shot 5: extreme close-up macro beside the wooden easel, VERMEER's hands only: one hand holding a blue-smudged rag wipes a paintbrush handle clean; VERMEER's fingers dip the bristles of a fine brush into rich lapis-lazuli blue oil paint on the wooden palette resting beside the ceramic pots, the bristles STIRRING softly, the only sound in the room, no music; the brush tip gently touches the stretched canvas.
+
+Shot 6: close-up, eye-level, the GIRL seated and facing the window, three-quarter profile, the pearl catching the light: alone now, the GIRL swallows, the GIRL's fingers rise once more to touch the pearl and settle the pearl still, the GIRL's lips part and the GIRL takes one slow breath in; from off-screen, behind the easel, VERMEER's voice says very softly: "Посмотри на меня." Beneath the line a single soft sustained string note begins.
+
+Shot 7: Iconic masterpiece close-up recreated in total precision, matching Vermeer's painting Girl with a Pearl Earring. Pitch-black dark background with soft Rembrandt side-lighting from the left. The GIRL turns the head over the left shoulder toward the camera lens in a slow, elegant motion, exhaling softly with parted lips and large glistening eyes, the GIRL's glowing blue-and-yellow head cloth and oversized pearl earring illuminated against the dark canvas shadow, the yellow tail falling behind, the white collar and mustard jacket along the bottom of frame. Hold frame on the exact composition of the painting: face three-quarter to camera, body turned away, lips softly parted. End.`,
+    },
+  },
+  // 主帖附完整提示词（开头「Concept… / Made using Seedance 2.5 / Prompt :」几行已去掉，从 Subject 起收录）；没有参考图，作者的回复都是回评论，没有补充提示词
+  {
+    id: "aiwithsynthia-tiny-chef-giant-kitchen-pancake-seedance-2-5",
+    title: "小小厨师闯大厨房 · 2D 手绘女孩做松饼",
+    subtitle: "X · @AIwithSynthia · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "2D 手绘小女孩在真实大厨房里做松饼：爬勺子、坐打蛋器、冲浪翻饼，最后松饼被大叉子叉走。",
+    video: "/tutorials/aiwithsynthia-tiny-chef-giant-kitchen-pancake-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/aiwithsynthia-tiny-chef-giant-kitchen-pancake-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "2D 真人混合",
+    shots: 8,
+    references: 0,
+    model: "Seedance 2.5",
+    style: "2D 手绘角色 + 真实厨房实拍感 · 微距 · 低机位跟拍 · 暖色电影光",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/AIwithSynthia/status/2105129836750786993",
+    sourceAuthor: "@AIwithSynthia",
+    sourcePlatform: "X",
+    sourceImpressions: 5380,
+    sourceStats: { asOf: "2026-09-30", likes: 55, reposts: 1, bookmarks: 9 },
+    formats: ["角色表演", "电影叙事"],
+    hook: {
+      structure: "站在大碗旁 → 爬木勺 → 跳进碗里搅面糊 → 顺面糊滑进平底锅 → 骑着翻起的松饼冲浪 → 落到盘子上、松饼越叠越高 → 放上草莓 → 大叉子叉走松饼",
+      opening: "第 0 秒微距低机位：2D 手绘小女孩站在木勺和巨大的木碗旁边。",
+      openingAt: 0,
+      beats: [
+        { title: "前段", text: "约 3–5s 她顺着木勺爬上碗沿、跳进去；约 5–9s 打蛋器在面糊里转，她在里面跟着搅；约 9s 顺着滴落的面糊滑下去。", at: 3 },
+        { title: "中段", text: "约 10–12s 面糊落进平底锅，一颗蓝莓从上面掉下来；约 13–17s 她从松饼里钻出来，站在翻到空中的松饼上冲浪。", at: 10 },
+        { title: "结尾", text: "约 18–25s 落到盘子上，松饼越叠越高，她把草莓放到最上面；约 27–30s 一把大叉子伸进来，把上半叠松饼叉走，她站在下面愣住。", at: 18 },
+      ],
+      copyThis: "提示词先写清角色外观（卷发、黄围裙、红球鞋、小木勺）和「2D 手绘角色 + 真实厨房」的混合风格，再用 7 个 Visual 按顺序写动作，最后一个反转结尾（大叉子）让整条片有笑点。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "无参考图",
+      "2D 手绘 + 真实场景",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：写清角色和混合风格",
+        description:
+          "作者没有用参考图，只靠文字定角色：卷曲黑发、黄色围裙、红色球鞋、拿着小木勺的 2D 手绘小女孩，放在一个真实尺寸的厨房里。风格段写明「2D 手绘涂鸦角色 + 写实实拍厨房」，加上定格动画式的物理、夸张的大小对比和暖色电影光。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者用 Seedance 2.5 生成。成片 1280×720（16:9）、24fps、约 30 秒，没有水印，没有台词（语音识别判断，未人工试听）。成片和提示词大体一致，有两处小差别：草莓滚走、她追着跑那一段看不太出来；结尾叉子只叉走了上半叠松饼，不是整叠。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴。结构依次是：主体、风格、镜头与构图（微距、低机位跟拍、俯拍、推镜、浅景深）、7 条按顺序写的画面动作，以及声音要求（厨房环境声、搅拌、翻饼、小脚步声、轻快配乐、不要对白）。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–3.8s 微距：小女孩站在木勺和大木碗旁。" },
+      { number: 2, description: "3.8–5s 她顺着木勺爬上碗沿，跳进碗里。" },
+      { number: 3, description: "5–9s 打蛋器在面糊里旋转，她在里面跟着搅。" },
+      { number: 4, description: "9–12.9s 她顺着滴落的面糊滑进平底锅，一颗蓝莓落下。" },
+      { number: 5, description: "12.9–17s 她从松饼里钻出来，站在翻到空中的松饼上冲浪。" },
+      { number: 6, description: "17–22.6s 落到盘子上，松饼越叠越高，一颗草莓飞上来。" },
+      { number: 7, description: "22.6–27s 草莓放在松饼顶上，她站在松饼旁边。" },
+      { number: 8, description: "27–30s 大叉子伸进来叉走上半叠松饼，她站在下面愣住。" },
+    ],
+    constraints:
+      "同一个 2D 手绘小女孩全程外观不变；厨房和食物要写实；大小对比要夸张；不要对白。成片和提示词的差别：草莓滚走被追那一段不明显，结尾叉子只叉走了上半叠松饼。",
+    video_prompt: {
+      title: "Tiny Chef, Giant Kitchen",
+      subtitle: "主帖英文完整提示词 · Seedance 2.5 · 无参考图",
+      content: `Subject
+A miniature hand-drawn 2D animated girl with curly black hair, a yellow apron, red sneakers, and a tiny wooden spoon, cooking inside a realistic full-sized kitchen.
+
+Style
+Mixed-reality hybrid animation combining playful 2D hand-drawn doodle character art with a photorealistic live-action kitchen. Whimsical stop-motion physics, expressive line animation, exaggerated scale, warm cinematic lighting, and playful cooking sound effects.
+
+Camera & Framing
+Macro close-ups, low-angle tracking shots, overhead kitchen perspectives, dramatic push-ins, and shallow depth of field emphasizing the tiny chef against oversized kitchen objects.
+
+Audio & Scene Breakdown
+
+Visual: The tiny chef stands beside a giant mixing bowl, struggling to climb onto a wooden spoon before using it as a makeshift ladder.
+
+Visual: She jumps into the bowl and rapidly mixes pancake batter while the whisk spins around her like a giant amusement-park ride.
+
+Visual: She slides down a stream of pancake batter onto a massive frying pan, narrowly avoiding a falling blueberry.
+
+Visual: The pancake suddenly flips into the air. She jumps onto it and rides it like a surfboard as it spins above the pan.
+
+Visual: She lands on a giant plate, then uses a strawberry as a trampoline to bounce onto a stack of pancakes.
+
+Visual: She proudly places a tiny strawberry on top, but the strawberry rolls away. She chases it across the enormous plate.
+
+Visual: The camera pulls back to reveal the finished pancake breakfast. The tiny chef sits on the edge holding her spoon proudly—then a giant fork suddenly enters frame and lifts the entire pancake stack away. She freezes in disbelief.
+
+Audio: Playful kitchen ambience, whisking, batter splashes, pancake flip, tiny footsteps, comedic impact sounds, subtle upbeat music, no dialogue.
+`,
+    },
+  },
+  // 主帖附完整中文提示词（从【全局设定】起收录，开头几句寒暄已去掉）；提示词里的图1、图2 角色参考图作者没有公开，作者唯一的回复是回评论；帖子没写用的哪个模型
+  {
+    id: "graynotelab-jiangnan-alley-reunion-optical-zoom",
+    title: "江南雨巷重逢 · 光学变焦拉近两人距离",
+    subtitle: "X · @GrayNoteLab · 模型未标明 · 15秒 · 16:9",
+    description:
+      "雨后江南古巷，两个女生隔巷对视，只靠光学变焦和焦点转移拉近距离，最后一句「好久不见」。",
+    video: "/tutorials/graynotelab-jiangnan-alley-reunion-optical-zoom/demo-web.mp4",
+    poster: "/tutorials/graynotelab-jiangnan-alley-reunion-optical-zoom/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "古风写实",
+    shots: 4,
+    references: 0,
+    model: "未标明（帖子只给了提示词）",
+    style: "古风写实电影感 · 雨后江南古镇 · 阴天漫射光 · 光学变焦 + 长焦压缩 + 焦点转移",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/GrayNoteLab/status/2105199106578870298",
+    sourceAuthor: "@GrayNoteLab",
+    sourcePlatform: "X",
+    sourceImpressions: 2367,
+    sourceStats: { asOf: "2026-09-30", likes: 37, reposts: 6, bookmarks: 39 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "女主 A 走下石阶、行人打伞从前景经过 → 女主 B 从右前景入画、焦点从 A 转到 B → 切到 A 的过肩视角，B 看着她说「好久不见」",
+      opening: "第 0 秒青石台阶全景，女主 A 从台阶上走下来，打油纸伞的行人从前景横着经过。",
+      openingAt: 0,
+      beats: [
+        { title: "隔巷对视", text: "约 0–4s 行人从前景经过形成虚化遮挡，镜头慢慢推近，A 停在台阶上看向远处。", at: 0 },
+        { title: "焦点转移", text: "约 4–9s 女主 B 从右侧前景入画，靠着木柱侧脸站着；A 退到背景里虚化，焦点落在 B 的侧脸上。", at: 4 },
+        { title: "情绪确认", text: "约 9–15s 切到 A 的过肩视角，B 正面看着她，慢慢推近；约 13.5s 她轻声说「好久不见」，露出一点笑。", at: 9 },
+      ],
+      copyThis: "提示词把运镜限定成只用光学变焦：机位固定，不横移、不环绕，只靠推近 / 拉远、长焦压缩空间和焦点转移讲故事，每段都写清谁清晰、谁虚化。",
+      approx: true,
+    },
+    tags: [
+      "15秒",
+      "16:9 横屏",
+      "模型未标明",
+      "角色参考图未公开",
+      "光学变焦运镜",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备两张角色参考图",
+        description:
+          "提示词写「女主A：图1」「女主B：图2」，但作者没有公开这两张图，本页没有参考图。你需要自己准备两张人物图：A 是穿浅蓝长裙、编辫子的现代装女生，B 是戴白色花簪、穿浅青古装的女生。两人的脸都很写实，如果用真人照片，要先取得本人同意。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者没写用的哪个模型。成片 3840×2160、60fps、约 15 秒（画面偏软，可能是放大并补帧过的），右上角有很淡的作者水印「灰度笔记」。和提示词对不上的地方：提示词要求全程固定机位、不切镜，成片约 8.9 秒有一次硬切，切到 A 的过肩反打；提示词禁止字幕，成片约 13.5–14.8 秒烧录了「好久不見 / Long time no see」字幕。台词「好久不见」听得到（语音识别判断，未人工试听）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方中文提示词整段粘贴，上传两张人物图作为图1、图2。结构依次是：全局设定（场景、光线、画质、16:9）、核心摄影技法（只用光学变焦）、0–4s / 4–9s / 9–13s 三段镜头、镜头控制，以及连续性和负面约束。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 青石台阶全景，女主 A 走下台阶，打油纸伞的行人从前景经过，镜头缓慢推近。" },
+      { number: 2, description: "4–8.9s 女主 B 从右侧前景入画，靠着木柱侧脸站着；A 在背景虚化，焦点从 A 转到 B。" },
+      { number: 3, description: "8.9–13.5s 切到 A 的过肩视角，B 正面看着 A，镜头缓慢推近。" },
+      { number: 4, description: "13.5–15s B 轻声说「好久不见」，画面带「好久不見 / Long time no see」字幕，她露出一点笑。" },
+    ],
+    constraints:
+      "两人外貌、服装、左右位置和光线全程不变；只用光学变焦，不横移、不环绕、不数码裁切；禁止现代物件、字幕和水印。成片和提示词不一致：约 8.9 秒有一次硬切，结尾烧录了字幕，右上角有作者水印。",
+    video_prompt: {
+      title: "江南雨巷重逢 · 光学变焦",
+      subtitle: "主帖中文完整提示词 · 图1 / 图2 角色参考图作者未公开",
+      content: `【全局设定】
+古风写实电影镜头，东方古典生活叙事，雨后江南古镇：青石台阶、青砖黛瓦、木质廊檐、雕花木门、竹帘、湿润石板巷道。阴天柔和漫射光，低对比度，冷灰青与温暖木色融合，轻微35mm胶片颗粒，真实皮肤、木石与织物纹理，电影级浅景深，8K，16:9。
+
+女主A：图1
+女主B：图2
+
+全片严格保持角色身份、空间位置、左右关系、行进方向、天气、光线、色调连续。
+
+【核心摄影技法】
+全片以“渐进式光学变焦”为唯一核心运镜。摄影机尽量固定机位，不依赖实体移动，通过缓慢连续的光学推近、拉远改变人物画面占比与空间关系。保持真实镜头压缩、景深变化和光学特征，禁止数字裁切。前景遮挡、浅景深、焦点转移辅助叙事，形成“远处发现→隔巷对视→空间压缩→情绪确认”。
+
+【0-4s】
+中景起幅，35mm，固定机位，视线高度。女主A沿青石台阶缓慢下行至巷口，停步转身抬头，看见远处廊檐下的女主B。镜头从较宽环境关系构图开始，仅缓慢光学推近，逐渐收紧至女主A中景，摄影机不移动。
+
+古镇行人先后从左右前景横向经过，近距离形成自然虚化遮挡，女主A始终保持清晰；遮挡期间曝光、色温、光影稳定。变焦持续平滑克制，最终形成女主A与远处女主B隔巷对视。
+
+【4-9s】
+承接上一段，机位完全不变。女主B从画面右侧前景缓慢进入，靠近木质廊柱，与廊柱形成天然前景框；女主A位于左中部巷道深处。
+
+缓慢连续光学变焦，女主A先保持清晰，随后画面逐渐收紧，女主B前景占比增大，女主A退入背景并柔和虚化。逐渐进入长焦端，通过真实空间压缩使古巷纵深被压缩，两人实际距离不变，但视觉距离明显拉近。焦点平滑由女主A转向女主B，最终女主B侧脸清晰、女主A虚化。摄影机不横移、不摇摄、不绕拍，曝光与色调连续。
+
+【9-13s】
+保持固定机位与长焦关系。女主B站在木质廊柱旁缓慢转身，看向女主A。仅进行一次极缓慢光学推近，从双人关系构图收紧至女主B中近景。画面左侧保留女主A局部虚化轮廓，形成窥视式前景框架。
+
+女主B成为主要焦点，看向女主A，短暂停顿后轻声说：“好久不见。”露出极轻微笑意。竹帘被雨后微风吹动，屋檐水滴自然落下，湿润青石反射柔和天光。镜头稳定推进，在近距离情绪确认中结束。
+
+【镜头控制】
+核心必须是“光学变焦制造叙事距离变化”，而非摄影机移动。镜头语言依次完成：环境建立→发现女主A→缓慢收紧→女主B进入前景→长焦空间压缩→焦点转移→情绪确认。变焦速度缓慢连续，具有真实镜头惯性；保持自然人物比例、真实景深与稳定曝光，明确呈现光学变焦感，但无廉价数码放大感。
+
+【连续性与负面约束】
+严格遵循角色卡，禁止外貌、发型、服装漂移；保持空间地理关系、左右位置、运动方向、光线方向一致。禁止现代建筑、交通工具、路牌、现代物件、字幕、水印；禁止新增主要人物、人物重复、肢体异常、身份交换。禁止横移、环绕、快速推轨、突然摇镜、无人机运动、强手持抖动、数字变焦、数码裁切、透视异常、焦距跳变、景深瞬切、曝光闪烁、色温漂移、过度雾化、过度磨皮、AI塑料皮肤。
+`,
+    },
+  },
+  // 主帖只有简介，完整中文提示词在作者自回复 https://x.com/PixelAigc/status/2105306935629373580 （开头「prompt 视频提示词：」已去掉，从【整体设定】起收录）；没有参考图。与站内 pixelaigc-dunhuang-desktop-fail 同作者、不同作品
+  {
+    id: "pixelaigc-eileen-chang-wenzhou-inn-parting-minimax-h3",
+    title: "张爱玲温州寻夫 · 客栈二楼的不欢而散",
+    subtitle: "X · @PixelAigc · MiniMax H3 · 25秒 · 约1.8:1",
+    description:
+      "1946 年温州雨天客栈，张爱玲千里寻来，和胡兰成四句对白不欢而散，近乎静止的民国写实短片。",
+    video: "/tutorials/pixelaigc-eileen-chang-wenzhou-inn-parting-minimax-h3/demo-web.mp4",
+    poster: "/tutorials/pixelaigc-eileen-chang-wenzhou-inn-parting-minimax-h3/poster.jpg",
+    duration: "25秒",
+    durationSec: 25,
+    styleLabel: "民国写实",
+    shots: 5,
+    references: 0,
+    model: "MiniMax H3（帖子写「H3」）",
+    style: "民国写实电影感 · 阴雨低照度 + 油灯暖光 · 85mm 中近景正反打 · 近乎静止机位",
+    aspectRatio: "9/5",
+    sourceUrl: "https://x.com/PixelAigc/status/2105306932202582196",
+    sourceAuthor: "@PixelAigc",
+    sourcePlatform: "X",
+    sourceImpressions: 470,
+    sourceStats: { asOf: "2026-09-30", likes: 2, reposts: 0, bookmarks: 2 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "张爱玲窗边开口质问 → 胡兰成搪塞 → 她冷冷一句回敬 → 他叫「爱玲」欲言又止 → 双人中景，她转身离开",
+      opening: "第 0 秒 85mm 中近景：张爱玲站在雨窗边，背景是湿青瓦和一盏油灯，画右是胡兰成的背影。",
+      openingAt: 0,
+      beats: [
+        { title: "质问与搪塞", text: "约 2–6.5s 她说「我走了那么远来，你连一句真话都没有」；约 6.9s 切到过肩镜头，胡兰成说「你不该来的。这世道，我自身都难保」。", at: 2 },
+        { title: "回敬", text: "约 14.7s 切回张爱玲：「你保得住的，只是你那点聪明。」", at: 14.7 },
+        { title: "收尾", text: "约 18.9s 胡兰成：「爱玲，你总是这样——」；约 22.8s 双人中景，她转身去拿外衣，他没追。", at: 18.9 },
+      ],
+      copyThis: "提示词把两人的左右位置和 180 度轴线锁死，每个镜头只写一句台词，并把表演写成具体的小动作（抿唇、喉头动、手抬到半空又收回），不写「伤心」这类词。",
+      approx: true,
+    },
+    tags: [
+      "25秒 · 5 个镜头",
+      "约 1.8:1 宽幅（提示词要 2.39:1）",
+      "MiniMax H3",
+      "无参考图",
+      "历史真人题材 · 中文对白",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：写清两个人物（没有参考图）",
+        description:
+          "作者没有用参考图，两个人物全靠文字：张爱玲约 25 岁，齐耳微卷短发、素色旗袍，固定在画面左边；胡兰成约 40 岁，梳拢头发、旧长衫，固定在画面右边。提示词写明不模仿任何演员或历史影像。注意：两人是真实历史人物，这一幕是作者按史事演绎的，页面和二创时都应标明是 AI 演绎。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "帖子写用「H3」生成，应是 MiniMax H3，平台没写。成片 1944×1080（约 1.8:1）、24fps、约 25 秒，没有水印和字幕。和提示词对不上的地方：提示词要 2.39:1，成片约 1.8:1；提示词按 5/5/5/4/6 秒分镜，成片切点约在 6.9、14.7、18.9、22.8 秒，最后的双人镜头只有约 2.3 秒；提示词要她冷、他敷衍，成片里两人都带着笑。四句台词大体都在，胡兰成那句开头语音识别听成「我不该来的」（语音识别判断，未人工试听）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方中文提示词整段粘贴。结构依次是：整体设定、世界与视觉语法（时代、地点、光线、排除项）、人物一致性、镜头一到五（每个镜头写焦段、机位、表演、对白和结尾切法）、声音设计、影像限制和核心要求。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–6.9s 张爱玲在雨窗边，85mm 中近景，她说「我走了那么远来，你连一句真话都没有」。" },
+      { number: 2, description: "6.9–14.7s 过肩中近景，胡兰成端着茶杯，说「你不该来的。这世道，我自身都难保」。" },
+      { number: 3, description: "14.7–18.9s 回到张爱玲：「你保得住的，只是你那点聪明。」" },
+      { number: 4, description: "18.9–22.8s 胡兰成中近景：「爱玲，你总是这样——」" },
+      { number: 5, description: "22.8–25.1s 50mm 双人中景，她转身去拿椅背上的外衣，他站在原地没追。" },
+    ],
+    constraints:
+      "两人左右位置和 180 度轴线全程不变；只要雨声、木楼板和油灯等环境声，不要背景音乐和字幕；不要现代物件；不模仿特定演员或历史影像。成片和提示词不一致：画幅约 1.8:1 而不是 2.39:1，分镜时长不同，两人表情偏笑。题材是真实历史人物（张爱玲、胡兰成）的 AI 演绎。",
+    video_prompt: {
+      title: "张爱玲 · 温州客栈 · 1946",
+      subtitle: "作者自回复中文完整提示词 · MiniMax H3 · 无参考图",
+      content: `【整体设定】  
+一段 25 秒写实电影感短片，原生同步中文对白，2.39:1 电影宽幅，24fps 胶片质感，民国三十五年（1946 年初春）温州小客栈二楼。张爱玲自千里外寻来，却撞见一段早已凉透的关系——两人不欢而散。低照度阴雨光，镜头近乎静止，情绪靠克制的唇线、躲闪的眼神与一步之距承载。
+
+【世界与视觉语法】  
+时代：1946 年初春，战后逃亡中的温州。地点：小客栈二楼木结构房间，旧木窗半开，窗外是湿漉漉的青瓦与连绵冷雨，远处街巷有模糊的温州方言人声；屋内一张矮木桌、两把竹椅、一盏昏黄油灯（民国旧式，非现代灯具）、一只磕碰的搪瓷热水瓶。光线：阴雨天灰白漫射光＋油灯暖黄侧光，低照度，冷调为主、一点橙。色调：青灰、旧木褐、雨雾白。排除：现代物件（LED/荧光灯、塑料、电器）、可读文字、Logo、广告式打光、棚拍光、美颜磨皮。
+
+【人物一致性】  
+· 张爱玲（固定位于画面左侧 frame-left，面朝画右看向胡兰成）：女，约 25 岁，江南文人气质；身材清瘦，身形单薄，面色苍白；齐耳短发（微卷），素净；穿素色旗袍，衣料旧而干净，袖口露出一截伶仃的手腕。面容清冷骄傲，眉眼锐利，眼底压着一层不肯示人的伤。声音：青年女声，清冷、克制、字句精准，底下一层微微发颤的委屈。情绪基线：受伤的骄傲，死死压着不让失态。  
+· 胡兰成（固定位于画面右侧 frame-right，面朝画左看向张爱玲）：男，约 40 岁，文人模样，瘦长，头发梳拢，面容清秀带几分风流；穿旧长衫或素色西装，袖口磨毛。声音：中年男声，温和、圆滑、带着敷衍的歉意。情绪基线：回避、自保、试图维持体面。  
+· （不模仿任何特定演员或历史影像；发型、服饰、空间位置全程锁定，180 度轴线不变。）
+
+【镜头一｜0.0–5.0 秒】  
+· 85mm 中近景，框住张爱玲（frame-left）；背景虚化成雨雾青瓦与油灯橙光。  
+· 机位几乎固定，极轻微手持呼吸感。  
+· 起始：她站在窗边，雨水在玻璃上斜流，她没有看窗外，目光钉在画右的胡兰成身上。  
+· 表演：开口前唇线先抿紧、喉头微动；"我走了那么远来"语速慢、字字清楚；"你连一句真话都没有"尾音没有加重，只是冷下去，眼底浮起一点水光却不上涌。不哭。  
+· 对白："我走了那么远来，你连一句真话都没有。"（语气：清冷、克制、藏伤）  
+· 结尾：硬切。
+
+【镜头二｜5.0–10.0 秒】  
+· 85mm 过肩中近景，胡兰成于 frame-right，前景可见张爱玲左肩与旗袍边（过肩），背景油灯与雨光。  
+· 机位固定。  
+· 起始：他先垂眼，手指无意识摩挲茶杯沿，再抬眼时避开她的目光，落到她身后的门。  
+· 表演："你不该来的"语气软而圆，像在替她可惜；"这世道，我自身都难保"苦笑一下、嘴角扯动却不达眼底，下颌微松以示无奈——全是回避，没有接住她的伤。  
+· 对白："你不该来的。这世道，我自身都难保。"（语气：温和、敷衍、自顾）  
+· 结尾：硬切。
+
+【镜头三｜10.0–15.0 秒】  
+· 回到张爱玲（frame-left），同景别同机位（连续性），85mm 中近景。  
+· 她听罢，极轻地吸了一下鼻子，不是哭，是压下什么。  
+· 表演：嘴角浮起一丝极淡的、近乎冷的笑；"你保得住的"目光不躲、直直刺过去；"只是你那点聪明"五字放轻，像放下一件原本捧着的东西。唇线重新抿紧。  
+· 对白："你保得住的，只是你那点聪明。"（语气：轻、冷、精准）  
+· 结尾：硬切。
+
+【镜头四｜15.0–19.0 秒】  
+· 胡兰成（frame-right）中近景，机位固定。  
+· 他张了张嘴，手抬到半空像想碰她肩，又收回去，指节蜷起。  
+· 表演："爱玲"二字叫得熟极而流、却空；"你总是这样——"尾音拖长、欲言又止，眼睑垂下、眉间浮起一点不耐与心虚混成的皱。没有真正解释。  
+· 对白："爱玲，你总是这样——"（语气：熟稔、悬而未落、回避）  
+· 结尾：硬切至镜头五。
+
+【镜头五｜19.0–25.0 秒】  
+· 50mm 中景，双人同框：张爱玲在 frame-left 转身背向画右的胡兰成，伸手去取搭在椅背上的外衣；胡兰成留在原地，手还半抬着，没有追。雨声渐显。  
+· 机位几乎不动，极缓的微推（push-in）贴近张爱玲的背影与侧颈。  
+· 表演：她背对他，下颌线绷紧，没有回头；胡兰成喉结动了一下，目光落到空椅上。两人之间那一步，成了关不上的门。  
+· 对白：无。以静默与雨声收束。  
+· 结尾：直接收束（无渐隐），定格在她转身离去的瞬间。
+
+【声音设计】  
+· 语言：中文（普通话），原生生成对白，逐字精准口型同步。  
+· 声部分离：张爱玲（青年清冷女声）／胡兰成（中年温和男声），情绪轨迹分明。  
+· 唇形：每句对白口型与音节一致；张爱玲抿唇、胡兰成假笑的口型须贴合发音。  
+· 环境床：连绵雨声、木楼板轻微吱呀、远处模糊方言人声、油灯噼啪、搪瓷杯轻碰；两人呼吸与吞咽清晰可闻。  
+· 禁止：背景音乐、字幕、画外旁白、人为音效设计。
+
+【影像限制】  
+· 禁止字幕、可读文字、水印、Logo。  
+· 禁止额外人物、场景突变、服装/发型漂移、面部漂移、美颜磨皮。  
+· 禁止现代物件（LED/荧光灯、塑料、电器）、广告式打光与棚拍光。  
+· 禁止不自然牙齿/嘴唇、唇形不同步、视线漂移、假泪、夸张哭嚎。  
+· 禁止慢动作、环绕运镜、持续吼叫、过大手势。  
+· 禁止模仿特定演员或历史影像；保持民国写实质感。
+
+【核心要求】  
+本场情绪引擎是"受伤的骄傲与回避的体面"——靠张爱玲克制到发抖的唇线与胡兰成躲闪的眼神托住这场不欢而散；画面必须依赖阴雨低照度与两人之间那一步之距，而非台词之外的任何煽情。
+`,
+    },
+  },
 ];
 
 export const tutorials: Tutorial[] = rawTutorials.map((t) => withMedia(t));
