@@ -1130,8 +1130,8 @@ One woman, one room, one fixed camera position and one fixed field of view. Stra
       {
         id: "ivanka-1890s-girl-photo",
         number: "1",
-        title: "人物照（Girl photo）· 截帧",
-        subtitle: "作者未在视频拼板中展示这张图；此处为成片约 9 秒梳妆镜头的截帧，仅示意人物，非原图",
+        title: "@image1 · 人物照（Girl photo）· 截帧",
+        subtitle: "提示词 @image1 = 人物长相；原图原帖未公开（作者未在视频拼板中展示这张图）；此处为成片约 9 秒梳妆镜头的截帧，仅示意人物，非原图",
         image: "/tutorials/ivanka-1890s-grwm-bicycle-seedance-2-5/refs/01-girl-photo-framegrab.jpg",
         prompt: `Render a single photorealistic portrait photograph. Every field describes the finished frame.
 
@@ -1171,8 +1171,8 @@ LOOK:
       {
         id: "ivanka-1890s-outfit-map",
         number: "2",
-        title: "服装图（Outfit map）",
-        subtitle: "维多利亚白色长裙、手套、草帽、靴子等；截自原帖视频下半拼板，非原图",
+        title: "@image2 · 服装图（Outfit map）",
+        subtitle: "提示词 @image2 = 整套服装；维多利亚白色长裙、手套、草帽、靴子等；截自原帖视频下半拼板，非原图",
         image: "/tutorials/ivanka-1890s-grwm-bicycle-seedance-2-5/refs/02-outfit-map.jpg",
         prompt: `Render a single photorealistic reference sheet photograph. Every field describes the finished frame.
 
@@ -1223,8 +1223,8 @@ CONSISTENCY_LOCK:
       {
         id: "ivanka-1890s-bike-map",
         number: "3",
-        title: "自行车图（Bike map）",
-        subtitle: "复古安全自行车，车把挂花篮；截自原帖视频拼板，非原图",
+        title: "@image3 · 自行车图（Bike map）",
+        subtitle: "提示词 @image3 = 自行车；复古安全自行车，车把挂花篮；截自原帖视频拼板，非原图",
         image: "/tutorials/ivanka-1890s-grwm-bicycle-seedance-2-5/refs/03-bike-map.jpg",
         prompt: `Render a single photorealistic reference sheet photograph. Every field describes the finished frame.
 
@@ -1284,7 +1284,7 @@ CONSISTENCY_LOCK:
       "人物、服装、自行车全程与参考图一致；每镜写明时间段和镜头角度（焦段角度数字），不加额外镜头。与成片不符：成片切点与提示词大致一致但有 ±0.5 秒偏差（如 Shot 2 提示词 3.0s、成片约 2.97s；Shot 6 两个快切在成片约 12.8s、13.8s）。说明：作者视频是上下拼接版（上半 1920×1080 成片，下半为服装图 + 自行车图拼板带水印），demo 只裁上半；PROMPT 1 人物照原图未出现在拼板中，参考图 1 为成片截帧。Shot 2 为坐便盆的时代生活细节，画面有衬裙遮盖。",
     video_prompt: {
       title: "1890s GRWM · Animation · 12 shots / 30s",
-      subtitle: "Seedance 2.5 · 16:9 · PROMPT 4 英文完整提示词（作者自回复长帖）",
+      subtitle: "Seedance 2.5 · 16:9 · @image1 = 人物照（原图未公开，参考 1 为成片截帧），@image2 = 服装图，@image3 = 自行车图 · PROMPT 4 英文完整提示词（作者自回复长帖）",
       content: `📌 PROMPT 4:  Animation prompt
 A 30-second 16:9 cinematic self-shot morning vlog of a young Belle Époque aristocrat in a French countryside manor, 1890s, one continuous golden morning, natural location sound dominant, every prop and interior strictly period-accurate to the 1890s.
 
@@ -1396,8 +1396,8 @@ A delicate period solo-piano waltz sits low in the mix under the whole video, li
       {
         id: "ivanka-yoga-girl-map",
         number: "1",
-        title: "人物角色卡（Girl character map）",
-        subtitle: "酒红运动服瑜伽女生，正脸 + 全身；截自原帖视频下半拼板，非原图、分辨率有限",
+        title: "@89d57094…（第一集）/ @896c80a4…（第二集）· 人物角色卡（Girl character map）",
+        subtitle: "提示词里的 character reference card：第一集 @89d57094-2375-46b0-bd90-39ed2e9dded4、第二集 @896c80a4-1c22-490f-85c7-93bfece586b1；酒红运动服瑜伽女生，正脸 + 全身；截自原帖视频下半拼板，非原图、分辨率有限",
         image: "/tutorials/ivanka-yoga-wrist-buddy-ad-seedance-2-5/refs/01-girl-character-map.jpg",
         prompt: `SHEET:
   instruction: "Create a consistent character reference card for a natural yoga e-commerce advertisement."
@@ -1448,8 +1448,8 @@ CONSISTENCY_LOCK:
       {
         id: "ivanka-yoga-product-map",
         number: "2",
-        title: "产品图（Product map）",
-        subtitle: "青绿色护腕支撑块（WRIST Buddy 字样）；截自原帖视频拼板，非原图",
+        title: "@da892c6c…（第一集）/ @4dbcc791… 或 @Image1（第二集）· 产品图（Product map）",
+        subtitle: "提示词里的 product reference card：第一集 @da892c6c-ae67-4409-a8a4-dc6e58fa3948、第二集 @4dbcc791-d7fb-4c56-b360-7abd959c86cd（第二集 ACTIVE REFERENCES 里写作 @Image1）；青绿色护腕支撑块（WRIST Buddy 字样）；截自原帖视频拼板，非原图",
         image: "/tutorials/ivanka-yoga-wrist-buddy-ad-seedance-2-5/refs/02-product-map.jpg",
         prompt: `Create one horizontal 16:9 product reference card divided into two equal side-by-side photographic panels against the same plain neutral medium-gray studio background. The left panel shows the exact pair of teal WRISTBuddy yoga blocks from the first reference photo, large in frame and arranged exactly as shown in the reference, preserving their precise shape, proportions, sculpted hand grooves, thumb openings, raised supports, matte foam texture, teal colour, R and L markings, and clear WRISTBuddy logos. The right panel shows the exact same pair of blocks in use, based on the second reference photo: a tight close-up containing only two female forearms cropped just below the elbows and two anatomically correct hands properly inserted into the blocks. Each palm rests inside the shaped support, each thumb fits into its dedicated opening, four fingers wrap naturally through the finger grooves, and both wrists remain straight and correctly supported under realistic body weight. Five natural fingers on each hand, accurate joints and natural contact pressure against the foam. Identical product design, colour, scale and branding in both panels. Soft even studio lighting, realistic contact shadows, natural skin texture, detailed product surfaces, clean central seam, sharp commercial product photography.`,
       },
@@ -1471,10 +1471,10 @@ CONSISTENCY_LOCK:
       { number: 14, description: "38–40s 产品在瑜伽垫上定格。" },
     ],
     constraints:
-      "人物与产品全程与参考图一致，场景里只有这一对支撑块，每集 7 个硬切镜头。与成片不符：成片切点比提示词整体晚约 0.5–0.8 秒（如第一集 Shot 1 提示词 2.6s、成片约 3.4s）。说明：作者视频是上下拼接版（上半为 16:9 成片，下半为人物卡 + 产品图拼板带水印），demo 只裁上半；参考图从拼板截出，非原图。PROMPT 3 的 SHOT 6 里有一个平台引用符 @2ddc3e71-4dd1-4d0f-b4f3-2777edffaf0e（疑为作者所用平台的素材 ID），按原文保留。WRIST Buddy 字样疑为真实品牌。",
+      "人物与产品全程与参考图一致，场景里只有这一对支撑块，每集 7 个硬切镜头。与成片不符：成片切点比提示词整体晚约 0.5–0.8 秒（如第一集 Shot 1 提示词 2.6s、成片约 3.4s）。说明：作者视频是上下拼接版（上半为 16:9 成片，下半为人物卡 + 产品图拼板带水印），demo 只裁上半；参考图从拼板截出，非原图。提示词里的 @+UUID 是作者所用平台给每张上传参考图的编号，按原文保留：人物卡 = 参考 1（第一集 @89d57094…、第二集 @896c80a4…），产品图 = 参考 2（第一集 @da892c6c…、第二集 @4dbcc791…，第二集 ACTIVE REFERENCES 里写作 @Image1）。原帖未公开 / 页面未附：location reference 瑜伽房场景图（第一集 @befdeaa8…、第二集 @9a198461…）和 dedicated usage reference 手部摆放示意图（第一集 @2ddc3e71…、第二集 @a913dca2…），作者拼板里只有人物卡和产品图。WRIST Buddy 字样疑为真实品牌。",
     video_prompt: {
       title: "Wrist support ad · Episode 1 + Episode 2 · 2×20s",
-      subtitle: "Seedance 2.5 · 16:9 · PROMPT 3 与 PROMPT 4 英文完整提示词（作者自回复长帖）",
+      subtitle: "Seedance 2.5 · 16:9 · 人物卡 = @89d57094… / @896c80a4…（参考 1），产品图 = @da892c6c… / @4dbcc791… / @Image1（参考 2）；场景图 @befdeaa8… / @9a198461… 和手部摆放图 @2ddc3e71… / @a913dca2… 原帖未公开 · PROMPT 3 与 PROMPT 4 英文完整提示词（作者自回复长帖）",
       content: `📌 PROMPT 3: Animation prompt Episode 1
 PRESSURE → FLOW INTERRUPTED → PRODUCT DISCOVERY → PRECISE SETUP → CONTROL RESTORED
 
@@ -1865,7 +1865,7 @@ The woman remains silent with naturally resting lips; every spoken word comes on
         number: 1,
         title: "第一步：出 5 张参考图",
         description:
-          "PROMPT 1 人物卡、PROMPT 2 产品图（维生素软糖瓶）、PROMPT 3 公寓、PROMPT 4 办公室、PROMPT 5 酒红色旅行包。五段提示词见参考图卡片。",
+          "PROMPT 1 人物卡、PROMPT 2 产品图（维生素软糖瓶）、PROMPT 3 公寓、PROMPT 4 办公室、PROMPT 5 酒红色旅行包。五段提示词见参考图卡片。注意：动画提示词里 @image1 是产品图、@image2 是人物卡，和出图顺序（PROMPT 1 人物、PROMPT 2 产品）相反，上传时按 @image 编号放。",
       },
       {
         number: 2,
@@ -1882,18 +1882,10 @@ The woman remains silent with naturally resting lips; every spoken word comes on
     ],
     references_detail: [
       {
-        id: "ivanka-vita-girl-map",
-        number: "1",
-        title: "@Image1 · 人物卡（Girl character map）",
-        subtitle: "白衬衫黑马甲的都市女生，正脸 + 全身；截自原帖视频右侧拼板，非原图、分辨率有限",
-        image: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/refs/01-girl-character-map.jpg",
-        prompt: `A 16:9 horizontal two-panel reference card features a striking European woman of about 30 years old, depicted in matching contemporary studio fashion styling, both panels set against a seamless neutral medium-grey cyclorama (#8A8A8A) swept wall-to-floor with a visible floor at the base and real depth behind, producing soft touch shadows. The left close portrait panel is a crisply detailed optical study, framed from just above the crown to mid-torso, with a front-facing pose, shoulders open and square, facial features including a softly sculpted oval face with a neat chin taper, defined cheekbones, full natural eyebrows, hazel-brown almond eyes, a straight refined nose, and gently full lips with a faint upward lift. Highly natural facial skin texture, subtle natural gloss, creamy desaturated finish, realistic pores and fine lines, faint beauty mark beneath left cheekbone and shallow dimple beside the right mouth corner, and micro-asymmetry (left eyebrow fractionally higher, right eye marginally narrower, right mouth corner lifted). Hair is chestnut brown with caramel ribbons, center part, face-framing curtain layers, large retro waves falling below the chest with individual strands visible, polished and sculpted. The wardrobe consists of a high-quality bright white cotton-poplin button-down shirt (collar wide and sharply pointed, top two buttons undone) with mid-forearm rolled sleeves, over which sits a tailored black waistcoat with a deep V neckline, smooth fitted panels, five black buttons, sharply pointed hem at the high hip; layered with high-waisted ivory wide-leg suiting trousers (matte, creamy texture, double pleats, concealed fly, long fluid hem) and ivory pointed pumps. Accessories include slim gold drop earrings, a fine pendant necklace, a slim gold wristwatch with bracelets on the left, and a visible structured cognac brown leather shoulder bag (gold hardware, matching charm) slung over the right shoulder. The right panel is a tightly matched full-body portrait of the same woman, crown to shoes with visible matte grey floor, positioned straight-on, standing with weight evenly balanced, left arm relaxed, right hand near the pocket, full bag visible, jewelry and wardrobe consistent with the left panel. The lighting combines a large diffused softbox from camera left at 45 degrees, broad bounce from camera right (open readable shadows, 2:1 fill) and a slender rim from behind, which traces the hair and outer edges of the figure across both views. Refined shadow definition, small even catchlights, mild highlights on metal, and a natural creamy skin roll-off define the neutral graphite palette, while accent colors appear as brown hair, gold jewelry and the brown bag. Technical clarity, consistent 85mm Hasselblad digital lens at f/5.6, and subtle natural sensor texture with a gentle filmic s-curve give the image a contemporary neutral editorial fashion mood with cinematic tonality.`,
-      },
-      {
         id: "ivanka-vita-product-map",
-        number: "2",
-        title: "@Image2 · 产品图（Product map）",
-        subtitle: "绿色瓶身维生素软糖（vitafusion 字样）；截自原帖视频拼板，非原图",
+        number: "1",
+        title: "@Image1 · 产品图（Product map）",
+        subtitle: "提示词 @image1 = 产品卡；绿色瓶身维生素软糖（vitafusion 字样）；截自原帖视频拼板，非原图",
         image: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/refs/02-product-map.jpg",
         prompt: `SHOT:
   shot_size: "Horizontal 16:9 product reference card with two complete views of the same vitafusion Women's Multi bottle, fully visible from base to top with generous gray space."
@@ -1943,6 +1935,14 @@ LOOK:
   color_grading: "Neutral commercial grading with a low-contrast soft curve, cool gray shadows, accurate green midtones and gently controlled highlights."
   authenticity: "Hasselblad H6D-100c, 85mm modern clinical lens with neutral rendering and accurate product proportions, f/11 deep focus keeping both bottles, labels, lid and gummies fully resolved from front to back."
   style: "commercial product photography, smooth digital sensor rendering, clean speculars, tactile material detail, contemporary studio advertising"`,
+      },
+      {
+        id: "ivanka-vita-girl-map",
+        number: "2",
+        title: "@Image2 · 人物卡（Girl character map）",
+        subtitle: "提示词 @image2 = 人物卡（<WOMAN>）；白衬衫黑马甲的都市女生，正脸 + 全身；截自原帖视频右侧拼板，非原图、分辨率有限",
+        image: "/tutorials/ivanka-vitafusion-5-refs-two-episode-ad-seedance-2-5/refs/01-girl-character-map.jpg",
+        prompt: `A 16:9 horizontal two-panel reference card features a striking European woman of about 30 years old, depicted in matching contemporary studio fashion styling, both panels set against a seamless neutral medium-grey cyclorama (#8A8A8A) swept wall-to-floor with a visible floor at the base and real depth behind, producing soft touch shadows. The left close portrait panel is a crisply detailed optical study, framed from just above the crown to mid-torso, with a front-facing pose, shoulders open and square, facial features including a softly sculpted oval face with a neat chin taper, defined cheekbones, full natural eyebrows, hazel-brown almond eyes, a straight refined nose, and gently full lips with a faint upward lift. Highly natural facial skin texture, subtle natural gloss, creamy desaturated finish, realistic pores and fine lines, faint beauty mark beneath left cheekbone and shallow dimple beside the right mouth corner, and micro-asymmetry (left eyebrow fractionally higher, right eye marginally narrower, right mouth corner lifted). Hair is chestnut brown with caramel ribbons, center part, face-framing curtain layers, large retro waves falling below the chest with individual strands visible, polished and sculpted. The wardrobe consists of a high-quality bright white cotton-poplin button-down shirt (collar wide and sharply pointed, top two buttons undone) with mid-forearm rolled sleeves, over which sits a tailored black waistcoat with a deep V neckline, smooth fitted panels, five black buttons, sharply pointed hem at the high hip; layered with high-waisted ivory wide-leg suiting trousers (matte, creamy texture, double pleats, concealed fly, long fluid hem) and ivory pointed pumps. Accessories include slim gold drop earrings, a fine pendant necklace, a slim gold wristwatch with bracelets on the left, and a visible structured cognac brown leather shoulder bag (gold hardware, matching charm) slung over the right shoulder. The right panel is a tightly matched full-body portrait of the same woman, crown to shoes with visible matte grey floor, positioned straight-on, standing with weight evenly balanced, left arm relaxed, right hand near the pocket, full bag visible, jewelry and wardrobe consistent with the left panel. The lighting combines a large diffused softbox from camera left at 45 degrees, broad bounce from camera right (open readable shadows, 2:1 fill) and a slender rim from behind, which traces the hair and outer edges of the figure across both views. Refined shadow definition, small even catchlights, mild highlights on metal, and a natural creamy skin roll-off define the neutral graphite palette, while accent colors appear as brown hair, gold jewelry and the brown bag. Technical clarity, consistent 85mm Hasselblad digital lens at f/5.6, and subtle natural sensor texture with a gentle filmic s-curve give the image a contemporary neutral editorial fashion mood with cinematic tonality.`,
       },
       {
         id: "ivanka-vita-apartment-map",
@@ -2096,7 +2096,7 @@ LOOK:
       "5 张参考图（人物、产品、公寓、办公室、包）全程一致，每集 10 个硬切镜头，产品只在指定镜头出现。与成片不符：第一集 Shot 1 提示词 1.8s、成片约 2.4s，其余切点有约 ±0.5 秒偏差。说明：作者视频是左右拼接版（左 1122×2000 为 9:16 成片，右侧一列是 5 张参考图拼板带水印），demo 只裁左侧；参考图从拼板截出，非原图，包图只有约 374×210。PROMPT 7 正文末尾多了一行「📌 PROMPT 7: ) Animation prompt Episode 2」（作者复制残留），按原文保留。vitafusion 是真实品牌。",
     video_prompt: {
       title: "Vitamin gummies ad · Episode 1 + Episode 2 · 2×20s",
-      subtitle: "Seedance 2.5 · 9:16 · PROMPT 6 与 PROMPT 7 英文完整提示词（作者自回复长帖）",
+      subtitle: "Seedance 2.5 · 9:16 · @image1 = 产品图，@image2 = 人物卡，@image3 = 公寓，@image4 = 办公室，@image5 = 健身包（对应参考 1–5）· PROMPT 6 与 PROMPT 7 英文完整提示词（作者自回复长帖）",
       content: `📌 PROMPT 6: Animation prompt Episode 1
 DRAINED → THE UNTOUCHED BAG → A SMALLER CHOICE → THE ROUTINE BEGINS
 
@@ -2424,7 +2424,7 @@ The written voiceover is the complete spoken track. The woman remains silent on 
     durationSec: 30,
     styleLabel: "写实生活",
     shots: 12,
-    references: 0,
+    references: 3,
     model: "Seedream 5.0 Pro + Seedance 2.5",
     style: "乡村农舍自然光 · 前景虚化的固定机位 · 暖色晨光",
     aspectRatio: "16/9",
@@ -2458,7 +2458,7 @@ The written voiceover is the complete spoken track. The woman remains silent on 
         number: 1,
         title: "第一步：准备男主和狗的参考图",
         description:
-          "作者用 Seedream 5.0 Pro 出了男主和狗的参考图（原帖视频下半可见），但没有公开这两张图的提示词，本页不收录参考图。",
+          "作者用 Seedream 5.0 Pro 出了男主和狗的参考图（原帖视频下半是两张角色卡的拼板），但没有公开原图和出图提示词。本页从原帖视频拼板截出 3 张参考图：@Image 1 = 男主角色卡（全身 + 正脸，锁定长相），@Image 2 = 男主全身工装（衬衫、背带、橄榄色长裤、棕靴，即提示词写的那套 styling），@Image 3 = 边境牧羊犬角色卡。均为截自原帖视频拼板，非原图、分辨率有限；作者拼板里没有单独的服装图，@Image 2 取自男主卡的全身照。",
       },
       {
         number: 2,
@@ -2470,11 +2470,34 @@ The written voiceover is the complete spoken track. The woman remains silent on 
         number: 3,
         title: "第三步：用 Seedance 2.5 生成",
         description:
-          "把两张参考图和动画提示词一起喂给 Seedance 2.5，一次生成 30 秒 16:9。",
+          "把 3 张参考图（@Image 1–3）和动画提示词一起喂给 Seedance 2.5，一次生成 30 秒 16:9。",
       },
     ],
     references_detail: [
-
+      {
+        id: "ivanka-farm-man-map",
+        number: "1",
+        title: "@Image 1 · 男主角色卡（全身 + 正脸）",
+        subtitle: "提示词 @Image 1 = 男主长相（脸、眼睛、发色、胡茬、身材）；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-country-farm-morning-vlog-seedance-2-5/refs/01-man-character-map.jpg",
+        prompt: "作者未公开出图提示词（Seedream 5.0 Pro）。截自原帖视频下半拼板的左半：浅灰棚拍背景，左为全身、右为正脸半身，穿条纹工装衬衫和背带。",
+      },
+      {
+        id: "ivanka-farm-man-styling",
+        number: "2",
+        title: "@Image 2 · 男主全身工装（styling）",
+        subtitle: "提示词 @Image 2 = 第 6–12 镜的整套穿搭；截自原帖视频拼板，非原图（作者拼板里没有单独的服装图，这里取男主卡的全身照）",
+        image: "/tutorials/ivanka-country-farm-morning-vlog-seedance-2-5/refs/02-man-styling-from-card.jpg",
+        prompt: "作者未公开出图提示词（Seedream 5.0 Pro）。截自原帖视频拼板里男主卡的全身照：米白条纹工装衬衫袖子卷起、卡其色 Y 形背带、高腰橄榄棕打褶长裤卷边、棕色系带皮靴，和提示词对 @Image 2 的描述一致。",
+      },
+      {
+        id: "ivanka-farm-dog-map",
+        number: "3",
+        title: "@Image 3 · 狗角色卡（边境牧羊犬）",
+        subtitle: "提示词 @Image 3 = 每个有狗的镜头里的狗；截自原帖视频拼板，非原图",
+        image: "/tutorials/ivanka-country-farm-morning-vlog-seedance-2-5/refs/03-dog-map.jpg",
+        prompt: "作者未公开出图提示词（Seedream 5.0 Pro）。截自原帖视频下半拼板的右半：蓝陨石色边境牧羊犬，左为全身、右为头部特写，异色瞳（左眼冰蓝、右眼琥珀），带作者水印。",
+      },
     ],
     storyboard: [
       { number: 1, description: "0–4.3s 床头柜水杯前景，他和灰白长毛狗在床上醒来。" },
@@ -2491,10 +2514,10 @@ The written voiceover is the complete spoken track. The woman remains silent on 
       { number: 12, description: "27.5–30s 骑在马上伸臂自拍，微笑。" },
     ],
     constraints:
-      "男主和狗全程与参考图一致；每镜固定机位、前景有虚化物件，最后一镜才是手持自拍。与成片不符：成片切点与提示词有约 ±0.5 秒偏差，约 25–27s 劈柴与骑马之间有额外短切。说明：作者视频是上下拼接版（上半为成片，下半为男主 + 狗参考图拼板带水印），demo 只裁上半；男主和狗的参考图作者没有公开提示词，本页 0 张参考图。成片里男主起床、煎蛋时赤膊只穿内裤（成年男性，非露骨）。",
+      "男主和狗全程与参考图一致；每镜固定机位、前景有虚化物件，最后一镜才是手持自拍。与成片不符：成片切点与提示词有约 ±0.5 秒偏差，约 25–27s 劈柴与骑马之间有额外短切。说明：作者视频是上下拼接版（上半为成片，下半为男主 + 狗参考图拼板带水印），demo 只裁上半；男主和狗的参考图作者没有公开原图和提示词，本页 3 张参考图截自原帖视频拼板（非原图）。成片里男主起床、煎蛋时赤膊只穿内裤（成年男性，非露骨）。",
     video_prompt: {
       title: "Country farm morning · Animation · 12 shots / 30s",
-      subtitle: "Seedance 2.5 · 16:9 · 作者自回复长帖中的英文完整动画提示词",
+      subtitle: "Seedance 2.5 · 16:9 · @Image 1 = 男主角色卡，@Image 2 = 男主全身工装，@Image 3 = 狗角色卡（均截自原帖视频拼板）· 作者自回复长帖中的英文完整动画提示词",
       content: `📌 ANIMATION PROMPT:
 A 30-second 16:9 cinematic self-shot farm vlog in a Provençal stone farmhouse and its yard, one continuous golden morning, natural location sound dominant.
 [CHARACTER]
@@ -7230,16 +7253,16 @@ TECHNICAL:
       {
         id: "nastassiavideo-corset-hangar-image1-corset",
         number: "1",
-        title: "黑色皮革束腰 · 商品图",
-        subtitle: "作者主帖第一张图原件",
+        title: "@Image2 · 黑色皮革束腰 · 商品图",
+        subtitle: "作者主帖第一张图原件 · 本页反推提示词里的 @Image2（服装）",
         image: "/tutorials/nastassiavideo-corset-hangar-vhs-seedance-2-0/refs/image1-corset-HQPvdE2XEAAMf57.jpg",
         prompt: "作者未公开，此为按成片反推。（本条按作者原图反推出图提示词）Studio product photo of a black high-gloss leather corset top shown on an invisible mannequin, front view, centred on a seamless white background. Sculpted rounded cups with a deep V between them, front cord lacing visible in the gap, two horizontal leather belts with polished silver pin buckles across the ribs, curved panel seams, flared peplum hips, loose lace ends hanging below the hem. Soft even softbox lighting with long specular highlights on the leather, gentle floor shadow, e-commerce clarity, 3:4.",
       },
       {
         id: "nastassiavideo-corset-hangar-image2-face",
         number: "2",
-        title: "人物脸部特写 · 作者原图",
-        subtitle: "作者主帖第二张图原件 HQPvdE9WcAAmodJ（896x1216）· 作者说人物用 Recraft 做",
+        title: "@Image1 · 人物脸部特写 · 作者原图",
+        subtitle: "作者主帖第二张图原件 HQPvdE9WcAAmodJ（896x1216）· 本页反推提示词里的 @Image1（人物）· 作者说人物用 Recraft 做",
         image: "/tutorials/nastassiavideo-corset-hangar-vhs-seedance-2-0/refs/image2-face-HQPvdE9WcAAmodJ.jpg",
         prompt: "作者未公开，此为按成片反推。（本条按作者原图反推出图提示词）Editorial beauty close-up portrait of a young adult woman, face tilted slightly, voluminous tousled golden-blonde curls with wispy bangs, hazel-green eyes with defined lashes, light freckles, dewy skin with visible pores, glossy nude lips slightly parted. Hard directional daylight from the upper left casting a deep shadow over one side of the face, off-white background, shot on 85mm, shallow depth of field, fashion magazine realism, 3:4.",
       },
@@ -7288,7 +7311,7 @@ TECHNICAL:
       "作者未公开视频提示词；本页视频提示词、分镜时间码和出图提示词均为按成片反推，不是作者原文。作者原文只有一句复古关键词：handheld camera, shaky cam, VHS style, 90s camcorder, timestamp, motion blur。成片截帧（第 13 秒、第 22.5 秒）不是作者的原参考图。缺口：音轨是持续配乐、没有对白，具体曲目无法确认；是否分多段生成无法确认；评论区检索没有找到作者的补充说明。",
     video_prompt: {
       title: "Corset × Hangar · Retro VHS (Reverse-engineered)",
-      subtitle: "作者未公开，此为按成片反推 · 按作者标注的 Seedance 2.0 写 · 16:9",
+      subtitle: "作者未公开，此为按成片反推 · @Image1 = 参考 2 人物脸部特写，@Image2 = 参考 1 黑色皮革束腰 · 按作者标注的 Seedance 2.0 写 · 16:9",
       content: `[作者未公开，此为按成片反推]
 Reverse-engineered from the finished 23.6 s 16:9 video (frame-by-frame at 2 fps). NOT the author's original prompt.
 Tool: the author states Seedance 2.0 (character consistency test) with Recraft for the model, Seedream 4.5 for stills and CapCut for the final edit. Written for Seedance 2.0 reference-to-video; the multi-shot structure is an assumption — the final cut was assembled in CapCut and was probably generated as several clips.
@@ -10556,7 +10579,10 @@ The company name should feel like the natural signature on everything that has j
         number: 2,
         title: "把动作和外观分层：Video 1 只提供动作与时间",
         description:
-          "<Video 1> 是带面部运动曲线和舌头轮廓的深度诊断动画，提示词明确“只把它读作动作及其时间的指引；所有可见表面、颜色、面部比例和光照都只来自 Picture 1”。retention_analysis 进一步要求保持原有下颌宽度、脸颊体积和下巴长度，并把动作转译为自然皮肤与针织面料。这是避免模型把灰度深度图、彩色曲线或点直接渲染进成片的关键。",
+          "<Video 1> 是带面部运动曲线和舌头轮廓的深度诊断动画，提示词明确“只把它读作动作及其时间的指引；所有可见表面、颜色、面部比例和光照都只来自 Picture 1”。retention_analysis 进一步要求保持原有下颌宽度、脸颊体积和下巴长度，并把动作转译为自然皮肤与针织面料。这是避免模型把灰度深度图、彩色曲线或点直接渲染进成片的关键。下面就是作者随帖发布的这条深度诊断动画（1280×768、约 15 秒，网页压缩版），即提示词里的 <Video 1>。",
+        video: "/tutorials/garylau-rei-tongue-minimax-h3/depth-ref-web.mp4",
+        poster: "/tutorials/garylau-rei-tongue-minimax-h3/depth-ref-poster.jpg",
+        aspectRatio: "5/3",
       },
       {
         number: 3,
@@ -10615,10 +10641,10 @@ The company name should feel like the natural signature on everything that has j
       },
     ],
     constraints:
-      "Picture 1 是唯一外观来源（脸/发型/浅蓝针织衫/银项链/白墙/光线/首帧）；Video 1 深度诊断动画只读动作与时间，不得渲染灰度深度图、彩色面部曲线、点、遮罩、文字或图形；仅两次吐舌（约3.20–4.07秒、约8.81–10.68秒），无循环/变速/重置/结尾冻结；固定机位与原脸部尺度；保持下颌宽度、脸颊体积、下巴长度与连续针织袖子；禁止断开的舌头和变形手臂；原声音频由作者外部添加，不生成对白。缺口：作者未公开静态 Picture 1，refs 全部为成片截帧（非参考图）；Video 1 深度/面部曲线动画随帖发布但为视频而非静态参考图，未在本页收录；未发现 quoted post 或额外提示词；demo-web.mp4 为网页压缩版，音频未做转录。",
+      "Picture 1 是唯一外观来源（脸/发型/浅蓝针织衫/银项链/白墙/光线/首帧）；Video 1 深度诊断动画只读动作与时间，不得渲染灰度深度图、彩色面部曲线、点、遮罩、文字或图形；仅两次吐舌（约3.20–4.07秒、约8.81–10.68秒），无循环/变速/重置/结尾冻结；固定机位与原脸部尺度；保持下颌宽度、脸颊体积、下巴长度与连续针织袖子；禁止断开的舌头和变形手臂；原声音频由作者外部添加，不生成对白。缺口：作者未公开静态 Picture 1，refs 全部为成片截帧（非参考图）；Video 1 深度/面部曲线动画随帖发布，已放在第二步（网页压缩版）；未发现 quoted post 或额外提示词；demo-web.mp4 为网页压缩版，音频未做转录。",
     video_prompt: {
       title: "Rei 双次吐舌 · ReferenceToVideo 提示词",
-      subtitle: "15s · 16:9 · MiniMax H3 ReferenceToVideo · Picture 1 + Video 1 · 英文完整提示词",
+      subtitle: "15s · 16:9 · MiniMax H3 ReferenceToVideo · <Video 1> = 第二步的深度诊断动画；<Picture 1> 原帖未公开 · 英文完整提示词",
       content: `subject_definitions:
 <Subject 1> is Rei in <Picture 1>: the exact same face, natural skin, dark eyes, straight long black hair with blunt bangs, light-blue crewneck knitted sweater and silver necklace.
 <Subject 2> is the white textured wall and sofa edge in <Picture 1>.
@@ -13561,7 +13587,7 @@ The panel, divider lines, captions, crown icons and wordmark stay perfectly fixe
         id: "ref-joshesye-single",
         number: "2",
         title: "单张调整提示词",
-        subtitle: "Codex / canvas {{Image}} 单张换装",
+        subtitle: "Codex / canvas 单张换装 · 配图 = {{Image 2}}（即［穿搭参考图］）示例；{{Image}} 模特图、{{Image 1}} 场景与分镜参考图原帖未公开",
         image: "/tutorials/joshesye-colorcard-outfit-change/05_outfit-dopamine-refs.jpg",
         prompt: `使用 {{Image}} 中的人物作为模特，穿上 {{Image 2}} 中的服装。
 
@@ -13599,10 +13625,10 @@ The panel, divider lines, captions, crown icons and wordmark stay perfectly fixe
       },
     ],
     constraints:
-      "需要模特图/穿搭原图/原视频分镜截图（未单独发布，需自备或从文章配图/成片反推）；人物脸发型身形比例前后统一；四套服装按顺序出现；色卡使用已确认分镜新配色；受光方向明暗阴影与场景匹配边缘干净；转场顺序可能与参考视频不完全对齐需按片段重生成细调。",
+      "素材对应：参考 2 的配图 05_outfit-dopamine-refs.jpg = ［穿搭参考图］/ {{Image 2}}；原帖未公开：［模特图］/ {{Image}}、［场景与分镜参考图］/ {{Image 1}}、图生视频提示词里「我上传的视频」（原视频，即参考视频）、四张［第 N 套穿搭图］原图和［色卡参考图］，需自备或从文章配图/成片反推；人物脸发型身形比例前后统一；四套服装按顺序出现；色卡使用已确认分镜新配色；受光方向明暗阴影与场景匹配边缘干净；转场顺序可能与参考视频不完全对齐需按片段重生成细调。",
     video_prompt: {
       title: "色卡变装图生视频",
-      subtitle: "11s · 9:16 · Seedance / H3 / Wan 3.0 · I2V",
+      subtitle: "11s · 9:16 · Seedance / H3 / Wan 3.0 · I2V · 「我上传的视频」（原视频）和［模特图］原帖未公开；穿搭图示例见参考 2",
       content: `参考我上传的视频，将主体人物替换为［模特图］中的人物。尽量保留参考视频的背景、镜头运动和转场节奏，各段时长与原视频对应。人物的脸、发型和身形比例需要前后统一，以模特图为准。四套服装按［第一套穿搭图］、［第二套穿搭图］、［第三套穿搭图］、［第四套穿搭图］的顺序出现，对应参考视频中的四次造型展示。色卡使用已确认分镜中的新配色，与当前服装对应，位置和数量保持一致。人物的受光方向、明暗和阴影要与场景匹配，边缘干净，不要出现明显的贴图感。`,
     },
   },
@@ -13652,7 +13678,7 @@ The panel, divider lines, captions, crown icons and wordmark stay perfectly fixe
         number: 1,
         title: "角色一致性设定",
         description:
-          "女主角(上传参考图):黑色宽松夹克、白色 T 恤、深色牛仔裤、皮靴,自然风尘仆仆。男主角:深橄榄夹克、炭灰 T 恤、深色工装裤、沙漠靴,自然吸引人但不过度风格化。两人面部、发型、体型、服装在所有镜头中保持完全一致。",
+          "女主角(上传参考图,原帖未公开——作者帖子只有成片视频,没附这张图):黑色宽松夹克、白色 T 恤、深色牛仔裤、皮靴,自然风尘仆仆。男主角:深橄榄夹克、炭灰 T 恤、深色工装裤、沙漠靴,自然吸引人但不过度风格化。两人面部、发型、体型、服装在所有镜头中保持完全一致。",
       },
       {
         number: 2,
@@ -13716,10 +13742,10 @@ The panel, divider lines, captions, crown icons and wordmark stay perfectly fixe
       },
     ],
     constraints:
-      "两个角色完全一致性:面部、发型、体型、服装在所有镜头保持;超写实真人摄影;自然皮肤质感与表情;物理准确沙漠环境、车辆物理、沙移位;黄金时段、夜晚、日出自然光;无对话;电影电子配乐 + 环境音;硬切无人工转场;24fps 电影运动。",
+      "素材缺口:提示词里女主角的 uploaded reference image 原帖未公开 / 页面未附(作者帖子只有成片视频)。两个角色完全一致性:面部、发型、体型、服装在所有镜头保持;超写实真人摄影;自然皮肤质感与表情;物理准确沙漠环境、车辆物理、沙移位;黄金时段、夜晚、日出自然光;无对话;电影电子配乐 + 环境音;硬切无人工转场;24fps 电影运动。",
     video_prompt: {
       title: "THE ROAD BETWEEN US",
-      subtitle: "30–40s · 16:9 · 4K · 24fps · Photorealistic · Cinematic Adventure Music Video",
+      subtitle: "30–40s · 16:9 · 4K · 24fps · Photorealistic · Cinematic Adventure Music Video · 女主角 uploaded reference image 原帖未公开",
       content: `Two strangers met in a storm, then left with an unforgettable memory.
 
 Created with Seedance 2.5 on @openart_ai 
@@ -15756,7 +15782,7 @@ Also extract ref-char-from-demo.jpg from a clear face frame (~2s).`,
         number: 1,
         title: "理解白膜（motion reference）",
         description:
-          "白膜是纯白色人物模型动作参考视频，只负责舞蹈动作、姿态、人物前后关系、镜头顺序、相机运动和节奏。不保留白模外观，成片第一帧即是真人。提供原片白膜动作参考（前10秒 + 后10秒），理解完整时间轴和音乐节奏。参考：https://x.com/LufzzLiz/status/2099466975722500141",
+          "白膜是纯白色人物模型动作参考视频，只负责舞蹈动作、姿态、人物前后关系、镜头顺序、相机运动和节奏。不保留白模外观，成片第一帧即是真人。提供原片白膜动作参考（前10秒 + 后10秒），理解完整时间轴和音乐节奏。参考：https://x.com/LufzzLiz/status/2099466975722500141 。注意：白膜动作参考视频（06 前10秒、07 后10秒）和 08 完整原片原帖未附——作者没有单独发布这几条视频，只在画布截图和教程录屏里能看到缩略图，本页无法收录。原帖：https://x.com/LufzzLiz/status/2099466952309903560",
       },
       {
         number: 2,
@@ -15781,9 +15807,9 @@ Also extract ref-char-from-demo.jpg from a clear face frame (~2s).`,
       {
         id: "image-01",
         number: "01",
-        title: "中央领舞 · 生图提示词",
+        title: "01 中央领舞 · 生图提示词（配图是作者的画布截图）",
         subtitle:
-          "GPT Image 2.5 · 朱砂珊瑚上衣/杏金裙裤/青绿披帛 · 清艳灵动",
+          "配图不是 01 单人图，而是作者回复里附的 MiniMax Design 画布截图：上排是生成的角色图，中间一排是 06/07 白膜动作参考、08 完整原片的缩略图和生成结果，下方是成片与配音；01 单人图原帖未单独公开 · GPT Image 2.5 · 朱砂珊瑚上衣/杏金裙裤/青绿披帛 · 清艳灵动",
         image: "/tutorials/lufzzliz-dunhuang-group-dance-white-mesh/group_ref.jpg",
         prompt: `生图提示词（也可以自己DIY）：
  01_中间主舞 
@@ -15935,10 +15961,10 @@ NO sculpture, statues, clay, ceramics, porcelain, wax, doll, mannequin, CGI, 3D 
     ],
     storyboard: [],
     constraints:
-      "白膜只负责动作/节奏，成片第一帧即是真人；五人身份必须稳定一一绑定；左右指原片开场队形不随屏幕变化；H3单段最长15秒需拆分2×10秒；优先1080P；来源 @LufzzLiz / X / 17360 曝光。",
+      "白膜只负责动作/节奏，成片第一帧即是真人；原帖未公开：01 单人图（参考 01 的配图是作者画布截图）、五条生图提示词里的 GROUP 群舞参考图、06/07 白膜动作参考视频与 08 完整原片（只在截图/录屏里能看到缩略图）；五人身份必须稳定一一绑定；左右指原片开场队形不随屏幕变化；H3单段最长15秒需拆分2×10秒；优先1080P；来源 @LufzzLiz / X / 17360 曝光。",
     video_prompt: {
       title: "MiniMax H3 全能参考 · 生视频提示词",
-      subtitle: "MiniMax Design · H3 全能参考模式 · 2×10秒@16:9 · 完整可复制",
+      subtitle: "MiniMax Design · H3 全能参考 · 01–05 = 参考 01–05 的五张角色图（01 单人图原帖未公开）；06/07 白膜动作参考、08 完整原片原帖未附 · 2×10秒@16:9 · 完整可复制",
       content: `生视频提示词：
 请用当前 MiniMax Design 的 MiniMax H3 全能参考模式，完成一版约20秒的真人敦煌群舞视频。
 附件按文件名前缀01-08识别，上传顺序可能倒序，不可按上传顺序分配身份。01-05为五位成年女性的真人摄影角色图；06是原片前10秒动作参考；07是后10秒动作参考；08是完整原片，用于理解总时间轴和取回原音乐。原视频的白色人物模型只负责舞蹈动作、姿态、人物前后关系、镜头顺序、相机运动和节奏；成片第一帧即是五位真人，不保留白模外观，不做从白模逐渐变人的过程。每个角色脸型、五官、发型和服装以自己的单人图为准。
@@ -17125,8 +17151,8 @@ Final quality: ultra-detailed real film photography, the same place, same car an
       {
         id: "ref-character-sheet",
         number: "参考图 1",
-        title: "人物表：Lena Riviera",
-        subtitle: "GPT Image 2.5 · 角色锁定表",
+        title: "@[lena] · 人物表：Lena Riviera",
+        subtitle: "GPT Image 2.5 · 角色锁定表 · 成片提示词里的 @[lena]（wardrobe sheet）",
         image: "/tutorials/abxxai-riviera-fashion-campaign/ref-character-sheet.jpg",
         prompt: `Create a photorealistic character reference sheet based on the woman in the image. Preserve her exact facial identity, structure, proportions and features.
 
@@ -17161,8 +17187,8 @@ Final quality: ultra-detailed real film photography, identical face, hair and ou
       {
         id: "ref-start-frame",
         number: "参考图 2",
-        title: "开场帧：悬崖边的瞬间",
-        subtitle: "GPT Image 2.5 · 光影与构图锁定",
+        title: "[COVER FRAME] · 开场帧：悬崖边的瞬间",
+        subtitle: "GPT Image 2.5 · 光影与构图锁定 · 成片提示词里的 [COVER FRAME]",
         image: "/tutorials/abxxai-riviera-fashion-campaign/ref-start-frame.jpg",
         prompt: `Photorealistic 1960s fashion editorial photograph of the woman in the reference image. Preserve her exact face, eyes, nose, lips, brows and hairline. Same wardrobe exactly: cream and red floral silk headscarf tied under the chin with the red tail hanging, tortoiseshell cat-eye sunglasses, fitted cream boat-neck short-sleeve top, high-waisted red capri trousers.
 
@@ -17177,8 +17203,8 @@ Look: warm faded 1960s Kodachrome, slightly overexposed sky, low contrast with l
       {
         id: "ref-location-sheet",
         number: "参考图 3",
-        title: "场景板：里维埃拉悬崖公路",
-        subtitle: "GPT Image 2.5 · 环境锁定表",
+        title: "@[road] · 场景板：里维埃拉悬崖公路",
+        subtitle: "GPT Image 2.5 · 环境锁定表 · 成片提示词里的 @[road]（location plate）；场景板提示词输入的地点图（the location in the image）原帖未公开",
         image: "/tutorials/abxxai-riviera-fashion-campaign/ref-location-sheet.jpg",
         prompt: `Create a photorealistic environment reference sheet of the location in the image, with no people anywhere in any panel.
 
@@ -17225,10 +17251,10 @@ Final quality: ultra-detailed real film photography, the same place, same car an
       },
     ],
     constraints:
-      "单角色单造型单地点 1960s 时尚大片工作流。人物表、开场帧、场景板需用 GPT Image 2.5 先行制作锁定面部、服装、光影、环境，再统一上传 Seedance 2.5 生成六镜头直切成片。墨镜状态按镜次变化：Shot 1-2 戴上，Shot 3 推到头巾，Shot 4 画面外，Shot 5 手持，Shot 6 戴上后摘下。来源 @abxxai / X / 51058 曝光。",
+      "单角色单造型单地点 1960s 时尚大片工作流。人物表、开场帧、场景板需用 GPT Image 2.5 先行制作锁定面部、服装、光影、环境，再统一上传 Seedance 2.5 生成六镜头直切成片。场景板提示词「the location in the image」用到的地点输入图原帖未公开 / 页面未附。墨镜状态按镜次变化：Shot 1-2 戴上，Shot 3 推到头巾，Shot 4 画面外，Shot 5 手持，Shot 6 戴上后摘下。来源 @abxxai / X / 51058 曝光。",
     video_prompt: {
       title: "Seedance 2.5 六镜头成片提示词",
-      subtitle: "完整可复制提示词 · 24秒六镜头直切",
+      subtitle: "完整可复制提示词 · 24秒六镜头直切 · [COVER FRAME] = 参考图 2 开场帧，@[lena] = 参考图 1 人物表，@[road] = 参考图 3 场景板",
       content: `=== REFERENCE MAP ===
 [COVER FRAME] → the reference photograph: the woman in the cream and red floral headscarf and tortoiseshell cat-eye sunglasses, cream boat-neck top and red capri trousers, seated on the door of the pastel mint 1960s convertible, one hand lowering her sunglasses, the low stone wall, the glittering sea, the green headland, terracotta villas and umbrella pines behind. This is the master for her face, her wardrobe, the light and the film look of every shot in the film.
 @[lena] → wardrobe sheet. Her face, hair and the full outfit from every angle. Where the sheet and the cover frame differ on her face, the cover frame wins.
@@ -20861,7 +20887,10 @@ No background music.`,
         number: 2,
         title: "准备深度视频 Video1",
         description:
-          "黑白相对深度参考视频,仅用于身体运动、摄影机后拉和时间节奏。深度亮度代表距离,不是肤色或脸部细节。使用场景图片解析每次转身后她的脸和胸部朝向。帖内有深度视频参考。",
+          "黑白相对深度参考视频,仅用于身体运动、摄影机后拉和时间节奏。深度亮度代表距离,不是肤色或脸部细节。使用场景图片解析每次转身后她的脸和胸部朝向。下面就是作者帖内附的深度视频（480×960、约 12.3 秒），即提示词里的 <Video 1>。",
+        video: "/tutorials/garylau-rei-city-travel-h3/ref-depth-web.mp4",
+        poster: "/tutorials/garylau-rei-city-travel-h3/ref-depth-thumb.jpg",
+        aspectRatio: "1/2",
       },
       {
         number: 3,
@@ -20874,16 +20903,16 @@ No background music.`,
       {
         id: "ref1",
         number: "参考 01",
-        title: "深度视频缩略图",
-        subtitle: "黑白深度参考 · 9:16",
+        title: "<Video 1> · 深度视频缩略图",
+        subtitle: "<Video 1> = 第二步的黑白深度参考视频（视频本身见第二步）",
         image: "/tutorials/garylau-rei-city-travel-h3/ref-depth-thumb.jpg",
-        prompt: `黑白相对深度参考视频缩略图,仅用于身体运动、摄影机后拉和时间节奏。深度亮度代表距离,不是肤色或脸部细节。完整深度视频见 ref-depth-web.mp4。`,
+        prompt: `黑白相对深度参考视频缩略图,仅用于身体运动、摄影机后拉和时间节奏。深度亮度代表距离,不是肤色或脸部细节。完整深度视频已放在上方第二步,可直接播放。`,
       },
       {
         id: "ref2",
         number: "参考 02",
-        title: "原帖引用的求图请求帖",
-        subtitle: "单图 · 非 Picture1–6 参考集",
+        title: "原帖引用的求图请求帖（不是 <Picture 1–6>）",
+        subtitle: "单图 · <Picture 1–6> 原帖未公开",
         image: "/tutorials/garylau-rei-city-travel-h3/ref-source-request.jpg",
         prompt: `作者 Gary Lau 引用的 @weiyux2021 原帖是一个求图请求帖,仅有单图,不是 Picture1–6 角色换装参考集。Picture1–6 需自备或参考原作者素材。`,
       },
@@ -20929,7 +20958,7 @@ No background music.`,
       "参考图 Picture1–6 未在原帖附件中,需自备;引用的 weiyux2021 帖仅为求图请求帖(单图),非 Picture1–6 角色换装参考集;深度视频仅用于运动和时间节奏,渲染自然全彩色使用 Pictures;每次变装后展示脸部和服装正面,不停留在背面视角。",
     video_prompt: {
       title: "Rei City Travel Outfit Changes · 12s · Depth-Driven",
-      subtitle: "MiniMax H3 Singularity · 9:16 vertical · Picture1–6 + Video1 refs",
+      subtitle: "MiniMax H3 Singularity · 9:16 · <Video 1> = 第二步的深度动作参考视频；<Picture 1–6> 原帖未公开",
       content: `<Picture 1> defines Rei's original opening black sailor uniform, black beret, pleated skirt, white knee socks and black loafers, as well as her exact face, natural facial proportions, long straight black hair and bangs throughout. Use this uniform for the white-studio opening only; do not reproduce the character-sheet layout. <Picture 2> defines her Paris outfit, front-facing presentation pose, drink, sunglasses, city map and UI. <Picture 3> defines her Rome outfit, front/three-quarter presentation pose, props, city map and UI. <Picture 4> defines her Cairo outfit, presentation pose, shopping bags, city map and UI. <Picture 5> defines her Sydney outfit, front-facing finishing pose, city map and UI. <Picture 6> is an unmodified slightly turned standard face crop from the original Rei character card. It is the highest-priority facial identity reference for ALL outfits: preserve its eye shape and spacing, eyelids, nose, lips and natural proportions without beautification. Picture 1 supplies the same identity and opening uniform. Pictures 2–5 supply new city outfits and environments, never a substitute face. These are the same person in different clothes.
 
 <Video 1> is a black-and-white relative-depth reference for body movement, camera pullback and chronological timing only. Depth brightness represents distance, not skin color or face detail. Render natural full color using the pictures. A featureless face in the depth map must not become the back of Rei's head. Use the scene pictures to resolve which way her face and chest point after each turn.
@@ -21450,7 +21479,7 @@ The final frame should closely match the original reference image.`,
         number: 1,
         title: "先生成 macOS 桌面参考图",
         description:
-          "使用完整的桌面参考图提示词生成高级 16:9 macOS 桌面环境。从上传的图像提取主体(猫戴耳机),保留精确身份、面部特征、比例、颜色、服装、发型、配饰、渲染风格和整体个性。桌面构图:电影化宽屏桌面壁纸,主体位于最右侧占约 42% 画面,中心保持开放呼吸空间,左侧 45% 留给 18 个桌面快捷方式(3 列 6 行),顶部 macOS 菜单栏和底部 Dock。",
+          "使用完整的桌面参考图提示词生成高级 16:9 macOS 桌面环境。从上传的图像提取主体(猫戴耳机;这张上传的猫照片原帖未公开,作者帖子只有成片视频,需自备),保留精确身份、面部特征、比例、颜色、服装、发型、配饰、渲染风格和整体个性。桌面构图:电影化宽屏桌面壁纸,主体位于最右侧占约 42% 画面,中心保持开放呼吸空间,左侧 45% 留给 18 个桌面快捷方式(3 列 6 行),顶部 macOS 菜单栏和底部 Dock。",
       },
       {
         number: 2,
@@ -21470,7 +21499,7 @@ The final frame should closely match the original reference image.`,
         id: "ref1",
         number: "参考 01",
         title: "猫戴耳机 macOS 桌面",
-        subtitle: "参考图 · 16:9 · 山湖日落背景",
+        subtitle: "参考图 · 16:9 · 山湖日落背景 · 即视频提示词的第一帧；生成它用的猫照片（the uploaded image）原帖未公开",
         image: "/tutorials/strength04-cat-sneeze-desktop-h3/ref-desktop.jpg",
         prompt: `Create a premium 16:9 macOS desktop environment using the uploaded image as the visual reference for the main subject.
 
@@ -21574,10 +21603,10 @@ Output: one finished high-resolution 16:9 edge-to-edge desktop screenshot.`,
       },
     ],
     constraints:
-      "先生成桌面参考图,再用作第一帧;静态正面摄影机无运动;保持猫精确外观、毛皮图案、脸、眼睛、耳朵、耳机不变;只有 Gmail/Discord/Teams 允许移动;每个移动图标必须可见离开原位、空中落下、着陆、被拾起、携带、放回;猫必须分别与每个图标互动;猫的爪子保持解剖学自然;无额外爪子、无拉伸肢体、无扭曲身体、无不可能的伸展。",
+      "素材缺口:桌面参考图提示词里的 uploaded image(猫照片)原帖未公开 / 页面未附。先生成桌面参考图,再用作第一帧;静态正面摄影机无运动;保持猫精确外观、毛皮图案、脸、眼睛、耳朵、耳机不变;只有 Gmail/Discord/Teams 允许移动;每个移动图标必须可见离开原位、空中落下、着陆、被拾起、携带、放回;猫必须分别与每个图标互动;猫的爪子保持解剖学自然;无额外爪子、无拉伸肢体、无扭曲身体、无不可能的伸展。",
     video_prompt: {
       title: "Cat Sneeze Mac Desktop Chaos · 10s · One Shot",
-      subtitle: "MiniMax Hailuo H3 Max on ImagineArt · 16:9 · Desktop reference first frame",
+      subtitle: "MiniMax Hailuo H3 Max on ImagineArt · 16:9 · 第一帧 = 参考 01 桌面图；生成桌面图用的猫照片原帖未公开",
       content: `Platform / Model: MiniMax Hailuo H3 Max on ImagineArt
 Aspect Ratio: 16:9
 Source: https://x.com/Strength04_X/status/2101868703482876376
@@ -27316,7 +27345,7 @@ Natural spatial sound: screen door, footsteps, aerosol mixing-ball rattle, lowri
       "动作和镜头完全按参考视频；男主、女主外貌和服装按各自图片锁定；币安标志按标志图，不旋转、不镜像，固定在背景墙上；不要字幕、交易界面、平台水印和片尾广告。风险：复刻 ROSÉ 与 Bruno Mars《APT.》MV 并沿用原曲（版权）；男主明显照赵长鹏（CZ）做，女主疑似另一位真实人物；植入币安品牌。",
     video_prompt: {
       title: "《APT.》MV 逐镜复刻 · 币安黄色棚",
-      subtitle: "作者本帖中文完整提示词 · 配深度图动作参考 · 人物和标志图未公开",
+      subtitle: "作者本帖中文完整提示词 · @视频1 = 第一步的深度动作参考视频 · @图片1（男主）、@图片2（女主）、@图片3（币安标志）原帖未公开",
       content: `【任务：参考视频逐镜复刻，仅替换指定人物与品牌场景】
 
 使用@视频1 {{Mixed 4}} 作为唯一的动作、表演、人物互动、摄影机运动、镜头构图、剪辑节奏和时间顺序参考。
