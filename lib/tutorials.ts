@@ -26963,6 +26963,1007 @@ Audio: Playful kitchen ambience, whisking, batter splashes, pancake flip, tiny f
 `,
     },
   },
+  // 查重别名：原片是 el.cine（@EHuanglu）的 X 帖 https://x.com/EHuanglu/status/2083607695438037144 （2026-08-02 01:36 北京时间，「if a space odyssey was made in 2026 with AI」，约 779 万浏览，帖子没写模型也没给提示词）。Filmera 模板视频与该原片逐帧比对 SSIM 0.98–0.99，是同一条视频重新导出；模板里的提示词和参考图是 Filmera 事后照原片复刻的，KANE 设定图的输入图就是原片截帧。模板只有 1 条 take；另有 1 个空的参考图节点，未收录
+  {
+    id: "filmera-stone-to-starship-flight-history-morph",
+    title: "从石头到星舰 · 一镜到底飞过人类飞行史",
+    subtitle: "Filmera 模板 · 原片 el.cine · 15秒 · 16:9 · 提示词为模板复刻",
+    description:
+      "猿人扔出一块石头，飞行中依次变成矛头、子弹、炮弹、炸弹、战机、航天飞机和星舰，一镜到底。",
+    video: "/tutorials/filmera-stone-to-starship-flight-history-morph/demo-web.mp4",
+    poster: "/tutorials/filmera-stone-to-starship-flight-history-morph/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "大片特效",
+    shots: 10,
+    references: 3,
+    model: "未确认（原作者没写；Filmera 模板标 Seedance 2.0，参考图标 GPT Image 2）",
+    style: "一镜到底侧向跟拍 · 飞行中连续变形 · 每个时代一种调色 · 强运动模糊",
+    aspectRatio: "16/9",
+    sourceUrl: "https://www.filmera.ai/templates/b203d145-9b47-4e42-a344-309b94b38d06",
+    sourceAuthor: "el.cine（@EHuanglu）原片 · Filmera 模板复刻提示词",
+    sourcePlatform: "Filmera",
+    sourceImpressions: 253,
+    sourceStats: { asOf: "2026-10-01" },
+    formats: ["折叠·变形", "电影叙事"],
+    hook: {
+      structure: "猿人扔石头 → 石头飞行 → 矛头掠过古代城寨 → 子弹掠过一战战壕 → 炮弹穿过二战火海 → 炸弹贴着绿色丘陵 → 隐形战机拉升穿云 → 航天飞机冲出大气层 → 星舰在地球上方点亮引擎远去",
+      opening: "第 0 秒荒原上的猿人弓身蓄力，1 秒左右把一块拳头大的石头扔出去，镜头跟上石头。",
+      openingAt: 0,
+      beats: [
+        { title: "古代到一战", text: "约 1–3s 石头翻滚着飞过草原；约 3–4.5s 变成矛头，背景是木城寨和古代军阵；约 4.5–5.3s 变成子弹，掠过一战战壕和铁丝网。", at: 1 },
+        { title: "二战到喷气时代", text: "约 5.3–6s 变成炮弹，背景是燃烧的二战战场；约 6–6.5s 长出尾翼变成炸弹，贴着绿色丘陵飞；约 6.5–8.5s 变成隐形战机，从火球里冲出后拉升穿云。", at: 5.3 },
+        { title: "太空", text: "约 8.5–9.5s 变成航天飞机冲出大气层；约 9.5–12s 变形成星舰，引擎一组组亮起；约 12–15s 星舰在地球上方飞远，缩成一个光点。", at: 8.5 },
+      ],
+      copyThis: "整条片只有一个主角物体，镜头始终侧向跟着它；每次变形都在飞行中完成，同时背景换一个时代、换一种调色，所以 15 秒看完一部飞行史却不需要剪辑。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 一镜到底",
+      "16:9 横屏",
+      "原片 el.cine（@EHuanglu）",
+      "2 张参考图 + 1 张输入图",
+      "提示词为模板复刻",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备两张参考图",
+        description:
+          "模板里有两张用 GPT Image 2 做的图：@image 1 是猿人 KANE 的设定图（正面、侧面、蹲姿、投掷姿势和细节特写），@image 2 是一条 8 个阶段的物体演变图（石头 → 矛头 → 子弹 → 炮弹 → 炸弹 → 隐形战机 → 航天飞机 → 星舰）。KANE 设定图的输入图是原片里猿人的一帧截图，说明这些图是照成片倒推出来的。两张图的完整出图提示词见下方参考图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "注意：这条视频原本是 el.cine（@EHuanglu）2026 年 8 月发在 X 上的作品（约 779 万浏览），原帖没写模型，也没给提示词。Filmera 模板里的视频和原片逐帧比对几乎一致，是同一条视频，不是用下面的提示词重新生成的；模板把它标成 Seedance 2.0、16:9、15 秒、720p，这是模板的说法，无法确认。成片 1920×1080、30fps、约 15.3 秒，没有水印、没有对白。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴模板提示词（Filmera 照原片复刻，不是原作者原文）",
+        description:
+          "下方英文提示词是 Filmera 模板照原片写的复刻版。结构是：[GLOBAL] 段写一镜到底、飞行中连续变形、每个时代不同调色、声音随时代变化；然后按 9 个阶段写每段约多少秒、物体变成什么、背景是哪个时代。上传两张参考图，分别对应 @image 1 和 @image 2。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "filmera-starship-image1-kane",
+        number: "1",
+        title: "@image 1 · 猿人 KANE 设定图",
+        subtitle: "正面 / 侧面 / 蹲姿 / 投掷姿势 + 细节特写；模板节点「KANE」，openai/gpt-image-2 4:3",
+        image: "/tutorials/filmera-stone-to-starship-flight-history-morph/refs/01-kane.jpg",
+        prompt: "Creature-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME ape-man, fully consistent. Layout: top-left a title block reading \"KANE\" with a short info list (NAME: Kane / TYPE: early hominid / BUILD: powerful, long-armed / TEMPER: focused, primal); below it a COLOR PALETTE section with labeled swatch rows for FUR, SKIN, EYES; center: a large FRONT VIEW full-body standing pose and a SIDE VIEW full-body pose, upright on two legs, labeled; right: a crouched knuckle-stance pose and a THROWING pose (body coiled, one long arm swung back gripping a fist-sized grey stone), labeled; bottom: a DETAILS strip of four captioned close-up panels (weathered face with heavy brow ridge and amber-brown eyes, dark shaggy fur texture on the shoulders, a leathery long-fingered hand gripping the stone, muscular back). The creature: a powerful early hominid — dark brown-black shaggy fur, bare leathery dark face and chest, heavy brow shadowing intelligent amber-brown eyes, long muscular arms, upright posture. Realistic creature-feature VFX quality like a real performance-capture ape, weathered and natural, no cartoon features. Every panel photoreal under flat cold natural daylight; the background of each panel is the real scene from the story (a vast windswept prehistoric steppe with dry grass and distant bare mountains). No text except the small labels.",
+      },
+      {
+        id: "filmera-starship-image2-stages",
+        number: "2",
+        title: "@image 2 · 8 个阶段演变图",
+        subtitle: "石头 → 矛头 → 子弹 → 炮弹 → 炸弹 → 隐形战机 → 航天飞机 → 星舰；模板节点「Stages」，openai/gpt-image-2 4:3",
+        image: "/tutorials/filmera-stone-to-starship-flight-history-morph/refs/02-stages.jpg",
+        prompt: "A single horizontal reference strip on a clean light cream background showing EIGHT stages of one object's evolution, left to right, each stage labeled with a small number 1-8, all rendered photoreal at the same scale and same three-quarter angle: (1) a rough fist-sized grey STONE; (2) a knapped STONE SPEARHEAD lashed to a short wooden haft; (3) a brass RIFLE BULLET with copper tip; (4) a larger steel ARTILLERY SHELL; (5) a finned silver-grey AERIAL BOMB / cruise missile; (6) a sleek grey stealth JET FIGHTER with canopy and swept wings; (7) a white-and-black SPACEPLANE / rocket with blazing engine bell; (8) a broad deep-space CRUISER STARSHIP with clustered blue-white engine arrays. Clean studio light, photoreal materials (stone, flint, brass, steel, composite, ceramic tile, starship hull), no text except the small numbers.",
+      },
+      {
+        id: "filmera-starship-kane-input",
+        number: "3",
+        title: "KANE 设定图的输入图（原片截帧）",
+        subtitle: "模板生成 KANE 设定图时上传的图，是原片里猿人的一帧（1948×1312）",
+        image: "/tutorials/filmera-stone-to-starship-flight-history-morph/refs/03-kane-input-frame.jpg",
+        prompt: "原帖未附提示词；这是 Filmera 模板生成 KANE 设定图时上传的输入图，画面取自原片。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1s 荒原上猿人弓身蓄力，把石头扔出去。" },
+      { number: 2, description: "1–3s 镜头跟着石头，石头翻滚着飞过草原。" },
+      { number: 3, description: "3–4.5s 石头变成矛头，背景是木城寨和古代军阵。" },
+      { number: 4, description: "4.5–5.3s 变成子弹，掠过一战战壕和铁丝网。" },
+      { number: 5, description: "5.3–6s 变成炮弹，背景是燃烧的二战战场。" },
+      { number: 6, description: "6–6.5s 长出尾翼变成炸弹，贴着绿色丘陵飞。" },
+      { number: 7, description: "6.5–8.5s 变成隐形战机，从火球里冲出，拉升穿过云层。" },
+      { number: 8, description: "8.5–9.5s 变成航天飞机，冲出大气层。" },
+      { number: 9, description: "9.5–12s 变形成星舰，引擎一组组亮起蓝白光。" },
+      { number: 10, description: "12–15.3s 星舰在地球上方飞远，缩成一个光点。" },
+    ],
+    constraints:
+      "一镜到底不剪辑；物体每次变形都在飞行中完成；镜头始终侧向跟拍；每个时代一种调色；不要对白和画面文字。视频是 el.cine 的原片，提示词和参考图是 Filmera 事后复刻的，不是生成这条视频时用的。整体构思致敬《2001 太空漫游》，猿人造型接近《猩球崛起》系列的 CG 猿。",
+    video_prompt: {
+      title: "Stone to Starship · GEN 1（Filmera 复刻）",
+      subtitle: "Filmera 模板页英文提示词 · 照原片复刻，不是原作者原文 · 模板标 Seedance 2.0 · 16:9 · 15s",
+      content: `[GEN 1 — STONE TO STARSHIP]
+[GLOBAL] ONE continuous shot in ONE generation, about 15 seconds, no visible cuts — a single flying object crosses the entire history of human flight, MORPHING smoothly from form to form in mid-air while the world behind it changes era; the camera tracks the object sideways at constant blistering speed, never leaving it; every era has its own distinct color grade; heavy realistic motion blur; big-budget VFX-film quality, photoreal. THE OBJECT (match the eight stages of @image 2 exactly, in order): stone → stone spearhead → rifle bullet → artillery shell → finned aerial bomb → stealth jet fighter → spaceplane with blazing engines → deep-space cruiser. Each transformation happens IN FLIGHT as a smooth organic morph (edges knapping themselves sharp, metal growing and flowing, wings unfolding), never a hard cut. SOUND: continuous rushing wind bed that changes texture per era — stone whoosh, arrows and war-drums, distant WWI artillery and rain, roaring flames and tank engines, jet scream building to a sonic boom, rocket thunder thinning to silence, then the deep hum of starship engines in vacuum; an orchestral score building the whole way and resolving to awe. No dialogue. No on-screen text. No cuts.
+
+Shot 1, in continuous phases:
+(1) THE THROW, ~1.5s: on a vast windswept prehistoric steppe under a cold grey-green sky, the ape-man KANE (match @image 1 exactly) coils his whole body and HURLS a fist-sized stone — the camera whips up and catches the stone as it leaves his hand, settling into a fast sideways tracking shot, the thrower shrinking behind.
+(2) STONE, ~1.5s: the stone spins and rips through the air over racing grassland, motion-blurred, wind howling.
+(3) SPEARHEAD, ~1.8s: in flight the stone's edges KNAP themselves into facets — it stretches into a stone SPEARHEAD on a short haft — as the world behind warms to dusty amber: a timber hill-fort with watchtowers and massed ancient ranks of soldiers streaming past in the background, banners, war-drums.
+(4) BULLET, ~1.5s: the spearhead sleeks and plates itself in brass — a RIFLE BULLET — the world going grey and dead: WWI trenches whip past, barbed-wire stakes, charred posts, waterlogged shell craters, thin rain, distant artillery crumps.
+(5) SHELL, ~1.4s: the bullet swells into a steel ARTILLERY SHELL — the background ignites orange: a burning WWII battlefield, tank silhouettes in walls of flame and black smoke rolling past.
+(6) BOMB, ~1.4s: fins grow from the shell — a silver AERIAL BOMB skimming low over green hill country, treetops blurring beneath.
+(7) JET, ~1.8s: the bomb's body stretches, a canopy blisters up, swept wings SNAP open — a grey stealth JET FIGHTER punches out of a fireball toward the lens, then rolls and PULLS UP into a vertical climb, dragging the camera up through boiling cloud layers, contrails screaming.
+(8) ROCKET, ~1.3s: above the clouds the jet's silhouette lengthens into a white SPACEPLANE, engine bell igniting in a hard orange flame — it spears up out of the atmosphere, the sky falling away to black, the Earth's curve and the Moon sliding into frame.
+(9) STARSHIP, ~2.8s: the flame dies; in silence the hull unfolds and reassembles into a broad deep-space CRUISER; clustered engine arrays light up group by group in brilliant blue-white; it decelerates, hangs a beat over the glowing Earth limb with the Milky Way slanting behind, then turns and cruises away into the starfield, shrinking to a point of light. Hold one breath. Fade to black.`,
+    },
+  },
+  // 提示词在作者自回复 https://x.com/pabloprompt/status/2104917064947581417 链接的 Google Drive 公开 PDF「prompt_barrio_brasil.pdf」（https://drive.google.com/file/d/1PGSmkYF67zLQ4yuGEQiizQT8P-HNBYNO/view ，无需登录，原件存 extras/）。正文逐字收录，只把 PDF 的排版折行按段落重新接上（与 PDF 文字逐词比对一致）。6 张人物参考图作者没有公开。帖子没写模型
+  {
+    id: "pabloprompt-brazil-barrio-lowrider-card-table-oner",
+    title: "巴西街区一镜到底 · 花式颠球到街心牌局",
+    subtitle: "X · @pabloprompt · 模型未标明 · 30秒 · 16:9",
+    description:
+      "巴西色街区一镜到底：纹身男走出门、看巴西涂装低底盘车、颠球回传孩子、被水管溅湿，最后坐进牌局。",
+    video: "/tutorials/pabloprompt-brazil-barrio-lowrider-card-table-oner/demo-web.mp4",
+    poster: "/tutorials/pabloprompt-brazil-barrio-lowrider-card-table-oner/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "写实电影感",
+    shots: 8,
+    references: 0,
+    model: "未标明（帖子和文档都没写）",
+    style: "90 年代美国西海岸街区 + 巴西配色 · 午后暖阳 · 一镜到底后退跟拍 · 35mm 颗粒",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/pabloprompt/status/2104917061361176897",
+    sourceAuthor: "@pabloprompt",
+    sourcePlatform: "X",
+    sourceImpressions: 18860,
+    sourceStats: { asOf: "2026-10-01", likes: 334, reposts: 42, bookmarks: 174 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "走出门廊摇喷漆罐 → 巴西涂装低底盘车经过 → 孩子的球滚来，脚、膝、头颠回去 → 和两个孩子击掌 → 洗足球的老太太水管溅湿他 → 走到街心白桌坐下 → 六人打牌 → 看镜头微笑",
+      opening: "第 0 秒门廊斜侧机位：纹身男推开纱门走出来，从右前兜掏出喷漆罐摇了摇。",
+      openingAt: 0,
+      beats: [
+        { title: "街头", text: "约 5–7s 巴西国旗涂装的低底盘车从他面前开过，他挥手打招呼；约 8–12s 孩子的球滚过来，他用脚停球、挑起、膝盖垫一下、头球回给孩子。", at: 5 },
+        { title: "邻里", text: "约 13–15s 和两个孩子击掌；约 15–19s 老太太叼着烟洗五个足球，水管甩到他脚上，她说「Desculpa, meu filho!」，他回「Tranquilo!」。", at: 13 },
+        { title: "牌局", text: "约 19–23s 走到街心白桌，把喷漆罐放回兜里坐下；约 23–28s 六人打牌说笑；约 28–30s 镜头推到他脸上，他看着镜头笑。", at: 19 },
+      ],
+      copyThis: "提示词把一条 12–15 米的路线和一次连续运镜写死，道具数量也写死（1 个喷漆罐、6 个足球、6 把椅子、固定座次），还规定喷漆罐一直在右手、击掌都用左手，所以 30 秒一镜到底也不乱。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 一镜到底",
+      "16:9（提示词要 21:9）",
+      "模型未标明",
+      "6 张人物参考图未公开",
+      "提示词在 Google Drive PDF",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 6 张人物参考图",
+        description:
+          "提示词要上传 6 张人物参考图：主角 PABLO（白背心、绿头巾、满身纹身）和 5 个坐着打牌的朋友（BRUNO、CESAR、DIEGO、MARCOS、LUCAS），每人的衣服配饰都写清了。作者没有公开这 6 张图，本页没有参考图。提示词专门写了「只用化名、不出现真实姓名」，帖子标题又叫「Ney GTA」，主角明显照着内马尔做，其他人也可能是真实球星。用真人肖像做视频有肖像权风险，请换成自己有权使用的人物图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者没写用的哪个模型。成片 1920×1080（16:9）、30fps、30 秒，整条没有剪辑，没有水印和字幕。和提示词对不上的地方：提示词要 21:9，成片是 16:9。对白大体对得上：老太太那句语音识别听成「Deixou com o meu filho!」（提示词是「Desculpa, meu filho!」），他回「Tranquilo!」，牌桌上有葡萄牙语闲聊（语音识别判断，未人工试听）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "提示词在作者回复里的 Google Drive PDF，本页已整段收录。结构是：角色化名和 6 张参考图的对应关系、胶片与连续性要求（一条路线、一次运镜、道具数量和左右手）、按秒写的 8 段动作（门廊、低底盘车、颠球、击掌、老太太和水管、白桌、打牌、看镜头微笑），以及声音和最终连续性要求。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–3.5s 纹身男推开纱门走出门廊，从右前兜掏出喷漆罐摇了摇。" },
+      { number: 2, description: "3.5–6.5s 巴西国旗涂装的低底盘车从他面前慢慢开过，他挥手打招呼。" },
+      { number: 3, description: "6.5–12s 孩子的球滚过来，他用脚停球挑起、膝盖垫一下、头球回给孩子。" },
+      { number: 4, description: "12–15s 两个孩子跑过来，他用左手分别和他们击掌。" },
+      { number: 5, description: "15–19s 老太太叼着烟、用水管洗五个足球，水甩到他脚上，两人一句道歉一句「Tranquilo!」。" },
+      { number: 6, description: "19–23s 他走到街心白桌，把喷漆罐放回兜里，拉开空椅坐下。" },
+      { number: 7, description: "23–27.5s 六个人打牌说笑。" },
+      { number: 8, description: "27.5–30s 镜头推到他脸上，他抬眼看镜头微笑。" },
+    ],
+    constraints:
+      "一镜到底，不剪辑、不慢动作、不数码变焦；6 个人物身份和座次固定；1 个喷漆罐、6 个足球、6 把椅子，道具不凭空出现或消失；不要字幕、标签和水印。提示词要 21:9，成片是 16:9。主角明显照着内马尔做（帖子标题「Ney GTA」），风格致敬《GTA》，有真人肖像和游戏 IP 风险。",
+    video_prompt: {
+      title: "Barrio Brasil · 一镜到底",
+      subtitle: "作者回复里的 Google Drive PDF 英文完整提示词 · 6 张人物参考图未公开",
+      content: `Create a warm, friendly, photorealistic cinematic neighborhood short using the six uploaded character references.
+
+CAST IDENTIFIERS — USE THESE FICTIONAL NAMES ONLY
+
+The six references show six separate characters. Use only the fictional names below throughout this production. Do not introduce their real-world names in dialogue, captions, or generated text. The aliases identify characters for the prompt and are not on-screen labels.
+
+[PABLO — REFERENCE IMAGE 1 (reference image)] MAIN WALKING PROTAGONIST. White ribbed tank top, very loose blue jeans, black sneakers, green bandana, heavily tattooed arms and neck, short faded haircut with a lighter textured top, trimmed beard. Carries the worn metal spray-paint can with green nozzle. Preserve the exact face, skin tone, age, build, tattoos, and outfit of reference 1.
+
+[BRUNO — REFERENCE IMAGE 2 (reference image)] SEATED CARD PLAYER. Black jacket with gold piping, light T-shirt, gold mirrored wraparound sunglasses, heavy gold chain with a football-shaped pendant, baggy jeans, black-and-gold sneakers. Preserve the exact face, hairstyle, proportions, and accessories of reference 2.
+
+[CESAR — REFERENCE IMAGE 3 (reference image)] SEATED CARD PLAYER. Green zip-up jacket with yellow collar, cuffs, and waistband, white undershirt, dark aviator sunglasses, short rounded natural hair, blue jeans, black sneakers. Preserve the exact face and appearance of reference 3.
+
+[DIEGO — REFERENCE IMAGE 4 (reference image)] SEATED CARD PLAYER. Ornate green-black-gold patterned shirt over a black top, long dark hair pulled back with hanging strands, oversized dark sunglasses, gold chain, gold watch, baggy blue jeans, black sneakers. Preserve the exact face and appearance of reference 4.
+
+[MARCOS — REFERENCE IMAGE 5 (reference image)] SEATED CARD PLAYER. Yellow football shirt with green trim and number 11, dark aviator sunglasses, thin gold necklace, close-cropped dark-and-gray hair, blue jeans, black sneakers. Preserve the exact face and appearance of reference 5.
+
+[LUCAS — REFERENCE IMAGE 6 (reference image)] SEATED CARD PLAYER. Charcoal ribbed tank top, dark rectangular sunglasses, silver chain, wristwatch, very short hair, dark loose jeans, black sneakers. Preserve the exact face and appearance of reference 6. Never interchange these identities, outfits, accessories, or reference assignments. PABLO is the only walking protagonist. BRUNO, CESAR, DIEGO, MARCOS, and LUCAS are already seated at the destination. Use the references for identity and wardrobe, not their studio backgrounds, standing poses, or expressions. The seated players hold cards, not the spray cans seen in some portraits. PABLO carries the only spray-can prop. Preserve clothing colors, patterns, and numbers, but omit readable personal names or name initials on garments and jewelry. Keep the underlying garment or jewelry shape. Do not reproduce reference watermarks or add labels.
+
+FILM, ATMOSPHERE, AND CONTINUITY
+
+30 seconds, 21:9, photorealistic live action, 24 fps appearance, natural motion blur, subtle 35mm grain. Normal speed throughout. A friendly, nostalgic early-1990s West Coast neighborhood with Brazilian colors: warm afternoon sun, stucco houses, palms, porches, chain-link fences, utility poles, garages, and period cars. Natural skin, fabric, and physical weight. PABLO is approachable, playful, and confident. His football skills look effortless. Background residents quietly repair a fan, braid hair, or tend a barbecue. One continuous 12–15-meter route connects the porch, passing car, children, elderly woman, and white table in the middle of the street. Establish all participants and the table before their featured actions. One uninterrupted camera move: retreat ahead of PABLO at chest height, frame him head to shoes during the trick, arc outside the chairs as he sits, then physically approach his face through clear space. No cuts, hidden edits, transitions, teleportation, slow motion, speed ramps, digital zooms, or full-frame obstructions. Never pass through solid objects. Preserve street geometry, sunlight, landmarks, identities, clothing, and accessories. End on his smile without fading or going black. PABLO removes the can from his right front pocket and keeps it in his RIGHT hand until returning it to that pocket before sitting. Both high-fives use his LEFT hand. No spraying, hand switching, duplicated props, or extra fingers. Exactly SIX footballs: one scuffed black-and-white ball for the children, plus five differently patterned balls in the woman's shallow wash tray beside the curb. Track the children's same ball continuously. The two groups never merge or multiply.
+
+00:00–00:03.5 | PORCH AND PAINT CAN
+
+The camera faces the porch diagonally, with the continuous street and distant white table in the background. PABLO opens the screen door with his left hand and steps outside. While starting down the short path, he reaches into his right front pocket, visibly takes out the worn spray-paint can, and shakes it two or three times with a relaxed wrist movement. Hear the mixing ball rattle. No paint is released. He looks toward the street with an easy smile and keeps walking. The camera retreats naturally at his pace. The can remains in his right hand.
+
+00:03.5–00:06.5 | THE BRAZIL LOWRIDER
+
+As PABLO reaches the roadside, a customized early-1990s two-door lowrider passes slowly in front of him from frame right toward frame left. The entire body is painted in Brazil's green, yellow, blue, and white. Large Brazilian flag designs cover the hood, doors, and roof: green fields, yellow diamonds, blue globes, and white bands. The designs are actual glossy automotive paint, not floating graphics or fabric covering the windows. Chrome trim and wheels catch the sunlight. The hydraulic suspension raises and lowers the front once with believable weight while the car continues moving slowly. Keep PABLO visible above or beside the car. It never conceals the full frame. He briefly eases his stride, admires the car, and gives the driver a friendly greeting with his free left hand. The driver casually acknowledges him. The car clears his route and continues away along the same street. PABLO resumes walking with the can still in his right hand.
+
+00:06.5–00:12 | FOOT LIFT, KNEE TOUCH, HEADER
+
+Two children, already visible playing near the curb, accidentally send their black-and-white ball rolling toward PABLO. Show it rolling continuously from their position into his path. It cannot appear beneath his foot. PABLO looks down and cushions it with the sole of his right sneaker. In a fluid street-football move, he draws it slightly backward and flicks it upward with his right instep. The ball rises to thigh height. He lifts his right knee and gives it one controlled upper-knee/lower-thigh touch, sending it higher toward his forehead. As it descends from above head height, he leans forward slightly and gives it one gentle, accurate header back toward the two children. Mandatory order: ball rolls in; foot controls and lifts it; knee raises it higher; forehead returns it to the children. No hand contact and no skipped stage. Show the complete sequence in the same head-to-shoes composition, including the ball above his head. Every contact produces a distinct, physically plausible change of trajectory. Natural gravity, spin, and timing. No hovering, duplication, teleportation, or unexplained acceleration. PABLO keeps the can low in his right hand throughout. His movement is balanced, relaxed, and playful. One child receives the gentle return a few steps away and secures the ball against their left side.
+
+00:12–00:15 | THE CHILDREN'S HIGH-FIVES
+
+Both children approach PABLO with spontaneous excitement. The child holding the ball keeps it tucked against the left side and raises the right hand. PABLO meets it with his free LEFT palm. The second child then receives a separate high-five from PABLO's same left hand. Show two clear palm contacts, one per child. No merged hands or impossible simultaneous gestures. PABLO grins and exchanges a brief friendly remark. Both children jog back toward their original play area, one still carrying the same ball. Their departure remains visible and logical. They never disappear or change identity. PABLO continues toward the elderly woman, still holding the can in his right hand.
+
+00:15–00:19 | THE WOMAN, FIVE FOOTBALLS, AND THE HOSE
+
+An elderly neighborhood woman washes exactly FIVE footballs in a shallow tray directly on the pavement beside the curb. She holds a running garden hose in her LEFT hand and a lit cigarette between the fingers of her RIGHT hand. Keep both objects separate and stable, with a small natural wisp of cigarette smoke. Water passes over the five balls, which glisten with droplets and a little soap. The children's ball remains elsewhere with them. When she turns her attention toward PABLO, her left wrist accidentally swings the hose slightly too far. One brief, low stream crosses his path and splashes his sneakers and lower jeans. The hose only follows her wrist movement. It never behaves like a snake or deliberately chases him. PABLO checks his wet trouser cuffs with a surprised half-smile. She immediately redirects the hose into the tray. Still holding the cigarette in her right hand, she lifts that hand slightly and apologizes: "Desculpa, meu filho!" PABLO gives a forgiving gesture with his free left hand and replies warmly, "Tranquilo!" He chuckles and continues. No anger, dramatic soaking, confrontation, or lengthy pause. The damp patches remain visible afterward. The woman stays beside the same five footballs and resumes washing them.
+
+00:19–00:23 | THE WHITE TABLE AND THE EMPTY CHAIR
+
+The camera follows PABLO toward the small white table in the middle of the street. BRUNO, CESAR, DIEGO, MARCOS, and LUCAS are already seated, playing cards and chatting naturally. Preserve all five distinct reference identities. There are exactly SIX chairs: five occupied and one empty. The empty chair is nearest PABLO's approach. Leave realistic room for six people at this modest neighborhood table. Fix the seating arrangement around the table. Clockwise from the empty place: DIEGO, CESAR, BRUNO, MARCOS, LUCAS. These seats remain unchanged for the rest of the shot. A face-down hand of cards already waits at the empty place. Each seated player has cards, and a small play area occupies the center. No money or casino chips. DIEGO notices PABLO approaching and gives a warm smile. CESAR briefly looks up. BRUNO makes a small welcoming gesture. MARCOS and LUCAS acknowledge him while staying involved in the game. These greetings overlap naturally but are not synchronized. Nobody stands, swaps seats, disappears, or becomes another character. PABLO visibly returns the spray can to his original right front pocket. With both hands now free, he pulls the empty chair out a short distance, turns, and sits. Show his weight settling naturally into the chair. The camera makes a gentle arc outside the table and chairs, keeping the five friends and PABLO's sitting movement readable.
+
+00:23–00:27.5 | SIX FRIENDS PLAYING CARDS
+
+Exactly SIX men now sit at the table: PABLO, BRUNO, CESAR, DIEGO, MARCOS, and LUCAS. PABLO picks up his waiting cards and briefly studies them. He holds them in one hand, selects a card with the other, and places it into the center. Show the card moving from his fingers to the tabletop. Preserve its shape, size, and resting position. He cannot play before picking up his cards. Give every friend a natural individual contribution: DIEGO smiles at PABLO's choice and makes a short playful remark. CESAR responds with an amused expression while adjusting his own cards. BRUNO lets out a warm laugh, his gold pendant moving subtly with his chest. MARCOS lightly taps the table and answers with a quick comment. LUCAS looks from the played card to PABLO, smiles, and prepares his next card. PABLO replies and laughs with them while looking between his friends and his hand. Keep reactions staggered, small, and conversational. Do not turn this into five consecutive performances or make everyone speak and laugh simultaneously. Use low, natural Brazilian Portuguese chatter, brief overlapping remarks, and warm laughter. No real-world names, introductions, slogans, speeches, or exaggerated lip movement. Each friend stays involved in the game. Nobody freezes as a background figure. Faces, clothing, hands, cards, and seat assignments stay consistent. The camera begins a slow physical approach toward PABLO from clear space outside the chairs.
+
+00:27.5–00:30 | THE CONFIDENT SMILE
+
+Continue the same camera movement into a close portrait of PABLO. His friends, the white table, and the ongoing game remain naturally present around or behind him as the frame tightens. He finishes a small laugh with the group while holding his remaining cards near the tabletop. Only as the camera settles closer does PABLO raise his eyes and look directly into the actual viewing lens. He gives a relaxed, confident, friendly smile: warm eyes, a subtle lift of the chin, and the assurance of someone completely at home among friends. BRUNO, CESAR, DIEGO, MARCOS, and LUCAS continue their small card-game movements and quiet conversation. They do not all turn toward the camera. Hold PABLO's natural smile and direct eye contact for the final moment. End on his face in the same uninterrupted shot. No aggressive expression, punch toward the lens, sudden camera shake, fade, or black ending.
+
+SOUND AND FINAL CONTINUITY
+
+Natural spatial sound: screen door, footsteps, aerosol mixing-ball rattle, lowrider engine and hydraulics, tires, rolling football, separate foot/knee/header contacts, children's reactions, two high-five claps, running water, the apology and reply, chair scraping, cards, conversation, and laughter. No added soundtrack or narration. A faint original bass rhythm may come from the passing car and recede naturally; do not imitate a recognizable song. Maintain the six character identities, six chairs, fixed seats, six footballs, and single spray can. No props materialize or disappear. PABLO never sprays paint. His destination is the card table. End with the friendly group interaction and his confident smile. No violence, boxing gloves, weapons, threatening gestures, duplicated people, morphing faces, extra limbs, floating cards, subtitles, character labels, added logos, interface elements, or watermarks.
+`,
+    },
+  },
+  // 提示词在本帖正文（开头「prompts：」已去掉）。本帖附的视频是无声的深度图动作参考（LibTV 深度动作捕捉，作者在回复里确认），不是成片；成片在本帖引用的作者前一条帖 https://x.com/xhuozhong/status/2104949243681394704 （「CZ作为鼓手好像也不错」，2026-09-29 22:59 北京时间，121132 浏览 / 521 赞 / 34 转 / 105 收藏），查重时把该链接视为同一条。图片1–3（男主、女主、币安标志）作者没有公开；作者回复里没有文档链接
+  {
+    id: "xhuozhong-apt-mv-recreate-binance-studio-libtv",
+    title: "《APT.》MV 逐镜复刻 · 换人换成币安黄色棚",
+    subtitle: "X · @xhuozhong · LibTV 深度动作捕捉 · 27秒 · 16:9",
+    description:
+      "用原 MV 的深度动作做参考，逐镜复刻打鼓、搭肩、对唱、坐地拍手，把两位演员和粉色棚换成币安黄色棚。",
+    video: "/tutorials/xhuozhong-apt-mv-recreate-binance-studio-libtv/demo-web.mp4",
+    poster: "/tutorials/xhuozhong-apt-mv-recreate-binance-studio-libtv/poster.jpg",
+    duration: "27秒",
+    durationSec: 27,
+    styleLabel: "MV 复刻",
+    shots: 13,
+    references: 1,
+    model: "LibTV 深度动作捕捉（作者在回复里确认；底层模型未写）",
+    style: "参考视频驱动换人换景 · 复古棚拍 MV · 窄幅内嵌画面 · 快切",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/xhuozhong/status/2105455367073431768",
+    sourceAuthor: "@xhuozhong",
+    sourcePlatform: "X",
+    sourceImpressions: 1900,
+    sourceStats: { asOf: "2026-10-01", likes: 13, reposts: 0, bookmarks: 5 },
+    formats: ["角色表演", "产品广告"],
+    hook: {
+      structure: "女主前景跪坐唱歌、男主后景打鼓 → 俯拍伸手 → 窄幅搭肩 → 摘墨镜 → 嘴部特写 → 双人全身舞 → 前景交替 → 坐地拍手游戏 → 星形眼镜 → 举杯仰头 → 甩外套 → 互看笑着收尾",
+      opening: "第 0 秒黄色棚里，红裙女主跪坐在前景拿麦克风唱歌，男主在后面打鼓，大底鼓正面是币安标志。",
+      openingAt: 0,
+      beats: [
+        { title: "前段", text: "约 1.2–4.3s 俯拍，女主向镜头伸手；约 4.3–7.7s 窄幅画面里她搭着男主肩膀唱、甩头；约 7.7–10.8s 她摘下男主的墨镜自己戴上。", at: 1.2 },
+        { title: "中段", text: "约 12.3–13.9s 嘴部极近特写；约 13.9–15.6s 双人全身同步舞；约 15.6–17.4s 两人轮流冲到镜头前；约 17.4–20.5s 面对面坐地拍手。", at: 12.3 },
+        { title: "结尾", text: "约 20.5–22.2s 两人戴巨大星形眼镜对镜头唱；约 22.2–24.3s 女主指着男主笑、两人先后举杯仰头；约 24.3–25.8s 男主侧卧、女主抛外套；约 25.8s 起两人互看笑着收尾。", at: 20.5 },
+      ],
+      copyThis: "提示词先分清三类素材各管什么（视频只管动作和镜头、图片管人和衣服、标志图管品牌），再写冲突时听谁的，最后按原片切点逐镜写 17 个镜头，所以换人换景后节奏和原片几乎一样。",
+      approx: true,
+    },
+    tags: [
+      "27秒 · 17 个镜头",
+      "16:9 横屏",
+      "LibTV 深度动作捕捉",
+      "深度图动作参考（人物图未公开）",
+      "MV 逐镜复刻",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备参考视频和 3 张图",
+        description:
+          "提示词用 @视频1 做动作和镜头参考，@图片1 是男主、@图片2 是女主、@图片3 是币安标志。作者在本帖附了一条无声的深度图视频，就是从原 MV 提取的动作参考（本页参考图是它的截帧拼图）；3 张图片作者没有公开。从深度图和歌声看，原片是 ROSÉ 与 Bruno Mars《APT.》的 MV；男主的衣服写着「EXCHANGE THE WORLD」、手臂有币安纹身，明显是照币安创始人赵长鹏（CZ）做的，作者前一条帖也直接写了「CZ作为鼓手」。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "有网友在评论里问是不是用了 LibTV 的深度动作捕捉，作者回复「是的」，底层模型没写。成片（在作者引用的前一条帖里）1922×1080、30fps、约 27.1 秒，切点约在 1.2、4.3、7.7、10.8、12.3、13.9、15.6、16.4、17.0、17.4、20.5、22.2、23.8、24.3、25.8 秒，和提示词的 17 个镜头时间点几乎一一对上；没有平台水印和字幕，音乐是原曲《APT.》。和提示词对不上的地方很少：提示词写约 26.67 秒、1920×1080，成片约 27.1 秒、1922×1080。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方中文提示词整段粘贴，上传参考视频和 3 张图。结构依次是：任务说明、参考素材分工与优先级、男主一致性、女主一致性、场景与品牌植入、摄影与剪辑风格、17 个镜头的逐镜时间轴、声音与口型、必须避免的错误。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "xhuozhong-apt-depth-pass",
+        number: "1",
+        title: "@视频1 · 深度图动作参考（截帧拼图）",
+        subtitle: "作者本帖附的无声深度图视频（1920×1080、约 26.7 秒），每 2 秒取一帧；从原 MV 提取，只用来对齐动作和镜头",
+        image: "/tutorials/xhuozhong-apt-mv-recreate-binance-studio-libtv/refs/01-depth-pass-sheet.jpg",
+        prompt: "原帖未附提示词；这是作者本帖附的深度图动作参考视频（LibTV 深度动作捕捉），本页取其截帧拼图展示。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.2s 女主前景跪坐拿麦克风唱歌，男主后景打鼓，底鼓是币安标志。" },
+      { number: 2, description: "1.2–4.3s 高角度俯拍，女主向镜头伸手，镜头抬高后拉。" },
+      { number: 3, description: "4.3–7.7s 窄幅画面，女主搭着男主肩膀唱歌、甩头。" },
+      { number: 4, description: "7.7–10.8s 女主摘下男主的墨镜自己戴上，再搭回他肩膀。" },
+      { number: 5, description: "10.8–12.3s 窄幅高角度，两人贴近镜头。" },
+      { number: 6, description: "12.3–13.9s 女主嘴部极近特写，下巴有痣。" },
+      { number: 7, description: "13.9–15.6s 双人全身同步舞，背景有币安标志牌。" },
+      { number: 8, description: "15.6–17.4s 女主、男主轮流冲到镜头前，接侧身拍手过渡。" },
+      { number: 9, description: "17.4–20.5s 两人面对面坐地玩拍手游戏。" },
+      { number: 10, description: "20.5–22.2s 两人戴巨大星形眼镜对镜头唱。" },
+      { number: 11, description: "22.2–24.3s 女主指着男主大笑，两人先后举杯仰头。" },
+      { number: 12, description: "24.3–25.8s 男主前景侧卧，女主在后面甩起外套抛出去。" },
+      { number: 13, description: "25.8–27.1s 两人近景互看，笑着收尾。" },
+    ],
+    constraints:
+      "动作和镜头完全按参考视频；男主、女主外貌和服装按各自图片锁定；币安标志按标志图，不旋转、不镜像，固定在背景墙上；不要字幕、交易界面、平台水印和片尾广告。风险：复刻 ROSÉ 与 Bruno Mars《APT.》MV 并沿用原曲（版权）；男主明显照赵长鹏（CZ）做，女主疑似另一位真实人物；植入币安品牌。",
+    video_prompt: {
+      title: "《APT.》MV 逐镜复刻 · 币安黄色棚",
+      subtitle: "作者本帖中文完整提示词 · 配深度图动作参考 · 人物和标志图未公开",
+      content: `【任务：参考视频逐镜复刻，仅替换指定人物与品牌场景】
+
+使用@视频1 {{Mixed 4}} 作为唯一的动作、表演、人物互动、摄影机运动、镜头构图、剪辑节奏和时间顺序参考。
+
+将原视频中的男性角色完整替换为@图片1 {{Mixed 1}} 中的男性人物，将原视频中的女性角色完整替换为@图片2 {{Mixed 2}} 中的女性人物。将原视频的粉红色摄影棚背景和地面改为@图片3 {{Mixed 3}} 标志中的币安黄色，并在背景中设置清晰、准确的@图片3 {{Mixed 3}} 币安标志。
+
+这是参考视频驱动的人物与场景替换，不是重新编排剧情，不是重新设计舞蹈，不是根据歌曲自由发挥。
+
+最终视频时长约26.67秒，16:9横屏，1920×1080，30fps。保留原片各段动作的实际速度，不慢放、不加长、不压缩成15秒。下列时间点用于对齐，具体切点、动作起止和人物运动轨迹以@视频1 {{Mixed 4}} 为最终依据。
+
+全片始终只有图1 {{Mixed 1}} 男主和图2 {{Mixed 2}} 女主两个人，不能出现第三个人、伴舞、观众或者人物分身。
+
+【一、参考素材分工与执行优先级】
+
+@视频1 ：
+只参考镜头结构、摄影机位置与移动、人物站位、身体动作、表情节奏、嘴部动作、互动关系、道具使用方式、剪辑切点、画幅变化和少量二维图形特效。
+不要继承原视频演员的脸、发型、胡须、身材、帽子或者服装。
+
+@图片1 {{Mixed 1}} ：
+锁定男主的脸、年龄感、短发、眼镜、身形比例、黑色T恤、胸前文字、黑色长裤、黑色运动鞋以及右臂纹身。
+
+@图片2 {{Mixed 2}} ：
+锁定女主的脸、长黑色波浪卷发、下唇下方靠近下巴处的痣、耳饰、红色无袖及膝连衣裙、裸色高跟鞋和真实身材比例。
+
+@图片3 {{Mixed 3}} ：
+锁定币安标志的准确图案、黄色、黑色底色和几何比例。必须直接沿用图案结构，不重新设计。
+
+发生冲突时：
+人物外貌和服装以图片1、图片2为准。
+动作与镜头以视频1为准。
+品牌标志以图片3为准。
+坐地、跪坐和甩外套等动作只做适应参考服装所必需的微调，不能因此改变整个动作段落。
+
+【二、男主人物一致性 {{Mixed 1}} 】
+
+男主必须是图片1中的同一位成年男性。
+
+保留短黑发及自然灰白发丝、细框眼镜、真实面部轮廓、自然笑容和年龄感，不年轻化，不换成原视频演员，不增加胡须，不戴原视频的棒球帽。
+
+服装始终为图片1的黑色圆领短袖T恤、黑色长裤、黑色运动鞋。
+胸前“EXCHANGE THE WORLD”文字的内容、位置、大小关系与白黄配色沿用图片1，不替换为其他口号，不生成乱码。
+不要给男主穿黑色皮夹克、白色背心、短裤、格纹围腰或者其他原视频服装。
+
+右前臂内侧靠近肘弯的位置仅有一处币安纹身，位置按照图片1锁定。它必须固定在同一只手臂、同一块皮肤上，随着手臂转动自然显露或被遮挡。
+禁止纹身转移到左臂，禁止左右手臂同时出现纹身，禁止将纹身复制到上臂、手背或衣服上。
+
+男主按照原视频完成打鼓、点头、侧倾、跳舞、拍手、坐地互动、举杯、侧卧和对口型表演。人物表情可以随着表演变化，不要始终保持参考图中的静态微笑。
+
+普通黑色墨镜和夸张星形眼镜属于临时表演道具，不属于人物换装。
+需要摘取墨镜的段落，可以让黑色表演墨镜罩在男主原有细框眼镜外侧；女主取走外层墨镜后，男主仍保留图片1的细框眼镜。
+不同拍摄段可以通过原片硬切更换眼镜道具，但同一个连续镜头内不能凭空出现、消失或变形。
+
+【三、女主人物一致性 {{Mixed 2}} 】
+
+女主必须是图片2中的同一位成年女性。
+
+保留长黑色波浪卷发、参考图中的面部轮廓、自然红唇、垂坠耳饰，以及下唇下方靠近下巴处的明显小痣。
+痣的位置、大小和颜色始终一致，不要移动到嘴角，不要左右镜像，不要在特写中消失。
+
+服装始终为图片2的深红色无袖修身及膝连衣裙，保持圆领、收腰、裙长和后背结构，鞋子为图片2的裸色尖头高跟鞋。
+不能换成金色短发、双丸子头、皮夹克、白色露腰上衣、黑色短裤、运动鞋或其他原视频造型。
+
+她的表演要沿用原视频的活泼、俏皮和放松：对镜头唱歌、伸手、摇头、搭肩、摘墨镜、跳舞、拍手、笑着指向男主、举杯和甩动道具。
+不要把她拍成静态礼服模特，也不要改成端庄站立的商业合影。
+
+甩头时必须是她自己的长黑发随动作摆动，发根稳定，发束有自然惯性，不变短、不变金色、不穿过脸部。
+耳饰随着身体动作轻微摆动，不漂浮、不穿模。
+
+跪坐和坐地时保留原片的身体方向、上身动作与画面位置，裙摆自然覆盖腿部，不因动作突然缩短，不变成裤装，不发生衣料穿模。
+
+【四、场景与币安品牌植入 {{Mixed 3}} 】
+
+保留原片的开放摄影棚结构：
+无缝背景墙与地面相接；
+左右两侧保留原片的音箱、功放和高低错落的设备组合；
+架子鼓段保留原片鼓组的大小、位置和前后关系；
+进入后半段舞蹈和坐地游戏时，沿用原片对应镜头的设备布置，不把前半段架子鼓强行留在舞蹈区域。
+
+原片的粉红色墙面和地面全部改为图片3中的币安黄色。
+黄色应明亮、饱和、干净，带有真实棚拍照明形成的轻微明暗层次，不使用荧光绿黄，不偏橙红，不残留大片粉红色。
+地面仍然是实体摄影棚地面，有自然接触阴影，不改成镜面金属地板。
+
+音箱主体保持黑色或深灰色，金属支架保持真实金属质感，与黄色背景形成对比。
+男主的黑色服装与女主的红色连衣裙保持原色。
+只替换环境配色，不对整张画面施加黄色滤镜，不把肤色、眼白、牙齿和红裙全部染黄。
+
+背景币安标志：
+在摄影棚后方背景墙中央偏上，设置一枚清晰的大型黑色圆角方形标识牌，内部使用图片3原样的黄色币安图案。
+标志大小与人物、音箱协调，在中景和全景中能够辨认，但不能占满整个背景或压过人物。
+
+标志固定在背景墙的真实空间位置：
+随着摄影机角度变化产生正确透视；
+随着人物移动产生正常遮挡；
+不能像屏幕水印一样始终贴在画面中央；
+不能跟着人物头部漂移；
+近景中允许自然被裁出画面，不要为了显示标志而擅自拉远镜头。
+
+架子鼓正面：
+将原片大底鼓正面的闪电图案替换为图片3的币安图案。
+保留原片大圆鼓面的尺寸、鼓圈和透视关系，采用黑色鼓面配黄色币安标志，图案完整、居中、清晰。
+不要把标志画成闪电，不要增加文字。
+
+标志必须严格保持图片3的几何结构、间距、对称关系和方向。
+不旋转、不镜像、不缺角、不融化、不出现多余菱形。
+背景不要密集平铺标志，不增加币价、交易界面、K线、金币雨或其他金融元素。
+
+【五、摄影与剪辑风格】
+
+复刻原片的真人棚拍音乐短片质感：俏皮、复古、节奏鲜明，人物与镜头互动强烈。
+
+保留原片的正面中景、高角度俯拍、轻微倾斜构图、近距离广角表演、嘴部极近特写、双人全景、快速切换和短促冲近。
+不新增电影式慢镜头、长距离环绕、无人机镜头、舞台观众镜头或者重新设计的一镜到底。
+
+主体保持可辨认的真实面孔和衣料纹理，同时保留原片适度颗粒、自然运动模糊与轻微手持感。
+不要磨皮成塑料脸，不要使用夸张锐化、过强柔光或者人物轮廓发光。
+
+保留原片部分段落的窄幅内嵌画面、黑色留边和轻微画面倾斜。
+这些画幅变化属于原片的剪辑设计，不要把所有镜头强制裁成同一种构图。
+最终输出画布仍为16:9。
+
+原片右下角的平台水印、账号、搜索文字和其他界面信息不保留。
+不新增字幕、片名、人物姓名、品牌口号或者片尾卡。
+
+【六、逐镜时间轴】
+
+镜头01｜00.00—01.10｜女主前景唱歌，男主后景打鼓
+
+复刻原片开场的正面偏低中广景。
+
+女主位于画面左侧前景，在地面上保持原片的侧跪坐姿势，双腿折叠的方向和身体倾斜角度参考原片。
+右手握有线麦克风靠近嘴部，另一只手自然撑地或随表演轻动。
+身体轻微侧倾，面向镜头对口型，保留原片短促的点头、抬下巴与表情变化。
+
+男主坐在后方略偏右的架子鼓后，双手握鼓棒，按原视频节奏挥动并敲击。
+鼓棒落点对应鼓面与镲片，敲击后有自然回弹。
+大底鼓正面清晰显示黄色币安标志。
+
+有线麦克风的线缆沿地面自然延伸，不凭空中断，不穿过女主身体。
+画面开头直接进入表演，不增加品牌片头。
+
+镜头02｜01.10—04.30｜高角度俯拍，女主向镜头伸手
+
+在原片切点切换到女主上方的斜俯拍视角。
+
+女主仍在鼓组前方跪坐，保持同一只手握麦克风。
+空着的手先向镜头伸出，五指张开，掌心接近镜头，形成明显的前景透视。
+随后按照原片完成收手、指向镜头、侧摆头部、身体前倾以及重新撑地的连续动作。
+
+手掌只在原片对应时刻短暂遮挡部分脸部，不要整段挡住面孔。
+麦克风始终跟随嘴部，不穿过脸颊。
+
+摄影机沿原片轨迹逐渐抬高并后拉，从较近的俯拍扩大到能够看到更多黄色地面、完整鼓组及后方音箱的位置。
+女主在画面中逐渐变小，鼓组与男主的前后关系不变。
+男主在后景持续打鼓，不能突然站起来或走到女主旁边。
+
+保留原片打击节奏附近少量闪电、星形或短线涂鸦的闪现时刻，不增加大面积特效。
+
+镜头03｜04.30—07.67｜窄幅双人搭肩互动
+
+在原片切点切入带黑色留边的窄幅画面，保留轻微倾斜和手持摇摆。
+
+男主位于画面左侧，坐在鼓前，手持两根鼓棒。
+女主位于画面右侧，站立或俯身靠近男主，一只手臂搭在男主肩膀上，头部向他靠近。
+两人保持原片的高度差与身体距离。
+
+女主对镜头唱歌，依次完成：
+靠头；
+把空着的手向外展开；
+手臂从头顶绕过；
+侧弯身体；
+向另一侧甩头；
+重新抬起上身并靠回男主旁边。
+
+动作顺序、速度和摆动方向严格参照原片，不编排新的舞蹈。
+她的黑色长发随甩头摆动，红裙始终保持原样。
+
+男主延续原片的轻微点头和鼓棒敲击动作，不被女主拉离座位。
+摄影机保持近距离互动感，不突然变成远景。
+
+镜头04｜07.67—10.80｜摘下男主墨镜，女主自己戴上
+
+恢复原片较宽的画幅和略高机位。
+
+男主位于画面偏左前景，继续握鼓棒表演。
+女主位于右侧，保持一只手搭住他的肩膀。
+
+严格复刻原片的墨镜转移过程：
+女主伸手抓住男主外层黑色墨镜的镜框；
+把墨镜从他的脸部取下；
+手持墨镜起身、转头并轻甩头发；
+随后将同一副墨镜戴到自己脸上；
+戴好后重新靠近男主，伸臂搭住他的肩颈位置。
+
+墨镜必须是同一个实体道具。
+不能在女主戴上之后，男主脸上仍多出一副相同黑色墨镜。
+男主原有的细框透明眼镜保留。
+
+女主靠近、搭肩时，手臂与男主颈部、眼镜和衣服之间保持正确遮挡，不穿模。
+保留原片动作的俏皮感，不新增亲吻。
+
+镜头05｜10.80—12.30｜窄幅高角度双人贴近镜头
+
+再次切回原片的窄幅内嵌画面和黑色留边。
+
+女主戴着刚才取得的黑色墨镜，靠在男主肩旁，一边对口型一边抬头、侧倾和晃动身体。
+男主继续拿鼓棒做节奏动作，并按照原片短暂闭眼、微笑或侧头。
+
+女主的手臂保持搭肩关系，末段两人的头部自然靠近。
+摄影机沿用原片的小幅度摇摆和倾斜，不新增环绕。
+两张脸始终分别对应图片1和图片2，不发生融合或身份交换。
+
+镜头06｜12.30—13.93｜女主嘴部极近特写
+
+直接切到女主鼻底、嘴唇与局部下巴的极近特写，嘴部占据大部分画面。
+
+必须使用图片2女主自己的嘴唇形态、牙齿和皮肤纹理，不能残留原演员的嘴部。
+口型按原视频这一段的张口、收唇、露齿与音节节奏连续变化，不随机反复张嘴。
+
+构图中看得到下巴小痣时，痣必须位于正确位置；画面裁切不到时，不要为了露出痣而把它移到嘴唇旁边。
+
+保留原片极近拍摄的颗粒、微小晃动与局部裁切感。
+将原片明显的粉红染色改为轻微暖金色光感，皮肤和唇色仍然自然，不能把嘴唇、牙齿染成黄色。
+不要在嘴部、牙齿或皮肤上叠加币安标志。
+
+镜头07｜13.93—15.57｜双人全身同步舞蹈
+
+切到正面固定全景。
+
+男主在画面左侧，女主在画面右侧。
+两人全身入镜，脚部、地面接触和彼此距离与原片保持一致。
+背景为黄色无缝摄影棚，左右保留音箱设备，中上部的币安标志自然可见。
+
+逐拍复刻原片的双人动作：
+双腿分开站稳；
+一侧手臂屈肘抬向额头或太阳穴附近；
+手臂下压；
+肩膀上下弹动；
+身体左右侧倾；
+双脚交替换重心；
+再次屈肘抬手，重复相同的节奏组合。
+
+每个人的左右手选择、转头方向和脚步顺序以原片为准，不把两人的动作擅自镜像。
+不能改成随机挥手，也不能让两人完全同步成机械复制。
+
+女主穿红色及膝裙和裸色高跟鞋，脚步要有真实落点与重心转换。
+裙摆随动作轻微摆动，不能变成短裤或突然扩大成蓬裙。
+
+镜头08｜15.57—16.37｜女主近景，男主留在后景
+
+切到原片的女主近距离广角构图。
+
+女主靠近镜头，头肩成为前景主体，按原片节奏歪头、点头、俯身并对口型。
+保留原片面孔逼近镜头的活泼感，但不能把脸夸张拉伸成另一张脸。
+
+男主仍在后景对应位置继续舞蹈。
+不要让男主消失，不要把后景复制成第二个女主。
+
+女主动作带动黑色长发和耳饰，嘴部、眼神与镜头保持互动。
+
+镜头09｜16.37—16.97｜男主近景，女主留在后景
+
+快速切到与上一镜对应的男主近距离广角构图。
+
+男主来到前景，按原片侧倾头部、张嘴对口型并在胸前做对应的短促手势。
+保留原片的动作速度、手势方向和身体倾斜幅度。
+不要新增手势，不要让手部遮住整张脸。
+
+女主留在后景继续原片动作。
+男主的短发、面部轮廓、黑色T恤及胸前文字保持一致。
+
+镜头10｜16.97—17.37｜双人侧身拍手过渡
+
+切回双人全身画面。
+
+两人按照原片侧转身体、迈步，并在胸前快速合掌拍手。
+手掌接触时机与原片音乐重拍一致。
+保留原片极短的镜头长度，不把这个过渡动作延长成一段新舞蹈。
+
+对应时刻可以出现原片已有的少量短线或闪电涂鸦，但不要增加大面积光效。
+
+镜头11｜17.37—20.47｜面对面坐地拍手游戏
+
+切到固定全景，两人在黄色地面上面对面坐下：
+男主在画面左侧，面向右；
+女主在画面右侧，面向左。
+
+沿用原片的距离、坐姿方向与中央小杯道具的位置。
+女主的腿部折叠方式适应及膝裙，保持上身姿态与原片一致。
+
+准确复刻原片连续的手部互动：
+各自拍手；
+向对方伸手；
+手掌短暂接触；
+收手；
+再次拍手；
+伸手抓住或轻握对方的手；
+一方抬起空着的手做快速动作；
+另一方随之低头、抬头或者笑着回应。
+
+每次接触和分离都要有完整过程。
+不允许双手尚未接触就突然进入握手状态。
+不允许手指粘连、掌心穿透、左右手交换或多出手臂。
+
+两人的上身随着游戏自然前倾和回弹，表情轻松愉快。
+中央小杯保持在原片对应位置，不能随着拍手在地面上滑动或复制。
+
+镜头12｜20.47—22.10｜两人佩戴夸张星形眼镜对镜头唱歌
+
+切到双人近景，注意这一镜的位置关系：
+女主在画面左侧；
+男主在画面右侧。
+
+两人佩戴原片同款结构的巨大五角星框派对眼镜。
+保留夸张尺寸、星形外框和深色镜片，不把星形镜框变成币安图案。
+眼镜作为实体道具贴合鼻梁与耳部，随着头部同步移动。
+
+两人肩并肩靠近镜头，按原片节奏同步或交替点头、左右歪头、短促前倾、张嘴对口型。
+保留原片故意夸张、轻松搞怪的表演，不拍成静态摆拍。
+
+星形眼镜不能遮掉整张脸，男主和女主的下半张脸及发型仍然可辨认。
+不能把两张脸融合，也不能把两个人变成同一张脸。
+
+镜头13｜22.10—23.40｜回到坐地游戏，女主指着男主笑
+
+切回之前的地面双人全景：
+男主左，女主右。
+
+女主按照原片伸出手臂指向男主，身体后仰，张嘴大笑。
+男主保持原片的低头、抬手、拿起小杯和向后仰头的反应节奏。
+
+保留原片两人的互动因果关系：
+女主的指向要对准男主；
+男主的视线和身体反应要回应女主；
+不要让两个人各自对着空气表演。
+
+保持音箱布局、地面阴影和黄色背景的空间连续性。
+
+镜头14｜23.40—23.80｜快速冲近女主举杯仰头
+
+沿原片节奏快速冲近女主上半身，保留短促的推进感和运动模糊。
+
+女主抬手将小杯送到嘴边并仰头，动作方向和持续时间按原片执行。
+手掌、小杯、嘴唇和下巴之间保持真实接触关系，不让杯子穿过脸。
+
+黑色长发随仰头向后摆动，耳饰自然垂落。
+不要把这个不到半秒的镜头延长成慢镜头。
+
+镜头15｜23.80—24.30｜男主举杯仰头特写
+
+快速切到男主对应的上半身近景。
+
+男主按照原片将小杯举到嘴边，仰头完成相同节奏的动作。
+复刻手肘抬起的位置、头部后仰角度以及另一只手的支撑关系。
+
+人物始终为图片1的同一张脸，不增加原演员的胡须或帽子。
+右臂纹身只在实际可见的角度出现，不为了展示而移动位置。
+
+镜头16｜24.30—25.80｜男主前景侧卧，女主后景甩动并抛起外套
+
+切到原片的宽幅全景。
+
+男主位于画面左下方前景，按照原片侧卧在地面上，一只手支撑头部或上身。
+保持原片的腿部弯曲、身体方向、抬手回应和轻松搞怪表情。
+男主仍穿黑色T恤、黑色长裤和黑色鞋，不更换服装。
+
+女主位于后方中央偏右区域，按原片步伐移动并甩动一件黑色外套道具。
+
+重要服装适配：
+这一镜开始时，女主手中已经拿着一件独立的黑色外套道具。
+这件外套不是女主身上正在穿的衣服。
+女主始终穿图片2的完整红色连衣裙。
+禁止把红裙脱下，禁止从裙子上撕出布料，禁止让女主换成白色上衣和黑色短裤。
+
+保留原片外套甩动、绕行和最终抛出的节奏与空间轨迹：
+外套先随手臂在身体侧上方甩动；
+随后被向上抛起；
+布料在空中自然翻转；
+沿原片方向掠过画面上方并进入前景或落出画面。
+
+外套只有一件，布料有自然惯性，不变成黑烟、鸟、旗帜或多件衣物。
+不新增外套落地特写，按原片切点进入下一镜。
+
+镜头17｜25.80—26.67｜双人近景互看、笑着收尾
+
+切到双人上半身近景。
+
+男主在画面左侧，女主在画面右侧，两人相互看向对方。
+严格复刻原片最后的侧头、仰头笑、短暂低头和轻微身体摇摆。
+
+男主保持图片1的脸、短发和黑色T恤。
+女主保持图片2的脸、长黑发、红裙和下巴小痣。
+不要把他们变回原视频演员。
+
+结尾维持原片仍在互动中的自然结束方式。
+不要定格成合影，不增加拥抱、亲吻、握手、字幕、黑屏口号或币安标志片尾。
+在原片对应的最后一帧结束。
+
+【七、声音与口型】
+
+沿用参考视频的原始音轨位置、音乐节拍、演唱顺序与整体时长，不另写台词，不改编歌词，不插入品牌口播。
+
+所有对口型镜头必须跟随参考视频对应时刻的音节变化：
+开场女主持麦克风演唱；
+搭肩互动；
+嘴部极近特写；
+男女前景交替表演；
+星形眼镜双人近景；
+结尾互动。
+
+非演唱瞬间按原片保留笑、闭嘴、吸气或其他自然表情，不要让人物全程机械张嘴。
+
+鼓棒击打、拍手与画面中的实际接触点对齐，不提前、不延迟。
+不要添加压过原音乐的大量音效。
+音轨与画面必须使用同一条时间轴，不改变歌曲速度。
+
+【八、必须避免的错误】
+
+禁止重新设计剧情、删掉原片互动或增加新舞步。
+禁止把视频改成会议、发布会、颁奖礼、商务合影或舞台演唱会。
+禁止只换脸却保留原演员的金发、帽子、胡须、皮衣或短裤。
+禁止给两个人换成统一黄色服装。
+禁止更改女主红裙、男主黑色T恤和黑色长裤。
+禁止人物身份漂移、脸型变化、人物复制、男女互换。
+禁止纹身换边、重复纹身、下巴痣移动或消失。
+禁止道具瞬移、墨镜复制、鼓棒弯曲、手指粘连和肢体穿模。
+禁止把背景标志做成跟随镜头的水印。
+禁止币安标志旋转、镜像、结构错误、缺角或变成闪电。
+禁止粉红色棚景残留，禁止全画面黄色滤镜污染肤色和红裙。
+禁止增加字幕、交易界面、K线、金币、口号或片尾广告。
+禁止平台水印、账号文字、搜索框和录屏界面。
+禁止慢动作、无关环绕、擅自延长镜头或改变原片节奏。
+
+最终目标：
+让观众看到的是原视频同一套镜头、同一套动作、同一套互动和同一套剪辑，只是两位演员完整替换成图片1男主与图片2女主，粉红色摄影棚替换成带有准确币安标志的黄色摄影棚。
+`,
+    },
+  },
+  // 查重别名(提示词 2 楼自回复帖): https://x.com/hxhxhx0916/status/2105631778207854683 （开头「分享提示词：」已去掉）。主帖标题《现代战争：敌区渗透》，提示词标题《寒区渗透：敌后雷达站》，是同一条作品。主帖没有引用帖；人物参考图作者没有公开。与站内同作者的火舞者、时装 lookbook 两篇是不同作品
+  {
+    id: "hxhxhx0916-snow-ops-radar-station-infiltration-seedance-2-5",
+    title: "寒区渗透 · 特种兵雪林潜入敌方雷达站",
+    subtitle: "X · @hxhxhx0916 · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "雪地迷彩特种兵穿过深雪松林，观察、消音点射、冲过开阔地，摸到敌方雷达站铁丝网外。",
+    video: "/tutorials/hxhxhx0916-snow-ops-radar-station-infiltration-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/hxhxhx0916-snow-ops-radar-station-infiltration-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "军事写实",
+    shots: 8,
+    references: 0,
+    model: "Seedance 2.5（提示词里写明）",
+    style: "现代寒区特种作战 · 阴天雪林冷调 · 低机位跟拍 + 肩后视角 · 树木前景遮挡",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/hxhxhx0916/status/2105631775355756812",
+    sourceAuthor: "@hxhxhx0916",
+    sourcePlatform: "X",
+    sourceImpressions: 564,
+    sourceStats: { asOf: "2026-10-01", likes: 8, reposts: 1, bookmarks: 3 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "低机位跟拍穿越深雪 → 单膝跪地瞄具观察雷达站 → 退到树后、护目镜特写 → 探身消音点射 → 冲过开阔雪地躲还击 → 压制后继续前进 → 下坡伏到铁丝网外",
+      opening: "第 0 秒极低机位：雪地迷彩特种兵半蹲穿过深雪松林，前景松枝掠过镜头，远处隐约是雷达站。",
+      openingAt: 0,
+      beats: [
+        { title: "观察", text: "约 5.3–9s 他单膝跪下，肩后视角通过瞄具看山谷里的雷达站和巡逻守卫；约 9–14s 退到粗松树后，镜头推到护目镜特写。", at: 5.3 },
+        { title: "接触", text: "约 14–17s 他从树后探身瞄准远处守卫开火；约 17–21s 低姿冲过开阔雪地，树干被子弹打得雪粉飞溅，滑进新掩体。", at: 14 },
+        { title: "逼近", text: "约 21–26s 探身压制后继续下坡穿过松林；约 26.5–30s 伏在铁丝网外，背景是旋转的雷达天线和通信桅杆。", at: 21 },
+      ],
+      copyThis: "提示词每 3–5 秒一段，每段都写清主角动作、机位、敌人的反应和声音，并单独写了一大段连续性规则（同一套装备、雷达站距离连续缩短、天气不变），所以 30 秒里人物和空间都没跳。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "人物参考图未公开",
+      "军事潜入短片",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备主角参考图",
+        description:
+          "提示词写「以上传图片中的寒区特种作战队员为唯一核心主角」，并详细写了装备：白灰雪地数码迷彩、白面罩、棕色高切头盔、红棕护目镜、棕色胸挂、大型白色背包和带长消音器的卡宾枪。作者没有公开这张图，本页没有参考图，需要自己准备一张同样装备的人物图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "提示词里写明是 Seedance 2.5 的一次 30 秒生成。帖子里的视频只有 854×480（16:9）、24fps、约 30 秒，没有更高清的版本，没有水印，没有人声。和提示词对不上的地方：第二名守卫朝主角走近、中枪倒地那段看不清，守卫一直离得很远；结尾主角没有掏出定位设备、没有钻进雷达站，也没有切黑，停在他伏在铁丝网外的画面；主帖标题叫《现代战争：敌区渗透》，提示词标题是《寒区渗透：敌后雷达站》。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者 2 楼回复里的中文提示词整段粘贴，上传主角图。结构依次是：总设定（画幅、时长、人物装备、场景、天气、焦段）、0–30 秒分成 8 段的动作和机位、Seedance 2.5 连续性规则、声音设计和负面约束。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–5.3s 极低机位跟拍，主角半蹲穿过深雪松林，远处隐约是雷达站。" },
+      { number: 2, description: "5.3–9s 单膝跪地，肩后视角通过瞄具观察雷达站和巡逻守卫。" },
+      { number: 3, description: "9–11.6s 退到粗松树后，横向移动寻找角度。" },
+      { number: 4, description: "11.6–13.9s 护目镜特写，镜片映出雪林。" },
+      { number: 5, description: "13.9–17.1s 从树后探身，瞄准远处守卫开火。" },
+      { number: 6, description: "17.1–21s 低姿冲过开阔雪地，子弹打在树干上，雪粉飞溅，他滑进掩体。" },
+      { number: 7, description: "21–26.5s 探身压制后起身，下坡穿过松林。" },
+      { number: 8, description: "26.5–30.1s 伏在铁丝网外，背景是旋转的雷达天线和通信桅杆。" },
+    ],
+    constraints:
+      "全片同一个人物、同一套装备和武器；同一片雪林、阴天细雪；雷达站距离连续缩短；枪战只是短暂接触，没有血腥特写和大规模战争。和成片的差别：守卫中枪倒地看不清，结尾没有掏设备潜入和切黑。",
+    video_prompt: {
+      title: "寒区渗透：敌后雷达站",
+      subtitle: "作者 2 楼回复中文完整提示词 · Seedance 2.5 · 人物参考图未公开",
+      content: `《寒区渗透：敌后雷达站》
+16:9 横屏，连续 30 秒，电影级现代寒区特种作战短片，超写实真人摄影，高预算军事惊悚片质感。
+以上传图片中的寒区特种作战队员为唯一核心主角。全片保持同一个人物、同一套装备、同一把武器、同一片雪林、同一天气和同一时间条件。
+主角穿白灰色雪地数码迷彩作战服，白色面罩，棕色高切战术头盔，红棕色护目镜，棕色战术胸挂，大型白色雪地伪装背包，黑色寒区战术靴。双手持现代卡宾枪，枪械安装光学瞄具、战术附件和长型消音器。
+背景是一片敌后寒区山地。深冬，积雪覆盖针叶林与山坡，雪深接近小腿。远处山脊下方隐藏着一个敌方雷达监听站，能看到一座缓慢旋转的雷达天线、低矮军事建筑、通信桅杆、铁丝网和少量冷白色警戒灯。
+天气阴沉，灰白低云压住山谷，细雪持续飘落。整体调色冷白、灰蓝、深绿色和低饱和棕色。自然阴天漫射光，雪地保留细腻纹理。
+摄影以 24mm、28mm、35mm 为主。使用低机位雪地跟拍、肩后视角、树木遮挡前景、稳定手持、中近景和少量环境广角。摄影机有轻微真实呼吸感，但动作始终清晰可读。
+0至5秒
+极低机位 28mm 镜头。
+摄影机位于雪地上方约几十厘米的位置，从主角左前方缓慢后退。
+主角半蹲穿越积雪很深的针叶林。
+每一步都陷入雪层，靴子抬起时带出细小雪粉。
+大型白色背包随身体移动产生真实重量和惯性，肩带始终紧贴身体。
+枪口保持朝向前方偏下位置。
+前景有覆雪松枝短暂掠过镜头。
+远处透过树木缝隙首次隐约出现敌方雷达站，山坡下方一座大型雷达天线正在缓慢旋转。
+声音只有靴子压雪声、风声、布料摩擦、呼吸和极远处设备运转的低频嗡鸣。
+5至9秒
+主角突然停止。
+单膝跪入雪地。
+摄影机移动到主角右后方肩后视角。
+他抬起步枪，通过瞄具观察山谷。
+远处雷达站逐渐清晰。
+铁丝网外围有两名敌方巡逻人员沿不同方向移动。
+第一名守卫沿雪路缓慢巡逻。
+第二名守卫靠近一座简易观察点，转头检查树林方向。
+两人始终保持动态巡视。
+主角没有开火。
+风吹动松树枝条，树冠上的雪粉缓慢落下。
+9至13秒
+主角慢慢退到一棵粗大的覆雪松树后。
+镜头从树干边缘观察他。
+他降低身体，沿树后横向移动几步，寻找更好的观察角度。
+远处第一名守卫继续巡逻。
+第二名守卫突然停步，似乎听到异常声响，转头朝森林方向观察。
+主角立即完全停止动作。
+摄影机缓慢推近他的护目镜。
+红棕色镜片中映出灰白雪林与远处模糊雷达天线。
+短暂的极度安静。
+13至17秒
+第二名守卫开始朝主角方向靠近。
+主角缓慢抬枪。
+等守卫进入林木遮挡区域后，主角从树干侧面快速探出。
+进行一次极短促的消音点射。
+枪口只出现非常轻微的瞬间气体与微光。
+守卫产生自然受击反应，失去平衡倒入雪地。
+没有血腥特写。
+远处另一名巡逻人员发现异常，立即降低身体并快速进入附近树干后方。
+他没有站在原地。
+主角随即离开原位置。
+17至21秒
+主角低姿快速冲过一段开阔雪地。
+摄影机从侧面低位平行跟拍。
+靴子高速踩入积雪，大片细雪向身后扬起。
+背包明显上下摆动，但始终保持正确结构。
+敌方守卫从远处树后进行一次短促还击。
+几发子弹击中主角附近的树干和雪地。
+树皮碎片飞散，树枝上的积雪被震落。
+主角迅速滑入另一棵松树和低矮雪堆形成的天然掩体。
+整个动作连续完成。
+21至24秒
+主角从新掩体另一侧短暂探身。
+快速观察。
+敌方巡逻人员正在向雷达站方向后撤，同时通过无线电呼叫支援。
+主角进行一次短促压制射击。
+敌人立即缩回掩体并继续向后撤离。
+主角没有停在原地持续射击。
+他立刻起身继续向前。
+镜头移动到肩后位置。
+前方雷达站已经明显变大。
+铁丝网、警戒灯、通信桅杆和旋转雷达阵列逐渐占据背景。
+24至27秒
+主角沿山坡低姿快速下降。
+利用树林和地形不断遮挡自己。
+摄影机跟随穿过几棵覆雪松树。
+前景树干高速掠过，产生真实速度感。
+远处雷达站警戒灯开始闪烁。
+可以听见无线电警报和模糊人员呼叫。
+敌方建筑附近出现两名模糊人员快速移动，但距离较远，不展开大规模枪战。
+主角到达铁丝网外围的一处低洼区域。
+迅速伏低。
+27至30秒
+节奏突然重新安静下来。
+主角半跪在积雪中。
+摄影机从他的右后方缓慢移动到低机位侧面。
+近景是主角持枪警戒的身影。
+中景是覆雪树干和铁丝网。
+远景是一座正在缓慢旋转的巨大雷达天线。
+冷白警戒灯扫过雪地。
+主角缓慢抬头观察雷达站。
+随后从胸前战术装备中取出一个小型任务装置或定位设备，快速确认目标方向。
+收回设备。
+重新握紧步枪。
+他压低身体，沿铁丝网阴影继续向雷达站内部潜行。
+摄影机没有跟进去，而是在原地停下。
+主角逐渐消失在飘雪、树影和雷达站外围结构之间。
+巨大的雷达天线继续缓慢旋转。
+远处传来低沉机械嗡鸣和无线电杂音。
+切黑。
+结尾留下明确悬念：他已经突破外围警戒，即将进入敌方雷达站核心区域。
+Seedance 2.5 最高优先级连续性规则
+这是一次完整的 30 秒连续生成。
+主角从第 0 秒到第 30 秒必须保持同一个人物。
+始终保持同一套白灰色雪地数码迷彩、白色面罩、棕色头盔、红棕护目镜、棕色战术胸挂、大型白色雪地背包、黑色战术靴以及同一把带长型消音器的卡宾枪。
+任何镜头切换后不得改变人物脸部结构、服装、装备、背包、武器颜色或附件。
+整个故事始终发生在同一片寒区雪林和同一座雷达站外围。
+雷达站在前半段位于远景，中段逐渐靠近，最后成为明显背景主体。空间距离必须连续缩短，禁止雷达站突然消失或瞬间改变位置。
+雪一直轻微飘落。
+天空始终阴沉。
+色温和曝光保持统一。
+禁止突然变成晴天、夜晚或暖黄色环境。
+人物踩雪必须产生真实下陷、脚印和雪粉反馈。
+奔跑时积雪向后飞散。
+人物身体、背包和枪械具有真实重量与惯性。
+敌军始终具有明确战术行为。巡逻、察觉、寻找掩体、短促还击、撤退、报警形成自然因果。
+任何敌军不得站在空地长时间静止射击。
+枪战只作为短暂接触。
+全片重点始终是潜伏、观察、隐蔽机动、突破外围警戒和继续深入。
+不要把场面发展成大规模战争。
+声音设计
+前 13 秒音乐极少，以环境声为核心。
+雪地脚步、寒风、衣物摩擦、呼吸、远处雷达设备低频运转。
+13 秒发生第一次接触时加入极低沉的电影低频音垫。
+消音枪声保持短促、沉闷。
+17 至 21 秒敌方还击带来短暂枪声高潮。
+24 秒后再次降低音乐密度。
+加入越来越明显的雷达机械声、无线电报警和远处敌军模糊喊声。
+最后 3 秒只留下寒风、呼吸、无线电杂音和雷达天线低沉机械运转声。
+最后切黑时不要加入夸张爆炸。
+负面约束
+人物换脸，人物换装，白色迷彩变化，头盔颜色变化，护目镜消失，面罩消失，背包突然消失，背包变形，背包漂浮，枪械更换，枪管弯曲，消音器消失，瞄具漂移，弹匣变形，手指穿模，多余手指，多余肢体，人物瞬移，人物漂浮，动作失重，敌人突然生成，敌人站桩，敌人无反应，敌人等待被击中，大量敌军，大规模枪战，大规模爆炸，坦克，装甲车，空袭，科幻装备，未来科技，游戏CG感，塑料质感，动漫风格，雪地像液体，没有脚印，脚穿过雪面，天气突然变化，暖色阳光，过曝雪地，疯狂摇镜，360度绕拍，无逻辑快速剪辑，空间跳变，雷达站突然移动或消失。
+`,
+    },
+  },
 ];
 
 export const tutorials: Tutorial[] = rawTutorials.map((t) => withMedia(t));
