@@ -27267,9 +27267,12 @@ Natural spatial sound: screen door, footsteps, aerosol mixing-ball rattle, lowri
     steps: [
       {
         number: 1,
-        title: "第一步：准备参考视频和 3 张图",
+        title: "作者输入的深度动作参考（LibTV 深度捕捉，原帖附带）",
         description:
           "提示词用 @视频1 做动作和镜头参考，@图片1 是男主、@图片2 是女主、@图片3 是币安标志。作者在本帖附了一条无声的深度图视频，就是从原 MV 提取的动作参考（本页参考图是它的截帧拼图）；3 张图片作者没有公开。从深度图和歌声看，原片是 ROSÉ 与 Bruno Mars《APT.》的 MV；男主的衣服写着「EXCHANGE THE WORLD」、手臂有币安纹身，明显是照币安创始人赵长鹏（CZ）做的，作者前一条帖也直接写了「CZ作为鼓手」。",
+        video: "/tutorials/xhuozhong-apt-mv-recreate-binance-studio-libtv/depth-ref-web.mp4",
+        poster: "/tutorials/xhuozhong-apt-mv-recreate-binance-studio-libtv/depth-ref-poster.jpg",
+        aspectRatio: "16/9",
       },
       {
         number: 2,
