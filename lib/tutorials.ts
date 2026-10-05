@@ -29653,6 +29653,1278 @@ VSC逐渐完整进入画面
 `,
     },
   },
+  // 查重别名(提示词自回复帖): https://x.com/johnAGI168/status/2106723876931522638 。同作者站内已有 2102720575110299823 等 Pollo 条目，是别的作品。主帖无引用帖、无外链文档；提示词里的「图片1 命名为【Iaro】」参考图原帖未公开（作者回复、同期帖子都没有这张图），参考 1 为成片首帧截帧
+  {
+    id: "johnagi168-giant-cursor-street-chase-comedy-wan-3",
+    title: "巨型光标满街追人 · 复制、变色、橡皮擦和红色爆炸头",
+    subtitle: "X · @johnAGI168 · Wan 3.0 · 30秒 · 16:9",
+    description:
+      "一个实物大小的电脑光标在街上追着眼镜女孩：复制冰淇淋、放大小狗、把货车染紫，最后给她变出红色爆炸头。",
+    video: "/tutorials/johnagi168-giant-cursor-street-chase-comedy-wan-3/demo-web.mp4",
+    poster: "/tutorials/johnagi168-giant-cursor-street-chase-comedy-wan-3/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "真人喜剧",
+    shots: 9,
+    references: 1,
+    model: "Wan 3.0（帖子写 by wan 3.0）",
+    style: "电影实拍质感都市白天喜剧 · 图像编辑工具（光标、选框、变换框、透明格子）以实物出现在真实街道 · 手持跟拍",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/johnAGI168/status/2106723741602546165",
+    sourceAuthor: "@johnAGI168",
+    sourcePlatform: "X",
+    sourceImpressions: 1707,
+    sourceStats: { asOf: "2026-10-04", likes: 28, reposts: 0, bookmarks: 22 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "冰淇淋被复制 → 光标盯上她 → 一路追逐（放大小狗、染紫货车、擦墙）→ 死胡同被巨犬救 → 以为结束 → 红色爆炸头",
+      opening: "第 0 秒眼镜女孩坐在长椅上拿着冰淇淋，一个白色巨型箭头光标飘在旁边，冰淇淋已经被复制成一座高塔。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.6–7.5s 光标转向她，她侧滑出选框，长椅被复制，冰淇淋球掉了一地，她起身就跑；约 8–10s 光标把路边的白色小卷毛狗放大成小马那么大。", at: 2.6 },
+        { title: "一路追逐", text: "约 10–12.5s 她贴着白色货车躲，光标变成油漆桶把车染成亮紫色；约 12.6–15.4s 橡皮擦扫过砖墙，擦出一块灰白透明格子，她凑近戳了戳。", at: 10 },
+        { title: "反转", text: "约 15.4–22s 她被堵在死胡同，光标放大堵住巷口，巨犬冲进来叼住光标乱甩；约 22–25s 她得意地摸狗，光标在她身后湿漉漉地浮起来。", at: 15.4 },
+        { title: "结尾怎么收", text: "约 25.5s 起选框框住她的头，瞬间变成巨大的红色爆炸头；她转身面无表情瞪着光标，巨犬盯着爆炸头准备扑。", at: 25.5 },
+      ],
+      copyThis: "先把「光标」写成有三种形态、有投影、有性格的实物道具，再按 9 个镜头逐秒写动作和音效点（咔哒、啵、汪），每个编辑动作都瞬间完成、落在真实光线里，喜剧感就来自这些「软件操作」在现实里发生。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Wan 3.0",
+      "人物参考图未公开",
+      "喜剧追逐",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备人物参考图（图片1 = Iaro）",
+        description:
+          "提示词写「图片1 命名为【Iaro】，容貌、发型、服装、配饰全部以参考图为准」，要上传一张人物图。作者没有公开这张图，本页参考 1 只是成片第 0 秒的截帧（黑色短发、圆框眼镜、红色开衫），用来示意，不是原图；跟做时换成你自己的人物图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者用的是 Wan 3.0。提示词写 30 秒、16:9；帖子里的成片是 1280×720（16:9）、30fps、约 30.1 秒，没有水印，只有配乐和音效，没有人声。和提示词基本对得上，9 个镜头顺序都在；差别是各段时间点有 1–2 秒的偏差（比如货车约 11 秒就开始变紫），死胡同里光标放大和被叼走的动作比提示词写得简略。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者自回复里的中文提示词整段粘贴，上传人物图。结构依次是：时长画幅和整体风格、角色与道具绑定（光标三种形态、遛狗姑娘、小白）、空间轴线、逐秒音效位置、SHOT 1–9 每镜的动作 / 环境 / 机位 / 表演 / 约束，最后是全片负面约束。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "johnagi168-iaro-image-1-framegrab",
+        number: "1",
+        title: "图片1 · Iaro 人物参考图 · 截帧",
+        subtitle: "提示词「图片1 命名为【Iaro】」= 女主人物参考（容貌、发型、服装、配饰）；原图原帖未公开；此处为成片第 0 秒截帧，仅示意人物，非原图",
+        image: "/tutorials/johnagi168-giant-cursor-street-chase-comedy-wan-3/refs/01-iaro-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开图片1（Iaro）这张人物参考图，也没有附生成它的提示词。此图为成片首帧截帧，仅示意人物，非原图；跟做时请上传你自己的人物图。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.6s 长椅上，光标把她的冰淇淋复制成一座高塔，她惊喜地笑。" },
+      { number: 2, description: "2.6–7.5s 光标转向她，她侧滑出选框，长椅被复制，冰淇淋球掉落，她起身逃跑。" },
+      { number: 3, description: "7.5–10s 她跑过遛狗姑娘，光标把小白放大成巨犬。" },
+      { number: 4, description: "10–12.6s 她贴着白色货车躲，光标变油漆桶把车染成亮紫色。" },
+      { number: 5, description: "12.6–15.4s 橡皮擦扫过砖墙，擦出灰白透明格子，她凑近戳了戳。" },
+      { number: 6, description: "15.4–21.7s 她被堵在死胡同，光标堵住巷口，巨犬冲进来叼住光标。" },
+      { number: 7, description: "21.7–25.5s 她摸巨犬下巴，光标湿漉漉地从狗嘴里掉出又浮起来。" },
+      { number: 8, description: "25.5–28s 选框框住她的头，瞬间变成巨大的红色爆炸头，她拍了拍头。" },
+      { number: 9, description: "28–30.1s 她转身瞪着光标，巨犬盯着爆炸头摆出扑球姿势。" },
+    ],
+    constraints:
+      "素材对应：图片1（Iaro）= 参考 1 的位置，原图原帖未公开，参考 1 为成片首帧截帧仅示意。Iaro 外观全片不变（只有 SHOT 8 发型例外）；所有编辑瞬间完成；光标有投影、不穿过人体；追逐方向始终从右往左；没有任何文字和 Logo；巨犬全程玩耍不凶。和成片的差别：各段时间点偏差 1–2 秒；死胡同段光标放大、选框动作比提示词简略。",
+    video_prompt: {
+      title: "巨型光标喜剧追逐",
+      subtitle: "作者自回复中文完整提示词 · Wan 3.0 · 图片1（Iaro）= 参考 1（人物参考图，原帖未公开，参考 1 为成片截帧仅示意）",
+      content: `Duration：30秒
+
+Aspect ratio：16:9横屏
+
+Overall style：电影实拍质感的都市白天喜剧。真人演员，真实街道，手持跟拍的能量感。图像编辑软件的工具和界面元素以实物形态出现在真实街道上，包括光标、虚线选框、变换框、白色方形把手和灰白透明格子，它们有透视、有遮挡，地面上有淡淡的投影。所有编辑都瞬间完成，干净利落，滑稽无害。动作物理动量连续，严禁静止发呆，严禁塑料CG感。
+
+SUBJECT / 角色与道具绑定：
+
+图片1 命名为【Iaro】，容貌、发型、服装、配饰全部以参考图为准，全片保持一致；
+
+（@只在此处声明一次，正文严禁再出现@）
+
+道具【光标】：巨型电脑光标，带细黑描边的白色哑光实物，常态高约1.2米，悬浮在离地1到1.8米之间，地面上有淡灰色投影。光标有三种形态，切换时"啪"地瞬间变形：
+
+- 箭头形态：经典左上指向的白色箭头；
+
+- 油漆桶形态：白色倾斜的小桶图标，桶口朝下；
+
+- 橡皮擦形态：白色长方体橡皮块，长约1米。
+
+每次"点击"时，光标整体向前点约10厘米，伴随清脆的咔哒声。性格固执又狡猾。
+
+路人与动物：
+
+【遛狗姑娘】年轻女性，浅蓝色卫衣，手牵红色狗绳；
+
+【小白】白色小型卷毛狗，常态肩高约25厘米，被放大后肩高约1.5米，性格欢快，见到会动的东西就想追。
+
+ENVIRONMENT / 空间轴线：
+
+现代城市商业街，晴朗白天。自然阳光从画面右上方45度照下，色温约5600K，阴影清晰柔和。人行道上有木质长椅、路边停着一辆白色厢式货车，有一面红砖墙，街角有一条两侧是砖墙、尽头被墙堵死的窄巷。追逐方向全片统一：Iaro始终从画面右侧往左侧逃，光标始终从画面右侧追来。所有招牌、车身、墙面上都没有任何文字、数字或Logo。
+
+AUDIO / 声音位置，严格按时间（全片无台词，无人声）：
+
+① 0.0s起：城市环境声（远处车流、鸟鸣、路人脚步），原创轻快放克配乐（贝斯加军鼓，无人声），低电平进入；
+
+② 1.2s–2.4s：四声连续的"啵、啵、啵、啵"，冰淇淋球被复制出来；
+
+③ 4.0s"咔哒"；5.6s第二声"咔哒"，长椅被复制，"咚"一声落地；6.2s四个冰淇淋球摔在地上，"啪嗒"；
+
+④ 9.4s"咔哒"，接一声弹性拉伸的"啵——"；10.2s巨犬欢快地低沉吠叫"汪！"；
+
+⑤ 13.2s油漆倾泻的"哗——"；16.2s橡皮摩擦的"擦擦擦"；
+
+⑥ 19.0s光标放大，低频上扬"呜——"；20.0s巨犬吠叫，接着"嗷呜"一口，然后是撕咬玩具的"吱吱"声；
+
+⑦ 23.5s甩水声"噗噜噜"；
+
+⑧ 25.5s配乐戛然而止，只剩环境声；25.8s"咔哒"；26.0s爆炸头弹开，"嘭"的一声；26.8s拍头时头发的弹簧声"啵嘤"；
+
+⑨ 28.0s–30.0s安静，光标晃动时两声俏皮的电子音"嘀嘀"，巨犬尾巴拍地"啪、啪、啪"。
+
+--------------------------------------------------------------------------------
+
+SHOT 1（0.0s–3.5s）｜【冰淇淋复制】
+
+Subject：Iaro，光标
+
+Action：Iaro坐在木质长椅中间，右手握一支单球香草冰淇淋甜筒，正伸舌头要舔。0.6s，箭头光标从画面右侧滑入，停在冰淇淋上方30厘米处。1.0s，一个小号虚线选框框住冰淇淋球。1.2s起，"咔哒"四连击，每0.3秒在顶上复制出一个完全一样的冰淇淋球，摞成5个球、约40厘米高的冰淇淋塔，微微摇晃。2.6s，Iaro眼睛睁大，嘴张开，抬头看光标，咧嘴笑，对光标点了点头。
+
+Environment：长椅背后是人行道和店铺，有零星路人走过。
+
+Camera：35mm，平视中景，Iaro在画面左三分之一处，光标在右三分之一处。1.2s起镜头轻微上摇，跟住长高的冰淇淋塔。
+
+Style：冰淇淋表面有真实的奶油质感和阳光高光，球与球接触处轻微压扁。
+
+Performance：从准备舔，到发愣，再到惊喜，要一气呵成。
+
+Constraints：禁止冰淇淋球悬空分离，每个球必须压在下一个上面。禁止光标碰到Iaro。
+
+SHOT 2（3.5s–7.5s）｜【目标换成Iaro】
+
+Subject：Iaro，光标
+
+Action：3.5s，光标慢慢把箭头转向Iaro。4.0s"咔哒"，一个黑白虚线矩形选框"啪"地合拢，把坐着的Iaro连同身下的长椅一起框住，虚线沿边缘流动。4.3s，Iaro的笑容收住，眼睛往下瞟虚线，再瞟回光标。4.8s，Iaro保持右手举着冰淇淋塔不动，屁股贴着椅面向画面左侧一点点平移，左脚先落地，身体侧滑出选框。选框留在原地。5.6s第二声"咔哒"：选框里的长椅被复制，一张一模一样的长椅"咚"地出现在原长椅右边，紧挨着。5.8s，落地震动让冰淇淋塔剧烈摇晃。6.2s，上面4个球依次滑落，"啪嗒"砸在人行道上，只剩最底下1个。6.6s，Iaro低头看剩下的1个球，再抬头看光标，嘴角下拉。7.0s，Iaro转身向画面左侧起跑，右脚蹬地，身体前倾。
+
+Environment：两张长椅紧挨着并排，掉落的冰淇淋在地上摊开。
+
+Camera：35mm，平视中景，与SHOT 1同轴线。7.0s镜头向左甩，跟住起跑。
+
+Style：选框虚线约3厘米粗，在人身上和长椅上投下极淡的虚线影子。
+
+Performance：侧滑时动作慢而小心，像怕吵醒什么，和后面的爆发起跑形成反差。
+
+Constraints：长椅复制必须在5.6s瞬间完成，不得渐变。Iaro的外观不得发生任何变化。
+
+SHOT 3（7.5s–12.0s）｜【小白变巨犬】
+
+Subject：Iaro，光标，遛狗姑娘，小白
+
+Action：Iaro在人行道上全速向画面左侧冲刺，双臂大幅摆动，光标在Iaro右后方2米处追赶。8.4s，前方遛狗姑娘牵着小白迎面走来。8.8s，Iaro右脚起跳，双膝收起，从小白头顶跃过，左脚先落地，继续跑。9.0s，光标的选框套向Iaro，Iaro已经跳过去，选框落在小白身上。9.4s"咔哒"：小白身上出现带8个白色方形把手的变换框，四角的把手同时向外拉，小白在0.5秒内被等比放大到肩高1.5米，像一匹小马。狗绳仍握在遛狗姑娘手里，姑娘的手臂被一下拉到头顶。10.2s，巨犬欢快地"汪"一声，尾巴猛摇，脑袋跟着光标转来转去，眼睛死死盯着光标，前爪在地上跃跃欲试。11.0s，Iaro边跑边回头，看到巨犬，瞪大眼睛，又回头看第二眼。
+
+Environment：路人纷纷后退给巨犬让出空间，巨犬的卷毛逐根清晰，在阳光下发亮。
+
+Camera：24mm，横移跟拍，机位在Iaro右侧3米处，与Iaro同速向左平移，腰部高度，轻微手持颠簸。
+
+Style：放大后的狗毛质感真实，脚掌接地有重量感。
+
+Performance：巨犬全程开心，不凶，像看见一个大号玩具球。
+
+Constraints：禁止狗变形或变丑，只能等比放大。禁止遛狗姑娘摔倒。禁止Iaro碰到小白。
+
+SHOT 4（12.0s–15.0s）｜【油漆桶：货车染紫】
+
+Subject：Iaro，光标
+
+Action：12.0s，Iaro冲到一辆停在路边的白色厢式货车旁，后背和双手掌心紧贴车身侧面，憋住呼吸，屏息躲藏。12.6s，光标"啪"地变成油漆桶形态，悬停在货车车尾上方。13.0s"咔哒"，桶口点在车尾，鲜艳的亮紫色从点击处向车头方向扩散，像水波一样漫过白色车身，0.6秒内覆盖整辆车。13.3s，Iaro瞥见紫色从右侧涌来，在紫色到达后背前0.2秒，双手一推车身，向画面左侧弹开半米。13.8s，整辆货车变成纯亮紫色，Iaro站在旁边，低头看自己的双手，确认没被染色，长出一口气，继续跑。
+
+Environment：紫色只停在车身漆面上，车窗、轮胎、车灯都保持原样。
+
+Camera：35mm，平视中景，侧面拍货车和Iaro，货车占画面右三分之二，Iaro在画面左侧边缘。
+
+Style：紫色漆面在阳光下有真实的车漆反光。
+
+Performance：贴车躲藏时双眼圆睁，嘴唇紧抿。
+
+Constraints：Iaro身上不得沾到任何紫色。禁止油漆液体溅出车身之外，变色只发生在车身表面。
+
+SHOT 5（15.0s–18.0s）｜【橡皮擦：墙上擦出透明格子】
+
+Subject：Iaro，光标
+
+Action：Iaro沿红砖墙向画面左侧奔跑。15.5s，光标"啪"地变成橡皮擦形态，从Iaro右后方追上来，在头部高度从右向左横扫过来。15.9s，Iaro双膝一弯，上身前折，向下滑铲，橡皮擦从Iaro头顶上方擦过，扫在砖墙上。16.2s，"擦擦擦"三下来回摩擦，砖墙被擦掉一块约1米见方的区域。缺口里不是墙洞，而是一块平整的灰白相间的棋盘格透明背景图案，边缘干净。16.8s，Iaro从滑铲中站起，停下回头，把脸凑近那块棋盘格，用右手食指轻戳一下，指尖碰到的是一个平面，Iaro的眉毛挑起。17.4s，橡皮擦又扫过来，Iaro转身拔腿就跑。
+
+Environment：棋盘格每格约5厘米，灰白两色，平铺在墙面上，周围砖块完好。
+
+Camera：35mm，跟拍转为静止中景。16.8s镜头轻推，Iaro的侧脸和棋盘格同时在画面里。
+
+Style：棋盘格像墙面的一部分，同样被阳光照亮，有砖墙一致的透视。
+
+Performance：戳棋盘格时的好奇和怀疑，是这段的笑点。
+
+Constraints：禁止橡皮擦碰到Iaro。棋盘格禁止发光，禁止出现文字或数字。
+
+SHOT 6（18.0s–22.5s）｜【死胡同：巨犬救场】
+
+Subject：Iaro，光标，小白
+
+Action：18.0s，Iaro拐进窄巷，跑到尽头，被墙堵住，转身背贴墙面，双手摊在墙上。18.5s，光标变回箭头形态，飘到巷口，周身出现变换框，从1.2米膨胀到3米高，堵住整个巷口。19.4s，光标拖出一个虚线矩形选框，框住整条巷子和Iaro。Iaro闭上眼，脸扭向一边。20.0s，巨犬从光标身后的巷口跃起，前爪腾空，一口咬住光标的尾端，叼在嘴里，落地后左右猛甩脑袋，像甩玩具一样。光标的变换框和选框同时闪两下消失，光标在狗嘴里缩回1.2米，被甩得左右乱晃。21.0s，巨犬叼着光标趴下，前爪按住，开心地啃咬，尾巴拍地。21.5s，Iaro睁开一只眼，再睁开另一只，背贴着墙慢慢滑坐到地上，喘着气笑出来。
+
+Environment：窄巷两侧是红砖墙，地面有一些积水，巨犬落地时溅起水花。
+
+Camera：18.0s–19.4s，24mm低机位，从Iaro身后、贴近墙角处拍出去，光标在巷口逆光。20.0s切35mm侧面中景，拍巨犬跃起叼住光标的完整动作弧线。
+
+Style：光标在狗嘴里被咬出真实的压痕，有弹性。
+
+Performance：巨犬全程是玩耍，不是攻击。
+
+Constraints：禁止狗撕碎光标。禁止Iaro在本镜头被选中编辑。禁止出现文字。
+
+SHOT 7（22.5s–25.5s）｜【以为结束了】
+
+Subject：Iaro，光标，小白
+
+Action：22.5s，Iaro站起来，拍了拍裤子，走到巨犬面前，伸手挠它的下巴，脸上是得意的笑。23.0s，巨犬张嘴吐舌头哈气，光标从嘴里滑出，湿漉漉、皱巴巴地掉在地上。23.5s，光标晃晃悠悠浮起，飘到Iaro后脑后方1米处，像狗一样抖身，"噗噜噜"甩出一圈水珠，皱褶瞬间恢复平整。Iaro背对着光标，正在摸狗，毫无察觉。
+
+Environment：甩出的水珠在阳光下闪亮，落在地上。
+
+Camera：35mm，平视中景，Iaro和巨犬在画面左侧，光标在画面右侧Iaro的身后升起，镜头静止。
+
+Style：浅景深，Iaro和光标都清晰。
+
+Performance：Iaro完全放松，甚至有点得意，和下一镜形成反差。
+
+Constraints：Iaro不得回头。光标抖水时不得碰到Iaro。
+
+SHOT 8（25.5s–28.0s）｜【红色爆炸头】
+
+Subject：Iaro，光标
+
+Action：25.8s"咔哒"，一个虚线矩形选框"啪"地合拢，只框住Iaro的头部。26.0s，无论Iaro原本是什么发型，都在0.4秒内"嘭"地膨胀成一个巨大的鲜红色爆炸头：直径约60厘米，正圆形，由紧密的小卷组成，整颗都是同一种正红色，比Iaro的肩膀还宽。26.4s，选框消失。26.6s，Iaro整个人僵住，手还停在狗下巴上。Iaro的右手慢慢抬起来，拍了一下头顶，爆炸头像弹簧一样上下弹了两下。
+
+Environment：爆炸头的边缘在阳光下透出红色的光晕。
+
+Camera：35mm，从Iaro侧后方的中景开始，26.0s起缓慢推近，让爆炸头的体积和形状一目了然。
+
+Style：发卷逐根清晰，有真实的蓬松度和弹性，绝不能是一块头套或一颗毛球。
+
+Performance：从僵住到拍头，脸上没有表情，只有手在动。
+
+Constraints：发型变化只能发生在26.0s–26.4s之间。只有发型改变，Iaro的脸、服装、配饰必须与参考图完全一致。爆炸头禁止出现红色以外的颜色。
+
+SHOT 9（28.0s–30.0s）｜【"真的假的？"】
+
+Subject：Iaro，光标，小白
+
+Action：28.0s，Iaro慢慢转身，用0.8秒转过来面向光标，爆炸头随转身轻微颤动。28.8s，Iaro停住，面无表情地瞪着光标，眉毛压低，嘴角下拉，长长地从鼻子呼出一口气。29.0s，光标在画面右侧左右轻快地摇摆两下，一副无辜的样子。29.3s，画面左下角，巨犬的眼睛盯住了这颗又圆又弹的红色爆炸头，脑袋一歪，尾巴越摇越快，前爪压低身体，摆出扑球前的预备姿势。29.6s，Iaro的眼珠慢慢斜向巨犬。30.0s定格。
+
+Environment：巷子里的阳光打在爆炸头上，背景微虚。
+
+Camera：50mm近景，Iaro在画面中央，胸部以上加爆炸头完整入画，光标在右侧边缘，巨犬的脑袋从左下角入画。镜头静止。
+
+Style：喜剧节奏靠最后的停顿和眼神来出效果。
+
+Performance："真的假的？"只靠表情：先是无语，再是警惕，绝不开口。
+
+Constraints：禁止Iaro说话或张口。巨犬禁止真的扑上去，停在预备姿势。禁止出现字幕或文字。
+
+--------------------------------------------------------------------------------
+
+NEGATIVE / 全片负面约束：
+
+禁止任何文字、字母、数字、Logo、水印、字幕，禁止软件界面的文字菜单和工具栏。禁止对白和人声。禁止开场静止发呆。禁止Iaro的脸、服装、配饰偏离参考图或在镜头间漂移（只有SHOT 8的发型变化例外）。禁止假发套感的头发、塑料皮肤、浮肿卧蚕、CG蜡像脸。禁止变形带有恐怖、血腥或伤害感，巨犬禁止凶狠。禁止光标穿过人体，光标漂浮时必须有投影。禁止追逐方向反转。禁止物体悬空。禁止画面卡通化，所有编辑元素都必须像实物一样嵌在真实光线里。
+`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/umesh_ai/status/2106673312642515325 ，提示词在 ChatGPT 分享链接 https://chatgpt.com/share/6ac217f2-9654-83ee-86fc-3f973f4206d0 （作者发给 ChatGPT 的消息，开头「Prompt :」和结尾「— Do nothing」是对 ChatGPT 的话，已去掉）。同作者站内已有折叠海天、AGAIN 单图广告、雨天单车纸艺三条，都不是本片。无引用帖；提示词是纯文生，没有引用任何参考素材
+  {
+    id: "umesh-rally-car-vs-avalanche-one-shot-kling",
+    title: "拉力赛车狂飙躲雪崩 · 一镜到底冲进隧道",
+    subtitle: "X · @umesh_ai · Kling AI 4.0 Flash · 20秒 · 16:9",
+    description:
+      "镜头从雪山高空俯冲，贴着拉力赛车在悬崖雪路上漂移，身后雪崩追来，一路冲进隧道。",
+    video: "/tutorials/umesh-rally-car-vs-avalanche-one-shot-kling/demo-web.mp4",
+    poster: "/tutorials/umesh-rally-car-vs-avalanche-one-shot-kling/poster.jpg",
+    duration: "20秒",
+    durationSec: 20,
+    styleLabel: "写实动作",
+    shots: 6,
+    references: 0,
+    model: "Kling AI 4.0 Flash（帖子没写工具，成片右下角有 KlingAI 4.0 Flash 水印）",
+    style: "好莱坞大片写实 · 晴朗雪山强光 · 一镜到底 FPV 式高速跟拍 · 雪雾和动态模糊",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/umesh_ai/status/2106672796009165284",
+    sourceAuthor: "@umesh_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 1372,
+    sourceStats: { asOf: "2026-10-04", likes: 29, reposts: 1, bookmarks: 6 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "高空俯冲 → 贴车侧拍 → 后方追车漂移 → 正面倒退跟拍 → 冲进隧道",
+      opening: "第 0 秒镜头在雪山悬崖上方高速前冲、往下俯冲，岩壁和雪坡从画面边缘掠过，还没看到车。",
+      openingAt: 0,
+      beats: [
+        { title: "贴车冲刺", text: "约 4–5s 镜头落到红白拉力赛车侧面，几乎贴着车轮，雪粉从轮胎下飞出。", at: 4 },
+        { title: "漂移追逐", text: "约 5–15s 镜头在车后方和侧后方紧追，赛车在悬崖雪路上连续漂移过弯，雪雾不断扑向镜头，身后雪坡腾起雪云。", at: 5 },
+        { title: "结尾怎么收", text: "约 15–18s 镜头转到车头前方倒退跟拍，约 18.5–20s 镜头先退进隧道口，赛车跟着冲进黑暗的隧道。", at: 15 },
+      ],
+      copyThis: "提示词每 4 秒一段，每段都同时写清「镜头怎么动 + 车在干什么 + 雪崩到了哪」，再单独列出镜头动作清单和「每秒都要有危险」的要求，所以 20 秒里镜头一直在变高度、变角度，没有一秒是静的。",
+      approx: true,
+    },
+    tags: [
+      "20秒",
+      "16:9 横屏",
+      "Kling AI 4.0",
+      "一镜到底",
+      "纯文生视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：打开提示词链接",
+        description:
+          "作者把提示词放在回复里的 ChatGPT 分享链接里（他发给 ChatGPT 的一条消息，后面写了 Do nothing，ChatGPT 只回了 Understood）。本页收录的是这条消息里的完整英文提示词，去掉了开头的「Prompt :」和结尾的「— Do nothing」。提示词没有引用任何参考图或参考视频，是纯文生视频。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "帖子没写用的什么工具，但成片右下角一直有「KlingAI 4.0 Flash」水印。成片是 1280×720（16:9）、24fps、约 20.1 秒，一镜到底没有切点；有声音，语音识别没有识别出人声。和提示词对不上的地方：雪崩更像身后腾起的雪云，没有提示词写的「整面山塌下来、吞掉路段」那么大；结尾没有看到雪崩砸在隧道口的画面。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把英文提示词整段粘贴。结构依次是：标题时长、一镜到底要求、核心概念、视觉世界、0–4 / 4–8 / 8–12 / 12–16 / 16–20 秒五段动作、镜头运动清单、赛车动作清单、混乱事件清单、速度感、雪崩、音频和最终观感。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 镜头在雪山悬崖上空高速前冲、俯冲，岩壁掠过。" },
+      { number: 2, description: "4–5s 镜头落到红白拉力赛车侧面，贴着车轮，雪粉飞溅。" },
+      { number: 3, description: "5–10s 镜头在车后方紧追，赛车沿悬崖雪路漂移过弯。" },
+      { number: 4, description: "10–15s 镜头在侧后方跟拍，雪雾扑向镜头，身后雪坡腾起雪云。" },
+      { number: 5, description: "15–18s 镜头转到车头前方倒退跟拍，赛车迎面冲来。" },
+      { number: 6, description: "18–20.1s 镜头退进隧道口，赛车跟着冲进黑暗的隧道。" },
+    ],
+    constraints:
+      "参考素材：提示词没有引用任何参考图或参考视频，是纯文生视频。一镜到底无剪辑、无变形转场；赛车和镜头全程极速，没有慢下来的时刻；每秒都要有危险事件；雪崩越来越近；无对白、无配乐，只靠引擎、风、轮胎和雪崩声。和成片的差别：雪崩规模偏小，更像雪云；结尾没看到雪崩封住隧道口。",
+    video_prompt: {
+      title: "20-Second Ultrafast Rally Car vs Avalanche",
+      subtitle: "ChatGPT 分享链接里的英文完整提示词 · Kling AI 4.0 Flash（据水印）· 纯文生，提示词没有引用任何参考素材",
+      content: `TITLE:
+20-Second Ultrafast Rally Car vs Avalanche
+
+DURATION:
+Exactly 20 seconds.
+
+FORMAT:
+One true unbroken continuous shot.
+
+No cuts.
+No morphing.
+No hidden transitions.
+No scene changes.
+No slow moments.
+No static camera.
+No calm sections.
+
+The rally car and camera must both move at extreme speed throughout the entire 20 seconds.
+
+CORE CONCEPT:
+A hyper-realistic blockbuster action sequence follows a rally car racing at terrifying speed along a narrow alpine cliff road while a gigantic avalanche tears down the mountain behind it.
+
+The car is trying to reach a tunnel before the entire road disappears beneath the collapsing snow.
+
+Everything should look enormous, expensive, dangerous, cinematic, and visually spectacular.
+
+The car should feel insanely fast.
+
+The camera should feel even more aggressive.
+
+The avalanche should feel like a moving wall of destruction.
+
+Every second should contain speed, danger, debris, drifting, snow spray, changing camera perspective, or a near disaster.
+
+VISUAL WORLD:
+Bright cold alpine daylight.
+
+Huge snow-covered mountains.
+
+Deep blue sky.
+
+Sharp sunlight reflecting from ice.
+
+Massive rocky cliffs.
+
+A narrow road carved into the mountainside.
+
+A terrifying vertical drop beside the road.
+
+Fine snow particles sparkling in sunlight.
+
+Wind blowing powder across the road.
+
+Long mountain shadows.
+
+Extremely detailed snow textures.
+
+Realistic ice reflections.
+
+Huge environmental scale.
+
+The rally car should look small compared with the mountains and avalanche, making the danger feel enormous.
+
+The image should look like a premium blockbuster film shot with a large-format cinema camera.
+
+Photorealistic.
+
+Extremely detailed.
+
+High dynamic range.
+
+Beautiful highlights.
+
+Deep realistic shadows.
+
+Crisp environmental detail.
+
+Natural motion blur.
+
+Realistic reflections across the car body and windows.
+
+No videogame appearance.
+
+No artificial CGI feel.
+
+0 TO 4 SECONDS:
+MASSIVE AERIAL REVEAL AND EXTREME DIVE
+
+Begin extremely high above the alpine landscape.
+
+The camera is already moving rapidly forward.
+
+Reveal an enormous mountain range covered in bright white snow.
+
+Far below, the rally car is already racing at extreme speed along a razor-thin cliff road.
+
+The road twists violently through the mountains.
+
+The sheer drop beside it looks terrifying.
+
+Behind the car, the entire mountainside begins collapsing.
+
+A gigantic avalanche erupts downward.
+
+Huge sheets of snow fracture.
+
+Powder explodes into the air.
+
+Chunks of compacted snow tumble across the slope.
+
+The avalanche rapidly grows into a giant moving white wall.
+
+The camera immediately accelerates downward.
+
+It performs an extremely fast diving move toward the rally car.
+
+The mountains rush past.
+
+Perspective compresses violently.
+
+The rally car grows rapidly larger in frame.
+
+Wind and motion blur increase dramatically.
+
+The camera should feel like it is falling from the sky at enormous speed.
+
+Before reaching the car, the camera banks aggressively around a rocky cliff edge.
+
+The vehicle blasts into view beneath it.
+
+Everything happens without a cut.
+
+4 TO 8 SECONDS:
+SIDE CHASE AND WHEEL-LEVEL CHAOS
+
+The camera drops beside the rally car.
+
+It races parallel to the doors only a few meters away.
+
+The car is moving unbelievably fast.
+
+Suspension compresses violently.
+
+The body shakes over icy imperfections.
+
+Snow sprays constantly from all four tires.
+
+The engine screams at high RPM.
+
+The rear tires lose grip.
+
+The car snaps sideways into an icy corner.
+
+The camera immediately drops lower.
+
+It dives toward wheel height.
+
+Now the camera is flying beside the spinning tires.
+
+The road surface flashes beneath the lens.
+
+Ice particles and snow blast toward camera.
+
+Tiny rocks bounce across the road.
+
+The tire almost touches the road edge.
+
+The cliff drop flashes beside it.
+
+The car clips a snow bank.
+
+A huge explosion of powder fills part of the frame.
+
+The camera punches through the snow cloud without stopping.
+
+The car emerges sideways, still accelerating.
+
+Behind it, the avalanche crashes into the road it occupied only moments earlier.
+
+A giant burst of snow and debris shoots across the cliff.
+
+8 TO 12 SECONDS:
+SWITCHBACK DRIFT AND MASSIVE AVALANCHE REVEAL
+
+The camera rapidly rises from wheel level.
+
+It sweeps over the roof of the car.
+
+Without slowing, it climbs into a fast overhead tracking angle.
+
+Now reveal the full scale of the disaster.
+
+The rally car races below.
+
+The road snakes across the mountainside.
+
+Directly behind it, the avalanche is swallowing entire sections of road.
+
+Snow clouds climb high into the air.
+
+Chunks of ice tumble down the cliff.
+
+Powder pours over the road edges like waterfalls.
+
+The car enters an extremely tight switchback at impossible-looking speed.
+
+It throws itself sideways.
+
+The rear end swings toward the cliff edge.
+
+For a split second, one side of the car appears dangerously close to the drop.
+
+The driver violently corrects.
+
+The tires regain grip.
+
+The car launches out of the corner.
+
+The camera performs a huge fast orbit around the drifting vehicle.
+
+During the orbit, the mountains rotate through the background.
+
+The avalanche remains visible behind.
+
+Snow sprays through sunlight, creating brilliant sparkling particles.
+
+The camera continues circling while descending again.
+
+There is no pause between movements.
+
+12 TO 16 SECONDS:
+FRONT-FACING HIGH-SPEED ESCAPE
+
+The camera races ahead of the rally car.
+
+It flips smoothly into a front-facing backward tracking position.
+
+The camera is now flying backward at extreme speed while facing the approaching car.
+
+The rally car fills more of the frame.
+
+It looks aggressive, unstable, and incredibly fast.
+
+The headlights flicker through blowing snow.
+
+The front suspension jumps over rough ice.
+
+The tires throw snow outward.
+
+The avalanche dominates the background behind the vehicle.
+
+It is now terrifyingly close.
+
+Huge rolling clouds of white destruction fill the mountain.
+
+Snow collapses onto the road behind the car.
+
+A large chunk of snow and ice falls onto the road ahead.
+
+The driver instantly swerves.
+
+The car barely misses it.
+
+The rear end slides outward.
+
+The camera whips sideways to maintain framing.
+
+The car passes within inches of another snow wall.
+
+Loose snow explodes across the lens.
+
+For a fraction of a second the image becomes partially obscured.
+
+The camera punches through the powder.
+
+The rally car is still there, still charging forward.
+
+The tunnel becomes visible far ahead.
+
+16 TO 20 SECONDS:
+FINAL MAXIMUM-CHAOS TUNNEL SPRINT
+
+The final four seconds should be the most intense part of the entire sequence.
+
+The rally car accelerates even harder.
+
+The camera also increases speed.
+
+The road becomes narrower.
+
+The avalanche begins collapsing across the mountain directly beside the road.
+
+Snow pours down beside the moving car.
+
+Chunks bounce across the asphalt.
+
+A giant cloud of powder rolls over the cliff edge.
+
+The camera sweeps extremely close to the car’s front corner.
+
+It then rockets alongside the vehicle.
+
+The rally car drifts around one final bend.
+
+The rear tires blast a massive curtain of snow into the air.
+
+The camera cuts through the snow cloud physically, without an edit.
+
+As it emerges, the tunnel entrance suddenly appears directly ahead.
+
+The avalanche is now almost touching the car.
+
+The road behind disappears beneath exploding snow.
+
+A wave of powder races beside the vehicle.
+
+The camera swings rapidly in front of the car again.
+
+The vehicle charges directly toward the lens.
+
+The camera flies backward into the tunnel entrance.
+
+The rally car follows at full speed.
+
+At the exact moment the car crosses into the tunnel, a gigantic avalanche slams across the entrance behind it.
+
+The outside world disappears in a violent explosion of snow, powder, ice, and debris.
+
+The final frame continues moving rapidly deeper into the dark tunnel with the rally car still accelerating.
+
+Do not end with a calm shot.
+
+Do not slow down.
+
+The sequence should end with momentum still carrying forward.
+
+CAMERA MOVEMENT:
+The camera is extremely fast throughout.
+
+It should:
+
+dive vertically at high speed
+
+bank around cliffs
+
+race beside the car
+
+drop to tire level
+
+rise rapidly overhead
+
+perform aggressive aerial arcs
+
+orbit around the drifting vehicle
+
+rush forward past the car
+
+track backward directly in front of it
+
+sweep extremely close to body panels
+
+pass through snow clouds
+
+react instantly to every drift and obstacle
+
+The camera should constantly change height, distance, and orientation while maintaining one physically continuous path.
+
+Camera movement should feel powerful and fluid, but never relaxed.
+
+No gentle drone movement.
+
+No slow crane moves.
+
+No static framing.
+
+No long wide shots.
+
+Every camera move must increase speed, danger, scale, or visual excitement.
+
+CAR MOVEMENT:
+The rally car stays extremely fast throughout the entire sequence.
+
+It should constantly:
+
+accelerate
+
+drift
+
+countersteer
+
+snap between directions
+
+fight for traction
+
+compress its suspension
+
+blast through snow
+
+slide close to cliff edges
+
+avoid falling debris
+
+clip snow banks
+
+launch out of corners
+
+The car should never coast casually.
+
+The driver is always fighting the mountain.
+
+CHAOS:
+Something dangerous or visually dramatic should happen every second.
+
+Examples:
+
+snow banks exploding
+
+ice chunks falling
+
+rocks bouncing
+
+powder crossing the road
+
+tires slipping
+
+car nearly reaching cliff edge
+
+avalanche swallowing road sections
+
+snow striking camera
+
+debris falling ahead
+
+rapid evasive steering
+
+giant clouds of powder
+
+road disappearing behind the vehicle
+
+Chaos must constantly escalate.
+
+Nothing resets between moments.
+
+Each dangerous event should naturally lead directly into the next.
+
+SENSE OF SPEED:
+Make the speed visually unmistakable.
+
+Use:
+
+intense foreground motion blur
+
+rapidly passing road texture
+
+snow streaking across frame
+
+fast parallax from cliffs and barriers
+
+violent spinning wheels
+
+suspension movement
+
+rapid environmental scale changes
+
+aggressive camera acceleration
+
+snow particles flying past the lens
+
+close passes near road surfaces and rocks
+
+The car should feel dangerously fast even during wide shots.
+
+AVALANCHE:
+The avalanche must look enormous.
+
+Not simply falling snow.
+
+It should feel like an entire mountainside collapsing.
+
+Include:
+
+fracturing snow slabs
+
+towering powder clouds
+
+rolling snow masses
+
+falling chunks of ice
+
+snow waterfalls over cliffs
+
+debris mixed into the avalanche
+
+shock-like bursts of powder
+
+road sections being swallowed
+
+The avalanche should become larger and closer throughout the video.
+
+It begins as a massive threat.
+
+By the final seconds, it becomes almost overwhelming.
+
+AUDIO:
+Huge rally engine.
+
+Turbo sounds.
+
+Rapid gear shifts.
+
+Tires scratching across ice.
+
+Snow blasting against the bodywork.
+
+Wind screaming around the camera.
+
+Deep avalanche rumble.
+
+Explosive snow impacts.
+
+Falling rock and ice.
+
+Suspension hits.
+
+Echo beginning as the car enters the tunnel.
+
+No dialogue.
+
+No music required.
+
+Let the engine, wind, tires, avalanche, and impacts create the intensity.
+
+FINAL VISUAL FEEL:
+An enormous premium blockbuster action spectacle compressed into 20 seconds.
+
+Beautiful but terrifying.
+
+Extremely fast.
+
+Huge scale.
+
+Constant movement.
+
+Continuous chaos.
+
+Spectacular alpine scenery.
+
+Violent avalanche destruction.
+
+Aggressive racing.
+
+Impossible-looking but physically believable camera choreography.
+
+Every frame should look expensive and cinematic.
+
+Every second should introduce another incredible visual.
+
+The car never stops.
+
+The camera never stops.
+
+The avalanche never stops.
+
+The intensity only increases until the car explodes into the tunnel with the mountain collapsing immediately behind it.
+`,
+    },
+  },
+  // 查重说明：主帖正文即完整提示词（长帖，开头「Image : ChatGPT / Video : Seedance 2.5, 20s, 720p」是工具信息，已去掉）。无引用帖、无外链文档；作者在回复里只有一条感谢。「Image : ChatGPT」那张图（成片开场 0–4.5 秒的静止画面应即这张图）原帖未公开，参考 1 为成片首帧截帧
+  {
+    id: "liluocheng-julia-doberman-noir-club-seedance-2-5",
+    title: "黑帮女王与两只杜宾 · 红色夜总会里的冷静对峙",
+    subtitle: "X · @liluocheng13 · ChatGPT 生图 + Seedance 2.5 · 20秒 · 16:9",
+    description:
+      "金发女人站在红色夜总会中央，两只杜宾犬冲向黑衣人，她整理头发、踩住掉落的手枪，平静离开。",
+    video: "/tutorials/liluocheng-julia-doberman-noir-club-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/liluocheng-julia-doberman-noir-club-seedance-2-5/poster.jpg",
+    duration: "20秒",
+    durationSec: 20,
+    styleLabel: "黑色电影",
+    shots: 8,
+    references: 1,
+    model: "ChatGPT 生图 + Seedance 2.5（帖子写 Image : ChatGPT / Video : Seedance 2.5, 20s, 720p）",
+    style: "写实动作惊悚 · 深红暗调夜总会 · 黑色电影高反差 · 35mm 变形宽银幕",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/liluocheng13/status/2106617673492672562",
+    sourceAuthor: "@liluocheng13",
+    sourcePlatform: "X",
+    sourceImpressions: 1381,
+    sourceStats: { asOf: "2026-10-04", likes: 53, reposts: 5, bookmarks: 11 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "静止开场（女人 + 两只杜宾）→ 面部特写整理头发 → 杜宾冲向入侵者 → 走廊漫步 → 高跟鞋踩住手枪 → 低角度全景收尾",
+      opening: "第 0 秒正面中景：金发女人穿黑色吊带裙站在红色夜总会中央，两侧各坐一只杜宾犬，背后有黑衣人，她抬起一只手。",
+      openingAt: 0,
+      beats: [
+        { title: "面部特写", text: "约 4.5–7s 切到她的面部特写，红光下她慢慢把金发拨到耳后，露出冷静的微笑。", at: 4.5 },
+        { title: "杜宾出击", text: "约 7–9.5s 两只杜宾犬扑向黑衣人，扑克牌和桌椅在黑色大理石地面上翻飞。", at: 7 },
+        { title: "踩住手枪", text: "约 9.5–12s 她穿过走廊；约 12–14s 红地毯上倒地敌人的手伸向手枪，黑色高跟鞋踩在枪旁。", at: 9.5 },
+        { title: "结尾怎么收", text: "约 15s 起低角度仰拍全景，她站在两只杜宾中间，脚下躺着黑衣人，轻拨头发。", at: 15 },
+      ],
+      copyThis: "先用一张 ChatGPT 生成的人物图当首帧锁住人物和场景，再用「她越平静、周围越混乱」的反差写 5 个镜头，每个镜头只给她一个很小的动作（拨头发、整理裙摆、踩住枪旁的地面）。",
+      approx: true,
+    },
+    tags: [
+      "20秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "首帧图未公开",
+      "黑帮动作",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 ChatGPT 生成人物首帧图",
+        description:
+          "帖子第一行写「Image : ChatGPT」，说明先用 ChatGPT 生成了一张图再做视频。成片开场 0–4.5 秒是一个几乎静止的正面画面（金发女人、黑色吊带裙、两只杜宾、红色夜总会），应该就是这张图。作者没有公开这张图，也没有附它的提示词；本页参考 1 是成片第 0 秒的截帧，仅示意，不是原图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "视频用 Seedance 2.5，作者写 20 秒、720p。帖子里的成片是 1280×720（16:9）、24fps、约 20.1 秒，没有水印，有声音，语音识别没有识别出人声。和提示词对不上的地方：提示词只写了 0–15 秒 5 个镜头，成片多出开场约 4.5 秒的静止画面，后面镜头整体往后推；杜宾「跃过翻倒的桌椅」那段很短；结尾她没有转身离开。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把主帖里的提示词整段粘贴（中文为主，结尾视觉风格是英文），上传人物图。结构依次是：场景与人物设定、镜头 1–5（每 3 秒一镜，写景别和动作）、视觉风格。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "liluocheng-chatgpt-image-framegrab",
+        number: "1",
+        title: "Image : ChatGPT · 人物首帧图 · 截帧",
+        subtitle: "帖子「Image : ChatGPT」= 先用 ChatGPT 生成的人物 / 场景图（成片开场 0–4.5 秒的静止画面）；原图原帖未公开；此处为成片第 0 秒截帧，仅示意，非原图",
+        image: "/tutorials/liluocheng-julia-doberman-noir-club-seedance-2-5/refs/01-chatgpt-image-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开这张 ChatGPT 生成的图，也没有附生图提示词。此图为成片首帧截帧，仅示意人物和场景，非原图；跟做时请自己生成一张同样构图的人物图。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–4.5s 正面中景，金发女人站在红色夜总会中央，两侧各坐一只杜宾，她抬起一只手。" },
+      { number: 2, description: "4.5–7s 面部特写，红光下她把金发拨到耳后，微笑。" },
+      { number: 3, description: "7–9.5s 两只杜宾扑向黑衣人，扑克牌和桌椅翻飞。" },
+      { number: 4, description: "9.5–12s 她穿过红色走廊。" },
+      { number: 5, description: "12–14s 红地毯上倒地敌人的手伸向手枪，黑色高跟鞋踩在枪旁。" },
+      { number: 6, description: "14–15s 黑色裙摆特写。" },
+      { number: 7, description: "15–16s 面部近景，金发垂落。" },
+      { number: 8, description: "16–20.1s 低角度仰拍全景，她站在两只杜宾中间，脚下躺着黑衣人，轻拨头发。" },
+    ],
+    constraints:
+      "素材对应：「Image : ChatGPT」= 参考 1 的位置（ChatGPT 生成的人物首帧图），原图原帖未公开，参考 1 为成片首帧截帧仅示意。女主全程冷静优雅，与周围暴力形成反差；动作符合真实物理；不要奇幻和超级英雄动作。和成片的差别：多出约 4.5 秒静止开场，镜头整体后移；杜宾跃过桌椅的段落很短；结尾没有转身离开。",
+    video_prompt: {
+      title: "黑帮女王对峙",
+      subtitle: "主帖完整提示词 · Seedance 2.5 · Image : ChatGPT = 参考 1（人物首帧图，原帖未公开，参考 1 为成片截帧仅示意）",
+      content: `紧张刺激、令人窒息的黑帮对峙。 地点：奢华的深红色私人夜总会，黑色大理石地面，昏暗暖红灯光，浓厚的黑色电影氛围。 Julia（金发欧洲美人，30岁左右，精致冷艳的面容，卷曲金色长发，优雅危险的气质）站在场景中心。 她穿着黑色高级定制吊带晚礼服，修身剪裁，黑色高跟鞋，身材优雅而充满力量。 她身边两只黑色杜宾犬安静守护。 她的冷静、优雅与周围混乱的暴力形成强烈反差，展现绝对控制力和女王般的压迫感。 镜头1（0-3秒） 特写： Julia面部微距特写。 金色卷发轻轻落在肩旁，柔和灯光勾勒她精致的五官。 她身后几名黑衣男子快速逼近。 Julia没有任何恐惧。 她缓慢抬手，将被风吹乱的金色长发轻轻整理到耳后。 动作优雅、从容，露出冷静而自信的微笑。 仿佛眼前的一切都在她掌控之中。 镜头2（3-6秒） 广角低角度： 两只黑色杜宾犬突然跃过翻倒的桌椅，冲向入侵者。 扑克牌、碎裂酒杯、红色酒液在空中飞溅。 摄影机跟随犬只高速移动。 动作符合真实物理规律。 环境混乱，但Julia依旧站在中心位置，一动不动。 镜头3（6-9秒） 中景： Julia缓慢穿过夜总会走廊。 身后战斗爆发。 一只杜宾犬将敌人撞向墙壁。 她没有回头，只是轻轻整理自己的裙摆，然后继续向前走。 步伐稳定，优雅，充满危险气息。 镜头4（9-12秒） 微距： 红色地毯上，一名倒地敌人的手伸向掉落的手枪。 黑色高跟鞋缓缓踩住枪旁的地面。 不是用力，而是一种绝对支配的姿态。 镜头缓慢上升。 Julia低头俯视敌人。 金色长发垂落，表情冷漠平静。 镜头5（12-15秒） 全景： 从倒地敌人的低角度仰拍。 Julia站在中央，如黑帮女王般矗立。 黑色礼服、金色长发、红色灯光形成强烈视觉冲击。 两只杜宾犬站在她两侧。 她轻轻整理最后一缕头发，然后微微转身离开。 留下满地狼藉。 她的平静，比暴力更加令人恐惧。 视觉风格： Ultra realistic cinematic action thriller. Hollywood female crime boss aesthetic. John Wick inspired grounded choreography. Elegant brutalism. Realistic human movement. Natural physics. 35mm anamorphic lens. Dark red noir lighting. High contrast cinematic photography. Realistic skin texture. Premium feature film quality. No fantasy. No superhero movements.
+`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/ElsaSofia__AI/status/2106928513710518539 （附 MASTER STORYBOARD 分镜图）。同作者站内已有 elsasofia-hallway-dance-kid-filming-seedance-2-5（2104029660619153720，走廊跳舞），不是本片。无引用帖、无外链文档；提示词里的 character reference 原帖未公开。分镜图标题写「ORIGINAL VIDEO FRAMES」，是从一条原视频截的帧（带韩文字幕和 KFC 纸盒），原视频作者没有给出
+  {
+    id: "elsasofia-telescope-fried-chicken-office-seedance-2-5",
+    title: "高空瞄准镜里飞来一块炸鸡 · 办公室同事一起开吃",
+    subtitle: "X · @ElsaSofia__AI · Seedance 2.5 · 17秒 · 16:9",
+    description:
+      "女人趴在高空塔吊上用瞄准镜盯着对面写字楼，一块炸鸡突然飞来被她一口咬住，办公室里的人也跟着吃起炸鸡。",
+    video: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/poster.jpg",
+    duration: "17秒",
+    durationSec: 17,
+    styleLabel: "广告喜剧",
+    shots: 11,
+    references: 2,
+    model: "Seedance 2.5（帖子写 Made with Seedance 2.5）",
+    style: "写实电影感广告 · 高空塔吊 + 玻璃写字楼 · 快切 13 镜 · 冷峻开场转反差喜剧",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ElsaSofia__AI/status/2106928507809100018",
+    sourceAuthor: "@ElsaSofia__AI",
+    sourcePlatform: "X",
+    sourceImpressions: 12268,
+    sourceStats: { asOf: "2026-10-05", likes: 105, reposts: 19, bookmarks: 56 },
+    formats: ["产品广告", "电影叙事"],
+    hook: {
+      structure: "高空瞄准 → 眼睛 / 镜头特写 → 瞄准镜视角 → 炸鸡飞来 → 办公室众人围观 → 一口咬住 → 回去继续瞄 → 众人一起吃",
+      opening: "第 0 秒女人趴在高空塔吊横梁上架着长筒瞄准镜对准远处写字楼，长发被风吹起，画面下方有韩文字幕「나 배고파 죽겠어（I'm starving）」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1.7–5s 她眼睛贴近瞄准镜的特写、镜头调整、瞄准镜里看到对面办公楼，再从正面看镜头发光。", at: 1.7 },
+        { title: "反转", text: "约 5.5–8.5s 一块炸鸡突然从侧面飞进画面，切到写字楼里一排西装同事看着炸鸡飞过；约 8.5–10s 她闭着眼一口咬住炸鸡。", at: 5.5 },
+        { title: "结尾怎么收", text: "约 11–12.5s 她若无其事地回到瞄准镜前，旁边放着炸鸡纸盒；约 12.5–17s 办公室里一排人跟着拿起炸鸡一起吃。", at: 11 },
+      ],
+      copyThis: "先把原片截成 13 格的分镜拼图当参考，再在提示词里按 13 个镜头逐段写时间和动作，最后强调「严格照分镜，不要加新场景」，模型就会按分镜顺序一格格还原。",
+      approx: true,
+    },
+    tags: [
+      "17秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "分镜图参考",
+      "人物参考图未公开",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备人物参考图和分镜图",
+        description:
+          "提示词要求上传两样东西：「provided character reference」（人物参考图）和「provided master storyboard」（分镜图）。分镜图作者公开了，见参考 1，是 13 格「MASTER STORYBOARD — ORIGINAL VIDEO FRAMES」，从一条原视频截出来的，格子里能看到韩文字幕和 KFC 炸鸡纸盒。人物参考图原帖未公开，参考 2 只是成片约 9.6 秒的截帧，用来示意，不是原图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者用的是 Seedance 2.5。成片是 1280×720（16:9）、30fps、约 17.2 秒，没有水印。和提示词对不上的地方：成片开头有一句韩语台词「나 배고파 죽겠어」，还有烧录的韩英字幕，提示词里没写；提示词写的「telescope」在分镜和成片里其实是一把架在支架上的狙击枪；成片中间多了一格城市远景，约 10–11 秒又插了一次瞄准镜视角。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者自回复里的英文提示词整段粘贴，同时上传人物参考图和分镜图。结构依次是：总要求（17 秒、严格照参考）、Shot 1–13 每镜的时间段和动作、整体风格、最后一句「严格照分镜，不要发明新场景」。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "elsasofia-chicken-master-storyboard",
+        number: "1",
+        title: "master storyboard · 13 格分镜图",
+        subtitle: "提示词「the provided master storyboard」= 这张分镜图（作者自回复原图，1500×1575）；标题写 ORIGINAL VIDEO FRAMES，是从一条原视频截的帧，原视频未给出",
+        image: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/refs/01-master-storyboard.jpg",
+        prompt: "原帖未附提示词：这是作者从原视频截帧拼成的分镜图（13 格，每格标了镜头说明），不是用提示词生成的。",
+      },
+      {
+        id: "elsasofia-chicken-character-framegrab",
+        number: "2",
+        title: "character reference · 人物参考图 · 截帧",
+        subtitle: "提示词「the provided character reference」= 女主人物参考图；原图原帖未公开；此处为成片约 9.6 秒截帧，仅示意人物，非原图",
+        image: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/refs/02-character-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开人物参考图，也没有附生成它的提示词。此图为成片截帧，仅示意人物，非原图；跟做时请准备你自己的人物图。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.7s 女人趴在高空塔吊上架着瞄准镜对准写字楼，韩语台词和字幕「I'm starving」。" },
+      { number: 2, description: "1.7–3.5s 她的眼睛贴近瞄准镜的特写。" },
+      { number: 3, description: "3.5–4.5s 瞄准镜视角，看到对面写字楼里的人。" },
+      { number: 4, description: "4.5–5.5s 从正面看瞄准镜，镜片发出蓝光。" },
+      { number: 5, description: "5.5–6.5s 一块炸鸡突然从侧面飞进画面，碎屑飞溅。" },
+      { number: 6, description: "6.5–7s 城市远景，炸鸡划过楼宇之间。" },
+      { number: 7, description: "7–8.5s 写字楼里一排西装同事靠窗坐着，看着炸鸡飞过。" },
+      { number: 8, description: "8.5–10s 绿色上衣的女人闭眼一口咬住炸鸡，嚼着。" },
+      { number: 9, description: "10–11s 再次瞄准镜视角，看到办公室。" },
+      { number: 10, description: "11–12.5s 她若无其事地回到瞄准镜前，旁边放着炸鸡纸盒。" },
+      { number: 11, description: "12.5–17.2s 办公室里一排人一起拿起炸鸡吃。" },
+    ],
+    constraints:
+      "素材对应：master storyboard = 参考 1（作者公开的 13 格分镜图原图）；character reference = 参考 2 的位置，原图原帖未公开，参考 2 为成片截帧仅示意。严格照分镜顺序，不加新场景、不换人物服装道具；真实物理和动作。和成片的差别：多了韩语台词和烧录字幕；提示词的 telescope 实为狙击枪；多一格城市远景和一次瞄准镜视角。",
+    video_prompt: {
+      title: "Telescope & Fried Chicken · 17 秒分镜还原",
+      subtitle: "作者自回复英文完整提示词 · Seedance 2.5 · master storyboard = 参考 1（作者原图）；character reference = 参考 2（原帖未公开，成片截帧仅示意）",
+      content: `Create a 17-second cinematic photorealistic video using the provided character reference and the provided master storyboard as strict visual references. Recreate the storyboard sequence accurately without changing the characters, environment, props, wardrobe, or story.
+
+Shot 1 — 0.0–1.3s: A woman stands inside an office/building and carefully aims a large telescope toward a distant building. Cinematic medium shot, subtle camera movement, realistic lighting.
+
+Shot 2 — 1.3–2.5s: Extreme close-up of her eye looking through the telescope. Detailed eyelashes, realistic skin texture, focused expression, shallow depth of field.
+
+Shot 3 — 2.5–3.8s: Close-up of the telescope as she adjusts and aims it precisely. Smooth cinematic camera movement, realistic metal and glass reflections.
+
+Shot 4 — 3.8–5.0s: Telescope point-of-view shot showing the distant building through the lens. Clear optical perspective, realistic depth and slight lens distortion.
+
+Shot 5 — 5.0–6.3s: Exterior/front view of the telescope, maintaining the same woman and location. Build anticipation with a subtle push-in.
+
+Shot 6 — 6.3–7.5s: A piece of fried chicken suddenly enters the frame from the side, creating a humorous surprise. Natural motion and realistic physics.
+
+Shot 7 — 7.5–8.8s: Cut to the group inside the office near the window, watching the situation with surprised expressions. Keep their appearance and environment consistent with the storyboard.
+
+Shot 8 — 8.8–10.0s: The fried chicken flies rapidly across the scene toward the woman. Use dynamic tracking camera movement and realistic motion blur.
+
+Shot 9 — 10.0–11.4s: The woman catches/bites the fried chicken naturally. Close cinematic framing, realistic facial expression, comedic timing.
+
+Shot 10 — 11.4–13.0s: She calmly returns to the telescope and continues looking through it as if nothing unusual happened. Smooth transition, deadpan comedy.
+
+Shot 11 — 13.0–14.2s: Cut back to the group; they begin eating fried chicken together.
+
+Shot 12 — 14.2–15.8s: The group continues eating happily. Natural gestures, subtle reactions, realistic food movement.
+
+Shot 13 — 15.8–17.0s: Final cinematic group shot of everyone eating together. Hold for a brief comedic ending.
+
+Overall style: ultra-realistic cinematic commercial, natural human movement, realistic physics, consistent faces and clothing, detailed food textures, realistic office environment, cinematic depth of field, subtle handheld camera movement, smooth cuts, natural motion blur, believable lighting and shadows, high-end film production quality, 4K photorealism.
+
+Important: Follow the provided storyboard exactly. Do not invent new scenes, do not change the sequence, do not change the characters, and do not add unnecessary objects or actions.
+`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/msjiaozhu/status/2106965856257528225 （中文完整提示词，无附图）。唯一引用帖 2106970854739640809 是作者自己在变装帖 2106727413254357049 下引用本帖，无媒体；评论区作者确认是 sd（Seedance，版本未写）。@图片1 人物参考图、@场景1 场景参考图原帖未公开
+  {
+    id: "msjiaozhu-white-wall-selfie-douyin-seedance",
+    title: "抖音网红前置自拍 · 拿起放下怼脸跳切",
+    subtitle: "X · @msjiaozhu · Seedance · 15秒 · 16:9",
+    description:
+      "女生手持手机前置自拍，镜头一会儿放低拍身体，一会儿猛地拿起怼到脸前，美颜滤镜加手持晃动，像真人抖音视频。",
+    video: "/tutorials/msjiaozhu-white-wall-selfie-douyin-seedance/demo-web.mp4",
+    poster: "/tutorials/msjiaozhu-white-wall-selfie-douyin-seedance/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "手机自拍",
+    shots: 6,
+    references: 2,
+    model: "Seedance（评论区作者确认是 sd，版本未写）",
+    style: "抖音网红美颜滤镜 · 前置手机自拍 · 手持晃动 + 跳切 · 无台词",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/msjiaozhu/status/2106965855833895322",
+    sourceAuthor: "@msjiaozhu",
+    sourcePlatform: "X",
+    sourceImpressions: 755,
+    sourceStats: { asOf: "2026-10-05", likes: 10, reposts: 1, bookmarks: 10 },
+    formats: ["手机POV·Vlog", "角色表演"],
+    hook: {
+      structure: "中近景晃身体 → 凑近镜头 → 手机放低趴桌 → 拿起怼脸特写 → 侧脸 → 贴脸收尾",
+      opening: "第 0 秒手机放低先拍腰腹到上半身，她穿白色针织开衫左右摆动，随后拨头发、抬眼看镜头。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4.2–6.5s 她歪头凑近镜头；约 6.5–8.5s 手机放低，她双臂趴在桌上闭眼笑。", at: 4.2 },
+        { title: "反转", text: "约 8.5–13.6s 镜头猛地拿起怼到脸前，手托脸颊、嘴唇和眼睛的极近特写来回跳切。", at: 8.5 },
+        { title: "结尾怎么收", text: "约 13.6–15.2s 侧脸一闪，最后停在贴脸近景对视。", at: 13.6 },
+      ],
+      copyThis: "把「手机突然放下、再突然拿起怼脸」写成剪辑逻辑，再把美颜、颗粒、拖影、失焦、压缩块这些「手机瑕疵」写进画质硬约束并禁止高清锐利，成片就更像真人随手拍。",
+      approx: true,
+    },
+    tags: [
+      "15秒",
+      "16:9 横屏",
+      "Seedance",
+      "前置自拍",
+      "参考图未公开",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备人物参考图和场景参考图",
+        description:
+          "提示词要上传两张图：「@图片1」是白墙自拍女生的人物参考图（锁五官、发型、服装、饰品），「@场景1」是室内白墙自拍场景参考图。两张原帖都未公开，评论和引用帖里也没有。参考 1、参考 2 只是成片截帧，用来示意，不是原图，请换成你自己的图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者在评论区确认用的是 Seedance（只说了 sd，没写版本）。成片是 1280×720（16:9 横屏）、60fps、约 15.2 秒，没有水印；有背景音乐，没有台词。和提示词对不上的地方：提示词写白短袖罗纹深 U 领，成片是白色针织开衫加米色吊带；墙面偏米色，还挂着画、有深色木门，不是纯白墙。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者自回复里的中文提示词整段粘贴，同时上传两张参考图。结构依次是：主体（@图片1）、场景（@场景1）、音乐、镜头与剪辑逻辑、画面段落 1）–4）、画质硬约束。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "msjiaozhu-selfie-character-framegrab",
+        number: "1",
+        title: "@图片1 · 人物参考图 · 截帧",
+        subtitle: "提示词「@图片1」= 白墙自拍女生人物参考图；原图原帖未公开；此处为成片约 3 秒截帧，仅示意人物，非原图",
+        image: "/tutorials/msjiaozhu-white-wall-selfie-douyin-seedance/refs/01-character-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开 @图片1 人物参考图，也没有附生成它的提示词。此图为成片截帧，仅示意人物，非原图；跟做时请准备你自己的人物图。",
+      },
+      {
+        id: "msjiaozhu-selfie-scene-framegrab",
+        number: "2",
+        title: "@场景1 · 场景参考图 · 截帧",
+        subtitle: "提示词「@场景1」= 室内白墙自拍场景参考图；原图原帖未公开；此处为成片约 6.8 秒截帧，仅示意场景，非原图",
+        image: "/tutorials/msjiaozhu-white-wall-selfie-douyin-seedance/refs/02-scene-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开 @场景1 场景参考图，也没有附生成它的提示词。此图为成片截帧，仅示意场景，非原图；跟做时请准备你自己的场景图。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–4.2s 手机放低拍腰腹到上半身，她左右摆动、拨头发、抬眼看镜头。" },
+      { number: 2, description: "4.2–6.5s 歪头凑近镜头，手扶胸前项链。" },
+      { number: 3, description: "6.5–8.5s 手机放低，她双臂趴在桌上闭眼笑。" },
+      { number: 4, description: "8.5–13.6s 镜头拿起怼脸，手托脸颊，眼睛、嘴唇极近特写跳切。" },
+      { number: 5, description: "13.6–14.8s 侧脸一闪。" },
+      { number: 6, description: "14.8–15.2s 停在贴脸近景对视。" },
+    ],
+    constraints:
+      "素材对应：@图片1 = 参考 1 的位置，人物参考图原帖未公开，参考 1 为成片截帧仅示意；@场景1 = 参考 2 的位置，场景参考图原帖未公开，参考 2 为成片截帧仅示意。参考图只锁人物外观，不锁首帧；手持不用稳定器，无台词无口型；保留美颜、颗粒、拖影、失焦、压缩块，720p。和成片的差别：服装是白色针织开衫加米色吊带，不是白短袖深 U 领；墙面偏米色带挂画和木门；成片是 16:9 横屏。",
+    video_prompt: {
+      title: "抖音前置自拍 · 拿起放下怼脸跳切",
+      subtitle: "作者自回复中文完整提示词 · Seedance · @图片1 = 参考 1、@场景1 = 参考 2（两张原图均原帖未公开，成片截帧仅示意）",
+      content: `主体：@图片1 为白墙自拍女生角色参考图，锁定五官、发型、服装与饰品一致性。
+场景：@场景1 室内白墙自拍场景，白墙固定；参考图只作人物外观参考，不锁定首帧。
+音乐：生成节奏清晰、带暧昧张力的原创女声R&B-pop，BPM约100-108，低频贝斯+短促电子鼓点；镜头拿起/放下、突然怼脸都踩鼓点。叠加衣料、拨发、近距离呼吸、轻笑、室内底噪。
+
+镜头与剪辑逻辑（关键）：不是单一平滑一镜到底。人物用前置手机自拍，镜头始终由她手持，但过程中有明显的“镜头互动与切换感”——手机可以突然放下（画面短暂落到胸口/腰腹/大腿中近景，构图晃一下），再突然重新拿起怼到脸前；也可以在贴脸特写与稍远中近景之间硬切或快速跳切。每一次拿起都让观众感觉离她非常近。全程不用稳定器，手持随机晃动。无台词、无口型。
+
+画面段落：
+1）开场中近景：腰腹到上半身，白短袖罗纹深U领随呼吸让内搭边缘与自然颈胸线条若隐若现；她左右摆动重心、甩手，手机可能先放低拍身体律动。
+2）突然拿起镜头怼脸：前摄瞬间贴到眼睛、鼻尖、嘴唇，精致妆容（粉珊瑚唇、淡眼线、碎发贴颊）充满画面；表情在娇羞与撩人之间切换——先垂眼抿嘴，再抬眼锁镜头，轻歪头、轻眨眼、嘴角若有若无的笑。
+3）再放下或稍退：回到胸以上，拨发、侧头；下一拍又猛地拿起怼脸，捕捉神情变化。可穿插一次极近下半脸/嘴唇特写。
+4）收尾停在贴脸近景，暧昧对视与呼吸起伏。
+
+画质硬约束：抖音网红美颜滤镜的真实手机前置视频，不是干净死板的高清成片。美颜柔和提亮肤色，但中间调暗部仍有细小随机颗粒与少量彩噪；拿起放下、怼脸、拨发时出现明确动态拖影和短暂失焦；对焦呼吸、滚动快门、曝光白平衡泵动、降噪涂抹、平台压缩块全部保留。五官可辨但不处处锐利。720p。禁止文字水印、无噪点、全程锐利、HDR、影棚精修、稳定器平滑。
+`,
+    },
+  },
 ];
 
 export const tutorials: Tutorial[] = rawTutorials.map((t) => withMedia(t));
