@@ -30925,6 +30925,1554 @@ Important: Follow the provided storyboard exactly. Do not invent new scenes, do 
 `,
     },
   },
+  // 查重别名(提示词自回复帖): https://x.com/FutureVibesAi/status/2106777840356307211 。同作者站内已有 futurevibesai-jakarta-speed-flight-shockwave-dreamina（2106001367378927694，雅加达女子贴地飞行），不是本片。站内还有 pollo-golden-cat-world-sprint-stopwatch（金渐层猫跑地球），题材相关但不是飞猫抢零食。无引用帖、无外链文档；提示词纯文生，没有引用任何参考图或参考视频
+  {
+    id: "futurevibesai-orange-cat-snack-heist-flight-seedance-2-5",
+    title: "橘猫超人式飞行抢牛奶和猫粮 · 飞进家窗口",
+    subtitle: "X · @FutureVibesAi · Seedance 2.5 · 15秒 · 16:9",
+    description:
+      "胖橘猫超人姿势贴地飞过印度街巷，路过杂货店和宠物店各抓一包吃的，最后飞进家窗口坐下开吃。",
+    video: "/tutorials/futurevibesai-orange-cat-snack-heist-flight-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/futurevibesai-orange-cat-snack-heist-flight-seedance-2-5/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "超现实喜剧",
+    shots: 5,
+    references: 0,
+    model: "Seedance 2.5（帖子写 Seedance 2.5 in @dreamina_ai）",
+    style: "写实电影感喜剧 · 印度街巷低机位高速跟拍 · 多地点快切 · 速度模糊",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/FutureVibesAi/status/2106777762518446222",
+    sourceAuthor: "@FutureVibesAi",
+    sourcePlatform: "X",
+    sourceImpressions: 899,
+    sourceStats: { asOf: "2026-10-05", likes: 39, reposts: 2, bookmarks: 14 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "贴地穿车流 → 飞过杂货店抓牛奶 → 飞过店面抓猫粮 → 市场/田野/河面穿越 → 飞进窗口坐下开吃",
+      opening: "第 0 秒镜头贴着印度街道路面在车流和三轮车之间高速前冲，胖橘猫突然水平飞过镜头上方。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.5–6s 橘猫飞向路边小店，店主抬头吃惊，猫一边飞一边用爪子抓走一袋牛奶；约 6–9s 又在飞行中抓走一袋猫粮，两只爪子各拎一包。", at: 2.5 },
+        { title: "反转", text: "约 9–12s 它高速掠过市场、卡车、田野和河面，河岸一群猫抬头看它，它还得意地往下看了一眼。", at: 9 },
+        { title: "结尾怎么收", text: "约 12–15s 橘猫飞进公寓窗口，稳稳落在阳台/厨房地面，牛奶和猫粮分别落在两个碗旁，它一脸无辜地看着镜头，开始吃。", at: 12 },
+      ],
+      copyThis: "按时间段写清「0–3 / 3–6 / 6–9 / 9–12 / 12–15」每段的地点、猫的动作、路人反应，再强调「没有披风、没有魔法光效，就是一只会飞的真橘猫」，喜剧感就出来了。",
+      approx: true,
+    },
+    tags: [
+      "15秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "纯文生",
+      "Dreamina",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：确认是纯文生",
+        description:
+          "提示词没有引用任何参考图或参考视频，只靠文字描述橘猫长相和五个时间段。主帖、作者自回复、全部评论和引用帖里都没有附图或外链文档。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者写的是 Seedance 2.5（在 Dreamina 里跑）。成片是 1920×1080（16:9 横屏）、30fps、约 15.1 秒；底部中间一直有作者自己的「FUTURE VIBES AI」水印。有背景音乐和音效。和提示词对不上的地方：提示词写 9:16、60fps、8K，成片是 16:9、30fps、1080p；提示词写落到厨房地面，成片更像阳台落地窗旁；提示词写结尾「Meow」台词，语音识别几乎没听出人声/猫叫词。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者自回复里的英文提示词整段粘贴。结构依次是：总要求（15 秒、画幅、写实喜剧）、主角橘猫设定、0–3 / 3–6 / 6–9 / 9–12 / 12–15 五段地点与动作、转场与物理细节、负面约束、喜剧基调。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.5s 镜头贴地在印度街巷车流间前冲，胖橘猫水平飞过镜头。" },
+      { number: 2, description: "2.5–6s 橘猫飞向路边杂货店，店主抬头吃惊，猫抓走一袋牛奶。" },
+      { number: 3, description: "6–9s 飞行中再抓走一袋猫粮，两爪各拎一包高速掠过市场。" },
+      { number: 4, description: "9–12s 掠过卡车、田野和河面，河岸猫群抬头看，它得意下望。" },
+      { number: 5, description: "12–15s 飞进窗口落地，两包吃的落在碗旁，无辜看镜头后开吃。" },
+    ],
+    constraints:
+      "参考素材：提示词没有引用任何参考图或参考视频，是纯文生视频。一只橘猫前后长相一致；水平超人式飞行；没有披风、衣服、翅膀、魔法光效或卡通物理。和成片的差别：提示词写 9:16 / 60fps / 8K，成片是 16:9 / 30fps / 1080p；落地位置更像阳台；底部有 FUTURE VIBES AI 水印。",
+    video_prompt: {
+      title: "15-Second Flying Orange Cat Snack Heist",
+      subtitle: "作者自回复英文完整提示词 · Seedance 2.5（Dreamina）· 纯文生，提示词没有引用任何参考素材",
+      content: `15-SECOND FLYING ORANGE CAT - 9:16, hyper-realistic live-action, 8K, 60fps, cinematic comedy.
+
+Main character: one chubby fluffy orange tabby cat, realistic fur, expressive green eyes, same appearance throughout. The cat flies horizontally like a superhero at ridiculous speed, front paws stretched forward, back legs trailing, cheeks and fur vibrating naturally from airflow. Keep everything photorealistic — the comedy comes from the situation.
+
+0–3s — CITY: Camera races low through a busy Indian street between cars, autos and scooters. Suddenly the orange cat WHOOSHES past the camera, flying 2m above traffic. Drivers look up completely confused. One auto driver almost spits out his tea. Camera accelerates after the cat.
+
+3–6s — MILK SHOP: Cat spots a small neighborhood grocery shop ahead and dives toward it WITHOUT stopping. It flies directly past the open storefront and, with perfect timing, snatches a milk packet with one paw while still flying. Shopkeeper freezes, looks at the empty shelf, then looks toward the disappearing cat in total disbelief. 😂
+
+6–9s — CAT FOOD HEIST: Cat rockets past a pet store. Camera tracks beside it. Without slowing down, the cat stretches its other paw through the open entrance and grabs a packet of cat food. Now it is flying ridiculously fast carrying milk in one paw and cat food in the other. Its expression is completely serious and determined.
+
+9–12s — CHAOTIC JOURNEY: Cat flies through completely different locations at insane speed — over a crowded market → between buses → above a village road → across green fields → over a river. People repeatedly stop, stare upward and point. A group of street cats below notice it and stare in absolute shock.
+
+The flying cat briefly looks down at them with a smug expression and accelerates.
+
+12–15s — MISSION ACCOMPLISHED: Cat finally rockets through an open apartment window, hits the brakes dramatically and lands perfectly on the kitchen floor.
+
+Milk packet lands beside one bowl.
+
+Cat-food packet lands beside another.
+
+The cat calmly sits between them.
+
+After this insane journey, it looks directly toward the camera with the most innocent expression imaginable—
+
+“Meow.”
+
+Then casually starts eating.
+
+FINAL SHOT: Slow cinematic push-in on the completely satisfied orange cat while outside the window loose papers are STILL falling from the turbulence it created.
+
+Make transitions seamless: city → milk shop → pet store → market → village → fields → river → apartment.
+
+Realistic aerodynamic fur movement, speed blur, dust, papers, water disturbance and camera shake. No cape, clothes, magical aura, wings or cartoon physics. The cat remains a normal realistic orange tabby that somehow has absolutely insane flying powers.
+
+COMEDY FEEL: Mission Impossible… but the mission is just snacks. 🐈💨🥛
+`,
+    },
+  },
+  // 查重别名: https://x.com/Naiknelofar788/status/2106696801072087102 （主帖长文即完整提示词，纯文生视频，无附图无参考图；无引用帖）
+  {
+    id: "naiknelofar788-orange-parrot-salon-haircut-seedance-2-5",
+    title: "橘头鹦鹉进理发店 · 梳剪喷水做发型",
+    subtitle: "X · @Naiknelofar788 · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "一只橘头鹦鹉披着黑围布坐在理发椅上，理发师给它梳毛、剪头顶羽毛、喷水定型，最后它对镜头摇头亮相。",
+    video: "/tutorials/naiknelofar788-orange-parrot-salon-haircut-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/naiknelofar788-orange-parrot-salon-haircut-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "萌宠喜剧",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5（原帖写明）",
+    style: "写实电影感 · 理发店微距特写 · 萌宠一本正经的冷幽默 · 无台词",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Naiknelofar788/status/2106696801072087102",
+    sourceAuthor: "@Naiknelofar788",
+    sourcePlatform: "X",
+    sourceImpressions: 8837,
+    sourceStats: { asOf: "2026-10-06", likes: 193, reposts: 13, bookmarks: 131 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "正面坐椅梳毛 → 剪刀修头顶 → 微距剪羽毛 → 喷水 → 梳起造型 → 侧面精修 → 正面亮相",
+      opening: "第 0 秒鹦鹉披黑围布端坐在理发椅上，身后是环形灯，理发师用梳子挑起它头顶的橘色羽毛。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4.8–10s 剪刀贴着头顶修羽毛，接微距特写剪下橘色羽尖。", at: 4.8 },
+        { title: "反转", text: "约 10–19s 喷水壶喷雾，再用梳子把头顶羽毛梳得竖起来，像做了个发型。", at: 10.1 },
+        { title: "结尾怎么收", text: "约 24–30s 回到正面，鹦鹉左右摇头、盯着镜头，像在验收新发型。", at: 23.9 },
+      ],
+      copyThis: "把动物当成真客人来写：给它一件小号理发围布、一把真实的理发椅，再按「准备 → 修剪 → 喷水 → 造型 → 精修 → 亮相」排时间轴，每段只做一个动作，喜剧感就来自它的一本正经。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "萌宠",
+      "纯文生视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：确认不需要参考图",
+        description:
+          "这条是纯文生视频，原帖没有附图，提示词里也没有 @图片，直接用文字生成就行。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明用 Seedance 2.5。成片是 1920×1080（16:9 横屏）、24fps、约 30 秒，没看到水印，也没有台词。分段时间和提示词基本一致，小差别：0–5 秒提示词写极近特写，成片开场是正面中景。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把主帖里的英文提示词整段粘贴。结构是：总述（主体、场景、画质、禁止文字水印）→ 7 段时间轴：准备、修剪、喷水、造型、精修、亮相、喜剧结尾。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–4.8s 正面中景：鹦鹉披黑围布坐在理发椅上，理发师用梳子挑起头顶羽毛。" },
+      { number: 2, description: "4.8–6.8s 近景：剪刀贴着头顶修羽毛。" },
+      { number: 3, description: "6.8–10.1s 微距：剪刀剪下橘色羽尖（两个镜头）。" },
+      { number: 4, description: "10.1–14.1s 喷水壶对着头顶喷雾。" },
+      { number: 5, description: "14.1–19.4s 近景：梳子把头顶羽毛梳起来做造型。" },
+      { number: 6, description: "19.4–23.9s 侧面：剪刀精修，旁边有一面小镜子。" },
+      { number: 7, description: "23.9–30.1s 正面：鹦鹉左右摇头、盯着镜头亮相。" },
+    ],
+    constraints:
+      "素材对应：无参考素材，纯文生视频。写实羽毛与鸟类自然动作，人手动作要可信；画面里不要文字、logo、字幕、水印。和成片的差别：开场是正面中景，不是极近特写；其余基本一致。",
+    video_prompt: {
+      title: "橘头鹦鹉理发店 · 30 秒时间轴",
+      subtitle: "主帖英文完整提示词 · Seedance 2.5 · 无参考素材（纯文生视频）",
+      content: `Create a 30-second ultra-realistic cinematic comedy video inside a modern professional hair salon. The subject is an orange-headed parrot sitting calmly in a small salon chair, wearing a miniature black barber cape. A professional stylist carefully grooms and trims the parrot’s head feathers as if giving it a fashionable haircut. Realistic feathers, natural bird movement, detailed salon environment, believable human hand movements, cinematic lighting, subtle humor, 4K. No text, logos, subtitles, or watermarks.
+
+[0–5s] — PREPARATION
+Extreme close-up of the orange-headed parrot sitting calmly beneath a professional salon light. The stylist gently lifts the feathers on top of its head with a fine comb, carefully examining their shape. The parrot blinks naturally and looks slightly curious. A circular ring light reflects realistically in its eyes.
+
+[5–10s] — THE TRIM
+The stylist uses small silver scissors to carefully trim the top feathers. Precise snipping movements shape the feathers evenly while the parrot remains surprisingly patient. Cut between close-ups of the scissors, comb, feathers, and the parrot’s expressive face.
+
+[10–14s] — WATER SPRAY
+The stylist picks up a small spray bottle and gently sprays a fine mist over the parrot’s head. Tiny water droplets settle naturally on the feathers. The parrot briefly shakes its head, then returns to its serious salon-client expression.
+
+[14–19s] — STYLING
+The stylist combs the damp feathers upward and begins shaping them into a neat, fashionable style. The camera slowly moves around the parrot’s head, revealing detailed feather texture and realistic reflections from the salon lighting.
+
+[19–24s] — FINAL TOUCHES
+Close-up of the stylist making tiny precision trims with the scissors. Loose feather particles fall gently onto the black cape. The parrot watches itself in a small salon mirror, tilting its head from side to side as if inspecting the haircut.
+
+[24–27s] — THE REVEAL
+The stylist removes the comb and steps back. The camera slowly pushes toward the parrot’s face. Its freshly styled orange feathers look perfectly shaped. The parrot blinks, subtly tilts its head, and looks extremely proud of its new hairstyle.
+
+[27–30s] — COMEDIC ENDING
+The parrot suddenly turns toward the camera and gives a confident little head shake, making its freshly styled feathers bounce perfectly into place. Hold on its serious expression for a humorous final beat.
+
+STYLE: ultra-realistic animal cinematography, photorealistic parrot feathers, realistic bird anatomy and eye movement, authentic salon environment, natural human hand motion, detailed scissors and comb, realistic water droplets, professional beauty-salon lighting, ring-light reflections, cinematic depth of field, macro feather details, subtle comedy, 4K HDR.
+
+AUDIO: gentle salon ambience, scissors softly clicking, comb brushing through feathers, fine water spray, subtle bird movements and quiet chirps. No dialogue, no music.
+`,
+    },
+  },
+  // 查重别名: https://x.com/GrayNoteLab/status/2107103516762468563 （主帖长文含中文完整提示词，纯文生视频，无参考图；评论区作者回答「这个也是seedance吗」时说「是的…我一条出的没有抽卡」，版本未写；无引用帖）
+  {
+    id: "graynotelab-guzhuang-monologue-next-year-flowers",
+    title: "古装女子闺房独白 · 明年的花不是今年的花",
+    subtitle: "X · @GrayNoteLab · Seedance · 20秒 · 3:4",
+    description:
+      "固定机位拍古装女子坐在屏风前，靠眼神、嘴角和停顿念完一段中文独白，测试 AI 的台词和口型。",
+    video: "/tutorials/graynotelab-guzhuang-monologue-next-year-flowers/demo-web.mp4",
+    poster: "/tutorials/graynotelab-guzhuang-monologue-next-year-flowers/poster.jpg",
+    duration: "20秒",
+    durationSec: 20,
+    styleLabel: "古风独白",
+    shots: 7,
+    references: 0,
+    model: "Seedance（评论区作者确认，版本未写）",
+    style: "国产古装剧质感 · 固定机位单镜头 · 半身正面 · 中文口型同步独白",
+    aspectRatio: "3/4",
+    sourceUrl: "https://x.com/GrayNoteLab/status/2107103516762468563",
+    sourceAuthor: "@GrayNoteLab",
+    sourcePlatform: "X",
+    sourceImpressions: 2119,
+    sourceStats: { asOf: "2026-10-06", likes: 29, reposts: 2, bookmarks: 16 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "浅笑开口 → 若有所思引古诗 → 认真摇头 → 平静接受 → 垂眸留白 → 直视收尾",
+      opening: "第 0 秒女子正对镜头带淡淡笑意，轻快地说「你说明年花就开了」。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–9s 语气转为感慨，引出「君看今日树头花，不是去年枝上朵」。", at: 2 },
+        { title: "反转", text: "约 10–14s 两句「明年是明年的春天 / 明年是明年的花」，情绪从憧憬落到接受。", at: 10 },
+        { title: "结尾怎么收", text: "约 15–20s 垂眸说「今年的花」，再直视镜头慢慢说完「永远都不会再回来了」。", at: 15 },
+      ],
+      copyThis: "台词类视频把每一句拆成一个时间段，写清这一句的眼神方向、语速、哪个字加重、哪里停顿，再加一句「全程固定机位、不切镜」，模型就会把力气花在表演和口型上。",
+      approx: true,
+    },
+    tags: [
+      "20秒",
+      "3:4 竖屏",
+      "Seedance",
+      "古风",
+      "中文台词",
+      "纯文生视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：确认不需要参考图",
+        description:
+          "这条是纯文生视频，原帖没有人物图或场景图，提示词里也没有 @图片，直接用文字生成。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者在评论区确认是 Seedance（没写版本），还说一次生成、没有抽卡。成片 2160×2880（3:4 竖屏）、60fps、约 20 秒，固定机位一镜到底。和提示词对不上的地方：提示词禁止字幕和水印，成片却烧了中英双语字幕，右上角还有「灰度笔记」水印（应是作者后期加的）；时间轴写到 18 秒，成片约 20 秒。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把原帖的中文提示词整段粘贴。结构是：总述（机位、构图、光线、表演要求）→【时间轴】8 段，每段一句台词加表演说明 →【约束】固定机位、禁止项、禁止背景音乐。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 正对镜头浅笑：「你说明年花就开了。」" },
+      { number: 2, description: "2–4s 笑意收起、若有所思：「可是古人也说过。」" },
+      { number: 3, description: "4–9s 目光移向一侧又回到镜头：「君看今日树头花，不是去年枝上朵了。」（这段语音识别不清，以画面字幕为准）" },
+      { number: 4, description: "10–12s 呼吸放缓：「明年是明年的春天。」" },
+      { number: 5, description: "12–14s 抬眼看镜头：「明年是明年的花。」" },
+      { number: 6, description: "15–17s 垂眸停顿：「今年的花。」" },
+      { number: 7, description: "17–20s 直视镜头：「永远都不会再回来了。」画面安静结束。" },
+    ],
+    constraints:
+      "素材对应：无参考素材，纯文生视频。全程固定机位、不切镜；中文口型必须同步；禁止夸张表情、哭泣、AI 塑料皮肤、字幕、水印和背景音乐。和成片的差别：成片有烧录的中英双语字幕和右上角「灰度笔记」水印，时长约 20 秒而不是 18 秒。",
+    video_prompt: {
+      title: "古装闺房独白 · 中文台词时间轴",
+      subtitle: "原帖中文完整提示词 · Seedance（作者评论确认）· 无参考素材（纯文生视频）",
+      content: `固定机位单镜头，国产古风影视剧质感。女主坐在闺房中，人物半身构图，正面略带侧角度，镜头高度接近人物视线。背景极浅景深仅保留一面精致古风折叠屏风，屏风绘有淡雅花枝纹样。自然光照亮人物面部，真实皮肤纹理，整体安静、克制、细腻。人物不做大幅肢体动作，主要依靠眼神、嘴角、呼吸、头部微动作完成独白表演。嘴型必须与中文台词精准同步，语气自然，避免机械朗诵。
+
+【时间轴】
+0–2秒：
+人物面向镜头，眼神温柔，嘴角带极淡笑意，语气轻松自然地说：“你说明年花就开了。”说“明年”时眼神微微向上，带一点憧憬；“花就开了”语速稍快，尾音轻轻上扬。说完保持淡淡笑意，短暂停顿。
+
+2–4秒：
+笑意略微收敛，眼神变得若有所思，轻轻垂眸后抬眼，语气转为带一点感慨：“可是古人也说过。”说“可是”前有极短停顿，“古人也说过”逐渐放慢，最后几个字压低声音，为下一句做铺垫。
+
+4–6.3秒：
+人物目光微微移向一侧，仿佛回忆古人的话，神态安静，轻声说道：“君看今日树头花。”语速舒缓，“今日”略微加重，“树头花”放慢，眼神落向远处，带淡淡欣赏之意。
+
+6.3–8.5秒：
+眼神重新回到镜头，神态更加认真，轻轻摇头：“不是去年枝上朵了。”说“不是”时语气稍重，随后明显放慢；“去年”出现短暂停顿，“朵了”轻声收尾，眼神中出现一丝惆怅。
+
+8.5–10.7秒：
+人物呼吸变得平缓，目光柔和下来：“明年是明年的春天。”两个“明年”之间有自然停顿，第二个“明年”语气更沉静；说“春天”时眼神微微下垂，像是在接受这个事实。
+
+10.7–12.8秒：
+重新抬眼看向镜头，语气平静：“明年是明年的花。”嘴角不笑，眼神却温柔；“明年”稍微加重，“是明年的花”逐渐放轻，句尾留下短暂停顿。
+
+12.8–14.7秒：
+人物轻轻垂眸，呼吸停顿半拍，再抬眼：“今年的花。”这句话明显比前面更慢、更轻，四到五个字之间保留细微停顿；说完不要立即接下一句，让情绪留白。
+
+14.7–18秒：
+人物直视镜头，眼神安静而深沉，最后一句放慢说出：“永远都不会再回来了。”说“永远”时目光坚定，“都不会”保持克制，“再回来”之间加入明显停顿，最后一个“了”轻到近乎叹息。说完保持直视镜头约1秒，不哭、不流泪、不刻意悲伤，只有克制的遗憾与释然。画面安静结束。
+
+【约束】
+全程固定机位，不推拉、不摇移、不变焦、不切镜；人物服饰、发饰、身份、坐姿保持一致。禁止夸张表情、哭泣、频繁眨眼、眼神漂移、机械口播、嘴型不同步、突然转头、大幅手势、AI塑料皮肤、过度磨皮、字幕、水印。禁止背景音乐。
+`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/techhalla/status/2106899447120613612 （自回复附 4 张图：scene_5、scene_2、scene_1、ingame_scene；sheet_1/sheet_2/scene_3/scene_4/scene_6 原图未单独公开，从成片下方展示面板截取）。作者自己的游戏过场动画，同作者另有 NYC 龙卷风、峡谷滑板、光头分身、外星 vlog 等条目
+  {
+    id: "techhalla-point-and-click-cat-cutscene-seedance-2-5",
+    title: "90 年代点击解谜游戏过场 · 会说话的胖橘猫",
+    subtitle: "X · @techhalla · Seedance 2.5 · 30秒 · 8:9",
+    description:
+      "手绘水粉背景配火柴人的老派解谜游戏过场：记者采访丢猫大妈，胖橘猫开口说话、飘上天，原来是一场梦。",
+    video: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "游戏过场",
+    shots: 7,
+    references: 9,
+    model: "Seedance 2.5（原帖写明）；参考图用 GPT Image 2.5 Sunburst（成片面板标注）",
+    style: "90 年代手绘点击解谜游戏 · 水粉背景 + 剪纸火柴人 · 冷面喜剧 · 7 镜硬切 · 英语对白",
+    aspectRatio: "8/9",
+    sourceUrl: "https://x.com/techhalla/status/2106899443538882890",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 5714,
+    sourceStats: { asOf: "2026-10-06", likes: 97, reposts: 5, bookmarks: 38 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "记者吐槽 → 大妈抱猫 → 猫开口 → 猫飘走 → 巨猫喊醒 → 床上惊醒 → 进入游戏画面",
+      opening: "第 0 秒记者 Lewis 拿着笔记本站在街边，面无表情地说「A cat got lost, a cat got found, front page stuff.」",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4–13s 大妈说猫丢了整整 11 分钟，胖橘猫转头对镜头说「Ask me about them, Lewis.」，Lewis 笔掉在地上。", at: 4.1 },
+        { title: "反转", text: "约 13–22s 猫飘上紫色天空，又变成巨猫俯身压过屋顶，回声喊「Wake up, Lewis.」", at: 13.05 },
+        { title: "结尾怎么收", text: "约 22–30s Lewis 在床上惊醒嘟囔「Eleven minutes.」，最后切到可操作的游戏首画面，收音机播着猫的新闻。", at: 22.2 },
+      ],
+      copyThis: "把每个镜头绑定一张场景图（[scene_1]…[scene_6]），再用 [sheet_1]/[sheet_2] 锁角色，提示词里只写「这镜谁说哪句、做什么动作」，7 个镜头就能保持同一画风和同一批角色。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "8:9 展示版",
+      "Seedance 2.5",
+      "GPT Image 2.5",
+      "游戏过场",
+      "9 张参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 9 张参考图",
+        description:
+          "素材对应：[sheet_1] = 参考 1（Lewis 角色设定）、[sheet_2] = 参考 2（Abernathy 太太角色设定）、[scene_1]–[scene_6] = 参考 3–8（每镜的起始画面）、[ingame_scene] = 参考 9（游戏首画面）。作者在自回复里公开了 scene_1、scene_2、scene_5、ingame_scene 4 张原图；sheet_1、sheet_2、scene_3、scene_4、scene_6 没有单独公开，参考 1、2、5、6、8 是从成片下方展示面板截下来的，清晰度低，请换成你自己的图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明用 Seedance 2.5，参考图在成片面板里标为 GPT 2.5 Sunburst。发布的成片是 1920×2160 展示版：上半部分是 16:9 过场动画，下半部分是作者做的展示面板（NOW/NEXT、角色表、剧照、Created by TechHalla），所以整体是 8:9；跟做时直接出 16:9 就行。60fps、约 30 秒，7 个镜头的切点和时间轴吻合，对白能听清，和提示词一致。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者自回复里的英文提示词整段粘贴，同时按名字上传 9 张图。结构是：[STYLE + CAMERA + ATMOSPHERE] → [IMAGE REFERENCES] 锁角色 → [AUDIO] 角色声音 → [TIMELINE] 7 段（每段绑定一张场景图、写对白）→ [STYLE & QUALITY BOOSTERS]。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "techhalla-cutscene-sheet1-lewis",
+        number: "1",
+        title: "[sheet_1] · Lewis 角色设定 · 视频截取",
+        subtitle: "提示词「[sheet_1]」= 记者 Lewis 角色表；原图原帖未单独公开，此为成片下方面板「CHARACTER SHEETS」缩略图截取，非原图",
+        image: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/refs/01-sheet1-lewis-from-video.png",
+        prompt: "原帖未公开：作者没有单独发出 [sheet_1] 原图，也没有附生成它的提示词。此图为成片展示面板截取，仅示意，非原图。",
+      },
+      {
+        id: "techhalla-cutscene-sheet2-abernathy",
+        number: "2",
+        title: "[sheet_2] · Abernathy 太太角色设定 · 视频截取",
+        subtitle: "提示词「[sheet_2]」= 抱猫大妈 Mrs. Abernathy 角色表；原图原帖未单独公开，此为成片面板缩略图截取，非原图",
+        image: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/refs/02-sheet2-mrs-abernathy-from-video.png",
+        prompt: "原帖未公开：作者没有单独发出 [sheet_2] 原图，也没有附生成它的提示词。此图为成片展示面板截取，仅示意，非原图。",
+      },
+      {
+        id: "techhalla-cutscene-scene1",
+        number: "3",
+        title: "[scene_1] · 街边采访",
+        subtitle: "提示词「[scene_1]」= 第 1 镜 0–4s 起始画面；作者自回复第 3 张原图",
+        image: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/refs/03-scene1.jpg",
+        prompt: "原帖未附提示词：作者只公开了这张图，没有附生成它的提示词（成片下方面板显示图片用 GPT 2.5 Sunburst 生成）。",
+      },
+      {
+        id: "techhalla-cutscene-scene2",
+        number: "4",
+        title: "[scene_2] · 大妈抱猫特写",
+        subtitle: "提示词「[scene_2]」= 第 2 镜 4–9s 起始画面；作者自回复第 2 张原图",
+        image: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/refs/04-scene2.jpg",
+        prompt: "原帖未附提示词：作者只公开了这张图，没有附生成它的提示词（成片下方面板显示图片用 GPT 2.5 Sunburst 生成）。",
+      },
+      {
+        id: "techhalla-cutscene-scene3",
+        number: "5",
+        title: "[scene_3] · Lewis 愣住 · 视频截取",
+        subtitle: "提示词「[scene_3]」= 第 3 镜 9–13s 起始画面；原图原帖未单独公开，此为成片约 11 秒面板「NOW」截取，非原图",
+        image: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/refs/05-scene3-from-video.jpg",
+        prompt: "原帖未公开：作者没有单独发出 [scene_3] 原图和提示词。此图为成片截取，仅示意，非原图。",
+      },
+      {
+        id: "techhalla-cutscene-scene4",
+        number: "6",
+        title: "[scene_4] · 猫飘上天 · 视频截取",
+        subtitle: "提示词「[scene_4]」= 第 4 镜 13–18s 起始画面；原图原帖未单独公开，此为成片约 15.5 秒面板截取，非原图",
+        image: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/refs/06-scene4-from-video.jpg",
+        prompt: "原帖未公开：作者没有单独发出 [scene_4] 原图和提示词。此图为成片截取，仅示意，非原图。",
+      },
+      {
+        id: "techhalla-cutscene-scene5",
+        number: "7",
+        title: "[scene_5] · 巨猫压城",
+        subtitle: "提示词「[scene_5]」= 第 5 镜 18–22s 起始画面；作者自回复第 1 张原图",
+        image: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/refs/07-scene5.jpg",
+        prompt: "原帖未附提示词：作者只公开了这张图，没有附生成它的提示词（成片下方面板显示图片用 GPT 2.5 Sunburst 生成）。",
+      },
+      {
+        id: "techhalla-cutscene-scene6",
+        number: "8",
+        title: "[scene_6] · 床上惊醒 · 视频截取",
+        subtitle: "提示词「[scene_6]」= 第 6 镜 22–26s 起始画面；原图原帖未单独公开，此为成片约 24 秒面板截取，非原图",
+        image: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/refs/08-scene6-from-video.jpg",
+        prompt: "原帖未公开：作者没有单独发出 [scene_6] 原图和提示词。此图为成片截取，仅示意，非原图。",
+      },
+      {
+        id: "techhalla-cutscene-ingame",
+        number: "9",
+        title: "[ingame_scene] · 游戏首画面",
+        subtitle: "提示词「[ingame_scene]」= 第 7 镜 26–30s 画面，作者说这是他游戏真正的第一帧；作者自回复第 4 张原图（界面为西班牙语）",
+        image: "/tutorials/techhalla-point-and-click-cat-cutscene-seedance-2-5/refs/09-ingame-scene.jpg",
+        prompt: "原帖未附提示词：作者只公开了这张图，没有附生成它的提示词（成片下方面板显示图片用 GPT 2.5 Sunburst 生成）。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–4.1s [scene_1] 远景：Lewis 敲笔记本叹气：「A cat got lost, a cat got found. Front page stuff.」大妈抱着巨胖橘猫。" },
+      { number: 2, description: "4.1–9s [scene_2] 特写：大妈眼含泪光：「He was gone for eleven whole minutes.」猫转头对镜头：「Ask me about them, Lewis.」" },
+      { number: 3, description: "9–13.05s [scene_3] 中景：Lewis 愣住，铅笔掉地：「Ma'am… did your cat just talk?」大妈：「He only talks to the press.」" },
+      { number: 4, description: "13.05–17.8s [scene_4] 仰拍：猫飘过枫树飞上紫色天空，大妈挥手：「He does that.」Lewis：「I should've gone to law school.」" },
+      { number: 5, description: "17.8–22.2s [scene_5] 远景：巨猫俯身压过屋顶，回声：「Wake up, Lewis.」" },
+      { number: 6, description: "22.2–25.9s [scene_6] 中景：闹钟滴答，Lewis 从床上惊坐起：「…Eleven minutes.」" },
+      { number: 7, description: "25.9–30.1s [ingame_scene] 远景：Lewis 走到穿衣镜前站定，红色收音机：「…and in local news, a cat…」" },
+    ],
+    constraints:
+      "素材对应：[sheet_1] = 参考 1、[sheet_2] = 参考 2（均原帖未单独公开，视频面板截取仅示意）；[scene_1] = 参考 3、[scene_2] = 参考 4、[scene_5] = 参考 7、[ingame_scene] = 参考 9（作者原图）；[scene_3] = 参考 5、[scene_4] = 参考 6、[scene_6] = 参考 8（原帖未单独公开，视频截取仅示意）。角色和胖橘猫每镜保持一致；火柴人没有嘴，靠点头、眼形和手势说话，只有猫用嘴说话；7 镜硬切，镜头锁定只带轻微视差。和成片的差别：发布版下半部分加了作者的展示面板。",
+    video_prompt: {
+      title: "点击解谜游戏过场 · 7 镜 + 9 图",
+      subtitle: "作者自回复英文完整提示词 · Seedance 2.5 · [sheet_1]/[sheet_2] = 参考 1/2，[scene_1]–[scene_6] = 参考 3–8，[ingame_scene] = 参考 9（5 张原帖未单独公开，视频截取仅示意）",
+      content: `[STYLE + CAMERA + ATMOSPHERE]
+
+Cinematic cutscene of a hand-painted 2D point-and-click adventure game from the nineties, remade today. Fluid full-frame-rate cut-out animation of stick-figure characters over gouache painted backgrounds, flat side-on staging, locked game camera with a gentle parallax drift. Dry deadpan comedy with snappy timing. Seven shots joined by hard cuts.
+
+[IMAGE REFERENCES]
+
+Lewis [sheet_1], Mrs. Abernathy [sheet_2] and the fat orange tabby cat stay identical in every shot.
+
+The stick figures have mouthless black faces: they talk with head nods, eye shapes and hand gestures. The cat talks with its mouth.
+
+[AUDIO]
+
+Language: American English.
+
+Lewis: tired, dry, flat baritone.
+Mrs. Abernathy: warm, sweet elderly voice.
+Cat: very deep, gravelly bass.
+
+Ambience of birds, light breeze and rustling leaves.
+No background music.
+No subtitles.
+
+[TIMELINE]
+
+0-4s: [Wide Shot] [scene_1]
+
+Lewis taps his pencil on the notepad, lets out a sigh and says, flat:
+
+{A cat got lost. A cat got found. Front page stuff.}
+
+The huge cat sags heavier in her arms while she beams.
+
+4-9s: [Close-Up] Hard cut to [scene_2]
+
+She squeezes the cat, eyes glossy:
+
+{He was gone for eleven whole minutes.}
+
+The cat slowly turns its head to the viewer and says:
+
+{Ask me about them, Lewis.}
+
+9-13s: [Medium Shot] Hard cut to [scene_3]
+
+Lewis stands frozen, eyes wide; the pencil hits the sidewalk <pencil clatter> and rolls.
+
+He says:
+
+{Ma'am... did your cat just talk?}
+
+She answers with a calm little nod:
+
+{He only talks to the press.}
+
+13-18s: [Full Shot, low angle] Hard cut to [scene_4]
+
+The cat rises, weightless, turning slowly, up past the maple crown into the lilac sky while leaves drift upward.
+
+She waves it goodbye:
+
+{He does that.}
+
+Lewis watches it go, eyes half-lidded:
+
+{I should've gone to law school.}
+
+18-22s: [Wide Shot] Hard cut to [scene_5]
+
+Purple clouds swirl, the colossal cat leans in over the rooftops, tiny Lewis's hair blows back.
+
+Its mouth opens and the voice booms with a long echo:
+
+{Wake up, Lewis.}
+
+22-26s: [Medium Shot] Hard cut to [scene_6]
+
+Sudden quiet, <alarm clock ticking>.
+
+One still beat, then Lewis bolts upright in bed, eyes snapping wide open, the quilt sliding off his chest.
+
+He stares ahead and mutters:
+
+{...Eleven minutes.}
+
+26-30s: [Wide Shot] Hard cut to [ingame_scene]
+
+Lewis walks in from the left at an even pace and stops in front of the standing mirror, in profile facing right, his reflection appearing in the glass.
+
+The red radio murmurs, tinny:
+
+{...and in local news, a cat...}
+
+He holds perfectly still for the final second.
+
+[STYLE & QUALITY BOOSTERS]
+
+Hand-painted gouache backgrounds with paper grain, clean ink outlines, smooth fluid 2D animation, stable characters and wardrobe in every shot, coherent motion, crisp hard cuts, the painted backgrounds stay fixed inside each shot.
+`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/techhalla/status/2100272558054781069 （先给 GPT Image 2.5 Flare 图片提示词，再给 Seedance 2.5 视频提示词；自回复没有附图，[ref_image] 原图原帖未公开）
+  {
+    id: "techhalla-nyc-tornado-fifth-avenue-seedance-2-5",
+    title: "纽约龙卷风手机实拍 · 被卷走的人问路",
+    subtitle: "X · @techhalla · GPT Image 2.5 + Seedance 2.5 · 30秒 · 3:4",
+    description:
+      "像路人手机实拍：龙卷风扫过曼哈顿，出租车被掀飞，西装男被卷上天，落到安静街区后礼貌问路。",
+    video: "/tutorials/techhalla-nyc-tornado-fifth-avenue-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/techhalla-nyc-tornado-fifth-avenue-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "灾难实拍",
+    shots: 8,
+    references: 1,
+    model: "GPT Image 2.5 Flare（首帧图）+ Seedance 2.5（视频），原帖写明",
+    style: "竖屏手机实拍感 · 一镜到底 · 手持抖动、雨打镜头、数码变焦 · 写实风暴物理 · 冷幽默结尾",
+    aspectRatio: "3/4",
+    sourceUrl: "https://x.com/techhalla/status/2100272554162217468",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 48923,
+    sourceStats: { asOf: "2026-10-06", likes: 643, reposts: 60, bookmarks: 423 },
+    formats: ["电影叙事", "手机POV·Vlog"],
+    hook: {
+      structure: "龙卷风已在街尾 → 逼近 → 出租车被掀 → 西装男被卷走 → 跟着碎片飞 → 落地 → 问路",
+      opening: "第 0 秒就是湿漉漉的中城人行道，帝国大厦在远处，巨大的龙卷风已经落地，路人举着手机拍。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3–12s 漏斗变宽逼近，黄色出租车被掀起翻滚，戴眼镜的西装男站着发呆。", at: 3 },
+        { title: "反转", text: "约 12–20s 西装男被卷离地面，手机镜头也跟着碎片一起翻飞。", at: 12 },
+        { title: "结尾怎么收", text: "约 20–30s 他摔在安静的褐石公寓街上，坐起、站好，对披雨衣的女人说「Hey, sorry, is 5th Avenue this way?」", at: 20 },
+      ],
+      copyThis: "先用图片模型做一张「已经在发生」的手机照片锁死首帧，再在视频提示词里逐秒写，并且每段只允许「ONE CONTACT」一次接触，灾难感真实、节奏也不乱，最后留一句反差台词收尾。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "3:4 竖屏",
+      "GPT Image 2.5",
+      "Seedance 2.5",
+      "一镜到底",
+      "首帧图未公开",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：先生成首帧图 [ref_image]",
+        description:
+          "素材对应：[ref_image] = 参考 1。作者先用 GPT Image 2.5 Flare 生成一张纽约街头龙卷风的手机照片当锁定首帧，图片提示词已公开（见参考 1），但这张图本身原帖未公开；参考 1 是成片约 0.3 秒截帧，仅示意，非原图。跟做时先用参考 1 里的提示词自己出图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明 GPT Image 2.5 + Seedance 2.5。成片 900×1200（3:4 竖屏）、24fps、约 30 秒，一镜到底，结尾问路台词能听清，和提示词基本一致；底部中间有很淡的「TECHHALLA」水印。小差别：提示词写台阶上的女人，成片里她穿雨衣站在人行道上。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴视频提示词",
+        description:
+          "把作者自回复里的 Seedance 提示词整段粘贴，同时上传你的首帧图。结构是：[STYLE + CAMERA + ATMOSPHERE] → [IMAGE REFERENCES] 首帧锁定 → [TIMELINE SECOND BY SECOND] 10 段 → [STYLE & QUALITY BOOSTERS]。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "techhalla-nyc-tornado-ref-image-framegrab",
+        number: "1",
+        title: "[ref_image] · 纽约龙卷风首帧 · 截帧",
+        subtitle: "提示词「[ref_image]」= 锁定首帧（纽约街头龙卷风手机照片）；原图原帖未公开，此为成片约 0.3 秒截帧，仅示意，非原图",
+        image: "/tutorials/techhalla-nyc-tornado-fifth-avenue-seedance-2-5/refs/01-ref-image-framegrab.jpg",
+        prompt: "原帖未公开：这张首帧原图作者没有发出，此图为成片截帧，仅示意，非原图。作者公开的 GPT Image 2.5 Flare 图片提示词如下：\n\nDIRECTIVE:\nProduce one still that reads as a real smartphone photo on a New York City street during a severe weather event. Optical phone capture, available storm light, lived-in JPEG grit — documentary phone snap, not cinematic HDR.\n\nCOMPOSITION (CRITICAL):\n3:4 vertical. FOREGROUND / MID: NYC sidewalk and street with pedestrians reacting — people looking up, phones out, some running or frozen staring, yellow cabs or buses optional, wet asphalt, traffic lights. BACKGROUND (readable but distant): a massive SUPERCELL tornado / wedge tornado funnel under a dark rotating supercell storm base, towering over Midtown / downtown Manhattan skyline — skyscrapers and recognizable NYC urban canyon framing the funnel far down the avenue.\n\nSCENE:\nNew York City, daytime-turned-green-gray storm light, debris haze, rain sheets, ominous shelf/supercell cloud deck. People in street clothes; tornado is clearly in the deep background beyond the blocks, scale enormous.\n\nCAMERA PACK:\nHandheld phone, slight tilt, autofocus hunting between crowd and distant funnel, noise, single social JPEG.\n\nLIGHT:\nSickly storm daylight, flat phone color, blown highlights in sky, muddy shadows.\n\nPHOTOGRAPHIC CHARACTER:\nViral phone video still from the street — real panic energy, tornado supercell behind the city.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 中城湿人行道，帝国大厦在远处，龙卷风已在街尾落地，路人举手机拍。" },
+      { number: 2, description: "3–6s 漏斗变宽向镜头推进，数码变焦拉近风柱。" },
+      { number: 3, description: "6–9s 最近的黄色出租车被掀离地面翻滚。" },
+      { number: 4, description: "9–12s 整个街区被扫，戴眼镜的西装男站在人行道上。" },
+      { number: 5, description: "12–16s 西装男被卷离地面，镜头跟着被拽走。" },
+      { number: 6, description: "16–20s 镜头随碎片翻飞，在木板和自行车之间找他。" },
+      { number: 7, description: "20–24s 褐石公寓街迎面而来，他摔在湿马路中间。" },
+      { number: 8, description: "24–30s 他坐起、站好，对披雨衣的女人问：「Hey, sorry, is 5th Avenue this way?」" },
+    ],
+    constraints:
+      "素材对应：[ref_image] = 参考 1，首帧原图原帖未公开，参考 1 为成片截帧仅示意，图片提示词已公开。一镜到底手机实拍，手机抖动、雨打镜头、对焦乱跑、果冻效应；每段只允许一次接触事件；写实风暴物理。和成片的差别：问路对象站在人行道上而不是台阶上；底部有作者水印。",
+    video_prompt: {
+      title: "纽约龙卷风问路 · 逐秒时间轴",
+      subtitle: "作者自回复英文完整视频提示词 · GPT Image 2.5 Flare + Seedance 2.5 · [ref_image] = 参考 1（原图原帖未公开，成片截帧仅示意，图片提示词见参考卡）",
+      content: `[STYLE + CAMERA + ATMOSPHERE]
+Live vertical 3:4 smartphone recording on a wet Midtown Manhattan sidewalk. Same locked viewpoint as the still: canyon of glass and masonry, Empire State in the skyline, a rain-dark avenue, pedestrians already in frame, a massive wedge tornado already on the ground down the street. Handheld phone shake, autofocus hunting, rain on the lens, JPEG noise, rolling shutter. CONTINUOUS SINGLE TAKE from this phone the entire 30s — the operator stays a pedestrian with a phone, then the phone gets pulled with the debris when the man is lifted. Digital pinch-zooms into the funnel, into flying cars, into the man. Overcast storm light, rain, real wind. Photoreal storm physics: rain sheets, wet asphalt, glass, taxi yellow paint, brownstone brick, body weight.
+LOCKED CAST / WARDROBE / SET (from [ref_image], then the landing block):
+- OPENING STREET: wet Midtown avenue from [ref_image] — same buildings, same tornado already on the ground in the distance, same rain, yellow cabs, buses, pedestrians with phones and umbrellas.
+- THE MAN (payoff character): 50s, rumpled navy blazer, white shirt, dark trousers, soaked, glasses slightly crooked. Visible in the opening crowd on the sidewalk, then he is the one the tornado takes.
+- LANDING BLOCK: after the carry, a quiet residential brownstone street (West Village / Brooklyn stoop row): wet cobbles or asphalt, parked cars, iron railings, stoops, almost empty, tornado receding behind the rooftops.
+- STOOP WITNESS: one woman in a raincoat on a brownstone stoop, unharmed, staring.
+Diegetic audio: storm roar, car alarms, glass, a man yelling, then sudden quiet, then his line in American English.
+[IMAGE REFERENCES]
+[ref_image] = locked opening frame (NYC tornado phone still). Identity of the street, the funnel already on the ground, rain, and camera height are LAW. The clip BEGINS already in this composition: tornado visible down the avenue, people already reacting.
+[TIMELINE SECOND BY SECOND]
+0-3s: [HOOK — IT'S ALREADY HERE] Live chaos already happening. The funnel is already chewing the far avenue, debris already in the air, rain already sideways. A yellow taxi in the street already slides sideways on the wet asphalt. Pedestrians in the foreground already turning, already running. Phone digital-zooms into the base of the tornado. Wind already ripping a newspaper past the lens. Several events already stacked by 3s.
+3-6s: [FUNNEL ADVANCES] The tornado WIDENS and walks toward camera down the avenue. Streetlights bend. A bus in the middle distance is shoved. Phone zoom-punches the rotating debris collar — lumber, a bicycle, a trash can spinning. Rain streaks across the lens. Operator's breathing in the mic.
+6-9s: [FIRST LIFT] ONE CONTACT: a yellow cab nearest the funnel is yanked off its wheels and tumbles once in the air, doors flapping, then slams into a shopfront to the right. Glass sheet explodes inward. People in the foreground drop phones, sprint toward camera-left. The MAN in the navy blazer is still on the sidewalk, frozen, looking up.
+9-12s: [THE BLOCK GOES] The funnel is now mid-block. Awnings rip. A newsstand cart rolls end over end. Digital zoom into flying scaffolding poles. The MAN starts running toward camera, blazer snapping, then the wind takes his feet — his shoes skate on wet pavement. Phone tracks him.
+12-16s: [HE GOES UP] ONE CONTACT: the vortex grabs THE MAN. He leaves the sidewalk, spinning once, blazer over his head, still clutching nothing. The phone operator is pulled a step; the frame yaws. Digital zoom on his face as he goes up into the grey. Midtown canyon spinning behind him. Midpoint rehook: he is inside the storm.
+16-20s: [CARRY] The camera rides the debris with him — still one continuous phone take, tumbling, digital zooms hunting his body among lumber and a spinning bike. City rooftops whip past. The funnel's roar. He is a dark blazer silhouette in grey cloud. Then the rotation dumps him downward toward a different, quieter street of brownstones that appears below through a break in the debris.
+20-24s: [DROP] The brownstone block rushes up. ONE CONTACT: THE MAN hits the wet middle of the street on his side, rolls once, stops on his back. Parked cars, iron stoops, wet brownstone facades, almost no traffic. The tornado's tail is still visible over the rooftops at the far end, receding. Phone — now on the ground with him or just above, still handheld — steadies. Sudden drop in wind noise.
+24-27s: [SIT UP] He sits up in the MIDDLE of the quiet street. Glasses crooked, blazer torn at the elbow, soaked. Looks left, looks right: a still, empty brownstone block, one woman in a raincoat standing on a stoop with her mouth open. A trash can lid clatters to a stop. He stands, a little wobbly, and takes two steps toward her.
+27-30s: [PAYOFF LINE] He clears his throat, polite, completely lost, and says in clear American English, to the woman on the stoop: "Hey, sorry — is Fifth Avenue this way?" He even points down the quiet block. She just stares. Far thunder. Phone holds on his face, then a tiny digital zoom out to him standing alone in the middle of the brownstone street, tornado sky still bruised above the water towers. Loop-open: his pointing hand still up.
+[STYLE & QUALITY BOOSTERS]
+Photoreal live-action smartphone capture. Coherent storm physics, rain, wet brick, taxi weight, a real adult body lifted and dropped. Identity lock to [ref_image] for the opening avenue and funnel. Continuous fan-phone take, digital zooms only. Comic timing lives in the quiet landing and the spoken line — the destruction stays physically real.
+`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/techhalla/status/2099627433754300803 （自回复先给 GPT Image 2.5 Flare 图片提示词并附生成的首帧图 1536×2048，再给 Seedance 2.5 视频提示词；[pov_ref] 与 @Image 1 都指这张图）
+  {
+    id: "techhalla-canyon-skate-parachute-hovercraft-seedance-2-5",
+    title: "峡谷木坡滑板冲下 · 开伞落到气垫船",
+    subtitle: "X · @techhalla · GPT Image 2.5 + Seedance 2.5 · 30秒 · 3:4",
+    description:
+      "胸前 GoPro 第一视角：滑板冲下峡谷木坡飞出悬崖，自由落体后开伞，滑翔降落到摄制组的气垫船上。",
+    video: "/tutorials/techhalla-canyon-skate-parachute-hovercraft-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/techhalla-canyon-skate-parachute-hovercraft-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "极限运动 POV",
+    shots: 7,
+    references: 1,
+    model: "GPT Image 2.5 Flare（首帧图）+ Seedance 2.5（视频），原帖写明",
+    style: "GoPro 胸前机位第一视角 · 一镜到底 · 极限运动纪录片质感 · 只有现场声",
+    aspectRatio: "3/4",
+    sourceUrl: "https://x.com/techhalla/status/2099627428624642164",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 149683,
+    sourceStats: { asOf: "2026-10-06", likes: 739, reposts: 68, bookmarks: 517 },
+    formats: ["手机POV·Vlog", "电影叙事"],
+    hook: {
+      structure: "坡顶低头视角 → 冲下木坡 → 飞出坠落 → 拉伞 → 河上滑翔 → 锁定气垫船 → 降落欢呼",
+      opening: "第 0 秒是胸前低头视角：脚踩滑板停在陡峭木坡边缘，下面是红岩峡谷和细细的科罗拉多河。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 0–11s 板头翻过坡沿，全速冲下木板道，冲出尽头向右坠向河谷。", at: 0 },
+        { title: "反转", text: "约 11–15s 右手伸进画面猛拉开伞环，橙白伞衣在头顶炸开。", at: 11 },
+        { title: "结尾怎么收", text: "约 20–30s 河面上的气垫船越来越近，船上摄制组举着摄影机欢呼迎接降落。", at: 20 },
+      ],
+      copyThis: "第一视角动作片先用图片模型把「低头看到的身体、滑板、坡沿、峡谷」做成首帧图锁死，再在视频提示词里写死 LOCKED PROPS（只有一条坡、胸前开伞环、气垫船），整段一镜到底就不会乱。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "3:4 竖屏",
+      "GPT Image 2.5",
+      "Seedance 2.5",
+      "第一视角",
+      "一镜到底",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备首帧图 [pov_ref]",
+        description:
+          "素材对应：[pov_ref] = @Image 1 = 参考 1。作者在自回复里公开了这张 GPT Image 2.5 Flare 生成的首帧图和它的图片提示词（参考 1 就是原图）：胸前机位低头看，滑板停在木坡边缘，远处是峡谷和河。你可以直接用这段图片提示词出自己的首帧。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明 GPT Image 2.5 + Seedance 2.5。成片 900×1200（3:4 竖屏）、60fps、约 30 秒，一镜到底，没看到水印，没有台词，只有风声和环境声。坡道、坠落、开伞、滑翔、气垫船的顺序和时间轴基本一致。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴视频提示词",
+        description:
+          "把作者自回复里的 Seedance 提示词整段粘贴，同时上传首帧图。结构是：[STYLE + CAMERA + ATMOSPHERE] → [IMAGE REFERENCES] 首帧锁定 + LOCKED PROPS → [TIMELINE SECOND BY SECOND] 7 段 → [STYLE & QUALITY BOOSTERS]。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "techhalla-canyon-skate-pov-ref",
+        number: "1",
+        title: "[pov_ref] / @Image 1 · 胸前视角首帧",
+        subtitle: "提示词「[pov_ref]」和「@Image 1」= 同一张首帧图：胸前低头视角、滑板停在木坡边缘；作者自回复附的原图（GPT Image 2.5 Flare 生成）",
+        image: "/tutorials/techhalla-canyon-skate-parachute-hovercraft-seedance-2-5/refs/01-pov-ref-gpt-image.jpg",
+        prompt: "DIRECTIVE:\nProduce one still that reads as a real GoPro chest-mount first-person frame an instant before a downhill skate drop. Optical capture, available daylight, lived-in action-cam grit, extreme vertigo. Text-to-image only.\n\nSUBJECT / POV:\nStrict first-person from a chest-mounted GoPro on a woman skateboarder. Looking DOWN her own body: upper frame shows her athletic neckline and collarbones (fitted crop top / sports tank), mid frame her arms and the skateboard deck underfoot, lower frame her feet planted on the grip tape, trucks and wheels visible at the lip. Hands may enter for balance. No face — downward body POV only. One coherent body.\n\nBEAT:\nStopped at the brink of ONE insanely steep wooden launch ramp on a canyon rim, about to roll. Board tip hangs over empty air.\n\nSCENE / RAMP (ONE ONLY):\nA single continuous steep wooden downhill skate ramp under the board — planks visibly slope down toward empty air. No second ramp. Beyond the lip: Grand Canyon / Colorado River canyon, sheer red-rock cliffs, the river a thin ribbon far below. Real outdoor location, wind, dust.\n\nCOMPOSITION:\n3:4 vertical GoPro. Extreme downward tilt: body and board dominate the near field; the canyon yawns beyond the ramp lip. Feet huge, river tiny — pure vertigo. Tall frame stacks top → deck → plunging ramp → abyss.\n\nCAMERA PACK:\nGoPro chest mount, wide fisheye-ish action FOV, high shutter daylight, slight rolling shutter, scuffs on the lens, single JPEG from a real session.\n\nLIGHT:\nHarsh high-desert sun, hard shadows on the deck and collarbones, bright canyon bounce from red rock.\n\nPHOTOGRAPHIC CHARACTER:\nConsumer action-cam realism, flat-ish GoPro color, grit and dust motes, cliff-edge vertigo.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 胸前低头视角停在木坡边缘，随即前倾冲下坡。" },
+      { number: 2, description: "3–7s 全速冲下单条木板道，板面震动、尘土飞溅。" },
+      { number: 3, description: "7–11s 冲出坡道尽头，身体向右坠向科罗拉多河，红岩崖壁掠过。" },
+      { number: 4, description: "11–15s 右手拉开伞环，橙白伞衣在头顶张开，身体被猛地一拽。" },
+      { number: 5, description: "15–20s 挂在伞下沿河道滑翔，双脚垂在画面里。" },
+      { number: 6, description: "20–25s 前方河面出现气垫船，船上有摄制组和摄影机。" },
+      { number: 7, description: "25–30s 降落进气垫船的水雾里，船上的人举手欢呼。" },
+    ],
+    constraints:
+      "素材对应：[pov_ref] = @Image 1 = 参考 1（作者原图），锁定首帧的身体构图、服装、滑板、坡沿和峡谷地形。一镜到底不切镜，只允许 POV 抖动、数码推近和身体倾斜；只有一条木坡；不露脸；只有现场声。成片和提示词基本一致。",
+    video_prompt: {
+      title: "峡谷滑板跳伞 · 一镜到底 POV",
+      subtitle: "作者自回复英文完整视频提示词 · GPT Image 2.5 Flare + Seedance 2.5 · [pov_ref] / @Image 1 = 参考 1（作者原图，图片提示词见参考卡）",
+      content: `[STYLE + CAMERA + ATMOSPHERE]
+One continuous first-person GoPro chest-mount take, never cuts — only natural POV shake, digital punch-zooms, and body-tilt reframes. Real action-sports documentary capture over a Colorado River canyon: harsh high-desert sun, red-rock cliffs, thin river far below, dust, grit on the lens, rolling shutter, flat GoPro color science, high-ISO daylight grain. Lived-in physics: wood ramp vibration, dirt spray, freefall wind roar, canopy snap, fabric buffet, hovercraft wash. Diegetic sound only: board on wood, wheels, wind, ripcord yank, canopy inflation, river wind, distant cheers, hovercraft engines.
+
+[IMAGE REFERENCES]
+[pov_ref] is the STRICT opening-frame lock: chest-mount POV looking down — athletic scoop/crop top and collarbones in the upper frame, skateboard deck and feet at the lip of the steep wooden ramp, canyon and river beyond. Preserve that exact body framing, wardrobe, board, ramp lip, and canyon geography at t=0. One coherent body throughout. No face — downward/forward body POV only.
+
+LOCKED PROPS:
+- Skateboard underfoot from @[Image 1](image_1)
+- Single steep wooden downhill ramp (ONE ramp only)
+- Chest-harness parachute with a bright metal ripcord ring reachable by the right hand
+- Later: civilian parachute canopy; river; a real hovercraft on the water with a film/camera crew and cheering people on deck
+
+[TIMELINE SECOND BY SECOND — ONE CONTINUOUS POV TAKE]
+
+0-3s: HOOK — COMMIT. Matching [pov_ref], then the rider immediately leans and drops INTO the steep wooden ramp. Board tips over the lip; wood rushes under the wheels; digital punch-zoom into the grip tape as speed builds. Canyon and river already visible ahead/below. Heartbeat shake.
+
+3-7s: FULL-SPEED RAMP. POV hurtles down the single plunging plank run — rattling vibration, hands flash for balance, feet locked on deck. Dirt and dust kick up at the lower ramp transition onto bare earth/rock at the canyon rim. Telephoto-feeling digital zoom snaps toward the river far below as the board leaves solid ground.
+
+7-11s: FREEFALL RIGHT. Body and board pitch toward the RIGHT, falling toward the Colorado River. Red cliffs smear past. Wind screams. Board may separate or trail in frame. The river grows huge — impact feels imminent. Digital zoom punches toward the water surface rushing up.
+
+11-15s: RIPCORD + CANOPY. Right hand shoots into frame, fingers hook and yank the bright metal ripcord ring hard. Harness jerks. Parachute canopy bursts open ABOVE/behind — fabric blooms, straps tighten across the chest (still visible in POV). Violent deceleration: POV snaps upward, swing settles. Board may dangle or fall away. Freefall becomes float. End of first half: alive, canopy open, river underfoot.
+
+15-20s: GLIDE OVER RIVER. Continuous POV under open canopy, drifting downstream along the Colorado River corridor. Boots/legs hang in frame; canyon walls slide past; river glitter and wind. Soft digital zooms between hanging feet and the silver ribbon of water ahead. Searching for the landing.
+
+20-25s: TARGET LOCK. Ahead on the river: a real hovercraft (air-cushion craft) holding position — camera operators with cinema cameras, boom, crew in black jackets and hi-vis, people on deck starting to cheer and wave. POV banks gently toward it. Canopy lines creak. Digital zoom punches to the hovercraft deck and waving crew.
+
+25-30s: ARRIVAL PAYOFF. Final approach over the water into the hovercraft wash — spray, engine roar, faces cheering, arms up, cameras pointed at the descending POV. Feet swing toward the deck/raft edge; crew reaches; canopy still overhead. Continuous take ends mid-arrival, still moving, cheers peaking — loop-open finish.
+
+[STYLE & QUALITY BOOSTERS]
+Photoreal GoPro action footage; coherent weight, wind, and fabric; single continuous chest-mount POV; identity and wardrobe locked to [pov_ref]; one ramp only; real parachute physics; real hovercraft and live crew energy; harsh desert light; lived-in JPEG grit.
+`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/techhalla/status/2098849133876441520 （自回复只有文字，作者说是配合「a pic of myself」本人照片使用；照片原帖未公开；主帖文案 how I feel using Grok bot，未写视频模型）
+  {
+    id: "techhalla-bald-clone-army-orcs",
+    title: "光头大胡子一跺脚分身 · 浮空岛下群殴兽人",
+    subtitle: "X · @techhalla · 模型未写明 · 30秒 · 16:9",
+    description:
+      "一个光头大胡子男人一跺脚分出四个分身，在浮空岛下的战场上和兽人肉搏，最后打倒兽人首领站成一排。",
+    video: "/tutorials/techhalla-bald-clone-army-orcs/demo-web.mp4",
+    poster: "/tutorials/techhalla-bald-clone-army-orcs/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "奇幻动作",
+    shots: 8,
+    references: 1,
+    model: "原帖未写明（作者只说「video prompt」，配合本人照片使用）",
+    style: "写实奇幻战场 · 战地摄影手持 · 甩镜急推 · 浮空岛与瀑布 · 无台词",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/techhalla/status/2098849130411970767",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 17034,
+    sourceStats: { asOf: "2026-10-06", likes: 185, reposts: 13, bookmarks: 89 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "站定 → 跺脚分身 → 冲进兽人堆 → 左右清场 → 混战 → 对决首领 → 站队收尾",
+      opening: "第 0 秒光头大胡子男人站在黑色玄武岩战场正中，两边是兽人军队，头顶是带瀑布的浮空岛。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 0–3s 他一跺脚，身边炸出黑色粒子，四个一模一样的分身落地。", at: 0 },
+        { title: "反转", text: "约 3–18s 五个人冲进兽人堆，格挡、肩撞、摔投，镜头被撞得乱晃。", at: 3 },
+        { title: "结尾怎么收", text: "约 18–30s 本体和披刺甲的兽人首领对决，打倒后众分身在倒地兽人中站成一排。", at: 18 },
+      ],
+      copyThis: "想让真人变成动作片主角：用一张正脸照锁住身份，提示词里写死「每个分身都是同一张脸」，再用战地摄影师的手持视角（撞肩、急推、甩镜、镜头脏）来掩盖动作细节，打斗就显得有分量。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "奇幻动作",
+      "分身",
+      "本人照片未公开",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备主角正脸照",
+        description:
+          "素材对应：提示词里的「the provided photo」= 参考 1，是作者本人的照片（他说用了「a pic of myself」），原帖未公开。参考 1 是成片约 2 秒截帧，仅示意，非原图。跟做时请用你自己或已获授权的人物照片，不要用别人的脸。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖没有写用的哪个视频模型。成片 1920×1080（16:9 横屏）、60fps、约 30 秒，一镜到底式手持，没看到水印，没有台词。和提示词对不上的地方：提示词写黑色束腰长衣，成片是黑 T 恤；结尾队形里看起来有 7 个光头男，比提示词说的 5 个多。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者自回复里的英文提示词整段粘贴，同时上传主角照片。结构是：[STYLE + CAMERA + ATMOSPHERE] → [IMAGE REFERENCES] 锁脸 → [PLACE] 战场 → [TIMELINE] 8 段 → [STYLE & QUALITY BOOSTERS]。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "techhalla-clone-army-face-photo-framegrab",
+        number: "1",
+        title: "the provided photo · 主角本人照片 · 截帧",
+        subtitle: "提示词「the provided photo」= 主角（作者本人）的脸部参考照；原图原帖未公开，此为成片约 2 秒截帧，仅示意，非原图",
+        image: "/tutorials/techhalla-bald-clone-army-orcs/refs/01-face-photo-framegrab.jpg",
+        prompt: "原帖未公开：作者只说配合一张本人照片使用，没有发出这张照片。此图为成片截帧，仅示意，非原图；跟做时请用你自己或已获授权的人物照片。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 主角站在战场正中，一跺脚炸出黑色粒子，四个分身落地，镜头急推到他脸上。" },
+      { number: 2, description: "3–6s 五人冲出，分身格挡兽人斧头并肩撞。" },
+      { number: 3, description: "6–10s 甩镜左右：分身分别把两侧兽人打倒。" },
+      { number: 4, description: "10–14s 高位手持跟拍混战，两个分身合力放倒一个披甲兽人。" },
+      { number: 5, description: "14–18s 跟在主角身后，路被清开，露出远处的兽人首领。" },
+      { number: 6, description: "18–22s 主角和首领对撞，躲开大剑、肩撞肋部。" },
+      { number: 7, description: "22–26s 主角正面突进打穿首领的防守，把它放倒。" },
+      { number: 8, description: "26–30s 拉远：光头男们在倒地兽人中站成一排，浮空岛掉下碎石。" },
+    ],
+    constraints:
+      "素材对应：the provided photo = 参考 1，主角本人照片原帖未公开，参考 1 为成片截帧仅示意。所有分身必须是同一张脸、同一个光头和胡子；战地摄影手持，撞肩、急推、甩镜、镜头脏；写实打击重量。和成片的差别：衣服是黑 T 恤，结尾人数看起来多于 5 个。",
+    video_prompt: {
+      title: "光头分身大战兽人 · 8 段时间轴",
+      subtitle: "作者自回复英文完整提示词 · 模型原帖未写明 · the provided photo = 参考 1（作者本人照片原帖未公开，成片截帧仅示意）",
+      content: `[STYLE + CAMERA + ATMOSPHERE]
+Photoreal live-action combat footage shot like a war cameraman trapped inside the fight: harsh handheld, shoulder bumps, crash zooms, whip pans, momentary soft focus after impacts, dust on the lens, overexposed sky flashes, crushed blacks in the dirt. Not clean epic coverage, gritty, close, physical, real weight. Wide open battlefield of cracked black basalt and torn grass, ash drifting, heat shimmer. The sky is overloaded fantasy: colossal floating islands grinding slowly overhead, waterfalls pouring into open air, broken stone bridges hanging between them, ember-clouds, twin suns behind mist. Orc armor scrapes, clone footsteps thud, impacts land heavy. 
+[IMAGE REFERENCES]
+Use the provided photo as the ONLY visual reference for the protagonist’s exact face, bald head, thick dark beard, skin, eyes, and body type. He wears a simple black tunic, dark trousers, bare forearms, boots. Every clone is a perfect copy of him — same face, same bald head, same beard, same tunic — distinguishable only by position and what they are hitting. Identity locked for the entire 30 seconds.
+[PLACE]
+A vast fantasy battle field: basalt plates, grass islands, bone-white dust, wrecked siege banners. Mid-field: a squad of thick orc warriors in scavenged iron, tusks, axes, shields. Deep field: a larger orc warchief with a spiked pauldron and a two-handed blade. Above: floating islands with waterfalls and falling rock. The geography stays consistent as the camera thrashes.
+[TIMELINE — 30s, ACTION ALREADY ON]
+0-3s: [HOOK — MULTIPLY] Handheld wide-to-tight already running. He stands center foreground in the black tunic, facing slightly toward camera, orcs arrayed left and right, warchief deep center under the floating islands. No warm-up kata. He stomps, body jerks, and dark particle matter rips out of him in a sharp burst — four copies slam into existence around him in under three seconds, left-front, left-back, right-front, right-back, hard landings that kick dust. Five identical bald bearded men in black tunics now occupy the frame. Crash zoom on his face as the last copy solidifies. Orcs flinch and raise weapons.
+3-6s: [IMMEDIATE CONTACT] Camera shoves into the mid-ground as the five charge. Left-front copy meets an orc axe with a cross-block and a shoulder check that knocks the orc off balance. Right-front copy slides under a shield and drives a knee into an orc’s midsection. Dirt explodes. Handheld shakes with every hit. Main (center) does not stop — he walks a hard line straight toward the warchief while the copies open the squad.
+6-10s: [COPIES CLEAR LEFT/RIGHT] Whip pan left: left-back copy catches an orc’s wrist, turns the guard aside, and lands a short combo of body punches until the orc drops to the dirt. Whip pan right: right-back copy launches a spinning kick that folds an orc over a fallen banner, then pins the shield flat under a boot. Grass and iron rings. Crash zooms on fists and armor. Dust on lens, wiped by camera motion. Main keeps advancing center-frame through the gap.
+10-14s: [MID-FIELD SCRUM] High-ish handheld, still dirty, tracking above the scrum. Two copies double-team one armored orc: one clinches from behind, the other drives a flying knee into the chest plate — the orc hits basalt hard, armor clangs. Another orc swings a blade; a copy takes it on a forearm guard, grimaces, and answers with an elbow to the shoulder pauldron. Bodies roll. Fabric rips. The floating islands loom, a waterfall sheet catching twin-sun glare. Main never joins the side fights — continuous forward walk, eyes on the warchief.
+14-18s: [PATH CLEARED → WARCHIEF] Medium handheld behind-and-beside the main as the last mid-squad orcs get dropped by copies on both flanks — a takedown slam left, a solid punch to the chest plate right. Dust sheet blows across frame. Ahead: the orc warchief plants his feet, two-handed blade up, roaring. Main breaks into a sprint. Crash zoom on the warchief’s tusks, then on the main’s bald head and beard locked to the photo. Copies stay busy behind him finishing stragglers — visible in soft periphery, still fighting.
+18-22s: [WARCHIEF CLASH] They collide center. Blade comes down; main slips inside, shoulder-checks the warchief’s ribs, gets clipped on the tunic, spins with the hit, and answers with a rising punch to the jaw guard. Handheld rides the clinch — too close, elbows, breath, metal. The warchief shoves him back two steps through dirt. A copy flashes in from the left and kicks the warchief’s knee sideways; another copy from the right pulls the blade arm wide. Main resets stance. Triple pressure. Gritty, ugly, real.
+22-26s: [FINISH THE CHIEF] Main drives forward again: feint low, then a full-commit straight through the warchief’s guard into the chest plate, followed by a short hook to the side of the helmet. The warchief staggers. Both flanking copies hammer him — left copy a heavy body shot, right copy a kick to the back of the leg. The warchief drops to one knee, then flat onto the basalt, blade skidding away in a spray of dirt. Crash zoom on the weapon sliding. Floating islands still grinding above. Camera breathes hard.
+26-30s: [BOARD CONTROL / HOLD] Handheld pulls a shaky wider frame. The five identical bald men stand over the fallen squad and the downed warchief — copies still pinning last moving orcs for one beat, then freezing into a spread formation around the main. Main stands center, black tunic dusty and torn at the shoulder, chest heaving, face locked to the photo, looking past camera toward the next ridge. Ash falls. A chunk of rock shears off a floating island and hits far background. Camera holds the grit and the five silhouettes. End on impact dust, not a clean pose.
+[STYLE & QUALITY BOOSTERS]
+Gritty handheld action-camera battle footage, multiplication completed inside the first three seconds with particle birth and hard landings, thirty seconds of continuous physical succession, five identical bald bearded men in black tunics locked to the still, orc squad cleared by copies while the main walks then sprints to the warchief, dirty clinch, knee check assist, blade lost, warchief down, fantasy sky of floating islands and waterfalls kept live in background, real dust/fabric/metal/weight, crash zooms, whip pans, lens dirt. Fantasy action only.
+`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/techhalla/status/2097626133432799587 （作者说 just text to video，纯文生视频无参考图）。主帖引用作者自己更早的潘多拉 vlog 帖 https://x.com/techhalla/status/2097521124154241509 （另一条视频和提示词，不是本条参考素材）
+  {
+    id: "techhalla-exoplanet-phone-vlog-seedance-2-5",
+    title: "刚落地外星球也要发 vlog · 巨大月亮下拍怪兽",
+    subtitle: "X · @techhalla · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "像旅行者手机随手拍：外星海岸上巨大月亮挂在天上，她边走边拍高塔植物、长颈兽群、凝胶河和巨型甲虫。",
+    video: "/tutorials/techhalla-exoplanet-phone-vlog-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/techhalla-exoplanet-phone-vlog-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "外星 vlog",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5（原帖写明，纯文生视频）",
+    style: "手机实拍 found footage · 硬切 · 抖动、过曝、镜头脏 · 外星生态 · 风声压过人声",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/techhalla/status/2097626129989280077",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 13881,
+    sourceStats: { asOf: "2026-10-06", likes: 133, reposts: 9, bookmarks: 96 },
+    formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "白垩崖+巨月 → 自拍 → 高塔植物 → 长颈兽群 → 凝胶河 → 巨型甲虫 → 夜晚发光林 → 月下收尾",
+      opening: "第 0 秒是白垩海岸，一轮巨大的月亮和一个小太阳挂在天上，接着镜头翻转到她被风吹乱的脸。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.6–13s 镜头穿过高塔般的肋状植物，拍到地上的触须和远处的长颈兽群。", at: 2.6 },
+        { title: "反转", text: "约 13–24s 凝胶河里冒出鳍状背甲，河边是球形岩石和门那么大的甲虫。", at: 13.4 },
+        { title: "结尾怎么收", text: "约 24–30s 天色转暗，月亮成了主光，发光的薄荷色豆荚林和月下的河面收尾。", at: 24 },
+      ],
+      copyThis: "科幻场景想拍得真，就别拍成大片：写成「普通人给朋友录的旅行 vlog」，要求硬切、手机贴太近、过曝、镜头脏、风声吃掉人声，奇观只出现在「镜头刚好扫到」的地方。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "手机 vlog",
+      "科幻",
+      "纯文生视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：确认不需要参考图",
+        description:
+          "作者在自回复里说这条「just text to video」，没有参考图，直接用文字生成。主帖引用的潘多拉 vlog 是作者另一条作品，不是本条的素材。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明用 Seedance 2.5。成片 1920×1080（16:9 横屏）、60fps、约 30 秒，多处硬切，底部中间有很淡的「TECHHALLA」水印。和提示词对不上的地方：提示词写她是淡紫灰皮肤、薄荷色雀斑、玻璃质发冠、金色眼睛的外星人，成片里她看起来就是普通金发人类女性；提示词写她会对镜头说话，成片里听不清人声，基本只有风声。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者自回复里的英文提示词整段粘贴。结构是：[STYLE + CAMERA + ATMOSPHERE] → [SUBJECT] 人物 → [PLACE] 外星海岸 → [TIMELINE] 6 段硬切 → [REALISM LOCK]。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.2s 白垩海岸，巨大月亮和小太阳挂在天上。" },
+      { number: 2, description: "1.2–2.6s 镜头翻转自拍，她被风吹乱头发。" },
+      { number: 3, description: "2.6–9.2s 穿过高塔般的肋状植物，镜头放低拍地上的触须，她举着手机拍。" },
+      { number: 4, description: "9.2–13.4s 爬上高处：巨月在地平线上，琥珀色平原上长颈兽群走过，再切回她眯眼的脸。" },
+      { number: 5, description: "13.4–24s 凝胶河面泛着气泡，河里冒出鳍状背甲；河边球形岩石之间爬过一只巨型甲虫。" },
+      { number: 6, description: "24–27.7s 天色转暗，琥珀色山谷、夜里发着薄荷色光的豆荚林。" },
+      { number: 7, description: "27.7–30.1s 手机对着月亮和暗色河面，录像戛然而止。" },
+    ],
+    constraints:
+      "素材对应：无参考素材，纯文生视频。手机随手拍，不要转场、慢动作、调色、文字和贴纸；每次硬切都是同一张脸；巨大月亮全天挂在天上。和成片的差别：女主没有外星人特征（紫灰皮肤、发冠、金眼），人声听不清；底部有作者水印。",
+    video_prompt: {
+      title: "外星球手机 vlog · 6 段硬切",
+      subtitle: "作者自回复英文完整提示词 · Seedance 2.5 · 无参考素材（纯文生视频）",
+      content: `[STYLE + CAMERA + ATMOSPHERE]
+Real found-footage phone vlog on an alien planet. She is filming as she walks, the way someone records a trip for a friend: uneven clips, hard cuts, the phone too close, then swung out at whatever just moved. Slight shake, bad exposure, soft focus, lens dirt, wind slamming the mic, her voice half-lost, then creatures and plants filling the frame. No transitions, no slow-mo, no grade, no text, no stickers. It feels raw because the planet is doing too much for a phone. A giant moon hangs in the sky the whole day, pale and huge, even with the suns up.
+
+[SUBJECT]
+A woman about 27 in alien years, off-world traveler filming her own vlog. Cool lilac-grey complexion, faint mint freckles, a short glassy hair-crest messy from wind, gold eyes. Simple field clothes the whole take: dusty linen wrap, travel shirt, boots, a small pack. Fully clothed in every clip. She talks to the lens in short bursts, then forgets the camera and points it at the planet. Same face in every cut. Calm, curious, a little worn. Not performing.
+
+[PLACE]
+An alien wild coast, lived-in and too big for the phone. Chalk shelves, forests of tall ribbed plants that lean and creak, ground-cover that pulls back when a boot lands, a gel-river the color of bottle glass, herds crossing open amber flats, a cliff path under the giant moon. Two small suns. Wind, grit, insect-choir, distant animal calls. No postcard town. The extraordinary stuff is just outside the lane.
+
+[TIMELINE — PHONE VLOG, HARD CUTS]
+0-4s: HOOK — she is already walking a chalk shelf, phone in her hand, giant moon filling the upper frame behind her. She turns the lens on herself, says something the wind eats, then flips the phone out: a stand of ribbed plants as tall as towers, swaying, seed-pods knocking. Raw, immediate.
+
+4-9s: She pushes through a lane of vegetation. Leaves the size of doors fold aside and settle behind her. Cut to the phone dropped low: ground-cover peeling back from her boots, pale roots clicking. Cut to her stopping, holding the phone steady, filming a slow six-legged grazer the size of a cart chewing a pod. It looks at the lens. She does not get closer. Wind on the mic.
+
+9-15s: She crests a rise. The giant moon sits on the horizon, enormous, craters readable. She films it, then the phone dips and catches a herd of long-necked grazers crossing the amber flat, legs too many, moving like a slow traffic jam. Cut to a close of a plant opening as the herd passes, then shutting. Cut to her face for a second, squinting, talking, then back to the animals. Overexposed, dusty, real.
+
+15-21s: Gel-river. She stands on the bank and films the surface beading and rolling upstream. Something large moves under it, a dark shape, then a fin of shell breaks and sinks. She laughs once, surprised, and steps back. Cut to her crouched, filming a cluster of cube-bodied river birds pecking the mud. One hops onto a rock and stares. Cut to the moon reflected, broken, in the gel. Phone almost slips. She catches it.
+
+21-26s: Afternoon wind. She follows a dirt track between breathing shell-boulders. A door-sized beetle crosses ahead and she waits, filming its legs, then its eye, then the plants it brushes. Cut to her wiping the lens with her sleeve. Cut to a high shelf: two suns, the giant moon still up, a valley of moving forest below. She holds the shot too long. The audio is just wind and a far call.
+
+26-30s: The light drops. The moon brightens until it is the main light. She films a night-opening grove, pods glowing faint mint, small flyers stitching between them. Cut to her face, tired, hair-crest flat from the wind, the moon over her shoulder. Last shot: phone pointed out from the shelf at the giant moon and the dark gel-river, a herd still moving as small shapes, her breathing on the mic, then the recording ends mid-step, like a real vlog file.
+
+[REALISM LOCK]
+Found footage alien vlog only. Handheld phone, hard cuts, dirty lens, wind, bad exposure. Same woman, fully clothed, same face. Giant moon in the sky all day. Creatures and vegetation carry the clips: ribbed forest, ground-cover that pulls back, a six-legged grazer, a many-legged herd, cube-bodied river birds, a shape under the gel, a door-sized beetle. Raw, specific, extraordinary, and ordinary to her.
+`,
+    },
+  },
+  // 查重别名: https://x.com/sipteaandcoffee/status/2107060987157524524 （主帖长文即完整提示词，纯文生视频无参考图；主帖没有引用帖，另有他人引用本帖做的复刻，不是本条素材）
+  {
+    id: "sipteaandcoffee-elephant-launch-horse-landing-circus-seedance-2-5",
+    title: "马戏团大象把女孩甩上天 · 空翻落到马背上",
+    subtitle: "X · @sipteaandcoffee · Seedance 2.5 · 15秒 · 9:16",
+    description:
+      "像观众席手机实拍：大象用鼻子把金发杂技女孩甩上高空，她连续后空翻，最后稳稳站上走过的马背。",
+    video: "/tutorials/sipteaandcoffee-elephant-launch-horse-landing-circus-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/sipteaandcoffee-elephant-launch-horse-landing-circus-seedance-2-5/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "马戏实拍",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5（原帖写明，在 TapNow 上生成）",
+    style: "观众席手机实拍感 · 一镜到底 · 竖屏 · 马戏团暖光 · 前景观众剪影",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/sipteaandcoffee/status/2107060987157524524",
+    sourceAuthor: "@sipteaandcoffee",
+    sourcePlatform: "X",
+    sourceImpressions: 14570,
+    sourceStats: { asOf: "2026-10-06", likes: 293, reposts: 8, bookmarks: 26 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "跑向大象 → 被甩上天 → 高空连翻 → 马进场 → 落上马背 → 张开双臂谢幕",
+      opening: "第 0 秒是观众席视角：沙地马戏场中间站着大象，旁边一张蓝色小蹦床，金发女孩朝它跑去。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–7s 大象扬起鼻子把她甩上高空，镜头往上追，她在帐篷顶下连续后空翻。", at: 2 },
+        { title: "反转", text: "约 7–10s 她落回蹦床又弹起，深棕色的马从下方走进场。", at: 7 },
+        { title: "结尾怎么收", text: "约 10–15s 她双脚稳稳落在走动的马背上，张开双臂摆出胜利姿势。", at: 10 },
+      ],
+      copyThis: "不可能的特技要拍成「观众随手录的爆款视频」：机位放在观众席、前景留人头剪影、镜头追不上人时允许抖动，再按 3 秒一段写清起跳、翻转、进场、落地、谢幕。",
+      approx: true,
+    },
+    tags: [
+      "15秒",
+      "9:16 竖屏",
+      "Seedance 2.5",
+      "TapNow",
+      "马戏",
+      "纯文生视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：确认不需要参考图",
+        description:
+          "这条是纯文生视频，原帖没有附图，提示词里也没有 @图片，直接用文字生成。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明用 Seedance 2.5，在 TapNow 上生成。成片只有 480×848（约 9:16 竖屏）、24fps、约 15 秒，一镜到底，没看到水印，清晰度偏低。和提示词对不上的地方：中途约 7.6 秒她先落回蹦床又弹起一次，提示词里没有这一下。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把主帖里的英文提示词整段粘贴。结构是：总述 → SETTING 场景 → CHARACTERS 女孩、大象、马 → 5 段时间轴（大象发射、高空空翻、马进场、完美落地、谢幕）→ CAMERA STYLE。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 观众席视角，大象站在蓝色小蹦床旁，金发女孩跑过去。" },
+      { number: 2, description: "2–4s 大象扬鼻把她甩上天，镜头往上追。" },
+      { number: 3, description: "4–7.5s 她在帐篷顶下连续后空翻，大象在下面变小。" },
+      { number: 4, description: "7.5–8.5s 她落回蹦床又弹起，深棕色马从右侧走进场。" },
+      { number: 5, description: "8.5–10.5s 她空中打开身体准备落地。" },
+      { number: 6, description: "10.5–13s 双脚落在走动的马背上，屈膝缓冲后站直，张开双臂。" },
+      { number: 7, description: "13–15s 马绕场继续走，大象在背景走动，她微微鞠躬。" },
+    ],
+    constraints:
+      "素材对应：无参考素材，纯文生视频。观众席手机实拍，不要商业大片感；特技过程不切镜；动作夸张但重量和惯性要可信；底部要有观众剪影和举起的手机。和成片的差别：中途多了一次落回蹦床再弹起；分辨率只有 480p。",
+    video_prompt: {
+      title: "马戏团大象发射 · 15 秒时间轴",
+      subtitle: "主帖英文完整提示词 · Seedance 2.5（TapNow）· 无参考素材（纯文生视频）",
+      content: `Create a 15-second ultra-realistic vertical 9:16 circus performance video, filmed casually by an audience member from the seating area of a large traditional indoor circus arena.
+
+The video should feel like a **real viral phone recording of an unbelievable live stunt**, not a polished commercial or cinematic production.
+
+### SETTING
+
+Inside a huge traditional circus tent with a circular **light-tan sand performance ring**, dark audience seating packed with spectators, red barriers around the arena, tall structural poles, and a dark striped circus canopy overhead.
+
+Warm practical circus lights illuminate the center of the ring while the audience remains comparatively dark.
+
+The bottom foreground occasionally contains **dark silhouettes of spectators’ heads and raised phones**, making it obvious that the footage is being recorded from the audience.
+
+In the center of the arena is a **small circular trampoline with a bright blue padded rim and silver metal legs**.
+
+### CHARACTERS
+
+**Female Acrobat:**  
+A young blonde female circus performer with an athletic build. She wears a fitted **light-pink short-sleeve top, short green plaid performance skirt, white socks and white athletic shoes**. Her blonde hair moves naturally during the flips.
+
+**Elephant:**  
+A large realistic adult gray elephant with natural wrinkled skin, heavy body movement, large ears and a long expressive trunk.
+
+**Horse:**  
+A realistic dark-brown circus horse with a black mane and tail, walking calmly around the ring.
+
+### 0:00–0:03 — ELEPHANT LAUNCH
+
+Begin from the audience viewpoint.
+
+The elephant stands beside the small blue trampoline.
+
+The blonde acrobat runs toward the elephant and trampoline.
+
+The elephant lowers and then powerfully raises its trunk, **launching the acrobat upward into the air**.
+
+She immediately begins rotating backward.
+
+The action must look spectacular but physically coherent, with believable momentum and body weight.
+
+### 0:03–0:07 — MASSIVE AERIAL FLIPS
+
+The camera operator quickly tilts the phone upward to follow her.
+
+The woman flies extraordinarily high above the circus ring while performing **multiple tight backward somersaults**.
+
+Her knees tuck toward her chest, arms control her rotation, skirt and hair react naturally to the movement, and her body maintains realistic anatomy.
+
+The elephant remains visible far below beside the trampoline, emphasizing the incredible height.
+
+Allow slight handheld camera shake as the person filming struggles to keep her centered.
+
+### 0:07–0:10 — HORSE ENTERS
+
+While she continues flipping through the air, a **dark-brown horse calmly enters beneath her** and walks across the circus ring.
+
+The acrobat gradually opens her body from the tucked rotation and prepares for landing.
+
+The camera pans and tilts downward with her trajectory.
+
+### 0:10–0:12 — PERFECT LANDING
+
+She completes the final rotation and lands **upright with both feet directly on the horse’s back** while the horse continues moving forward.
+
+The landing is surprisingly smooth.
+
+Her knees bend naturally to absorb the impact before she straightens her body and regains perfect balance.
+
+No cuts during the stunt.
+
+### 0:12–0:15 — TRIUMPHANT FINISH
+
+Standing confidently on the moving horse, she raises **both arms wide in a victorious circus pose**.
+
+The horse continues calmly walking around the arena.
+
+The elephant can still be seen moving in the background.
+
+Audience members react enthusiastically, with silhouettes and phones appearing along the bottom of the frame.
+
+Near the final moment, the performer gives a small respectful bow while remaining balanced on the horse.
+
+### CAMERA STYLE
+
+Single continuous audience phone recording.
+
+Vertical **9:16 framing**.
+
+Camera position stays within the spectator seating rather than entering the circus ring.
+`,
+    },
+  },
+  // 查重别名: https://x.com/DuaFatimaAi/status/2106923108938756440 （主帖写 Create with seedance 2.5 + 一段 Prompt，附 1 条视频 + 1 张 6 格分镜图 1214×1295；提示词开头就是「6-scene advertising storyboard」，与分镜图逐格对应；无引用帖）。风险：鞋上是 New Balance 式大「N」，片尾出现 NB 标；老人形象像爱因斯坦
+  {
+    id: "duafatimaai-orange-sneaker-old-adventurer-ad-seedance-2-5",
+    title: "白发老爷爷穿橙色跑鞋 · 城市奔跑攀楼广告",
+    subtitle: "X · @DuaFatimaAi · Seedance 2.5 · 29秒 · 9:16",
+    description:
+      "白发老爷爷穿橙白跑鞋走街、奔跑、攀爬高楼外墙，再坐在楼顶看日落，穿插鞋子微距特写的竖屏广告。",
+    video: "/tutorials/duafatimaai-orange-sneaker-old-adventurer-ad-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/duafatimaai-orange-sneaker-old-adventurer-ad-seedance-2-5/poster.jpg",
+    duration: "29秒",
+    durationSec: 29,
+    styleLabel: "球鞋广告",
+    shots: 7,
+    references: 1,
+    model: "Seedance 2.5（原帖写明）",
+    style: "写实运动鞋广告 · 黄金时刻城市光 · 橙蓝撞色 · 快切 + 产品微距 · 大字标语",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/DuaFatimaAi/status/2106923108938756440",
+    sourceAuthor: "@DuaFatimaAi",
+    sourcePlatform: "X",
+    sourceImpressions: 4125,
+    sourceStats: { asOf: "2026-10-06", likes: 133, reposts: 26, bookmarks: 92 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "城市天际线 → 鞋特写 → 老人走街 → 奔跑过斑马线 → 鞋微距 → 攀爬外墙 → 楼顶远眺 → 标语 + 产品收尾",
+      opening: "第 0 秒是日出时的城市天际线，紧接着切到橙白跑鞋踩地的特写。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3–12s 白发老人穿蓝夹克黄裤子走过街头，接着背橙色背包冲过斑马线。", at: 3 },
+        { title: "反转", text: "约 12–21s 鞋底微距和产品卡片之后，老人徒手攀上高楼外墙，坐在楼沿上。", at: 11.9 },
+        { title: "结尾怎么收", text: "约 21–29s 「MOVE FURTHER」大字和鞋子定格，最后老人坐在楼顶旁边打出「NEW WAY」。", at: 21.6 },
+      ],
+      copyThis: "先用一段「6 格广告分镜」提示词把人物、服装、每格画面定下来出一张分镜图，再把分镜图交给视频模型，角色和配色在各个镜头里更容易保持一致。",
+      approx: true,
+    },
+    tags: [
+      "29秒",
+      "9:16 竖屏",
+      "Seedance 2.5",
+      "产品广告",
+      "分镜图",
+      "品牌风险",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 6 格分镜图",
+        description:
+          "素材对应：原帖附的 6 格分镜图 = 参考 1，6 格分别对应提示词的 Scene 1–6（走街、奔跑、攀墙、鞋子微距、楼顶远眺、产品收尾）。作者没有单独说这张图的提示词，但帖子里那段提示词开头就是「6 格广告分镜」，内容逐格对得上，很可能就是用它出的图。注意：图里鞋上是 New Balance 式的大「N」，跟做时请换成你自己的品牌。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明用 Seedance 2.5。成片 720×1280（9:16 竖屏）、30fps、约 29 秒，快切，没看到作者水印。和提示词对不上的地方：提示词写 60 秒、每格 10 秒，成片只有约 29 秒，顺序也打乱了（先出天际线和鞋特写）；印尼语标语没出现，只出了「NEW WAY / MOVE FURTHER」；片尾还冒出了 NB 标志。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把主帖里的英文提示词整段粘贴，同时上传分镜图。结构是：总述（产品、人物外观）→ Scene 1–6 每格一段（镜头、动作、标语文字）→ Overall style 整体风格。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "duafatimaai-sneaker-ad-storyboard",
+        number: "1",
+        title: "6 格广告分镜图",
+        subtitle: "原帖附图 = 参考 1；6 格对应提示词 Scene 1–6（走街 / 奔跑 / 攀墙 / 鞋微距 / 楼顶远眺 / 产品收尾），作者原图",
+        image: "/tutorials/duafatimaai-orange-sneaker-old-adventurer-ad-seedance-2-5/refs/01-storyboard.jpg",
+        prompt: "原帖未附提示词：作者没有单独给这张分镜图配提示词。帖子里唯一的那段「Prompt」开头写的是「6-scene cinematic advertising storyboard」，内容和这 6 格逐一对应，可能就是出图用的，作者没有说明。完整内容见下方提示词区。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1.4s 日出时的城市天际线。" },
+      { number: 2, description: "1.4–4.9s 橙白跑鞋踩地特写，再到鞋子悬空在高楼之间。" },
+      { number: 3, description: "4.9–11.8s 白发老人穿蓝夹克黄裤子走过街头，背橙色背包跑步、冲过斑马线。" },
+      { number: 4, description: "11.8–16.7s 鞋底微距和产品卡片。" },
+      { number: 5, description: "16.7–21.6s 老人徒手攀爬高楼外墙，坐到楼沿上，出现「NEW WAY」字样。" },
+      { number: 6, description: "21.6–25s 楼顶远眺日落城市，「MOVE FURTHER」大字压在鞋上。" },
+      { number: 7, description: "25–28.9s 老人坐在楼顶，「NEW WAY」标语，左下角出现 NB 标志。" },
+    ],
+    constraints:
+      "素材对应：6 格分镜图 = 参考 1（作者原图），对应提示词 Scene 1–6。同一个老人全程外观一致：白色乱发、白胡子、蓝夹克、亮黄运动裤、橙色背包、灰袜子、橙白跑鞋；橙蓝撞色、黄金时刻光。和成片的差别：只有约 29 秒、顺序打乱，印尼语标语没出现，片尾出现 NB 标志。",
+    video_prompt: {
+      title: "橙色跑鞋老人广告 · 6 格分镜",
+      subtitle: "主帖英文完整提示词 · Seedance 2.5 · 6 格分镜图 = 参考 1（作者原图，对应 Scene 1–6）",
+      content: `Create a high-end photorealistic 6-scene cinematic advertising storyboard for a modern orange-and-white lifestyle running sneaker, featuring the same elderly male adventurer throughout. He has wild white hair, a white mustache, expressive aged facial features, a navy blue jacket, bright yellow jogger pants, an orange backpack, gray socks, and orange-and-white sneakers.
+
+Scene 1 — 0–10s:
+Wide cinematic street shot in a modern downtown city during golden-hour daylight. The elderly man confidently walks toward the camera across a city street, wearing the orange-and-white sneakers. Low-angle perspective, skyscrapers surrounding him, pedestrians and cars in the background, dramatic sunlight, realistic shadows, premium commercial photography. Add bold Indonesian advertising text: “LANGKAH KECIL JADI BESAR” and smaller text “NYAMAN DI SETIAP PERJALANAN.”
+
+Scene 2 — 10–20s:
+Dynamic tracking shot of the same man running energetically through the city street. One foot captured mid-stride, strong sense of motion, subtle motion blur in the background, skyscrapers, vehicles and trees, bright natural sunlight. Emphasize comfort, flexibility and durability. Add text: “NYAMAN RINGAN TANGGUH.”
+
+Scene 3 — 20–30s:
+Epic action shot of the man climbing diagonally up the steep exterior wall of a skyscraper high above the city. His orange-and-white sneaker is prominently visible in the foreground gripping the surface. Dramatic aerial cityscape far below, adventurous atmosphere, realistic physics, cinematic depth of field. Add text: “TANTANGAN TIDAK MENGHENTIKAN LANGKAH.”
+
+Scene 4 — 30–40s:
+Extreme macro product shot of the orange-and-white sneaker on a rough concrete surface. Show highly detailed suede/mesh/leather textures, stitching, laces, rubber outsole and tread pattern. Premium studio-commercial lighting with shallow depth of field. Add four feature callouts: “MATERIAL PREMIUM,” “RINGAN & FLEKSIBEL,” “GRIP MAKSIMAL,” “DESAIN MODERN.”
+
+Scene 5 — 40–50s:
+Epic drone-style wide shot from behind the same elderly man sitting on the edge of a high rooftop overlooking a spectacular modern city skyline at sunset. His orange backpack and orange-and-white sneakers are clearly visible. Warm golden sky, atmospheric haze, cinematic scale, inspiring adventurous mood. Add text: “LEBIH JAUH BERSAMA NEW WAY.”
+
+Scene 6 — 50–60s:
+Premium closing product shot of the orange-and-white sneaker placed prominently on a rooftop ledge, with a softly blurred city skyline and warm sunset background. Hero product composition, dramatic commercial lighting, crisp shoe details, luxury sportswear advertisement aesthetic. Add bold typography: “NEW WAY”, “MOVE FURTHER”, and CTA “SEGERA MILIKI — LANGKAH BARU, PETUALANGAN BARU.”
+
+Overall style: ultra-photorealistic, cinematic sports advertisement, premium sneaker campaign, realistic human anatomy, consistent character and clothing across all scenes, dynamic camera angles, dramatic lighting, shallow depth of field, realistic materials and textures, high detail, natural motion, professional commercial photography, 8K quality, strong orange/blue color contrast, cohesive visual storytelling.
+`,
+    },
+  },
+  // 查重别名: https://x.com/Naiknelofar788/status/2106804633696149645 （主帖长文即完整提示词，纯文生视频无参考图；无引用帖）。同作者另有鹦鹉理发店条目
+  {
+    id: "naiknelofar788-three-kittens-night-sidewalk-dance-seedance-2-5",
+    title: "三只戴蝴蝶结的小奶猫 · 夜晚街头并排跳舞",
+    subtitle: "X · @Naiknelofar788 · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "夜晚霓虹街头，三只戴粉、黄、蓝蝴蝶结的毛茸茸小奶猫并排朝镜头走来，一起左右摇摆，镜头低角度跟拍。",
+    video: "/tutorials/naiknelofar788-three-kittens-night-sidewalk-dance-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/naiknelofar788-three-kittens-night-sidewalk-dance-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "萌宠",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5（原帖写明）",
+    style: "写实夜景 · 低角度跟拍 · 城市霓虹虚化光斑 · 毛发细节 · 一镜到底",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Naiknelofar788/status/2106804633696149645",
+    sourceAuthor: "@Naiknelofar788",
+    sourcePlatform: "X",
+    sourceImpressions: 3047,
+    sourceStats: { asOf: "2026-10-06", likes: 88, reposts: 6, bookmarks: 31 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "空街 → 三猫入画 → 并排摇摆 → 往前走 → 贴近特写 → 拉远收尾",
+      opening: "第 0 秒是夜晚湿漉漉的人行道，背后车灯和高楼灯光虚化成彩色光斑，小猫从画面右侧走进来。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–10s 三只小猫并排站好，一起左右摇摆，镜头慢慢后退。", at: 2 },
+        { title: "反转", text: "约 15–22s 镜头贴近到猫眼高度，毛发、胡须和蝴蝶结都看得清。", at: 15 },
+        { title: "结尾怎么收", text: "约 24–30s 镜头拉远成低角度全景，三只猫在亮着灯的人行道上看着镜头。", at: 24 },
+      ],
+      copyThis: "多只动物同框时，先在开头逐只写清毛色 + 配饰（白猫粉结、奶油猫黄结、黑白猫蓝结），再加一句「外观、蝴蝶结、大小全程一致」，三只就不会串色。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "萌宠",
+      "纯文生视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：确认不需要参考图",
+        description:
+          "这条是纯文生视频，原帖没有附图，提示词里也没有 @图片，直接用文字生成。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明用 Seedance 2.5。成片 1280×720（16:9 横屏）、30fps、约 30 秒，一镜到底，没看到水印。三只猫的毛色和蝴蝶结颜色和提示词一致。小差别：动作以并排往前走、左右摇摆为主，提示词写的同步抬爪不太明显。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把主帖里的英文提示词整段粘贴。结构是：总述 → 三只小猫外观 → 6 段时间轴（入场、跳舞、往前走、贴近跟拍、高潮动作、收尾）→ STYLE → AUDIO。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 夜晚空荡的湿人行道，背后车灯虚化成彩色光斑。" },
+      { number: 2, description: "2–5s 三只小猫从右侧走进画面，并排站好。" },
+      { number: 3, description: "5–10s 一起左右摇摆，镜头慢慢后退。" },
+      { number: 4, description: "10–15s 边摇边往前走，越来越近。" },
+      { number: 5, description: "15–22s 猫眼高度近景，毛发、胡须和蝴蝶结清晰。" },
+      { number: 6, description: "22–24s 继续摇摆前进，粉结白猫在中间。" },
+      { number: 7, description: "24–30s 拉远成低角度全景，三只猫看着镜头，城市灯光在身后闪。" },
+    ],
+    constraints:
+      "素材对应：无参考素材，纯文生视频。白猫粉结、奶油猫黄结、黑白猫蓝结，外观、蝴蝶结、大小全程一致；动作同步又符合猫的身体；无对白，不要文字、logo、字幕和水印。和成片的差别：同步抬爪动作不明显。",
+    video_prompt: {
+      title: "三只小奶猫街头跳舞 · 30 秒时间轴",
+      subtitle: "主帖英文完整提示词 · Seedance 2.5 · 无参考素材（纯文生视频）",
+      content: `Create a 30-second ultra-realistic cinematic nighttime video of three adorable fluffy kittens dancing together on a lively urban sidewalk.
+
+The kittens:
+• White kitten wearing a pink bow
+• Cream-colored kitten wearing a yellow bow
+• White-and-black kitten wearing a blue bow
+
+Keep their appearance, fur patterns, bows, size, and proportions consistent throughout. Their movements should feel synchronized, playful, cute, and physically believable.
+
+[0–5s] — THE INTRO
+Low-angle shot of a busy city sidewalk at night. Blurred car headlights and taillights glow in the background, with illuminated high-rise buildings and streetlights creating colorful bokeh. The three kittens step into frame together and begin moving rhythmically.
+
+[5–10s] — THE DANCE
+The kittens sway their fluffy bodies from side to side and move their front paws in synchronized little motions. Their bows bounce naturally with every movement. The camera slowly tracks backward as they dance toward it.
+
+[10–15s] — WALKING FORWARD
+They continue dancing while walking forward in perfect rhythm. The pink-bow kitten leads slightly, while the cream and black-and-white kittens follow beside it. Their paws make tiny natural steps on the pavement.
+
+[15–20s] — CLOSE TRACKING
+The camera moves closer at their eye level. Capture detailed realistic fur, tiny whiskers, expressive eyes, and playful facial expressions. They continue their synchronized paw movements while city lights shimmer behind them.
+
+[20–25s] — BIGGER MOMENT
+The kittens perform their cutest synchronized move: a small side-to-side sway followed by two playful paw raises. Their bows bounce as they continue moving forward. Cars pass behind them, creating smooth streaks of light.
+
+[25–30s] — FINAL SHOT
+The camera slowly pulls back into a wider low-angle shot as the three kittens continue dancing together down the illuminated sidewalk. They finish with a synchronized little pose, looking toward the camera as the vibrant city glows behind them.
+
+STYLE: ultra-realistic fluffy fur, photorealistic kittens, cinematic nighttime photography, vibrant urban lighting, realistic reflections, colorful bokeh, detailed whiskers and eyes, natural animal movement, smooth synchronized animation, low-angle tracking camera, subtle handheld feel, gentle panning, shallow depth of field, 4K HDR.
+
+AUDIO: lively nighttime city ambience, distant traffic, soft footsteps, subtle playful music, and natural kitten sounds. No dialogue, no text, logos, subtitles, or watermark.
+`,
+    },
+  },
+  // 查重别名: https://x.com/MahiraEhan/status/2106975072917311820 （主帖长文即完整提示词，纯文生视频无参考图；无引用帖）。main 上已有 1890s / 90s 超模两条 GRWM，题材不同
+  {
+    id: "mahiraehan-grwm-morning-selfie-vlog-seedance-2-5",
+    title: "十分钟出门的早晨 · 前置自拍 GRWM vlog",
+    subtitle: "X · @MahiraEhan · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "刚睡醒的女生举着手机前置自拍，说只有十分钟收拾，边涂口红、理头发、挑衣服边在房间里走，最后出门。",
+    video: "/tutorials/mahiraehan-grwm-morning-selfie-vlog-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/mahiraehan-grwm-morning-selfie-vlog-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "手机自拍",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5（原帖写明，在 Higgsfield 上生成）",
+    style: "前置手机自拍 · 手持一镜到底 · 自然光卧室 · 无滤镜无调色 · 英语口播",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/MahiraEhan/status/2106975072917311820",
+    sourceAuthor: "@MahiraEhan",
+    sourcePlatform: "X",
+    sourceImpressions: 23112,
+    sourceStats: { asOf: "2026-10-06", likes: 345, reposts: 59, bookmarks: 317 },
+    formats: ["手机POV·Vlog", "角色表演"],
+    hook: {
+      structure: "睡醒开口 → 理头发 → 涂口红 → 换衣服背包 → 对镜自拍 → 出门前收尾",
+      opening: "第 0 秒她在卧室里举着手机自拍，笑着说「Okay, I have approximately ten minutes to look like I have my life together.」",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 5–15s 她拨头发、对着手机涂口红，阳光照在床上。", at: 5 },
+        { title: "反转", text: "约 15–22s 换好衣服背上包，走到房间另一头对着镜子拍。", at: 15 },
+        { title: "结尾怎么收", text: "约 25–30s 她回到镜头前笑着说「Okay」，准备出门。", at: 25 },
+      ],
+      copyThis: "想要真人感，就把「不完美」写成清单：轻微手抖、构图偏、自动对焦来回、曝光忽明忽暗、不要美颜和调色，再塞几个小动作（理头发、照镜子、忘拿东西、看别处）。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "Higgsfield",
+      "GRWM",
+      "纯文生视频",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：确认不需要参考图",
+        description:
+          "这条是纯文生视频，原帖没有附图，提示词里也没有 @图片，直接用文字生成。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明用 Seedance 2.5，在 Higgsfield 上生成。成片 1280×720（16:9 横屏）、24fps、约 30 秒，手持一镜到底，没看到水印。开头台词能听清；和提示词对不上的地方：结尾台词只听到「Okay.」，后半句「that’s good enough. Let’s go.」听不出来；提示词没写画幅，出来是横屏，想要竖屏请另外写明 9:16。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把主帖里的英文提示词整段粘贴。结构是：总述（人物、时长）→ Camera & visual style 手机自拍要求清单 → Scene 剧情和两句台词 → Audio 只要现场声、不要音乐。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 卧室里前置自拍，她笑着说「Okay, I have approximately ten minutes to look like I have my life together.」" },
+      { number: 2, description: "4–8s 镜头扫过衣柜又回到脸，她拨头发、看手机。" },
+      { number: 3, description: "8–15s 对着手机涂口红，阳光照在床上。" },
+      { number: 4, description: "15–17s 换好衣服、背上包，镜头晃过房间。" },
+      { number: 5, description: "17–22s 走到窗边对着镜子举手机自拍。" },
+      { number: 6, description: "22–26s 转身找东西，走到门边。" },
+      { number: 7, description: "26–30s 回到镜头前笑着说「Okay」，准备出门。" },
+    ],
+    constraints:
+      "素材对应：无参考素材，纯文生视频。全程她自己手持手机前置自拍，没有第三人称机位和三脚架；同一张脸同一头发；不要美颜、磨皮和调色；不要字幕、logo、水印；只要现场声。和成片的差别：结尾台词只说出了「Okay」；画幅是 16:9 横屏。",
+    video_prompt: {
+      title: "十分钟出门 GRWM · 手机自拍",
+      subtitle: "主帖英文完整提示词 · Seedance 2.5（Higgsfield）· 无参考素材（纯文生视频）",
+      content: `Create a 30-second casual “get ready with me” morning vlog featuring the same young woman in her early twenties. She has natural everyday beauty, and her face and hair remain identical throughout the entire video.
+
+Camera & visual style
+
+One continuous handheld front-facing smartphone selfie vlog, filmed entirely by her with the phone held in her own hand at arm’s length. No third-person camera, tripod, cinematic shots, professional camera movement, or external filming.
+
+Make it look like an authentic modern smartphone recording:
+
+- Mild handheld movement and natural arm motion
+- Small framing imperfections
+- Occasional autofocus adjustments
+- Natural exposure fluctuations
+- Realistic front-camera lens distortion
+- Soft morning window light
+- Natural smartphone colors
+- No beauty filter, skin smoothing, or cinematic color grading
+- Same woman, same face and hair throughout
+- She holds the phone herself at all times
+- No subtitles, logos, watermarks, captions, or on-screen text
+
+Scene
+
+She starts in her bedroom shortly after waking up, holding the phone toward herself with a sleepy smile.
+
+She looks into the camera and says:
+
+“Okay, I have approximately ten minutes to look like I have my life together.”
+
+She laughs, briefly turns the camera toward her closet, then returns it to her face. She casually fixes her hair, applies a small amount of makeup while occasionally looking into the phone camera, chooses an outfit, and walks around her room.
+
+Include tiny natural moments: adjusting her hair, checking herself in a mirror, realizing she forgot something, laughing, and briefly looking away from the camera.
+
+She grabs her bag and heads toward the door.
+
+Before leaving, she looks into the camera and says:
+
+“Okay, that’s good enough. Let’s go.”
+
+She gives a quick smile and lowers the phone slightly as the clip ends.
+
+Audio
+
+Diegetic sound only. Include quiet bedroom ambience, fabric movement, footsteps, drawers opening, subtle street ambience, and natural room tone. No background music.
+
+The final result should feel like an authentic, imperfect morning vlog recorded casually on a modern smartphone.
+`,
+    },
+  },
 ];
 
 export const tutorials: Tutorial[] = rawTutorials.map((t) => withMedia(t));
