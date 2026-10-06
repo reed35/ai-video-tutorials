@@ -32473,6 +32473,107 @@ The final result should feel like an authentic, imperfect morning vlog recorded 
 `,
     },
   },
+  // 查重别名(同模板另两条 take，未收录)：Filmera d678e696 GEN 1 take0 0df3b0ef、take1 ae9da9a5；本条用 take2 c82192ef（T3，节点 best_take=2、带星标；模板封面 card2 是另一条 take）。同模板还有 GEN 2「只用原画」变体（3 条 take，未收录）。模板未署名创作者；分享链接里的 ref 参数已去掉
+  {
+    id: "filmera-starry-night-fly-through-seedance-2-5",
+    title: "一镜飞进《星月夜》 · 从村路穿过柏树落进画框",
+    subtitle: "Filmera 模板 · Seedance 2.5 + GPT Image 2.5 · 26秒 · 16:9",
+    description:
+      "镜头贴着梵高笔触的村路飞驰，爬上教堂尖顶冲进漩涡星空，穿过柏树后退，整个世界收成墙上的《星月夜》。",
+    video: "/tutorials/filmera-starry-night-fly-through-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/filmera-starry-night-fly-through-seedance-2-5/poster.jpg",
+    duration: "26秒",
+    durationSec: 26,
+    styleLabel: "名画穿越",
+    shots: 7,
+    references: 2,
+    model: "Seedance 2.5 Draft（bytedance/seedance-2.5，设置 480p，生成音频）+ GPT Image 2.5 Flare（村庄参考图）",
+    style: "梵高厚涂油画 3D 世界 · 第一人称滑翔一镜到底 · 钴蓝 + 铬黄 · 只有风声无配乐",
+    aspectRatio: "16/9",
+    sourceUrl: "https://www.filmera.ai/templates/d678e696-7863-4075-a8a5-f5b014425b56",
+    sourceAuthor: "Filmera 模板（未署名创作者）",
+    sourcePlatform: "Filmera",
+    sourceImpressions: 565,
+    sourceStats: { asOf: "2026-10-06" },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "贴地村路 → 加速穿街 → 爬上尖塔冲进星空 → 扎进柏树 → 后退压平成画布 → 画框挂墙定格",
+      opening: "第 0 秒镜头贴着地面沿土路往前滑，两边是笔触堆出来的低石墙，远处教堂尖顶在漩涡星空下发亮。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3–10s 加速穿过亮着黄窗的村街，贴着教堂尖塔往上爬，越过塔尖升进漩涡星空。", at: 3 },
+        { title: "反转", text: "约 10–14.5s 左转俯冲进深绿色的柏树，笔触塞满整个画面。", at: 10 },
+        { title: "结尾怎么收", text: "约 14.5–26s 从柏树里直线后退，世界压平成《星月夜》画布，露出画框和深灰墙，定格到结束。", at: 14.5 },
+      ],
+      copyThis: "名画穿越的关键是首尾都锁图：开头用一张「画风一致的 3D 场景图」当地面起点，结尾写死「@Image2 就是最后一帧，装在画框里挂在墙上」，中间一镜到底按秒写路线，模型就会自己把 3D 世界收回成原画构图。",
+      approx: true,
+    },
+    tags: [
+      "26秒 · 一镜到底",
+      "16:9 横屏",
+      "Seedance 2.5 + GPT Image 2.5",
+      "2 张参考图",
+      "梵高《星月夜》",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 2 张参考图",
+        description:
+          "素材对应：@Image1 = 参考 1 01·VILLAGE 生成图，@Image2 = 参考 2 梵高《星月夜》原画。参考 1 是模板用 openai/gpt-image-2.5-flare（16:9）生成的梵高笔触村庄街景，完整出图提示词见参考 1；参考 2 是模板直接上传的《星月夜》原画，没有提示词（原作已进入公有领域）。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与参数",
+        description:
+          "在 Seedance 2.5 Draft 里选 16:9、26 秒、480p、打开声音，上传两张参考图。模板用同一提示词跑了 3 条，本页用的是第 3 条（T3，带星标）；下载到的文件其实是 1920×1080、24fps、26.05 秒，一镜到底没有切点，没有水印，没有人声。模板里另有一个只用原画一张图的 GEN 2 变体，本页没收录。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把模板里的 GEN 1 提示词整段粘贴。结构是：[GLOBAL]（一镜到底、厚涂油画质感、镜头、VILLAGE 对应 @Image1、PAINTING 对应 @Image2、最后一帧装框挂墙、只有风声）→ Shot 1 按秒写路线：00:00 村路 → 00:03 加速 → 00:05 爬尖塔进星空 → 00:10 冲进柏树 → 00:14 后退成画布 → 00:18 定格到结束。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "filmera-starry-night-image1-village",
+        number: "1",
+        title: "@Image1 · 01·VILLAGE 村庄街景",
+        subtitle: "@Image1 = 参考 1 01·VILLAGE 生成图：梵高笔触的夜晚村路、低石墙、黄窗小屋、尖顶教堂；模板节点「01 · VILLAGE」，openai/gpt-image-2.5-flare 16:9，原图 2048×1152",
+        image: "/tutorials/filmera-starry-night-fly-through-seedance-2-5/refs/01-village.jpg",
+        prompt: "Empty scene plate, no people, no animals, no text, no logos: a street-level view at night down a narrow dirt road between low rough stone walls, leading into a small 19th-century Provencal village of small whitewashed houses with dark roofs and glowing warm yellow windows, a small church with a tall slender pale blue-grey spire standing at the end of the road in the centre of frame, dark rolling blue hills behind the village, and above it a vast night sky of swirling blue spirals, glowing yellow star halos and a bright crescent moon at the upper right. The entire scene is a three-dimensional space built from thick raised impasto oil paint: every wall, roof, road, hill and patch of sky is made of visible rhythmic brushstrokes in the post-impressionist manner of Vincent van Gogh, the strokes following the shapes of the objects, real paint depth with ridges catching the light, cobalt and ultramarine blues against chrome yellow and warm ochre. Wide 16:9 composition, no smooth CGI surfaces, no plastic look.",
+      },
+      {
+        id: "filmera-starry-night-image2-painting",
+        number: "2",
+        title: "@Image2 · 02·PAINTING 梵高《星月夜》原画",
+        subtitle: "@Image2 = 参考 2 梵高《星月夜》原画（1889，已进入公有领域）；模板节点「02 · PAINTING」，创作者直接上传，同时也是锁定的最后一帧",
+        image: "/tutorials/filmera-starry-night-fly-through-seedance-2-5/refs/02-starry-night-painting.jpg",
+        prompt: "原画上传、无提示词：这张是模板创作者直接上传的梵高《星月夜》原画（来源 upload），不是生成图，没有出图提示词。原作已进入公有领域，跟做时用任意清晰的《星月夜》公有领域图片即可。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 贴地沿土路往前滑，两侧是低石墙，远处教堂尖顶很小、在发亮。" },
+      { number: 2, description: "3–5s 加速穿过村街，亮着黄窗的小屋从两侧掠过，镜头擦过一面墙。" },
+      { number: 3, description: "5–10s 贴着教堂尖塔往上爬，越过塔尖（塔尖上多了一颗发光的星），村庄落到下方，升进漩涡星空。" },
+      { number: 4, description: "10–12s 冲向左侧火焰形的深色柏树。" },
+      { number: 5, description: "12–14.5s 扎进柏树，深绿黑色笔触塞满整个画面。" },
+      { number: 6, description: "14.5–17.5s 从柏树里直线后退，世界压平成画布，构图对上《星月夜》，画布边缘和深色木框出现。" },
+      { number: 7, description: "17.5–26s 画框挂在深灰墙正中，顶上一盏柔和聚光灯，画面完全静止定格到结束。" },
+    ],
+    constraints:
+      "素材对应：@Image1 = 参考 1 01·VILLAGE 生成图（附出图提示词）；@Image2 = 参考 2 梵高《星月夜》原画（原画上传、无提示词），同时是锁定的最后一帧。26 秒一镜到底零切点；整个世界都是梵高式厚涂笔触，不要光滑 CGI；镜头平稳滑翔不抖；无配乐，只有风声、笔触掠过声、穿柏树的沙沙声，18 秒后几乎安静；画面里不要任何文字和 logo。和成片的差别：塔尖上多了一颗发光的星；其余路线和时间点基本对得上。",
+    video_prompt: {
+      title: "The Starry Night · Fly-Through · GEN 1",
+      subtitle: "Seedance 2.5 Draft · 16:9 · 26s · 480p · 生成音频 · Filmera 模板页原文 · @Image1 = 参考 1 01·VILLAGE 生成图、@Image2 = 参考 2 梵高《星月夜》原画",
+      content: `[GEN 1 — STARRY NIGHT — 3D FLY-THROUGH ONER]
+[GLOBAL] A single continuous 26-second long take with ZERO cuts, one unbroken camera move from the first frame to the last. LOOK: the whole world is a three-dimensional space built from thick raised impasto oil paint in the post-impressionist manner of Vincent van Gogh; every road, wall, roof, tree, hill and patch of sky is made of visible rhythmic brushstrokes that follow the shapes of the objects, with real paint depth, ridges catching the light, and the strokes of the sky slowly flowing and swirling like wet paint in motion; cobalt and ultramarine blues against chrome yellow and warm ochre; never smooth CGI, never plastic. CAMERA: a smooth gliding first-person camera, continuous and weightless, gentle motion blur on fast moves, never shaky. VILLAGE: the night street of the small village, the stone walls, the houses with glowing yellow windows and the church with the tall slender pale blue-grey spire (match @Image1 exactly). PAINTING: the oil painting The Starry Night, with the tall dark flame-shaped cypress in the left foreground, the village and the church spire low in the valley right of centre, the rolling blue hills, the swirling sky with eleven glowing star halos and the crescent moon at the upper right (match @Image2 exactly). FINAL FRAME: @Image2 is also the exact closing image, shown as the whole painting in a simple dark wooden frame hanging centred on a dark charcoal-grey gallery wall, the frame filling about seventy percent of the frame height, one soft museum spotlight from above. SOUND: no music of any kind. Only natural sound: soft night wind throughout, rising as the camera climbs into the sky, a faint swish of brushstrokes whenever the camera passes close through paint, a dense rustling rush inside the cypress, and from 00:18 near silence, just a quiet gallery room tone. No on-screen text, captions, logos or writing anywhere. No background music.
+
+
+Shot 1 — ONE CONTINUOUS MOVE: At 00:00 the camera glides forward at ground level down the painted dirt road between the low stone walls of the VILLAGE, the road's brushstrokes streaming past below the lens, the church spire small and glowing ahead. From 00:03 to 00:05 the camera speeds up down the village street, the houses with glowing yellow windows sliding past on both sides, heading straight for the church spire. From 00:05 to 00:10 the camera sweeps up the side of the spire, clears the tip and keeps rising and tilting up into the open sky, the village dropping away below, into the swirling blue spirals, passing between the glowing yellow star halos, the crescent moon blazing at the upper right. From 00:10 to 00:14 the camera banks left and dives toward the huge dark green and black cypress rising like a flame on the left, and plunges straight into the cypress, the dark green and black brushstrokes rushing past and filling the whole frame. From 00:14 to 00:18 the camera pulls straight backward out of the cypress without stopping, and as the camera keeps pulling back the whole world flattens into a painted canvas: the cypress on the left, the village and the spire low in the valley, the swirling sky and the moon all settle into the exact composition of @Image2, then the edges of the canvas and a dark wooden frame come into view, then the dark charcoal-grey gallery wall around the frame. From 00:18 to 00:26 the camera comes to rest and holds completely still on the framed painting centred on the gallery wall under the soft spotlight, matching @Image2 exactly inside the frame; nothing in the painting moves, only the spotlight glints softly on the raised ridges of paint. Hold to the end. End.`,
+    },
+  },
 ];
 
 export const tutorials: Tutorial[] = rawTutorials.map((t) => withMedia(t));
