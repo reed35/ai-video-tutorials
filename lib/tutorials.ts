@@ -32574,6 +32574,498 @@ The final result should feel like an authentic, imperfect morning vlog recorded 
 Shot 1 — ONE CONTINUOUS MOVE: At 00:00 the camera glides forward at ground level down the painted dirt road between the low stone walls of the VILLAGE, the road's brushstrokes streaming past below the lens, the church spire small and glowing ahead. From 00:03 to 00:05 the camera speeds up down the village street, the houses with glowing yellow windows sliding past on both sides, heading straight for the church spire. From 00:05 to 00:10 the camera sweeps up the side of the spire, clears the tip and keeps rising and tilting up into the open sky, the village dropping away below, into the swirling blue spirals, passing between the glowing yellow star halos, the crescent moon blazing at the upper right. From 00:10 to 00:14 the camera banks left and dives toward the huge dark green and black cypress rising like a flame on the left, and plunges straight into the cypress, the dark green and black brushstrokes rushing past and filling the whole frame. From 00:14 to 00:18 the camera pulls straight backward out of the cypress without stopping, and as the camera keeps pulling back the whole world flattens into a painted canvas: the cypress on the left, the village and the spire low in the valley, the swirling sky and the moon all settle into the exact composition of @Image2, then the edges of the canvas and a dark wooden frame come into view, then the dark charcoal-grey gallery wall around the frame. From 00:18 to 00:26 the camera comes to rest and holds completely still on the framed painting centred on the gallery wall under the soft spotlight, matching @Image2 exactly inside the frame; nothing in the painting moves, only the spotlight glints softly on the raised ridges of paint. Hold to the end. End.`,
     },
   },
+  // 查重别名: https://x.com/umesh_ai/status/2107875386067714180 （主帖只有「Cool prompt ⤵️」+ 视频，引用 @FutureVibesAi 的 Pani Puri 帖 2107865222182735910；提示词取自对方自回复 2107865444145340611，umesh 自己改成纽约/甜甜圈的版本原帖未公开；umesh 无自回复、无外链）。与 futurevibesai-mini-me-pani-puri-flight-dreamina 同一提示词、不同成片。同作者站内另有 umesh-rally-car-vs-avalanche-one-shot-kling 等，题材不同
+  {
+    id: "umesh-mini-me-nyc-flight-giant-donut",
+    title: "迷你眼镜男飞越纽约 · 抢走一个巨型甜甜圈",
+    subtitle: "X · @umesh_ai · 模型未写明 · 15秒 · 16:9",
+    description:
+      "迷你眼镜男从美式餐馆一路飞过纽约街头和地铁站，抢走一个比他还大的粉色甜甜圈，最后坐在楼顶被甜甜圈挡住脸。",
+    video: "/tutorials/umesh-mini-me-nyc-flight-giant-donut/demo-web.mp4",
+    poster: "/tutorials/umesh-mini-me-nyc-flight-giant-donut/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "迷你超能力",
+    shots: 7,
+    references: 1,
+    model: "原帖未写明（主帖只写 Cool prompt，引用 @FutureVibesAi 的提示词）",
+    style: "写实迷你人 + 纽约街景 · 追拍高速飞行 · 喜剧反转结尾 · 4K 上传",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/umesh_ai/status/2107875386067714180",
+    sourceAuthor: "@umesh_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 514,
+    sourceStats: { asOf: "2026-10-06", likes: 12, reposts: 0, bookmarks: 3 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "餐馆台面穿梭 → 冲上纽约街头 → 抢甜甜圈 → 穿过地铁站 → 楼顶坐下 → 甜甜圈挡住脸",
+      opening: "第 0 秒是美式餐馆的长台面，迷你男人贴着台面从薯条、松饼和奶昔之间飞过，戴帽子的大叔看呆了。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 3–6s 冲出餐馆，掠过热狗车、自行车和黄色出租车，回头对镜头大笑。", at: 3 },
+        { title: "反转", text: "约 6–12s 从店里托盘上抢走一个粉色糖针甜甜圈，抱着它穿过鸽群和地铁站，乘客举手机拍他。", at: 6 },
+        { title: "结尾怎么收", text: "约 12–15s 落到黄昏的楼顶边，背后是纽约天际线，甜甜圈挡住整张脸，镜头拉远。", at: 12 },
+      ],
+      copyThis: "别人的好提示词可以直接「换皮」：保留时间轴结构和笑点（超能力只为抢一个零食），把城市、交通工具和零食换成你熟悉的，就是一条新片。",
+      approx: true,
+    },
+    tags: [
+      "15秒",
+      "16:9 横屏",
+      "迷你人",
+      "翻拍他人提示词",
+      "脸部参考图未公开",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备脸部参考图",
+        description:
+          "素材对应：提示词里的 my exact face reference = 参考 1，即 umesh 用的人物脸部参考图，原帖未公开（主帖、回复、引用帖都没有）。成片里的戴眼镜男和 umesh 头像很像，可能是作者本人形象，原帖没说明。参考 1 是成片约 5.2 秒截帧，仅示意，非原图；请用你自己的照片。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖没写用的哪个模型。成片上传为 4K（下载到的最高清版本 3840×2160，16:9）、24fps、约 15 秒，没看到水印，没有台词。注意：umesh 只写了「Cool prompt」并引用了 @FutureVibesAi 的帖子，他实际用的提示词改成了纽约、出租车、甜甜圈，这个改写版原帖未公开；页面放的是原版提示词。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴提示词并换成你的城市",
+        description:
+          "把 @FutureVibesAi 自回复里的英文提示词整段粘贴，同时上传你的脸部照片。想做成这条的样子，把咖啡馆换成美式餐馆、三轮车换成黄色出租车、Pani Puri 换成甜甜圈、印度街头换成纽约。和原提示词的差别：没有和列车并排飞，改成在地铁站楼梯间穿过。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "umesh-mini-me-face-reference-framegrab",
+        number: "1",
+        title: "my exact face reference · 脸部参考图 · 截帧",
+        subtitle: "提示词 my exact face reference = umesh 用的人物脸部参考图；原图原帖未公开；此处为成片约 5.2 秒近景截帧，仅示意人物，非原图",
+        image: "/tutorials/umesh-mini-me-nyc-flight-giant-donut/refs/01-face-reference-framegrab.jpg",
+        prompt: "原帖未公开：umesh 没有公开他用的脸部参考图，也没有附生成它的提示词。此图为成片截帧，仅示意人物，非原图；跟做时请上传你自己的照片。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 美式餐馆长台面：迷你男人贴着薯条、松饼、奶昔飞过，客人看呆。" },
+      { number: 2, description: "3–3.5s 冲出餐馆门。" },
+      { number: 3, description: "3.5–6s 纽约街头：掠过热狗车、自行车和黄色出租车，回头对镜头大笑。" },
+      { number: 4, description: "6–8.5s 冲进店里，从西装男托着的盘子上抢走粉色糖针甜甜圈。" },
+      { number: 5, description: "8.5–10.5s 抱着甜甜圈飞过人行道，鸽群被惊飞。" },
+      { number: 6, description: "10.5–12s 冲下地铁站楼梯，扶梯上的乘客举手机拍他。" },
+      { number: 7, description: "12–15s 黄昏楼顶边，背后是纽约天际线，甜甜圈挡住他的脸，镜头拉远。" },
+    ],
+    constraints:
+      "素材对应：my exact face reference = 参考 1，脸部参考图原帖未公开，参考 1 为成片截帧仅示意。迷你人 15–20 厘米，同一张脸、发型、服装；不要翅膀、披风和魔法光；真实微缩比例和运动模糊。和原提示词的差别：场景换成纽约、零食换成甜甜圈、地铁段没有和列车并排飞（umesh 的改写版原帖未公开）；结尾有一刻甜甜圈悬浮在他旁边。",
+    video_prompt: {
+      title: "迷你版我抢零食 · 原版提示词（@FutureVibesAi）",
+      subtitle: "引用帖 @FutureVibesAi 自回复英文完整提示词（umesh 改成纽约/甜甜圈的版本原帖未公开）· 模型未写明 · my exact face reference = 参考 1（原帖未公开，成片截帧仅示意）",
+      content: `Use my exact face reference as a 15–20 cm miniature version of me. Preserve exact face, hair, outfit and proportions. No wings, cape or magical glow. I simply have the unexplained ability to fly incredibly fast.
+
+0–3s — GIANT CAFE: Start inside a crowded café. MINI-ME suddenly rockets between enormous coffee cups, flying only centimetres above a table. I narrowly dodge a giant spoon, biscuit and someone’s hand reaching for coffee. People notice me and stare in complete disbelief. One person immediately pulls out their phone.
+
+3–6s — THE ESCAPE: I shoot through the café’s open door and enter a busy street. Camera aggressively chases behind me. I weave between pedestrians, fly underneath a bicycle handlebar and skim above an auto-rickshaw roof. A shocked pedestrian sees me, stretches both arms forward and tries running like Superman. I look back at him while flying and laugh.
+
+6–9s — STREET FOOD RAID 😂: I suddenly spot a giant plate of golgappe/pani puri at a roadside stall. Without stopping, I dive toward it, grab ONE pani puri with both tiny hands and immediately rocket away. The pani puri is almost as big as my head. The vendor and customers stare after me completely confused.
+
+9–12s — METRO CHASE: I fly alongside a moving metro/train. Passengers notice tiny me outside their windows and start filming. I wave at them while still carrying the giant pani puri. Camera pulls beside me for an epic slow-motion side profile—then I suddenly accelerate and leave the train behind.
+
+12–15s — FUNNY ENDING: I rocket upward over the city and land on the rooftop of a tall building.
+
+Huge cinematic skyline behind me.
+
+After this ridiculous high-speed adventure, MINI-ME calmly sits on the edge of the rooftop.
+
+I proudly lift my stolen pani puri—
+
+try taking one bite—
+
+but it’s so huge that it completely covers my face.
+
+I struggle with it for a second.
+
+FINAL FRAME: Camera slowly pulls back revealing tiny me sitting above the enormous city, fighting with one giant pani puri like this was the entire reason I learned to fly. 😂
+
+REALISM: Real miniature scale, natural shadows, aerodynamic hair/clothing, realistic camera shake, wind displacement, dust and motion blur. No teleportation, face morphing, floating objects, CGI/plastic appearance or random location jumps.
+
+FEEL: She has the greatest superpower on Earth… and she’s using it for pani puri.`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/FutureVibesAi/status/2107865444145340611 （开头「Prompt- 」已去掉）。主帖没有引用帖、没有外链文档；提示词里唯一的参考素材是 my exact face reference（作者脸部参考图），原帖未公开，参考 1 为成片截帧。同作者站内已有雅加达贴地飞行、橘猫偷零食飞行两条，提示词和画面都不同。@umesh_ai 引用本帖发了美国版翻拍（2107875386067714180，另立条目）
+  {
+    id: "futurevibesai-mini-me-pani-puri-flight-dreamina",
+    title: "迷你版的我会超高速飞 · 只为抢一个 Pani Puri",
+    subtitle: "X · @FutureVibesAi · Dreamina · 15秒 · 16:9",
+    description:
+      "15 厘米的迷你女孩从咖啡馆一路飞过印度街头和地铁，抢走一个和她头一样大的 Pani Puri，坐在楼顶啃不动。",
+    video: "/tutorials/futurevibesai-mini-me-pani-puri-flight-dreamina/demo-web.mp4",
+    poster: "/tutorials/futurevibesai-mini-me-pani-puri-flight-dreamina/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "迷你超能力",
+    shots: 7,
+    references: 1,
+    model: "Dreamina（帖子写 Created in @dreamina_ai，没写具体视频模型）",
+    style: "写实迷你人 + 真实城市 · 追拍高速飞行 · 印度街头 · 喜剧反转结尾",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/FutureVibesAi/status/2107865222182735910",
+    sourceAuthor: "@FutureVibesAi",
+    sourcePlatform: "X",
+    sourceImpressions: 614,
+    sourceStats: { asOf: "2026-10-06", likes: 9, reposts: 0, bookmarks: 5 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "咖啡桌间穿梭 → 冲出门上街 → 抢 Pani Puri → 追着地铁飞 → 楼顶坐下 → 被 Pani Puri 挡住整张脸",
+      opening: "第 0 秒是挤满人的咖啡馆，迷你女孩贴着桌面在巨大的拿铁杯和饼干之间飞过，旁边的女生看呆了。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2.8–6.4s 冲出咖啡馆门，贴地穿过行人和自行车，掠过三轮车，路人伸手想抓她。", at: 2.8 },
+        { title: "反转", text: "约 6.4–11.6s 俯冲到路边摊抢走一个 Pani Puri，接着抱着它在地铁车窗外并排飞。", at: 6.4 },
+        { title: "结尾怎么收", text: "约 11.6–15s 落到黄昏的楼顶边坐下，举起 Pani Puri 想咬一口，结果整张脸被挡住，镜头拉远。", at: 11.6 },
+      ],
+      copyThis: "超能力喜剧的笑点放在「用途很小」：前面 12 秒把飞行拍得像动作大片（追拍、擦身而过、地铁并排），最后只为了一个零食，还因为太大吃不下。",
+      approx: true,
+    },
+    tags: [
+      "15秒",
+      "16:9 横屏",
+      "Dreamina",
+      "迷你人",
+      "脸部参考图未公开",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备脸部参考图",
+        description:
+          "素材对应：提示词里的 my exact face reference = 参考 1，是作者自己的脸部参考图，原帖未公开（主帖、回复、引用帖里都没有）。参考 1 是成片约 5.5 秒的截帧，仅示意人物，非原图；跟做时请上传你自己的照片，不要用别人的脸。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "帖子写在 Dreamina 上生成，没写具体模型。成片 1920×1080（16:9 横屏）、30fps、约 15 秒，底部中间有「FUTURE VIBES AI」水印，没有台词。段落顺序和时间轴基本一致。和提示词对不上的地方：迷你女孩是大眼睛、大头的 3D 动画脸，不像提示词要求的写实真人（提示词明确禁止 CGI/塑料感）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者自回复里的英文提示词整段粘贴，同时上传你的脸部照片。结构是：开头锁脸和身高（15–20 厘米、不要翅膀和披风）→ 5 段时间轴（咖啡馆、逃出街头、抢街头小吃、追地铁、搞笑结尾）→ REALISM 写实要求 → FEEL 一句话情绪。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "futurevibesai-pani-puri-face-reference-framegrab",
+        number: "1",
+        title: "my exact face reference · 脸部参考图 · 截帧",
+        subtitle: "提示词 my exact face reference = 作者脸部参考图；原图原帖未公开（主帖、回复、引用帖都没有）；此处为成片约 5.5 秒近景截帧，仅示意人物，非原图",
+        image: "/tutorials/futurevibesai-mini-me-pani-puri-flight-dreamina/refs/01-face-reference-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开这张脸部参考图，也没有附生成它的提示词。此图为成片截帧，仅示意人物，非原图；跟做时请上传你自己的照片。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.8s 咖啡馆桌面：迷你女孩在巨大的拿铁杯和饼干之间穿梭，后面的女生看呆了。" },
+      { number: 2, description: "2.8–3.3s 从咖啡馆门口冲出去。" },
+      { number: 3, description: "3.3–6.4s 街头贴地追拍：从行人脚边、自行车下穿过，掠过三轮车；她回头看镜头，身后路人伸手想抓她。" },
+      { number: 4, description: "6.4–8.6s 路边摊一大盘 Pani Puri，她俯冲抢走一个，摊主和顾客愣住。" },
+      { number: 5, description: "8.6–11.6s 地铁站台和车窗里的乘客，接着她抱着 Pani Puri 和列车并排飞。" },
+      { number: 6, description: "11.6–13.5s 黄昏楼顶边，她坐下举起 Pani Puri。" },
+      { number: 7, description: "13.5–15s 想咬一口，Pani Puri 挡住整张脸，镜头拉远露出城市。" },
+    ],
+    constraints:
+      "素材对应：my exact face reference = 参考 1，脸部参考图原帖未公开，参考 1 为成片截帧仅示意。迷你人 15–20 厘米，保持同一张脸、发型、服装；不要翅膀、披风和魔法光；真实的微缩比例、影子、风吹头发、镜头抖动和运动模糊；不要瞬移、变脸、CGI/塑料感。和成片的差别：女孩是 3D 动画脸；底部有作者水印。",
+    video_prompt: {
+      title: "迷你版我抢 Pani Puri · 5 段时间轴",
+      subtitle: "作者自回复英文完整提示词 · Dreamina · my exact face reference = 参考 1（脸部参考图原帖未公开，成片截帧仅示意）",
+      content: `Use my exact face reference as a 15–20 cm miniature version of me. Preserve exact face, hair, outfit and proportions. No wings, cape or magical glow. I simply have the unexplained ability to fly incredibly fast.
+
+0–3s — GIANT CAFE: Start inside a crowded café. MINI-ME suddenly rockets between enormous coffee cups, flying only centimetres above a table. I narrowly dodge a giant spoon, biscuit and someone’s hand reaching for coffee. People notice me and stare in complete disbelief. One person immediately pulls out their phone.
+
+3–6s — THE ESCAPE: I shoot through the café’s open door and enter a busy street. Camera aggressively chases behind me. I weave between pedestrians, fly underneath a bicycle handlebar and skim above an auto-rickshaw roof. A shocked pedestrian sees me, stretches both arms forward and tries running like Superman. I look back at him while flying and laugh.
+
+6–9s — STREET FOOD RAID 😂: I suddenly spot a giant plate of golgappe/pani puri at a roadside stall. Without stopping, I dive toward it, grab ONE pani puri with both tiny hands and immediately rocket away. The pani puri is almost as big as my head. The vendor and customers stare after me completely confused.
+
+9–12s — METRO CHASE: I fly alongside a moving metro/train. Passengers notice tiny me outside their windows and start filming. I wave at them while still carrying the giant pani puri. Camera pulls beside me for an epic slow-motion side profile—then I suddenly accelerate and leave the train behind.
+
+12–15s — FUNNY ENDING: I rocket upward over the city and land on the rooftop of a tall building.
+
+Huge cinematic skyline behind me.
+
+After this ridiculous high-speed adventure, MINI-ME calmly sits on the edge of the rooftop.
+
+I proudly lift my stolen pani puri—
+
+try taking one bite—
+
+but it’s so huge that it completely covers my face.
+
+I struggle with it for a second.
+
+FINAL FRAME: Camera slowly pulls back revealing tiny me sitting above the enormous city, fighting with one giant pani puri like this was the entire reason I learned to fly. 😂
+
+REALISM: Real miniature scale, natural shadows, aerodynamic hair/clothing, realistic camera shake, wind displacement, dust and motion blur. No teleportation, face morphing, floating objects, CGI/plastic appearance or random location jumps.
+
+FEEL: She has the greatest superpower on Earth… and she’s using it for pani puri.`,
+    },
+  },
+  // 查重别名: https://x.com/GrayNoteLab/status/2107824874203099568 （主帖长文含中文完整提示词，从「提示词：」后收录，末句「搭配自己喜欢的角色卡效果更佳哦～」是使用建议已去掉；评论区作者说「豆包做的」「先生成人物资产图，再用人物结合提示词生成视频」；三张人物参考图原帖未公开；无引用帖、无外链）。同作者站内已有 graynotelab-jiangnan-alley-reunion-optical-zoom（雨巷重逢）、graynotelab-guzhuang-monologue-next-year-flowers（闺房独白），提示词和画面都不同
+  {
+    id: "graynotelab-jiangnan-market-willow-encounter-doubao",
+    title: "江南集市柳树下偶遇 · 公子来得我为何来不得",
+    subtitle: "X · @GrayNoteLab · 豆包 · 30秒 · 16:9",
+    description:
+      "清晨江南集市从高空俯瞰推到水果摊，再到柳树下公子偶遇小姐和丫鬟，两句对白，四个镜头。",
+    video: "/tutorials/graynotelab-jiangnan-market-willow-encounter-doubao/demo-web.mp4",
+    poster: "/tutorials/graynotelab-jiangnan-market-willow-encounter-doubao/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "古风写实",
+    shots: 4,
+    references: 3,
+    model: "豆包（评论区作者说「豆包做的」，没写具体模型）",
+    style: "东方古装写实电影感 · 清晨斜射柔光 + 薄雾 · 江南集市 · 4 镜分镜 · 中文对白",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/GrayNoteLab/status/2107824874203099568",
+    sourceAuthor: "@GrayNoteLab",
+    sourcePlatform: "X",
+    sourceImpressions: 5382,
+    sourceStats: { asOf: "2026-10-06", likes: 72, reposts: 15, bookmarks: 71 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "高空俯瞰集市 → 水果摊特写转焦到来人 → 柳树下三人相遇 → 近景对白",
+      opening: "第 0 秒高空 45 度俯瞰江南集市，青瓦屋顶层层叠叠，晨雾里石板街上人来人往，镜头缓缓前推下降。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 7.1–11.9s 前景竹篮里的红桃、青李、柑橘虚实转换，背景柳树下公子从远处走来。", at: 7.1 },
+        { title: "反转", text: "约 11.9–19.6s 柳树下三人相遇，公子笑问「小姐也会来这般热闹市井？」", at: 11.9 },
+        { title: "结尾怎么收", text: "约 19.6–30s 近景，小姐含笑回一句「公子来得，我为何来不得？」", at: 19.6 },
+      ],
+      copyThis: "多人古装戏要稳，把站位写成硬规则：每个镜头都写「左 B、中 A、右 C，不交换、不复制」，再给每个镜头单独一行【连续性锁定】，人物就不容易串脸。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "豆包",
+      "古风写实",
+      "3 张人物参考图未公开",
+      "中文对白",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 3 张人物参考图",
+        description:
+          "素材对应：女主A = 参考 1、女主B（丫鬟）= 参考 2、男主C = 参考 3。作者在评论区说先生成人物资产图，再用人物结合提示词生成视频，但三张图都原帖未公开；参考 1–3 是成片约 26 秒截帧，仅示意人物，非原图。作者建议搭配自己喜欢的角色卡。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "作者在评论区说是「豆包做的」，没写具体模型。成片上传为 4K（3840×2160，16:9）、30fps、约 30 秒，切点约在 7.1、11.9、19.6 秒，正好 4 镜，和时间轴一致，两句对白都能听到。和提示词对不上的地方：提示词要求无多余文字，成片却烧了繁体中文 + 英文字幕；男主C在镜头 03 是束发黑发，到镜头 04 变成披发、发色偏浅，违反「无发型突变」；前 12 秒背景声较响，像配乐。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把主帖「提示词：」后面的中文整段粘贴，同时上传三张人物图。结构是：总画质 →【人物锁定】→【场景锁定】→【空间关系】→【光影氛围】→【分镜】镜头01–04（每镜写时长、景别、视角、运镜、构图、内容、动作、对白、连续性锁定）→【负面约束】。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "graynotelab-market-heroine-a-framegrab",
+        number: "1",
+        title: "女主A · 人物参考图 · 截帧",
+        subtitle: "提示词「女主A」= 参考 1（白衣、头戴白花发饰的小姐，站中间）；原图原帖未公开，此为成片约 26 秒截帧，仅示意，非原图",
+        image: "/tutorials/graynotelab-jiangnan-market-willow-encounter-doubao/refs/01-heroine-a-framegrab.jpg",
+        prompt: "原帖未公开：作者说先生成人物资产图，再用人物结合提示词生成视频，但没有公开这张人物参考图，也没有附生成它的提示词。此图为成片约 26 秒截帧，仅示意人物，非原图；跟做时请准备你自己的人物图（作者建议用自己喜欢的角色卡）。",
+      },
+      {
+        id: "graynotelab-market-maid-b-framegrab",
+        number: "2",
+        title: "女主B（丫鬟）· 人物参考图 · 截帧",
+        subtitle: "提示词「女主B（丫鬟）」= 参考 2（粉衣丫鬟，站左侧）；原图原帖未公开，此为成片约 26 秒截帧，仅示意，非原图",
+        image: "/tutorials/graynotelab-jiangnan-market-willow-encounter-doubao/refs/02-maid-b-framegrab.jpg",
+        prompt: "原帖未公开：作者说先生成人物资产图，再用人物结合提示词生成视频，但没有公开这张人物参考图，也没有附生成它的提示词。此图为成片约 26 秒截帧，仅示意人物，非原图；跟做时请准备你自己的人物图（作者建议用自己喜欢的角色卡）。",
+      },
+      {
+        id: "graynotelab-market-hero-c-framegrab",
+        number: "3",
+        title: "男主C · 人物参考图 · 截帧",
+        subtitle: "提示词「男主C」= 参考 3（白衣深蓝镶边的公子，站右侧）；原图原帖未公开，此为成片约 26 秒截帧（此镜发型已和镜头 03 不同），仅示意，非原图",
+        image: "/tutorials/graynotelab-jiangnan-market-willow-encounter-doubao/refs/03-hero-c-framegrab.jpg",
+        prompt: "原帖未公开：作者说先生成人物资产图，再用人物结合提示词生成视频，但没有公开这张人物参考图，也没有附生成它的提示词。此图为成片约 26 秒截帧，仅示意人物，非原图；跟做时请准备你自己的人物图（作者建议用自己喜欢的角色卡）。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–7.1s 镜头01 大远景：高空俯瞰江南集市，青瓦屋顶层叠，晨雾中石板街上行人、马车往来，镜头缓缓前推下降。" },
+      { number: 2, description: "7.1–11.9s 镜头02 特写转中景：前景竹篮里红桃、青李、柑橘，焦点转到背景柳树下，男主C从远处走来。" },
+      { number: 3, description: "11.9–19.6s 镜头03 中景固定：柳树下左B、中A、右C 三人相遇，背景马车经过；男主C：「小姐也会来这般热闹市井？」" },
+      { number: 4, description: "19.6–30s 镜头04 近景横移：前景柳枝虚化，女主A含笑回：「公子来得，我为何来不得？」男主C注视她，丫鬟站在一旁。" },
+    ],
+    constraints:
+      "素材对应：女主A = 参考 1、女主B（丫鬟）= 参考 2、男主C = 参考 3，三张人物参考图原帖未公开，均为成片截帧仅示意。三人身份、脸、发型、服装、配饰全片一致；镜头03、04 站位固定为左 B、中 A、右 C；禁止 CG 感、塑料感；无文字、水印、现代元素。和成片的差别：烧录了中英字幕；男主C 镜头04 发型和发色变了。",
+    video_prompt: {
+      title: "江南集市偶遇 · 4 镜中文分镜",
+      subtitle: "主帖中文完整提示词 · 豆包（作者评论确认）· 女主A = 参考 1、女主B = 参考 2、男主C = 参考 3（三张人物图原帖未公开，成片截帧仅示意）",
+      content: `东方古装写实电影级画质；清晨柔和自然光；空气透视与薄雾；真实皮肤、布料质感；胶片级暖调色彩分级；禁止幻想CG感、塑料感、贴图感。
+
+【人物锁定】
+以参考图锁定三人身份：
+女主A、女主B（丫鬟）、男主C。
+全片严格保持三人身份、脸部特征、体型、发型、服装、配饰一致，不因镜头切换改变人物身份。
+
+【场景锁定】
+江南古代集市：青瓦坡屋顶、白墙木构建筑、石板街道、商铺幌子与灯笼；街边水果摊、垂柳、板车。
+
+【空间关系】
+镜头01高空俯瞰整条街市；镜头02切至街边水果摊；镜头03、04均在垂柳下同一位置展开对话。
+
+【光影氛围】
+清晨斜射柔光，薄雾漫动，柳枝与远景具有自然空气透视。
+
+【分镜】
+
+【镜头01】
+【时长】0–7秒
+【景别】大远景
+【视角】高空俯视约45度
+【运镜】缓慢前推并轻微下降
+【构图】街道对角线贯穿，屋顶群层叠铺陈
+【画面内容】古镇集市全貌：青瓦屋顶绵延，石板街上行人、商贩、马匹、货车往来。
+【动作节奏】舒缓
+【人物动作】人群自然流动，小贩整理货摊，马匹缓行。
+【锚定特效与物理反馈】晨雾随气流缓慢漂移，阳光在瓦面形成柔和高光。
+【摄影机硬性要求】运动平稳。
+【连续性锁定】确立街市地理关系，镜头02的水果摊位于街道左侧中段。
+
+【镜头02】
+【时长】7–12秒
+【景别】特写转中景
+【视角】平视微俯
+【运镜】缓慢前推，焦点从水果转移到背景人物
+【构图】前景水果篮虚化压框，背景垂柳与行人渐清晰
+【画面内容】竹篮中红桃、青李、柑橘堆叠；背景垂柳下男主C从远处走来。
+【动作节奏】由静转动
+【人物动作】男主C从远处走近，步伐从容。
+【锚定特效与物理反馈】阳光透过柳叶在果面投下斑驳光点，微风拂动柳枝。
+【摄影机硬性要求】焦点转移平滑。
+【连续性锁定】男主C即镜头03、04中的男子，身份、服装、发型与配饰保持完全一致；水果摊红穗挂饰保留至下一镜头。
+
+【镜头03】
+【时长】12–20秒
+【景别】中景
+【视角】平视
+【运镜】固定机位，轻微呼吸感
+【构图】垂柳居右框景，三人居中，背景行人与货摊虚化
+【画面内容】柳树下男主C与女主A、女主B相遇交谈；背景板车经过、行人往来。
+【动作节奏】生活流，舒缓
+【人物动作】男主C开口说话，神情讶异含笑；女主A与女主B应答。
+【对白】男主C：“小姐也会来这般热闹市井？”
+【锚定特效与物理反馈】柳枝在微风中轻摆，阳光透叶洒落。
+【摄影机硬性要求】三人左右站位全程不变。
+【连续性锁定】画面左侧女主B，中间女主A，右侧男主C；三人身份固定，不交换、不复制、不漂移。背景板车自右向左经过。
+
+【镜头04】
+【时长】20–30秒
+【景别】近景
+【视角】平视略仰
+【运镜】缓慢横移并轻微推近
+【构图】垂柳枝条前景虚化，三人面部清晰
+【画面内容】女主A抬手轻拨柳枝，转头含笑应答；男主C注视女主A，女主B站在旁边。
+【动作节奏】情绪点，柔和
+【人物动作】女主A指尖拨开柳枝、转头、微笑说话；男主C目光追随女主A；女主B自然站立。
+【对白】女主A：“公子来得，我为何来不得？”
+【锚定特效与物理反馈】被拨动的柳枝轻晃回弹，叶间光斑自然流动。
+【摄影机硬性要求】前景柳枝保持虚化。
+【连续性锁定】女主B左侧、女主A中间、男主C右侧；三人站位、身份、脸部特征、服装、发型、配饰与镜头03完全一致；柳枝动态自然衔接。
+
+【负面约束】
+无多余文字、无水印、无人物复制、无解剖错误、无现代元素、无身份漂移、无服装突变、无发型突变、无配饰变化、无人物互换、无角色数量变化。`,
+    },
+  },
+  // 查重别名: https://x.com/q_a_i_m_01/status/2102374863713493134 （主帖即完整提示词，开头「AI Video Generation Prompt」标题和引用符号「> 」已去掉；纯文生视频，无参考图；无引用帖、无外链；评论区只有两条他人夸赞，作者没有回复，没写工具）
+  {
+    id: "qaim01-mini-vending-machine-macro-assembly",
+    title: "迷你自动售货机微距组装 · 从零件到通电出货",
+    subtitle: "X · @q_a_i_m_01 · 工具未写明 · 10秒 · 9:16",
+    description:
+      "微距拍一只手用镊子和螺丝刀把金属框、弹簧货道、电机、按键和电路板装成迷你售货机，最后通电掉出一罐饮料。",
+    video: "/tutorials/qaim01-mini-vending-machine-macro-assembly/demo-web.mp4",
+    poster: "/tutorials/qaim01-mini-vending-machine-macro-assembly/poster.jpg",
+    duration: "10秒",
+    durationSec: 10,
+    styleLabel: "微距组装",
+    shots: 8,
+    references: 0,
+    model: "原帖未写明（帖子只给了提示词）",
+    style: "暗色工作台微距 · 浅景深 · 金属拉丝质感 · 快切组装过程 · 通电亮灯收尾",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/q_a_i_m_01/status/2102374863713493134",
+    sourceAuthor: "@q_a_i_m_01",
+    sourcePlatform: "X",
+    sourceImpressions: 2989,
+    sourceStats: { asOf: "2026-10-06", likes: 35, reposts: 6, bookmarks: 23 },
+    formats: ["拆装·制作过程", "产品广告"],
+    hook: {
+      structure: "零件平铺 → 拧螺丝装框架 → 装弹簧货道 → 装电机 → 装按键和电路板 → 装面板放饮料 → 通电出货",
+      opening: "第 0 秒俯拍暗色工作台，金属面板、电路板、按键和螺丝整齐排开，一只手伸进画面。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 0.5–4.5s 螺丝刀固定底板支架，金属框一层层立起来，镊子把弹簧装进货道。", at: 0.5 },
+        { title: "反转", text: "约 4.5–7.8s 齿轮电机装进小盒子盖上盖板，按键面板和电路板接好线。", at: 4.5 },
+        { title: "结尾怎么收", text: "约 7.8–10s 装上透明前板、放进饮料罐，数码屏亮出「A1」，一罐饮料掉下来，最后在暗处整机发光。", at: 7.8 },
+      ],
+      copyThis: "组装类视频按「零件平铺 → 一步一个零件 → 通电亮灯」写，每个镜头只拍一个动作、一律微距浅景深，再要求「真实手部动作、精确机械运动」，快切起来就很解压。",
+      approx: true,
+    },
+    tags: [
+      "10秒",
+      "9:16 竖屏",
+      "微距组装",
+      "纯文生视频",
+      "品牌风险",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：确认不需要参考图",
+        description:
+          "这条帖子只给了文字提示词，没有附图，提示词里也没有 @图片，评论区作者没有补充，按纯文生视频来做。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "原帖没写用的哪个工具。成片 720×1280（9:16 竖屏）、24fps、约 10 秒，快切 10 次左右，没有台词，没看到水印。和提示词对不上的地方：提示词只写「未来感模块化电子机器」，成片却是一台迷你自动售货机，里面放着可口可乐、雪碧、芬达的饮料罐；提示词写「no logos」，成片的罐子上印着这些品牌标志。作者实际是不是用这段提示词生成的，原帖没有说明。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把主帖里的英文提示词整段粘贴。结构是：一段式描述——工作台和零件 → 手部逐个安装（金属框、圆环货道、电子模块）→ 电路板、线材、螺丝微距 → 最后在暗色环境中通电发光 → 画质与禁止项（不要文字和 logo）。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–0.5s 俯拍工作台，金属面板、电路板、按键、螺丝整齐摆开。" },
+      { number: 2, description: "0.5–1.8s 螺丝刀把支架固定在底板上。" },
+      { number: 3, description: "1.8–3.0s 金属框架立起来，镊子夹螺丝和弹簧。" },
+      { number: 4, description: "3.0–4.5s 弹簧螺旋货道装进多层框架。" },
+      { number: 5, description: "4.5–6.5s 齿轮电机装进小盒子，接线后盖上盖板。" },
+      { number: 6, description: "6.5–7.8s 按键面板（A、B、数字键）和电路板，红黄线焊好。" },
+      { number: 7, description: "7.8–9.1s 装上透明前板，往货架里放饮料罐。" },
+      { number: 8, description: "9.1–10s 通电：数码屏亮出「A1」，一罐饮料掉下来，最后整机在暗处发光。" },
+    ],
+    constraints:
+      "素材对应：无参考素材，纯文生视频。写实微距、电影感布光、浅景深、真实手部动作、精确机械运动、暗色背景；不要文字和 logo。和成片的差别：成片是迷你自动售货机，饮料罐上有可口可乐、雪碧、芬达标志，违反「no logos」。品牌风险：可口可乐、雪碧、芬达都是可口可乐公司的注册商标，跟做时请换成虚构品牌或无标罐子。",
+    video_prompt: {
+      title: "迷你机器微距组装 · 一段式提示词",
+      subtitle: "主帖英文完整提示词 · 工具原帖未写明 · 无参考素材（纯文生视频）",
+      content: `A cinematic macro product-assembly video showing a futuristic modular electronic machine being built from individual components. Start with a dark, premium studio workbench covered with neatly arranged metallic panels, circuit boards, switches, buttons, cables, screws, and mechanical parts. A human hand carefully selects and places each component. Show smooth close-up shots of metal frames being assembled piece by piece, circular mechanical rings sliding into a multi-level rack, and a compact electronic module being mounted onto a base. Include detailed macro shots of circuit boards, wiring, connectors, screws, and brushed-metal surfaces. The assembly progressively transforms into a sophisticated futuristic machine. In the final shot, the completed device powers on inside a dark high-tech environment, glowing electronic circuitry and displays illuminating the machine. Photorealistic, cinematic lighting, shallow depth of field, realistic hand movements, precise mechanical motion, premium industrial design, dark background, subtle reflections, smooth camera movements, ultra-detailed, 4K, realistic physics, seamless transitions, no text, no logos.`,
+    },
+  },
 ];
 
 export const tutorials: Tutorial[] = rawTutorials.map((t) => withMedia(t));
