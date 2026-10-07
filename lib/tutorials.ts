@@ -30684,136 +30684,283 @@ The intensity only increases until the car explodes into the tunnel with the mou
 `,
     },
   },
-  // 查重别名(提示词自回复帖): https://x.com/ElsaSofia__AI/status/2106928513710518539 （附 MASTER STORYBOARD 分镜图）。同作者站内已有 elsasofia-hallway-dance-kid-filming-seedance-2-5（2104029660619153720，走廊跳舞），不是本片。无引用帖、无外链文档；提示词里的 character reference 原帖未公开。分镜图标题写「ORIGINAL VIDEO FRAMES」，是从一条原视频截的帧（带韩文字幕和 KFC 纸盒），原视频作者没有给出
+  // 查重别名：本条原为 @ElsaSofia__AI https://x.com/ElsaSofia__AI/status/2106928507809100018 （提示词自回复 2106928513710518539，英文 13 镜头 + MASTER STORYBOARD 分镜图），2026-10-08 换成 @jackchen1919 重写的更详细版本（同一故事：塔吊狙击手用炸鸡腿投喂会议室）。为不打断已上线链接，id 保持不变。jackchen1919 第一次照搬原版提示词的作品 https://x.com/jackchen1919/status/2107136241565421756 ；本条主帖 2107443935690068051；完整提示词在自回复 https://x.com/jackchen1919/status/2107466823084228817 ，同文另发 https://x.com/jackchen1919/status/2107467110092026162 。两张角色卡原图原帖未公开（自回复 2107466968144265403 的画布截图只有缩略图）。旧媒体 demo-web.mp4 / poster.jpg / refs/01-02 仍在 R2，页面不再引用
   {
     id: "elsasofia-telescope-fried-chicken-office-seedance-2-5",
-    title: "高空瞄准镜里飞来一块炸鸡 · 办公室同事一起开吃",
-    subtitle: "X · @ElsaSofia__AI · Seedance 2.5 · 17秒 · 16:9",
+    title: "塔吊狙击枪射出炸鸡腿 · 喂饱整间会议室",
+    subtitle: "X · @jackchen1919 · 模型未写明 · 17秒 · 21:9",
     description:
-      "女人趴在高空塔吊上用瞄准镜盯着对面写字楼，一块炸鸡突然飞来被她一口咬住，办公室里的人也跟着吃起炸鸡。",
-    video: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/demo-web.mp4",
-    poster: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/poster.jpg",
+      "女狙击手趴在塔吊上往枪里装炸鸡腿，射进对面会议室，打哈欠的女生一口接住，同事们也被挨个投喂。",
+    video: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/demo-web-v2.mp4",
+    poster: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/poster-v2.jpg",
     duration: "17秒",
     durationSec: 17,
-    styleLabel: "广告喜剧",
-    shots: 11,
+    styleLabel: "荒诞喜剧",
+    shots: 10,
     references: 2,
-    model: "Seedance 2.5（帖子写 Made with Seedance 2.5）",
-    style: "写实电影感广告 · 高空塔吊 + 玻璃写字楼 · 快切 13 镜 · 冷峻开场转反差喜剧",
-    aspectRatio: "16/9",
-    sourceUrl: "https://x.com/ElsaSofia__AI/status/2106928507809100018",
-    sourceAuthor: "@ElsaSofia__AI",
+    model: "模型未写明（作者同期其他视频标的是 Seedance 2.5，这条帖子和提示词都没写）",
+    style: "电影实拍质感荒诞动作喜剧 · 塔吊狙击 + 玻璃会议室 · 10 镜头带等效焦段 · 严肃拍法反差笑点",
+    aspectRatio: "21/9",
+    sourceUrl: "https://x.com/jackchen1919/status/2107443935690068051",
+    sourceAuthor: "@jackchen1919",
     sourcePlatform: "X",
-    sourceImpressions: 12268,
-    sourceStats: { asOf: "2026-10-05", likes: 105, reposts: 19, bookmarks: 56 },
-    formats: ["产品广告", "电影叙事"],
+    sourceImpressions: 2356,
+    sourceStats: { asOf: "2026-10-08", likes: 34, reposts: 0, bookmarks: 12 },
+    formats: ["电影叙事"],
     hook: {
-      structure: "高空瞄准 → 眼睛 / 镜头特写 → 瞄准镜视角 → 炸鸡飞来 → 办公室众人围观 → 一口咬住 → 回去继续瞄 → 众人一起吃",
-      opening: "第 0 秒女人趴在高空塔吊横梁上架着长筒瞄准镜对准远处写字楼，长发被风吹起，画面下方有韩文字幕「나 배고파 죽겠어（I'm starving）」。",
+      structure: "塔吊装填鸡腿 → 眼睛贴镜 → 瞄准镜看会议室 → 枪口射出鸡腿 → 穿窗进嘴 → 连续装填 → 全桌吃鸡腿",
+      opening: "第 0 秒红发女人趴在黄色塔吊钢格栅上，架着黑色长枪，左手从红白纸盒里拿炸鸡腿往枪上装，身后是整片城市楼群。",
       openingAt: 0,
       beats: [
-        { title: "过程怎么推进", text: "约 1.7–5s 她眼睛贴近瞄准镜的特写、镜头调整、瞄准镜里看到对面办公楼，再从正面看镜头发光。", at: 1.7 },
-        { title: "反转", text: "约 5.5–8.5s 一块炸鸡突然从侧面飞进画面，切到写字楼里一排西装同事看着炸鸡飞过；约 8.5–10s 她闭着眼一口咬住炸鸡。", at: 5.5 },
-        { title: "结尾怎么收", text: "约 11–12.5s 她若无其事地回到瞄准镜前，旁边放着炸鸡纸盒；约 12.5–17s 办公室里一排人跟着拿起炸鸡一起吃。", at: 11 },
+        { title: "反转", text: "约 4.5–6s 枪口蓝白闪光，射出来的不是子弹，而是一只金黄炸鸡腿，在慢动作里翻转着冲向镜头。", at: 4.5 },
+        { title: "过程怎么推进", text: "约 7–10s 鸡腿穿过会议室玻璃，正在打哈欠的眼镜女生一口接住，再拿下来咬一口，边嚼边看。", at: 7 },
+        { title: "结尾怎么收", text: "约 11–12.5s 射手接连装填开枪；约 12.5–17s 会议室里三个西装同事也各接住一只，全桌安静地吃鸡腿。", at: 11 },
       ],
-      copyThis: "先把原片截成 13 格的分镜拼图当参考，再在提示词里按 13 个镜头逐段写时间和动作，最后强调「严格照分镜，不要加新场景」，模型就会按分镜顺序一格格还原。",
+      copyThis: "先给每个角色绑定角色卡，再写死空间轴线（窗户永远在左、鸡腿永远从左飞到右），每个镜头都按 Subject / Action / Camera（含等效焦段）/ Constraints 写，多镜头的连续动作才不会乱。",
       approx: true,
     },
     tags: [
       "17秒",
-      "16:9 横屏",
-      "Seedance 2.5",
-      "分镜图参考",
-      "人物参考图未公开",
+      "21:9 宽银幕",
+      "模型未写明",
+      "双角色卡",
+      "分镜带焦段",
+      "改写自 @ElsaSofia__AI 原版",
     ],
     steps: [
       {
         number: 1,
-        title: "第一步：准备人物参考图和分镜图",
+        title: "第一步：准备两张角色卡",
         description:
-          "提示词要求上传两样东西：「provided character reference」（人物参考图）和「provided master storyboard」（分镜图）。分镜图作者公开了，见参考 1，是 13 格「MASTER STORYBOARD — ORIGINAL VIDEO FRAMES」，从一条原视频截出来的，格子里能看到韩文字幕和 KFC 炸鸡纸盒。人物参考图原帖未公开，参考 2 只是成片约 9.6 秒的截帧，用来示意，不是原图。",
+          "提示词绑定了两张图：2026-09-11-225008.png 命名为【射手】，2026-08-19-091219.png 命名为【吃鸡腿主角】（三视图角色卡）。两张原图原帖未公开：作者在回复里只发了一张画布截图，只看得到缩略图。参考 1、参考 2 是成片截帧，仅示意，不是原图。跟做时换成你自己的人物图，并把提示词里的文件名改成你的。另外四名职员不用角色卡。",
       },
       {
         number: 2,
         title: "第二步：选模型与画幅",
         description:
-          "作者用的是 Seedance 2.5。成片是 1280×720（16:9）、30fps、约 17.2 秒，没有水印。和提示词对不上的地方：成片开头有一句韩语台词「나 배고파 죽겠어」，还有烧录的韩英字幕，提示词里没写；提示词写的「telescope」在分镜和成片里其实是一把架在支架上的狙击枪；成片中间多了一格城市远景，约 10–11 秒又插了一次瞄准镜视角。",
+          "作者没写用的哪个模型（他同期其他视频标的是 Seedance 2.5，这条没写）。提示词写 16:9，成片实际是 1470×630（约 21:9 宽银幕）、24fps、约 17.1 秒，无水印。和提示词对不上的地方：会议室里只看到 3 名西装同事（提示词写 4 名）；结尾主角把鸡腿拿在手里，没有叼在嘴里；画外台词提示词前后写法不一致（AUDIO 写四川话「好饿啊」，SHOT 1 写「我快饿死了」），成片说的是哪句没有逐字核对。",
       },
       {
         number: 3,
         title: "第三步：粘贴完整提示词",
         description:
-          "把作者自回复里的英文提示词整段粘贴，同时上传人物参考图和分镜图。结构依次是：总要求（17 秒、严格照参考）、Shot 1–13 每镜的时间段和动作、整体风格、最后一句「严格照分镜，不要发明新场景」。",
+          "把作者自回复里的整段提示词粘贴（中文为主，带英文小标题），同时上传两张角色卡。结构：时长 / 画幅 / 整体风格 → SUBJECT 角色与道具绑定 → ENVIRONMENT 空间轴线 → AUDIO 声音 → SHOT 1–10（每镜都写 Subject、Action、Environment、Camera、Style、Performance、Constraints）→ NEGATIVE 全片约束。这版是作者嫌 @ElsaSofia__AI 原版提示词太简略、自己重写的。",
       },
     ],
     references_detail: [
       {
-        id: "elsasofia-chicken-master-storyboard",
+        id: "jackchen-chicken-shooter-framegrab",
         number: "1",
-        title: "master storyboard · 13 格分镜图",
-        subtitle: "提示词「the provided master storyboard」= 这张分镜图（作者自回复原图，1500×1575）；标题写 ORIGINAL VIDEO FRAMES，是从一条原视频截的帧，原视频未给出",
-        image: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/refs/01-master-storyboard.jpg",
-        prompt: "原帖未附提示词：这是作者从原视频截帧拼成的分镜图（13 格，每格标了镜头说明），不是用提示词生成的。",
+        title: "2026-09-11-225008.png【射手】· 角色卡 · 截帧",
+        subtitle: "提示词里 2026-09-11-225008.png = 【射手】角色卡；原图原帖未公开（作者回复的画布截图只露出缩略图）；此处为成片约 0.8 秒截帧，仅示意人物，非原图",
+        image: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/refs/03-shooter-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开这张角色卡原图，也没有附生成它的提示词。此图为成片截帧，仅示意人物，非原图；跟做时请准备你自己的人物图。",
       },
       {
-        id: "elsasofia-chicken-character-framegrab",
+        id: "jackchen-chicken-eater-framegrab",
         number: "2",
-        title: "character reference · 人物参考图 · 截帧",
-        subtitle: "提示词「the provided character reference」= 女主人物参考图；原图原帖未公开；此处为成片约 9.6 秒截帧，仅示意人物，非原图",
-        image: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/refs/02-character-framegrab.jpg",
-        prompt: "原帖未公开：作者没有公开人物参考图，也没有附生成它的提示词。此图为成片截帧，仅示意人物，非原图；跟做时请准备你自己的人物图。",
+        title: "2026-08-19-091219.png【吃鸡腿主角】· 角色卡 · 截帧",
+        subtitle: "提示词里 2026-08-19-091219.png = 【吃鸡腿主角】角色卡（画布缩略图可见是正面 + 全身三视图）；原图原帖未公开；此处为成片约 9.5 秒截帧，仅示意人物，非原图",
+        image: "/tutorials/elsasofia-telescope-fried-chicken-office-seedance-2-5/refs/04-eater-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开这张角色卡原图，也没有附生成它的提示词。此图为成片截帧，仅示意人物，非原图；跟做时请准备你自己的人物图。",
       },
     ],
     storyboard: [
-      { number: 1, description: "0–1.7s 女人趴在高空塔吊上架着瞄准镜对准写字楼，韩语台词和字幕「I'm starving」。" },
-      { number: 2, description: "1.7–3.5s 她的眼睛贴近瞄准镜的特写。" },
-      { number: 3, description: "3.5–4.5s 瞄准镜视角，看到对面写字楼里的人。" },
-      { number: 4, description: "4.5–5.5s 从正面看瞄准镜，镜片发出蓝光。" },
-      { number: 5, description: "5.5–6.5s 一块炸鸡突然从侧面飞进画面，碎屑飞溅。" },
-      { number: 6, description: "6.5–7s 城市远景，炸鸡划过楼宇之间。" },
-      { number: 7, description: "7–8.5s 写字楼里一排西装同事靠窗坐着，看着炸鸡飞过。" },
-      { number: 8, description: "8.5–10s 绿色上衣的女人闭眼一口咬住炸鸡，嚼着。" },
-      { number: 9, description: "10–11s 再次瞄准镜视角，看到办公室。" },
-      { number: 10, description: "11–12.5s 她若无其事地回到瞄准镜前，旁边放着炸鸡纸盒。" },
-      { number: 11, description: "12.5–17.2s 办公室里一排人一起拿起炸鸡吃。" },
+      { number: 1, description: "0–2s 红发射手趴在黄色塔吊钢格栅上，左手从红白纸盒拿炸鸡腿装进长枪，右手稳枪。" },
+      { number: 2, description: "2–3.5s 射手眼睛贴近瞄准镜的极近特写，另一只眼轻闭。" },
+      { number: 3, description: "3.5–4.5s 圆形瞄准镜视角，扫过对面玻璃会议室。" },
+      { number: 4, description: "4.5–6s 枪口蓝白闪光，一只炸鸡腿从枪口射出，慢动作翻转冲向镜头。" },
+      { number: 5, description: "6–7s 城市远景，塔吊在左、玻璃大楼在右，鸡腿划过两楼之间。" },
+      { number: 6, description: "7–7.9s 会议室侧面广角，鸡腿穿窗从左飞向右，右前景的眼镜女生张着嘴。" },
+      { number: 7, description: "7.9–10.1s 眼镜女生一口咬住鸡腿，再用手拿下来咬一口，边嚼边看。" },
+      { number: 8, description: "10.1–11.1s 瞄准镜再次扫过会议桌上的同事。" },
+      { number: 9, description: "11.1–12.5s 射手侧面中近景，从纸盒里接连取鸡腿装填、开枪。" },
+      { number: 10, description: "12.5–17.1s 会议室广角，窗上留下几个弹孔，三个西装同事各接住一只鸡腿吃，眼镜女生拿着自己那只慢慢嚼。" },
     ],
     constraints:
-      "素材对应：master storyboard = 参考 1（作者公开的 13 格分镜图原图）；character reference = 参考 2 的位置，原图原帖未公开，参考 2 为成片截帧仅示意。严格照分镜顺序，不加新场景、不换人物服装道具；真实物理和动作。和成片的差别：多了韩语台词和烧录字幕；提示词的 telescope 实为狙击枪；多一格城市远景和一次瞄准镜视角。",
+      "素材对应：2026-09-11-225008.png【射手】= 参考 1；2026-08-19-091219.png【吃鸡腿主角】= 参考 2。两张原图原帖未公开（作者回复里的画布截图只露出缩略图），参考 1、2 都是成片截帧仅示意。左手装填、右手稳枪；鸡腿始终从画面左侧飞向右侧；玻璃只有小穿孔和裂纹；不出现品牌标志、字幕、水印。和成片的差别：提示词写 16:9，成片是约 21:9 宽银幕；画面里同事只有 3 名（提示词写 4 名）；结尾主角的鸡腿拿在手里，没叼着；台词两处写法不一致（「好饿啊」/「我快饿死了」），没有逐字核对。原版：@ElsaSofia__AI 的英文 13 镜头 + 分镜图版（较简略，已由本版替换）。风险：画面有枪口对准办公室的狙击情节（射出的是鸡腿、无人受伤）；红白炸鸡纸盒容易让人联想到快餐品牌，成片未见商标。",
     video_prompt: {
-      title: "Telescope & Fried Chicken · 17 秒分镜还原",
-      subtitle: "作者自回复英文完整提示词 · Seedance 2.5 · master storyboard = 参考 1（作者原图）；character reference = 参考 2（原帖未公开，成片截帧仅示意）",
-      content: `Create a 17-second cinematic photorealistic video using the provided character reference and the provided master storyboard as strict visual references. Recreate the storyboard sequence accurately without changing the characters, environment, props, wardrobe, or story.
+      title: "炸鸡腿狙击手 · 17 秒 10 镜头完整提示词",
+      subtitle: "作者自回复完整提示词（中文 + 英文小标题）· 模型未写明 · 2026-09-11-225008.png【射手】= 参考 1、2026-08-19-091219.png【吃鸡腿主角】= 参考 2（原图原帖未公开，成片截帧仅示意）",
+      content: `Duration：17秒
+Aspect ratio：16:9横屏
+Overall style：电影实拍质感的荒诞动作喜剧。开头像严肃的高空狙击行动，用精密瞄准、枪口蓄能和高速飞行制造悬念，随后通过完整炸鸡腿与职员反应揭示笑点。城市与人物写实，科幻特效克制，表演保持认真。
+SUBJECT / 角色与道具绑定
+2026-09-11-225008.png 命名为【射手】，人物面容、发型、体型和穿着遵循角色卡。伏卧在塔吊钢架上，右手保持握枪，左手负责取鸡腿和装填。
+2026-08-19-091219.png 命名为【吃鸡腿主角】，人物面容、发型、体型和穿着遵循角色卡。坐在会议室长桌靠近镜头的一端，面向侧方窗户，桌上放着笔记本电脑。
 
-Shot 1 — 0.0–1.3s: A woman stands inside an office/building and carefully aims a large telescope toward a distant building. Cinematic medium shot, subtle camera movement, realistic lighting.
+其他人物统一为四名公司职员，不另设角色卡，穿普通商务服装。其中邻座职员拿着一杯带盖咖啡，其余三人坐在更远处。
+全片只有一支外形一致的黑色科幻长枪，架在两脚架上，带瞄准镜和粗圆筒枪口。射手身边放一个打开的红白色炸鸡纸盒，内部有金黄色炸鸡腿，不出现品牌标志。
 
-Shot 2 — 1.3–2.5s: Extreme close-up of her eye looking through the telescope. Detailed eyelashes, realistic skin texture, focused expression, shallow depth of field.
+ENVIRONMENT / 空间轴线
+晴天城市高空，黄色塔吊臂对着另一栋玻璃幕墙办公楼。射手所在的塔吊与会议室之间有清楚的空间距离。
 
-Shot 3 — 2.5–3.8s: Close-up of the telescope as she adjusts and aims it precisely. Smooth cinematic camera movement, realistic metal and glass reflections.
+会议室采用冷白日光，长桌从近景延伸至远处，窗户始终位于室内画面左侧，吃鸡腿主角位于右前景，三名公司职员依次位于其后方。鸡腿进入室内后始终从画面左侧飞向右侧。
 
-Shot 4 — 3.8–5.0s: Telescope point-of-view shot showing the distant building through the lens. Clear optical perspective, realistic depth and slight lens distortion.
+玻璃是闭合状态。每只鸡腿穿过时只产生对应的小穿孔和放射状裂纹，裂纹在后续镜头中保留。桌面文件、电脑、咖啡保持原位。
 
-Shot 5 — 5.0–6.3s: Exterior/front view of the telescope, maintaining the same woman and location. Build anticipation with a subtle push-in.
+AUDIO / 声音
+0.2—1.5秒，吃鸡腿主角以疲惫、低声抱怨的语气在画外说用四川话说：“好饿啊。”
+此时画面仍在塔吊上，射手不对口型。
+其余部分没有对白。声音包含高空风声、轻微装填声、枪口电子蓄能声、短促发射声、鸡腿掠过空气的声音、玻璃局部破裂声与咀嚼声。
 
-Shot 6 — 6.3–7.5s: A piece of fried chicken suddenly enters the frame from the side, creating a humorous surprise. Natural motion and realistic physics.
+配乐前半段为克制的悬疑低频脉冲，鸡腿显形后仍保持严肃；最后群体叼鸡腿时音乐突然收轻，突出咀嚼与安静的办公室环境，不添加观众笑声。
 
-Shot 7 — 7.5–8.8s: Cut to the group inside the office near the window, watching the situation with surprised expressions. Keep their appearance and environment consistent with the storyboard.
+SHOT 1（0—1.7秒）｜高空伏卧，鸡腿装填
+Subject：射手。
 
-Shot 8 — 8.8–10.0s: The fried chicken flies rapidly across the scene toward the woman. Use dynamic tracking camera movement and realistic motion blur.
+Action：射手伏卧在狭窄的黄色塔吊钢格栅上，长枪由两脚架支撑。右手握住枪后部，左手从打开的炸鸡盒中拿起一只完整鸡腿，捏住骨柄，将其送入枪身侧上方的科幻装填口。松手后左手撤回，身体保持稳定。
+Environment：远处玻璃办公楼、城市楼群和蓝天交代高度，风持续吹动头发与衣料。
+Camera：等效28mm后侧中广景，沿塔吊臂缓慢向前推进，同时交代射手、枪、炸鸡盒和对面的办公楼。切向射手眼睛特写。
 
-Shot 9 — 10.0–11.4s: The woman catches/bites the fried chicken naturally. Close cinematic framing, realistic facial expression, comedic timing.
+Style：严肃动作电影构图，冷色城市与金黄色鸡腿形成反差。
 
-Shot 10 — 11.4–13.0s: She calmly returns to the telescope and continues looking through it as if nothing unusual happened. Smooth transition, deadpan comedy.
+Performance / Dialogue：射手动作熟练、神情专注，不向镜头开玩笑。画外传来“我快饿死了”。
 
-Shot 11 — 13.0–14.2s: Cut back to the group; they begin eating fried chicken together.
+Constraints：左手装填、右手稳枪；鸡腿完整进入装填口后，左手才空着撤回。枪与两脚架保持接触，不悬浮。
+SHOT 2（1.7—3.4秒）｜专注瞄准
+Subject：射手。
 
-Shot 12 — 14.2–15.8s: The group continues eating happily. Natural gestures, subtle reactions, realistic food movement.
+Action：射手脸颊贴近枪托，一只眼睛靠近瞄准镜，另一只眼睛轻闭。呼吸逐渐放缓，眼神集中，头部只有微小调整。
 
-Shot 13 — 15.8–17.0s: Final cinematic group shot of everyone eating together. Hold for a brief comedic ending.
+Environment：城市背景彻底虚化，少量风吹动脸侧头发。
 
-Overall style: ultra-realistic cinematic commercial, natural human movement, realistic physics, consistent faces and clothing, detailed food textures, realistic office environment, cinematic depth of field, subtle handheld camera movement, smooth cuts, natural motion blur, believable lighting and shadows, high-end film production quality, 4K photorealism.
+Camera：等效100mm眼睛与镜筒极近特写，微微推进，眼睫、皮肤和金属反光清晰。以视线匹配切入瞄准镜画面。
 
-Important: Follow the provided storyboard exactly. Do not invent new scenes, do not change the sequence, do not change the characters, and do not add unnecessary objects or actions.
-`,
+Style：浅景深、真实皮肤纹理，保持严肃和精密感。
+
+Performance / Dialogue：没有台词。眉眼微收，视线不乱飘，嘴部不做说话动作。
+
+Constraints：不改变角色卡脸部，不让瞄准镜穿入眼睛，不增加超能力眼光。
+
+SHOT 3（3.4—4.4秒）｜瞄准镜里的会议室
+Subject：吃鸡腿主角、四名公司职员。
+Action：圆形瞄准镜视野缓慢移过玻璃窗格和会议长桌，停在吃鸡腿主角附近。主角精神疲惫，坐着微微仰头，开始张嘴打哈欠。其他职员仍在开会。
+
+Environment：透过玻璃看见笔记本电脑、带盖咖啡和会议室背景屏幕，屏幕只呈现简单图表。
+
+Camera：长焦瞄准镜主观镜头，四周黑色圆形遮幅，内部简洁十字刻度与中央红点，轻微呼吸式晃动。
+
+Style：压缩空间的长焦质感，窗玻璃有轻微反光。
+
+Performance / Dialogue：主角是困倦地打哈欠，没有尖叫；职员此时没有提前惊慌。
+
+Constraints：人物数量与后续一致；瞄准镜不是额外的文字界面，不出现血条、姓名或目标提示。
+
+SHOT 4（4.4—6.3秒）｜“弹头”竟然是炸鸡腿
+Subject：射手、科幻长枪、第一只鸡腿。
+
+Action：枪口内的蓝白同心圆由暗变亮，向中心聚集。约5秒，短促蓝白闪光伴随一小团白烟，一只完整金黄炸鸡腿从枪口射出。
+鸡腿骨柄起初朝向运动前方；离开枪口后，在慢动作中端对端翻转半周，让肉端逐渐转向前方。表面酥脆纹理清楚，少量炸衣碎屑尾随。
+
+Environment：塔吊和射手在后方虚化，头发仍随风移动。
+
+Camera：正对枪口的等效85mm近景，焦点从蓄能枪口转移至鸡腿。鸡腿快速接近镜头、占据前景，利用运动匹配切向城市远景。
+
+Style：枪口光短促、集中，鸡腿保持真实食物质感。慢动作突出荒诞反差。
+
+Performance / Dialogue：射手维持专注表情，没有得意笑容。
+
+Constraints：直接射出完整鸡腿，不先射金属子弹再变食物。鸡腿翻转过程连续；慢动作不代表周围时间停止。
+
+SHOT 5（6.3—7秒）｜交代跨楼飞行路线
+Subject：飞行中的第一只鸡腿。
+
+Action：鸡腿从塔吊方向高速飞向对面玻璃办公楼，运动路径连续，肉端保持朝前。
+Environment：两栋楼之间的城市空间，塔吊位于较远处，接收鸡腿的办公楼在画面右侧。
+
+Camera：等效50mm城市远景，镜头短促向右跟随亮小点，结束在办公楼窗户区域。切室内同方向运动。
+
+Style：现实城市光线，鸡腿只是受光的小亮点，不拖巨大能量尾焰。
+
+Performance / Dialogue：无对白，用掠空声接到玻璃破裂声。
+
+Constraints：此镜只是首发鸡腿的飞行，不新增一次开火。鸡腿不绕楼、不凭空转弯。
+
+SHOT 6（7—8.5秒）｜穿窗，越过同事眼前
+Subject：吃鸡腿主角、四名公司职员、第一只鸡腿。
+
+Action：左侧玻璃被鸡腿穿出一个小孔，周围瞬间展开放射状裂纹。鸡腿肉端朝前，自左向右慢动作飞过会议桌边缘，直奔主角张开的嘴。
+
+邻座职员先看见移动物，眼神追过去，才转动头部；拿咖啡的手停在胸口附近。后排两名职员依次抬眼。主角仍在打哈欠，双手留在桌面附近。
+
+Environment：少量细小玻璃碎屑沿窗边落下，桌面纸张和咖啡不受夸张冲击。
+Camera：等效28mm会议室侧面广景，保留左侧窗户、鸡腿路线和右前景主角。镜头随鸡腿轻微向右移动，在接近嘴巴时切近景。
+
+Style：电影慢动作，冷色办公室衬出鸡腿的金黄。
+
+Performance / Dialogue：同事是惊讶地追看，不尖叫逃跑；主角尚未意识到发生什么。
+
+Constraints：鸡腿不碰到沿途职员。只有局部玻璃穿孔，没有整面幕墙爆炸、飞纸或咖啡悬空。
+
+SHOT 7（8.5—10.2秒）｜先嘴接，再抬手吃
+Subject：吃鸡腿主角、第一只鸡腿。
+
+Action：鸡腿从画面左侧进入，肉端先碰到张开的嘴。主角本能合嘴咬住，骨柄露在外面。
+
+停顿一小拍后，主角左手才抬起，抓住骨柄，将鸡腿轻轻向下拉开，咬下一口。脸颊鼓起，咀嚼两下，低头看看手里的鸡腿。肉端留下可见咬痕和浅色内里，剩余鸡腿始终留在左手中。
+
+Environment：背后职员略微虚化，仍能看见他们惊讶的视线。
+Camera：等效65mm正面胸像近景，嘴、鸡腿和抬起的手保持同框，焦点跟随鸡腿从嘴边移到手中。
+
+Style：咬合与食物质感清楚，表情细腻，荒诞事件以真实反应呈现。
+
+Performance / Dialogue：先闭眼接住，随后睁眼微怔，咀嚼后眉眼放松，出现“还挺好吃”的满足感。无对白。
+
+Constraints：必须先用嘴接住，再抬手抓骨柄。鸡腿不恢复完整、不瞬间只剩骨头；主角不把它扔掉。
+
+SHOT 8（10.2—10.8秒）｜轮到其他人
+Subject：四名公司职员、吃鸡腿主角。
+
+Action：瞄准镜重新扫过会议桌，四名职员正望向窗户，其中一人稍稍离开椅背。主角仍坐在原处，左手拿着带咬痕的鸡腿。
+
+Environment：同一会议室，首次穿孔和裂纹保留。
+
+Camera：回到同样的圆形瞄准镜主观画面，短促横移，交代注意力转向另外四人。
+
+Style：简洁、冷静，延续严肃狙击片语法。
+Performance / Dialogue：职员只是疑惑与吃惊，没有恐惧哭喊。
+
+Constraints：镜筒刻度与前一镜一致，不出现自动锁定文字。
+
+SHOT 9（10.8—12.5秒）｜四次装填，四次发射
+Subject：射手、科幻长枪、炸鸡盒。
+
+Action：射手保持伏卧，右手稳住枪，左手迅速重复四次明确动作：伸进炸鸡盒、取出一只鸡腿、送入装填口、松手撤回；鸡腿装入后，枪口才闪光发射。
+
+四次发射短促连贯，蓝白闪光之间有间隔，余烟沿枪口散开。盒内鸡腿随取用减少。
+
+Environment：同一塔吊位置，高空风继续吹动头发与衣料。
+
+Camera：等效35mm正侧中近景，同时看清炸鸡盒、装填手、枪身与枪口。机位稳定，用动作速度形成节奏。
+
+Style：干净利落的动作剪辑质感，蓝光只短暂照亮附近金属。
+
+Performance / Dialogue：射手像认真完成一项普通工作，表情不变。四次装填与发射声清楚分开。
+Constraints：一次装填对应一只鸡腿和一次发射。不开空枪，不增加换弹匣、抛弹壳或多余武器。
+
+SHOT 10（12.5—17秒）｜整桌人被喂安静
+Subject：吃鸡腿主角、四名公司职员。
+
+Action：
+12.5—14.2秒，四只鸡腿从左侧窗户依次飞入，各自形成小穿孔，依次到达四名职员面前。职员看到鸡腿逼近，本能张嘴，各接住一只，肉端靠近嘴、骨柄露在外面。原本想说话的动作被停住。
+
+14.2—14.8秒，吃鸡腿主角看了一眼同事，淡定地把左手中原来那只带咬痕的鸡腿送回嘴边，轻轻咬住后放低左手。
+
+14.8—17秒，五个人嘴里都叼着各自的鸡腿，一起望向窗外。邻座职员的咖啡杯举到胸口仍没放下；另两人保持转头半途的姿势。主角脸颊轻动，继续慢慢咀嚼。留出两秒左右的安静喜剧停顿。
+
+Environment：窗上保留四个局部穿孔与裂纹，其余玻璃、电脑、桌面保持完整。
+
+Camera：等效28mm略低的会议桌侧面中广景，主角在右前景，四名职员沿纵深排列。镜头极缓慢后移，最后完整交代四个人与桌面，不切特写、不提前结束。
+
+Style：严肃构图配荒诞结果，冷幽默，保持真人微小动作。
+Performance / Dialogue：所有人不说话。由惊讶、僵住到偷偷咀嚼，反应有先后。最后仍有眨眼、呼吸和轻微咀嚼，不做真正冻结画面。
+
+Constraints：后续四只鸡腿只给四名职员，主角继续吃第一只，不凭空得到新的。所有鸡腿朝向一致，咬痕不消失。咖啡不泼洒，职员不受伤、不倒地。
+
+NEGATIVE / 全片约束
+无字幕、品牌商标、水印、文字贴纸。无金属子弹、血迹、真实伤口。无时间冻结、漂浮弹壳、纸张风暴和整面玻璃爆碎。
+两位主角保持角色卡身份；公司职员的数量、座位、服装跨镜头一致。枪械外形、装填手别、鸡腿数量、飞行方向与食物咬痕连续。笑点由严肃拍法、精准投喂和群体反应产生，不添加夸张卡通表情。`,
     },
   },
   // 查重别名(提示词自回复帖): https://x.com/msjiaozhu/status/2106965856257528225 （中文完整提示词，无附图）。唯一引用帖 2106970854739640809 是作者自己在变装帖 2106727413254357049 下引用本帖，无媒体；评论区作者确认是 sd（Seedance，版本未写）。@图片1 人物参考图、@场景1 场景参考图原帖未公开
