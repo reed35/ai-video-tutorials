@@ -3,6 +3,1091 @@ import { withMedia } from "./media";
 
 // 数据里照常写站内路径 "/tutorials/<id>/..."；导出时由 withMedia 统一指向 R2（见 lib/media.ts）。
 const rawTutorials: Tutorial[] = [
+  // 成片根帖 https://x.com/abxxai/status/2102400759082205432 ；用户点名帖 https://x.com/abxxai/status/2102400864443056577（step5/SHOOT1）；作者自回复：工具说明 2102400771023335477 → step1 脸表+图 2102400791734895009 → step2 全身表+图 2102400808734331388 → step3 房间+图 2102400825033458135 → step4 衣物4图 2102400850438320505 → SHOOT1 2102400864443056577 → SHOOT2 2102400878443675994 → SHOOT3 2102400894222635239 → 收尾 2102400906155405503。同作者站内 abxxai-riviera-fashion-campaign、abxxai-ivan-terrible-painting-journey-seedance-2-5、abxxai-zara-vest-ugc-tryon-seedance-2-5 不是本片；held abxxai-mediterranean-archway-handheld-seedance-2-5、abxxai-yacht-cabin-handheld-seedance-2-5、abxxai-cliff-wedding-swan-dive-late-seedance-2-5、abxxai-2106036747260039561 不是本片；已上线 diplomeme-desert-watch-exchange-seedance-2-5 不是本片。查重别名：北欧公寓三套试穿 / sage dress / Mary Jane / ZARA UGC try-on scandi
+  {
+    id: "abxxai-scandi-apartment-3outfit-tryon-seedance-2-5",
+    title: "北欧公寓三套试穿 · Seedance 分三段 UGC",
+    subtitle: "X · @abxxai · GPT Image 2.5 + Seedance 2.5 · Higgsfield · 约27秒 · 16:9",
+    description:
+      "北欧公寓自拍进门，再展示Tee牛仔裤与鼠尾草绿连衣裙，亮ZARA标。",
+    video: "/tutorials/abxxai-scandi-apartment-3outfit-tryon-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/abxxai-scandi-apartment-3outfit-tryon-seedance-2-5/poster.jpg",
+    duration: "约27秒",
+    durationSec: 27,
+    styleLabel: "UGC 试穿",
+    shots: 7,
+    references: 7,
+    model: "GPT Image 2.5（脸/全身/房间静帧）+ Seedance 2.5（三段视频）+ 真实产品平铺图；全部在 @higgsfield / @higgsfield_ai 里做",
+    style: "竖屏口播感的手机 UGC 试穿 · 北欧金色斜光公寓 · 三段分拍后剪成一条 · 无配乐只有人声与环境声",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/abxxai/status/2102400759082205432",
+    sourceAuthor: "@abxxai",
+    sourcePlatform: "X",
+    sourceImpressions: 56772,
+    sourceStats: { asOf: "2026-10-13", likes: 233, reposts: 32, bookmarks: 305 },
+    formats: ["变装·换装", "时尚大片", "手机POV·Vlog"],
+    hook: {
+      structure: "走廊自拍进门钩子 → 脚架展示 Tee/牛仔裤并亮 ZARA 标 → 硬切换装后展示鼠尾草连衣裙再亮标 → 穿上连衣裙定妆",
+      opening: "第 0 秒走廊低角度自拍：粉开衫+碎花吊带，她一边走一边开口说 2026 年最吓人的是没人能看出她不是真人。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 5–12s 她走进金色斜光客厅；约 12–18s 脚架机位展示 dusty-rose Tee 与浅蓝阔腿裤，并凑近亮出 ZARA 织标。", at: 5 },
+        { title: "换装硬切", text: "约 18–22s 仍穿 Tee+裤，举起鼠尾草绿针织长裙展示正反面并亮标；约 22s 后已穿上长裙做试穿定妆。", at: 18 },
+        { title: "结尾怎么收", text: "约 24–27s 穿鼠尾草连衣裙站在沙发前双手叉腰，阳光切在身上，定妆收住。", at: 24 },
+      ],
+      copyThis: "先用 GPT Image 2.5 锁脸表、全身表、房间板，再贴真实产品平铺图（Tee/裤/裙/品牌标）；Seedance 分三段拍：自拍进门 10s、Tee+裤试穿 15s（0:09 硬切）、连衣裙试穿 15s（0:08 硬切），最后剪成一条。",
+      approx: true,
+    },
+    tags: [
+      "约27秒 · 三段分拍后剪",
+      "16:9 横屏成片（提示词写 9:16）",
+      "GPT Image 2.5 + Seedance 2.5",
+      "Higgsfield",
+      "7 张公开参考图",
+      "ZARA 品牌标",
+      "三套穿搭 UGC",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：出齐参考图（作者 step1–4）",
+        description:
+          "作者自回复公开了七张图：step1 六联脸表（GPT Image 2.5 + 提示词）→ Shoot2/3 的 @[Image 2]、Shoot1 的脸参考；step2 三联全身表（贴脸表再出图 + 提示词）→ @[Image 1] / Shoot1 全身；step3 北欧客厅场景板（+ 提示词）→ @[Image 3] / Shoot1 房间；step4 四张真实产品平铺图（无文生图提示词）：dusty-rose Tee → Shoot2 @[Image 4]；浅蓝翻边阔腿牛仔裤 → @[Image 5]；鼠尾草绿针织长裙 → Shoot3 裙参考；ZARA 织标特写 → Shoot2 @[Image 6] / Shoot3 标参考。另有工具帖说明：图用 GPT Image 2.5、视频用 Seedance 2.5，全在 Higgsfield 做。七张都是作者公开原图（Twitter orig），不是成片截帧；衣物四张是真实产品照。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "主帖：一切在 @higgsfield 完成；step5 写 @higgsfield_ai。静帧 GPT Image 2.5，视频 Seedance 2.5；作者说分三段分别拍再合成。三段提示词都写 Vertical 9:16；SHOOT1 约 10 秒一镜；SHOOT2 约 15 秒、0:09 一硬切；SHOOT3 约 15 秒、0:08 一硬切。X 成片实际约 1920×1080（16:9 横屏）、30fps、约 26.5 秒，页面按 16:9 显示。成片有英文口播与环境声、无配乐；未见明显平台水印。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴三段 Seedance 提示词并上传参考图",
+        description:
+          "把下方完整视频提示词（SHOOT1+2+3）分段贴进 Seedance 2.5。SHOOT1：按文案使用全身表、脸表、房间板（提示词 ACTIVE 用描述性 — 条，未写 @[Image n]）。SHOOT2：@[Image 1]=参考2 全身表，@[Image 2]=参考1 脸表，@[Image 3]=参考3 房间，@[Image 4]=参考4 Tee，@[Image 5]=参考5 牛仔裤，@[Image 6]=参考6 ZARA 标。SHOOT3：@[Image 1]=参考2 全身，@[Image 2]=参考1 脸，@[Image 3]=参考3 房间；裙与标在 ACTIVE 里是 — GARMENT / — BRAND LABEL 描述条（未编号 @[Image]），跟做时仍上传参考7 裙与参考6 标。三段拍完后按成片顺序剪：进门自拍 → Tee/裤试穿亮标 → 连衣裙试穿亮标定妆。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "abxxai-scandi-face-sheet",
+        number: "1",
+        title: "@[Image 2](image_2) · 六联脸表",
+        subtitle: "Shoot2/3 FACE IDENTITY = 这张（作者 step1 公开原图，GPT Image 2.5）；1024×1536；Shoot1 亦用此脸",
+        image: "/tutorials/abxxai-scandi-apartment-3outfit-tryon-seedance-2-5/refs/01-face-sheet.jpg",
+        prompt: "Photoreal 6-panel character reference sheet of the same young woman in her early twenties, 2 rows of 3 on a seamless light-grey background. Panels: front, three-quarter left, profile left, profile right, three-quarter looking down, chin raised. Long layered loose-wave light-brown hair with honey-caramel sun streaks and a center part, pale grey-green eyes, light freckles across the nose and cheeks, thick natural straight brows, full soft-pink lips, bare skin with no makeup, small gold hoops, fine gold chain, cream ribbed tank top. Even soft studio light, real skin texture with visible pores, the same face 100% consistent in all 6 panels, no text.",
+      },
+      {
+        id: "abxxai-scandi-body-sheet",
+        number: "2",
+        title: "@[Image 1](image_1) · 三联全身表（起始穿搭）",
+        subtitle: "Shoot2/3 IDENTITY / 全身 = 这张（作者 step2 公开原图，GPT Image 2.5）；1536×1024；Shoot1 全身亦用此",
+        image: "/tutorials/abxxai-scandi-apartment-3outfit-tryon-seedance-2-5/refs/02-body-sheet.jpg",
+        prompt: "Photoreal 3-view full body turnaround of the woman from the reference image, front, side and back, standing relaxed on a seamless light-grey background, labels FRONT, SIDE, BACK under each view. She wears a dusty-pink cropped cardigan, an ivory floral cami with a small pink bow, a cream pleated floral midi skirt, ivory ruffle ankle socks and blush-pink patent Mary Jane flats. Same face, hair and body in all 3 views, even soft studio light, soft contact shadow at the feet.",
+      },
+      {
+        id: "abxxai-scandi-room-sheet",
+        number: "3",
+        title: "@[Image 3](image_3) · 北欧客厅场景板",
+        subtitle: "Shoot2/3 ENVIRONMENT = 这张（作者 step3 公开原图，GPT Image 2.5）；1448×1086；Shoot1 房间亦用此",
+        image: "/tutorials/abxxai-scandi-apartment-3outfit-tryon-seedance-2-5/refs/03-room-sheet.jpg",
+        prompt: "Photorealistic warm Scandinavian living room, beige linen sofa, round oak coffee table, honey parquet floor, cream walls, blush abstract art, small desk by a tall open window, sheer curtains, lush houseplants, books and soft neutral decor, strong golden-hour sunlight casting long natural shadows across the floor, cozy lived-in apartment, realistic iPhone/interior photography, 4:3.",
+      },
+      {
+        id: "abxxai-scandi-tee",
+        number: "4",
+        title: "@[Image 4](image_4) · dusty-rose 罗纹 Tee",
+        subtitle: "Shoot2 GARMENT ONE = 这张（作者 step4 真实产品平铺，无文生图提示词）；1086×1448",
+        image: "/tutorials/abxxai-scandi-apartment-3outfit-tryon-seedance-2-5/refs/04-tee.jpg",
+        prompt: "作者 step4 公开真实产品平铺图（dusty-rose ribbed tee），无文生图提示词；要求 flat front view plain white background。",
+      },
+      {
+        id: "abxxai-scandi-jeans",
+        number: "5",
+        title: "@[Image 5](image_5) · 浅蓝翻边阔腿牛仔裤",
+        subtitle: "Shoot2 GARMENT TWO = 这张（作者 step4 真实产品平铺，无文生图提示词）；706×1058",
+        image: "/tutorials/abxxai-scandi-apartment-3outfit-tryon-seedance-2-5/refs/05-jeans.jpg",
+        prompt: "作者 step4 公开真实产品平铺图（light-wash cuffed jeans），无文生图提示词；要求 flat front view plain white background。",
+      },
+      {
+        id: "abxxai-scandi-zara-label",
+        number: "6",
+        title: "@[Image 6](image_6) · ZARA 织标特写",
+        subtitle: "Shoot2 BRAND LABEL = 这张；Shoot3 — BRAND LABEL 亦指这张（step4 真实照片）；736×981",
+        image: "/tutorials/abxxai-scandi-apartment-3outfit-tryon-seedance-2-5/refs/06-brand-label.jpg",
+        prompt: "作者 step4 公开真实品牌标特写（ZARA 织标），无文生图提示词；tip：提示词里写只取标本身、不取周围夹克等。",
+      },
+      {
+        id: "abxxai-scandi-sage-dress",
+        number: "7",
+        title: "— GARMENT · 鼠尾草绿针织长裙",
+        subtitle: "Shoot3 — GARMENT, THE DRESS = 这张（作者 step4 真实产品平铺，ACTIVE 未写 @[Image n]）；1024×1536",
+        image: "/tutorials/abxxai-scandi-apartment-3outfit-tryon-seedance-2-5/refs/07-sage-dress.jpg",
+        prompt: "作者 step4 公开真实产品平铺图（sage ribbed maxi dress），无文生图提示词；要求 flat front view plain white background。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 走廊自拍起幅：镜头从胸口甩到脸上，粉开衫+碎花吊带，她边走边说 2026 没人能看出她不是真人。" },
+      { number: 2, description: "3–8s 走过昏暗走廊，整理碎发，推开白门走进金色斜光客厅，沙发与抽象画入画。" },
+      { number: 3, description: "8–12s 站在阳光里对镜头收句；硬切到脚架机位，她手持 dusty-rose Tee 与牛仔裤展示。" },
+      { number: 4, description: "12–16s 翻面展示 Tee，再凑近镜头翻领口亮出 ZARA 织标。" },
+      { number: 5, description: "16–20s 硬切换装后：已穿 Tee+浅蓝阔腿裤，举起鼠尾草绿针织长裙展示正反面。" },
+      { number: 6, description: "20–24s 凑近亮出裙上 ZARA 标；再硬切到已穿上长裙的试穿检查。" },
+      { number: 7, description: "24–27s 穿鼠尾草连衣裙站沙发前双手叉腰定妆，金色斜光切在裙褶上收住。" },
+    ],
+    constraints:
+      "素材对应：以 Shoot2 ACTIVE 编号为准；@[Image 1](image_1)=参考2 全身表；@[Image 2](image_2)=参考1 脸表；@[Image 3](image_3)=参考3 房间；@[Image 4](image_4)=参考4 Tee；@[Image 5](image_5)=参考5 牛仔裤；@[Image 6](image_6)=参考6 ZARA 标。Shoot1 ACTIVE 用三条描述性 — 条（全身/脸/房间），未写 @[Image n]，对应参考2/1/3。Shoot3 ACTIVE 正式编号只有 @[Image 1–3]（全身/脸/房间）；裙与标是 — GARMENT / — BRAND LABEL 描述条（未编号），对应参考7/6。七张均为作者自回复公开原图（Twitter ?name=orig），不是成片截帧；其中参考4–7 为真实产品/标拍照，作者未给文生图提示词（卡片 prompt 仅记录这一事实，不是「图未公开」）。发帖衣物列举顺序是 裙→Tee→裤→标，Twitter 附图顺序是 Tee→裤→裙→标；跟做按 Shoot2 @Image 与文件名。和成片的差别：三段提示词都写 Vertical 9:16，成片是约 16:9 横屏（源 1920×1080）；提示词总时长约 10+15+15 秒分三段，成片剪成约 26.5 秒一条；Shoot1 提示词写双手几乎全程出画，成片开场可见手臂甩入。风险：画面与提示词含 ZARA 注册商标与织标特写，商用/再分发有品牌风险；换装硬切含试穿镜头；条目未收录外链推广。",
+    video_prompt: {
+      title: "Seedance 2.5 · 三段试穿（进门+Tee/裤+连衣裙）",
+      subtitle: "作者 SHOOT1+2+3 完整英文视频提示词 · Seedance 2.5 · Shoot2: @[Image 1]=参考2 · @[Image 2]=参考1 · @[Image 3]=参考3 · @[Image 4]=参考4 · @[Image 5]=参考5 · @[Image 6]=参考6 · Shoot3 另加参考7 裙 / 参考6 标（描述条）",
+      content: `SHOOT 1 PROMPT:
+
+SCENE CONTEXT
+
+A young woman films herself on her own front-facing camera while walking down a warm, dim apartment hallway and through an open white panelled door into a sunlit living room, talking the whole time. The camera is her own point of view of herself, held at arm's length in front of her face. The take opens with the framing swinging up into position as she brings the camera up in front of her, as if she has just started recording. She crosses the threshold into hard late-afternoon sunlight pouring through a tall shuttered window, turns into the room, and stops inside the light for her last line. The move from hallway to room happens purely by walking, in one unbroken take.
+
+ACTIVE REFERENCES
+
+ — the woman, full-body identity and wardrobe: slim build, long layered loose-wave light-brown hair with honey-caramel sun streaks, center part, soft face-framing pieces falling past the collarbones, dusty-pink fine-knit cropped cardigan, ivory floral cami with a tiny pink bow at the neckline, cream pleated midi skirt with small pink and sage florals, ivory ruffle-cuff ankle socks, blush-pink patent Mary Jane flats with bows. 100% matches the reference.
+
+ — the woman, face identity: fair skin with a warm undertone, light freckles scattered across the nose bridge and both cheeks, pale grey-green eyes with a soft almond shape, thick natural brows with a fairly straight line, full soft-pink lips with a defined cupid's bow, straight narrow nose, bare skin with no visible makeup, small gold hoops in both ears, fine gold chain with a tiny round pendant. 100% matches the reference.
+
+ — the sunlit living room and the hallway beyond its door: worn honey herringbone parquet, plastered warm off-white walls with crown moulding, beige linen sofa with a dusty-rose cushion, a cream cushion and a rose-striped cushion, cream knit throw over the arm, blush abstract art print in a thin wooden frame above the sofa, white floating shelf with books and trailing pothos, corner desk with a small brass lamp, open laptop and cognac leather chair, round wooden coffee table with a white taper candle, stoneware vase of greenery and a small wooden bowl, tall window at the right with white wooden shutters and sheer linen curtains, monstera and ZZ plants in the corners, cream shag rug. The open white panelled door on the left leads into the hallway: warm wooden floorboards, off-white walls, small framed prints, a leafy plant in a wicker basket at the far end. 100% matches the reference.
+
+LOCATION MAP
+
+Foreground: her face and upper chest filling most of the frame. Midground: the hallway walls passing close on both sides at the start, opening out into the living room in the second half. Background: at the start, the deep warm end of the hallway behind her shoulder with the small framed prints and the plant in the wicker basket sliding away; after she steps through the white door and turns into the room, the sofa wall behind her with the blush abstract print, the white shelf of books and the trailing pothos, the tall shuttered window off-frame to camera-right throwing its light into the shot. Her movement path: four steps down the hallway toward the lit doorway, one step through the open white door, a turn into the room, two more steps onto the parquet, coming to rest inside the sunlight.
+
+FIRST FRAME / BLOCKING
+
+Non-empty opening frame: her chin and the lower half of her face fill the upper part of the frame from a low tilted angle, the hallway ceiling visible behind her, everything smeared with a touch of motion blur as the framing swings upward and settles into a chest-up composition on her face. She is already walking, already in motion, nothing is frozen. Within the first moments the framing steadies with her centered, headroom above her, seen from slightly above her eye line and tipped a little down toward her. Her eyes are already on the lens as the framing settles. Both her hands stay outside the frame.
+
+FORMAT MODE
+
+One continuous shot, the camera does not cut on its own. The change from hallway to room happens by walking through the open doorway, with no cut and no transition. One unbroken take.
+
+OPTICS
+
+MCU throughout once the framing settles, 63° FOV, front-facing phone camera character with mild wide-angle rendering, gentle perspective enlargement of whatever sits closest to the lens, deep enough focus that the hallway and then the living room stay readable behind her, no drift mid-shot.
+
+CAMERA
+
+The take opens with the camera swinging up from below chest height into position in front of her face over the first moments, arriving at a constant 45 to 55 cm from her face and holding that distance for the rest of the take, floating just above her eye line and angled slightly down, moving as one body with her. A soft vertical bounce lands on every step at walking pace, small lateral drift and correction as she walks, a slight roll as she turns through the doorway into the room, the framing loosening and re-settling around her face. Once she stops walking the camera keeps breathing with small live tremor and micro-drift. Focus stays locked on her face throughout. Wide tonal latitude, soft highlight roll-off, so the sunlit side of her face holds full detail as she crosses into the beam.
+
+ACTION
+
+The framing swings up and settles on her face while she is already walking down the dim hallway at 3 km/h, and she delivers her first phrase looking straight into the lens. Her gaze then slides off the lens and out to the side as she keeps talking and keeps walking. Her long layered waves swing and lift with each step, loose face-framing strands falling forward across her freckled cheek. Still walking, one hand rises into the lower edge of the frame, sweeps the loose strands back behind her ear past the small gold hoop, and drops out of frame again. She steps through the open white door and turns into the living room, the sofa wall and blush art print opening up behind her, the warm light rising fast across her face as she crosses the threshold, the hard window sunlight then raking her from camera-right with the beam edge sliding down across her face, neck and the pink knit of her cardigan. Dust drifts visibly through the shaft around her. She slows over two steps and comes to a full stop on the parquet inside the light, and only once she is standing still does she deliver her final phrase, her eyes returning to the lens and staying there. Even standing still her body keeps living: weight shifting slightly between her feet, chest rising and falling, shoulders settling, hair still swaying and resettling from the last step.
+
+PERFORMANCE
+
+Bright and physically busy from the first frame, a soft easy stride with her shoulders loose, brows and mouth doing most of the talking. She opens straight into the lens with a small breathy laugh landing at the end of her first phrase, then her lower lip tucks briefly under her top teeth and her gaze slides off to the side, the tell that she is saying something she is not sure she should say. Through the walking middle her pale grey-green eyes stay busy, drifting to the hallway walls, down, back up past the lens without settling on it, blinks quick and frequent, her free hand coming up into the lower frame to fix her hair. Then the drift slows, the laugh drops out of her voice, her brows go still, her volume falls, and as she stops walking her eyes come back to the lens and hold it, blinking once slowly. Pore-level realism: vellus hair along the jaw and hairline catching the raking light, asymmetric freckles across the nose and cheeks, capillary flush rising across the cheeks and nose tip in the sun, wet living eyes with catch-lights in both irises, visible breath and chest rise. Restrained and human, never cartoonish.
+
+PHYSICS
+
+Hair carries real mass and inertia, swinging a half-beat behind each step, individual sun-streaked strands separating in the air and continuing to sway and resettle for a moment after she stops walking. The cropped pink cardigan shifts with her stride, the knit rib at the hem lifting and settling. The pleated skirt swings with real weight, the pleats opening and closing with each step and keeping a small residual sway when she halts. Her Mary Jane flats make soft contact with the floorboards and then the parquet. Dust particles drift slowly through the sunlight shaft at varying depths, brightening sharply where they cross the beam. Nothing floats. Correct contact shadows.
+
+LIGHTING
+
+In the hallway the only light is a warm spill coming from the open living-room doorway ahead of her at camera-right, low and soft on her face, everything behind her falling away into deep warm shadow with the far end of the hallway almost dark around the plant in the wicker basket. As she steps through the white door and turns into the room, the exposure on her face lifts fast and the low late-afternoon sun through the tall shuttered window off-frame at camera-right hits her directly, throwing a hard bright edge along the camera-right side of her face, neck and chest, with a warm golden rim burning through the outer strands of her hair, while her camera-left side sits in soft warm ambient shadow with full detail retained. Leaf-dappled sun patches lie across the herringbone parquet behind her. The beam reads in the air as a volumetric column with dust suspended in it, faint atmospheric haze visible at 4 meters depth. WB locked 4800K, warm amber sunlight against cooler ambient shadow, highlights rolling off softly.
+
+COLOR GRADE
+
+Warm honey amber in the sunlit parquet and the golden rim on her hair, dusty rose in her cardigan knit echoed by the blush art print and the rose cushions behind her, soft cream in the sofa linen, sheer curtains and her pleated skirt, deep living green in the pothos and monstera leaves, cooler neutral grey-beige in the shadowed hallway walls. Skin tones stay natural and warm with real freckle contrast. Color tied to source and surface, not a flat list.
+
+AUDIO
+
+NO MUSIC. SFX ONLY — diegetic sound and live audio throughout. No score, no soundtrack, no background music of any kind.
+@WOMAN (casual and amused, then honest and quiet, walking then standing still): "I don't know if I should say this, but the thing that scares me about 2026 is that nobody can tell I'm not real."
+Her voice speaking English, close and slightly boomy from mic proximity. Under it, soft footsteps of flat shoes on wooden floorboards and then on parquet, the soft rustle of knit and pleated fabric, quiet empty-apartment room tone. No subtitles.
+
+VOICE
+
+"A young woman in her early twenties speaking English, neutral accent. Light warm mezzo with a faint husk in the low register; quick bright phrasing with trailing sentence ends and small breathy laughs; casual and amused, dropping slower and quieter when she is being honest."
+
+WARDROBE
+
+Dusty-pink fine-knit cropped cardigan with small matching buttons and ribbed cuffs, worn buttoned at the middle over an ivory cami with tiny pink and sage florals, a scalloped lace edge and a small pink satin bow at the neckline. Cream pleated midi skirt with small pink and sage floral print. Ivory ruffle-cuff ankle socks. Blush-pink patent Mary Jane flats with small bows. Small gold hoops, fine gold chain with a tiny round pendant. All soft, feminine, worn-in, domestic.
+
+STYLE
+
+Photoreal amateur front-camera selfie video with real cinema skin rendering, natural pore texture, strand-level hair detail, fine film grain, real handheld body movement, natural daylight color rendition. 8K photorealistic — no 3D render, no game engine, no game-cutscene aesthetic. Naturalistic master cinematography.
+
+OUTPUT SETTINGS
+
+Vertical 9:16, real-time speed throughout, one continuous ten-second take.
+
+POSITIVE LOCKS
+
+The frame is her own point of view of herself and shows only her, the hallway and the living room. Both of her hands stay outside the frame for the whole take, except for the single moment when one hand rises into the lower edge, sweeps her hair back, and leaves again. Her face, freckles, grey-green eyes, brows, lips and hair stay identical to every frame, no morphing, no drift. Her wardrobe and hair length stay identical to every frame. The hallway and the living room stay identical to , with the open white panelled door as the single threshold between them. Her eyes are on the lens for the first phrase, off the lens through the walking middle, and back on the lens for the final phrase from the moment she stops. She keeps walking continuously until the last line, and speaks the last line standing still inside the sunlight. Her body and hair keep small living motion in every single frame, including after she stops. Sunlight arrives from camera-right for the whole take. The cardigan stays buttoned at the middle. Eyes stay natural — no eye glow. Contact shadows read clearly. The phone itself stays out of frame. She is alone in the apartment. No logos, no UI, no subtitles. One unbroken take from hallway to room.
+
+==========
+
+SHOOT 2:
+
+SCENE CONTEXT
+A phone is mounted on a low tripod in front of a sofa in a sunlit apartment living room in late afternoon, recording a locked-off vertical UGC try-on video. In the first half a young woman holds up a dusty-rose ribbed cap-sleeve t-shirt to show the front and back, then holds up a pair of light-wash wide-leg jeans to show the front and the turned-up cuffs, then brings the inside back neck of the t-shirt close to the lens so the woven brand label fills the frame. A hard cut lands, and in the second half she is already wearing the t-shirt and the jeans together, settles the fit and poses. She does not speak at any point.
+ACTIVE REFERENCES
+@[Image 1](image_1) — IDENTITY AND STARTING OUTFIT. The woman, full body: slim build, long layered loose-wave light-brown hair with honey-caramel sun streaks, center part, soft face-framing pieces falling past the collarbones. Her starting outfit: dusty-pink fine-knit cropped cardigan, ivory floral cami with a tiny pink bow at the neckline, cream pleated midi skirt with small pink and sage florals, ivory ruffle-cuff ankle socks, blush-pink patent Mary Jane flats with bows. 100% matches the reference.
+@[Image 2](image_2) — FACE IDENTITY. Fair skin with a warm undertone, light freckles scattered across the nose bridge and both cheeks, pale grey-green almond eyes, thick natural brows with a fairly straight line, full soft-pink lips with a defined cupid's bow, straight narrow nose, bare skin with no visible makeup, small gold hoops in both ears, fine gold chain with a tiny round pendant. 100% matches the reference. Take identity only from this reference, not wardrobe.
+@[Image 3](image_3) — ENVIRONMENT. The sunlit living room: worn honey herringbone parquet, warm off-white plastered walls with crown moulding, beige linen sofa with a dusty-rose cushion, a cream cushion and a rose-striped cushion, cream knit throw over the right arm, blush abstract art print in a thin wooden frame above the sofa, white floating shelf with books and trailing pothos, corner desk with a small brass lamp, open laptop and cognac leather chair, round wooden coffee table with a white taper candle, tall window at the right with white wooden shutters and sheer linen curtains, monstera and ZZ plants, open white panelled door at the left leading to the hallway. 100% matches the reference.
+@[Image 4](image_4) — GARMENT ONE, T-SHIRT. A fitted dusty-rose t-shirt in fine vertical rib-knit cotton with a soft washed matte surface, a round crew neck finished with a narrow ribbed binding, short cap sleeves cut in one with the body and ending high on the outer shoulder, a close body that follows the bust and nips gently at the waist, and a slightly cropped straight hem with clean coverstitching that sits at the top of the waistband. No print and no graphic anywhere. 100% matches the reference.
+@[Image 5](image_5) — GARMENT TWO, JEANS. Light-wash blue wide-leg jeans with a mid-low rise, classic five-pocket construction, silver shank button, belt loops, tan-orange contrast topstitching, soft fading and whiskering across the thighs and knees, two small distressed nicks near the front pockets, a straight wide leg falling loose from the hip, and deep turned-up cuffs showing the darker, less-faded inner denim. 100% matches the reference.
+@[Image 6](image_6) — BRAND LABEL, LABEL ONLY. A small square woven satin label in off-white with a black serif wordmark reading ZARA, clean edges, fine stitching, one corner curling slightly away from the fabric. Take only the label itself from this reference. Do not take the black leather, the dark satin lining or any surrounding material from this reference. The label sits stitched into the inside back neck of the dusty-rose t-shirt.
+LOCATION MAP
+Foreground: the woman standing about two metres from the lens, centred in the vertical frame, visible from the top of her head down to her Mary Jane flats on the parquet. Midground: the beige linen sofa directly behind her with the rose and striped cushions and the cream throw over the right arm, the round wooden coffee table pushed aside with its edge entering the lower camera-left corner. Background: the blush abstract print on the wall above the sofa, the white shelf with books and trailing pothos, the corner desk with the brass lamp at camera-right, the edge of the open white door to the hallway at the camera-left edge, and the tall shuttered window off-frame at camera-right laying a hard bright rectangle of sun across the parquet near her feet.
+FIRST FRAME / BLOCKING
+Non-empty opening frame: locked-off vertical frame at chest height on a low tripod, the woman standing centred in front of the sofa, framed head to toe with a little headroom, her body squared to the lens and her weight already settled onto one leg. She already holds the folded dusty-rose t-shirt in one hand and the folded jeans draped over her other forearm. The bright floor rectangle of sun is visible at camera-right. She is already in motion, starting to lift the t-shirt.
+FORMAT MODE
+Timed multishot, exactly ONE HARD CUT at 0:09. The cut is instant, with no dissolve, no transition, no whip and no morph between the two shots. The camera position, the framing, the room and the light are identical on both sides of the cut. Only her wardrobe changes across the cut.
+OPTICS
+Modern flagship smartphone main camera rendering, 9:16 vertical, 84° FOV, no drift mid-segment, deep depth of field with everything from her body to the far wall acceptably sharp, high micro-contrast, strong dynamic range with lifted shadows and gently protected highlights, mild digital sharpening on fabric edges and denim stitching, fine luminance noise in the shadow side of the room.
+CAMERA
+Fully locked off on a tripod for both shots, holding one fixed position and one fixed framing for the entire take. The only movement is an almost imperceptible sensor breath and a faint stabiliser micro-jitter. Autofocus behaves like a real phone: it holds on her body, then hunts and softens for a beat when the neck label is brought close to the lens, briefly overshooting into blur before snapping crisply onto the woven label, then hunts again and re-acquires her body after the cut. Wide tonal latitude, soft highlight roll-off.
+SHOT 1 — 0:00 to 0:09 — SHOWING THE PIECES
+She lifts the t-shirt, catches it by both shoulder seams and lets it fall open so it hangs facing the lens, the short fitted body dropping and swinging as it unfolds, and gives it one small snap from the wrists so the rib ripples and settles. She rotates it on the held shoulders to show the plain back, the hem swinging a half-beat behind the turn. She drapes the t-shirt over her shoulder, takes the jeans from her forearm, catches them by the waistband and lets them drop open full length in front of her, the wide legs swinging and the turned-up cuffs bouncing once just above the floor. She lifts one leg of the jeans slightly toward the lens so the faded thigh and the deep cuff read clearly in the raking sun. She lays the jeans over the sofa arm, takes the t-shirt back into her hands, steps in toward the camera, folds the inside back neck open with her fingers and holds it close to the lens so the woven brand label fills a large part of the frame, the focus hunting and then locking sharp on the wordmark while the room behind falls soft.
+HARD CUT
+SHOT 2 — 0:09 to 0:15 — WEARING THE PIECES
+She is back at her original standing position, already dressed in the first frame after the cut with no transition and no changing action shown: the dusty-rose t-shirt tucked loosely at the front into the jeans, the jeans sitting on her hips with the wide legs falling to the cuffs above her ivory ruffle socks and pink Mary Jane flats. She tugs the front hem of the t-shirt once to settle the half-tuck, runs one hand down the side of her thigh over the denim, then lifts the other hand to sweep the loose front strands back behind her ear past the small gold hoop. She drops her weight onto one leg with the opposite hip pushed out and the other knee softly released, turns a quarter to show the side profile of the fit, then turns back to face the lens and finishes with a small closed-mouth smile held to the last frame.
+PERFORMANCE
+Unpolished domestic creator energy, someone filming alone who has done this many times, aware of the lens but not performing for a crew. In the first half she looks mostly at the clothes while she handles them, eyes flicking up to the lens twice without settling, brows lifting a fraction as the jeans drop open. Stepping in with the neck label she leans with her whole upper body rather than just her arms, and her eyes go past the lens to check her own framing. After the cut her energy lifts: eyes to the lens, down to the half-tuck as her hand settles it, back up. The smile arrives late and slightly asymmetric, the hand to the hair is a real habit and not a gesture. Her mouth stays closed throughout, she never speaks and never mouths words. Pore-level realism: vellus hair along the jaw and hairline catching the raking light, asymmetric freckles across the nose and cheeks, capillary flush across the cheeks, wet living eyes with catch-lights, visible breath and chest rise. Restrained and human, never cartoonish.
+PHYSICS
+The rib-knit t-shirt has light weight and soft stretch, unfolding with gentle inertia, rippling from the wrist snap and settling with the hem swinging behind the held shoulders. The jeans carry real denim weight: they drop open heavily, the wide legs swing and settle with stiffness, the cuffs hold their folded shape and bounce once. Worn, the t-shirt stretches smoothly across the bust with the rib lines bending over the body, and the denim creases at the hip and knee when she shifts her weight. The woven label stands slightly proud of the fabric with a visible stitched edge and a small natural curl at one corner. Her hair swings a half-beat behind each turn and resettles strand by strand. The jeans laid over the sofa arm stay where they are placed. Nothing floats. Correct contact shadows under her Mary Jane flats on the parquet.
+LIGHTING
+The only source is low late-afternoon sun through the tall shuttered window at camera-right, entering at a steep raking angle, matching the previous shot in this room exactly. It throws a hard bright edge along the camera-right side of her face, arm and body, with a warm golden rim burning through the outer hair strands, while her camera-left side sits in soft warm ambient shadow with full detail retained. A hard bright rectangle of sun with leaf-dappled shadows lies across the parquet at camera-right near her feet and climbs the wall behind. The raking angle skims the rib-knit and the denim twill and picks out the texture and topstitching in relief, and the off-white label reads bright against the rose fabric without clipping. Fine dust drifts in the beam, faint atmospheric haze visible at 4 meters depth. WB locked 4800K, warm amber sunlight against cooler ambient shadow, highlights rolling off softly.
+COLOR GRADE
+Dusty rose in the rib-knit t-shirt echoed by the blush art print and the rose cushions behind her, soft faded sky blue in the denim with warm tan-orange stitching catching the sun, honey amber in the sunlit parquet and the golden rim on her hair, soft cream in the sofa linen and sheer curtains, deep living green in the pothos and plants. Skin tones stay natural and warm with real freckle contrast. Color tied to source and surface, not a flat list.
+WARDROBE
+Shot 1: dusty-pink fine-knit cropped cardigan buttoned at the middle, ivory floral cami with a tiny pink bow, cream pleated floral midi skirt, ivory ruffle-cuff ankle socks, blush-pink patent Mary Jane flats with bows, small gold hoops, fine gold chain with a tiny round pendant. Shot 2: the dusty-rose ribbed cap-sleeve t-shirt half-tucked at the front into the light-wash wide-leg cuffed jeans, the same ivory ruffle socks, the same pink Mary Jane flats, the same gold hoops and pendant chain.
+AUDIO
+NO MUSIC. SFX ONLY — diegetic sound and live audio throughout. No score, no soundtrack, no background music of any kind. No speech and no voice at any point. Only the soft snap and rustle of light rib-knit, the heavier flap and swish of denim, the small tap of flat shoes shifting on parquet, and quiet empty-apartment room tone. No subtitles.
+STYLE
+Photoreal amateur smartphone try-on video with real cinema skin rendering, natural pore texture, strand-level hair detail, true textile weave, rib and denim twill rendering, real autofocus behaviour, fine film grain, natural daylight color rendition. 8K photorealistic — no 3D render, no game engine, no game-cutscene aesthetic.
+OUTPUT SETTINGS
+Vertical 9:16, real-time speed throughout, fifteen seconds, one hard cut at 0:09.
+POSITIVE LOCKS
+The camera stays locked on its tripod for the entire take with one fixed position and one fixed framing on both sides of the cut. No phone, no screen, no mirror, no reflection and no second person appear anywhere in frame. Her face, freckles, grey-green eyes, brows, lips and hair stay identical to @[Image 2](image_2) every frame, no morphing, no drift. Her body shape and starting outfit stay identical to @[Image 1](image_1). The room stays identical to @[Image 3](image_3) and the background never becomes a studio. The t-shirt keeps the colour, rib, cap sleeve and cropped fitted cut of @[Image 4](image_4) with no print and no graphic. The jeans keep the wash, fading, stitching, wide leg and deep cuffs of @[Image 5](image_5). The label stays identical to @[Image 6](image_6), straight, sharp and fully legible when held close, and it lives inside the rose t-shirt neck only. She is fully clothed in every frame, and the wardrobe change happens entirely inside the hard cut. Her mouth stays closed, she never speaks. Sunlight arrives from camera-right for the whole take. Eyes stay natural — no eye glow. Contact shadows read clearly. Her hair and body keep small living motion in every frame.
+
+==========
+
+SHOOT 3:
+
+SCENE CONTEXT
+A phone is mounted on a low tripod in front of a sofa in a sunlit apartment living room in late afternoon, recording a locked-off vertical UGC try-on video. In the first half a young woman, still wearing the dusty-rose ribbed t-shirt and light-wash cuffed jeans from the previous video, holds a long sage-green ribbed knit dress up to the lens, shows the front, turns it to show the back, then folds the inside back neck toward the camera so the brand label fills the frame. A hard cut lands, and in the second half she is already wearing the dress, poses, and turns one slow light pirouette. She does not speak at any point.
+ACTIVE REFERENCES
+@[Image 1](image_1) — IDENTITY. The woman, full body: slim build, long layered loose-wave light-brown hair with honey-caramel sun streaks, center part, soft face-framing pieces falling past the collarbones, ivory ruffle-cuff ankle socks and blush-pink patent Mary Jane flats with bows. 100% matches the reference. Take identity, hair and footwear only from this reference.
+@[Image 2](image_2) — FACE IDENTITY. Fair skin with a warm undertone, light freckles scattered across the nose bridge and both cheeks, pale grey-green almond eyes, thick natural brows with a fairly straight line, full soft-pink lips with a defined cupid's bow, straight narrow nose, bare skin with no visible makeup, small gold hoops in both ears, fine gold chain with a tiny round pendant. 100% matches the reference. Take identity only from this reference, not wardrobe.
+@[Image 3](image_3) — ENVIRONMENT. The sunlit living room: worn honey herringbone parquet, warm off-white plastered walls with crown moulding, beige linen sofa with a dusty-rose cushion, a cream cushion and a rose-striped cushion, cream knit throw over the right arm, blush abstract art print above the sofa, white floating shelf with books and trailing pothos, corner desk with a small brass lamp and cognac leather chair, round wooden coffee table with a white taper candle, tall window at the right with white wooden shutters and sheer linen curtains, monstera and ZZ plants, open white panelled door at the left leading to the hallway. 100% matches the reference.
+ — GARMENT, THE DRESS. A full-length sleeveless knit dress in soft muted sage green: a close standing mock turtleneck collar in fine rib, cleanly finished sleeveless armholes cut high on the shoulder, a fitted rib-knit bodice that follows the bust and nips in at the waist, and raised vertical ribs running the full length, narrowing over the torso and fanning out below the hip into a wide fluid flared skirt that sweeps the floor. The knit surface is a heathered, slightly marled sage with a faint tonal textured pattern between the ribs and a soft matte finish. 100% matches the reference.
+ — BRAND LABEL, LABEL ONLY. A small square woven satin label in off-white with a black serif wordmark reading ZARA, clean edges, fine stitching, one corner curling slightly away from the fabric. Take only the label itself from this reference. Do not take the black leather, the dark satin lining or any surrounding material from this reference. The label sits stitched into the inside back neck of the sage dress.
+LOCATION MAP
+Foreground: the woman standing about two metres from the lens, centred in the vertical frame, visible from the top of her head down to her feet on the parquet. Midground: the beige linen sofa directly behind her with the rose and striped cushions and the cream throw over the right arm, the round wooden coffee table pushed aside with its edge entering the lower camera-left corner. Background: the blush abstract print above the sofa, the white shelf with books and trailing pothos, the corner desk with the brass lamp at camera-right, the edge of the open white door at the camera-left edge, and the tall shuttered window off-frame at camera-right laying a hard bright rectangle of sun across the parquet near her feet.
+FIRST FRAME / BLOCKING
+Non-empty opening frame: locked-off vertical frame at chest height on a low tripod, the woman standing centred in front of the sofa, framed head to toe with a little headroom, weight settled onto one leg, wearing the dusty-rose ribbed t-shirt half-tucked into the light-wash cuffed jeans. She already holds the sage dress gathered in both hands at waist height and is already lifting it. Nothing is frozen.
+FORMAT MODE
+Timed multishot, exactly ONE HARD CUT at 0:08. The cut is instant, with no dissolve, no transition, no whip and no morph between the two shots. The camera position, the framing, the room and the light are identical on both sides of the cut. Only her wardrobe changes across the cut.
+OPTICS
+Modern flagship smartphone main camera rendering, 9:16 vertical, 84° FOV, no drift mid-segment, deep depth of field with everything from her body to the far wall acceptably sharp, high micro-contrast, strong dynamic range with lifted shadows and gently protected highlights, mild digital sharpening on the knit ribs, fine luminance noise in the shadow side of the room.
+CAMERA
+Fully locked off on a tripod for both shots, holding one fixed position and one fixed framing for the entire take. The only movement is an almost imperceptible sensor breath and a faint stabiliser micro-jitter. Autofocus behaves like a real phone: it holds on her body, then hunts and softens for a beat when the collar is brought close to the lens, briefly overshooting into blur before snapping crisply onto the woven label, then hunts again and re-acquires her body after the cut. Wide tonal latitude, soft highlight roll-off.
+SHOT 1 — 0:00 to 0:08 — SHOWING THE DRESS
+She catches the dress by the shoulders and lets it fall open so it hangs full length in front of her, the long ribbed skirt unrolling downward with soft weight and the hem swaying just clear of the parquet. She gives the shoulders one small lift and the knit ripples down its whole length and settles. She raises it slightly toward the lens so the mock turtleneck, the high armholes and the fanning vertical ribs read clearly, the raking sun picking out each raised rib in a line of light and shadow. She rotates it on the held shoulders to show the plain unbroken back panel, the flared skirt swinging a half-beat behind the turn. She then steps in toward the camera, folds the inside back neck open with her fingers and holds it close to the lens so the woven brand label fills a large part of the frame, the focus hunting and then locking sharp on the wordmark while the room behind falls soft.
+HARD CUT
+SHOT 2 — 0:08 to 0:15 — WEARING THE DRESS
+She is back at her original standing position, now wearing the dress, already dressed in the first frame after the cut with no transition and no changing action shown, the hem brushing the parquet with the toes of her pink Mary Jane flats peeking out. She runs one hand down the front of the rib from ribs to hip to settle it, then lifts the other hand to sweep the loose front strands back behind her ear and free her hair from where it sits against the collar. She drops her weight onto one leg with the opposite hip pushed out and the other knee softly released, and holds the pose for a beat looking toward the lens. Then she rises slightly onto the ball of one foot and turns one slow light pirouette on the spot, arms floating loose and low, chin leading the turn, the flared skirt lifting and opening outward around her and the ribs fanning wide as the fabric swings through the sunlight. Her eyes find the lens again as she comes back around. She lands softly, the skirt falling and swinging closed against her legs, and finishes with a small closed-mouth smile held to the last frame.
+PERFORMANCE
+Unpolished domestic creator energy, someone filming alone who has done this many times, aware of the lens but not performing for a crew. In the first half she looks mostly at the dress while she handles it, eyes flicking up to the lens twice without settling, brows lifting a fraction as the skirt unrolls, a faint closed-mouth half-smile arriving as she turns it. Stepping in with the collar she leans with her whole upper body rather than just her arms, and her eyes go past the lens to check her own framing. After the cut her energy lifts: eyes to the lens, down to the rib as her hand smooths it, back up. The pirouette is unforced and slightly amused at itself, the kind of small private flourish someone does alone in a room, not a trained dancer's turn. The smile arrives late and asymmetric. Her mouth stays closed throughout, she never speaks and never mouths words. Pore-level realism: vellus hair along the jaw, shoulders and hairline catching the raking light, asymmetric freckles across the nose and cheeks, capillary flush across the cheeks, wet living eyes with catch-lights, visible breath and chest rise. Restrained and human, never cartoonish.
+PHYSICS
+The knit is fluid and moderately heavy, unrolling downward with real weight and swinging with a half-beat delay behind every turn. The vertical ribs stretch slightly and open over the bust and hip when worn and close back together below. During the pirouette the flared skirt lifts outward from centrifugal force, the ribs fanning apart, then falls and wraps briefly against her legs as she stops before swinging free and settling. The mock collar keeps its soft standing shape. The woven label stands slightly proud of the knit with a visible stitched edge and a small natural curl at one corner. Her hair lifts outward on the turn, trails the rotation and falls back down her back, resettling strand by strand. Mass and inertia carry through every move. Nothing floats. Correct contact shadows under her feet on the parquet.
+LIGHTING
+The only source is low late-afternoon sun through the tall shuttered window at camera-right, entering at a steep raking angle, matching the previous shots in this room exactly. It throws a hard bright edge along the camera-right side of her face, bare shoulder, arm and body, with a warm golden rim burning through the outer hair strands, while her camera-left side sits in soft warm ambient shadow with full detail retained. A hard bright rectangle of sun with leaf-dappled shadows lies across the parquet at camera-right and climbs the wall behind. The raking angle skims the ribbed knit and throws every raised rib into relief, and the off-white label reads bright against the sage fabric without clipping. Fine dust drifts in the beam, faint atmospheric haze visible at 4 meters depth. WB locked 4800K, warm amber sunlight against cooler ambient shadow, highlights rolling off softly.
+COLOR GRADE
+Soft muted sage in the ribbed knit, turning warm olive-gold where the sun rakes across the ribs, echoed by the living greens of the pothos, monstera and ZZ plants around the room, honey amber in the sunlit parquet and the golden rim on her hair, dusty rose in the art print and cushions behind her as a soft counter-tone, cream in the sofa linen and sheer curtains. Skin tones stay natural and warm with real freckle contrast. Color tied to source and surface, not a flat list.
+WARDROBE
+Shot 1: the dusty-rose ribbed cap-sleeve t-shirt half-tucked at the front into the light-wash wide-leg cuffed jeans, ivory ruffle-cuff ankle socks, blush-pink patent Mary Jane flats, small gold hoops, fine gold chain with a tiny round pendant. Shot 2: the sage-green ribbed sleeveless mock-neck maxi dress, the same pink Mary Jane flats peeking under the hem, the same gold hoops and pendant chain.
+AUDIO
+NO MUSIC. SFX ONLY — diegetic sound and live audio throughout. No score, no soundtrack, no background music of any kind. No speech and no voice at any point. Only the soft whisper and swish of heavy knit, the brush of the hem across parquet during the turn, the small tap of flat shoes on wood, and quiet empty-apartment room tone. No subtitles.
+STYLE
+Photoreal amateur smartphone try-on video with real cinema skin rendering, natural pore texture, strand-level hair detail, true knit rib and loop-structure rendering, real autofocus behaviour, fine film grain, natural daylight color rendition. 8K photorealistic — no 3D render, no game engine, no game-cutscene aesthetic.
+OUTPUT SETTINGS
+Vertical 9:16, real-time speed throughout, fifteen seconds, one hard cut at 0:08.
+POSITIVE LOCKS
+The camera stays locked on its tripod for the entire take with one fixed position and one fixed framing on both sides of the cut. No phone, no screen, no mirror, no reflection and no second person appear anywhere in frame. Her face, freckles, grey-green eyes, brows, lips and hair stay identical to @[Image 2](image_2) every frame, no morphing, no drift. Her body shape and footwear stay identical to @[Image 1](image_1). The room stays identical to @[Image 3](image_3) and the background never becomes a studio. The dress keeps the sage colour, mock turtleneck, high sleeveless armholes, fanning vertical rib and floor-length flare of . The label stays identical to , straight, sharp and fully legible when held close, and it lives inside the sage dress neck only. She is fully clothed in every frame, and the wardrobe change happens entirely inside the hard cut. Her mouth stays closed, she never speaks. Sunlight arrives from camera-right for the whole take. Eyes stay natural — no eye glow. Contact shadows read clearly. Her hair and body keep small living motion in every frame.
+`,
+    },
+  },
+
+  // 工作流自回复串：栈说明 https://x.com/abxxai/status/2106036759717179782 ；1首帧 https://x.com/abxxai/status/2106036779853984023 ；2舱室女角色表 https://x.com/abxxai/status/2106036798829064455 ；3紫衣女角色表 https://x.com/abxxai/status/2106036815904067772 ；4场景表 https://x.com/abxxai/status/2106036832962236539 ；5 Seedance https://x.com/abxxai/status/2106036847470354881 ；三规则 tip https://x.com/abxxai/status/2106036859357040922 。同作者站内 abxxai-riviera-fashion-campaign（2100600840373535136）、abxxai-mediterranean-archway-handheld-seedance-2-5（2097698694296686623）、abxxai-ivan-terrible-painting-journey-seedance-2-5（2109625040551755934）不是本片。查重别名：游艇舱室 / companionway / Opus 5.5 / Promptwise / trypromptwise / lilac polo / film grain handheld
+  {
+    id: "abxxai-yacht-cabin-handheld-seedance-2-5",
+    title: "游艇舱室手持跟拍 · Opus 导演写提示词",
+    subtitle: "X · @abxxai · Claude Opus 5.5 + Seedance 2.5 · Promptwise · 约16秒 · 16:9",
+    description:
+      "游艇舱室手持跟拍，白背心女主边说边上甲板，紫衣女眨眼收尾。",
+    video: "/tutorials/abxxai-yacht-cabin-handheld-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/abxxai-yacht-cabin-handheld-seedance-2-5/poster.jpg",
+    duration: "约16秒",
+    durationSec: 16,
+    styleLabel: "手持Vlog",
+    shots: 8,
+    references: 4,
+    model: "Claude Opus 5.5（写全部提示词）+ Seedance 2.5（视频）；主帖写在 @trypromptwise / Promptwise 一站出图出片",
+    style: "早期数码直闪 CCD 暖调 · 明显手持晃动与粗颗粒 · 可见肤质毛孔 · 游艇舱室爬上甲板单镜头",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/abxxai/status/2106036747260039561",
+    sourceAuthor: "@abxxai",
+    sourcePlatform: "X",
+    sourceImpressions: 159229,
+    sourceStats: { asOf: "2026-10-13", likes: 726, reposts: 49, bookmarks: 1376 },
+    formats: ["手机POV·Vlog"],
+    hook: {
+      structure: "舱室首帧钩子台词 → 起身爬梯谈肤质光影颗粒 → 上甲板紫衣女教写提示词眨眼硬切",
+      opening: "第 0 秒就是舱室构图：前景右侧白背心女主坐在漆光梯旁望镜，舱口外紫衣女持索，铜舷窗与绳圈入画，直闪把近处晒亮。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 0.3–6s 女主边说 Opus 写邮件写代码的钩子，起身抓住铜扶手爬梯，镜头手持追、一度切到画框边缘；舱口外紫衣女离画。", at: 0.3 },
+        { title: "肤质特写到大笑", text: "约 6–10s 镜头贴到脸颊讲「the skin」，再退后讲光影与颗粒，说到 camera shakes 时真笑、画面跟着晃。", at: 6 },
+        { title: "结尾怎么收", text: "约 10–16s 爬出舱口上甲板（眩光/曝光自适应），镜头右转紫衣女近景：「And I'll teach you how to write it. Follow me.」回头眨眼硬切。", at: 10 },
+      ],
+      copyThis: "先用 Opus 写出图提示（首帧+两张角色表+场景表），再在 Seedance 钉上 <<<image_1>>>…<<<image_4>>> 按秒写 15s 单镜头手持；提示词里写清「要瑕疵、光只走曝光不改场景灯」。",
+      approx: true,
+    },
+    tags: [
+      "约16秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "Claude Opus 5.5",
+      "Promptwise",
+      "四参考图",
+      "手持跟拍",
+      "手机POV",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 Opus 写出四张参考图提示并出图",
+        description:
+          "作者自回复给了四张图和对应出图提示词：参考 1 舱室首帧（白背心女主+舱口紫衣女）、参考 2 舱室女角色表、参考 3 紫衣女角色表、参考 4 六联场景表（无人）。主帖栈说明：Claude Opus 5.5 当导演写每一条提示，其他模型只执行。完整英文提示词见各参考卡片。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "主帖：Claude Opus 5.5 写提示 + Seedance 2.5 出片，整条工作流写在 @trypromptwise（Promptwise，帖内推广「UNLIMITED GENERATION」）。成片主帖约 16.1 秒、1280×720（16:9）。Seedance 提示词写「正好 15 秒单镜头手持、无剪辑」。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴 Seedance 提示词并钉上四张参考",
+        description:
+          "把下方完整视频提示词粘贴进 Seedance 2.5，先钉参考： <<<image_1>>>=参考 1（精确首帧）、<<<image_2>>>=参考 2（CHAR_A 脸与衣柜）、<<<image_3>>>=参考 3（CHAR_B）、<<<image_4>>>=参考 4（环境）。提示词按秒写 15s：舱室钩子→爬梯→肤质特写→上甲板→紫衣女收尾眨眼硬切。作者 tip：要瑕疵（毛孔/颗粒/手抖）；光从不改，只让相机曝光变；每句台词带情绪。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "abxxai-yacht-first-frame",
+        number: "1",
+        title: "<<<image_1>>> · 舱室首帧（boat cabin）",
+        subtitle: "Seedance <<<image_1>>> = 这张（精确首帧与舱室灯光机位）；作者公开原图",
+        image: "/tutorials/abxxai-yacht-cabin-handheld-seedance-2-5/refs/01-first-frame.jpg",
+        prompt: "Two women framed by the open companionway of a small wooden sailing boat — one in the near foreground at frame right inside the cabin in a white ribbed tank top and wide cream linen trousers, seated on the varnished steps with one knee up, looking at the camera; the second up on deck through the hatch in a lilac knit polo and white trousers, holding the rigging with one hand and leaning out, facing the camera. Setting: a classic teak sailboat cabin, varnished wood panelling, a brass porthole, rope coils and a folded striped towel in the foreground, the open hatch revealing the sunlit deck, white sails, a stone harbour wall with small moored boats and flat blue sea under a pale sky, soft late-afternoon light. Shot on an early-2000s point-and-shoot digicam with harsh direct on-camera fill flash that aggressively illuminates the near woman and the cabin wood, flattening her features and putting sharp specular highlights on the varnish, the brass and her shoulders; the deck and harbour beyond stay visible but hazy, milky and underexposed relative to the flash. Warm, slightly saturated CCD tones, strong bloom and halation at the hatch edges, minor digital noise. Candid amateur, Y2K editorial, unpolished but stylized. 4:5.",
+      },
+      {
+        id: "abxxai-yacht-cabin-girl",
+        number: "2",
+        title: "<<<image_2>>> · 舱室女角色表（CHAR_A）",
+        subtitle: "Seedance <<<image_2>>> / <<<CHAR_A>>> = 这张（白背心+双金链）；作者公开原图",
+        image: "/tutorials/abxxai-yacht-cabin-handheld-seedance-2-5/refs/02-cabin-girl-sheet.jpg",
+        prompt: "Photorealistic character reference sheet of one young woman, 16:9, plain light-grey seamless background, soft even daylight, no text, no labels. Top row: full body front, three-quarter, side profile, back view, standing relaxed and barefoot. Bottom row: close-up head front, three-quarter, profile, then a four-face expression strip — neutral, soft closed-mouth smile, mid-word talking, easy laugh. Small insets: layered gold necklaces, hands, linen fabric texture. She is in her early-to-mid 20s with sun-kissed light olive-tan skin, dense natural freckles across her nose and cheeks, warm flushed cheeks, hazel-green almond eyes, defined natural brows, a straight nose, and full lips with a soft rosy-nude tint. Her hair is very long, sun-streaked honey-brown with lighter blonde ends, center-parted, with face-framing pieces and a slightly salty, undone texture. Wardrobe: a white fine-ribbed scoop-neck tank top, cream loose-weave linen wide-leg trousers, and two thin gold chains — one with a tiny cross, one with a small oval medallion. Skin realism: visible pores, fine texture, faint unevenness, natural sheen on the cheekbones, no smoothing, no retouching, no beauty filter. Identical face, hair and body across every panel.",
+      },
+      {
+        id: "abxxai-yacht-lilac-girl",
+        number: "3",
+        title: "<<<image_3>>> · 紫衣女角色表（CHAR_B）",
+        subtitle: "Seedance <<<image_3>>> / <<<CHAR_B>>> = 这张（lilac polo）；作者公开原图",
+        image: "/tutorials/abxxai-yacht-cabin-handheld-seedance-2-5/refs/03-lilac-girl-sheet.jpg",
+        prompt: "Photorealistic character reference sheet of one young woman, 16:9, plain light-grey seamless background, soft even daylight, no text, no labels. Top row: full body front, three-quarter, side profile, back view, standing relaxed and barefoot. Bottom row: close-up head front, three-quarter, profile, then a four-face expression strip — neutral, knowing half-smile, mid-word talking, playful wink with a small head tilt. Small insets: knit texture of the polo, hands, trouser waistband. She is in her early-to-mid 20s with light warm-toned skin and a faint summer glow, light brown eyes, straight soft brows, a softly rounded face, and full lips in a natural nude. Her hair is long and loosely wavy, light brown with sun-bleached ends, center-parted and wind-tousled. Wardrobe: a lilac/lavender fine-ribbed short-sleeve knit polo with a three-button placket left open, and white high-waisted wide-leg trousers. Skin realism: visible pores, fine texture, faint unevenness, natural sheen, no smoothing, no retouching, no beauty filter. Identical face, hair and body across every panel.",
+      },
+      {
+        id: "abxxai-yacht-location",
+        number: "4",
+        title: "<<<image_4>>> · 游艇六联场景表",
+        subtitle: "Seedance <<<image_4>>> = 这张（环境 only，无人）；作者公开原图",
+        image: "/tutorials/abxxai-yacht-cabin-handheld-seedance-2-5/refs/04-location-sheet.jpg",
+        prompt: "Photorealistic location reference sheet, 16:9 grid of six panels, no people, no text. Panel 1: wide exterior of a classic 1960s teak sailing yacht moored in a small Mediterranean stone harbour at golden hour — glossy varnished hull, white sail half raised, stone harbour wall, small white fishing boats, flat blue water. Panel 2 (hero angle): inside the cabin at seated chest height, looking up the varnished teak companionway steps to the open hatch — deep glossy mahogany panelling, a large brass porthole on the right wall, a small brass bell above it, a thick coiled cream-and-navy rope at left, a navy-and-white striped towel folded on a bench in the foreground, a bright slice of deck, rigging, sail and harbour through the hatch. Panel 3: on deck looking back toward the hatch — teak deck planks, cleats, winches, coiled lines, the hatch opening, harbour and low sun behind. Panel 4: close detail of the brass porthole, bell and varnish reflections. Panel 5: companionway steps close-up — worn varnish, a brass drawer pull, a small brass handrail. Panel 6: the harbour view from deck — stone wall, moored boats, flat sea, a pale golden sky with a low sun. Lighting across all panels: warm late-afternoon sun, glossy specular highlights on the varnish and brass, a darker cabin interior versus a bright milky exterior. Realism: real wear on the wood, salt marks, scuffed brass, slightly frayed rope.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–0.3s 舱室定场：白背心女主坐梯旁望镜，舱口外紫衣女持索，铜舷窗与绳圈，直闪近亮远糊。" },
+      { number: 2, description: "0.3–3s 钩子台词 Everyone's using Opus… emails and code，右手轻甩，紫衣女在甲板转头。" },
+      { number: 3, description: "3–6s 起身爬梯回望说 shots like this，左手扶铜栏，镜头晚半拍、一度切到左缘；紫衣女离画。" },
+      { number: 4, description: "6–8s 贴脸肤质特写「The skin,」，毛孔/绒毛/雀斑可见，指尖掠过颧骨，对焦呼吸。" },
+      { number: 5, description: "8–10s 退后+仰向舱口讲 light / grain，说到 camera shakes 真笑，画面跟着晃一下。" },
+      { number: 6, description: "10–12s 爬出舱口上甲板：曝光从舱内滚到日光，淡眩光，发丝被海风横刮。" },
+      { number: 7, description: "12–14s 镜头右转，紫衣女近景已在框内：And I'll teach you how to write it。" },
+      { number: 8, description: "14–16s Follow me. 回头眨眼迈步离开，镜头跟一步，硬切离场。" },
+    ],
+    constraints:
+      "素材对应：<<<image_1>>>=参考 1；<<<image_2>>>/<<<CHAR_A>>>=参考 2；<<<image_3>>>/<<<CHAR_B>>>=参考 3；<<<image_4>>>=参考 4。四张参考图与出图提示词、Seedance 视频提示词均来自作者自回复，条目内 0 处「原帖未公开」。和成片的差别：① Seedance 提示词写「正好 15 秒单镜头」，主帖成片约 16.1 秒（同结构略长）。② 首帧出图提示写 4:5 与早期直闪；主帖成片为 16:9，成片开场光照更偏自然金光而非提示词里的猛直闪（仍可见暖调 CCD 味）。③ 主帖只点名 Opus 5.5 + @trypromptwise；自回复明确 Seedance 2.5。④ tip 三规则（要瑕疵 / 光只走曝光 / 台词带情绪）写在步骤与 constraints，无单独参考图。风险：成片含两位女性面孔与英语对白（含笑声），跟做需自备形象权与配音；提示词禁止磨皮与改场景灯，复现时需模型支持强手持与自动曝光模拟。⑤ 角色表提示词与视频提示词眼睛颜色不完全一致：参考2写 hazel-green，视频 <<<CHAR_A>>> 写 warm hazel-brown；参考3写 light brown eyes，视频 <<<CHAR_B>>> 写 grey-green eyes（并写 small gold hoops，角色表未写耳环）。",
+    video_prompt: {
+      title: "Seedance 2.5 · 15s 游艇舱室手持单镜头（作者自回复）",
+      subtitle: "作者自回复完整英文视频提示词 · Seedance 2.5 · <<<image_1>>>>=参考1 · <<<image_2>>>>=参考2 · <<<image_3>>>>=参考3 · <<<image_4>>>>=参考4",
+      content: `=== REFERENCE MAP ===
+
+<<<image_1>>> (boat cabin) → exact first frame: woman in white ribbed tank seated low beside the varnished companionway steps at frame right; woman in lilac polo up on deck holding the rigging with her right hand; white sail, harbour wall and low sun beyond. Sets cabin, light, framing and camera look for the whole take.
+
+<<<image_2>>> (cabin girl sheet) → <<<CHAR_A>>> face, freckles, hair, body, jewellery, wardrobe.
+
+<<<image_3>>> (lilac girl sheet) → <<<CHAR_B>>> face, eyes, hair, body, wardrobe. She is the lilac-polo woman in <<<image_1>>>; in her close-up her face follows <<<image_3>>> exactly.
+
+<<<image_4>>> (location sheet) → the teak yacht: mahogany cabin, companionway with brass handrail on the right, brass porthole and bell on the right wall, cream-and-navy rope coil and navy-striped towel at left, teak deck with chrome winches, stone harbour wall with small lighthouse, moored white boats, old stone houses, low golden sun. Environment only.
+
+=== CHARACTERS ===
+
+<<<CHAR_A>>> → early-to-mid 20s, sun-kissed light olive-tan skin, dense freckles on nose, cheeks and shoulders, flushed cheeks, warm hazel-brown eyes, very long sun-streaked honey-brown hair with blonde ends, center part. White fine-ribbed scoop tank, cream loose-weave linen wide-leg trousers, two thin gold chains (tiny cross, small oval medallion). Barefoot. Right hand = talking hand, left hand = climbing hand; never swap.
+
+<<<CHAR_B>>> → early-to-mid 20s, light warm skin, faint freckles, grey-green eyes, small gold hoops, thin gold chain, long loosely wavy light-brown hair with sun-bleached ends. Lilac ribbed short-sleeve knit polo with open cream-buttoned placket, white high-waisted pleated wide-leg trousers. Barefoot.
+
+Neither woman touches the camera. The person filming is never seen and never speaks; their only sound is one soft wordless breath of a laugh.
+
+=== EMOTIONAL CORE ===
+
+<<<CHAR_A>>> is not selling. She is letting one close friend in on something she loves and is amazed nobody else noticed. Soft eyes, a smile that starts in the eyes first, a quiet thrill on "shots like this," real tenderness naming the skin, the light, the grain. On "the camera shakes" she laughs for real, caught off guard — the heart of the clip.
+
+<<<CHAR_B>>> is generous and sure, like an older sister who already knows the secret: warm, direct, a hint of mischief, never salesy. "Follow me" is half invitation, half literal — she walks off after her friend.
+
+Both keep faces alive between words: micro-reactions, breaths, blinks, moving brows. Nothing posed or frozen.
+
+=== SHOT (15s, one continuous handheld take, no cuts) ===
+
+0.0–0.3s — FRAME 0
+
+Frame 0.0 is exactly <<<image_1>>>, no settle-in. <<<CHAR_A>>> seated low, leaning slightly forward, eyes on the lens. <<<CHAR_B>>> on deck holding the rigging, hair moving in the wind whenever on screen. Camera: handheld low at seated chest height inside the cabin, ~1.2 m from her, never steady.
+
+Sound: water lapping the hull, boat creaking on its lines, halyards ticking, faint wooden cabin echo.
+
+0.3–3.2s — THE HOOK, seated
+
+Leaning in like telling a secret, eyes on the lens, quiet silky American voice: "Everyone's using Opus 5.5 to write emails and code..." ("Opus five-point-five"). Lightly amused, brows lift on EVERYONE'S. On "emails and code" her right hand gives one small dismissive flick by her knee. The "..." is a real half-second beat: lips parted, small inhale, eyes narrowing with a private smile, head tipping a fraction — the good part is coming.
+
+On deck <<<CHAR_B>>> turns her head right, as if called from the quay.
+
+3.2–6.0s — Rising toward the steps
+
+EFFECT: late handheld pan up-left + frame-edge clip
+
+On "and" she rises in one motion, turning to the companionway, looking back over her right shoulder: "...and almost nobody's using it to direct shots like this." Stress on NOBODY with a small conspiratorial chin lift. On SHOTS LIKE THIS her right hand draws one loose circle taking in the cabin, porthole and bright hatch. Her eyes brighten, a real smile starts. Her left hand finds the brass rail.
+
+The camera follows a beat late; she clips the left edge, half her face cut off.
+
+<<<CHAR_B>>> lets go of the rigging and walks off right out of the hatch view. By 6.0s the hatch shows only rigging, sail and bright harbour; two or three gulls far off, small and out of focus.
+
+Sound: seat creak, palm on brass, bare steps fading on teak above, wind through the hatch.
+
+6.0–6.6s — Second step — FOCUS HUNT 1
+
+She steps onto the second step and half-turns back, hatch sunlight across her face and shoulder. The filmer steps closer; as she lands back in frame the autofocus hunts and locks (~1s), silent.
+
+6.6–7.8s — "The skin," — PHYSICAL CLOSE-UP
+
+Softly, almost tenderly: "The skin," — the filmer leans the phone in by hand until the lens is ~25 cm from her face. For about a second the frame is her cheek, nose and eye corner in warm hatch sun: dense freckles, visible pores, fine peach fuzz glowing in backlight, faint flush, tiny unevenness, a stray hair across her cheekbone, the gold chain glinting at the bottom. Focus breathes. Her right fingertips brush her cheekbone, palm toward her face. Her eyes soften and hold the lens with a small private smile. The frame keeps shaking.
+
+This is a hand movement toward her face — never a zoom, crop or punch-in.
+
+Sound: voice suddenly intimate and breathy, hair brushing the mic.
+
+7.8–8.8s — "the light," — PULL BACK + TILT
+
+The phone pulls back to ~1 m and tilts up toward the hatch: low golden sun, glowing white sail, sky over the harbour. Her right hand opens outward toward the hatch, palm up, travelling away from her body. Auto-exposure meters: blown highlights recover detail in sail and sky, cabin sits a touch deeper — a camera metering, never a light change — and rolls back as the frame returns to her. She stays at least partly in frame.
+
+8.8–9.4s — "the grain —"
+
+Back on her at ~1 m: she rubs her right thumb across her fingertips once, like feeling fine sand. Her smile widens.
+
+9.4–10.4s — "even the way the camera shakes." — THE REAL LAUGH
+
+Halfway through she starts laughing, caught off guard; the last words come through the laugh. Behind the camera the filmer lets out one soft wordless breath of a laugh and the frame jiggles and bounces with it for about a second, then returns to normal unsteadiness. Her right hand gives one loose open-handed lift toward the lens and drops — no pointing. Eyes crinkle, head tips back, hair falls across her cheek and she leaves it. Pure unguarded joy — her emotional peak.
+
+10.4–11.6s — OUT THROUGH THE HATCH
+
+EFFECT: focus hunt 2 + auto-exposure cabin → daylight + subtle flare + wind
+
+Still smiling, she climbs the last two steps, left hand sliding up the rail then gripping the hatch coaming, and steps onto the teak deck, moving off left toward the bow without stopping. Autofocus hunts and locks (~1s), silent — her last focus hunt.
+
+Auto-exposure adapts: the white glare of the hatch recovers into real sky, sail, harbour and stone; her skin and linen settle from hot overexposure to correct daylight tone; the cabin below falls into shadow. A slow, silent, gradual roll — never a light change.
+
+A subtle sun flare crosses the lens from the low sun: soft milky wash, faint corner bloom, passing as the frame settles. The instant she is on deck, the sea wind streams her hair sideways.
+
+Sound: strong wind on the mic, fast-clinking halyards, gulls, water slapping the hull, bare feet on teak.
+
+11.6–12.0s — CAMERA ON DECK, TURN RIGHT
+
+The filmer climbs to the top of the hatch. <<<CHAR_A>>> keeps moving left. Without a cut the camera turns slightly right and nearly straightens. Plain hand movement, no sound.
+
+12.0–13.9s — <<<CHAR_B>>> CLOSE — "And I'll teach you how to write it."
+
+She is already in frame the instant the camera lands, standing beside the hatch, having come back from the right side of the deck. FRAMING: ~1 m, head to waist, cut at the top of her white trousers; legs never in frame. Behind her: white sail, harbour wall with lighthouse, low sun, hazy and milky. No dead air. Autofocus locks in ~0.5s, silent.
+
+Looking straight into the lens with warm grey-green eyes, slight Australian accent, easy and certain: "And I'll teach you how to write it." Weight on I'LL and TEACH, a small tip of her head toward herself, a soft knowing half-smile, one small loose hand gesture at waist height. Hair and polo collar whip in the wind; natural blinks.
+
+13.9–15.0s — "Follow me." — HARD OUT
+
+On "Follow me." she is already turning to walk left after <<<CHAR_A>>>, throwing one look back over her shoulder into the lens with a quick wink and a "come on" smile, hair across her face. As she takes her first step away the camera lurches one step forward to follow — cut at that instant, mid-motion. No hold, no fade, no black.
+
+=== ALLOWED CAMERA / LENS BEHAVIOUR (nothing else) ===
+
+Continuous unsteady handheld 0–15s. Late pans (2x). Frame-edge clip (1x). Physical lean-in to her skin (1x). Pull-back + small tilt to hatch (1x). Laugh shake (1x). Auto-exposure adaptation (2x: tilt metering; cabin → daylight). Autofocus hunt on <<<CHAR_A>>> (2x) plus focus breathing in the close-up; on <<<CHAR_B>>> (1x, ~0.5s). Subtle sun flare (1x). Climb to deck + turn right (1x). One forward step at the end. Hard cut on motion at 15.0s (the only cut).
+
+NEVER: other cuts, whips, smears, slow motion, speed ramps, digital zoom, punch-ins, crops, stabilisation, colour grading, added or changing light, transitions, whooshes, shutter or click sounds, music, on-screen text, captions, palm-over-lens, camera turning around, unscripted lines.
+
+=== HARD RULES ===
+
+Exactly 15 seconds, one continuous real-time take. Frame 0.0 = <<<image_1>>> exactly.
+
+Identity lock: <<<CHAR_A>>> always matches <<<image_2>>>, <<<CHAR_B>>> always matches <<<image_3>>>; faces, hair, clothes and jewellery never change. Environment always matches <<<image_4>>>.
+
+SKIN IS NEVER SMOOTH — visible pores, freckles, peach fuzz, fine texture, small unevenness, natural sheen, above all in the "skin" close-up. No smoothing, retouching, waxy or plastic skin, or beauty filter. The single most important rule.
+
+Strong, coarse, visible film grain over the whole frame at all times, heavier in the cabin, still clear on deck. Slight softness and mild compression — real old-phone footage.
+
+Obvious handheld: one hand, constant drift, dips and late corrections, horizon never level for long, never still.
+
+Every movement has a visible beginning, middle and end. Nobody teleports: she rises by rising, climbs by climbing, exits the hatch by climbing through it.
+
+★ NO LIGHT EVER CHANGES. ★ The sun stays low, golden and constant. Every brightness shift is the phone's auto-exposure, slow, gradual and silent. No flash, no light pop, no white frame.
+
+<<<CHAR_A>>>'s gestures are all different and none points at her own chest or torso: flick ("emails and code"), circle ("shots like this"), fingertips on cheekbone ("the skin"), open palm to hatch ("the light"), thumb on fingertips ("the grain"), open-handed lift to lens ("the camera shakes").
+
+<<<CHAR_B>>> exits right at 3.2–6.0s, is off screen ~6.0–12.0s, returns from the right side of the deck framed close, never looks at the lens before her line.
+
+Wind: <<<CHAR_A>>>'s hair still in the cabin, lifting on the steps, streaming hard on deck. <<<CHAR_B>>>'s hair always moving. Gulls audible from the steps on, visible far off, out of focus.
+
+Look: warm low sun raking through the hatch, glossy highlights on varnish and brass, hot golden glow on skin and linen, dark cabin, hazy milky harbour and sky. Candid, amateur, unpolished. No grade, no cinematic look, no text, no music.
+
+Nobody performs for the camera: eyes land on the lens and drift off, except the hook (0.3–3.2s) and <<<CHAR_B>>>'s line, where they hold it warmly.
+
+DIALOGUE — spoken exactly once, exactly as written, in order:
+
+<<<CHAR_A>>>: "Everyone's using Opus 5.5 to write emails and code... and almost nobody's using it to direct shots like this."
+
+<<<CHAR_A>>>: "The skin, the light, the grain — even the way the camera shakes."
+
+<<<CHAR_B>>>: "And I'll teach you how to write it. Follow me."
+
+No added words, repeats or extra lines.
+
+=== AUDIO ===
+
+Raw phone mic only: thin, slightly boxy, light auto-gain pumping, handling noise, wind hitting the mic on deck, no denoising. Camera moves, focus and exposure changes are silent.
+
+<<<CHAR_A>>>: close but roomy in the wooden cabin with a faint short echo; intimate and breathy in the close-up; a little farther on "the light"; real unpolished laugh; thinner and more open on deck.
+
+<<<CHAR_B>>>: same phone mic, same modest level, wind gusting across it.
+
+Palette: hull water, mooring creaks, seat and step creaks, palm on brass, halyards, wind building to strong on deck, gulls, bare feet on teak, hair brushing the mic in the close-up, and faint, easy to miss, a small boat engine idling across the harbour.
+
+=== VOICE ===
+
+<<<CHAR_A>>>: quiet, silky American, warm, talking to one person she likes. Natural speed with small breaths, light vocal fry at phrase ends, a soft mouth click, the real half-second beat after "code...". Line 1 moves from amused to a hushed thrill; line 2 is tender and sensory, collapsing into a genuine laugh.
+
+<<<CHAR_B>>>: slight Australian, warm, grounded, generous — "And I'll teach you how to write it" with quiet certainty; "Follow me" light and playful, half-turned away, carried by the look back and the wink.`,
+    },
+  },
+
+  // 主帖 note 内完整文生视频提示词（无自回复、无参考图）。工具 @FishCreativeHQ。同作者站内 abxxai-ivan-terrible-painting-journey-seedance-2-5 / abxxai-riviera-fashion-campaign 不是本片。查重别名：悬崖婚礼 / cliff wedding swan dive / You're late / Traffic。held 中的 abxxai-2097698694296686623、abxxai-2107847843159629893 也不是本片。
+  {
+    id: "abxxai-cliff-wedding-swan-dive-late-seedance-2-5",
+    title: "悬崖婚礼迟到 · 白礼服新郎天鹅跳",
+    subtitle: "X · @abxxai · Seedance 2.5 · Fish Creative · 15秒 · 16:9",
+    description:
+      "白西装新郎冲刺悬崖后跳海，慢镜俯冲到浮台婚礼，新娘冷脸说You're late。",
+    video: "/tutorials/abxxai-cliff-wedding-swan-dive-late-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/abxxai-cliff-wedding-swan-dive-late-seedance-2-5/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "喜剧动作",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5（主帖写 made in @FishCreativeHQ / Fish Creative）",
+    style: "地中海悬崖花园 · 高台跳海慢镜俯冲 · 浮台婚礼冷脸反转喜剧",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/abxxai/status/2107461888326214135",
+    sourceAuthor: "@abxxai",
+    sourcePlatform: "X",
+    sourceImpressions: 41970,
+    sourceStats: { asOf: "2026-10-13", likes: 151, reposts: 29, bookmarks: 182 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "花园冲刺 → 白墙起跳 → 俯冲慢镜天鹅跳 → 入水爬梯 → 交捧花冷脸对白",
+      opening: "第 0 秒新郎已在悬崖花园全力冲刺：白礼服、黑领结，右手高举红玫瑰捧花，身后是海天与九重葛。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 2–3s 左脚踩上白石墙全力蹬出，张臂冲向海面；硬切后约 3–10s 俯拍慢镜天鹅跳，花瓣上旋、海鸥掠过，远处浮台宾客如小点。", at: 2 },
+        { title: "高潮", text: "约 10–11s 硬切甲板低机位，他脚尖入水砸出高大水柱；约 11–13s 破水而出、攥捧花爬上钢梯。", at: 10 },
+        { title: "结尾怎么收", text: "约 13–15s 新娘在花拱下抱臂打量，接过捧花，冷脸说 You're late；新郎喘着笑回 Traffic，宾客哄笑抛白花瓣。", at: 13 },
+      ],
+      copyThis: "纯文生视频：把人物、地点、尺度、两处硬切时间码、三镜光学与对白一次写死；中间镜必须全程俯拍慢镜，首尾实时，结尾用一句冷幽默收。",
+      approx: true,
+    },
+    tags: [
+      "15秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "Fish Creative",
+      "文生视频",
+      "两硬切三镜",
+      "婚礼喜剧",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：确认无参考图，直接文生视频",
+        description:
+          "原帖是 note 长文，提示词整段贴在主帖里，没有 @[Image] / @图片，也没有另发角色表或首帧图。跟做时不需要上传参考图，把下方完整英文提示词直接贴进 Seedance 即可。@FishCreativeHQ 是工具平台提及，不是素材引用。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者写 Seedance 2.5，made in @FishCreativeHQ（Fish Creative）。提示词 OUTPUT SETTINGS：15 秒、16:9、24fps；FORMAT MODE：定时多镜，恰好两处硬切在 0:03 与 0:10；Shot 1/3 实时，Shot 2 全程慢镜俯拍。成片约 15.1 秒、1280×720、无水印；源码流约 60fps（与提示词 24fps 不一致）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词并生成",
+        description:
+          "把下方从 SCENE CONTEXT 起的整段英文提示词原样粘贴。结构：场景与人物道具 → 地点/尺度锁 → 首帧阻挡 → 两硬切三镜光学与运镜 → 按秒动作 → 表演/物理/灯光/调色 → 配乐音效与对白 You're late / Traffic → 正锁定。务必整段保留 POSITIVE LOCKS。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s FPV 前飞：新郎在九重葛与柠檬树间冲刺，右手高举红玫瑰捧花，白礼服下摆扬起。" },
+      { number: 2, description: "2–3s 左脚踩上白石矮墙全力蹬出，双臂张开冲向海面；此处硬切。" },
+      { number: 3, description: "3–8s 俯拍慢镜：背弓张臂天鹅跳，红花瓣上旋掠过镜头，三只海鸥在身下，远处浮台与宾客如小点。" },
+      { number: 4, description: "8–10s 仍慢镜：收成脚尖朝下的铅笔入水姿势，捧花举过头顶，远离镜头坠向碧水；此处硬切。" },
+      { number: 5, description: "10–11s 甲板低机位实时：距浮台约数米脚尖入水，高大白色水柱，花瓣落在泡沫上。" },
+      { number: 6, description: "11–13s 破水而出、捧花举高，一把抓住钢梯爬上甲板，礼服淌水、头发贴额。" },
+      { number: 7, description: "13–15s 新娘在白花拱下抱臂上下打量，接过捧花说 You're late；新郎喘息笑回 Traffic；宾客哄笑，白花瓣爆开。" },
+    ],
+    constraints:
+      "素材对应：本帖无 @[Image]/@图片 参考，纯文生视频；@FishCreativeHQ 仅为工具平台提及，不是参考图。三镜两硬切（0:03 / 0:10）；Shot 2 全程俯拍慢镜；捧花始终在新郎右手直至交给新娘；脚尖先入水、避开浮台；无字幕无 Logo。和成片的差别：提示词写 24fps，成片源码流约 60fps；俯冲段成片更偏仰躺张臂，经典背弓天鹅跳与入水前铅笔收腿偏短；溅水镜头远景可见提示词未写的白色游艇；末段宾客反应与抛花比提示词略紧。风险：悬崖跳海危险动作，勿现实模仿；英文对白 You're late / Traffic；跟做依赖 Fish Creative / Seedance 2.5 平台可用性。",
+    video_prompt: {
+      title: "Seedance 2.5 · 15s 悬崖婚礼天鹅跳",
+      subtitle: "主帖 note 完整英文文生视频提示词 · Seedance 2.5 · 无参考图 · @FishCreativeHQ = 工具平台",
+      content: `SCENE CONTEXT: A groom in a white tuxedo is late to his own wedding. He sprints across a blooming cliff-top garden with a bouquet of red roses and launches off a 50-meter green sea cliff in a huge, soaring swan dive. A drone hangs high above him, looking straight down as he falls toward a turquoise cove where his bride and guests wait on a floating wedding platform. He knifes into the sea right beside them, climbs aboard soaking wet and hands her the bouquet. She looks him up and down: "You're late." Fast, epic, funny, feel-good. Duration 15s.
+CHARACTERS AND PROPS: Groom: early 30s, athletic build, olive skin, short dark slicked-back hair, trimmed beard, white tuxedo jacket, black trousers, black bow tie, white shirt, black leather shoes. Holds the bouquet in his right hand. Identical every frame, no morphing, no drift. Bride: early 30s, long dark hair in a loose low bun with small white flowers, fitted ivory satin wedding dress, bare shoulders, small gold earrings. Bouquet: round bouquet of deep red roses and white baby's breath, tied with an ivory ribbon, normal hand-held size. Wedding platform: square floating wooden wedding deck 12m x 12m, white chairs in rows, a white flower arch at the front, a steel swim ladder on the cliff-facing side, anchored in the cove.
+LOCATION MAP: Mediterranean sea cliff, golden late afternoon. Cliff top: a short garden terrace of magenta bougainvillea, purple lavender, orange marigolds, lemon trees and bright green grass, ending at a low whitewashed stone wall with ivy. Cliff face: 50 meters of sheer rock covered in green shrubs, hanging flowers and white seagulls. Cove below: crystal-clear turquoise water fading to deep blue, sunlit sandy bottom near the rocks, wedding platform floating 12 meters from the cliff base. Background: green headlands, a white hillside village, open sea, warm blue sky. Foreground, midground and background read as separate layers in every shot.
+SCALE LOCK: Cliff is 50 meters tall, roughly 27 times the groom's height. From the top, the wedding platform reads as a tiny white square on turquoise water and the guests as small dots. The bouquet stays normal hand-held size.
+FIRST FRAME / BLOCKING: Non-empty opening frame: the groom is already at full sprint toward camera across the flower terrace, frame-center, tuxedo tails flaring, bouquet raised high in his right hand, bougainvillea petals bursting around his legs, the open sea and sky behind him. Nothing is frozen. Rule of thirds.
+FORMAT MODE: Timed multishot, exactly TWO HARD CUTS, at 0:03 and 0:10. Shot 1 real-time. Shot 2 slow motion, one speed start to finish. Shot 3 real-time. Each shot is one unbroken take. The camera does not cut on its own.
+OPTICS: SHOT 1 (0:00–0:03): wide at 84° FOV, FPV drone flying backward 2 meters in front of the groom, no drift mid-segment. SHOT 2 (0:03–0:10): super-wide at 107° FOV, top-down overhead drone 4 meters above the groom looking straight down, zero distortion, straight rectilinear edges, deep focus, no drift mid-segment. SHOT 3 (0:10–0:15): medium-wide at 47° FOV, low angle at deck level on the wedding platform, no drift mid-segment. 180° shutter motion blur, rectilinear with anamorphic optical flares from the low sun.
+CAMERA: Shot 1: FPV drone reverses fast in front of him across the terrace, then rises and swings over his head as his foot hits the wall, operator axis on the shadow side. Shot 2: overhead drone locked straight down above him, falling in perfect sync, groom centered in frame with arms spread, the whole cove, wedding platform and cliff base spread out far below and slowly growing. Shot 3: handheld at deck level with 1–2cm tremor, a fast push-in as he climbs the ladder, settling on the couple. Wide tonal latitude, soft highlight roll-off.
+ACTION: 0:00–0:02: The groom sprints four long explosive strides across the terrace, ducks a lemon branch, scatters petals. 0:02–0:03: He plants his left foot on top of the whitewashed wall and drives off with full force, launching high and far out over the sea, arms sweeping wide. HARD CUT 0:03. 0:03–0:08: Slow motion, top-down. A long, soaring swan dive: back arched, chest open, arms spread wide like wings, legs together and straight, toes pointed. Bouquet held out in his right hand, red rose petals peeling off and swirling up past the lens. Tuxedo jacket ripples in waves, bow tie flutters. Three white seagulls glide beneath him. Far below, the tiny guests turn their faces upward and point. 0:08–0:10: Still slow motion. He rotates smoothly into a tight feet-first pencil, arms locked overhead with bouquet raised, dropping away from the camera toward the turquoise water. HARD CUT 0:10. 0:10–0:11: Real time. He knifes into the water 4 meters from the wedding platform, a tall white splash column erupting, rose petals drifting down onto the foam. 0:11–0:13: He bursts up through the surface, bouquet held high, grabs the ladder and hauls himself onto the deck in one move, tuxedo streaming water, hair plastered to his forehead. 0:13–0:15: The bride stands under the flower arch, arms crossed, looks him slowly up and down and takes the bouquet. She delivers her line. He grins and delivers his. Guests burst out laughing and cheering, a burst of white petals launching over the arch.
+PERFORMANCE: The groom sprints with fierce urgency: jaw set, eyes locked on the sea. Mid-dive his face is calm and focused, breaking into a wild grin before the tuck. On deck he is breathless, chest heaving, grinning sheepishly. The bride keeps a stern face, one eyebrow raised, lips pressing hard to fight a smile, the corner of her mouth finally twitching up. Guests react with real surprise: hands on heads, jaws dropping, phones raised. Pore-level realism: vellus hair, asymmetric moles, capillary flush, seawater beading on skin and beard, wet living eyes with catch-lights, visible breath and chest rise. Restrained and human, never cartoonish. Top-tier cinematic restraint.
+PHYSICS: Mass and inertia carry through the sprint, takeoff and dive: a strong push-off from the wall, a clean high arc, then gravity taking over. In slow motion every petal tumbles with its own spin and weight and fabric ripples in smooth waves. Water entry throws a tall splash column and a ring of white foam, droplets falling back for two seconds. Soaked fabric clings and streams water, wet footprints spread on the wood. Wedding platform rocks gently when he climbs aboard. No floating props. Correct contact shadows.
+LIGHTING: Low golden-hour sun from frame-left, warm rim light on hair, skin, petals and spray, his long shadow stretching across the turquoise water in the overhead shot, sun glints dancing across the cove, caustic light patterns on the sandy seabed. WB locked 5200K. Camera on the shadow side. Soft sea haze 10% over the far headlands.
+COLOR GRADE: Lush emerald greens of grass and cliff shrubs as the base. Magenta bougainvillea, purple lavender, orange marigolds and yellow lemons glowing in the warm light. Crystal turquoise water deepening to cobalt. Crisp white tuxedo, ivory dress and white platform as the bright center. Deep red roses and red petal swirl as the hero accent. Golden skin tones. Rich, vivid, sun-kissed, never neon. Color tied to source and surface, not a flat list.
+AUDIO: Music and SFX. Score: a punchy upbeat orchestral-percussion track kicking in on frame one with a hard drum hit, building fast through the sprint. On the takeoff the music cuts to total silence, then one soaring sustained string note through the slow-motion dive with soft wind and seagull cries. On the splash the full track drops back in with a huge brass-and-drum hit and runs bright through the ending. SFX: dress shoes slapping stone, branches whipping, a sharp scrape on the wall at takeoff, deep water impact boom, rushing bubbles, gasping breath, dripping water, ladder clank, guests gasping then roaring with laughter. Dialogue in English: Bride, arms crossed, deadpan: "You're late." Groom, breathless, grinning, dripping: "Traffic." No subtitles.
+WARDROBE: Groom's tuxedo stays white with black trousers and bow tie, fully soaked after the dive. Bride's ivory satin dress stays dry and clean. Flowers stay in her hair throughout.
+STYLE: 8K photorealistic. No 3D render, no game engine, no game-cutscene aesthetic. Premium cinematic commercial look with real stunt-footage energy, naturalistic master cinematography, fine film grain.
+OUTPUT SETTINGS: 15 seconds, 16:9, 24fps playback. Shot 2 rendered as smooth high-frame-rate slow motion. Fine film grain. Smooth FPV texture in Shots 1 and 2. Natural handheld texture in Shot 3.
+POSITIVE LOCKS: Exactly two hard cuts, at 0:03 and 0:10. Shot 2 is slow motion start to finish. Shots 1 and 3 are real time. Shot 2 stays straight top-down the whole time. Same groom face, build and tuxedo across every cut. Same bride face, hair and dress throughout. Bouquet stays in the groom's right hand until he hands it to the bride, normal hand-held size, losing petals only during the dive. He enters the water feet-first, clear of the platform. Wedding platform stays anchored, white, and in the same spot. Flowers, greenery and water stay vivid and natural throughout. Eyes stay natural. No eye glow. Contact shadows read clearly on stone, deck and water. Clean frame with no logos, no UI, no text overlays, no subtitles. The couple keep a small distance from each other at the end. The video ends on the bride holding the bouquet with her stern face cracking into a smile, the groom dripping and grinning, guests laughing under the petal burst and the music at full swell.`,
+    },
+  },
+
+  // 工作流自回复串根帖（成片）https://x.com/abxxai/status/2107847831168196890 ；用户点名帖（推广栈）https://x.com/abxxai/status/2107847843159629893 ；作者步骤 1–7：2107847855117603200（Sonnet 架构）→ 2107847875250274784（角色表+图）→ 2107847892799254953（首帧+图）→ 2107847910268473521（场景板+图）→ 2107847927553204576（衣物表+图）→ 2107847944624025605（品牌标+图）→ 2107847960239513688（Seedance 视频提示词）。同作者站内 abxxai-riviera-fashion-campaign、abxxai-ivan-terrible-painting-journey-seedance-2-5 不是本片；held abxxai-mediterranean-archway-handheld-seedance-2-5（2097698694296686623）不是本片。查重别名：ZARA 背心 / UGC try-on / FishCreative / Sonnet 5.5 fashion
+  {
+    id: "abxxai-zara-vest-ugc-tryon-seedance-2-5",
+    title: "金时公寓试穿条纹针织背心 · Sonnet 写全流程 UGC",
+    subtitle: "X · @abxxai · GPT Image 2.5 + Seedance 2.5 · Fish Creative · 30秒 · 16:9",
+    description:
+      "金时公寓自拍试穿条纹针织背心，亮ZARA标再换装，Sonnet写全流程。",
+    video: "/tutorials/abxxai-zara-vest-ugc-tryon-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/abxxai-zara-vest-ugc-tryon-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "UGC 试穿",
+    shots: 7,
+    references: 5,
+    model: "GPT Image 2.5（静帧，作者写 GPT Image 2.5 / 推广贴写 Image 2.5）+ Seedance 2.5（视频）+ Fish Audio（推广贴写的人声）；在 @FishCreativeHQ / Fish Audio 里做；全流程由 Claude Sonnet 5.5 规划",
+    style: "手机 UGC 试穿口播感 · 金时斜光公寓 · 一硬切换装前后 · 无配乐只有人声与环境声",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/abxxai/status/2107847831168196890",
+    sourceAuthor: "@abxxai",
+    sourcePlatform: "X",
+    sourceImpressions: 59486,
+    sourceStats: { asOf: "2026-10-13", likes: 321, reposts: 23, bookmarks: 471 },
+    formats: ["变装·换装", "时尚大片", "手机POV·Vlog"],
+    hook: {
+      structure: "沙发自拍钩子 → 夹脚架 → 展示背心 → 亮 ZARA 领标 → 脱掉毛衣换上背心 → 硬切后试穿检查 → 拿回手机揭秘 Sonnet 写片",
+      opening: "第 0 秒就是金时阳光下的沙发自拍：酒红粗针毛衣、雀斑、脸颊托手，她开口说刚试了 Claude Sonnet 5.5。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 5–16s 她把手机夹上脚架，拎起海军奶油条纹针织背心正反面展示，再凑近镜头亮出领口 ZARA 织标。", at: 5 },
+        { title: "换装硬切", text: "约 16–20s 她脱掉酒红毛衣露出无缝背心、套上条纹背心；约 20s 硬切到已穿好的试穿检查。", at: 16 },
+        { title: "结尾怎么收", text: "约 25–30s 她走回镜头拿下手机，近距离自拍揭秘：整条视频都是 Sonnet 5.5 写的。", at: 25 },
+      ],
+      copyThis: "先用 GPT Image 2.5 出齐角色表、场景板、衣物表、品牌标、首帧自拍五张锁图，再把五张按 @[Image 1]–[Image 5] 钉进 Seedance；视频提示词写死一条硬切、无配乐、口型对齐英文台词。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 一硬切",
+      "16:9 横屏成片（提示词写 9:16）",
+      "GPT Image 2.5 + Seedance 2.5",
+      "Fish Creative / Fish Audio",
+      "Claude Sonnet 5.5 写流程",
+      "5 张公开参考图",
+      "ZARA 品牌标",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2.5 出齐 5 张参考图（作者 2/–6/）",
+        description:
+          "作者自回复按顺序公开了五张图和对应文生图提示词（完整提示词在下方参考卡）：2/ 女角色四联表（角色）→ 视频里 @[Image 1]；3/ 沙发自拍首帧 → @[Image 4]；4/ 空公寓场景双联板 → @[Image 2]；5/ 条纹背心幽灵人台三联表 → @[Image 5]；6/ 领口 ZARA 织标双联微距 → @[Image 3]。另有 1/ 说明 Claude Sonnet 5.5 是工作流架构师（给终局+截图，它排出场景顺序、图/视频提示词、运镜、转场、声音、失败修复），不单独出图。五张都是作者公开的 GPT Image 2.5 原图，不是成片截帧。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "主帖：Sonnet 5.5 + Seedance 2.5，在 @FishCreativeHQ 里做。推广自回复：Image 2.5 出静帧、Seedance 2.5 出视频、Fish Audio 做人声，一站完成。视频提示词写 Vertical 9:16 / 1080×1920 / 30 秒 / 0:20 一硬切；X 成片实际是约 1920×1080（16:9 横屏）、24fps、约 30.1 秒，页面按 16:9 显示。成片有英文口播与环境声、无配乐；未见明显平台水印。语音识别可听清钩子句、Hold on、背心介绍、Zara obviously、Obsessed、结尾 Sonnet 写片。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴 Seedance 视频提示词并上传 5 张 @Image",
+        description:
+          "把下方完整视频提示词粘贴进 Seedance 2.5，按 ACTIVE REFERENCES 上传：@[Image 1]=参考 1 角色表，@[Image 2]=参考 2 场景板，@[Image 3]=参考 3 品牌标，@[Image 4]=参考 4 首帧自拍，@[Image 5]=参考 5 衣物表。提示词按秒写：自拍钩子→夹脚架→展示背心→亮标→换装→硬切→试穿检查→拿回手机揭秘；NO MUSIC，只有人声与环境声；口型对齐 @WOMAN 英文台词。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "abxxai-zara-ugc-image1-character",
+        number: "1",
+        title: "@[Image 1](image_1) · 女角色四联表",
+        subtitle: "视频 ACTIVE REFERENCES CHARACTER = 这张（作者 2/ 公开原图，GPT Image 2.5）；1448×1086",
+        image: "/tutorials/abxxai-zara-vest-ugc-tryon-seedance-2-5/refs/01-character-sheet.jpg",
+        prompt: "SCENE CONTEXT\nA photoreal character reference sheet of one young woman, built from the attached first-frame selfie, for identity lock in a UGC try-on video.\n\nSUBJECT\nA young woman in her mid-twenties, slim build. Face: fair skin with a warm golden undertone and a soft capillary flush across the cheeks and nose, dense natural freckles scattered across the nose bridge, both cheeks and the upper lip area, hazel-green almond eyes with a warm golden ring around the pupil, thick natural brows with a fairly straight line and a soft arch at the tail, straight narrow nose with a slight sun-lit sheen on the bridge, full lips in a glossy rose-nude with a defined cupid's bow, dewy bare skin with no visible foundation. Hair: long layered light-brown hair with caramel and honey-blonde balayage streaks, a clean center part, slightly piecey loose waves, soft face-framing strands falling past the collarbones. Hands: short soft almond nails in a sheer nude, two thin stacked silver band rings on the ring finger. Outfit: an oversized burgundy chunky-knit funnel-neck sweater in a fuzzy mohair-blend yarn with a soft halo of fibres, cream relaxed wide-leg trousers, bare feet. 100% matches the reference.\n\nLAYOUT\nFour panels side by side, 100% consistent across all 4 shots: face close-up at 18° FOV looking to the lens, head and shoulders three-quarter left at 29° FOV, full body front at 47° FOV, full body back at 47° FOV.\n\nOPTICS\nNatural perspective, deep focus, high micro-contrast, fine skin texture preserved.\n\nCAMERA\nEye level, subject centred in each panel, straight rectilinear framing.\n\nBACKGROUND\nSeamless neutral light-grey cyclorama, soft contact shadow at the feet.\n\nLIGHTING\nEven soft studio softbox key from the front-upper, gentle fill, WB 5200K, freckles and skin texture fully readable.\n\nMATERIAL\nPore-level realism: vellus hair along the jaw and hairline, asymmetric freckles, capillary flush, wet living eyes with catch-lights. Fuzzy knit halo and individual yarn loops readable on the sweater.\n\nSTYLE\nPhotoreal editorial studio photography, 8K, no 3D render.\n\nPOSITIVE LOCKS\nSingle subject, no extra people, no text overlays, no watermark. Face, freckles, eye colour, brows, lips and hair identical in all four panels. Eyes stay natural, no eye glow.",
+      },
+      {
+        id: "abxxai-zara-ugc-image2-location",
+        number: "2",
+        title: "@[Image 2](image_2) · 空公寓场景双联板",
+        subtitle: "视频 ENVIRONMENT = 这张（作者 4/ 公开原图，GPT Image 2.5）；1536×1024",
+        image: "/tutorials/abxxai-zara-vest-ugc-tryon-seedance-2-5/refs/02-location-sheet.jpg",
+        prompt: "SCENE CONTEXT\nA photoreal location reference plate of the sunlit apartment living room seen in the attached first-frame selfie, empty, late afternoon.\n\nLOCATION\nA calm minimal apartment living room. A low deep sofa in cream-beige textured bouclé runs across the midground, with a square tan cushion with a soft satin sheen at the camera-left end and a second cream cushion beside it. Behind it a smooth warm off-white plaster wall. High on the camera-left wall, a deep-set square window with a thick white reveal frames a white modern apartment building with rows of windows, a bare winter tree and clear pale-blue sky. Pale natural oak floorboards with a soft matte finish. A slim black phone tripod stands empty in the foreground, about two metres in front of the sofa. Nothing else in the room, uncluttered and airy.\n\nLAYOUT\nTwo panels: wide establishing view at 84° FOV from chest height facing the sofa, and a medium view at 47° FOV of the sofa and wall.\n\nOPTICS\nDeep focus, zero distortion, straight rectilinear edges.\n\nLIGHTING\nLow golden late-afternoon sun from camera-right front, entering at a steep raking angle, throwing a hard bright rectangle of warm sunlight across the wall behind the sofa and a softer patch across the sofa cushions, deep soft warm shadow on the camera-left wall. Fine dust visible in the beam, faint atmospheric haze. WB locked 4600K, warm amber sun against cooler ambient shadow, soft highlight roll-off.\n\nCOLOR GRADE\nHoney gold in the sun patch on the plaster, cream and oat in the bouclé, tan sheen on the cushion, cool pale blue in the window sky, color tied to source and surface, not a flat list.\n\nSTYLE\nPhotoreal interior photography, 8K, natural daylight rendition, fine grain.\n\nPOSITIVE LOCKS\nNo people, no text overlays, no watermark. Room layout, window position and sun direction 100% consistent across both panels.",
+      },
+      {
+        id: "abxxai-zara-ugc-image3-brand",
+        number: "3",
+        title: "@[Image 3](image_3) · 领口 ZARA 织标微距",
+        subtitle: "视频 BRAND LABEL, LABEL ONLY = 这张（作者 6/ 公开原图，GPT Image 2.5）；1448×1086",
+        image: "/tutorials/abxxai-zara-vest-ugc-tryon-seedance-2-5/refs/03-brand-logo.jpg",
+        prompt: "SCENE CONTEXT\nA photoreal macro reference of one woven brand label stitched into the inside back neck of a navy and cream striped rib-knit vest.\n\nSUBJECT\nA small square woven satin label in off-white with a black high-contrast serif wordmark reading ZARA, clean folded edges, fine visible stitching along the top edge, one lower corner curling slightly away from the fabric. It sits on the navy rib binding of the inside back neck, with the cream and navy stripes of the vest visible soft around it. 100% matches the reference. Take only the label from the reference, never the black leather or dark satin lining around it.\n\nLAYOUT\nTwo panels: straight-on macro at 12° FOV, and an angled macro at 18° FOV with fingers folding the neck open.\n\nBACKGROUND\nThe vest fabric itself, softly out of focus beyond the label.\n\nLIGHTING\nSoft warm window light from the upper right, WB 4800K, off-white label bright without clipping.\n\nSTYLE\nPhotoreal macro product photography, 8K, true woven thread texture.\n\nPOSITIVE LOCKS\nWordmark straight, sharp and fully legible in both panels. No extra text, no watermark.",
+      },
+      {
+        id: "abxxai-zara-ugc-image4-start",
+        number: "4",
+        title: "@[Image 4](image_4) · 开场沙发自拍首帧",
+        subtitle: "视频 FIRST FRAME = 这张（作者 3/ 公开原图，GPT Image 2.5）；竖幅 1109×1418，非成片截帧",
+        image: "/tutorials/abxxai-zara-vest-ugc-tryon-seedance-2-5/refs/04-start-frame.jpg",
+        prompt: "A close-up straight-on smartphone selfie of the same young woman, taken at arm's length with a wide-angle phone lens, placed in the right foreground of a sunlit contemporary living room. She has hazel-green eyes, sun-kissed light-tan skin with faint freckles across the nose and cheeks, and long straight balayage hair with darker brown roots and honey-gold highlights, one loose strand framing the left side of her forehead. She rests her cheek gently on her left palm, two minimalist silver rings on her fingers, glossy pink lips, calm introspective gaze into the lens. An oversized chunky deep-burgundy cable-knit sweater with ribbed cuffs fills the lower half of the frame. Direct mid-afternoon window sunlight rakes across her face, crisp shadows and warm highlights. Behind her, softly blurred: a beige pillow on a cream couch, a small bright window, a large arc of sunlight falling on the off-white wall. Palette of 50% creamy off-white and warm greige, 35% rich burgundy wine, 15% golden beige and honey. Moderate shallow depth of field, sharp detail on eyes and knit, slight wide-angle curve in horizontal lines, natural skin texture with visible pores, cozy quiet mood.",
+      },
+      {
+        id: "abxxai-zara-ugc-image5-cloth",
+        number: "5",
+        title: "@[Image 5](image_5) · 条纹背心幽灵人台三联表",
+        subtitle: "视频 GARMENT, THE VEST = 这张（作者 5/ 公开原图，GPT Image 2.5）；1448×1086",
+        image: "/tutorials/abxxai-zara-vest-ugc-tryon-seedance-2-5/refs/05-cloth-sheet.jpg",
+        prompt: "SCENE CONTEXT\nA photoreal garment reference sheet of one knit vest, ghost-mannequin style, for a UGC try-on video.\n\nSUBJECT\nA cropped fitted sleeveless knit vest in fine vertical rib-knit. Wide horizontal stripes alternating deep navy and warm cream, starting and ending in navy, with a navy ribbed hem band. A solid navy notched lapel collar folds over into a deep V neckline, with a navy rib binding around the neck and the armholes. High cut armholes, close body that follows the bust and nips in at the waist, hem ending at the high waist. Soft matte cotton-blend surface, no print, no logo on the outside. A small off-white woven brand label is stitched into the inside back neck. 100% matches the reference.\n\nLAYOUT\nThree panels: front ghost-mannequin at 47° FOV, back ghost-mannequin at 47° FOV, macro detail at 12° FOV of the collar fold and rib texture.\n\nBACKGROUND\nSeamless neutral light-grey cyclorama.\n\nLIGHTING\nEven soft studio softbox key from the front-upper, gentle raking fill that lifts each rib in relief, WB 5500K.\n\nMATERIAL\nIndividual rib columns and knit loops readable, crisp clean stripe edges, soft collar roll.\n\nSTYLE\nPhotoreal editorial e-commerce product photography, 8K.\n\nPOSITIVE LOCKS\nNo model, no hanger, no text overlays, no watermark. Stripe count, stripe widths and collar shape 100% consistent across all panels.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–5s 沙发自拍钩子：托脸近景，说刚试 Claude Sonnet 5.5，金时斜光切在脸上。" },
+      { number: 2, description: "5–8s 起身把手机夹上黑色脚架，退回沙发前站位，双手拨头发。" },
+      { number: 3, description: "8–13s 从沙发上拎起海军奶油条纹背心，正反面展示并摸领口。" },
+      { number: 4, description: "13–16s 凑近镜头，翻开后领亮出 ZARA 织标，对焦追标。" },
+      { number: 5, description: "16–20s 脱掉酒红毛衣（露出无缝背心）、套上条纹背心、吹开碎发。" },
+      { number: 6, description: "20–25s 硬切：已穿好背心做试穿检查——理领、摸条纹、侧身看腰线。" },
+      { number: 7, description: "25–30s 走近拿下手机，自拍近景揭秘整条视频是 Sonnet 5.5 写的。" },
+    ],
+    constraints:
+      "素材对应：@[Image 1](image_1)=参考 1 角色表；@[Image 2](image_2)=参考 2 场景板；@[Image 3](image_3)=参考 3 ZARA 标；@[Image 4](image_4)=参考 4 首帧自拍；@[Image 5](image_5)=参考 5 衣物表。五张均为作者自回复公开原图（Twitter orig），不是成片截帧。作者发帖顺序是 角色→首帧→场景→衣物→品牌标，与视频 @Image 编号不一致，跟做时按视频 ACTIVE REFERENCES 编号上传。和成片的差别：提示词写 Vertical 9:16 / 1080×1920，成片是约 16:9 横屏（源 1920×1080）；开场 @[Image 4] 是竖幅自拍，成片开场被嵌进横屏构图；推广贴写 Fish Audio 做人声，成片口播也能对上提示词 @WOMAN 台词（可能是 Seedance 直出或后配，原帖未拆清）。角色表 note_tweet 正文里同一段 Prompt 连贴了 3 遍（无分隔），卡片里收录去重后的单份逐字正文。风险：画面与提示词含 ZARA 注册商标与织标特写，商用/再分发有品牌风险；含换装镜头（毛衣脱下露出无缝背心，提示词要求始终遮住）；条目未收录 fish.audio 推广外链。",
+    video_prompt: {
+      title: "Seedance 2.5 · 30s UGC 试穿（一硬切）",
+      subtitle: "作者 7/ 完整英文视频提示词 · Seedance 2.5 · @[Image 1]=参考1 · @[Image 2]=参考2 · @[Image 3]=参考3 · @[Image 4]=参考4 · @[Image 5]=参考5",
+      content: `SCENE CONTEXT
+Real, unedited vertical smartphone footage of a young woman filming a fashion try-on alone in her sunlit minimal apartment at golden hour, posted as an organic creator video. She opens with a close handheld selfie on the sofa and calmly tells the lens she just tried Claude Sonnet 5.5. She stands, clips the phone onto a low black tripod, picks up a navy and cream striped rib-knit vest, shows it front and back, steps close and holds the inside neck label to the lens, pulls her burgundy sweater off over a nude seamless tank, slips the vest on, does an outfit check, then walks back up, lifts the phone off the tripod and softly reveals in a close selfie that Sonnet 5.5 wrote the whole video. Every frame must be indistinguishable from real phone footage.
+ACTIVE REFERENCES
+@[Image 1](image_1) CHARACTER. Face, dense natural freckles across the nose bridge and both cheeks, hazel-green eyes with a warm golden ring around the pupil, thick straight natural brows, glossy rose-nude lips with a defined cupid's bow, straight narrow nose, center-parted light-brown hair with caramel balayage and soft face-framing strands, slim build, oversized burgundy chunky mohair-blend funnel-neck sweater, cream wide-leg trousers, bare feet, thin stacked silver rings. 100% matches the reference.
+@[Image 2](image_2) ENVIRONMENT. Long cream bouclé modular sofa with a tan silk cushion at camera-left and a cream lumbar cushion, warm off-white plaster wall, deep-set square window with a thick white reveal high at camera-left framing a white apartment building, a bare tree and blue sky, sun from camera-right casting a four-pane window-grid of light across the wall, pale oak plank floor with long streaks of sun, slim black tripod. 100% matches the reference.
+@[Image 3](image_3) BRAND LABEL, LABEL ONLY. Off-white woven square label with the black serif ZARA wordmark, fine top stitching, one lower corner softly curled. Take only the label, stitched into the inside back neck of the vest. 100% matches the reference.
+@[Image 4](image_4) FIRST FRAME. The exact opening selfie: framing, slight high angle, hand at cheek with the silver rings, sun on the camera-right side of her face, window at upper camera-left, curved patch of sun on the wall behind her. 100% matches the reference.
+@[Image 5](image_5) GARMENT, THE VEST. Cropped fitted sleeveless rib-knit vest in wide horizontal stripes, navy at the shoulders, then cream, navy, cream, and a navy ribbed hem band, solid navy notched lapel collar folding into a deep V, high armholes, small plain label at the inside back neck. 100% matches the reference.
+LOCATION MAP
+Foreground: the slim black tripod about two metres from the sofa, and the woman moving between the tripod and the sofa on the oak floor. Midground: the long cream bouclé sofa, the tan silk cushion at camera-left, the folded striped vest waiting on the seat cushion beside her. Background: the off-white plaster wall carrying the warm window-grid of sunlight, the deep-set window at upper camera-left.
+FIRST FRAME / BLOCKING
+Non-empty opening frame: identical to @[Image 4](image_4). Close handheld selfie at arm's length from a slight high angle, she sits sideways on the sofa in the burgundy sweater, cheek resting on her fingertips, lips softly closed, golden sun raking across the camera-right side of her face, window at upper camera-left. She is already in motion, a slow breath lifting her chest as her eyes settle on the lens. Nothing is frozen.
+FORMAT MODE
+Timed multishot, exactly ONE HARD CUT at 0:20. Everything before the cut is one unbroken take moving from handheld selfie to tripod. Everything after the cut is one unbroken take moving from tripod back to handheld selfie. Instant cut, no dissolve, no whip, no morph. Same room, same sun, same identity across the cut.
+OPTICS
+Smartphone footage, 9:16 vertical. Selfie beats: front camera at 84° FOV, close, with slight wide-lens stretch at the frame edges and the nose a touch larger from the short distance, exactly like a real front camera. Tripod beats: main camera at 84° FOV, full body with a little headroom, no drift mid-segment. Label beat: the label fills a large part of the frame at close focus. Deep depth of field, smartphone HDR look with lifted shadows and gently protected highlights, mild sharpening on knit edges and hair, fine luminance noise in the shadow side of the room, slight rolling-shutter skew and motion blur on the fast swings.
+CAMERA
+Selfie beats handheld with real phone behaviour: gentle arm sway, small wrist tremor, micro-bob on stressed words, horizon tilting 2 to 3 degrees, slow reframing drift as she shifts her weight, auto-exposure breathing as her face moves in and out of the sun. At 0:05 the frame swings and wobbles as she stands and walks the phone to the tripod, passing the floor and the sofa in a blur, a real clip-in with a short tilt and a tiny bounce, then it settles into a locked-off full-body frame with faint stabiliser micro-jitter. Autofocus holds on her body, hunts and softens when the label comes close to the lens, overshoots into blur, then snaps crisp onto the wordmark, then re-acquires her body. At 0:25 her hand enters frame, grips the phone, and the frame lifts off the tripod with a small jolt, swings up past the sofa and settles into a close, gently shaking selfie. Wide tonal latitude, soft highlight roll-off.
+ACTION
+0:00–0:05 THE HOOK, expression by expression. 0:00.0 her eyes settle on the lens, face relaxed, cheek on her fingertips, a slow breath in through the nose. 0:00.6 she lifts her head off her hand, the fingers trailing down her jaw and away, and on "Okay..." her brows rise a fraction and one corner of her mouth tucks in, the look of someone about to share something she has not quite processed. 0:01.4 a small pause, her eyes drift off-lens to camera-left for half a second as if replaying a memory, a slow blink. 0:01.9 eyes return to the lens as she says "I just tried Claude Sonnet 5.5," her voice even, a slight narrowing of the eyes on "5.5," her head tilting a few degrees toward her camera-right shoulder. 0:03.4 on "and honestly?" her brows draw together very slightly and her lips press for a beat, a quiet half-exhale through the nose that is almost a laugh. 0:04.2 on "It's insane." her eyes widen a touch, her brows lift, and a soft, slightly lopsided smile spreads on the camera-right side first, a tiny nod landing on "insane," the smile held with her eyes still on the lens into 0:05.
+0:05–0:08 SETTING UP. She stands, the frame swinging, walks the phone forward, clips it onto the tripod, and steps back to her mark in front of the sofa, pushing her hair off her face with both hands.
+0:08–0:13 THE VEST. She picks the vest up from the sofa by the shoulders, lets it fall open facing the lens, gives it one small shake so the rib ripples, touches the navy lapel with her thumb as she talks, then rotates it on the held shoulders to show the back, the stripes swinging a half-beat behind the turn.
+0:13–0:16 THE LABEL. She steps in close to the lens, folds the inside back neck open with her fingers and holds the ZARA label up so it fills the frame, focus hunting then locking sharp on the wordmark while her face sits soft and close behind it, one eye visible over the fabric, the skin around it creasing with a small smile.
+0:16–0:20 THE CHANGE. She steps back to her mark, drapes the vest over her forearm, crosses her arms at the sweater hem and pulls the burgundy sweater up over her head in one real tangled motion, her hair lifting with static and falling back messy, revealing the nude seamless tank. She tosses the sweater onto the sofa, pulls the vest down over her head and tugs it into place at the waist, blowing a loose strand off her lips.
+HARD CUT
+0:20–0:25 OUTFIT CHECK. Back on her mark, vest over the cream wide-leg trousers, hair freshly shaken out. She flicks her hair out from under the collar, smooths both palms down the stripes, settles the lapel with two fingers, pops one hip, turns a quarter to show the side profile and the crop meeting the high waist, glances down at herself with a small private smile, turns back to the lens.
+0:25–0:30 THE REVEAL. She walks toward the lens, her hand reaches in and lifts the phone off the tripod, the frame lifting into a close handheld selfie, sun across her face. She holds the lens for a beat before speaking, then delivers the closing line softly, a slow blink before "Sonnet 5.5," ending on a small lopsided smile and a gentle half-shrug, eyes held on the lens to the last frame.
+PERFORMANCE
+A real creator filming alone who has done this a hundred times, calm and settled, aware of the lens but never performing for a crew. Her energy is quiet and assured, closer to telling a friend a secret than selling. Every expression comes from muscle movement, not labels: small brow shifts, lip presses, eye narrowing, uneven smiles that start on one side, natural blinks roughly every 3 to 4 seconds, eyes that drift off-lens and return. Showing the vest she looks at the clothes more than the lens, eyes flicking up twice without settling. At the label her whole upper body leans in and her eyes go past the lens to check her framing. The sweater pull is unglamorous and real, a small huff when her hair catches, a quiet amused breath once it is off. In the outfit check her shoulders drop, her chin lifts a fraction, and she gives a private pleased look down at the fit before looking back up. The reveal is the emotional peak: stillness, eyes soft and steady into the lens, a faint flush rising across her cheeks, the smile arriving late and asymmetric like she is letting you in on something. Pore-level realism: vellus hair along the jaw and hairline catching the sun, asymmetric freckles, capillary flush, faint natural sheen on the nose and cheekbones, fine lines at the outer eyes when she smiles, wet living eyes with catch-lights, gloss shifting on her lips as she speaks, visible breath and chest rise. Lip, jaw and cheek movement sync precisely to every syllable, including the soft "p" and "b" lip closures. Restrained and human, never cartoonish.
+PHYSICS
+The burgundy chunky knit is heavy and fuzzy: it drags over her head with resistance, lifts her hair with static, and lands in a soft heap on the sofa where it stays. The rib-knit vest is light with soft stretch, swinging open with gentle inertia, the stripes bending smoothly over her bust once worn, the rib columns curving at the waist, the lapel holding its soft fold. The label stands slightly proud of the knit with a visible stitched edge and a curled corner. The cream trousers swing wide and settle with each step and turn. Her hair swings a half-beat behind every turn and resettles strand by strand, a few flyaways catching the sun. The phone has real weight in her hand, and the tripod flexes slightly when she clips it on and lifts it off. Mass and inertia carry through every move. Nothing floats. Correct contact shadows under her bare feet on the oak.
+LIGHTING
+The only source is low golden late-afternoon sun from camera-right, entering at a steep raking angle, matching @[Image 2](image_2) and @[Image 4](image_4) exactly. Hard warm light along the camera-right side of her face, neck and arm, a golden rim burning through the outer hair strands, her camera-left side in soft warm shadow with full detail. In the selfie beats the sun catches the golden ring in her camera-right iris and lights the freckles across that cheek. The four-pane window-grid of sun lies across the plaster wall behind the sofa, and long bright streaks run across the oak floor. As she moves on her mark she passes in and out of the sun streak, her face and the vest brightening and dimming naturally. The raking light lifts every rib of the vest and the fuzzy halo of the sweater in relief, and makes her lip gloss catch highlights. Fine dust drifts in the beam, faint atmospheric haze at 3 metres depth. WB locked 4600K, warm amber sun against cooler ambient shadow.
+COLOR GRADE
+Deep burgundy in the fuzzy knit glowing wine-red where the sun passes through its fibres, navy and warm cream in the vest stripes with the cream turning honey in direct sun, honey gold in the window-grid on the plaster and the rim on her hair, oat and cream in the bouclé sofa and trousers, tan silk sheen on the cushion, cool pale blue in the window sky as the single cool counter-tone. Skin natural and warm with real freckle contrast, no beauty filter, no smoothing. Color tied to source and surface, not a flat list.
+AUDIO
+NO MUSIC. SFX ONLY — diegetic sound and live audio throughout. No score, no soundtrack, no background music of any kind.
+VOICE: a real young woman's natural speaking voice, soft, warm and calm, mid-to-low pitch, relaxed American English, unhurried pace of about 2.5 words per second, clear diction with every word intelligible. Close and intimate on the phone mic in the selfie beats: quiet breaths before phrases, soft lip and mouth sounds, a gentle breathy edge on stressed words, light natural vocal fry at the ends of phrases. Pauses where marked are real silences with room tone and a breath. Slightly roomier and more distant, with a light apartment echo, from the tripod position. Conversational and sincere, never announcer-like, never excited or loud, no ad-read cadence.
+SFX: fabric rustle against the phone mic, the click of the tripod clamp, bare footsteps on oak, the soft drag and static crackle of the chunky knit coming off, the light swish of the rib-knit vest, the soft thump of the sweater landing on the sofa, a distant muffled city hum through the window, quiet room tone.
+@WOMAN (0:00–0:05, calm, soft, a quiet secret, eyes to the lens): "Okay... [pause] I just tried Claude Sonnet 5.5, [breath] and honestly? [beat] It's insane."
+@WOMAN (0:06, quiet, to herself, walking the phone to the tripod): "Hold on."
+@WOMAN (0:09–0:13, relaxed, touching the lapel): "So, this vest. Navy and cream rib, and this little collar."
+@WOMAN (0:14–0:16, soft, close to the lens, small smile): "Zara, obviously."
+@WOMAN (0:17–0:20, no words, a small huff as her hair catches in the sweater)
+@WOMAN (0:22–0:24, quiet, almost to herself, looking down at the fit): "Okay... yeah. Obsessed."
+@WOMAN (0:26–0:30, low, soft, intimate, phone close, slow smile): "And the craziest part? [beat] Sonnet 5.5 wrote this whole video."
+English dialogue, no subtitles.
+WARDROBE
+Before the cut: oversized burgundy chunky mohair-blend funnel-neck sweater over a nude seamless fitted tank, cream wide-leg trousers, bare feet, thin stacked silver rings. After the cut: the navy and cream striped rib-knit lapel vest over the same cream wide-leg trousers, bare feet, the same rings.
+STYLE
+Photoreal amateur smartphone fashion try-on video in the style of a real creator's organic post, with real cinema skin rendering, natural pore texture, strand-level hair detail, true knit rib and yarn-halo rendering, real handheld shake, autofocus hunting and auto-exposure breathing. 8K photorealistic — no 3D render, no game engine, no game-cutscene aesthetic. Naturalistic master cinematography, fine film grain.
+OUTPUT SETTINGS
+Vertical 9:16, 1080x1920, 1080p, real-time speed throughout, thirty seconds, one hard cut at 0:20.
+POSITIVE LOCKS
+Her face, freckles, hazel-green eyes, brows, glossy lips and caramel balayage hair stay identical to @[Image 1](image_1) and @[Image 4](image_4) every frame, no morphing, no drift. The room stays identical to @[Image 2](image_2), sun always from camera-right, the window-grid of light fixed on the wall. The vest keeps the stripe order, navy lapel collar, deep V and cropped fitted rib of @[Image 5](image_5). The label stays identical to @[Image 3](image_3), straight, sharp and fully legible when held close, and it lives inside the vest neck only. She wears the nude seamless tank under the sweater, it stays in place through the change, and she stays covered in every frame. The tripod frame is fixed from 0:08 until her hand lifts the phone at 0:25. The phone she films with is never seen in frame. No mirror, no reflection, no second person, no on-screen text, no captions. Her voice stays the same soft, calm voice in every line. Lip sync matches every spoken word. Five fingers on each hand, natural knuckles and nails. Eyes stay natural — no eye glow. Contact shadows read clearly. Her hair and body keep small living motion in every frame.`,
+    },
+  },
+
+  // 工作流自回复串：1女角色表 https://x.com/abxxai/status/2097698712978087966 ；2场景首帧 https://x.com/abxxai/status/2097698730564796683 ；3男角色表 https://x.com/abxxai/status/2097698747589468199 ；4 Seedance https://x.com/abxxai/status/2097698830833868909 （另附8s成片）；5 Genjutsu https://x.com/abxxai/status/2097698892838309973 ；写法tip https://x.com/abxxai/status/2097698905156997573 。同作者站内 abxxai-riviera-fashion-campaign（2100600840373535136）与 abxxai-ivan-terrible-painting-journey-seedance-2-5（2109625040551755934）不是本片。查重别名：地中海拱门 / bougainvillea / Genjutsu / DreaminaCPP / AI look nobody
+  {
+    id: "abxxai-mediterranean-archway-handheld-seedance-2-5",
+    title: "地中海拱门手持跟拍 · 真实肤质旧胶片感",
+    subtitle: "X · @abxxai · GPT Image 2.5 + Seedance 2.5 · Dreamina · 约22秒 · 16:9",
+    description:
+      "地中海拱门手持跟拍，女主边走边说再亮出男主眨眼收尾。",
+    video: "/tutorials/abxxai-mediterranean-archway-handheld-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/abxxai-mediterranean-archway-handheld-seedance-2-5/poster.jpg",
+    duration: "约22秒",
+    durationSec: 22,
+    styleLabel: "手持跟拍",
+    shots: 8,
+    references: 3,
+    model: "GPT Image 2.5（角色表/场景）+ Seedance 2.5（视频，自回复写在 @dreamina_ai / Dreamina）；可选 @higgsfield Genjutsu 换脸",
+    style: "早期数码直闪 CCD 暖调 · 明显手持晃动与胶片颗粒 · 可见肤质毛孔 · 悬崖庭院拱门跟拍",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/abxxai/status/2097698694296686623",
+    sourceAuthor: "@abxxai",
+    sourcePlatform: "X",
+    sourceImpressions: 379275,
+    sourceStats: { asOf: "2026-10-13", likes: 2597, reposts: 237, bookmarks: 4470 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "拱门女主回望开场 → 边走边说台词穿出拱门 → 镜头右转男主近景眨眼 → 后续蒙太奇多场景收束",
+      opening: "第 0 秒就是石拱门构图：前景右侧赤陶色裹身上衣女主回望镜头，拱门爬满九重葛，远处海面与白墙，闪光灯把近处晒得发亮。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 0–5s 女主在拱门下边走边说，手势比划，镜头手持追她、偶尔切到画框边缘；约 5s 穿出拱门进强光，发丝被风掀起。", at: 0 },
+        { title: "男主出场", text: "约 5.5–8s 镜头右转，男主近景已在框内，说完一句就眨眼，硬切离场（对应自回复 8s Seedance 段）。", at: 5.5 },
+        { title: "结尾怎么收", text: "约 8–22s 主帖成片继续蒙太奇：露台跳舞、庭院翻跟斗、喷泉旁走动、海边阳台举杯等，同一对角色面孔贯穿。", at: 8 },
+      ],
+      copyThis: "先用 GPT Image 2.5 出女/男角色表和场景首帧，再在 Dreamina 的 Seedance 2.5 钉上三张参考写手持跟拍；可选 Higgsfield Genjutsu 用角色表换脸。",
+      approx: true,
+    },
+    tags: [
+      "约22秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "GPT Image 2.5",
+      "Dreamina",
+      "三参考图",
+      "可选 Genjutsu",
+      "手持跟拍",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2.5 做出三张参考图",
+        description:
+          "作者自回复给了三张图和对应出图提示词：参考 1 女角色四联表、参考 2 拱门庭院场景首帧（提示词要求塞进女主衣柜行以免换装）、参考 3 男角色四联表（同帖 tip：两张表用同一套灯光）。完整英文提示词见各参考卡片。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "主帖：GPT Image 2.5 + Seedance 2.5。自回复写在 @dreamina_ai（#DreaminaCPP）里做 Seedance，可钉最多 50 张参考并同趟出声音。成片主帖约 22.2 秒、1280×720（16:9）。可选第五步在 @higgsfield Genjutsu 里用 Seedance 视频 + 两张角色表换脸。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴 Seedance 提示词并钉上三张参考",
+        description:
+          "把下方完整视频提示词粘贴进 Seedance 2.5，先钉参考： [LOCATION REF]=参考 2，[WOMAN REF]=参考 1（只锁脸），[MAN REF]=参考 3（只锁脸）。提示词按秒写 8s 单镜头手持：拱门开场→女主台词与手势→穿出拱门→右转男主眨眼硬切。可选 Genjutsu 提示词（作者原文，含笔误 @[Image 1}）：Replace the guy from the video with the guy from @[Image 2] keep everything else the same. Replace the girl from the video with the girl in @[Image 1} keep everything else the same.；映射 @[Image 1]=参考 1，@[Image 2]=参考 3。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "abxxai-med-woman-sheet",
+        number: "1",
+        title: "[WOMAN REF] / @[Image 1] · 女角色四联表",
+        subtitle: "Seedance [WOMAN REF] = 这张（只锁脸）；Genjutsu @[Image 1] = 这张；GPT Image 2.5 作者公开原图",
+        image: "/tutorials/abxxai-mediterranean-archway-handheld-seedance-2-5/refs/01-woman-character-sheet.jpg",
+        prompt: "Multi-panel studio photographs of the same real woman across four panels: front-facing, three-quarter turn, full profile, and a rear view, all on a seamless neutral studio backdrop with soft even lighting. She has long straight golden-brown hair with warm honey-blonde balayage, loosely swept back with soft face-framing pieces, an oval face, warm brown eyes, softly tanned olive-warm skin, full lips, small stud earrings. She wears a rust-terracotta linen strapless wrap top tied at the back, matching wide-leg rust-terracotta linen trousers, and a woven raffia belt cinched at the waist. Same lighting, same skin texture, same wardrobe in every panel. Natural film-still photograph quality, visible skin pores and texture, no retouching, no beauty filter.",
+      },
+      {
+        id: "abxxai-med-location",
+        number: "2",
+        title: "[LOCATION REF] · 拱门庭院场景首帧",
+        subtitle: "Seedance [LOCATION REF] = 这张（精确首帧与场景灯光机位）；GPT Image 2.5 作者公开原图",
+        image: "/tutorials/abxxai-mediterranean-archway-handheld-seedance-2-5/refs/02-location-archway.jpg",
+        prompt: "Two women framed by a sun-bleached stone archway — one in the near foreground at frame right, a woman with long straight golden-brown hair loosely pulled back with soft face-framing pieces, warm honey-blonde balayage catching the light, an oval face with warm brown eyes, softly tanned olive-warm skin and full lips, small stud earrings, wearing a rust-terracotta linen wrap top and matching wide-leg linen trousers cinched with a woven raffia belt, hands clasped in front of her, turned back over her shoulder toward camera; a second woman, features unspecified, stands further back in the courtyard in a deep forest-green silk blouse and wide-leg cream trousers, leaning against a whitewashed stone pillar, gazing out toward the sea. Setting: the threshold of a Mediterranean cliffside courtyard, hand-laid terracotta mosaic floor and a weathered stone archway thick with trailing bougainvillea in the foreground, a sun-drenched courtyard beyond with wrought-iron lanterns, potted olive trees and a low stone fountain, whitewashed rooftops and a pale hazy sea filling the horizon, soft late-afternoon light. Shot on an early-2000s point-and-shoot digicam with harsh direct on-camera fill flash that aggressively illuminates the near woman and the archway, flattening her features and putting sharp specular highlights on the linen, the stone and her shoulders; the courtyard and sea beyond stay visible but hazy, milky and underexposed relative to the flash. Warm, slightly saturated CCD tones, strong bloom and halation at the archway edges, minor digital noise. Candid amateur, Y2K editorial, unpolished but stylized.",
+      },
+      {
+        id: "abxxai-med-man-sheet",
+        number: "3",
+        title: "[MAN REF] / @[Image 2] · 男角色四联表",
+        subtitle: "Seedance [MAN REF] = 这张（只锁脸）；Genjutsu @[Image 2] = 这张；GPT Image 2.5 作者公开原图",
+        image: "/tutorials/abxxai-mediterranean-archway-handheld-seedance-2-5/refs/03-man-character-sheet.jpg",
+        prompt: "MAN — FILM CHARACTER SHEET\nMulti-panel studio photographs of the same real man across four panels: front-facing, three-quarter turn, full profile, and a rear view, all on a seamless neutral studio backdrop with soft even lighting. He has dark brown hair styled back off the forehead, thick dark eyebrows, warm brown eyes, short trimmed beard, strong jawline, olive-tan skin. He wears an open-collar off-white linen shirt with the top two buttons undone, no undershirt, sleeves rolled loosely to mid-forearm, tucked into tailored charcoal linen trousers, with a thin gold chain barely visible at the open collar. Same lighting, same skin texture, same wardrobe in every panel. Natural film-still photograph quality, visible skin pores and texture, no retouching, no beauty filter.\n\ntip: keep both sheets in the same lighting. mismatched light is what makes two characters look pasted into one frame.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 拱门定场：女主赤陶色裹身上衣回望镜头，九重葛与远海，直闪把近处晒亮。" },
+      { number: 2, description: "2–4s 女主边走边说第一句，右手画圈比划，手持镜头追她、一度切到画框左缘。" },
+      { number: 3, description: "4–5.5s 穿出拱门进强光，曝光自适应，发丝被海风掀起，绿衣背景女离开画面。" },
+      { number: 4, description: "5.5–8s 镜头右转，男主近景亚麻白衬衫入画，说完一句眨眼，硬切离场。" },
+      { number: 5, description: "8–12s 蒙太奇：哥特拱廊露台上男主跳舞回望；女主庭院快速移动。" },
+      { number: 6, description: "12–16s 女主在开阔石坪翻跟斗/侧翻，远处另有行人；窄巷奔跑。" },
+      { number: 7, description: "16–19s 喷泉旁走动；男主庭院中段舞蹈。" },
+      { number: 8, description: "19–22s 海边阳台女主举白杯走近，前景古典石像，金色逆光收尾。" },
+    ],
+    constraints:
+      "素材对应：[LOCATION REF]=参考 2；[WOMAN REF]=参考 1；[MAN REF]=参考 3；Genjutsu @[Image 1]=参考 1、@[Image 2]=参考 3（作者原文把 @[Image 1} 写成右花括号）。三张参考图与出图提示词、Seedance 视频提示词、Genjutsu 提示词均来自作者自回复，条目内 0 处「原帖未公开」。和成片的差别：① Seedance 提示词写「正好 8 秒单镜头手持」，主帖成片约 22.2 秒是多场景蒙太奇（8s 后还有跳舞、翻跟斗、喷泉、阳台等）；作者在自回复 4 另附了约 8s 的 Seedance 成片示例。② Seedance 长帖 note 在「with the s」处被平台截断，后文未公开，此处按作者已发布原文逐字收录。③ 主帖只写 GPT Image 2.5 + Seedance 2.5；自回复写在 Dreamina 做，并另有可选 Higgsfield Genjutsu 换脸步。④ 提示词要求明显手持晃动与可见肤质颗粒；成片主帖后半蒙太奇场景不在该 8s 提示词里。风险：成片含人物面孔与语音对白，跟做需自备形象权与配音；Genjutsu 步会替换正片面孔。",
+    video_prompt: {
+      title: "Seedance 2.5 · 8s 拱门手持跟拍（作者自回复；主帖成片为更长蒙太奇）",
+      subtitle: "作者自回复完整英文视频提示词（平台截断前原文）· Dreamina Seedance 2.5 · [LOCATION REF]=参考2 · [WOMAN REF]=参考1 · [MAN REF]=参考3",
+      content: `=== REFERENCE MAP ===
+[LOCATION REF] → the courtyard archway scene: the woman at frame right in the rust terracotta wrap top with the raffia belt, the second woman in the green silk blouse further back near the stone fountain, the bougainvillea overhead, the whitewashed cliffside town, the sea and the low sun beyond. This is the exact first frame of the clip and the room, light and camera look for the whole take.
+[WOMAN REF] → face and identity only. Eyes bare, no glasses.
+[MAN REF] → face and identity only. Eyes bare, no glasses.
+=== CHARACTER ELEMENT ===
+[MAN] → man, mid to late 20s, olive tan skin, dark brown wavy hair swept back off the forehead, thick dark eyebrows, warm brown eyes, short trimmed beard, strong jawline, easy natural smile. Identity from [MAN REF] only. Wardrobe is new, not taken from any reference image: an open collar off white linen shirt, top two buttons undone, no undershirt, sleeves rolled loosely to mid forearm, tucked into tailored charcoal linen trousers, a thin gold chain barely visible at the open collar. He does not film and never holds the camera. He comes from the right side of the courtyard, from near the potted olive trees, and goes after her to the left.
+PART 1 - SHOT BREAKDOWN (8s, one continuous handheld take)
+SHOT 1 - one continuous handheld take, 8 seconds, no cuts, visibly unsteady handheld throughout
+MOMENT (0.0-0.4s) - Frame 0.0 is [LOCATION REF]
+EFFECT: none, plain handheld footage, the unsteadiness already present in the first frame
+Frame 0.0 is exactly [LOCATION REF]: same archway, same framing, same light, same crop. The take grows out of it with no settle in. She is already mid step under the flowering archway at frame right, turned back over her right shoulder into the lens, hands clasped in front of her at her hip as in the image, coming apart on the first step: her right hand becomes her talking hand, her left hand hangs and swings naturally.
+Further into the courtyard by the fountain, the woman in the green blouse turns her head, as if someone off frame has called her name. Her hair moves in the wind and keeps moving the whole time she is on screen.
+The camera is a viewpoint only, handheld at chest height, held by someone walking who cannot keep it steady, the frame drifts, dips and corrects constantly. Whoever holds it is never in frame and never speaks.
+Natural ambient sound: her sandals on the worn stone tile, the sea washing faintly far below the cliffside, a light trickle from the fountain, a soft rustle of bougainvillea leaves overhead.
+MOMENT (0.4-2.4s) - Line 1, still moving, drifting left
+EFFECT: reactive handheld pan (late, to the left) + frame-edge clip
+She keeps drifting left, glances back into the lens, and says in a quiet, unbothered American English at natural conversational speed: "This is the AI look nobody's actually teaching you." She is letting you in on something, faintly amused nobody says it out loud. On "THIS," her right hand comes up and draws a single loose circle in the air in front of her, index finger slightly extended, taking in the archway, the flowers, the courtyard and the sea in one round sweep, she means exactly this, all of it. A small stress lands on "NOBODY'S," a brief lift of her brows and a small chin tip back toward the lens. The line runs as one flowing phrase and finishes cleanly, no dragging, no gaps between words.
+Her eyes land on the lens casually and slide off again toward where she's walking before the sentence ends; she takes a small breath at the end of it.
+Her walk is spontaneous, not direct: she drifts further left than the camera expects. The camera swings left after her a beat too late, so for a moment she clips the left edge of the frame, half her face and shoulder cut off, because he doesn't have the reflexes to keep her centred.
+Deeper in the courtyard, the woman in the green blouse steps away from the fountain and walks off toward the low courtyard wall and out of the shot. By 2.4s the courtyard beyond is empty: the fountain, the potted olive trees, the sea. Far out over the water, two or three seagulls drift across, small and completely out of focus.
+Her hair moves loosely with each step. She blinks once, naturally, mid sentence.
+Natural ambient sound: her voice at courtyard distance with the archway's short stone echo, her steps, the other woman's steps fading on the stone, the fountain, the sea and a light wind through the flowers.
+MOMENT (2.4-2.9s) - She turns back, the focus catches her, focus hunt 1
+EFFECT: reactive handheld pan (catch up, to the right) + autofocus hunt-and-lock (about a second)
+She turns halfway back and walks to the right, toward the open courtyard, her front open to the camera the whole time, at a normal walking pace. Having slipped part way out of frame, the camera corrects across to find her, and as she lands back in frame the autofocus hunts and catches her for about a second, a soft breathing of sharpness across her face and the stone archway. Silent, in-lens only.
+Natural ambient sound: her steps changing direction on the stone, the sea, the wind picking up slightly as she nears the open archway.
+MOMENT (2.9-4.3s) - Line 2, natural tempo, three separate gestures, small tilt toward the light
+EFFECT: small handheld tilt (toward the light, and straight back), she stays in frame throughout
+Still walking right, she says in the same easy manner, matter of fact, almost naming what's in front of you: "Real skin, real light, that old film feel." The line runs at natural speaking tempo as one continuous phrase, with only a small breath in it, no long gaps, no pausing between items.
+On "REAL SKIN" she passes her right hand in front of her own face, palm turned toward her cheek, moving up past her temple.
+On "REAL LIGHT" both hands come up and open outward at waist height, palms turning up and out into the courtyard around her, an open, neutral presenting of the light and the air. Hands travel away from her body and never back in toward her chest or face. Small, offhand, candid, barely a gesture at all.
+On "THAT OLD FILM FEEL" her right hand lifts loosely toward the camera and lowers again, one candid open handed motion out toward the lens and back down. No pointing, no jabbing, no bringing the hand back to herself. A slight smile arrives and stays, her eyes soften, it's immediately readable that she loves that look.
+As she says "light," the camera makes a small tilt in that direction toward the sky above the sea and comes right back to her. She stays in frame throughout; the framing just rides up and sideways a little and returns. Plain hand movement with the unsteady shake continuing, no zoom, no whip, no smear, no sound attached to the movement.
+As more bright sky enters the corner of the frame, the phone's automatic exposure reacts: the light through the archway pulls back from blowing out and holds detail, the contrast tightens as the sensor meters for the brighter part of the frame, the shaded stone around her sits a touch deeper because it's now exposed against the brighter courtyard beyond. It reads unmistakably as a camera metering, never as the scene getting darker. It rolls back the same way as the frame returns to her.
+Her hair is now visibly livelier, strands lifting across her shoulder as she nears the open courtyard.
+Natural ambient sound: her voice, her steps, the sea, the wind now clearly audible, the fountain, the first gulls calling.
+MOMENT (4.3-5.1s) - Through the archway, out into full light
+EFFECT: autofocus hunt-and-lock (about a second) + auto-exposure adaptation, shaded archway → open daylight + subtle sun/lens flare + wind on her hair
+She reaches the edge of the archway and passes through it while still speaking. Her left hand comes up and grazes a low hanging bougainvillea vine at the archway's edge as she passes, the rest of her body already turning out toward the open courtyard and the sea. She does not stop under the archway and does not finish her line there. By the last two or three words, "old film feel," she is already past it, out in the open courtyard and already moving off to the left, away from the camera's side of the frame. Every movement has a visible beginning, middle and end: she reaches the archway edge by walking there and passes it by walking through.
+The autofocus hunts and catches her for about a second as she crosses the threshold, a soft breathing of sharpness across her face and the stone. Silent, in-lens only. This is focus hunt 2, the last one on her in the clip.
+The phone's automatic exposure adapts to the open daylight. This is a sensor and lens reaction, not a lighting change: the blown out brightness beyond the archway pulls back and recovers into real sky, real sea and real stone with visible detail where a moment ago there was only glare; her skin and the linen settle out of hot overexposure into correct daylight tone; the contrast re-seats around the new brightness; the shaded stone behind her sinks off into shadow because the camera is no longer metering for it. It reads unmistakably as a camera adapting to a much brighter scene, never as a light dimming or the world going darker. Nothing in the scene changes brightness on its own. The whole adaptation is a slow gradual roll across many frames, never a jump, never a snap, and it's completely silent.
+As the frame follows her out into that light, a subtle sun / lens flare comes across the lens from the low sun over the sea, a soft milky wash and a faint bloom in the corner of the frame, small and unforced. It passes off as the frame settles.
+The moment she's clear of the archway her hair is caught hard by the wind off the sea, lifting and streaming sideways across her back and face all at once.
+Natural ambient sound: the wind coming up strong and constant here, the sea below, gulls now clearly audible, the fountain fading behind her, the soft contact of her hand on the vine, her voice going slightly quieter and roomier as she turns toward the sea.
+MOMENT (5.1-5.5s) - The camera follows her out, then turns right
+EFFECT: none, plain handheld, the unsteadiness continues
+The man filming follows her out past the archway and is now one step into the open courtyard, filming from there. He never speaks and is never seen.
+She keeps moving off to the left along the courtyard edge, away from the camera's side of the frame.
+Without any cut, the camera turns slightly to the right and almost straightens out. Plain hand movement at ordinary speed with the unsteady shake continuing, not a whip, not a swing, no smear, no sound attached to the movement.
+MOMENT (5.5-6.7s) - [MAN], close, already there
+EFFECT: autofocus hunt-and-lock on [MAN] (about half a second)
+[MAN] is already in frame the instant the camera lands, just past the archway.
+FRAMING: he is close, roughly 1 metre from the lens. His head, shoulders, chest, arms and waist fill the frame, cut off at the waist / the upper part of his charcoal trousers. A little of his upper legs shows, no more; he is not a full length figure standing back in the courtyard.
+He has come from the right side of the courtyard, near the olive trees, not from the archway, and is clearly on his way after her. There is no pause and no dead air when the camera reaches him, he's already there and speaks almost immediately.
+The autofocus hunts briefly and catches him in about half a second, silently.
+[MAN]: dark wavy hair, olive tan skin, short trimmed beard, warm brown eyes, eyes bare, wearing the open collar off white linen shirt with sleeves rolled and the thin gold chain, tucked into charcoal linen trousers. His open collar moves in the wind.
+He looks into the lens and says only "But, I will," and nothing else. The emphasis lands on "I," as if he's the one who will show us, speaking to us and not to her, in a slight Australian accent, warm, easy, low key, quiet certainty. He winks with a slight smile as he says it, a small tip of his head toward himself, blinking naturally, one small natural hand gesture.
+Natural ambient sound: his voice picked up by the same phone in the wind, the same thin mic and modest level as hers, never close mic or sharper than she was. His steps on the stone, wind across the microphone, the sea below, gulls, a faint collar rustle.
+MOMENT (6.7-8.0s) - The wink lands, he's already going, hard out
+EFFECT: hard cut on motion (out point, no trailing beat)
+The smile and wink hold for a beat, then he is already moving again, continuing after her to the left, and the clip cuts exactly at that moment, mid motion, with no beat after. No settle, no hold, no fade, no black.
+He never puts his hand on the camera and never covers the lens.
+PART 2 - EFFECTS LIST
+Everything below is handheld or in lens behaviour. No added effects exist in this clip.
+Unsteady handheld, continuous, 0.0-8.0s. Never still at any point.
+Reactive handheld pan (late), 2x (left after her at ~1.0-2.4s; catch up right at ~2.4-2.9s).
+Frame edge clip, 1x (during line 1). She slides half out of the left edge before the pan catches her.
+Small handheld tilt toward the light and back, 1x (on "real light"). She stays in frame the whole time.
+Auto-exposure adaptation, 2x (metering for the brighter sky during the tilt and back; the full shaded archway → daylight adaptation at the threshold). In-lens only, silent, gradual, never a light change.
+Autofocus hunt-and-lock on her, 2x, and only 2x (when she comes back into frame; at the threshold). Both silent, in-lens.
+Autofocus hunt-and-lock on [MAN], 1x, about half a second. Silent, in-lens.
+Subtle sun / lens flare, 1x (as the frame follows her into the open courtyard). Soft milky wash and faint corner bloom.
+Handheld step through the archway, then slight turn right and near straighten, 1x (5.1-5.5s). Plain hand movement, no sound.
+Hard cut on motion, 1x (8.0s). The only cut in the clip, and it's the out point.
+Not used anywhere: cuts other than the out point, whips, smears, slow motion, speed ramps, digital zoom, punch ins, stabilisation, colour grading, added light, light changes of any kind, transition effects, whoosh or swish sounds, shutter or click sounds, music, on screen text, palm over lens, camera turning around, any second line from [MAN].
+PART 3 - EFFECT DENSITY BY TIME
+0.0-2.4s = MEDIUM DENSITY (late pan left, frame edge clip, green blouse woman head turn and exit, 3 events in 2.4s)
+2.4-4.3s = MEDIUM DENSITY (catch up pan, focus hunt 1, small tilt with exposure metering and return, 3 soft events in 1.9s, none stacked)
+4.3-5.5s = HIGH DENSITY (focus hunt 2, vine contact, shaded → daylight exposure adaptation, sun flare, wind slam on hair, full audio field change, step through, turn right, 8 events in 1.2s, the peak)
+5.5-8.0s = LOW DENSITY (focus catch on [MAN], his line, the held wink, the hard cut on motion, 3 events in 2.5s, all plain)
+PART 4 - MOTION FLOW
+Opening: real time, already moving. The first feeling is being half a step behind a person who isn't waiting for you, the camera chasing her, the courtyard clearing as the other woman leaves.
+Build: her drift left and the late pan pull the frame apart; she slips out and the focus finds her again; the three gestures carry her second line, ending on the delight of "that old film feel"; the small tilt lets a little sky in without losing her; the wind grows as she nears the archway edge. Then she walks straight through it mid sentence and the whole picture re-meters around her, highlights recovering, flare washing the corner, wind taking her hair, while she keeps talking and doesn't react to any of it.
+Resolution: the camera follows her out, turns right, and someone else is simply already there, close enough to fill the frame. He doesn't arrive, he's caught in passing, on his way after her. The wink holds a beat, then he's gone in the same direction she went and the frame cuts on his first step.
+=== HARD RULES ===
+Total duration is exactly 8 seconds. One single continuous handheld take from first frame to last. No cuts, no scene changes, no transitions, no time skips, no slow motion, everything plays in real time. The only cut is the out point at 8.0s.
+Frame 0.0 is exactly [LOCATION REF]: same archway, same framing, same light, same two women in the same positions. The take grows out of that frame.
+Skin is never smooth. Both her skin and his keep visible pores, fine texture, small unevenness, tiny marks and a natural sheen where the light hits. No smoothing, no retouching, no waxy or plastic skin, no beauty filter, no clean poreless faces, this is the single most important thing about how they look.
+Strong, visible film grain across the whole frame at all times, heavier in shadow, still clearly present in the bright courtyard.
+The handheld must be obvious. He's walking while filming, one hand, constant drift, small dips, late corrections, the horizon never level for long. The frame is never still at any point.
+Every movement, hers, the green blouse woman's, the camera's, his, has a visible beginning, middle and end inside the shot. Nothing is already done, nothing appears mid motion, nobody teleports.
+The camera never leaves her before she's outside the archway.
+The tilt on "real light" is a small handheld movement toward the sky and straight back, with her in frame the entire time, not a swing off her.
+No unnatural camera work anywhere: no zoom, no punch ins, no whips, no smears, no snap movements, no digital effects, no stabilisation, no speed changes.
+No light in this scene ever changes. Every exposure and contrast change is the phone's automatic exposure reacting to what's in frame, never a lamp, a fade, a brightness ramp, or the world changing luminance. No flash, no flash pop, no strobe, no white frame, no photograph being taken, no shutter sound, no camera click, no beep.
+Every exposure change is a slow gradual roll across many frames, never a jump, and completely silent.
+The only in lens behaviours permitted: autofocus hunting, gradual auto-exposure/contrast adaptation, and the one subtle sun flare. Nothing else.
+Exactly two autofocus hunts on her, both silent and in lens. One on him, about half a second. No other focus changes.
+The camera filming this is never seen, and the man holding it never speaks and never appears.
+She holds nothing in either hand at any point, her hands are empty the whole clip.
+[MAN] never films and never holds the camera. He's not in frame until the camera turns right at 5.5s. He never touches the camera, never covers the lens.
+[MAN] is framed close, roughly 1 metre from the lens: head and upper body, cut at the waist, only a little of his upper legs visible. His legs are never fully in frame.
+[MAN] comes from the right side of the courtyard, near the olive trees, and goes after her to the left. She goes left; he comes from the right and follows her left.
+Wind: her hair is affected more the closer she gets to the archway edge, barely moving at the start, caught hard and streaming the instant she's clear of it. The green blouse woman has wind in her hair constantly the whole time she's on screen.
+Seagulls: audible from about the moment she nears the archway onward, visible far out over the sea, small and out of focus.
+Look: hard on camera light continuously for the whole take, first frame to last, never firing and never changing. Whatever it reaches is a touch hot, the stone, her linen, her bare shoulders, later his face and open collar, with slightly blown highlights there. Once she's in the open courtyard, daylight is simply far brighter, so the same constant light naturally reads as weak fill. Sky and sea stay slightly hazy and milky behind. Candid, amateur, unpolished, a clip straight from a phone gallery. No colour grade, no cinematic look, no text, no music.
+She never performs for the camera: the camera follows her, she doesn't adjust for it; only her eyes come to the lens, landing casually and drifting off, never holding eye contact. She blinks naturally, takes small natural breaths, keeps her mouth and brows alive between words, and makes no pauses in her speech other than those breaths. She's never completely still.
+She speaks at natural conversational tempo and never drags: both lines run as flowing phrases with only small breaths in them, no long gaps, both finish early rather than late.
+Her three gestures are all clearly different from each other, all candid, never staged, and none of them point at herself: the round one hand sweep on "this"; the low two handed outward open into the courtyard on "real light," hands travelling away from her body and never back toward it; the loose open handed lift toward the camera and back down on "that old film feel," no index finger, no jab, with the s`,
+    },
+  },
+
   {
     id: "harboriis-tiny-desk-skater-2d-seedance-2-5",
     title: "桌面小滑板女孩 · 2D 手绘混实拍 · Seedance 2.5",
