@@ -33213,6 +33213,318 @@ FEEL: She has the greatest superpower on Earth… and she’s using it for pani 
       content: `A cinematic macro product-assembly video showing a futuristic modular electronic machine being built from individual components. Start with a dark, premium studio workbench covered with neatly arranged metallic panels, circuit boards, switches, buttons, cables, screws, and mechanical parts. A human hand carefully selects and places each component. Show smooth close-up shots of metal frames being assembled piece by piece, circular mechanical rings sliding into a multi-level rack, and a compact electronic module being mounted onto a base. Include detailed macro shots of circuit boards, wiring, connectors, screws, and brushed-metal surfaces. The assembly progressively transforms into a sophisticated futuristic machine. In the final shot, the completed device powers on inside a dark high-tech environment, glowing electronic circuitry and displays illuminating the machine. Photorealistic, cinematic lighting, shallow depth of field, realistic hand movements, precise mechanical motion, premium industrial design, dark background, subtle reflections, smooth camera movements, ultra-detailed, 4K, realistic physics, seamless transitions, no text, no logos.`,
     },
   },
+  // 查重别名(提示词自回复 note): https://x.com/Diplomeme/status/2108406529217163496 。同作者站内已有 diplomeme-front-row-girl-seedance-2-5、diplomeme-iphone18-pro-max-seedance-25，不是本片。无引用帖、无外链；[Image 1]/[Image 2]/[Image 3] 三张产品原图原帖未公开（自回复无附图）。本地 /workspace/diplomeme-iphone18-pro-max-seedance 是另一帖 2103143771781382285
+  {
+    id: "diplomeme-desert-watch-exchange-seedance-2-5",
+    title: "沙漠公路腕表交易 · 空包反转追车",
+    subtitle: "X · @Diplomeme · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "沙漠公路交易三只奢侈腕表，对方空包走后女人驾车离去，男方发现上当开追。",
+    video: "/tutorials/diplomeme-desert-watch-exchange-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/diplomeme-desert-watch-exchange-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "犯罪时尚",
+    shots: 10,
+    references: 3,
+    model: "Seedance 2.5（主帖写 Generated with Seedance 2.5）",
+    style: "1970s 反转片色调沙漠犯罪时尚广告 · 腕表产品微距 + 公路交易 + 空包反转",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Diplomeme/status/2108406410207993921",
+    sourceAuthor: "@Diplomeme",
+    sourcePlatform: "X",
+    sourceImpressions: 9135,
+    sourceStats: { asOf: "2026-10-09", likes: 251, reposts: 12, bookmarks: 194 },
+    formats: ["产品广告", "电影叙事"],
+    hook: {
+      structure: "沙漠对峙 → 打开表盒验货 → 交换箱包 → 空包发现 → 追车 → 车内三表英雄镜头",
+      opening: "第 0 秒沙漠公路，焦糖色敞篷车里黑短发女人一只戴黑手套的手搭在方向盘上，后视镜里是她的眼睛，远处薄荷绿老爷车驶来。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4–9s 两人下车走到薄荷绿车引擎盖前，男人放下棕色硬箱、女人放下黑色皮包；约 9–13s 打开表盒验三只表，女人短暂拿起中间那只。", at: 4 },
+        { title: "反转", text: "约 20–24s 男人拉开黑包一看是空的，表情一沉，望向已经开走的敞篷车。", at: 20 },
+        { title: "结尾怎么收", text: "约 25–28s 薄荷绿车发动追上去；约 28.5–30s 切到敞篷车副驾：打开的表盒里三只表立着，窗外沙漠高速掠过。", at: 25 },
+      ],
+      copyThis: "先绑定三张产品图控制每只表的壳型、表盘、表带和可见品牌字，再写死人物、车辆、箱包的归属，按秒写交易→验货→交换→空包→追车，最后用车内产品英雄镜头收。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "三产品图",
+      "Jacob & Co / Bugatti 商标",
+      "犯罪时尚广告",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备三张腕表产品图",
+        description:
+          "提示词开头写 Create a video ad from [Image 1], [Image 2], and [Image 3]。三张图分别对应：Image 1 = Jacob & Co. Bugatti Chiron Tourbillon（玫金、红色汽车灵感表盘、露出机芯）；Image 2 = 玫金骨架表 + 橙色蜂窝橡胶表带 + 镶宝圈；Image 3 = 深绿骨架表盘 + 绿色表带。原帖自回复没有附图，这三张原图原帖未公开。参考 1–3 是成片约 10 秒表盒打开时的截帧，仅示意三只表，不是原产品图。跟做时请换成你自己的产品图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "作者写的是 Seedance 2.5。成片 1280×720（16:9）、24fps、约 30.1 秒，无水印。和提示词对不上的地方：提示词写「pale sage-green two-door coupe」，成片里是薄荷绿敞篷/轿车造型；提示词写「caramel-amber convertible」，成片更像现代沙色/橙色敞篷跑车；表盒内侧金字「JACOB & CO. BUGATTI」成片清晰可见（提示词要求保留产品图上的品牌字）。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把作者自回复 note 里的整段英文提示词粘贴，同时上传三张产品图。结构：三只表的产品绑定 → 三个角色与两辆车、箱包归属 → 按秒分段（0–2 / 2–4 / 4–7 / 7–9 / 9–13 / 13–17 / 17–20 / 20–24 / 24–25 / 25–27 / 27–28.5 / 28.5–30）→ 1970s 反转片色调与 128 BPM 配乐说明 → 无对白字幕。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "diplomeme-watch-image1-bugatti-framegrab",
+        number: "1",
+        title: "[Image 1] Bugatti Chiron Tourbillon · 产品图 · 截帧",
+        subtitle: "提示词 [Image 1] = Jacob & Co. Bugatti Chiron Tourbillon 产品图；原图原帖未公开；此处为成片约 10 秒表盒中间那只的截帧，仅示意，非原图",
+        image: "/tutorials/diplomeme-desert-watch-exchange-seedance-2-5/refs/01-image1-bugatti-chiron-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开 Image 1 产品原图，也没有附生成它的提示词。此图为成片截帧，仅示意该表，非原图；跟做时请准备你自己的产品图。",
+      },
+      {
+        id: "diplomeme-watch-image2-orange-framegrab",
+        number: "2",
+        title: "[Image 2] 橙色蜂窝表带骨架表 · 产品图 · 截帧",
+        subtitle: "提示词 [Image 2] = 玫金骨架表 + 橙色蜂窝橡胶表带；原图原帖未公开；此处为成片约 10 秒表盒左侧那只的截帧，仅示意，非原图",
+        image: "/tutorials/diplomeme-desert-watch-exchange-seedance-2-5/refs/02-image2-orange-skeleton-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开 Image 2 产品原图，也没有附生成它的提示词。此图为成片截帧，仅示意该表，非原图；跟做时请准备你自己的产品图。",
+      },
+      {
+        id: "diplomeme-watch-image3-green-framegrab",
+        number: "3",
+        title: "[Image 3] 深绿骨架表 · 产品图 · 截帧",
+        subtitle: "提示词 [Image 3] = 深绿骨架表盘 + 绿色表带；原图原帖未公开；此处为成片约 10 秒表盒右侧那只的截帧，仅示意，非原图",
+        image: "/tutorials/diplomeme-desert-watch-exchange-seedance-2-5/refs/03-image3-green-skeleton-framegrab.jpg",
+        prompt: "原帖未公开：作者没有公开 Image 3 产品原图，也没有附生成它的提示词。此图为成片截帧，仅示意该表，非原图；跟做时请准备你自己的产品图。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 沙漠公路，女人坐在焦糖/沙色敞篷车里，后视镜特写眼睛，远处薄荷绿车驶来。" },
+      { number: 2, description: "2–4s 俯拍十字路口：敞篷车停在左下，薄荷绿车从右上驶近停下。" },
+      { number: 3, description: "4–7s 女人拿黑包下车，金发男人拿棕色硬箱下车，第三人站在薄荷绿车旁。" },
+      { number: 4, description: "7–9s 三人在薄荷绿车引擎盖旁对峙，箱包并排放上。" },
+      { number: 5, description: "9–13s 打开棕色表盒：三只表卧在酒红丝绒里；女人戴黑手套短暂拿起中间 Bugatti 款再放回。" },
+      { number: 6, description: "13–17s 交换：女人把黑包推给男人，男人把合上的表盒推给女人。" },
+      { number: 7, description: "17–20s 女人提表盒走回敞篷车开走；两人留在薄荷绿车旁。" },
+      { number: 8, description: "20–24s 男人拉开黑包，里面是空的；表情一沉，望向远去的车。" },
+      { number: 9, description: "24–27s 薄荷绿车发动，低机位跟车头，后视镜里追车。" },
+      { number: 10, description: "27–30s 公路远景两车；最后切到敞篷车副驾：打开的表盒里三只表，窗外沙漠高速虚化，盒盖可见 JACOB & CO. BUGATTI 字样。" },
+    ],
+    constraints:
+      "素材对应：[Image 1] = 参考 1；[Image 2] = 参考 2；[Image 3] = 参考 3。三张产品原图原帖未公开，参考 1–3 均为成片截帧仅示意。表只出现在棕色硬箱和最后产品镜头里；交易前后箱包归属对调；无对白字幕。和成片的差别：提示词写 sage coupe，成片更像薄荷绿敞篷/轿车；琥珀敞篷成片更接近现代沙色跑车；追车段落成片偏短。品牌风险：成片表盘/表盒清晰出现 Jacob & Co.、Bugatti 注册商标与可识别表款造型，跟做商业用途请换成自有品牌或虚构表款。",
+    video_prompt: {
+      title: "Desert Watch Exchange · 30s crime-fashion ad",
+      subtitle: "作者自回复 note 完整英文提示词 · Seedance 2.5 · [Image 1]/[Image 2]/[Image 3] = 参考 1–3（原帖未公开，成片截帧仅示意）",
+      content: `Create a video ad from [Image 1], [Image 2], and [Image 3]. Create a desert crime-fashion luxury watch commercial. The product inputs control the exact case geometry, metal construction, dial colors, mechanical complications, strap materials, gemstones, English labels, and brand identities of all three watches: the rose-gold-toned Jacob & Co. Bugatti Chiron Tourbillon with red automotive-inspired dials and exposed engine movement, the rose-gold Jacob & Co. skeleton watch with an orange honeycomb rubber strap and gemstone-set bezel, and the rose-gold-toned watch with a deep-green skeleton dial and green strap. The watches appear only inside the tan hard case and in the final product shot, with the Bugatti Chiron Tourbillon briefly lifted during the inspection. Keep all three watches consistent with their respective product images.
+
+Use exactly three adult characters. Party A, the female lead: tall and elongated, a cool restrained couture-model face, sharp cheekbones, a chin-length black bob, an oxblood silk coat, black turtleneck, high-waisted flared trousers, black leather gloves, and pointed boots. Party B, buyer one: short pale-blond hair, camel micro-check suit, black turtleneck, dark teal wide trousers, and white gloves; he carries the tan watch case. Buyer two: short dark hair, charcoal double-breasted suit, and black leather gloves; he drives the sage coupe. Keep all three identities, wardrobes, and responsibilities stable.
+
+Use exactly two unbranded 1970s-inspired cars. The female lead always belongs to the caramel-amber convertible. Both male buyers always belong to the pale sage-green two-door coupe. Use one tan watch case and one structured black leather bag throughout. Before the exchange, the tan case belongs to the men and the black bag belongs to the woman. After the exchange, the woman carries the tan watch case back to the amber convertible, while the men carry the black bag back to the sage coupe.
+
+0-2s: Desert roadside under hard midday sun. Low camera beside the caramel-amber convertible door. The lead sits behind the wheel with one black-gloved hand resting on it, calm and unreadable. Cut to a rear-view mirror close-up filled by her eyes while the pale sage coupe appears in the distance outside the mirror. Begin with engine idle and dry percussion.
+
+2-4s: Vertical aerial view of the desert intersection. The amber convertible is parked in the lower-left area of the frame. The sage coupe approaches from the upper-right and stops opposite it. Hold the aerial view long enough to establish two separate cars arriving from different directions and belonging to different parties. Keep their colors, models, and positions stable.
+
+4-7s: The doors open in sequence. The lead exits the amber convertible carrying the black leather bag in her right hand. The blond buyer exits the passenger side of the sage coupe carrying the tan hard case with both hands. The dark-haired buyer remains near the driver side of the sage coupe. Begin with low shoe, door, bag, and case details, then cut to one stable medium-wide master shot: the woman approaches from frame left, the two men from frame right. The woman always holds the black bag; the blond man always holds the tan case.
+
+7-9s: They stop beside the hood of the sage coupe. Use a stable 50mm medium-wide shot containing all three adults, both cars, and both containers. The blond man places the tan case on the sage hood. The woman places her black leather bag beside it. They confirm the deal only through eye contact. This shot clearly establishes that the tan case came from the men and the black bag came from the woman.
+
+9-13s: The blond man opens the tan case with white-gloved hands. It is lined with oxblood velvet and contains the three luxury watches in separate fitted compartments. Use stable macro inserts for the red automotive-inspired dials, sculptural rose-gold-toned case, and exposed engine-inspired movement of the Bugatti Chiron Tourbillon; the orange honeycomb strap, gemstone-set bezel, and skeleton dial of the second watch; and the deep-green skeleton dial, green strap, and exposed mechanical complications of the third watch. Preserve the exact design, proportions, materials, and visible brand markings of each uploaded product image. The woman remains opposite the case, briefly lifts the Bugatti Chiron Tourbillon for inspection, then returns it to its original compartment. Keep her hand, the watch, and the open case in the same readable composition. The other two watches remain undisturbed in their original compartments. The blond man closes the case.
+
+13-17s: Use one stable exchange master shot without changing positions. The tan watch case and black leather bag sit side by side on the sage coupe hood. First, the woman slides the black bag toward the blond man. He receives it and places it beside himself. Next, he slides the closed tan watch case toward the woman. She takes its handle and lifts it. Add only two short inserts: the white glove taking the black-bag handle and the black glove taking the tan-case handle. End with an unmistakable state: the woman owns the tan watch case containing all three watches, and the men own the black leather bag.
+
+17-20s: Oblique aerial view preserves the geography. The woman carries the tan watch case back to the amber convertible on the left, places it on the passenger seat, starts the car, and drives away along the road. The two men remain beside the sage coupe on the right, with the black leather bag resting on its hood. No additional containers appear.
+
+20-24s: The blond man unzips the black leather bag while the dark-haired man stands beside him. A clear overhead close-up reveals only empty lining inside, with no payment. The white-gloved hand freezes above the empty bag. Cut to the blond man’s face: his gaze moves from the empty bag toward the departing amber convertible and his jaw tightens. Cut to the dark-haired driver turning toward the road. Drop the music for one full beat, leaving only the zipper, desert wind, and distant engine.
+
+24-25s: Rapid causal montage. The black bag snaps shut. The sage coupe door closes. The dark-haired driver turns the ignition. The blond buyer enters the passenger seat. The rear tires throw dust from the shoulder. Bring the low end and percussion back with greater weight.
+
+25-27s: Begin the pursuit. A low car-mounted shot rides beside the sage coupe’s front fender as it launches onto the road. Hard cut to the amber convertible’s rear tire and tail. The sage coupe appears inside the convertible’s rear-view mirror and gradually grows larger. Preserve the vehicle relationship: amber convertible leading, sage coupe pursuing.
+
+27-28.5s: High telephoto aerial view of both cars racing along a straight desert highway. The amber convertible remains ahead while the sage coupe follows. The camera dives forward as the road and desert scrub move backward. Maintain a clear distance and avoid collision.
+
+28.5-30s: Hard cut to the amber convertible’s passenger seat. The tan case is open, holding all three watches upright against oxblood lining in their original fitted compartments. The Bugatti Chiron Tourbillon, orange-strap skeleton watch, and green skeleton watch remain individually recognizable and faithful to their respective product images. Keep the watches stable relative to the camera while the desert outside becomes a horizontal speed blur. Sunlight passes across each watch’s rose-gold-toned case, dial details, gemstones, exposed mechanical components, and strap materials. Finally reveal the authentic visible brand markings. End with one clean bass impact and the engine receding.
+
+Use a saturated 1970s reversal-film look: dense cyan-blue sky, ochre sand, oxblood clothing, sage and caramel-amber bodywork, deep blacks, warm highlights, fine 35mm grain, restrained halation, and subtle physical camera weave. Build the camera language from low car-window framing, rear-view reflections, vertical aerial views, glove-and-clasp macros, a stable exchange master shot, vehicle vibration, and fast lateral pans.
+
+Use a newly composed desert crime-fashion score at roughly 128 BPM. Keep dry percussion and restrained low end during the meeting and inspection, tighten the arrangement after the exchange, remove the beat for one moment at the empty-bag reveal, then return with heavier low end, denser percussion, and rising engine revs for the chase. No dialogue, voiceover, or subtitles. Keep all visible product wording in English.`,
+    },
+  },
+
+  // 工作流自回复串：首帧 Nano Banana https://x.com/abxxai/status/2109625071857983943 （附图=首帧）；视频 Seedance https://x.com/abxxai/status/2109625085242048924 。推广链 https://x.com/abxxai/status/2109625052404814319 。同作者站内 abxxai-riviera-fashion-campaign（2100600840373535136）不是本片。查重别名：伊凡雷帝 / Ivan the Terrible / Repin
+  {
+    id: "abxxai-ivan-terrible-painting-journey-seedance-2-5",
+    title: "一镜穿进《伊凡雷帝杀子》油画 · 列宾名画内部游走",
+    subtitle: "X · @abxxai · Nano Banana 2.1 + Seedance 2.5 · Pollo AI · 20秒 · 3:4",
+    description:
+      "一镜穿进列宾《伊凡杀子》油画内部，从权杖微距游到父亲惊恐脸再退回。",
+    video: "/tutorials/abxxai-ivan-terrible-painting-journey-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/abxxai-ivan-terrible-painting-journey-seedance-2-5/poster.jpg",
+    duration: "20秒",
+    durationSec: 20,
+    styleLabel: "油画穿行",
+    shots: 7,
+    references: 1,
+    model: "Nano Banana 2.1（首帧）+ Seedance 2.5（视频）；主帖写在 @itsPolloAI / Pollo AI 里做",
+    style: "列宾写实油画质感 · 单镜头连续穿行 · 微距细节到情绪特写再退回首帧构图",
+    aspectRatio: "3/4",
+    sourceUrl: "https://x.com/abxxai/status/2109625040551755934",
+    sourceAuthor: "@abxxai",
+    sourcePlatform: "X",
+    sourceImpressions: 22987,
+    sourceStats: { asOf: "2026-10-12", likes: 203, reposts: 26, bookmarks: 186 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "落入房间越过权杖 → 沿粉袍上移 → 绕肩 → 父亲惊恐脸特写 → 绕背后退出 → 回到开场构图",
+      opening: "第 0 秒就是整幅画的构图：黑暗宫室里，穿黑袍的伊凡雷帝抱着穿粉袍倒下的儿子，前景地毯上横着权杖，画面带 Pollo AI 水印。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 0.5–7s 镜头飞进房间，掠过前景权杖的微距，再贴着儿子绿金靴子和粉绸袍向上走。", at: 0.5 },
+        { title: "高潮", text: "约 10–14s 绕过儿子肩膀，贴近父亲瞪大的眼睛和痛苦表情，停约一秒让情绪站住。", at: 10 },
+        { title: "结尾怎么收", text: "约 14–20s 从父亲肩侧绕出、升高后退，权杖重新进前景，最后对齐开场同构图。", at: 14 },
+      ],
+      copyThis: "先用文生图把列宾原画做成竖幅首帧，再把这张图同时当首帧和尾帧喂给图生视频，提示词写死「一条不打断的相机路径」和人物姿势不变，只靠运镜揭示隐藏面。",
+      approx: true,
+    },
+    tags: [
+      "20秒",
+      "3:4 竖屏",
+      "Seedance 2.5",
+      "Nano Banana 2.1",
+      "首帧=尾帧",
+      "Pollo AI 水印",
+      "历史油画",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 Nano Banana 2.1 做首帧图",
+        description:
+          "作者自回复给了首帧文生图提示词（见参考 1 卡片里的完整提示词）：按列宾 1885《伊凡雷帝杀子》忠实复刻，竖构图。作者写的是 nanobanana 2,1（Nano Banana 2.1）。生成结果他公开了，就是参考 1。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "主帖：Nano Banana 2.1 + Seedance 2.5，在 Pollo AI（@itsPolloAI）里做。提示词写 9:16，成片实际约 1080×1440（3:4），页面按 3:4 显示。成片约 20.1 秒，角上有 Pollo AI 水印。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴 Seedance 视频提示词并上传首帧",
+        description:
+          "把下方完整视频提示词粘贴进 Seedance 2.5，上传参考 1 作为 [@02-First-Frame.png]（首帧=尾帧）。提示词按秒写一条连续路径：权杖→靴子粉袍→环抱手臂→父亲脸→绕肩退出→回到原构图；强调人物姿势不动、只靠运镜。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "abxxai-ivan-first-frame",
+        number: "1",
+        title: "[@02-First-Frame.png] · 首帧油画复刻",
+        subtitle: "视频提示词 [@02-First-Frame.png] = 这张图（作者自回复原图，Nano Banana 2.1 生成）；同时当首帧和尾帧",
+        image: "/tutorials/abxxai-ivan-terrible-painting-journey-seedance-2-5/refs/01-first-frame.jpg",
+        prompt: "Recreate Ilya Repin’s 1885 masterpiece \"Ivan the Terrible and His Son Ivan on 16 November 1581\" as an extremely faithful, museum-quality 19th-century Russian realist oil painting.\nASPECT RATIO: 9:16, vertical composition.\nSCENE: Inside a dark, richly decorated 16th-century Russian royal chamber, Ivan the Terrible, an elderly, thin, pale Russian tsar with a receding gray hairline, wild gray beard, deeply wrinkled face and enormous terrified, bloodshot eyes, kneels on an ornate Persian carpet. He wears a long, plain black robe.\nIvan desperately embraces his dying adult son, Tsarevich Ivan Ivanovich, holding his head firmly with one hand and wrapping the other arm around his body. The father's expression is one of absolute horror, disbelief, guilt and overwhelming grief. His eyes are wide open, staring outward in shock.\nThe son, a young bearded Russian prince with pale skin, wears a luxurious pale pink silk brocade robe embroidered with delicate gold floral patterns, dark blue trousers and ornate green-and-gold embroidered boots. He sits collapsing on the carpet, his legs stretched diagonally toward the bottom left. His head leans against his father's chest, his eyes half closed, his expression weak and sorrowful. Fresh blood is visible on his right temple, forehead and the father's hand.\nCOMPOSITION: Match the original Ilya Repin painting precisely. The two figures occupy the middle-lower portion of the composition, surrounded by a large, shadowy, richly decorated chamber. The father is positioned behind and slightly left of the son, hunched protectively over him. The son's pink silk clothing creates the central visual highlight.\nBACKGROUND: Dark Russian palace interior with ornate architectural carvings, reddish-brown and black diamond-patterned wall coverings, faded religious paintings in dark gilt frames, and a narrow Gothic-style stained-glass window high on the left admitting a thin beam of pale daylight. Rich historical architectural details fade into deep shadows.\nFOREGROUND: The entire lower half of the composition is dominated by overlapping antique Persian carpets in deep crimson red, burnt orange, ochre, muted gold, navy blue and ivory, with intricate floral and geometric patterns. A long black wooden royal staff lies diagonally across the carpet near the bottom. A fallen carved wooden throne or footstool with red fabric rests on the left side.\nLIGHTING: Dramatic, dim natural illumination from the upper left. Gentle warm highlights illuminate the son's pink silk robe, the father's terrified face and the blood on the son's head. The surrounding room remains in deep, atmospheric brown-black shadows.\nPAINTING TECHNIQUE: Authentic 19th-century Russian realist oil painting on canvas, highly detailed painterly brushwork, subtle visible canvas grain, thick textured oil pigment, masterful chiaroscuro, earthy pigments, realistic anatomy, emotionally powerful historical realism, museum-quality fine art.\nCOLOR PALETTE: Deep burgundy, crimson red, dark umber, antique gold, muted copper, dusty rose pink, charcoal black, warm ochre and dark olive.\nCAMERA AND FRAMING: Wide vertical full-scene composition, viewpoint slightly above the seated figures, exact historical painting proportions, no cropping of figures, no modern camera effects.\nIMPORTANT: Preserve the original painting's dramatic composition, historical clothing, facial expressions, background architecture, elaborate carpets, fallen objects, lighting, painterly textures and emotional intensity. Make the image look like a faithful photographic reproduction of the original oil painting, not a modern reinterpretation.\nNEGATIVE PROMPT: No CGI, no 3D render, no cartoon, no anime, no digital illustration appearance, no modern clothing, no modern furniture, no exaggerated fantasy elements, no cinematic movie still, no glossy skin, no smooth AI textures, no text, no watermark, no additional people.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–0.5s 整幅构图定住：伊凡抱着儿子，前景权杖，宫室阴影，Pollo AI 水印。" },
+      { number: 2, description: "0.5–3s 镜头冲进房间，俯向地毯上的权杖，微距掠过杖头装饰。" },
+      { number: 3, description: "3–7s 贴着儿子绿金靴子外侧上升，沿粉绸袍褶做微距滑行。" },
+      { number: 4, description: "7–10s 跟着父亲黑袖环抱的手臂，绕过儿子右肩外侧。" },
+      { number: 5, description: "10–14s 贴近父亲惊恐的眼睛与皱眉，侧面缓移约一秒。" },
+      { number: 6, description: "14–17s 从父亲肩侧绕出升高，露出两人全身与倾倒的椅凳。" },
+      { number: 7, description: "17–20s 平滑退回开场轴线，权杖回到前景，对齐首帧构图。" },
+    ],
+    constraints:
+      "素材对应：[@02-First-Frame.png] = 参考 1（作者公开的 Nano Banana 首帧原图）。首帧=尾帧；一条连续运镜、人物姿势不变；保留油画笔触与克制血迹。和成片的差别：提示词写 9:16，成片是约 3:4（1080×1440）；成片四角有 Pollo AI 水印（提示词没写）；成片太阳穴血迹比提示词「reduced blood」更明显。风险：画面是著名历史画作「杀子」场景，有血迹与强烈悲痛；列宾原作 1885 年（作者 1930 年去世）多数地区已公有领域，但成片是 AI 复刻并带平台水印。",
+    video_prompt: {
+      title: "Seedance 2.5 · 20s 油画内部连续穿行",
+      subtitle: "作者自回复完整英文视频提示词 · Seedance 2.5 · [@02-First-Frame.png] = 参考 1（作者公开首帧）",
+      content: `[@02-First-Frame.png]  Create a 20-second vertical 9:16 image-to-video film, using the supplied image as the exact first frame and matching final frame. One continuous camera journey through the room, with macro detail, a gradual emotional reveal and a seamless return.
+
+Build the supplied scene as complete 3D geometry while preserving Repin’s painted appearance. The carpet lies across the floor, the furnishings occupy space, and the two figures have fully dimensional bodies beneath their clothing. As the camera passes around them, reveal the sides and rear surfaces hidden from the opening viewpoint. Retain the original brushwork, earthy colours, subdued lighting and expressive faces.
+
+IDENTIFY AND PRESERVE THE FIGURES
+
+Ivan is the older man behind and to the left of his son. He has thinning grey-dark hair, a dark beard, wide horrified eyes and a heavy black robe. He holds his adult son against his chest.
+
+The son reclines diagonally across Ivan’s lap, with his legs extending toward the lower-left foreground. He wears a pale rose-pink patterned robe, dark trousers and decorated green-gold boots. His head rests beneath Ivan’s face. One hand rests on the carpet at the right of his body; his other hand is raised against Ivan’s chest.
+
+Ivan’s upper hand supports the son’s head, while his lower arm wraps across the son’s torso. Keep their exact poses and the weight of the embrace. Preserve the reduced blood visible in the reference: a small subdued trace near the hairline, mostly concealed by Ivan’s supporting hand.
+
+0–3 SECONDS — ENTER OVER THE FALLEN STAFF
+
+Begin on the exact supplied image for approximately half a second.
+
+The camera then flies forward into the room and descends toward the staff lying across the foreground carpet. Approach its decorated end near the lower centre-left of the image and pass just above it.
+
+At macro distance, reveal the staff’s cylindrical thickness, worn metal decoration and small irregularities in its painted surface. Its nearest edge passes softly out of focus beneath the lens as the camera continues toward the son’s boots.
+
+The carpet has physical relief: woven pile, raised folds and compressed areas beneath the objects. The staff falls behind the moving camera, the boots grow larger ahead, and the two figures remain fixed farther into the room. This changing perspective establishes real depth immediately.
+
+3–7 SECONDS — TRAVEL ALONG THE SON’S CLOTHING
+
+Rise smoothly past the outside of the son’s decorated green-gold boot. Reveal its curved upper surface, worn sole edge and the existing ornamentation as the camera passes.
+
+Continue diagonally upward along his legs toward his torso, following the pale pink robe. Travel macro-close to the fabric without touching it. Show the existing painted pattern, satin highlights and overlapping folds as dimensional surfaces: raised crests catch the light, their undersides remain shaded, and deeper folds recede behind them.
+
+The nearest fabric passes beside the lens while Ivan’s black-clad arm becomes clearer ahead. Maintain forward momentum throughout this ascent.
+
+7–10 SECONDS — FOLLOW THE SUPPORTING ARM INTO THE EMBRACE
+
+Reach Ivan’s lower hand where it holds the son’s torso. Curve smoothly along the outside of Ivan’s black sleeve, revealing the thickness of the fabric, compressed folds at the elbow and the hand’s natural grip against the pink robe.
+
+Continue toward the son’s shoulder on the right side of the opening image. Pass around its outer edge and rise slightly, revealing the sleeve’s side and the back of the shoulder that were hidden from the original viewpoint.
+
+The pink shoulder crosses the near foreground, Ivan’s arm remains behind it, and the dark furnishings shift more slowly in the background. These layers separate through camera perspective while remaining connected within the same room.
+
+Keep the son’s head supported beneath Ivan’s upper hand. The camera travels along the shoulder and clothing, maintaining the concealed view of the injury.
+
+10–14 SECONDS — REVEAL IVAN’S FACE
+
+From just outside and above the son’s shoulder, curve inward and upward toward Ivan.
+
+The son’s head passes through the lower foreground, gradually revealing Ivan’s face above it. Approach a close view of his wide eyes, furrowed brow and devastated expression. Preserve the distinctive face from the reference.
+
+Reveal the three-dimensional shape of his brow, cheekbones and nose, the painted strands of his beard and the subtle surface texture around his eyes. His face remains integrated with his neck, shoulders and body.
+
+Ease the camera’s speed for approximately one second while continuing a gentle sideways drift. Let the horror and grief register. Ivan remains motionless, holding his son; the emotional impact comes from discovering the expression already present in the painting.
+
+14–17 SECONDS — PASS AROUND IVAN’S SHOULDER
+
+Continue past the outside of Ivan’s face and over his black-clad shoulder, taking a shallow orbit around the outer side of his body.
+
+Reveal the rear folds of his robe and the thickness of his shoulder beneath the fabric. The shoulder passes close beside the lens, briefly becoming a soft foreground shape. Beyond it, the son remains visibly supported across Ivan’s lap.
+
+As the camera clears the shoulder, begin a broad rising retreat around the pair. The room opens up again: the overturned chair remains on the left, the dark furnishings remain on the right, and the carpet extends continuously beneath them.
+
+17–20 SECONDS — RETURN TO THE ORIGINAL COMPOSITION
+
+Continue the retreat in one smooth arc, curving back onto the opening camera axis.
+
+Reveal both complete figures again. The son’s boots return to the lower-left of the composition, his resting hand remains on the carpet to the right, and Ivan’s face settles above his son’s head.
+
+The fallen staff re-enters the foreground as the camera pulls farther back. Align the carpet patterns, overturned chair, wall decoration and right-side furnishings with their positions in the supplied image.
+
+Gently decelerate into the exact opening viewpoint, lens perspective, framing and lighting. End on a frame matching the supplied image so the next repetition flows directly into the opening movement.
+
+CAMERA, STYLE AND CONTINUITY
+
+Use one uninterrupted physical camera path: over the staff, along the son’s boots and pink robe, around his shoulder, up to Ivan’s face, past Ivan’s shoulder and back to the original wide composition.
+
+Use natural motion blur and shallow depth of field during macro passes. Transfer focus smoothly to the next detail along the route. Foreground objects pass the lens because the camera moves around them; neither figure changes pose or moves toward the camera.
+
+Maintain one coherent room with stable geometry and consistent lighting. Hidden surfaces belong to the existing figures, clothing and furnishings and match their visible design. Preserve the painting’s expressive texture at every scale.
+
+Keep the blood reduced exactly as in the reference. The camera’s close details are fabric, metalwork, carpet and Ivan’s expression.
+
+No cuts, crash zooms, dissolves, flat canvas flyovers, wall-relief effects, scene morphing, additional people, new props or extra clothing decoration.`,
+    },
+  },
+
 ];
 
 export const tutorials: Tutorial[] = rawTutorials.map((t) => withMedia(t));
