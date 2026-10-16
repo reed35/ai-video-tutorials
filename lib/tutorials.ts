@@ -3,6 +3,328 @@ import { withMedia } from "./media";
 
 // 数据里照常写站内路径 "/tutorials/<id>/..."；导出时由 withMedia 统一指向 R2（见 lib/media.ts）。
 const rawTutorials: Tutorial[] = [
+  // 查重别名(同模板另一条 take 未收录)：Filmera be7efdab GEN 1「Stakeout · 30s」take0/T1 e95b6ed8（seedance-2.5-draft · 480p DRAFT）；本条用 take1/T2 c5c6f1bd（seedance-2.5 · 1080p，用户红框星标成片）。模板未署名创作者（creator=null）；分享链接 ref 参数已去掉。本页成片是 Takes 里的 T2（1080P），不是 T1 DRAFT。
+  {
+    id: "filmera-mulberry-boys-stakeout-seedance-2-5",
+    title: "Mulberry Boys · 一镜盯梢 · Seedance 2.5 1080P",
+    subtitle: "Filmera 模板 · Seedance 2.5 + GPT Image 2.5 · 30秒 · 16:9 · T2 1080P",
+    description:
+      "1910年代纽约一镜到底：匪徒上楼接头，镜头坠车发现警探一直在盯梢。",
+    video: "/tutorials/filmera-mulberry-boys-stakeout-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/filmera-mulberry-boys-stakeout-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "一镜到底",
+    shots: 9,
+    references: 7,
+    model: "Seedance 2.5（bytedance/seedance-2.5，1080p，生成音频）+ GPT Image 2.5 Flare（7 张参考图）",
+    style: "1910s 纽约犯罪片 · 一镜到底起重机/穿越窗 · 原片直出低对比 · 无配乐只有街声",
+    aspectRatio: "16/9",
+    sourceUrl: "https://www.filmera.ai/templates/be7efdab-cef2-4cfe-9eea-b71266c49bf1",
+    sourceAuthor: "Filmera 模板（未署名创作者）",
+    sourcePlatform: "Filmera",
+    sourceImpressions: 2063,
+    sourceStats: { asOf: "2026-10-16" },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "高机位跟 LEO 过街进门 → 爬墙穿窗进屋 → 接头「安排好了」→ SAL 望街无异常 → 镜头坠回同一辆车发现警探盯梢",
+      opening: "第 0 秒高机位俯视鹅卵石街，镜头缓降跟着戴扁帽长大衣的 LEO 穿过人群，擦过路边黑汽车，拐进杂货店旁窄门道。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 4–14s 镜头爬上铁皮雨棚与砖墙穿进二楼开窗，SAL 开门，LEO 出现在门廊背光处。", at: 4 },
+        { title: "反转", text: "约 14–21s LEO 摘手套说「It's all arranged.」；SAL 点头后走到窗边扫视街沿，以为无异常。", at: 14 },
+        { title: "结尾怎么收", text: "约 21–30s 镜头退出窗外坠回街面，绕进同一辆黑汽车侧窗：DOYLE 放下报纸说「Go.」，KEANE 握紧方向盘。", at: 21 },
+      ],
+      copyThis: "一镜盯梢的关键是「同车首尾锁」：开头 LEO 擦过路边车时车里已有两个黑影，结尾镜头坠回同一辆车揭晓便衣；中间穿窗进出写成同一条连续机位，不要切点。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 一镜到底",
+      "16:9 横屏",
+      "Seedance 2.5 1080P",
+      "7 张参考图",
+      "1910s 匪帮盯梢",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：用 GPT Image 2.5 出 7 张参考图",
+        description:
+          "素材对应：@Image1=LEO、@Image2=SAL、@Image3=DOYLE、@Image4=KEANE、@Image5=STREET、@Image6=ROOM、@Image7=AUTO（与 T2 snapshot.attachments 顺序一致）。角色/场景/道具都用 openai/gpt-image-2.5-flare、16:9（设置 1536×1024）。设定图写奶油底多视角英文标签；环境板写 VIEW 标签并强调无行人。每张完整出图提示词见下方参考图。注意：本页用的是 T2（1080P）那套附件图，不要用错 take。",
+      },
+      {
+        number: 2,
+        title: "第二步：选 Seedance 2.5 · 1080p · 16:9 · 30s · 开声音",
+        description:
+          "上传上面 7 张参考图。模板 GEN 1「Stakeout · 30s」同一提示词有两条 take：T1 是 seedance-2.5-draft · 480p DRAFT（未收录）；本页成片是 Takes 里的 T2（1080P / 星标）——设置 seedance-2.5 · 1080p · 16:9 · 30s · generateAudio=true · cameraFixed=false。源文件 1920×1080 HEVC 24fps 约 30.04s，一镜到底无水印。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整视频提示词",
+        description:
+          "把模板 GEN 1 提示词整段粘贴。结构：开头用 @Image1–7 逐个绑定人物/街景/房间/汽车外观 → 一段剧情概述 → 按秒写机位（0–4 跟街、4–8 爬墙、8–14 进屋接头、14–21 望街、21–30 坠车揭晓）→ Constraints 写死一镜到底、同车首尾、口型同步、无配乐无字幕。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "filmera-mulberry-image1-leo",
+        number: "1",
+        title: "@Image1 · 01·LEO 匪帮副手设定图",
+        subtitle: "@Image1 = 参考 1 01·LEO：灰人字呢扁帽、炭黑长大衣、海军细条纹三件套、酒红领带、黑手套；模板节点「01 · LEO」，openai/gpt-image-2.5-flare 16:9（设置 1536×1024，CDN 出图约 2048×1152）；视频提示词里绑定 LEO",
+        image: "/tutorials/filmera-mulberry-boys-stakeout-seedance-2-5/refs/01-LEO.jpg",
+        prompt: "Character-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME man, fully consistent. Layout: top-left a title block reading \"LEO\" with a short info list (NAME: LEO / AGE: 40 / ROLE: gang lieutenant, New York 1910s / PERSONALITY: quiet, controlled, dangerous); below it a COLOR PALETTE section with labeled swatch rows for HAIR, EYES, SKIN, OUTFIT; center: a large FRONT VIEW bust portrait and a SIDE VIEW bust portrait, labeled, both with the cap on; right: a full-body FRONT VIEW walking toward the camera and a full-body BACK VIEW, labeled; bottom: a DETAILS strip of four captioned close-up panels (the herringbone flat cap, the pinstripe waistcoat and the watch chain, the collar and the burgundy tie, the black gloves and the shoes). The character: a lean man of about forty with a long narrow face, high cheekbones, dark eyes under straight dark brows, a long straight nose, short dark hair, clean-shaven, a long lean build; a grey herringbone tweed flat cap; a long black wool overcoat reaching below the knees, worn open; a dark navy pinstripe three-piece suit with a matching waistcoat and a thin gold watch chain; a white shirt with a stiff collar; a dark burgundy tie; black leather gloves; black leather shoes. Every panel is a REAL candid photograph of the same person — soft natural daylight, slightly low contrast and low saturation, natural skin, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-mulberry-image2-sal",
+        number: "2",
+        title: "@Image2 · 02·SAL 望风小弟设定图",
+        subtitle: "@Image2 = 参考 2 02·SAL：橄榄棕灯芯绒夹克、灰亨利衫、皮吊带、工靴；模板节点「02 · SAL」，openai/gpt-image-2.5-flare 16:9；视频提示词里绑定 SAL",
+        image: "/tutorials/filmera-mulberry-boys-stakeout-seedance-2-5/refs/02-SAL.jpg",
+        prompt: "Character-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME man, fully consistent. Layout: top-left a title block reading \"SAL\" with a short info list (NAME: SAL / AGE: 30 / ROLE: LEO's lookout, New York 1910s / PERSONALITY: wary, restless, loyal); below it a COLOR PALETTE section with labeled swatch rows for HAIR, EYES, SKIN, OUTFIT; center: a large FRONT VIEW bust portrait and a SIDE VIEW bust portrait, labeled; right: a full-body FRONT VIEW and a full-body BACK VIEW, labeled; bottom: a DETAILS strip of four captioned close-up panels (the corduroy jacket collar and pocket, the henley buttons and the leather braces, the cuffed trousers and the boots, the hands). The character: a slim man of about thirty with a narrow angular face, light stubble, dark watchful eyes, short dark hair swept back; a worn olive-brown corduroy chore jacket worn open; a grey cotton henley shirt with a button placket; brown leather braces with metal clips; dark grey wool trousers with turned-up cuffs; brown leather work boots. Every panel is a REAL candid photograph of the same person — soft natural daylight, slightly low contrast and low saturation, natural skin, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-mulberry-image3-doyle",
+        number: "3",
+        title: "@Image3 · 03·DOYLE 便衣警探设定图",
+        subtitle: "@Image3 = 参考 3 03·DOYLE：黑圆顶礼帽、浓密八字胡、棕人字呢大衣、手持报纸；模板节点「03 · DOYLE」，openai/gpt-image-2.5-flare 16:9（出图提示词以另一张 DOYLE 车窗参考为 @Image1 输入）；视频提示词里绑定 DOYLE",
+        image: "/tutorials/filmera-mulberry-boys-stakeout-seedance-2-5/refs/03-DOYLE.jpg",
+        prompt: "@Image1 is DOYLE: take the face, the handlebar moustache, the build, the black bowler hat and the brown herringbone tweed overcoat exactly as in @Image1; ignore the car window and the light of @Image1. Character-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME man, fully consistent. Layout: top-left a title block reading \"DOYLE\" with a short info list (NAME: DOYLE / AGE: 50 / ROLE: plain-clothes police detective, New York 1910s / PERSONALITY: patient, sharp, unhurried); below it a COLOR PALETTE section with labeled swatch rows for HAIR, EYES, SKIN, OUTFIT; center: a large FRONT VIEW bust portrait and a SIDE VIEW bust portrait, labeled; right: a full-body FRONT VIEW and a SITTING pose holding an open folded newspaper, labeled; bottom: a DETAILS strip of four captioned close-up panels (the bowler hat, the moustache and face, the folded newspaper in the hands, the tweed overcoat lapel). The character: the man of @Image1, the same face, the same heavy build; a black felt bowler hat; a thick dark handlebar moustache; a brown herringbone tweed overcoat with wide lapels over a dark suit, a white shirt and a dark tie. Every panel is a REAL candid photograph of the same person — soft natural daylight, slightly low contrast and low saturation, natural skin, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-mulberry-image4-keane",
+        number: "4",
+        title: "@Image4 · 04·KEANE 便衣司机设定图",
+        subtitle: "@Image4 = 参考 4 04·KEANE：深灰扁帽、黑大衣立领、棕驾驶手套；模板节点「04 · KEANE」，openai/gpt-image-2.5-flare 16:9；视频提示词里绑定 KEANE",
+        image: "/tutorials/filmera-mulberry-boys-stakeout-seedance-2-5/refs/04-KEANE.jpg",
+        prompt: "Character-design reference sheet layout on a clean light cream background, neatly organized like an official character model sheet, all views showing the SAME man, fully consistent. Layout: top-left a title block reading \"KEANE\" with a short info list (NAME: KEANE / AGE: 28 / ROLE: plain-clothes police driver, New York 1910s / PERSONALITY: tense, eager, alert); below it a COLOR PALETTE section with labeled swatch rows for HAIR, EYES, SKIN, OUTFIT; center: a large FRONT VIEW bust portrait and a SIDE VIEW bust portrait, labeled; right: a full-body FRONT VIEW and a SITTING pose with both hands on a steering wheel, labeled; bottom: a DETAILS strip of four captioned close-up panels (the flat cap, the tan leather driving gloves, the coat collar, the face). The character: a young man of about twenty-eight with a narrow clean-shaven face, pale skin, light eyes and short brown hair; a dark grey wool flat cap; a black wool coat with the collar turned up; tan leather driving gloves. Every panel is a REAL candid photograph of the same person — soft natural daylight, slightly low contrast and low saturation, natural skin, no retouching, unedited photo look. Clean minimal English labels only, no other text.",
+      },
+      {
+        id: "filmera-mulberry-image5-street",
+        number: "5",
+        title: "@Image5 · 05·STREET 街景环境板",
+        subtitle: "@Image5 = 参考 5 05·STREET：四视图（HIGH/FACADE/CURB/GROUND）同一 1910s 移民街、杂货店与二楼开窗；模板节点「05 · STREET」，openai/gpt-image-2.5-flare 16:9；视频提示词里绑定 STREET",
+        image: "/tutorials/filmera-mulberry-boys-stakeout-seedance-2-5/refs/05-STREET.jpg",
+        prompt: "@Image1 is STREET: take the street exactly as in @Image1, the cobblestone roadway, the red-brick tenements with black iron fire escapes, the white laundry hanging on lines across the street, the produce stalls and crates along the left sidewalk, the shop fronts and awnings on both sides, the overcast light and the colours; ignore the people, the horses, the wagons and the car of @Image1. Environment reference sheet: four labeled photographs in a 2x2 grid of the SAME street, no people, no vehicles, no animals, no text except four small view labels. VIEW A \"HIGH\": the same high view as @Image1, looking down the length of the cobbled street from a third-floor height, the laundry lines, the fire escapes, the stalls and the shop fronts, hazy buildings at the far end. VIEW B \"FACADE\": a straight-on view of one tenement front on the left side of the street at street level and the floor above: a small grocery shop with wooden crates of produce on the pavement under a rusted corrugated tin awning, a narrow dark doorway beside the shop, and directly above the awning a weathered brick wall with a tall double casement window on the second floor standing wide open, a dim room visible inside. VIEW C \"CURB\": eye level on the left sidewalk looking along the curb in front of the grocery, the empty spot at the curb where a car parks, the cobbles and the far side of the street. VIEW D \"GROUND\": low at the curb, the worn wet cobbles, a gutter, scattered straw and cabbage leaves. Shop signs are hand-painted and weathered, softly out of focus. A REAL photograph set, natural overcast daylight, low contrast and low saturation, flat muted natural colours, no colour grade, no retouching.",
+      },
+      {
+        id: "filmera-mulberry-image6-room",
+        number: "6",
+        title: "@Image6 · 06·ROOM 二楼房间环境板",
+        subtitle: "@Image6 = 参考 6 06·ROOM：三视图同一租屋（窗内/门口/窗框），花壁纸、铁炉、白搪瓷杯；模板节点「06 · ROOM」，openai/gpt-image-2.5-flare 16:9；视频提示词里绑定 ROOM",
+        image: "/tutorials/filmera-mulberry-boys-stakeout-seedance-2-5/refs/06-ROOM.jpg",
+        prompt: "Environment reference sheet: three labeled photographs of the SAME small second-floor tenement room in New York in the 1910s, with faded floral wallpaper, a dark wooden door frame and a doorway to a pale hallway, a small wooden table with white enamel mugs and an enamel pitcher, a black cast-iron pot-belly stove with a kettle, lace curtains and a worn wooden floor, no people, no text except three small view labels. VIEW A \"FROM WINDOW\" (large, top): from just inside the open window between the lace curtains looking across the room to the open doorway in the back wall, the table on the left, the stove on the right. VIEW B \"FROM DOOR\": the reverse view from the doorway toward the tall double casement window standing wide open, grey daylight pouring through the lace curtains across the floor and the table, the brick wall of the building opposite visible outside. VIEW C \"WINDOW\": a close view of the open casement window, the peeling painted frame, the stone sill, the cobbled street two floors below. A REAL photograph set, natural window light only, deep soft shadows, low contrast and low saturation, flat muted natural colours, no colour grade, no retouching.",
+      },
+      {
+        id: "filmera-mulberry-image7-auto",
+        number: "7",
+        title: "@Image7 · 07·AUTO 1910s 黑汽车道具板",
+        subtitle: "@Image7 = 参考 7 07·AUTO：四面板（FRONT/THREE-QUARTER/SIDE/INTERIOR）同一黑色封闭式汽车、侧窗摇下；模板节点「07 · AUTO」，openai/gpt-image-2.5-flare 16:9；视频提示词里绑定 AUTO，片头片尾同一辆车",
+        image: "/tutorials/filmera-mulberry-boys-stakeout-seedance-2-5/refs/07-AUTO.jpg",
+        prompt: "Prop reference sheet on a clean light cream background, four panels of the SAME car, fully consistent, each labeled: FRONT, THREE-QUARTER, SIDE, INTERIOR. The car: a black 1910s closed motor car with a tall upright black closed body, a black roof, a brass radiator, round headlamps, black mudguards, spoked wheels and running boards. The SIDE view with the near front side window wound fully down; the INTERIOR view through that open side window showing the dark front bench seats, the wood-trimmed dashboard and the thin steering wheel on the right side. No badge, no logo, no lettering on the car. Every panel is a REAL photograph, soft natural daylight, low contrast and low saturation, natural colour, no retouching. Clean minimal English labels only, no other text.",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–4s 高机位缓降跟 LEO 穿鹅卵石街人群，擦过路边黑汽车（车内两个黑影），拐进杂货店旁窄门道。" },
+      { number: 2, description: "4–8s 镜头上爬过锈铁皮雨棚与风化砖墙，对向二楼敞开的竖铰链窗，街声渐弱。" },
+      { number: 3, description: "8–11s 镜头径直穿进开窗进入昏暗房间：木桌搪瓷杯、铸铁炉、褪色壁纸、后墙木门。" },
+      { number: 4, description: "11–14s SAL 穿过地板开门，楼梯间灰光洒进；背光的 LEO 立在门廊，跨进房间一步。" },
+      { number: 5, description: "14–17s 门口双人中景：LEO 一根根摘黑手套，低声说「It's all arranged.」；SAL 短促点头吞咽。" },
+      { number: 6, description: "17–21s SAL 走向窗边中景，手扶窗框扫视街沿，下颌紧绷，再回头看门口的 LEO。" },
+      { number: 7, description: "21–24s 镜头倒退出窗外，快速坠下砖墙与雨棚回到街面，街声涌回。" },
+      { number: 8, description: "24–27s 不停镜，镜头低扫过汽车引擎盖与挡风玻璃，绕到侧窗（已摇下）。" },
+      { number: 9, description: "27–30s 车窗侧双人景：近座 DOYLE 放下报纸抬眼看对面二楼开窗，轻声说「Go.」；远座 KEANE 双手握紧方向盘。" },
+    ],
+    constraints:
+      "本页成片是模板 Takes 里的 T2（1080P / 星标），不是 T1 DRAFT 480p。素材对应：@Image1=LEO、@Image2=SAL、@Image3=DOYLE、@Image4=KEANE、@Image5=STREET、@Image6=ROOM、@Image7=AUTO（T2 attachments 顺序）。30 秒一镜到底零切点；片头片尾同一辆 AUTO 停在杂货店外同一位置；英文对白口型同步；情绪只写动作（摘手套、吞咽、扫视、握紧方向盘）；无配乐，只有街声/门轴/报纸；无字幕水印。设置：Seedance 2.5 · 1080p · 16:9 · 30s · audio on。",
+    video_prompt: {
+      title: "Mulberry Boys · Stakeout · GEN 1 · T2 1080P",
+      subtitle: "Seedance 2.5 · 16:9 · 30s · 1080p · 生成音频 · Filmera 模板页原文 · @Image1=LEO … @Image7=AUTO（本页成片=T2，非 T1 DRAFT）",
+      content: `@Image1 is LEO: take the face, the hair, the build, the grey herringbone flat cap, the charcoal-black overcoat, the navy chalk-stripe three-piece suit with the gold watch chain, the club collar, the burgundy tie, the black gloves and the black boots; ignore the sheet layout and the labels. @Image2 is SAL: take the face, the hair, the build, the olive-brown wool jacket, the grey collarless shirt, the braces and the boots. @Image3 is DOYLE: take the face, the moustache, the bowler hat and the brown tweed overcoat. @Image4 is KEANE: take the face, the driving cap, the black coat and the tan driving gloves. @Image5 is STREET: VIEW A is the street from above, VIEW B the tenement front with the grocery, the tin awning, the doorway and the open second-floor window, VIEW C the curb across the road, VIEW D the ground; ignore the view labels. @Image6 is ROOM, the second-floor room behind the open window; ignore the view labels. @Image7 is AUTO, the black 1910s motor car; ignore the labels.
+
+A 1910s New York crime film in one continuous camera move: LEO walks down a busy immigrant street past a parked black motor car, goes into a tenement, and tells SAL upstairs that everything is arranged; SAL checks the street from the window and sees nothing wrong, and the camera drops out of the window and down into that same parked car, where two plain-clothes detectives, DOYLE and KEANE, have been watching all along.
+
+0-4s: A high crane shot looking down STREET VIEW A, the camera descending slowly while following LEO walking along the cobbled street through the crowd, hands in the overcoat pockets, the flat cap low over the eyes; LEO passes close beside AUTO parked at the curb outside the grocery, two dark shapes sitting still inside behind the glass, and turns into the narrow doorway beside the grocery under the rusted tin awning. Around LEO the street is crowded and ordinary: women in long dark skirts and shawls haggling at the produce stalls, a boy pushing a handcart of cabbages, a man carrying a crate on one shoulder, a horse-drawn delivery wagon creaking past, men in flat caps and worn coats talking in doorways, laundry hanging between the fire escapes above. <horse hooves and cart wheels on cobbles> <vendors calling> <a distant streetcar bell>
+
+4-8s: The camera keeps rising in one smooth move, gliding up over the rusted tin awning and up the weathered brick wall of STREET VIEW B toward the open second-floor window, the street noise falling away below. <the street murmur fading>
+
+8-11s: The camera pushes straight in through the open double casement window into ROOM, the dim room opening up ahead: the wooden table with the enamel mug and the kettle, the cast-iron stove, the faded wallpaper, the wooden door in the back wall. <the creak of old floorboards> <muffled footsteps climbing the stairs>
+
+11-14s: The camera keeps drifting slowly across ROOM toward the back wall: SAL crosses the floorboards to the wooden door and pulls the door open, and grey daylight from the stairwell spills across the floor; LEO stands in the doorway, back-lit, still in the cap and the open overcoat, and steps one pace into ROOM. <a door latch> <the door creaking open>
+
+14-17s: The camera settles on a wide two-shot at the door: LEO pulls off one black glove finger by finger, looks SAL in the eye and says in a low, flat voice, "It's all arranged." SAL gives one short nod and swallows. 
+
+17-21s: SAL turns and walks toward the window, toward the camera, into a medium shot beside the open casement; SAL puts one hand on the window frame, leans a little and looks down at the street, eyes moving left and right along the curb, the jaw tight, then glances back over the shoulder at LEO in the doorway behind. <SAL's slow breath> <the street murmur rising again through the window>
+
+21-24s: The camera pulls backward out through the open window in one smooth move and drops fast down the brick wall, over the rusted tin awning, down to the street, the street noise rushing back. <a rush of air> <the full noise of the street>
+
+24-27s: Still moving without a cut, the camera sweeps low over the bonnet of AUTO at the curb, past the flat windshield and round to the near side of the car, closing in on the wound-down front side window. <the tick of the cooling engine>
+
+27-30s: A side two-shot through the open window of AUTO: DOYLE sits in the near seat behind a spread newspaper, lowers the newspaper, folds the newspaper once on the knee and lifts the eyes to the open window two floors up across the street; KEANE sits behind the wheel in the far seat, both gloved hands tight on the wheel. DOYLE says quietly, without looking away from the window, "Go." KEANE's hands tighten on the wheel. <newspaper rustling> <DOYLE's low voice>
+
+Constraints: one continuous camera move with no cuts, a smooth gliding crane and drone-like camera throughout, passing through the open window in and out as part of the same move. AUTO is the same car in the first and the last seconds, parked at the same spot outside the grocery. LEO keeps the face, cap and clothes of @Image1, SAL of @Image2, DOYLE of @Image3, KEANE of @Image4 in every shot; STREET keeps the look of @Image5, ROOM of @Image6, AUTO of @Image7. Dialogue in English with natural New York voices, lips in sync. Acting: natural, believable human behaviour, real breathing and blinking, small involuntary movements and micro-expressions, every feeling shown only through the face and the body. Photoreal, raw unedited RED camera footage straight off the sensor: natural overcast daylight and window light only, low contrast and low saturation, flat muted natural colours with no colour grade, fine sensor noise, soft highlight roll-off. Shop signs only as weathered painted lettering softly out of focus. No music. No subtitles, no watermark.
+`,
+    },
+  },
+  // 查重别名(提示词自回复帖): https://x.com/techhalla/status/2110686999736664106 （自回复附 3 张图：女人角色表 / 男人角色表 / Magnific 首帧；Twitter 附图顺序是首帧→女人→男人，与提示词 <<<img1/2/3>>> 编号不一致）。成片根帖 https://x.com/techhalla/status/2110686996049883550。同作者已有 techhalla-canyon-skate-parachute-hovercraft-seedance-2-5（峡谷滑板跳崖降落伞→气垫船），故事不同：本条是张家界观景台游客手机拍，远景石柱 BBQ→抱黑猫跳瀑布→伞面 TECHHALLA；不是那条峡谷 POV。
+  {
+    id: "techhalla-zhangjiajie-bbq-parachute-seedance-2-5",
+    title: "张家界观景台远景 BBQ · 抱猫跳瀑布开 TECHHALLA 伞",
+    subtitle: "X · @techhalla · Magnific One + Seedance 2.5 · 30秒 · 3:4",
+    description:
+      "游客手机竖拍张家界观景台：数码变焦推到石柱顶的 BBQ 派对，男人喝 Jack Daniel's、抱黑猫跳下瀑布，很晚才开出写着 TECHHALLA 的降落伞。",
+    video: "/tutorials/techhalla-zhangjiajie-bbq-parachute-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/techhalla-zhangjiajie-bbq-parachute-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "游客手机拍",
+    shots: 8,
+    references: 3,
+    model: "Magnific One（首帧）+ Seedance 2.5（视频），原帖自回复写明；角色表原帖未写生成模型",
+    style: "业余游客竖屏手机 · 一镜到底数码变焦 · 雾天张家界观景台 · thrash metal 音箱 + 游客尖叫",
+    aspectRatio: "3/4",
+    sourceUrl: "https://x.com/techhalla/status/2110686996049883550",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 9228,
+    sourceStats: { asOf: "2026-10-15", likes: 218, reposts: 15, bookmarks: 113 },
+    formats: ["手机POV·Vlog", "电影叙事"],
+    hook: {
+      structure: "观景台远景钩子 → 变焦推 BBQ → 喝威士忌 → 黑猫 → 抱猫跳崖 → 自由落体 → TECHHALLA 伞",
+      opening: "第 0 秒就是雾天张家界石栏观景台：游客举手机，对面石柱顶飘着一缕 BBQ 烟。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1–15s 数码变焦砸向石柱顶：烤乳猪、Jack Daniel's、充气泳池里的女人、房车、黑猫从车底钻出坐到红背包旁。", at: 1 },
+        { title: "反转", text: "约 15–23s 男人背上红包、抱起黑猫，冲向瀑布边纵身跳下；游客尖叫。", at: 15 },
+        { title: "结尾怎么收", text: "约 23–30s 人影沿瀑布自由落体很久，很晚才在低处炸开写着 TECHHALLA 的伞，观景台爆发欢呼。", at: 23 },
+      ],
+      copyThis: "先用 Magnific（或同类）把「观景台看对面石柱顶冒烟」做成首帧 <<<img3>>>，再把男女角色表 <<<img1>>>/<<<img2>>> 和首帧一起喂给 Seedance；时间轴写死「先推 BBQ → 抱猫跳 → 很晚才开伞」，业余数码变焦伪影会自己长出来。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "3:4 竖屏",
+      "Magnific One",
+      "Seedance 2.5",
+      "张家界观景台",
+      "3 张公开参考图",
+      "一镜到底数码变焦",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备 3 张参考图（角色表 + Magnific 首帧）",
+        description:
+          "素材对应：<<<img1>>> = 参考 1 女人角色四联表（脸/身材/长波浪发）；<<<img2>>> = 参考 2 redneck 男人角色四联表（脸/身材/长发胡须/黑卫衣牛仔裤靴）；<<<img3>>> = 参考 3 Magnific One 首帧（视频必须从它开场）。三张都是作者自回复公开的原图（Twitter ?name=orig），不是成片截帧。注意：自回复附图顺序是 首帧→女人→男人，与提示词 <<<imgN>>> 编号不一致，跟做时按提示词编号上传。首帧可用下方 Magnific 提示词自己重出；两张角色表原帖未附生成提示词。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明：首帧用 Magnific One，视频用 Seedance 2.5（把首帧 + 角色表一起喂进去）。成片 900×1200（3:4 竖屏）、24fps、约 30.1 秒，一镜到底、只有现场声与远处 thrash metal，没有硬切。成片中间有半透明 TECHHALLA 水印（作者自品牌）。和提示词时间轴基本一致：观景台→推 BBQ→递酒→黑猫→抱猫跳→自由落体→很晚开伞。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴 Seedance 视频提示词并上传 3 张 <<<img>>>",
+        description:
+          "把下方完整 Seedance 英文提示词整段粘贴，同时按名字上传：<<<img1>>>=参考1 女人表，<<<img2>>>=参考2 男人表，<<<img3>>>=参考3 首帧。结构是：[STYLE + CAMERA + ATMOSPHERE] → [IMAGE REFERENCES] → [TIMELINE] 0–30s → [AUDIO] → [STYLE & QUALITY BOOSTERS]。关键约束：业余手机竖拍、数码变焦推拉、同一对男女 + 一只黑猫 + 一只红背包贯穿、伞面要能读出 TECHHALLA。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "techhalla-zjj-img1-woman",
+        number: "1",
+        title: "<<<img1>>> · 女人角色四联表",
+        subtitle: "提示词 <<<img1>>> = 女人脸/身材/长波浪发；作者自回复第 2 张原图（HUqqn8gWkAAQW6w，2688×1520）；不是成片截帧",
+        image: "/tutorials/techhalla-zhangjiajie-bbq-parachute-seedance-2-5/refs/01-woman-sheet.jpg",
+        prompt: "原帖未附提示词：作者只公开了这张女人角色设定四联表，没有附生成它的提示词。成片里她坐在石柱顶充气泳池中，穿白 T 牛仔裤靴。",
+      },
+      {
+        id: "techhalla-zjj-img2-man",
+        number: "2",
+        title: "<<<img2>>> · redneck 男人角色四联表",
+        subtitle: "提示词 <<<img2>>> = 男人脸/身材/长发胡须/黑卫衣牛仔裤靴；作者自回复第 3 张原图（HUqqn8cXMAECRKY，1344×752）；不是成片截帧",
+        image: "/tutorials/techhalla-zhangjiajie-bbq-parachute-seedance-2-5/refs/02-man-sheet.jpg",
+        prompt: "原帖未附提示词：作者只公开了这张 redneck 男人角色设定四联表，没有附生成它的提示词。成片里他烤乳猪、喝 Jack Daniel's、背红包抱黑猫跳瀑布。",
+      },
+      {
+        id: "techhalla-zjj-img3-start",
+        number: "3",
+        title: "<<<img3>>> · Magnific One 首帧（观景台）",
+        subtitle: "提示词 <<<img3>>> = 视频第一帧；作者自回复第 1 张原图（HUqqn8aXgAAgeqA，768×1024）；Magnific One 生成，下方为作者公开的英文图片提示词原文",
+        image: "/tutorials/techhalla-zhangjiajie-bbq-parachute-seedance-2-5/refs/03-start-frame.jpg",
+        prompt: `A crowded stone viewing platform in Zhangjiajie, China, on a misty late morning, with towering sandstone pillars rising on every side so the viewer feels surrounded by them. In the foreground, a handful of adult tourists lean on the stone railing: a man in a red windbreaker seen from behind holding up his phone, a woman in a beige sun hat and grey fleece in profile, a backpack strap and a shoulder cut by the edges. Far in the background, across the gorge, stands one massive vertical pillar crowned with pine trees, and a thin white waterfall pours from its flat summit straight down its right side into the mist. On top of that pillar, near the lip of the waterfall, a tiny family of adults is barely visible around a small barbecue grill, with a thin plume of grey smoke rising from that point into the pale sky. The family and the smoke are very small and distant, readable only as a few colored dots and a soft grey thread.
+
+COMPOSITION:
+Shot type: wide, distant
+Angle: eye level from behind the railing crowd, looking across the gorge, horizon tilted a few degrees
+Placement: tourists filling the lower third and the left edge, the waterfall pillar in the upper center-right, the smoking summit in the upper right third, other pillars fading into haze on both sides
+Look-room: right
+Foreground: mild occlusion, a blurred tourist shoulder and a raised phone at the bottom left edge
+Crop: handheld, slightly imperfect.
+
+CAMERA PACK:
+Body: ordinary mid-range Android phone, held vertically at eye level over the heads of the crowd
+Lens / zoom: 3x digital zoom from the main lens, the glass slightly smudged
+Aperture or phone mode: normal photo mode, auto exposure set for the bright sky
+Focus: the far pillar and waterfall reasonably sharp, the nearest tourists a little soft
+Film or sensor: small-sensor phone texture, heavy processing from the digital zoom, JPEG compression
+
+LIGHT:
+Source: diffuse overcast daylight through mountain mist
+Quality: soft, low contrast, with haze layering the distant pillars
+Color temperature: cool neutral daylight, slightly blue-grey in the mist
+Shadows follow that source.
+
+PHOTOGRAPHIC CHARACTER:
+Fabric weave, seams and creases on the windbreaker and fleece.
+Grain or sensor texture that matches the camera pack.
+Candid stance, catalog-unaware.
+Highlights a little hot, the sky and mist clipped to plain white, the shaded rock faces blocked up and noisy.
+Smeary watercolor detail from the digital zoom on the far pines, the tiny family and the smoke.
+Crunchy phone sharpening halos along the pillar edges and the railing, blocky compression in the mist and the waterfall.
+Slight overall softness from the raised, shaky grip.
+Plain, slightly green-shifted color straight out of the phone, an ordinary snapshot by a friend.`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1s 正好是 <<<img3>>>：雾天张家界石栏观景台，游客指着对面石柱顶的烟，用中文议论。" },
+      { number: 2, description: "1–4s 数码变焦猛推到石柱顶：烤乳猪、Jack Daniel's 桌、音箱、房车、崖边充气泳池里的女人、红背包。" },
+      { number: 3, description: "4–9s 再推近：男人喝一口 Jack Daniel's，走到泳池递给她，她猛灌一口还给他。" },
+      { number: 4, description: "9–11s 拉回中景，重新框住整个营地。" },
+      { number: 5, description: "11–15s 摇到房车：黑猫钻出、跑到红背包旁坐下喵一声，镜头慢慢推猫。" },
+      { number: 6, description: "15–20s 男人蹲下背上红包系带，猫跳进怀里被他抱紧。" },
+      { number: 7, description: "20–23s 抱猫冲向瀑布边纵身跳下，游客倒抽气尖叫。" },
+      { number: 8, description: "23–30s 沿瀑布自由落体很久（还没开伞），很晚在低处炸开写着 TECHHALLA 的伞，观景台欢呼鼓掌举手机。" },
+    ],
+    constraints:
+      "素材对应：<<<img1>>>=参考 1 女人角色表；<<<img2>>>=参考 2 男人角色表；<<<img3>>>=参考 3 Magnific 首帧。三张均为作者自回复公开原图（Twitter orig），不是成片截帧。自回复附图顺序是首帧→女人→男人，与 <<<imgN>>> 编号不一致。同作者峡谷滑板降落伞条（techhalla-canyon-skate-parachute-hovercraft-seedance-2-5）不是本片：那条是科罗拉多峡谷 GoPro 滑板 POV→橙白伞→气垫船；本片是张家界游客机位→石柱 BBQ→抱黑猫跳瀑布→TECHHALLA 伞。和成片的差别：成片带半透明 TECHHALLA 水印；提示词时间轴与成片基本一致。风险：画面与提示词含 Jack Daniel's 酒瓶商标；伞面与水印写 TECHHALLA（作者自品牌）；含饮酒与跳崖表演（虚构成片，勿模仿）。",
+    video_prompt: {
+      title: "Seedance 2.5 · 张家界 BBQ 跳伞 · 一镜到底",
+      subtitle: "作者自回复英文完整视频提示词 · Magnific One 首帧 + Seedance 2.5 · <<<img1>>>=参考1 · <<<img2>>>=参考2 · <<<img3>>>=参考3",
+      content: `[STYLE + CAMERA + ATMOSPHERE]
+Real amateur phone video, one continuous 30-second take with no cuts, filmed by a tourist at a crowded Zhangjiajie viewpoint. Handheld vertical phone, shaky grip, restless digital zoom that keeps pushing in and pulling back, smeary detail, compression and autofocus hunting. Misty overcast daylight, cool grey haze.
+
+[IMAGE REFERENCES]
+<<<img3>>>  is the first frame: the video starts exactly on it. <<<img2>>> provides the redneck man's face, build, long hair, beard, black hoodie, jeans and boots.<<<img1>>> provides the woman's face, build and long wavy hair.
+
+[TIMELINE]
+0-1s: Exactly <<<img3>>> . Tourists murmur in Mandarin Chinese and point at the smoke on the far summit, surprised.
+1-4s: [Crash digital zoom to medium] The phone zooms hard across the gorge and settles on the whole summit beside the waterfall lip, grainy and soft. Clearly visible: a campfire with a whole suckling pig on a spit, a white plastic table with a Jack Daniel's bottle, a cooler and paper plates, a big loudspeaker, a dusty RV parked behind, an inflatable kiddie pool at the cliff edge with the woman sitting in it, and a red backpack on the rock between them.
+4-9s: [Second push-in, tight] The zoom jumps closer: the man by the pig drinks from the Jack Daniel's bottle, walks to the kiddie pool and hands her the bottle. She takes a long swig and hands it back.
+9-11s: [Zoom out to medium] The phone pulls back to reframe the whole camp.
+11-15s: [Pan to the RV, slow push-in] A black cat comes out from under the RV, trots to the red backpack, sits beside it facing the man and meows. The zoom creeps in on the cat.
+15-20s: [Ease out to medium] The man walks over, crouches, slips on the red backpack and tightens the straps. The cat jumps into his arms and he hugs it to his chest.
+20-23s: [Quick half zoom out, chasing him] He runs toward the waterfall edge holding the cat and leaps off beside the falling water. Tourists gasp and scream.
+23-28s: [Long free fall, jerky zoom out in steps] No parachute yet. He drops fast and keeps dropping along the waterfall, a tiny figure shrinking against the cliff, the phone fumbling back out step by step while the tourists scream louder and louder.
+28-30s: [Wide] Very late, low on the cliff, the parachute bursts open, the word "TECHHALLA" readable on the canopy from afar. The tourists erupt in relieved cheers, laughter and applause, phones raised.
+
+[AUDIO]
+Mandarin Chinese tourist chatter, gasps, rising screams during the fall and relieved cheers close to the phone, wind and waterfall rush. Thrash metal plays from the loudspeaker the whole time, distant and tinny, louder while zoomed in. A small meow. No subtitles.
+
+[STYLE & QUALITY BOOSTERS]
+Photorealistic phone footage, real digital zoom artifacts, coherent physics, the same two people, one cat and one red backpack throughout, stable identities, natural motion blur, parachute fabric snapping open realistically.`,
+    },
+  },
   // 成片根帖 https://x.com/abxxai/status/2102400759082205432 ；用户点名帖 https://x.com/abxxai/status/2102400864443056577（step5/SHOOT1）；作者自回复：工具说明 2102400771023335477 → step1 脸表+图 2102400791734895009 → step2 全身表+图 2102400808734331388 → step3 房间+图 2102400825033458135 → step4 衣物4图 2102400850438320505 → SHOOT1 2102400864443056577 → SHOOT2 2102400878443675994 → SHOOT3 2102400894222635239 → 收尾 2102400906155405503。同作者站内 abxxai-riviera-fashion-campaign、abxxai-ivan-terrible-painting-journey-seedance-2-5、abxxai-zara-vest-ugc-tryon-seedance-2-5 不是本片；held abxxai-mediterranean-archway-handheld-seedance-2-5、abxxai-yacht-cabin-handheld-seedance-2-5、abxxai-cliff-wedding-swan-dive-late-seedance-2-5、abxxai-2106036747260039561 不是本片；已上线 diplomeme-desert-watch-exchange-seedance-2-5 不是本片。查重别名：北欧公寓三套试穿 / sage dress / Mary Jane / ZARA UGC try-on scandi
   {
     id: "abxxai-scandi-apartment-3outfit-tryon-seedance-2-5",
