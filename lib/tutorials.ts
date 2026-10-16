@@ -3,6 +3,267 @@ import { withMedia } from "./media";
 
 // 数据里照常写站内路径 "/tutorials/<id>/..."；导出时由 withMedia 统一指向 R2（见 lib/media.ts）。
 const rawTutorials: Tutorial[] = [
+  // Tunee 工作区成片（底层模型未写明）。人群参考与成片含多家 AI 品牌 logo 头像——商标/品牌形象风险，站内教程展示须提示；商用/二次传播自行评估。
+  {
+    id: "tunee-shiba-apple-crowd-replace",
+    title: "柴犬 Tunee 咬苹果 · 人群替换回群",
+    subtitle: "Tunee · 参考视频动作替换 + 人群/舞台参考图 · 约22秒 · 16:9",
+    description:
+      "近景白衣橙白柴犬咬红苹果后不屑转身回人群：用参考视频的蓝人偶动作/灯光/氛围，把居中蓝衣换成 Tunee 狗角色，背景人群换成 AI logo 头群像，舞台用灰黑 LED 台阶。",
+    video: "/tutorials/tunee-shiba-apple-crowd-replace/demo-web.mp4",
+    poster: "/tutorials/tunee-shiba-apple-crowd-replace/poster.jpg",
+    duration: "约22秒",
+    durationSec: 22,
+    styleLabel: "角色替换·人群替换",
+    shots: 2,
+    references: 4,
+    model: "Tunee（工作区成片；具体底层模型原帖未写明）",
+    style: "近景虚化→全景清晰 · 白衣柴犬咬苹果不屑回群 · AI logo 头人群 · 灰黑舞台 · 仅环境声",
+    aspectRatio: "16/9",
+    sourceUrl: "https://www.tunee.ai/zh-CN/workspace/KDWgQBvFCH4DFVcZ3t?page=pa-KDWgQBvFCH4DFVcZ3t",
+    sourceAuthor: "Tunee 工作区",
+    sourcePlatform: "Tunee",
+    formats: ["角色表演", "变装·换装"],
+    hook: {
+      structure: "虚化近景咬苹果 → 转身不屑 → 拉清晰全景回人群",
+      opening: "第 0 秒近景：白衣橙白柴犬居中咬红苹果，背景 AI logo 头人群虚化。",
+      openingAt: 0,
+      beats: [
+        { title: "咬苹果近景", text: "约 0–8s 虚化背景近景，Tunee 咬红苹果，表情冷静/不屑。", at: 0 },
+        { title: "转身回群", text: "约 8–16s 不屑转身走回人群，镜头逐渐拉远对焦。", at: 8 },
+        { title: "全景站定", text: "约 16–22s 清晰全景：舞台上 AI logo 头黑西装群，中央白衣柴犬。", at: 16 },
+      ],
+      copyThis:
+        "上传参考视频（蓝人偶动作源）+ 四张参考：角色设定、人群图、蓝人思考静帧、舞台图；提示词要求模仿白衣居中角色咬苹果后不屑回群，人群站位/表情/舞步对齐参考视频，蓝衣居中换成 Tunee，背景=舞台，只要环境声不要 BGM。",
+      approx: true,
+    },
+    tags: [
+      "约22秒",
+      "16:9",
+      "Tunee",
+      "柴犬角色替换",
+      "人群替换",
+      "参考视频驱动",
+      "仅环境声",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备参考视频（蓝人偶动作/灯光/氛围源）",
+        description:
+          "素材对应：提示词中的 Reference Video / 插图C = refs/ref-video-web.mp4（原 vid-1p7mb.mp4，HEVC 已转 H.264 可播，preload=metadata）。画面：亮蓝平滑人偶居中叼烟/思考，身后白人群偶虚化。成片用它的角色动作、灯光与氛围；镜头从虚化近景推到清晰全景。步骤内放可播 mp4，不要只放截帧。",
+        video: "/tutorials/tunee-shiba-apple-crowd-replace/refs/ref-video-web.mp4",
+        poster: "/tutorials/tunee-shiba-apple-crowd-replace/refs/ref-video-poster.jpg",
+        aspectRatio: "16/9",
+      },
+      {
+        number: 2,
+        title: "第二步：准备 4 张参考图（角色 / 人群 / 蓝人静帧 / 舞台）",
+        description:
+          "素材对应：插图A+D=@图1 refs/01-character-sheet.png（白衣狗多视角设定；来自提示词截图缩略图，非原图高清）；插图B=@图2 refs/02-crowd-ai-logos.jpg（AI logo 头黑西装群，中央白西装柴犬）；插图C 静帧=@图3 refs/03-blue-pose.jpg（蓝人思考姿势；原帖未另附图，用参考视频约 1.5s 帧）；插图E=@图4 refs/04-stage.jpg（灰黑 LED 台阶舞台）。提示词里每个参考都要上页并写对应。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴英文提示词并挂上 @图 / 参考视频",
+        description:
+          "把下方完整英文提示词粘贴进 Tunee（或同类参考视频+多图工作流）。对应：@图1=角色设定，@图2=人群，参考视频=蓝人偶片，@图3=蓝人思考静帧（可与参考视频二选一强调姿势），@图4=舞台。核心：咬苹果后不屑转身回群；人群站位/表情/动作/舞步/节奏对齐参考视频；蓝衣居中→Tunee；背景=舞台；只要环境声不要 BGM；禁止领带/西装/校服入镜（提示词负面，保留原文）。OCR 噪声 crBased / fowd 已保留，页面可标疑似截断/错词。",
+      },
+      {
+        number: 4,
+        title: "第四步：对照成片检查",
+        description:
+          "页面成片 demo-web.mp4 = 用户上传 vid-18mb.mp4（1280×720·约22s）压到 web。核对：近景咬苹果→转身回群；人群为 AI logo 头而非白人群偶；居中为白衣柴犬而非蓝人；舞台为灰黑台阶；无 BGM。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "tunee-shiba-character-sheet",
+        number: "1",
+        title: "@图1 · 白衣狗角色多视角设定（插图A/D）",
+        subtitle: "提示词插图A与插图D同类；来自提示词截图缩略图放大，非原图高清；用户本批未另发设定图",
+        image: "/tutorials/tunee-shiba-apple-crowd-replace/refs/01-character-sheet.png",
+        prompt: "原帖未公开高清角色设定原图；本文件从 Tunee 提示词截图内嵌缩略图裁出并放大，仅供跟做辨认造型（橙白柴犬·白衣多视角）。",
+      },
+      {
+        id: "tunee-shiba-crowd-ai-logos",
+        number: "2",
+        title: "@图2 · 人群参考（插图B · AI logo 头群）",
+        subtitle: "提示词插图B Crowd；用户上传高清；黑西装群 + 各色 AI 品牌 logo 头，中央白西装柴犬",
+        image: "/tutorials/tunee-shiba-apple-crowd-replace/refs/02-crowd-ai-logos.jpg",
+        prompt: "原帖未附此图的文生图提示词；用途：替换参考视频背景人群，站位/表情/动作/舞步/节奏对齐参考视频。",
+      },
+      {
+        id: "tunee-shiba-blue-pose",
+        number: "3",
+        title: "@图3 · 蓝人思考姿势静帧（插图C 补充）",
+        subtitle: "原帖未另附高清静帧；用参考视频约 1.5s 抽帧（手托颏/叼烟思考）；截图缩略图另存 extras",
+        image: "/tutorials/tunee-shiba-apple-crowd-replace/refs/03-blue-pose.jpg",
+        prompt: "原帖未另附图。本帧取自参考视频，强调居中蓝衣角色思考姿势与虚化白人群偶背景，供角色替换对齐。",
+      },
+      {
+        id: "tunee-shiba-stage",
+        number: "4",
+        title: "@图4 · 灰色舞台（插图E）",
+        subtitle: "提示词插图E Stage；用户上传；灰黑 LED 台阶舞台（stage-a/b 同 md5，去重留一张）",
+        image: "/tutorials/tunee-shiba-apple-crowd-replace/refs/04-stage.jpg",
+        prompt: "原帖未附此图的文生图提示词；用途：成片背景环境 = 该舞台。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–约8s 虚化近景：白衣橙白柴犬居中咬红苹果，AI logo 头人群在背景散景中。" },
+      { number: 2, description: "约8–16s 不屑转身，镜头后拉并对焦，走回人群方向。" },
+      { number: 3, description: "约16–22s 清晰全景：灰黑舞台上黑西装 AI logo 头群，中央白衣柴犬站定；仅环境声。" },
+    ],
+    constraints:
+      "素材对应：插图A/D=@图1 角色设定（截图缩略图，非原图）；插图B=@图2 人群；Reference Video/插图C=refs/ref-video-web.mp4 + @图3 蓝人静帧（视频抽帧）；插图E=@图4 舞台；成片=demo（vid-18mb）。成片≠参考视频。风险：人群图含多家 AI 品牌 logo 头像，商标/品牌形象风险须提示；提示词负面禁西装但人群参考本身是西装群——按原文保留。缺口：角色设定高清原图、蓝人思考姿势独立高清图均未另发。查重无冲突。只本地包，等「推」。",
+    video_prompt: {
+      title: "Tunee · 柴犬咬苹果人群替换 · 全文提示词",
+      subtitle: "按提示词截图拼接 · 保留 OCR 噪声 crBased/fowd · @图1=角色 · @图2=人群 · 参考视频+@图3=蓝人 · @图4=舞台",
+      content: `fully mimic the center-position character in the white outfit — [插图A·白衣狗角色多视角设定 / @图1 refs/01-character-sheet.png] Tunee takes a bite of the apple and turns away dismissively back into the crowd. Replace the crowd in the background of the reference video with the crowd from [插图B·人群 AI logo 头黑西装群 / @图2 refs/02-crowd-ai-logos.jpg] Crowd ; the crowd's positioning, expressions, movements, dance moves, and rhythm should exactly match the crBased on all the character movements, lighting, and atmospheric tones from the reference video [插图C·蓝人思考姿势 / 参考视频 refs/ref-video-web.mp4 + refs/03-blue-pose.jpg] Reference Video , with the camera moving from a close-up with a blurred background to a wide shot in full focus: replace the center-position character in the blue outfit from the reference video with the character from [插图D·白衣狗角色设定（与A同类） / @图1 同图] Tunee , whose expression and movements should fowd in the reference video. The background should be [插图E·灰色舞台 / @图4 refs/04-stage.jpg] Stage , with no background music — only ambient sound matching the environment. Ties, suits, and school uniforms must not appear anywhere in the frame.
+
+  [OCR notes] "match the crBased on" — likely truncated at screenshot join (crowd… / Based…). "fowd" — likely follow / flow with.
+
+  [Audio] ambient only, no BGM.
+  [Negative in-prompt] Ties, suits, and school uniforms must not appear anywhere in the frame.`,
+    },
+  },
+  // 双链：视频 2110765543288700935 + 提示词/图 2110765976350601301。② 附图题材与敦煌飞天不符（勿当角色卡）。页面 demo = ① 同片。
+  {
+    id: "jackchen1919-dunhuang-apsaras-seedance-2-5",
+    title: "敦煌复苏飞天乐舞 · Gemini 反推 + Seedance",
+    subtitle: "X · @jackchen1919 · Gemini（反推）+ Seedance 2.5 · 约24秒 · 21:9",
+    description:
+      "用 Gemini 反推提示词，Seedance 2.5 复刻敦煌石窟飞天乐舞：24 秒 10 镜，暖金岩彩、三道弯动作与披帛流体惯性。",
+    video: "/tutorials/jackchen1919-dunhuang-apsaras-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/jackchen1919-dunhuang-apsaras-seedance-2-5/poster.jpg",
+    duration: "约24秒",
+    durationSec: 24,
+    styleLabel: "敦煌飞天乐舞",
+    shots: 10,
+    references: 1,
+    model: "Gemini（作者用于反推提示词）+ Seedance 2.5（作者回复 @sandmrk 确认）",
+    style: "史诗敦煌石窟 · 暖金矿物岩彩 · 飞天乐舞群像 · 三道弯生物力学 + 披帛流体滞后",
+    aspectRatio: "21/9",
+    sourceUrl: "https://x.com/jackchen1919/status/2110765543288700935",
+    sourceAuthor: "@jackchen1919",
+    sourcePlatform: "X",
+    sourceImpressions: 4616,
+    sourceStats: { asOf: "2026-10-16", likes: 8, reposts: 0, bookmarks: 0 },
+    formats: ["角色表演"],
+    hook: {
+      structure: "破云凌空 → 合十转体 → 捻花指特写 → 五人法印 → 金铃点地 → 展臂亮相 → 鹤立三道弯 → 大殿齐舞偷切 → 高速平转 → 下腰双金环定格",
+      opening: "第 0 秒低角度微仰：领舞神女带三名伴舞破金色云海向右上凌空飞翔，七彩披帛迎风滞后翻涌。",
+      openingAt: 0,
+      beats: [
+        { title: "手部与队列", text: "约 5–9s 金镯旋腕结捻花指，再切入五人队列双捻花法印，腕丝带滞后垂落。", at: 5 },
+        { title: "鹤立与齐舞", text: "约 12–19s 宝相花曼陀罗前完成单腿鹤立三道弯，再切大殿全景五人齐舞，纱幕斜扫偷切。", at: 12 },
+        { title: "结尾怎么收", text: "约 21–24s 双足轴心高速平转爆发金箔星尘，顺势屈膝沉胯逐节下腰，挥纱划出双层金色粒子光环定格。", at: 21 },
+      ],
+      copyThis: "先贴全局 Master（中英）锁三道弯发力链与暖金岩彩色板，再按 10 镜时间码逐段生成或一次长提示；负面词重点禁瞬移、冷白皮、披帛穿模。作者自称用 Gemini 反推自 @sandmrk 引用原片后用 Seedance 2.5 出片。",
+      approx: true,
+    },
+    tags: [
+      "约24秒 · 10镜",
+      "21:9 超宽（提示词写 16:9）",
+      "Gemini 反推 + Seedance 2.5",
+      "敦煌飞天 · 暖金岩彩",
+      "三道弯生物力学",
+      "提示词长帖公开",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "输入参考视频（用户双链①；与页面成片同片）",
+        description:
+          "柳一刀指定 https://x.com/jackchen1919/status/2110765543288700935 为参考片视频。帖文写「用 Gemini 反推提示词复刻了一下大佬的视频」，并引用 @sandmrk/2110604485966110952（原作者署名 AIGC-Pottery 的敦煌飞天舞）。据帖文，本条视频实为作者 Seedance 2.5 复刻成片；包内无单独「最终成片」文件，故页面 demo = 本参考视频同片。步骤内提供可播 mp4（preload=metadata），不要只放截帧。源约 2520×1080（21:9）· 24.1s。",
+        video: "/tutorials/jackchen1919-dunhuang-apsaras-seedance-2-5/refs/ref-video-web.mp4",
+        poster: "/tutorials/jackchen1919-dunhuang-apsaras-seedance-2-5/refs/ref-video-poster.jpg",
+        aspectRatio: "21/9",
+      },
+      {
+        number: 2,
+        title: "第二步：读提示词长帖（双链②）",
+        description:
+          "完整提示词在引用帖 https://x.com/jackchen1919/status/2110765976350601301（note tweet，约 7573 字）：①全局 Master（中文总控 + 嵌入英文主提示）②逐镜 10 段（镜1–10，含时间码与运镜/发力/光影）③负面提示词。提示词全文无 @图N / <<<img>>> / @[Image] 显式引用。该帖另附 1 张竖图（见参考卡）。",
+      },
+      {
+        number: 3,
+        title: "第三步：Seedance 2.5 生成",
+        description:
+          "作者在评论回复 @sandmrk「seedance2.5啊」，并提到「H3一样用」。画幅提示词写 16:9，X 成片实为约 21:9（2520×1080）。可按 Master 约束一次出 24s，或按镜1–10 时间码分段后再拼接。色板与三道弯/披帛 0.15s 滞后为最高优先级；负面词见文末。",
+      },
+      {
+        number: 4,
+        title: "第四步：关于附图（无 @图 映射）",
+        description:
+          "双链②仅附 1 张图 refs/01-post2-attached.jpg（1536×2048）。提示词未写 @图 / <<<img>>>，无法建立编号映射。画面为暗调红金哥特王冠持剑肖像，与敦煌飞天乐舞题材明显不符——可能误贴或用途未说明；跟做时不要默认当飞天角色卡。若只要飞天一致性，需自备角色/白模参考（原帖未公开）。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "jackchen-dunhuang-post2-attached",
+        number: "1",
+        title: "双链②附图（无 @图 编号）",
+        subtitle: "原帖公开竖图 1536×2048；提示词未引用；视觉为红金哥特王冠持剑肖像，与敦煌飞天不符",
+        image: "/tutorials/jackchen1919-dunhuang-apsaras-seedance-2-5/refs/01-post2-attached.jpg",
+        prompt: "原帖未给出此图的文生图提示词；视频主提示词亦未 @ 引用本图。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0.00–2.23s 破云凌空：低角度微仰，领舞+三伴舞穿金云向右上飞，七彩披帛滞后迎风。" },
+      { number: 2, description: "2.23–5.23s 合十转体：中轴旋转甩彩虹披帛涡，沉肩合十，腰胯转至背影望穹顶圣光。" },
+      { number: 3, description: "5.23–6.33s 手部特写：金花丝镯旋腕，阶梯屈指结敦煌捻花指。" },
+      { number: 4, description: "6.33–9.27s 五人法印：盛唐金冠领舞双捻花，四伴舞礼佛印/托白莲，腕丝带滞后垂落。" },
+      { number: 5, description: "9.27–10.40s 足部近景：赤足金铃点地，镜面地板金焦散，十字星芒高光。" },
+      { number: 6, description: "10.40–12.07s 脸部停顿后展臂：鼓点抬手压腕+耳侧兰花指，米杏披帛随臂起落。" },
+      { number: 7, description: "12.07–15.87s 鹤立：宝相花曼陀罗前重心移左腿，右腿高抬三道弯，落步挽纱。" },
+      { number: 8, description: "15.87–19.20s 大殿齐舞：五人同步展袖，18.70s 暗金纱幕斜扫偷切。" },
+      { number: 9, description: "19.20–22.70s 高速平转：屈膝蓄力后双足轴心张臂连转，金箔星尘爆发。" },
+      { number: 10, description: "22.70–24.03s 下腰定格：逐节反弓下腰，挥纱划双层金色粒子光环，升格收住。" },
+    ],
+    constraints:
+      "素材对应：提示词无 @图N/<<<img>>>；refs/01 = 双链②唯一附图，但未在提示词中引用，且画面题材与敦煌飞天不符（勿当角色卡）。步骤 video = 双链①视频（用户称参考片；帖文实为作者复刻成片）；页面 demo 与该步同片。被引用灵感原片 @sandmrk/2110604485966110952（AIGC-Pottery）未按用户双链要求打入本包主素材。画幅：提示写 16:9，成片约 21:9。模型：Gemini 反推 + Seedance 2.5（评论自述）。同作者站内已有炸鸡狙击手条（故事完全不同）；站内敦煌相关为 lufzzliz 白膜群舞、pixelaigc 桌面翻车，非本片。风险：提示词含大量中英混排 OCR/生成噪声（如「曼哈顿」「阿富汗」「盆栽」等疑似错词），跟做需人工清理；附图与正文题材冲突。",
+    video_prompt: {
+      title: "敦煌复苏飞天乐舞 · Master + 10镜 + Negative",
+      subtitle: "作者双链②长帖全文 · Gemini 反推稿 · 供 Seedance 2.5 · 无 @图 映射 · 内含中文总控与嵌入英文 Master",
+      content: `1.全局总控提示词（Master Prompt）
+  中文总控提示词： 16:9 横屏史诗级敦煌复苏飞天乐舞大片（总长24秒，10镜）。【核心动作连贯性与生物力学逻辑（最高优先级）】：人物动作严格遵循中国古典舞与敦煌舞“三道弯”人体运动生物力学规律——一切动作皆由腰胯核心先启动发力，经肩、肘、腕依次柔顺至指尖末梢，眼随手动，身随步移；重心移位必将真正的支架（单腿抬头前先将重）心移至支撑腿立稳，下腰时必先屈膝沉胯稳定住下盘、再由腰椎至胸椎颈椎逐节柔韧反弓延展，严禁脊柱生跳硬折断、肢体瞬移变或关节反常扭）；丝绸披帛、水袖与长发严格遵循二阶流体中继（由手部动作连接连接） 0.15 秒甩出并顺惯性回落，严禁剥离手部凭空乱飞或穿模）；相邻镜头间保持动势方向与速度的无缝匹配咬合。【核心色彩还原（敦煌古法矿物岩彩 + 暖金圣光场景染）】：全片严禁现代冷白皮或刺眼纯白冷光；暗部为熟褐古铜焦茶色（#5D2B13），中间调为赭石土黄金（#AC7A48），高光为香槟暖米金至赤金色（#E8C08B– #F8DFC2）；人物皮肤为温润羊脂暖玉蜜桃金肌（受光#E5B89B，过渡#C17E68，暗部暖杏棕#B27F5F，配豆沙朱膘唇#BF9075）；舞衣与披帛采用被暖金光罩染的敦煌古法矿物色（朱砂红#C85232、雄黄橘、#E07A38#EBB652#7B9084#A08A6D#F5E4D5可爱黄、暖灰石青、暖灰石绿与米杏蚕丝色）。：宏伟敦煌石窟巨幅宝相花曼陀罗壁画大殿与古铜金同心圆纹镜面舞台，满殿齐膝高的翻滚檀香金雾与漫天闪烁的微米级金箔星尘；后景穹顶倾泻45°斜向粗壮暖金丁达尔体积光柱（神）射线）；中景强暖金侧逆光勾勒发丝与金冠赤金设想，近半透明蚕丝形成次表面曝光（SSS），并贯穿披帛、眉心星芒金坠与碎发，在玉皮肤与衣褶间投下随舞姿连贯摇曳的暖棕色斑驳影；前景镜面地板反射油润的水暖金焦散倒影（地板焦散）。1/2黑柔污染物（Black Pro-Mist）与圣光柔焦辉光漫射过滤器、敦煌岩彩暖金胶片LUT、十字四角星芒滤镜与大虹膜滤镜散景滤镜。8K影视级渲染，16:9横屏。中文总风格、动作物理逻辑与色彩支撑（主提示）： 16:9 widescreen, epic Dunhuang Apsaras celestial dance. Biomechanical Motion Continuity: strictly follow authentic Chinese classical Dunhuang dance kinematics — every movement initiates from the waist and core ("Three-Bends" S-curve posture), propagating smoothly through shoulders, elbows, and wrists to the fingertips; realistic center-of-gravity shifts on the supporting leg before lifting the other leg; smooth vertebra-by-vertebra spinal extension during backbends; realistic secondary fluid lag inertia where silk ribbons and hair trail 0.15s behind hand movements without clipping. Color & Atmosphere: authentic Dunhuang mineral pigments glazed in warm amber-gold light (deep umber-bronze shadows #5D2B13, ochre-gold midtones #AC7A48, champagne-gold highlights #F8DFC2, warm jade-peach skin #E5B89B, muted malachite #A08A6D, muted azurite #7B9084, cinnabar #C85232; NO cold white). Sacred cave hall with rolling knee-high sandalwood golden mist, floating micro gold-foil dust, 45-degree volumetric golden god rays, dappled ribbon shadows on warm jade skin, golden water-ripple floor caustics, Black Pro-Mist 1/2 filter, 4-point starburst glint, 8k cinematic masterpiece.
+
+  2.逐镜完整生成提示词（Shot-by-Shot Prompts，共10镜）
+  镜1（0.00s–2.23s｜破云凌空飞天｜腰背核心牵着左臂逐节前伸+披帛滞后迎风飘曳）
+  提示词：中全景低角度微仰拍，16:9 横屏幅。【精确运镜】：0.00s–1.10s 向右上快速推进跟拍破云动势，1.10s–2.23s 微后拉并向右上方平滑仰摇跟拍。【画面与动作连贯性逻辑】：敦煌石窟穹顶与右下角雕塑花栏杆、八角暖黄宫灯前，领舞神女（盘发簪硕大粉牡丹与金步摇，穿织金飞天舞衣，双肩环绕宽幅岩彩七彩渐变丝绸披帛） ）速率呈三角队列（左上、左中、右下）的三名米杏白纱飞天舞女，同时翻滚的巨型金色云海向右上凌空飞翔。发力与物理逻辑：由腰背核心微弓牵胸腔前迎，左肩自然舒展，推动左大臂、小臂至腕指尖依次向右上方平滑延伸（眼随手动，外观趋向左手指尖前方），双腿在后方微保持流线型凌空平衡；宽幅七彩披帛受迎面气流阻力自然支撑上方稍后翻涌飘曳，并在尾幅（2.00s–2.23s）随着身体微倾顺势向右下移，为下一镜旋转蓄势。【色彩与气氛光影】：熟褐暗部（#4C2916）至香槟金高光（#E4C398）；左方破云圣光渲染金云与米杏轻纱，在温润羊脂玉面庞（#E5B89B）与岩彩七彩披帛上投下的云影斑驳明暗与赤金逆光互为边，殿内檀香金雾翻涌；套用1/4黑柔梦幻辉光滤镜。
+
+  镜2（2.23s–5.23s｜顺动势配合旋转合十转体｜中轴旋转牵引披帛 → 结构沉肩收肘合十 → 腰胯带动平稳转背影）
+  提示词：中近景平视微仰，16:9 横屏。【起幅匹配与精确运镜】：2.23s 顺​​接上一镜七彩披帛方向摆动无缝匹配切入；镜头全程缓慢智能拉远并伴随垂直向上平移仰摇。【画面与动作连贯性逻辑】：领舞神女（头簪粉牡丹与金步摇）立于金色穹顶下，左下与右下背景双半身虚化伴舞双手合十烘托。三段式连贯发力逻辑：（1）2.23s–3.00s以轴线为垂直中轴匀速时针旋转，2.40s（重鼓点）由右肩带动右臂外围划圆发力，宽度七彩渐变丝绸披帛纹0.15秒在身前甩出螺旋状彩虹涡；（2）3.00s–3.67s 旋转旋转自然缓冲，双肩轻度下沉、双肘向侧肋内收，俘获从身体平衡平衡聚拢于胸前合十（披帛损失导致力后顺物理惯性缓冲回落至双肩不适）；（3）3.67s–5.23s保持胸前姿势合十不变，由腰胯支撑核心上半身平稳转体180°至背对镜头，颈椎微仰望向穹顶圣光。【色彩与气氛光影】：琥珀金基调（#AC7A46– #EECC96）；穹顶垂直倾泻多道粗壮的暖金丁达尔体积光柱，近半透明七彩披帛在暖玉皮肤、合十手工与后背投下流动的岩彩透光斑反对光影；套用1/2黑柔漫射滤镜。
+  镜3（5.23s–6.33s｜宝石金箍旋腕结捻花指特色｜前臂支撑→腕部内旋→指关节阶梯式屈曲轻拈）
+  提示词：手部特色，微仰拍，16:9横屏。【精准极运镜】：镜头随手腕内旋动作缓慢垂直向下平移跟拍（基座向下）并稍微向前推近。【画面与动作连贯性逻辑】：神女纤细腕（腕戴镶宝石的精雕镂空纯金花丝宽手镯）在虚化的赭石煌团花壁画前。精细手部解剖学发力链：前臂稳定支撑，5.23s起由手腕最向内拟弧旋腕，力顺掌骨相交至五指掌指关节依次弯曲——小指与无名指如兰花般般敦敦阶梯式微翘舒展，中指指尖内扣，于6.20s–6.30s 与大拇指指尖腹轻柔相触，稳定结结敦煌捻花指手印，全程指节弯曲柔顺连贯，绝无枕或指穿模。【色彩与气氛光影】：右上方 45°斜射暖金丁达尔强光浅指缝，赋予肌肤温润的暖玉蜜桃次表面曝光透光感（SSS #E3BD7F）与指间柔和暖棕斑驳暗影（#60361D），空中金箔星尘浮动，金镯闪烁细碎星芒；套用大虹膜散景虚化滤镜与1/4黑柔滤镜。
+
+  镜4（6.33s–9.27s｜手印接力切入·五人队列双捻花法印｜沉肩内收双臂结印+丝带滞后垂落）
+  提示词：中景正面平视逼真构图，16:9横屏。【精确运镜】：6.33s–7.60s 极轻微同轴后拉展露曼哈顿丝带，7.60s–9.27s 支架锁定聚焦手印。【画面与动作连贯性逻辑】：6.33s直接接力上一镜捻花指手印切入，领舞神女换戴盛唐高耸金冠（眉心四角星芒红宝石金坠、珍珠金流苏、纯金臂钏）。连贯发力逻辑：领舞者双肩松弛下沉，由大臂带动前臂从躯体沿圆弧路线向胸腹前柔美内收，肘稳定停于胸前，左手停于腹前，上下指尖相对结出严严柔美的双捻花指法印；同时双臂内收缓冲，缠绕在双腕的左朱红、右暖灰石青与米杏细长丝带受空气力矩力矩0.2 秒速从空中飘落垂坠；领舞者眼帘随手印落定充气微垂，胸腔保持呼吸平衡。相当于相当于四名伴舞（左一、左二、右一结礼佛印，唯独右二伴舞信心托一朵盛开的发光白莲花，伴随节拍微幅呼吸律动）。）；顶部暖金光跨越漫天金箔星尘与半透明红青丝带，在眉心金坠、鼻梁、暖玉面脸部及衣袖上投下适度的斑驳驳斥碎光斑，殿内檀香金雾缭绕；套用1/4黑柔辉光滤镜。#B27D49#E5C298
+
+  镜5（9.27s–10.40s｜赤足双层金铃点地特色｜右足后踮推重心→左足尖先触地再落平+纱裙拖拽惯性）
+  提示词：足部近景突出，低角度贴地平视，16:9横屏。【精准运镜】：镜头贴近地面沿金色镜面地板向前平滑推进并微幅增量俯摇跟拍，迎向迈步的赤足。【画面与动作连贯性逻辑】：神女暖身穿灰绿色石束口绣金纹灯笼裤（#A08A6D），外罩朱红、石绿辫子与米杏三色垂地长飘带，左脚戴双层纯金铃铛脚链，地板前景左右与右方散落三簇立体的纯金金箔花簇与金箔端点。真实的肩部重心逻辑：右脚在矩形微踮掌支架支撑并向前轻推身体重心，左脚踝面附着自然柔缓前伸，左脚赤脚严格遵循“阿富汗与前脚掌先轻柔点触镜地板→” 重心顺势前移、脚紧随后缓慢落平”的连贯步法；伴随脚守制动，双层金铃产生更强物理震颤，垂地的高层纱裙与飘带下摆顺着迈步方向在地板表面产生滞后的水波状拖拽滑动。【色彩与气氛光影】：古铜金镜面地板（#7F4A21– #E8C08B）反射出油润的水波状金焦散倒影（Floor Caustics），左舵正中金铃渐出耀眼的十字四角星芒高光（4-Point Starburst Filter）。
+
+  镜6（10.40s–12.07s｜脸部重点停顿0.2s→10.60s踩拍肩臂联动从底部划弧抬手展臂）
+  提示词：脸部极近快速特色拉至中近景，平视，16:9横屏。【精确运镜与节奏】：10.40s–10.57s 极近脸部特色造型锁定0.2秒；在10.60s（精准踩在重鼓点）拍摄急速同源后拉远并随之明显向上仰移。【画面与动作连贯性逻辑】：领舞神女头戴高耸金冠、眉心四角星芒红宝石金坠、镂空金叶长耳坠与珍珠流苏，直视镜头温微笑。上肢连贯发婉力链：在10.60s鼓点落下的瞬间，由胸轮廓提振带动双肩下展开，双大臂从画面底部沿流畅的外弧线向上警惕——右臂向右上斜方舒展延伸并轻柔压腕，左臂同步曲肘上抬至左耳侧结兰花指，在 11.70s（第二记重鼓点）稳定稳定格亮相；搭在双臂上的米杏半透明轻纱披帛先被抬头的手臂向上带起，随即受重力顺着小自然臂垂落微晃，耳畔金步摇流苏同步产生微幅惯性摆动。【色彩与气氛光影】：温润羊脂暖玉蜜桃金肤色（受光#E5B89B，终结#C17E68，暗暗杏棕#B27F5F），配微挑眼线、暖橘金眼影、晶亮卧蚕与豆沙朱膘唇（#BF9075）；暖金侧逆光跨越额前碎发与眉心部暖星芒金坠，在鼻梁、左脸投下细腻的碎发与金饰斑驳投影；套用1/4黑色柔润。
+
+  镜7（12.07s–15.87s｜宝相花曼陀罗壁画前｜紧腰划弧→左腿扎根移位重心→14.03s右腿逐节高抬鹤立→落步挽纱）
+  提示词：中景持续拉至全身中景，正面平视，16:9 横屏。【精准运镜】：镜头全程持续动态流畅拉远（Pull-Back），从半身中近景一路拉开至全身中景。【画面与动作连贯性逻辑】：背景正中央为幅陀敦煌宝相花曼罗圆轮图案（衬在领舞兄弟形成了天然的解决方案光环），左右各一个伴舞套装。四阶段严密重心与发力逻辑：（1）12.07s–13.67s腰胯先向右紧转倾侧，牵双臂挥动米杏白纱与朱红飘带在胸前划出圆润连贯的弧线；（2）13.70s–13.95s 身体重心平滑且完全地移至左腿支撑腿，左脚支架扎根地面、左膝关节直支撑，腰腹核心收紧立稳；（3）14.03s（精准踩死强拍重鼓点）在左腿支架支撑下，由右侧支架关节发力带动右肩、右膝至绷直的脚背依次向门户门户高高眩，同时双臂向马拉松高举白纱展开平衡重心，完成经典的敦煌“单腿独立/鹤立”三道弯舞姿；（4）14.67s–15.87s右腿控制重心柔缓落回地面，左手顺势高举过顶挽起白纱，右臂收于胸前旋腕结印，白纱随手臂起落自然滞后飘动。【色彩与气氛光影】：赭石金配石青石绿主题岩彩底色（#A87747– #FAE6BB），漫天金箔星尘与丁达尔斜射光束在暖玉表皮形成与白纱褶皱间流动的碎金斑驳光斑，地面檀香金雾缭绕。
+
+  镜8（15.87s–19.20s｜五人大殿全景齐舞与18.70s纱幕斜扫偷切｜群舞重心同步转换）
+  提示词：大远景/全景极构图，16:9横屏。【精确运镜与纱偷切】：15.87s同轴切出大殿全景，镜头缓慢向前推进左边上轻微摇移；至18.70s–19.20s（踩全强曲鼓点热点）一条巨大的半透明暗金色虚化前景轻纱幕从左上向右下遵循流畅平滑惯性斜掠，在19.10s–19.20s遮满镜头中心瞬间完成景别偷切。【画面与动作连贯性逻辑】：巨幅飞天与宝相花曼陀罗壁画前，左右高两盏八角长穗悬红宫灯，地面为同心圆纹古铜金镜面舞台。群舞动作逻辑：领舞与4名伴舞（共5人）保持严格的节奏与重心同步——在 16.37s（踩重鼓点）五人统一以左腿支架支撑、右腿微抬并双臂展袖亮相，随后五人同步膝沉心落步，由腰胯支撑双臂白纱高于划弧转体，水袖与飘带遵循一致的抛物线惯性飘扬。：其中赤金古殿色调（熟褐暗部#5D2B13，赭石中间调#A2612D，赤金高光#F4CE78）；大殿顶部左右投射两道粗壮的斜向暖金丁达尔强光柱，在壁画、舞者白纱与镜面地板投下长的明暗交错光影带与璀璨金色倒影，齐膝檀香金雾翻滚；套用1/2黑柔化雾滤镜。
+
+  镜9（19.20s–22.70s｜前景纱幕移开→胸前合手屈膝蓄力→21.07s双足为轴张臂高速连续平转）
+  提示词：中景平视，16:9横屏。【精确运镜】：19.20s–19.45s 前景暗金轻纱右下角滑开，镜头右下方平滑横移拍并稍前推，锁定旋转中心轴。【画面与动作连贯性逻辑】：显露领舞神女与左右双人伴舞的三人中景（底部铺满柔和金色前景仙雾）。旋转预备蓄力与离心力逻辑：（1）19.45s–20.67s 领舞者先高举右臂白纱，同时双臂向内收拢于胸前合手、双膝微屈下沉，完成旋转前符合生物力学的核心蓄力（预备拍）；（2）21.07s（精准踩在重鼓点）以双脚前脚掌为支架旋转轴心，腰腹核心猛然发力牵住双臂水平向曼哈顿张开，启动原地高速连续平转；（3）在真实旋转离心力作用下，黑色长发、米杏白纱与朱红/石青飘带滞后于肩臂呈水平扇面状向外展开飞旋，周身随旋转蒸气爆发高密度金色星尘粒子，旋转轴心垂直稳定不晃动。【色彩与气氛光影】：流金暖调（#AC7A48– #F8E0B1）；高速旋转的半透明轻纱与岩彩丝带在强暖金逆光下连贯流残影与密集闪烁的碎金斑驳斥光斑；套用强柔和光辉光滤镜（Strong Bloom）与金箔星尘爆发亮点。
+
+  镜10（22.70s–24.03s｜顺旋转末段离心力无缝下腰｜屈膝沉胯稳定重心→腰胸颈椎节逐反弓下腰+挥纱划双层金环）
+  提示词：中近景微仰拍，16:9 横屏。【精确运镜】：22.70s–23.20s 镜头随下腰动势快速推进向前并后续平移跟拍，23.20s–24.03s 转为升格慢动作极少后拉定格。【画面与动作连贯性逻辑】：22.70s 严密脊柱生物力学逻辑：（1）旋转势瞬间，双足回转微开扎稳定地面、双膝微屈下沉锁死下盘重心，盆栽前方上方顶出支架支撑；（2）由下腰椎开始，依次向上经胸椎、肩骨、颈椎至头部向西南逐节柔韧反弓延展（形成优美圆润的弓形脊柱生理轮廓，严禁腰部生硬折断或重心倾倒），肩部与黑色长发顺重力向右侧自然垂落舒展；（3）在躯干逐节反弓的同时，左手借旋转余势将米杏白纱从左下方沿头顶上方再向上方大度弧连腋伏出，在23.37s（精准踩死全曲最重拍）于空中划出高精度的双重同心圆吸气金色粒子光轨（双金光环）弧）！左后方伴舞同步形成屈膝左、右平稳膝跪地，右肩顺势高举过顶挽起白纱，与正后方红金服饰伴舞及右侧伴舞共同基座的烘托定格姿势。【色彩与气氛光影】：辉煌圣光金调（#B68651– #F9DFAF）；顶部暖金神光与空中双层发光金环交辉，在神女暖玉下颌、肩颈、金链腰饰与发丝间投下通透的赤金逆光均与碎钻般斑驳驳闪烁的星火光斑；套用1/2黑柔高光柔焦滤镜与慢动作流光指示效果。
+
+  3.负面提示词（Negative Prompt）
+
+  负面提示词：动作跳变瞬移、无实质肢体蓄力蓄生硬缺陷、无重心凭空悬浮、单腿仰视时支撑腿部晃动悬空、下腰脊柱生硬直折断、关节扭转扭曲、手部腕部僵硬无臂、披帛水袖反物理剥离手部乱飞、穿丝绸肢体肢体、跨镜头动作方向脱节、现代数码冷白皮、惨白死白高光、冷蓝调、荧光高水刺眼彩虹色、生硬的整条直线光带、呆板的条纹窗帘、无雾气干折叠直出画面、高光边缘生硬锯齿、机位固定板无运镜呼吸感、多/少指/手指模型、多手多腿、面部五官崩坏、油腻塑料皮肤、闪频伪影、低分辨率、模糊失焦。`,
+    },
+  },
   // 查重别名(同模板另一条 take 未收录)：Filmera be7efdab GEN 1「Stakeout · 30s」take0/T1 e95b6ed8（seedance-2.5-draft · 480p DRAFT）；本条用 take1/T2 c5c6f1bd（seedance-2.5 · 1080p，用户红框星标成片）。模板未署名创作者（creator=null）；分享链接 ref 参数已去掉。本页成片是 Takes 里的 T2（1080P），不是 T1 DRAFT。
   {
     id: "filmera-mulberry-boys-stakeout-seedance-2-5",
