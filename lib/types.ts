@@ -105,6 +105,7 @@ export const TUTORIAL_FORMATS = [
   "变装·换装",
   "折叠·变形",
   "字效·片头",
+  "猫",
 ] as const;
 
 export type TutorialFormat = (typeof TUTORIAL_FORMATS)[number];
