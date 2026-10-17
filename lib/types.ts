@@ -116,6 +116,7 @@ export interface SourceStats {
   likes?: number;
   reposts?: number;
   bookmarks?: number;
+  quotes?: number;
 }
 
 export interface Step {
