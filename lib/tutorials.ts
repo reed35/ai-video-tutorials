@@ -3,6 +3,626 @@ import { withMedia } from "./media";
 
 // 数据里照常写站内路径 "/tutorials/<id>/..."；导出时由 withMedia 统一指向 R2（见 lib/media.ts）。
 const rawTutorials: Tutorial[] = [
+  // 查重：站上无 status 2109875307675017668、无本 id。同作者已有 mahiraehan-grwm-morning-selfie-vlog-seedance-2-5（晨间卧室前置自拍 GRWM）——不是本片。本片=夜景经典敞篷：驾驶座白橙虎斑猫「对唱」口型 + 副驾蓝灰英短 + 白色博美。原帖主帖 Prompt 全文，无附图参考图。模型 Seedance 2.5。
+  {
+    id: "mahiraehan-convertible-cats-sing-seedance-2-5",
+    title: "夜景敞篷猫对唱 · 英短+博美副驾 · Seedance 2.5",
+    subtitle: "X · @MahiraEhan · Seedance 2.5 · 18秒 · 16:9",
+    description:
+      "夜景经典敞篷：驾驶座白橙虎斑猫面向副驾做「对唱」口型；副驾蓝灰英国短毛猫与白色小博美挤在一起、眼神期待。城市虚化 bokeh、浅景深、黑色车头反光。纯文提示词，无参考图。",
+    video: "/tutorials/mahiraehan-convertible-cats-sing-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/mahiraehan-convertible-cats-sing-seedance-2-5/poster.jpg",
+    duration: "18秒",
+    durationSec: 18,
+    styleLabel: "萌宠拟人",
+    shots: 4,
+    references: 0,
+    model: "Seedance 2.5（原帖 Made with Seedance 2.5）",
+    style: "电影感夜景 · 浅景深城市 bokeh · 萌宠拟人对唱 · 敞篷车内",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/MahiraEhan/status/2109875307675017668",
+    sourceAuthor: "@MahiraEhan",
+    sourcePlatform: "X",
+    sourceImpressions: 13070,
+    sourceStats: { asOf: "2026-10-17", likes: 231, reposts: 38, bookmarks: 27 },
+    formats: ["角色表演", "电影叙事", "猫"],
+    hook: {
+      structure: "敞篷三人全景虎斑张嘴唱 → 副驾英短特写 → 虎斑唱脸特写连环 → 末段拟人手势收",
+      opening: "第 0 秒是夜景黑色敞篷车内全景：驾驶座白橙虎斑猫张嘴「唱」、爪子近方向盘；副驾蓝灰英短与白色博美挤在一起看向驾驶座——城市灯光虚成暖色 bokeh。",
+      openingAt: 0,
+      beats: [
+        { title: "三人怎么开场", text: "约 0–5s 低机位越过黑色车头看进车厢：虎斑反复张嘴口型、闭眼/看向副驾；英短与博美盯着它，情绪跟着走。", at: 0 },
+        { title: "副驾怎么接", text: "约 5–8s 硬切英短中近景：圆脸琥珀眼，博美毛边入画；它看向驾驶座方向，像在「听歌」。", at: 5 },
+        { title: "唱脸怎么收", text: "约 8–18s 虎斑特写连环：侧脸张嘴、正脸表情、闭眼投入；约 16–18s 出现白手套托下巴 / 指太阳穴拟人手势（提示词未写，按成片）。", at: 8 },
+      ],
+      copyThis: "纯文锁三角色（white and orange tabby driver + blue-gray British Shorthair + tiny white Pomeranian）、夜景敞篷 + soft blurred bokeh city lights + shallow DOF + lip-sync singing；不要配 @图。模型用 Seedance 2.5。提示词未点名歌曲——成片音频另议。",
+      approx: true,
+    },
+    tags: [
+      "18秒 · 萌宠拟人",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "夜景敞篷",
+      "猫对唱",
+      "无参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：纯文锁定三宠与车内（无参考图）",
+        description:
+          "原帖未附角色表或参考图，提示词也没有 @图片/@视频。用英文写死：white and orange tabby（驾驶座）、fluffy blue-gray British Shorthair + tiny white Pomeranian（副驾挤一起）、classic convertible at night、bokeh city lights。不要伪造参考卡。与同作者晨间 GRWM 自拍条无关。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明 Made with Seedance 2.5（未写宿主平台）。画幅 16:9；成片约 18s、852×478。这是夜景敞篷萌宠对唱短片，不是晨间 GRWM，也不是站上武士猫/zoomies 那些猫条。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整英文提示词",
+        description:
+          "把下方英文提示词整段粘贴到 Seedance 2.5。结构：4K cinematic → 驾驶座虎斑 lip-sync 看向副驾 → 副驾英短+博美 wide emotional eyes → 城市 bokeh / 浅景深 / 车头反光 → seamless character consistency。不要上传参考图。提示词未点名歌曲；成片人声另见 NOTES 风险。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "约 0–5s 敞篷全景：虎斑驾驶座张嘴「唱」，英短+博美副驾看向它，夜景 bokeh。" },
+      { number: 2, description: "约 5–8s 硬切英短中近景（博美毛边入画），看向驾驶座方向。" },
+      { number: 3, description: "约 8–15s 虎斑特写连环：侧脸/正脸口型与表情变化，浅景深夜景光斑。" },
+      { number: 4, description: "约 16–18s 拟人手势收尾：白手套托下巴、指太阳穴（提示词未写，成片有）。" },
+    ],
+    constraints:
+      "无参考图：提示词无 @图片/@视频，references=0，勿伪造参考卡；角色靠纯文锁白橙虎斑 + 蓝灰英短 + 白博美。模型是 Seedance 2.5。与同作者 mahiraehan-grwm-morning-selfie-vlog-seedance-2-5 区分：那条是晨间卧室前置自拍 GRWM 口播，本片是夜景敞篷三宠对唱。与成片差别：约 16–18s 多出白手套/指太阳穴拟人手势；英短特写额上奶油色 blaze 略漂移；成片音频像《A Thousand Miles》歌词而提示词未点名歌曲；分发画幅 852×478 非 4K。抽帧未见水印。",
+    video_prompt: {
+      title: "Convertible Cats Sing · ~18s",
+      subtitle: "Seedance 2.5 · 16:9 · 作者主帖英文完整提示词（无参考图）",
+      content: `A high-definition 4K cinematic video of a white and orange tabby cat sitting in the driver's seat of a classic convertible car at night, looking expressively toward the passenger side while "singing" with natural lip-sync movement. In the passenger seat, a fluffy blue-gray British Shorthair cat and a tiny white Pomeranian dog sit close together, watching with wide, emotional eyes. The background features soft, blurred bokeh city lights of a downtown street. Moody, cinematic lighting reflecting off the polished black car hood. Shot with a shallow depth of field, playful yet dramatic tone, seamless character consistency across cuts.
+`,
+    },
+  },
+  // 查重：站上无 rovvmut / westminster / Roadster / status 2111322341246681200、2111322887282184249、无本 id。用户发的是提示词回帖；成片在根帖 https://x.com/rovvmut_/status/2111322341246681200 。提示词回帖 https://x.com/rovvmut_/status/2111322887282184249（无附图）。提示词引用 attached location image、@/image1、@/image2、attached interior photo —— 全部原帖未公开；禁止用成片截帧冒充喂模输入。
+  {
+    id: "rovvmut-westminster-flying-roadster-seedance-2-5",
+    title: "威斯敏斯特桥飞车 Roadster · 失重翻滚砸出租 · Seedance 2.5",
+    subtitle: "X · @rovvmut_ · Seedance 2.5 · 19秒 · 16:9",
+    description:
+      "蓝调暴雨威斯敏斯特桥堵车：白珍珠超跑（提示词称 flying Tesla Roadster）困在中间车道；司机无聊按中控圆钮 → 底部喷冷气抬起飞越双层巴士 → 舱内失重（咖啡/文件/糕点/眼镜漂浮）→ 空中翻滚 → 落回砸扁一辆黑色伦敦出租车车顶；出租司机下车仰望。10 镜分镜；参考图原帖未公开。",
+    video: "/tutorials/rovvmut-westminster-flying-roadster-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/rovvmut-westminster-flying-roadster-seedance-2-5/poster.jpg",
+    duration: "19秒",
+    durationSec: 19,
+    styleLabel: "电影叙事",
+    shots: 10,
+    references: 0,
+    model: "Seedance 2.5（根帖 + 评论区提示词；未写宿主平台）",
+    style: "电影感全画幅 · 深蓝青绿与橙色调 · 暴雨湿反光 · 灯晕与细颗粒 · 舱内冷蓝+红氛围灯",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/rovvmut_/status/2111322341246681200",
+    sourceAuthor: "@rovvmut_",
+    sourcePlatform: "X",
+    sourceImpressions: 15710,
+    sourceStats: { asOf: "2026-10-17", likes: 300, reposts: 42, bookmarks: 78, quotes: 12 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "桥上堵车广角 → 舱内无聊司机 → 按圆钮 → 喷气抬升越巴士 → 舱内失重漂浮 → 空中翻滚 → 倒飞舱内 → 俯冲回落 → 咖啡泼脸重力回 → 砸扁出租车顶+司机仰望",
+      opening: "第 0 秒街面侧广：暴雨威斯敏斯特桥堵车，白超跑卡在中间车道，尾红灯条映在湿沥青上，背后 Big Ben 暖金钟面与国会大厦剪影。",
+      openingAt: 0,
+      beats: [
+        { title: "怎么起飞", text: "约 1.5–5s 客座侧跟司机：敲方向盘、看表、鼓腮长叹，再坏笑伸手中控；约 5–6s 碳纤中控特写，手指按下圆钮亮起；约 6–7.5s 低机位街面，车底冷白气柱喷起白雾，车身抬升越过红双层巴士，Big Ben 在后。", at: 1.5 },
+        { title: "失重与翻滚", text: "约 7.5–11.5s 舱内广角：咖啡、文件、糕点、电脑包漂浮，司机睁大眼去抓杯子；约 11.5–13s 外景车在桥上空慢翻至倒置；约 13–14s 舱内倒置，安全带吊着司机，杂物回旋。", at: 7.5 },
+        { title: "怎么收", text: "约 14–15.5s 正过来俯冲回堵车喷雾；约 15.5–17s 重力回：咖啡泼脸、纸饼落膝、一张纸贴额；约 17–19s 白超跑砸上黑色伦敦出租车顶，车顶塌、挡风玻璃蛛网裂，平帽老年出租司机开门下车仰望。", at: 14 },
+      ],
+      copyThis: "提示词依赖 @/image1（车）、@/image2（司机）、attached location image、attached interior photo，但原帖全部未公开——跟做需自备同设定参考图，或改成纯文描述锁外观/角色/场景/内舱。把 Shot1–10 整段英文粘贴进 Seedance 2.5；画幅 16:9；勿用成片截帧冒充作者参考图。注意 Tesla/Roadster 商标与砸车戏风险。",
+      approx: true,
+    },
+    tags: [
+      "19秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "威斯敏斯特桥",
+      "飞车",
+      "失重舱内",
+      "10镜分镜",
+      "参考图原帖未公开",
+      "Tesla/Roadster 商标风险",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：参考图全部原帖未公开——自备或改纯文",
+        description:
+          "提示词写了 4 类输入，但根帖只有成片视频，提示词回帖无附图，作者其他回复也无公开这些图：① attached location image（威斯敏斯特桥蓝调暴雨堵车）；② @/image1（白珍珠超跑外观）；③ @/image2（司机角色表，眼镜+同款服装）；④ attached interior photo（浅灰座/深灰麂皮中控/方轭/大横屏/碳纤圆钮）。不要伪造参考卡，也不要用成片截帧冒充作者喂模输入。跟做：自己生成/拍摄对应参考图再按 @/image1 @/image2 等槽位上传，或把提示词改成纯文锁定外观与角色。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明 Seedance 2.5（未写 Ideogram 等宿主，勿臆造）。画幅 16:9；成片约 19s。这是 Shot1–10 分镜叙事片，不是一镜到底。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整英文分镜（场景总述 + Shot1–10 + Audio）",
+        description:
+          "把下方英文提示词整段粘贴。结构：开场一段锁地点/车/舱内/司机与起飞喷气视觉 → [Shot 1]–[Shot 10] 写死秒数 → Audio（雨、喇叭、圆钮咔哒、气柱轰鸣、舱内静、咖啡泼、金属砸裂，无配乐）。若自备了参考图，按平台槽位接到 location / @/image1 / @/image2 / interior；若没有，删掉「as in the attached…」「from the @/imageN」等措辞并改纯文描述。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "约 0–1.5s 街面侧广：白超跑卡在桥上堵车，雨、尾灯湿反光，Big Ben 在后，缓推。" },
+      { number: 2, description: "约 1.5–5s 客座侧跟司机：敲轭、看表、鼓腮长叹，坏笑伸向中控。" },
+      { number: 3, description: "约 5–6s 碳纤中控特写：手指按下圆钮，咔哒亮起；外卖咖啡杯虚在一侧。" },
+      { number: 4, description: "约 6–7.5s 低机位街面：车底冷白气柱喷雾抬升，越过红双层巴士，Big Ben 在后。" },
+      { number: 5, description: "约 7.5–11.5s 舱内广角失重：杯/文件/糕点/电脑包漂浮，眼镜与发丝上扬，司机睁大眼去抓杯。" },
+      { number: 6, description: "约 11.5–13s 外景高空：白超跑慢翻至倒置，气柱亮，桥与河在下。" },
+      { number: 7, description: "约 13–14s 舱内倒置：安全带吊司机，纸饼包杯回旋。" },
+      { number: 8, description: "约 14–15.5s 外景正过来俯冲回堵车，喷雾扫过湿路与尾灯阵列。" },
+      { number: 9, description: "约 15.5–17s 舱内重力回：咖啡泼脸衣、纸饼落膝、一纸贴额，司机湿透呆坐。" },
+      { number: 10, description: "约 17–19s 街面：白超跑砸扁黑色伦敦出租车顶，玻璃蛛网裂；平帽老年司机开门下车仰望。" },
+    ],
+    constraints:
+      "参考图 0：attached location image、@/image1、@/image2、attached interior photo 全部原帖未公开（根帖仅视频；提示词回帖无附图；作者其他回复无这些参考图），references=0，勿伪造参考卡，禁止用成片截帧冒充作者喂模输入。商标：Tesla / Roadster（根帖标题+提示词明文；成片车牌 ROSTR/RDSTR 类字样、轮毂中心疑似品牌标）——商用/再分发有品牌风险。砸出租车/飞车为虚构成片，勿现实模仿。Big Ben/国会大厦仅场景地标。模型只写 Seedance 2.5，勿臆造宿主。与成片差别：提示词写失重时眼镜漂离面部，成片约 9s 失重镜仍多见戴镜；切点按抽帧近似（approx）。查重注释含提示词回帖链接 https://x.com/rovvmut_/status/2111322887282184249 。",
+    video_prompt: {
+      title: "Westminster Bridge Flying Roadster · 10 shots / ~19s",
+      subtitle: "Seedance 2.5 · 16:9 · 作者提示词回帖英文完整提示词（@/image1·@/image2·location·interior 均原帖未公开）",
+      content: `A stopped traffic jam on Westminster Bridge in London at blue hour in heavy rain, as in the attached location image: black London taxis, SUVs, hatchbacks and a red double-decker bus with glowing tail lights on soaked mirror-like asphalt, Big Ben and the Houses of Parliament glowing warm gold behind against a deep teal sky, ornate street lamps along the railing. The white supercar from the @/image1, a low sharp wedge two seater in satin pearl white with a long dark tinted glass canopy, a thin white light bar across the nose and a double red light bar across the tail, sits stuck in the middle lane. Its cabin matches the attached interior photo: light grey seats, dark grey suede dashboard, a squared yoke, a big landscape touchscreen, a carbon center console with one round button next to a takeaway coffee cup with a lid, thin red ambient light strips in the doors. The driver, the person from the @/image2, looks exactly as in the sheet, in the same outfit, with glasses, sitting behind the yoke. On the passenger seat lie a black laptop bag, a stack of loose paper documents and an open paper bag of small round pastries. When the car flies, bright blue white jets of cold air shoot from nozzles under the car and throw up thick clouds of white mist and rain spray. Cinematic look throughout, shot on a full frame cinema camera, deep teal and orange color grade, wet reflections, soft bloom around lights, fine film grain. Inside the cabin the light is cool blue from the rainy windows mixed with the red glow of the door strips.
+[Shot 1] 0.0 - 1.5s Wide exterior shot from street level at the side of the bridge, slow push in on the white supercar stuck in the jam, rain falling, tail lights reflecting on the wet road, Big Ben glowing behind.
+[Shot 2] 1.5 - 5.0s Interior side profile of the driver from the passenger side, the rainy bridge and the stopped cars behind the window. The driver drums fingers on the yoke, checks a wristwatch, puffs out both cheeks and lets out a long bored sigh, then slowly turns to look straight ahead with a small mischievous grin and reaches down toward the center console.
+[Shot 3] 5.0 - 6.0s Extreme close up insert of the carbon center console, the takeaway coffee cup soft on the right, a finger pressing the round button firmly. It clicks and glows. 
+[Shot 4] 6.0 - 7.5s Exterior low angle from the wet asphalt beside the jam, the white supercar lifting straight up on its jets, an explosion of white mist and rain spray rolling over the neighboring cars, rising above the roof of the red double-decker bus with Big Ben behind. 
+[Shot 5] 7.5 - 11.5s Interior wide angle shot from the back corner of the cabin, the whole interior in frame. As the car climbs, everything inside starts floating in zero gravity: the coffee cup lifts out of its holder, the paper documents spread through the air, the round pastries drift out of the bag and spin, the laptop bag rises off the seat, the driver's glasses float off the face and the driver's hair stands straight up. The driver sits frozen with wide eyes, then grabs at the floating cup and misses.
+[Shot 6] 11.5 - 13s Exterior wide shot of the white supercar high above the bridge, doing a slow full roll in the air until it is upside down, jets glowing, Big Ben and the river below it in the rain.
+[Shot 7] 13s - 14s Interior shot, the whole cabin upside down, the driver hanging in the seatbelt, papers, pastries, the bag and the cup swirling around the cabin.
+[Shot 8] 14 - 15.5s Exterior shot of the white supercar right side up again, coming down fast toward the traffic jam on its jets, mist blasting across the wet road and the rows of tail lights.
+[Shot 9] 15.5 - 17s Interior medium shot of the driver as gravity comes back: the coffee cup bursts and coffee splashes all over the driver's face and clothes, papers and pastries drop into the driver's lap, and one sheet of paper sticks flat to the driver's forehead. The driver sits completely still, soaked, staring ahead. 
+[Shot 10] 17 - 19.5s Exterior street level shot in the rain, the white supercar landing right on top of a black London taxi in the jam, crushing the taxi's roof down, its windshield cracking into a web, glass and rain bouncing off the hood. The taxi driver, an older man in a flat cap and a dark jacket, pushes his door open, slowly climbs out underneath the supercar and stares up at it.
+
+Audio: heavy rain on glass and metal, distant car horns, a red bus engine idling, fingers drumming on the yoke, a long bored sigh, a sharp click of the button, a deep rushing roar of air jets and spray, a sudden muffled quiet inside the cabin with papers fluttering and a soft whoosh, a gasp, the roar of jets turning in the air, a wet splash of coffee, a heavy metal crunch and cracking glass, a car door creaking open, rain, no music.`,
+    },
+  },
+  // 查重：站上无 status 2105847315609293134、无 @Aiwithmaha 本条、无本 id、无「泥泞一战风战壕橘虎斑猫戴盔持枪敬礼」条。站上 trench/tabby 命中是其他片（如 trench-coat 风衣），不是本片战壕橘猫士兵。同作者另包 aiwithmaha-giant-ragdoll-bath-blowdry-seedance-2-0（巨猫洗澡）勿混 id。本片=橘虎斑猫·橄榄绿军盔·小步枪·盔顶先露→升起→严肃可爱敬礼→缩回。原帖全文提示词，无附图参考图。模型 Seedance 2.0。
+  {
+    id: "aiwithmaha-trench-tabby-salute-seedance-2-0",
+    title: "战壕橘猫敬礼 · 盔顶升起再缩回 · Seedance 2.0",
+    subtitle: "X · @Aiwithmaha · Seedance 2.0 · 15秒 · 9:16",
+    description:
+      "泥泞一战风战壕：橘虎斑猫戴橄榄绿军盔、持小步枪；盔顶先从沙袋木梁地堡口露出→慢慢升起→严肃可爱看镜头敬礼→放下爪→缩回只剩盔顶。稳定微手持、阴天软光、浅景深。纯文提示词，无参考图。虚构成片。",
+    video: "/tutorials/aiwithmaha-trench-tabby-salute-seedance-2-0/demo-web.mp4",
+    poster: "/tutorials/aiwithmaha-trench-tabby-salute-seedance-2-0/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "萌宠角色",
+    shots: 1,
+    references: 0,
+    model: "Seedance 2.0",
+    style: "写实电影感 · 阴天软光 · 浅景深 · 稳定微手持 · 一战风战壕 · 一镜表演",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/Aiwithmaha/status/2105847315609293134",
+    sourceAuthor: "@Aiwithmaha",
+    sourcePlatform: "X",
+    sourceImpressions: 15860,
+    sourceStats: { asOf: "2026-10-17", likes: 192, reposts: 9, bookmarks: 22 },
+    formats: ["角色表演", "电影叙事", "猫"],
+    hook: {
+      structure: "地堡口盔顶先露 → 橘猫升起持枪 → 严肃可爱看镜头 → 举爪敬礼 → 放下爪 → 缩回只剩盔顶",
+      opening: "第 0 秒是泥泞战壕地堡口：沙袋与粗木梁上方阴天，泥地前景虚化——盔顶从地堡口慢慢冒出，还看不见猫脸。",
+      openingAt: 0,
+      beats: [
+        { title: "怎么升起", text: "约 1–4s 橄榄绿钢盔继续升起，橘虎斑猫脸入画，双爪自然持小步枪；泥地浅景深、阴天软光，镜头微手持稳定。", at: 1 },
+        { title: "怎么敬礼", text: "约 4–7s 猫严肃可爱直视镜头；约 7–10s 一爪慢慢举到盔边敬礼，另一爪仍持枪；毛发与爪运动自然。", at: 7 },
+        { title: "怎么缩回", text: "约 10–13s 放下敬礼爪；约 13–15s 慢慢缩回地堡，画面只剩盔顶与沙袋木梁，收尾呼应开场。", at: 12 },
+      ],
+      copyThis: "纯文锁角色（cute orange tabby cat + olive-green military helmet + small vintage rifle），写清盔顶先露→升起→敬礼→缩回时间线，并加 no text/watermark；不要配 @图。模型用 Seedance 2.0。虚构成片，勿现实模仿持枪。",
+      approx: true,
+    },
+    tags: [
+      "15秒 · 萌宠角色",
+      "9:16 竖屏",
+      "Seedance 2.0",
+      "战壕橘猫",
+      "敬礼",
+      "无参考图",
+      "虚构成片",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：纯文锁定橘猫与战壕（无参考图）",
+        description:
+          "原帖未附角色表或参考图，提示词也没有 @图片/@视频。用英文写死：cute orange tabby cat、olive-green military helmet、small vintage rifle、muddy World War-style trench、sandbags、wooden planks；并写 Keep the cat’s face, fur, helmet, rifle, trench, and background consistent。不要伪造参考卡。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "模型用 Seedance 2.0（注意是 2.0 不是 2.5）。画幅 9:16；成片约 15s、540×960。这是一镜角色表演（升起→敬礼→缩回），不是硬切动作片，也不是同作者巨猫洗澡条。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整英文提示词",
+        description:
+          "把下方英文提示词整段粘贴到 Seedance 2.0。结构：15-second vertical 9:16… 战壕设定 → 盔顶先露→升起持枪→看镜头敬礼→缩回 → stable gentle handheld、overcast、shallow DoF、no text/watermark。不要上传参考图。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "约 0–1.5s 地堡口：沙袋/木梁/泥地，仅盔顶缓慢露出。" },
+      { number: 2, description: "约 1.5–4s 橘虎斑猫脸升起，双爪持小步枪入画。" },
+      { number: 3, description: "约 4–7s 严肃可爱直视镜头，持枪中景，阴天浅景深。" },
+      { number: 4, description: "约 7–10s 一爪举到盔边敬礼，另一爪持枪。" },
+      { number: 5, description: "约 10–13s 放下敬礼爪，仍在地堡口。" },
+      { number: 6, description: "约 13–15s 缩回地堡，只剩盔顶，呼应开场。" },
+    ],
+    constraints:
+      "无参考图：提示词无 @图片/@视频，references=0，勿伪造参考卡；角色靠纯文锁橘虎斑猫 + 橄榄绿军盔 + 小步枪。模型是 Seedance 2.0（不是 2.5）。与站上其他猫条/trench 命中区分：trench-coat 风衣类不是本片；just-sharon7-samurai-cat-reeds 是武士猫；同作者 aiwithmaha-giant-ragdoll-bath-blowdry 是巨猫洗澡（另一包勿混）。虚构成片（萌宠持枪敬礼），中性记录勿鼓吹真实武器。与成片差别：提示词 vintage rifle，成片步枪更偏现代突击步枪/AK 风格小比例道具；敬礼秒数按抽帧近似（约 7–10s）。抽帧未见水印。",
+    video_prompt: {
+      title: "Trench Tabby Salute · ~15s",
+      subtitle: "Seedance 2.0 · 9:16 · 作者主帖英文完整提示词（无参考图）",
+      content: `Create a 15-second vertical 9:16 photorealistic cinematic video of a cute orange tabby cat inside a muddy World War-style trench, wearing a realistic olive-green military helmet and holding a small vintage rifle. Start with the camera focused on the dark trench entrance, with stacked sandbags and rough wooden planks clearly visible above. At first, only the top of the helmet slowly appears from the trench. The cat gradually rises into view while holding the rifle naturally with both paws. Keep the cat’s face, fur, helmet, rifle, trench, and background consistent throughout the entire video. Around the middle, the cat looks directly toward the camera with a serious but adorable expression and slowly raises one paw in a small salute. Maintain realistic fur movement, natural paw motion, subtle head movement, and cinematic depth of field. The camera should remain mostly stable with a very gentle handheld cinematic movement. Near the end, the cat lowers its paw and slowly ducks back down into the trench, leaving only the helmet visible. Use realistic outdoor lighting, soft overcast sky, detailed muddy soil, natural textures, shallow depth of field, smooth motion, and no text, watermark, distortion, or extra characters.
+`,
+    },
+  },
+  // 查重：站上无 status 2110921969420177453、无 @Aiwithmaha、无本 id、无「巨型布偶猫院子洗+车库吹毛」条。站上其他猫片：just-sharon7-samurai-cat-reeds-seedance-2-5（武士猫）、aimikoda-cat-zoomies-house-seedance-2-5（zoomies）、techhalla-point-and-click-cat-cutscene-seedance-2-5（point-and-click）——均非本片。本片=人大小白灰布偶猫·院子绿水管冲澡→车库手持吹风机吹毛→客厅温馨收尾。原帖 note_tweet 全文提示词，无附图参考图。模型 Seedance 2.0（不是 2.5）。
+  {
+    id: "aiwithmaha-giant-ragdoll-bath-blowdry-seedance-2-0",
+    title: "巨型布偶猫院子洗 · 车库吹毛 · Seedance 2.0",
+    subtitle: "X · @Aiwithmaha · Seedance 2.0 · 30秒 · 16:9",
+    description:
+      "人大小巨型白灰布偶猫（蓝眼粉鼻厚毛）坐在现代房子外；年轻韩国女性长直黑发海军蓝便装，用绿水管冲澡（水珠/湿毛），再转入车库用手持吹风机吹毛，猫眯眼享受、毛更蓬；末段客厅温馨并排/拥抱。温馨搞笑、电影感、黄金时刻光。纯文提示词，无参考图。",
+    video: "/tutorials/aiwithmaha-giant-ragdoll-bath-blowdry-seedance-2-0/demo-web.mp4",
+    poster: "/tutorials/aiwithmaha-giant-ragdoll-bath-blowdry-seedance-2-0/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "温馨巨宠",
+    shots: 6,
+    references: 0,
+    model: "Seedance 2.0（原帖 Created on seedance 2.0）",
+    style: "温馨搞笑 · 电影感 · 黄金时刻软光 · 写实毛发物理 · 院子洗→车库吹",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Aiwithmaha/status/2110921969420177453",
+    sourceAuthor: "@Aiwithmaha",
+    sourcePlatform: "X",
+    sourceImpressions: 4909,
+    sourceStats: { asOf: "2026-10-17", likes: 233, reposts: 10, bookmarks: 60 },
+    formats: ["角色表演", "电影叙事", "猫"],
+    hook: {
+      structure: "院子巨猫坐姿走近 → 绿水管冲澡湿毛 → 步道跟拍走向车库 → 车库手持吹风机眯眼吹毛 → 客厅并排喝奶 → 沙发拥抱收尾",
+      opening: "第 0 秒是人大小白灰布偶猫坐在现代住宅侧院铺装上：蓝眼粉鼻厚毛，黄金时刻逆光；海军蓝便装长直黑发女性走近伸手——下一镜立刻绿水管开喷。",
+      openingAt: 0,
+      beats: [
+        { title: "院子怎么洗", text: "约 2–9s 绿水管细雾冲胸腹与脸周，水珠从厚毛落下，湿毛结缕；女主笑着逗弄，猫保持冷静蓝眼。约 9–11s 背后跟拍湿毛巨猫与女主沿绿篱步道走向车库。", at: 2 },
+        { title: "车库怎么吹", text: "约 11–14s 开着车库门的车库内：湿毛巨猫站立入画；约 14–18s 女主手持吹风机对着蓬毛吹，猫眯眼享受，气流可见，毛明显更蓬更大更搞笑。", at: 12 },
+        { title: "客厅怎么收", text: "约 21–24s 切客厅：巨猫趴浅色地板，女主走过；约 25–27s 并排坐沙发前女主喝牛奶；约 28–30s 沙发拥抱收尾。此段提示词未写，按成片记。", at: 22 },
+      ],
+      copyThis: "纯文锁角色（enormous fluffy white-and-gray Ragdoll… blue eyes, pink nose + young Korean woman… navy-blue outfit），写清院子绿水管洗 → 车库手持吹风机吹两段，并加 no text/logos/watermarks；不要配 @图。模型用 Seedance 2.0（不是 2.5）。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 温馨巨宠",
+      "16:9 横屏",
+      "Seedance 2.0",
+      "巨型布偶猫",
+      "院子洗车式洗澡",
+      "车库吹毛",
+      "无参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：纯文锁定巨猫与女主（无参考图）",
+        description:
+          "原帖未附角色表或参考图，提示词也没有 @图片/@视频。用英文写死：enormous fluffy white-and-gray Ragdoll cat、beautiful blue eyes、pink nose、extremely soft thick fur；young Korean woman、long straight dark hair、casual navy-blue outfit；并写 Maintain consistent character appearances throughout。不要伪造参考卡。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明 Created on seedance 2.0（注意是 2.0 不是 2.5）。画幅 16:9；成片约 30s、960×540。这是温馨搞笑电影感短片（院子洗→车库吹），不是硬切动作片，也不是站上武士猫/zoomies/point-and-click 那些猫条。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整英文提示词",
+        description:
+          "把下方英文提示词整段粘贴到 Seedance 2.0。结构：30-second ultra-realistic cinematic… 巨猫设定 → 女主绿水管冲澡（水珠/湿毛）→ Transition 到车库手持吹风机吹毛（眯眼/更蓬）→ cinematic camera、golden-hour、fur physics、no text/logos/watermarks。不要上传参考图。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "约 0–2s 侧院：人大小布偶猫坐姿特写/中景，女主走近伸手，黄金时刻逆光。" },
+      { number: 2, description: "约 2–9s 绿水管喷雾冲澡，水珠落毛，湿毛结缕，女主笑，猫冷静蓝眼。" },
+      { number: 3, description: "约 9–11s 背后跟拍：湿毛巨猫与女主沿绿篱铺装步道走向车库。" },
+      { number: 4, description: "约 11–18s 车库：湿毛入画 → 手持吹风机吹毛，猫眯眼享受，毛变蓬更大。" },
+      { number: 5, description: "约 21–27s 客厅：巨猫趴地板 → 女主并排喝牛奶（提示词未写，成片有）。" },
+      { number: 6, description: "约 28–30s 沙发拥抱收尾，暖光温馨（提示词未写，成片有）。" },
+    ],
+    constraints:
+      "无参考图：提示词无 @图片/@视频，references=0，勿伪造参考卡；角色靠纯文锁巨型布偶猫 + 韩国女主海军蓝便装。模型是 Seedance 2.0（不是 2.5）。与站上其他猫条区分：just-sharon7-samurai-cat-reeds-seedance-2-5 是斗笠武士橘猫芦苇荡动作；aimikoda-cat-zoomies-house-seedance-2-5 是手绘动漫风家居 zoomies（有 MJ 参考图）；techhalla-point-and-click-cat-cutscene-seedance-2-5 是九十年代 point-and-click 游戏风过场。本片是人大小白灰布偶猫院子水管洗 + 车库吹风机吹毛（写实温馨搞笑）。与成片差别：提示词主线止于车库吹毛，成片约 21–30s 多出客厅喝奶/沙发拥抱；画幅含上下 letterbox 黑边；抽帧未见水印（提示词亦要求无水印）。",
+    video_prompt: {
+      title: "Giant Ragdoll Bath & Blow-dry · ~30s",
+      subtitle: "Seedance 2.0 · 16:9 · 作者主帖 note_tweet 英文完整提示词（无参考图）",
+      content: `30-second ultra-realistic cinematic video prompt: Create a heartwarming, funny, and visually stunning 30-second video featuring an enormous, fluffy white-and-gray Ragdoll cat with beautiful blue eyes, a pink nose, and extremely soft, thick fur, sitting outside a modern house. A beautiful young Korean woman with long, straight dark hair, a natural smile, and a casual navy-blue outfit approaches the giant cat on a sunny afternoon. She gently sprays water over the cat using a green garden hose, soaking its thick fur while the cat remains calm and adorable. Show realistic water droplets falling from its fur, with detailed wet hair and natural feline expressions. The woman smiles and laughs while carefully washing the giant cat in the driveway, surrounded by greenery and warm sunlight. Transition smoothly to a cozy garage scene where she uses a handheld hair dryer to dry the enormous cat's fluffy coat. The cat closes its eyes happily as warm air blows through its fur, making it look even bigger and funnier. Use realistic animal movements, natural human expressions, cinematic camera angles, soft golden-hour lighting, detailed fur physics, and seamless transitions. Maintain consistent character appearances throughout the video, with photorealistic quality, natural ambient sounds, and no text, logos, or watermarks.
+`,
+    },
+  },
+  // 查重：站上无 status 2110799844751384610、无 @Malzahran2、无本 id。站上其他「开罗」相关：garylau-rei-city-travel-h3（绫波丽换装路过开罗，非本片）。本片=旧开罗巷汗哈利利风格·阿拉伯女性动作追戏·12硬切。原帖 note_tweet 全文提示词，无附图参考图。
+  {
+    id: "malzahran2-cairo-alley-chase-seedance-2-5",
+    title: "旧开罗巷追戏 · 12硬切飞跃屋顶 · Seedance 2.5",
+    subtitle: "X · @Malzahran2 · Seedance 2.5 on Ideogram · 30秒 · 16:9",
+    description:
+      "阿拉伯女性（马尾、橄榄色飞行夹克、黑牛仔裤）在旧开罗巷汗哈利利风格市集傍晚：惊觉→冲刺→FPV穿越→翻箱→侧跟市集→回望→俯拍穿巷→滑过挂毯→冲石阶→屋顶脚尖→慢镜飞跃屋顶缝→落地翻滚航拍升起见宣礼塔。纯文提示词锁角色，12镜硬切动作片。",
+    video: "/tutorials/malzahran2-cairo-alley-chase-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/malzahran2-cairo-alley-chase-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "硬切动作",
+    shots: 12,
+    references: 0,
+    model: "Seedance 2.5 on Ideogram（原帖 #Seedance2.5 on @ideogram_ai）",
+    style: "粗粝动作片 · 暖尘傍晚光 · 运动模糊 · 旧开罗巷汗哈利利风格 · 12硬切",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/Malzahran2/status/2110799844751384610",
+    sourceAuthor: "@Malzahran2",
+    sourcePlatform: "X",
+    sourceImpressions: 2783,
+    sourceStats: { asOf: "2026-10-17", likes: 129, reposts: 15, bookmarks: 49 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "惊觉特写 → 冲刺 → FPV穿巷 → 翻木箱 → 侧跟市集 → 回望 → 俯拍穿巷 → 滑挂毯 → 冲石阶 → 屋顶脚尖 → 慢镜飞跃 → 落地航拍升起见宣礼塔",
+      opening: "第 0 秒是她脸部大特写：马尾、橄榄色夹克领边，眼神骤然睁大看向画外——下一镜立刻硬切冲刺。",
+      openingAt: 0,
+      beats: [
+        { title: "巷内怎么加速", text: "约 2–4s 手持跟在身后冲刺；约 4–7s 巷内 FPV/无人机穿灯笼巷；约 7–9s 低机位翻过木箱堆；约 9–12s 侧跟香料摊与织物虚化掠过。", at: 2 },
+        { title: "市集怎么穿", text: "约 12–14s 回望喘气特写；约 14–17s 俯拍左切穿摊、人群让开；约 16–18s 从挂毯/织物下钻过（whip pan 跟）；约 18–22s 窄石阶向上冲、镜头随升。", at: 12 },
+        { title: "屋顶怎么收", text: "约 22–24s 脚尖踩上屋顶边沿特写；约 24–27s 慢镜飞跃屋顶缝、镜头从身下掠过；约 27–30s 落地翻滚，镜头急停后航拍升起，旧开罗宣礼塔天际线入画。", at: 24 },
+      ],
+      copyThis: "纯文锁角色（CHARACTER + Keep her identical across all shots），按 Shot1–12 写死秒数与 Hard cut，不要一镜到底；不要配 @图。模型用 Ideogram 上的 Seedance 2.5。",
+      approx: true,
+    },
+    tags: [
+      "30秒 · 动作追戏",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "Ideogram",
+      "12硬切",
+      "旧开罗巷",
+      "无参考图",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：纯文锁定角色与地点（无参考图）",
+        description:
+          "原帖未附角色表或地点参考图，提示词也没有 @图片/@视频。用 CHARACTER 写死：Arabic unveiled woman、late 20s、dark hair in a ponytail、olive bomber jacket、black jeans；LOCATION 写 crowded old Cairo alleys, Khan el-Khalili style, lanterns, late afternoon，并加 Keep her identical across all shots。不要伪造参考卡。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明 #Seedance2.5 on @ideogram_ai。画幅 16:9；成片约 30s（原帖有 4K 变体，跟做可用 1080p）。这是 12 镜硬切动作片，不是一镜到底。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整 Shot1–12 + STYLE + AUDIO",
+        description:
+          "把下方英文提示词整段粘贴到 Ideogram Seedance 2.5。结构：CHARACTER → LOCATION → Shot1–12（每镜写秒数与 Hard cut）→ STYLE（gritty action film, warm dusty light, motion blur）→ AUDIO（脚步、市集、打击乐、切点冲击、飞跃静音再落地重击）。不要上传参考图。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "约 0–2s 脸部特写：眼神睁大看画外，Hard cut。" },
+      { number: 2, description: "约 2–4s 手持跟在身后，她突然全速冲刺，Hard cut。" },
+      { number: 3, description: "约 4–7s FPV/无人机擦肩冲入前方巷道（成片可见巷内实体无人机），Hard cut。" },
+      { number: 4, description: "约 7–9s 低机位翻过木箱堆，镜头快速上抬，Hard cut。" },
+      { number: 5, description: "约 9–12s 侧跟市集摊位，香料与织物掠过虚化，Hard cut。" },
+      { number: 6, description: "约 12–14s 回望特写，急促喘息，Hard cut。" },
+      { number: 7, description: "约 14–17s 俯拍自上而下，她左切穿摊，人群让开，Hard cut。" },
+      { number: 8, description: "约 16–18s 从挂毯/织物下钻过，甩镜跟随，Hard cut。" },
+      { number: 9, description: "约 18–22s 窄石阶向上跑，镜头随升，Hard cut。" },
+      { number: 10, description: "约 22–24s 脚部特写踩上屋顶边沿，Hard cut。" },
+      { number: 11, description: "约 24–27s 飞跃屋顶缝，顶点慢镜，镜头从身下掠过，Hard cut。" },
+      { number: 12, description: "约 27–30s 落地翻滚，镜头急停后航拍升起，旧开罗宣礼塔天际线。" },
+    ],
+    constraints:
+      "无参考图：提示词无 @图片/@视频，references=0，勿伪造参考卡；角色靠 CHARACTER 纯文 + Keep her identical across all shots。硬切 12 镜（每镜写 Hard cut），不是一镜到底。与站上其他开罗条区分：garylau-rei-city-travel-h3 是绫波丽换装路过开罗（地图 UI），本片是旧开罗巷汗哈利利风格市集傍晚阿拉伯女性动作追戏。提示词含 unveiled——中性按原文记录。与成片差别：Shot3 成片约 5s 可见巷内实体无人机而非纯 FPV 主观镜；12 镜切点相对提示词秒数有漂移（挂毯约 16–18s、石阶约 18–22s）；成片右下角全程 Ideogram 水印（提示词未写）；结尾航拍含宣礼塔天际线。",
+    video_prompt: {
+      title: "Old Cairo Alley Chase · 12 hard cuts / ~30s",
+      subtitle: "Seedance 2.5 on Ideogram · 16:9 · 作者主帖 note_tweet 英文完整提示词（无参考图）",
+      content: `CHARACTER: Arabic unveiled woman in her late 20s, dark hair in a ponytail, olive bomber jacket, black jeans.
+
+ LOCATION: crowded old Cairo alleys, Khan el-Khalili style, lanterns, late afternoon. Keep her identical across all shots.
+
+Shot 1, 2 seconds: close-up of her face, eyes widen as she sees something off-screen. Hard cut.
+Shot 2, 2 seconds: handheld behind her as she bursts into a sprint. Hard cut.
+Shot 3, 3 seconds: FPV drone flies past her shoulder and dives through the alley ahead. Hard cut.
+Shot 4, 2 seconds: low angle as she jumps over a stack of crates, camera tilts up fast. Hard cut.
+Shot 5, 3 seconds: side tracking shot along market stalls, spices and fabrics blurring past. Hard cut.
+Shot 6, 2 seconds: close-up glancing back, breathing hard. Hard cut.
+Shot 7, 3 seconds: overhead top-down as she cuts left between stalls, crowd parting. Hard cut.
+Shot 8, 2 seconds: she slides under a hanging carpet, whip pan to follow. Hard cut.
+Shot 9, 3 seconds: she runs up narrow stone stairs, camera cranes up with her. Hard cut.
+Shot 10, 2 seconds: extreme close-up of her sneakers landing on a rooftop edge. Hard cut.
+Shot 11, 3 seconds: she leaps across a gap between rooftops, slow motion at peak, camera passes beneath her. Hard cut.
+Shot 12, 3 seconds: she lands and rolls, camera slams to a stop and drone rises revealing the minarets of old Cairo.
+
+STYLE: gritty action film, warm dusty light, motion blur.
+
+AUDIO: rapid footsteps, crowd noise, pulsing percussion, heavy impact on each cut, silence during the leap then a hard hit on landing.
+
+#Seedance2.5 on @ideogram_ai
+`,
+    },
+  },
+  // 查重别名: Magnific 首帧自回复 https://x.com/techhalla/status/2111083414283513933 ；Seedance 提示词自回复 https://x.com/techhalla/status/2111083418175869339 。成片根帖 https://x.com/techhalla/status/2111083410693525754 。同作者同模板已有 techhalla-zhangjiajie-bbq-parachute-seedance-2-5（张家界 BBQ→抱猫跳瀑布→伞面 TECHHALLA）与 techhalla-canyon-skate-parachute-hovercraft-seedance-2-5（峡谷滑板→气垫船）。本条是中欧雾天铁栏观景台→峭壁废堡院 BBQ+青铜大炮→黑猫拨引信开炮→炮弹擦头→逃窜见 TECHHALLA 标牌；同模板不同故事。提示词用 <<imgN>>（不是张家界的 <<<img>>>）。原帖附图是 Magnific/Seedance 界面截图，不是独立高清角色表。
+  {
+    id: "techhalla-central-europe-castle-cannon-seedance-2-5",
+    title: "中欧雾天废堡 BBQ · 黑猫开炮砸观景台 TECHHALLA 标牌",
+    subtitle: "X · @techhalla · Magnific One + Seedance 2.5 Draft · 30秒 · 3:4",
+    description:
+      "游客手机竖拍中欧雾天铁栏观景台：数码变焦推到对面峭壁半毁城堡院内的烤肠 BBQ，男人喝 Jack Daniel's、黑猫拨青铜大炮引信开火，炮弹擦过头顶砸岩石，逃窜时手机甩到路边标牌上可读 TECHHALLA。同作者张家界抱猫跳伞条不是本片。",
+    video: "/tutorials/techhalla-central-europe-castle-cannon-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/techhalla-central-europe-castle-cannon-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "游客手机拍",
+    shots: 9,
+    references: 1,
+    model: "Magnific One（首帧）+ Seedance 2.5 Draft Mode（视频），原帖自回复写明；角色表原帖未写生成模型且未公开高清图（optional）",
+    style: "业余游客竖屏手机 · 一镜到底数码变焦 · 雾天中欧城堡观景台 · thrash metal 音箱 + 德语游客尖叫",
+    aspectRatio: "3/4",
+    sourceUrl: "https://x.com/techhalla/status/2111083410693525754",
+    sourceAuthor: "@techhalla",
+    sourcePlatform: "X",
+    sourceImpressions: 13467,
+    sourceStats: { asOf: "2026-10-17", likes: 174, reposts: 12, bookmarks: 71 },
+    formats: ["手机POV·Vlog", "电影叙事", "猫"],
+    hook: {
+      structure: "观景台远景钩子 → 变焦 BBQ → 干杯 → 黑猫 → 拨引信 → 开炮 → 炮弹擦头 → 逃窜 TECHHALLA 标牌",
+      opening: "第 0 秒就是雾天中欧铁栏观景台：游客举手机竖拍，对面灰色峭壁上半毁中世纪城堡冒着细烟；半透明 TECHHALLA 水印已可见。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 1–8s 数码变焦砸进城堡院：烤盘满肠冒烟、Jack Daniel's 方瓶、蓝白充气泳池里白 T 女人举罐、米黄房车开门、黑音箱+冷藏箱、前景朝镜头的青铜大炮；约 4–8s 男人干杯；约 8–16s 黑猫从房车跳下走向大炮。", at: 1 },
+        { title: "反转", text: "约 15–23s 推近大炮，黑猫拨引信冒火星；拉回观景台宽景，峭壁顶废堡旁一团白烟柱——开炮，炮弹朝镜头飞来。", at: 15 },
+        { title: "结尾怎么收", text: "约 23–30s 炮弹擦过游客头顶砸岩石；人群逃窜甩镜，约 29s 手机甩到路边棕色历史纪念标牌上可读 TECHHALLA（另有全程半透明水印）。", at: 23 },
+      ],
+      copyThis: "先用 Magnific（或同类）把「铁栏观景台看对面峭壁废堡冒烟」做成首帧 <<img1>>；角色表 <<img2>>/<<img3>> 作者标 optional 且原帖未公开高清，可自备或省略。把首帧（+可选角色表）喂给 Seedance，时间轴写死「推 BBQ → 猫拨引信 → 开炮擦头 → 逃窜标牌」。注意原帖 Seedance 是 Draft Mode 480p，成片 900×1200 可能后来 Generate in HD。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "3:4 竖屏",
+      "Magnific One",
+      "Seedance 2.5",
+      "Draft Mode",
+      "中欧城堡观景台",
+      "1 张可跟做首帧",
+      "角色表原帖未公开高清",
+      "一镜到底数码变焦",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备参考图（干净首帧；角色表 optional 且原帖无高清）",
+        description:
+          "素材对应：<<img1>> = Magnific One 首帧（视频必须从它开场）——原帖自回复附图是 Magnific 界面截图（HUwSMf0W0AAdlg3），页面上放的是裁出的首帧本图（refs/01-start-frame.jpg），不是成片截帧。<<img2>> = redneck 男人角色表、<<img3>> = 女人角色表：作者写 character sheets as references (optional)；原帖未以独立高清角色表公开，仅 Seedance 界面截图（HUwSVrDWwAEi1UK）右侧约 55×43 缩略图可见（见 extras/seedance-ui.jpg），糊到无法当跟做原图——跟做请自备或省略。不要假装有高清角色表。",
+      },
+      {
+        number: 2,
+        title: "第二步：选模型与画幅",
+        description:
+          "原帖写明：首帧用 Magnific One，视频用 Seedance 2.5。Seedance 界面显示 Draft Mode、480p、3:4、24fps、约 6K credits；成片根帖却是 900×1200 竖屏约 30.1 秒——可能后来点了 Generate in HD。一镜到底、只有现场声与远处 thrash metal，没有硬切。成片全程半透明 TECHHALLA 水印；约 29s 路边标牌也有 TECHHALLA。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴 Seedance 视频提示词并上传 <<img>>",
+        description:
+          "把下方完整 Seedance 英文提示词整段粘贴，同时按名字上传：<<img1>>>=参考1 首帧（必须）；<<img2>>>/<<img3>>> 男人/女人角色表 optional。结构是：[STYLE + CAMERA + ATMOSPHERE] → [IMAGE REFERENCES] → [TIMELINE] 0–30s → [AUDIO] → [STYLE & QUALITY BOOSTERS]。关键约束：业余手机竖拍、数码变焦、同一对男女 + 一只黑猫 + 一门青铜大炮贯穿、结尾标牌可读 TECHHALLA。提示词用双尖括号 <<imgN>>，不是张家界条的 <<<img>>>。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "techhalla-ce-img1-start",
+        number: "1",
+        title: "<<img1>> · Magnific One 首帧（中欧观景台）",
+        subtitle: "提示词 <<img1>> = 视频第一帧；从作者自回复 Magnific 界面截图（HUwSMf0W0AAdlg3，1360×919）裁出干净首帧（界面标注 752×1344）；下方为作者公开的英文图片提示词原文",
+        image: "/tutorials/techhalla-central-europe-castle-cannon-seedance-2-5/refs/01-start-frame.jpg",
+        prompt: `A crowded stone viewing platform in the forested hills of Central Europe on a misty late morning, with wooded ridges and grey rock crags rising on every side so the viewer feels surrounded by them. In the foreground, a handful of adult tourists lean on the old iron railing: a man in a navy rain jacket seen from behind holding up his phone, a woman in a mustard knit beanie and green fleece in profile, a backpack strap and a shoulder cut by the edges. Far in the background, across a deep wooded valley, stands one sheer vertical crag of grey rock topped by a half-ruined medieval castle: a broken keep tower with empty window holes, crumbled curtain walls and a collapsed corner. From inside the ruined walls, near the broken keep, a thin plume of grey smoke rises into the pale sky. The castle and the smoke are small and distant, readable only as a jagged stone silhouette and a soft grey thread.
+
+COMPOSITION:
+Shot type: wide, distant
+Angle: eye level from behind the railing crowd, looking across the valley, horizon tilted a few degrees
+Placement: tourists filling the lower third and the left edge, the castle crag in the upper center-right, the smoke rising from the ruin in the upper right third, other wooded ridges fading into haze on both sides
+Look-room: right
+Foreground: mild occlusion, a blurred tourist shoulder and a raised phone at the bottom left edge
+Crop: handheld, slightly imperfect.
+
+CAMERA PACK:
+Body: ordinary mid-range Android phone, held vertically at eye level over the heads of the crowd
+Lens / zoom: 3x digital zoom from the main lens, the glass slightly smudged
+Aperture or phone mode: normal photo mode, auto exposure set for the bright sky
+Focus: the far crag and castle reasonably sharp, the nearest tourists a little soft
+Film or sensor: small-sensor phone texture, heavy processing from the digital zoom, JPEG compression
+
+LIGHT:
+Source: diffuse overcast daylight through valley mist
+Quality: soft, low contrast, with haze layering the distant ridges
+Color temperature: cool neutral daylight, slightly blue-grey in the mist
+Shadows follow that source.
+
+PHOTOGRAPHIC CHARACTER:
+Fabric weave, seams and creases on the rain jacket, beanie and fleece.
+Grain or sensor texture that matches the camera pack.
+Candid stance, catalog-unaware.
+Highlights a little hot, the sky and mist clipped to plain white, the shaded forest and rock faces blocked up and noisy.
+Smeary watercolor detail from the digital zoom on the far trees, the castle stones and the smoke.
+Crunchy phone sharpening halos along the crag edges, the broken towers and the railing, blocky compression in the mist.
+Slight overall softness from the raised, shaky grip.
+Plain, slightly green-shifted color straight out of the phone, an ordinary snapshot by a friend.`,
+      },
+      {
+        id: "techhalla-ce-img2-man",
+        number: "2",
+        title: "<<img2>> · redneck 男人角色表（原帖未公开高清）",
+        subtitle: "提示词 <<img2>> = 男人脸/身材/长发胡须/黑卫衣牛仔裤靴；作者标 optional；原帖未附独立高清图，仅 Seedance UI 右侧缩略图可见（extras/seedance-ui.jpg），无法当跟做原图",
+        image: "/tutorials/techhalla-central-europe-castle-cannon-seedance-2-5/extras/seedance-ui.jpg",
+        prompt: "原帖未附高清角色表与生成提示词：作者只说 character sheets as references (optional)。成片里他在城堡院烤肠旁喝 Jack Daniel's 方瓶、指向青铜大炮。跟做请自备同设定角色表或省略。",
+      },
+      {
+        id: "techhalla-ce-img3-woman",
+        number: "3",
+        title: "<<img3>> · 女人角色表（原帖未公开高清）",
+        subtitle: "提示词 <<img3>> = 女人脸/身材/长波浪发；作者标 optional；原帖未附独立高清图，仅 Seedance UI 右侧缩略图可见（extras/seedance-ui.jpg），无法当跟做原图",
+        image: "/tutorials/techhalla-central-europe-castle-cannon-seedance-2-5/extras/seedance-ui.jpg",
+        prompt: "原帖未附高清角色表与生成提示词：作者只说 character sheets as references (optional)。成片里她穿白 T 坐在蓝白充气泳池中举罐干杯。跟做请自备同设定角色表或省略。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–1s 正好是 <<img1>>：雾天中欧铁栏观景台，游客用德语指着对面峭壁废堡上的烟。" },
+      { number: 2, description: "1–4s 数码变焦猛推到城堡院：烤肠冒烟、Jack Daniel's、音箱、房车、充气泳池女人、朝镜头青铜大炮。" },
+      { number: 3, description: "4–8s 再推近：男人灌一口酒，与泳池女人举罐干杯。" },
+      { number: 4, description: "8–12s 摇到房车：黑猫从车门跳下，尾巴竖起跑向男人。" },
+      { number: 5, description: "12–15s 男人咧嘴指向大炮，猫转向大炮走去。" },
+      { number: 6, description: "15–18s 推近大炮：猫爪拨引信，火星噼啪往下烧。" },
+      { number: 7, description: "18–23s 拉回观景台宽景；废堡顶白烟闪光，深沉炮响，黑炮弹朝镜头越来越大。" },
+      { number: 8, description: "23–26s 炮弹擦过游客头顶砸进旁边岩石，碎石扬尘，尖叫。" },
+      { number: 9, description: "26–30s 逃窜甩镜；约 29s 手机甩到路边棕色历史纪念标牌，白字 TECHHALLA 可读（另有全程半透明水印）。" },
+    ],
+    constraints:
+      "素材对应：<<img1>>>=参考 1 Magnific 首帧（从界面截图裁出）；<<img2>>>=男人角色表、<<img3>>>=女人角色表——原帖未以独立高清公开，仅 Seedance UI 缩略图，作者标 optional。提示词用 <<imgN>>（不是张家界条 <<<img>>>）。同作者张家界 BBQ 跳伞条（techhalla-zhangjiajie-bbq-parachute-seedance-2-5）不是本片：那条是张家界石柱 BBQ→抱黑猫跳瀑布→伞面 TECHHALLA；本片是中欧峭壁废堡 BBQ+青铜大炮→黑猫拨引信开炮→炮弹擦头→逃窜标牌 TECHHALLA。峡谷滑板条也不是本片。和成片的差别：Seedance UI 写 Draft Mode 480p，成片 900×1200（可能后来 Generate in HD）；成片全程半透明 TECHHALLA 水印（提示词未写水印）；约 29s 标牌入画且字可读。风险：Jack Daniel's 形酒瓶商标；TECHHALLA 水印+标牌（作者自品牌）；饮酒+炮弹飞向人群（虚构成片，勿模仿）。",
+    video_prompt: {
+      title: "Seedance 2.5 · 中欧废堡大炮 · 一镜到底",
+      subtitle: "作者自回复英文完整视频提示词 · Magnific One 首帧 + Seedance 2.5 Draft · <<img1>>>=参考1 · <<img2>>>/<<img3>>> optional 且原帖无高清",
+      content: `[STYLE + CAMERA + ATMOSPHERE]
+Real amateur phone video, one continuous 30-second take with no cuts, filmed by a tourist at a crowded castle viewpoint in Central Europe. Handheld vertical phone, shaky grip, restless digital zoom that keeps pushing in and pulling back, smeary detail, compression and autofocus hunting. Misty overcast daylight, cool grey haze.
+
+[IMAGE REFERENCES]
+<<img1>> is the first frame: the video starts exactly on it. <<img2>> provides the redneck man's face, build, long hair, beard, black hoodie, jeans and boots. <<img3>> provides the woman's face, build and long wavy hair.
+
+[TIMELINE]
+0-1s: Exactly <<img1>>. Tourists murmur in German and point at the smoke rising from the ruined castle, surprised.
+1-4s: [Crash digital zoom to medium] The phone zooms hard across the valley and settles on the castle courtyard inside the broken walls, grainy and soft. Clearly visible: a barbecue grill full of sausages pouring out the smoke, a white plastic table with a Jack Daniel's bottle, a cooler, a big loudspeaker, a dusty RV parked by the keep, an inflatable kiddie pool with the woman sitting in it, and on the man's left an old bronze medieval cannon on a wooden carriage, its muzzle aimed straight at the camera.
+4-8s: [Second push-in, tight] The man by the grill finishes a long swig from the Jack Daniel's bottle, turns to the pool and clinks the bottle against her raised can. They toast and drink.
+8-12s: [Pan to the RV, slow push-in] A black cat jumps down from the RV door and trots toward the man with its tail straight up.
+12-15s: [Ease out to medium] The man grins and points at the cannon. The cat turns and walks to the cannon.
+15-18s: [Push-in on the cannon] The cat swats the fuse with its paw. The fuse catches and starts spitting sparks, burning down fast.
+18-21s: [Jerky zoom out to wide] The phone pulls back to the whole crag. Tourists gasp and start backing away, shouting in German.
+21-23s: [Wide, locked on the castle] A bright flash and a puff of white smoke from the battlement, then a heavy boom echoes across the valley. A black cannonball grows bigger and bigger, flying straight at the viewpoint.
+23-26s: [Phone jolts] The cannonball whooshes just over the tourists' heads and smashes into a rock outcrop beside the viewpoint, bursting stone chunks and dust. Screams.
+26-30s: [Phone swings while running] Chaos, tourists flee down the path in panic. The phone whips around and lands for a moment on a brown historic-monument sign by the path, the word "TECHHALLA" clearly readable in white letters.
+
+[AUDIO]
+German tourist chatter, gasps, shouts and screams close to the phone, wind in the valley. Thrash metal plays from the loudspeaker the whole time, distant and tinny, louder while zoomed in. A small meow, fuse hiss, a deep cannon boom, the whoosh overhead and the crack of shattering rock. No subtitles.
+
+[STYLE & QUALITY BOOSTERS]
+Photorealistic phone footage, real digital zoom artifacts, coherent physics, the same two people, one cat and one cannon throughout, stable identities, natural motion blur, realistic cannon recoil, smoke and flying rock debris.`,
+    },
+  },
   // Tunee 工作区成片（底层模型未写明）。人群参考与成片含多家 AI 品牌 logo 头像——商标/品牌形象风险，站内教程展示须提示；商用/二次传播自行评估。
   {
     id: "tunee-shiba-apple-crowd-replace",
@@ -448,7 +1068,7 @@ Constraints: one continuous camera move with no cuts, a smooth gliding crane and
     sourcePlatform: "X",
     sourceImpressions: 9228,
     sourceStats: { asOf: "2026-10-15", likes: 218, reposts: 15, bookmarks: 113 },
-    formats: ["手机POV·Vlog", "电影叙事"],
+    formats: ["手机POV·Vlog", "电影叙事", "猫"],
     hook: {
       structure: "观景台远景钩子 → 变焦推 BBQ → 喝威士忌 → 黑猫 → 抱猫跳崖 → 自由落体 → TECHHALLA 伞",
       opening: "第 0 秒就是雾天张家界石栏观景台：游客举手机，对面石柱顶飘着一缕 BBQ 烟。",
@@ -10900,7 +11520,7 @@ Pale blue-gray sky, diffuse daylight, soft clouds, elastic sketch contours and c
     sourcePlatform: "X",
     sourceImpressions: 38728,
     sourceStats: { asOf: "2026-09-26", likes: 413, reposts: 25, bookmarks: 77 },
-    formats: ["电影叙事", "角色表演"],
+    formats: ["电影叙事", "角色表演", "猫"],
     hook: {
       structure: "静态亮相 → 追打翻腾 → 落船直立收尾",
       opening: "开场是斗笠橘猫侧坐在青苔石上的近景，嘴里叼根芦苇、背着小武士刀，约 1–2 秒慢慢转头盯向镜头——一只猫摆出浪人架势，第一眼就好笑又带感。",
@@ -21676,7 +22296,7 @@ REPEAT: NO background music at any point — diegetic sound only. Camera and bil
         aspectRatio: "16/9",
       },
     ],
-    formats: ["电影叙事"],
+    formats: ["电影叙事", "猫"],
     hook: {
       structure: "猫坐摩托 → 开火 → 爆炸 → 继续狂飙",
       opening: "金门大桥上，一只橘猫坐在摩托后座、抱着一把枪，旁边黑衣车手紧追——第一秒就是荒诞动作片设定。",
@@ -21997,7 +22617,7 @@ Shot 1: ONE continuous POV shot, about 28 seconds, chase camera just behind the 
     model: "Seedance 2.5 · 16:9",
     style: "真人摄影质感",
     aspectRatio: "16/9",
-    formats: ["电影叙事"],
+    formats: ["电影叙事", "猫"],
     hook: {
       structure: "画隧道 → 老鼠穿过 → 猫追 → 撞墙",
       opening: "路面低机位，一把刷子在碎石路上刷出黄色中线，一只猫握着刷子倒退着刷——开场就是动画式的恶作剧。",
@@ -22673,7 +23293,7 @@ The angle in Picture 6 describes identity only, NOT a fixed head pose. Face dire
     sourcePlatform: "X",
     sourceImpressions: 660494,
     sourceStats: { asOf: "2026-09-25", likes: 6048, reposts: 620, bookmarks: 2831 },
-    formats: ["破壁出屏"],
+    formats: ["破壁出屏", "猫"],
     hook: {
       structure: "壁纸动起来 → 图标被撞飞 → 汤姆看镜头",
       opening: "Mac 桌面，左侧图标、底部 Dock 都在，壁纸是猫和老鼠的客厅，约 0.5s 汤姆扑向杰瑞——壁纸自己动了。",
@@ -23123,7 +23743,7 @@ The final frame should closely match the original reference image.`,
     sourcePlatform: "X",
     sourceImpressions: 21062,
     sourceStats: { asOf: "2026-09-25", likes: 463, reposts: 34, bookmarks: 161 },
-    formats: ["破壁出屏"],
+    formats: ["破壁出屏", "猫"],
     hook: {
       structure: "壁纸里的猫 → 打喷嚏 → 图标被吹飞",
       opening: "Mac 桌面，壁纸是夜景书桌前戴耳机的虎斑猫，左侧一列图标、底部 Dock——开场像一张普通壁纸。",
@@ -24252,7 +24872,7 @@ Fast, intimate cinematic realism in the present; warm grainy Super 8 memory with
     sourcePlatform: "X",
     sourceImpressions: 6281,
     sourceStats: { asOf: "2026-09-28", likes: 179, reposts: 6, bookmarks: 108 },
-    formats: ["角色表演"],
+    formats: ["角色表演", "猫"],
     hook: {
       structure: "张嘴冲镜头 → 地毯漂移 → 撞翻东西 → 越拆越乱 → 突然乖巧定格",
       opening: "第 0 秒低机位，蓬毛灰白猫瞪大眼、张着嘴朝镜头扑过来，爪子几乎贴到镜头——一开场就是满速。",
@@ -26212,7 +26832,7 @@ No additional dialogue. No subtitles or autogenerated advertising copy. Only the
     sourceAuthor: "Pollo AI 官方博客（Clara Hayes）",
     sourcePlatform: "Pollo",
     sourceStats: { asOf: "2026-09-29" },
-    formats: ["产品广告"],
+    formats: ["产品广告", "猫"],
     hook: {
       structure: "耳朵微距 → 举爪后拉全身 → 侧面飞跃 → 探头入画 → 风衣口袋抱起 → 摸头 → 两猫碰鼻 → 五猫换装 → 独坐收尾",
       opening: "第 0 秒极近微距：只拍猫头顶和两只黑耳朵，眼睛在画面下方外面，暖色逆光勾出耳朵边缘，耳朵轻轻抖一下。",
@@ -26514,7 +27134,7 @@ The finished video must make the central visual rule immediately understandable:
     sourceAuthor: "Pollo AI 官方博客（Clara Hayes）",
     sourcePlatform: "Pollo",
     sourceStats: { asOf: "2026-09-29" },
-    formats: ["电影叙事"],
+    formats: ["电影叙事", "猫"],
     hook: {
       structure: "起跑线蹲伏 + 秒表 → 冲出去 → 盐湖 → 森林 → 冰湖 → 凯旋门 → 地球轨道 → 海滩 → 回到起跑线急刹",
       opening: "第 0 秒低机位：金渐层胖猫趴在龟裂干湖的白色起跑线后面，右侧前景一只手握着秒表。",
@@ -27969,7 +28589,7 @@ Original upbeat Japanese electro-pop with female vocal chops, bass, claps and sp
     sourcePlatform: "X",
     sourceImpressions: 1955,
     sourceStats: { asOf: "2026-09-30", likes: 91, reposts: 8, bookmarks: 9 },
-    formats: ["手机POV·Vlog"],
+    formats: ["手机POV·Vlog", "猫"],
     hook: {
       structure: "抱猫看雨 → 小猫盯上拉绳 → 扑绳 → 挣扎玩闹 → 爬上肩膀 → 凑近镜头",
       opening: "第 0 秒女生抱着虎斑小猫站在下雨的窗边，对着手机说「Such a cozy day, huh?」。",
@@ -32762,7 +33382,7 @@ NEGATIVE / 全片约束
     sourcePlatform: "X",
     sourceImpressions: 899,
     sourceStats: { asOf: "2026-10-05", likes: 39, reposts: 2, bookmarks: 14 },
-    formats: ["电影叙事", "角色表演"],
+    formats: ["电影叙事", "角色表演", "猫"],
     hook: {
       structure: "贴地穿车流 → 飞过杂货店抓牛奶 → 飞过店面抓猫粮 → 市场/田野/河面穿越 → 飞进窗口坐下开吃",
       opening: "第 0 秒镜头贴着印度街道路面在车流和三轮车之间高速前冲，胖橘猫突然水平飞过镜头上方。",
@@ -33094,7 +33714,7 @@ AUDIO: gentle salon ambience, scissors softly clicking, comb brushing through fe
     sourcePlatform: "X",
     sourceImpressions: 5714,
     sourceStats: { asOf: "2026-10-06", likes: 97, reposts: 5, bookmarks: 38 },
-    formats: ["电影叙事", "角色表演"],
+    formats: ["电影叙事", "角色表演", "猫"],
     hook: {
       structure: "记者吐槽 → 大妈抱猫 → 猫开口 → 猫飘走 → 巨猫喊醒 → 床上惊醒 → 进入游戏画面",
       opening: "第 0 秒记者 Lewis 拿着笔记本站在街边，面无表情地说「A cat got lost, a cat got found, front page stuff.」",
@@ -34072,7 +34692,7 @@ Overall style: ultra-photorealistic, cinematic sports advertisement, premium sne
     sourcePlatform: "X",
     sourceImpressions: 3047,
     sourceStats: { asOf: "2026-10-06", likes: 88, reposts: 6, bookmarks: 31 },
-    formats: ["角色表演"],
+    formats: ["角色表演", "猫"],
     hook: {
       structure: "空街 → 三猫入画 → 并排摇摆 → 往前走 → 贴近特写 → 拉远收尾",
       opening: "第 0 秒是夜晚湿漉漉的人行道，背后车灯和高楼灯光虚化成彩色光斑，小猫从画面右侧走进来。",
