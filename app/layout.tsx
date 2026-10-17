@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "成片拆解 · AI 视频教程",
   description: "看 30 秒成片，照着步骤复刻。每一个大师，都从小白开始",
   icons: {
-    icon: "/brand/mark.png",
-    apple: "/brand/mark.png",
+    icon: [{ url: "/favicon.ico" }, { url: "/brand/favicon.png" }],
+    apple: "/brand/favicon.png",
   },
 };
 
