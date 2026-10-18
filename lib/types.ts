@@ -96,6 +96,7 @@ export interface HookBreakdown {
 /** 首页「按套路挑」筛选条的分类与顺序 */
 export const TUTORIAL_FORMATS = [
   "产品广告",
+  "商业广告",
   "拆装·制作过程",
   "电影叙事",
   "角色表演",
@@ -117,6 +118,7 @@ export interface SourceStats {
   reposts?: number;
   bookmarks?: number;
   quotes?: number;
+  replies?: number;
 }
 
 export interface Step {
