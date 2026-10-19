@@ -3,6 +3,528 @@ import { withMedia } from "./media";
 
 // 数据里照常写站内路径 "/tutorials/<id>/..."；导出时由 withMedia 统一指向 R2（见 lib/media.ts）。
 const rawTutorials: Tutorial[] = [
+  // 查重：站上/仓库 reed35/ai-video-tutorials 无 status 2112105880322003435 / 2112105911648985385、无本 id。主帖（有成片）https://x.com/johnAGI168/status/2112105880322003435 ；提示词自回帖 https://x.com/johnAGI168/status/2112105911648985385（用户贴的就是这条）。SUBJECT 声明 @图片1–4（布丁/煤球/凯恩/莉娅）均原帖未公开（主帖仅视频、提示词帖无附图、thread 无角色卡）；references=0，勿伪造图卡、勿用成片截帧冒充。模型：Seedance 2.5（主帖 by Seedance 2.5）。同作者站内另有 johnagi 其它条——不是本片。
+  {
+    id: "johnagi-kitten-knight-fishing-contest-seedance-2-5",
+    title: "骑士小猫钓鱼比赛 · 龙带猫扎湖叼大鱼",
+    subtitle: "X · @johnAGI168 · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "骑士猫布丁与龙煤球湖边钓鱼：凯恩钓破靴、莉娅钓小鱼，龙带猫扎湖叼大鱼。",
+    video: "/tutorials/johnagi-kitten-knight-fishing-contest-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/johnagi-kitten-knight-fishing-contest-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "萌宠喜剧",
+    shots: 7,
+    references: 0,
+    model: "Seedance 2.5（主帖写 by Seedance 2.5）",
+    style: "1990年代奇幻冒险电影35mm胶片感 · 清晨暖金湖面薄雾 · 骑士猫+龙+双骑士钓鱼喜剧 · 7 镜",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/johnAGI168/status/2112105880322003435",
+    sourceAuthor: "@johnAGI168",
+    sourcePlatform: "X",
+    sourceImpressions: 497,
+    sourceStats: {
+      asOf: "2026-10-19",
+      impressions: 497,
+      likes: 7,
+      reposts: 0,
+      bookmarks: 3,
+      quotes: 0,
+      replies: 2,
+    },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "破靴 → 小鱼得意 → 跳上龙头 → 扎湖浇湿骑士 → 冒泡等待 → 冲出叼大鱼 → 只咬一口比大小",
+      opening:
+        "第 0–1 秒（视觉分析·抽帧）：栈桥上凯恩（蓝披风画左）/布丁（银甲粉结居中）/莉娅（红披风画右）并排坐湖边；布丁盯水面，暖金薄雾。（approx）",
+      openingAt: 0,
+      beats: [
+        {
+          title: "破靴与小鱼",
+          text: "约 1–3s 正面中景三人钓鱼；约 3s 凯恩侧身、莉娅捂嘴笑（提示词 2s 提竿出破靴）。约 6–8s 莉娅举手指长小银鱼晃给凯恩看，布丁舔嘴。（approx·视觉分析）",
+          at: 3,
+        },
+        {
+          title: "跳龙扎湖",
+          text: "约 10–12s 岸边煤球低头近湖，布丁立走至龙头上站两角间；约 14s 身后机位龙低空掠过栈桥俯冲；约 15.5s 湖心巨浪溅起，浇向栈桥上两骑士背影。（approx）",
+          at: 10,
+        },
+        {
+          title: "冲出与只吃一口",
+          text: "约 18s 两人湿发坐栈桥：凯恩钩上破靴、莉娅捏小鱼，盯湖心。约 21s 低机位仰拍：煤球冲出水面横叼大银鱼，布丁站龙头举爪。约 25–28s 岸边大鱼横陈，布丁在鱼头边，莉娅举小鱼比大小，凯恩张嘴惊。（approx）",
+          at: 21,
+        },
+      ],
+      copyThis:
+        "SUBJECT 用 @图片1–4 锁布丁/煤球/凯恩/莉娅；原帖四张均未公开，跟做需自备同设定角色图，或改写为纯文锁外观后去掉 @。Seedance 2.5、30s、16:9，粘贴完整 7 SHOT 中文导演提示词。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "骑士猫",
+      "萌宠喜剧",
+      "钓鱼比赛",
+      "奇幻胶片感",
+      "参考图原帖未公开",
+      "猫",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备四张角色锁图（原帖未公开）",
+        description:
+          "提示词 SUBJECT 声明 @图片1=布丁（猫脸/毛色/粉结/银甲白披风）、@图片2=煤球（巨龙，两后腿+翅膀）、@图片3=凯恩（脸/发型/蓝罩袍银甲）、@图片4=莉娅（脸/黑长发/红罩袍银甲）。主帖只有视频、提示词自回帖无附图、thread 无角色卡——四张均为「原帖未公开」，references=0。不要伪造参考图卡，不要从成片截帧冒充喂模输入（截帧只在 extras/ 备查）。跟做请自备同设定角色图，或把 SUBJECT 改写成纯文锁后去掉 @图片。完整提示词在 https://x.com/johnAGI168/status/2112105911648985385（约 2523 字）。",
+      },
+      {
+        number: 2,
+        title: "第二步：选 Seedance 2.5 · 30 秒 · 16:9",
+        description:
+          "主帖写 by Seedance 2.5。提示词与成片均为 16:9；demo 约 1280×720、~30.1s、faststart。戏剧弧线：凯恩破靴→莉娅小鱼得意→布丁跳上煤球→扎湖浇湿两骑士→冒泡等待→冲出叼大鱼→布丁只咬一口、莉娅比大小。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词并上传自备 @图片1–4（或改纯文锁）",
+        description:
+          "把下方 video_prompt 全文粘贴进 Seedance 2.5。结构：Duration/Aspect/戏剧弧线/Overall style → SUBJECT（@图片1–4）→ ENVIRONMENT → AUDIO → SHOT 1–7（Action/Camera/Constraints）→ NEGATIVE。有自备角色图则按 @ 上传；无图则改写 SUBJECT 为纯文外观锁并删掉 @。不要自己加字幕/配乐/喷火。",
+      },
+      {
+        number: 4,
+        title: "第四步（可选）：对照 7 镜抽帧",
+        description:
+          "生成后对照 extras 抽帧节奏：0–5 破靴、5–9 小鱼、9–13 跳龙头、13–17 扎湖、17–20 等待、20–24 冲出、24–30 只吃一口。成片与提示词时码可能略有漂移（如破靴清晰落点偏后、等待镜同时见靴+小鱼），属跟做容差，不要为此硬改提示词。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–5s 破靴子：正面中景凯恩画左/布丁中间/莉娅画右；浮漂沉→提竿出旧皮靴；莉娅笑，布丁面无表情。（SHOT 1；≈1–3s 抽帧）" },
+      { number: 2, description: "5–9s 小鱼：莉娅钓上手指长小银鱼晃给凯恩，凯恩翻白眼；布丁视线跟着舔嘴。（SHOT 2；≈6–8s 抽帧）" },
+      { number: 3, description: "9–13s 跳上龙头：布丁直立沿栈桥走向岸边煤球，跳上两角之间指向湖心；煤球抬头展翅。（SHOT 3；≈10–12s 抽帧）" },
+      { number: 4, description: "13–17s 扎进湖里：身后机位，煤球低空掠过栈桥一头扎湖，布丁抱角入水；巨浪浇透凯恩莉娅。（SHOT 4；≈14–15.5s 抽帧）" },
+      { number: 5, description: "17–20s 等待：两人湿发坐栈桥盯湖心气泡；莉娅仍捏小鱼，凯恩竿上挂靴。（SHOT 5；≈18s 抽帧）" },
+      { number: 6, description: "20–24s 冲出水面：低机位仰拍，煤球横叼比两人还长大鱼冲出，布丁湿毛站龙头举爪。（SHOT 6；≈21s 抽帧）" },
+      { number: 7, description: "24–30s 只吃一口：岸边大鱼摔地；布丁甩水、只咬一小口再推鱼；莉娅举小鱼比大小，凯恩惊掉竿靴。（SHOT 7；≈25–28s 抽帧）" },
+    ],
+    constraints:
+      "素材对应：@图片1=布丁、@图片2=煤球、@图片3=凯恩、@图片4=莉娅——四张均为原帖未公开。references=0，references_detail 为空；refs/ 仅 README，无图卡。禁止伪造角色卡，禁止把 extras 成片截帧放进 refs。完整提示词在自回帖 https://x.com/johnAGI168/status/2112105911648985385（2523字），主帖 https://x.com/johnAGI168/status/2112105880322003435 有成片。模型：Seedance 2.5（主帖 by Seedance 2.5）。与成片差别：提示词 2s 破靴、6s 小鱼分镜；抽帧约 18s 等待镜同时见破靴+小鱼，破靴清晰落点可能偏后；龙体态/腿数偶有与「两后腿+翅膀」约束漂移。查重：站上无 status 2112105880322003435 / 2112105911648985385。风险：奇幻萌宠喜剧，无商标/成人向/写实军火；低风险。",
+    video_prompt: {
+      title: "钓鱼比赛 · 骑士猫布丁 · 30s · 7 SHOT",
+      subtitle:
+        "作者提示词自回帖完整中文导演提示词 · Seedance 2.5 · 16:9 · 2523字 · @图片1–4 原帖未公开",
+      content: `SEEDANCE 2.5 / 奇幻萌宠喜剧 导演提示词 ·《钓鱼比赛》
+Duration：30秒
+Aspect ratio：16:9横屏
+戏剧弧线：凯恩钓上一只破靴子→莉娅钓上一条手指长的小鱼还得意→布丁看不下去，跳上煤球的头→煤球带着布丁一头扎进湖里，浪把两个骑士浇透→水面平静几秒→煤球叼着一条比两个骑士还大的鱼冲出水面→大鱼摔在岸边，布丁只咬一小口，莉娅举着她的小鱼在大鱼旁边比了比。布丁是全片绝对主角。
+Overall style：1990年代奇幻冒险电影35mm胶片实拍质感，清晨暖金色阳光，湖面薄雾，高饱和暖色，钴蓝天空配粉紫色云层，高光轻微柔光晕，细腻胶片颗粒；真实猫毛、真实皮肤、真实抛光钢甲、真实龙鳞、真实水花；每个镜头开场就在动；无配乐、无台词，只有环境音和动作音效。
+
+SUBJECT：
+@图片1 命名为【布丁】，参考图锁定小猫的脸、毛色、粉色蝴蝶结、银甲、白披风；全程双耳竖立；只用两条后腿站立和行走；
+@图片2 命名为【煤球】，锁定巨龙外观；只有两条后腿，前肢就是翅膀；
+@图片3 命名为【凯恩】，锁定脸、发型、蓝色罩袍披风和银甲；不戴头盔；
+@图片4 命名为【莉娅】，锁定脸、黑色长发、红色罩袍披风和银甲；不戴头盔；
+（@只在此处声明一次）
+比例：布丁头顶只到成年人的膝盖；煤球的身体比一辆马车还大；大鱼的长度超过凯恩和莉娅两个人躺平首尾相接。
+道具：凯恩和莉娅各拿一根木头钓竿，鱼线末端挂红白浮漂。
+
+ENVIRONMENT / 空间轴线：
+山间湖泊，薄雾。一座木栈桥从草岸伸进湖里。凯恩、布丁、莉娅并排坐在栈桥尽头，面朝湖心钓鱼，两人双腿垂在水面上方。正面镜头（机位在湖面上，朝着他们和岸边）里：凯恩在画左，布丁在中间，莉娅在画右，他们身后的草岸上趴着晒太阳的煤球。只有 SHOT 4 从他们身后朝湖心拍，那一镜里凯恩在画右、莉娅在画左。
+
+AUDIO：0–3s 湖水轻拍栈桥、鸟叫；2.0s 凯恩猛地提竿，水声"哗啦"；6.0s 小鱼出水"啪"的一声；10.0s 布丁小盔甲"叮铃"；13–14s 巨大翅膀扑扇；15.0s 巨龙入水"轰"的巨大水声；15.5s 大浪拍在栈桥上；17–20s 只有水面冒泡"咕嘟"声；20.0s 冲出水面的巨大水声；24.0s 大鱼摔在草地上"啪"；26.0s 布丁咬一口的咀嚼声。
+
+SHOT 1（0.0–5.0s）｜破靴子
+Action：第一帧是布丁坐在栈桥上盯着水面，尾巴尖左右摆。旁边凯恩的浮漂猛地沉下去，2.0s 他兴奋地双手往上提竿，钓竿弯成弓形，鱼钩上吊出来的是一只往下滴水的旧皮靴。莉娅捂嘴笑，布丁看着那只靴子在眼前晃，面无表情。
+Camera：35mm正面中景，三个都在画面里，凯恩在画左、布丁在中间、莉娅在画右，背景是岸边趴着的煤球。
+Constraints：鱼钩上只有一只靴子。
+
+SHOT 2（5.0–9.0s）｜小鱼
+Action：莉娅的浮漂一沉，她轻轻一提，钓上一条只有手指长的小银鱼。她把小鱼举到凯恩面前晃了晃，得意地挑眉。凯恩翻了个白眼。布丁的视线跟着小鱼左右移动，舔了一下嘴巴。
+Camera：50mm中近景，莉娅和她手里的小鱼在画面中央，布丁的头在画面下方。
+Constraints：小鱼只有手指长。
+
+SHOT 3（9.0–13.0s）｜跳上龙头
+Action：布丁站起来，转身沿着栈桥往岸边走去，走到煤球面前，跳上它低下的头，站在两只角之间，用前爪指向湖心。煤球抬起头，张开翅膀。凯恩和莉娅坐在栈桥尽头扭头往后看。
+Camera：28mm从岸边拍全景，煤球和布丁在前景，栈桥伸向后方的湖面，凯恩和莉娅在栈桥尽头。
+Constraints：布丁直立行走，不四脚着地。
+
+SHOT 4（13.0–17.0s）｜扎进湖里
+Action：煤球起飞，从栈桥上方低空掠过，飞到湖心上空，收拢翅膀，15.0s 头朝下一头扎进湖里，布丁抱着龙角跟着一起没入水中。入水处溅起一道比树还高的水柱，15.5s 一道大浪冲向栈桥，把凯恩和莉娅从头到脚浇透。
+Camera：28mm从两人身后朝湖心拍，凯恩（画右）和莉娅（画左）的背影在画面下方前景，湖心在画面中央。
+Constraints：煤球只有两条后腿加一对翅膀；不喷火。
+
+SHOT 5（17.0–20.0s）｜等待
+Action：凯恩和莉娅浑身滴水坐在栈桥上，头发贴在脸上，莉娅手里还捏着那条小鱼，凯恩的钓竿上还挂着那只靴子。两人一动不动盯着湖心，湖面上只有几串气泡冒上来。
+Camera：50mm正面中景，两人并排在画面中央，背后是平静的湖面。
+Constraints：湖面平静，只有气泡。
+
+SHOT 6（20.0–24.0s）｜冲出水面
+Action：20.0s 湖心水面炸开，煤球冲出水面，嘴里横叼着一条巨大的银色大鱼，大鱼还在甩尾巴，比凯恩和莉娅两个人加起来还长。布丁站在龙头上，全身的毛湿透贴在身上，蝴蝶结滴着水，右前爪高高举起。煤球扇着翅膀朝岸边飞来。
+Camera：35mm低机位从水面附近仰拍，煤球、大鱼和布丁从画面中央冲上来，水花四溅。
+Constraints：大鱼只有一条；布丁不掉落。
+
+SHOT 7（24.0–30.0s）｜只吃一口
+Action：煤球把大鱼放在岸边的草地上，24.0s 大鱼"啪"地摔在草地上。布丁从龙头跳下来，先使劲甩了甩全身的水，水珠喷了刚跑过来的凯恩一脸。布丁走到大鱼头边，只咬了一小口，满足地舔舔嘴，然后用爪子把大鱼往两个骑士那边推了推。莉娅低头看看手里的小鱼，把它举到大鱼旁边比了比，凯恩手里的钓竿和靴子掉在了地上。
+Camera：35mm平视全景，大鱼横在画面下方，布丁站在鱼头边，凯恩和莉娅在画右，煤球的头在画左后方；最后2秒镜头不动。
+Constraints：布丁只咬一小口；大鱼只有一条。
+
+NEGATIVE：禁止字幕、文字、水印、Logo；禁止配乐和台词；禁止喷火；禁止任何角色受伤流血；禁止布丁折耳、四脚着地、毛绒玩具感；禁止凯恩、莉娅戴头盔或换脸；禁止出现第二条大鱼；禁止参考图的灰色背景出现在画面中；禁止塑料CG感；禁止以静止画面开场。`,
+    },
+  },
+  // 查重别名(提示词自回帖): https://x.com/ElsaSofia__AI/status/2111775817524973814（附九宫格分镜图）。站上 tutorials.ts 无 status 2111775808784400852 / 2111775817524973814、无本 id。同作者站内已有 hallway/subway/pasta/rice/fried-chicken 等——不是本片。提示词正文无 @图片/@Image；角色锁在 CHARACTERS 段。自回帖附图=九宫格分镜（refs/01），提示词未 @ 引用该图，但是作者随提示词公开的分镜参考。
+  {
+    id: "elsasofia-rooftop-sniper-cat-feed-stray-seedance-2-5",
+    title: "屋顶猫狙击手射烤鱼喂流浪猫 · 蓝模式轰狗再开罐",
+    subtitle: "X · @ElsaSofia__AI · Seedance 2.5 · 30秒 · 16:9",
+    description:
+      "屋顶短发女孩逗奶油猫狙击手，橙模式射烤鱼喂巷子流浪猫，蓝模式轰退灰狗，再给猫开罐奖励。",
+    video: "/tutorials/elsasofia-rooftop-sniper-cat-feed-stray-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/elsasofia-rooftop-sniper-cat-feed-stray-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "萌宠喜剧",
+    shots: 20,
+    references: 1,
+    model: "Seedance 2.5（主帖写 Made with Seedance 2.5）",
+    style: "写实电影感 · 阴天浅景深 · 屋顶+巷子双场景 · 20 镜三幕心温喜剧",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ElsaSofia__AI/status/2111775808784400852",
+    sourceAuthor: "@ElsaSofia__AI",
+    sourcePlatform: "X",
+    sourceImpressions: 11642,
+    sourceStats: {
+      asOf: "2026-10-18",
+      impressions: 11642,
+      likes: 88,
+      reposts: 4,
+      bookmarks: 19,
+      quotes: 0,
+      replies: 34,
+    },
+    formats: ["电影叙事", "角色表演", "猫"],
+    hook: {
+      structure: "屋顶逗猫 → 准星里流浪猫吃饭 → 橙焰烤鱼飞入碗 → 蓝模式轰退灰狗 → 举手庆祝 → 开罐奖励 Shu",
+      opening:
+        "第 0 秒（视觉分析·抽帧）：屋顶上短黑发抹胸 Nana 逗左侧，奶油长毛猫 Shu 趴在三脚架狙击枪后瞄镜，前方麻布小袋。",
+      openingAt: 0,
+      beats: [
+        {
+          title: "橙模式怎么喂",
+          text: "约 3s 圆形准星内：巷子橙白流浪猫从墙洞探出低头吃浅蓝碗；约 6s 带橙焰尾迹的鱼块慢速飞向碗；约 9s 流浪猫在碗边嗅/吃鱼块。（approx）",
+          at: 3,
+        },
+        {
+          title: "蓝模式怎么救",
+          text: "约 12s 屋顶 Nana 摸 Shu、枪管橙光；约 15s 镜前环变蓝光、Nana 握拳。约 18s 巷子流浪猫在碗旁，背景垃圾桶已倒下（狗被轰倒后）。清晰狗扑镜头未落在 12/15/18 采样点，故事按提示词有狗扑+蓝球命中。（approx·视觉分析）",
+          at: 12,
+        },
+        {
+          title: "结尾怎么收",
+          text: "约 21s Nana 举手掌对 Shu 庆祝，Shu 仍严肃瞄镜；约 24–27s Nana 开麻布袋/纸袋，给 Shu 面前金属小碗开罐头勺喂，Shu 一脸不爽。（approx）",
+          at: 21,
+        },
+      ],
+      copyThis:
+        "角色用 CHARACTERS 纯文锁 Nana/Shu/流浪猫/灰狗与双场景；把作者随提示词公开的九宫格分镜当对照（提示词未 @ 引用该图）。Seedance 2.5、30s、16:9，整段粘贴 20 镜三幕提示词，不要自己加 @Image。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "猫狙击手",
+      "萌宠喜剧",
+      "九宫格分镜",
+      "虚构武器道具",
+      "宠物+枪械造型轻风险",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备角色文字锁 + 看分镜图",
+        description:
+          "提示词用 CHARACTERS 段纯文锁 Nana（短黑发抹胸）、Shu（奶油长毛不爽脸狙击手）、橙白流浪猫、灰狗，以及屋顶/巷子两场景——正文没有 @图片/@Image。作者自回帖附图是一张九宫格分镜（见参考 1），提示词未 @ 引用该图，但是作者随提示词公开的分镜参考，建议先看懂三幕节奏再跟做。不要用成片截帧冒充输入图。",
+      },
+      {
+        number: 2,
+        title: "第二步：选 Seedance 2.5 · 30 秒 · 16:9",
+        description:
+          "主帖写 Made with Seedance 2.5。提示词与成片均为 16:9；成片 demo 约 1280×720、~30.1s、faststart。三幕：逗猫→橙模式射鱼喂流浪猫→蓝模式轰退灰狗→给 Shu 开罐奖励。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词（无 @ 图）",
+        description:
+          "把下方英文 VIDEO PROMPT 全文粘贴进 Seedance 2.5，不要另加 @图片/@Image。结构：总要求 → CHARACTERS（每镜重复）→ PART 1/2/3 共 20 镜时间码与动作/SOUND → MASTER EFFECTS / SPEED / ENERGY ARC。角色外观靠文字锁，不要伪造角色卡。",
+      },
+      {
+        number: 4,
+        title: "第四步（可选）：对照九宫格分镜",
+        description:
+          "生成后拿参考 1 的九宫格对照：屋顶逗猫与橙/蓝准星环、巷子飞鱼、狗被轰+垃圾桶倒、庆祝与开罐是否按序出现。提示词写了狗扑与蓝能量球命中；成片抽帧在 12/15/18s 采样点之间未见清晰狗扑落点，属跟做容差，不要为此改提示词硬加镜头。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "elsasofia-rooftop-sniper-storyboard-grid",
+        number: "1",
+        title: "九宫格分镜 · 提示词自回帖附图",
+        subtitle:
+          "原帖随提示词附图（未 @ 引用）；提示词未 @ 引用该图，但是作者随提示词公开的分镜参考 · 3×3 约九格叙事对照",
+        image:
+          "/tutorials/elsasofia-rooftop-sniper-cat-feed-stray-seedance-2-5/refs/01-storyboard-grid.jpg",
+        prompt: "原帖随提示词附图，未另附生图提示词",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–2.5s 屋顶：Nana 逗 Shu，Shu 拍开后继续瞄镜。（提示词 Shot 1）" },
+      { number: 2, description: "2.5–3.9s 圆形准星：巷子流浪猫在蓝碗边吃，抬头。（Shot 2）" },
+      { number: 3, description: "3.9–4.8s 屋顶特写：Nana 惊讶喘气，准星环开始橙光。（Shot 3）" },
+      { number: 4, description: "4.8–5.1s 枪口橙闪光。（Shot 4）" },
+      { number: 5, description: "5.1–7.0s 巷子：橙焰尾迹烤鱼飞向碗，后半慢动作滑行。（Shot 5）" },
+      { number: 6, description: "7.0–9.6s 鱼落入蓝碗，流浪猫探出嗅食。（Shot 6）" },
+      { number: 7, description: "9.6–11.5s 宽巷：流浪猫吃饭，远端灰狗从门口走出逼近。（Shot 7）" },
+      { number: 8, description: "11.5–12.4s 屋顶：Nana 摸 Shu，察觉异样，枪管橙光。（Shot 8）" },
+      { number: 9, description: "12.4–13.6s 枪光橙转蓝，Nana 紧绷，Shu 冷静。（Shot 9）" },
+      { number: 10, description: "13.6–14.6s 准星：灰狗冲向流浪猫。（Shot 10）" },
+      { number: 11, description: "14.6–15.6s 屋顶：蓝环瞄准，约 15.0s 枪口小蓝闪。（Shot 11）" },
+      { number: 12, description: "15.6–16.0s 巷子：狗扑向流浪猫，蓝能量球击中胸口。（Shot 12；抽帧采样点之间未见清晰落点）" },
+      { number: 13, description: "16.0–17.2s 狗被轰起慢动作后仰砸向垃圾桶。（Shot 13）" },
+      { number: 14, description: "17.2–17.9s 垃圾桶倒下盖住狗、滚动。（Shot 14）" },
+      { number: 15, description: "17.9–19.5s 流浪猫探头再继续吃鱼，倒罐与狗在后景。（Shot 15；≈18s 抽帧可见倒罐）" },
+      { number: 16, description: "19.5–20.0s 屋顶 Nana 大笑，Shu 半眯得意。（Shot 16）" },
+      { number: 17, description: "20.0–22.9s Nana 举手掌对 Shu 庆祝，Shu 仍严肃瞄镜。（Shot 17；≈21s 抽帧）" },
+      { number: 18, description: "22.9–24.0s Nana 拿起麻布袋打开，金属小碗在檐上。（Shot 18）" },
+      { number: 19, description: "24.0–27.8s Nana 对 Shu「说教」，Shu 拍碗，取出罐头。（Shot 19）" },
+      { number: 20, description: "27.8–30.2s 开罐勺喂金属碗，Shu 不爽脸收束。（Shot 20；≈24–27s 抽帧）" },
+    ],
+    constraints:
+      "素材对应：九宫格分镜 = 参考 1（自回帖附图原图 → refs/01-storyboard-grid.jpg）；提示词正文无 @图片/@Image，角色靠 CHARACTERS 纯文锁，references=1 仅此分镜参考——写明「提示词未 @ 引用该图，但是作者随提示词公开的分镜参考」。禁止伪造角色卡，禁止把 extras 成片截帧放进 refs。查重：站上无 status 2111775808784400852 / 2111775817524973814；同作者 hallway/subway/pasta/rice/fried-chicken 等不是本片。与成片差别：提示词 Shot 10–14 有狗冲刺/扑击/蓝球命中/倒罐；抽帧在约 12/15/18s 采样点之间未见清晰狗扑落点，约 18s 已见垃圾桶倒下。风险：虚构喜剧——猫用狙击枪造型道具射「烤鱼」与蓝能量球轰狗；武器为夸张科幻道具非写实军火教程；适合轻风险提示（宠物+枪械造型），不是商标主风险、非成人向。",
+    video_prompt: {
+      title: "Rooftop Sniper Cat Feeds Stray · 30s · 20 shots",
+      subtitle:
+        "作者提示词自回帖英文完整 VIDEO PROMPT · Seedance 2.5 · 16:9 · 无 @图；九宫格分镜见参考 1（未 @ 引用）",
+      content: `VIDEO PROMPT — 30 seconds, 16:9, live-action cinematic realism, soft overcast daylight, shallow depth of field, gentle desaturated tones. Whimsical, heartwarming comedy played completely straight. Keep the characters and locations identical in every shot.
+
+CHARACTERS (repeat in every part)
+NANA: young woman with a short black bob and a warm, easy smile, wearing a strapless black-and-grey patterned top and black-and-white beaded bracelets on her wrist.
+SHU: a large, fluffy cream-colored long-haired cat with a flat grumpy face and blue-grey eyes, lying like a sniper behind a black tripod-mounted sniper rifle with a scope. The scope's front lens has a glowing ring that is dark, then orange, then blue.
+STRAY CAT: a small orange-and-white tabby cat living in a concrete wall opening in an alley.
+DOG: a lean grey short-haired dog that appears from a dark doorway in the alley.
+LOCATION 1: a city rooftop with a ribbed grey mat on a low ledge, a small burlap pouch, an overcast sky and brick buildings far behind.
+LOCATION 2: a grimy back alley with a grey concrete wall with a square opening, a blue ceramic bowl on the ground, a tall grey metal trash can, black trash bags, a brick wall and a dark doorway at the far end.
+
+===== PART 1 (00:00-00:09.6) =====
+
+SHOT 1 (00:00-00:02.5) — Distraction
+Medium shot on the rooftop. Nana leans over the ledge beside Shu and playfully pushes her face toward his. Shu swats her face away with a front paw and returns his eye to the scope; she grins and keeps teasing him. Camera static.
+SOUND: soft wind, distant city hum, her light giggles and a soft paw tap.
+
+SHOT 2 (00:02.5-00:03.9) — Scope View
+Black circular scope vignette with crosshair. Down in the alley, the stray cat eats from the blue bowl next to the wall opening, then looks up.
+SOUND: the wind drops away, a muffled low hush, faint crunching from the bowl.
+
+SHOT 3 (00:03.9-00:04.8) — The Charge
+Front close-up on the rooftop. Nana, blurred, gasps with her mouth open and a surprised "oh". Shu stares through the scope with one eye closed, grumpy. The ring on the scope's front lens begins to glow orange.
+SOUND: a loud sharp gasp from Nana, a rising electronic charge hum.
+
+SHOT 4 (00:04.8-00:05.1) — Fire
+A bright orange muzzle flash from the rifle.
+SOUND: a crisp flash-whoosh pop.
+
+SHOT 5 (00:05.1-00:07.0) — The Fish
+Alley view. A grilled fish-shaped projectile with a bright orange flame trail streaks toward the stray cat's bowl, then glides in slow motion with the trail fading. Speed: fast at first, then SLOW MOTION (about 30-40% speed) for the glide.
+SOUND: a rushing whoosh with a fiery crackle, then stretched and softened as it slows.
+
+SHOT 6 (00:07.0-00:09.6) — Dinner
+The fish drops gently into the blue bowl. The stray cat creeps out of the wall opening, sniffs it, and starts to eat. Close-up, then medium close-up.
+SOUND: a soft plop in the bowl, quiet cat steps, soft eating sounds.
+
+===== PART 2 (00:09.6-00:20.0) =====
+
+SHOT 7 (00:09.6-00:11.5) — The Intruder
+Wide alley shot. The stray cat eats at the right beside its wall opening. At the far end a grey dog appears from the dark doorway and starts walking toward it. The stray cat looks up warily.
+SOUND: a low tense hum builds, a dog's low growl, light claw clicks on concrete.
+
+SHOT 8 (00:11.5-00:12.4) — Orange Glow
+Rooftop. Nana smiles and strokes Shu's fluffy back, then notices something and her mouth opens. The rifle's barrel glows orange.
+SOUND: a soft fur-stroke rustle, her quick inhale, a faint electric hum.
+
+SHOT 9 (00:12.4-00:13.6) — Blue Mode
+The rifle's glow changes from orange to blue. Nana looks tense with pursed lips, Shu stays calm.
+SOUND: a short electronic mode-switch click, a rising cold hum.
+
+SHOT 10 (00:13.6-00:14.6) — The Dog Runs
+Scope view. The grey dog sprints down the alley toward the stray cat, who stays by the wall opening.
+SOUND: fast paw patter on concrete, a low growl, a heartbeat-like pulse.
+
+SHOT 11 (00:14.6-00:15.6) — Aim
+Rooftop front close-up. Nana and Shu stare through the scope, the ring glowing blue. A small blue flash appears at the muzzle at about 00:15.0.
+SOUND: tense silence, a held breath, then a quiet energy pop.
+
+SHOT 12 (00:15.6-00:16.0) — The Blue Shot
+Wide alley shot. The dog leaps toward the stray cat. A blue energy ball with a blue trail from the right hits the dog's chest in a bright blue flash.
+SOUND: a sharp energy zap and a bright impact boom.
+
+SHOT 13 (00:16.0-00:17.2) — Blasted
+The dog is thrown upright onto its hind legs, spins in the air, and is flung backward into the trash can. Speed: SLOW MOTION (about 50% speed, estimate).
+SOUND: stretched whoosh, a yelp, a clang as it hits the metal can.
+
+SHOT 14 (00:17.2-00:17.9) — Topple
+The trash can topples over the dog and rolls on the concrete.
+SOUND: a loud metal crash, a long rolling rattle, then silence.
+
+SHOT 15 (00:17.9-00:19.5) — Safe
+The stray cat peeks out of its wall opening, then returns to eating the fish, while the trash can lies behind it and the dog lies under it.
+SOUND: a soft meow, quiet eating, light alley ambience.
+
+SHOT 16 (00:19.5-00:20.0) — Smug
+Rooftop. Nana laughs happily beside Shu, who has half-closed eyes and a smug look.
+SOUND: her bright laugh, wind.
+
+===== PART 3 (00:20.0-00:30.2) =====
+
+SHOT 17 (00:20.0-00:22.9) — Victory Wave
+Front shot. Nana laughs and raises her hand with the palm out toward Shu, who stares grumpily straight at the camera behind the rifle.
+SOUND: her happy laugh and light clapping of hands in the breeze.
+
+SHOT 18 (00:22.9-00:24.0) — The Pouch
+Close side shot. Nana picks up the burlap pouch and opens it. A small metal bowl sits on the ledge.
+SOUND: a paper rustle, a soft metal clink.
+
+SHOT 19 (00:24.0-00:27.8) — Reward
+Nana holds the pouch and talks to Shu, leaning over the ledge. Shu taps the metal bowl with a paw. She points a finger at him as if teaching him, then takes out a small tin can.
+SOUND: her soft voice in a murmur (no clear words), a paw tap on the metal bowl.
+
+SHOT 20 (00:27.8-00:30.2) — Dinner for Shu
+She opens the tin and spoons its contents into the bowl with a small spoon, smiling, while Shu watches with a grumpy, unmoved face. Hold, then end.
+SOUND: a tin pull-tab click, a spoon scrape and a soft plop.
+
+MASTER EFFECTS INVENTORY
+1. Round scope-view vignette with crosshair (Shots 2, 10).
+2. Scope lens ring glowing orange then blue (Shots 3, 8, 9, 11).
+3. Slow-motion fish glide with a flame trail (Shot 5).
+4. Blue energy ball hit and slow-motion dog blast (Shots 12-13).
+5. Trash can topple (Shot 14).
+
+SPEED SUMMARY
+Slow motion: Shot 5 (about 30-40%), Shot 13 (about 50%, estimate).
+Everything else: real time.
+
+ENERGY ARC
+Part 1 (0-10s): playful teasing, then the fish shot feeds the stray cat.
+Part 2 (10-20s): the dog appears, the blue shot saves the stray cat.
+Part 3 (20-30s): the laughing reward for Shu.`,
+    },
+  },
+  // 查重：站上/本地无 status 2111780146747519170 / 2111780151172489274、无本 id。主帖（有成片）https://x.com/msjiaozhu/status/2111780146747519170 ；完整提示词在回复 https://x.com/msjiaozhu/status/2111780151172489274 （1763字，无附图）。作者自称启发自 @yyyole 意外反转商业广告。@图片1 人物参考原帖未公开；references=0，勿伪造图卡、勿用成片截帧冒充。模型：原帖/回复未写模型名，constraints 写「原帖未写模型」，勿臆造 Seedance。同作者站内另有 msjiaozhu-white-wall-selfie-douyin-seedance（2106965855833895322）不是本片。
+  {
+    id: "msjiaozhu-bathroom-slip-lingerie-ad-reveal",
+    title: "电商内衣广告 · 浴室滑倒子弹变装 · 就等你了",
+    subtitle: "X · @msjiaozhu · 原帖未写模型 · 15秒 · 9:16",
+    description:
+      "浴室滑倒子弹切内衣商品特写，落床变装反转，收尾「就等你了」。",
+    video: "/tutorials/msjiaozhu-bathroom-slip-lingerie-ad-reveal/demo-web.mp4",
+    poster: "/tutorials/msjiaozhu-bathroom-slip-lingerie-ad-reveal/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "商业广告",
+    shots: 7,
+    references: 0,
+    model: "原帖未写模型（主帖/提示词回复/可见评论均未写模型名；勿臆造 Seedance）",
+    style: "写实时尚轻喜剧 · 浴室滑倒子弹时间 · 电商商品特写串 · 摔倒变装反转 · 无对白",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/msjiaozhu/status/2111780146747519170",
+    sourceAuthor: "@msjiaozhu",
+    sourcePlatform: "X",
+    sourceImpressions: 979,
+    sourceStats: { asOf: "2026-10-18", likes: 4, reposts: 1, bookmarks: 6, quotes: 0 },
+    formats: ["商业广告", "产品广告"],
+    hook: {
+      structure: "浴室滑倒 → 子弹 → 文胸特写 → 内裤特写 → 教鞭特写 → 变装落床 → 「就等你了」",
+      opening: "第 0 秒全身入镜：白浴巾裹身的她赤脚在浴室快步走向门口，低头看手里的黑色蕾丝内衣，另一手握着细长黑色老师教鞭。",
+      openingAt: 0,
+      beats: [
+        { title: "过程怎么推进", text: "约 0–3s 踩湿石坎滑倒，三件商品脱手飞起；进入子弹时间，人与商品缓慢下坠。", at: 0 },
+        { title: "高潮", text: "约 3–7s 依次切蕾丝文胸、丁字内裤、老师教鞭三组电商商品特写（各带白字卖点），后景人物持续下落。", at: 3 },
+        { title: "结尾怎么收", text: "约 7–15s 恢复常速半空硬切到卧室落床，浴巾变黑色蕾丝内衣套装，接住教鞭，眨眼浮现「就等你了」。", at: 7 },
+      ],
+      copyThis: "把「失手滑倒→子弹时间商品特写串→半空硬切场景→落床瞬间变装→slogan」写成可套电商品的反转广告骨架；@图片1 只锁五官/发型轮廓/身材比例，服装与姿势不锁。本帖人物参考图原帖未公开，跟做需自备。",
+      approx: true,
+    },
+    tags: [
+      "15秒",
+      "9:16 竖屏",
+      "原帖未写模型",
+      "子弹时间",
+      "摔倒变装",
+      "电商内衣",
+      "商业广告",
+      "参考图原帖未公开",
+      "成人向风险",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：准备人物参考图 @图片1（原帖未公开）",
+        description:
+          "提示词要上传「@图片1」：只锁定五官、发型轮廓和身材比例，不锁定姿势和服装。原帖主帖与提示词回复均无附图，references=0；不要伪造参考图卡，不要从成片截帧冒充喂模输入。跟做请自备人物参考图。完整提示词在回复帖 https://x.com/msjiaozhu/status/2111780151172489274（1763 字）。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "原帖未写模型名（主帖、提示词回复、可见评论都没写），勿臆造 Seedance。提示词写 15 秒、9:16 竖屏；成片约 720×1280、~15.2 秒、24fps。成片有背景音乐/音效，无对白。作者主帖写启发自 @yyyole 意外反转式商业广告。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词并上传自备 @图片1",
+        description:
+          "把下方 video_prompt 整段粘贴（来源回复 2111780151172489274，1763 字全文）。结构：人物与道具设定 → 浴室/卧室场景 → 分镜 0–15s（滑倒→子弹→三商品特写→半空硬切落床变装→「就等你了」）→ 摄影与字幕约束。上传自备人物参考图后生成。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–2s 浴室全身：白浴巾裹身赤脚快步出门，低头看蕾丝内衣，手握黑色老师教鞭；踩湿石坎一只脚滑出，三件商品脱手飞起。" },
+      { number: 2, description: "2–3s 子弹时间：人向后向下缓慢滑落，湿发/浴巾边与文胸、丁字裤、教鞭保持惯性微动；音乐抽空。" },
+      { number: 3, description: "3–4.3s 蕾丝文胸电商特写：下落旋转+冷白轮廓光；白字「柔软蕾丝 · 立体承托」；后景人物仍在慢降。" },
+      { number: 4, description: "4.3–5.6s 蕾丝丁字内裤电商特写：翻转展示侧带剪裁；白字「轻盈贴合 · 精致剪裁」；后景人物更低。" },
+      { number: 5, description: "5.6–7s 老师教鞭电商特写：直杆斜向转动、金属尖端高光；白字「轻巧握持 · 精准指向」。" },
+      { number: 6, description: "7–10.5s 恢复常速半空下坠，运动模糊硬切到卧室；落床瞬间浴巾变黑色蕾丝内衣套装，接住教鞭。" },
+      { number: 7, description: "10.5–15s 床上侧转对镜：教鞭尖端移到锁骨前，轻咬下唇抬眼；眨眼浮现「就等你了」，末 0.5s 定住。" },
+    ],
+    constraints:
+      "素材对应：@图片1 = 人物参考（只锁五官/发型轮廓/身材比例）——原帖未公开。references=0，references_detail 为空；勿伪造参考卡，禁止用成片截帧冒充作者喂模输入。完整提示词在回复 https://x.com/msjiaozhu/status/2111780151172489274（1763字），主帖 https://x.com/msjiaozhu/status/2111780146747519170 有成片。模型：原帖未写模型（主帖/提示词回复/可见评论均未写），勿臆造 Seedance。和成片的差别：提示词写 15秒 9:16，成片约 720×1280 / ~15.2s；提示词写分体文胸+丁字裤+硬质直杆教鞭与四处指定白字，成片落床段服装/道具造型与商品字幕可能不完全一致，以成片为准，结尾「就等你了」可见。查重：同作者站内另有 msjiaozhu-white-wall-selfie-douyin-seedance（status 2106965855833895322）不是本片。风险：浴室浴巾+黑色蕾丝内衣商品特写+「老师教鞭」道具+摔倒变装反转；成人向/内衣电商；适合标风险提示（类似站上其它敏感条），不是商标主风险。",
+    video_prompt: {
+      title: "15s 9:16 · 浴室滑倒子弹变装电商内衣广告",
+      subtitle: "作者自回复完整中文提示词 · 1763字 · 来源 https://x.com/msjiaozhu/status/2111780151172489274 · @图片1 原帖未公开 · 原帖未写模型",
+      content: `15秒，9:16竖屏，写实、高张力的时尚轻喜剧，含一次摔倒变装反转。@图片1只锁定五官、发型轮廓和身材比例，不锁定姿势和服装。深茶棕眼妆，眼尾上挑，正红缎光唇，嘴唇微张，皮肤有毛孔。黑发湿着，松散波浪，一缕贴在唇角。刚洗完澡，白色浴巾裹住身体从胸口到大腿上段，裹得贴身，勾出丰满的胸型、收紧的腰和臀线，肩颈、锁骨和整条腿露出，浴巾在前半段全程裹紧不掉。浴室里锁骨和小腿有水光，细金链留在脚踝。
+
+她一只手拿着黑色蕾丝文胸和配套的黑色蕾丝丁字内裤，另一只手握着一根细长的黑色老师教鞭：硬质直杆、纤细金属尖端、短握柄，不是皮鞭。
+
+前半段在现代公寓浴室：浅色石材，地面薄水膜，门口一道很浅的石坎，高窗硬侧光，身体边缘一圈亮边，水汽很淡。后半段在相连的卧室：白色大床，床单柔软，暖色床头灯。没有第二个人。
+
+0-2秒：全身入镜，连赤脚一起在画面里。她从浴室快步走向门口，低头看手里的蕾丝内衣。镜头平稳保持全身构图，看得清双脚。赤脚踩上湿石坎，一只脚突然向前滑出，支撑腿膝盖弯曲，上身后仰，双臂本能张开。蕾丝文胸、蕾丝丁字内裤和老师教鞭同时脱手飞起。短促冲击声。
+
+2-3秒：进入子弹时间，并非完全静止。她以极慢速度持续向后、向下滑落：滑出的脚继续向前移动，支撑脚逐渐离地，髋部缓慢下降，上身继续后仰；湿发、浴巾边缘和三件商品均保留细微而连续的惯性运动。文胸在胸前上方展开，丁字内裤在腰侧翻转，硬质教鞭在膝盖高度斜向旋转。音乐抽空，只留低频和拉长的空气声。
+
+3-4.3秒：蕾丝文胸电商商品特写。文胸在下落中缓慢旋转，冷白轮廓光沿蕾丝花纹和罩杯边缘流过，展示柔软纹理与立体杯型。旁边浮现精致的白色无衬线小字“柔软蕾丝 · 立体承托”，配一条细引线。后景虚化的人物仍在缓慢下降。轻布料声。
+
+4.3-5.6秒：蕾丝丁字内裤电商商品特写。内裤在下落中缓慢翻转，细光扫过蕾丝纹样、纤细侧带和利落剪裁，布料轻盈，不团成一团。旁边浮现白色无衬线小字“轻盈贴合 · 精致剪裁”，配一条简洁弧线。后景人物的位置比上一镜更低。轻柔丝滑声。
+
+5.6-7秒：老师教鞭电商商品特写。细长硬质教鞭斜向悬浮并缓慢转动，直杆始终笔直，金属尖端掠过一道冷白高光，短握柄材质清晰。旁边浮现白色无衬线小字“轻巧握持 · 精准指向”，配一条沿杆身延伸的细直线。后景人物继续接近画面下沿。轻金属划风声。
+
+7-8秒：回到全身，人物已比2秒时下降约半个身位。商品文字和光线淡出，子弹时间结束，画面迅速恢复正常速度。她继续自然向后坠落，身体尚在半空、还没接触浴室地面时，镜头随她快速下甩，在运动模糊里立刻硬切。浴室里绝不出现她落地。
+
+8-10.5秒：常规速度。硬切后的第一帧，她已在卧室大床上方，保持相同的后仰姿势、下坠方向和动作速度。高处俯视或自然斜侧俯视。她背朝下自然落进大床，床垫随重量下陷并轻轻回弹，床单扬起后落下，身体只随床垫产生真实自然的整体惯性，不使用慢动作，不刻意强调或放大任何局部晃动。落床同一瞬间浴巾变成由刚才两件商品组成的黑色蕾丝内衣套装：蕾丝文胸自然托出丰满胸型，丁字内裤贴合腰臀曲线，修长双腿斜搭床面。卧室皮肤干爽哑光，无水珠、无油光；头发变干，蓬松散在枕上。老师教鞭最后落下，她抬手自然接住。
+
+10.5-15秒：她陷在床里，一条腿屈起，身体微微侧转，腰臀形成自然曲线。她用教鞭尖端从唇边缓慢移到锁骨前方，轻咬下唇，抬眼妩媚地看镜头，嘴角轻挑。她冲镜头眨眼时，身旁浮现一行白色手写小字“就等你了”。最后0.5秒停住。精密机械感的时尚电子节拍在落床时重新进入。不要对白。
+
+摄影：商业广告，前半段保持全身带脚构图，全身35mm，三件商品85mm，浅景深，真实运动模糊。2-7秒为连续子弹时间，人物和商品始终缓慢下坠，不完全静止；每个商品特写的后景人物都比上一镜更低。7秒后恢复常规速度，落床全过程不用慢动作。浴室到卧室只有一刀，切在半空下坠途中，前后姿势、运动方向和速度一致。卧室俯视或斜侧俯视，突出身材曲线和表情；床垫和身体按正常速度自然受力与回弹，不刻意制造局部抖动。皮肤干爽哑光，禁止油亮反光。画面只允许出现“柔软蕾丝 · 立体承托”“轻盈贴合 · 精致剪裁”“轻巧握持 · 精准指向”“就等你了”四处文字，不出现其他字幕、LOGO、水印。`,
+    },
+  },
   // 查重：站上/本地无 status 2100060548293698035、无本 id。主帖 https://x.com/yyyole/status/2100060548293698035 ；完整提示词三段：1/3 https://x.com/yyyole/status/2100175317508006021 （2081字）、2/3 https://x.com/yyyole/status/2100175326123053288 （1956字）、3/3 https://x.com/yyyole/status/2100175336315257099 （506字，一致性要求到第9条）。短版无广告提示词 https://x.com/yyyole/status/2100119674562420819 仅 extras，非主 video_prompt。人物参考图、「沐阳个人主页截图」原帖未公开；勿伪造参考卡、勿用成片截帧冒充。模型 Seedance 2.5（作者多处确认）。
   {
     id: "yyyole-freeze-catch-phone-coffee-ad-seedance-2-5",
