@@ -26,7 +26,6 @@ const rawTutorials: Tutorial[] = [
     sourceImpressions: 497,
     sourceStats: {
       asOf: "2026-10-19",
-      impressions: 497,
       likes: 7,
       reposts: 0,
       bookmarks: 3,
@@ -195,7 +194,6 @@ NEGATIVE：禁止字幕、文字、水印、Logo；禁止配乐和台词；禁�
     sourceImpressions: 11642,
     sourceStats: {
       asOf: "2026-10-18",
-      impressions: 11642,
       likes: 88,
       reposts: 4,
       bookmarks: 19,
