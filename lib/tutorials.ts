@@ -3,6 +3,438 @@ import { withMedia } from "./media";
 
 // 数据里照常写站内路径 "/tutorials/<id>/..."；导出时由 withMedia 统一指向 R2（见 lib/media.ts）。
 const rawTutorials: Tutorial[] = [
+  // 查重别名(提示词自回复帖：PROMPT 1–4 Girl/Cat/Apartment + Episode 1): https://x.com/ivanka_humeniuk/status/2112018732130165124
+  // 查重别名(提示词自回复帖：PROMPT 5 Episode 2): https://x.com/ivanka_humeniuk/status/2112018737716941054
+  {
+    id: "ivanka-girl-cat-apartment-feeder-seedance-2-5",
+    title: "女孩·折耳猫·公寓喂食器 · 4 张设定图锁一致 · Seedance 2.5",
+    subtitle: "X · @ivanka_humeniuk · Seedance 2.5 on Flova · 40秒 · 16:9",
+    description:
+      "女孩、折耳猫、公寓与喂食器 4 图锁一致，两集 14 镜讲清自动喂食器日常。",
+    video: "/tutorials/ivanka-girl-cat-apartment-feeder-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/ivanka-girl-cat-apartment-feeder-seedance-2-5/poster.jpg",
+    duration: "40秒",
+    durationSec: 40,
+    styleLabel: "宠物喂食器生活广告",
+    shots: 14,
+    references: 4,
+    model: "Seedance 2.5 on Flova",
+    style: "现代公寓日光 · 折耳猫日常 · 自动喂食器产品广告",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/ivanka_humeniuk/status/2112018724702023995",
+    sourceAuthor: "@ivanka_humeniuk",
+    sourcePlatform: "X",
+    sourceImpressions: 1937,
+    sourceStats: { asOf: "2026-10-19", likes: 87, reposts: 1, bookmarks: 28 },
+    formats: ["产品广告", "猫", "电影叙事"],
+    hook: {
+      structure: "误读讨要 → 空站揭示 → 补粮补水 → 出门独处 → 回家亲昵回调",
+      opening: "第 0 秒低机位跟拍：女主坐在沙发上滑平板，折耳猫穿过木地板向她走来，边柜旁的白灰喂食器已经入画——人和猫、产品同时立住。",
+      openingAt: 0,
+      beats: [
+        { title: "误读怎么扭成产品", text: "约 3.2s 猫用爪碰脚踝像讨抱；约 6.2s 硬切空碗特写，原来要的是粮和水。", at: 3.2 },
+        { title: "补货怎么讲清机制", text: "约 8.8s 掀盖倒粮；约 11.8s 装回侧透水箱；约 14.2s 重力出粮滑入食碗。", at: 8.8 },
+        { title: "第二集怎么收", text: "约 20s 接档继续吃；女主出门后猫独自玩再回站喝水；约 33.6s 开门回家，广角门口抱猫、喂食器仍在右侧。", at: 20 },
+      ],
+      copyThis: "先出女主、折耳猫、公寓、喂食器 4 张设定图，视频里用 @image4/@image2/@image3/@image1 分工锁定；两集各 7 镜、各 20 秒硬切，产品位置绑在边柜东墙不动。",
+      approx: true,
+    },
+    tags: [
+      "40秒 · 宠物产品",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "4 张设定图",
+      "折耳猫",
+      "两集连播",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：先出 3 张角色/场景设定图 + 产品参考",
+        description:
+          "PROMPT 1–3 分别出：女主正脸+全身（橄榄绿开衫）、Scottish Fold 正脸+全身、公寓双视角；@image1 喂食器原帖只在视频拼板展示（提示词无单独出图 PROMPT，用产品照或拼板截图）。作者用 Flova 生成。",
+      },
+      {
+        number: 2,
+        title: "第二步：视频提示词里给每张图分工",
+        description:
+          "@image1 锁喂食器外形与双碗布局，@image2 锁折耳猫花色与耳朵，@image3 锁公寓动线并把喂食器钉在边柜东墙地板，@image4 锁女主五官与整套衣服；LOCATION 写清沙发西、玄关北、边柜东。",
+      },
+      {
+        number: 3,
+        title: "第三步：两集各 7 镜硬切，一次生成约 40 秒",
+        description:
+          "Episode 1（0–20s）：讨要→空站→补粮→补水→重力出粮→英雄镜头；Episode 2（20–40s）：继续吃→出门→独玩→回站喝水→回家抱猫。全片日光 5600K、产品几何与猫斑纹全程不断档。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "ivanka-feeder-product",
+        number: "1",
+        title: "@image1 · 喂食器产品图（Feeder / product）",
+        subtitle: "白灰肋纹自动喂食饮水站；截自原帖视频下半拼板右下格（非原图）。原帖无单独产品出图 PROMPT，约束写在动画提示词 @image1",
+        image: "/tutorials/ivanka-girl-cat-apartment-feeder-seedance-2-5/refs/01-feeder-product.jpg",
+        prompt: `【原帖未单独公开产品出图提示词；以下摘自 PROMPT 4 动画提示词对 @image1 的约束】
+
+@image1 = original product photo. Controls the exact feeder geometry, proportions, white ribbed plastic body, grey rounded lid, transparent side water container, vertical food-level window, front-left water bowl and front-right food bowl. This is the primary and final source for the product's appearance.
+
+The product remains the exact AMEIFU white-and-grey food-and-water station from @image1. Its shape, lid, ribbed surfaces, level window, side reservoir and left-water/right-food bowl arrangement remain identical across every cut. The feeder occupies one fixed floor position beside the sideboard. The apartment geometry, daylight direction, woman, cat, wardrobe and coat markings remain continuous. All typography, subtitles and promotional cards are reserved for post-production; generated footage contains only natural live-action subjects, product and apartment. Shots 3, 6 and 7 preserve clean compositional space for later graphic overlays.`,
+      },
+      {
+        id: "ivanka-feeder-cat-map",
+        number: "2",
+        title: "@image2 · 折耳猫设定图（Cat map / Scottish Fold）",
+        subtitle: "金棕条纹折耳猫正脸 + 全身；截自原帖视频下半拼板右上格（非原图）",
+        image: "/tutorials/ivanka-girl-cat-apartment-feeder-seedance-2-5/refs/02-scottish-fold-cat-map.jpg",
+        prompt: `A wide 16:9 horizontal studio reference card presents a duo-view of the same mature golden-shaded Scottish Fold cat, carefully arranged on a seamless, neutral-gray cyclorama with a medium-gray tone. On the left half of the card, a sharp, frontal close-up portrays the plush, dense fur of the Scottish Fold's broad round head, where full cheeks, a short wide muzzle, and small tightly folded ears frame the round facial structure. The cat's closed mouth and relaxed whiskers enhance its calm, attentive expression, as both clear round, emerald-green eyes and a pinkish-brown nose are rendered in crisp detail. To the right, a full-body front three-quarter (45°) standing posture shows the entire figure from the folded ears to all four round paws, finishing at the thick, naturally curved, subtly ringed tail. Accurately matching facial geometry, ear folding, green eye shape, plush fur pattern and golden color, as well as the unique dark brown tipping across the upper coat, seamlessly denote both views as the exact same feline—with a harmonious warm cream-gold undercoat, lighter cream chest and belly, and darker crown and back creating color continuity. Even, diffused light from a large 5200K softbox at front-upper-left fills the luxurious fur with gentle edge lighting from camera-right (2:1 ratio), separating the warm hues from the background while creating clear, soft neutral shadows and subtle eye reflections for a true-to-life effect. There are no objects or text overlays, only a faint soft contact shadow beneath the standing body, emphasizing the visual clarity of the cat. Both views are tightly, cleanly arranged with generous separation, a neutral studio background, realistic tonal rendering, accurate facial proportions, and authentic fur texture—hallmarks of high-resolution, Hasselblad medium-format animal photography with an 85mm lens at f/8—producing a professional, direct, and factual studio reference card, free from distractions or branding.`,
+      },
+      {
+        id: "ivanka-feeder-apartment-map",
+        number: "3",
+        title: "@image3 · 公寓设定图（Apartment map，双视角）",
+        subtitle: "同一套现代公寓两视角，喂食器钉在边柜东墙地板；截自原帖视频下半拼板左下格（非原图）",
+        image: "/tutorials/ivanka-girl-cat-apartment-feeder-seedance-2-5/refs/03-apartment-map.jpg",
+        prompt: `Create a brand-new horizontal two-view apartment reference card. Use as the exact identity reference for one physical feeder-waterer.
+
+SHEET:
+ layout: "Two photographic panels of the same apartment — wide eye-level view on the left, low cat-eye view on the right."
+ aspect: "16:9 horizontal, image-only reference card."
+
+PRODUCT:
+ identity: "The two units in represent two views and two states of one identical product. Render one physical feeder in each apartment panel."
+ design: "Exact white ribbed body, gray lid, narrow food-level window, translucent side water tank, two front bowls, proportions and dimensions from ."
+ state: "Filled configuration with brown dry kibble in the food bowl and reservoir, clear water in the side tank and drinking bowl."
+ fixed_anchor: "The feeder occupies one permanent floor coordinate: its flat rear edge sits 2 centimetres from the baseboard of the right-hand wall, its right side sits exactly 15 centimetres from the left front leg of the low oak sideboard."
+ orientation: "The rear housing runs parallel to the right-hand wall; both bowls face perpendicular away from the wall toward the centre of the living room."
+ scale: "Physical size 30.8 × 25.8 × 22.1 centimetres."
+
+LOCATION:
+ description: "Spacious contemporary open-plan apartment with warm-white walls, matte light-oak flooring, cream sofa, round oak dining table, warm-white kitchen, visible hallway and open bedroom doorway."
+ sideboard_anchor: "A low oak sideboard stands permanently against the right-hand living-room wall; its four legs, position and dimensions remain identical in both panels."
+ circulation: "The central oak-floor walkway from the living room into the hallway remains completely clear."
+ presence: "Unoccupied, tidy, naturally lived-in home."
+
+LIGHT:
+ key: "Soft directional 5200K late-morning daylight entering from the floor-to-ceiling window on the left."
+ fill: "Warm wall and oak-floor bounce at a 2:1 ratio."
+ integration: "The feeder receives the same daylight, reflections and compact contact shadow in both panels."
+
+VIEWS:
+ wide_view: "Left panel — camera at 1.4 metres in the southwest living-room corner, facing northeast. The feeder appears tight against the far-right baseboard immediately beside the sideboard’s left front leg, clearly outside the central walkway."
+ cat_eye_view: "Right panel — camera 25 centimetres above the floor at the hallway entrance, facing southwest along the same right-hand wall. The feeder appears in the near-right foreground at the identical baseboard coordinate; the same sideboard and its left front leg remain directly beside it, proving the unchanged placement."
+
+LOOK:
+ authenticity: "Sony A7R V, 24mm lens at f/8 — straight architectural lines, readable room depth and realistic product scale."
+ style: "contemporary digital interior photography, natural sensor texture, realistic commercial lifestyle aesthetic."
+
+CONSISTENCY_LOCK: "Both panels depict one identical apartment photographed at the same moment. The feeder, sideboard, wall, baseboard and floorboard pattern retain exactly the same physical coordinates and orientation; only the camera position and camera height change."`,
+      },
+      {
+        id: "ivanka-feeder-girl-map",
+        number: "4",
+        title: "@image4 · 女主设定图（Girl map）",
+        subtitle: "29 岁成年女性正脸 + 全身（橄榄绿开衫/白T/卡其裤）；截自原帖视频下半拼板左上格（非原图）",
+        image: "/tutorials/ivanka-girl-cat-apartment-feeder-seedance-2-5/refs/04-girl-character-map.jpg",
+        prompt: `A high-resolution horizontal double portrait card in 16:9 format presents a single, attractive 29-year-old woman in two distinct but visually consistent views against a seamless neutral medium-gray studio cyclorama. On the left, a softly lit head-and-shoulders portrait frames her face from the top of the hair through the upper chest, shot from the front at eye level, with long chestnut-brown hair styled in natural loose waves over both shoulders and a soft center part. The closeup cleanly reveals her bright, delicately freckled warm-beige skin with realistic texture and understated matte gloss, subtle natural asymmetry in eyebrow and eyelid height, quietly defined jaw, small beauty mark beneath her left cheekbone, naturally full almond-shaped hazel-brown eyes, and a gentle, closed-mouth smile, all illuminated with a large, diffused 5200K softbox from front-left for soft shadow contouring and a subtle rim light separating her hair and sage knit cardigan from the plain gray backdrop. On the right, she stands in a relaxed three-quarter, 45-degree view, her height (170cm), realistic body proportions, and gently athletic shape clearly readable, weight resting on her right leg with her arms at her sides, evenly lit to maintain consistent skin and fabric color, and matching shadow direction, skin surface finish, and gentle gray studio highlights. Her attire is seamless across both views: a soft sage-green cardigan in thick knit, open over a fitted white cotton crew-neck T-shirt, opaque high-waisted beige straight-leg trousers, and solid white cotton ankle socks—all rendered in subtly warm, natural color grading, with smooth highlight roll-off and accurate clothing and facial detail. Captured in a single session with a Hasselblad H6D-100c using an 85mm lens at f/8, both images maintain medium-format crispness with no visible distortion or crop, subtle sensor noise and fine natural contrast textures, positioned over smooth, undistracting negative space. The final impression is calm, approachable, modern and professional, suitable for identity reference or contemporary commercial casting.`,
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–3.2s 低机位跟拍：女主坐沙发，折耳猫穿过客厅走向她，喂食器在边柜旁。" },
+      { number: 2, description: "3.2–6.2s 中景双人：猫用爪碰她脚踝，像在讨要什么。" },
+      { number: 3, description: "6.2–8.8s 产品揭示：喂食器特写，双碗空、粮窗几乎见底，猫停在碗前。" },
+      { number: 4, description: "8.8–11.8s 女主跪地掀灰盖，往粮仓倒入干粮。" },
+      { number: 5, description: "11.8–14.2s 侧透水箱特写：她把装满的透明水箱装回。" },
+      { number: 6, description: "14.2–16.5s 重力出粮：干粮滑入右侧食碗。" },
+      { number: 7, description: "16.5–20s 产品英雄镜头：喂食器+猫+女主走回沙发。" },
+      { number: 8, description: "20–22.7s 第二集接档：猫在食碗边吃完第二口，女主虚焦在后。" },
+      { number: 9, description: "22.7–25.4s 女主穿鞋出门，猫在玄关目送。" },
+      { number: 10, description: "25.4–28.2s 午后低机位跟拍猫在空屋玩耍。" },
+      { number: 11, description: "28.2–30.8s 猫自行走回喂食器工位。" },
+      { number: 12, description: "30.8–33.6s 饮水特写：猫喝左侧水碗，重力补水可见。" },
+      { number: 13, description: "33.6–36.6s 钥匙开门：女主回家，猫竖耳转身迎接。" },
+      { number: 14, description: "36.6–40s 广角收尾：门口蹲下抱猫，右侧喂食器完整入画。" },
+    ],
+    constraints:
+      "一个人、一只折耳猫、一套公寓、一台喂食器；喂食器始终在边柜东墙地板原位；@image1–4 身份与花色/服装不断档；两集各 7 镜硬切、各约 20 秒。与成片：作者发布的是上下拼接版（上半 1706×960 为 16:9 成片，下半为 2×2 设定图拼板），本条 demo 只裁上半；4 张参考图均从视频下半拼板截出（tmix 降噪），约 850×480，不是原图。提示词动画段点名 AMEIFU 喂食器型号名，成片外观为通用白灰产品形、拼板产品格未见清晰商标——商用/再分发勿冒充真品牌。缺口：切点按提示词秒表，成片可能有 ±0.3–1s 漂移。",
+    video_prompt: {
+      title: "Girl + Scottish Fold + Apartment Feeder · Ep1+Ep2 · 40s",
+      subtitle: "Seedance 2.5 on Flova · 16:9 · PROMPT 4 + PROMPT 5（两集动画，作者自回复长帖）",
+      content: `📌 PROMPT 4 (Animation prompt - Episode 1):
+CAT'S SCHEDULE → MISREAD REQUEST → EMPTY STATION REVEAL → REFILL → ROUTINE RESTORED
+
+SHOT STRUCTURE: 7 shots, 20 seconds, 16:9 horizontal, exactly as listed, no added shots. Timed photorealistic live-action multishot with cuts only at the specified points.
+
+REFS:
+@image1 = original product photo. Controls the exact feeder geometry, proportions, white ribbed plastic body, grey rounded lid, transparent side water container, vertical food-level window, front-left water bowl and front-right food bowl. This is the primary and final source for the product's appearance.
+@image2 = Scottish Fold cat character sheet. Controls the cat's exact identity, body proportions, golden-brown striped coat, white muzzle and chest, folded ears and large green eyes.
+@image3 = apartment location reference. Controls the exact architecture, warm oak floor, cream walls, kitchen, sofa, sideboard, hallway, daylight direction and the feeder's fixed position on the floor at the right end of the wooden sideboard. The product shown inside this location reference is replaced by the exact product from @image1.
+@image4 = woman character sheet. Controls her exact identity, face, long wavy brown hair, olive-green cardigan, white T-shirt, beige trousers and white socks.
+
+ACTIVE REFERENCES: @image1 @image2 @image3 @image4. Preserve each reference within its assigned responsibility.
+
+LOCATION MAP — fixed throughout the entire sequence:
+- WEST ZONE: cream sofa where the woman sits with a tablet.
+- CENTRAL ZONE: open oak floor connecting the sofa, kitchen and hallway.
+- EAST WALL: long wooden sideboard.
+- FEEDER POSITION: directly against the east wall at the right end of the sideboard, resting flat on the oak floor in exactly the position established by @image3.
+- BACKGROUND: open kitchen and hallway remain architecturally identical across every cut.
+- DAYLIGHT: warm late-morning sunlight enters from the large west-facing window and stretches across the floor toward the feeder.
+
+FIXED IDENTITIES:
+- The Scottish Fold from @image2 is one continuous cat with identical coat markings, folded ears, green eyes, scale and body proportions in every shot.
+- The woman from @image4 keeps the identical face, hairstyle, cardigan, T-shirt, trousers and socks in every shot.
+- The feeder keeps the exact design, dimensions, bowl arrangement and materials from @image1 in every shot.
+
+ACTING — CAT:
+scene direction: make the woman understand one precise request without vocal explanation.
+fuel: the feeding routine should happen now.
+goal: guide the woman from the sofa to the feeder.
+obstacle: she initially mistakes the request for affection.
+tactic: touch her ankle, let her hand almost reach the fur, move directly toward the feeder, then look back to confirm she follows.
+channel: controlled walking, one deliberate paw touch, head turns and fixed eyelines.
+gaze always engaged in the task, natural blink cadence.
+
+ACTING — WOMAN:
+scene direction: understand what the cat needs while keeping the moment ordinary and familiar.
+fuel: she knows the cat's daily habits.
+goal: correctly answer the request.
+obstacle: her first interpretation is wrong.
+tactic: offer a quick stroke without leaving the sofa, register where the cat goes, then follow the cat's eyeline to the feeder.
+channel: tablet in one hand, free hand reaching down, then refilling both containers.
+gaze always engaged in the task, natural blink cadence.
+
+SEQUENCE LIST:
+
+SHOT 1 — 0.0s to 3.2s — HOOK — LOW WIDE FOLLOW
+first_frame: the first visible frame already contains the woman seated on the west-side sofa in the left third, the Scottish Fold walking across the central floor toward her, and the feeder visible in its fixed position beside the sideboard in the deep right third.
+camera: cat-height wide shot, 63° FOV, camera 35 cm above the floor, three-quarter 45° angle from the kitchen side, gentle handheld tracking backward at walking speed; no optical drift.
+action_visual: the cat crosses the sunlit floor with natural heel-to-toe paw contact, tail level, eyes fixed on the woman. The woman scrolls on her tablet, then registers the approaching cat.
+acting: the cat measures whether she has noticed; the woman shifts her attention from the tablet to the cat.
+narration: "Cats have their own schedules."
+exit: the cat reaches her socked ankle and raises one front paw.
+(HARD CUT TO)
+
+SHOT 2 — 3.2s to 6.2s — SETUP — MEDIUM TWO-SHOT
+camera: medium two-shot, 47° FOV, eye level with the seated woman, frontal azimuth shifted 45° from the previous camera position, restrained handheld breathing; no optical drift.
+action_visual: the cat places one paw against her ankle. The woman keeps the tablet in her left hand and lowers her right hand toward the cat's head. Just before contact, the cat passes beneath the descending hand and walks with purpose toward the east wall.
+acting: she tests the simplest answer; the cat redirects her attention from itself toward the feeder.
+narration: "Breakfast should appear the moment they decide it is time."
+reaction: her open hand remains suspended for half a beat; her eyes follow the cat instead of returning to the tablet.
+exit: the cat moves out of the foreground toward the feeder while she begins lowering the tablet.
+(MATCH CUT ON THE CAT'S FORWARD STEP TO)
+
+SHOT 3 — 6.2s to 8.8s — TWIST — PRODUCT REVEAL
+first_frame: the exact feeder from @image1 dominates the right foreground, both front bowls visibly empty, the food-level window nearly empty and the side water container low. The cat arrives from the central floor and stops within 15 cm of the bowls. The woman is rising from the sofa in the distant left background.
+camera: detail-on-wide composition, 84° FOV, camera 22 cm above the floor and within 40 cm of the feeder, three-quarter 90° angle from the hallway side, short controlled push-in; no optical drift.
+action_visual: the cat inspects the empty food bowl, then turns its head over its own shoulder and locks its gaze on the woman. The exact product geometry remains fully readable.
+acting: the cat waits to learn whether she has finally understood; the woman follows the line between the cat and the empty bowl.
+narration: "But your day does not always agree."
+reaction: the apparent request for attention resolves into a precise request for breakfast.
+exit: the woman enters the edge of frame carrying a clear jar of dry kibble.
+(HARD CUT TO)
+
+SHOT 4 — 8.8s to 11.8s — RISING — FOOD REFILL
+camera: medium close product shot, 29° FOV, camera at feeder-lid height, three-quarter 45° angle from the room side, stable handheld frame; no optical drift.
+action_visual: kneeling beside the stationary feeder, the woman lifts the exact grey lid vertically, places it flat on the oak floor, and pours dry kibble from the clear jar into the main 3-litre food container. Individual pieces fall with gravity, strike the inner plastic walls and accumulate from the bottom upward. Her wrists respond to the jar's decreasing weight.
+acting: she alternates her gaze between the rising food level and the cat waiting by the bowl.
+narration: "This compact feeder keeps dry food and water ready in one place,"
+exit: the last pieces fall and her hand begins returning the grey lid.
+(INSERT CUT TO)
+
+SHOT 5 — 11.8s to 14.2s — FEATURE — WATER REFILL
+camera: close detail, 18° FOV, camera level with the transparent side container, profile azimuth shifted 60° from the previous shot, static framing; no optical drift.
+action_visual: her hands lower the filled transparent 0.85-litre water container firmly into its exact side cradle. The base seats with visible contact. Air bubbles rise through the water and a controlled stream glugs into the front-left bowl until the surface reaches a stable level. Water clings to the inner plastic and settles with concentric ripples.
+acting: her eyes verify the container is seated and the water stops at the correct level.
+narration: "using simple gravity-fed dispensing."
+exit: a final bubble rises as the water surface becomes still.
+(MATCH CUT FROM THE WATER RIPPLE TO)
+
+SHOT 6 — 14.2s to 16.5s — SIGNATURE — GRAVITY MECHANISM
+camera: low product close-up, 12° FOV, camera aligned with the front-right food bowl, three-quarter 45° angle from the cat's approach path, static focus on the dispensing opening; no optical drift.
+action_visual: dry kibble slides naturally from the filled hopper through the mechanical gravity opening and settles into the right bowl. Pieces collide, rotate and stop against one another. The cat's front paws enter the background and stop at the bowl edge.
+acting: the cat watches the final pieces settle before lowering its head.
+narration: "Fill both containers once,"
+exit: the cat's nose approaches the food.
+(HARD CUT TO)
+
+SHOT 7 — 16.5s to 20.0s — RESOLUTION — PRODUCT HERO WITH CAT
+first_frame: the complete feeder is fully visible in the lower-right third, the cat stands naturally in front of it, and the woman crosses the middle distance back toward the sofa. The apartment remains open and readable behind them.
+camera: medium-wide hero composition, 47° FOV, camera 45 cm above the floor, three-quarter 45° angle from the central room, slow 20 cm pull-back that settles into a stable final frame; no optical drift.
+action_visual: the cat takes its first complete bite, chews, swallows and immediately takes a second bite. The water remains clear and still in the left bowl; the food hopper and right bowl remain visibly filled. The woman sits back on the sofa and resumes using her tablet while keeping one brief confirming glance on the cat.
+acting: the cat commits fully to the routine it successfully initiated; the woman verifies the request has been answered and returns to her day.
+narration: "and her routine keeps moving—even when yours gets busy."
+reaction: the cat that appeared dependent has efficiently directed the entire solution.
+exit: hold the clean product-and-cat composition after the second bite for the final half-second.
+
+PHYSICS:
+The cat moves with feline shoulder compression, alternating paw contact, weight transfer through the spine and a softly following tail. The feeder rests firmly on the oak floor with consistent contact shadows and constant scale. Plastic components have visible thickness and rigid form. Kibble falls, collides and accumulates under gravity. Water flows only through the seated reservoir, forms bubbles and ripples, then settles. Hands maintain anatomically correct contact with every component.
+
+LIGHTING:
+The west-facing window is the single daylight source, 5600K softened by cream curtains. Camera remains on the gentle shadow side of the subjects. Sunlight creates long soft-edged shapes across the oak floor, mild highlights on the white plastic and realistic reflections through the water container. Exposure prioritizes natural white plastic detail and preserves texture in the brightest surfaces.
+
+AUDIO:
+
+VOICE CONTINUITY LOCK — VOICE ID: FEEDER_NARRATOR_01.
+
+Use the exact same off-screen narrator throughout Episode 1 and Episode 2: a young adult woman, approximately 28–35 years old, speaking English with a neutral General American accent. Warm, clear lower-mid female voice with an average pitch around 180 Hz, a lightly bright timbre, soft chest resonance, smooth non-breathy texture, precise consonants and natural rounded vowels. Her delivery is conversational, friendly and premium-commercial: calm, gently amused and quietly confident, never theatrical or pushy, with a subtle smile audible in her tone. Medium-fast pace, approximately 150–160 words per minute, smooth connected phrasing and only very short natural breathing pauses. Close-mic, clean dry studio recording, stable loudness, no reverb.
+
+The narrator remains off-screen. Neither the woman nor the cat lip-syncs or speaks on camera. Continuous voice-over must run from the first second to the final second of each episode, with no silent gaps except tiny natural breaths. Keep exactly the same voice identity, age, accent, pitch range, timbre, cadence, articulation, emotional energy, microphone distance and recording texture in both episodes. Narration always remains clearly dominant over music and sound effects.
+
+EXACT CONTINUOUS VOICE-OVER SCRIPT:
+"Cats have their own schedules. Breakfast should appear the moment they decide it is time. But your day does not always agree. This compact feeder keeps dry food and water ready in one place, using simple gravity-fed dispensing. Fill both containers once, and her routine keeps moving—even when yours gets busy."
+
+SOUND BED:
+Quiet natural apartment room tone, soft paw contact on wood, cardigan fabric movement, one lid contact, dry kibble rattling against plastic, two water glugs, a final bubble and two crisp eating sounds. A restrained warm commercial music bed runs continuously beneath the narration. Every physical sound has its visible source and remains below the voice-over.
+
+STYLE:
+Highly photorealistic live-action home product advertisement. Natural human skin, individual cat hairs, anatomically correct movement, realistic transparent plastic, true water refraction, detailed dry food and restrained commercial camera movement. Clean contemporary Amazon-style product presentation grounded in ordinary home life.
+
+OUTPUT SETTINGS:
+16:9 horizontal, 20 seconds, 4K detail, 30 fps, real-time motion in every shot, natural motion blur, clean highlight roll-off.
+
+POSITIVE LOCKS:
+The product remains the exact AMEIFU white-and-grey food-and-water station from @image1. Its shape, lid, ribbed surfaces, level window, side reservoir and left-water/right-food bowl arrangement remain identical across every cut. The feeder occupies one fixed floor position beside the sideboard. The apartment geometry, daylight direction, woman, cat, wardrobe and coat markings remain continuous. All typography, subtitles and promotional cards are reserved for post-production; generated footage contains only natural live-action subjects, product and apartment. Shots 3, 6 and 7 preserve clean compositional space for later graphic overlays.
+
+========================================
+
+📌 PROMPT 5 (Animation prompt - Episode 2):
+
+BREAKFAST FINISHED → OWNER LEAVES → INDEPENDENT ROUTINE → OWNER RETURNS → AFFECTION CALLBACK
+
+SHOT STRUCTURE: 7 shots, 20 seconds, 16:9 horizontal, exactly as listed, no added shots. Timed photorealistic live-action multishot with cuts only at the specified points.
+
+REFS:
+@image1 = original product photo. Controls the exact feeder geometry, proportions, white ribbed plastic body, grey rounded lid, transparent side water container, vertical food-level window, front-left water bowl and front-right food bowl. This is the primary and final source for the product's appearance.
+@image2 = Scottish Fold cat character sheet. Controls the cat's exact identity, body proportions, golden-brown striped coat, white muzzle and chest, folded ears and large green eyes.
+@image3 = apartment location reference. Controls the exact architecture, warm oak floor, cream walls, kitchen, sofa, sideboard, hallway, entry door, daylight direction and the feeder's fixed position on the floor at the right end of the wooden sideboard. The product shown inside this location reference is replaced by the exact product from @image1.
+@image4 = woman character sheet. Controls her exact identity, face, long wavy brown hair, olive-green cardigan, white T-shirt, beige trousers and white low-profile shoes.
+
+ACTIVE REFERENCES: @image1 @image2 @image3 @image4. Preserve each reference within its assigned responsibility.
+
+LOCATION MAP — fixed throughout the entire sequence:
+- WEST ZONE: cream sofa and sunlit living area.
+- CENTRAL ZONE: open oak floor used by the cat for walking and playing.
+- EAST WALL: long wooden sideboard.
+- FEEDER POSITION: directly against the east wall at the right end of the sideboard, resting flat on the oak floor in exactly the position established by @image3.
+- NORTH BACKGROUND: hallway leading to the dark entry door.
+- WEST WINDOW: the single daylight source, creating a sun patch that moves gradually across the floor as time passes.
+
+FIXED IDENTITIES AND STATES:
+- The Scottish Fold from @image2 remains one continuous cat with identical folded ears, green eyes, coat markings, scale and body proportions.
+- The woman from @image4 keeps the identical face, hair, cardigan, T-shirt, trousers and shoes.
+- The feeder remains filled from the final state of the previous action: dry food visible through the vertical level window and inside the right bowl, clear water visible inside the side reservoir and left bowl.
+- The feeder occupies one fixed floor position throughout the entire sequence.
+
+ACTING — CAT:
+scene direction: follow a complete daily routine independently, then choose contact with the woman when she returns.
+fuel: food and water are already available, leaving attention free for play and reunion.
+goal: move naturally through eating, play, drinking and greeting.
+obstacle: the woman leaves the apartment during the routine.
+tactic: finish eating, watch her departure, redirect attention toward play, return to the station when thirsty, then leave the station to meet her at the door.
+channel: eating, controlled walking, toy contact, drinking and rubbing against her ankle.
+gaze always engaged in the task, natural blink cadence.
+
+ACTING — WOMAN:
+scene direction: leave the cat with a functioning routine and read the greeting correctly when she returns.
+fuel: she has prepared the food-and-water station before leaving.
+goal: depart without interrupting the cat and reconnect on returning.
+obstacle: the cat remains focused on breakfast during her departure.
+tactic: verify both containers from across the room, leave quietly, then lower herself to the cat's level when it approaches her at the door.
+channel: closing the tablet, taking keys, walking through the hallway and offering an open hand on return.
+gaze always engaged in the task, natural blink cadence.
+
+SEQUENCE LIST:
+
+SHOT 1 — 0.0s to 2.7s — CONTINUITY HOOK — FOOD DETAIL
+first_frame: the exact feeder from @image1 fills the right half of the frame. The Scottish Fold is already completing the second bite at the right food bowl, matching the finished state of the previous action. The woman is visible in soft focus on the sofa in the deep background.
+camera: low close product-and-cat shot, 29° FOV, camera 30 cm above the floor, three-quarter 45° angle from the central room, restrained handheld breathing; no optical drift.
+action_visual: the cat chews, swallows and takes one final piece of kibble. The food level remains clearly visible through the narrow vertical window. In the background, the woman closes her tablet.
+acting: the cat remains committed to finishing breakfast; the woman checks the feeder and cat before standing.
+narration: "With a three-liter food container and a separate enclosed water reservoir,"
+exit: the woman rises while the cat lifts its head from the bowl.
+(HARD CUT TO)
+
+SHOT 2 — 2.7s to 5.4s — SETUP — DEPARTURE
+camera: wide shot, 63° FOV, eye-level camera positioned in the central room, three-quarter 45° view toward the hallway, gentle handheld follow; no optical drift.
+action_visual: the woman walks from the sofa through the central floor toward the north entry door, takes her keys from the sideboard and opens the door. The filled feeder remains clearly visible beside the sideboard. The cat sits at the station and tracks her movement with its eyes.
+acting: she reads the cat's settled posture as confirmation that the routine is working; the cat waits to see whether she returns or calls it.
+narration: "both stay protected between refills."
+exit: the door closes with a soft latch as the cat turns its head back toward the room.
+(HARD CUT WITH TIME SHIFT TO)
+
+SHOT 3 — 5.4s to 8.2s — PLAYTIME — LOW TRACKING SHOT
+SHIFT: early afternoon in the same apartment; the west-window daylight remains 5600K, with the sun patch shifted farther across the central oak floor.
+camera: cat-height wide shot, 63° FOV, camera 28 cm above the floor, side azimuth 90° from the window, smooth tracking parallel to the cat at 3 km/h; no optical drift.
+action_visual: the cat crosses the sun patch and taps a small muted-green felt ball with one paw. The ball rolls across the wood with decreasing speed. The cat follows, catches it between both front paws and releases it again. The feeder remains visible in the deep background at its fixed east-wall position.
+acting: the cat tests the ball's direction after each contact and adjusts its next step from the result.
+narration: "While she moves from breakfast to playtime"
+exit: the ball rolls out of the sun patch and stops; the cat pauses and turns toward the feeder.
+(MATCH CUT ON THE CAT'S HEAD TURN TO)
+
+SHOT 4 — 8.2s to 10.8s — ROUTINE — RETURN TO THE STATION
+camera: medium observational shot, 47° FOV, camera 45 cm above the floor, three-quarter 45° angle from the hallway side, gentle backward track as the cat approaches; no optical drift.
+action_visual: the cat walks from the central floor directly toward the feeder. The body moves with alternating paw contact, shoulder compression and natural spinal flexion. It passes the filled food bowl and positions its front paws in front of the left water bowl.
+acting: the cat checks the two bowls and selects the water without hesitation.
+narration: "to an afternoon drink, the station quietly keeps up."
+exit: the cat lowers its muzzle toward the water surface.
+(INSERT CUT TO)
+
+SHOT 5 — 10.8s to 13.6s — PRODUCT FEATURE — WATER DISPENSING
+camera: close detail, 18° FOV, camera level with the left water bowl and transparent side reservoir, profile azimuth shifted 60° from the previous shot, static composition; no optical drift.
+action_visual: the cat drinks with physically accurate tongue contact, creating small overlapping ripples. As the water level lowers, one air bubble rises through the enclosed reservoir and a measured amount of water glugs into the bowl. The flow stops automatically at a stable level. Clear refraction reveals the water line inside the container.
+acting: the cat maintains focus on the water surface and follows each ripple with its eyes between laps.
+narration: "Less clutter for you,"
+exit: the final ripple touches the bowl edge and settles.
+(AUDIO BRIDGE: A KEY ENTERS THE FRONT-DOOR LOCK)
+
+SHOT 6 — 13.6s to 16.6s — RETURN — CAT REACTS
+camera: medium-wide shot, 63° FOV, camera positioned beside the east wall on the shadow side of the cat, looking diagonally toward the north hallway; controlled handheld push forward; no optical drift.
+action_visual: the key turns and the entry door opens. The woman steps inside in the identical outfit from @image4. The cat stops drinking, swallows, rotates both folded ears toward the doorway, then turns its head and body toward her. The feeder remains filled and stationary in the foreground.
+acting: the cat compares the familiar footsteps with the person in the doorway, confirms her identity and immediately leaves the bowl; the woman waits to discover whether the cat approaches.
+narration: "a familiar routine for her,"
+reaction: the station has handled the practical need, so the cat's next choice is directed entirely toward the woman.
+exit: the cat pushes away from the floor and begins trotting through the central room.
+(HARD CUT ON THE FIRST TROTTING STEP TO)
+
+SHOT 7 — 16.6s to 20.0s — CALLBACK AND RESOLUTION — WIDE HERO SHOT
+first_frame: the woman is crouching inside the entry doorway in the left third, the cat is already moving toward her through the centre, and the complete feeder remains fully visible beside the sideboard in the right third.
+camera: wide hero composition, 47° FOV, eye-level with the crouching woman, frontal azimuth shifted 45° from the previous shot, slow 25 cm pull-back that settles into a stable final frame; no optical drift.
+action_visual: the cat passes the feeder without stopping, reaches the woman and rubs the side of its face once against her open hand, then curves its body around her ankle. She strokes from the top of the cat's head along the shoulders in one continuous motion. The product, woman and cat remain readable together in the final composition.
+acting: the cat now actively chooses the affection it redirected in the earlier encounter; the woman follows the cat's pressure with her hand instead of anticipating the request.
+narration: "and one tidy corner that truly belongs in your home."
+reaction: what first appeared to be dependence is revealed as a secure routine, allowing the final interaction to become genuine contact.
+exit: hold the woman's hand resting naturally between the cat's shoulders while the product remains clearly visible for the final half-second.
+
+PHYSICS:
+The cat moves with realistic feline weight transfer, shoulder compression, spinal flexion, paw traction and tail follow-through. The felt ball accelerates from paw contact, rolls with friction and loses speed gradually. Water responds to tongue contact, forms small ripples, lowers inside the bowl, releases one reservoir bubble and settles naturally. The feeder remains rigid, weighted and firmly connected to the oak floor with stable contact shadows.
+
+LIGHTING:
+The west-facing window remains the single daylight source. Late-morning light in the opening shots transitions through a hard cut to early-afternoon light with the same 5600K white balance and direction. Camera remains on the soft shadow side of the subjects. White plastic retains surface texture, the water container carries realistic transparent highlights, and the cat's green eyes hold small natural window reflections.
+
+AUDIO:
+
+VOICE CONTINUITY LOCK — VOICE ID: FEEDER_NARRATOR_01.
+
+Use the exact same off-screen narrator throughout Episode 1 and Episode 2: a young adult woman, approximately 28–35 years old, speaking English with a neutral General American accent. Warm, clear lower-mid female voice with an average pitch around 180 Hz, a lightly bright timbre, soft chest resonance, smooth non-breathy texture, precise consonants and natural rounded vowels. Her delivery is conversational, friendly and premium-commercial: calm, gently amused and quietly confident, never theatrical or pushy, with a subtle smile audible in her tone. Medium-fast pace, approximately 150–160 words per minute, smooth connected phrasing and only very short natural breathing pauses. Close-mic, clean dry studio recording, stable loudness, no reverb.
+
+The narrator remains off-screen. Neither the woman nor the cat lip-syncs or speaks on camera. Continuous voice-over must run from the first second to the final second of each episode, with no silent gaps except tiny natural breaths. Keep exactly the same voice identity, age, accent, pitch range, timbre, cadence, articulation, emotional energy, microphone distance and recording texture in both episodes. Narration always remains clearly dominant over music and sound effects.
+
+EXACT CONTINUOUS VOICE-OVER SCRIPT:
+"With a three-liter food container and a separate enclosed water reservoir, both stay protected between refills. While she moves from breakfast to playtime to an afternoon drink, the station quietly keeps up. Less clutter for you, a familiar routine for her, and one tidy corner that truly belongs in your home."
+
+SOUND BED:
+The restrained warm commercial music from the opening episode continues beneath the narration with identical instrumentation and loudness. Natural apartment room tone, one door latch, quiet keys, soft paw contact on wood, a felt ball rolling, water lapping, one reservoir glug, returning key movement, footsteps and cardigan fabric. Every sound has a visible physical source and remains below the continuous voice-over.
+
+STYLE:
+Highly photorealistic live-action home product advertisement. Natural human skin, individual cat hairs, anatomically correct feline motion, realistic rigid plastic, true water refraction, detailed kibble and restrained commercial camera movement. Clean contemporary Amazon-style product presentation integrated into an ordinary apartment routine.
+
+OUTPUT SETTINGS:
+16:9 horizontal, 20 seconds, 4K detail, 30 fps, real-time motion in every shot, natural motion blur and clean highlight roll-off.
+
+POSITIVE LOCKS:
+The product remains the exact AMEIFU white-and-grey food-and-water station from @image1. Its grey lid, ribbed white surfaces, level window, side reservoir and left-water/right-food bowl arrangement remain identical in all shots. The feeder stays in one fixed position beside the sideboard. Food and water levels decrease only through visible eating and drinking. The apartment geometry, daylight direction, woman, cat, wardrobe and coat markings remain continuous. All typography, subtitles and promotional cards are reserved for post-production; generated footage contains only natural live-action subjects, product and apartment. Shots 1, 5 and 7 preserve clean compositional space for later graphic overlays.`,
+    },
+  },
   // 查重：站上/仓库 reed35/ai-video-tutorials 无 status 2112105880322003435 / 2112105911648985385、无本 id。主帖（有成片）https://x.com/johnAGI168/status/2112105880322003435 ；提示词自回帖 https://x.com/johnAGI168/status/2112105911648985385（用户贴的就是这条）。SUBJECT 声明 @图片1–4（布丁/煤球/凯恩/莉娅）均原帖未公开（主帖仅视频、提示词帖无附图、thread 无角色卡）；references=0，勿伪造图卡、勿用成片截帧冒充。模型：Seedance 2.5（主帖 by Seedance 2.5）。同作者站内另有 johnagi 其它条——不是本片。
   {
     id: "johnagi-kitten-knight-fishing-contest-seedance-2-5",
