@@ -3,6 +3,1755 @@ import { withMedia } from "./media";
 
 // 数据里照常写站内路径 "/tutorials/<id>/..."；导出时由 withMedia 统一指向 R2（见 lib/media.ts）。
 const rawTutorials: Tutorial[] = [
+  // 查重别名(提示词自回复 note tweet): https://x.com/bmx_ai13/status/2116637477620576470
+  // 主帖/自回/拟用 id 均未出现在 reed35/ai-video-tutorials main lib/tutorials.ts；纯文生，提示词无 @图/@视频。
+  {
+    id: "bmx-ai13-arrow-handbag-fashion-seedance-2-5",
+    title: "一箭惊喜挂手包 · 庄园奢侈品广告 · Seedance 2.5",
+    subtitle: "X · @bmx_ai13 · Seedance 2.5 · 约20秒 · 16:9",
+    description:
+      "欧洲庄园花园：女弓手一箭射出，镜头跟箭穿对称树篱，再切到庭院聚会——箭杆上竟稳稳挂着一只深棕皮质奢侈手包，咬苹果的男人回头发现惊喜。",
+    video: "/tutorials/bmx-ai13-arrow-handbag-fashion-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/bmx-ai13-arrow-handbag-fashion-seedance-2-5/poster.jpg",
+    duration: "约20秒",
+    durationSec: 20,
+    styleLabel: "奢侈品广告",
+    shots: 6,
+    references: 0,
+    model: "Seedance 2.5（主帖文案署名）",
+    style: "写实奢侈品广告 · 庄园庭院 · 箭后跟飞 · 产品惊喜结尾 · ARRI Alexa 气质",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/bmx_ai13/status/2116637474000970132",
+    sourceAuthor: "@bmx_ai13",
+    sourcePlatform: "X",
+    sourceImpressions: 2241,
+    sourceStats: { asOf: "2026-11-01", likes: 58, reposts: 9, bookmarks: 23 },
+    formats: ["产品广告", "时尚大片"],
+    hook: {
+      structure: "女弓手拉弓 → 箭后跟飞穿树篱 → 庭院掠过 → 箭上挂手包特写 → 男人困惑 → 人箭包收束",
+      opening: "约第 0–3.5 秒：庄园花园，象牙白连衣裙+大草帽女弓手拉弓瞄准并放箭。",
+      openingAt: 0,
+      beats: [
+        { title: "箭后跟飞穿树篱", text: "约 3.5–8s：低机位紧贴箭尾跟飞，穿过对称修剪树篱走廊，叶片掠过。", at: 3.5 },
+        { title: "庭院与挂包惊喜", text: "约 8–13.8s：掠过遮阳伞下聚会宾客，切到手包挂在水平箭杆上的产品特写。", at: 8 },
+        { title: "困惑到结尾构图", text: "约 13.8–20s：咬苹果男人困惑回头，女弓手收弓；中远景定格人+箭+挂包。", at: 13.8 },
+      ],
+      copyThis: "先锁「一箭贯穿地理连续 + 结尾产品惊喜挂包」；前半跟箭动感，后半反应与产品静帧对比；negative 写明箭不伤人、手包不变形。",
+      approx: true,
+    },
+    tags: [
+      "约20秒",
+      "16:9 横屏",
+      "Seedance 2.5",
+      "纯文生视频",
+      "奢侈品广告",
+      "产品惊喜",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：打开自回复拿提示词",
+        description:
+          "主帖只有成片和短文案；完整英文提示词在作者自己的 note tweet 回复里（查重别名 2116637477620576470），约 4056 字、无媒体。提示词没有引用任何参考图或参考视频，是纯文生。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "作者写明用 Seedance 2.5 生成。提示词要求 16:9、20 秒、24fps；本地下载最高可用成片 864×496（≈16:9）、约 20.06s。入库 aspectRatio 按成片实测写 16/9。观感是庄园奢侈品广告：箭后跟飞 + 挂包惊喜结尾。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴进 Seedance 2.5（纯文生，不用挂参考图）。结构依次是：20 秒奢侈品广告总要求 → SHOT1–6 时间轴 → CINEMATOGRAPHY / AUDIO / NEGATIVE。重点保留「箭不伤人、手包挂在箭杆上物理连接」等约束。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–3.5s 庄园花园：象牙白连衣裙+大草帽女弓手拉弓、特写蓝眼、放箭。" },
+      { number: 2, description: "3.5–8s 箭后低机位跟飞：掠过草坪，穿入对称树篱窄廊，叶片运动模糊。" },
+      { number: 3, description: "8–11.7s 出树篱进庭院聚会：遮阳伞下宾客、香槟杯掠过；远处条纹西装男人咬苹果。" },
+      { number: 4, description: "11.7–13.8s 产品特写：深棕皮质顶把手包挂在水平箭杆上，微晃后稳定。" },
+      { number: 5, description: "13.8–16.6s 男人低头看咬过的苹果再转向花园；女弓手原地收弓，神情淡定。" },
+      { number: 6, description: "16.6–20s 中远景：男人侧旁箭杆托着手包，他望向包再望向花园，优雅幽默定格。" },
+    ],
+    constraints:
+      "参考素材：提示词没有引用任何参考图或参考视频，是纯文生视频。画幅：提示词与成片均为约 16:9（864×496）。保持女弓手与男宾面孔/服装全片一致；箭矢不得伤人；手包造型与硬件不变形、与箭杆物理连接；无对话/字幕/logo/水印。",
+    video_prompt: {
+      title: "Arrow Handbag Luxury Fashion Commercial",
+      subtitle: "自回复 note tweet 全文原文 · Seedance 2.5 · 纯文生，无参考素材",
+      content: `Prompt: Create a photorealistic 20-second luxury fashion commercial at a grand European countryside estate, with playful cinematic suspense and sophisticated visual storytelling. 16:9 widescreen, 24fps, premium naturalistic color grading, ARRI Alexa 35 aesthetic, realistic optics and physical motion.
+
+SHOT 1 (0–3.5s): On a sunny afternoon in a manicured formal garden, an elegant young woman in a fitted ivory tailored dress, oversized circular straw hat, and geometric gold earrings faces camera while holding a traditional wooden recurve bow. Medium shot as she confidently lifts the bow and draws the string. Cut to an intimate close-up of her focused blue eyes framed by the bowstring. Cut to a three-quarter close-up: she takes aim and releases one wooden arrow. Keep her appearance, hat, outfit and bow consistent.
+
+SHOT 2 (3.5–8s): Immediately cut to an exhilarating low-angle tracking shot positioned directly behind the flying arrow, with its metallic triangular arrowhead at the visual center. The camera follows exactly along its flight path, speeding across the sunlit grass toward two tall, symmetrical, tightly trimmed hedges in front of the pale stone mansion. The arrow enters the narrow hedge corridor. Leaves streak past on both sides with natural directional motion blur. Preserve continuous forward trajectory and realistic perspective.
+
+SHOT 3 (8–11.7s): The arrow exits the hedges into a sophisticated outdoor garden gathering. Several elegant guests sit at wrought-iron tables beneath a large cream parasol. A distinguished older guest briefly raises a champagne flute in the foreground as the camera glides past. Ahead, beside the mansion terrace and tall French doors, stands a fashionable dark-haired man in a dark brown pinstripe double-breasted suit, glasses, white pocket square and tie. He casually holds a half-eaten pale green apple near his mouth, unaware of the approaching arrow.
+
+SHOT 4 (11.7–13.8s): Elegant profile product close-up against a warm cream stone wall. The arrow comes to rest horizontally, with a small structured dark chocolate-brown leather top-handle luxury handbag hanging securely by its handle from the shaft. Its stitching, polished hardware, curves and glossy fine-grain leather are clearly visible. The handbag swings very slightly due to momentum, then stabilizes. The arrow and handbag remain physically connected, with no morphing or floating.
+
+SHOT 5 (13.8–16.6s): Cinematic close-up of the man beside the terrace. He lowers his bitten apple and studies it with mild confusion, then slowly turns his head toward the garden. Cut to the archer, still standing in the same spot; she lowers her bow calmly with a controlled, confident expression.
+
+SHOT 6 (16.6–20s): Return to a medium-wide view of the man in his pinstripe suit, still holding his apple. The arrow extends horizontally into the frame at his side, supporting the hanging dark brown handbag. He turns toward the bag and then looks across the garden. Hold the elegant, humorous final composition with the handbag clearly featured.
+
+CINEMATOGRAPHY: Precise shot continuity, refined luxury-advertising visual language, 35mm and 50mm natural cinematic lenses, 85mm facial close-ups, shallow depth of field on portraits, controlled focus pulls, vivid but natural hedge greens, warm pale stone, soft golden sunlight, true-to-life skin texture, authentic garment fabric, realistic arrow momentum and consistent geography. Fast arrow-following movement contrasted with quiet, deliberate reaction shots. Clean sharp editing without unnecessary transitions.
+
+AUDIO: Bowstring release, arrow whoosh, rushing leaves, delicate outdoor garden ambience, soft cloth movement, subtle leather movement. No dialogue, no narration, no captions, no watermark.
+
+NEGATIVE CONSTRAINTS: No injury, no arrow hitting any person, no duplicated arrows, no changing handbag design, no deformed hands, no warped bow, no impossible arrow movement, no object teleportation, no sudden wardrobe changes, no changing facial identities, no cartoon or CGI appearance.`,
+    },
+  },
+  // 来源：https://x.com/PJaccetturo/status/2116160696971088319
+  // 查重：main lib/tutorials.ts 无 2116160696971088319 / PJaccetturo / nexus / 拟用 id；线程自回均未入库。
+  // 相关：ep6 2112899203701547153 另一集，勿当成本条成片。
+  {
+    id: "pjaccetturo-nexus-thump-thunderkin-dreamina",
+    title: "Nexus · 红皮莽夫骑雷兽恐龙 · 暗黑喜剧战场 · Dreamina",
+    subtitle: "X · @PJaccetturo · Dreamina / Seedance · 约3分27秒 · 16:9",
+    description:
+      "Nexus 系列长片：没脑子的红皮莽夫 Thump 骑 Thunderkin 恐龙，Bobos 小兵操作爆炸粉刺轰炸帝国军——暗黑喜剧奇幻战场。作者自称成本 $28,775、Dreamina 合作；线程公开多段 Scene 提示词 + Lookdev/资产图 + Mindset 导演方法。",
+    video: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/demo-web.mp4",
+    poster: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/poster.jpg",
+    duration: "约3分27秒",
+    durationSec: 207,
+    styleLabel: "暗黑喜剧战场",
+    shots: 12,
+    references: 11,
+    model: "Dreamina / Seedance（主帖合作 @dreamina_ai；Mindset 写明 Seedance 分步导演）",
+    style: "暗黑喜剧奇幻大战 · 红皮莽夫骑雷兽 · Bobos 小兵 · 爆炸粉刺 · 电影级手持硬切",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/PJaccetturo/status/2116160696971088319",
+    sourceAuthor: "@PJaccetturo",
+    sourcePlatform: "X",
+    sourceImpressions: 191943,
+    sourceStats: { asOf: "2026-10-30", likes: 2198, reposts: 168, bookmarks: 1417, quotes: 42, replies: 181 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "雷兽冲阵开场 → Thump 狂热特写 → 帝国军与对话 → 对决爆炸 → 营火偶戏 → 大战收束 · genre 片尾",
+      opening: "约第 0–5 秒：巨大 Thunderkin/雷兽带着绳具与背板粉刺冲过雾谷战场，银甲帝国军在脚下狂奔。",
+      openingAt: 0,
+      beats: [
+        { title: "Thump 骑兽欢呼", text: "约 15–35s：红/棕皮莽夫 Thump 戴圆皮护目镜、兽皮披肩，骑 Thunderkin 嘶吼，背景银甲队列虚化。", at: 20 },
+        { title: "帝国将领与俘虏戏", text: "约 40–80s：银甲金徽将领与瘦削副官（Fek 气质）雾中对峙；随后 Thump 与肩上 Bobos 对俘虏侧脸互动。", at: 45 },
+        { title: "对决与爆炸粉刺", text: "约 90–150s：战场硬切对决、粉刺坠落爆炸；穿插蓝雾营火边 Fek 举偶戏与 Bobo 抢偶砸石。", at: 120 },
+        { title: "大战收束与片尾", text: "约 150–207s：雷兽再度压境、帝国军仰望；混乱战场后黑底白字「genre」收束。", at: 170 },
+      ],
+      copyThis:
+        "先做 Lookdev/资产静帧（角色、环境、构图），再按 Scene 分段写死镜头/表演/音频；Seedance 一次只锁构图或表演或补洞，不要一次赌整场。提示词写 16:9，与成片一致。",
+      approx: true,
+    },
+    tags: [
+      "约3分27秒",
+      "16:9 横屏",
+      "Dreamina",
+      "Seedance",
+      "Nexus",
+      "暗黑喜剧",
+      "多场景合成",
+      "长片例外",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：看主成片与故事设定",
+        description:
+          "主帖成片约 207 秒、1920×1080→页面 demo 1280×720。故事：Dan Weller 与 PJ 想拍 Tropic Thunder 式莽夫 + 比 Juggalos 更疯的小兵，导演 @chriscapelyt。故事板图 refs/story-poster.jpg（OCR 见 PROMPT_FULL：DINO DEMOLITION SQUAD、Thump/Thunderkin/Bobos/Captain Feck 等角色表）。自称成本 $28,775；合作 @dreamina_ai。",
+      },
+      {
+        number: 2,
+        title: "第二步：Lookdev / Bobos 参考图上页",
+        description:
+          "references_detail：lookdev-bobos.jpg（四套 Bobos 转面对比，文案：左为初版、右为更写实 v2）；bobos-beautiful-1/2.jpg（「beautiful bastards」实拍感特写）。图上无单独文生提示词，用途是角色一致性参考，不要编造出图词。",
+      },
+      {
+        number: 3,
+        title: "第三步：场资产图（OCR 结果如实）",
+        description:
+          "线程「1 - Field scene assets」四图：field-asset-1 Thump 脸特写；field-asset-2 Thump 三格造型（OCR 仅 2/7 UI）；field-asset-3 Dreamina 界面截图（OCR 可见 Scene1 提示词开头残段，完整以 SCENE1 帖为准）；field-asset-4 雾谷环境。缺可靠字的标「图内提示词未能可靠识别」。这些图对应 SCENE1 的 @Image 环境/脸/造型类参考。",
+      },
+      {
+        number: 4,
+        title: "第四步：场景1提示词 + 示例短片",
+        description:
+          "粘贴 SCENE1 全文（video_prompt 第一节 / PROMPT_FULL §5）。输出约 10s、5 个硬切近景，Thump 狂喜喊 Yes/More/Release。步骤内可播短片 = refs/scene-2116160701400289449-web.mp4（preload=metadata），poster 同前缀。@Video1 声音参考 = 原帖未公开独立文件。",
+        video: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/scene-2116160701400289449-web.mp4",
+        poster: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/scene-2116160701400289449-poster.jpg",
+        aspectRatio: "16/9",
+      },
+      {
+        number: 5,
+        title: "第五步：场景2提示词 + 示例短片",
+        description:
+          "粘贴 SCENE2 全文（约 6.5s 四硬切：决斗→帝国脸→Rebel 恐惧→粉刺爆炸）。短片 refs/scene-2116160703480705396-web.mp4。Image1–9 lineup 等作者未在本线程全部公开原图的，标「原帖未公开」，禁止用成片截帧冒充输入。",
+        video: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/scene-2116160703480705396-web.mp4",
+        poster: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/scene-2116160703480705396-poster.jpg",
+        aspectRatio: "16/9",
+      },
+      {
+        number: 6,
+        title: "第六步：场景3营火参考图 + 提示词 + 示例短片",
+        description:
+          "先上 campfire-1/2/3.jpg（Fek 设定、Bobo 抢偶构图、Fek 举偶构图；图内提示词未能可靠识别）。再粘贴 SCENE3 全文（约 5.8s 偶戏）。短片 refs/scene-2116160706387362235-web.mp4。@Image1=campfire-3，@Image2=campfire-2，@Image3=campfire-1；@Video1 音频 = 原帖未公开。",
+        video: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/scene-2116160706387362235-web.mp4",
+        poster: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/scene-2116160706387362235-poster.jpg",
+        aspectRatio: "16/9",
+      },
+      {
+        number: 7,
+        title: "第七步：Mindset / 分工方法（勿当 video_prompt）",
+        description:
+          "自回帖 2116160709180723486「The mindset: direct it, don't roll the dice」全文在 method_prompt 与 PROMPT_FULL §9。核心：构图/调度/表演分开用 Seedance，一次只修一类问题——白涂抹补洞、Maya graybox 锁机位、先刷覆盖再收表演、像导演一样写具体因果。不要把这段塞进视频生成提示词正文冒充分镜词。",
+      },
+      {
+        number: 8,
+        title: "第八步：外链 Google Doc tips",
+        description:
+          "https://docs.google.com/document/d/1sZIV0170Io7i9TxAZn5LIfymvCbVRlLErPbS3vJREQk/edit?usp=sharing — 已用 export?format=txt 公开抓取成功，全文在 PROMPT_FULL §10（与 Mindset 高度重叠并含更多 tips）。跟做可对照 Doc；上线页可外链。收尾感谢 @dreamina_ai；另链 ep6 为另一集勿混入。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "pj-nexus-storyboard",
+        number: "1",
+        title: "故事板 / 角色表 · DINO DEMOLITION SQUAD",
+        subtitle: "自回帖 Story 附图；OCR 见 PROMPT_FULL（Thump / Thunderkin / Bobos / Captain Feck 等）",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/story-poster.jpg",
+        prompt: "原帖未附单独文生提示词；图为故事设定板。OCR 摘录（噪声保留）：\nDINO DEMOLITION  SQUAD : EPISODE 1_V3\nTARGET RUNTIME\n3 : 00\n4 :00\nCHARACTERS\nTHUMP Danny McBride-style country bumpkin, insane but uniquely capable _\nBRONTENHEIMER : The big guy, grows explosive pustules on its back, slung by tail as mobile mortar\nTHUNDERKIN : Thump action\nriding creature, rapid-fire spitfire\nBOBOS : Little gross humanoid creatures that work the mechanism of the Brontenheimer\nCAPTAIN FECK : Small, irritable, buttoned-up Martin Short energy Second in command of the imperial army\nMAJOR WINTERS : Tall, calm, Hawk-like commander of the imperial army\nEXT _\nBATTLEFIELD\nDAY\nBRONTENHEIMER launches explosives into battlefield. BOBOS harvest explosive pustules from the back of the Brontenheimer, passing them in an assembly line to the tail that acts as launcher. It launches again _\nTHUMP shouts with glee nearby_\nClashing soldiers on the battlefield below are blown to bits Rebels , Imperials , whatever in the way _\nCAPTAIN FECK stands with MAJOR WINTERS Theye re watching Thump",
+      },
+      {
+        id: "pj-nexus-lookdev-bobos",
+        number: "2",
+        title: "Lookdev · Bobos 四套设计对比",
+        subtitle: "作者：左初版 → 右更写实 v2；转面+头像",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/lookdev-bobos.jpg",
+        prompt: "原帖未附此图的文生提示词；用途：Bobos 造型一致性 lookdev。图内提示词未能可靠识别。",
+      },
+      {
+        id: "pj-nexus-bobos-1",
+        number: "3",
+        title: "Bobos 特写 1 · beautiful bastards",
+        subtitle: "过肩看护目镜 Bobo 叼烟",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/bobos-beautiful-1.jpg",
+        prompt: "原帖未附文生提示词；实拍感角色参考。图内提示词未能可靠识别。",
+      },
+      {
+        id: "pj-nexus-bobos-2",
+        number: "4",
+        title: "Bobos 特写 2 · beautiful bastards",
+        subtitle: "同帖第二张 Bobos 参考",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/bobos-beautiful-2.jpg",
+        prompt: "原帖未附文生提示词；实拍感角色参考。图内提示词未能可靠识别。",
+      },
+      {
+        id: "pj-nexus-field-1",
+        number: "5",
+        title: "场资产 1 · Thump 脸部特写",
+        subtitle: "对应 SCENE1 @Image6 脸细节类参考",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/field-asset-1.jpg",
+        prompt: "图内提示词未能可靠识别。用途：Thump 红皮/护目镜/獠牙/胡须珠饰脸部一致性。",
+      },
+      {
+        id: "pj-nexus-field-2",
+        number: "6",
+        title: "场资产 2 · Thump 多格造型",
+        subtitle: "对应 SCENE1 @Image2 类造型拼图；OCR 仅 UI「2/7」",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/field-asset-2.jpg",
+        prompt: "图内提示词未能可靠识别（OCR 仅 2/7）。用途：Thump 半身/细节/全身造型参考，禁止把拼图边框渲进成片。",
+      },
+      {
+        id: "pj-nexus-field-3",
+        number: "7",
+        title: "场资产 3 · Dreamina 界面截图",
+        subtitle: "OCR 可见 Scene1 提示词开头残段；完整原文以 SCENE1 帖为准",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/field-asset-3.jpg",
+        prompt: "图内为 Dreamina 参考栏 UI 截图；OCR 噪声+Scene1 提示词开头残段已写入 PROMPT_FULL §4。完整可复制提示词以自回帖 2116160701400289449 为准，勿把 UI 噪声当正文。",
+      },
+      {
+        id: "pj-nexus-field-4",
+        number: "8",
+        title: "场资产 4 · 雾谷环境概念",
+        subtitle: "对应 SCENE1 @Image1 环境：巨树/草地/瀑布/蓝雾",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/field-asset-4.jpg",
+        prompt: "图内提示词未能可靠识别。用途：环境与色调参考，不拷贝构图进角色近景。",
+      },
+      {
+        id: "pj-nexus-campfire-1",
+        number: "9",
+        title: "营火参考 · Fek 角色设定三视图",
+        subtitle: "SCENE3 @Image3；白脸占位为遮罩",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/campfire-1.jpg",
+        prompt: "图内提示词未能可靠识别。用途：Fek 银甲/奶油外套金绣/脸与发型一致性。",
+      },
+      {
+        id: "pj-nexus-campfire-2",
+        number: "10",
+        title: "营火参考 · Bobo 持白偶构图",
+        subtitle: "SCENE3 @Image2；shot3 落点构图",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/campfire-2.jpg",
+        prompt: "图内提示词未能可靠识别。用途：Bobo+白偶+苔石构图；作者写明 shot1/2 勿用此构图当起幅。",
+      },
+      {
+        id: "pj-nexus-campfire-3",
+        number: "11",
+        title: "营火参考 · Fek 举偶构图",
+        subtitle: "SCENE3 @Image1；烟雾散尽后 shot1 构图",
+        image: "/tutorials/pjaccetturo-nexus-thump-thunderkin-dreamina/refs/campfire-3.jpg",
+        prompt: "图内提示词未能可靠识别。用途：Fek 举白偶(左)/红发偶(右)、前景巨趾、右侧 Bobo；白脸为占位勿渲染。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–约15s：巨兽 Thunderkin 冲过雾谷战场，银甲帝国军在脚下奔跑；背板/粉刺与绳具可见。" },
+      { number: 2, description: "约15–40s：Thump 骑兽特写嘶吼，护目镜+兽皮披肩，背景队列虚化。" },
+      { number: 3, description: "约40–65s：帝国将领（金徽白须）与瘦削副官雾中站位对话/对峙。" },
+      { number: 4, description: "约65–95s：Thump 与肩上/身边 Bobos 互动（含俘虏侧脸段落）；战场切换加速。" },
+      { number: 5, description: "约95–130s：硬切对决与粉刺坠落爆炸；穿插蓝雾营火 Fek 偶戏 / Bobo 抢偶砸石。" },
+      { number: 6, description: "约130–175s：帝国军仰望巨兽腹部/背板粉刺；雷兽再度压境，士兵狂叫。" },
+      { number: 7, description: "约175–207s：大战收束后黑底白字「genre」片尾。" },
+    ],
+    constraints:
+      "风险（中）：文案自称 Tropic Thunder 式角色、Insane Clown Posse/Juggalos 对照；暗黑喜剧暴力（爆炸粉刺、战场厮杀）。教程可跟做须提示风险。Dreamina 合作署名保留。未见可识别真人肖像，勿夸大肖像风险。素材对应：11 张参考图上页；三段 Scene 示例短片在步骤 4–6 以 video+poster 上页（preload=metadata）。SCENE 提示词中的 @Image/@Video：能对应场资产/营火图的已写明；@Video1 声音与部分 lineup/Image5–9 = 原帖未公开。画幅：提示词写 16:9，成片实测 16:9。多场景合成：先 Lookdev/静帧，再按 Mindset 分步 Seedance（构图/表演/补洞分开）。完整多段提示词在 video_prompt（三段 SCENE 用分隔符拼接，无 truncated）与 PROMPT_FULL；Mindset/Doc 在 method_prompt 与附件，不冒充分镜词。相关 ep6 2112899203701547153 另一集不入库。只本地包，等推。",
+    method_prompt: {
+      title: "Mindset · direct it, don't roll the dice",
+      subtitle: "自回帖 2116160709180723486 全文 · Seedance 分步导演方法（非视频分镜提示词）",
+      content: `The mindset: direct it, don't roll the dice
+AI video stops feeling like a slot machine once you split the work the way a film crew does:
+someone finds the frame, someone stages the scene, someone gets the performance. I
+use Seedance for all three jobs, but never in the same pass. Each technique below fixes
+one problem at a time, so a good result in one area never gets thrown away while I chase
+another.
+The common thread is to keep what works and regenerate only what doesn't. A good
+composition, a good camera angle and a good performance are three separate wins. I lock
+each one in as an image or a reference before asking the model for the next.
+Technique 1: Paint it out, let Seedance fill it back in
+When a generation has the right composition and camera angle but something wrong
+inside it, I keep the frame and repair only the wrong part. In one shot the soldiers were
+running the wrong way and were too big for the scene. Instead of regenerating the whole
+shot and losing the framing, I took that frame into an image editor and painted the
+offending soldiers out in solid white.
+The edited frame becomes the start frame. The rest of the picture stays untouched: the
+light, the lens, the environment, the dinosaur. Then I give Seedance a reference image of
+the soldiers I want and describe in the prompt what they should do, for example sprinting
+left to right through the foreground, all the way past the camera. The model treats the
+white area as a gap and fills it with the new action.
+The steps:
+1. Pick the frame with the camera angle and composition you want. Frames that came
+from a generation are best, because the lighting and lens are already consistent.
+2. Paint over the wrong elements in flat white. Cover the whole offending area, not just its
+outline, and let the white overlap the surroundings a little so no remnants show.
+3. Attach the cleaned frame as the start frame and name it exactly that in the prompt.
+4. Attach reference images for the elements that fill the gap (soldier lineups, creature
+sheets), each with its role stated: appearance only, never composition.
+Page 1 of 5Behind the Scenes: Directing AI Video
+5. Describe the direction, speed and behavior of the new elements in plain physical
+terms.
+6. Say explicitly that the white shapes are placeholder masks and are never rendered.
+Without that line, the white can show up in the video as white blobs.
+Technique 2: Graybox in Maya to lock composition and camera
+For shots where the staging or the camera move is complicated, I build a quick graybox in
+Maya first. It is nothing more than plain gray shapes standing in for the characters,
+creatures and landmarks, plus a camera. It takes minutes, and it answers the questions a
+prompt can't answer reliably: where everything stands relative to the camera, how big it
+is, and how the camera moves through the space.
+There are two ways I use the graybox. For composition, I render a still of the graybox from
+the camera position I want, then use it as a reference for staging only, so the model gets
+the layout and scale without any of the gray look. For camera movement, I render the
+graybox move itself and give it to Seedance as a video reference that is explicitly for
+camera and staging, never for appearance. Motion carries over from a video reference
+much better than it does from text.
+Tips that make the graybox work:
+Keep the shapes simple and clearly different from each other, such as a tall box for the
+creature and small boxes for soldiers, so the model reads scale and placement easily.
+Put a single character in a single flat color, and never rely on gray to say anything about
+the final look. State the final appearance through the character references.
+Say in the prompt what the graybox is for ("staging and camera only") and that its gray
+shapes are never rendered.
+Keep the move simple. A handheld push-in or a slow pull-back reads clearly even in a
+rough blockout.
+Technique 3: Blast the whole scene, then harvest the angles
+For dialogue scenes, I don't try to get a perfect take in one pass. I write one long prompt,
+20 to 30 seconds, that covers the whole scene with every angle: wide, over-the-shoulder,
+singles, close-ups. Then I run it repeatedly and judge only one thing, whether the angles
+and the shot order are right. I ignore the performances at this stage, because they are
+rarely right on the first run.
+Page 2 of 5Behind the Scenes: Directing AI Video
+When I get a run with the right coverage, I cut it apart. From each shot in that run I grab
+one clean frame, and each frame becomes the start frame for its own generation. A single
+wide frame gives me the room and the blocking. A single close-up frame gives me the lens,
+the framing and the face.
+The rest of the work is performance. I upscale each frame, then generate each shot
+individually from its frame until the acting lands. Because the angle and framing are fixed
+by the image, the only thing changing between attempts is the performance, so every
+retry is working on one problem.
+Why this works:
+Angles and acting are decided separately, so a failure in one never costs the other.
+Shots from different runs still match, because they all come from frames of the same
+coverage pass.
+Each shot is short, and short generations hold a performance better than long ones.
+The frames stay consistent in lighting, wardrobe and set, so the cut together reads as
+one scene.
+Technique 4: Direct it like a director, and be specific
+Seedance is remarkably good at understanding intent, especially in acting. The more
+specific the direction, the more precisely it follows. I write prompts the way I'd brief an
+actor and a camera operator: what the character wants, what they are feeling, what the
+camera is doing and why.
+Three layers of direction can be stacked in one prompt:
+Camera: name the move and give it a physical cause. A handheld shot works better
+described as an operator walking forward on foot, bobbing about two or three times a
+second and bumped by passing soldiers, than as "very shaky.
+" Cause and effect is
+easier for the model to follow than an adjective.
+Blocking: say who stands where, which way they face and which way they move, using
+screen left and right. Give timing in seconds, such as "first word at about 0.5s.
+"
+Emotion and performance: describe the feeling and the physical signs of it, and write
+every instruction in positive terms. Say what the face and body do, not what they don't
+do.
+Two habits help the model get acting right:
+Page 3 of 5Behind the Scenes: Directing AI Video
+1. Use a performance reference. When a take has the exact movement I want, I feed that
+video back in as a reference for the shot and the voice, and describe only what
+continues or changes.
+2. Time the beats. Give each beat a time window and say what finishes by when, such as
+"the breath runs out completely at about 7.0s.
+" A beat with no end time tends to get
+cut off when the shot ends.
+Case study: Fec and the explosions
+The best example of how much nuance the model can pick up is the close-up of Fec, the
+gaunt imperial officer, watching explosions go off in the distance. The joke depends
+entirely on his reaction: he is never surprised or alarmed. He knows what is happening and
+has already accepted that his life is over.
+In the prompt I described his state of mind through small, physical behavior:
+His eyes search the distance, taking in all the ways his life is falling apart.
+He purses his lips and gives tiny nods to himself , as if accepting that nothing will ever
+be the same.
+Each explosion flash gets its own small reaction, a slow blink for the first two, then a
+single flat head tick on the third. The tick had to look deadpan, almost like counting.
+The shot ends on his breath: a slow inhale with his shoulders rising, then one long, tired
+sigh, like a man who is just over it.
+The performance came from a handful of iterations. Early versions read as sarcastic or
+knowing, so I took the nod out of those words and described it as a single flat head
+movement with a completely blank face. That version got the laugh. It shows how
+precisely the model responds when the direction is concrete: tiny changes in wording
+changed the entire emotional read of the shot.
+Quick tips and pitfalls
+These are the habits that saved me the most time across the project.
+Name every reference's role. For each image or video, say whether it is for appearance
+only or for composition and staging. Without this the model copies the wrong thing,
+such as a backdrop or a lineup layout.
+Describe placeholders as placeholders. White paint-outs and gray blockout shapes
+must be named as masks that are never rendered.
+Page 4 of 5Behind the Scenes: Directing AI Video
+Describe the wanted result, not the unwanted one. Positive, physical descriptions
+beat "don't" instructions, which the model often ignores.
+Give motion a physical cause. An operator walking on foot and bumped by soldiers
+produces better handheld than the word "shaky.
+"
+Spell words normally. Stretched spellings such as extra vowels in a shouted word
+confuse the model. Describe the length instead: held out much longer than the others.
+Watch the reference count. Seedance caps total references (the Dreamina FAQ lists
+12 files), so merge or drop the least useful ones.
+Keep the prompt tight. Shorter prompts with one clear job per shot outperformed long
+ones. For a single four-second shot, a few thousand characters is plenty.
+Change one thing per iteration. Edit the latest working version and change only what
+failed, so you know what fixed it.
+Page 5 of 5`,
+      note: "作者制作方法长文；Google Doc 另有扩写 tips（PROMPT_FULL §10 已公开抓取）。跟做时当作流程约束，不要整段粘进视频模型当 Scene 提示词。",
+    },
+    video_prompt: {
+      title: "Nexus · 三段 SCENE 提示词全文",
+      subtitle: "SCENE1+SCENE2+SCENE3 用分隔符拼接 · 源帖原文 · 无 truncated · 完整多段亦见 PROMPT_FULL",
+      content: `### SCENE 1 — Thump close-ups (id 2116160701400289449)
+
+SCENE CONTEXT: A dark-comedy medieval fantasy battle in a misty mountain
+valley. Thump, a huge red-skinned rebel riding his Thunderkin, watches
+his trap unfold and loses his mind with joy, screaming and cheering
+with bloodlust in his eyes. Five fast close-ups of his face from very
+different angles. Photoreal, cinematic, energetic handheld. 5 shots
+joined by HARD CUTS.
+OUTPUT: 16:9, 10 seconds, 5 shots, 2 seconds each, hard cuts between
+every shot. Real-time motion, 24fps.
+ABSOLUTELY NO MUSIC: no score, no soundtrack, no background music, no
+musical tones or beats of any kind. No subtitles.
+ACTIVE REFERENCES:
+@Image1: environment reference: misty alpine valley, grassy meadow,
+giant ancient trees, forested mountains, waterfall, blue haze. Use for
+the soft, out-of-focus background behind him.
+@Image2: a grid of six reference frames of Thump in the misty valley:
+face close-ups, a low-angle profile, a torso and fist view, and low-
+angle full-body views. A huge, broad, red-skinned rebel with deep
+wrinkles, wide pale eyes behind thick round brown cracked-leather
+goggles with a strap, a bulbous red nose, a small white tusk at the
+corner of the upper lip, a full dark beard strung with wooden and red
+beads, dark braided hair with feathers, bone toggles in his earlobes, a
+thick brown fur mantle over his shoulders, a riveted leather chest plate
+over a rough cloth shirt, a bone-and-claw necklace, leather bracers and
+braided wrist cords. Use it for his face, skin, beard, goggles and
+costume, and for the soft hazy backlit look of the light on him. Never
+copy a frame's composition, and never render the grid or the panel
+borders.
+@Image3: Thump's mount, the Thunderkin. A heavy gray-brown beast with a
+domed head pitted with round holes, a hooked beak and long hollow
+tentacle tubes hanging from its chin. Only glimpsed at the frame edge.
+@Image4: the Imperial soldiers. Armored knights in polished silver plate
+with closed helmets and cream tabards with gold star emblems. Only seen
+as soft blurred shapes streaking past far behind him.
+@Image5: the Imperial camp. Cream canvas pavilions with gold trim and a
+tall lantern tower, small, distant and blurred in the haze.
+@Image6: a close-up of Thump's face, STRICTLY a FACE REFERENCE ONLY. It
+must NOT be used for composition, framing, camera angle, camera
+position, lens, pose, head turn or expression of any kind. Use it ONLY
+for the detail of his face: the deeply wrinkled, weathered red skin,
+the pale wide eye magnified behind the thick round lens, the stitched,
+cracked dark-brown leather goggle frames and black strap, the bulbous
+red nose with pale dusty flecks, the small white tusk at the corner of
+the upper lip, the uneven yellowed teeth, the coarse dark beard going
+lighter and frizzy at the edges, the wooden and red beads strung
+through it, and the pale bone toggle in his earlobe.
+@Video1: Thump's voice. Use it for the sound, tone and character of
+his voice in every line.
+THE CAMERA: a third-person cinematic camera, never a POV. Energetic
+shoulder-mounted handheld in every shot: lively shake, small jolts and
+reframes, always alive, but with clear, readable framing of his face.
+Every shot is a THREE-QUARTER CLOSE-UP or tighter, never front-on and
+never wider than his head and shoulders. Each shot uses a very
+different angle. Each shot HARD CUTS to the next.
+THE PERFORMANCE: Thump is CRAZED with joy and bloodlust from the first
+frame of Shot 1 to the last frame of Shot 5, with no calm moment. Eyes
+wide, gleaming and blazing with glee and rage behind the goggle
+lenses, brows hiked high, nostrils flared, lips peeled back from his
+yellowed teeth in a huge deranged grin through the dark beard, veins
+standing out in his neck and temple, spit flying, beard and beads
+shaking, his whole face trembling with manic intensity. He bounces in
+the saddle and shakes his clenched fists at the edges of frame.
+THE LINE: he screams, over and over, in the voice from @Video1: "Yes!
+Yes! More! More! More! Release! Release!" Every word is a loud,
+ragged, gleeful, bloodthirsty scream, pronounced as plain English
+words.
+SHOT 1 (0:00 to 0:02)
+OPTICS: 35mm look, shallow depth of field, hazy valley soft behind.
+CAMERA: THREE-QUARTER CLOSE-UP from his LEFT side, slightly LOW and
+tilted up, his face angled a little away so we see more of his left
+cheek and ear. A fast, punchy push-in toward his face.
+ACTION: he throws his head forward and screams, a clenched fist
+shaking at the bottom-left edge of frame.
+TIMING: 0-1.0s: "Yes!" 1.0-2.0s: "Yes!", louder.
+AUDIO: Thump's two screams of "Yes!", wind, a distant rumble of boots.
+LOCK: three-quarter, never front-on.
+SHOT 2 (0:02 to 0:04)
+OPTICS: 50mm look, shallow depth of field.
+CAMERA: THREE-QUARTER EXTREME CLOSE-UP from his RIGHT side and slightly
+ABOVE, looking down across his goggles, nose and gaping mouth, the
+beads in his beard swinging in the foreground. A quick arc around his
+face toward the front.
+ACTION: he bounces in the saddle with each word, head jerking forward,
+spit flying from his mouth.
+TIMING: 0-0.6s: "More!" 0.6-1.2s: "More!" 1.2-2.0s: "MORE!", the
+loudest.
+AUDIO: Thump's three screams of "More!", building, plus wind.
+LOCK: three-quarter, from his right and above.
+SHOT 3 (0:04 to 0:06)
+OPTICS: 85mm look, very shallow depth of field.
+CAMERA: a near-PROFILE THREE-QUARTER EXTREME CLOSE-UP from low on his
+LEFT, tight on his mouth, tusk, beard and jaw, the goggle lens edge
+at the top of frame. A slow push in toward his mouth.
+ACTION: his mouth stretches open as far as it goes, the tusk and
+yellowed teeth bared, the beard and beads shaking violently with the
+force of the screams, the veins in his neck standing out.
+TIMING: 0-1.0s: "Release!" 1.0-2.0s: "Release!", held long and ragged.
+AUDIO: Thump's two screams of "Release!", plus wind.
+LOCK: tight on the mouth and beard, three-quarter from the left.
+SHOT 4 (0:06 to 0:08)
+OPTICS: MACRO look, razor-thin depth of field.
+CAMERA: an almost MACRO EXTREME CLOSE-UP of ONE EYE, seen at a
+three-quarter angle through the thick round goggle lens: the cracked
+leather rim, the scratched glass, the pale wide eye magnified behind
+it, deep wrinkles and red skin around it. A small, slow drift in
+toward the eye, with fine handheld tremble.
+ACTION: the eye FLARES wide open with glee and rage, the pupil fixed,
+gleaming wet, bloodshot veins standing out in the white, the brow
+above it hiking up and trembling, the lids twitching, the skin around
+it creasing with the force of his scream off screen.
+TIMING: 0-0.7s: "Yes!" 0.7-1.3s: "Yes!" 1.3-2.0s: "More!", all heard
+off screen.
+AUDIO: Thump's screams of "Yes! Yes! More!", close and raw, plus his
+ragged breathing between them.
+LOCK: only the eye, the lens and the skin around it fill the frame.
+SHOT 5 (0:08 to 0:10)
+OPTICS: 24mm look, shallow depth of field, hazy sky behind.
+CAMERA: THREE-QUARTER CLOSE-UP from LOW on his RIGHT, tilted up at
+him, his head and raised fist against the misty sky, blurred soldiers'
+helmets (@Image4) streaking past far below at the bottom edge. A fast
+push up toward his face.
+ACTION: he throws his head back and screams up at the sky, one fist
+thrust high and shaking, then snaps his head forward for the last
+word.
+TIMING: 0-0.5s: "More!" 0.5-1.0s: "More!" 1.0-1.5s: "Release!"
+1.5-2.0s: "RELEASE!", the biggest scream of all.
+AUDIO: Thump's screams of "More! More! Release! RELEASE!", wind,
+pounding boots and clanking armor below.
+LOCK: three-quarter from low right, never front-on.
+GLOBAL LOCK: five 2-second shots, joined by HARD CUTS only. Every shot
+is a three-quarter close-up or tighter from a different angle, never
+front-on, never a wide shot, never a POV. Thump is crazed with joy and
+bloodlust in every frame. His only words are "Yes", "More" and
+"Release", screamed in the order given, in the voice from @Video1.
+Never render the six-panel grid of @Image2 or any panel borders.
+@Image6 is a face-detail reference only and never sets the
+composition, camera angle, head angle, pose or expression. NO MUSIC AT
+ALL: no score, no soundtrack, no background music, no musical tones or
+beats of any kind, only his voice, breath, wind, boots and armor.
+LIGHTING: Soft, diffuse daylight through valley mist, cool gray-green
+ambient with a faint warm rim from the sun on his skin, beard, goggles
+and the wet gleam of his eyes and teeth.
+
+========== SCENE BREAK ==========
+
+### SCENE 2 — Duel + pustule explosions (id 2116160703480705396)
+
+SCENE CONTEXT
+Four hard-cut shots, 6.5s, one brutal duel inside a huge forest-marsh
+battle. A Rebel and an Imperial knight crash together and lock blades
+while many other Rebels and Imperials fight all around. The Rebel looks
+up in genuine terror. The knight, full of rage a second ago, turns dry
+and annoyed while red pustules fall behind him and everything explodes.
+Nobody speaks.
+REFERENCES
+Image1: Rebel lineup, for the Rebel's look only: rust-red fur mantle,
+red scale armor, bone trinkets, bearded. Pick one bearded warrior,
+identical in every shot. Ignore the blank white face circles; use the
+face close-ups. Other warriors are background Rebels only.
+Image2: Imperial lineup, for the knight's look only: silver plate, gold
+sunburst trim, dirty cream tabard, helm with visor raised, face fully
+visible, sweaty, short beard. One knight, identical in every shot.
+Image3: environment: misty green forest marsh, shallow pools, crystal
+spires, haze. Setting and color only, no people from it.
+Image4: pustules: glistening dark-red wrinkled clumps trailing goo. Not
+bullets or fire.
+Image5-9: Imperial soldiers for background fighters only, never the main
+knight.
+Rebel: big curved serrated bone sword, two hands. Imperial: heavy steel
+broadsword, two hands.
+OUTPUT: 4 shots, 6.5s, 16:9, hard cuts. No subtitles, no music.
+SHOT 1 (1.5s)
+Start: camera TILTED DOWN at trampled mud and pools, lens near the
+ground.
+Camera: very handheld and CHAOTIC the entire shot, as if sprinting into
+battle: violent shake, jolts, lurches, never steady. 0-0.3s tilted down;
+0.3-0.7s a very FAST tilt UP whip across the packed battlefield, landing
+on the two fighters slightly off-center and NOT in perfect side profile
+(20-30 degrees off), Rebel screen-left, Imperial screen-right; 0.7-1.5s
+keeps lurching toward them.
+Action: Many Rebels and Imperials clash everywhere. The two charge in
+roaring, smash blades together at chest height with sparks and mud, then
+lock, blades crossed, straining, snarling, boots sliding.
+SHOT 2 (1.5s)
+Extreme close-up of the Imperial's face, THREE-QUARTER view (not
+profile), both eyes visible, eyes on the Rebel at screen-left. 85mm,
+shallow focus, slight handheld push in. He is furious: teeth bared,
+veins bulging, sweat and mud, eyes burning, face shaking with effort.
+SHOT 3 (1.5s)
+Reverse over the Imperial's shoulder, medium close-up of the Rebel,
+50mm, handheld. 0-0.5s he strains, eyes on the Imperial. 0.5-0.9s his
+eyes flick to a point just above and behind the Imperial's head, only
+slightly upward, not straight up. 0.9-1.5s GENUINE, REALISTIC TERROR,
+never cartoonish, mostly in the EYES and EYEBROWS: eyes wide, fixed,
+unblinking, inner brows pinched up. His mouth stays closed or barely
+parted, never dropping open. His body goes still and rigid. His eyes
+never close.
+SHOT 4 (2.0s)
+Over the Rebel's shoulder (his shoulder soft in foreground), the
+Imperial sharp, 50mm, background in creamy blur. Camera handheld, slow
+push in, then violent shake from 1.2s.
+0-0.5s: Imperial locked in, enraged. 0.5-1.1s: fury drops into dry, flat
+ANNOYANCE, a man sick of this: eyes OPEN and narrowed, brows lowered,
+lips pressed, shoulders slumped, one short flat exhale through the nose.
+Not afraid. No words, no groan.
+From 0:00 in the far blurred background, basketball-sized dark-red
+pustules drop and EXPLODE across the battlefield, demolishing many
+Imperials and Rebels alike, landing closer to him every half-second.
+Each falls extremely FAST, nearly straight down, visible only 2-3 frames
+as a dark-red streak before impact.
+1.1-1.4s: pustules slam down around and onto him. 1.4-2.0s: EVERYTHING
+EXPLODES: huge fire, goo, mud and debris engulf both men, white-out
+flash, shockwave, violent camera shake. HARD CUT at 2.0s.
+PHYSICS: heavy steel-on-bone grinding, boots sliding in mud, mud flying.
+Pustules are EXACTLY basketball-sized. Explosions are fire, goo, mud and
+smoke only. No gore.
+LIGHTING: dim green misty light as in Image3; in shot 4 a hot orange-red
+flash.
+AUDIO: constant roaring battle. Shot 1: boots, two war cries, a huge
+CLANG. Shot 2: ragged breathing, grinding steel. Shot 3: grunting, then
+a sharp scared inhale. Shot 4: a short dry nose exhale, distant
+explosions growing closer, whistling, then a deafening boom. No music,
+no words.
+LOCK: Two main fighters, the same two men in every shot, Rebel
+screen-left and Imperial screen-right in shots 1-2, flipping naturally
+in reverse shots 3-4. Many other soldiers fight in the background of
+every shot; every Imperial fights a Rebel, never another Imperial; none
+touch the two. NO pustules or explosions visible in shots 1-3. Shot 1
+chaotic handheld, never perfect profile. Shot 2 three-quarter. Rebel's
+terror realistic, mouth never open. Neither man speaks or groans;
+neither man's eyes close. Nothing emerges from explosions except fire,
+smoke, mud, goo, debris, never new pustules. No tiny stand-in people.
+Hard cuts only.
+
+========== SCENE BREAK ==========
+
+### SCENE 3 — Campfire puppet show (id 2116160706387362235)
+
+SCENE CONTEXT: A funny, lighthearted puppet-show scene around a campfire
+in a blue misty forest at dusk. Fek is putting on a puppet show as if
+for a crowd of very slow little children, wildly overdoing it. The dolls
+are fake stuffed cloth toy puppets, it is all pretend and played for
+slapstick comedy.
+OUTPUT: 16:9, 5.8 seconds, 3 shots, hard cut between shots.
+ACTIVE REFERENCES:
+@Image1: the composition of shot 1 once the smoke clears at 0.5s. Fek, a
+thin Imperial officer in a silver cuirass over a cream coat with gold
+embroidery, sits on a stool facing the camera, holding up the two toy
+dolls: the WHITE toy knight doll on the LEFT side of the frame and the
+RED-HAIRED toy doll on the RIGHT side of the frame. Thump's giant bare
+toes are in the foreground, a small goggled Bobo sits at the right edge.
+@Image2: the framing reference for shot 3, and the Bobo reference. The
+small goggled Bobo with a topknot and a cigarette crouched behind a
+mossy rock with the white doll. This is the Bobo who runs in during shot
+1. In shot 3 this pose is where he ENDS UP, not where he starts. Never
+use it for shots 1 or 2.
+@Image3: character sheet of Fek. Use for his face, slicked dark hair,
+mustache, silver cuirass, cream coat with gold embroidery and black
+gloves, in every shot he appears.
+@Video1: AUDIO ONLY, Fek's voice and the audio cue for shot 1 and the
+start of shot 2. Use only its sound, never any picture from it.
+THE DOLLS: Fake toy puppets. The WHITE doll (gold star, X face, tan
+scarf) is in shots 1 and 3 (in shot 3 the Bobo has it). The RED-HAIRED
+doll is in shots 1 and 2.
+DOLL MAP, READ THIS CAREFULLY: picture the frame split down the middle
+into a LEFT HALF and a RIGHT HALF. The WHITE doll is ALWAYS in the LEFT
+HALF of the frame. The RED-HAIRED doll is ALWAYS in the RIGHT HALF of
+the frame. Fek faces the camera, so the hand on the LEFT of the frame is
+his own RIGHT hand, and the hand on the RIGHT of the frame is his own
+LEFT hand: his own RIGHT hand, on the LEFT of the frame, holds the WHITE
+doll; his own LEFT hand, on the RIGHT of the frame, holds the RED-HAIRED
+doll. The red-haired doll is on the SAME side of the frame as the seated
+Bobo at the right edge. The white doll is on the SAME side of the frame
+the running Bobo comes in from, the LEFT. The dolls NEVER swap sides and
+never change hands.
+SHOT 1 (0:00 to 0:02.1)
+FIRST FRAME: the whole screen is COVERED in thick, drifting gray-white
+campfire SMOKE, with only Fek's dim shape faintly glimpsed inside it,
+and he is ALREADY SPEAKING his line in the very first frame, his mouth
+moving and his voice audible from frame one. 0-0.5s: the camera PUSHES
+IN THROUGH the smoke and it DISSIPATES fast, thinning and swirling away
+to the edges of the frame; from the very first frame Fek is SAYING HIS
+LINE, his shape and moving mouth growing clearer through the thinning
+smoke; by 0.5s the smoke is completely gone, revealing exactly the
+composition of @Image1, the WHITE doll on the LEFT of the frame and the
+RED-HAIRED doll on the RIGHT.
+OPTICS: 24mm look, low angle, shallow depth of field.
+CAMERA: a SLOW PUSH-IN. The camera physically DOLLIES IN toward Fek the
+whole shot, steady and continuous, subtly handheld, starting by pushing
+through the smoke. It is a real dolly move, not a digital zoom.
+ACTION: Fek is LEANED FORWARD on the stool the whole shot, bending
+toward his audience like a children's puppeteer, posed as in @Image1,
+holding the WHITE doll high on the LEFT side of the frame and the RED-
+HAIRED doll on the RIGHT side of the frame, bouncing and wiggling both
+dolls like a puppet show. 0-1.7s: from the very first frame, while he is
+still hidden in the thick smoke and carrying on as it clears, Fek says
+"BIG EXPLOOOOODE!" His performance is WILDLY OVERDONE and PANDERING, a
+puppet show for a crowd of very stupid little kids: a huge, sugary,
+sing-song kiddie voice, slow and painfully over-enunciated, his eyebrows
+shooting way up, his eyes huge and bulging with fake excitement, his
+mouth stretching into exaggerated shapes, his head bobbing and tilting
+side to side, a giant, beaming, falsely sweet grin, utterly
+condescending, as if explaining it to toddlers or cavemen, the last word
+stretched long and huge, wildly shaking the RED-HAIRED doll on the RIGHT
+side of the frame. At 1.4s the Bobo from @Image2 RUSHES INTO FRAME FROM
+THE LEFT, darting in low and fast, LEAPS UP, and grabs ONLY the WHITE
+doll on the LEFT side of the frame, yanking it free at 2.0s. THE INSTANT
+the doll is yanked away, Fek is JOLTED out of his performance: his line
+snaps off mid-word and his whole body flinches back, shoulders jerking,
+head whipping around to follow the Bobo, his giant grin vanishing in a
+single frame into a jarring flash of alarm and freak-out. His eyes snap
+wide and track the Bobo, his brows crash together, and his mouth does
+NOT hang open or go slack, it snaps tight and into the shape of the word
+"Hey" with no pause at all. 2.0-2.1s: the Bobo is already streaking away
+to the RIGHT with the white doll while Fek's now-empty hand on the LEFT
+of the frame jerks after it, the "Hey" on the verge of bursting out. THE
+SHOT ENDS HERE, mid-motion, on the cut. Fek keeps the RED-HAIRED doll on
+the RIGHT side of the frame.
+AUDIO: Fek's voice from @Video1, sugary, over-the-top, sing-song kiddie
+delivery, starting on the very first frame, crackling campfire, the soft
+hiss of drifting smoke at the start, the quick patter of small feet.
+LOCK: the shot opens fully covered in smoke, which clears completely
+within 0.5s as the camera pushes in through it, revealing @Image1; Fek
+starts "BIG EXPLOOOOODE!", his only line before the "Hey", on the very
+first frame, already speaking from inside the smoke. The WHITE doll is
+on the LEFT of the frame and the RED-HAIRED doll is on the RIGHT of the
+frame, never the other way around. The Bobo takes only the WHITE doll
+from the LEFT. The RED-HAIRED doll stays on the RIGHT side of the frame.
+The shot cuts to the close-up right on the grab, mid-motion. Fek's
+performance is hugely overdone and pandering until the grab. His
+reaction is a fast, sharp jolt and flinch. He never freezes, never
+stares blankly and never lets his jaw drop slack.
+CUT TO:
+SHOT 2 (0:02.1 to 0:03.3)
+A HARD CUT, landing right on the Bobo's grab, that punches in to a
+CLOSE-UP of Fek on his stool, head and shoulders filling the frame, the
+RED-HAIRED doll in the hand on the RIGHT side of the frame, at the right
+edge of frame. This is a plain cut to a tighter shot, not a zoom or push
+of any kind.
+OPTICS: 35mm look, shallow depth of field.
+CAMERA: handheld and very active, shaky and alive.
+ACTION: This continues the jolt from shot 1 with NO pause: Fek is
+already mid-flinch and rattled, and the word comes out at once. Fek's
+eyes and head are angled DOWN AND TO THE RIGHT of frame the whole shot,
+because the Bobo is tiny and on the ground below him. 0-0.4s: Fek shouts
+"Hey!" the instant the shot begins, sharp, loud and freaked out, wide
+eyes locked on the Bobo, brows up, his body still recoiling. 0.4-1.2s:
+alarm curdles into outrage and frustration, his jaw clenching, still
+looking down and to the right after the Bobo, still holding the RED-
+HAIRED doll on the RIGHT side of the frame.
+AUDIO: Fek's voice from @Video1, the "Hey!" starting right on the cut,
+campfire crackle.
+LOCK: Fek's mouth is never slack or hanging open before the word. The
+RED-HAIRED doll stays on the RIGHT side of the frame. No white doll in
+this shot.
+CUT TO:
+SHOT 3 (0:03.3 to 0:05.8)
+FRAMING: the composition of @Image2: a mossy rock in the middle, Fek's
+boot at the left edge, Thump's feet at the right edge, a dark wagon
+blurred behind. The Bobo is NOT crouched at the rock yet when the shot
+begins. He is still mid-run, finishing the action from shot 1.
+OPTICS: 28mm look, shallow depth of field.
+CAMERA: very handheld and very active, shaky and energetic.
+ACTION: 0-0.9s: the Bobo from @Image2 SCURRIES INTO FRAME FROM THE LEFT
+and runs LEFT TO RIGHT, low and fast, the white doll clutched in his
+hands, still carrying the momentum of his leap and grab. He skids to a
+stop crouched behind the mossy rock beside the fire, landing in the pose
+of @Image2. 0.9-1.1s: he hoists the fake white toy puppet fully up over
+his head. 1.1s: he SMACKS the toy puppet's head down on the mossy rock
+EXTREMELY HARD, a big cartoon slapstick whack. 1.1-2.5s: he keeps going,
+raising the puppet FULLY OVER HIS HEAD every time and bringing it ALL
+THE WAY DOWN onto the rock, over and over, as hard as he possibly can,
+with ALL HIS MIGHT, wild, gleeful and relentless, cigarette still in his
+mouth, shrieking a squeaky gremlin laugh. The soft puppet flops and
+bounces off the rock each time, silly and limp.
+AUDIO: loud cartoon whacks and thumps of the stuffed puppet on the rock,
+a squeaky gremlin shriek-laugh, campfire crackle. No music.
+LOCK: the Bobo is in motion from the first frame, running left to right,
+and arrives at the rock. He is not already standing there. The white
+doll is a fake stuffed cloth puppet, the whole thing is pretend and
+played for laughs. The white doll is the one he carries, from the LEFT.
+GLOBAL LOCK: Fek matches @Image3 in every shot. Keep Fek, the Bobo,
+Thump, the dolls and the campfire clothing and colors identical to the
+start frames. In shots 1 and 2 the WHITE doll is on the LEFT of the
+frame and the RED-HAIRED doll on the RIGHT. No white, blue or green
+placeholder shapes or markers rendered. No subtitles, no text, no logos.
+Fek never makes sniffing or inhaling sounds.
+LIGHTING: blue dusk mist, warm orange firelight from the campfire on
+faces and rock.`,
+    },
+  },
+  // 查重别名(提示词自回复 note tweet): https://x.com/KrishnaBio1/status/2115627149503922447
+  // 主帖/自回/拟用 id 均未出现在 reed35/ai-video-tutorials main lib/tutorials.ts；纯文生，提示词无 @图/@视频。
+  {
+    id: "krishnabio1-runway-outfit-swap-music-video-seedance-2-5",
+    title: "狭长平台换装快跑 · 8场景音乐录影 · Seedance 2.5",
+    subtitle: "X · @KrishnaBio1 · Seedance 2.5 on Var2.ai · 30秒 · 4:3（成片实测；提示词写 16:9）",
+    description:
+      "年轻女主沿同一条狭长高台向前跑跳，每 2–3 秒硬切换场景+换装：后台→纽约街→战场盔甲→麦田→粉丝场→雾夜街→演唱会→田野爆炸收束。",
+    video: "/tutorials/krishnabio1-runway-outfit-swap-music-video-seedance-2-5/demo-web.mp4",
+    poster: "/tutorials/krishnabio1-runway-outfit-swap-music-video-seedance-2-5/poster.jpg",
+    duration: "30秒",
+    durationSec: 30,
+    styleLabel: "音乐录影",
+    shots: 8,
+    references: 0,
+    model: "Seedance 2.5 on Var2.ai（主帖文案署名）",
+    style: "超写实音乐录影 · 节拍硬切换装 · 狭长平台贯穿 · 浅景深与胶片颗粒",
+    aspectRatio: "4/3",
+    sourceUrl: "https://x.com/KrishnaBio1/status/2115627142503710799",
+    sourceAuthor: "@KrishnaBio1",
+    sourcePlatform: "X",
+    sourceImpressions: 3071,
+    sourceStats: { asOf: "2026-10-29", likes: 124, reposts: 22, bookmarks: 35 },
+    formats: ["电影叙事", "角色表演"],
+    hook: {
+      structure: "后台起步 → 纽约街跑 → 战场盔甲 → 麦田说唱 → 粉丝灯海 → 雾夜雨衣 → 演唱会伸臂 → 田野爆炸收黑",
+      opening: "约第 0–3 秒：后台侧光，女主西装领带红背包持麦走向镜头，转身踏上狭长平台。",
+      openingAt: 0,
+      beats: [
+        { title: "纽约街与战场", text: "约 3–9s：同一平台切到纽约白天街景（黄出租、玻璃楼）再切雾战场银甲红披；低机位背跟。", at: 3 },
+        { title: "麦田到雾夜街", text: "约 9–19s：麦田白T牛仔裤举手跑 → 两侧粉丝灯海长裙 → 雾夜鹅卵石街芥末黄雨衣举手。", at: 9 },
+        { title: "演唱会与爆炸收束", text: "约 19–30s：夜舞台赛车夹克黑帽伸臂剪影 → 日落田野军装跺脚踢腿，远处蘑菇云冲击波吞没画面后切黑。", at: 19 },
+      ],
+      copyThis: "先锁「同一条狭长平台贯穿 + 每 2–3 秒场景与造型硬切合拍」，再按时间轴写清每段服装/环境/动作；镜头以背跟低中机位为主，结尾单独落到爆炸+切黑。",
+      approx: true,
+    },
+    tags: [
+      "30秒",
+      "4:3 横屏",
+      "Seedance 2.5",
+      "Var2.ai",
+      "纯文生视频",
+      "换装音乐录影",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：打开自回复拿提示词",
+        description:
+          "主帖只有成片和「Prompt 👇」；完整英文提示词在作者自己的 note tweet 回复里（查重别名 2115627149503922447），约 3251 字、无媒体。提示词没有引用任何参考图或参考视频，是纯文生。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "作者写明用 Seedance 2.5（Var2.ai）生成。提示词自称 16:9、30 秒、24fps；本地下载的最高可用成片是 960×720（约 4:3）、约 30.06s。入库 aspectRatio 按成片实测写 4/3。观感上是节拍硬切换装音乐录影，狭长高台贯穿各场景。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴进 Seedance 2.5 / Var2.ai（纯文生，不用挂参考图）。结构依次是：30 秒音乐录影总要求 → 女主外貌与平台设定 → 0–3 / 3–6 / 6–9 / 9–12 / 12–15 / 15–19 / 19–23 / 23–30 八段场景服装 → AUDIO / STYLE 约束。若平台只出 16:9，成片也可能被裁成约 4:3，以实际导出为准。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 后台：灰西装条纹领带棕裙红背包持麦，转身踏上平台。" },
+      { number: 2, description: "3–6s 纽约白天大道：同校风造型沿平台背对镜头向前跑，黄出租掠过。" },
+      { number: 3, description: "6–9s 雾雨战场：银甲红披，远方列阵，冷蓝灰调。" },
+      { number: 4, description: "9–12s 金色麦田：白T牛仔裤，马尾风中甩，举手说唱跑。" },
+      { number: 5, description: "12–15s 户外粉丝灯海：长棕裙深色外套，自信向前舞。" },
+      { number: 6, description: "15–19s 雾夜欧式鹅卵石街：芥末黄雨衣戴帽，举手胜利，烟雾。" },
+      { number: 7, description: "19–23s 夜演唱会舞台：蓝白赛车夹克黑帽，双臂张开剪影。" },
+      { number: 8, description: "23–30s 日落田野军装跺脚踢腿；远处蘑菇云冲击波吞没，切黑。" },
+    ],
+    constraints:
+      "参考素材：提示词没有引用任何参考图或参考视频，是纯文生视频。画幅：提示词写 16:9，成片实际约 4:3（960×720），以实测为准。保持女主脸与发型全片一致；每 2–3 秒换场景+换装并对齐节拍；non-graphic，无文字/字幕/logo/水印；结尾蘑菇云为特效爆炸，不是纪录片写实。",
+    video_prompt: {
+      title: "Runway Outfit-Swap Music Video",
+      subtitle: "自回复 note tweet 全文原文 · Seedance 2.5 on Var2.ai · 纯文生，无参考素材",
+      content: `Cinematic ultra-realistic music-video short film, 16:9, 30 seconds, 24fps, shot like a high-budget concert film, fast match cuts on every beat, smooth tracking shots, golden-hour and night lighting, shallow depth of field, crisp detail, subtle film grain, high-energy and stylish mood.
+👩 MAIN CONCEPT: One young woman in her early 20s, long dark-brown hair tied in a high ponytail, expressive confident face, a wireless microphone in her hand, runs and dances forward along a long, narrow, glossy elevated platform (like a runway). The platform is always the same, but the world around it and her outfit change abruptly every 2 to 3 seconds. The camera mostly follows her from behind at low-to-mid angle with fast, smooth tracking and match cuts. Keep her face and hair identical in every shot.
+🎤 0–3s: Backstage of a concert. She walks toward camera in a grey blazer, loose striped tie, brown pleated skirt and a red backpack, mic in hand, crew members holding cameras around her. She turns and steps out onto the platform.
+🏙️ 3–6s: A bright New York-style avenue in daylight, with tall glass skyscrapers and rows of yellow taxis. She wears the same school-style outfit, runs forward away from the camera down the platform, backpack bouncing, skirt flying, joyful and energetic.
+⚔️ 6–9s: A misty, rain-soaked battlefield. She wears polished silver knight armor with red details and a dark cape, standing proudly on the platform, a lined-up army far in the distance, cold blue-grey tones.
+🌾 9–12s: A wide golden wheat field under a bright blue sky. She wears an oversized white t-shirt and loose jeans, ponytail whipping in the wind, running along the platform with one arm raised, rapping to the beat.
+🌸 12–15s: A huge outdoor crowd of fans waving glowing lights stretches on both sides of the platform. She wears a flowing long brown dress with a dark jacket, dancing forward with a confident stride while the camera tracks from behind.
+🏘️ 15–19s: A foggy old European cobblestone street at night with warm gas lamps and wet glowing stones. She wears a long mustard-yellow raincoat with the hood up, walking slowly down the platform, then raising both arms in triumph as smoke rolls around her.
+🌟 19–23s: A night concert stage with giant spotlights and thousands of glowing lights in the crowd. She wears a blue-and-white racing jacket, a black cap and blue jeans, standing in the centre with arms stretched wide, silhouetted against the beam of light.
+🔥 23–30s: A wide green field at sunset. She now wears an olive military jacket, cargo pants, boots and a bucket hat, dancing with strong stomping steps, high knee kicks and powerful arm swings. In the distance a huge orange fireball and mushroom-shaped cloud rises above the horizon. A giant shockwave of dust, smoke and flying debris rushes across the field and engulfs the frame. Cut to black on the final beat.
+🎧 AUDIO: A modern hard-hitting rap beat with deep bass, every outfit change landing on a beat, crowd cheers and wind sounds between sections, a heavy bass drop at the final explosion followed by sudden silence.
+🎬 STYLE: Realistic cinematic music-video energy, smooth natural movement, bold color grading for each location, non-graphic, no text, no subtitles, no logos, no watermark.`,
+    },
+  },
+  // 查重别名(提示词自回复 note tweet): https://x.com/CrazyKaomei/status/2113596800016023931
+  // 同作者已有 crazykaomei-furniture-blindbox-asmr（家具盲盒 ASMR）为不同帖；本片为扔花变装竖屏图生视频 · 豆包 + Seedance 2.0 mini。
+  {
+    id: "crazykaomei-flower-toss-makeover-seedance-2-0-mini",
+    title: "扔花变装 · 睡衣抛花秒变白裙 · Seedance 2.0 mini",
+    subtitle: "X · @CrazyKaomei · 豆包 + Seedance 2.0 mini（图生视频）· 约10秒 · 9:16",
+    description:
+      "卧室睡衣素颜抛花，花落瞬间已变白裙编花发，在花草自然环境里接住花朵——反差变装一镜完成。",
+    video: "/tutorials/crazykaomei-flower-toss-makeover-seedance-2-0-mini/demo-web.mp4",
+    poster: "/tutorials/crazykaomei-flower-toss-makeover-seedance-2-0-mini/poster.jpg",
+    duration: "10秒",
+    durationSec: 10,
+    styleLabel: "变装短片",
+    shots: 3,
+    references: 1,
+    model: "豆包 + Seedance 2.0 mini（图生视频）",
+    style: "纯欲风变装 · 睡衣卧室 → 白裙自然环境 · 抛花卡点 · 9:16",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/CrazyKaomei/status/2113596798900338717",
+    sourceAuthor: "@CrazyKaomei",
+    sourcePlatform: "X",
+    sourceImpressions: 16336,
+    sourceStats: { asOf: "2026-10-25", likes: 163, reposts: 16, bookmarks: 151 },
+    formats: ["变装·换装"],
+    hook: {
+      structure: "睡衣卧室持花 → 高抛花朵 → 花落接住已变白裙自然环境",
+      opening: "第 0 秒卧室日光下，穿睡衣的素颜女生坐在床边，手里捧着一小束白花。",
+      openingAt: 0,
+      beats: [
+        { title: "抛花", text: "约 2–4s 她抬头举手，把花朵高高抛向天花板；镜头跟花、跟动作。", at: 2 },
+        { title: "变装瞬间", text: "约 4.5–6s 花在空中特写/虚化过渡，背景与妆造同时切换。", at: 5 },
+        { title: "接花揭晓", text: "约 6–10s 已是白裙编花发，在花草树木自然环境里接住并捧花微笑收束。", at: 6 },
+      ],
+      copyThis: "在豆包先上传一张女生照片（页面参考 1），再引用该照选 Seedance 2.0 mini 图生视频，把下方「生成视频：…」整段贴进去；跟做请用本人同意的照片或 AI 虚拟脸。",
+      approx: true,
+    },
+    tags: [
+      "10秒",
+      "9:16 竖屏",
+      "豆包",
+      "Seedance 2.0 mini",
+      "图生视频",
+      "扔花变装",
+      "肖像权提醒",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：在豆包上传女生照片",
+        description:
+          "素材对应：主帖附图竖图 = 参考 1（refs/01-girl-input.jpg），即「上传一张女生照片」要传的那张示范输入图。打开豆包，上传你自己同意使用的照片，或 AI 虚拟脸；不要未经同意用他人/女朋友真人照。**原帖未公开出图提示词**——参考 1 是作者直接附的示范输入图，不是另写一段文生图词出来的。",
+      },
+      {
+        number: 2,
+        title: "第二步：引用照片选 Seedance 2.0 mini",
+        description:
+          "在豆包里引用刚才上传的女生照片，模型选 **Seedance 2.0 mini**，模式为图生视频。成片示范 720×1280（9:16）、约 10 秒。主帖未点名其他视频模型，不要猜 Kling/Runway 等。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整「生成视频」提示词",
+        description:
+          "打开作者自回复 note tweet（查重别名 2113596800016023931）。把下方提示词从「生成视频：」起整段粘贴（也可连同 Step1/Step2 说明一起复制，以工具实际可粘贴区为准）。提示词写明人物为 AI 虚拟形象、睡衣抛花→白裙接花、9:16 / 10s / 720p。页面可转述：照片上的人物为 AI 生成虚拟形象。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "crazykaomei-flower-toss-girl-input",
+        number: "1",
+        title: "女生输入照（原帖附图）",
+        subtitle: "主帖附图 = 参考 1；上传图 = refs/01-girl-input.jpg；675×1200 竖图，豆包图生视频的示范输入",
+        image: "/tutorials/crazykaomei-flower-toss-makeover-seedance-2-0-mini/refs/01-girl-input.jpg",
+        prompt: "原帖未公开出图提示词：作者没有单独给这张附图配出图 prompt。流程是直接在豆包上传女生照片，再引用该照用 Seedance 2.0 mini 图生视频；完整视频提示词在自回复里。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–约2s 卧室日光，睡衣素颜女生坐床边捧白花，日常快照气质。" },
+      { number: 2, description: "约2–4.5s 抬头举手，把花朵高抛向天空；镜头跟随抛花动作。" },
+      { number: 3, description: "约4.5–6s 空中花束特写/虚化过渡，场景与妆造切换。" },
+      { number: 4, description: "约6–10s 白裙编花发，花草树木自然环境，接住并捧花微笑收束。" },
+    ],
+    constraints:
+      "素材对应：上传图 = 参考 1（refs/01-girl-input.jpg）。豆包 + Seedance 2.0 mini 图生视频；9:16；约 10 秒。提示词自称 AI 虚拟形象；跟做勿未经同意使用他人真人照。原帖未公开单独出图提示词。无商标项。",
+    video_prompt: {
+      title: "🌸 扔花变装视频生成提示词",
+      subtitle: "自回复 note tweet 完整原文 · 豆包 + Seedance 2.0 mini 图生视频 · 上传图 = 参考 1 · 9:16 / 10s / 720p",
+      content: `🌸 扔花变装视频生成提示词
+
+Step1：在豆包上传一张女生照片
+
+Step2：引用女生照片，在豆包中选择 Seedance 2.0 mini 模型图生视频，提示词如下——
+
+生成视频：照片上的人物为AI生成虚拟形象，非真人，无肖像权问题！ 一个20岁的女生，一开始在卧室房间里穿睡衣邋遢素颜，她将手中的花朵高高抛向天空，当花朵落下时，她已化身为一位超素颜美女并恰好接住花朵。背景是充满花草树木的自然环境，画质超清晰。她妆造精致，饰品精巧，棕色长发上编织着鲜花和叶子，身着白色飘逸长裙。五官精致，头发凌乱美，面部清晰，清冷调。日常快照风格，非精心构图，非专业打光。电影级面光，光线追踪，冷白皮漫感质感的光滑皮肤，人物有最好的骨相，网感脸，网感妆。身材完美，莫兰迪配色，高颜值网红，INS风，幼态脸，19岁女生尖下巴，三庭五眼比例均衡，细腻陶瓷水嫩肌肤，偏冷白皮，随机的妆容，随机的饰品，随机的动作，侧光，发丝轻飘，凌乱，随机角度拍摄。风格甜美少女系，氛围慵懒俏皮，东方美女，年轻娇小，冷白皮气质美女，纯欲风，皮肤白皙，偶像气质，气质的江南女子，有点甜美，皮肤美白透亮，表情可爱，甜美氛围，细腻笔触，独特韵味的美的眼睛头上有花，卡点。9:16，10s，720p。`,
+    },
+  },
+  // 查重别名(提示词自回复 note tweet): https://x.com/umesh_ai/status/2113542853221913018
+  // 同作者站内已有 umesh-rainy-bike-paper-friendship-seedance-2-5（雨天纸艺单车友谊）、umesh-rally-car-vs-avalanche-one-shot-kling（雪崩拉力一镜）、umesh-fold-ocean-blanket-seedance / umesh-again-nature-ad / umesh-mini-me-nyc-flight-giant-donut 等，题材均不同；本片为雨夜写实快递骑手 + Kling 4.0 一镜到底。纯文生，提示词无 @image/@视频。
+  {
+    id: "umesh-bike-courier-rain-oneshot-kling-4",
+    title: "雨夜单车快递 · 一镜到底城市追拍 · Kling 4.0",
+    subtitle: "X · @umesh_ai · Kling 4.0 + Mirelo（音效）+ Topaz Astra 2 · 15秒 · 16:9",
+    description:
+      "镜头贴着雨夜单车快递飞过积水、绕出租车、钻巴士水幕，最后滑停把信封塞进下落的卷帘门。",
+    video: "/tutorials/umesh-bike-courier-rain-oneshot-kling-4/demo-web.mp4",
+    poster: "/tutorials/umesh-bike-courier-rain-oneshot-kling-4/poster.jpg",
+    duration: "15秒",
+    durationSec: 15,
+    styleLabel: "写实动作",
+    shots: 5,
+    references: 0,
+    model: "Kling 4.0 + Mirelo AI（music/sfx）+ Topaz Astra 2（放大）；自回复署名，下载的 1080p 未见清晰 Kling 水印",
+    style: "超写实雨夜城市场景 · 一镜到底低机位追拍 · 霓虹黄快递骑手 · 积水反光与动态模糊",
+    aspectRatio: "16/9",
+    sourceUrl: "https://x.com/umesh_ai/status/2113542849748926819",
+    sourceAuthor: "@umesh_ai",
+    sourcePlatform: "X",
+    sourceImpressions: 3952,
+    sourceStats: { asOf: "2026-10-23", likes: 119, reposts: 12, bookmarks: 74 },
+    formats: ["电影叙事"],
+    hook: {
+      structure: "溅水过弯 → 躲出租车环绕 → 跳排水沟+巴士水幕 → 冲向卷帘门店铺 → 滑停递信封",
+      opening: "第 0 秒已经在动：低机位贴着后轮冲过积水，霓虹黄夹克骑手拐进湿滑街角，巴士与店招掠过。",
+      openingAt: 0,
+      beats: [
+        { title: "躲车与环绕", text: "约 3–6s 骑手急刹让出租车，镜头快速绕车近 3/4 圈，贴着路旁车辆再贴回骑手侧面。", at: 3 },
+        { title: "低掠链条与水幕", text: "约 6–9s 镜头俯冲到链条/踏板高度，纸板在风中翻过；约 9s 巴士掀起大片水幕，骑手从水雾里冲出。", at: 6 },
+        { title: "结尾怎么收", text: "约 12–13.5s 滑停从配送箱抽出防水信封，塞进正在下落的卷帘门；店主接住后镜头猛甩再后拉，卷帘门关上、雨夜街面收束。", at: 12 },
+      ],
+      copyThis: "提示词先锁死「整段必须一镜、零剪辑、全程暴力运动」，再按 0–3 / 3–6 / 6–9 / 9–12 / 12–15 五段同时写清「镜头怎么动 + 骑手在干什么 + 雨与车流干扰」，结尾单独落到递信封+卷帘门。",
+      approx: true,
+    },
+    tags: [
+      "15秒",
+      "16:9 横屏",
+      "Kling 4.0",
+      "一镜到底",
+      "纯文生视频",
+      "雨夜快递",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：打开自回复拿提示词",
+        description:
+          "主帖只有成片和「Prompt ⤵️」；完整英文提示词在作者自己的 note tweet 回复里（查重别名 2113542853221913018）。回复前两行是工具署名（Kling 4.0 / Mirelo / Topaz Astra 2），「Prompt :」之后才是要粘贴的正文。提示词没有引用任何参考图或参考视频，是纯文生。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "作者写明用 Kling 4.0 生成，Mirelo AI 做配乐与音效，再用 Topaz Astra 2 放大。成片原帖 3840×2160、约 15.04s、16:9；本地下载的 1920×1080 档未见清晰 Kling 水印。观感上基本是连续一镜跟拍霓虹黄夹克+黄配送箱骑手。和提示词不完全一致的地方：排水沟 bunny-hop、完整 270° 环绕、巴士水幕等不如文案夸张；结尾递信封+半降卷帘门能看清，但「卷帘门猛砸+积水炸开」偏短。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整提示词",
+        description:
+          "把下方英文提示词整段粘贴进 Kling 4.0（纯文生，不用挂参考图）。结构依次是：15 秒超写实雨夜快递一镜要求 → 零剪辑/零停顿约束 → 0–3 / 3–6 / 6–9 / 9–12 / 12–15 五段动作与运镜 → 物理真实与电影感收束。配乐与音效可另用 Mirelo；若要 4K 再用 Topaz Astra 2。",
+      },
+    ],
+    references_detail: [
+    ],
+    storyboard: [
+      { number: 1, description: "0–3s 后轮溅积水，低机位贴车过弯，巴士与店招掠过。" },
+      { number: 2, description: "3–6s 急刹躲出租车，镜头快速环绕骑手再贴回侧面。" },
+      { number: 3, description: "6–9s 镜头俯冲链条高度，纸板翻滚；巴士掀起水幕。" },
+      { number: 4, description: "9–12s 冲出水雾、上路边斜坡，冲向正在降卷帘门的店铺。" },
+      { number: 5, description: "12–15s 滑停递防水信封进卷帘门，镜头甩手后拉，门关雨收。" },
+    ],
+    constraints:
+      "参考素材：提示词没有引用任何参考图或参考视频，是纯文生视频。整段必须一镜到底，零剪辑、零转场、零瞬移；15 秒全程高强度运动，不要静态建立镜头或慢动作；物理要像真人骑车湿路抓地，不要超级英雄动作。和成片的差别：部分高难度运镜与 bunny-hop 不如文案清晰；结尾水花爆炸偏弱；店招偶有 AI 乱码。",
+    video_prompt: {
+      title: "Rainstorm Bicycle Courier One-Shot",
+      subtitle: "自回复 note tweet 里 Prompt : 之后的英文完整原文 · Kling 4.0 + Mirelo + Topaz Astra 2 · 纯文生，无参考素材",
+      content: `Create an ultra-photorealistic, intensely exhilarating 15-second cinematic action sequence following a bicycle courier racing through a crowded downtown street during a rainstorm. The ENTIRE VIDEO MUST BE ONE ABSOLUTELY UNBROKEN CONTINUOUS CAMERA SHOT, from the very first frame to the final frame. ZERO cuts, ZERO hidden edits, ZERO transitions, ZERO teleportation. Action must remain relentless throughout all 15 seconds, with absolutely no static establishing shots, pauses, or slow motion.0–3 seconds: BEGIN IMMEDIATELY IN VIOLENT MOTION. A bicycle tire blasts through a puddle while the rider leans sharply around a wet street corner. The camera rockets alongside the spinning wheel, rapidly rolls upward around the handlebars, and whips around the rider's shoulder as buses, taxis, and bright storefronts flash past. Water droplets strike the lens.3–6 seconds: A taxi begins pulling out from the curb. The rider brakes sharply and swerves through a clear gap with realistic tire grip and controlled body movement. The camera executes an incredibly fast 270-degree orbit around the moving bicycle, narrowly skimming past a parked vehicle before accelerating alongside the courier again.6–9 seconds: The courier bunny-hops over a broken drainage channel while loose cardboard sheets tumble across the bicycle lane in the wind. The camera plunges inches above the spinning chain and pedals, then swings upward around the rider as a bus sends an enormous curtain of water across the street.9–12 seconds: The rider bursts out of the spray, charges up a low curb ramp, and races toward a shop where the owner is lowering the metal shutter against the storm. The camera sweeps rapidly around the courier, revealing the glowing storefront reflected across the wet pavement.12–15 seconds: The courier executes a controlled sliding stop, snatches a waterproof envelope from the delivery bag, and passes it beneath the descending shutter. The shopkeeper catches it just in time. The camera violently swings around their hands, then rockets backward as the shutter slams shut and rainwater explodes across the pavement.Absolutely authentic physics, no superhero movements, natural human reactions, convincing wet-road traction, genuine urban sound, extraordinary foreground parallax, aggressive camera banking, and relentless acceleration. MAKE ORDINARY REALITY LOOK UNBELIEVABLY CINEMATIC WITHOUT MAKING IT LOOK FAKE. EXACTLY 15 SECONDS. ONE SINGLE COMPLETELY UNINTERRUPTED PHYSICAL CAMERA TAKE.`,
+    },
+  },
+  // 查重别名(提示词自回复 note tweet): https://x.com/DuaFatimaAi/status/2113431686864339014
+  // 同作者本地旧包 DuaFatimaAi-2106923108938756440（橙鞋老人广告）为不同帖；本片为羽毛球锦标赛竖屏运动广告 + 先锁角色/输入图。提示词无 @imageN，但主帖流程要求先 Upload image，附图落地为 refs/01。
+  {
+    id: "duafatima-badminton-championship-sports-ad",
+    title: "羽毛球锦标赛广告 · 竖屏运动大片 · 角色图先锁",
+    subtitle: "X · @DuaFatimaAi · 先图后视频（Gemini/Grok/GPT Image；视频模型原帖未点名）· 约48秒 · 9:16",
+    description:
+      "室内锦标赛场馆航拍开场，红白球衣女运动员在绿场上移动、脚步特写与跳杀慢动作，对角切镜收束到低机位英雄定格。",
+    video: "/tutorials/duafatima-badminton-championship-sports-ad/demo-web.mp4",
+    poster: "/tutorials/duafatima-badminton-championship-sports-ad/poster.jpg",
+    duration: "48秒",
+    durationSec: 48,
+    styleLabel: "运动广告",
+    shots: 6,
+    references: 1,
+    model: "原帖未点名视频模型；流程为先图后视频（Gemini/Grok/GPT Image）",
+    style: "超写实体育广告 · 室内锦标赛场馆 · 青绿场地 + 红白球衣 · 航拍/跟拍/低机位/慢动作跳杀 · 9:16",
+    aspectRatio: "9/16",
+    sourceUrl: "https://x.com/DuaFatimaAi/status/2113431683127259435",
+    sourceAuthor: "@DuaFatimaAi",
+    sourcePlatform: "X",
+    sourceImpressions: 9291,
+    sourceStats: { asOf: "2026-10-23", likes: 168, reposts: 26, bookmarks: 188 },
+    formats: ["产品广告"],
+    hook: {
+      structure: "场馆航拍建立 → 场上跟拍移动 → 白鞋脚步特写 → 跳杀慢动作 → 对角切镜/产品特写 → 低机位英雄定格",
+      opening: "第 0 秒云层上方航拍下压，巨型室内场馆聚光灯穿透云层照向羽毛球场。",
+      openingAt: 0,
+      beats: [
+        { title: "场上跟拍", text: "约 5–12s 高机位/跟拍红白球衣女运动员在绿场上快速移动、握拍准备回击，观众席与场边板掠过。", at: 5 },
+        { title: "脚步与跳杀", text: "约 14–22s 低机位白鞋脚步摩擦与移动模糊，随后跳起大力扣杀的慢动作，灯光在身后爆开。", at: 14 },
+        { title: "结尾怎么收", text: "约 28–48s 对角切镜与球拍击球特写之后，低机位英雄定格/庆祝收束；提示词写 30 秒，成片约 48 秒。", at: 28 },
+      ],
+      copyThis: "先用 Gemini/Grok/GPT Image 锁死同一名红白球衣、马尾女运动员的输入图，再把下方 Scene 1–6 英文视频提示词整段贴进视频工具；时长按工具上限设，提示词标 30s 但示范成片约 48s。",
+      approx: true,
+    },
+    tags: [
+      "48秒",
+      "9:16 竖屏",
+      "先图后视频",
+      "运动广告",
+      "角色参考图",
+      "商标风险",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：先锁角色/输入图",
+        description:
+          "素材对应：主帖附图竖图 = 参考 1（refs/01-character-input.jpg），即「Upload your image」要上传的那张。原帖说先打开 Gemini / Grok / GPT Image 2.0 上传你的图再贴提示词生成图和视频。附图实际是竖版多格分镜/球鞋产品拼图（女运动员 + Yonex 特写），用来锁角色外观与广告气质。**原帖未公开单独出图提示词**——不要自己编一段「出图 prompt」冒充原帖。提示词正文里没有 @imageN 字样，但仍按主帖流程把这张图当输入参考。",
+      },
+      {
+        number: 2,
+        title: "第二步：选工具与画幅",
+        description:
+          "主帖写明用 Gemini / Grok / GPT Image 2.0 出图，再生成视频，但**没有点名具体视频模型**（不要猜 Kling/Seedance）。成片 720×1280（9:16 竖屏）、约 48 秒，边角未见清晰平台水印。和提示词对不上的地方：提示词写 Duration 30 seconds，成片约 47.7–48 秒；提示词 Scene 1–6 偏运动员锦标赛广告，成片里球鞋产品特写更多（与附图分镜更近）。场边与球鞋/球衣上 Yonex logo 很清晰，商用请换成自己的品牌。",
+      },
+      {
+        number: 3,
+        title: "第三步：粘贴完整视频提示词",
+        description:
+          "打开作者自回复 note tweet（查重别名 2113431686864339014），标题是「🎬 Video Prompt: Badminton Championship」。把下方英文提示词整段粘贴，同时上传参考 1。结构依次是：30 秒室内锦标赛广告总述 → Scene 1–6（航拍场馆 / 场上跟拍 / 鞋脚步特写 / 跳杀慢动作 / 对角切镜 / 英雄定格）→ Visual Style / Camera / 9:16 / Negative Prompt。时长按你用的工具上限设置，并预期可能比文案 30 秒更长。",
+      },
+    ],
+    references_detail: [
+      {
+        id: "duafatima-badminton-character-input",
+        number: "1",
+        title: "角色/输入参考图（原帖附图）",
+        subtitle: "主帖附图 = 参考 1；@图 / 上传图 = refs/01-character-input.jpg；竖版多格分镜/球鞋广告拼图，用来先锁女运动员外观",
+        image: "/tutorials/duafatima-badminton-championship-sports-ad/refs/01-character-input.jpg",
+        prompt: "原帖未公开出图提示词：作者没有单独给这张附图配出图 prompt。主帖只写 Open Gemini/Grok/GPT Image 2.0 → Upload your image → Paste the prompt → Generate image and video；完整视频提示词在自回复里。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "0–约5s 云层上方航拍下压，巨型室内场馆聚光灯照亮羽毛球场与观众席。" },
+      { number: 2, description: "约5–14s 跟拍红白球衣女运动员在绿场上快速移动、握拍准备回击。" },
+      { number: 3, description: "约14–18s 低机位白鞋脚步特写：摩擦、反射与运动模糊。" },
+      { number: 4, description: "约18–24s 跳起大力扣杀慢动作，灯光在身后，略带旋转感。" },
+      { number: 5, description: "约24–36s 对角切镜、镜像/分屏与球拍击球或球鞋产品特写。" },
+      { number: 6, description: "约36–48s 低机位英雄定格或庆祝收束，场馆灯光与观众席环绕。" },
+    ],
+    constraints:
+      "素材对应：主帖附图 = 参考 1（上传图），提示词无 @imageN 但仍先锁图再出视频。同一名红白球衣、黑短裤、白球鞋、马尾女运动员贯穿；9:16；提示词标 30 秒、成片约 48 秒。Yonex 等商标在示范成片与附图中清晰，复刻时请替换自有品牌。原帖未点名视频模型。",
+    video_prompt: {
+      title: "🎬 Video Prompt: Badminton Championship",
+      subtitle: "自回复 note tweet 英文完整原文 · 先图后视频（Gemini/Grok/GPT Image；视频模型原帖未点名）· 上传图 = 参考 1 · 提示词标30s / 成片约48s",
+      content: `Prompt 
+
+🎬 Video Prompt: Badminton Championship
+
+Create a 30-second ultra-realistic cinematic badminton sports commercial set inside a massive indoor championship arena packed with spectators. A talented female badminton player wearing a red and white athletic jersey, black shorts, white sports shoes, and her hair tied in a ponytail prepares for an intense match.
+
+Scene 1: A breathtaking aerial establishing shot of the enormous indoor stadium, with dramatic steel roof structures, thousands of spectators, and powerful spotlights illuminating the badminton court.
+
+Scene 2: A dynamic tracking shot follows the female athlete as she moves rapidly across the green badminton court, gripping her racket and preparing to return a powerful shot. Capture her intense focus, realistic footwork, and athletic movements.
+
+Scene 3: An extreme low-angle close-up of her white sports shoes making quick movements across the court. Show realistic friction, rapid footwork, subtle floor reflections, and natural motion blur.
+
+Scene 4: A dramatic slow-motion shot of the athlete jumping high to smash the shuttlecock. Bright stadium lights shine behind her as the camera rotates slightly, creating a powerful sports-advertisement aesthetic.
+
+Scene 5: Artistic cinematic transitions featuring mirrored reflections, diagonal glass-like panels, split-screen compositions, and close-ups of the racket striking the shuttlecock. Maintain realistic anatomy and consistent character appearance.
+
+Scene 6: Finish with a powerful low-angle hero shot of the athlete standing confidently on the court, surrounded by glowing stadium lights and a cheering audience.
+
+Visual Style: Photorealistic sports cinematography, 4K resolution, dramatic stadium lighting, teal and blue color grading, realistic skin texture, shallow depth of field, dynamic camera movements, high-speed action, smooth slow motion, subtle lens flares, professional sports commercial quality.
+
+Camera: Aerial wide shots, tracking shots, low-angle close-ups, macro details, slow-motion action, and dramatic hero shots.
+
+Aspect Ratio: 9:16 vertical
+Duration: 30 seconds
+Quality: Ultra-realistic, cinematic, professional sports advertisement.
+
+Negative Prompt: Cartoon visuals, distorted anatomy, extra fingers, duplicated limbs, unnatural racket movement, floating shuttlecock, inconsistent faces, flickering frames, blurry subject, unrealistic physics, excessive motion blur.`,
+    },
+  },
+  // 查重：sourceUrl 2112899203701547153 / 拟用 id 未出现在 reed35/ai-video-tutorials main lib/tutorials.ts（2026-10-31）；
+  // 同作者另一集 2116160696971088319 必须分开入库，禁止撞 id。
+  // ep6 为建设者/用户对 Nexus 系列的称呼；主帖只写 "latest episode of Nexus"，未写集数编号。
+  {
+    id: "pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina",
+    title: "Nexus ep6 · Blender 控镜省 Seedance 钱 · 流程拆解 · Dreamina",
+    subtitle: "X · @PJaccetturo · Dreamina Seedance 2.5 + Claude/Blender · 约4分21秒 · 21:9",
+    description:
+      "省钱流程拆解：Claude 跑 Blender 做 previz → 截故事板静帧（不上传僵硬 Blender 视频）→ Dreamina Seedance 2.5 Omni 挂参考图，把每天约 $2000 的狂重生压下来。合作 Dreamina Original Series · Nexus。",
+    video: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/demo-web.mp4",
+    poster: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/poster.jpg",
+    duration: "约4分21秒",
+    durationSec: 261,
+    styleLabel: "制作过程",
+    shots: 8,
+    references: 14,
+    model: "Dreamina Seedance 2.5（UI）+ Claude 控 Blender MCP previz；@dreamina_ai Original Series",
+    style: "超宽奇幻暗黑喜剧 · 云上海战/猎鲸 · 流程向省钱控镜",
+    aspectRatio: "21/9",
+    sourceUrl: "https://x.com/PJaccetturo/status/2112899203701547153",
+    sourceAuthor: "@PJaccetturo",
+    sourcePlatform: "X",
+    sourceImpressions: 240752,
+    sourceStats: { asOf: "2026-10-31", likes: 1504, reposts: 101, bookmarks: 2162, replies: 180, quotes: 38 },
+    formats: ["拆装·制作过程"],
+    hook: {
+      structure: "成片开场 → BTS 一眼流程 → Seedance 失控烧钱 → Claude+Blender previz → 故事板静帧救僵硬运镜 → raw+提示词 → 参考图更便宜 → Blender 指南",
+      opening: "主成片约 4 分 21 秒超宽奇幻：云海、飞艇与鲸形生物；角标 Dreamina AI。本页重点是作者公开的省钱控镜流程，不是逐镜复刻整集。",
+      openingAt: 0,
+      beats: [
+        { title: "问题", text: "只靠参考图锁不住尺度与卡位；Seedance 乱改机位/船的大小，狂重生到自称约 $2000/天。", at: 0 },
+        { title: "招数", text: "Claude 跑 Blender 做 greybox+multicam；再截成故事板静帧挂进 Dreamina，而不是上传僵硬的 Blender 视频。", at: 0 },
+        { title: "省钱点", text: "参考图比参考视频便宜；故事板锁构图与银幕方向，观感由角色/场景参考图提供。", at: 0 },
+      ],
+      copyThis: "先 Blender previz 锁卡位与镜头，再导出故事板静帧 + 角色/场景参考图喂 Seedance；提示词写明 panels 是 grey previz、look 来自 references。不要把 Blender 视频当参考视频上传。",
+      approx: true,
+    },
+    tags: [
+      "约4分21秒",
+      "21:9 超宽",
+      "Dreamina Seedance 2.5",
+      "Claude + Blender",
+      "故事板控镜",
+      "制作过程·省钱",
+      "Nexus",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：先看 BTS 竖屏总览（Dreamina 流程）",
+        description:
+          "作者第二条：若不想读长文，先看 @dreamina_ai 流程一览 BTS。步骤内挂可播竖屏 web 版（preload=metadata），不要只放截帧。",
+        video: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/bts-dreamina-web.mp4",
+        poster: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/bts-dreamina-poster.jpg",
+        aspectRatio: "9/16",
+      },
+      {
+        number: 2,
+        title: "第二步：搞清问题——Seedance 失控与尺度",
+        description:
+          "作者写：写了提示词但 Seedance 乱改机位/卡位、船大小镜间跳变，只能狂重生，烧到约 $2000/天。导演 @TheoDudley 的精美资产单靠参考图仍难锁尺度与 blocking。本步四张资产设定图见参考卡（Poacher / Keeper 飞艇 + 生物多视角）。",
+      },
+      {
+        number: 3,
+        title: "第三步：Claude 跑 Blender 做整段 previz",
+        description:
+          "修复方式：让 Claude 操作 Blender（MCP）。本步挂作者方法演示横屏视频（约 3 分 41 秒，源 1260×540）。作者后文会说明：不要把 Blender 视频直接当 Seedance 参考视频。",
+        video: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/claude-blender-demo-web.mp4",
+        poster: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/claude-blender-demo-poster.jpg",
+        aspectRatio: "21/9",
+      },
+      {
+        number: 4,
+        title: "第四步：截故事板静帧，改写 Dreamina 提示词",
+        description:
+          "Blender 直出视频运镜僵硬。解法：让 Claude 把 Blender 序列截成故事板，再在 Dreamina 重写 Seedance 提示词并挂上故事板。参考卡含 PAGE1–4（panels 1–24）；提示词写 Follow panels 1 to 26，但 PAGE5（25–26）本串未附。页脚原文：Grey previz stand-ins… every look comes from the reference images。",
+      },
+      {
+        number: 5,
+        title: "第五步：看 raw output + 关联提示词截图",
+        description:
+          "作者强调：资产侧并没有上传 Blender 视频，而是上传上方故事板；切镜与运镜更自然。本步挂 raw 输出短视频 + UI 截图（参考卡）。提示词 OCR 有一处 UI 接缝截断，已在 video_prompt 标明，未臆造补全。作者回复补充：export blender in 30 second storyboard images instead of uploading blender video to Seedance。",
+        video: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/raw-output-web.mp4",
+        poster: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/raw-output-poster.jpg",
+        aspectRatio: "21/9",
+      },
+      {
+        number: 6,
+        title: "第六步：尽量用参考图，少用参考视频",
+        description:
+          "作者：挂参考图比上传参考视频便宜得多；也可手绘分镜，但他们觉得用 Claude Blender skill 更快。参考卡含 Kieran / Captain Vosk / Remy / Otis 角色设定图（图内英文设定原文已 OCR）。",
+      },
+      {
+        number: 7,
+        title: "第七步：Blender 指南（信息图 + Google Doc）",
+        description:
+          "作者给出上周 Blender guide 信息图，并链到 Google Doc（截图方法称周五再补）。Doc 全文已 export 进 PROMPT_FULL / pack/extras，可复制；含 Obstacle Course Previz SETUP/BUILD IT 与 THE NEXUS SKILL 全文。URL：https://docs.google.com/document/d/1MXARcTpDhzahT_r2LV974MfeOGaJFEZsaZujMqpTQSU/edit?usp=sharing",
+      },
+    ],
+    references_detail: [
+      {
+        id: "pj-nexus-ep6-storyboard-p1",
+        number: "1",
+        title: "故事板 PAGE1 · panels 1–6（THE LAST WHALES OF CALDERA）",
+        subtitle: "Blender grey previz；必须上页。SHOT1–2：幼鲸出水、母鲸依偎、落网、船塔破云",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/storyboard-page1-panels-01-06.jpg",
+        prompt: "原帖未单独给本页文生图提示词；页脚：Grey previz stand-ins. Follow each panel's composition, placement, camera angle, screen direction and action; every look comes from the reference images. 分镜动作说明见 PROMPT_FULL §4。",
+      },
+      {
+        id: "pj-nexus-ep6-storyboard-p2",
+        number: "2",
+        title: "故事板 PAGE2 · panels 7–12",
+        subtitle: "SHOT2–4：幼鲸挣扎、甲板 Vosk「Fish on, boys!」、母鲸侧转",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/storyboard-page2-panels-07-12.jpg",
+        prompt: "原帖未单独给本文生图提示词；用途=喂 Seedance 的灰模故事板输入。详见 PROMPT_FULL §4。",
+      },
+      {
+        id: "pj-nexus-ep6-storyboard-p3",
+        number: "3",
+        title: "故事板 PAGE3 · panels 13–18",
+        subtitle: "SHOT4–6：母鲸对镜头冲锋、Vosk 肩后/特写嘲讽、瞄准镜 POV",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/storyboard-page3-panels-13-18.jpg",
+        prompt: "原帖未单独给本文生图提示词；灰模 previz。含对白 Don't worry mum, we'll take good care of the lad!",
+      },
+      {
+        id: "pj-nexus-ep6-storyboard-p4",
+        number: "4",
+        title: "故事板 PAGE4 · panels 19–24",
+        subtitle: "SHOT7–8：扣扳机特写、鱼叉命中、母鲸被拖垮",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/storyboard-page4-panels-19-24.jpg",
+        prompt: "原帖未单独给本文生图提示词；灰模 previz。提示词写 panels 1–26，本串缺 PAGE5（25–26）。",
+      },
+      {
+        id: "pj-nexus-ep6-poacher",
+        number: "5",
+        title: "问题示意 · Poacher 飞艇资产设定",
+        subtitle: "约 120m；说明仅参考图难锁尺度",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/problem-poacher-airship.jpg",
+        prompt: "Poacher airship, about 120 m long / Long dark deck, open iron railing / Raked prow with a harpoon cannon / Rust-red lower hull, scythe-shaped fins / Tall armored tower aft / Lightning death ray hidden under deck hatches",
+      },
+      {
+        id: "pj-nexus-ep6-keeper",
+        number: "6",
+        title: "问题示意 · Keeper 飞艇资产设定",
+        subtitle: "家族飞艇约 30m；与 Poacher 尺度对比",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/problem-keeper-airship.jpg",
+        prompt: "The family's airship, about 30 m long / Weathered orange and white hull / Cluttered plank deck, bridge aft on top / Black turbine engines, swept orange wings / Two glass-domed gun blisters, forward hull",
+      },
+      {
+        id: "pj-nexus-ep6-creature-a",
+        number: "7",
+        title: "问题示意 · 鲸形生物多视角 A",
+        subtitle: "Full-body / Head-on / Open mouth",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/problem-creature-views-a.jpg",
+        prompt: "原帖图内仅视角标签（Full-body view / Head-on view / Open mouth view），无长文提示词。",
+      },
+      {
+        id: "pj-nexus-ep6-creature-b",
+        number: "8",
+        title: "问题示意 · 鲸形生物多视角 B",
+        subtitle: "另一组多视角设定",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/problem-creature-views-b.jpg",
+        prompt: "原帖图内仅视角标签，无长文提示词。",
+      },
+      {
+        id: "pj-nexus-ep6-kieran",
+        number: "9",
+        title: "参考图示例 · Kieran 角色设定",
+        subtitle: "说明「参考图比参考视频便宜」；跟做可作 @角色参考",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/ref-character-kieran.jpg",
+        prompt: "Name: Kieran | Height 5'10\" | Age: 45 | Build: lean, wiry, sinewy | Character: Plucky, goofy, eccentric, with a warm heart; a good dad through and through | Eyes: Dark, crinkled with crow's feet | Voice: Australian accent, loose and upbeat | Movement: Loose, energetic, a little scattered | Features: Shaggy dark hair, bushy mutton chops, welding goggles on his forehead, mechanical right arm, grease-stained quilted flight suit, leather tool belt",
+      },
+      {
+        id: "pj-nexus-ep6-vosk",
+        number: "10",
+        title: "参考图示例 · Captain Vosk 角色设定",
+        subtitle: "POACHER CAPTAIN；与故事板/提示词中的 Vosk 对应",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/ref-character-vosk.jpg",
+        prompt: "CAPTAIN VOSK | POACHER CAPTAIN — 50s. Tall, broad and heavy-set. Severe, weathered face, pale ice-blue eye. A cracked black half-mask, riveted in place, covers his right eye; healed claw scars run down his right cheek below it. Black leather peaked cap with thin brass piping. Segmented steel gorget at the throat. Long ragged trophy coat of vertical fur and hide stripes, thick grey-black fur collar, worn leather sleeves. Black leather gloves. Tall black buckled boots. Voice: deep, gravelly baritone, a rough London Cockney accent, dropped h's and glottal t's. Quiet and commanding.",
+      },
+      {
+        id: "pj-nexus-ep6-remy",
+        number: "11",
+        title: "参考图示例 · Remy 角色设定",
+        subtitle: "家族神枪手",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/ref-character-remy.jpg",
+        prompt: "Name: Remy | Height 5'5\" | Age: 18 | Build: stocky, solid | Character: Seen but not heard; quiet and serious, he misses nothing. The family's crack shot | Eyes: Dark, steady, watchful | Voice: American accent, a young man's voice, low, rarely used | Movement: Deliberate and decisive; every move exact, no wasted motion | Features: Messy dark hair, brass flight goggles on his forehead, rust-red scarf, patched quilted flight suit, leather harness and belt",
+      },
+      {
+        id: "pj-nexus-ep6-otis",
+        number: "12",
+        title: "参考图示例 · Otis 角色设定",
+        subtitle: "少年搞笑担当",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/ref-character-otis.jpg",
+        prompt: "Name: Otis | Height 5'5\" | Age: 15 | Build: slim, gangly, still growing | Character: A lovable goofball; easygoing, eager, always ready with a joke | Eyes: Dark, bright, quick to crinkle into a grin | Voice: American accent, a teenager's voice, quick and chatty | Movement: Gangly and restless | Features: Freckles, middle-parted dark hair, rust bandana, sleeveless undershirt, suit top knotted at the waist, leather harness straps",
+      },
+      {
+        id: "pj-nexus-ep6-prompt-ui",
+        number: "13",
+        title: "Dreamina UI · raw 关联提示词截图",
+        subtitle: "Seedance 2.5 Omni reference；右侧 Prompt + 底部输入框有 OCR 接缝",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/dreamina-raw-prompt-ui.jpg",
+        prompt: "见本条 video_prompt / PROMPT_FULL §5；含 SCENE CONTEXT + STORYBOARD 段。UI 接缝处未臆造。",
+      },
+      {
+        id: "pj-nexus-ep6-blender-guide",
+        number: "14",
+        title: "Blender guide 信息图（SETUP / BUILD IT）",
+        subtitle: "与 Google Doc 开头一致；完整 Doc 已收录可复制",
+        image: "/tutorials/pjaccetturo-nexus-ep6-blender-seedance-cost-hack-dreamina/refs/blender-guide-infographic.png",
+        prompt: "信息图步骤原文见 PROMPT_FULL §7；完整 Google Doc（含 THE NEXUS SKILL）已 export，非未公开。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "流程：发现 Seedance 机位/尺度失控 → 每天约 $2000 重生费。" },
+      { number: 2, description: "Claude + Blender MCP：greybox 场景、跑者替身、multicam、Workbench 24fps。" },
+      { number: 3, description: "不要上传 Blender 视频；改为截故事板静帧挂 Dreamina。" },
+      { number: 4, description: "示例场 THE LAST WHALES OF CALDERA：幼鲸落网 → Vosk 欢呼 → 母鲸冲锋 → 鱼叉。" },
+      { number: 5, description: "Seedance 提示词：SCENE CONTEXT + Eight HARD CUTS + Follow panels 1–26 grey previz。" },
+      { number: 6, description: "参考图（角色/船/生物）提供 look；故事板只锁机位与银幕方向。" },
+      { number: 7, description: "参考图比参考视频更便宜；声音在 Seedance 内生成，配乐 music bed 授权（作者回复）。" },
+      { number: 8, description: "演职员：EP PJ Ace / Director @TheoDudley / Writers PJ Ace & Dan Weller / Edit Tyler Messervey。" },
+    ],
+    constraints:
+      "这是流程/省钱教程，页面主 demo 是整集成片（约 261s、21:9），跟做核心是 Blender→故事板→Seedance 工作流，不是逐字复刻 4 分钟。素材：BTS/方法/raw 三段视频必须用步骤 video+poster；故事板四页与角色/资产参考图必须在 references_detail。提示词 OCR 有一处 UI 接缝，禁止补造。故事板缺 PAGE5（panels 25–26）。画幅按成片实测 2560×1080 写 21/9（提示词写 2.39:1）。保留 Dreamina 合作署名。同作者另一帖 211616… 是不同 sourceUrl，禁止合并撞 id。风险：奇幻猎鲸暴力/暗黑喜剧，偏中。",
+    video_prompt: {
+      title: "Dreamina Seedance 2.5 · Whales of Caldera 示例提示词（OCR）",
+      subtitle: "来自线程 raw 关联 UI 截图 · Omni reference + 故事板静帧 · 含 OCR 接缝标注，未臆造",
+      content: `SCENE CONTEXT Photoreal live-action cinema, ARRI Alexa 65, anamorphic, 2.39:1, gritty handheld realism. Intense: a brutal, real capture filmed like combat footage. Dawn high in the clouds of an alien world: a dark storm-cloud ceiling overhead, an endless cloud sea below, karst summits rising from it, giant cloud spouts hanging like slow tornadoes, a crescent moon sinking on the horizon. This take: a mother cuddle whale and her calf, whale-like sky creatures, swim above the clouds. A net snares the calf. The poacher airship rises behind them and sails after them, towing the calf. At the bow gun, the winch hauls the calf in and Captain Vosk crows in triumph. The mother charges the ship; Vosk tau【OCR接缝：Dreamina UI 右侧 Prompt 栏截断，底部输入框自 "p is seen" 续写；中间词未能无歧义还原，禁止臆造补全】p is seen. The calf is frame left, tethered, while she charges. The mother stays on top of the cloud layer. The ship sails forward, prow first, in every shot. The mother lists toward frame right and rolls belly up. Every shot handheld. Vosk's ceramic mask perfectly still. Eight HARD CUTS.
+
+STORYBOARD
+Follow panels 1 to 26 in order, each a key frame: match camera position, framing, screen direction and action, moving handheld between panels; cut only where the shot number changes. The panels are grey previz stand-ins; every look comes from the references and this text.`,
+    },
+  },
+  // 来源：https://x.com/PJaccetturo/status/2100218143625073088
+  // 查重：main lib/tutorials.ts 无 2100218143625073088 / 拟用 id / PJaccetturo（2026-10-31）；
+  // 同作者并行包 2112899203701547153、2116160696971088319 必须分开，禁止撞 id。
+  {
+    id: "pjaccetturo-nexus-sky-line-heist-goldie-dreamina",
+    title: "Nexus · Sky Line Heist · Goldie 金液鱿鱼 · 流程拆解 · Dreamina",
+    subtitle: "X · @PJaccetturo · Dreamina + Claude Skill · 约6分33秒 · 21:9",
+    description:
+      "成本自称 $29,575、10 天做出的 Nexus anthology：喷液金鱿鱼 Goldie 锁在空中豪华邮轮金库。主帖强调 AI≠Cheap；流程=先大量静帧参考再动画、prompt behavior 不 prompt emotions、多状态角色表、Jace 肩上锁 Goldie 尺度；公开 Claude Skill Doc + 一段完整 Dreamina 提示词样例。",
+    video: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/demo-web.mp4",
+    poster: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/poster.jpg",
+    duration: "约6分33秒",
+    durationSec: 393,
+    styleLabel: "制作过程",
+    shots: 10,
+    references: 19,
+    model: "Dreamina（Prompt UI + 致谢）+ Claude Skill（免费 Google Doc）",
+    style: "超宽奇幻暗黑喜剧 · 空中豪华列车劫案 · 制作方法论+成片",
+    aspectRatio: "21/9",
+    sourceUrl: "https://x.com/PJaccetturo/status/2100218143625073088",
+    sourceAuthor: "@PJaccetturo",
+    sourcePlatform: "X",
+    sourceImpressions: 9622467,
+    sourceStats: { asOf: "2026-10-31", likes: 6310, reposts: 463, bookmarks: 5887, replies: 1384, quotes: 780 },
+    formats: ["拆装·制作过程"],
+    hook: {
+      structure: "成片展示 → 故事 Goldie → 先静帧参考 → 行为提示词示范 → 完整提示词 → 输入要素 → 多状态角色表 → 锁尺度 → Claude Skill → 致谢 → 竖屏 BTS",
+      opening: "主成片约 6 分 33 秒超宽奇幻：空中豪华列车 / 金库生物 Goldie；本页重点是作者公开的制作方法论与可复制 Claude Skill，附一段完整 Dreamina 提示词样例。",
+      openingAt: 0,
+      beats: [
+        { title: "故事设定", text: "Sky Line Heist：Goldie（喷液金鱿鱼）锁在豪华空中列车金库；控制它≈控制帝国收入。", at: 0 },
+        { title: "先参考后动画", text: "先生成数百张角色/生物/场景/道具静帧，世界在静帧里立住后再进动画。", at: 0 },
+        { title: "行为不是情绪", text: "Never prompt emotions；用可见行为写表演（停步、扫视、收枪），并给完整 4 镜提示词样例。", at: 0 },
+        { title: "多状态 + 锁尺度", text: "Beaumont 金液前后多状态表；Jace 肩上 Goldie 干净云背景参考 + 英寸硬规则（具体数值原帖未公开）。", at: 0 },
+      ],
+      copyThis:
+        "先静帧世界 → 再写行为向提示词；每个角色准备故事状态参考；用肩宠尺度参考锁生物大小；可用 Claude Skill 把剧本切 30 秒序列出提示词。画幅按成片 21:9 / 提示词 2.39:1。",
+      approx: true,
+    },
+    tags: [
+      "约6分33秒",
+      "21:9 超宽",
+      "Dreamina",
+      "Claude Skill",
+      "制作过程",
+      "Nexus",
+      "Sky Line Heist",
+      "Goldie",
+    ],
+    steps: [
+      {
+        number: 1,
+        title: "第一步：先看竖屏 BTS（可选总览）",
+        description:
+          "线程末条竖屏 BTS（TikTok 格式）。步骤内挂可播竖屏 web 版（preload=metadata），不要只放截帧。",
+        video: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/bts-vertical-web.mp4",
+        poster: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/bts-vertical-poster.jpg",
+        aspectRatio: "9/16",
+      },
+      {
+        number: 2,
+        title: "第二步：搞清故事——Sky Line Heist / Goldie",
+        description:
+          "Anthology：每集一个危难中的生物。本集 Goldie=喷液金的鱿鱼，锁在豪华空中列车金库；富人礼节式生吃空气鱼。参考卡含故事静帧 4 张。",
+      },
+      {
+        number: 3,
+        title: "第三步：先做大量静帧参考，再动画",
+        description:
+          "作者：动画前先生成数百张角色/生物/场景/道具参考；世界在静帧立住后再进动画。参考卡含 world-ref 四张。",
+      },
+      {
+        number: 4,
+        title: "第四步：Prompt behavior，不 prompt emotions",
+        description:
+          "反例：she is afraid / feels sorry。正例：停步、扫视笼格、咬紧下颌、把枪放低几英寸。本步挂 Jace/Sable 厨房车示范短视频。",
+        video: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/anim-jace-sable-web.mp4",
+        poster: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/anim-jace-sable-poster.jpg",
+        aspectRatio: "21/9",
+      },
+      {
+        number: 5,
+        title: "第五步：复制完整 Dreamina 提示词样例 + 输入要素",
+        description:
+          "线程公开「SKY LINE HEIST - JACE REACTION / SABLE LOOK BACK BEAT」全文（NO MUSIC、四镜、硬锁姿态/眨眼）。@jace/@sable/@tank_fish 与厨房车参考见要素四图；对应关系写在 video_prompt 旁。UI 截图已上参考卡。",
+      },
+      {
+        number: 6,
+        title: "第六步：多状态角色表（Tip 2）",
+        description:
+          "一张角色表不够。Beaumont 开场 vs 被液金泼溅后都要有参考。见 tip2 三图。",
+      },
+      {
+        number: 7,
+        title: "第七步：锁尺度（Tip 3）——Goldie on Jace shoulder",
+        description:
+          "Goldie 曾被模型画得过大。解法：一张 Jace 肩扛 Goldie、干净云背景、打光正确的参考，每场都挂；并写死英寸硬规则（具体数值原帖未公开）。即使 Sable 抱他也用同一尺度参考。",
+      },
+      {
+        number: 8,
+        title: "第八步：免费 Claude Skill（Google Doc）",
+        description:
+          "作者把流程打成 Claude skill：剧本→30 秒序列→写提示词。Doc 全文已 export 进 PROMPT_FULL / extras，可复制。URL：https://docs.google.com/document/d/1AOvTkVfawm0OdEWNsFGUPhLvQNCgeYqpD-1uwP6mMRI/edit?usp=sharing",
+      },
+    ],
+    references_detail: [
+      {
+        id: "pj-skyline-story-goldie",
+        number: "1",
+        title: "故事 · Goldie / 开场剧本字静帧",
+        subtitle: "FADE IN 金饰餐车；OCR 有噪声，见 PROMPT_FULL",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/story-goldie-creature.jpg",
+        prompt: "原帖未单独给本文生图提示词；图内含剧本/开场 NOTE OCR（见 PROMPT_FULL §1）。",
+      },
+      {
+        id: "pj-skyline-story-train-a",
+        number: "2",
+        title: "故事 · 空中豪华列车宽景 A",
+        subtitle: "Sky Line 设定静帧",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/story-sky-train-wide-a.jpg",
+        prompt: "原帖未附本文生图提示词；用途=故事世界设定参考。",
+      },
+      {
+        id: "pj-skyline-story-train-b",
+        number: "3",
+        title: "故事 · 空中豪华列车宽景 B",
+        subtitle: "Sky Line 设定静帧",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/story-sky-train-wide-b.jpg",
+        prompt: "原帖未附本文生图提示词；用途=故事世界设定参考。",
+      },
+      {
+        id: "pj-skyline-story-vault",
+        number: "4",
+        title: "故事 · 金库/餐车内景",
+        subtitle: "奢华车厢与生物语境",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/story-vault-dining.jpg",
+        prompt: "原帖未附本文生图提示词；用途=故事世界设定参考。",
+      },
+      {
+        id: "pj-skyline-world-01",
+        number: "5",
+        title: "世界参考 · Beaumont 多状态拼贴",
+        subtitle: "References first；动画前静帧",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/world-ref-01.jpg",
+        prompt: "原帖未附长文生图词；图内标签 OCR：BEAUMONT SKY MARSHALL / DETECTIVE / ARISTOCRATIC / OFFICER / GILDED / GUNS OUT（见 PROMPT_FULL §2）。",
+      },
+      {
+        id: "pj-skyline-world-02",
+        number: "6",
+        title: "世界参考 · 飞行载具/帆板",
+        subtitle: "Skyflyers / Skyboards 等",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/world-ref-02.jpg",
+        prompt: "原帖未附长文生图词；图内载具名 OCR 有噪声，原文见 PROMPT_FULL §2。",
+      },
+      {
+        id: "pj-skyline-world-03",
+        number: "7",
+        title: "世界参考 · Gilded Skytrain 变体",
+        subtitle: "空轨列车造型探索",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/world-ref-03.jpg",
+        prompt: "原帖未附长文生图词；图内 THE GILDED SKYTRAIN 等标签 OCR 见 PROMPT_FULL §2。",
+      },
+      {
+        id: "pj-skyline-world-04",
+        number: "8",
+        title: "世界参考 · 其它静帧",
+        subtitle: "References first 第四张",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/world-ref-04.jpg",
+        prompt: "原帖未附本文生图提示词；OCR 几乎无可靠文字。",
+      },
+      {
+        id: "pj-skyline-prompt-ui",
+        number: "9",
+        title: "Dreamina UI · Jace/Sable 完整提示词截图",
+        subtitle: "与帖内全文同一提示词；以帖文为准",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/prompt-jace-sable-ui.jpg",
+        prompt: "见本条 video_prompt / PROMPT_FULL §4；OCR 有空格噪声，未臆造补全。",
+      },
+      {
+        id: "pj-skyline-el-jace",
+        number: "10",
+        title: "输入要素 · @jace look reference",
+        subtitle: "Jace 角色设定表（正面/侧面/背面+道具）",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/elements-jace.jpg",
+        prompt: "Look reference only（作者）。对应提示词 @jace：黑围巾面罩、奶油卷袖衬衫、黑麂皮背心、无武器、双臂交叠。图内 OCR：SUSPENDER / FLINTLOCK / HOLSTER / BELT / FINGERLESS GLOVES / BOOTS / SCARF。",
+      },
+      {
+        id: "pj-skyline-el-sable",
+        number: "11",
+        title: "输入要素 · @sable look reference",
+        subtitle: "Sable 角色设定表（紫装+剑）",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/elements-sable.jpg",
+        prompt: "Look reference only。对应 @sable：紫围巾面罩上拉、紫丝绒军装外套金饰、单剑（柄击）。图内 OCR：RAPIER / FLINTLOCK PISTOL / GLOVES / SCARF。",
+      },
+      {
+        id: "pj-skyline-el-fish",
+        number: "12",
+        title: "输入要素 · @tank_fish",
+        subtitle: "飞鱼/空气鱼群 look（带翅小鱼）",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/elements-tank-fish.jpg",
+        prompt: "Look reference only。对应 @tank_fish：small schooling fish, 3 to 4 inches, iridescent teal and gold。本图无可靠 OCR 文字。",
+      },
+      {
+        id: "pj-skyline-el-kitchen",
+        number: "13",
+        title: "输入要素 · 厨房车厢环境",
+        subtitle: "豪华厨房车内景（蒸汽/铜锅/鱼笼柜）",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/elements-kitchen-car.jpg",
+        prompt: "Scene context 环境参考：navy/teal 墙+金饰、黑铁炉、金框玻璃鱼笼；Sable 只砸鱼笼不砸车窗。本图无可靠 OCR 文字。",
+      },
+      {
+        id: "pj-skyline-tip2-wide",
+        number: "14",
+        title: "Tip2 · Beaumont 多状态宽图",
+        subtitle: "One character sheet is not enough",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/tip2-beaumont-states-wide.jpg",
+        prompt: "原帖未附单独文生图词；用途=故事状态参考示意。",
+      },
+      {
+        id: "pj-skyline-tip2-clean",
+        number: "15",
+        title: "Tip2 · Beaumont 开场态",
+        subtitle: "道具标签 OCR：Rapier / Service Pistol 等",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/tip2-beaumont-clean.jpg",
+        prompt: "图内 OCR：RAPIER / SERVICE PISTOL / MARSHAL BADGE / WHITE GLOVES / AMBER SPECTACLES（见 PROMPT_FULL §6）。",
+      },
+      {
+        id: "pj-skyline-tip2-gold",
+        number: "16",
+        title: "Tip2 · Beaumont 液金泼溅后（Two-Face）",
+        subtitle: "COSTUME DESIGN BOARD 03",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/tip2-beaumont-gold-splash.jpg",
+        prompt: "图内 OCR：MARSHAL BEAUMONT TWO-FACE VARIANT / FRONT / THREE-QUARTER / BACK 等（见 PROMPT_FULL §6）。",
+      },
+      {
+        id: "pj-skyline-tip3-scale",
+        number: "17",
+        title: "Tip3 · Jace 肩上 Goldie 尺度锁",
+        subtitle: "干净云背景；每场挂此参考",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/tip3-jace-goldie-scale.jpg",
+        prompt: "原帖未附文生图词；用途=尺度参考。Goldie 英寸硬规则具体数值原帖未公开。",
+      },
+      {
+        id: "pj-skyline-tip3-goldie",
+        number: "18",
+        title: "Tip3 · Goldie 细节色板",
+        subtitle: "Translucent Glass & Gold",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/tip3-goldie-detail.jpg",
+        prompt: "图内 OCR：GOLDIE COLORWAY VARIANT 2: TRANSLUCENT GLASS & GOLD；Belly Gold-Pouch / Eye / Beak-Mouth Close-Up。",
+      },
+      {
+        id: "pj-skyline-tip3-sable",
+        number: "19",
+        title: "Tip3 · Sable 抱 Goldie（同尺度）",
+        subtitle: "即使换持有者也不漂尺度",
+        image: "/tutorials/pjaccetturo-nexus-sky-line-heist-goldie-dreamina/refs/tip3-sable-holding-goldie.jpg",
+        prompt: "原帖用途=尺度迁移示意；图内服装道具 OCR 见 PROMPT_FULL §7。",
+      },
+    ],
+    storyboard: [
+      { number: 1, description: "成本叙事：自称 $29,575 / 10 天；AI ≠ Cheap；Nexus 长片仍将烧数百万。" },
+      { number: 2, description: "故事：Goldie 喷液金鱿鱼锁在空中豪华列车金库。" },
+      { number: 3, description: "先静帧世界，再动画。" },
+      { number: 4, description: "Prompt behavior 不 prompt emotions；完整四镜 Jace/Sable 样例。" },
+      { number: 5, description: "输入极简：角色 look + 小鱼 + 厨房车环境。" },
+      { number: 6, description: "多状态角色表（Beaumont 金液前后）。" },
+      { number: 7, description: "肩宠尺度参考锁 Goldie；英寸硬规则数值未公开。" },
+      { number: 8, description: "Claude Skill Doc 可复制；致谢团队与 Dreamina。" },
+    ],
+    constraints:
+      "这是制作方法论+成片展示教程：主 demo 为约 393s、21:9 整片，跟做核心是静帧参考→行为提示词→多状态表→锁尺度→Claude Skill，不是逐字复刻 6 分半。竖屏 BTS 与 Jace/Sable 示范短片必须用步骤 video+poster。提示词里 @jace/@sable/@tank_fish 已映射到 refs/elements-*。Google Doc 已全文收录。Goldie 英寸数值原帖未公开。画幅 21/9。保留团队与 Dreamina 署名。禁止与同作者其它 Nexus 包撞 id。风险中等。",
+    video_prompt: {
+      title: "Dreamina · SKY LINE HEIST — Jace Reaction / Sable Look Back Beat",
+      subtitle: "来自线程帖内全文（非截断）· @jace/@sable/@tank_fish → refs/elements-* · 示范视频 refs/anim-jace-sable-web.mp4",
+      content: "Check out the full prompt for that here:\nSKY LINE HEIST - JACE REACTION / SABLE LOOK BACK BEAT\n\n(NO MUSIC)\n\nNO MUSIC. Generate absolutely no musical soundtrack, melody, instruments, tonal bed, or ambient music. Use only diegetic sound effects, ambience, dialogue, and foley written inside <>. Sound design only, no music.\n\n@ jace - Look reference only. Dark tousled hair, blue eyes, black scarf mask over lower face the entire time, cream rolled-sleeve shirt under black suede vest, black fingerless gloves. NO weapon visible. BOTH ARMS FOLDED ACROSS HIS CHEST the entire time. Character appearance only.\n\nJACE VOICE - Use Jace’s established canonical voice. 27-year-old male, light casual working-class British accent, street-level London-adjacent ESTUARY, NOT cockney. Warm mid-range, youthful, relaxed, slightly rough with a light rasp. For this moment, the delivery is dry, tired, mildly incredulous younger-brother exasperation. Understated, not shouted.\n\n@ sable - Look reference only. Dark hair loose and half braided, blue eyes, freckles, purple scarf mask UP over lower face the entire time, purple velvet military jacket with gold filigree over white blouse. ONE rapier only, using the pommel / handle as the striking weapon. Character appearance only.\n\n@ tank_fish - Look reference only. Small schooling fish, 3 to 4 inches long, iridescent teal and gold scales, matching the kitchen reference fish. Creature only.\n\nScene context: SAME moving kitchen car during Sable’s fish-tank-smashing sequence. Dark navy/teal walls with gold trim, black iron stoves, gold-framed glass side-wall fish cages / tanks. Freed fish fly through the room and in the foreground. Sable is smashing FISH CAGES ONLY. She is NOT striking any train windows, side windows, exterior glass, or architectural windows. She only hits the gold-framed fish cages / tanks mounted inside the kitchen car. 24 FPS real-time motion. Handheld camera, shallow depth of field, anamorphic 2.39:1, ARRI Alexa, full highlight/shadow rolloff, no lens flare.\n\nJACE POSTURE HARD LOCK: Jace is STANDING UPRIGHT the entire time. BOTH FEET planted on the kitchen floor. He casually leans backward against the waist-high black iron stove with the BACK OF HIS WAIST / HIPS lightly pressed against it. His torso remains upright. BOTH ARMS stay folded across his chest.\n\nFOUR SHOTS ONLY, 8 seconds total, 2 seconds each.\n\nSHOT ONE, 2 sec, 24fps - MEDIUM CLOSE-UP ON JACE. He is standing against the stove, arms folded, fish flying through the extreme foreground. In the heavily blurred background, Sable SWINGS her rapier pommel into another FISH CAGE / TANK. The cage SHATTERS behind Jace. Jace WINCES at the sharp sound, eyes squeezing shut briefly, body still planted against the stove. Sable remains active and blurred in the background.\n\nCUT -\n\nSHOT TWO, 2 sec, 24fps - MEDIUM CLOSE-UP ON JACE, same position, same stove lean, arms still folded. Fish keep darting through the foreground. Behind him, heavily out of focus, Sable continues moving through the fish-cage-smashing sequence, swinging her sword only toward the interior fish cages. Jace opens his eyes and gives a tired SIGH THROUGH HIS NOSE while looking forward and slightly downward. IMPORTANT: his eyes stay OPEN during the sigh. Expression reads exhausted acceptance.\n\nCUT -\n\nSHOT THREE, 2 sec, 24fps - MEDIUM CLOSE-UP ON JACE, same position. Fish sweep through the foreground. Sable remains active in the blurred background near the fish cages. Jace turns his head toward Sable while staying leaned against the stove, arms still folded, and says with dry tired disbelief:\n\n{Really, sis?}\n\nDELIVERY: understated, mildly incredulous, younger-brother annoyance with warmth underneath. Estuary British accent. No shouting.\n\nCUT -\n\nSHOT FOUR, 2 sec, 24fps - MEDIUM CLOSE-UP HANDHELD PUSH-IN ON SABLE.\n\nSable has just finished another energetic swing toward one of the interior FISH CAGES. As the shot begins, she smoothly redirects the motion and SWINGS HER RAPIER OUT TO HER SIDE in one confident fluid flourish.\n\nSWORD ACTION HARD LOCK: ONE sword only. She swings the rapier outward to her SIDE, away from Jace and away from camera. She does NOT strike anything during this close-up. She does NOT point it at Jace. She does NOT hit a window. The sword finishes extended casually beside her as part of the flourish.\n\nAs the handheld camera PUSHES IN, Sable turns her eyes toward Jace.\n\nHer PURPLE MASK remains fully UP over her mouth and nose.\n\nShe gives him a DEVIOUS, MISCHIEVOUS SMILE visible through her eyes — clearly pleased with herself, playful, slightly wicked, completely unapologetic.\n\nHold her direct eye contact with Jace for a beat.\n\nTHEN she gives him ONE DELIBERATE SINGLE-EYE WINK.\n\nWINK HARD LOCK: exactly ONE eye closes. The other eye remains OPEN and fixed directly on Jace. This is a clear intentional wink, NOT a blink. Do NOT close both eyes. Do NOT repeat the wink.\n\nPERFORMANCE ORDER:\n\nFINISH FISH-CAGE SWING → SWING SWORD FLUIDLY OUT TO HER SIDE → LOOK DIRECTLY AT JACE → DEVIOUS SMILE WITH HER EYES → ONE SINGLE-EYE WINK.\n\nDo not reverse the order.\n\nNo dialogue from Sable.\n\nA few fish continue flying dynamically through the extreme foreground and background as the handheld camera pushes toward her.\n\nSABLE PERFORMANCE LOCK: mask stays ON, one rapier only, fluid sword flourish to her side, devious smile through her eyes, ONE deliberate single-eye wink, confident and teasing.\n\nFISH CAGE LOCK: Throughout this entire sequence, Sable’s destructive sword swings target ONLY the gold-framed interior FISH CAGES / TANKS. She NEVER strikes the train windows, exterior windows, side windows, or architectural glass.\n\nFOREGROUND FISH LOCK: In every Jace shot and in Sable’s close-up, several fish fly between camera and subject, creating shallow blurred foreground motion without obscuring their faces for long.\n\n<moving train ambience, carriage vibration, rapid fish wing flutter passing lens, fish rushing through foreground, distant tank impacts, sharp glass shatters, glass fragments settling, Jace quiet nasal sigh, subtle fabric movement, rapier cutting quickly through air>\n\n(NO MUSIC)\n\nSound design only, no music.",
+    },
+  },
   // 查重别名(提示词自回复帖：PROMPT 1–4 Girl/Cat/Apartment + Episode 1): https://x.com/ivanka_humeniuk/status/2112018732130165124
   // 查重别名(提示词自回复帖：PROMPT 5 Episode 2): https://x.com/ivanka_humeniuk/status/2112018737716941054
   {
